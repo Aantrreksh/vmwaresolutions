@@ -446,10 +446,14 @@ toc:
       - topicgroup:
           label: API reference
           topics:
-          - link:
-              label: VMware as a Service API
-              href: https://{DomainName}/apidocs/vmware-service
-          - include: ../vmware-service/common/api-change-log.md
+          - topicgroup:
+              label: VMware as a Service
+              topics:
+              - link:
+                  label: VMware as a Service API
+                  href: https://{DomainName}/apidocs/vmware-service
+              - include: ../vmware-service/common/api-change-log.md
+              - include: ../vmware-service/common/api-virtual-private-ep.md
           - link:
               label: VMware Solutions API
               href: https://{DomainName}/apidocs/vmware-solutions
