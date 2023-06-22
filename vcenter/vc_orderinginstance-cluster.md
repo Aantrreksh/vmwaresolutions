@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-04-24"
+lastupdated: "2023-06-22"
 
 keywords: vCenter Server order instance, order vCenter Server, order vCenter Server instance
 
@@ -196,6 +196,9 @@ Select **Public and private network** or **Private network only**.
 | Europe | FRA05 | 01 |
 | Europe | LON04 | 01 |
 | Europe | LON06 | 01 |
+| Europe | MAD02 | 01 |
+| Europe | MAD04 | 01 |
+| Europe | MAD05 | 01 |
 | Europe | PAR04 | 01 |
 | Europe | PAR05 | 01 |
 | Europe | PAR06 | 01 |

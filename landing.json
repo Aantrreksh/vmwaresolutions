@@ -1,6 +1,6 @@
 {
     "title": "VMware Solutions docs",
-    "lastupdated": "2023-05-03",
+    "lastupdated": "2023-06-22",
     "introduction": "VMware Solutions is a group of IBM Cloud offerings that provide deployment and management of VMware virtualized environments. Learn how to make the most of your VMware Solutions experience by using the user documentation, REST API documentation reference, solution architectures, and solution guides.",
     "section_devtools": {
       "api": "/docs?tab=api-docs&category=compute&subCategory=vmwaresolutions"
@@ -54,19 +54,19 @@
       "view_more": "/docs/vmwaresolutions?topic=vmwaresolutions-vmwaresolutions-relnotes",
       "tiles": [
         {
-          "date": "3 May 2023",
-          "title": "Veeam 12 availability",
-          "description": "Veeam® Backup and Replication 12 (Veeam 12) is now available for deployment with VMware vCenter Server, Cyber Recovery, and VMware Regulated Workloads offerings. Veeam 12 allows you to write directly to IBM Cloud Object Storage and it provides other features, such as data protection, improved Recovery Point Objective using Continuous Data Protection for disaster recovery purposes, and general operational efficiency."
+          "date": "22 June 2023",
+          "title": "Madrid data centers available",
+          "description": "The data centers **Madrid 02**, **Madrid 04**, and **Madrid 05** are now available for deployment."
         },
         {
           "date": "8 March 2023",
           "title": "VMware Cloud Director upgrade for VMware Shared",
-          "description": "VMware Solutions 5.2 provides an upgrade to the VMware Shared infrastructure to an updated version of VMware Cloud Director (vCD) v10.4.1."
+          "description": "The VMware Shared infrastructure is updated to VMware Cloud Director (vCD) v10.4.1."
         },
         {
           "date": "10 January 2023",
           "title": "VMware Cloud Director upgrade for VMware Shared",
-          "description": "VMware Solutions 5.1 provides an upgrade to the VMware Shared infrastructure to an updated version of VMware Cloud Director (vCD) v10.4, which supports up to virtual hardware version 19."
+          "description": "The VMware Shared infrastructure is updated to VMware Cloud Director (vCD) v10.4, which supports up to virtual hardware version 19."
         }
       ]
     }

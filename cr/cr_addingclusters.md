@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2023
 
-lastupdated: "2023-04-24"
+lastupdated: "2023-06-22"
 
 keywords: cyber recovery add clusters, add cluster, cyber recovery cluster
 
@@ -249,6 +249,9 @@ The **Uplink speed** option is not available to gateway clusters.
 | Europe | FRA05 | 01 |
 | Europe | LON04 | 01 |
 | Europe | LON06 | 01 |
+| Europe | MAD02 | 01 |
+| Europe | MAD04 | 01 |
+| Europe | MAD05 | 01 |
 | NA East | TOR04 | 01 |
 | NA East | WDC04 | 05 |
 | NA East | WDC06 | 01 |

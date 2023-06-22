@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2023
-lastupdated: "2023-05-03"
+lastupdated: "2023-06-22"
 
 keywords: release notes, what's new in VMware Solutions, what is new, new features, VMware Solutions release notes, VMware Solutions
 
@@ -28,6 +28,9 @@ Use these release notes to learn about updates to {{site.data.keyword.vmwaresolu
 ### 3 May 2023
 {: #may-2023}
 {: release-note}
+
+Madrid data centers available
+:   (Updated on 22 June 2023) The {{site.data.keyword.cloud_notm}} data centers **Madrid 02**, **Madrid 04**, and **Madrid 05** are now available for deployment.
 
 Bring Your Own License (BYOL) no longer available
 :   BYOL is now disabled in the **Licensing** section for VMware vCenter Server® instances, VMware vSphere clusters, adding hosts and clusters, and vRealize Operations and Log Insight™ service.
