@@ -4,7 +4,7 @@ copyright:
 
   years: 2016, 2023
 
-lastupdated: "2023-04-13"
+lastupdated: "2023-06-22"
 
 keywords: IBM Cloud for VMware Solutions, getting started, vmware solutions offerings, services for vmwaresolutions, vmwaresolutions use cases
 
