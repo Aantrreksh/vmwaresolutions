@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2023
 
-lastupdated: "2023-03-21"
+lastupdated: "2023-05-30"
 
 keywords: cyber recovery, cyber recovery edge cluster, gateway cluster cyber recovery, cyber recovery order instance, order cyber recovery, cyber recovery instances
 
@@ -62,7 +62,13 @@ You can select a RAM size from 64 GB, 96 GB, 128 GB, 192 GB, 384 GB,
 
 {{site.data.content.uplink-speed-options-cascadelake-list}}
 
-{{site.data.content.simpletable-uplink-speed-locations}}
+{{site.data.content.simpletable-uplink-speed-locations-ap}}
+
+{{site.data.content.simpletable-uplink-speed-locations-eur}}
+
+{{site.data.content.simpletable-uplink-speed-locations-naeast}}
+
+{{site.data.content.simpletable-uplink-speed-locations-nasouth}}
 
 ## Networking type
 {: #cr-orderinginstance-edge-network-type}

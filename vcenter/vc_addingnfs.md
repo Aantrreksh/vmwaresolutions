@@ -4,9 +4,9 @@ copyright:
 
   years:  2021, 2023
 
-lastupdated: "2023-04-18"
+lastupdated: "2023-06-26"
 
-keywords: vCenter Server add NFS storage
+keywords: vCenter Server add NFS storage, add nfs
 
 subcollection: vmwaresolutions
 
@@ -40,8 +40,8 @@ You can expand the capacity of your VMware vCenter Server® instance according t
 4. In the **Clusters** table, click the cluster to which you want to add NFS storage.
 5. In the **Storage** section, click **Add**.
 6. In the **Add NFS storage** side panel, complete the storage configuration.
-   * If you want to add and configure the same settings to all file shares, specify the **Number of shares**, **Size (GB)**, and **Performance**.
-   * If you want to add and configure file shares individually, toggle the **Configure shares individually** switch on. Then, click **Add shared storage** and select the **Size (GB)** and **Performance** for each individual file share. You must select at least one file share. For more information, see [NFS storage](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-consoldworkldcluster-settings#vc_orderinginstance-nfs-storage).
+   * To add and configure the same settings to all file shares, specify the **Number of shares**, **Size (GB)**, and **Performance**.
+   * To add and configure file shares individually, toggle the **Configure shares individually** switch on. Then, click **Add shared storage** and select the **Size (GB)** and **Performance** for each individual file share. You must select at least one file share. For more information, see [NFS storage](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-consold-cluster#vc_orderinginstance-nfs-storage).
 7. Review the estimated price and click **Add**.
 
 ## Results after you add NFS storage to vCenter Server instances
@@ -56,7 +56,6 @@ You can expand the capacity of your VMware vCenter Server® instance according t
 
 * [vCenter Server BOM](/docs/vmwaresolutions?topic=vmwaresolutions-vc_bom)
 * [Planning for vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_planning)
-* [Ordering vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-req)
+* [Requirements for vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-req)
 * [Adding clusters to vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingclusters)
-* [Place a host in maintenance mode](https://docs.vmware.com/en/VMware-vSphere/6.0/com.vmware.vsphere.resmgmt.doc/GUID-8F705E83-6788-42D4-93DF-63A2B892367F.html){: external}
-* [Enhanced vMotion Compatibility (EVC) processor support](https://kb.vmware.com/s/article/1003212){: external}
+* [Place a host in maintenance mode](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.resmgmt.doc/GUID-8F705E83-6788-42D4-93DF-63A2B892367F.html){: external}

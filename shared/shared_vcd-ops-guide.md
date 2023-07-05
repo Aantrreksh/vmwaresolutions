@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2023
 
-lastupdated: "2023-02-21"
+lastupdated: "2023-06-20"
 
 keywords: vmware solutions shared, get started shared, tech specs shared
 
@@ -123,15 +123,15 @@ Complete the following steps to register the Red Hat VM with your RHEL activatio
 
 1. From the {{site.data.keyword.vmwaresolutions_short}} console, click the virtual data center name in the **VMware Shared** virtual data center table.
 2. On the virtual data center details page, locate and make note of the **Red Hat activation key**.
-3. Run the following commands from the Red Hat VM.  
+3. Run the following commands from the Red Hat VM.
      1. ``rpm -ivh http://52.117.132.7/pub/katello-ca-consumer-latest.noarch.rpm``
-     2. ``uuid= `uuidgen` ``  
+     2. ``uuid= `uuidgen` ``
        Where the character `` ` `` used around uuidgen is the grave accent or backtick.
      3. ``echo '{"dmi.system.uuid": "'$uuid'"}' > /etc/rhsm/facts/uuid_override.facts``
-     4. ``cat /etc/rhsm/facts/uuid_override.facts``  
+     4. ``cat /etc/rhsm/facts/uuid_override.facts``
        Ensure the contents of the uuid_override.facts contains a generated UUID.
-     5. ``subscription-manager register --org="customer" --activationkey="ACTIVATION_KEY" --force``  
-       Where ``ACTIVATION_KEY`` is the Red Hat activation key that is on the virtual data center details page.  
+     5. ``subscription-manager register --org="customer" --activationkey="ACTIVATION_KEY" --force``
+       Where ``ACTIVATION_KEY`` is the Red Hat activation key that is on the virtual data center details page.
 
 You can still use another RHEL Capsule Server or a satellite server if you already have an RHEL subscription outside of IBM. Charges for the RHEL license are incurred against RHEL VMs that are running in a virtual data center.
 {: note}
@@ -319,7 +319,7 @@ Review the following notes for configuring DHCP on the edge gateway.
 #### Connect the VMs to the network
 {: #shared_vcd-ops-guide-connect-vm}
 
-Stand-alone VMs, or VMs in a vApp, can connect to an Organization virtual data center network.  
+Stand-alone VMs, or VMs in a vApp, can connect to an Organization virtual data center network.
 
 From the tenant portal, access the hardware properties of the VMs and add the new network interface to the **NICs** field. Repeat the procedure for extra VMs. For more information, see [Change the hardware properties of a virtual machine](https://docs.vmware.com/en/VMware-Cloud-Director/10.1/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-BB95EAB5-13D7-4C4A-BDA3-AA1338BC01CA.html?hWord=N4IghgNiBcIHIEkDCBnEBfIA){: external}.
 
@@ -453,13 +453,13 @@ The following services are available:
 
 Enabling access to the service network is done in two edge configuration steps.
 
-##### Adding the NAT rule
+##### Adding the NAT rule for VMware Solutions Shared
 {: #shared_vcd-ops-guide-nat-rule}
 
 Add a NAT rule for translating internal network addresses into the service network IP address space.
 1. Log in to the VMware Cloud Director tenant portal.
 2. Click the virtual data center **Edges** tab and open the single preconfigured edge.
-3. In the **External Networks** section, click the **IP Settings** link. Find the name of the service network and the IP address that is assigned for the service network interface from the table displayed. The format for the service network name is ``<datacenter>-w<idx>-service<idx>``, for example, ``dal13-w02-service02``.
+3. In the **External Networks** section, click the **IP Settings** link. Find the name of the service network and the IP address that is assigned for the service network interface from the table displayed. The format for the service network name is `<datacenter>-w<idx>-service<idx>`, for example, `dal13-w02-service02`.
 4. Click **SERVICES** to open the Edge Gateway configuration page. Click the **NAT** tab and click **+ SNAT RULE** to add a SNAT rule.
 5. Select the service network next to the **Applied on** field and add the IP addresses or range from one of the virtual data center Organization networks to the **Original Source IP/Range** field.
 6. In the **Translated Source IP/Range** field, click **Select**. From the **Network** menu, select the service network. From the **IP Address** menu, select the service IP address that you want to use.
@@ -467,7 +467,22 @@ Add a NAT rule for translating internal network addresses into the service netwo
 8. Verify **Enabled** is selected and click **KEEP**.
 9. Click **Save Changes**.
 
-##### Adding the firewall rule
+##### Adding the NAT rule for VMware as a Service
+{: #shared_vcd-ops-guide-nat-rule-vmwaas}
+
+Add a NAT rule for translating internal network addresses into the service network IP address space.
+1. Log in to the VMware Cloud Director tenant portal.
+2. From the main page under **Virtual Data Center**, click the virtual data center where you want to add the NAT rule.
+3. Under the **Networking** section, click the **Edges** tab and open the single preconfigured edge.
+4. Under the **Services** section, click the **NAT** tab and click **NEW** to add an SNAT rule.
+5. Complete the following configuration in the **Add NAT Rule** window:
+   1. Enter a name for the NAT rule.
+   2. Select `SNAT` in the **Interface Type** field.
+   3. In the **External IP** field, click the information icon to view the available IP addresses and enter the service IP address that you want to use.
+   4. In the **Internal IP** field, enter the internal IP address to be translated.
+6. Verify the **Advanced Settings** fields and click **Save**.
+
+##### Adding the firewall rule for VMware Solutions Shared
 {: #shared_vcd-ops-guide-firewall-rule}
 
 Add a firewall rule to allow the traffic from the internal network to the service network.
@@ -481,17 +496,50 @@ After the previous configuration is completed, you can use the supported {{site.
 
 If your vApp or VM is deployed from the IBM templates that are provided in the public catalog, the services are already configured on the VM. To enable the connection, you must complete the previous steps in **Adding the NAT rule** and **Adding the firewall rule**.
 
-#### Creating a vApp Network
+##### Adding the firewall rule for VMware as a Service
+{: #shared_vcd-ops-guide-firewall-rule-vmwaas}
+
+Add a firewall rule to allow the traffic from the internal network to the service network.
+1. Under the **Services** section, click the **Firewall** tab and click **EDIT RULES**. Then, click **NEW ON TOP** to add a firewall rule.
+2. Add the IP addresses or range from your internal network to the **Source** field.
+3. Add `52.117.132.1/24` in the **Destination** field.
+4. Select `Allow` in the **Action** field.
+5. Click **Save**.
+
+After the previous configuration is completed, you can use the supported {{site.data.keyword.cloud_notm}} services on the VMs in your virtual data center.
+
+If your vApp or VM is deployed from the IBM templates that are provided in the public catalog, the services are already configured on the VM. To enable the connection, you must complete the previous steps in **Adding the NAT rule** and **Adding the firewall rule**.
+
+#### Creating a vApp Network for VMware Solutions Shared
 {: #shared_vcd-ops-guide-vapp-network}
 
-If not done already, create a vApp containing at least two VMs. For more information, see [Working with vApps](https://docs.vmware.com/en/VMware-Cloud-Director/10.1/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-AC48FB5E-4ADC-4835-AACE-B949B297A147.html){: external}.
+If not already completed, create a vApp containing at least two VMs. For more information, see [Working with vApps](https://docs.vmware.com/en/VMware-Cloud-Director/10.1/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-AC48FB5E-4ADC-4835-AACE-B949B297A147.html){: external}.
 
 1. From the tenant portal, click the **Menu** icon at the upper left of the page and select **Data Centers**.
 2. From the main page under **Virtual Data Center**, click the virtual data center where you would like to create the vApp network.
-3. In the right pane under **Compute**, click **vApps**.
+3. In the left pane under **Compute**, click **vApps**.
 4. Click **Details** on the vApp you would like to add a vApp network to.
 5. Click the **Network** tab, and click **New** in the **vApp Fencing** section.
 6. Select **vApp Network**.
+7. Complete the **Name** and **Gateway CIDR** fields. For example, `Web` and `192.168.33.1/24`.
+8. (Optional) Provide the DNS information.
+9. Leave the **Static IP Pools** section blank.
+10. Set the slider to **Connect to an organization VDC network**.
+11. Click **Add**.
+
+For more information, see [Working with networks in a vApp](https://docs.vmware.com/en/VMware-Cloud-Director/10.1/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-FCBC791B-3183-4CD9-A194-856E98CC32D3.html).
+
+#### Creating a vApp Network for VMware as a Service
+{: #shared_vcd-ops-guide-vapp-network-vmaas}
+
+If not already completed, create a vApp containing at least two VMs. For more information, see [Working with vApps](https://docs.vmware.com/en/VMware-Cloud-Director/10.1/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-AC48FB5E-4ADC-4835-AACE-B949B297A147.html){: external}.
+
+1. From the tenant portal, click the **Menu** icon at the upper left of the page and select **Data Centers**.
+2. From the main page under **Virtual Data Center**, click the virtual data center where you would like to create the vApp network.
+3. In the left pane under **Compute**, click **vApps**.
+4. Click the vApp you would like to add a vApp network to.
+5. Click the **Networks** tab, and click **NEW** in the **vApp Fencing** section.
+6. Select **vApp Network Type**.
 7. Complete the **Name** and **Gateway CIDR** fields. For example, `Web` and `192.168.33.1/24`.
 8. (Optional) Provide the DNS information.
 9. Leave the **Static IP Pools** section blank.
@@ -624,7 +672,7 @@ You are now ready to put VMs on the cross-virtual data center network and build 
 ## Enabling VMware Chargeback
 {: #shared_vcd-ops-guide-vrops-app}
 
-The VMware Chargeback (formerly known as vRealize Operations™ Tenant App for VMware Cloud Director) feature is enabled by default when your organization is provisioned. From the Cloud Director tenant portal, click **More > Operations Manager** to access VMware Chargeback.
+The VMware Chargeback (formerly known as VMware Aria® Operations™ Tenant App for VMware Cloud Director) feature is enabled by default when your organization is provisioned. From the Cloud Director tenant portal, click **More > Operations Manager** to access VMware Chargeback.
 
 If the **Operations Manager** option is not available in the **More** menu, open an IBM ServiceNow ticket, and submit a request to enable the VMware Chargeback feature in your organization.
 

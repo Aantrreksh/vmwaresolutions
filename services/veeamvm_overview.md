@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2023
 
-lastupdated: "2023-05-01"
+lastupdated: "2023-05-19"
 
 keywords: Veeam, Veeam Backup and Replication 12, Veeam install, tech specs Veeam, Veeam overview
 
@@ -34,7 +34,7 @@ The Veeam service that is installed is Veeam Availability Suite™ 12 (known as 
 You can install Veeam Backup and Replication 12 on a bare metal server. This installation is supported only for VMware vSphere® 7.0 with VMware NSX-T™.
 
 * For VMware Regulated Workloads, the Veeam bare metal server is the only option. For Security and Compliance Readiness Bundle, the Veeam bare metal server is the default option with a choice of switching to Veeam VM.
-* Veeam is always deployed to the management cluster.
+* Veeam is always deployed on the management cluster.
 * No migration path is available for existing Veeam users.
 
 For more information about Veeam on bare metal server, see the following topics.
@@ -46,7 +46,7 @@ For more information about Veeam on bare metal server, see the following topics.
 {: #veeamvm_overview-specs}
 
 You can choose one of the following deployment types with Veeam:
-* Windows® Server VM on the management cluster or consolidated cluster
+* Windows® Server VM on the management cluster or the consolidated cluster
 * Single Public Windows VSI
 * Bare metal server
 

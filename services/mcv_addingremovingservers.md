@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2023
 
-lastupdated: "2023-04-27"
+lastupdated: "2023-06-16"
 
 subcollection: vmwaresolutions
 
@@ -41,7 +41,7 @@ You can expand the capacity of your vCenter Server multizone instances by adding
 
 1. You might experience a slight delay on the console while the instance status changes from **Available** to **Modifying**. Allow the operation to complete before you make more changes to the instance.
 2. You are notified by email that your request to add ESXi servers is being processed. On the console, the status of the cluster that is associated with the ESXi servers is changed to **Modifying**.
-3. If you do not see the new ESXi servers added to the list in the cluster, check the email or console notifications to find more details about the failure.
+3. If you do not see the new ESXi servers added to the list in the cluster, check your email or console notifications for more details.
 
    If you are adding ESXi servers during maintenance mode, VMs are not migrated to the new servers until you remove maintenance mode.
    {: important}

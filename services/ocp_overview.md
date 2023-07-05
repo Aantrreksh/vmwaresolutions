@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2023
 
-lastupdated: "2023-04-12"
+lastupdated: "2023-05-22"
 
 keywords: openshift for vmware, request openshift for vmware, tech specs openshift vmware
 
@@ -20,7 +20,7 @@ subcollection: vmwaresolutions
 
 The {{site.data.keyword.redhat_openshift_full}} for VMware® service deploys an {{site.data.keyword.redhat_openshift_notm}} cluster by using an automated deployment of the VMware SDDC (Software Defined Data Center) architecture. The {{site.data.keyword.redhat_openshift_notm}} components are deployed as virtual machines (VMs) or appliances by using VMware NSX® software-defined networking.
 
-The {{site.data.keyword.redhat_openshift_notm}} version available for deployment is 4.11.
+The {{site.data.keyword.redhat_openshift_notm}} version available for deployment is 4.12.
 {: note}
 
 Review the following information before you install the {{site.data.keyword.redhat_openshift_notm}} for VMware service:
@@ -30,7 +30,7 @@ Review the following information before you install the {{site.data.keyword.redh
 
 Existing installations of {{site.data.keyword.redhat_openshift_notm}} for VMware can be used or deleted for vSphere 6.7 instances.
 
-{{site.data.keyword.vmwaresolutions_full}} offers promotions for some services. Promotional pricing offers a number of months without charge for a service’s licenses, if the service has license charges. For more information, see [Promotions for VMware Solutions services](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices#vc_addingservices-service-promotions).
+{{site.data.keyword.vmwaresolutions_full}} offers promotions for some services. Promotional pricing offers a number of months without charge for a service licenses, if the service has license charges. For more information, see [Promotions for VMware Solutions services](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices#vc_addingservices-service-promotions).
 
 The cluster consists of the following components:
 * Three primary nodes
@@ -58,7 +58,7 @@ To successfully deploy {{site.data.keyword.redhat_openshift_notm}} for VMware on
 ### Selection of the target cluster for installation
 {: #ocp_overview-select-target-cluster}
 
-During deployment and Day 2 operations, you are prompted for the cluster. You can install the service to the management cluster or any workload cluster.
+During deployment and Day 2 operations, you are prompted for the cluster. You can install the service on the management cluster or any workload cluster.
 
 ### Bastion details
 {: #ocp_overview-bastion}

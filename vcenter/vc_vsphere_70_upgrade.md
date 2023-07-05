@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2022
+  years:  2016, 2023
 
-lastupdated: "2022-11-07"
+lastupdated: "2023-05-31"
 
 keywords: vSphere upgrade, NSX upgrade, PSC upgrade
 
@@ -34,7 +34,7 @@ The following procedure provides the steps that are required to convert a VMware
 ## Important considerations
 {: #vc_vsphere_70_upgrade-considerations}
 
-* You are responsible to ensure that all VMware ESXi™ servers have proper firmware and drivers to support vSphere 7. Broadwell servers are not supported. Research and plan carefully for Skylake and Cascade Lake servers.
+* You are responsible to ensure that all VMware ESXi™ servers have proper firmware and drivers to support vSphere 7. Broadwell and SkyLake servers are not supported. Research and plan carefully for Cascade Lake servers.
 * {{site.data.keyword.cloud_notm}} supports only Cascade Lake bare metal servers for newly deployed vSphere 7 instances.
 * If you add clusters or hosts to a vSphere 7 instance from the VMware Solutions console, only Cascade Lake bare metal servers are provisioned.
 * After you upgrade, your existing clusters will continue to use N-VDS switches, which are deprecated by VMware. Support for N-VDS (NSX-T Virtual Distributed Switch) will be removed in a future VMware NSX-T™ release. Plan to migrate your workloads to a new vCenter Server with NSX-T instance with vSphere 7. For more information, see [NSX-V to NSX-T migration overview](/docs/vmwaresolutions?topic=vmwaresolutions-v2t-overview).
@@ -82,12 +82,12 @@ Because the {{site.data.keyword.cloud_notm}} client access VPN is limited to 512
 * Set up a similar Windows® VM on a separate vCenter Server environment within the same {{site.data.keyword.cloud_notm}} data center.
    The Windows VM is used as a jump server into the vCenter Server instance for the upgrade that downloads the binary files from `https://my.vmware.com`. Do not place this VM on the vCenter Server instance that is being upgraded.
 
-Complete the following steps to download files to your jump server:
+Complete the following steps to download the most recent files to your jump server:
 1. From the VMware portal, download the following product files onto your jump server:
-   * For VMware vCenter Server Appliance, `VMware-VCSA-all-7.0.1-17327517.iso`.
-   * For ESXi 7, `VMware-ESXi-7.0U1c-17325551-depot.zip`.
-   * For Hypervisor, `VMware-VMvisor-Installer-7.0U1c-17325551.x86_64.iso`.
-2. Download the `007.1316.0000.0000_Unified_StorCLI_PUL.zip` file from `https://docs.broadcom.com/docs/007.1316.0000.0000_Unified_StorCLI_PUL.zip`.
+   * For VMware vCenter Server Appliance, `VMware-VCSA-all-7.0.x-xxxx.iso`
+   * For ESXi 7, `VMware-ESXi-7.0Ux-xxxx-depot.zip`
+   * For Hypervisor, `VMware-VMvisor-Installer-7.0Ux-xxxx.x86_64.iso`
+2. Download the most recent STOR_CLI, for example, `007.xxx.0000.0000_Unified_StorCLI_PUL.zip` file from `https://docs.broadcom.com/`.
 
 ## Procedure to upgrade vCenter Server vSphere software from 6.5 or 6.7 to 7.0
 {: #vc_vsphere_70-upgrade-procedure}
@@ -147,16 +147,16 @@ Ensure to complete the following requirements during the upgrade:
 
 You must upgrade the Broadcom driver before you upgrade the ESXi host.
 
-1. Extract the ``007.1316.0000.0000_Unified_StorCLI_PUL.zip`` file to a directory on your windows jump server.
+1. Extract the ``007.xxx.0000.0000_Unified_StorCLI_PUL.zip`` file to a directory on your windows jump server.
 2. Locate the ``vmware-storcli.vib`` file in the extracted file contents.
 3. Copy the ``.vib`` file to either a vSAN or NFS data store that is mounted on the ESXi hosts for the instance. Use vCenter Server to reference the extracted file on your jump server.
 4. SSH into each ESXi host and run the following VIB Upgrade command:  
    ``esxcli software vib update -v /<path to vsan or nfs datastore from step 3>/vmware-storcli.vib --no-sig-check``
    The following installation results are displayed.
-    ``Message: Operation finished successfully.    Reboot Required: false    VIBs Installed: Broadcom_bootbank_vmware-storcli_007.1316.0000.0000-01    VIBs Removed: LSI_bootbank_vmware-storcli_007.0916.0000.0000-01    VIBs Skipped:``
+    ``Message: Operation finished successfully.    Reboot Required: false    VIBs Installed: Broadcom_bootbank_vmware-storcli_007.xxx.0000.0000-01    VIBs Removed: LSI_bootbank_vmware-storcli_007.xxx.0000.0000-01    VIBs Skipped:``
 5. Run the following command to validate the installation:
    ``> esxcli software vib list |grep vmware-storcli
-   vmware-storcli    007.1316.0000.0000-01    Broadcom  PartnerSupported  2020-04-16``
+   vmware-storcli    007.xxx.0000.0000-01    Broadcom  PartnerSupported  yyyy-mm-dd``
 6. Repeat for each host.
 
 ### Procedure to upgrade the ESXi hosts

@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-04-20"
+lastupdated: "2023-06-30"
 
 keywords: set credentials, update credentials, set notifications, IAM user, invite user
 
@@ -26,7 +26,7 @@ Use the following procedures to invite users to update user account credentials,
 
 For more information, see the following topics.
 * [Inviting users to an account](/docs/account?topic=account-iamuserinv)
-* [Managing access for VMware Solutions](/docs/vmwaresolutions?topic=vmwaresolutions-iam)
+* [Managing IAM access for VMware Solutions](/docs/vmwaresolutions?topic=vmwaresolutions-iam)
 
 ## Setting notifications
 {: #useraccount-set-notif}
@@ -89,4 +89,4 @@ The stored {{site.data.keyword.cloud_notm}} infrastructure account credentials a
 * [FAQ](/docs/vmwaresolutions?topic=vmwaresolutions-faq-vmwaresolutions)
 * [Ordering vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-req)
 * [Managing system notifications](/docs/vmwaresolutions?topic=vmwaresolutions-notifications)
-* [What is {{site.data.keyword.cloud_notm}} IAM](/docs/account?topic=account-iamoverview)
+* [How IBM Cloud IAM works](/docs/account?topic=account-iamoverview)

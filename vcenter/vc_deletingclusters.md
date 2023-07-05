@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2023
 
-lastupdated: "2023-04-03"
+lastupdated: "2023-05-19"
 
 keywords: vCenter Server delete clusters, delete clusters, delete vCenter Server cluster, vmware multizone, vCenter Server multizone delete clusters, delete vCenter Server cluster
 
@@ -19,17 +19,18 @@ subcollection: vmwaresolutions
 
 You can delete clusters from VMware vCenter Server® instances when you do not need them.
 
+Deleting clusters from vCenter Server instances with VMware vSphere® 6.5 is not supported.
+{: note}
+
 ## Before you delete clusters from vCenter Server instances
 {: #vc_deletingclusters-before}
 
-* Deleting clusters from vCenter Server instances with VMware vSphere® 6.5 is not supported.
 * {{site.data.content.para-vcenterremoveclusters}}
-* You can delete only clusters that are added as part of Day 2 operations. Clusters that are created during initial deployment can't be deleted.
-* You can delete a single cluster at a time. To delete more than one cluster, you must do it in sequence. Wait for the previous cluster to be deleted before you delete the next cluster.
+* You can delete any cluster except for the first cluster (the one that is created during initial deployment).
+* You can delete multiple clusters at a time. You can also delete a cluster while another cluster is being created or deleted.
 * Ensure that all nodes in a cluster are powered on and operational before you delete the cluster.
-* You can add or delete a cluster while another cluster is being created or deleted.
 * When you delete a cluster, all VMs from the cluster are also deleted and they can't be recovered. If you want to keep the VMs, migrate them to other clusters.
-* When you delete a cluster, all storage and subnets that are associated with the cluster are deleted as well. To view the storage and subnets associated with a cluster, see the cluster details page.
+* When you delete a cluster, all storage and subnets that are associated with the cluster are deleted as well. To view the storage and subnets that are associated with a cluster, see the cluster details page.
 * You do not have to delete any services that are installed on the cluster, including services on a gateway cluster. The services are automatically deleted when you delete the cluster.
 
 ## Procedure to delete clusters from vCenter Server instances

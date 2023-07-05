@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2022
 
-lastupdated: "2022-05-16"
+lastupdated: "2022-06-14"
 
 keywords: security and compliance readiness bundle, scb instance
 
@@ -17,7 +17,7 @@ subcollection: vmwaresolutions
 # Security and Compliance Readiness Bundle overview
 {: #scb-overview}
 
-New deployments of Security and Compliance Readiness Bundle instances are no longer supported. You can still add or delete clusters, add or remove VMware ESXi™ servers or NFS storage, and add or remove services for existing instances. You can also view and delete your Security and Compliance Readiness Bundle instances.
+New deployments of Security and Compliance Readiness Bundle instances are no longer supported. You can still add or delete clusters, add or delete VMware ESXi™ servers or NFS storage, and add or remove services for existing instances. You can also view and delete your Security and Compliance Readiness Bundle instances.
 {: deprecated}
 
 The Security and Compliance Readiness Bundle offering is a prescriptive offering that provides many of the security and compliance features of {{site.data.keyword.cloud}} for Financial Services™. The offering is packaged with security and compliance tools and templates for you to use with your preferred regulation standard.

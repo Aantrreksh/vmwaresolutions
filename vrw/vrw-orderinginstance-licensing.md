@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2023
 
-lastupdated: "2023-02-17"
+lastupdated: "2023-06-02"
 
 keywords: vmware regulated workloads, vmware regulated workloads order instance, order vmware regulated workloads, vmware regulated workloads instances
 
@@ -21,7 +21,6 @@ Specify the licensing options for the following VMware® components in the insta
 * VMware vCenter Server® Standard 7.0
 * VMware vSphere® Enterprise Plus 7.0
 * VMware NSX-T™ 3.2 Enterprise edition (Data Center SP Advanced or Data Center SP Enterprise Plus)
-* (Multizone VMware instance only) VMware vSAN™ Enterprise license
 
 Small differences exist between NSX-T Data Center and Data Center SP editions. For more information, see [Product offerings for VMware NSX-T Data Center 3.2.x](https://kb.vmware.com/s/article/86095){: external}.
 {: note}

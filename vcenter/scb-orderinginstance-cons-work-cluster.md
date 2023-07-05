@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2023
 
-lastupdated: "2023-04-24"
+lastupdated: "2023-06-21"
 
 keywords: order Security and Compliance Readiness Bundle, order scb instances, order vcs scb
 subcollection: vmwaresolutions
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # Consolidated and workload cluster
 {: #scb-orderinginstance-consoli}
 
-New deployments of Security and Compliance Readiness Bundle instances are no longer supported. You can still add or delete clusters, add or remove VMware ESXi™ servers or NFS storage, and add or remove services for existing instances. You can also view and delete your Security and Compliance Readiness Bundle instances.
+New deployments of Security and Compliance Readiness Bundle instances are no longer supported. You can still add or delete clusters, add or delete VMware ESXi™ servers or NFS storage, and add or remove services for existing instances. You can also view and delete your Security and Compliance Readiness Bundle instances.
 {: deprecated}
 
 Specify the following settings for the consolidated cluster.
@@ -53,11 +53,7 @@ You can choose the RAM size from 128 GB, 192 GB, 384 GB, 768 GB, and 1.5 TB.
 ## Number of bare metal servers
 {: #scb-orderinginstance-consoli-bare-metal-number}
 
-* All servers that you order have the same configuration.
-* If you are planning to use vSAN™ storage, you can order 4 - 20 servers.
-* If you are planning to use NFS storage, you can order 2 - 20 servers. A lower limit of three servers applies for NSX-T® consolidated clusters.
-* If you select two bare metal servers for the management cluster, the minimum RAM size for the instance to function properly is 192 GB.
-* For production workloads, a minimum of three servers is recommended. For more information, see [Is a two-node vCenter Server instance highly available?](/docs/vmwaresolutions?topic=vmwaresolutions-faq-vmwaresolutions#is-a-two-node-vcenter-server-instance-highly-available)
+{{site.data.content.number-of-baremetal-servers}}
 
 ## Storage
 {: #scb-orderinginstance-consoli-storage}
@@ -129,7 +125,7 @@ Use the IBM-provided VMware license for the vSAN component by selecting **Includ
 Bring Your Own License (BYOL) is no longer supported except for migrations or upgrades of existing BYOL clusters. Select **I will provide** and enter your own license key only if you are performing an upgrade or migration of an existing BYOL cluster.
 {: important}
 
-If your initial cluster is a vSAN cluster, any additional vSAN clusters use the same vSAN license and have the same configuration as the initial one. This is also true if any cluster (initial or additional) in the instance has vSAN selected to be deployed on it. The first time you're prompted for the vSAN license (BYOL or purchased) and the edition. The next time that you select vSAN for a new cluster, the license that is chosen initially is reused.
+If your initial cluster is a vSAN cluster, any additional vSAN clusters use the same vSAN license and have the same configuration as the initial one. This is also true if any cluster (initial or additional) in the instance has vSAN selected to be deployed on it. The first time you're prompted for the vSAN license and the edition. The next time that you select vSAN for a new cluster, the license that is chosen initially is reused.
 
 ## Networking type
 {: #scb-orderinginstance-consoli-private-nics}
@@ -141,7 +137,13 @@ Select **Public and private network** or **Private network only** for the consol
 
 {{site.data.content.uplink-speed-options-cascadelake-list}}
 
-{{site.data.content.simpletable-uplink-speed-locations-other}}
+{{site.data.content.simpletable-uplink-speed-locations-other-ap}}
+
+{{site.data.content.simpletable-uplink-speed-locations-other-eur}}
+
+{{site.data.content.simpletable-uplink-speed-locations-other-naeast}}
+
+{{site.data.content.simpletable-uplink-speed-locations-other-nasouth}}
 
 ## VLANs
 {: #scb-orderinginstance-consoli-vlans}

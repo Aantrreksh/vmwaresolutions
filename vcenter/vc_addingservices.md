@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2023
 
-lastupdated: "2023-04-19"
+lastupdated: "2023-06-19"
 
 keywords: vCenter Server add service
 
@@ -36,40 +36,40 @@ The following table shows the services that are available to vCenter Server inst
 
 | Service name | Current version | Notes |
 |:------------ |:--------------- |:----- |
-| [Caveonix RiskForesight](/docs/vmwaresolutions?topic=vmwaresolutions-caveonix_considerations) | 4.0 | |
+| [Caveonix RiskForesight](/docs/vmwaresolutions?topic=vmwaresolutions-caveonix_considerations) | 4.1 | |
 | [Entrust CloudControl](/docs/vmwaresolutions?topic=vmwaresolutions-entrust-cc_considerations) | 6.6 | NSX-T only |
-| [F5 BIG-IP](/docs/vmwaresolutions?topic=vmwaresolutions-f5_considerations) | BIG-IP VE 17.0 | |
-| [FortiGate Virtual Appliance](/docs/vmwaresolutions?topic=vmwaresolutions-fortinetvm_considerations) | 7.2.2 | |
+| [F5 BIG-IP](/docs/vmwaresolutions?topic=vmwaresolutions-f5_considerations) | BIG-IP VE 17.1 | |
+| [FortiGate Virtual Appliance](/docs/vmwaresolutions?topic=vmwaresolutions-fortinetvm_considerations) | 7.2.5 | |
 | [VMware HCX](/docs/vmwaresolutions?topic=vmwaresolutions-hcx_considerations) | Periodically updated to the most recent version | |
 | [{{site.data.keyword.IBM}} Security Services for SAP](/docs/vmwaresolutions?topic=vmwaresolutions-managing-ss-sap) |   | |
-| [Juniper vSRX](/docs/vmwaresolutions?topic=vmwaresolutions-juniper-overview) | 3.0 (21.4R2) | |
+| [Juniper vSRX](/docs/vmwaresolutions?topic=vmwaresolutions-juniper-overview) | 3.0 (23.1R2) | |
 | [KMIP for VMware](/docs/vmwaresolutions?topic=vmwaresolutions-kmip_standalone_considerations) | 2.0 | |
 | [PrimaryIO HDM](/docs/vmwaresolutions?topic=vmwaresolutions-managing_pio) |   | |
-| [{{site.data.keyword.redhat_openshift_notm}} for VMware](/docs/vmwaresolutions?topic=vmwaresolutions-ocp_overview) | 4.11 | NSX-T only \n If you add the service to an existing instance with an NSX-T version earlier than 3.1, you must first upgrade NSX-T to 3.1 or later. |
+| [{{site.data.keyword.redhat_openshift_notm}} for VMware](/docs/vmwaresolutions?topic=vmwaresolutions-ocp_overview) | 4.12 | NSX-T only \n If you add the service to an existing instance with an NSX-T version earlier than 3.1, you must first upgrade NSX-T to 3.1 or later. |
 | [Veeam](/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview) | 12 | |
-| [vRealize Operations and Log Insight](/docs/vmwaresolutions?topic=vmwaresolutions-vrops_overview) | vROps 8.10 and vRLI 8.10 | |
-| [Zerto](/docs/vmwaresolutions?topic=vmwaresolutions-addingzertodr) | 9.7u1 | VMware vSphere 7 only |
+| [VMware Aria Operations and VMware Aria Operations for Logs](/docs/vmwaresolutions?topic=vmwaresolutions-vrops_overview) | VMware Aria® Operations™ 8.12 and VMware Aria Operations™ for Logs 8.12 | |
+| [Zerto](/docs/vmwaresolutions?topic=vmwaresolutions-addingzertodr) | 9.7u3 | VMware vSphere 7 only |
 {: caption="Table 1. Available services for vCenter Server instances" caption-side="bottom"}
 
 ## Promotions for services
 {: #vc_addingservices-service-promotions}
 
-{{site.data.keyword.vmwaresolutions_full}} offers promotion pricing for some services. The promotions offer a number of months free of charge for service licenses, if the service has license charges. For more information about the promotions that are available, see the [pricing options](https://www.ibm.com/cloud/vmware/pricing){: external}.
+{{site.data.keyword.vmwaresolutions_full}} offers promotion pricing for some services. The promotions offer a number of months free of charge for service licenses, if the service has license charges.
 
-You can use one promotion (promo) code for one or more services for:
-* Ordering a new VMware vCenter Server instance
-* Adding a service to a vCenter Server instance
-* Ordering a stand-alone service license, such as Caveonix or Veeam®
+You can use promotion (promo) codes for one or more services when you:
+* Order a new VMware vCenter Server instance
+* Add a service to a vCenter Server instance
+* Order a stand-alone service license, such as Caveonix or Veeam®
 
-For services that charge per host, promo codes apply only to the hosts in the order or in the current environment. Examples of such services are HCX™, Entrust CloudControl™, and vRealize Operations™ and Log Insight™.
+For services that charge per host, promo codes apply only to the hosts in the order or in the current environment. Examples of such services are HCX™, Entrust CloudControl™, and VMware Aria® Operations™ and VMware Aria Operations™ for Logs.
 
 You can use one promo code per order. Multiple promo codes are not allowed. However, you can use a promo code multiple times per account. A promo code might apply to multiple services, for example, Veeam and Caveonix RiskForesight™.
 
-After you start an order, enter the promo code for one or more services in the promo code box and click **Apply**. If you decide to use a different promo code, enter that code in the box and click **Apply** again to calculate a new price.
+After you start an order, enter the promo code for your services in the promo code box and click **Apply**. If you decide to use a different promo code, enter that code in the box and click **Apply** again to calculate a new price.
 
-If you apply a promo code for a service and then remove the service from your order, you must also remove the promo code from the order.
+If you apply a promo code for a service and then delete the service from your order, you must also remove the promo code from the order.
 
-Promotion pricing starts when the promo is applied. The pricing is automatically changed to the recurring price when the promotion period ends. You can see the discounts, promotion price, and recurring price in the PDF file generated for your order.
+Promotion pricing starts when the promo code is applied. The pricing is automatically changed to the recurring price when the promotion period ends. You can see the discounts, promotion price, and recurring price in the PDF file generated for your order.
 
 ## Resource requirements for services
 {: #vc_addingservices-resource-requirements}
@@ -78,7 +78,7 @@ Some services require a minimum amount of resources to be installed.
 
 For certain services, the system completes a capacity check on the targeted clusters before it installs the service in your environment. The check is completed against the available capacity of the targeted cluster in the environment to ensure that the service components can fit.
 
-During deployment, if the capacity check fails, the service is not installed and the service state is set to **Capacity Validation Failed** on the console. In addition, a console message with more details is displayed and you are notified by email. The message displays the expected capacity for all services that do not meet the requirements.
+During deployment, if the capacity check fails, the service is not installed and the service status is set to **Capacity Validation Failed** on the console. In addition, a console message with more details is displayed and you are notified by email. The message displays the expected capacity for all services that do not meet the requirements.
 
 To install the service, you must increase the capacity in your cluster either by adding more VMware ESXi™ servers or by freeing up RAM, CPU, or disk space. After that, you can add the service or services again. To remove the existing service in the **Capacity Validation Failed** state, click the **Delete** icon ![Delete icon](../../icons/delete.svg "Delete") next to it.
 
@@ -94,7 +94,7 @@ The following table provides the resource requirements for the services for whic
 | {{site.data.keyword.redhat_openshift_notm}} | If you install {{site.data.keyword.redhat_openshift_notm}} with vSAN™ storage, the following capacity requirements apply. \n CPU - 9 CPUs \n RAM - 120 GB \n Storage - 1,170 GB \n If you install {{site.data.keyword.redhat_openshift_notm}} with NFS storage, a new 2-TB NFS datastore, which is dedicated to {{site.data.keyword.redhat_openshift_notm}}, is ordered. |
 | Veeam | If you select Veeam as a VSI option, capacity requirements don't apply. \n If you select Veeam as a VM option, the following capacity requirements apply. \n CPU - 8 CPUs \n RAM - 32 GB \n Storage - 100 GB \n If you select Veeam as a bare metal server option, capacity requirements don't apply. |
 | VMware HCX | For each gateway in the active-passive pair of NSX-V Edge Services Gateways: \n CPU - 6 CPUs \n RAM - 8 GB \n Storage - 3 GB VMDK \n For the HCX Management Appliance VM: \n CPU - 4 CPUs \n RAM - 12 GB \n Storage - 60 GB VMDK |
-| vRealize Operations and Log Insight | CPU - 18 CPUs \n RAM - 208 GB \n If you install vRealize Operations with vSAN storage, you must have an estimated 750 GB of vSAN storage. \n If you install vRealize Operations with NFS storage, you do not have a storage requirement because NFS storage is ordered as part of the instance order. |
+| VMware Aria Operations and VMware Aria Operations for Logs | CPU - 18 CPUs \n RAM - 208 GB \n If you install VMware Aria Operations with vSAN storage, you must have an estimated 750 GB of vSAN storage. \n If you install VMware Aria Operations with NFS storage, you do not have a storage requirement because NFS storage is ordered as part of the instance order. |
 | Zerto | CPU - 2 CPUs \n RAM - 4 GB |
 {: caption="Table 2. Resources required for the services that the system checks for capacity requirements" caption-side="bottom"}
 
@@ -165,7 +165,7 @@ Then, follow the instructions in the ordering topic for your chosen service to b
 * [Ordering Juniper vSRX](/docs/vmwaresolutions?topic=vmwaresolutions-juniper-ordering)
 * [Ordering Red Hat OpenShift for VMware](/docs/vmwaresolutions?topic=vmwaresolutions-ocp_ordering)
 * [Ordering Veaam](/docs/vmwaresolutions?topic=vmwaresolutions-veeam_ordering)
-* [Ordering vRealize Operations and Log Insight](/docs/vmwaresolutions?topic=vmwaresolutions-vrops_ordering)
+* [Ordering VMware Aria Operations and VMware Aria Operations for Logs](/docs/vmwaresolutions?topic=vmwaresolutions-vrops_ordering)
 * [Ordering Zerto](/docs/vmwaresolutions?topic=vmwaresolutions-zerto_ordering)
 
 ## Results after you order services for vCenter Server instances

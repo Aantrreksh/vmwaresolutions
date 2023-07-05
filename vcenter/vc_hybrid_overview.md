@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2022
+  years:  2016, 2023
 
-lastupdated: "2022-04-12"
+lastupdated: "2023-06-19"
 
 keywords: vCenter Server Hybridity, hybridity, tech specs vCenter Server Hybridity
 
@@ -24,7 +24,7 @@ The vCenter Server with Hybridity Bundle is a hosted private cloud that delivers
 
 The bare metal infrastructure can rapidly and elastically scale the compute capacity up and down as needed. To increase the vSAN-based storage capacity of a vSAN cluster, you can add more VMware ESXi™ servers to your instance.
 
-You can upgrade the VMware NSX Advanced edition to the Enterprise edition, and you can purchase more VMware components, such as VMware vRealize Operations™.
+You can upgrade the VMware NSX Advanced edition to the Enterprise edition, and you can purchase more VMware components, such as VMware Aria® Operations™.
 
 You can add IBM-managed services if you want to offload the day-to-day operations and maintenance of the virtualization, guest OS, or application layers. The {{site.data.keyword.cloud_notm}} Professional Services team is also available to help you accelerate your journey to the cloud with migration, implementation, planning, and onboarding services.
 
@@ -51,7 +51,7 @@ This layer virtualizes the physical infrastructure through different VMware prod
 ### Virtualization management
 {: #vc_hybrid_overview-virtualization-mgmt}
 
-This layer consists of vCenter Server Appliance with embedded Platform Services Controller (PSC), NSX Manager, two VMware NSX Edge™ Services Gateway (ESGs), three VMware NSX Controllers™, and the IBM CloudDriver virtual server instance (VSI). The CloudDriver VSI is deployed on demand as needed for certain operations such as adding hosts to the environment.
+This layer consists of vCenter Server Appliance with embedded Platform Services Controller (PSC), NSX Manager, two VMware NSX Edge™ Services Gateway (ESGs), three VMware NSX Controllers™, and the IBM CloudDriver virtual server instance (VSI). The CloudDriver VSI was deployed on demand as needed for certain operations such as adding hosts to the environment.
 
 The base offering is deployed with a vCenter Server appliance that is sized to support an environment with up to 400 hosts and up to 4000 VMs. The same vSphere API-compatible tools and scripts can be used to manage the IBM-hosted VMware environment.
 
@@ -99,9 +99,9 @@ For more information about networking components that are ordered when you deplo
 ### Virtual Server Instances
 {: #vc_hybrid_overview-vsi}
 
-Your instance contains the following virtual server instances (VSIs):
-* A VSI for IBM CloudBuilder, which is cancelled after the instance deployment is completed.
-* You can choose to deploy a single Microsoft® Windows® Server VSI for Microsoft Active Directory™ (AD) or two high availability Microsoft Windows VMs in the management cluster to help enhance security and robustness.
+Your existing instance contains the following virtual server instances (VSIs):
+* A VSI for IBM CloudDriver.
+* A single Microsoft® Windows® Server VSI for Microsoft Active Directory™ (AD) or two high availability Microsoft Windows VMs on the management cluster that was chosen at initial deployment.
 
 ### vSAN storage
 {: #vc_hybrid_overview-vsan-storage}

@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-03-29"
+lastupdated: "2023-06-09"
 
 keywords: Zerto, Zerto replication billing, order Zerto
 
@@ -37,17 +37,6 @@ To view your Zerto usage charges, follow these steps:
 
 1. Go to the [IBM Cloud Billing and Usage](https://cloud.ibm.com/billing/usage) page.
 2. From the **Filter by group** list, select **VMware Solutions**.
-
-### Zerto installations from V3.0 or earlier
-{: #zerto_ordering-30-install}
-
-If you have a Zerto installation from V3.0 or earlier, your VM replication costs are still being billed by using {{site.data.keyword.cloud_notm}} infrastructure billing. If your accounts and billing settings meet the requirements that are listed previously, you can convert your Zerto billing method to billable.
-
-On the {{site.data.keyword.vmwaresolutions_short}} console, you are prompted to convert from the {{site.data.keyword.cloud_notm}} infrastructure plan to a billable plan and to upgrade your {{site.data.keyword.cloud_notm}} account to a billable account, if needed.
-
-* For more information about free and billable accounts, see [Account types](/docs/account?topic=account-accounts).
-* For more information about upgrading to a billable account, see [Upgrading your account](/docs/account?topic=account-upgrading-account).
-* For more information about linking your {{site.data.keyword.cloud_notm}} and your {{site.data.keyword.cloud_notm}} infrastructure accounts, see [Enabling MFA for your account](/docs/account?topic=account-enablemfa).
 
 ## Ordering Zerto for a new instance
 {: #zerto_ordering-new}
@@ -83,6 +72,5 @@ For more information about Zerto Call Home, see [How to configure Zerto Reportin
 * [Managing Zerto](/docs/vmwaresolutions?topic=vmwaresolutions-managingzertodr)
 * [Ordering Zerto licenses](/docs/vmwaresolutions?topic=vmwaresolutions-zerto_ordering_licenses)
 * [Managing Zerto licenses](/docs/vmwaresolutions?topic=vmwaresolutions-zerto_managing_licenses)
-* [Managed Disaster Recovery Services by Kyndryl](https://www.kyndryl.com/us/en/services/cyber-resilience){: external}
 * [Zerto](https://www.zerto.com){: external}
 * [Zerto product documentation](https://www.zerto.com/myzerto/technical-documentation/){: external}

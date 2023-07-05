@@ -63,6 +63,14 @@ If necessary, you can disable root access when the ESXi servers have a status of
 
 You must re-enable root access for subsequent automation operations. For example, when you add or remove file shares, or when you install add-on services such as Zerto.
 
+## Can I use OS reload on the ESXi servers in my vCenter Server instance?
+{: #faq_esxi-OS-reload}
+{: faq}
+
+The [OS reload feature](/docs/bare-metal?topic=bare-metal-reloading-the-os) cannot be used for the vCenter Server ESXi servers. By using OS (operating system) reload, the ESXi servers are returned to a previous state before the ESXi servers were added to vCenter Server and to the active directory domain by the automated configuration.
+
+The OS reload deletes the automated configuration of vCenter Server and that configuration cannot be restored.
+
 ## How do I place a host in maintenance mode?
 {: #faq_esxi-maint-mode}
 {: faq}
@@ -70,7 +78,7 @@ You must re-enable root access for subsequent automation operations. For example
 To place a host from a VMware vSAN cluster in maintenance mode, complete the following steps:
 1. Review the three options provided in the VMware vSphere Web Client: **Ensure accessibility**, **Full data migration**, and **No data migration**.
 2. Select the **Ensure accessibility** option.
-3. If failures occur, complete the process using the **Full data migration** option. For more information, see [Place a member of vSAN cluster in maintenance mode](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.virtualsan.doc/GUID-521EA4BC-E411-47D4-899A-5E0264469866.html){: external}.
+3. If failures occur, complete the process by using the **Full data migration** option. For more information, see [Place a member of vSAN cluster in maintenance mode](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.virtualsan.doc/GUID-521EA4BC-E411-47D4-899A-5E0264469866.html){: external}.
 4. If you experience problems, [contact IBM support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support) for assistance.
 
 ## Can I add static routes on my ESXi servers to mount storage from other locations?

@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-04-03"
+lastupdated: "2023-06-20"
 
 keywords: KMIP for VMware, order KMIP, Key Protect, Hyper Protect Crypto Services, HPCS
 
@@ -37,9 +37,9 @@ When you order a KMIP for VMware instance, configure the following settings:
 #### Resource group
 {: #kmip_standalone_ordering-resource-group}
 
-Use resource groups to organize the resources in your account for access control and billing purposes. The default resource group in your account is selected by default. You can also select another resource group according to your needs. The resource group that you select cannot be changed after the instance is created.
+{{site.data.content.para-orderinginstance-resource-group}}
 
-If **No resource group available** is displayed, you currently don't have permission to add the instance to any resource group in this account. Contact the account owner to be assigned an Editor or Administrator role on a resource group in the account. For more information, see [IAM access](/docs/account?topic=account-userroles).
+{{site.data.content.note-orderinginstance-resource-group}}
 
 #### Instance name
 {: #kmip_standalone_ordering-config-instance-name}

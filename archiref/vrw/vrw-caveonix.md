@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2023
 
-lastupdated: "2023-03-21"
+lastupdated: "2023-06-19"
 
 subcollection: vmwaresolutions
 
@@ -18,7 +18,7 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.cloud}} for VMware® Regulated Workloads requires Caveonix RiskForesight™ for continuous compliance monitoring. The {{site.data.keyword.cloud_notm}} for VMware Regulated Workloads architecture is designed to allow compliance with NIST and other compliance certifications as required of the SaaS provider or the SaaS consumer that uses the VMware Regulated Workloads offering.
 
-![Caveonix data flows](../../images/vrw-caveonix-data-flows.svg "Caveonix data flows"){: caption="Figure 1. Caveonix data flows" caption-side="bottom"}
+![Caveonix data flows](../../images/vrw-v2-caveonix.svg "Caveonix data flows"){: caption="Figure 1. Caveonix data flows" caption-side="bottom"}
 
 ## Management cluster
 {: #vrw-caveonix-management}

@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2023
 
-lastupdated: "2023-03-24"
+lastupdated: "2023-06-16"
 
 subcollection: vmwaresolutions
 
@@ -21,7 +21,7 @@ The design extends and enhances the basic VMware vCenter Server® architecture t
 
 {{site.data.keyword.vmwaresolutions_full}} automation is used to deploy all layers of the platform thus consistently delivering a secure and compliant-ready build for every {{site.data.keyword.cloud_notm}} for VMware Regulated Workloads instance ordered.
 
-![IBM Cloud for VMware Regulated Workloads infrastructure overview](../../images/vrw-architecture.svg "IBM Cloud for VMware Regulated Workloads infrastructure overview"){: caption="Figure 1. IBM Cloud for VMware Regulated Workloads infrastructure overview" caption-side="bottom"}
+![IBM Cloud for VMware Regulated Workloads infrastructure overview](../../images/vrw-v2-overview.svg "IBM Cloud for VMware Regulated Workloads infrastructure overview"){: caption="Figure 1. IBM Cloud for VMware Regulated Workloads infrastructure overview" caption-side="bottom"}
 
 The perimeter gateway cluster that is shown in the workload region is the same gateway that runs on the dedicated gateway cluster.
 
@@ -42,13 +42,9 @@ The management software stack includes the following components:
 * vCenter Server, which manages all hosts in the entire {{site.data.keyword.cloud_notm}} for VMware Regulated Workloads instance.
 * Microsoft® AD/DNS servers, which provide DNS and authentication services.
 * NSX-T management components to fully isolate the SDN control plane from the workload cluster.
-* Entrust CloudControl™ is used to unify security policies for access to the management stack. In addition, Entrust CloudControl is used for unified visibility into security configuration and context and continuous compliance by using templates to enforce separation of duties. Entrust CloudControl also provides a robust audit trail that includes a full record of all actions that are taken by security, network, and compute platform administrators. Entrust CloudControl also simplifies compliance with administrative controls requirements in HIPAA, PCI, FedRAMP, CJIS, and other regulations.
-
-![IBM Cloud for VMware Regulated Workloads Entrust overview](../../images/vrw-htcc.svg "IBM Cloud for VMware Regulated Workloads Entrust overview"){: caption="Figure 2. IBM Cloud for VMware Regulated Workloads Entrust overview" caption-side="bottom"}
-
 * Security is further enhanced by IBM Hyper Protect Crypto Services (HPCS). HPCS uses a FIPS 140-2 Level 4 hardware security module (HSM) that gives access to the highest level of security for regulated data and digital assets. HPCS helps meet regulatory compliance requirements by providing complete control of data encryption keys, including the HSM primary key.
 * Caveonix RiskForesight provides a common Risk Management Control Plane (RMCP) for continuous and proactive protection of management and edge workloads. It provides a comprehensive cloud workload protection platform for {{site.data.keyword.cloud_notm}} for VMware Regulated Workloads. The {{site.data.keyword.cloud_notm}} for VMware Regulated Workloads architecture is designed to enable compliance with NIST and other necessary certifications, as required for the SaaS provider and SaaS consumer.
-* VMware vRealize Operations Manager (vROps), vRealize Log Insight (vRLI), and the optional vRealize Network Insight (vRNI). These components collectively provide a native console for vSphere operations, the ability to automate management of the cloud platform, centralized log collection, and network visibility, analysis, and optimization.  
+* VMware Aria® Operations™ Manager, VMware Aria Operations™ for Logs, and the optional VMware Aria Operations™ for Networks. These components collectively provide a console for vSphere operations, the ability to automate management of the cloud platform, centralized log collection, and network visibility, analysis, and optimization.  
 * Veeam provides continuous backup of the management stack for protection against disasters and rapid restoration to known good states if corruption of any management stack component were to occur. Veeam can also provide backup services for the workload cluster. The single site deployment can use the Veeam bare metal option to provide a suitable backup repository.
 
 ## Gateway cluster
@@ -59,7 +55,7 @@ The FortiGate physical 10 Gb HA appliance is the only point of entry into the {{
 ## Workload cluster
 {: #vrw-archi-overview-workloads}
 
-The sizing of four ESXi servers for the workload cluster is based on the required compute resources, memory, and storage needs of the customer applications. The minimum host count of four is a vSAN requirement. Each workload cluster added is provisioned on new VLANs in the same datacenter location to separate traffic of different workload clusters with the firewall, either physical or an appliance that is running on the gateway cluster.
+The sizing of four ESXi servers for the workload cluster is based on the required compute resources, memory, and storage needs of the customer applications. The minimum host count of four is a vSAN requirement. Each workload cluster added is provisioned on new VLANs in the same data center location to separate traffic of different workload clusters with the firewall, either physical or an appliance that is running on the gateway cluster.
 
 vSAN is the storage provider and is fully contained within the workload environment. Therefore, all regulated data is isolated from external access and threats.
 
@@ -78,11 +74,6 @@ Before you deploy a consolidated cluster, consider the following possible securi
 * An attacker who gets access to a workload VM might be able to use future microarchitectural vulnerabilities to steal secrets from or manipulate memory on an ESXi host.
 * An attacker who gets access to a workload VM might be able to use future hypervisor vulnerabilities to escape from the VM and manipulate the management VMs on the same ESXi host.
 
-## Optional management by IBM
-{: #vrw-archi-overview-ibm-services}
-
-The VMware Regulated Workloads offering is available as a self-managed or SaaS provider-managed solution. However, a SaaS provider might choose to deploy the {{site.data.keyword.cloud_notm}} for VMware Regulated Workloads as an IBM-managed offering by bundling in IBM GTS services.
-
 ## How to order VMware Regulated Workloads instances
 {: #vrw-archi-overview-order-inst}
 
@@ -95,5 +86,4 @@ For more information, see:
 
 * [IBM Cloud compliance programs](https://www.ibm.com/cloud/compliance){: external}
 * [Caveonix RiskForesight](/docs/vmwaresolutions?topic=vmwaresolutions-caveonix_considerations)
-* [Entrust CloudControl](/docs/vmwaresolutions?topic=vmwaresolutions-entrust-cc_considerations)
-* [vRealize Operations and Log Insight](/docs/vmwaresolutions?topic=vmwaresolutions-vrops_overview)
+* [VMware Aria Operations and VMware Aria Operations for Logs](/docs/vmwaresolutions?topic=vmwaresolutions-vrops_overview)

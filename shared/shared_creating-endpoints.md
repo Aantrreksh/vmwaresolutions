@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2021, 2022
+  years:  2021, 2023
 
-lastupdated: "2022-11-24"
+lastupdated: "2023-06-23"
 
 keywords: VMware Solutions Shared create private network endpoint
 
@@ -43,7 +43,7 @@ When you create a private network endpoint, you must specify the following setti
 
 Select from the following device type options:
 
-* Multi-tenant
+* Multitenant
 * Dedicated with 1 Gbps uplinks
 * Dedicated with 10 Gbps uplinks
 

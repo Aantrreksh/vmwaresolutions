@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2023
 
-lastupdated: "2023-04-18"
+lastupdated: "2023-06-12"
 
 subcollection: vmwaresolutions
 
@@ -28,7 +28,7 @@ The following list provides the services that you might currently use:
 * [Juniper vSRX](/docs/vmwaresolutions?topic=vmwaresolutions-juniper-overview)
 * [{{site.data.keyword.redhat_openshift_notm}} for VMware](/docs/vmwaresolutions?topic=vmwaresolutions-ocp_overview)
 * [Veeam](/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview)
-* [vRealize Operations and Log Insight](/docs/vmwaresolutions?topic=vmwaresolutions-vrops_overview)
+* [VMware Aria Operations and VMware Aria Operations for Logs](/docs/vmwaresolutions?topic=vmwaresolutions-vrops_overview)
 * [Zerto](/docs/vmwaresolutions?topic=vmwaresolutions-addingzertodr)
 
 Plan to migrate these services to new services on the VMware NSX-T™ environment.
@@ -151,19 +151,19 @@ The migration approach would be to:
 * Create a migration plan, which includes how to handle data from the applications that are being migrated.
 * Consider the use of Migration Toolkit for Containers. 
 
-## vRealize Operations and Log Insight
+## VMware Aria Operations and VMware Aria Operations for Logs
 {: #v2t-optionalservices-vropsvli}
 
-vRealize® Operations and Log Insight™ is available for vCenter Server with NSX-T instances.
+VMware Aria® Operations™ and VMware Aria Operations™ for Logs is available for vCenter Server with NSX-T instances.
 
-The primary use case for vRealize Operations and Log Insight is to capture performance, capacity, and logging messages for the vCenter Server instance. A secondary use case is to capture performance, capacity, and logging messages for the workload VMs hosted on the vCenter Server instance.
+The primary use case for VMware Aria Operations and VMware Aria Operations for Logs is to capture performance, capacity, and logging messages for the vCenter Server instance. A secondary use case is to capture performance, capacity, and logging messages for the workload VMs hosted on the vCenter Server instance.
 
 The migration approach for the primary use case would be to:
 
-* Provision vCenter Server with NSX-T with the vRealize Operations and Log Insight service.
+* Provision vCenter Server with NSX-T with the VMware Aria Operations and VMware Aria Operations for Logs service.
 * No performance, capacity, or log messages for the NSX-V instance components need to be retained as the instance will be deleted.
-* When the vCenter Server with NSX-V is deleted, the vRealize Operations and Log Insight service will also be deleted.
-* Migrate the content of the vCenter Server with NSX-V vRealize Operations Manager to vRealize Operations Manager to vCenter Server with NSX-T following VMware documentation.
+* When the vCenter Server with NSX-V is deleted, the VMware Aria Operations and VMware Aria Operations for Logs service will also be deleted.
+* Migrate the content of the vCenter Server with NSX-V with the VMware Aria Operations and VMware Aria Operations for Logs service to vCenter Server with NSX-T by following the VMware documentation.
 
 ## Related links
 {: #v2t-optional-services-links}

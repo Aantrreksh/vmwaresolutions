@@ -2,11 +2,11 @@
 
 copyright:
 
-  years:  2016, 2022
+  years:  2016, 2023
 
-lastupdated: "2022-07-20"
+lastupdated: "2023-06-13"
 
-keywords: vSphere order cluster, order vSphere, order vSphere cluster
+keywords: vmware vSphere order instance, order vSphere, order vmware vSphere instance
 
 subcollection: vmwaresolutions
 
@@ -17,15 +17,12 @@ subcollection: vmwaresolutions
 # General information
 {: #vs_orderinginstances-sys-settings}
 
-You must specify the following system settings when you order a new VMware vSphere® cluster.
-
-* Select **Create new** to specify settings for a cluster based on a new or an existing configuration template.
-* Select **Scale existing** to scale an existing cluster based on an existing configuration template.
+The information that you specify for a new VMware vSphere® instance is based on a cluster configuration template.
 
 ## Cluster configurations
 {: #vs_orderinginstance-cluster-config}
 
-* You can select **New cluster** to specify settings for a cluster and place the order, or save the settings as a configuration template without placing an order.
+* You can specify settings for an instance and place the order, or save the settings as a configuration template without placing an order.
 * You can also select a saved configuration template to further update it, and then save it as a new configuration template.
 
 ## Cluster name
@@ -39,4 +36,4 @@ The cluster name is set to **vss-_xx_** by default, where _xx_ represents two ra
 {: #vs_orderinginstances-sys-related}
 
 * [Licensing](/docs/vmwaresolutions?topic=vmwaresolutions-vs_orderinginstances-licensing-settings)
-* [Procedure to order vSphere clusters](/docs/vmwaresolutions?topic=vmwaresolutions-vs_orderinginstances-procedure#vs_orderinginstances-procedure-related)
+* [Procedure to order VMware vSphere instances](/docs/vmwaresolutions?topic=vmwaresolutions-vs_orderinginstances-procedure)

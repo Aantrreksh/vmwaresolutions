@@ -4,7 +4,7 @@ copyright:
 
   years:  2023
 
-lastupdated: "2023-04-17"
+lastupdated: "2023-06-19"
 
 subcollection: vmwaresolutions
 
@@ -15,7 +15,7 @@ subcollection: vmwaresolutions
 # Immutable backup solution architecture
 {: #veeam-cr-sa-ib}
 
-The immutable backup solution architecture is suitable for clients who want to extend their VMware vCenter Server® instance with the Veeam® service to use immutable storage while minimizing costs. The immutable backup solution architecture does not preclude any of the vCenter Server options such as Caveonix, Entrust, and vRealize Operations™.
+The immutable backup solution architecture is suitable for clients who want to extend their VMware vCenter Server® instance with the Veeam® service to use immutable storage and minimize costs. The immutable backup solution architecture does not preclude any of the vCenter Server options such as Caveonix, Entrust, and VMware Aria® Operations™.
 
 The solution architecture is enabled by the following key technologies:
 
@@ -24,7 +24,7 @@ The solution architecture is enabled by the following key technologies:
    * Veeam vPower NFS service enables a virtual machine (VM) to be started and run directly from the backup file that is hosted in the backup repository.
    * Veeam Instant Restore enables a VM to be started directly from the backup files. Veeam vPower NFS service is used to access the backup files.
    * The Veeam VM Recovery with the restore to new location option, enables a copy of the VM to be started and connected to an isolated network. The backup file is converted to VMDK files and placed in the designated data store.
-   * Veeam Secure Restore is only available for Microsoft® Windows® VMs. It is an extra option in the VM Recovery workflow that enables the VM to be scanned by antivirus software before restoring the VM. The VMs disks are connected to a mount server and then the antivirus software on the mount server that is used to scan files from the mounted disks.
+   * Veeam Secure Restore is only available for Microsoft® Windows® VMs. It is an extra option in the VM Recovery workflow that enables the VM to be scanned by antivirus software before you restore the VM. The VMs disks are connected to a mount server and then the antivirus software on the mount server that is used to scan files from the mounted disks.
    * VMware NSX-T™ overlay segments allow the creation of isolated segments onto which copies of the VMs can be attached and isolated from the production VMs.
    * NSX-T distributed firewall provides the required isolation so that only required cybertoolsets can access the copies of the VMs.
    * Source Network Address Translation (SNAT) and Destination Network Address Translation (DNAT) are used to allow IP access between the cybertoolsets and the copies of the VMs.
@@ -37,7 +37,7 @@ The following diagram shows the high-level view of the solution architecture.
 
 The following components are prerequisites for the immutable backup solution architecture:
 
-* vCenter Server instance - The management or consolidated cluster in the vCenter Server instance provides the compute and network resources to host the management appliances and your customer workloads. If the vSAN option in the vCenter Server instance ordering is used, then the vCenter Server instance also provides the storage resources. The vCenter Server instance consists of one or more clusters that host vSphere® ESXi hosts. The following VMs are hosted on the consolidated or management cluster:
+* vCenter Server instance - The management or consolidated cluster in the vCenter Server instance provides the compute and network resources to host the management appliances and your customer workloads. If the vSAN option in the vCenter Server instance order is used, then the vCenter Server instance also provides the storage resources. The vCenter Server instance consists of one or more clusters that host vSphere® ESXi hosts. The following VMs are hosted on the consolidated or management cluster:
    * Customer workloads are your VMs that are being backed up by the Veeam service and that you want some or all of them to use immutable backup.
    * The vCenter server appliance manages the vSphere resources and provides a single management plane.
    * The NSX-T manager cluster consists of three manager appliances that provide the management and control plane for the virtualized networks, also known as the overlay networks.
@@ -51,10 +51,10 @@ The following components are prerequisites for the immutable backup solution arc
 Your existing vCenter server environment might differ from the previous due to a number of reasons, including:
 
 * You have a vCenter Server instance with vSAN. This solution architecture does not dictate the type of vSphere data store.
-* You have extra optional services, such as Caveonix, vRealize Operations™ Manager, and vRealize Log Insights™.
-* You select a different option for the Veeam service as three options are available. This solution architecture does not dictate the VM option for the Veeam service. VSI or bare metal are also available. For more information, see [Veeam Backup and Replication 12 overview](https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview).
+* You have extra optional services, such as Caveonix, VMware Aria Operations Manager, and VMware Aria Operations™ for Logs.
+* You select a different option for the Veeam service as three options are available. This solution architecture does not dictate the VM option for the Veeam service. VSI or bare metal options are also available. For more information, see [Veeam Backup and Replication 12 overview](https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview).
 * You expand your Veeam service from a simple deployment "all-in-one" to an advanced deployment by deploying extra Veeam components on different servers.
-* You select a different ADDNS option. This solution architecture does not dictate the type of option, either two VMs or single VSI are available. For more information, see [Domain Name System Configuration](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-network-interface-settings#vc_orderinginstance-dns-config).
+* You select a different ADDNS option. This solution architecture does not dictate the type of option, either two VMs or a single VSI options are available. For more information, see [Domain Name System Configuration](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-network-interface-settings#vc_orderinginstance-dns-config).
 
 If you have a vCenter Server instance that is deployed with the Veeam service added and Veeam is version 12, then this is a suitable base topology for the immutable backup solution architecture. The immutable backup solution architecture consists of:
 
@@ -63,9 +63,9 @@ If you have a vCenter Server instance that is deployed with the Veeam service ad
 
 The solution architecture does not show the components to adhere to the 3-2-1 backup rule. The 3-2-1 rule describes a backup architecture that:
 
-* 3 - At least three copies of data, which are production, primary backup, and backup copy.
-* 2 - Use of two different types of media.
-* 1 - Keep one backup copy offsite.
+* 3 - At least three copies of data: production, primary backup, and backup copy
+* 2 - Use of two different types of media
+* 1 - Keep one backup copy offsite
 
 To adhere to this rule, consider:
 

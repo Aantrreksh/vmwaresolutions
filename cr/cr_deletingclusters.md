@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2023
 
-lastupdated: "2023-04-03"
+lastupdated: "2023-05-17"
 
 keywords: Cyber Recovery delete clusters, delete clusters, delete Cyber Recovery clusters, delete Cyber Recovery clusters
 
@@ -23,10 +23,9 @@ You can delete clusters from Cyber Recovery instances when you do not need them.
 {: #cr_deletingclusters-before}
 
 * Whenever possible, delete clusters by using the {{site.data.keyword.vmwaresolutions_full}} console and not the VMware vSphere® Web Client. Changes that you make on the vSphere Web Client are not synchronized with the VMware Solutions console. If you want to delete clusters from Cyber Recovery instances by using the vSphere Web Client, do so only for on-premises clusters or clusters that you don't manage in the VMware Solutions console.
-* You can delete only clusters that are added as part of Day 2 operations. Clusters that are created during initial deployment can't be deleted.
-* You can delete a single cluster at a time. To delete more than one cluster, you must do it in sequence. Wait for the previous cluster to be deleted before you delete the next cluster.
+* You can delete any cluster except for the first cluster (the one that is created during initial deployment).
+* You can delete multiple clusters at a time. You can also delete a cluster while another cluster is being created or deleted.
 * Ensure that all nodes in a cluster are powered on and operational before you delete the cluster.
-* You can add or delete a cluster while another cluster is being created or deleted.
 * When you delete a cluster, all virtual machines (VMs) from the cluster are also deleted, and they can't be recovered. If you want to keep the VMs, migrate them to other clusters.
 * You don't have to delete any services that are installed on a cluster. The services are automatically deleted when you delete the cluster.
 

@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2023
 
-lastupdated: "2023-04-05"
+lastupdated: "2023-06-02"
 
 keywords: planning VMware Solutions Shared, data center, VMware Solutions Shared data centers
 
@@ -27,8 +27,6 @@ Price calculations are automatically generated when you access the VMware Shared
 
 To order VMware Shared, you must have a **Pay As You Go** or **Subscription** {{site.data.keyword.cloud_notm}} account. The cost of the resources that are ordered is billed to that {{site.data.keyword.cloud_notm}} account.
 
-
-
 ## Virtual data center name requirements
 {: #shared_ordering-vdc-name-req}
 
@@ -50,10 +48,22 @@ The following {{site.data.keyword.cloud_notm}} data centers are available for VM
 | Europe | Frankfurt Director 01 | Frankfurt 02 | None | No |
 | Europe | Frankfurt Director 01 | Frankfurt 04 | None | No |
 | Europe | Frankfurt Director 01 | Frankfurt 05 | None | No |
+{: caption="Table 1. Available {{site.data.keyword.cloud_notm}} data centers for deployment" caption-side="bottom"}
+{: tab-title="Europe"}
+{: tab-group="Data centers for deployment"}
+{: class="simple-tab-table"}
+{: #simpletabtable-cr-eur}
+
+| Geography | Site | Location | vSAN support | Multizone support |
+|:----------|:----------|:----------|:-------|:-------|
 | North America | Dallas Director 01 | Dallas 10 | vSAN | No |
 | North America | Dallas Director 01 | Dallas 12 | vSAN | No |
 | North America | Dallas Director 01 | Dallas 13 | vSAN | No |
 {: caption="Table 1. Available {{site.data.keyword.cloud_notm}} data centers for deployment" caption-side="bottom"}
+{: tab-title="North America"}
+{: tab-group="Data centers for deployment"}
+{: class="simple-tab-table"}
+{: #simpletabtable-cr-northamerica}
 
 ## Services for VMware Shared instances
 {: #shared_planning-addon-services}

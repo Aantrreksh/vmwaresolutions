@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2023
 
-lastupdated: "2023-04-18"
+lastupdated: "2023-06-26"
 
 keywords: Cyber Recovery add NFS storage, Cyber Recovery NFS storage, add NFS storage Cyber Recovery
 
@@ -39,8 +39,8 @@ You can expand the capacity of your Cyber Recovery instance according to your bu
 4. In the **Clusters** table, click the cluster to which you want to add NFS storage.
 5. In the **Storage** section, click **Add**.
 6. In the **Add NFS storage** side panel, complete the storage configuration.
-   * If you want to add and configure the same settings to all file shares, specify the **Number of shares**, **Size (GB)**, and **Performance**.
-   * If you want to add and configure file shares individually, toggle the **Configure shares individually** switch on, then click **Add shared storage** and select the **Size (GB)** and **Performance** for each individual file share. You must select at least one file share. For more information, see [NFS storage](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-consoldworkldcluster-settings#vc_orderinginstance-nfs-storage).
+   * To add and configure the same settings to all file shares, specify the **Number of shares**, **Size (GB)**, and **Performance**.
+   * To add and configure file shares individually, toggle the **Configure shares individually** switch on, then click **Add shared storage** and select the **Size (GB)** and **Performance** for each individual file share. You must select at least one file share. For more information, see [NFS storage](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-consold-cluster#vc_orderinginstance-nfs-storage).
 7. Review the estimated price and click **Add**.
 
 ## Results after you add NFS storage to Cyber Recovery instances
@@ -48,7 +48,7 @@ You can expand the capacity of your Cyber Recovery instance according to your bu
 
 1. You might experience a slight delay on the console while the instance status changes from **Available** to **Modifying**. Allow the operation to complete before you make more changes to the instance.
 2. You are notified by email that your request to add NFS storage is being processed. On the console, the status of the cluster that is associated with the NFS storage is changed to **Modifying**.
-3. If you do not see that the new NFS storage is added to the list in the cluster, check the email or console notifications to find more details about the failure.
+3. If you do not see that the new NFS storage is added to the list in the cluster, check your email or console notifications for more details.
 
 ## Related links
 {: #cr_addingnfs-related}

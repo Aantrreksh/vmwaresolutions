@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2023
 
-lastupdated: "2023-03-03"
+lastupdated: "2023-06-19"
 
 subcollection: vmwaresolutions
 
@@ -29,14 +29,14 @@ In the initial stage, the complexity of the migration is estimated. An aspect of
 * Logical networking and security configurations - Detailed parameters that are used in the configuration of the NSX-V network and security. Logical switches, routing, distributed firewall, edge firewall, NAT, VPNs, and load balancing are included.
 * Clusters and hosts - Information on the clusters and their hosts.
 * Workload virtual machines - Placement of VMs, and their relationships to each other.
-* Integration - External tools that integrate with vCenter or NSX-V Manager, such as Veeam®, vRealize Operations™ Manager, vRealize Automation, custom scripts, and other tools.
+* Integration - External tools that integrate with vCenter or NSX-V Manager, such as Veeam®, VMware Aria® Operations™ Manager, VMware Aria® Automation™, custom scripts, and other tools.
 
 The following factors govern the complexity of migration:
 
 * Project-based factors - such as how is the project that is being staffed.
 * Architecture factors - such as changes to the existing NSX-V environment since deployment.
 * Micro-segmentation factors - such as the use of distributed firewall rules and the use of tagging in these rules.
-* Integration factors - what systems are integrating with NSX-V Manager and vCenter as both these components are replaced in the migration. Integrated systems can include vRealize Automation, vRealize Operations, vRealize Orchestrator, SEIM or security tools, backup and recovery, replication, F5, vSRX, FortiGate, or other third-party network applications.
+* Integration factors - what systems are integrating with NSX-V Manager and vCenter as both these components are replaced in the migration. Integrated systems can include VMware Aria Automation, VMware Aria Operations, VMware Aria Orchestrator, SEIM or security tools, backup and recovery, replication, F5, vSRX, FortiGate, or other third-party network applications.
 
 For more information, see [Assess migration complexity](/docs/vmwaresolutions?topic=vmwaresolutions-v2t-complexity).
 
@@ -84,9 +84,7 @@ Based on the source environment complexity, you must consider the following targ
 * Single site VMware vCenter Server® instance - An automated provisioning offering that deploys hardware and software in a defined pattern. After initial deployment, you must add capacity and additional services to a number of automated workflows as needed. For more information, see [vCenter Server overview](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview). The types of vCenter Server instances include:
    * Regulated Workloads. For more information, see [VMware Regulated Workloads overview](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-overview).
    * VMware Security and Compliance Readiness Bundle. For more information, see [Security and Compliance Readiness Bundle overview](/docs/vmwaresolutions?topic=vmwaresolutions-scb-overview).
-* Multisite or location vCenter Server instance - The vCenter Server offering can be deployed in multiple locations to create a multisite or location vCenter Server instance:
-   * The vCenter Server multisite deployment pattern is two or more instances that are deployed into a common root domain and single sign-on domain with vCenters in Enhanced Link Mode. Each site or location has its own NSX-T instance. For more information, see [Multisite configuration for vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_multisite).
-   * Regulated Workloads multizone is a single instance that uses VMware stretched vSAN™ to protect against host and hardware failures with high availability if a single-zone data center failure occurs. For more information, see [Multizone region](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-mzr).
+* Multisite or location vCenter Server instance - The vCenter Server offering can be deployed in multiple locations to create a multisite or location vCenter Server instance. The vCenter Server multisite deployment pattern is two or more instances that are deployed into a common root domain and single sign-on domain with vCenters in Enhanced Link Mode. Each site or location has its own NSX-T instance. For more information, see [Multisite configuration for vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_multisite).
 
 The vCenter Server multizone offering is now deprecated. For more information, see [vCenter Server multizone BOM](/docs/vmwaresolutions?topic=vmwaresolutions-mcv-archi-bom).
 {: note}

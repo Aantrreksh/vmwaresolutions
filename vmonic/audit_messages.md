@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2016, 2021
+  years: 2016, 2023
 
-lastupdated: "2021-09-10"
+lastupdated: "2023-06-09"
 
 keywords: history message, audit history, error messages
 
@@ -177,17 +177,6 @@ The following sections provide all of the possible messages that can be issued t
 * ``Virtual server instance cancellation in progress...``
 * ``Cancelling associated virtual server instances...``
 * ``Virtual server instance cancellation is complete.``
-
-## IBM CloudBuilder history messages
-{: #audit_messages-cloudbuilder}
-
-{{site.data.keyword.vmwaresolutions_short}} issues the following messages for IBM CloudBuilder.
-
-* ``Verifying the IBM CloudBuilder Virtual Server Instance order...``
-* ``Starting the order for the IBM CloudBuilder Virtual Server Instance...``
-* ``The IBM CloudBuilder Virtual Server Instance is ready.``
-* ``The IBM CloudBuilder is ready for service.``
-* ``Dismissing the IBM CloudBuilder Virtual Server Instance...``
 
 ## IBM CloudDriver history messages
 {: #audit_messages-clouddriver}

@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-04-25"
+lastupdated: "2023-06-09"
 
 keywords: vCenter Server order instance, order vCenter Server, order vCenter Server instance
 
@@ -31,8 +31,8 @@ Ensure that you complete the following tasks:
 * Review the information in [Planning for vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_planning).
 * Review the domain name format. The domain name is used to generate the username and server names of the instance.
 
-The subdomain label is not used for VMware vSphere® 7.0 instances.
-{: note}
+The subdomain label is used only for existing VMware vSphere® 6.x instances.
+{: deprecated}
 
 | Name        | Value format |
 |:------------|:------------ |
@@ -44,5 +44,5 @@ The subdomain label is not used for VMware vSphere® 7.0 instances.
 | NetBIOS name | First string of `<root_domain>`. The maximum length is 15 characters. |
 {: caption="Table 1. Value format for instance and domain names" caption-side="bottom"}
 
-After the instance is provisioned, do not modify any values that are set during instance order. Otherwise, the instance might become unusable. For example, if public networking shuts down, if servers and Virtual Server Instances (VSIs) move behind a Vyatta mid-provision, or if the IBM CloudBuilder VSI stops or is deleted.
+After the instance is provisioned, do not modify any values that are set during instance order. Otherwise, the instance might become unusable. For example, if public networking shuts down or if servers and Virtual Server Instances (VSIs) move behind a Vyatta mid-provision.
 {: attention}

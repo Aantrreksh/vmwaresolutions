@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2022
+  years:  2016, 2023
 
-lastupdated: "2022-06-21"
+lastupdated: "2023-06-08"
 
 keywords: vmware solutions data sheet, vmware solutions developer, vmware solutions video
 
@@ -38,25 +38,15 @@ Review the architecture of all the [Virtualization Platform Extensions](https://
 * VMware NSX Edge™ Services Gateway
 * Secure virtualization
 * Veeam® backup and replication
-* vRealize® automation
+* VMware Aria® Automation
 * Zerto disaster recovery
 
 ## Videos and demonstrations
 {: #additional_resources-demos}
 
-### Digital Technical Engagement
-{: #additional_resources-dte}
-
-* [Caveonix RiskForesight](https://www.ibm.com/demos/collection/Caveonix-RiskForesight-on-IBM-Cloud/){: external}
-* [VMware Solutions on {{site.data.keyword.cloud_notm}}](https://www.ibm.com/demos/collection/IBM-Cloud-for-VMware-Solutions/){: external}
 * [Veeam on {{site.data.keyword.cloud_notm}}](https://www.ibm.com/demos/collection/Veeam-on-IBM-Cloud){: external}
 * [Zerto on {{site.data.keyword.cloud_notm}}](https://www.ibm.com/demos/collection/Zerto-on-IBM-Cloud){: external}
-
-### More videos and demonstrations
-{: #additional_resources-more}
-
 * [Resources and videos](https://www.ibm.com/cloud/architecture/architectures/virtualizationArchitecture/resources){: external}
-* [Featured resources and case studies](https://www.ibm.com/cloud/vmware){: external}
 
 ## VMware documentation
 {: #additional_resources-vmware-doc}

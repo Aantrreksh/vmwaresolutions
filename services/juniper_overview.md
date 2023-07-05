@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2023
 
-lastupdated: "2023-03-21"
+lastupdated: "2023-06-12"
 
 keywords: Juniper vSRX, manage Juniper vSRX, Juniper vSRX virtual security appliance, Juniper virtual security appliance, Juniper vSRX console
 
@@ -22,7 +22,7 @@ Juniper® vSRX on IBM Cloud is a virtual security appliance that provides securi
 
 {{site.data.content.para-promotion-add-on-services}}
 
-The Juniper vSRX version available for deployment is 3.0 (21.4R2).
+The Juniper vSRX version available for deployment is 3.0 (23.1R1).
 {: note}
 
 For more information about vSRX and the vSRX 3.0 architecture, see [vSRX Deployment Guide for Private and Public Cloud Platforms](https://www.juniper.net/documentation/us/en/software/vsrx/vsrx-consolidated-deployment-guide/index.html){: external}.
@@ -64,7 +64,7 @@ The following components are ordered and included in the Juniper vSRX service:
 ### High availability
 {: #juniper-overview-specs-ha}
 
-On management cluster installs, the two vSRX nodes are deployed with DRS rules. This deployment ensures that the VMs reside on two physically separate hosts and do not migrate, that is, they’re pinned. If a host must be replaced or redeployed, you must adjust the preconfigured DRS rules before you can proceed.
+For installations on the management cluster, the two vSRX nodes are deployed with DRS rules. This deployment ensures that the VMs reside on two physically separate hosts and do not migrate, that is, they’re pinned. If a host must be replaced or redeployed, you must adjust the preconfigured DRS rules before you can proceed.
 
 ### Networking
 {: #juniper-overview-specs-network}

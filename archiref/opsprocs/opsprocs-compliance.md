@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2022
+  years:  2016, 2023
 
-lastupdated: "2022-07-14"
+lastupdated: "2023-05-23"
 
 subcollection: vmwaresolutions
 
@@ -26,7 +26,7 @@ The VMware Security Hardening Guides provide prescriptive guidance on how to dep
 
 Many of the controls that are documented in the VMware® Security Hardening Guides are incorporated in the {{site.data.keyword.vmwaresolutions_full}} reference architecture and therefore, automatically deployed, ensure that you tailor the security posture of the platform to your own needs and enterprise policy. The VMware Security Hardening Guides provide the technology-specific controls that are required for you to complete this review. Caveonix RiskForesight automates this compliance task and provides additional regulatory agency guidance.
 
-vRealize Operations Manager provides monitoring of VMware objects for violations against the compliance rules in the vSphere Security Configuration Guide. The compliance alerts trigger on the vCenter Server instance, hosts, virtual machines, distributed port groups, or distributed switches, allowing the investigation of the compliance violation. For Health Insurance Portability and Accountability Act (HIPAA) and Payment Card Industry Data Security Standard (PCI DSS) compliance, you can download vRealize Operations Manager Compliance Packs from the VMware Solutions Exchange website, licensed, and installed. These Compliance Packs provide Alerts, policies, and Reports to validate the vSphere resources against the HIPAA and PCI hardening guides.
+VMware Aria® Operations™ Manager provides monitoring of VMware objects for violations against the compliance rules in the vSphere Security Configuration Guide. The compliance alerts trigger on the vCenter Server instance, hosts, virtual machines, distributed port groups, or distributed switches, allowing the investigation of the compliance violation. For Health Insurance Portability and Accountability Act (HIPAA) and Payment Card Industry Data Security Standard (PCI DSS) compliance, you can download VMware Aria Operations Manager Compliance Packs from the VMware Solutions Exchange website, licensed, and installed. These Compliance Packs provide Alerts, policies, and Reports to validate the vSphere resources against the HIPAA and PCI hardening guides.
 
 ## Related links
 {: #opsprocs-compliance-links}

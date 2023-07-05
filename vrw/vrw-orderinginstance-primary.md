@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2023
 
-lastupdated: "2023-02-17"
+lastupdated: "2023-06-19"
 
 keywords: vmware regulated workloads, vmware regulated workloads order instance, order vmware regulated workloads, vmware regulated workloads instances
 
@@ -14,7 +14,7 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Primary cluster (Single-zone VMware instance only)
+# Primary cluster
 {: #vrw-orderinginstance-consldt-cluster}
 
 ## Cluster name
@@ -40,7 +40,7 @@ You can start with a smaller footprint by deploying a consolidated management an
 ## Number of bare metal servers
 {: #vrw-orderinginstance-consldt-bare-metal}
 
-You can order 4 - 20 servers. All servers have the same configuration.
+You can order 4-51 servers. All servers have the same configuration.
 
 ## vSAN configuration
 {: #vrw-orderinginstance-consldt-vsan}
@@ -69,11 +69,16 @@ The networking type is set to **Private network only** by default.
 
 {{site.data.content.uplink-speed-options-cascadelake-list}}
 
-{{site.data.content.simpletable-uplink-speed-locations}}
+{{site.data.content.simpletable-uplink-speed-locations-ap}}
+
+{{site.data.content.simpletable-uplink-speed-locations-eur}}
+
+{{site.data.content.simpletable-uplink-speed-locations-naeast}}
+
+{{site.data.content.simpletable-uplink-speed-locations-nasouth}}
 
 ## Related links
 {: #vrw-orderinginstance-primary-related}
 
-* [Witness cluster (Multizone VMware instance only)](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-orderinginstance-witness-cluster)
 * [Procedure to order VMware Regulated Workloads](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-orderinginstance-procedure)
 * [VMware Regulated Workloads reference architecture overview](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-archi-overview)

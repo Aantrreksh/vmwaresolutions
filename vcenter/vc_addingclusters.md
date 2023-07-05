@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2023
 
-lastupdated: "2023-06-22"
+lastupdated: "2023-06-26"
 
 keywords: vCenter Server add clusters, add cluster, vCenter Server cluster
 
@@ -19,18 +19,20 @@ subcollection: vmwaresolutions
 
 You can add clusters to VMware vCenter Server® instances to expand the compute and storage capacity. Within a cluster, you can manage VMware ESXi™ servers for better resource allocation and high availability.
 
+Adding clusters to vCenter Server instances with VMware vSphere® 6.5 or 6.7 is not supported.
+{: deprecated}
+
 ## Before you add clusters to vCenter Server instances
 {: #vc_addingclusters-before}
 
-* Adding clusters to vCenter Server instances with VMware vSphere® 6.5 is not supported.
 * {{site.data.content.para-vcenteraddclusters}}
-* The number of clusters, hosts, and virtual machines (VMs) determines the maximum limit for the number of clusters you can add. You must remain within the VMware® sizing guidelines and limits for your deployment. For more information about maximum limits, see [VMware configuration maximums](https://configmax.vmware.com/home){: external}.
-* You can add or delete a cluster while another cluster is being created or deleted.
+* The number of clusters, hosts, and virtual machines (VMs) determines the maximum number of clusters that you can add. You must remain within the VMware® sizing guidelines and limits for your deployment. For more information, see [VMware configuration maximums](https://configmax.vmware.com/home){: external}.
+* You can add a cluster while another cluster is being created or deleted.
 
 ## Cluster type
 {: #vc_addingclusters-cluster-type}
 
-Select the cluster type, **Workload cluster** or **Gateway cluster**.
+Select the cluster type: **Workload cluster** or **Gateway cluster**.
 
 ## System settings for workload clusters
 {: #vc_addingclusters-sys-settings-workload}
@@ -58,12 +60,12 @@ Review the following information and specify the licensing setting for the VMwar
 ### Bare metal server settings
 {: #vc_addingclusters-bare-metal-settings}
 
-CPU generation types differ depending on the version that your instance was initially deployed in. You can choose between the following server types: **Cascade Lake**, **SAP-certified**, or **Skylake**.
+The CPU models differ depending on the version that your instance was initially deployed in. You can choose between the following server types: **Cascade Lake**, **SAP-certified Cascade Lake**, or **Skylake**.
 
 #### Data center location
 {: #vc_addingclusters-dc-location}
 
-The {{site.data.keyword.cloud}} data center location of the cluster is set to the {{site.data.keyword.cloud_notm}} data center of the vCenter Server instance by default. You can deploy the cluster to a different {{site.data.keyword.cloud_notm}} data center than the deployed instance if you ensure that the network latency between the two {{site.data.keyword.cloud_notm}} data centers is less than 150 ms. To check the network latency, you can use a tool such as [Looking Glass](http://lg.softlayer.com/){: external}.
+The {{site.data.keyword.cloud}} data center location of the cluster is set to the {{site.data.keyword.cloud_notm}} data center of the vCenter Server instance by default. You can deploy the cluster to a different {{site.data.keyword.cloud_notm}} data center than the deployed instance if you ensure that the network latency between the two {{site.data.keyword.cloud_notm}} data centers is less than 150 ms.
 
 If you deploy the cluster to a different {{site.data.keyword.cloud_notm}} data center or {{site.data.keyword.cloud_notm}} infrastructure pod, three extra VLANs are ordered for use with the ordered {{site.data.keyword.cloud_notm}} bare metal servers.
 
@@ -88,21 +90,17 @@ Available options might differ depending on the version that your instance was i
 
 {{site.data.content.simpletabtable-cascade-nsxv}}
 
-#### SAP-certified
+#### SAP-certified Cascade Lake
 {: #vc_addingclusters-sap}
 
 {{site.data.content.sap-para-intro}}
 
-{{site.data.content.simpletabtable-sap-netweaver}}
-
-{{site.data.content.simpletabtable-sap-hana}}
+{{site.data.content.simpletabtable-sap-netweaverandhana}}
 
 #### Number of bare metal servers
 {: #vc_addingclusters-bare-metal-number}
 
-* All servers that you order have the same configuration.
-* For NFS storage, you can order 2-59 servers. However, for production workloads, a minimum of 3 servers is recommended. For more information, see [Is a two-node vCenter Server instance highly available?](/docs/vmwaresolutions?topic=vmwaresolutions-faq-vmwaresolutions#is-a-two-node-vcenter-server-instance-highly-available)
-* For vSAN™ storage, you can order 4-59 servers.
+{{site.data.content.exception-number-of-baremetal-servers}}
 
 ### Storage settings
 {: #vc_addingclusters-storage-settings}
@@ -182,7 +180,7 @@ Bring Your Own License (BYOL) is no longer supported except for migrations or up
 
 The **Use existing license** option is available only if you are using a BYOL vSAN license for your instance. When the option is enabled, you can select the existing license only if the instance has enough capacity for the additional hosts.
 
-If your initial cluster was a vSAN cluster, any additional vSAN clusters use the same vSAN license and have the same configuration as the initial one. This behavior is also true if any cluster (initial or additional) in the instance has vSAN chosen to be deployed on it. The first time you're prompted for the vSAN license (BYOL or purchased) and the edition. The next time that you select vSAN for a new cluster, the license that was chosen initially is reused.
+If your initial cluster was a vSAN cluster, any additional vSAN clusters use the same vSAN license and have the same configuration as the initial one. This behavior is also true if any cluster (initial or additional) in the instance has vSAN chosen to be deployed on it. The first time you're prompted for the vSAN license and the edition. The next time that you select vSAN for a new cluster, the license that was chosen initially is reused.
 
 ### Network interface settings
 {: #vc_addingclusters-network-interface-settings}
@@ -198,10 +196,12 @@ You can use the default hostname prefix or specify a new one. When you specify a
 - The hostname prefix must end with a lowercase alphabetic or numeric character.
 - The maximum length of the hostname prefix is 10 characters.
 
-#### Network diagram
+#### Configure hostnames individually
 {: #vc_addingclusters-network-diagram}
 
-You can customize the hostnames prefix individually by selecting **Configure hostnames individually**. It must meet the following requirements:
+You can customize the hostnames prefix individually by toggling the switch on. 
+
+The hostnames prefix must meet the following requirements:
 * Only lowercase alphabetic, numeric, and dash (-) characters are allowed.
 * No consecutive dash characters are allowed.
 * The hostname prefix must start with a lowercase alphabetic character.
@@ -226,6 +226,14 @@ The **Uplink speed** option is not available to gateway clusters.
 | Asia-Pacific | TOK02 | 02 |
 | Asia-Pacific | TOK04 | 01 |
 | Asia-Pacific | TOK05 | 01 |
+{: caption="Table 5. Available locations for 25 Gb uplink speed" caption-side="bottom"}
+{: tab-title="Asia-Pacific"}
+{: tab-group="Data centers for vCenter Server instances"}
+{: class="simple-tab-table"}
+{: #simpletabtable-cr-ap}
+
+| Geography | Data center | Pod |
+|:--------- |:----------- |:--- |
 | Europe | FRA02 | 02 |
 | Europe | FRA05 | 01 |
 | Europe | LON04 | 01 |
@@ -233,14 +241,33 @@ The **Uplink speed** option is not available to gateway clusters.
 | Europe | MAD02 | 01 |
 | Europe | MAD04 | 01 |
 | Europe | MAD05 | 01 |
+{: caption="Table 5. Available locations for 25 Gb uplink speed" caption-side="bottom"}
+{: tab-title="Europe"}
+{: tab-group="Data centers for vCenter Server instances"}
+{: class="simple-tab-table"}
+{: #simpletabtable-cr-eur}
+
+| Geography | Data center | Pod |
+|:--------- |:----------- |:--- |
 | NA East | TOR04 | 01 |
 | NA East | WDC04 | 05 |
 | NA East | WDC06 | 01 |
 | NA East | WDC07 | 01 |
-| NA South | DAL10 | 03 |
+{: caption="Table 5. Available locations for 25 Gb uplink speed" caption-side="bottom"}
+{: tab-title="NA East"}
+{: tab-group="Data centers for vCenter Server instances"}
+{: class="simple-tab-table"}
+{: #simpletabtable-cr-naeast}
+
+| Geography | Data center | Pod |
+|:--------- |:----------- |:--- |
 | NA South | DAL12 | 01 |
 | NA South | DAL13 | 02 |
 {: caption="Table 5. Available locations for 25 Gb uplink speed" caption-side="bottom"}
+{: tab-title="NA South"}
+{: tab-group="Data centers for vCenter Server instances"}
+{: class="simple-tab-table"}
+{: #simpletabtable-cr-nasouth}
 
 #### VLANs
 {: #vc_addingclusters-vlans}
@@ -310,7 +337,7 @@ Select the {{site.data.keyword.cloud_notm}} data center pod where you want to de
 
 By default, the cluster names are set to **_instance name_-edge**.
 
-You can also specify a new name for your clusters. The names must meet the requirements that are listed in [Cluster name](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-consoldworkldcluster-settings#vc_orderinginstance-consoldworkldcluster-cluster-name).
+You can also specify a new name for your clusters. The names must meet the requirements that are listed in [Cluster name](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-consold-cluster#vc_orderinginstance-consold-cluster-name).
 
 ### CPU model
 {: #vc_addingclusters-edge-cluster-cpu}
@@ -338,10 +365,12 @@ The hostname prefix applies to all clusters in the instance. It must meet the fo
 * The hostname prefix must end with a lowercase alphabetic or numeric character.
 * The maximum length of the hostname prefix is 10 characters.
 
-### Network diagram
+### Configure hostnames individually
 {: #vc_addingclusters-edge-network-diagram}
 
-You can customize the hostnames prefix individually by selecting **Configure hostnames individually**. It must meet the following requirements:
+You can customize the hostnames prefix individually by toggling the switch on. 
+
+The hostnames prefix must meet the following requirements:
 * Only lowercase alphabetic, numeric, and dash (-) characters are allowed.
 * No consecutive dash characters are allowed.
 * The hostname prefix must start with a lowercase alphabetic character.
@@ -363,7 +392,7 @@ Select either **Public and private network** or **Private network only** for the
 
 Based on your selected configuration for the cluster, the estimated price is instantly generated and displayed in the **Summary** pane. Click **Pricing details** to generate a PDF document with the price summary for the VMware Solutions resources.
 
-You can also add the provisioned resources to the {{site.data.keyword.cloud_notm}} estimate tool, by clicking **Add to estimate**. The estimate tool is useful if you want to get an approximate price of the selected VMware Solutions resources together with other {{site.data.keyword.cloud_notm}} resources that you might consider to purchase.
+You can also add the provisioned resources to the {{site.data.keyword.cloud_notm}} estimate tool, by clicking **Add to estimate**. The estimate tool is useful if you want to get an approximate price of the selected VMware Solutions resources together with other {{site.data.keyword.cloud_notm}} resources that you might consider purchasing.
 
 ## Procedure to add clusters to vCenter Server instances
 {: #vc_addingclusters-procedure}
@@ -384,13 +413,13 @@ You can also add the provisioned resources to the {{site.data.keyword.cloud_notm
       * The **Use existing license** option is available only if you are using a BYOL vSphere or vSAN license for your instance. When the option is enabled, you can select the existing license only if the instance has enough capacity for the additional hosts.
 
    2. Complete the bare metal server configuration. 
-      * If you want to host the cluster in a different {{site.data.keyword.cloud_notm}} data center than the one that the instance is hosted in, check the **Select a different location** box and choose the {{site.data.keyword.cloud_notm}} data center to host the instance.
-      * For **Skylake** or **Cascade Lake** CPU generation type, select the **CPU model**, the amount of **RAM**, and the **Number of bare metal servers**.
-      * For **SAP-certified** NetWeaver CPU generation type, select one of the preset configurations. For **SAP-certified** HANA CPU generation type, select the **CPU model** and **RAM**.
+      * If you want to host the cluster in a different {{site.data.keyword.cloud_notm}} data center than the one that the instance is hosted in, toggle the **Select a different location** switch on and choose the {{site.data.keyword.cloud_notm}} data center to host the cluster.
+      * For **Skylake** or **Cascade Lake** CPU generation type, select the **CPU model**, **RAM size**, and the **Number of bare metal servers**.
+      * For **SAP-certified Cascade Lake**, select one of the preset configurations.
 
    3. Complete the storage configuration.
       * If you select **NFS storage** and want to add and configure the same settings to all file shares, specify the **Number of shares**, **Size (GB)**, and **Performance**.
-      * If you select **NFS storage** and want to add and configure file shares individually, select the **Configure shares individually** checkbox, then click **Add shared storage** and select the **Size (GB)** and **Performance** for each individual file share. You must select at least one file share. 
+      * If you select **NFS storage** and want to add and configure file shares individually, toggle the **Configure shares individually** switch on, then click **Add shared storage** and select the **Size (GB)** and **Performance** for each individual file share. You must select at least one file share. 
       * If you select **vSAN storage**, specify the following values:
          * Size for the vSAN capacity disks
          * Number of vSAN capacity disks
@@ -418,10 +447,10 @@ You can also add the provisioned resources to the {{site.data.keyword.cloud_notm
 ## Results after you add clusters to vCenter Server instances
 {: #vc_addingclusters-results}
 
-1. The deployment of the cluster starts automatically and the status of the cluster is changed to **Initializing**. You can check the status of the deployment by viewing the deployment history from the **Summary** page of the instance.
+1. The deployment of the cluster starts automatically and the status of the cluster is changed to **Initializing**. You can check the status of the deployment by viewing the deployment history on the instance details page.
 2. When the cluster is ready to use, its status changes to **Available**. The newly added cluster is enabled with vSphere High Availability (HA) and vSphere Distributed Resource Scheduler (DRS).
 
-You cannot change the cluster name. Changing the cluster name might cause the add or remove ESXi servers operations in the cluster to fail.
+You cannot change the cluster name. Changing the cluster name might cause the add or delete ESXi servers operations in the cluster to fail.
 {: important}
 
 ## Related links

@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2023
 
-lastupdated: "2023-06-22"
+lastupdated: "2023-06-27"
 
 keywords: cyber recovery, cyber recovery consolidated cluster, cyber recovery consolidated settings, cyber recovery instances
 
@@ -14,7 +14,7 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Consolidated and workload clusters
+# Consolidated and workload cluster
 {: #cr_orderinginstance-consolidwkld}
 
 Cyber Recovery instances are deployed with a consolidated cluster for VMware vSphere® 7, in which all the VMware® management components and user workloads run.
@@ -28,11 +28,6 @@ You can also order an extra workload cluster.
 * For the workload cluster, the cluster name is preset to **_instance name_-workload**.
 
 {{site.data.content.cluster-name-requirements-list}}
-
-## Bare metal server settings
-{: #cr_orderinginstance-consolidwkld-bare-metal-settings}
-
-Bare metal settings are based on your data center selection and bare metal server configuration. When you size the capacity of your servers, consider your current requirements, and include extra capacity to accommodate anticipated growth. For more information about sizing, see [Exporting VMware inventory](/docs/vmwaresolutions?topic=vmwaresolutions-vmware-inventory-export).
 
 ## Data center location
 {: #cr_orderinginstance-consolidwkld-dc-location}
@@ -54,22 +49,17 @@ Select the {{site.data.keyword.cloud_notm}} data center where the cluster is hos
 
 Select the {{site.data.keyword.cloud_notm}} data center pod where you want to deploy your resources. Keep the default pod selection unless you have specific reasons to choose a different pod.
 
-## CPU generation
-{: #cr_orderinginstance-consolidwkld-cpu-generation}
-
-Select either Cascade Lake or SAP-certified. Cascade Lake is the default.
-
 ## CPU model
 {: #cr_orderinginstance-consolidwkld-cpumodel}
 
-Select the CPU model. For Cascade Lake, the default is Dual Intel® Xeon® Platinum 8260 with 48 cores and 2.40 Ghz.
+Select either **Cascade Lake** or **SAP-certified Cascade Lake**.
 
 ### Cascade Lake
 {: #cr_orderinginstance-consolidwkld-cascade}
 
 {{site.data.content.cascade-para-intro}}
 
-| CPU model     | Cores     | GHz     | RAM sizes   |
+| CPU model     | Cores     | GHz     | RAM         |
 |:------------- |:----------|:--------|:----------- |
 | Dual Intel Xeon Silver 4210 processor | 20 | 2.2 | 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
 | Dual Intel Xeon Gold 5218 processor | 32 | 2.3 | 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
@@ -84,50 +74,35 @@ Select the CPU model. For Cascade Lake, the default is Dual Intel® Xeon® Plati
 {: tab-group="Cascade Lake Intel servers"}
 {: #simpletabtable-cascade-nsxt}
 
-### SAP-certified
+### SAP-certified Cascade Lake
 {: #cr_orderinginstance-consolidwkld-sap}
 
 {{site.data.content.sap-para-intro}}
 
-| CPU model     | Cores     | GHz     | RAM sizes   |
-|:------------- |:----------|:--------|:----------- |
-| Dual Intel Xeon Gold 5218 processor (Cascade Lake, BI.S4.NW192) | 32 | 2.3 | 192 GB |
-| Dual Intel Xeon Gold 5218 processor (Cascade Lake, BI.S4.NW384) | 32 | 2.3 | 384 GB |
-| Dual Intel Xeon Gold 6248 processor (Cascade Lake, BI.S4.NW768) | 40 | 2.5 | 768 GB |
-| Dual Intel Xeon Gold 6248 processor (Cascade Lake, BI.S4.NW768_v2) | 48 | 2.4 | 768 GB |
-| Dual Intel Xeon Platinum 8280M processor (Cascade Lake, BI.S4.NW1500) | 56 | 2.7 | 1.5 TB |
-| Dual Intel Xeon Platinum 8280M processor (Cascade Lake, BI.S4.NW3000) | 56 | 2.7 | 3 TB |
-{: caption="Table 2. Options for SAP-certified bare metal servers - NetWeaver" caption-side="bottom"}
-{: class="simple-tab-table"}
-{: tab-title="NetWeaver"}
-{: tab-group="SAP-certified Intel servers"}
-{: #simpletabtable-sap-netweaver}
-
-
-| CPU model     | Cores     | GHz     | RAM sizes |
-|:------------- |:----------|:--------|:--------- |
-| Dual Intel Xeon Gold 5218 processor (Cascade Lake, BI.S4.H2.192) | 32 | 2.3 | 192 GB |
-| Dual Intel Xeon Gold 5218 processor (Cascade Lake, BI.S4.H2.384) | 32 | 2.3 | 384 GB |
-| Dual Intel Xeon Gold 6248 processor (Cascade Lake, BI.S4.H2.768) | 40 | 2.5 | 768 GB |
-| Dual Intel Xeon Platinum 8280M processor (Cascade Lake, BI.S4.H2.1500) | 56 | 2.7 | 1.5 TB |
-| Dual Intel Xeon Platinum 8280M processor (Cascade Lake, BI.S4.H2.3000) | 56 | 2.7 | 3 TB |
-| Quad Intel Xeon Platinum 8280M processor (Cascade Lake, BI.S4.H4.3000) | 112 | 2.7 | 3 TB |
-| Quad Intel Xeon Platinum 8280M processor (Cascade Lake, BI.S4.H4.6000) | 112 | 2.7 | 6 TB |
-{: caption="Table 2. Options for SAP-certified bare metal servers - HANA" caption-side="bottom"}
-{: tab-title="HANA"}
-{: tab-group="SAP-certified Intel servers"}
-{: class="simple-tab-table"}
-{: #simpletabtable-sap-hana}
+| CPU model     | SAP certification | Cores     | GHz     | RAM         | Storage type |
+|:------------- |:------------------|:----------|:--------|:------------|:------------ |
+| Dual Intel Xeon Gold 5218 processor (Cascade Lake, BI.S4.NW192) | NetWeaver | 32 | 2.3 | 192 GB | Up to 12 Drivers |
+| Dual Intel Xeon Gold 5218 processor (Cascade Lake, BI.S4.NW384) | NetWeaver | 32 | 2.3 | 384 GB | Up to 12 Drivers |
+| Dual Intel Xeon Gold 6248 processor (Cascade Lake, BI.S4.NW768) | NetWeaver | 40 | 2.5 | 768 GB | Up to 12 Drivers |
+| Dual Intel Xeon Platinum 8260 processor (Cascade Lake, BI.S4.NW768_v2) | Netweaver | 48 | 2.4 | 768 GB | Up to 12 Drivers |
+| Dual Intel Xeon Platinum 8280M processor (Cascade Lake, BI.S4.NW1500) | Netweaver | 56 |2.7 | 1.5 TB | Up to 12 Drivers |
+| Dual Intel Xeon Platinum 8280M processor (Cascade Lake, BI.S4.NW3000) | Netweaver | 56 | 2.7 | 3 TB | Up to 12 Drivers |
+| Dual Intel Xeon Gold 5218 processor (Cascade Lake, BI.S4.H2.192) | HANA and NetWeaver | 32 | 2.3 | 192 GB | Up to 12 Drivers |
+| Dual Intel Xeon Gold 5218 processor (Cascade Lake, BI.S4.H2.384) | HANA and NetWeaver | 32 | 2.3 | 384 GB | Up to 12 Drivers |
+| Dual Intel Xeon Gold 6248 processor (Cascade Lake, BI.S4.H2.768) | HANA and NetWeaver | 40 | 2.5 | 768 GB | Up to 12 Drivers |
+| Dual Intel Xeon Platinum 8280M processor (Cascade Lake, BI.S4.H2.1500) | HANA and NetWeaver | 56 | 2.7 | 1.5 TB | Up to 12 Drivers |
+| Dual Intel Xeon Platinum 8280M processor (Cascade Lake, BI.S4.H2.3000) | HANA and NetWeaver | 56 | 2.7 | 3 TB | Up to 12 Drivers |
+| Quad Intel Xeon Platinum 8280M processor (Cascade Lake, BI.S4.H4.3000) | HANA and NetWeaver | 112 | 2.7 | 3 TB | Up to 24 Drivers |
+| Quad Intel Xeon Platinum 8280M processor (Cascade Lake, BI.S4.H4.6000) | HANA and NetWeaver | 112 | 2.7 | 6 TB | Up to 24 Drivers |
+{: caption="Table 2. Options for SAP-certified Cascade Lake - NetWeaver and HANA" caption-side="bottom"}
+{: #simpletabtable-sap-netweaverandhana}
 
 ## Number of bare metal servers
 {: #cr_orderinginstance-consolidwkld-bare-metal-number}
 
-Select the number of bare metal servers. The default is three.
+{{site.data.content.number-of-baremetal-servers}}
 
-* All servers that you order have the same configuration.
-* If you are planning to use vSAN™ storage, you can order 3 - 20 servers.
-* A minimum limit of three servers applies for VMware NSX-T clusters.
-* For production workloads, a minimum of three servers is recommended.
+When you size the capacity of your servers, consider your current requirements, and include extra capacity to accommodate anticipated growth. For more information see [Exporting VMware inventory](/docs/vmwaresolutions?topic=vmwaresolutions-vmware-inventory-export).
 
 ## Storage
 {: #cr_orderinginstance-consolidwkld-storage-settings}
@@ -206,7 +181,7 @@ Use the IBM-provided VMware license for the vSAN component, which is included wi
 Bring Your Own License (BYOL) is no longer supported except for migrations or upgrades of existing BYOL clusters. Select **I will provide** and enter your own license key only if you are performing an upgrade or migration of an existing BYOL cluster.
 {: important}
 
-If your initial cluster is a vSAN cluster, any additional vSAN clusters use the same vSAN license and have the same configuration as the initial one. This statement is also true for any initial or additional clusters in the instance for which you select vSAN. The first time, you're prompted for the vSAN license (BYOL or purchased) and the edition. The next time that you select vSAN for a new cluster, the license that is chosen initially is reused.
+If your initial cluster is a vSAN cluster, any additional vSAN clusters use the same vSAN license and have the same configuration as the initial one. This statement is also true for any initial or additional clusters in the instance for which you select vSAN. The first time, you're prompted for the vSAN license and the edition. The next time that you select vSAN for a new cluster, the license that is chosen initially is reused.
 
 ## Networking type
 {: #cr_orderinginstance-consolidwkld-public-private-network}
@@ -223,6 +198,14 @@ Select **Public and private network** or **Private network only**.
 | Asia-Pacific | TOK02 | 02 |
 | Asia-Pacific | TOK04 | 01 |
 | Asia-Pacific | TOK05 | 01 |
+{: caption="Table 4. Available locations for 25 Gb uplink speed" caption-side="bottom"}
+{: tab-title="Asia-Pacific"}
+{: tab-group="Data centers for Consolidated and workload cluster"}
+{: class="simple-tab-table"}
+{: #simpletable-uplink-speed-locations-ap}
+
+| Geography | Data center | Pod |
+|:--------- |:----------- |:--- |
 | Europe | FRA02 | 02 |
 | Europe | FRA04 | 01 |
 | Europe | FRA05 | 01 |
@@ -234,15 +217,33 @@ Select **Public and private network** or **Private network only**.
 | Europe | PAR04 | 01 |
 | Europe | PAR05 | 01 |
 | Europe | PAR06 | 01 |
+{: caption="Table 4. Available locations for 25 Gb uplink speed" caption-side="bottom"}
+{: tab-title="Europe"}
+{: tab-group="Data centers for Consolidated and workload cluster"}
+{: class="simple-tab-table"}
+{: #simpletable-uplink-speed-locations-eur}
+
+| Geography | Data center | Pod |
+|:--------- |:----------- |:--- |
 | NA East | TOR04 | 01 |
 | NA East | WDC04 | 05 |
 | NA East | WDC06 | 01 |
 | NA East | WDC07 | 01 |
-| NA South | DAL10 | 03 |
+{: caption="Table 4. Available locations for 25 Gb uplink speed" caption-side="bottom"}
+{: tab-title="NA East"}
+{: tab-group="Data centers for Consolidated and workload cluster"}
+{: class="simple-tab-table"}
+{: #simpletable-uplink-speed-locations-naeast}
+
+| Geography | Data center | Pod |
+|:--------- |:----------- |:--- |
 | NA South | DAL12 | 01 |
 | NA South | DAL13 | 02 |
 {: caption="Table 4. Available locations for 25 Gb uplink speed" caption-side="bottom"}
-{: #simpletable-uplink-speed-locations}
+{: tab-title="NA South"}
+{: tab-group="Data centers for Consolidated and workload cluster"}
+{: class="simple-tab-table"}
+{: #simpletable-uplink-speed-locations-nasouth}
 
 ## VLANs
 {: #cr_orderinginstance-consolidwkld-vlans}

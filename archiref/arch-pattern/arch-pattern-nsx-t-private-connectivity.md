@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2023
 
-lastupdated: "2023-03-21"
+lastupdated: "2023-05-31"
 
 subcollection: vmwaresolutions
 
@@ -59,7 +59,7 @@ The following steps summarize this architecture pattern deployment.
 ## Ingress private connectivity with gateway cluster
 {: #arch-pattern-nsx-t-private-connectivity-edge-gateway-cluster}
 
-Private ingress connectivity to NSX-T overlay is enabled through NAT or though using overlay tunnels. You can use IP addresses from the private portable subnet that is provisioned for T0 private uplinks for these use cases. With Juniper vSRX running on the [gateway cluster](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-edge-gateway-cluster), you can alternatively route portable IP addresses to the T0 HA VIP and use the portable IP subnets in the overlay.
+Private ingress connectivity to NSX-T overlay is enabled through NAT or though using overlay tunnels. You can use IP addresses from the private portable subnet that is provisioned for T0 private uplinks for these use cases. With Juniper vSRX running on the [gateway cluster](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-addl-clusters#vc_orderinginstance-addl-clusters-gate), you can alternatively route portable IP addresses to the T0 HA VIP and use the portable IP subnets in the overlay.
 
 ![Private ingress access to {{site.data.keyword.cloud_notm}} NSX-T overlay with gateway cluster](../../images/arch-pattern-nsx-t-private-access-ingress-vsrx.svg "Private ingress access to {{site.data.keyword.cloud_notm}} NSX-T overlay with gateway cluster"){: caption="Figure 3. Private ingress access to {{site.data.keyword.cloud_notm}} NSX-T overlay with gateway cluster" caption-side="bottom"}
 
@@ -88,7 +88,7 @@ For more information about this architecture pattern, see [Architecture pattern 
 ## Private connectivity through transit gateway
 {: #arch-pattern-nsx-t-private-connectivity-transit-gateway}
 
-Hybrid cloud connectivity can be established by using [{{site.data.keyword.tg_full}}](/docs/transit-gateway?topic=transit-gateway-about). This solution is applicable for NSX-T based vCenter Server instance, which is provisioned in {{site.data.keyword.cloud_notm}} classic infrastructure. This pattern requires a [gateway appliance](/docs/gateway-appliance?topic=gateway-appliance-about#firewall) or [gateway cluster](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-edge-gateway-cluster) with Juniper vSRX or other third-party device, which supports GRE. In this solution, GRE tunnel is established between this device and Transit GW Router in a specific Zone. NSX-T T0 advertises routes through vSRX (or other device) to Transit Gateway.
+Hybrid cloud connectivity can be established by using [{{site.data.keyword.tg_full}}](/docs/transit-gateway?topic=transit-gateway-about). This solution is applicable for NSX-T based vCenter Server instance, which is provisioned in {{site.data.keyword.cloud_notm}} classic infrastructure. This pattern requires a [gateway appliance](/docs/gateway-appliance?topic=gateway-appliance-about#firewall) or [gateway cluster](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-addl-clusters) with Juniper vSRX or other third-party device, which supports GRE. In this solution, GRE tunnel is established between this device and Transit GW Router in a specific Zone. NSX-T T0 advertises routes through vSRX (or other device) to Transit Gateway.
 
 For more information about this architecture pattern, see [Architecture pattern for using Transit Gateway with a vCenter Server with NSX-T instance](/docs/vmwaresolutions?topic=vmwaresolutions-arch-pattern-nsx-t-transit-gw).
 

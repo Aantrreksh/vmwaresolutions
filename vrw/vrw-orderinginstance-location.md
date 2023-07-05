@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2020, 2022
+  years:  2020, 2023
 
-lastupdated: "2022-02-18"
+lastupdated: "2023-06-02"
 
 keywords: vmware regulated workloads, vmware regulated workloads order instance, order vmware regulated workloads, vmware regulated workloads instances
 
@@ -27,8 +27,7 @@ Select the region where the clusters are to be hosted.
 ## Data center
 {: #vrw_orderinginstance-mgmt-dc-location}
 
-* For single-zone VMware® virtual data centers, select the {{site.data.keyword.cloud_notm}} data center where the clusters are hosted.
-* For multizone VMware virtual data centers, select the multizone region, the stretched clusters, and witness cluster locations.
+Select the {{site.data.keyword.cloud_notm}} data center where the clusters are hosted.
 
 ## Pod
 {: #vrw_orderinginstance-mgmt-dc-pod}
@@ -38,6 +37,6 @@ Select the {{site.data.keyword.cloud_notm}} data center pod where you want to de
 ## Related links
 {: #vrw-orderinginstance-location-related}
 
-* [Primary cluster (Single-zone VMware instance only)](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-orderinginstance-consldt-cluster)
+* [Primary cluster](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-orderinginstance-consldt-cluster)
 * [Procedure to order VMware Regulated Workloads](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-orderinginstance-procedure)
 * [VMware Regulated Workloads reference architecture overview](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-archi-overview)

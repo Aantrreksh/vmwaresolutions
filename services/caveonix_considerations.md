@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2022
+  years:  2016, 2023
 
-lastupdated: "2022-11-11"
+lastupdated: "2023-05-18"
 
 keywords: Caveonix, Caveonix RiskForesight, tech specs Caveonix
 
@@ -23,7 +23,7 @@ Caveonix RiskForesight™ on IBM Cloud can help to manage cyberrisk and complian
 
 {{site.data.content.para-promotion-services}}
 
-The current Caveonix RiskForesight version that is installed is 4.0.
+The current Caveonix RiskForesight version that is installed is 4.1.
 {: note}
 
 A Caveonix RiskForesight license is valid for five years. Ordering Caveonix RiskForesight for VMware® vCenter Server instances, VMware Regulated Workloads, and Security and Compliance Readiness Bundle instances differs. For more information, see [Licenses and fees](/docs/vmwaresolutions?topic=vmwaresolutions-caveonix_considerations#caveonix_considerations-tech-specs-license-fee).

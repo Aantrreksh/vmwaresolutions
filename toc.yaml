@@ -105,7 +105,6 @@ toc:
               - shared/iam_vcd.md
               - shared/shared_accessing-vcd-console.md
           - shared/shared_vcd-ops-guide.md
-          - shared/shared-monitor.md
           - shared/shared_resizeinstance.md
           - shared/shared_deletinginstance.md
           - shared/shared_pricing.md
@@ -121,7 +120,7 @@ toc:
           - vsphere/vs_planning.md
           - vsphere/vs_vsphere_70_upgrade.md
           - topicgroup:
-              label: Ordering new vSphere clusters
+              label: Ordering VMware vSphere instances
               topics:
               - vsphere/vs_orderinginstances-req.md
               - vsphere/vs_orderinginstances-sys.md
@@ -132,9 +131,17 @@ toc:
               - vsphere/vs_orderinginstances-summary.md
               - vsphere/vs_orderinginstances-procedure.md
           - vsphere/vs_orderingbasedonexistingconfig.md
-          - vsphere/vs_scalingexistingclusters.md
-          - vsphere/vs_orderingforclustersoutside.md
-          - vsphere/vs_deletingclusters.md
+          - topicgroup:
+              label: Expanding and contracting capacity
+              topics:
+              - vsphere/vs_addingservers.md
+              - vsphere/vs_removingservers.md
+          - vsphere/vs_manage_licenses.md
+          - topicgroup:
+              label: Viewing and deleting instances
+              topics:
+              - vsphere/vs_viewinginstances.md
+              - vsphere/vs_deletinginstances.md
       - topicgroup:
           label: vCenter Server
           topics:
@@ -162,8 +169,8 @@ toc:
               - vcenter/vc_orderinginstance-req.md
               - vcenter/vc_orderinginstance-sys.md
               - vcenter/vc_orderinginstance-licensing.md
-              - vcenter/vc_orderinginstance-cluster.md
-              - vcenter/vc_orderinginstance-edge.md
+              - vcenter/vc_orderinginstance-consold-cluster.md
+              - vcenter/vc_orderinginstance-addl-clusters.md
               - vcenter/vc_orderinginstance-network.md
               - vcenter/vc_orderinginstance-services.md
               - vcenter/vc_orderinginstance-summary.md
@@ -194,7 +201,7 @@ toc:
               - vcenter/vc_deletinginstance.md
               - vcenter/vc_deletinginstance_multi.md
       - topicgroup:
-          label: VMware Regulated Workloads
+          label: Regulated Workloads
           topics:
           - vrw/vrw-overview.md
           - vrw/vrw-planning.md
@@ -208,8 +215,6 @@ toc:
               - vrw/vrw-orderinginstance-licensing.md
               - vrw/vrw-orderinginstance-location.md
               - vrw/vrw-orderinginstance-primary.md
-              - vrw/vrw-orderinginstance-witness.md
-              - vrw/vrw-orderinginstance-mgmt.md
               - vrw/vrw-orderinginstance-wkld.md
               - vrw/vrw-orderinginstance-firewall-app.md
               - vrw/vrw-orderinginstance-edge.md
@@ -232,7 +237,6 @@ toc:
               topics:
               - cr/cr_orderinginstance-reqs.md
               - cr/cr_orderinginstance-gen-info.md
-              - cr/cr_orderinginstance-inst-configs.md
               - cr/cr_orderinginstance-consolidwkld.md
               - cr/cr_orderinginstance-edge.md
               - cr/cr_orderinginstance-firewall-appl.md
@@ -325,7 +329,7 @@ toc:
               - services/veeam_managing_licenses.md
               - services/icos_ordering.md
           - topicgroup:
-              label: vRealize Operations and Log Insight
+              label: VMware Aria Operations and VMware Aria Operations for Logs
               topics:
               - services/vrops_overview.md
               - services/vrops_ordering.md
@@ -363,13 +367,10 @@ toc:
               label: VMware as a Service
               topics:
               - include: ../vmware-service/common/architecture-workload-isolation.md
-              - include: ../vmware-service/common/single-tenant-monitoring.md
               - include: ../vmware-service/common/vmaas-iam.md
               - include: ../vmware-service/common/vmaas-iam_vcd.md
               - include: ../vmware-service/common/vmaas-data-security.md
-              - include: ../vmware-service/common/vmaas-at-events.md
           - vmonic/data-security.md
-          - vmonic/at-events.md
           - vmonic/ha-dr.md
           - vmonic/understand-responsib.md
           - topicgroup:
@@ -377,6 +378,19 @@ toc:
               topics:
               - vmonic/audit_user_ids.md
               - vmonic/audit_messages.md
+      - topicgroup:
+          label: Observability
+          topics:
+          - topicgroup:
+              label: Activity Tracker events
+              topics:
+              - include: ../vmware-service/common/vmaas-at-events.md
+              - vmonic/at-events.md
+          - topicgroup:
+              label: Platform metrics
+              topics:
+              - include: ../vmware-service/common/single-tenant-monitoring.md
+              - shared/shared-monitor.md
       - topicgroup:
           label: Deprecated offerings
           topics:
@@ -390,6 +404,11 @@ toc:
               - services/mcv_addviewdeleteclusters.md
               - services/mcv_addingremovingservers.md
               - services/mcv_addingnfs.md
+          - topicgroup:
+              label: VMware Regulated Workloads multizone
+              topics:
+              - vrw/vrw-orderinginstance-mgmt.md
+              - vrw/vrw-orderinginstance-witness.md          
           - topicgroup:
               label: vCenter Server with Hybridity Bundle
               topics:
@@ -519,18 +538,15 @@ toc:
               - archiref/vrw/vrw-storage.md
               - archiref/vrw/vrw-underlay-network.md
               - archiref/vrw/vrw-overlay-network.md
-              - archiref/vrw/vrw-mzr.md
               - archiref/vrw/vrw-nsxt-topologies.md
               - archiref/vrw/vrw-vsphere-platform.md
               - archiref/vrw/vrw-encryption.md
               - archiref/vrw/vrw-operations.md
               - archiref/vrw/vrw-caveonix.md
               - archiref/vrw/vrw-budr.md
-              - archiref/vrw/vrw-hytrust.md
               - archiref/vrw/vrw-iam-active-directory.md
               - archiref/vrw/vrw-iam-vsphere.md
               - archiref/vrw/vrw-iam-nsxt.md
-              - archiref/vrw/vrw-iam-hytrust.md
               - archiref/vrw/vrw-iam-vrealize.md
               - archiref/vrw/vrw-use-case-1.md
               - archiref/vrw/vrw-use-case-2.md

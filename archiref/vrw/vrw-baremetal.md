@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2023
 
-lastupdated: "2023-03-21"
+lastupdated: "2023-06-19"
 
 subcollection: vmwaresolutions
 
@@ -18,12 +18,12 @@ subcollection: vmwaresolutions
 
 The {{site.data.keyword.cloud}} for VMware® Regulated Workloads is built upon multiple clusters of bare metal hosts with VMware ESXi™ as the hypervisor.
 
-![IBM Cloud for VMware Regulated Workloads infrastructure overview](../../images/vrw-architecture.svg "IBM Cloud for VMware Regulated Workloads infrastructure overview"){: caption="Figure 1. IBM Cloud for VMware Regulated Workloads infrastructure overview" caption-side="bottom"}
+![IBM Cloud for VMware Regulated Workloads infrastructure overview](../../images/vrw-v2-overview.svg "IBM Cloud for VMware Regulated Workloads infrastructure overview"){: caption="Figure 1. IBM Cloud for VMware Regulated Workloads infrastructure overview" caption-side="bottom"}
 
 ## Management cluster
 {: #vrw-baremetal-management}
 
-The management cluster is formed of four bare metal hosts. Configuring the cluster with four hosts is the mandatory, minimum requirement where vSAN™ is the storage platform. These hosts are sized to meet the requirements of the management applications. No non-management workloads are run in the management cluster.
+The management cluster is formed of four bare metal hosts. Configuring the cluster with four hosts is the mandatory, minimum requirement where vSAN™ is the storage platform. These hosts are sized to meet the requirements of the management applications. No nonmanagement workloads are run in the management cluster.
 
 ## Gateway cluster
 {: #vrw-baremetal-edge}
@@ -35,7 +35,7 @@ The gateway cluster requires only two bare metal hosts. vSAN is not an available
 
 The workload cluster uses vSAN for storage and thus a minimum of four bare metal hosts with ESXi as the hypervisor are required. More hosts are added as necessary to scale horizontally to deliver the required compute, memory, and storage required by the hosted applications.
 
-The deployment of additional workload clusters is supported to supply dedicated resources for an application or business unit.
+The deployment of more workload clusters is supported to supply dedicated resources for an application or business unit.
 
 ## Physical host connections
 {: #vrw-baremetal-phys-connect}
@@ -44,7 +44,7 @@ Each physical host in this design has two redundant pairs of 10 Gbps Ethernet co
 
 Removing physical network connectivity to the public or private network for the bare metal servers that are used within the vCenter Server offering is not possible. When the{{site.data.keyword.cloud_notm}} for VMware Regulated Workloads is deployed with the private only network option, the physical ports on the internal NIC of the bare metal hosts are disabled and the ToR switch ports are administratively down. There is no support for unplugging the cables.
 
-![Physical host connections](../../images/vrw-nics-physical.svg "Physical host connections"){: caption="Figure 2. Physical host connections" caption-side="bottom"}
+![Physical host connections](../../images/vrw-v2-baremetal.svg "Physical host connections"){: caption="Figure 2. Physical host connections" caption-side="bottom"}
 
 To prevent undesired access, the SaaS provider must change the IPMI password and not update it in the VMware Solutions console. The insertion of filters to prevent network access to the IPMI from non-SaaS provider-controlled subnets is recommended.
 

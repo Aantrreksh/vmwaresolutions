@@ -4,7 +4,7 @@ copyright:
 
   years:  2023
 
-lastupdated: "2023-05-01"
+lastupdated: "2023-06-12"
 
 subcollection: vmwaresolutions
 
@@ -27,7 +27,7 @@ The immutable backup solution architecture uses the Veeam Linux® hardened repos
 * The Veeam service that provides backup for the virtual machines.
 * The Veeam service is enhanced with a Veeam Linux hardened repository that is hosted on an {{site.data.keyword.cloud}} bare metal server.
 * Optionally you can use Veeam technologies, such as vPower NFS Service and Mount servers to assist with cyber-recovery tasks.
-* The solution architecture does not preclude any of the vCenter Server options, such as Caveonix, Entrust, and vRealize Operations™.
+* The solution architecture does not preclude any of the vCenter Server options, such as Caveonix, Entrust, and VMware Aria® Operations™.
 * This solution is suitable for clients who want to extend their Veeam backup with immutability by minimizing costs and by using existing processes and resources.
 
 ![Isolated recovery environment overview](../../images/veeam-cr-sa-overview-ire.svg){: caption="Figure 2. Isolated recovery environment overview" caption-side="bottom"}
@@ -39,7 +39,7 @@ The isolated recovery solution architecture uses a vCenter Server instance in an
 * The vCenter Server instance includes an edge cluster to host Juniper® vSRX appliances to protect vCenter Server instance networks. It also provides a network air gap between the production environment and the isolated recovery environment.
 * A Veeam instance under separate management used for cyber recovery only.
 * An immutable repository based on the Veeam Linux hardened repository hosted on an {{site.data.keyword.cloud_notm}} bare metal server.
-* The solution architecture does not preclude any of the vCenter Server options such as Caveonix, Entrust, and vRealize Operations™.
+* The solution architecture does not preclude any of the vCenter Server options such as Caveonix, Entrust, and VMware Aria Operations.
 * Sandboxes can be provisioned by using VMware NSX-T™ overlay segments to provide network-isolated zones to mount cyber-recovery backups for inspection by your cyber toolsets.
 * Cyber toolsets are customer-supplied tools that run as virtual machines (VMs) in the isolated recovery environment.
 * Cyber admins are customer personnel who are authorized to access the isolated recovery environment.

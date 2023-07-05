@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2020, 2022
+  years:  2020, 2023
 
-lastupdated: "2022-07-26"
+lastupdated: "2023-06-14"
 
 keywords: vmware regulated workloads, vmware regulated workloads order instance, order vmware regulated workloads, vmware regulated workloads instances
 
@@ -14,8 +14,11 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Management cluster (Multizone VMware instance only)
+# Management cluster (multizone VMware instance only)
 {: #vrw-orderinginstance-mgmt-cluster}
+
+New deployments of VMware Regulated Workloads multizone instances are no longer supported. You can still add or delete clusters, add or delete ESXi servers or NFS storage, and add or remove services for existing multizone instances.
+{: deprecated}
 
 ## Cluster name
 {: #vrw-orderinginstance-mgmt-cluster-name}
@@ -68,7 +71,13 @@ The networking type is set to **Private network only** by default.
 
 {{site.data.content.uplink-speed-options-cascadelake-list}}
 
-{{site.data.content.simpletable-uplink-speed-locations}}
+{{site.data.content.simpletable-uplink-speed-locations-ap}}
+
+{{site.data.content.simpletable-uplink-speed-locations-eur}}
+
+{{site.data.content.simpletable-uplink-speed-locations-naeast}}
+
+{{site.data.content.simpletable-uplink-speed-locations-nasouth}}
 
 ## Related links
 {: #vrw-orderinginstance-mgmt-related}

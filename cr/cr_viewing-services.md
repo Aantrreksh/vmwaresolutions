@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2022
+  years:  2022, 2023
 
-lastupdated: "2022-11-23"
+lastupdated: "2023-06-12"
 
 keywords: view services Cyber Recovery, Cyber Recovery view services
 
@@ -26,7 +26,7 @@ You can view the summary and detailed information of the services that were orde
 2. In the **Cyber Recovery** table, click the instance for which you want to view services.
 3. Click the **Services** tab.
 4. Click a service to review information about it, such as the service status and other details.
-5. Depending on the viewed service, you can access the service consoles by using the credentials that are provided on the service details and you can manage the service from here.
+5. Depending on the viewed service, you can access the service console by using the credentials that are provided on the service details page and you can manage the service from here.
 
 ## Related links
 {: #cr_viewingservices-related}

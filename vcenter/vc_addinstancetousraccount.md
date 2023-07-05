@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-03-27"
+lastupdated: "2023-06-30"
 
 keywords: vCenter Server migrate instance, add account vCenter Server, migrate cloud account
 
@@ -48,4 +48,4 @@ For more information about how to link your Iaas-only account to your PaaS accou
 
 * [Managing user access with IAM](/docs/vmwaresolutions?topic=vmwaresolutions-iam#iam)
 * [Inviting users to access services and resources](/docs/vmwaresolutions?topic=vmwaresolutions-useraccount#useraccount-iamuserinv)
-* [What is {{site.data.keyword.cloud_notm}} IAM](/docs/account?topic=account-iamoverview)
+* [How IBM Cloud IAM works](/docs/account?topic=account-iamoverview)

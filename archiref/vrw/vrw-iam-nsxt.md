@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2020, 2022
+  years:  2020, 2023
 
-lastupdated: "2022-08-26"
+lastupdated: "2023-06-19"
 
 subcollection: vmwaresolutions
 
@@ -17,7 +17,7 @@ subcollection: vmwaresolutions
 {: #vrw-iam-nsxt}
 
 The following main principles or requirements apply:
-* Infrastructure Admin has execute and full access to all components.
+* Infrastructure Admin has `execute` and `full access` to all components.
 * Auditor has read-only access to all components.
 
 ## NSX-T role mapping
@@ -62,7 +62,6 @@ NSX-T Data Center has the following built-in roles. You cannot add any new roles
 | User     | User ID      | Description |
 |:---------|:-------------|:------------|
 | Privileged user | `admin` | Used post-deployment to manage NSX VTEP IP addresses and to manage host and cluster configuration when hosts and clusters are added and removed. Also used to manage ESG configuration for services that require public network access for licensing, activation, or usage reporting. |
-| Privileged user | `cloudadmin` | Through the Entrust CloudControl URL, customers authenticate with the `cloudadmin` user who is defined in Active Directory. More users can be added from customer space through Entrust. |
 | IBM automation | `automation_admin` | Automation account used by IBM. It uses the principle identity functions to create configuration and protect it with a certificate. |
 {: caption="Table 2. NSX-T user IDs" caption-side="bottom"}
 
@@ -72,6 +71,4 @@ For more information, see the [VMware documentation - RBAC for NSX-T](https://do
 {: #vrw-iam-nsxt-related}
 
 * [IBM Cloud compliance programs](https://www.ibm.com/cloud/compliance)
-* [Entrust CloudControl](/docs/vmwaresolutions?topic=vmwaresolutions-entrust-cc_considerations)
-* [Entrust DataControl](/docs/vmwaresolutions?topic=vmwaresolutions-entrust-dc_considerations)
 * [IBM Cloud Hyper Protect Crypto Services API](/apidocs/hs-crypto)

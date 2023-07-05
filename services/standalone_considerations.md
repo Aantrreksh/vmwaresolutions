@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2022
+  years:  2016, 2023
 
-lastupdated: "2022-02-19"
+lastupdated: "2023-06-12"
 
 keywords: VMware HCX standalone, HCX on-premises, tech specs HCX
 
@@ -34,7 +34,7 @@ For more information, see [Considerations when you install HCX](/docs/vmwaresolu
 {: #standalone_considerations-install-notes}
 
 * Before the service is installed in your environment, a check is performed against the available capacity of the default cluster in the environment to ensure that the service components can fit.
-* If the capacity check fails, the service is not installed and the service state is set to **Capacity Validation Failed** on the console. In addition, a console message with more details is displayed and you are notified by email.
+* If the capacity check fails, the service is not installed and the service status is set to **Capacity Validation Failed** on the console. In addition, a console message with more details is displayed and you are notified by email.
 * To install the service, you must increase the capacity in your default cluster. Either add more hosts or by free up RAM, CPU, or disk space, and then add the service again in the console. Then, you can delete the existing service in the **Capacity Validation Failed** state by clicking the **Delete** icon ![Delete icon](../../icons/delete.svg "Delete") next to it.
 
 ### IP address requirements

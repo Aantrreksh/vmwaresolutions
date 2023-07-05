@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2023
 
-lastupdated: "2023-03-30"
+lastupdated: "2023-06-12"
 
 keywords: Cyber Recovery add service, add service Cyber Recovery, Cyber Recovery order service, order service Cyber Recovery
 
@@ -26,35 +26,35 @@ The following table shows the services that are available to Cyber Recovery inst
 
 | Service name | Current version |
 |--------------|-----------------|
-| [Caveonix RiskForesight](/docs/vmwaresolutions?topic=vmwaresolutions-caveonix_considerations) | 4.0 |
+| [Caveonix RiskForesight](/docs/vmwaresolutions?topic=vmwaresolutions-caveonix_considerations) | 4.1 |
 | [Entrust CloudControl™](/docs/vmwaresolutions?topic=vmwaresolutions-entrust-cc_considerations) | 6.6 |
-| [F5® BIG-IP®](/docs/vmwaresolutions?topic=vmwaresolutions-f5_considerations) | BIG-IP VE 17.0 |
-| [FortiGate® Virtual Appliance](/docs/vmwaresolutions?topic=vmwaresolutions-fortinetvm_considerations) | 7.2.2 |
+| [F5® BIG-IP®](/docs/vmwaresolutions?topic=vmwaresolutions-f5_considerations) | BIG-IP VE 17.1 |
+| [FortiGate® Virtual Appliance](/docs/vmwaresolutions?topic=vmwaresolutions-fortinetvm_considerations) | 7.2.5 |
 | [VMware HCX™](/docs/vmwaresolutions?topic=vmwaresolutions-hcx_considerations) | Periodically updated to the most recent version |
-| [Juniper® vSRX](/docs/vmwaresolutions?topic=vmwaresolutions-juniper-overview) | 3.0 (21.4R2) |
-| [Red Hat OpenShift for VMware](/docs/vmwaresolutions?topic=vmwaresolutions-ocp_overview) | 4.11 |
+| [Juniper® vSRX](/docs/vmwaresolutions?topic=vmwaresolutions-juniper-overview) | 3.0 (23.1R2) |
+| [Red Hat OpenShift for VMware](/docs/vmwaresolutions?topic=vmwaresolutions-ocp_overview) | 4.12 |
 | [Veeam®](/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview) | 12 |
-| [vRealize Operations™ and Log Insight™](/docs/vmwaresolutions?topic=vmwaresolutions-vrops_overview) | vROps 8.10 and vRLI 8.10 |
-| [Zerto](/docs/vmwaresolutions?topic=vmwaresolutions-addingzertodr) | 9.7u1 |
+| [VMware Aria Operations and VMware Aria Operations for Logs](/docs/vmwaresolutions?topic=vmwaresolutions-vrops_overview) | VMware Aria® Operations™ 8.12 and VMware Aria Operations™ for Logs 8.12 |
+| [Zerto](/docs/vmwaresolutions?topic=vmwaresolutions-addingzertodr) | 9.7u3 |
 {: caption="Table 1. Available services for Cyber Recovery instances" caption-side="bottom"}
 
 ## Promotions for services
 {: #cr_addingservices-service-promotions}
 
-{{site.data.keyword.vmwaresolutions_full}} offers promotion pricing for some services. The promotions offer a number of months at no cost for service licenses, if the service has license charges. For more information about the promotions that are available, see the [pricing options](https://www.ibm.com/cloud/vmware/pricing){: external}.
+{{site.data.keyword.vmwaresolutions_full}} offers promotion pricing for some services. The promotions offer a number of months at no cost for service licenses, if the service has license charges.
 
-You can use one promotion (promo) code for one or more services for:
-* Ordering a new Cyber Recovery instance
-* Adding a service to a Cyber Recovery instance
-* Ordering a stand-alone service license, such as Caveonix or Veeam
+You can use one promotion (promo) code for one or more services when you:
+* Order a new Cyber Recovery instance
+* Add a service to a Cyber Recovery instance
+* Order a stand-alone service license, such as Caveonix or Veeam
 
-For services that charge per host, promo codes apply only to the hosts in the order or in the current environment. Examples of such services are HCX, Entrust CloudControl, and vRealize Operations and Log Insight.
+For services that charge per host, promo codes apply only to the hosts in the order or in the current environment. Examples of such services are HCX, Entrust CloudControl, and VMware Aria® Operations™ and VMware Aria Operations™ for Logs.
 
 You can use one promo code per order. Multiple promo codes are not allowed. However, you can use a promo code multiple times per account. A promo code might apply to multiple services, for example, Veeam and Caveonix RiskForesight.
 
 After you start an order, enter the promo code for your services in the promo code box and click **Apply**. If you decide to use a different promo code, enter that code in the box, and click **Apply** again to calculate a new price.
 
-If you apply a promo code for a service and then remove the service from your order, you must also remove the promo code from the order.
+If you apply a promo code for a service and then delete the service from your order, you must also remove the promo code from the order.
 
 Promotion pricing starts when the promo is applied. The pricing is automatically changed to the recurring price when the promotion period ends. You can see the discounts, promotion price, and recurring price in the PDF file generated for your order.
 
@@ -65,7 +65,7 @@ Some services require a minimum amount of resources to be installed.
 
 For certain services, the system completes a capacity check on the targeted clusters before it installs the service in your environment. The check is completed against the available capacity of the targeted cluster in the environment to ensure that the service components can fit.
 
-During deployment, if the capacity check fails, the service is not installed and the service state is set to **Capacity Validation Failed** on the console. In addition, a console message with more details is displayed and you are notified by email. The message displays the expected capacity for all services that do not meet the requirements.
+During deployment, if the capacity check fails, the service is not installed and the service status is set to **Capacity Validation Failed** on the console. In addition, a console message with more details is displayed and you are notified by email. The message displays the expected capacity for all services that do not meet the requirements.
 
 To install the service, you must increase the capacity in your cluster either by adding more VMware ESXi™ servers or by freeing up RAM, CPU, or disk space. After that, you can add the service or services again. To remove the existing service that is in a **Capacity Validation Failed** state, click the **Delete** icon ![Delete icon](../../icons/delete.svg "Delete") next to it.
 
@@ -81,7 +81,7 @@ The following table provides the resource requirements for the services for whic
 | {{site.data.keyword.redhat_openshift_notm}} | If you install {{site.data.keyword.redhat_openshift_notm}} with vSAN™ storage, the following capacity requirements apply. \n CPU - 9 CPUs \n RAM - 120 GB \n Storage - 1,170 GB \n If you install {{site.data.keyword.redhat_openshift_notm}} with NFS storage, a new 2-TB NFS data store, which is dedicated to {{site.data.keyword.redhat_openshift_notm}}, is ordered. |
 | Veeam | If you select Veeam as a VSI option, there is no capacity requirement. \n If you select Veeam as a VM option, the following capacity requirements apply. \n CPU - 8 CPUs \n RAM - 32 GB \n Storage - 100 GB \n If you select Veeam as a bare metal server option, there is no capacity requirement. |
 | VMware HCX | For the HCX Management Appliance VM: \n CPU - 4 CPUs \n RAM - 12 GB \n Storage - 60 GB VMDK |
-| vRealize Operations and Log Insight | CPU - 18 CPUs \n RAM - 208 GB \n If you install vRealize Operations with vSAN storage, you must have an estimated 750 GB of vSAN storage. \n If you install vRealize Operations with NFS storage, you do not have a storage requirement because NFS storage is ordered as part of the instance order. |
+| VMware Aria Operations and VMware Aria Operations for Logs | CPU - 18 CPUs \n RAM - 208 GB \n If you install VMware Aria Operations with vSAN storage, you must have an estimated 750 GB of vSAN storage. \n If you install VMware Aria Operations with NFS storage, you do not have a storage requirement because NFS storage is ordered as part of the instance order. |
 | Zerto | CPU - 2 CPUs \n RAM - 4 GB |
 {: caption="Table 2. Resources required for the services that the system checks for capacity requirements" caption-side="bottom"}
 

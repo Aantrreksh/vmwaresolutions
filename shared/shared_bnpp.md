@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2023
 
-lastupdated: "2023-05-02"
+lastupdated: "2023-05-22"
 
 keywords: troubleshooting VMware Solutions Shared, data center, VMware Solutions Shared data centers, Business Partners
 
@@ -39,7 +39,7 @@ For example, ``PAR04- windows`` and ``PAR04- linux`` are in a group with the sam
 
 Business Partner users cannot modify a role in VMware Cloud Director used for the IAM integration.
 
-When the VMWare Cloud Director version is updated, the new version can introduce new dependencies between rights. If the affected right is used by one of the roles created in VMware Cloud Director for the integration with IAM, you cannot modify that role in VMware Cloud Director.
+When the VMware Cloud Director version is updated, the new version can introduce new dependencies between rights. If the affected right is used by one of the roles created in VMware Cloud Director for the integration with IAM, you cannot modify that role in VMware Cloud Director.
 
 An error similar to the following displays.
 ``Required implied right <right name 1> has not been selected for selected right <right name 2>``

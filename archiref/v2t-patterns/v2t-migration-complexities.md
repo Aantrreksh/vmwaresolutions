@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2022
+  years:  2022, 2023
 
-lastupdated: "2022-12-29"
+lastupdated: "2023-06-19"
 
 subcollection: vmwaresolutions
 
@@ -133,5 +133,4 @@ This is not a key parameter. However, it gives guidance on where additional proj
 * [vCenter Server single site](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview)
 * [vCenter Server multisite](/docs/vmwaresolutions?topic=vmwaresolutions-vc_multisite)
 * [Regulated workloads - single site](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-overview)
-* [Regulated workloads - multizone](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-mzr)
 * [Ordering services for vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices)

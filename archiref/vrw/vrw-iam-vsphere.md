@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2020, 2022
+  years:  2020, 2023
 
-lastupdated: "2022-08-26"
+lastupdated: "2023-06-19"
 
 subcollection: vmwaresolutions
 
@@ -27,8 +27,8 @@ The following user IDs are used to add an identity source, which is embedded by 
 |:---------|:-------------|:-------|:------------|
 | Privileged user | `root` | SSH | Used for VMware configuration such as setting up VMware High Availability and creating distributed switches. Used post deployment to pair primary and secondary vCenter Server instances. |
 | Privileged user | `customerroot` | SSH | Created for customer use only. |
-| IBM automation | `automation`@``root_domain``  \n (Active Directory user) | HTTPS | Used post deployment to add and remove hosts and clusters and to deploy and configure virtual machines (VMs) for add-on services. |
-| Privileged user | `cloudadmin`@`root_domain`  \n (Active Directory user) | HTTPS | Created for customer use only. |
+| IBM automation | `automation`@``root_domain`` \n (Active Directory user) | HTTPS | Used post deployment to add and remove hosts and clusters and to deploy and configure virtual machines (VMs) for add-on services. |
+| Privileged user | `cloudadmin`@`root_domain` \n (Active Directory user) | HTTPS | Created for customer use only. |
 {: caption="Table 1. vCenter and Platform Services Controller user IDs" caption-side="bottom"}
 
 HTTPS is used for vCenter setup and configuration, and for VMware operations such as adding hosts, clusters, or storage for vCenter management of resources.
@@ -36,14 +36,14 @@ HTTPS is used for vCenter setup and configuration, and for VMware operations suc
 ### vCenter access
 {: #vrw-iam-vsphere-vcenter-access}
 
-Privileged users are granted `cloudadmin` access to vCenter Server through the Entrust CloudControl role. No direct access to vCenter Server is provided.
+Privileged users are granted `cloudadmin` access to vCenter Server through the vCetner roles. 
 
 ## NSX Manager user IDs
 {: #vrw-iam-vsphere-nsx}
 
 | User     | User ID      | Description |
 |:---------|:-------------|:------------|
-| IBM automation | `ibm_automation`  \n (NSX-T™ principal identity user) | Used post deployment to manage NSX VTEP IP addresses and to manage host and cluster configuration when hosts and clusters are added or removed. Also used to manage ESG configuration for add-on services that require public network access for licensing, activation, or usage reporting. |
+| IBM automation | `ibm_automation` \n (NSX-T™ principal identity user) | Used post deployment to manage NSX VTEP IP addresses and to manage host and cluster configuration when hosts and clusters are added or removed. Also used to manage ESG configuration for add-on services that require public network access for licensing, activation, or usage reporting. |
 | Privileged user | `admin` | Created for customer use only. |
 {: caption="Table 2. NSX Manager user IDs" caption-side="bottom"}
 
@@ -84,7 +84,6 @@ Privileged users are granted `cloudadmin` access to vCenter Server through the E
 | `prod-Caveonix-dynamicID-@domainName` | Used for installation and configuration of the Caveonix RiskForesight service. |
 | `prod-Fortigate-dynamicID-@domainName` | Used for installation and configuration of the FortiGate Security Appliance service. |
 | `prod-FortigateVM-dynamicID-@domainName` | Used for installation and configuration of the FortiGate Virtual Appliance service. |
-| `prod-HyTrustCC-shortID-@domainName` | Used for installation and configuration of the Entrust CloudControl on {{site.data.keyword.cloud_notm}} service. |
 | `prod-KMIPAdapter-dynamicID-@domainName` | Used for installation and configuration of the KMIP for VMware service. |
 | `prod-SPPlus-dynamicID-@domainName` | Deprecated - Used for installation and configuration of the IBM Spectrum Protect Plus service. |
 | `prod-Veeam-dynamicID-@domainName` | Used for installation and configuration of the Veeam service. |
@@ -100,6 +99,4 @@ where:
 {: #vrw-iam-vsphere-related}
 
 * [IBM Cloud compliance programs](https://www.ibm.com/cloud/compliance)
-* [Entrust CloudControl](/docs/vmwaresolutions?topic=vmwaresolutions-entrust-cc_considerations)
-* [Entrust DataControl](/docs/vmwaresolutions?topic=vmwaresolutions-entrust-dc_considerations)
 * [IBM Cloud Hyper Protect Crypto Services API](/apidocs/hs-crypto)

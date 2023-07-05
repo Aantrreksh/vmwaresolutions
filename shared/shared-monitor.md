@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2020, 2022
+  years:  2020, 2023
 
-lastupdated: "2022-11-24"
+lastupdated: "2023-06-20"
 
 keywords: monitor, default dashboard, custom dashboard, virtual data center, platform metrics, monitoring
 
@@ -18,7 +18,7 @@ subcollection: vmwaresolutions
 # Visualizing your virtual data center environment with IBM Cloud Monitoring
 {: #shared-monitor}
 
-VMware Shared provides an integration with {{site.data.keyword.mon_full}}, which allows you to use a default dashboard, provided by VMware Shared, to view metrics for your virtual data centers. Alternatively, you can create your own dashboard to visualize performance, volume of usage, and to define alerts to monitor your environment.
+VMware Shared provides an integration with {{site.data.keyword.mon_full}}, which allows you to use a dashboard, provided by VMware Shared to view metrics for your virtual data centers. Alternatively, you can create your own dashboard to visualize performance, volume of usage, and to define alerts to monitor your environment.
 
 Use {{site.data.keyword.mon_short}} dashboards to complete the following tasks.
 
@@ -55,8 +55,10 @@ After you order your {{site.data.keyword.mon_short}} instance, you can view the 
 1. In the **VMware Shared** table, select the virtual data center for which you want to view platform metrics.
 2. From the virtual data center details page, click the **Actions** menu and click **Monitoring**. The {{site.data.keyword.mon_short}} dashboard displays the metrics for the associated instance.
 
-VMware Shared provides the following metrics for the default dashboard:
+## VMware Shared metrics
+{: #shared-monitor-metrics}
 
+VMware Shared provides the following metrics for the default dashboard:
 * vCPU usage
 * vCPU allocation
 * Memory usage

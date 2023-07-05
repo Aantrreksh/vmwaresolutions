@@ -4,9 +4,9 @@ copyright:
 
   years:  2019, 2023
 
-lastupdated: "2023-03-10"
+lastupdated: "2023-06-15"
 
-keywords: vRealize, vRealize info, tech specs vRealize
+keywords: VMware Aria, VMware Aria info, tech specs VMware Aria, vRealize info
 
 subcollection: vmwaresolutions
 
@@ -15,40 +15,43 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# vRealize Operations and Log Insight on IBM Cloud overview
+# VMware Aria Operations and VMware Aria Operations for Logs on IBM Cloud overview
 {: #vrops_overview}
 
-vRealize Operations™ and vRealize Log Insight™ on IBM Cloud deploys the VMware® vRealize Operations (vROps) and VMware vRealize Log Insight (vRLI) tools. These tools help you operate and monitor the performance, health, and capacity of your {{site.data.keyword.IBM}}-hosted, dedicated VMware environment. The service also includes vRLI to help you troubleshoot issues by using log files more quickly. vRealize Operations and Log Insight on IBM Cloud is a non-IBM product that is offered under terms and conditions from VMware, not IBM.
+The VMware Aria Operations and VMware Aria Operations for Logs service is not available to Business Partner users.
+{: important}
+
+VMware Aria® Operations™ (formerly known as VMware vRealize® Operations™) and VMware Aria Operations™ for Logs (formerly known as VMware vRealize® Log Insight™) on IBM Cloud deploys the VMware Aria Operations and VMware Aria Operations for Logs Enterprise Edition tools. These tools help you operate and monitor the performance, health, and capacity of your {{site.data.keyword.IBM}}-hosted, dedicated VMware environment. VMware Aria Operations for Logs helps you troubleshoot issues by using log files more quickly. VMware Aria Operations and VMware Aria Operations for Logs on IBM Cloud is a non-IBM product that is offered under terms and conditions from VMware, not IBM.
 {: shortdesc}
 
-These tools are deployed by using the IBM advanced automation and are based on a consistent highly available design. vROps includes preinstalled and configured Management Packs to provide deeper visibility into the core VMware Software Defined Data Center components like VMware NSX®, vSAN™, and HCX™. The automation provides optimized dashboards out of the box so that you can monitor the full VMware stack more easily.
+These tools are deployed by using the IBM advanced automation and are based on a consistent highly available design. VMware Aria Operations includes preinstalled and configured Management Packs to provide deeper visibility into the core VMware Software Defined Data Center components like VMware NSX®, vSAN™, and HCX™. The automation provides optimized dashboards out of the box so that you can monitor the full VMware stack more easily.
 
 {{site.data.content.para-promotion-services}}
 
-The service versions available for deployment are vROps 8.10 and vRLI 8.10.
+The service versions available for deployment are VMware Aria Operations 8.12 and VMware Aria Operations for Logs 8.12.
 {: note}
 
-## Technical specifications for vRealize Operations and Log Insight
+## Technical specifications for VMware Aria Operations and VMware Aria Operations for Logs
 {: #vrops_overview-specs}
 
 For more information about resource requirements and capacity checking for some services, see [Resource requirements for services](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices#vc_addingservices-resource-requirements).
 
-The following components are ordered and included in the vRealize Operations and Log Insight service:
-* VMware vRealize Operations (vROps) 8.10
-* VMware vRealize Log Insight (vRLI) 8.10
+The following VMware Aria components are ordered and included in the service:
+* VMware Aria Operations Enterprise Edition
+* VMware Aria Operations for Logs Enterprise Edition
 
 For more information about the design, requirements, and preconfigured management packs, see [Operations management architecture overview](/docs/vmwaresolutions?topic=vmwaresolutions-opsmgmt-arch).
 
-## Considerations when you delete vRealize Operations and Log Insight
+## Considerations when you delete VMware Aria Operations and VMware Aria Operations for Logs
 {: #vrops_overview-remove}
 
 Review the following considerations before you delete the service:
 
-* Only the virtual machines (VMs) that were deployed during the initial installation of vRealize Operations and Log Insight are deleted. Any node that is deployed after the installation is not cleaned up.
-* Before you delete the service, you must remove any personal VM from storage that is deployed with this service. vRealize Operations and Log Insight orders only personal VMs if it’s not vSAN.
-* The VXLAN, DLR, and the Edge Gateway that were created during the initial deployment of vRealize Operations and Log Insight is deleted. The VMs that you deployed on VXLAN lose connectivity after the deletion of vRealize Operations and Log Insight begins.
-* If you delete vRealize Operations and Log Insight, you need to remove the Syslog Server from the NSX Manager and the NSX Controller manually.
-* If you installed the vRealize Operations and Log Insight service before VMware Solutions v4.0, and you then delete that service, you must manually remove the DNS entries. For more information, see [Manually removing the DNS entries](/docs/vmwaresolutions?topic=vmwaresolutions-vc_deletingservices#vc_deletingservices-DNS-entries).
+* Only the virtual machines (VMs) that were deployed during the initial installation of VMware Aria Operations and VMware Aria Operations for Logs are deleted. Any node that is deployed after the installation is not cleaned up.
+* Before you delete the service, you must remove any personal VM from storage that is deployed with this service. VMware Aria Operations and VMware Aria Operations for Logs orders only personal VMs if it’s not vSAN.
+* The VXLAN, DLR, and the Edge Gateway that were created during the initial deployment of VMware Aria Operations and VMware Aria Operations for Logs is deleted. The VMs that you deployed on VXLAN lose connectivity after the deletion of VMware Aria Operations and VMware Aria Operations for Logs begins.
+* If you delete VMware Aria Operations and VMware Aria Operations for Logs, you need to remove the Syslog Server from the NSX Manager and the NSX Controller manually.
+* If you installed the VMware Aria Operations and VMware Aria Operations for Logs service before VMware Solutions v4.0, and you then delete that service, you must manually remove the DNS entries. For more information, see [Manually removing the DNS entries](/docs/vmwaresolutions?topic=vmwaresolutions-vc_deletingservices#vc_deletingservices-DNS-entries).
 
 ### Removing the Syslog Server from the NSX Manager
 {: #vrops_overview-remove-nsx-manager}
@@ -125,5 +128,5 @@ Review the following considerations before you delete the service:
 ## Related links
 {: #vrops_overview-related}
 
-* [Ordering vRealize Operations and Log Insight](/docs/vmwaresolutions?topic=vmwaresolutions-vrops_ordering)
-* [Managing vRealize Operations and Log Insight](/docs/vmwaresolutions?topic=vmwaresolutions-managing_vrops)
+* [Ordering VMware Aria Operations and VMware Aria Operations for Logs](/docs/vmwaresolutions?topic=vmwaresolutions-vrops_ordering)
+* [Managing VMware Aria Operations and VMware Aria Operations for Logs](/docs/vmwaresolutions?topic=vmwaresolutions-managing_vrops)

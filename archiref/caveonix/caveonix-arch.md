@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2022
+  years:  2016, 2023
 
-lastupdated: "2022-08-26"
+lastupdated: "2023-06-12"
 
 subcollection: vmwaresolutions
 
@@ -49,7 +49,7 @@ Caveonix RiskForesight has the concept of zones.
    * RiskForesight Application - Contains multiple components and is described in detail in the Application Components section.
    * Central Collector – Collects information from the cloud providers and tenant zones.
 * Cloud Providers - This zone provides the infrastructure on which applications are hosted:
-   * Private – VMware on {{site.data.keyword.cloud}}, and on-premises, VMware infrastructure platforms. These platforms are integrated into RiskForesight through: vCenter, NSX Manager, VMware Cloud Director (vCD), or vRealize Automation (vRA).
+   * Private – VMware on {{site.data.keyword.cloud}}, and on-premises, VMware infrastructure platforms. These platforms are integrated into RiskForesight through: vCenter, NSX Manager, VMware Cloud Director (vCD), or VMware Aria® Automation™.
    * Public – Currently the only public cloud provider that is supported is AWS. {{site.data.keyword.cloud_notm}} is available soon.
    * Containers - Currently only AWS Elastic Kubernetes Service (EKS) is supported. {{site.data.keyword.cloud_notm}} Private and {{site.data.keyword.cloud_notm}} Kubernetes Services coming later.
 * Tenant or Customer Environment Zone – Used to separate tenants, customer, or business units. A remote collector is required because workloads exist in these zones. For a minimum deployment, you need one remote collector, but for a general deployment, you need one Remote Collector per tenant or customer or business unit.

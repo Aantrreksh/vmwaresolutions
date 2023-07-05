@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2022
+  years:  2016, 2023
 
-lastupdated: "2022-07-07"
+lastupdated: "2023-06-12"
 
 keywords: nsx editions, vsan editions, nsx edition comparison, vsan edition comparison
 
@@ -59,9 +59,9 @@ NSX-T Data Center (DC) SP license editions provide the following features.
 | Firewall visibility | | | | ![Available](../../../icons/checkmark-icon.svg) |
 | Automated security policy | | | | ![Available](../../../icons/checkmark-icon.svg) |
 | Rule and group recommendation analytics | | | | ![Available](../../../icons/checkmark-icon.svg) |
-| VMware vRealize Network Insight Advanced | | | | ![Available](../../../icons/checkmark-icon.svg) |
+| VMware Aria Operations™ for Networks Advanced | | | | ![Available](../../../icons/checkmark-icon.svg) |
 | VMware HCX Advanced | | | | ![Available](../../../icons/checkmark-icon.svg) |
-| vRealize Log Insight for NSX | | | | |
+| VMware Aria Operations™ for Logs for NSX | | | | |
 {: caption="Table 2. NSX-T edition comparison chart" caption-side="bottom"}
 
 ## NSX-V edition comparison
@@ -89,8 +89,8 @@ NSX Base for Service Providers edition is only available for service providers t
 | VPN (IPsec)                                   | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) |
 | VPN (SSL)                                     | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) |
 | API-driven automation                         | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) |
-| Integration with vRealize and OpenStack[^OpenStack]  | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) |
-| Automation of security policies with vRealize |      | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) |
+| Integration with VMware Aria and OpenStack[^OpenStack]  | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) |
+| Automation of security policies with VMware Aria |      | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) |
 | SW L2 bridging to physical environment        |      | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) |
 | Dynamic routing with ECMP (active-active)     |      | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) |
 | Distributed firewalling                       |      | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) |
@@ -102,7 +102,7 @@ NSX Base for Service Providers edition is only available for service providers t
 | Multisite NSX optimizations                  |      |          | ![Available](../../../icons/checkmark-icon.svg) |
 | Remote Gateway                                |      |          | ![Available](../../../icons/checkmark-icon.svg) |
 | Integration with HW VTEPs                     |      |          | ![Available](../../../icons/checkmark-icon.svg) |
-| vRealize Log Insight for NSX | | | | |
+| VMware Aria Operations for Logs for NSX | | | | |
 {: caption="Table 4. NSX-V edition comparison chart" caption-side="bottom"}
 
 [^OpenStack]: L2, L3 & NSX Edge integration only. No consumption of security groups.

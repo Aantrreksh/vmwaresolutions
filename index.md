@@ -4,7 +4,7 @@ copyright:
 
   years: 2016, 2023
 
-lastupdated: "2023-06-22"
+lastupdated: "2023-06-12"
 
 keywords: IBM Cloud for VMware Solutions, getting started, vmware solutions offerings, services for vmwaresolutions, vmwaresolutions use cases
 
@@ -118,7 +118,7 @@ The following table describes other services that are available.
 | Service category | Service name | Description |
 |:---------------- |:------------ |:----------- |
 | Transformation and modernization | [Red Hat® OpenShift® for VMware](/docs/vmwaresolutions?topic=vmwaresolutions-ocp_overview) | This service brings together the power of the Red Hat OpenShift Container Platform and the VMware software-defined data center stack. |
-| Management tools | [vRealize® Operations™ and Log Insight™](/docs/vmwaresolutions?topic=vmwaresolutions-vrops_overview) | This service deploys the VMware vRealize Operations (vROps) and VMware vRealize Log Insight (vRLI) tools, which help you operate and monitor the performance, health, and capacity of your IBM-hosted, dedicated VMware environment. |
+| Management tools | [VMware Aria Operations and VMware Aria Operations for Logs](/docs/vmwaresolutions?topic=vmwaresolutions-vrops_overview) | This service deploys the tools of VMware Aria® Operations™ and VMware Aria Operations™ for Logs, which help you operate and monitor the performance, health, and capacity of your IBM-hosted, dedicated VMware environment. |
 {: caption="Table 6. Other services" caption-side="bottom"}
 
 ## Accessing the VMware Solutions console
@@ -148,7 +148,7 @@ After you set up your environment properly, begin the ordering process.
 For more information about how to order an instance, see the following topics based on your selected deployment:
 * [Ordering virtual data center instances](/docs/vmwaresolutions?topic=vmwaresolutions-shared_ordering)
 * [Ordering vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-req)
-* [Ordering vSphere clusters](/docs/vmwaresolutions?topic=vmwaresolutions-vs_orderinginstances-req)
+* [Ordering VMware vSphere instances](/docs/vmwaresolutions?topic=vmwaresolutions-vs_orderinginstances-req)
 * [Ordering VMware Regulated Workloads instances](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-orderinginstance-req)
 
 ## Viewing the instance
@@ -160,5 +160,5 @@ After you place an instance order in **Step 3**, the deployment of the instance 
 For more information about how to view the instance you ordered, see the following topics based on your selected deployment:
 * [Viewing and managing virtual data center instances](/docs/vmwaresolutions?topic=vmwaresolutions-shared_viewing-vdc-summary)
 * [Viewing vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_viewinginstances)
-* [Viewing vSphere clusters](/docs/vmwaresolutions?topic=vmwaresolutions-vc_viewinginstances)
+* [Viewing VMware vSphere instances](/docs/vmwaresolutions?topic=vmwaresolutions-vs_viewinginstances)
 * [Viewing VMware Regulated Workloads instances](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-view-delete-instance)

@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2023
 
-lastupdated: "2023-03-21"
+lastupdated: "2023-06-02"
 
 keywords: vmware regulated workloads, regulated workloads, workloads instance, regulated instance
 
@@ -20,7 +20,7 @@ subcollection: vmwaresolutions
 The VMware® Regulated Workloads offering includes a secure-by-default architecture that follows the {{site.data.keyword.IBM}} unique policy controls framework. It also includes continuous compliance monitoring and the highest level of data encryption FIPS 140-2 Level 4.
 
 Review the following specifications before you begin.
-* VMware Regulated Workloads is available for both single-zone and multizone region topologies.
+* VMware Regulated Workloads is only available for single-zone topology.
 * VMware Regulated Workloads are based on VMware NSX-T™ and VMware vSphere® 7.
 * [Hyper Protect Crypto Services](https://cloud.ibm.com/catalog/services/hyper-protect-crypto-services), [KMIP for VMware](https://cloud.ibm.com/infrastructure/vmware-solutions/console/servicestandalonenew/KMIPAdapter), and [Direct Link Dedicated](https://cloud.ibm.com/interconnectivity/direct-link) are required for VMware Regulated Workloads. Ensure that you order these services before you start your VMware Regulated Workloads order.
 * Some of the services require configuration setup. Review each service and ensure that you configure its settings properly, as indicated.

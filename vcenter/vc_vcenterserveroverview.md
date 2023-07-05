@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-04-12"
+lastupdated: "2023-06-21"
 
 keywords: vCenter Server, vCenter Server architecture, tech specs vCenter Server
 
@@ -44,7 +44,7 @@ vCenter Server with NSX-V instances is available for V4.7 and earlier.
 
 ![vCenter Server with NSX-V architecture](../images/vc_architecture.svg "vCenter Server with NSX-V architecture"){: caption="Figure 2. vCenter Server with NSX-V high-level architecture for a three-node cluster" caption-side="bottom"}
 
-For vCenter Server with NSX-V instances, if you purchased IBM-provided VMware licensing, you can upgrade the VMware NSX Base edition to Advanced or to Enterprise edition. Also, you can purchase more VMware components, such as VMware vRealize® Operations™. You can also add IBM-Managed Services if you want to offload the day-to-day operations and maintenance of the virtualization, guest OS, or application layers. The {{site.data.keyword.cloud_notm}} Professional Services team is available to help you accelerate your journey to the cloud with migration, implementation, planning, and onboarding services.
+For vCenter Server with NSX-V instances, if you purchased IBM-provided VMware licensing, you can upgrade the VMware NSX Base edition to Advanced or to Enterprise edition. Also, you can purchase more VMware components, such as VMware Aria® Operations™. You can also add IBM-Managed Services if you want to offload the day-to-day operations and maintenance of the virtualization, guest OS, or application layers. The {{site.data.keyword.cloud_notm}} Professional Services team is available to help you accelerate your journey to the cloud with migration, implementation, planning, and onboarding services.
 
 ## Physical infrastructure
 {: #vc_vcenterserveroverview-physical-infras}
@@ -65,7 +65,7 @@ This layer consists of the following components:
 * vCenter Server Appliance with embedded Platform Services Controller (PSC).
 * For NSX-T - three NSX Manager or Controller nodes (total of three nodes).
 * For NSX-V - one NSX Manager and three VMware NSX Controller™ nodes (total of four nodes).
-* VMware NSX Edge™ Services Gateways (ESGs) - four for NSX-T (two in the management cluster and two in the workload cluster) and two for NSX-V.
+* VMware NSX Edge™ Services Gateways (ESGs) - four for NSX-T (two on the management cluster and two on the workload cluster) and two for NSX-V.
 * IBM CloudDriver virtual server instance (VSI). The CloudDriver VSI is deployed on demand as needed for certain operations such as adding hosts to the environment.
 
 The base offering is deployed with a vCenter Server appliance that is sized to support an environment with up to 400 hosts and up to 4,000 VMs. The same vSphere API-compatible tools and scripts can be used to manage the IBM-hosted VMware environment.
@@ -89,19 +89,14 @@ The following components are included in your vCenter Server instance.
 ### Bare metal server
 {: #vc_vcenterserveroverview-bare-metal}
 
-* For NSX-T, you can order three or more bare metal servers in the consolidated or management cluster, and optionally two or more bare metal servers in the workload cluster.
-* For NSX-V, you can order two or more bare metal servers.
-
-Skylake servers are not supported for vSphere Enterprise Plus 7.0 instances.
-{: note}
-
-The following configurations are available:
-* **Skylake** - 2-CPU Intel® Skylake generation servers (Intel® Xeon® 4100/5100/6100 series) with your selected CPU model and RAM size.
-* **Cascade Lake** - 4-CPU Intel Cascade Lake generation server (Quad Intel Xeon Gold 6248 and Quad Intel Xeon Platinum 8260) or 2-CPU Intel Cascade Lake generation servers (Intel Xeon 4200/5200/6200/8200 series) with your selected CPU model and RAM size.
-* **SAP-certified** - Intel Skylake generation servers (Intel Xeon 6140 series) or Intel Cascade Lake generation servers (Intel Xeon 5218, 6248, and 8280 M series) with your selected CPU model.
+You can order three or more bare metal servers on the consolidated or management cluster, and optionally two or more bare metal servers on the workload cluster.
 
 If you plan to use vSAN storage, the configuration requires a minimum of four bare metal servers.
 {: note}
+
+The following configurations are available:
+* **Cascade Lake** - 4-CPU Intel® Cascade Lake generation servers (Quad Intel Xeon® 6200/8200 series) or 2-CPU Intel Cascade Lake generation servers (Dual Intel Xeon 4200/5200/6200/8200 series) with your selected RAM size.
+* **SAP-certified Cascade Lake** - 2-CPU Intel Cascade Lake generation servers (Dual Intel Xeon 5200/6200/8200 series).
 
 ### Networking
 {: #vc_vcenterserveroverview-networking}
@@ -125,8 +120,8 @@ The following networking components are ordered:
 {: #vc_vcenterserveroverview-vsi}
 
 The following virtual server instances (VSIs) are ordered:
-* A VSI for IBM CloudBuilder, which is shut down after the instance deployment is completed.
-* Choose to deploy a single Microsoft® Windows® Server VSI for Microsoft Active Directory™ (AD) or two high availability Microsoft Windows VMs in the management cluster to help enhance security and robustness.
+* A VSI for IBM CloudDriver, which is deployed as needed for initial deployment and for Day 2 operations.
+* Choose to deploy a single Microsoft® Windows® Server VSI for Microsoft Active Directory™ (AD) or two high availability Microsoft Windows VMs on the management cluster to help enhance security and robustness.
 
 ### Storage
 {: #vc_vcenterserveroverview-storage}
@@ -160,11 +155,6 @@ The vSAN option offers customized configurations, with various options for disk 
    {: note}
 
 * High Performance with Intel Optane - this option provides two extra capacity disk bays for a total of 10 capacity disks. It's available only for vSphere 6 instances.
-
-#### Local disk storage (NSX-V only)
-{: #vc_vcenterserveroverview-local-disk-storage}
-
-The local disks option, available to the **SAP-certified** Quad Intel Xeon E7-8890 v4 processor (bare metal configuration only) offers customized configurations with various options for disk count and disk type.
 
 ### Licenses (IBM-provided or BYOL) and fees
 {: #vc_vcenterserveroverview-license-and-fee}
@@ -219,7 +209,7 @@ The vCenter Server multizone architecture is an end-to-end reference architectur
 * Storage architecture (VMware vSAN or NFS)
 * Integration with IBM Services Platform with Watson to enable the consumption of services
 * Tools for monitoring, troubleshooting, performance, and capacity management.
-   * vRealize Suite pattern (vRealize Operations™, vRealize Log Insight™, and vRealize Network Insight™)
+   * VMware Aria Suite pattern (VMware Aria Operations, VMware Aria Operations™ for Logs, and VMware Aria Operations™ for Networks)
    * Active Directory pattern
    * Integration with IBM Netcool and IBM Bluecare for auto-ticketing, alerting, and event enrichment
    * Resiliency patterns (backup and recovery)
@@ -233,7 +223,7 @@ vCenter Server multizone instances are available in the following regions:
 {: #vc_vcenterserveroverview-mcv-base-specs}
 
 The base infrastructure has the following specifications:
-* Each site has its own dedicated edge and management cluster.
+* Each site has its own dedicated gateway and management cluster.
 * The resource cluster is a vSphere + vSAN stretched cluster.
 * The witness site contains two VMware ESXi™ hosts that provide quorum for both vSAN and vCenter.
 * Single vCenter Server and NSX Manager architecture.
@@ -244,7 +234,7 @@ The base infrastructure has the following specifications:
 {: #vc_vcenterserveroverview-mcv-tooling-specs}
 
 The tools and technology architecture has the following specifications:
-* vRealize Operations, vRealize Log Insight, and vRealize Network Insight to provide operations and management capabilities specific to the VMware products that are used, for example NSX, vSAN, and vSphere.
+* VMware Aria Operations, VMware Aria Operations for Logs, and VMware Aria Operations for Networks to provide operations and management capabilities specific to the VMware products that are used, for example NSX, vSAN, and vSphere.
 * IBM Software Defined Environment (SDE) automation tool health check for validating deployments against best practices and security policies.
 * Optional Disaster Recovery (DR) to an out of Region {{site.data.keyword.cloud_notm}} site.
 * FortiGate Security Appliance or similar to secure any internet access and to facilitate active-active network integration with the on-premises network.

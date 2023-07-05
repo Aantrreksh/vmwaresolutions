@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2020, 2022
+  years:  2020, 2023
 
-lastupdated: "2022-12-19"
+lastupdated: "2023-07-05"
 
 keywords: VMware Solutions Shared delete instance, delete VMware Solutions Shared, remove VMware Solutions Shared
 
@@ -22,12 +22,12 @@ You can delete a virtual data center when it's in the **Ready To Use** state.
 Before you delete your virtual data center, ensure that any items that you created within the are removed. Items might include the following artifacts.
 
 * vApps, vApp templates, and virtual machines (VMs). You must remove these items even if they are stopped.
-* Organization networks that are removed or unshared from the virtual data center
-* Organization catalogs
-* DHCP pools created within the Organization virtual data center edge gateway
-* Custom routes that are defined on the Organization virtual data center edge gateway distributed router
-* Load balancer custom configurations defined on the Organization virtual data center edge gateway
-* VPN custom configurations defined on the Organization virtual data center edge gateway
+* Organization networks that are removed or unshared from the virtual data center.
+* Organization catalogs.
+* DHCP pools created within the Organization virtual data center edge gateway.
+* Custom routes that are defined on the Organization virtual data center edge gateway distributed router.
+* Load balancer custom configurations defined on the Organization virtual data center edge gateway.
+* VPN custom configurations defined on the Organization virtual data center edge gateway.
 
 ## Considerations when you delete virtual data centers
 {: #shared_deletinginstance-considerations}

@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2023
 
-lastupdated: "2023-04-17"
+lastupdated: "2023-06-12"
 
 keywords: cyber recovery, IBM Cloud cyber recovery, cyber recovery services, cyber recovery add-on services, cyber recovery order instance, order cyber recovery, cyber recovery instances
 
@@ -35,4 +35,4 @@ The following services are optional for Cyber Recovery.
 * [Entrust CloudControl™](/docs/vmwaresolutions?topic=vmwaresolutions-entrust-cc_considerations)
 * [F5® BIG-IP®](/docs/vmwaresolutions?topic=vmwaresolutions-f5_considerations)
 * [Red Hat® OpenShift® for VMware®](/docs/vmwaresolutions?topic=vmwaresolutions-ocp_overview)
-* [vRealize Operations™ and Log Insight™](/docs/vmwaresolutions?topic=vmwaresolutions-vrops_overview)
+* [VMware Aria Operations and VMware Aria Operations for Logs](/docs/vmwaresolutions?topic=vmwaresolutions-vrops_overview)

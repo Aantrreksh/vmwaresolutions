@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-04-03"
+lastupdated: "2023-06-16"
 
 keywords: view vCenter Server, view instance, view instance details, vmware multizone, vcenter server multizone, view vCenter Server multizone, view multizone, view multizone instance details
 
@@ -140,17 +140,17 @@ Click the **Deployment history** tab to view the deployment history for the inst
 | Summary | The details of the change. |
 {: caption="Table 5. vCenter Server instance deployment history" caption-side="bottom"}
 
-## What to do if errors occur
+### What to do if errors occur
 {: #vc_viewinginstances-if-errors-occur}
 
-If errors occur during instance deployment or instance deletion, the {{site.data.keyword.cloud_notm}} Support team is automatically notified. To inquire about the status of your ticket, follow the steps in [Contacting IBM Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support).
+If you see errors in the deployment history, the {{site.data.keyword.cloud_notm}} Support team is automatically notified. To inquire about the status of your ticket, follow the steps in [Contacting IBM Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support).
 
 ## What to do next
 {: #vc_viewinginstances-next}
 
 Manage your instances from the {{site.data.keyword.vmwaresolutions_short}} console or the VMware vSphere Web Client.
 
-Before you click **vCenter console** on the instance summary page to go to the vSphere Web Client and start managing your VMware ESXi™ servers. You must log in to the VPN portal of the {{site.data.keyword.cloud_notm}} data center. Hover over **vCenter console** and follow the instructions to ensure that you meet all requirements and you completed the necessary steps before you access the vSphere Web Client.
+Before you click **vCenter console** on the instance summary page to go to the vSphere Web Client and start managing your VMware ESXi™ servers, you must log in to the VPN portal of the {{site.data.keyword.cloud_notm}} data center. Hover over **vCenter console** and follow the instructions to ensure that you meet all requirements and you completed the necessary steps before you access the vSphere Web Client.
 {: important}
 
 Review the following topics for information to help you complete the login instructions:

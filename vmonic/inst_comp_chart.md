@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-03-17"
+lastupdated: "2023-06-19"
 
 keywords: vmware offering, vmware solutions functions, function support
 
@@ -40,7 +40,7 @@ Review the following table to understand the differences in feature support for 
 | NSX license upgrade options[^nsxv3] | Upgrade available from NSX Advanced to Enterprise. | None |
 | vSAN license editions | vSAN Advanced or Enterprise | vSAN Advanced or Enterprise |
 | Add-on services | Supported[^services] | Not supported by the automation of this solution. You can bring and install your own software. |
-{: caption="Table 1. Supported functions for vCenter Server instances and vSphere clusters" caption-side="bottom"}
+{: caption="Table 1. Supported functions for vCenter Server instances and VMware vSphere instances" caption-side="bottom"}
 
 [^automation]: According to a validated design and with verification during deployment
 
@@ -61,7 +61,7 @@ Review the following table to understand the differences in feature support for 
 
 | Feature | vCenter Server offering | Regulated Workloads offering |
 |:------- |:-------------- |:-------------------------- |
-| vCenter Server version | 7.0 Update 3j | 7.0 Update 3j |
+| vCenter Server version | 7.0 Update 3k | 7.0 Update 3k |
 | vSphere version | 7.0 Update 3k | 7.0 Update 3k | 
 | NSX edition | NSX DC SP Base, Professional, Advanced, or Enterprise Plus | NSX DC SP Advanced or Enterprise Plus |
 | NSX networking solution [^nsxedi] | NSX-T™ | NSX-T |
@@ -71,7 +71,7 @@ Review the following table to understand the differences in feature support for 
 | Separate management cluster | Supported | Supported |
 | Minimum number of ESXi servers | For vSAN, 4 servers. </br>For NFS, 3 servers. | 6 servers - 4 for the consolidated cluster and 2 for the gateway cluster. |
 | Gateway cluster | Optional | Required. Juniper vSRX, FortiGate Virtual Appliance, Bring your own gateway, or FortiGate Security Appliance. |
-| Logging and monitoring with VMware vRealize® Operations and Log Insight | Optional | Required |
+| Logging and monitoring with VMware Aria® Operations™ and VMware Aria Operations™ for Logs | Optional | Required |
 | Role-based access with Entrust CloudControl™ | Optional | Required |
 | Compliance with Caveonix | Optional | Required |
 | Caveonix pricing | Per VM | Per host |
@@ -81,7 +81,6 @@ Review the following table to understand the differences in feature support for 
 | Veeam backup server | Optional (opt out) | Required with option to remove on Day 2 |
 | Disaster recovery | Veeam or Zerto | Veeam |
 | Migration | HCX, Zerto, or PrimaryIO | HCX (optional) |
-| Stretched cluster - High Availability | Not supported | Optional |
 | Financial Services Cloud with policy framework | No | Yes |
 {: caption="Table 2. Supported features for vCenter Server instances and VMware Regulated Workloads" caption-side="bottom"}
 

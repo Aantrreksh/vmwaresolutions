@@ -4,7 +4,7 @@ copyright:
 
   years: 2019, 2023
 
-lastupdated: "2023-02-07"
+lastupdated: "2023-05-30"
 
 subcollection: vmwaresolutions
 
@@ -92,7 +92,7 @@ The following table describes the responsibilities that are related to change ma
 | Task | {{site.data.keyword.IBM_notm}} responsibilities | Your responsibilities |
 |:---- |:----------------------------------------------- |:--------------------- |
 | Scaling | Scale your VMware infrastructure as requested. | Choose the capacity for your VMware Solutions instances. |
-| Upgrading and patching | For VMware vCenter Server, VMware vSphere, VMware Regulated Workloads, and Cyber Recovery, IBM does not have access to components to perform upgrades and patching. | You have the responsibility to apply updates to VMware components (VMware vSphere Hypervisor ESXi,  vCenter Server, VMware NSX-T, VMware vSAN, Microsoft Active Directory™) and any additional add-on components (VMware vRealize, Entrust, Caveonix RiskForesight, Veeam Backup and Replication). You can use [VMware Update Manager](/docs/vmwaresolutions?topic=vmwaresolutions-opsmgmt-vum) to assist with the updates. The Regulated Workloads section of this documentation also includes a [version compatibility matrix](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-apply-updates). |
+| Upgrading and patching | For VMware vCenter Server, VMware vSphere, VMware Regulated Workloads, and Cyber Recovery, IBM does not have access to components to perform upgrades and patching. | You have the responsibility to apply updates to VMware components (VMware vSphere Hypervisor ESXi,  vCenter Server, VMware NSX-T, VMware vSAN, Microsoft Active Directory™) and any additional add-on components (VMware Aria, Entrust, Caveonix RiskForesight, Veeam Backup and Replication). You can use [VMware Update Manager](/docs/vmwaresolutions?topic=vmwaresolutions-opsmgmt-vum) to assist with the updates. The Regulated Workloads section of this documentation also includes a [version compatibility matrix](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-apply-updates). |
 {: row-headers}
 {: caption="Table 4. Responsibilities for change management for VMware Solutions offerings (other than VMware Shared)" caption-side="bottom"}
 {: summary="The rows are read from left to right. The first column describes the task that a customer or IBM might be responsible for. The second column describes {{site.data.keyword.IBM_notm}} responsibilities for that task. The third column describes your responsibilities as the customer for that task."}

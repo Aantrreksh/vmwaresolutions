@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-05-01"
+lastupdated: "2023-05-22"
 
 keywords: vCenter Server network config, network configuration, manage NSX ESG
 
@@ -59,6 +59,11 @@ To take advantage of NSX for your workload VMs, you must configure a number of s
 {: #vc_nsx-t_esg_config-procedure-enable-snat-rule}
 
 NSX-T enables the SNAT rule by default. For more information about modifying the existing rules, see [Configure source and destination NAT on a Tier-0 logical router](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/2.4/administration/GUID-45949ACD-9029-4674-B29C-C2EABEB39E1D.html){: external}.
+
+## Enabling the firewall rule for NSX-T
+{: #vc_esg_config-procedure-enable-firewall-rule}
+
+NSX-T disables all traffic through the workload NSX edge rule by default. To allow VMs to use the SNAT rule described in the previous section, you must create a firewall policy and rule to define and allow the traffic. For more information about modifying the existing rules, see [Add a Gateway Firewall Policy and Rule](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.2/administration/GUID-DE6FE8CB-017E-41C8-85FC-D71CF27F85C2.html){: external}.
 
 ## Enabling the SNAT rule for NSX-V
 {: #vc_esg_config-procedure-enable-snat-rule}

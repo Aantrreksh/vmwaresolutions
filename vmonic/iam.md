@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-03-27"
+lastupdated: "2023-06-30"
 
 keywords: IAM user, user role, user permission, IAM access for vmwaresolutions, permissions for vmwaresolutions, identity and access management for vmwaresolutions, roles for vmwaresolutions, actions for vmwaresolutions, assigning access for vmwaresolutions
 
@@ -183,6 +183,6 @@ For your existing instances that were deployed in V2.4 and earlier releases, you
 
 * [Setting up user access](/docs/account?topic=account-access-getstarted)
 * [Inviting users to an account](/docs/account?topic=account-iamuserinv)
-* [What is {{site.data.keyword.cloud_notm}} IAM](/docs/account?topic=account-iamoverview)
+* [How IBM Cloud IAM works](/docs/account?topic=account-iamoverview)
 * [Locating an IAM account administrator](/docs/vmwaresolutions?topic=vmwaresolutions-iam_verify_permissions)
 * [Roles and permissions for VMware Cloud Director](/docs/vmwaresolutions?topic=vmwaresolutions-iam_vcd&interface=ui)

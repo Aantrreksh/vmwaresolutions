@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2023
 
-lastupdated: "2023-03-21"
+lastupdated: "2023-06-02"
 
 keywords: vmware regulated workloads, vmware regulated workloads order instance, order vmware regulated workloads, vmware regulated workloads instances
 
@@ -26,11 +26,6 @@ By default, the gateway cluster name is set to **mcv-_xx_-edge**.
 
 {{site.data.content.orderinginstance-cluster-name-list}}
 
-## Data center location (multizone VMware instance only)
-{: #vrw-orderinginstance-edge-dc}
-
-The gateway clusters are colocated with the witness and consolidated clusters.
-
 ## Compute capacity
 {: #vrw-orderinginstance-edge-compute}
 
@@ -46,7 +41,13 @@ You can select a RAM size from 64 GB, 96 GB, 128 GB, 192 GB, 384 GB, 768 GB, and
 
 {{site.data.content.uplink-speed-options-cascadelake-list}}
 
-{{site.data.content.simpletable-uplink-speed-locations}}
+{{site.data.content.simpletable-uplink-speed-locations-ap}}
+
+{{site.data.content.simpletable-uplink-speed-locations-eur}}
+
+{{site.data.content.simpletable-uplink-speed-locations-naeast}}
+
+{{site.data.content.simpletable-uplink-speed-locations-nasouth}}
 
 ## Networking type
 {: #vrw-orderinginstance-edge-net}

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2022
+  years:  2016, 2023
 
-lastupdated: "2022-11-07"
+lastupdated: "2023-05-30"
 
 keywords: vSphere upgrade, NSX upgrade, PSC upgrade
 
@@ -25,7 +25,7 @@ The {{site.data.keyword.vmwaresolutions_full}} console filters the hardware auto
 
 VMware vSphere does not automate the installation, configuration, and bring-up of the optional VMware components. The platform allows maximum of flexibility to design and build your hosted VMware environment while you incorporate VMware-compatible hardware.
 
-Use this offering to create a new cluster of VMware ESXi™ servers or scale out an existing cluster of ESXi servers in an {{site.data.keyword.cloud_notm}} data center. Depending on the VMware components that you select, you can start with just one ESXi server and then scale the cluster later as needed.
+Use this offering to create a new instance of VMware ESXi™ servers or scale out an existing instance of ESXi servers in an {{site.data.keyword.cloud_notm}} data center. Depending on the VMware components that you select, you can start with just one ESXi server and then scale the instance later as needed.
 
 You must apply patches and upgrade the VMware software periodically, over the lifecycle of a vSphere Server instance.
 

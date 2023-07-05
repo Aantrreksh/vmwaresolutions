@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-05-01"
+lastupdated: "2023-06-07"
 
 keywords: Veeam console, Veeam backup restore, update Veeam license
 
@@ -47,13 +47,13 @@ Veeam Backup and Replication 12 is available for deployment on new instances. If
 
 * Order a new Veeam stand-alone license
 
-   A SKU in IMS is ordered with the number of VMs to license. A license key is not displayed because no unique keys are generated.
+   An order is placed with the number of VMs to license. A license key is not displayed because no unique keys are generated.
 
    For more information, see [Managing Veeam licenses](/docs/vmwaresolutions?topic=vmwaresolutions-veeam_managing_licenses).
 
 * Delete a Veeam stand-alone license
 
-   When you delete a Veeam stand-alone license, the license charge in IMS is canceled. Deleting the license has no effect on the Veeam installation.
+   When you delete a Veeam stand-alone license, the license charge is canceled. Deleting the license has no effect on the Veeam installation.
 
    When you want to increase your usage, delete your old stand-alone instance after you order a new instance to avoid unnecessary charges.
 
@@ -73,10 +73,6 @@ When you uninstall Veeam, the stand-alone license instance is not deleted. You m
 Consider the following when you plan to upgrade your Veeam usage. You might be charged for licenses for Veeam 9.5, which is deprecated, and for Veeam. Therefore, you might decide to order a new license for your Veeam installation toward the end of a month, so you aren’t charged for both licenses for most of the month.
 
 If you have an existing Veeam 9.5u4b installation that comes with a license and you want more coverage, you can keep your license that came with the installation and order a new license to upgrade usage. Later, if you delete Veeam 9.5u4b, you must delete separately any stand-alone licenses that you ordered. Otherwise, you continue to be charged for them.
-
-Although you can order a new stand-alone license, stacking licenses is not recommended. For example, if you initially ordered Veeam with 20 VMs and now want coverage for 40 VMs, do not keep your old license and order a new license for 20 VMs. Instead, order a new license for 40 VMs and delete your original 20 VM license.
-
-When licenses are ordered, the system does not generate a key, but applies a primary key.
 
 ## Considerations for a Linux hardened repository
 {: #managingveeam-linux-repository}

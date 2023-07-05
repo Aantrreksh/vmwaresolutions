@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2023
 
-lastupdated: "2023-03-21"
+lastupdated: "2023-06-19"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,10 @@ subcollection: vmwaresolutions
 # Overlay networking
 {: #vrw-overlay-network}
 
-{{site.data.keyword.cloud}} for VMware® Regulated Workloads uses NSX-T™ as the software defined network overlay provider.
+{{site.data.keyword.cloud}} for VMware® Regulated Workloads uses NSX-T™ as the software-defined network overlay provider.
+
+![Regulated overlay network](../../images/vrw-v2-net.svg "Cluster overlay network"){: caption="Figure 1. Cluster overlay network" caption-side="bottom"}
+
 
 ## Management cluster
 {: #vrw-overlay-network-management}
@@ -37,13 +40,10 @@ Traffic from the SaaS consumer passes through the vSRX in an encrypted tunnel, w
 ## Workload cluster
 {: #vrw-overlay-network-workload}
 
-![Workload cluster overlay network](../../images/vrw-workload-overlay.svg "Workload cluster overlay network"){: caption="Figure 1. Workload cluster overlay network" caption-side="bottom"}
-
 The workload cluster network design requires both the overlay network that is delivered with NSX-T and two or more VLANs to support the infrastructure layer functions.
 
 Traffic from the SaaS consumer is peered with the overlay network virtual edge. It is the virtual edge that the SaaS consumer uses as the secure tunnel end point to establish an encrypted VPN.
 
-![Workload cross account network](../../images/vrw-bank-to-isv.svg "Workload cross account network"){: caption="Figure 2. Workload cross account network" caption-side="bottom"}
 
 ## Related links
 {: #vrw-overlay-network-related}

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2022
+  years:  2022, 2023
 
-lastupdated: "2022-06-21"
+lastupdated: "2023-06-30"
 
 subcollection: vmwaresolutions
 
@@ -46,7 +46,7 @@ To manage access to your {{site.data.keyword.cloud_notm}} account, ensure that y
    * [{{site.data.keyword.dl_short}}](/docs/dl?topic=dl-iam)
    * [{{site.data.keyword.tg_short}}](/docs/transit-gateway?topic=transit-gateway-iam)
 
-For more information, see [{{site.data.keyword.cloud_notm}} Identity and Access Management](/docs/account?topic=account-iamoverview).
+For more information, see [How IBM Cloud IAM works](/docs/account?topic=account-iamoverview).
 
 ## VMware licensing
 {: #vpc-ryo-considerations-licensing}
@@ -116,9 +116,9 @@ Complete the following steps to ensure proper planning for software maintenance:
 
 Ensure to plan for and implement the following solutions for monitoring your instance and instance components:
 
-* A logging server that includes log forwarding or collection for all instance components and adequate log retention. The [vRealize Operations and Log Insight](/docs/vmwaresolutions?topic=vmwaresolutions-vrops_overview) offering can help you with log management and visibility.
+* A logging server that includes log forwarding or collection for all instance components and adequate log retention. The [VMware Aria Operations and VMware Aria Operations for Logs](/docs/vmwaresolutions?topic=vmwaresolutions-vrops_overview) offering can help you with log management and visibility.
 * An alert infrastructure, including configuration of the SMTP server and short message service (SMS) gateway, as needed.
-* Proactive monitoring of hosts, drives, management software, and network, including vSAN monitoring if applicable. The [VMware vRealize Operations on IBM Cloud](/docs/vmwaresolutions?topic=vmwaresolutions-vrops_overview) offering can help you operate and monitor the performance, health, and capacity of your VMware environment.
+* Proactive monitoring of hosts, drives, management software, and network, including vSAN monitoring if applicable. The [VMware Aria Operations on IBM Cloud](/docs/vmwaresolutions?topic=vmwaresolutions-vrops_overview) offering can help you operate and monitor the performance, health, and capacity of your VMware environment.
 * Monitoring your backup infrastructure and backup jobs.
 * vSphere Distributed Switch Health Check is enabled by default. It can generate a significant number of MAC addresses for testing team policy, MTU size, and VLAN configuration, which results in extra network traffic. Disable this health check and re-enable only as needed for network troubleshooting. For more information, see [vSphere Distributed Switch Health Check](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.networking.doc/GUID-4A6C1E1C-8577-4AE6-8459-EEB942779A82.html){: external}.
 

@@ -4,9 +4,9 @@ copyright:
 
   years:  2021, 2023
 
-lastupdated: "2023-04-03"
+lastupdated: "2023-06-14"
 
-keywords: vCenter Server view clusters, vmware multizone, vCenter Server multizone view clusters, view vCenter Server cluster
+keywords: vCenter Server view clusters, view clusters, view vCenter Server cluster
 
 subcollection: vmwaresolutions
 
@@ -17,7 +17,7 @@ subcollection: vmwaresolutions
 # Viewing clusters for vCenter Server instances
 {: #vc_viewingclusters}
 
-You can view the summary and detailed information of the clusters that are provisioned in VMware vCenter Server® instances.
+View the summary and detailed information of the clusters that are provisioned in a VMware vCenter Server® instance.
 
 ## Procedure to view clusters for vCenter Server instances
 {: #vc_viewingclusters-procedure}

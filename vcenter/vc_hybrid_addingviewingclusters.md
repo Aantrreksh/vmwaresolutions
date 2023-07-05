@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-04-03"
+lastupdated: "2023-06-20"
 
 keywords: vCenter Server Hybridity add cluster, view cluster vCenter Server Hybridity, delete cluster vCenter Server Hybridity
 
@@ -24,12 +24,14 @@ You can add clusters to your VMware vCenter Server® with Hybridity Bundle insta
 ## Adding clusters to vCenter Server with Hybridity Bundle instances
 {: #vc_hybrid_addingviewingclusters-adding}
 
+Adding clusters to instances with VMware vSphere® 6.5 is not supported.
+{: note}
+
 ### Before you add clusters
 {: #vc_hybrid_addingviewingclusters-before-add}
 
-* Adding clusters to instances with VMware vSphere® 6.5 is not supported.
 * {{site.data.content.para-vcenteraddclusters}}
-* The number of clusters, hosts, and VMs determines the maximum limit for the number of clusters you can add. You must remain within the VMware® sizing guidelines and limits for your deployment. For more information about maximum limits, see [VMware Configuration Maximums](https://configmax.vmware.com/home){: external}.
+* The number of clusters, hosts, and VMs determines the maximum number of clusters that you can add. You must remain within the VMware® sizing guidelines and limits for your deployment. For more information, see [VMware Configuration Maximums](https://configmax.vmware.com/home){: external}.
 
 ### System settings
 {: #vc_hybrid_addingviewingclusters-adding-sys-settings}
@@ -48,7 +50,7 @@ The cluster name must meet the following requirements:
 #### Data center location
 {: #vc_hybrid_addingviewingclusters-adding-dc-location}
 
-The {{site.data.keyword.cloud_notm}} data center location of the cluster is set to the {{site.data.keyword.cloud_notm}} data center of the vCenter Server instance by default. You can deploy the cluster to a different {{site.data.keyword.cloud_notm}} data center than the deployed instance. However, you must ensure that the network latency between the two {{site.data.keyword.cloud_notm}} data centers is less than 150 ms. To check the network latency, use a tool such as [Looking Glass](http://lg.softlayer.com/){: external}.
+The {{site.data.keyword.cloud_notm}} data center location of the cluster is set to the {{site.data.keyword.cloud_notm}} data center of the vCenter Server instance by default. You can deploy the cluster to a different {{site.data.keyword.cloud_notm}} data center than the deployed instance. However, you must ensure that the network latency between the two {{site.data.keyword.cloud_notm}} data centers is less than 150 ms.
 
 If you deploy the cluster to a different {{site.data.keyword.cloud_notm}} data center or {{site.data.keyword.cloud_notm}} infrastructure pod, three more VLANs are ordered for use with the ordered {{site.data.keyword.cloud_notm}} bare metal servers.
 
@@ -94,8 +96,7 @@ The Quad Intel Xeon Gold 6248 processor is available if you add new clusters or 
 #### Number of bare metal servers
 {: #vc_hybrid_addingviewingclusters-adding-bare-metal-number}
 
-* All servers that you order have the same configuration.
-* You can order in the range 4 - 59 servers.
+You can order 4-59 servers. All servers have the same configuration.
 
 ### vSAN storage settings
 {: #vc_hybrid_addingviewingclusters-adding-vsan-storage-settings}
@@ -130,7 +131,7 @@ Network interface card (NIC) settings are based on your selection of either **Pu
 
 Based on your selected configuration for the cluster, the estimated price is instantly generated and displayed in the **Summary** pane. Click **Pricing details** to generate a PDF document with the price summary for the {{site.data.keyword.vmwaresolutions_short}} resources.
 
-You can also add the provisioned resources to the {{site.data.keyword.cloud_notm}} estimate tool, by clicking **Add to estimate**. The tool is useful if you want to estimate the price of the selected {{site.data.keyword.vmwaresolutions_short}} resources together with other {{site.data.keyword.cloud_notm}} resources that you might consider to purchase.
+You can also add the provisioned resources to the {{site.data.keyword.cloud_notm}} estimate tool, by clicking **Add to estimate**. The tool is useful if you want to estimate the price of the selected {{site.data.keyword.vmwaresolutions_short}} resources together with other {{site.data.keyword.cloud_notm}} resources that you might consider purchasing.
 
 ## Procedure to add clusters to vCenter Server with Hybridity Bundle instances
 {: #vc_hybrid_addingviewingclusters-adding-procedure}
@@ -143,7 +144,7 @@ You can also add the provisioned resources to the {{site.data.keyword.cloud_notm
 
 3. Click the **Infrastructure** tab and click **Create** at the upper right of the **Clusters** table.
 4. On the **Create cluster** page, enter the cluster name.
-5. You can host the cluster in a different {{site.data.keyword.cloud_notm}} data center than the one that the instance is hosted in. To do so, under **Bare metal server**, select the **Select a different location** checkbox and choose the {{site.data.keyword.cloud_notm}} data center to host the instance.
+5. You can host the cluster in a different {{site.data.keyword.cloud_notm}} data center than the one that the instance is hosted in. To do so, under **Bare metal server**, toggle the **Select a different location** switch on and choose the {{site.data.keyword.cloud_notm}} data center to host the cluster.
 6. Select the **CPU model**, the amount of **RAM**, and the **Number of bare metal servers** for the bare metal configuration.
 7.  Select **vSAN storage** and specify the disk types for the capacity and cache disks and the number of disks. If you want more storage, select the **High performance with Intel Optane** checkbox.
 8. Select the license edition for VMware vSAN for the license configuration.
@@ -157,10 +158,10 @@ You can also add the provisioned resources to the {{site.data.keyword.cloud_notm
 ### Results after you add clusters to vCenter Server with Hybridity Bundle instances
 {: #vc_hybrid_addingviewingclusters-adding-results}
 
-1. The deployment of the cluster starts automatically and the status of the cluster is changed to **Initializing**. You can check the status of the deployment by viewing the deployment history on the **Summary** page of the instance.
+1. The deployment of the cluster starts automatically and the status of the cluster is changed to **Initializing**. You can check the status of the deployment by viewing the deployment history on instance details page.
 2. When the cluster is ready to use, its status changes to **Available**. The newly added cluster is enabled with vSphere High Availability (HA) and vSphere Distributed Resource Scheduler (DRS).
 
-You can't change the cluster name. Changing the cluster name might cause the add or remove ESXi servers operations in the cluster to fail.
+You can't change the cluster name. Changing the cluster name might cause the add or delete ESXi servers operations in the cluster to fail.
 {: important}
 
 ## Procedure to view clusters in vCenter Server with Hybridity Bundle instances
@@ -227,15 +228,17 @@ You can't change the cluster name. Changing the cluster name might cause the add
 
 You might want to delete a cluster from an instance when it's no longer needed.
 
-### Before you delete
+Deleting clusters from instances with vSphere 6.5 is not supported.
+{: note}
+
+### Before you delete clusters from vCenter Server with Hybridity Bundle instances
 {: #vc_hybrid_addingviewingclusters-deleting-prereq}
 
-* Deleting clusters from instances with vSphere 6.5 is not supported.
 * {{site.data.content.para-vcenterremoveclusters}}
-* You can delete a single cluster at a time. To delete multiple clusters, you must do it in sequence; waiting for the previous cluster to be deleted before you delete the next cluster.
+* You can delete any cluster except for the first cluster (the one that is created during initial deployment).
+* You can delete multiple clusters at a time. You can also delete a cluster while another cluster is being created or deleted.
 * Ensure that all nodes in a cluster are powered on and operational before you delete the cluster.
 * When you delete a cluster, all VMs (virtual machines) from the cluster are also deleted and they can't be recovered. If you want to keep the VMs, migrate them to other clusters.
-* The default cluster can't be deleted.
 
 ## Procedure to delete clusters from vCenter Server with Hybridity Bundle instances
 {: #vc_hybrid_addingviewingclusters-deleting-procedure}

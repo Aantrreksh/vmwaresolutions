@@ -2,11 +2,11 @@
 
 copyright:
 
-  years:  2019, 2022
+  years:  2019, 2023
 
-lastupdated: "2022-06-20"
+lastupdated: "2023-06-12"
 
-keywords: vRealize console, vRealize license, login vRealize console
+keywords: VMware Aria console, VMware Aria license, login VMware Aria console, vRealize console
 
 subcollection: vmwaresolutions
 
@@ -15,42 +15,42 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Managing vRealize Operations and Log Insight
+# Managing VMware Aria Operations and VMware Aria Operations for Logs
 {: #managing_vrops}
 
-## Accessing the vRealize Operations Manager console
+## Accessing the VMware Aria Operations Manager console
 {: #managing_vrops-access-vrops-console}
 
-To access the vRealize Operations™ Manager console, complete the following steps:
+To access the VMware Aria® Operations™ Manager console, complete the following steps:
 
-1. On the service details page for vRealize Operations and Log Insight, click **vRealize Operations Manager console**.
+1. On the service details page for VMware Aria Operations and VMware Aria Operations™ for Logs, click **VMware Aria Operations Manager console**.
 2. Log in by using the credentials listed on the same service details page.
-3. When you log in to the vRealize Operations Manager console for the first time after installation, the vRealize Operations Manager Configuration wizard prompts you to enter your license (product key). Ensure that you select the **Product evaluation (no key required)** option to proceed.
+3. When you log in to the VMware Aria Operations Manager console for the first time after installation, the VMware Aria Operations Manager Configuration wizard prompts you to enter your license (product key). Ensure that you select the **Product evaluation (no key required)** option to proceed.
 
 ## Starting the adapter instance for vSAN
 {: #managing_vrops-start-adapter}
 
 You must manually start the Management Pack adapter instance for vSAN™. Complete the following steps:
 
-1. Log in to the vRealize Operations Manager console.
+1. Log in to the VMware Aria Operations Manager console.
 2. Click the vSAN adapter.
 3. Click Edit, then test the connection and accept the certificate when prompted.
 4. Start the adapter instance.
 
-## Accessing the vRealize Log Insight console
+## Accessing the VMware Aria Operations for Logs console
 {: #managing_vrops-access-vlog-console}
 
-To access the vRealize Log Insight console, complete the following steps:
+To access the VMware Aria Operations for Logs console, complete the following steps:
 
-1. On the service details page for vRealize Operations and Log Insight, click **vRealize Log Insight console**.
+1. On the service details page for VMware Aria Operations and VMware Aria Operations for Logs, click **VMware Aria Operations for Logs console**.
 2. Log in by using the credentials listed on the same service details page.
 
-## Redeploying vRealize Operations and Log Insight
+## Redeploying VMware Aria Operations and VMware Aria Operations for Logs
 {: #managing_vrops-redeploy-vrops}
 
-You might encounter a situation where the file systems become filled to approximately 98% capacity. This scenario can result in inconsistencies with a Cassandra database or with the vRealize suite of products that are deployed with IBM automation.
+You might encounter a situation where the file systems become filled to approximately 98% capacity. This scenario can result in inconsistencies with a Cassandra database or with the VMware Aria suite of products that are deployed with IBM automation.
 
-If vRealize Operations and Log Insight are deployed with IBM automation, you can remove the service or product. Use the VMware Solutions console to remove the service or product. Then, use the VMware Solutions console to redeploy it.
+If VMware Aria Operations and VMware Aria Operations for Logs are deployed with IBM automation, you can remove the service or product. Use the VMware Solutions console to remove the service or product. Then, use the VMware Solutions console to redeploy it.
 
 If you deployed the service or product in another way, you must redeploy it using the process that you originally used for deployment.
 
@@ -66,5 +66,5 @@ Some of the following warnings might appear. You can ignore these warning messag
 ## Related links
 {: #managing_vrops-related}
 
-* [vRealize Operations and Log Insight overview](/docs/vmwaresolutions?topic=vmwaresolutions-vrops_overview)
-* [Ordering vRealize Operations and Log Insight](/docs/vmwaresolutions?topic=vmwaresolutions-vrops_ordering)
+* [VMware Aria Operations and VMware Aria Operations for Logs overview](/docs/vmwaresolutions?topic=vmwaresolutions-vrops_overview)
+* [Ordering VMware Aria Operations and VMware Aria Operations for Logs](/docs/vmwaresolutions?topic=vmwaresolutions-vrops_ordering)

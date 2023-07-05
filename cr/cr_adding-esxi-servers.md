@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2023
 
-lastupdated: "2023-05-01"
+lastupdated: "2023-06-19"
 
 keywords: Cyber Recovery add host, add server Cyber Recovery
 
@@ -24,9 +24,8 @@ You can expand the capacity of your Cyber Recovery instance according to your bu
 
 * For the gateway cluster, you cannot add or remove ESXi servers.
 * Whenever possible, add ESXi servers by using the VMware Solutions console because changes that you make on the VMware vSphere® Web Client are not synchronized with the VMware Solutions console. Therefore, add ESXi servers to Cyber Recovery only for on-premises ESXi servers or ESXi servers that you don't manage in the VMware Solutions console.
-* You can add 1-20 ESXi servers at a time.
-* A Cyber Recovery instance with NFS storage must have at least three ESXi servers. Each of the nondefault clusters can be expanded to have up to 59 ESXi servers.
-* A Cyber Recovery instance with vSAN™ storage must have at least four ESXi servers.
+* For the consolidated cluster, you can order 1-51 servers in total, taking into account the existing number of hosts in the cluster.
+* For the workload cluster, you can order 1-59 servers in total, taking into account the existing number of hosts in the cluster.
 * If your initial cluster has vSAN storage, adding one or more ESXi servers after deployment can increase the cluster storage capacity.
 * If your initial cluster has vSAN storage, SED SSD disks are not available. Non-SED SSD disks are ordered.
 
@@ -52,8 +51,8 @@ You can expand the capacity of your Cyber Recovery instance according to your bu
    * You can also choose a new bare metal server configuration by selecting the option from the list and clicking **Next**. Select the **CPU model** and the amount of **RAM**.
 8. Click **Next** and complete the networking settings.
     * You can continue to use the previously selected primary subnets.
-    * You can specify new primary subnets. Then, use the lists to select the **Public primary subnet** and **Private primary subnet**.
-    * If you want to customize the hostnames prefix individually, select **Configure hostnames individually**.
+    * You can specify different primary subnets. Then, use the lists to select the **Public primary subnet** and **Private primary subnet**.
+    * If you want to customize the hostnames prefix individually, toggle the **Configure hostnames individually** switch on.
 9. In the **Details** section, review the estimated pricing, ensure that the account to be charged is correct, and review and accept the terms. Then, click **Add**.
 
 ## Results after you add ESXi servers to Cyber Recovery instances
@@ -61,7 +60,7 @@ You can expand the capacity of your Cyber Recovery instance according to your bu
 
 1. You might experience a slight delay on the console while the instance status changes from **Available** to **Modifying**. Allow the operation to complete before you make more changes to the instance.
 2. You are notified by email that your request to add ESXi servers is being processed. On the console, the status of the cluster that is associated with the ESXi servers is changed to **Modifying**.
-3. If you do not see the new ESXi servers added to the list in the cluster, check the email or console notifications to find more details about the failure.
+3. If you do not see the new ESXi servers added to the list in the cluster, check your email or console notifications for more details.
 
 If you are adding ESXi servers during maintenance mode, VMs are not migrated to the new servers until you remove maintenance mode.
 {: important}

@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2023
 
-lastupdated: "2023-03-21"
+lastupdated: "2023-05-31"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # Architecture pattern for using Transit Gateway with a vCenter Server with NSX-T instance
 {: #arch-pattern-nsx-t-transit-gw}
 
-This architecture pattern presents hybrid cloud connectivity by using [{{site.data.keyword.tg_full}}](/docs/transit-gateway?topic=transit-gateway-about). This solution is applicable for NSX-T based vCenter Server instance, which is provisioned in {{site.data.keyword.cloud_notm}} classic infrastructure. This pattern requires a [gateway appliance](/docs/gateway-appliance?topic=gateway-appliance-about#firewall) or [gateway cluster](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-edge-gateway-cluster) with Juniper vSRX or other third-party device, which supports GRE. In this solution, GRE tunnel is established between this device and Transit GW Router in a specific Zone. NSX-T T0 advertises routes through vSRX (or other device) to Transit Gateway.
+This architecture pattern presents hybrid cloud connectivity by using [{{site.data.keyword.tg_full}}](/docs/transit-gateway?topic=transit-gateway-about). This solution is applicable for NSX-T based vCenter Server instance, which is provisioned in {{site.data.keyword.cloud_notm}} classic infrastructure. This pattern requires a [gateway appliance](/docs/gateway-appliance?topic=gateway-appliance-about) or [gateway cluster](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-addl-clusters#vc_orderinginstance-addl-clusters-gate) with Juniper vSRX or other third-party device, which supports GRE. In this solution, GRE tunnel is established between this device and Transit GW Router in a specific Zone. NSX-T T0 advertises routes through vSRX (or other device) to Transit Gateway.
 
 ## Deploying Transit Gateway with vCenter Server and NSX-T
 {: #arch-pattern-nsx-t-transit-gw-overview}

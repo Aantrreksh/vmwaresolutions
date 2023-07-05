@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2022
+  years:  2022, 2023
 
-lastupdated: "2022-11-23"
+lastupdated: "2023-06-12"
 
 keywords: remove services Cyber Recovery, Cyber Recovery remove services
 
@@ -56,7 +56,7 @@ The following table shows the services that are affected and the pattern for hos
 | F5® BIG-IP® | `nickname-bigip1` \n `nickname-bigip2` | `edgefw-bigip1` |
 | FortiGate Virtual Appliance | `nickname-fortigate` | `edgefw-fortigate01` |
 | Entrust CloudControl™ | `htccnn-id` | `htcc02-GY67239` |
-| vRealize Operations™ | `vrli` \n `vrops` \n `vrlog` | `vrli-master` \n `vrops-data1` \n `vrlog-master` |
+| VMware Aria® Operations™ | `vrli` \n `vrops` \n `vrlog` | `vrli-master` \n `vrops-data1` \n `vrlog-master` |
 {: caption="Table 1. Hostname patterns and examples for affected services" caption-side="bottom"}
 
 To remove the DNS entires, complete the following steps:

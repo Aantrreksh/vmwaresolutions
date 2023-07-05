@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2021, 2022
+  years:  2021, 2023
 
-lastupdated: "2022-11-16"
+lastupdated: "2023-06-30"
 
 keywords: data encryption in VMware Solutions, data storage for VMware Solutions, bring your own keys for VMware Solutions, BYOK for VMware Solutions, key management for VMware Solutions, key encryption for VMware Solutions, personal data in VMware Solutions, data deletion for VMware Solutions, data in VMware Solutions, data security in VMware Solutions
 
@@ -111,5 +111,5 @@ You are responsible to make provision for backup and recovery of all data you br
 ## Related links
 {: #data-security-related}
 
-* [Managing access for VMware Solutions](/docs/vmwaresolutions?topic=vmwaresolutions-iam)
+* [Managing IAM access for VMware Solutions](/docs/vmwaresolutions?topic=vmwaresolutions-iam)
 * [Auditing events for VMware Solutions](/docs/vmwaresolutions?topic=vmwaresolutions-at-events)

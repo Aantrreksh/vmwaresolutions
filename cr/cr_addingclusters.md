@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2023
 
-lastupdated: "2023-06-22"
+lastupdated: "2023-06-27"
 
 keywords: cyber recovery add clusters, add cluster, cyber recovery cluster
 
@@ -23,8 +23,8 @@ You can add clusters to Cyber Recovery instances to expand the compute and stora
 {: #cr_addingclusters-before}
 
 * Whenever possible, add clusters by using the {{site.data.keyword.vmwaresolutions_full}} console and not the VMware vSphere® Web Client. Changes that you make on the vSphere Web Client are not synchronized with the VMware Solutions console. If you want to add clusters to Cyber Recovery instances by using the vSphere Web Client, do so only for on-premises clusters or clusters that you don't manage in the VMware Solutions console.
-* The number of clusters, hosts, and virtual machines (VMs) determines the maximum limit for the number of clusters you can add. You must remain within the VMware® sizing guidelines and limits for your deployment. For more information about maximum limits, see [VMware Configuration Maximums](https://configmax.vmware.com/home){: external}.
-* You can add or delete a cluster while another cluster is being created or deleted.
+* The number of clusters, hosts, and virtual machines (VMs) determines the maximum number of clusters that you can add. You must remain within the VMware® sizing guidelines and limits for your deployment. For more information, see [VMware Configuration Maximums](https://configmax.vmware.com/home){: external}.
+* You can add a cluster while another cluster is being created or deleted.
 
 ## Cluster type
 {: #cr_addingclusters-cluster-type}
@@ -58,12 +58,12 @@ Bring Your Own License (BYOL) is no longer supported except for migrations or up
 ### Bare metal server settings
 {: #cr_addingclusters-bare-metal-settings}
 
-Options might differ depending on the version that your instance was initially deployed in. You can choose between the **Cascade Lake** or **SAP-certified** server types.
+Options might differ depending on the version that your instance was initially deployed in. You can choose between the **Cascade Lake** or **SAP-certified Cascade Lake** server types.
 
 #### Data center location
 {: #cr_addingclusters-dc-location}
 
-The {{site.data.keyword.cloud_notm}} data center location of the cluster is set to the {{site.data.keyword.cloud_notm}} data center of the Cyber Recovery instance by default. You can deploy the cluster to a different {{site.data.keyword.cloud_notm}} data center than the deployed instance if you ensure that the network latency between the two {{site.data.keyword.cloud_notm}} data centers is less than 150 ms. To check the network latency, you can use a tool such as [Looking Glass](http://lg.softlayer.com/){: external}.
+The {{site.data.keyword.cloud_notm}} data center location of the cluster is set to the {{site.data.keyword.cloud_notm}} data center of the Cyber Recovery instance by default. You can deploy the cluster to a different {{site.data.keyword.cloud_notm}} data center than the deployed instance if you ensure that the network latency between the two {{site.data.keyword.cloud_notm}} data centers is less than 150 ms.
 
 If you deploy the cluster to a different {{site.data.keyword.cloud_notm}} data center or {{site.data.keyword.cloud_notm}} infrastructure pod, three extra VLANs are ordered for use with the ordered {{site.data.keyword.cloud_notm}} bare metal servers.
 
@@ -72,7 +72,7 @@ If you deploy the cluster to a different {{site.data.keyword.cloud_notm}} data c
 
 {{site.data.content.cascade-para-intro}}
 
-| CPU model     | Cores     | GHz     | RAM sizes   |
+| CPU model     | Cores     | GHz     | RAM         |
 |:------------- |:----------|:--------|:----------- |
 | Dual Intel Xeon Silver 4210 processor | 20 | 2.2 | 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
 | Dual Intel Xeon Gold 5218 processor | 32 | 2.3 | 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
@@ -87,47 +87,35 @@ If you deploy the cluster to a different {{site.data.keyword.cloud_notm}} data c
 {: tab-group="Cascade Lake Intel servers"}
 {: #simpletabtable-cascade-nsxt}
 
-#### SAP-certified
+#### SAP-certified Cascade Lake
 {: #cr_addingclusters-sap}
 
 {{site.data.content.sap-para-intro}}
 
-| CPU model     | Cores     | GHz     | RAM sizes   |
-|:------------- |:----------|:--------|:----------- |
-| Dual Intel Xeon Gold 5218 processor (Cascade Lake, BI.S4.NW192) | 32 | 2.3 | 192 GB |
-| Dual Intel Xeon Gold 5218 processor (Cascade Lake, BI.S4.NW384) | 32 | 2.3 | 384 GB |
-| Dual Intel Xeon Gold 6248 processor (Cascade Lake, BI.S4.NW768) | 40 | 2.5 | 768 GB |
-| Dual Intel Xeon Gold 6248 processor (Cascade Lake, BI.S4.NW768_v2) | 48 | 2.4 | 768 GB |
-| Dual Intel Xeon Platinum 8280M processor (Cascade Lake, BI.S4.NW1500) | 56 | 2.7 | 1.5 TB |
-| Dual Intel Xeon Platinum 8280M processor (Cascade Lake, BI.S4.NW3000) | 56 | 2.7 | 3 TB |
-{: caption="Table 2. Options for SAP-certified bare metal servers - NetWeaver" caption-side="bottom"}
-{: class="simple-tab-table"}
-{: tab-title="NetWeaver"}
-{: tab-group="SAP-certified Intel servers"}
-{: #simpletabtable-sap-netweaver}
-
-
-| CPU model     | Cores     | GHz     | RAM sizes |
-|:------------- |:----------|:--------|:--------- |
-| Dual Intel Xeon Gold 5218 processor (Cascade Lake, BI.S4.H2.192) | 32 | 2.3 | 192 GB |
-| Dual Intel Xeon Gold 5218 processor (Cascade Lake, BI.S4.H2.384) | 32 | 2.3 | 384 GB |
-| Dual Intel Xeon Gold 6248 processor (Cascade Lake, BI.S4.H2.768) | 40 | 2.5 | 768 GB |
-| Dual Intel Xeon Platinum 8280M processor (Cascade Lake, BI.S4.H2.1500) | 56 | 2.7 | 1.5 TB |
-| Dual Intel Xeon Platinum 8280M processor (Cascade Lake, BI.S4.H2.3000) | 56 | 2.7 | 3 TB |
-| Quad Intel Xeon Platinum 8280M processor (Cascade Lake, BI.S4.H4.3000) | 112 | 2.7 | 3 TB |
-| Quad Intel Xeon Platinum 8280M processor (Cascade Lake, BI.S4.H4.6000) | 112 | 2.7 | 6 TB |
-{: caption="Table 2. Options for SAP-certified bare metal servers - HANA" caption-side="bottom"}
-{: tab-title="HANA"}
-{: tab-group="SAP-certified Intel servers"}
-{: class="simple-tab-table"}
-{: #simpletabtable-sap-hana}
+| CPU model     | SAP certification | Cores     | GHz     | RAM         | Storage type |
+|:------------- |:------------------|:----------|:--------|:------------|:------------ |
+| Dual Intel Xeon Gold 5218 processor (Cascade Lake, BI.S4.NW192) | NetWeaver | 32 | 2.3 | 192 GB | Up to 12 Drivers |
+| Dual Intel Xeon Gold 5218 processor (Cascade Lake, BI.S4.NW384) | NetWeaver | 32 | 2.3 | 384 GB | Up to 12 Drivers |
+| Dual Intel Xeon Gold 6248 processor (Cascade Lake, BI.S4.NW768) | NetWeaver | 40 | 2.5 | 768 GB | Up to 12 Drivers |
+| Dual Intel Xeon Platinum 8260 processor (Cascade Lake, BI.S4.NW768_v2) | Netweaver | 48 | 2.4 | 768 GB | Up to 12 Drivers |
+| Dual Intel Xeon Platinum 8280M processor (Cascade Lake, BI.S4.NW1500) | Netweaver | 56 |2.7 | 1.5 TB | Up to 12 Drivers |
+| Dual Intel Xeon Platinum 8280M processor (Cascade Lake, BI.S4.NW3000) | Netweaver | 56 | 2.7 | 3 TB | Up to 12 Drivers |
+| Dual Intel Xeon Gold 5218 processor (Cascade Lake, BI.S4.H2.192) | HANA and NetWeaver | 32 | 2.3 | 192 GB | Up to 12 Drivers |
+| Dual Intel Xeon Gold 5218 processor (Cascade Lake, BI.S4.H2.384) | HANA and NetWeaver | 32 | 2.3 | 384 GB | Up to 12 Drivers |
+| Dual Intel Xeon Gold 6248 processor (Cascade Lake, BI.S4.H2.768) | HANA and NetWeaver | 40 | 2.5 | 768 GB | Up to 12 Drivers |
+| Dual Intel Xeon Platinum 8280M processor (Cascade Lake, BI.S4.H2.1500) | HANA and NetWeaver | 56 | 2.7 | 1.5 TB | Up to 12 Drivers |
+| Dual Intel Xeon Platinum 8280M processor (Cascade Lake, BI.S4.H2.3000) | HANA and NetWeaver | 56 | 2.7 | 3 TB | Up to 12 Drivers |
+| Quad Intel Xeon Platinum 8280M processor (Cascade Lake, BI.S4.H4.3000) | HANA and NetWeaver | 112 | 2.7 | 3 TB | Up to 24 Drivers |
+| Quad Intel Xeon Platinum 8280M processor (Cascade Lake, BI.S4.H4.6000) | HANA and NetWeaver | 112 | 2.7 | 6 TB | Up to 24 Drivers |
+{: caption="Table 2. Options for SAP-certified Cascade Lake - NetWeaver and HANA" caption-side="bottom"}
+{: #simpletabtable-sap-netweaverandhana}
 
 #### Number of bare metal servers
 {: #cr_addingclusters-bare-metal-number}
 
-* All servers that you order have the same configuration.
 * For NFS storage, you can order 2-59 servers. However, for production workloads, a minimum of 3 servers is recommended.
 * For vSAN™ storage, you can order 4-59 servers.
+* All servers that you order have the same configuration.
 
 ### Storage settings
 {: #cr_addingclusters-storage-settings}
@@ -180,7 +168,7 @@ Bring Your Own License (BYOL) is no longer supported except for migrations or up
 
 The **Use existing license** option is available only if you are using a BYOL vSAN license for your instance. When the option is enabled, you can select the existing license only if the instance has enough capacity for the additional hosts.
 
-If your initial cluster was a vSAN cluster, any additional vSAN clusters use the same vSAN license and have the same configuration as the initial one. This behavior is also true if any cluster (initial or additional) in the instance has vSAN chosen to be deployed on it. The first time you're prompted for the vSAN license (BYOL or purchased) and the edition. The next time that you select vSAN for a new cluster, the license that was chosen initially is reused.
+If your initial cluster was a vSAN cluster, any additional vSAN clusters use the same vSAN license and have the same configuration as the initial one. This behavior is also true if any cluster (initial or additional) in the instance has vSAN chosen to be deployed on it. The first time you're prompted for the vSAN license and the edition. The next time that you select vSAN for a new cluster, the license that was chosen initially is reused.
 
 #### NFS storage
 {: #cr_addingclusters-nfs-storage}
@@ -218,10 +206,12 @@ You can use the default hostname prefix or specify a new one. When you specify a
 - The hostname prefix must end with a lowercase alphabetic or numeric character.
 - The maximum length of the hostname prefix is 10 characters.
 
-#### Network diagram
+#### Configure hostnames individually
 {: #cr_addingclusters-network-diagram}
 
-You can customize the hostnames prefix individually by selecting **Configure hostnames individually**. It must meet the following requirements:
+You can customize the hostnames prefix individually by toggling the switch on. 
+
+The hostname prefix must meet the following requirements:
 * Only lowercase alphabetic, numeric, and dash (-) characters are allowed.
 * No consecutive dash characters are allowed.
 * The hostname prefix must start with a lowercase alphabetic character.
@@ -245,6 +235,14 @@ The **Uplink speed** option is not available to gateway clusters.
 | Asia-Pacific | TOK02 | 02 |
 | Asia-Pacific | TOK04 | 01 |
 | Asia-Pacific | TOK05 | 01 |
+{: caption="Table 4. Available locations for 25 Gb uplink speed" caption-side="bottom"}
+{: tab-title="Asia-Pacific"}
+{: tab-group="Data centers for Cyber Recovery instances"}
+{: class="simple-tab-table"}
+{: #simpletabtable-cri-ap}
+
+| Geography | Data center | Pod |
+|:--------- |:----------- |:--- |
 | Europe | FRA02 | 02 |
 | Europe | FRA05 | 01 |
 | Europe | LON04 | 01 |
@@ -252,14 +250,33 @@ The **Uplink speed** option is not available to gateway clusters.
 | Europe | MAD02 | 01 |
 | Europe | MAD04 | 01 |
 | Europe | MAD05 | 01 |
+{: caption="Table 4. Available locations for 25 Gb uplink speed" caption-side="bottom"}
+{: tab-title="Europe"}
+{: tab-group="Data centers for Cyber Recovery instances"}
+{: class="simple-tab-table"}
+{: #simpletabtable-cri-eur}
+
+| Geography | Data center | Pod |
+|:--------- |:----------- |:--- |
 | NA East | TOR04 | 01 |
 | NA East | WDC04 | 05 |
 | NA East | WDC06 | 01 |
 | NA East | WDC07 | 01 |
-| NA South | DAL10 | 03 |
+{: caption="Table 4. Available locations for 25 Gb uplink speed" caption-side="bottom"}
+{: tab-title="NA East"}
+{: tab-group="Data centers for Cyber Recovery instances"}
+{: class="simple-tab-table"}
+{: #simpletabtable-cri-naeast}
+
+| Geography | Data center | Pod |
+|:--------- |:----------- |:--- |
 | NA South | DAL12 | 01 |
 | NA South | DAL13 | 02 |
 {: caption="Table 4. Available locations for 25 Gb uplink speed" caption-side="bottom"}
+{: tab-title="NA South"}
+{: tab-group="Data centers for Cyber Recovery instances"}
+{: class="simple-tab-table"}
+{: #simpletabtable-cri-nasouth}
 
 #### VLANs
 {: #cr_addingclusters-vlans}
@@ -329,7 +346,7 @@ Select the {{site.data.keyword.cloud_notm}} data center pod where you want to de
 
 By default, the cluster names are set to **_instance name_-edge**.
 
-You can also specify a new name for your clusters. The names must meet the requirements that are listed in [Cluster name](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-consoldworkldcluster-settings#vc_orderinginstance-consoldworkldcluster-cluster-name).
+You can also specify a new name for your clusters. The names must meet the requirements that are listed in [Cluster name](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-consold-cluster#vc_orderinginstance-consold-cluster-name).
 
 ### CPU model
 {: #cr_addingclusters-edge-cluster-cpu}
@@ -357,10 +374,12 @@ The hostname prefix applies to all clusters in the instance. It must meet the fo
 * The hostname prefix must end with a lowercase alphabetic or numeric character.
 * The maximum length of the hostname prefix is 10 characters.
 
-### Network diagram
+### Configure hostnames individually
 {: #cr_addingclusters-edge-network-diagram}
 
-You can customize the hostnames prefix individually by selecting **Configure hostnames individually**. It must meet the following requirements:
+You can customize the hostnames prefix individually by toggling the switch on. 
+
+The hostname prefix must meet the following requirements:
 * Only lowercase alphabetic, numeric, and dash (-) characters are allowed.
 * No consecutive dash characters are allowed.
 * The hostname prefix must start with a lowercase alphabetic character.
@@ -381,7 +400,7 @@ Select either **Public and private network** or **Private network only** for the
 
 Based on your selected configuration for the cluster, the estimated price is instantly generated and displayed in the **Summary** pane. Click **Pricing details** to generate a PDF document with the price summary for the {{site.data.keyword.vmwaresolutions_short}} resources.
 
-You can also add the provisioned resources to the {{site.data.keyword.cloud_notm}} estimate tool, by clicking **Add to estimate**. The estimate tool is useful if you want to get an approximate price of the selected {{site.data.keyword.vmwaresolutions_short}} resources together with other {{site.data.keyword.cloud_notm}} resources that you might consider to purchase.
+You can also add the provisioned resources to the {{site.data.keyword.cloud_notm}} estimate tool, by clicking **Add to estimate**. The estimate tool is useful if you want to get an approximate price of the selected {{site.data.keyword.vmwaresolutions_short}} resources together with other {{site.data.keyword.cloud_notm}} resources that you might consider purchasing.
 
 ## Procedure to add clusters to Cyber Recovery instances
 {: #cr_addingclusters-procedure}
@@ -402,13 +421,12 @@ You can also add the provisioned resources to the {{site.data.keyword.cloud_notm
       * The **Use existing license** option is available only if you are using a BYOL vSphere or vSAN license for your instance. When the option is enabled, you can select the existing license only if the instance has enough capacity for the additional hosts.
 
    2. Complete the bare metal server configuration. 
-      * If you want to host the cluster in a different {{site.data.keyword.cloud_notm}} data center than the one that the instance is hosted in, check the **Select a different location** box and choose the {{site.data.keyword.cloud_notm}} data center to host the instance.
-      * For **Cascade Lake** CPU generation type, select the **CPU model**, the amount of **RAM**, and the **Number of bare metal servers**.
-      * For **SAP-certified** NetWeaver, select one of the preset configurations. For **SAP-certified** HANA, select the **CPU model** and **RAM**.
+      * If you want to host the cluster in a different {{site.data.keyword.cloud_notm}} data center than the one that the instance is hosted in, toggle the **Select a different location** switch on and choose the {{site.data.keyword.cloud_notm}} data center to host the cluster.
+      * For **Cascade Lake** or **SAP-certified Cascade Lake**, select one of the preset configurations. For Cascade Lake, also specify the RAM size.
 
    3. Complete the storage configuration.
       * If you select **NFS storage** and want to add and configure the same settings to all file shares, specify the **Number of shares**, **Size (GB)**, and **Performance**.
-      * If you select **NFS storage** and want to add and configure file shares individually, select the **Configure shares individually** checkbox, then  click **Add shared storage** and select the **Size (GB)** and **Performance** for each file share. You must select at least one file share.
+      * If you select **NFS storage** and want to add and configure file shares individually, toggle the **Configure shares individually** switch on, then click **Add shared storage** and select the **Size (GB)** and **Performance** for each file share. You must select at least one file share.
       * If you select **vSAN storage**, specify the following values:
          * Size for the vSAN capacity disks
          * Number of vSAN capacity disks
@@ -436,7 +454,7 @@ You can also add the provisioned resources to the {{site.data.keyword.cloud_notm
 ## Results after you add clusters to Cyber Recovery instances
 {: #cr_addingclusters-results}
 
-1. The deployment of the cluster starts automatically and the status of the cluster is changed to **Initializing**. You can check the status of the deployment by viewing the deployment history from the **Summary** page of the instance.
+1. The deployment of the cluster starts automatically and the status of the cluster is changed to **Initializing**. You can check the status of the deployment by viewing the deployment history from the instance details page.
 2. When the cluster is ready to use, its status changes to **Available**. The newly added cluster is enabled with vSphere High Availability (HA) and vSphere Distributed Resource Scheduler (DRS).
 
 You cannot change the cluster name. Changing the cluster name might cause the add or remove ESXi servers operations in the cluster to fail.

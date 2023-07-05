@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2021, 2022
+  years:  2021, 2023
 
-lastupdated: "2022-11-23"
+lastupdated: "2023-06-08"
 
 keywords: remove services vCenter Server
 
@@ -61,7 +61,7 @@ The following table shows the services that are affected. The table also shows t
 | Entrust CloudControl | `htccnn-id` | `htcc02-GY67239` |
 | Entrust DataControl | `htdcnn-id` | `htcc02-GY67239` |
 | Entrust KeyControl | `htkcnn-id` | `htcc02-GY67239` |
-| vRealize Operations | `vrli`   \n `vrops`   \n `vrlog` | `vrli-master`   \n `vrops-data1`   \n `vrlog-master` |
+| VMware Aria Operations | `vrli`   \n `vrops`   \n `vrlog` | `vrli-master`   \n `vrops-data1`   \n `vrlog-master` |
 {: caption="Table 1. Hostname patterns and examples for affected services" caption-side="bottom"}
 
 To remove the DNS entires, complete the following steps:

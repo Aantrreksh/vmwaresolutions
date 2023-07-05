@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2023
 
-lastupdated: "2023-04-29"
+lastupdated: "2023-06-30"
 
 keywords: IAM user, user role, user permission, IAM account administrator
 
@@ -38,9 +38,9 @@ To identify an account owner who has the administrator role, complete the follow
 If the owner that you identified is not available or has left the company, find one or more other users with the administrator role. Consider who might be assigned the role, for example, a manager, team lead, or someone who works directly with {{site.data.keyword.cloud_notm}} customers.
 
 To locate a user with an administrator role, click the name link and review the information on the **Access** tab. Look for the following values:
+* Service - VMware Solutions
+* Resources - All
 * Role - Administrator
-* Access Type - Service
-* Policy Details - All VMware® Solutions resources
 
 ## Assigning access
 {: #iam_verify_permissions-assign-access}
@@ -48,17 +48,22 @@ To locate a user with an administrator role, click the name link and review the 
 After you find the account owner or another user with an administrator role, that person must perform the following steps to assign access:
 
 1. Log in to [{{site.data.keyword.cloud_notm}}](https://cloud.ibm.com) as the {{site.data.keyword.cloud_notm}} account owner.
-2. On the upper right of the window, select the {{site.data.keyword.cloud_notm}} account that you want to use.
-3. At the right side of the banner, click **Manage** > **Access (IAM)**.
-4. From the left navigation pane, click **Users**.
-5. In the row for the user that you want to assign access, click the vertical overflow menu next to the **Status** column, and then click **Assign access**.
-6. Select **VMware Solutions** from the list of services, and then click **Next**.
-7. Select **Specific resources** for the access scope. Select the attribute type as **VMware Instance**, and the value as **All instances**. Then, click **Next**.
-8. Select **Platform access** and **Administrator**. Then, click **Review**.
-9. Click **Add > Assign**.
+1. On the upper right of the window, select the {{site.data.keyword.cloud_notm}} account that you want to use.
+1. At the right side of the banner, click **Manage** > **Access (IAM)**.
+1. From the left navigation pane, click **Users**.
+1. In the row for the user that you want to assign access, click the vertical overflow menu next to the **Status** column, and then click **Assign access**.
+1. Select **Access groups** to add the user to one or more existing access groups. You can assign the user only to those access groups that you have access to manage.
+   1. Select one or more group names.
+   1. Click **Add > Assign**.
+1. Select **Access policy** to assign individual access policies to the user.
+   1. Select **VMware Solutions** from the list of services, and then click **Next**.
+   1. Select **Specific resources** for the access scope. Select the attribute type as **VMware Instance**, the operator as **string equals**, and the value as **All instances**. Then, click **Next**.
+   1. From the **Platform access** list, select **Administrator**. Then, click **Next**.
+   1. Optionally, choose the time when you want the policy to grant access. Then, click **Review**.
+   1. Click **Add > Assign**.
 
 ## Related links
 {: #iam_verify_permissions-related}
 
-* [What is {{site.data.keyword.cloud_notm}} IAM](/docs/account?topic=account-iamoverview)
+* [How IBM Cloud IAM works](/docs/account?topic=account-iamoverview)
 * [Managing access to resources](/docs/account?topic=account-assign-access-resources)

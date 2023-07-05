@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2022
+  years:  2016, 2023
 
-lastupdated: "2022-12-28"
+lastupdated: "2023-06-12"
 
 subcollection: vmwaresolutions
 
@@ -58,15 +58,15 @@ This document is adding the following layer into the {{site.data.keyword.vmwares
     * Logs - unstructured data such as system events
 
     The Operations Management Layer consist of the following tools:
-    * vRealize® Operations Manager™ (vROps) - vROps uses data that is collected from system resources (objects) to identify issues in the monitored system components. For many issues vROps suggests the corrective action that you can take to fix the issue. For more challenging issues, vROps offers rich analytical tools to; reveal hidden issues, investigate complex technical problems, identify trends, or drill down to gauge the health of a single object.
-    * vRealize Log Insight™ (vRLI) - vRLI provides intelligent log management for infrastructure and applications in any environment. This highly scalable log management solution provides intuitive, actionable dashboards, sophisticated analytics, and broad third-party extensibility across physical, virtual, and cloud environments.
-    * vRealize Network Insight (vRNI) - vRNI delivers intelligent operations for software-defined networking and security. It enables visibility across virtual and physical networks, provides operational views to manage and scale NSX deployments, and accelerates micro-segmentation planning and deployment.
+    * VMware Aria® Operations™ Manager - This tool uses data that is collected from system resources (objects) to identify issues in the monitored system components. For many issues VMware Aria® Automation™ suggests the corrective action that you can take to fix the issue. For more challenging issues, VMware Aria Operations offers rich analytical tools to; reveal hidden issues, investigate complex technical problems, identify trends, or drill down to gauge the health of a single object.
+    * VMware Aria Operations™ for Logs - This tool provides intelligent log management for infrastructure and applications in any environment. This highly scalable log management solution provides intuitive, actionable dashboards, sophisticated analytics, and broad third-party extensibility across physical, virtual, and cloud environments.
+    * VMware Aria Operations™ for Networks - This tool delivers intelligent operations for software-defined networking and security. It enables visibility across virtual and physical networks, provides operational views to manage and scale NSX deployments, and accelerates micro-segmentation planning and deployment.
     * VMware® Update Manager (VUM) - VUM enables centralized, automated patch and version management for VMware vSphere®. VUM offers upgrading and patching of vSphere hosts, the installation and updating of third-party software on hosts, and the upgrading of VM hardware, VMware Tools, and virtual appliances.
 
 For a full enterprise architecture, the following layers might be required. However, they are outside of the {{site.data.keyword.vmwaresolutions_short}} architecture.
 
-* **Cloud Management Layer** - The cloud management layer is the top layer of the cloud architecture. This layer requests resources and orchestrates the lower layers from a user interface or application programming interface (API). vRealize Automation enables cloud automation on the {{site.data.keyword.cloud_notm}}. For more information, see [IBM Cloud for VMware Solutions vRealize Automation 7.2 Solution Architecture](https://www.ibm.com/cloud/architecture/files/IBM_Cloud_for_VMware_Solutions_VRA_Architecture_v1.pdf){: external}.
+* **Cloud Management Layer** - The cloud management layer is the top layer of the cloud architecture. This layer requests resources and orchestrates the lower layers from a user interface or application programming interface (API). VMware Aria Automation enables cloud automation on the {{site.data.keyword.cloud_notm}}. For more information, see [IBM Cloud for VMware Solutions VMware Aria Automation 7.2 Solution Architecture](https://www.ibm.com/cloud/architecture/files/IBM_Cloud_for_VMware_Solutions_VRA_Architecture_v1.pdf){: external}.
 
-   For more information about how this architecture can be extended with Chef integration, see [IBM Cloud for VMware Solutions vRealize Automation 7.2 Chef Integration](https://www.ibm.com/cloud/architecture/files/IBM_Cloud_for_VMware_Solutions_VRA_Chef_Integration_Architecture.pdf){: external}.
+   For more information about how this architecture can be extended with Chef integration, see [IBM Cloud for VMware Solutions VMware Aria Automation 7.2 Chef Integration](https://www.ibm.com/cloud/architecture/files/IBM_Cloud_for_VMware_Solutions_VRA_Chef_Integration_Architecture.pdf){: external}.
 
 * **Service Management Layer** - This layer focuses on the full lifecycle of the IT environment and is typically implemented at the enterprise level combining inputs from all the silos of IT Operations and technologies. This layer has traditionally been, architected on IT Service Management (ITSM) frameworks such as the IT Infrastructure Library (ITIL) and ISO/IEC 20000, which are a framework of best practices for delivering IT services through the processes and stages of the IT service lifecycle. At a product level, ITSM is typified by a centralized workflow management system for handling incidents, service requests, problems, changes, and knowledge connected to a configuration management database.

@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-03-24"
+lastupdated: "2023-06-19"
 
 keywords: FortiGate VA, FortiGate Virtual Appliance, tech specs FortiGate VA
 
@@ -25,9 +25,9 @@ FortiGate® Virtual Appliance on IBM Cloud deploys a pair of FortiGate Virtual A
 * For VMware vCenter Server® with NSX-T™ instances, FortiGate Virtual Appliance is supported for NSX-T 3.1 or later and for VMware vSphere® 7.0.
 * For existing vCenter Server with NSX-V instances V4.7 and earlier, FortiGate Virtual Appliance is supported for vSphere 6.7.
 
-{{site.data.keyword.vmwaresolutions_full}} offers promotions for some add-on services. Promotional pricing offers a number of months at no cost for a service’s licenses, if the service has license charges. For more information, see [Promotions for VMware Solutions add-on services](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices#vc_addingservices-service-promotions).
+{{site.data.keyword.vmwaresolutions_full}} offers promotions for some add-on services. Promotional pricing offers a number of months at no cost for a service licenses, if the service has license charges. For more information, see [Promotions for VMware Solutions add-on services](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices#vc_addingservices-service-promotions).
 
-The FortiGate Virtual Appliance version available for deployment is 7.2.2.
+The FortiGate Virtual Appliance version available for deployment is 7.2.5.
 {: note}
 
 ## Technical specifications for FortiGate Virtual Appliance
@@ -110,7 +110,7 @@ On the Security and Compliance Readiness Bundle, you can install FortiGate Virtu
 ### FortiGate Virtual Appliance on Regulated Workloads
 {: #fortinetvm_considerations-installvalues-regworkload}
 
-For Regulated Workloads, you can install FortiGate Virtual Appliance on the gateway cluster. You can deploy the service for single-zone and multizone instances.
+For Regulated Workloads, you can install FortiGate Virtual Appliance on the gateway cluster. You can deploy the service on a single-zone (new or existing) or multizone (existing only) instance.
 
 * You can install FortiGate Virtual Appliance on gateway clusters with a 10 Gb or 25 Gb uplink speed.
 * With a 10 Gb uplink speed, you can install FortiGate-VM16 on Cascade Lake 4210.

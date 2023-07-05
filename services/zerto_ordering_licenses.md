@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2023
 
-lastupdated: "2023-02-07"
+lastupdated: "2023-06-09"
 
 keywords: Zerto, Zerto license, order Zerto license
 
@@ -44,7 +44,7 @@ You must have a billable {{site.data.keyword.cloud_notm}} account to order Zerto
 8. Click the link or links of the terms that apply to your order. Ensure that you agree with these terms before you order the license.
 9. Click **Add to estimate**, **Upgrade**, or **Create**.
 
-**Upgrade** displays only if you must make your {{site.data.keyword.cloud_notm}} account a billable account.
+The **Upgrade** option is displayed only if you must make your {{site.data.keyword.cloud_notm}} account a billable account.
 {: note}
 
 ## Results
@@ -65,6 +65,5 @@ The email address is added by default to the **Email address** field of the orde
 * [Zerto overview](/docs/vmwaresolutions?topic=vmwaresolutions-addingzertodr)
 * [Managing Zerto](/docs/vmwaresolutions?topic=vmwaresolutions-managingzertodr)
 * [Managing Zerto licenses](/docs/vmwaresolutions?topic=vmwaresolutions-zerto_managing_licenses)
-* [Managed Disaster Recovery Services by Kyndryl](https://www.kyndryl.com/us/en/services/cyber-resilience){: external}
 * [Zerto](https://www.zerto.com){: external}
 * [Zerto technical documentation](https://www.zerto.com/myzerto/technical-documentation/){: external}

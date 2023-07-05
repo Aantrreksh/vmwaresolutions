@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2021, 2022
+  years:  2021, 2023
 
-lastupdated: "2022-12-09"
+lastupdated: "2023-06-14"
 
 keywords: order Security and Compliance Readiness Bundle, order scb instances, order vcs scb
 subcollection: vmwaresolutions
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # Network interface settings
 {: #scb-orderinginstance-network-interface}
 
-New deployments of Security and Compliance Readiness Bundle instances are no longer supported. You can still add or delete clusters, add or remove VMware ESXi™ servers or NFS storage, and add or remove services for existing instances. You can also view and delete your Security and Compliance Readiness Bundle instances.
+New deployments of Security and Compliance Readiness Bundle instances are no longer supported. You can still add or delete clusters, add or delete VMware ESXi™ servers or NFS storage, and add or remove services for existing instances. You can also view and delete your Security and Compliance Readiness Bundle instances.
 {: deprecated}
 
 You must specify the following network interface settings.

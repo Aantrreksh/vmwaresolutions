@@ -4,7 +4,7 @@ copyright:
 
   years:  2023
 
-lastupdated: "2023-03-24"
+lastupdated: "2023-06-09"
 
 subcollection: vmwaresolutions
 
@@ -35,7 +35,7 @@ Key elements of the solution architecture include:
    * FortiGate® Virtual Appliance
    * Bring your own gateway appliance
   
-* The solution architecture does not preclude any of the vCenter Server options, such as Caveonix, Entrust, and VMware vRealize Operations™.
+* The solution architecture does not preclude any of the vCenter Server options, such as Caveonix, Entrust, and VMware Aria® Operations™.
 * Optionally, you can use encryption with Hyper Protect Crypto Services, Key Protect, and the VMware KMIP service. For more information, see [KMIP for VMware overview](/docs/vmwaresolutions?topic=vmwaresolutions-kmip_standalone_considerations).
 * The BYO (Bring Your Own) data mover and immutable repository is your backup technology that you want to instantiate within the isolated recovery environment.
 * The management VM is your automation server that can be used to automate a number of cybertasks such as:

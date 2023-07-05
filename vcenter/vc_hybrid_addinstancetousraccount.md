@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2022
+  years:  2016, 2023
 
-lastupdated: "2022-11-22"
+lastupdated: "2023-06-30"
 
 keywords: vCenter Server Hybridity migrate instance, add account vCenter Server Hybridity, migrate cloud account Hybridity
 
@@ -34,7 +34,7 @@ For more information about how to link your Iaas-only account to your PaaS accou
 1. In the {{site.data.keyword.vmwaresolutions_short}} console, click **Resources > vCenter Server** from the left navigation pane.
 2. From the console banner, click your user account icon, and then click the **Account** field to select the user account that you want to migrate the instance to.
 3. In the **vCenter Server** table, find the pre-V2.5 instance.
-4. In the **Actions** column, click the overflow menu icon, and then click **Migrate instance to account**.
+4. In the **Actions** column, click the vertical overflow menu icon, and then click **Migrate instance to account**.
 5. In the **Migrate instance to account** window, confirm the account to migrate the instance to, and then click **Migrate**.
 
 ## Results
@@ -48,4 +48,4 @@ For more information about how to link your Iaas-only account to your PaaS accou
 
 * [Managing user access with IAM](/docs/vmwaresolutions?topic=vmwaresolutions-iam#iam)
 * [Inviting users to access services and resources](/docs/vmwaresolutions?topic=vmwaresolutions-useraccount#useraccount-iamuserinv)
-* [What is {{site.data.keyword.cloud_notm}} IAM](/docs/account?topic=account-iamoverview)
+* [How IBM Cloud IAM works](/docs/account?topic=account-iamoverview)

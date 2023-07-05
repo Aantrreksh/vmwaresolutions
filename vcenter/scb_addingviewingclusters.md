@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2022
 
-lastupdated: "2022-05-16"
+lastupdated: "2022-06-14"
 
 subcollection: vmwaresolutions
 
@@ -15,7 +15,7 @@ subcollection: vmwaresolutions
 # Adding, viewing, and deleting clusters for Security and Compliance Readiness Bundle instances
 {: #scb_addingviewingclusters}
 
-New deployments of Security and Compliance Readiness Bundle instances are no longer supported. You can still add or delete clusters, add or remove VMware ESXi™ servers or NFS storage, and add or remove services for existing instances. You can also view and delete your Security and Compliance Readiness Bundle instances.
+New deployments of Security and Compliance Readiness Bundle instances are no longer supported. You can still add or delete clusters, add or delete VMware ESXi™ servers or NFS storage, and add or remove services for existing instances. You can also view and delete your Security and Compliance Readiness Bundle instances.
 {: deprecated}
 
 You can add your own clusters to Security and Compliance Readiness Bundle instances to expand the compute and storage capacity. Within a cluster, you can manage VMware ESXi servers for better resource allocation and high availability. When no longer needed, delete the added clusters from your instances.

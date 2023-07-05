@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2022
+  years:  2016, 2023
 
-lastupdated: "2022-04-27"
+lastupdated: "2023-06-12"
 
 subcollection: vmwaresolutions
 
@@ -75,7 +75,7 @@ Monitor HCX components such as HCX Manager, Cloud Gateway, WAN opt, and the Laye
 
 - Configure HCX Manager to send logs to a syslog server. Use the HCX Manager appliance management utility to run the `https://<hcxhostname or IP>:9443` command.
 - Set up a ping to a VM that is migrated before network swing for each stretched L2 network.
-- Monitor the HCX component VM health with VMware vRealize® Operations Manager or other VMware VM monitoring tools.
+- Monitor the HCX component VM health with VMware Aria® Operations™ Manager or other VMware VM monitoring tools.
 
 ## Bandwidth use
 {: #hcxclient-monitoring-band-use}

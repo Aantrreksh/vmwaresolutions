@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-03-30"
+lastupdated: "2023-06-19"
 
 keywords: vCenter Server Hybridity add service, view service vCenter Server Hybridity, remove service vCenter Server Hybridity
 
@@ -26,13 +26,13 @@ The following services are available to VMware vCenter Server with Hybridity Bun
 
 | Service name | Current version |
 |--------------|-----------------|
-| [Caveonix RiskForesight](/docs/vmwaresolutions?topic=vmwaresolutions-caveonix_considerations) | 4.0 |
-| [F5 BIG-IP](/docs/vmwaresolutions?topic=vmwaresolutions-f5_considerations) | BIG-IP VE 17.0 |
-| [FortiGate Virtual Appliance](/docs/vmwaresolutions?topic=vmwaresolutions-fortinetvm_considerations) | 7.2.2 |
-| [Juniper vSRX](/docs/vmwaresolutions?topic=vmwaresolutions-juniper-overview) | 3.0 (21.4R2) |
+| [Caveonix RiskForesight](/docs/vmwaresolutions?topic=vmwaresolutions-caveonix_considerations) | 4.1 |
+| [F5 BIG-IP](/docs/vmwaresolutions?topic=vmwaresolutions-f5_considerations) | BIG-IP VE 17.1 |
+| [FortiGate Virtual Appliance](/docs/vmwaresolutions?topic=vmwaresolutions-fortinetvm_considerations) | 7.2.5 |
+| [Juniper vSRX](/docs/vmwaresolutions?topic=vmwaresolutions-juniper-overview) | 3.0 (23.1R2) |
 | [Veeam](/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview) | 12 |
-| [vRealize Operations and Log Insight](/docs/vmwaresolutions?topic=vmwaresolutions-vrops_overview) | vROps 8.10 and vRLI 8.10 |
-| [Zerto](/docs/vmwaresolutions?topic=vmwaresolutions-addingzertodr) | 9.7u1 |
+| [VMware Aria Operations and VMware Aria Operations for Logs](/docs/vmwaresolutions?topic=vmwaresolutions-vrops_overview) | VMware Aria® Operations™ 8.12 and VMware Aria Operations™ for Logs 8.12 |
+| [Zerto](/docs/vmwaresolutions?topic=vmwaresolutions-addingzertodr) | 9.7u3 |
 {: caption="Table 1. Available services for vCenter Server with Hybridity Bundle instances" caption-side="bottom"}
 
 ## Procedure to add services to vCenter Server with Hybridity Bundle instances
@@ -51,7 +51,7 @@ When the installation of the service is completed successfully, you are notified
 1. From the {{site.data.keyword.vmwaresolutions_short}} console, click **Resources > vCenter Server** from the left navigation pane.
 2. In the **vCenter Server** table, click the instance for which you want to view services.
 3. Click the **Services** tab and click a service to review information about it, such as the service status and other details.
-4. Depending on the viewed service, you can access the service consoles by using the credentials that are provided on the service details and you can manage the service from here.
+4. Depending on the viewed service, you can access the service console by using the credentials that are provided on the service details page and you can manage the service from here.
 
 ## Procedure to delete services for vCenter Server with Hybridity Bundle instances
 {: #vc_hybrid_addingremovingservices-removing-procedure}

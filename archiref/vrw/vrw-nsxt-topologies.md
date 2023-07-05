@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2023
 
-lastupdated: "2023-03-21"
+lastupdated: "2023-06-19"
 
 subcollection: vmwaresolutions
 
@@ -23,22 +23,19 @@ This topology creates a single gateway cluster, with active-passive Tier-0 and T
 
 Active-passive on the Tier0 provides IPsec capability for access through the HA VIP address. Alternatively, Tier-0 can use Border Gateway Protocol (BGP) and peer with a vSRX firewall.
 
-![IBM Cloud for VMware Regulated Workloads single data center](../../images/vrw-nsxt-topology-single-dc-ap-simple.svg "Single data center"){: caption="Figure 1. Single data center" caption-side="bottom"}
+The following diagram shows an example of a customer deployment that uses the standard topology, when the segments are attached to the Tier-1 Gateway. You can add more segments to the existing Tier-1 Gateway or more Tier-1 Gateways on the same NSX-T edge clusters, if needed.
 
-## Multizone region data center active-active topology
-{: #fss-nsx-topologiest-mzraa}
+![Single-site – single tenant example topology with Tier-1 Gateway](../../images/arch-pattern-1-zone-t1.svg "Single-site – single tenant example topology that uses both Tier-0 and Tier-1 Gateways."){: caption="Figure 1. Single-site – single tenant example topology with Tier-1 Gateway" caption-side="bottom"}
 
-This topology is one of the more complex topologies and requires a large CPU/Memory footprint for all the moving parts.
+1. The vCenter Server automation deploys an example single-site topology, which follows the principles that are presented in this model. The deployment includes a single vCenter and three NSX-T managers that are deployed in the cluster on the initial {{site.data.keyword.cloud_notm}} data center location.
+2. The vCenter Server automation deploys two edge cluster transport nodes and a single edge cluster for your Tier-0 and Tier-1 Gateways.
+3. The Tier-0 Gateway provides north-south routing capabilities and the access to {{site.data.keyword.cloud_notm}} private network is provided through its uplinks.
+4. The access to private network is provided through private uplinks, which are attached to a portable subnet on a private primary VLAN on the {{site.data.keyword.cloud_notm}} private network. The routing to {{site.data.keyword.cloud_notm}} services uses these uplinks. The automation provisions the IP addresses to the uplinks from the {{site.data.keyword.cloud_notm}} managed 10/8 address space.
+5. If you provision your instance with public interfaces, the access to public network is provided through public uplinks. These uplinks are attached to a portable subnet on a public VLAN on the {{site.data.keyword.cloud_notm}} public network. The routing to internet uses these uplinks, and the public IP addresses to the uplinks are provisioned by the automation.
+6. A single Tier-1 Gateway is provisioned by the automation for the workloads. You can use this topology or customize it by provisioning new Tier-1 Gateways.
+7. You can expand the default topology by adding new segments to the existing Tier-1 Gateway (or to the new Tier-1 Gateways provisioned by you). The route advertisements between T1 and T0 gateways are fully customizable by you and are done by NSX-T. No routing protocol is required or used between T1 and T0 advertisements.
 
-Two levels of Tier-0 exist in combination with a vSAN stretched cluster.
-
-The first level of Tier-0s is located and isolated to a data center, providing the northbound communication to the physical network and IPsec capabilities to the on-premises location.
-
-The second level Tier-0 (active-passive) instances and Tier-1 (active-passive) are connected to the first-level Tier-0s. The differences at this level are that the active-passive nodes are stretched to run an instance in each data center and that they are connected to the first level Tier-0 in each data center. BGP is configured between the Tier-0 instances to provide dynamic routing and failover routing in a dynamic fashion.
-
-From the Tier-1 instances, the overlay network segments are connected, which are available in both data centers as a stretched network. The previous Tier-0 failover and redundancy provide the same SLA availability as NSX-V, with a seamless active-active topology and failover.
-
-![IBM Cloud for VMware Regulated Workloads active-active MZR topology](../../images/vrw-nsxt-topology-dual-dc-aa-simple.svg "Active-active MZR topology"){: caption="Figure 2. Active-active MZR topology" caption-side="bottom"}
+The following diagram shows an example of a customer deployment that uses the standard topology, when the segments are attached directly to the Tier-0 Gateway. You can add more segments to the Tier-0 Gateway or and delete the Tier-1 Gateway that is deployed by the automation, if needed.
 
 ## Related links
 {: #vrw-nsxt-topologies-related}

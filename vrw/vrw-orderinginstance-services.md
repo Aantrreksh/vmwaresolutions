@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2023
 
-lastupdated: "2023-04-28"
+lastupdated: "2023-06-12"
 
 keywords: vmware regulated workloads, vmware regulated workloads order instance, order vmware regulated workloads, vmware regulated workloads instances
 
@@ -28,9 +28,9 @@ The following services are included with your Regulated Workloads instance. Some
 * [Entrust CloudControl](/docs/vmwaresolutions?topic=vmwaresolutions-entrust-cc_considerations)
 * [Juniper vSRX](/docs/vmwaresolutions?topic=vmwaresolutions-juniper-overview), if you're using **Gateway cluster with Juniper vSRX** as your firewall appliance
 * [FortiGate Virtual Appliance](/docs/vmwaresolutions?topic=vmwaresolutions-fortinetvm_considerations), if you're using **Gateway cluster with FortiGate Virtual Appliance** as your firewall appliance
-* [vRealize Operations and Log Insight](/docs/vmwaresolutions?topic=vmwaresolutions-vrops_overview)
+* [VMware Aria Operations and VMware Aria Operations for Logs](/docs/vmwaresolutions?topic=vmwaresolutions-vrops_overview)
 
-## Optional services (Single-zone VMware instance only)
+## Optional services
 {: #vrw-orderinginstance-services-optional}
 
 You can choose to install the following services:

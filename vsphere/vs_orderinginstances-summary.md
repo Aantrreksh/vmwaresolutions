@@ -2,11 +2,11 @@
 
 copyright:
 
-  years:  2016, 2022
+  years:  2016, 2023
 
-lastupdated: "2022-06-14"
+lastupdated: "2023-05-25"
 
-keywords: vSphere order cluster, order vSphere, order vSphere cluster
+keywords: vmware vSphere order instance, order vSphere, order vmware vSphere instance
 
 subcollection: vmwaresolutions
 
@@ -24,4 +24,4 @@ You can also add the provisioned resources to the {{site.data.keyword.cloud_notm
 ## Related links
 {: #vs_orderinginstances-summary-related}
 
-* [Procedure to order vSphere clusters](/docs/vmwaresolutions?topic=vmwaresolutions-vs_orderinginstances-procedure#vs_orderinginstances-procedure-related)
+* [Procedure to order VMware vSphere instances](/docs/vmwaresolutions?topic=vmwaresolutions-vs_orderinginstances-procedure)

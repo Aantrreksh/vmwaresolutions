@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2023
 
-lastupdated: "2023-04-03"
+lastupdated: "2023-06-16"
 
 keywords: view Cyber Recovery, view instance, view instance details, instance view Cyber Recovery
 
@@ -106,7 +106,7 @@ Under **Access information**, view the access information for the instance-relat
 ## Procedure to view deployment history for Cyber Recovery instances
 {: #cr_viewinginstances-procedure-view-deploy-history}
 
-Click **Deployment history** from the left navigation pane to view the deployment history for the instance.
+Click the **Deployment history** tab to view the deployment history for the instance.
 
 | Item | Description |
 |:---- |:----------- |
@@ -114,10 +114,10 @@ Click **Deployment history** from the left navigation pane to view the deploymen
 | Summary | The details of the change. |
 {: caption="Table 5. Cyber Recovery instance deployment history" caption-side="bottom"}
 
-## What to do if errors occur
+### What to do if errors occur
 {: #cr_viewinginstances-if-errors-occur}
 
-If errors occur during instance deployment or instance deletion, the {{site.data.keyword.cloud_notm}} Support team is automatically notified. To inquire about the status of your ticket, follow the steps in [Contacting IBM Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support).
+If you see errors in the deployment history, the {{site.data.keyword.cloud_notm}} Support team is automatically notified. To inquire about the status of your ticket, follow the steps in [Contacting IBM Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support).
 
 ## What to do next
 {: #cr_viewinginstances-next}

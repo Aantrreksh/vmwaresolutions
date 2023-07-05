@@ -2,11 +2,11 @@
 
 copyright:
 
-  years:  2016, 2022
+  years:  2016, 2023
 
-lastupdated: "2022-11-07"
+lastupdated: "2023-06-14"
 
-keywords: vSphere order cluster, order vSphere, order vSphere cluster
+keywords: vmware vSphere order instance, order vSphere, order vmware vSphere instance
 
 subcollection: vmwaresolutions
 
@@ -17,25 +17,25 @@ subcollection: vmwaresolutions
 # Network interface
 {: #vs_orderinginstances-network-interface-settings}
 
-You must specify the following network interface settings when you order a new VMware vSphere® cluster.
+You must specify the following network interface settings when you order a new VMware vSphere® instance.
 
-## Host name prefix
+## Hostname prefix
 {: #vs_orderinginstances-host-name-prefix}
 
 The host name is used for all {{site.data.keyword.cloud}} bare metal server orders. It is recommended to use the host name for all management virtual machines, such as VMware vCenter Server® and VMware NSX®.
 
-The host name prefix must meet the following requirements:
+The hostname prefix must meet the following requirements:
 * Only lowercase alphabetic, numeric, and dash (-) characters are allowed.
 * No consecutive dash characters are allowed.
-* The host name prefix must start with a lowercase alphabetic character.
-* The host name prefix must end with a lowercase alphabetic or numeric character.
-* The maximum length of the host name prefix is 10 characters.
+* The hostname prefix must start with a lowercase alphabetic character.
+* The hostname prefix must end with a lowercase alphabetic or numeric character.
+* The maximum length of the hostname prefix is 10 characters.
 
 ## Domain name
 {: #vs_orderinginstances-domain-name}
 
 The domain name is used for all {{site.data.keyword.cloud_notm}} bare metal servers and must meet the following requirements:
-* For vSphere 7 instances, the domain name must consist of three or more strings that are separated by a period (.)
+* The domain name must consist of three or more strings that are separated by a period (.)
 * Only lowercase alphabetic, numeric, and dash (-) characters are allowed.
 * No consecutive dash characters are allowed.
 * Each string must start with a lowercase alphabetic character and end with a lowercase alphabetic or numeric character.
@@ -43,10 +43,12 @@ The domain name is used for all {{site.data.keyword.cloud_notm}} bare metal serv
 * The length of the last string must be in the range 2 - 24 characters.
 * The maximum length of the domain name is 50 characters.
 
-## Network diagram
+## Configure hostnames individually
 {: #vs_orderinginstances-network-diagram}
 
-You can customize the hostnames prefix individually by selecting **Configure hostnames individually**. It must meet the following requirements:
+You can customize the hostnames prefix individually by toggling the **Configure hostnames individually** switch on. 
+
+The hostnames prefix must meet the following requirements:
 * Only lowercase alphabetic, numeric, and dash (-) characters are allowed.
 * No consecutive dash characters are allowed.
 * The hostname prefix must start with a lowercase alphabetic character.
@@ -63,7 +65,13 @@ Network interface card (NIC) enablement settings are based on your selection of 
 
 {{site.data.content.uplink-speed-options-list}}
 
-{{site.data.content.simpletable-uplink-speed-locations}}
+{{site.data.content.simpletable-uplink-speed-locations-ap}}
+
+{{site.data.content.simpletable-uplink-speed-locations-eur}}
+
+{{site.data.content.simpletable-uplink-speed-locations-naeast}}
+
+{{site.data.content.simpletable-uplink-speed-locations-nasouth}}
 
 ## VLANs
 {: #vs_orderinginstances-vlans}
@@ -107,4 +115,4 @@ This option is only available for an order with both a public and private networ
 {: #vs_orderinginstances-network-related}
 
 * [Summary](/docs/vmwaresolutions?topic=vmwaresolutions-vs_orderinginstances-order-summary)
-* [Procedure to order vSphere clusters](/docs/vmwaresolutions?topic=vmwaresolutions-vs_orderinginstances-procedure#vs_orderinginstances-procedure-related)
+* [Procedure to order VMware vSphere instances](/docs/vmwaresolutions?topic=vmwaresolutions-vs_orderinginstances-procedure)

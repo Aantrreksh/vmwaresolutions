@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-04-03"
+lastupdated: "2023-06-16"
 
 keywords: view vCenter Server Hybridity, view instance, view instance details
 
@@ -105,10 +105,10 @@ Click the **Deployment History** tab to view the deployment history for the inst
 | Summary | The details of the change. |
 {: caption="Table 5. vCenter Server with Hybridity Bundle instance deployment history" caption-side="bottom"}
 
-## What to do if errors occur
+### What to do if errors occur
 {: #vc_hybrid_viewinginstances-if-errors-occur}
 
-If errors occur during instance deployment or instance deletion, the {{site.data.keyword.cloud_notm}} Support team is automatically notified. To inquire about the status of your ticket, follow the steps in [Contacting IBM Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support).
+If you see errors in the deployment history, the {{site.data.keyword.cloud_notm}} Support team is automatically notified. To inquire about the status of your ticket, follow the steps in [Contacting IBM Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support).
 
 ## What to do next
 {: #vc_hybrid_viewinginstances-next}

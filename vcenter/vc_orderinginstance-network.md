@@ -4,9 +4,9 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-04-17"
+lastupdated: "2023-06-15"
 
-keywords: vCenter Server order instance, order vCenter Server, order vCenter Server instance
+keywords: network interface, domain name, hostname prefix, configure hostnames, dns configuration
 
 subcollection: vmwaresolutions
 
@@ -43,7 +43,19 @@ The root domain name must meet the following requirements:
 The maximum length of the Fully Qualified Domain Name (FQDN) for hosts and VMs is 63 characters. Domain names must accommodate for this maximum length.
 {: note}
 
-## Domain Name System configuration
+## Configure hostnames individually
+{: #vc_orderinginstance-network-diagram}
+
+You can customize the hostnames prefix individually by toggling the **Configure hostnames individually** switch on. 
+
+The hostnames prefix must meet the following requirements:
+* Only lowercase alphabetic, numeric, and dash (-) characters are allowed.
+* No consecutive dash characters are allowed.
+* The hostname prefix must start with a lowercase alphabetic character.
+* The hostname prefix must end with a lowercase alphabetic or numeric character.
+* The maximum length of the hostname prefix is 10 characters.
+
+## DNS configuration
 {: #vc_orderinginstance-dns-config}
 
 Select the Domain Name System (DNS) configuration for your instance:
@@ -60,18 +72,8 @@ You have 30 days to activate the VMs.
 
 For more information about ordering Windows Server 2019 licenses, see [Get started with Windows Server 2019](https://docs.microsoft.com/en-us/windows-server/get-started-19/get-started-19){: external}.
 
-## Network diagram
-{: #vc_orderinginstance-network-diagram}
-
-You can customize the hostnames prefix individually by selecting **Configure hostnames individually**. It must meet the following requirements:
-* Only lowercase alphabetic, numeric, and dash (-) characters are allowed.
-* No consecutive dash characters are allowed.
-* The hostname prefix must start with a lowercase alphabetic character.
-* The hostname prefix must end with a lowercase alphabetic or numeric character.
-* The maximum length of the hostname prefix is 13 characters.
-
 ## Related links
 {: #vc_orderinginstance-network-related}
 
-* [Services](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-addon-services)
+* [Add-on services](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-addon-services)
 * [Procedure to order vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-procedure)

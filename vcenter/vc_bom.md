@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-04-17"
+lastupdated: "2023-06-13"
 
 keywords: vCenter Server BOM, bill of materials vCenter Server, BOM
 
@@ -38,11 +38,11 @@ The following table details the BOM information for vCenter Server software comp
 
 | Manufacturer | Component | Version |
 |:------------ |:--------- |:------- |
-| VMware       | vSphere ESXi | ESXi 7.0 Update 3k (build 21313628)[^esxi70] or \n ESXi 6.7 EP24 (20497097)[^esxi67] |
+| VMware       | vSphere ESXi | ESXi 7.0 Update 3l (build 21424296)[^esxi70] or \n ESXi 6.7 P08 (20497097)[^esxi67] |
 | VMware       | Distributed vSwitch | 7.0.0[^vcs-vsphere700] or 6.6.0[^vcs-vsphere660]
-| VMware       | vCenter Server Appliance | 7.0 Update 3k (21290409) |
-| VMware       | vSAN[^vsan] | 7.0 Update 3c (19193900) |
-| VMware       | NSX-T for vSphere[^nsxt] | 3.2.0.1.0 (19232400) |
+| VMware       | vCenter Server Appliance | 7.0 Update 3l (21477706) |
+| VMware       | vSAN[^vsan] | 7.0 Update 3l (21424296) |
+| VMware       | NSX-T for vSphere[^nsxt] | 3.2.2.1 (21487565) |
 | VMware       | NSX-V for vSphere[^nsxv] | 6.4.13 (19307994) |
 | Microsoft®   | Windows® Server Standard edition | 2019 |
 | Microsoft    | Active Directory™ domain functional level | 2016 (WinThreshold)[^domain] |
@@ -50,11 +50,11 @@ The following table details the BOM information for vCenter Server software comp
 
 [^esxi70]: Applicable to vSphere 7
 
-[^esxi67]: Applicable to 6.7u2 and 6.7u3 hosts
+[^esxi67]: Applicable to existing vSphere 6.7 hosts
 
 [^vcs-vsphere700]: Applicable to vSphere 7
 
-[^vcs-vsphere660]: Applicable to vSphere 6.7
+[^vcs-vsphere660]: Applicable to existing vSphere 6.7 hosts
 
 [^vsan]: VMware vSAN is an optional component
 

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2020, 2022
+  years:  2020, 2023
 
-lastupdated: "2022-02-01"
+lastupdated: "2023-06-20"
 
 keywords: vmware regulated workloads, vmware regulated workloads order instance, order vmware regulated workloads, vmware regulated workloads instances
 
@@ -14,11 +14,12 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Instance configurations
+# Instance configuration name
 {: #vrw-orderinginstance-inst-config}
 
-* You can select **New configuration** to specify settings for an instance and place the order or save the settings as a configuration template without placing an order.
-* You can also select a saved configuration template to further edit it, or to update it and then save it as a new configuration template.
+{{site.data.content.paraone-orderinginstance-inst-config}}
+
+{{site.data.content.paratwo-orderinginstance-inst-config}}
 
 ## Related links
 {: #vrw-orderinginstance-config-related}

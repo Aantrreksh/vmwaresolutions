@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-04-12"
+lastupdated: "2023-05-25"
 
 keywords: FAQ vmware solutions dedicated, vmware solutions dedicated questions, user account, patch management
 
@@ -49,8 +49,8 @@ All costs for the physical and virtual infrastructure and the licenses that resu
 All instance types provide deployment choices for VMware® virtual environments. However, the difference is the extent of customizability and automation.
 
 * When you order a VMware vCenter Server® instance, you deploy a VMware® virtual environment with customized compute, storage, and network resources. For more information about the deployed components, see [Technical specifications for vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview#vc_vcenterserveroverview-specs).
-* When you order a VMware vSphere® cluster, you obtain the maximum of flexibility to design and build your hosted VMware environment while you incorporate VMware-compatible hardware. However, {{site.data.keyword.cloud_notm}} does not automate the installation, configuration, and bring-up of the optional VMware components for the VMware vSphere® cluster.
-* The functions that are supported by vCenter Server instances and vSphere clusters are different. For more information, see [Offering comparison chart](/docs/vmwaresolutions?topic=vmwaresolutions-inst_comp_chart).
+* When you order a VMware vSphere® instance, you obtain the maximum of flexibility to design and build your hosted VMware environment while you incorporate VMware-compatible hardware. However, {{site.data.keyword.cloud_notm}} does not automate the installation, configuration, and bring-up of the optional VMware components for the VMware vSphere instance.
+* The functions that are supported by vCenter Server instances and VMware vSphere instances are different. For more information, see [Offering comparison chart](/docs/vmwaresolutions?topic=vmwaresolutions-inst_comp_chart).
 
 ## What is included in a vCenter Server instance?
 {: #faq-vcs}
@@ -58,11 +58,11 @@ All instance types provide deployment choices for VMware® virtual environments.
 
 For more information, see [Technical specifications for vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview#vc_vcenterserveroverview-specs).
 
-## What is included in a VMware vSphere cluster?
+## What is included in a VMware vSphere instance?
 {: #faq-vss}
 {: faq}
 
-For more information, see [Technical specifications for VMware vSphere clusters](/docs/vmwaresolutions?topic=vmwaresolutions-vs_vsphereclusteroverview#vs_vsphereclusteroverview-specs).
+For more information, see [Technical specifications for VMware vSphere instances](/docs/vmwaresolutions?topic=vmwaresolutions-vs_vsphereclusteroverview#vs_vsphereclusteroverview-specs).
 
 ## Is a two node vCenter Server instance highly available?
 {: #is-a-two-node-vcenter-server-instance-highly-available}

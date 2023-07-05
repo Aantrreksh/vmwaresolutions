@@ -4,9 +4,9 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-04-28"
+lastupdated: "2023-06-12"
 
-keywords: vCenter Server order instance, order vCenter Server, order vCenter Server instance
+keywords: services for vCenter Server instance, order vCenter Server services, add-on services
 
 subcollection: vmwaresolutions
 
@@ -14,7 +14,7 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Services
+# Add-on services
 {: #vc_orderinginstance-addon-services}
 
 When you order a VMware vCenter Server® instance, you can also order add-on services. Review services that are recommended and optional with your vCenter Server instance.
@@ -37,7 +37,7 @@ Optionally, you can choose to install the following services:
 * [FortiGate Virtual Appliance](/docs/vmwaresolutions?topic=vmwaresolutions-fortinetvm_considerations)
 * [Juniper vSRX](/docs/vmwaresolutions?topic=vmwaresolutions-juniper-overview)
 * [{{site.data.keyword.redhat_openshift_notm}} for VMware](/docs/vmwaresolutions?topic=vmwaresolutions-ocp_overview)
-* [vRealize Operations and Log Insight](/docs/vmwaresolutions?topic=vmwaresolutions-vrops_overview)
+* [VMware Aria Operations and VMware Aria Operations for Logs](/docs/vmwaresolutions?topic=vmwaresolutions-vrops_overview)
 
 For more information about the services, see [Available services for vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices#vc_addingservices-available-services).
 

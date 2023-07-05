@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2023
 
-lastupdated: "2023-05-01"
+lastupdated: "2023-06-20"
 
 keywords: vCenter Server add host, add server vCenter Server
 
@@ -24,7 +24,7 @@ You can expand the capacity of your VMware® vCenter Server® instance according
 
 * For existing instances with VMware vSphere® 6.5 or 6.7, you cannot add ESXi servers. To add ESXi servers, upgrade your vSphere® software to 7.0. For more information, see [Upgrading VMware vSphere software from vSphere 6.5 or 6.7 to 7.0](/docs/vmwaresolutions?topic=vmwaresolutions-vs_vsphere_70_upgrade).
 * For existing instances with vSphere 7.0u2, you can add only ESXi servers with vSphere 7.0u3.
-* For the gateway cluster, you cannot add or remove ESXi servers.
+* For the gateway cluster, you cannot add or delete ESXi servers.
 * {{site.data.content.para-vcenteraddESXiservers}}
 * A vCenter Server instance with NFS storage must have at least three ESXi servers. Each of the nondefault clusters can be expanded to have up to 59 ESXi servers.
 * A vCenter Server instance with vSAN™ storage must have at least four ESXi servers.
@@ -51,14 +51,15 @@ Bring Your Own License (BYOL) is no longer supported except for migrations or up
    {: important}
 
 7. Complete the bare metal server configuration.
-   * From the list, you can select a bare metal server configuration that is being used by the existing ESXi servers in the cluster. Then, click **Next**. This option is not available under the following conditions:
-      * The bare metal configuration that is used by the existing ESXi servers in the cluster is **Broadwell**.
-      * The storage type of the cluster is **Local disks**.
-   * You can also choose a new bare metal server configuration by selecting the option from the list and clicking **Next**. Select the **CPU model** and the amount of **RAM**.
+   1. Enter the number of bare metal servers.
+      * For the consolidated cluster, you can order 1-51 servers in total, taking into account the existing number of hosts in the cluster.
+      * For the workload cluster, you can order 1-59 servers in total, taking into account the existing number of hosts in the cluster.
+   2. From the list, you can select a bare metal server configuration that is being used by the existing ESXi servers in the cluster. Then, click **Next**. This option is not available for existing ESXi servers with **Broadwell CPU** or if the storage type of the cluster is **Local disks**.
+   3. You can also choose a new bare metal server configuration by selecting the option from the list and clicking **Next**. Select the **CPU model** and the amount of **RAM**.
 8. Click **Next** and complete the networking settings.
     * You can continue to use the previously selected primary subnets.
-    * You can specify new primary subnets. Then, use the lists to select the **Public primary subnet** and **Private primary subnet**.
-    * If you want to customize the hostnames prefix individually, select **Configure hostnames individually**.
+    * You can specify different primary subnets. Then, use the lists to select the **Public primary subnet** and **Private primary subnet**.
+    * If you want to customize the hostnames prefix individually, toggle the **Configure hostnames individually** switch on.
 9. In the **Details** section, review the estimated pricing, ensure that the account to be charged is correct, and review and accept the terms. Then, click **Add**.
 
 ## Results after you add ESXi servers to vCenter Server instances
@@ -66,7 +67,7 @@ Bring Your Own License (BYOL) is no longer supported except for migrations or up
 
 1. You might experience a slight delay on the console while the instance status changes from **Available** to **Modifying**. Allow the operation to complete before you make more changes to the instance.
 2. You are notified by email that your request to add ESXi servers is being processed. On the console, the status of the cluster that is associated with the ESXi servers is changed to **Modifying**.
-3. If you do not see the new ESXi servers added to the list in the cluster, check the email or console notifications to find more details about the failure.
+3. If you do not see the new ESXi servers added to the list in the cluster, check your email or console notifications for more details.
 
 If you are adding ESXi servers during maintenance mode, VMs are not migrated to the new servers until you remove maintenance mode.   
 {: important}
@@ -75,7 +76,7 @@ If you are adding ESXi servers during maintenance mode, VMs are not migrated to 
 {: #vc_addingservers-related}
 
 * [Deleting vCenter Server instances in a multisite configuration](/docs/vmwaresolutions?topic=vmwaresolutions-vc_deletinginstance_multi)
-* [Ordering vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-req)
+* [Requirements for vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-req)
 * [Viewing vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_viewinginstances)
 * [Managing virtual servers](/docs/virtual-servers?topic=virtual-servers-managing-virtual-servers)
 * [Contacting IBM Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support)

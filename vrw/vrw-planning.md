@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2023
 
-lastupdated: "2023-04-28"
+lastupdated: "2023-06-12"
 
 keywords: planning vmware regulated workloads, data center vmware regulated workloads, vmware regulated workloads data centers
 
@@ -47,6 +47,14 @@ The following {{site.data.keyword.cloud_notm}} data centers are available for VM
 | Asia-Pacific | TOK02 | 01-02 |
 | Asia-Pacific | TOK04 | 01 |
 | Asia-Pacific | TOK05 | 01 |
+{: caption="Table 1. Available {{site.data.keyword.cloud_notm}} data centers for VMware Regulated Workloads single-zone deployment" caption-side="bottom"}
+{: tab-title="Asia-Pacific"}
+{: tab-group="Data centers for VMware Regulated Workloads"}
+{: class="simple-tab-table"}
+{: #simpletabtable-vrw-ap}
+
+| Geography | Data center | Pod |
+|:--------- |:----------- |:--- |
 | Europe | AMS03 | 01-02 |
 | Europe | FRA02 | 01-03 |
 | Europe | FRA04 | 01 |
@@ -57,6 +65,14 @@ The following {{site.data.keyword.cloud_notm}} data centers are available for VM
 | Europe | LON06 | 01 |
 | Europe | MIL01 | 01 |
 | Europe | PAR01 | 01 |
+{: caption="Table 1. Available {{site.data.keyword.cloud_notm}} data centers for VMware Regulated Workloads single-zone deployment" caption-side="bottom"}
+{: tab-title="Europe"}
+{: tab-group="Data centers for VMware Regulated Workloads"}
+{: class="simple-tab-table"}
+{: #simpletabtable-vrw-eur}
+
+| Geography | Data center | Pod |
+|:--------- |:----------- |:--- |
 | NA East | MON01 | 01-02 |
 | NA East | TOR01 | 01-02 |
 | NA East | TOR04 | 01 |
@@ -64,28 +80,44 @@ The following {{site.data.keyword.cloud_notm}} data centers are available for VM
 | NA East | WDC04 | 01-05 |
 | NA East | WDC06 | 01 |
 | NA East | WDC07 | 01 |
+{: caption="Table 1. Available {{site.data.keyword.cloud_notm}} data centers for VMware Regulated Workloads single-zone deployment" caption-side="bottom"}
+{: tab-title="NA East"}
+{: tab-group="Data centers for VMware Regulated Workloads"}
+{: class="simple-tab-table"}
+{: #simpletabtable-vrw-naeast}
+
+| Geography | Data center | Pod |
+|:--------- |:----------- |:--- |
 | NA South | DAL09 | 01-06 |
 | NA South | DAL10 | 01-04 |
 | NA South | DAL12 | 01-02 |
 | NA South | DAL13 | 01-03 |
+{: caption="Table 1. Available {{site.data.keyword.cloud_notm}} data centers for VMware Regulated Workloads single-zone deployment" caption-side="bottom"}
+{: tab-title="NA South"}
+{: tab-group="Data centers for VMware Regulated Workloads"}
+{: class="simple-tab-table"}
+{: #simpletabtable-vrw-nasouth}
+
+| Geography | Data center | Pod |
+|:--------- |:----------- |:--- |
 | NA West | SJC03 | 01-02 |
 | NA West | SJC04 | 01 |
+{: caption="Table 1. Available {{site.data.keyword.cloud_notm}} data centers for VMware Regulated Workloads single-zone deployment" caption-side="bottom"}
+{: tab-title="NA West"}
+{: tab-group="Data centers for VMware Regulated Workloads"}
+{: class="simple-tab-table"}
+{: #simpletabtable-vrw-nawest}
+
+| Geography | Data center | Pod |
+|:--------- |:----------- |:--- |
 | South America | SAO01 | 01 |
 | South America | SAO04 | 01 |
 | South America | SAO05 | 01 |
 {: caption="Table 1. Available {{site.data.keyword.cloud_notm}} data centers for VMware Regulated Workloads single-zone deployment" caption-side="bottom"}
-
-### Regions available for multizone deployment
-{: #vrw-planning-reg-multizone}
-
-The following regions are available for VMware Regulated Workloads multizone deployment.
-
-| {{site.data.keyword.cloud_notm}} data centers | Mutizone region |
-|:----------------------|:-------|
-| Dallas, Sao Paulo, Toronto, and Washington DC | Americas |
-| Frankfurt and London | Europe |
-| Sydney, Tokyo, and Osaka | Asia Pacific |
-{: caption="Table 2. Available regions for VMware Regulated Workloads multizone deployment" caption-side="bottom"}
+{: tab-title="South America"}
+{: tab-group="Data centers for VMware Regulated Workloads"}
+{: class="simple-tab-table"}
+{: #simpletabtable-vrw-sa}
 
 ## Services for VMware Regulated Workloads
 {: #vrw-planning-addon-services}
@@ -100,9 +132,9 @@ The following services are included with VMware Regulated Workloads:
 * [Caveonix RiskForesight](/docs/vmwaresolutions?topic=vmwaresolutions-caveonix_considerations)
 * [Entrust CloudControl](/docs/vmwaresolutions?topic=vmwaresolutions-entrust-cc_considerations)
 * [Juniper vSRX](/docs/vmwaresolutions?topic=vmwaresolutions-juniper-overview). This service is included when you choose **Gateway cluster with Juniper vSRX**.
-* [vRealize Operations and Log Insight](/docs/vmwaresolutions?topic=vmwaresolutions-vrops_overview)
+* [VMware Aria Operations and VMware Aria Operations for Logs](/docs/vmwaresolutions?topic=vmwaresolutions-vrops_overview)
 
-The following services are optional for VMware Regulated Workloads and are available to single-zone VMware instances only:
+The following services are optional for VMware Regulated Workloads:
 * [VMware HCX](/docs/vmwaresolutions?topic=vmwaresolutions-hcx_considerations)
 * [F5 BIG-IP](/docs/vmwaresolutions?topic=vmwaresolutions-f5_considerations)
 

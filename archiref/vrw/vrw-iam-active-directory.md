@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2020, 2022
+  years:  2020, 2023
 
-lastupdated: "2022-08-26"
+lastupdated: "2023-06-19"
 
 subcollection: vmwaresolutions
 
@@ -48,6 +48,4 @@ The {{site.data.keyword.cloud}} for VMware Regulated Workloads Active Directory 
 {: #vrw-iam-active-directory-related}
 
 * [IBM Cloud compliance programs](https://www.ibm.com/cloud/compliance)
-* [Entrust CloudControl](/docs/vmwaresolutions?topic=vmwaresolutions-entrust-cc_considerations)
-* [Entrust DataControl](/docs/vmwaresolutions?topic=vmwaresolutions-entrust-dc_considerations)
 * [IBM Cloud Hyper Protect Crypto Services API](/apidocs/hs-crypto)

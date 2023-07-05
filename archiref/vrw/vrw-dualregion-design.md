@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2023
 
-lastupdated: "2023-05-01"
+lastupdated: "2023-06-19"
 
 subcollection: vmwaresolutions
 
@@ -21,10 +21,9 @@ The design uses the following structure:
 * vCenter
 * VMware NSX® Manager
 * Caveonix RiskForesight™
-* Entrust CloudControl™
-* vRealize Log Insight™
-* vRealize® Network Insight
-* vRealize Operations™ Manager
+* VMware Aria Operations™ for Logs
+* VMware Aria Operations™ for Networks
+* VMware Aria® Operations™ Manager
 * AD/DNS/NTP
 * Veeam®
 * KMIP for VMware®
@@ -35,7 +34,7 @@ The design uses the following structure:
 
 As the design uses two VMware Regulated Workloads instances, the network design is at each region and is documented at [Underlay networking](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-underlay-network) and [Overlay networking](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-overlay-network).
 
-The key design element at the network level is the adoption of cross-region network for the use of the vRealize Operations Manager analytic cluster. The cross-region network is a layer 3 construct that allows the use of the same IP subnet space at either the protected region or the recovery region. In normal operations, the cross-region network is tethered to the vSRX or FortiGate in the protected region that is, the default gateway for this network is the vSRX or FortiGate. The protected region vSRX or FortiGate then advertises this network so that it is reachable from other networks. In recovery operations, the cross-region network is tethered to the vSRX or FortiGate in the recovery region. The recovery region vSRX or FortiGate then advertises this network so that it is reachable from other networks. The use of the cross-region network allows the vRealize Operations Manager Analytic cluster to retain the same IP addresses when they are recovered to the recovery region.
+The key design element at the network level is the adoption of cross-region network for the use of the VMware Aria Operations Manager analytic cluster. The cross-region network is a layer 3 construct that allows the use of the same IP subnet space at either the protected region or the recovery region. In normal operations, the cross-region network is tethered to the vSRX or FortiGate in the protected region that is, the default gateway for this network is the vSRX or FortiGate. The protected region vSRX or FortiGate then advertises this network so that it is reachable from other networks. In recovery operations, the cross-region network is tethered to the vSRX or FortiGate in the recovery region. The recovery region vSRX or FortiGate then advertises this network so that it is reachable from other networks. The use of the cross-region network allows the VMware Aria Operations Manager Analytic cluster to retain the same IP addresses when they are recovered to the recovery region.
 
 Review the following network design decisions:
 * The {{site.data.keyword.cloud}} classic network environment does not allow the stretching of VLANs across data centers. Therefore, this design does not use stretched VLANs at the physical network infrastructure level.
@@ -44,7 +43,7 @@ Review the following network design decisions:
 * Recovered management components use the same IP addressing to minimize recovery effort.
 * To provide isolation of traffic, the design uses tunnels (GRE or IPsec driven by customer requirements) between regions and also between the region and the SaaS consumer and SaaS provider.
 * BGP is used between the regions and the SaaS provider and SaaS consumer to advertise the required routes at the appropriate locations during normal operations and disaster recovery invocation.
-* The vRealize Operations Manager DR design requires that the analytics cluster is restarted in the recovery region by using the same IP addresses for the cross-region subnet. This process is achieved by "moving" the cross-region {{site.data.keyword.cloud_notm}} portable subnet to the recovery region. This process is possible because the default gateway for this subnet is the vSRX. However, this subnet is not natively reachable externally to the vSRX unless through the SaaS Provider VPN tunnel.
+* The VMware Aria Operations Manager DR design requires that the analytics cluster is restarted in the recovery region by using the same IP addresses for the cross-region subnet. This process is achieved by "moving" the cross-region {{site.data.keyword.cloud_notm}} portable subnet to the recovery region. This process is possible because the default gateway for this subnet is the vSRX. However, this subnet is not natively reachable externally to the vSRX unless through the SaaS Provider VPN tunnel.
 
 ## vCenter Server
 {: #vrw-dualregion-design-vcenter}
@@ -85,45 +84,34 @@ It is recommended to use automation to create overlay network components so that
 ## Caveonix RiskForesight
 {: #vrw-dualregion-design-caveonix}
 
-The {{site.data.keyword.cloud_notm}} for VMware® Regulated Workloads automation deploys a Caveonix RiskForesight all-in-one appliance in both the protected region and the recovery region. In the dual region design only the recovery region appliance is used, and is reconfigured so that the protected region vCenter, NSX-T manager, and Entrust CloudControl are configured as Asset Repositories. The use of a single instance of Caveonix RiskForesight to manage compliance and cyberrisk across both the protected and recovery regions allows a single view of all environments. By placing the single instance of Caveonix RiskForesight in the recovery region, that instance is available when in DR invocation without any DR activities.
+The {{site.data.keyword.cloud_notm}} for VMware® Regulated Workloads automation deploys a Caveonix RiskForesight all-in-one appliance in both the protected region and the recovery region. In the dual region design only the recovery region appliance is used, and is reconfigured so that the protected region vCenter, NSX-T manager are configured as Asset Repositories. The use of a single instance of Caveonix RiskForesight to manage compliance and cyberrisk across both the protected and recovery regions allows a single view of all environments. By placing the single instance of Caveonix RiskForesight in the recovery region, that instance is available when in DR invocation without any DR activities.
 
 vSphere HA provides availability of the RiskForesight instance and for business resiliency. For image-level backups of the VM, configure and store them in the recovery region of the Veeam Repository server. Configure a Veeam backup copy job to copy the backup to the protected site so you can provide an off-site copy of the backup.
 
 If you are using Caveonix RiskForesight to manage compliance and cyberrisk of the workload VMs, review the scaling of the RiskForesight instance. Replace the all-in-one deployment with the appropriate deployment to match the availability and retention requirements. For more information, see [Deployment models for Caveonix RiskForesight](/docs/vmwaresolutions?topic=vmwaresolutions-caveonix-deploy).
 
-## Entrust CloudControl
-{: #vrw-dualregion-design-htcc}
-
-The {{site.data.keyword.cloud_notm}} for VMware® Regulated Workloads automation deploys a Entrust CloudControl cluster in both the protected region and the recovery region. Entrust CloudControl clusters enable service isolation per regions so that each region is considered to be independent. This behavior does not impact licensing, as licenses are supplied on a per-host basis.
-
-Entrust CloudControl supports the following backups:
-* Appliance configuration backups by using the `asc backup` CLI command, to local storage or SCP or NFS targets.
-* Full snapshot-based backups or clones by using VMware or third-party tools.
-
-Veeam is used to provide snapshot-based image backups of the primary and secondary nodes. In addition to the Veeam backup, configure scheduled appliance backups by using SCP on the appliances and the Veeam repository SFTP share as the target directory. This extra level of protection allows a database restore to a new appliance if the image-based restore fails.
-
-## vRealize Log Insight
+## VMware Aria Operations for Logs
 {: #vrw-dualregion-design-vrli}
 
-The {{site.data.keyword.cloud_notm}} for VMware® Regulated Workloads automation deploys a vRealize Log Insight (vRLI) environment that consists of four appliances with an integrated load balancer in each of the two regions. For more information, see [vRealize Log Insight](/docs/vmwaresolutions?topic=vmwaresolutions-opsmgmt-vrli).
+The {{site.data.keyword.cloud_notm}} for VMware® Regulated Workloads automation deploys a VMware Aria Operations for Logs environment that consists of four appliances with an integrated load balancer in each of the two regions. For more information, see [VMware Aria Operations for Logs](/docs/vmwaresolutions?topic=vmwaresolutions-opsmgmt-vrli).
 
-In the dual region design, each region is configured to forward log information to the vRealize Log Insight instance in the other region. Due to this forwarding configuration, either of the vRLI clusters can be used to query the available logs from either of the regions. As a result, failover configuration is not required for the vRLI clusters, and each cluster remains associated with the region in which it was deployed. This approach minimizes failover configuration in a DR invocation.
+In the dual region design, each region is configured to forward log information to the VMware Aria Operations for Logs instance in the other region. Due to this forwarding configuration, either of the VMware Aria Operations for Logs clusters can be used to query the available logs from either of the regions. As a result, failover configuration is not required for the VMware Aria Operations for Logs clusters, and each cluster remains associated with the region in which it was deployed. This approach minimizes failover configuration in a DR invocation.
 
-The use of a vRLI cluster plus the use of vSphere HA provides high availability within a region. For business continuity, configure an image level backup of the cluster nodes by using Veeam.
+The use of a VMware Aria Operations for Logs cluster plus the use of vSphere HA provides high availability within a region. For business continuity, configure an image level backup of the cluster nodes by using Veeam.
 
-## vRealize Network Insight
+## VMware Aria Operations for Networks
 {: #vrw-dualregion-design-vrni}
 
-The vRealize Network Insight (vRNI) service is an optional manual installation for {{site.data.keyword.cloud_notm}} for VMware® Regulated Workloads. For more information, see [vRealize Network Insight](/docs/vmwaresolutions?topic=vmwaresolutions-opsmgmt-vrni).
+The VMware Aria Operations for Networks service is an optional manual installation for {{site.data.keyword.cloud_notm}} for VMware® Regulated Workloads. For more information, see [VMware Aria Operations for Networks](/docs/vmwaresolutions?topic=vmwaresolutions-opsmgmt-vrni).
 
-In the dual region design, install a vRNI instance manually in each region for the monitoring and management of that region. Recovery of the instance in the protected region to the recovery region is not required. vRNI instances are deployed per region to enable service isolation so that each region is considered to be independent.
+In the dual region design, install a VMware Aria Operations for Networks instance manually in each region for the monitoring and management of that region. Recovery of the instance in the protected region to the recovery region is not required. VMware Aria Operations for Networks instances are deployed per region to enable service isolation so that each region is considered to be independent.
 
-The use of a vRNI cluster and the use of vSphere HA provides high availability within a region. For business continuity, configure a file level backup. While VMware support image level backups, they recommend that the vRNI appliances are shut down. This process is practical during an upgrade, but not for regular backups. Therefore, it is recommended to configure file level backup, which supports SSH backups. Configure vRNI for scheduled backups with the Veeam Repository server as the target. Configure a Veeam file copy job to copy the backup to the protected site so you can provide an off-site copy of the backup.
+The use of a VMware Aria Operations for Networks cluster and the use of vSphere HA provides high availability within a region. For business continuity, configure a file level backup. While VMware support image level backups, they recommend that the VMware Aria Operations for Networks appliances are shut down. This process is practical during an upgrade, but not for regular backups. Therefore, it is recommended to configure file level backup, which supports SSH backups. Configure VMware Aria Operations for Networks for scheduled backups with the Veeam Repository server as the target. Configure a Veeam file copy job to copy the backup to the protected site so you can provide an off-site copy of the backup.
 
-## vRealize Operations Manager
+## VMware Aria Operations Manager
 {: #vrw-dualregion-design-vrops}
 
-The {{site.data.keyword.cloud_notm}} for VMware® Regulated Workloads automation deploys a consolidated vRealize Operations Manager (vROps) analytics cluster of four nodes: one primary node, one primary replica node, and two data nodes in each of the regions. For more information, see [vRealize Operations Manager design](/docs/vmwaresolutions?topic=vmwaresolutions-opsmgmt-vrops).
+The {{site.data.keyword.cloud_notm}} for VMware® Regulated Workloads automation deploys a consolidated VMware Aria Operations Manager analytics cluster of four nodes: one primary node, one primary replica node, and two data nodes in each of the regions. For more information, see [VMware Aria Operations Manager design](/docs/vmwaresolutions?topic=vmwaresolutions-opsmgmt-vrops).
 
 The dual region design uses this deployed architecture and requires some post-provisioning tasks to create the required design:
 
@@ -137,10 +125,10 @@ The dual region design uses this deployed architecture and requires some post-pr
    * The vSRX is configured so that the same subnet that hosts the analytics cluster is available in the recovery region. In normal operations, no VMs are hosted on this network and this network is isolated. On DR invocation, this network, and the recovered analytics cluster, becomes reachable from the remote collectors. This network is not reachable directly from the {{site.data.keyword.cloud_notm}} underlay network outside of the vSRX, but it is reachable through the VPN connections.
 
 Review the following design decisions:
-* The reuse of the automated deployment of vROps at the protected region reduces post deployment tasks.
-* By using the VMware multiregion design for vROps that has the concept of region specific and cross-region components, allows the recovery of the vROps analytic appliances to an identical network configuration. Re-IPing the appliances is possible but adds complexity. For more information, see [Change the IP address of a vRealize Operations Manager multinode deployment](https://kb.vmware.com/s/article/2127442){: external}.
+* The reuse of the automated deployment of VMware Aria Operations at the protected region reduces post deployment tasks.
+* By using the VMware multiregion design for VMware Aria Operations that has the concept of region specific and cross-region components, you can recover the VMware Aria Operations analytic appliances to an identical network configuration. Re-IPing the appliances is possible but adds complexity.
 * By deploying two remote collector nodes per region, the load is removed from the analytics cluster from collecting metrics from applications that do not fail over between regions.
-* The use of Veeam Replication provides a replica of the vROps analytics cluster to allow recovery at the recovery region.
+* The use of Veeam Replication provides a replica of the VMware Aria Operations analytics cluster to allow recovery at the recovery region.
 * Only the Analytics cluster needs to be backed up with Veeam, as remote collectors do not store data, however, for ease of redeployment a backup is taken.
 
 ## AD, DNS, and NTP
@@ -186,7 +174,7 @@ The recovery region bare metal Windows server hosts the following components:
 Review the following Veeam design decisions:
 * For optimal performance and availability, placing the Veeam components on separate virtual and physical servers is considered best practice. However, this practice increases complexity in smaller environments. Therefore, the all-in-one deployment scenario for use case 1 is selected.
 * As the total number of protected VMs is low, the embedded database option for the database for use case 1 is selected.
-* The bare metal servers with direct attached storage option is used as it provides a backup infrastructure that is separated from the virtualized infrastructure compute and storage.
+* The bare metal servers with direct attached storage option are used as it provides a backup infrastructure that is separated from the virtualized infrastructure compute and storage.
 * In a two-site environment, it is best practice to install the Veeam Backup server component in the DR site. In a disaster situation, Veeam Backup server is available to start the recovery.
 * Deploy Enterprise Manager to use password loss protection. Enterprise Manager administrators can unlock backup files by using a challenge-response mechanism.
 * It is recommended that the proxy is as close as possible to the source data with a high-bandwidth connection. The traffic from the source to the proxy is not yet optimized, meaning that 100% of the backup data is transferred over this link. A good connection is required between proxy and repository as optimized data (normally ~50% of the source data size) is transferred across this link. Therefore, place proxies in both the protected and recovery regions.
@@ -230,7 +218,7 @@ In the {{site.data.keyword.cloud_notm}} for VMware® Regulated Workloads dual re
 
 Veeam Backup and Replication has access to the unencrypted data, and backup or replication data does not need the source encryption keys. When the backup is restored or the replica is configured, specify the target encrypted storage policy.
 
-In the VMware Regulated Workloads dual zone design, the following steps describe the backup and restore process between regions:
+In the VMware Regulated Workloads dual-zone design, the following steps describe the backup and restore process between regions:
 1. The protected VM is encrypted with VMware vSphere encryption in the VMware datastore.
 2. A backup of the protected VM is taken.
 3. VM backup files are encrypted on disk in the Protected Region Veeam Repository with Veeam encryption that is protected by a password that is stored in the Veeam database.

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2023
-lastupdated: "2023-06-22"
+lastupdated: "2023-07-05"
 
 keywords: release notes, what's new in VMware Solutions, what is new, new features, VMware Solutions release notes, VMware Solutions
 
@@ -25,6 +25,57 @@ Use these release notes to learn about updates to {{site.data.keyword.vmwaresolu
 ## 2023
 {: #year-2023}
 
+### 5 July 2023
+{: #jul-2023}
+{: release-note}
+
+VMware vSphere Day 2 support
+:   You can view or delete VMware vSphere® instances from the VMware Solutions console. You can also add or delete VMware ESXi™ servers, and add or delete licenses for vSphere instances from the VMware Solutions console.
+
+VMware Regulated Workloads multizone instances - deprecated
+:   New deployments of VMware Regulated Workloads multizone instances are no longer supported. You can still add or delete clusters, add or remove ESXi servers or NFS storage, and add or remove services for existing multizone instances.
+{: deprecated}
+
+Updates to VMware vCenter Server and VMware vSphere instances
+:   The following upgrades are applied to newly deployed instances, clusters, and hosts:
+
+   * VMware vCenter Server Appliance 7.0 Update 3l (build 21477706)
+   * VMware vSAN Witness 7.0 Update 3l (build 21424296)
+
+Add-on services upgrades
+:   The following service versions are now available for deployment:
+
+   * Caveonix RiskForesight™ v4.1
+   * FortiGate® Virtual Appliance v7.2.5
+   * F5® BIG-IP® v17.1
+   * Juniper® vSRX v3.0 (23.1R1)
+   * Red Hat® OpenShift® v4.12
+   * VMware Aria® Operations™ and VMware Aria Operations™ for Logs v8.12
+   * Zerto v9.7u3
+
+Name change for VMware vRealize products
+:   VMware changed the vRealize® Suite Lifecycle Manager product name to VMware Aria® Suite Lifecycle. All vRealize products that are managed by vRealize Suite Lifecycle Manager are now referred as VMware Aria. The names are updated throughout the {{site.data.keyword.vmwaresolutions_short}} documentation. The following products are rebranded:
+
+   * vRealize Operations and Log Insight is renamed to VMware Aria Operations and VMware Aria Operations for Logs.
+   * vRealize Automation is renamed to VMware Aria® Automation™.
+   * vRealize Operations (vROps) is renamed to VMware Aria Operations.
+   * vRealize Log Insight™ (vRLI) is renamed to VMware Aria Operations for Logs.
+   * vRealize Network Insight (vRNI) is renamed to VMware Aria Operations™ for Networks.
+
+REST API
+:   The following updates are available:
+
+   * The [VMware Solutions API](/apidocs/vmware-solutions) provides support for viewing and deleting VMware vSphere instances. You can also add or delete ESXi servers, and add or delete licenses for vSphere instances.
+   * Also for the VMware Solutions API, you can specify either `quantity` or `host_names` for the number of new hosts to be added in the `hosts_order_data` object.
+
+User interface updates and enhancements
+:   The user interface is updated with various messages and tooltips, and provides the following enhancements:
+
+   * The **Instance configuration name** field is changed to a side panel. You can manage your configuration templates from a list of saved configurations in the side panel.
+   * The checkbox **Select a different cluster location** is changed to a switch, for consistency with other similar UI options.
+   * The **SAP-certified** Cascade Lake selections (**NetWeaver** and **HANA**) are merged into a single option for a more streamlined user experience when you choose the **CPU model** for your servers.
+   * The procedure to [set up your environment for your first order](/docs/vmwaresolutions?topic=vmwaresolutions-completing_checklist#completing_checklist-procedure) is simplified.
+
 ### 3 May 2023
 {: #may-2023}
 {: release-note}
@@ -33,7 +84,7 @@ Madrid data centers available
 :   (Updated on 22 June 2023) The {{site.data.keyword.cloud_notm}} data centers **Madrid 02**, **Madrid 04**, and **Madrid 05** are now available for deployment.
 
 Bring Your Own License (BYOL) no longer available
-:   BYOL is now disabled in the **Licensing** section for VMware vCenter Server® instances, VMware vSphere clusters, adding hosts and clusters, and vRealize Operations and Log Insight™ service.
+:   BYOL is now disabled in the **Licensing** section for VMware vCenter Server® instances, VMware vSphere clusters, adding hosts and clusters, and vRealize Operations and Log Insight service.
 
 VMware NSX-T 4.0.1.1 manual upgrade
 :   VMware NSX-T™ version 4.0.1.1 is now available if you want to upgrade your existing NSX-T instances manually. All newly deployed VMware NSX-T instances are still provisioned with NSX-T version 3.2.0.1.
@@ -80,17 +131,17 @@ Add-on services upgrades
 :   The following service versions are now available for deployment:
    * Entrust CloudControl™ v6.6
    * F5® BIG-IP® v17.0
-   * vRealize Operations™ and vRealize Log Insight™ v8.10
+   * vRealize Operations and vRealize Log Insight v8.10
    * Zerto v9.7u1
 
 F5 BIG-IP migration from NSX-V to NSX-T
-:   To migrate the F5 BIG-IP service from VMware NSX-V to VMware NSX-T™, open an IBM Support ticket by following the steps in [Contacting IBM Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support).
+:   To migrate the F5 BIG-IP service from VMware NSX-V to VMware NSX-T, open an IBM Support ticket by following the steps in [Contacting IBM Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support).
 
 New and updated documentation
 :   Documentation is available to assist with your custom cyber-recovery requirements. For more information, see [Cyber Recovery with Bring Your Own appliances](/docs/vmwaresolutions?topic=vmwaresolutions-cr-byo-overview).
 
 REST API updates
-:   The [VMware Solutions API](/apidocs/vmware-solutions) provides support for getting and canceling billing item IDs for VMware vSphere® clusters, deleting hosts from vSphere clusters, and deleting vSphere clusters.
+:   The [VMware Solutions API](/apidocs/vmware-solutions) provides support for getting and canceling billing item IDs for VMware vSphere clusters, deleting hosts from vSphere clusters, and deleting vSphere clusters.
 
 User interface updates and enhancements
 :   The user interface is updated with various messages and tooltips, and provides the following enhancements.
@@ -98,6 +149,7 @@ User interface updates and enhancements
    * BYOL notification in the **Licensing** section for VMware vCenter Server instances, VMware vSphere clusters, add hosts and clusters, vRealize Operations and Log Insight, and VMware HCX™ services. Bring Your Own License (BYOL) is no longer supported, except for migrations or upgrades of existing BYOL clusters.
    * The term **edge services cluster** is updated to **edge gateway cluster** throughout the UI, user documentation, and REST APIs.
    * A side panel is now displayed when NFS storage is added to VMware vCenter Server, VMware NSX®, Cyber Recovery, and VMware Regulated Workloads instances.
+
 
 ### 10 January 2023
 {: #january-2023}
@@ -115,18 +167,18 @@ Bring Your Own License (BYOL) no longer supported
 :   IBM Cloud previously allowed you to bring your own license (BYOL) when you move your existing on-premises VMware workloads to IBM Cloud. BYOL is no longer allowed by VMware. You can no longer bring your own licenses for any new hosts. This restriction applies to all VMware products that are available from IBM Cloud. For existing BYOL servers, you can still upgrade and migrate to refresh software and hardware.
 
 SAP-certified servers updates
-:   SAP HANA certified bare metal servers now offer only fixed configurations with defined RAM sizes. Also, new SAP HANA and SAP NetWeaver models are available for deployment with VMware vSphere 7.0u3. These models are available for VMware vCenter Server and Cyber Recovery instances and clusters, and for VMware vSphere clusters. For more information, see [SAP-certified](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-consoldworkldcluster-settings#vc_orderinginstance-sap).
+:   SAP HANA certified bare metal servers now offer only fixed configurations with defined RAM sizes. Also, new SAP HANA and SAP NetWeaver models are available for deployment with VMware vSphere 7.0u3. These models are available for VMware vCenter Server and Cyber Recovery instances and clusters, and for VMware vSphere clusters. For more information, see SAP-certified.
 
 NetBIOS domain name
 :   The first qualifier of the root domain name is now the NetBIOS name by default. It is part of the network diagram when your order vCenter Server and Cyber Recovery instances.
 
 Add-on services upgrades
 :   The following service versions are now available to install on deployed instances.
-   * FortiGate® Virtual Appliance 7.2.2
-   * Juniper® vSRX v21.4 (R2)
+   * FortiGate Virtual Appliance 7.2.2
+   * Juniper vSRX v21.4 (R2)
 
 Veeam migration from NSX-V to NSX-T
-:   To migrate the Veeam service from VMware NSX-V to VMware NSX-T, open an IBM Support ticket by following the steps in [Contacting IBM Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support).
+:   To migrate the Veeam service from VMware NSX-V to VMware NSX-T, open an IBM Support ticket by following the steps in Contacting IBM Support.
 
 REST API
 :   For VMware Shared, the V1 API support ended on 31 December 2022. Use the [V2 API](/apidocs/vmware-solutions-shared/vmware-solutions-shared-v2.0.0).
@@ -177,9 +229,9 @@ Considerations for selecting a new NSX Data Center SP edition
 
 Add-on services upgrades
 :   The following service versions are now available to install on deployed instances.
-   * Caveonix RiskForesight™ v4.0
+   * Caveonix RiskForesight v4.0
    * FortiGate Virtual Appliance v7.2.1
-   * Red Hat® OpenShift® v4.11
+   * Red Hat OpenShift v4.11
    * vRealize Log Insight v8.8
    * Zerto v9.5u3
 
@@ -948,7 +1000,7 @@ VMware HCX
    * If the management cluster or HCX service mesh target cluster is private only, the only connection type would be private connection. If the connection type is private, a proxy is required.
 
 VMware vRealize Operations - vSAN storage requirements
-:   If you install VMware vRealize Operations (vROps) and select vSAN storage, you must have an estimated 750 GB of vSAN storage to successfully install vROps. This storage requirement does not apply to NFS.
+:   If you install VMware vRealize Operations and select vSAN storage, you must have an estimated 750 GB of vSAN storage to successfully install vRealize Operations. This storage requirement does not apply to NFS.
 
 REST APIs
 :   REST API support for the VMware HCX service is now available.
@@ -1128,86 +1180,3 @@ User interface updates and enhancements
    * On-premises VMware HCX instances
    * Caveonix RiskForesight licenses
    * Veeam licenses
-
-### 15 June 2020
-{: #june-2020}
-{: release-note}
-
-VMware Solutions Shared - Private Network Endpoint add-on service
-:   Starting with the 3.7 release, VMware Solutions Shared now supports both public and private network endpoints. Use the Private Network Endpoint service to access your virtual data center from your {{site.data.keyword.cloud_notm}} infrastructure account resources. Connections to private network endpoints do not require public internet access.
-
-VMware Solutions Shared - off-site copy mode availability for Veeam Availability Suite
-:   Veeam Availability Suite v10 provides off-site copy mode for new and existing VMware Solutions Shared instances. You must contact IBM support to enable off-site copy.
-
-VMware Solutions Dedicated - new SAP-certified Cascade server support
-:   The following new {{site.data.keyword.cloud_notm}} bare metal server CPU models are available for deployment for VMware vCenter Server instances and VMware vSphere clusters with vSphere 6.7.
-
-   * Dual Intel Xeon Gold 5218 processor / 32 cores total, 2.30 GHz / 192 GB, 384 GB, 768 GB, 1.5 TB, 3 TB
-   * Dual Intel Xeon Gold 6248 processor / 40 cores total, 2.50 GHz / 192 GB, 384 GB, 768 GB, 1.5 TB, 3 TB
-   * Dual Intel Xeon Platinum 8280M processor / 56 cores total, 2.70 GHz / 192 GB, 384 GB, 768 GB, 1.5 TB, 3 TB
-   * Quad Intel Xeon Platinum 8280M processor / 112 cores total, 2.70 GHz / 3 TB, 6 TB
-
-   The new servers are not supported for **Chennai 01**.
-
-VMware Solutions Dedicated - removed support for Broadwell servers
-:   Broadwell servers are no longer available for new or existing deployments of vCenter Server and VMware vSphere instances and clusters.
-
-VMware Solutions Dedicated - minimum number of bare metal servers
-:   For vCenter Server with NSX-T instances, you can now order an instance with only two bare metal servers for the management cluster. The minimum RAM size for the instance to function properly is 192 GB.
-
-   Configurations with only two servers in the management cluster are not recommended for production use.
-
-{{site.data.keyword.cloud_notm}} for VMware Regulated Workloads
-:   (Updated on 14 July 2020) You can now order {{site.data.keyword.cloud_notm}} for VMware Regulated Workloads instances through predefined vCenter Server instance configurations as part of your vCenter Server order flow. The {{site.data.keyword.cloud_notm}} for VMware Regulated Workloads architecture is an extension of the vCenter Server offering, which enhances the basic vCenter Server architecture to deliver a secure, high-performance platform.
-
-Security and compliance updates
-:   In June 2020, {{site.data.keyword.vmwaresolutions_short}} acquired a PCI DSS attestation of compliance (AOC), validated by a third-party Qualified Service Assessor (QSA). For more information about {{site.data.keyword.cloud_notm}} compliance and trust certifications, see [IBM Cloud compliance programs](https://www.ibm.com/cloud/compliance).
-
-Add-on services
-:   The 3.7 release provides the following service versions on newly deployed instances.
-
-   * Caveonix RiskForesight v2.3. A dedicated private subnet with 32 IP addresses is now ordered, rather than 64 IP addresses.
-   * HyTrust DataControl v5.1.1
-   * Red Hat OpenShift for VMware v4.4.5.
-   * Zerto 7.5 Update 3. The host Windows platform for the Zerto VSI is now Windows Server 2019 Standard Edition (64-bit).
-
-   You can now install the following services on vCenter Server with NSX-T instances.
-
-   * Caveonix RiskForesight
-   * HyTrust DataControl
-   * Veeam
-
-HyTrust CloudControl
-:   Additional configuration is done for HyTrust CloudControl v6.1 for vCenter Server with NSX-T instances.
-
-Veeam
-:   Veeam v9.5u4b has known vulnerabilities and it is no longer installed with new VMware Solutions deployments. However, if you installed the service in a previous release, you can continue to use Veeam v9.5u4b.
-{: note}
-
-   The new Veeam Availability Suite v10 known as Veeam v10 is now installed.
-
-   There are two deployment types for Veeam v10:
-   * Windows Server VM on the management cluster
-   * Single public Windows VSI
-
-   The host Windows platform for the Veeam VSI is now Windows Server 2019 Standard Edition (64-bit).
-
-   The process of installing and deleting Veeam licenses is different starting with Veeam v10, in that the license is not deleted when you delete Veeam 10. To avoid being charged, you must delete the license yourself.
-
-Known issues with Red Hat OpenShift for VMware
-:   You might encounter the following problems, which cause false alarms about unhealthy etcd members. Review the following problem reports and update the cluster, as needed, when the problems have been fixed.
-
-   * [Red Hat Bugzilla – Bug 1832986 - EtcdMembersDegraded false alarms](https://bugzilla.redhat.com/show_bug.cgi?id=1832986){: external}
-   * [Red Hat Bugzilla – Bug 1838781 - EtcdMembersDegraded false alarms](https://bugzilla.redhat.com/show_bug.cgi?id=1838781){: external}
-
-REST APIs
-:   REST APIs are now available for the following services: Caveonix RiskForesight, HyTrust DataControl, and Veeam.
-
-New and updated documentation
-:   The following documentation updates are available.
-
-   * (Updated on 14 July 2020) The {{site.data.keyword.cloud_notm}} for VMware Regulated Workloads reference architecture is updated.
-   * Documentation about the responsibilities of IBM versus the customer's is available.
-   * Documentation is available about the access type that {{site.data.keyword.cloud_notm}} Support has on your environment and the steps that you can take to limit the access, if required.
-   * Documentation is available about the various ports that are used in VMware Solutions.
-   * New FAQ about VMware Solutions Shared is. Various updates to the existing FAQs have also been made.

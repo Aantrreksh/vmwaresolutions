@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-03-29"
+lastupdated: "2023-06-07"
 
 keywords: VMware HCX deployment, HCX configuration, order HCX
 
@@ -40,23 +40,18 @@ You can include the VMware HCX™ service with a new VMware vCenter Server® ins
 
 To install HCX, complete the following settings:
 
-1. This step does not apply to HCX installations on vCenter Server with Hybridity Bundle instances.
-
-   If you want to use your BYOL NSX® license, select the checkbox to confirm that your NSX license is either Advanced or Enterprise edition.
-2. If you choose NSX-T™, you are asked to select the **HCX Service Mesh target cluster**. Select either the Management cluster or Workload cluster.
-
-   If you choose NSX-V, the HCX manager and Service Mesh appliances are deployed in the management cluster.
-3. Specify the **HCX network connection** by selecting one of the following options. If any of the management or service mesh target clusters are deployed with private network only, the only networking option that you can choose is private.
+1. Select the **HCX Service Mesh target cluster**, either the management or the workload cluster.
+2. Specify the **HCX network connection** by selecting one of the following options. If any of the management or service mesh target clusters are deployed with private network only, the only networking option that you can choose is private.
    * **Public network** - HCX creates an encrypted connection between sites over the public network. License registration and metering are completed over the public network.
    * **Private network** - HCX creates an encrypted connection between sites over the private network. License registration and metering are completed over a private network through HTTP proxy.  
-4. If private network connection is selected, proxy information is displayed. Otherwise, a proxy option is not available.
+3. If private network connection is selected, proxy information is displayed. Otherwise, a proxy option is not available.
    Complete the following fields:
    * **Proxy IP address** - The IPv4 address of the proxy server.
    * **Proxy port number** - The proxy server port. The port number is typically 8080 or 3128.
    * **Proxy user name** (Optional) - The username if proxy authentication is required.
    * **Proxy password** (Optional) - The password if proxy authentication is required.
    * **Reenter proxy password** (Optional) - Reenter the password for proxy authentication validation.
-5. Specify the **Public endpoint certificate type**. If you select **CA Certificate**, configure the following settings:
+4. Specify the **Public endpoint certificate type**. If you select **CA Certificate**, configure the following settings:
    * **Certificate contents** - Enter the contents of the CA certificate.
    * **Private key** - Enter the private key of the CA certificate.
    * **Password** (Optional) - Enter the password for the private key, if it is encrypted.

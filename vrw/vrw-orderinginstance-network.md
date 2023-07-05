@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2023
 
-lastupdated: "2023-01-13"
+lastupdated: "2023-06-14"
 
 keywords: vmware regulated workloads, vmware regulated workloads order instance, order vmware regulated workloads, vmware regulated workloads instances
 
@@ -60,10 +60,12 @@ You have 30 days to activate the VMs.
 
 For more information about ordering Windows Server 2019 licenses, see [Get started with Windows Server 2019](https://docs.microsoft.com/en-us/windows-server/get-started-19/get-started-19){: external}.
 
-## Network diagram (Single-zone VMware instance only)
+## Configure hostnames individually
 {: #vrw-orderinginstance-network-diagram}
 
-You can customize the hostnames prefix individually by selecting **Configure hostnames individually**. It must meet the following requirements:
+You can customize the hostnames prefix individually by toggling the switch on. 
+
+The hostnames prefix must meet the following requirements:
 * Only lowercase alphabetic, numeric, and dash (-) characters are allowed.
 * No consecutive dash characters are allowed.
 * The hostname prefix must start with a lowercase alphabetic character.

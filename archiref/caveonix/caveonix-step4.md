@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2022
+  years:  2016, 2023
 
-lastupdated: "2022-08-26"
+lastupdated: "2023-05-22"
 
 subcollection: vmwaresolutions
 
@@ -67,6 +67,6 @@ The following default information is used in the application setup.
 | Asset Repository | Two Asset Repositories are configured; vCenter and NSX Manager, both use the same password. Password is set to vCenter administrator password
 | Asset Repository | Two Asset Repositories are configured; vCenter and NSX Manager, both use the same password. Type is set to vCenter for one repository and NSX for the other
 | Task | Four tasks are set up; Asset Scan, NSX Flows, VMware® Infrastructure Scan, and VMware Vulnerability. ScanName is set to DC1AssetScan, NSXFlows, VMWInfraScan, VMWVulnScan |
-| Task | Four tasks are set up; Asset Scan, NSX Flows, VMware Infrastructure Scan, and VMware Vulnerability. Type is set to vCenter, NSX, VMWareInfrastructureScan, VMWareVulnerabilityScan |
+| Task | Four tasks are set up; Asset Scan, NSX Flows, VMware Infrastructure Scan, and VMware Vulnerability. Type is set to vCenter, NSX, VMwareInfrastructureScan, VMwareVulnerabilityScan |
 | Task | Schedule is set to hourly for `DC1AssetScan` and daily for the others |
 {: caption="Table 2. Default information used in application setup" caption-side="bottom"}
