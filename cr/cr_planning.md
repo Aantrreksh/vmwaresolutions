@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2023
 
-lastupdated: "2023-06-12"
+lastupdated: "2023-07-07"
 
 keywords: planning cyber recovery, cyber recovery, cyber recovery instance
 
@@ -37,11 +37,9 @@ The following {{site.data.keyword.cloud_notm}} data centers are available for Cy
 | Geography | Data center | Pod |
 |:--------- |:----------- |:--- |
 | Asia-Pacific |CHE01 | 01 |
-| Asia-Pacific | HKG02 | 02 |
 | Asia-Pacific | OSA21 | 01 |
 | Asia-Pacific | OSA22 | 01 |
 | Asia-Pacific | OSA23 | 01 |
-| Asia-Pacific | SEO01 | 01 |
 | Asia-Pacific | SNG01| 02 |
 | Asia-Pacific | SYD01 | 01-02 |
 | Asia-Pacific | SYD04 | 01 |
