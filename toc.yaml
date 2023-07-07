@@ -68,6 +68,11 @@ toc:
               - include: ../vmware-service/vmaas/accessing-vcd-console.md
               - include: ../vmware-service/common/iam-integration.md
           - topicgroup:
+              label: Managing Veeam Backup and Replication
+              topics:
+              - include: ../vmware-service/vmaas/tenant-veeam.md
+              - include: ../vmware-service/vmaas/veeam-adding-deleting.md
+          - topicgroup:
               label: Reference
               topics:
               - include: ../vmware-service/common/vmaas-understand-responsib.md
@@ -408,7 +413,7 @@ toc:
               label: VMware Regulated Workloads multizone
               topics:
               - vrw/vrw-orderinginstance-mgmt.md
-              - vrw/vrw-orderinginstance-witness.md          
+              - vrw/vrw-orderinginstance-witness.md
           - topicgroup:
               label: vCenter Server with Hybridity Bundle
               topics:
