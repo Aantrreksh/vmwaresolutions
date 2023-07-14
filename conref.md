@@ -3,7 +3,7 @@
 copyright:
   years: 2022, 2023
 
-lastupdated: "2023-06-27"
+lastupdated: "2023-07-12"
 
 keywords: IBM Cloud for VMware Solutions, getting started, vmware solutions offerings, services for vmwaresolutions, vmwaresolutions use cases
 
@@ -130,15 +130,19 @@ Conref section START.
 INFORMATION:
 The section is referenced by the following files:
 
-- vcenter\vc_orderinginstance-addl-clusters.md
-- vcenter\vrw-orderinginstance-edge.md
-- vcenter\vrw-orderinginstance-mgmt.md
-- vcenter\vrw-orderinginstance-primary.md
-- vcenter\vrw-orderinginstance-wkld.md
-- vsphere\vs_orderinginstances-network.md
+- cr\cr_addingclusters.md
+- cr\cr_orderinginstance-consolidwkld.md
 - cr\cr_orderinginstance-edge.md
-- vrw\vrw-orderinginstance-witness.md
 - vcenter\scb-orderinginstance-cons-work-cluster.md
+- vcenter\vc_addingclusters.md
+- vcenter\vc_orderinginstance-addl-clusters.md
+- vcenter\vc_orderinginstance-consold-cluster.md
+- vrw\vrw-orderinginstance-edge.md
+- vrw\vrw-orderinginstance-mgmt.md
+- vrw\vrw-orderinginstance-primary.md
+- vrw\vrw-orderinginstance-witness.md
+- vrw\vrw-orderinginstance-wkld.md
+- vsphere\vs_orderinginstances-network.md
 
 CONTENT:
 
@@ -165,7 +169,6 @@ The uplink speed provides two options:
 
 | Geography | Data center | Pod |
 |:--------- |:----------- |:--- |
-| Europe | FRA02 | 02 |
 | Europe | FRA04 | 01 |
 | Europe | FRA05 | 01 |
 | Europe | LON04 | 01 |
@@ -187,7 +190,6 @@ The uplink speed provides two options:
 | NA East | TOR04 | 01 |
 | NA East | WDC04 | 05 |
 | NA East | WDC06 | 01 |
-| NA East | WDC07 | 01 |
 {: caption="Table 1. Available locations for 25 Gb uplink speed" caption-side="bottom"}
 {: tab-title="NA East"}
 {: tab-group="Data centers"}
@@ -217,7 +219,6 @@ The uplink speed provides two options:
 
 | Geography | Data center | Pod |
 |:--------- |:----------- |:--- |
-| Europe | FRA02 | 02 |
 | Europe | FRA05 | 01 |
 | Europe | LON04 | 01 |
 | Europe | LON06 | 01 |
@@ -235,7 +236,6 @@ The uplink speed provides two options:
 | NA East | TOR04 | 01 |
 | NA East | WDC04 | 05 |
 | NA East | WDC06 | 01 |
-| NA East | WDC07 | 01 |
 {: caption="Table 2. Available locations for 25 Gb uplink speed" caption-side="bottom"}
 {: tab-title="NA East"}
 {: tab-group="Data centers for uplink speed"}
