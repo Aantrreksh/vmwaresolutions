@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2023
 
-lastupdated: "2023-06-21"
+lastupdated: "2023-07-12"
 
 keywords: order Security and Compliance Readiness Bundle, order scb instances, order vcs scb
 subcollection: vmwaresolutions
@@ -137,13 +137,13 @@ Select **Public and private network** or **Private network only** for the consol
 
 {{site.data.content.uplink-speed-options-cascadelake-list}}
 
-{{site.data.content.simpletable-uplink-speed-locations-other-ap}}
+{{site.data.content.simpletable-uplink-speed-locations-ap}}
 
-{{site.data.content.simpletable-uplink-speed-locations-other-eur}}
+{{site.data.content.simpletable-uplink-speed-locations-eur}}
 
-{{site.data.content.simpletable-uplink-speed-locations-other-naeast}}
+{{site.data.content.simpletable-uplink-speed-locations-naeast}}
 
-{{site.data.content.simpletable-uplink-speed-locations-other-nasouth}}
+{{site.data.content.simpletable-uplink-speed-locations-nasouth}}
 
 ## VLANs
 {: #scb-orderinginstance-consoli-vlans}

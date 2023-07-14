@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2023
 
-lastupdated: "2023-06-27"
+lastupdated: "2023-07-12"
 
 keywords: cyber recovery, cyber recovery consolidated cluster, cyber recovery consolidated settings, cyber recovery instances
 
@@ -191,59 +191,15 @@ Select **Public and private network** or **Private network only**.
 ## Uplink speed
 {: #cr_orderinginstance-consolidwkld-uplink}
 
-{{site.data.content.uplink-speed-options-list}}
+{{site.data.content.uplink-speed-options-cascadelake-list}}
 
-| Geography | Data center | Pod |
-|:--------- |:----------- |:--- |
-| Asia-Pacific | TOK02 | 02 |
-| Asia-Pacific | TOK04 | 01 |
-| Asia-Pacific | TOK05 | 01 |
-{: caption="Table 4. Available locations for 25 Gb uplink speed" caption-side="bottom"}
-{: tab-title="Asia-Pacific"}
-{: tab-group="Data centers for Consolidated and workload cluster"}
-{: class="simple-tab-table"}
-{: #simpletable-uplink-speed-locations-ap}
+{{site.data.content.simpletable-uplink-speed-locations-ap}}
 
-| Geography | Data center | Pod |
-|:--------- |:----------- |:--- |
-| Europe | FRA02 | 02 |
-| Europe | FRA04 | 01 |
-| Europe | FRA05 | 01 |
-| Europe | LON04 | 01 |
-| Europe | LON06 | 01 |
-| Europe | MAD02 | 01 |
-| Europe | MAD04 | 01 |
-| Europe | MAD05 | 01 |
-| Europe | PAR04 | 01 |
-| Europe | PAR05 | 01 |
-| Europe | PAR06 | 01 |
-{: caption="Table 4. Available locations for 25 Gb uplink speed" caption-side="bottom"}
-{: tab-title="Europe"}
-{: tab-group="Data centers for Consolidated and workload cluster"}
-{: class="simple-tab-table"}
-{: #simpletable-uplink-speed-locations-eur}
+{{site.data.content.simpletable-uplink-speed-locations-eur}}
 
-| Geography | Data center | Pod |
-|:--------- |:----------- |:--- |
-| NA East | TOR04 | 01 |
-| NA East | WDC04 | 05 |
-| NA East | WDC06 | 01 |
-| NA East | WDC07 | 01 |
-{: caption="Table 4. Available locations for 25 Gb uplink speed" caption-side="bottom"}
-{: tab-title="NA East"}
-{: tab-group="Data centers for Consolidated and workload cluster"}
-{: class="simple-tab-table"}
-{: #simpletable-uplink-speed-locations-naeast}
+{{site.data.content.simpletable-uplink-speed-locations-naeast}}
 
-| Geography | Data center | Pod |
-|:--------- |:----------- |:--- |
-| NA South | DAL12 | 01 |
-| NA South | DAL13 | 02 |
-{: caption="Table 4. Available locations for 25 Gb uplink speed" caption-side="bottom"}
-{: tab-title="NA South"}
-{: tab-group="Data centers for Consolidated and workload cluster"}
-{: class="simple-tab-table"}
-{: #simpletable-uplink-speed-locations-nasouth}
+{{site.data.content.simpletable-uplink-speed-locations-nasouth}}
 
 ## VLANs
 {: #cr_orderinginstance-consolidwkld-vlans}

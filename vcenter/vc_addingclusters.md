@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2023
 
-lastupdated: "2023-06-26"
+lastupdated: "2023-07-12"
 
 keywords: vCenter Server add clusters, add cluster, vCenter Server cluster
 
@@ -219,55 +219,15 @@ Network interface card (NIC) enablement settings are based on your selection of 
 The **Uplink speed** option is not available to gateway clusters.
 {: note}
 
-{{site.data.content.uplink-speed-options-list}}
+{{site.data.content.uplink-speed-options-cascadelake-list}}
 
-| Geography | Data center | Pod |
-|:--------- |:----------- |:--- |
-| Asia-Pacific | TOK02 | 02 |
-| Asia-Pacific | TOK04 | 01 |
-| Asia-Pacific | TOK05 | 01 |
-{: caption="Table 5. Available locations for 25 Gb uplink speed" caption-side="bottom"}
-{: tab-title="Asia-Pacific"}
-{: tab-group="Data centers for vCenter Server instances"}
-{: class="simple-tab-table"}
-{: #simpletabtable-cr-ap}
+{{site.data.content.simpletable-uplink-speed-locations-ap}}
 
-| Geography | Data center | Pod |
-|:--------- |:----------- |:--- |
-| Europe | FRA02 | 02 |
-| Europe | FRA05 | 01 |
-| Europe | LON04 | 01 |
-| Europe | LON06 | 01 |
-| Europe | MAD02 | 01 |
-| Europe | MAD04 | 01 |
-| Europe | MAD05 | 01 |
-{: caption="Table 5. Available locations for 25 Gb uplink speed" caption-side="bottom"}
-{: tab-title="Europe"}
-{: tab-group="Data centers for vCenter Server instances"}
-{: class="simple-tab-table"}
-{: #simpletabtable-cr-eur}
+{{site.data.content.simpletable-uplink-speed-locations-eur}}
 
-| Geography | Data center | Pod |
-|:--------- |:----------- |:--- |
-| NA East | TOR04 | 01 |
-| NA East | WDC04 | 05 |
-| NA East | WDC06 | 01 |
-| NA East | WDC07 | 01 |
-{: caption="Table 5. Available locations for 25 Gb uplink speed" caption-side="bottom"}
-{: tab-title="NA East"}
-{: tab-group="Data centers for vCenter Server instances"}
-{: class="simple-tab-table"}
-{: #simpletabtable-cr-naeast}
+{{site.data.content.simpletable-uplink-speed-locations-naeast}}
 
-| Geography | Data center | Pod |
-|:--------- |:----------- |:--- |
-| NA South | DAL12 | 01 |
-| NA South | DAL13 | 02 |
-{: caption="Table 5. Available locations for 25 Gb uplink speed" caption-side="bottom"}
-{: tab-title="NA South"}
-{: tab-group="Data centers for vCenter Server instances"}
-{: class="simple-tab-table"}
-{: #simpletabtable-cr-nasouth}
+{{site.data.content.simpletable-uplink-speed-locations-nasouth}}
 
 #### VLANs
 {: #vc_addingclusters-vlans}

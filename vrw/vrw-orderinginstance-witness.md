@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2023
 
-lastupdated: "2023-06-14"
+lastupdated: "2023-07-12"
 
 keywords: vmware regulated workloads, vmware regulated workloads order instance, order vmware regulated workloads, vmware regulated workloads instances
 
@@ -90,13 +90,13 @@ The networking type is set to **Private network only**.
 
 {{site.data.content.uplink-speed-options-cascadelake-list}}
 
-{{site.data.content.simpletable-uplink-speed-locations-other-ap}}
+{{site.data.content.simpletable-uplink-speed-locations-ap}}
 
-{{site.data.content.simpletable-uplink-speed-locations-other-eur}}
+{{site.data.content.simpletable-uplink-speed-locations-eur}}
 
-{{site.data.content.simpletable-uplink-speed-locations-other-naeast}}
+{{site.data.content.simpletable-uplink-speed-locations-naeast}}
 
-{{site.data.content.simpletable-uplink-speed-locations-other-nasouth}}
+{{site.data.content.simpletable-uplink-speed-locations-nasouth}}
 
 ## Related links
 {: #vrw-orderinginstance-whitness-related}
