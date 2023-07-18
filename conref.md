@@ -160,7 +160,6 @@ The uplink speed provides two options:
 |:--------- |:----------- |:--- |
 | Asia-Pacific | TOK02 | 02 |
 | Asia-Pacific | TOK04 | 01 |
-| Asia-Pacific | TOK05 | 01 |
 {: caption="Table 1. Available locations for 25 Gb uplink speed" caption-side="bottom"}
 {: tab-title="Asia-Pacific"}
 {: tab-group="Data centers"}
@@ -210,7 +209,6 @@ The uplink speed provides two options:
 |:--------- |:----------- |:--- |
 | Asia-Pacific | TOK02 | 02 |
 | Asia-Pacific | TOK04 | 01 |
-| Asia-Pacific | TOK05 | 01 |
 {: caption="Table 2. Available locations for 25 Gb uplink speed" caption-side="bottom"}
 {: tab-title="Asia-Pacific"}
 {: tab-group="Data centers for uplink speed"}
