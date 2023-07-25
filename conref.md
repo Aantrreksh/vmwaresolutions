@@ -3,7 +3,7 @@
 copyright:
   years: 2022, 2023
 
-lastupdated: "2023-07-12"
+lastupdated: "2023-07-25"
 
 keywords: IBM Cloud for VMware Solutions, getting started, vmware solutions offerings, services for vmwaresolutions, vmwaresolutions use cases
 
@@ -170,7 +170,6 @@ The uplink speed provides two options:
 |:--------- |:----------- |:--- |
 | Europe | FRA04 | 01 |
 | Europe | FRA05 | 01 |
-| Europe | LON04 | 01 |
 | Europe | LON06 | 01 |
 | Europe | MAD02 | 01 |
 | Europe | MAD04 | 01 |
@@ -218,7 +217,6 @@ The uplink speed provides two options:
 | Geography | Data center | Pod |
 |:--------- |:----------- |:--- |
 | Europe | FRA05 | 01 |
-| Europe | LON04 | 01 |
 | Europe | LON06 | 01 |
 | Europe | MAD02 | 01 |
 | Europe | MAD04 | 01 |
