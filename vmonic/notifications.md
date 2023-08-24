@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-05-02"
+lastupdated: "2023-07-17"
 
 keywords: notifications console, filter notifications, system notification
 
@@ -42,4 +42,4 @@ By default, all unread notifications are displayed. You can filter the notificat
 {: #notifications-related}
 
 * [FAQ](/docs/vmwaresolutions?topic=vmwaresolutions-faq-vmwaresolutions)
-* [User account and settings](/docs/vmwaresolutions?topic=vmwaresolutions-useraccount)
+* [Managing user accounts and settings](/docs/vmwaresolutions?topic=vmwaresolutions-useraccount)

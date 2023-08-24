@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2023
 
-lastupdated: "2023-06-20"
+lastupdated: "2023-08-18"
 
 keywords: vmware solutions shared, get started shared, tech specs shared
 
@@ -150,7 +150,7 @@ OVF packages can be uploaded to a catalog as a vApp template to make the templat
 
 Media files, such as ISO disk images and FLP diskette drive images, can be uploaded to a catalog as a media file. For more information, see [Working with media files](https://docs.vmware.com/en/VMware-Cloud-Director/10.1/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-A7530A4B-F782-4848-90FC-BBDE41E3AE85.html){: external}.
 
-The maximum import size is 750 GB. Large image files or templates might take extended time to upload. For assistance with files larger than 750 GB, open an IBM Support ticket by following the steps in [Contacting IBM Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support).
+The maximum import size is 750 GB. Large image files or templates might take extended time to upload. For assistance with files larger than 750 GB, open an IBM Support ticket by following the steps in [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support).
 {: note}
 
 ## Virtual machines
@@ -251,7 +251,7 @@ Include the following details in your support ticket:
 * Virtual data center name
 * Number of IP addresses required
 
-For more information about opening a support ticket, follow the steps in [Contacting IBM Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support).
+For more information about opening a support ticket, follow the steps in [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support).
 
 The edge gateway services are customer configurable and require configuration to allow network traffic in and out of their Organization virtual data center. Configuration is required for access to the internet and the IBM Services network. The five public addresses are used for public facing vApps for inbound and outbound public internet traffic.
 
@@ -473,13 +473,13 @@ Add a NAT rule for translating internal network addresses into the service netwo
 Add a NAT rule for translating internal network addresses into the service network IP address space.
 1. Log in to the VMware Cloud Director tenant portal.
 2. From the main page under **Virtual Data Center**, click the virtual data center where you want to add the NAT rule.
-3. Under the **Networking** section, click the **Edges** tab and open the single preconfigured edge.
+3. In the left pane under **Networking**, click **Edges** and open the single preconfigured edge.
 4. Under the **Services** section, click the **NAT** tab and click **NEW** to add an SNAT rule.
 5. Complete the following configuration in the **Add NAT Rule** window:
    1. Enter a name for the NAT rule.
    2. Select `SNAT` in the **Interface Type** field.
    3. In the **External IP** field, click the information icon to view the available IP addresses and enter the service IP address that you want to use.
-   4. In the **Internal IP** field, enter the internal IP address to be translated.
+   4. In the **Internal IP** field, enter the internal IP address, including the CIDR to be translated. Typically, a subnet from the `RFC1918` private range is best, but not required. For example, `192.168.10.0/24`.
 6. Verify the **Advanced Settings** fields and click **Save**.
 
 ##### Adding the firewall rule for VMware Solutions Shared
@@ -499,12 +499,19 @@ If your vApp or VM is deployed from the IBM templates that are provided in the p
 ##### Adding the firewall rule for VMware as a Service
 {: #shared_vcd-ops-guide-firewall-rule-vmwaas}
 
-Add a firewall rule to allow the traffic from the internal network to the service network.
-1. Under the **Services** section, click the **Firewall** tab and click **EDIT RULES**. Then, click **NEW ON TOP** to add a firewall rule.
-2. Add the IP addresses or range from your internal network to the **Source** field.
-3. Add `52.117.132.1/24` in the **Destination** field.
-4. Select `Allow` in the **Action** field.
-5. Click **Save**.
+Add a firewall rule to allow the traffic from the internal network to the service network. Before you add the firewall rule, you must define the IP set.
+1. Define the IP set.
+   1. Log in to the VMware Cloud Director tenant portal.
+   2. From the main page under **All Edge Gateways**, click the virtual data center where you want to add the firewall rule.
+   3. In the left pane under **IP Management**, click **IP Allocations**. Make note of the external allocated IPs.
+   4. In the left pane under **Security**, click **IP Sets**. Then, click **NEW**.
+   5. In the **Edit IP Set** window, enter the name of the IP set and add the IP address to use. Then, click **Save**.
+2. Add the firewall rule.
+   1. Under the **Services** section, click the **Firewall** tab and click **EDIT RULES**. Then, click **NEW ON TOP** to add a firewall rule.
+   2. Add the IP addresses or range from your internal network to the **Source** field.
+   3. Add the IP set in the **Destination** field.
+   4. Select `Allow` in the **Action** field.
+   5. Click **Save**.
 
 After the previous configuration is completed, you can use the supported {{site.data.keyword.cloud_notm}} services on the VMs in your virtual data center.
 
@@ -539,12 +546,8 @@ If not already completed, create a vApp containing at least two VMs. For more in
 3. In the left pane under **Compute**, click **vApps**.
 4. Click the vApp you would like to add a vApp network to.
 5. Click the **Networks** tab, and click **NEW** in the **vApp Fencing** section.
-6. Select **vApp Network Type**.
-7. Complete the **Name** and **Gateway CIDR** fields. For example, `Web` and `192.168.33.1/24`.
-8. (Optional) Provide the DNS information.
-9. Leave the **Static IP Pools** section blank.
-10. Set the slider to **Connect to an organization VDC network**.
-11. Click **Add**.
+6. On the **Add Network to** window, select **OrgVDC Network** and select the network name.
+7. Click **Add**.
 
 For more information, see [Working with networks in a vApp](https://docs.vmware.com/en/VMware-Cloud-Director/10.1/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-FCBC791B-3183-4CD9-A194-856E98CC32D3.html).
 

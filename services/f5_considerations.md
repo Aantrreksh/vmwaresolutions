@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-05-18"
+lastupdated: "2023-08-22"
 
 keywords: F5 BIG-IP, F5 install, tech specs F5
 
@@ -18,7 +18,7 @@ subcollection: vmwaresolutions
 # F5 BIG-IP on IBM Cloud overview
 {: #f5_considerations}
 
-F5 BIG-IP® on IBM Cloud (F5 BIG-IP Virtual Edition) provides:
+F5 BIG-IP® on {{site.data.keyword.cloud_notm}}(F5 BIG-IP Virtual Edition) provides:
 
 * Intelligent L4-L7 load balancing and traffic management services at a local and global scale.
 * Robust network and web application firewall protection.
@@ -144,6 +144,6 @@ Review the following considerations before you delete the service:
 
 * [Ordering F5 BIG-IP](/docs/vmwaresolutions?topic=vmwaresolutions-f5_ordering)
 * [Managing F5 BIG-IP](/docs/vmwaresolutions?topic=vmwaresolutions-managing_f5)
-* [Contacting IBM Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support)
+* [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support)
 * [FAQ](/docs/vmwaresolutions?topic=vmwaresolutions-faq-vmwaresolutions)
 * [F5 website](https://www.f5.com/){: external}

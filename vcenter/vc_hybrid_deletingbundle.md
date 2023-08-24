@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-04-08"
+lastupdated: "2022-07-17"
 
 keywords: vCenter Server Hybridity delete instance, delete vCenter Server Hybridity, remove vCenter Server Hybridity
 
@@ -108,11 +108,6 @@ Verify the following requirements before you remove the Hybridity Bundle:
    * A list of the BYOL license keys that you installed in this procedure. Where applicable, provide the instance and cluster name with license keys for vSphere and the vSAN clusters.
    * A list of the rental license keys that you removed in this procedure. Where applicable, provide the instance and cluster name with license keys for vSphere and vSAN clusters.
 
-   The IBM Support and Operations teams access the vCenter management layer of your {{site.data.keyword.cloud_notm}} infrastructure account to verify that the rental licenses are removed before you cancel the Hybridity Bundle rental license charges.
+   The IBM Support team accesses the vCenter management layer of your {{site.data.keyword.cloud_notm}} infrastructure account to verify that the rental licenses are removed before you cancel the Hybridity Bundle rental license charges.
    {: note}
 
-## Related links
-{: #vc_hybrid_deletingbundle-related}
-
-* [Viewing vCenter Server with Hybridity Bundle instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_hybrid_viewinginstances)
-* [Contacting IBM Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support)

@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2023
 
-lastupdated: "2023-03-21"
+lastupdated: "2023-07-17"
 
 subcollection: vmwaresolutions
 
@@ -53,5 +53,5 @@ When you design or deploy this architecture pattern, consider the following step
 {: #arch-pattern-direct-link-edge-links}
 
 * [Getting started with {{site.data.keyword.dl_full_notm}} (2.0)](/docs/dl?topic=dl-get-started-with-ibm-cloud-dl)
-* [VMware vSphere overview](/docs/vmwaresolutions?topic=vmwaresolutions-vs_vsphereclusteroverview)
+* [VMware vSphere overview](/docs/vmwaresolutions?topic=vmwaresolutions-vs_vsphereoverview)
 * [Installing NSX Edge](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.1/installation/GUID-5EF2998C-4867-4DA6-B1C6-8A6F8EBCC411.html){: external}

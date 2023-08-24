@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2023
 
-lastupdated: "2023-03-21"
+lastupdated: "2023-07-10"
 
 subcollection: vmwaresolutions
 
@@ -38,7 +38,7 @@ The workload clusters require the use of vSAN. vSAN is the only storage option o
 
 Physical storage design consists of the configuration of the physical disks that are installed in the physical hosts and the configuration of the shared network-attached storage if applicable. It includes the operating system (vSphere ESXi) and the disks that are used for storage of the virtual machines (VMs). Storage for VMs consists of local disks that are virtualized by VMware® vSAN.
 
-![Storage options](../../images/vrw-v2-baremetal.svg "Storage options"){: caption="Figure 1. Storage options" caption-side="bottom"}
+![Storage options](../../images/vrw-v2-storage.svg "Storage options"){: caption="Figure 1. Storage options" caption-side="bottom"}
 
 ### Operating system disks
 {: #vrw-storage-os-disks}

@@ -3,7 +3,7 @@
 copyright:
   years: 2022, 2023
 
-lastupdated: "2023-07-25"
+lastupdated: "2023-08-04"
 
 keywords: IBM Cloud for VMware Solutions, getting started, vmware solutions offerings, services for vmwaresolutions, vmwaresolutions use cases
 
@@ -22,106 +22,60 @@ Conref section START.
 
 INFORMATION:
 The section is referenced by the following files:
-- vcenter\vc_orderinginstance-bare-metal.md (*file removed*)
 - vcenter\vc_orderinginstance-consold-cluster.md
 - vcenter\vc_addingclusters.md
 
 CONTENT:
 
-For **Skylake** servers, you can choose the following CPU models and a supported RAM size, which depends on the NSX networking solution.
-{: #skylake-para-intro}
-
-Skylake servers are not supported for VMware vSphere® Enterprise Plus 7.0u1 instances.
-{: note}
-{: #skylake-note}
-
-| CPU model     | Cores     | GHz     | RAM         |
-|:------------- |:----------|:--------|:----------- |
-| Dual Intel® Xeon® Silver 4110 processor | 16 | 2.1 | 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
-| Dual Intel Xeon Gold 5120 processor | 28 | 2.2 | 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
-| Dual Intel Xeon Gold 6140 processor | 36 | 2.3 | 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
-{: caption="Table 1. Options for Skylake bare metal servers - NSX-T instances" caption-side="bottom"}
-{: class="simple-tab-table"}
-{: tab-title="NSX-T instances"}
-{: tab-group="SkyLake Intel servers"}
-{: #simpletabtable-skylake-nsxt}
-
-
-| CPU model     | Cores     | GHz     | RAM         |
-|:------------- |:----------|:--------|:----------- |
-| Dual Intel® Xeon® Silver 4110 processor | 16 | 2.1 | 64 GB, 96 GB, 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
-| Dual Intel Xeon Gold 5120 processor | 28 | 2.2 | 64 GB, 96 GB, 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
-| Dual Intel Xeon Gold 6140 processor | 36 | 2.3 | 64 GB, 96 GB, 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
-{: caption="Table 1. Options for Skylake bare metal servers - NSX-V instances" caption-side="bottom"}
-{: class="simple-tab-table"}
-{: tab-title="NSX-V instances"}
-{: tab-group="SkyLake Intel servers"}
-{: #simpletabtable-skylake-nsxv}
-
-VMware NSX-V is no longer supported for new deployments of vCenter Server instances V4.7 and later.
-{: note}
-{: #vcenter-nsxv-note-skylake}
-
-For **Cascade Lake** servers, you can choose the following CPU models and a supported RAM size, which depends on the NSX networking solution.
+For **Cascade Lake** servers, choose from the following CPU models and supported RAM sizes:
 {: #cascade-para-intro}
 
-| CPU model     | Cores     | GHz     | RAM         |
-|:------------- |:----------|:--------|:----------- |
-| Dual Intel Xeon Silver 4210 processor | 20 | 2.2 | 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
-| Dual Intel Xeon Gold 5218 processor | 32 | 2.3 | 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
-| Dual Intel Xeon Gold 6248 processor | 40 | 2.5 | 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
-| Dual Intel Xeon Gold 6250 processor | 16 | 3.9 | 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
-| Dual Intel Xeon Platinum 8260 processor | 48 | 2.4 | 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
-| Quad Intel Xeon Gold 6248 processor | 80 | 2.5 | 384 GB, 768 GB, 1.5 TB, 3 TB |
-| Quad Intel Xeon Platinum 8260 processor | 96 | 2.4 | 384 GB, 768 GB, 1.5 TB, 3 TB |
-{: caption="Table 2. Options for Cascade Lake bare metal servers - NSX-T instances" caption-side="bottom"}
-{: class="simple-tab-table"}
-{: tab-title="NSX-T instances"}
-{: tab-group="Cascade Lake Intel servers"}
-{: #simpletabtable-cascade-nsxt}
+| CPU model | Cores | GHz | Storage type | RAM options |
+|:--------- |:----- |:--- |:------------ |:----------- |
+| Dual Intel Xeon Silver 4210 | 20 | 2.2 | Up to 12 drives | 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
+| Dual Intel Xeon Gold 5218 | 32 | 2.3 | Up to 12 drives | 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
+| Dual Intel Xeon Gold 6248 | 40 | 2.5 | Up to 12 drives | 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
+| Dual Intel Xeon Gold 6250 | 16 | 3.9 | Up to 12 drives | 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
+| Dual Intel Xeon Platinum 8260 | 48 | 2.4 | Up to 12 drives | 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
+| Quad Intel Xeon Gold 6248 | 80 | 2.5 | Up to 24 drives | 384 GB, 768 GB, 1.5 TB, 3 TB |
+| Quad Intel Xeon Platinum 8260 | 96 | 2.4 | Up to 24 drives | 384 GB, 768 GB, 1.5 TB, 3 TB |
+{: caption="Table 1. Options for Cascade Lake bare metal servers" caption-side="bottom"}
+{: #simpletabtable-cascade}
 
 
-| CPU model     | Cores     | GHz     | RAM         |
-|:------------- |:----------|:--------|:----------- |
-| Dual Intel Xeon Silver 4210 processor | 20 | 2.2 | 64 GB, 96 GB, 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
-| Dual Intel Xeon Gold 5218 processor | 32 | 2.3 | 64 GB, 96 GB, 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
-| Dual Intel Xeon Gold 6248 processor | 40 | 2.5 | 64 GB, 96 GB, 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
-| Dual Intel Xeon Gold 6250 processor | 16 | 3.9 | 64 GB, 96 GB, 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
-| Dual Intel Xeon Platinum 8260 processor | 48 | 2.4 | 64 GB, 96 GB, 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
-| Quad Intel Xeon Gold 6248 processor | 80 | 2.5 | 384 GB, 768 GB, 1.5 TB, 3 TB |
-| Quad Intel Xeon Platinum 8260 processor | 96 | 2.4 | 384 GB, 768 GB, 1.5 TB, 3 TB |
-{: caption="Table 2. Options for Cascade Lake bare metal servers - NSX-V instances" caption-side="bottom"}
-{: class="simple-tab-table"}
-{: tab-title="NSX-V instances"}
-{: tab-group="Cascade Lake Intel servers"}
-{: #simpletabtable-cascade-nsxv}
-
-VMware NSX-V is no longer supported for new deployments of vCenter Server instances V4.7 and later.
-{: note}
-{: #vcenter-nsxv-note-cascadelake}
-
-
-For **SAP-certified Cascade Lake** servers, you can select from the following configurations:
+For **SAP-certified Cascade Lake** servers, choose from the following configurations:
 {: #sap-para-intro}
 
-| CPU model     | SAP certification | Cores     | GHz     | RAM         | Storage type |
-|:------------- |:------------------|:----------|:--------|:------------|:------------ |
-| Dual Intel Xeon Gold 5218 processor (Cascade Lake, BI.S4.NW192) | NetWeaver | 32 | 2.3 | 192 GB | Up to 12 Drivers |
-| Dual Intel Xeon Gold 5218 processor (Cascade Lake, BI.S4.NW384) | NetWeaver | 32 | 2.3 | 384 GB | Up to 12 Drivers |
-| Dual Intel Xeon Gold 6248 processor (Cascade Lake, BI.S4.NW768) | NetWeaver | 40 | 2.5 | 768 GB | Up to 12 Drivers |
-| Dual Intel Xeon Platinum 8260 processor (Cascade Lake, BI.S4.NW768_v2) | Netweaver | 48 | 2.4 | 768 GB | Up to 12 Drivers |
-| Dual Intel Xeon Platinum 8280M processor (Cascade Lake, BI.S4.NW1500) | Netweaver | 56 |2.7 | 1.5 TB | Up to 12 Drivers |
-| Dual Intel Xeon Platinum 8280M processor (Cascade Lake, BI.S4.NW3000) | Netweaver | 56 | 2.7 | 3 TB | Up to 12 Drivers |
-| Dual Intel Xeon Gold 5218 processor (Cascade Lake, BI.S4.H2.192) | HANA and NetWeaver | 32 | 2.3 | 192 GB | Up to 12 Drivers |
-| Dual Intel Xeon Gold 5218 processor (Cascade Lake, BI.S4.H2.384) | HANA and NetWeaver | 32 | 2.3 | 384 GB | Up to 12 Drivers |
-| Dual Intel Xeon Gold 6248 processor (Cascade Lake, BI.S4.H2.768) | HANA and NetWeaver | 40 | 2.5 | 768 GB | Up to 12 Drivers |
-| Dual Intel Xeon Platinum 8280M processor (Cascade Lake, BI.S4.H2.1500) | HANA and NetWeaver | 56 | 2.7 | 1.5 TB | Up to 12 Drivers |
-| Dual Intel Xeon Platinum 8280M processor (Cascade Lake, BI.S4.H2.3000) | HANA and NetWeaver | 56 | 2.7 | 3 TB | Up to 12 Drivers |
-| Quad Intel Xeon Platinum 8280M processor (Cascade Lake, BI.S4.H4.3000) | HANA and NetWeaver | 112 | 2.7 | 3 TB | Up to 24 Drivers |
-| Quad Intel Xeon Platinum 8280M processor (Cascade Lake, BI.S4.H4.6000) | HANA and NetWeaver | 112 | 2.7 | 6 TB | Up to 24 Drivers |
-{: caption="Table 3. Options for SAP-certified Cascade Lake - NetWeaver and HANA" caption-side="bottom"}
-{: #simpletabtable-sap-netweaverandhana}
+| CPU model     | Cores     | GHz     | RAM         | Storage type |
+|:------------- |:----------|:--------|:------------|:------------ |
+| Dual Intel Xeon Gold 5218 (BI.S4.NW192) | 32 | 2.3 | 192 GB | Up to 12 drives |
+| Dual Intel Xeon Gold 5218 (BI.S4.NW384) | 32 | 2.3 | 384 GB | Up to 12 drives |
+| Dual Intel Xeon Gold 6248 (BI.S4.NW768) | 40 | 2.5 | 768 GB | Up to 12 drives |
+| Dual Intel Xeon Platinum 8260 (BI.S4.NW768_v2) | 48 | 2.4 | 768 GB | Up to 12 drives |
+| Dual Intel Xeon Platinum 8280M (BI.S4.NW1500) | 56 | 2.7 | 1.5 TB | Up to 12 drives |
+| Dual Intel Xeon Platinum 8280M (BI.S4.NW3000) | 56 | 2.7 | 3 TB | Up to 12 drives |
+{: caption="Table 2. Options for SAP-certified Cascade Lake bare metal servers - NetWeaver" caption-side="bottom"}
+{: tab-title="NetWeaver"}
+{: tab-group="SAP-certified Intel servers"}
+{: class="simple-tab-table"}
+{: #simpletabtable-sap-netweaver}
 
+
+| CPU model     | Cores     | GHz     | RAM         | Storage type |
+|:------------- |:----------|:--------|:------------|:------------ |
+| Dual Intel Xeon Gold 5218 (BI.S4.H2.192) | 32 | 2.3 | 192 GB | Up to 12 drives |
+| Dual Intel Xeon Gold 5218 (BI.S4.H2.384) | 32 | 2.3 | 384 GB | Up to 12 drives |
+| Dual Intel Xeon Gold 6248 (BI.S4.H2.768) | 40 | 2.5 | 768 GB | Up to 12 drives |
+| Dual Intel Xeon Platinum 8280M (BI.S4.H2.1500) | 56 | 2.7 | 1.5 TB | Up to 12 drives |
+| Dual Intel Xeon Platinum 8280M (BI.S4.H2.3000) | 56 | 2.7 | 3 TB | Up to 12 drives |
+| Quad Intel Xeon Platinum 8280M (BI.S4.H4.3000) | 112 | 2.7 | 3 TB | Up to 24 drives |
+| Quad Intel Xeon Platinum 8280M (BI.S4.H4.6000) | 112 | 2.7 | 6 TB | Up to 24 drives |
+| Octo Intel Xeon Platinum 8280M (BI.S4.H8.6000) | 224 | 2.7 | 6 TB | Up to 24 drives |
+{: caption="Table 2. Options for SAP-certified Cascade Lake bare metal servers - HANA and NetWeaver" caption-side="bottom"}
+{: tab-title="HANA and NetWeaver"}
+{: tab-group="SAP-certified Intel servers"}
+{: class="simple-tab-table"}
+{: #simpletabtable-sap-hana}
 
 Conref section END.
 
@@ -151,102 +105,53 @@ The uplink speed provides two options:
 * 25 Gb, which is available only for specific pods and data center locations. The following table shows the available locations for the 25 Gb uplink speed.
 {: #uplink-speed-options-list}
 
-The uplink speed provides two options:
-* 10 Gb, which is selected by default.
-* 25 Gb, which is available only for specific pods and data center locations. The following table shows the available locations for the 25 Gb uplink speed.
-{: #uplink-speed-options-cascadelake-list}
-
-| Geography | Data center | Pod |
-|:--------- |:----------- |:--- |
-| Asia-Pacific | TOK02 | 02 |
-| Asia-Pacific | TOK04 | 01 |
-{: caption="Table 1. Available locations for 25 Gb uplink speed" caption-side="bottom"}
+| Data center | Pod |
+|:----------- |:--- |
+| TOK02 | 02 |
+| TOK04 | 01 |
+{: caption="Table. Available locations for 25 Gb uplink speed - Asia-Pacific" caption-side="bottom"}
 {: tab-title="Asia-Pacific"}
 {: tab-group="Data centers"}
 {: class="simple-tab-table"}
 {: #simpletable-uplink-speed-locations-ap}
 
-| Geography | Data center | Pod |
-|:--------- |:----------- |:--- |
-| Europe | FRA04 | 01 |
-| Europe | FRA05 | 01 |
-| Europe | LON06 | 01 |
-| Europe | MAD02 | 01 |
-| Europe | MAD04 | 01 |
-| Europe | MAD05 | 01 |
-| Europe | PAR04 | 01 |
-| Europe | PAR05 | 01 |
-| Europe | PAR06 | 01 |
-{: caption="Table 1. Available locations for 25 Gb uplink speed" caption-side="bottom"}
+| Data center | Pod |
+|:----------- |:--- |
+| FRA04 | 01 |
+| FRA05 | 01 |
+| LON06 | 01 |
+| MAD02 | 01 |
+| MAD04 | 01 |
+| MAD05 | 01 |
+| PAR04 | 01 |
+| PAR05 | 01 |
+| PAR06 | 01 |
+{: caption="Table. Available locations for 25 Gb uplink speed - Europe" caption-side="bottom"}
 {: tab-title="Europe"}
 {: tab-group="Data centers"}
 {: class="simple-tab-table"}
 {: #simpletable-uplink-speed-locations-eur}
 
-| Geography | Data center | Pod |
-|:--------- |:----------- |:--- |
-| NA East | TOR04 | 01 |
-| NA East | WDC04 | 05 |
-| NA East | WDC06 | 01 |
-{: caption="Table 1. Available locations for 25 Gb uplink speed" caption-side="bottom"}
+| Data center | Pod |
+|:----------- |:--- |
+| TOR04 | 01 |
+| WDC04 | 05 |
+| WDC06 | 01 |
+{: caption="Table. Available locations for 25 Gb uplink speed - NA East" caption-side="bottom"}
 {: tab-title="NA East"}
 {: tab-group="Data centers"}
 {: class="simple-tab-table"}
 {: #simpletable-uplink-speed-locations-naeast}
 
-| Geography | Data center | Pod |
-|:--------- |:----------- |:--- |
-| NA South | DAL12 | 01 |
-| NA South | DAL13 | 02 |
-{: caption="Table 1. Available locations for 25 Gb uplink speed" caption-side="bottom"}
+| Data center | Pod |
+|:----------- |:--- |
+| DAL12 | 01 |
+| DAL13 | 02 |
+{: caption="Table. Available locations for 25 Gb uplink speed - NA South" caption-side="bottom"}
 {: tab-title="NA South"}
 {: tab-group="Data centers"}
 {: class="simple-tab-table"}
 {: #simpletable-uplink-speed-locations-nasouth}
-
-| Geography | Data center | Pod |
-|:--------- |:----------- |:--- |
-| Asia-Pacific | TOK02 | 02 |
-| Asia-Pacific | TOK04 | 01 |
-{: caption="Table 2. Available locations for 25 Gb uplink speed" caption-side="bottom"}
-{: tab-title="Asia-Pacific"}
-{: tab-group="Data centers for uplink speed"}
-{: class="simple-tab-table"}
-{: #simpletable-uplink-speed-locations-other-ap}
-
-| Geography | Data center | Pod |
-|:--------- |:----------- |:--- |
-| Europe | FRA05 | 01 |
-| Europe | LON06 | 01 |
-| Europe | MAD02 | 01 |
-| Europe | MAD04 | 01 |
-| Europe | MAD05 | 01 |
-{: caption="Table 2. Available locations for 25 Gb uplink speed" caption-side="bottom"}
-{: tab-title="Europe"}
-{: tab-group="Data centers for uplink speed"}
-{: class="simple-tab-table"}
-{: #simpletable-uplink-speed-locations-other-eur}
-
-| Geography | Data center | Pod |
-|:--------- |:----------- |:--- |
-| NA East | TOR04 | 01 |
-| NA East | WDC04 | 05 |
-| NA East | WDC06 | 01 |
-{: caption="Table 2. Available locations for 25 Gb uplink speed" caption-side="bottom"}
-{: tab-title="NA East"}
-{: tab-group="Data centers for uplink speed"}
-{: class="simple-tab-table"}
-{: #simpletable-uplink-speed-locations-other-naeast}
-
-| Geography | Data center | Pod |
-|:--------- |:----------- |:--- |
-| NA South | DAL12 | 01 |
-| NA South | DAL13 | 02 |
-{: caption="Table 2. Available locations for 25 Gb uplink speed" caption-side="bottom"}
-{: tab-title="NA South"}
-{: tab-group="Data centers for uplink speed"}
-{: class="simple-tab-table"}
-{: #simpletable-uplink-speed-locations-other-nasouth}
 
 Conref section END.
 
@@ -400,7 +305,6 @@ Conref section START.
 
 INFORMATION:
 The section is referenced by the following files:
-- vcenter\vs_orderinginstance-sys.md
 - vcenter\vrw-orderinginstance-wkld.md
 - vcenter\vrw-orderinginstance-primary.md
 - vcenter\vrw-orderinginstance-edge.md
@@ -444,6 +348,7 @@ INFORMATION:
 The section is referenced by the following files:
 - cr\cr_orderinginstance-gen-info.md
 - vcenter\vc_orderinginstance-sys.md
+- vsphere\vs_orderinginstances-sys.md
 
 CONTENT:
 
@@ -482,7 +387,7 @@ CONTENT:
 * All servers that you order have the same configuration.
 {: #number-of-baremetal-servers}
 
-* If you are planning to use NFS storage, you can order 2-59 servers. However, for production workloads, a minimum of 3 servers is recommended. For more information, see [Is a two-node vCenter Server instance highly available?](/docs/vmwaresolutions?topic=vmwaresolutions-faq-vmwaresolutions#is-a-two-node-vcenter-server-instance-highly-available)
+* For production workloads, a minimum of 3 servers is recommended.
 * If you are planning to use vSAN™ storage, you can order 4-59 servers.
 * All servers that you order have the same configuration.
 {: #exception-number-of-baremetal-servers}

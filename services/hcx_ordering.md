@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-06-07"
+lastupdated: "2023-08-03"
 
 keywords: VMware HCX deployment, HCX configuration, order HCX
 
@@ -56,7 +56,7 @@ To install HCX, complete the following settings:
    * **Private key** - Enter the private key of the CA certificate.
    * **Password** (Optional) - Enter the password for the private key, if it is encrypted.
    * **Reenter password** (Optional) - Enter the password for the private key again.
-   * **Hostname** (Optional) - The hostname to be mapped to the common name (CN) of the CA certificate. HCX requires that the format of the CA certificate must be accepted by NSX Edge. For more information about NSX Edge certificate formats, see [Importing SSL Certificates](https://docs.vmware.com/en/VMware-NSX-Data-Center-for-vSphere/6.3/com.vmware.nsx.admin.doc/GUID-19D3A4FD-DF17-43A3-9343-25EE28273BC6.html){: external}.
+   * **Hostname** (Optional) - The hostname to be mapped to the common name (CN) of the CA certificate. HCX requires that the format of the CA certificate must be accepted by NSX Edge. For more information about NSX Edge certificate formats, see [Import an SSL certificate](https://docs.vmware.com/en/VMware-NSX-Data-Center-for-vSphere/6.4/com.vmware.nsx.admin.doc/GUID-0467DB43-C95F-45EB-98C4-D9B132488A9B.html){: external}.
 
 ## Deployment process for HCX
 {: #hcx_ordering-deploy}
@@ -96,6 +96,6 @@ The deployment of HCX is automated. Whether you order a vCenter Server instance 
 * [Managing HCX](/docs/vmwaresolutions?topic=vmwaresolutions-managinghcx)
 * [Ordering services for vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices)
 * [Glossary of HCX terms](/docs/vmwaresolutions?topic=vmwaresolutions-hcx_glossary)
-* [Contacting IBM Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support)
+* [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support)
 * [Why does the installation fail for HCX with BYOL NSX Data Center Enterprise Plus?](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_hcx_install_fail)
 * [VMware Hybrid Cloud Extension documentation](https://cloud.vmware.com/vmware-hcx/resources){: external}

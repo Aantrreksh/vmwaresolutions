@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2023
 
-lastupdated: "2023-05-01"
+lastupdated: "2023-08-17"
 
 subcollection: vmwaresolutions
 
@@ -91,7 +91,7 @@ If your jump-host or remote device uses Linux, complete the following steps:
 ## Validating Distributed PortGroup and Datastore names
 {: #openshift-runbook-runbook-prereq-netstorage-ic4v}
 
-vCenter Server deployment uses deployment-specific naming for the datastores and distributed PortGroups. This runbook uses 'vsanDatastore', 'SDDC-DPortGroup-Mgmt' and 'SDDC-DPortGroup-External'. You need to use your vCenter Server deployment-specific network and storage names in your deployment configurations. For example, you might have datastore such as 'workload_share_YgkI8' (in case {{site.data.keyword.cloud_notm}} File Storage is used for the datastore) or your private portgoup can be like 'fra04test-fra04-test01-dpg-mgmt'.  
+vCenter Server deployment uses deployment-specific naming for the datastores and distributed PortGroups. This runbook uses 'vsanDatastore', 'SDDC-DPortGroup-Mgmt' and 'SDDC-DPortGroup-External'. You need to use your vCenter Server deployment-specific network and storage names in your deployment configurations. For example, you might have datastore such as 'workload_share_YgkI8' (in case {{site.data.keyword.filestorage_full_notm}} is used for the datastore) or your private portgoup can be like 'fra04test-fra04-test01-dpg-mgmt'.  
 
 You can validate the private and public Distributed PortGroup names and the datastore names for your deployment by using GOVC.
 

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2020, 2022
+  years:  2020, 2023
 
-lastupdated: "2022-11-16"
+lastupdated: "2023-08-22"
 
 keywords: personal data, data deletion, PHI, data, data security, high availability, ha, disaster recovery, vmware solutions shared, compliance
 
@@ -31,11 +31,11 @@ VMware Shared supports data storage in the form of:
 * VMware Cloud Director independent disks
 * Veeam® backups
 
-All VMware Cloud Director data is stored in multitenant datastores where the datastores are secured by VMware Cloud Director. A significant portion of VMware Cloud Director security, especially in protecting cloud tenants from internal threats, comes from the security of the underlying virtualization layer. This includes VMware vSphere®, the additional security of VMware Cloud Director, and the security of the ESXi™ hosts themselves. The VMware Cloud Director abstraction separates different organizations from each other. Different organizations cannot modify or see each other's organizations data at rest or data in motion.
+All VMware Cloud Director data is stored in multitenant datastores where the datastores are secured by VMware Cloud Director. A significant portion of VMware Cloud Director security, especially in protecting cloud tenants from internal threats, comes from the security of the underlying virtualization layer. It includes VMware vSphere®, the additional security of VMware Cloud Director, and the security of the ESXi™ hosts themselves. The VMware Cloud Director abstraction separates different organizations from each other. Different organizations cannot modify or see each other's organizations data at rest or data in motion.
 
-VMware Cloud Director data storage uses {{site.data.keyword.cloud_notm}} Infrastructure Endurance File Storage, which is encrypted at rest to Endurance File Storage specifications. When VMware Cloud Director data is deleted, it becomes available for reallocation where it is then zeroed out and instantiated for the next use case.
+VMware Cloud Director data storage uses {{site.data.keyword.cloud_notm}} Infrastructure Endurance {{site.data.keyword.filestorage_short}}, which is encrypted at rest to Endurance {{site.data.keyword.filestorage_short}} specifications. When VMware Cloud Director data is deleted, it becomes available for reallocation where it is then zeroed out and instantiated for the next use case.
 
-Veeam service backups are to both {{site.data.keyword.cloud_notm}} Infrastructure Endurance File Storage and Cloud Object Storage for longer term storage. When the first VMware Shared virtual data center is created, a unique encryption key is generated for each customer organization. It is used to encrypt all Veeam backups for that specific customer's organization. The encryption key is not stored and is unavailable to IBM. After the VMware Cloud Director Data Center is deleted, all backups are deleted, and cannot be recovered.
+Veeam service backups are to both {{site.data.keyword.cloud_notm}} Infrastructure Endurance {{site.data.keyword.filestorage_short}} and Cloud Object Storage for longer term storage. When the first VMware Shared virtual data center is created, a unique encryption key is generated for each customer organization. It is used to encrypt all Veeam backups for that specific customer's organization. The encryption key is not stored and is unavailable to IBM. After the VMware Cloud Director Data Center is deleted, all backups are deleted, and cannot be recovered.
 
 ## High availability and disaster recovery
 {: #shared_data-ha-dr}
@@ -68,4 +68,4 @@ Your disaster recovery plan includes knowing, preserving, and being prepared to 
 {: #shared_data-related}
 
 * [VMware Shared overview](/docs/vmwaresolutions?topic=vmwaresolutions-shared_overview)
-* [Contacting IBM Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support)
+* [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support)

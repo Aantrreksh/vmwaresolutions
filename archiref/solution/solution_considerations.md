@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-06-12"
+lastupdated: "2023-08-21"
 
 subcollection: vmwaresolutions
 
@@ -39,7 +39,7 @@ Familiarize yourself with the following limitations for your instance:
 
 Complete the following steps to manage access to your {{site.data.keyword.cloud_notm}} network and to your VMware management components and to plan your {{site.data.keyword.cloud_notm}} network topology.
 
-- Access instance management endpoints by using the [{{site.data.keyword.cloud_notm}} VPN](https://www.ibm.com/cloud/vpn-access) or your [{{site.data.keyword.cloud_notm}} Direct Link connection](https://www.ibm.com/cloud/direct-link).
+- Access instance management endpoints by using the [{{site.data.keyword.cloud_notm}} VPN](/docs/iaas-vpn?topic=iaas-vpn-getting-started) or your [{{site.data.keyword.cloud_notm}} Direct Link connection](https://www.ibm.com/cloud/direct-link).
 - Devise a strategy for public network connectivity from within your instance. Your options include the sample customer VMware NSX Edge™ Services Gateway (ESG), gateway appliances such as Vyatta and FortiGate, and proxy servers deployed in the {{site.data.keyword.cloud_notm}} network or on your own network accessed through Direct Link.
 - Plan whether to deploy your workload on {{site.data.keyword.cloud_notm}} VLANs with [{{site.data.keyword.cloud_notm}} portable IP addresses](/docs/subnets?topic=subnets-getting-started) or [on NSX-T logical switches using your own IP addresses](/docs/vmwaresolutions?topic=vmwaresolutions-nsx-t-design). When you use NSX software-defined networking (SDN), it gives you the greatest flexibility to manage and secure your workload network in the {{site.data.keyword.cloud_notm}}.
 - Use NSX ESGs, [IBM Cloud Vyatta](https://cloud.ibm.com/catalog/infrastructure/virtual-router-appliance), and Direct Link peering to plan for connectivity to workloads (Network Address Translation, Virtual Private Network, routing).
@@ -57,7 +57,6 @@ You are responsible for securing, encrypting, and monitoring your VMware instanc
 - Plan and implement appropriate application load balancing and security solutions, such as [F5 BIG-IP](/docs/vmwaresolutions?topic=vmwaresolutions-f5_considerations).
 - Plan and implement appropriate security information and event management (SIEM) solutions, such as [IBM QRadar](https://www.ibm.com/us-en/marketplace/hosted-security-intelligence).
 - Plan and implement appropriate vulnerability scanning.
-- Use solutions such as [Entrust CloudControl](/docs/vmwaresolutions?topic=vmwaresolutions-entrust-cc_considerations) to plan and implement appropriate change management, approval, auditing, and access control for your instance.
 
 ## Customization
 {: #solution_considerations-custom}
@@ -65,7 +64,6 @@ You are responsible for securing, encrypting, and monitoring your VMware instanc
 Complete the following steps to customize the base VMware instance installation to fit your requirements.
 - Use your own certificate authority (CA) to generate certificates for components such as vCenter (with embedded PSC) and NSX Manager.
 - Configure deployed services. For example,
-   - For Entrust CloudControl™, configure AD integration, access control, Simple Mail Transfer Protocol (SMTP) settings, and compliance policies.
    - For Zerto, plan for IP addressing and routing of Zerto Virtual Replication Appliance (VRA) communications since network address translator (NAT) traversal is not supported. Consider either tunneling or redeployment of your VRAs for appropriate addressing and routing.
    - For backup services such as Veeam® and IBM Spectrum® Protect Plus, configure your backup job, optionally configure additional storage, and configure monitoring alerts.
    - For networking and security services such as F5® BIG-IP and FortiGate Virtual Appliance, configure network interfaces, certificates, high availability (HA) configuration, and rules according to your network topology and other requirements.

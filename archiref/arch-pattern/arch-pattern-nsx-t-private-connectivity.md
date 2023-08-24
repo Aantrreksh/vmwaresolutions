@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2023
 
-lastupdated: "2023-05-31"
+lastupdated: "2023-07-17"
 
 subcollection: vmwaresolutions
 
@@ -35,7 +35,7 @@ The following list summarizes the private connectivity pattern.
 4. {{site.data.keyword.cloud_notm}} Services can be reached through {{site.data.keyword.cloud_notm}} private network by using Cloud Services Endpoints when it uses {{site.data.keyword.cloud_notm}} private network addresses.
 5. When you use BYOIP on NSX-T overlay networks, you must use SNAT at T0 or T1. If you use SNAT at T1, you can advertise the NAT IP addresses from T1 to T0, where proxy ARP is used.
 6. You can create DNAT rules on T0 Gateway to access your workloads from {{site.data.keyword.cloud_notm}} private networks.
-7. You can use IP addresses from {{site.data.keyword.cloud_notm}} private portable subnet that is deployed for NSX-T Edge Uplinks for the NAT.
+7. You can use IP addresses from {{site.data.keyword.cloud_notm}} private portable subnet that is deployed for NSX-T Edge uplinks for the NAT. Alternatively, you can order [{{site.data.keyword.cloud_notm}} Private static subnets](/docs/subnets?topic=subnets-getting-started) that are routed toward your T0's private HA VIP to be used for NAT-ing or on segments.
 
 ## Ingress private connectivity
 {: #arch-pattern-nsx-t-private-connectivity-ingress}
@@ -54,7 +54,7 @@ The following steps summarize this architecture pattern deployment.
    {: note}
 
 4. You can configure DNAT rules on T0 or T1 for ingress access, or SNAT for egress access from NSX-T overlay by using the IP addresses from the private portable subnet configured in the T0 uplinks. You can also configure load balancer VIPs, IPsec, or L2 VPN. Each of these are advertised as `/32` host IP addresses. You need to enable route advertisements on T1 Gateways so that T0 is aware of these IP addresses, and they must appear on T0s routing table.
-5. T0 Gateway uses proxy ARP on the uplink subnet for each `/32` IP address that is aware of (that is, which exists in its routing table). BCR can route ingress traffic only to these IP addresses. To check the routing table of T0, use the NSX-T GUI or login to NSX-T edge node and its T0 Service Router (SR) VRF.
+5. T0 Gateway uses proxy ARP on the uplink subnet for each `/32` IP address that is aware of (that is, which exists in its routing table). BCR can route ingress traffic only to these IP addresses. To check the routing table of T0, use the NSX-T GUI or login to NSX-T edge node and its T0 Service Router (SR) VRF. With [{{site.data.keyword.cloud_notm}} Private static subnets](/docs/subnets?topic=subnets-getting-started), the whole subnet is routed to the overlay.
 
 ## Ingress private connectivity with gateway cluster
 {: #arch-pattern-nsx-t-private-connectivity-edge-gateway-cluster}
@@ -95,5 +95,5 @@ For more information about this architecture pattern, see [Architecture pattern 
 ## Related links
 {: #arch-pattern-nsx-t-private-connectivity-links}
 
-* [VMware vSphere overview](/docs/vmwaresolutions?topic=vmwaresolutions-vs_vsphereclusteroverview)
+* [VMware vSphere overview](/docs/vmwaresolutions?topic=vmwaresolutions-vs_vsphereoverview)
 * [VMware NSX-T design](/docs/vmwaresolutions?topic=vmwaresolutions-nsx-t-design)

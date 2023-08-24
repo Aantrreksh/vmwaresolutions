@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-06-16"
+lastupdated: "2023-08-15"
 
 keywords: vCenter Server Hybridity delete instance, delete vCenter Server Hybridity, remove vCenter Server Hybridity
 
@@ -28,7 +28,7 @@ When you delete a vCenter Server with Hybridity Bundle instance, the following c
 5. Subnets
 6. VLANs
 
-Any VLANs that have your own resources added to them, such as gateways, Veeam® servers, and so on, are not deleted. In addition, any existing VLANs that you own, outside of {{site.data.keyword.vmwaresolutions_full}}, are not deleted.
+Any VLANs to which you added your own resources, such as gateways or Veeam® servers are not deleted. In addition, any existing VLANs that you own, outside of {{site.data.keyword.vmwaresolutions_full}}, are not deleted.
 {: note}
 
 {{site.data.content.deletinginstance-delete-info}}
@@ -58,11 +58,3 @@ You are billed until the end of the {{site.data.keyword.cloud_notm}} infrastruct
    1. Click the vertical overflow menu icon next to **vCenter console** again and click **Delete instance**.
    2. In the **Delete instance** window, click **OK**.
 
-## Related links
-{: #vc_hybrid_deletinginstance-related}
-
-* [Deleting vCenter Server with Hybridity Bundle instances in a multisite configuration](/docs/vmwaresolutions?topic=vmwaresolutions-vc_hybrid_deletinginstance_multi)
-* [Viewing vCenter Server with Hybridity Bundle instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_hybrid_viewinginstances)
-* [Expanding and contracting capacity for vCenter Server with Hybridity Bundle instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_hybrid_addingremovingservers)
-* [Managing virtual servers](/docs/virtual-servers?topic=virtual-servers-managing-virtual-servers)
-* [Contacting IBM Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support)

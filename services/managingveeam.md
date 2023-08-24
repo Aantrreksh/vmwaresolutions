@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-06-07"
+lastupdated: "2023-08-22"
 
 keywords: Veeam console, Veeam backup restore, update Veeam license
 
@@ -68,7 +68,7 @@ For Veeam 10 and Veeam, Veeam licenses are installed and deleted in a different
 
 After you place an order for Veeam, a Veeam stand-alone license is automatically deployed. The Veeam service installation begins only after the stand-alone license order completed successfully. After that, depending on what you ordered, Veeam is installed on the bare metal server, VM, or VSI.
 
-When you uninstall Veeam, the stand-alone license instance is not deleted. You must delete it separately to avoid being charged for the stand-alone license.
+When you uninstall Veeam, the stand-alone license instance is not deleted. Delete it separately to avoid being charged for the stand-alone license.
 
 Consider the following when you plan to upgrade your Veeam usage. You might be charged for licenses for Veeam 9.5, which is deprecated, and for Veeam. Therefore, you might decide to order a new license for your Veeam installation toward the end of a month, so you aren’t charged for both licenses for most of the month.
 

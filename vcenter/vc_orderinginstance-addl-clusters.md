@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-06-30"
+lastupdated: "2023-07-15"
 
 keywords: additional cluster, optional cluster, workload cluster, separate cluster, gateway cluster
 
@@ -67,7 +67,7 @@ The number of servers is set to 2 and cannot be changed. Both servers have the s
 ### Uplink speed
 {: #vc_orderinginstance-addl-clusters-gate-uplink}
 
-{{site.data.content.uplink-speed-options-cascadelake-list}}
+{{site.data.content.uplink-speed-options-list}}
 
 {{site.data.content.simpletable-uplink-speed-locations-ap}}
 

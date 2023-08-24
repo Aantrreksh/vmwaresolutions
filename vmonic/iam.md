@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-06-30"
+lastupdated: "2023-07-17"
 
 keywords: IAM user, user role, user permission, IAM access for vmwaresolutions, permissions for vmwaresolutions, identity and access management for vmwaresolutions, roles for vmwaresolutions, actions for vmwaresolutions, assigning access for vmwaresolutions
 
@@ -82,7 +82,7 @@ You can choose from the following options when you assign resource access.
 ### Procedure to grant user access
 {: #iam-roles-user-access-all-procedure}
 
-1. In the console, go to **Manage > Access(IAM)**.
+1. In the console, go to **Manage > Access (IAM)**.
 2. Click **Users** from the left navigation pane.
 3. From the row for the user that you want to assign access, select the **Actions** menu, and click **Assign access**.
 4. Click **Access policies** and select **VMware Solutions** from the **Service** table. Then, click **Next**.
@@ -93,7 +93,7 @@ You can choose from the following options when you assign resource access.
 7. Optionally, click the **Edit** icon ![Edit icon](../../icons/edit-tagging.svg "Edit") to update any of your selections.
 8. Click **Add** and click **Assign**.
 
-To grant user permission to create new instances for VMware Shared, you must also assign Resource Group access policies. For more information, see [Giving access to resources in resource groups](/docs/account?topic=account-rgs_manage_access) and [Ordering virtual data center instances](/docs/vmwaresolutions?topic=vmwaresolutions-shared_ordering).
+To grant user permission to create new instances for VMware Shared, you must also assign Resource Group access policies. For more information, see [Giving access to resources in resource groups](/docs/account?topic=account-rgs_manage_access) and [Ordering virtual data centers](/docs/vmwaresolutions?topic=vmwaresolutions-shared_ordering).
 {: important}
 
 ## Managing access for users
@@ -109,7 +109,7 @@ You can also manage the access for existing users, including modifying existing 
 
 You can assign access in the console in one of the following ways:
 
-* Access policies per user. You can manage access policies per user from the **Manage** > **Access (IAM)** > **Users** page in the console. For more information about the steps to assign IAM access, see [Managing access to resources](https://cloud.ibm.com/docs/account?topic=account-assign-access-resources&interface=ui#access-resources-console).
+* Access policies per user. You can manage access policies per user from the **Manage** > **Access (IAM)** > **Users** page in the console. For more information about the steps to assign IAM access, see [Assigning access to resources in the console](/docs/account?topic=account-assign-access-resources&interface=ui#access-resources-console).
 * Access groups. Access groups are used to streamline access management by assigning access to a group once. After that, you can add or remove users as needed from the group to control their access. You manage access groups and their access from the **Manage** > **Access (IAM)** > **Access groups** page in the console. For more information, see [Assigning access to a group in the console](/docs/account?topic=account-groups&interface=ui#access_ag).
 
 ## Assigning access to VMware Solutions by using the API
@@ -119,11 +119,11 @@ You can assign access in the console in one of the following ways:
 For step-by-step instructions for assigning, removing, and reviewing access, see [Assigning access to resources by using the API](/docs/account?topic=account-assign-access-resources&interface=api) or the [Create a policy API docs](/apidocs/iam-policy-management#create-policy). Role cloud resource names (CRN) in the following table are used to assign access with the API.
 
 | Role name | Role description | Role CRN |
-|---------------|-----------------|-----------------|
-| Viewer                 | As a viewer, you can view service instances, but you can't modify them.    | `crn:v1:bluemix:public:iam::::role:Viewer`        |
-| Administrator               | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users.    | `crn:v1:bluemix:public:iam::::role:Administrator`      |
-| Operator                 | As an operator, you can perform platform actions that are required to configure and operate service instances, such as viewing a service's dashboard.    | `crn:v1:bluemix:public:iam::::role:Operator`        |
-| Editor          | As an editor, you can perform all platform actions except for managing the account and assigning access policies.    | `crn:v1:bluemix:public:iam::::role:Editor` |
+|-----------|----------------- |--------- |
+| Viewer | As a viewer, you can view service instances, but you can't modify them. | `crn:v1:bluemix:public:iam::::role:Viewer` |
+| Administrator | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users. | `crn:v1:bluemix:public:iam::::role:Administrator` |
+| Operator | As an operator, you can perform platform actions that are required to configure and operate service instances, such as viewing a service's dashboard. | `crn:v1:bluemix:public:iam::::role:Operator` |
+| Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. | `crn:v1:bluemix:public:iam::::role:Editor` |
 {: caption="Table 3. Role ID values and description for API use" caption-side="bottom"}
 {: #iam-rolescrn-table}
 
@@ -171,17 +171,10 @@ curl -X POST 'https://iam.cloud.ibm.com/v1/policies' -H 'Authorization: Bearer $
 {: curl}
 {: codeblock}
 
-## Migrating existing instances to IBM Cloud accounts
-{: #iam-migrate}
-
-Because of the integration of {{site.data.keyword.vmwaresolutions_short}} with IAM, instances that are deployed in V2.5 and later releases in your {{site.data.keyword.cloud_notm}} account are automatically added to your account and are managed by IAM.
-
-For your existing instances that were deployed in V2.4 and earlier releases, you can migrate them to specified {{site.data.keyword.cloud_notm}} accounts for IAM-enabled management. For more information, see [Migrating pre-V2.5 vCenter Server instances to IBM Cloud accounts](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addinstancetousraccount).
-
 ## Related links
 {: #iam-related}
 
-* [Setting up user access](/docs/account?topic=account-access-getstarted)
+* [Assigning access to resources by using access groups](/docs/account?topic=account-access-getstarted)
 * [Inviting users to an account](/docs/account?topic=account-iamuserinv)
 * [How IBM Cloud IAM works](/docs/account?topic=account-iamoverview)
 * [Locating an IAM account administrator](/docs/vmwaresolutions?topic=vmwaresolutions-iam_verify_permissions)

@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2023
 
-lastupdated: "2023-06-12"
+lastupdated: "2023-07-31"
 
 keywords: vmware regulated workloads, vmware regulated workloads order instance, order vmware regulated workloads, vmware regulated workloads instances
 
@@ -14,7 +14,7 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Services
+# Add-on services
 {: #vrw-orderinginstance-services}
 
 Review services that are included with or optional for your VMware® Regulated Workloads.
@@ -25,7 +25,6 @@ Review services that are included with or optional for your VMware® Regulated W
 The following services are included with your Regulated Workloads instance. Some of the included add-on services require configuration setup.
 * [Veeam Backup and Replication](/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview)
 * [Caveonix RiskForesight](/docs/vmwaresolutions?topic=vmwaresolutions-caveonix_considerations)
-* [Entrust CloudControl](/docs/vmwaresolutions?topic=vmwaresolutions-entrust-cc_considerations)
 * [Juniper vSRX](/docs/vmwaresolutions?topic=vmwaresolutions-juniper-overview), if you're using **Gateway cluster with Juniper vSRX** as your firewall appliance
 * [FortiGate Virtual Appliance](/docs/vmwaresolutions?topic=vmwaresolutions-fortinetvm_considerations), if you're using **Gateway cluster with FortiGate Virtual Appliance** as your firewall appliance
 * [VMware Aria Operations and VMware Aria Operations for Logs](/docs/vmwaresolutions?topic=vmwaresolutions-vrops_overview)
@@ -33,8 +32,8 @@ The following services are included with your Regulated Workloads instance. Some
 ## Optional services
 {: #vrw-orderinginstance-services-optional}
 
-You can choose to install the following services:
-* [VMware HCX](/docs/vmwaresolutions?topic=vmwaresolutions-hcx_considerations). This service is available if you select to deploy a separate workload cluster.
+You can choose to add the following services to your instance:
+* [VMware HCX](/docs/vmwaresolutions?topic=vmwaresolutions-hcx_considerations). This service is available only if you deploy an additional cluster for workloads.
 * [F5 BIG-IP](/docs/vmwaresolutions?topic=vmwaresolutions-f5_considerations)
 
 ## Related links

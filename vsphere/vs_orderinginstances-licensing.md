@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-06-14"
+lastupdated: "2023-08-08"
 
 keywords: vmware vSphere order instance, order vSphere, order vmware vSphere instance
 
@@ -17,7 +17,7 @@ subcollection: vmwaresolutions
 # Licensing
 {: #vs_orderinginstances-licensing-settings}
 
-Select the VMware® components to be ordered with your cluster and specify the licensing option for the components.
+Select the VMware® components to be ordered with your instance and specify the licensing option for the components.
 
 ## Component bundles for IBM Business Partner users
 {: #vs_orderinginstances-component-bundles-for-bp-users}
@@ -37,9 +37,6 @@ You can also include the following VMware® components in your order:
 * VMware Site Recovery Manager
 * VMware Aria® Automation™ Enterprise
 
-For IBM Business Partner users, bring your own license (BYOL) is not available.
-{: note}
-
 ## Individual components for non-Business Partner users
 {: #vs_orderinginstances-individual-components-for-non-bp-users}
 
@@ -53,7 +50,7 @@ If you're a non-Business Partner, you can select the following components for yo
 * VMware Aria Operation Enterprise
 * VMware Aria Operations for Logs
 
-Small differences exist between NSX-T Data Center and Data Center SP editions. For more information, see [Product offerings for VMware NSX-T Data Center 3.2.x](https://kb.vmware.com/s/article/86095){: external}.
+Small differences exist between NSX-T Data Center and Data Center SP editions. For more information, see the [VMware NSX documentation](https://docs.vmware.com/en/VMware-NSX/index.html){: external}.
 
 ## Licensing options
 {: #vs_orderinginstances-licensing-options}
@@ -62,7 +59,7 @@ Using individual license keys together with the combined license keys does not m
 {: important}
 
 You have the following options for licensing the selected VMware components:
-* **Include license with purchase**: In this case, a new license for the VMware component is purchased on your behalf. A combined VMware license is generated to match the cluster size of the order.
+* **Include license with purchase**: In this case, a new license for the VMware component is purchased on your behalf. A combined VMware license is generated to match the instance size of the order.
 
    When you purchase any license, except for vSphere Enterprise Plus and vCenter Server, and you order multiple VMware ESXi™ servers, an {{site.data.keyword.cloud_notm}} ticket is opened automatically to combine license keys. You are responsible to follow up with the ticket to ensure that you use only the license keys that the VMware Solutions Support team generates.
 
@@ -71,5 +68,6 @@ You have the following options for licensing the selected VMware components:
 ## Related links
 {: #vs_orderinginstances-licensing-related}
 
-* [Bare metal server](/docs/vmwaresolutions?topic=vmwaresolutions-vs_orderinginstances-bare-metal-settings)
+* [Bare metal server](/docs/vmwaresolutions?topic=vmwaresolutions-vs_orderinginstances-bare-metal)
 * [Procedure to order VMware vSphere instances](/docs/vmwaresolutions?topic=vmwaresolutions-vs_orderinginstances-procedure)
+* [VMware NSX documentation](https://docs.vmware.com/en/VMware-NSX/index.html){: external}

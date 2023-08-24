@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2023
 
-lastupdated: "2023-07-12"
+lastupdated: "2023-07-15"
 
 keywords: vmware regulated workloads, vmware regulated workloads order instance, order vmware regulated workloads, vmware regulated workloads instances
 
@@ -39,7 +39,7 @@ You can select a RAM size from 64 GB, 96 GB, 128 GB, 192 GB, 384 GB, 768 GB, and
 ## Uplink speed
 {: #vrw-orderinginstance-edge-uplink}
 
-{{site.data.content.uplink-speed-options-cascadelake-list}}
+{{site.data.content.uplink-speed-options-list}}
 
 {{site.data.content.simpletable-uplink-speed-locations-ap}}
 

@@ -1,24 +1,30 @@
 ---
 
+
+
 copyright:
+  years: 2016, 2023
+lastupdated: "2023-07-21"
 
-  years:  2016, 2022
-
-lastupdated: "2022-08-25"
-
-keywords: troubleshooting, contact support, support ticket
+keywords: getting help, getting support, troubleshooting, contact support, support ticket
 
 subcollection: vmwaresolutions
-
 
 ---
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Contacting IBM Support
+# Getting help and support for VMware Solutions
 {: #trbl_support}
 
-If you need help with {{site.data.keyword.vmwaresolutions_full}}, create a case from the {{site.data.keyword.cloud_notm}} Support Center to get assistance.
+If you experience an issue or have questions when using VMware Solutions, you can use the following resources before you open a support case.
+{: shortdesc}
+
+* Review the [FAQs](/docs?tab=faqs&tags=get-support%2Cbilling-usage%2Caccount%2Csell&faqtags=vmwaresolutions%2Cvmware-service) in the product documentation.
+* Review the [troubleshooting documentation](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_timeout_vc_console) to troubleshoot and resolve common issues.
+* Check the status of the {{site.data.keyword.Bluemix_notm}} platform and resources by going to the [Status page](https://cloud.ibm.com/status){: external}.
+
+If you still can't resolve the problem, you can open a support case. For more information, see [Creating support cases](/docs/get-support?topic=get-support-open-case). And, if you're looking to provide feedback, see [Submitting feedback](/docs/overview?topic=overview-feedback).
 
 ## Procedure to create a case for VMware Solutions
 {: #trbl_support-procedure}

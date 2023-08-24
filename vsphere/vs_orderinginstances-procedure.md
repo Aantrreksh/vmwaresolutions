@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-06-14"
+lastupdated: "2023-07-19"
 
 keywords: vmware vSphere order instances, order vmware vSphere, order vmaware vSphere instance
 
@@ -18,8 +18,10 @@ subcollection: vmwaresolutions
 {: #vs_orderinginstances-procedure}
 
 1. In the VMware Solutions console, click the **VMware vSphere** card in the **Platforms** section.
-2. On the **Create** tab, ensure that **New cluster** is displayed in the **Cluster configurations** list.
-3. Enter the cluster name and select a resource group.
+2. On the **Create** tab, under **General information**, select the instance configuration name. Click **Browse configurations** to open the **Instance configuration manager** side panel and choose the configuration.
+   * If you do not see any list of saved configurations in the side panel and want to create a new configuration, you must save the instance settings first as a new configuration template without placing an order.
+   * If you want to update a saved configuration or create a new configuration based on a saved one, select the configuration from the side panel, make your changes, and then save.
+3. Enter the instance name and select a resource group.
 4. Select the VMware® components for licensing:
    * If you are an IBM Business Partner, select a license bundle and any additional available VMware components.
    * If you are a non-Business Partner, select the component, edition if any, and specify the licensing option.
@@ -47,9 +49,11 @@ subcollection: vmwaresolutions
       * If you want to order new public and private VLANs, click **Order new VLANs**.
       * If you want to reuse the existing public and private VLANs when they are available, click **Select existing VLANs** and specify the VLANs and optionally the subnets.
    5. If you are ordering public VLANs, specify whether to apply the FortiGate Physical Appliance 300 Series HA Pair to secure your cloud environment.
-8. In the **Summary** pane, verify the cluster configuration and the estimated price.
-   * To save the configuration as a template without placing an order, click **Save configuration**.
-   * To place the order, ensure that the account to be charged is correct, review and accept the terms, and then click **Create**.
+8. On the **Summary** pane, review the instance settings and the estimated price.
+   * To save the settings as a new configuration template without placing an order, click **Save configuration**, enter a name for the configuration, and click **Continue**.
+   * To save the updates to a saved configuration, click **Save configuration**, select **Modify current configuration**, and click **Continue**.
+   * To save the updates to a new saved configuration, click **Save configuration**, select **Create new configuration**, enter a new name for the configuration, and click **Continue**.
+9. To place the order, ensure that the account to be charged is correct, review and accept the terms, and then click **Create**.
 
    Only the {{site.data.keyword.cloud_notm}} bare metal servers are installed. You are responsible for installing and configuring various components after instance deployment, such as VMware vCenter Server, VMware NSX®, and VMware vSAN.
    {: note}
@@ -57,7 +61,7 @@ subcollection: vmwaresolutions
 ## Results after you order VMware vSphere instances
 {: #vs_orderinginstances-results}
 
-If you saved the cluster configuration as a template, you get a console notification that the configuration is saved successfully, and then you can find the template in the **Cluster configurations** list.
+If you saved the instance configuration as a template, you get a console notification that the configuration is saved successfully, and then you can find the template in the **Instance configurations** list.
 
 If you placed an order, the deployment starts automatically, and you receive an email confirmation that the order is being processed. When the instance is ready to use, you are notified by email.
 

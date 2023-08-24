@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2023
 
-lastupdated: "2023-06-30"
+lastupdated: "2023-08-17"
 
 subcollection: vmwaresolutions
 
@@ -144,7 +144,7 @@ In addition to capacity planning, complete the following to ensure that your sto
 * Review your vSAN storage policy:
    * RAID 1 provides better performance and smaller windows of susceptibility to sequential failure, such as shorter rebuild time, than RAID 5. However, RAID 5 has less storage overload.
    * RAID 6 provides protection against dual failures, but requires a minimum of six hosts compared to four hosts for RAID 5.
-* To add more storage to your vSAN cluster, you must add new hosts to the cluster or add {{site.data.keyword.vpc_short}} file storage instead. Adding disks to the existing hosts is not currently supported.
+* To add more storage to your vSAN cluster, you must add new hosts to the cluster or add {{site.data.keyword.filestorage_vpc_full_notm}} instead. Adding disks to the existing hosts is not currently supported.
 
 ## Related links
 {: #vpc-ryo-considerations-links}

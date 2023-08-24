@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2023
 
-lastupdated: "2023-07-07"
+lastupdated: "2023-07-31"
 
 keywords: planning cyber recovery, cyber recovery, cyber recovery instance
 
@@ -34,86 +34,86 @@ The Cyber Recovery deployment has strict requirements on the physical infrastruc
 
 The following {{site.data.keyword.cloud_notm}} data centers are available for Cyber Recovery.
 
-| Geography | Data center | Pod |
-|:--------- |:----------- |:--- |
-| Asia-Pacific |CHE01 | 01 |
-| Asia-Pacific | OSA21 | 01 |
-| Asia-Pacific | OSA22 | 01 |
-| Asia-Pacific | OSA23 | 01 |
-| Asia-Pacific | SNG01| 02 |
-| Asia-Pacific | SYD01 | 01-02 |
-| Asia-Pacific | SYD04 | 01 |
-| Asia-Pacific | SYD05 | 01 |
-| Asia-Pacific | TOK02 | 01-02 |
-| Asia-Pacific | TOK04 | 01 |
-| Asia-Pacific | TOK05 | 01 |
-{: caption="Table 1. Available {{site.data.keyword.cloud_notm}} data centers for Cyber Recovery" caption-side="bottom"}
+| Data center | Pod |
+|:----------- |:--- |
+| CHE01 | 01 |
+| OSA21 | 01 |
+| OSA22 | 01 |
+| OSA23 | 01 |
+| SNG01 | 02 |
+| SYD01 | 01-02 |
+| SYD04 | 01 |
+| SYD05 | 01 |
+| TOK02 | 01-02 |
+| TOK04 | 01 |
+| TOK05 | 01 |
+{: caption="Table 1. Available {{site.data.keyword.cloud_notm}} data centers for Cyber Recovery - Asia-Pacific" caption-side="bottom"}
 {: tab-title="Asia-Pacific"}
 {: tab-group="Data centers for Cyber Recovery"}
 {: class="simple-tab-table"}
 {: #simpletabtable-cr-ap}
 
-| Geography | Data center | Pod |
-|:--------- |:----------- |:--- |
-| Europe | AMS03 | 01-02 |
-| Europe | FRA02 | 01-03 |
-| Europe | FRA04 | 01 |
-| Europe | FRA05 | 01 |
-| Europe | LON02 | 01-02 |
-| Europe | LON04 | 01 |
-| Europe | LON05 | 01 |
-| Europe | LON06 | 01 |
-| Europe | MIL01 | 01 |
-| Europe | PAR01 | 01 |
-{: caption="Table 1. Available {{site.data.keyword.cloud_notm}} data centers for Cyber Recovery" caption-side="bottom"}
+| Data center | Pod |
+|:----------- |:--- |
+| AMS03 | 01-02 |
+| FRA02 | 01-03 |
+| FRA04 | 01 |
+| FRA05 | 01 |
+| LON02 | 01-02 |
+| LON04 | 01 |
+| LON05 | 01 |
+| LON06 | 01 |
+| MIL01 | 01 |
+| PAR01 | 01 |
+{: caption="Table 1. Available {{site.data.keyword.cloud_notm}} data centers for Cyber Recovery - Europe" caption-side="bottom"}
 {: tab-title="Europe"}
 {: tab-group="Data centers for Cyber Recovery"}
 {: class="simple-tab-table"}
 {: #simpletabtable-cr-eur}
 
-| Geography | Data center | Pod |
-|:--------- |:----------- |:--- |
-| NA East | MON01 | 01-02 |
-| NA East | TOR01 | 01-02 |
-| NA East | TOR04 | 01 |
-| NA East | TOR05 | 01 |
-| NA East | WDC04 | 01-05 |
-| NA East | WDC06 | 01 |
-| NA East | WDC 07 | 01 |
-{: caption="Table 1. Available {{site.data.keyword.cloud_notm}} data centers for Cyber Recovery" caption-side="bottom"}
+| Data center | Pod |
+|:----------- |:--- |
+| MON01 | 01-02 |
+| TOR01 | 01-02 |
+| TOR04 | 01 |
+| TOR05 | 01 |
+| WDC04 | 01-05 |
+| WDC06 | 01 |
+| WDC07 | 01 |
+{: caption="Table 1. Available {{site.data.keyword.cloud_notm}} data centers for Cyber Recovery - NA East" caption-side="bottom"}
 {: tab-title="NA East"}
 {: tab-group="Data centers for Cyber Recovery"}
 {: class="simple-tab-table"}
 {: #simpletabtable-cr-naeast}
 
-| Geography | Data center | Pod |
-|:--------- |:----------- |:--- |
-| NA South | DAL09 | 01-06 |
-| NA South | DAL10 | 01-04 |
-| NA South | DAL12 | 01-02 |
-| NA South | DAL13 | 01-03 |
-{: caption="Table 1. Available {{site.data.keyword.cloud_notm}} data centers for Cyber Recovery" caption-side="bottom"}
+| Data center | Pod |
+|:----------- |:--- |
+| DAL09 | 01-06 |
+| DAL10 | 01-04 |
+| DAL12 | 01-02 |
+| DAL13 | 01-03 |
+{: caption="Table 1. Available {{site.data.keyword.cloud_notm}} data centers for Cyber Recovery - NA South" caption-side="bottom"}
 {: tab-title="NA South"}
 {: tab-group="Data centers for Cyber Recovery"}
 {: class="simple-tab-table"}
 {: #simpletabtable-cr-nasouth}
 
-| Geography | Data center | Pod |
-|:--------- |:----------- |:--- |
-| NA West | SJC03 | 01-02 |
-| NA West | SJC04 | 01 |
-{: caption="Table 1. Available {{site.data.keyword.cloud_notm}} data centers for Cyber Recovery" caption-side="bottom"}
+| Data center | Pod |
+|:----------- |:--- |
+| SJC03 | 01-02 |
+| SJC04 | 01 |
+{: caption="Table 1. Available {{site.data.keyword.cloud_notm}} data centers for Cyber Recovery - NA West" caption-side="bottom"}
 {: tab-title="NA West"}
 {: tab-group="Data centers for Cyber Recovery"}
 {: class="simple-tab-table"}
 {: #simpletabtable-cr-nawest}
 
-| Geography | Data center | Pod |
-|:--------- |:----------- |:--- |
-| South America | SAO01 | 01 |
-| South America | SAO04 | 01 |
-| South America | SAO05 | 01 |
-{: caption="Table 1. Available {{site.data.keyword.cloud_notm}} data centers for Cyber Recovery" caption-side="bottom"}
+| Data center | Pod |
+|:----------- |:--- |
+| SAO01 | 01 |
+| SAO04 | 01 |
+| SAO05 | 01 |
+{: caption="Table 1. Available {{site.data.keyword.cloud_notm}} data centers for Cyber Recovery - South America" caption-side="bottom"}
 {: tab-title="South America"}
 {: tab-group="Data centers for Cyber Recovery"}
 {: class="simple-tab-table"}
@@ -134,7 +134,6 @@ The [Caveonix RiskForesight™](/docs/vmwaresolutions?topic=vmwaresolutions-cave
 
 The following services are optional for Cyber Recovery.
 
-* [Entrust CloudControl™](/docs/vmwaresolutions?topic=vmwaresolutions-entrust-cc_considerations)
 * [F5® BIG-IP®](/docs/vmwaresolutions?topic=vmwaresolutions-f5_considerations)
 * [HCX™](/docs/vmwaresolutions?topic=vmwaresolutions-hcx_considerations)
 * [Red Hat® OpenShift® for VMware](/docs/vmwaresolutions?topic=vmwaresolutions-ocp_overview)

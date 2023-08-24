@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-06-20"
+lastupdated: "2023-08-15"
 
 keywords: vmware vSphere order instance, order vSphere, order vmware vSphere instance
 
@@ -17,19 +17,15 @@ subcollection: vmwaresolutions
 # Storage (vSAN only)
 {: #vs_orderinginstances-storage-settings}
 
-The **Storage** section of your VMware vSphere instance order is applicable only if you select the VMware vSAN component.
+The **Storage** section of your VMware vSphere instance order is applicable only if you select the VMware vSAN™ component.
 
-* For orders without VMware vSAN™, VMware ESXi™ servers are ordered with a 12-disk chassis, with two disks for the ESXi operating system (OS).
-* For orders with vSAN, ESXi servers are ordered with a 12-disk chassis and two disks are ordered for caching. The ESXi OS is placed on a single M.2 solid-state drive that does not use a disk bay. These settings are configured by default and cannot be changed. You can order more capacity disks by selecting **Size for vSAN capacity disks** and **Number of vSAN capacity disks**.
+* For VMware vSphere instances without VMware vSAN, VMware ESXi™ servers are ordered with a 12-disk chassis, with two disks for the ESXi operating system (OS).
+* For VMware vSphere instances with vSAN, ESXi servers are ordered with a 12-disk chassis and two disks are ordered for caching. The ESXi OS is placed on a single M.2 solid-state drive that does not use a disk bay. These settings are configured by default and cannot be changed. You can order more capacity disks by specifying values for  **Size for vSAN capacity disks** and **Number of vSAN capacity disks**.
+* For VMware vSphere instances with vSAN, all new instances are provisioned with mirrored M.2 drives.
 
 Specify the following settings for the vSAN component:
 * **Size for vSAN capacity disks** - Select an option for the capacity disks that you need.
 * **Number of vSAN capacity disks** - Specify the number of capacity disks that you want to add.
-* If you want to add more capacity disks, select the **High performance with Intel Optane** checkbox. This option provides two extra capacity disk bays, which are useful for workloads that require less latency and higher IOPS throughput.
-
-   The **High performance with Intel Optane** option is available only for existing instances with VMware vSphere® 6, and for Skylake and dual-processor Cascade Lake CPU models.
-   {: note}
-
 * Review the **Size for vSAN cache disks** and **Number of vSAN cache disks** values.
 
 ## Enable vSAN deduplication and compression

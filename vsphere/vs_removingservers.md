@@ -4,7 +4,7 @@ copyright:
 
   years:  2023
 
-lastupdated: "2023-06-20"
+lastupdated: "2023-08-03"
 
 keywords: vmware vSphere remove hosts, vmware vSphere remove ESXi servers, delete server
 
@@ -29,8 +29,8 @@ Before you delete ESXi servers, ensure that you remove your workloads from these
 ## Procedure to delete ESXi servers from VMware vSphere instances
 {: #vs_removingservers-procedure}
 
-1. From the {{site.data.keyword.vmwaresolutions_full}} console, click **Resources > vSphere** from the left navigation pane.
-2. In the **vSphere** table, click the instance for which you want to contract capacity.
+1. From the {{site.data.keyword.vmwaresolutions_full}} console, click **Resources > VMware vSphere** from the left navigation pane.
+2. In the **VMware vSphere** table, click the instance for which you want to contract capacity.
 3. Click the **Infrastructure** tab.
 4. In the **ESXi servers** section, select the servers that you want to delete and click **Delete**.
 5. Click **Delete** in the **Delete ESXi server** window.

@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2023
 
-lastupdated: "2023-06-19"
+lastupdated: "2023-08-17"
 
 subcollection: vmwaresolutions
 
@@ -24,7 +24,7 @@ subcollection: vmwaresolutions
 
 Based on the assessment of your source NSX-V environment, you can identify the requirements for your target platform. After the analysis, do the following steps:
 
-1. Select the target platform that supports all your requirements from the information on the features that are shown in the following diagrams.
+1. Select the target platform that supports all your requirements from the information about the features that are shown in the following diagrams.
 2. Review [Getting started with VMware Solutions](/docs/vmwaresolutions?topic=vmwaresolutions-getting-started) to learn more about the offerings, deployment patterns, and services.
 
 A summary and key capabilities of the target VMware Solutions offerings in {{site.data.keyword.cloud_notm}} is provided with architectural guidance to ease up the selection process.
@@ -58,7 +58,7 @@ In the previous diagram, the following terms require some additional comments:
 * No stretched L2 capability - The stretching of layer 2 NSX-T overlay segments across sites cannot be done.
 * Single edge gateway - Each virtual data center uses an active-standby edge gateway for external access to the public network or the services network. This gateway includes features such as NAT, IPsec VPN, and load balancing.
 * Single edge cluster Tier-0 gateway for workloads - The automation deploys a single NSX-T edge cluster, consisting of a pair of edge appliances, hosting an active/standby Tier-0 gateway for use by the workload VMs. These VMs provide connection between the overlay and underlay networks. For more information, see [Single-site - single-tenant](/docs/vmwaresolutions?topic=vmwaresolutions-v2t-example-overlays#v2t-example-overlays-single-site-st) and [Single-site - multitenant](/docs/vmwaresolutions?topic=vmwaresolutions-v2t-example-overlays#v2t-example-overlays-single-site-mt ).
-* Single-zone NFS storage - vSphere data stores that use {{site.data.keyword.cloud_notm}} file storage of different IOPs ratings are available and deployed automatically. {{site.data.keyword.cloud_notm}} file storage can be accessed only from hosts in the same site as the vSphere hosts. For more information, see [Shared File-level storage across hosts](/docs/vmwaresolutions?topic=vmwaresolutions-design_physicalinfrastructure#design_physicalinfrastructure-shared-storage).
+* Single-zone NFS storage - vSphere data stores that use {{site.data.keyword.filestorage_full_notm}} of different IOPS ratings are available and deployed automatically. {{site.data.keyword.filestorage_full_notm}} can be accessed only from hosts in the same site as the vSphere hosts. For more information, see [Shared File-level storage across hosts](/docs/vmwaresolutions?topic=vmwaresolutions-design_physicalinfrastructure#design_physicalinfrastructure-shared-storage).
 * Single-zone vSAN™ - The vCenter Server instance can be ordered with VMware vSAN and it uses disks in the vSphere hosts as a consolidated data store.
 
 The vCenter dual site topology is a candidate for [NSX-T Federation](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.2/administration/GUID-D5B6DC79-6733-44A7-8072-50221CF2122A.html){: external}. NSX-T Federation is a relatively new NSX-T feature and architecture. Before you plan to use it, you must know what [features are supported](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.2/administration/GUID-29998FC5-C1AB-40BC-B669-6E8E9937F345.html){: external}, and how NSX Federation works for your use case. NSX-T Federation is not validated by {{site.data.keyword.cloud_notm}} fully, but it is a solution and architecture that is supported by VMware.
@@ -116,7 +116,7 @@ In the previous diagram, the following terms require some additional comments:
 * Stretched L2 capable - It is possible to do the stretching of layer 2 NSX-T overlay segments across virtual data centers.
 * Single edge cluster Tier-0 gateway for workloads - The automation deploys a single NSX-T edge cluster, consisting of a pair of edge appliances, hosting an active standby Tier-0 gateway for use by the workload VMs. These VMs provide connection between the overlay and underlay networks. For more information, see [Single-site - single-tenant](/docs/vmwaresolutions?topic=vmwaresolutions-v2t-example-overlays#v2t-example-overlays-single-site-st) and [Single-site - multitenant](/docs/vmwaresolutions?topic=vmwaresolutions-v2t-example-overlays#v2t-example-overlays-single-site-mt).
 * Stretched edge cluster Tier-0 gateways for workloads per site - To enable an active-active data plane, a stretched edge NSX-T cluster is created manually by deploying an edge appliance in each site. This action enables access to the stretched L2 NSX-T overlay segments, which host the workload VMs if a failure occurs in one of the sites. For more information, see [Multisite - single-tenant](/docs/vmwaresolutions?topic=vmwaresolutions-v2t-example-overlays#v2t-example-overlays-multi-site-st) and [Multisite - multitenant](/docs/vmwaresolutions?topic=vmwaresolutions-v2t-example-overlays#v2t-example-overlays-multi-site-mt).
-* Single-zone NFS storage - vSphere data stores that use {{site.data.keyword.cloud_notm}} file storage of different IOPs ratings are available. {{site.data.keyword.cloud_notm}} file storage can be accessed only from hosts in the same site as the vSphere hosts. For more information, see [Shared File-level storage across hosts](/docs/vmwaresolutions?topic=vmwaresolutions-design_physicalinfrastructure#design_physicalinfrastructure-shared-storage).
+* Single-zone NFS storage - vSphere data stores that use {{site.data.keyword.filestorage_full_notm}} of different IOPS ratings are available. {{site.data.keyword.filestorage_full_notm}} can be accessed only from hosts in the same site as the vSphere hosts. For more information, see [Shared File-level storage across hosts](/docs/vmwaresolutions?topic=vmwaresolutions-design_physicalinfrastructure#design_physicalinfrastructure-shared-storage).
 * Stretch vSAN storage capable - By using the automation, stretched vSAN clusters cannot be deployed. If stretched vSAN is required, vSphere hosts must be deployed manually and a stretched vSAN cluster must be created.
 * Optional add-on services - For more information, see [Available services for vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices#vc_addingservices-available-services).
 

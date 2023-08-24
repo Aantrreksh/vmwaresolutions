@@ -4,7 +4,7 @@ copyright:
 
   years:  2023
 
-lastupdated: "2023-06-20"
+lastupdated: "2023-08-15"
 
 keywords: vmware vSphere add host, add server vmware vSphere
 
@@ -24,15 +24,19 @@ You can expand the capacity of your VMware vSphere® instance according to your 
 
 * For existing instances with VMware vSphere® 6.5 or 6.7, you cannot add ESXi servers. To add ESXi servers, upgrade your vSphere® software to 7.0. For more information, see [Upgrading VMware vSphere software from vSphere 6.5 or 6.7 to 7.0](/docs/vmwaresolutions?topic=vmwaresolutions-vs_vsphere_70_upgrade).
 * For existing instances with vSphere 7.0u2, you can add only ESXi servers with vSphere 7.0u3.
-* You can add 1-20 ESXi servers at a time.
+* You can add up to 59 ESXi servers to a VMware vSphere instance.
+
+For VMware vSphere instances with vSAN:
+* If you are adding ESXi servers to instances provisioned after 23 August 2023, the servers are provisioned with mirrored M.2 drives.
+* If you are adding ESXi servers to instances provisioned before 23 August 2023, the servers are provisioned with mirrored M.2 drives only if you select a new bare metal server configuration.
 
 ## Procedure to add ESXi servers to VMware vSphere instances
 {: #vs_addingservers-procedure}
 {: help}
 {: support}
 
-1. From the {{site.data.keyword.vmwaresolutions_full}} console, click **Resources > vSphere** from the left navigation pane.
-2. In the **vSphere** table, click the instance for which you want to expand capacity.
+1. From the {{site.data.keyword.vmwaresolutions_full}} console, click **Resources > VMware vSphere** from the left navigation pane.
+2. In the **VMware vSphere** table, click the instance for which you want to expand capacity.
 3. Click the **Infrastructure** tab.
 4. In the **ESXi servers** section, click **Add**.
 5. On the **Add ESXi server** side panel, enter the number of bare metal servers that you want to add.
@@ -56,4 +60,4 @@ You can expand the capacity of your VMware vSphere® instance according to your 
 * [Procedure to order VMware vSphere instances](/docs/vmwaresolutions?topic=vmwaresolutions-vs_orderinginstances-procedure)
 * [Viewing VMware vSphere instances](/docs/vmwaresolutions?topic=vmwaresolutions-vs_viewinginstances)
 * [Requirements for VMware vSphere](/docs/vmwaresolutions?topic=vmwaresolutions-vs_orderinginstances-req)
-* [Contacting IBM Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support)
+* [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support)

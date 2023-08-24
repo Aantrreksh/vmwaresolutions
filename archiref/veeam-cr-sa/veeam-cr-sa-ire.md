@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2023
 
-lastupdated: "2023-06-12"
+lastupdated: "2023-08-17"
 
 subcollection: vmwaresolutions
 
@@ -73,7 +73,7 @@ The solution architecture adds the following components to the vCenter Server in
 
 The vCenter Server instance uses the following {{site.data.keyword.cloud_notm}} services:
 
-* NFS service - If VMware vSAN is not specified for the vCenter Server instance, then {{site.data.keyword.cloud_notm}} file storage (NFS) is used or the VMware datastores. The {{site.data.keyword.cloud_notm}} file storage (NFS) is in the {{site.data.keyword.cloud_notm}} services network in the data center. Customers don't have direct access to the underlying storage infrastructure and use file shares.
+* NFS service - If VMware vSAN is not specified for the vCenter Server instance, then {{site.data.keyword.filestorage_full_notm}} (NFS) is used or the VMware datastores. The {{site.data.keyword.filestorage_full_notm}} (NFS) is in the {{site.data.keyword.cloud_notm}} services network in the data center. Customers don't have direct access to the underlying storage infrastructure and use file shares.
 * NTP service - In this architecture, the isolated recovery environment uses the ADDNS servers as a time source. The ADDNS servers use the {{site.data.keyword.cloud_notm}} NTP service for their time reference.
 * DNS service - In this architecture, the isolated recovery environment uses the ADDNS servers for name resolution. The ADDNS servers use the {{site.data.keyword.cloud_notm}} DNS service for requests that they cannot resolve directly.
 

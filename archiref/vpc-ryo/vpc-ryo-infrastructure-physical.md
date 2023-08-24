@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2023
 
-lastupdated: "2023-03-30"
+lastupdated: "2023-08-17"
 
 subcollection: vmwaresolutions
 
@@ -37,9 +37,9 @@ Various configurations for CPU, RAM, and storage are available to satisfy differ
 * **2** represents the current generation of processors (Cascade Lake).
 * **d** represents NVMe U.2 SSDs.
 * The field between the two dashes is "metal" for {{site.data.keyword.cloud_notm}} bare metal server.
-* The field after the second dash contains information on the number of vCPU and the memory size (in GB). For example, "192x768" means that this profile has 192 vCPU and a memory of 768 GB.
+* The field after the second dash contains information about the number of vCPU and the memory size (in GB). For example, "192x768" means that this profile has 192 vCPU and a memory of 768 GB.
 
-The previous example shows a **Balanced bare metal** profile with **192 vCPU** and **768 GB memory**. The profile has the **Cascade Lake processors** and **NVMe U.2 SSDs for additional storage**. For a detailed listing of available profiles with their specifications for the VMware {{site.data.keyword.cloud_notm}} bare metal server for {{site.data.keyword.vpc_short}}, see the [Profiles for IBM Cloud Bare Metal Servers for VPC](/docs/vpc?topic=vpc-bare-metal-servers-profile&interface=ui).
+The previous example shows a **Balanced bare metal** profile with **192 vCPU** and **768 GB memory**. The profile has the **Cascade Lake processors** and **NVMe U.2 SSDs for additional storage**. For a detailed listing of available profiles with their specifications for the VMware {{site.data.keyword.cloud_notm}} bare metal server for {{site.data.keyword.vpc_short}}, see the [x86-64 bare metal server profiles](/docs/vpc?topic=vpc-bare-metal-servers-profile&interface=ui).
 
 Each bare metal server for {{site.data.keyword.vpc_short}} is located in the {{site.data.keyword.vpc_short}} in {{site.data.keyword.cloud_notm}} multizone region in a specified zone.
 {: note}
@@ -78,7 +78,7 @@ In this architecture, VLAN interfaces are used in many ways:
 
 Both PCI and VLAN interfaces can be attached to a VPC security group, and security group rules can be applied to these interfaces. Also, VPC ACLs can be used to control inbound and outbound traffic for a subnet to which these PCI and VLAN interfaces are attached.
 
-For more information about the networking concepts, see [Networking overview for IBM Cloud Bare Metal Servers on VPC](/docs/vpc?topic=vpc-bare-metal-servers-network).
+For more information about the networking concepts, see [Networking overview Bare Metal Servers on VPC](/docs/vpc?topic=vpc-bare-metal-servers-network).
 
 ## Storage design
 {: #vpc-ryo-infrastructure-physical-storage}
@@ -107,17 +107,17 @@ When provisioning a server, you can select it from multiple profiles with a vari
 
 When you configure vSAN, depending on the bare metal server profile and included SSDs, you can use one or more vSAN disk groups, with one solid-state disk (SSD) for cache and one or more SSDs for capacity.
 
-For more information about vSAN design, see [Virtual infrastructure design](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-ryo-infrastructure-virtual)
+For more information about vSAN design, see [Virtual infrastructure design](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-ryo-infrastructure-virtual).
 
 ### Shared file-level storage across hosts
 {: #vpc-ryo-infrastructure-physical-storage-shared}
 
-The {{site.data.keyword.cloud_notm}} file storage for {{site.data.keyword.vpc_short}} is a zonal file storage offering that provides NFS-based file storage services for VPC customers. File shares are created in an availability zone within a region. They can be shared with multiple server instances within the same zone across multiple VPCs.
+The {{site.data.keyword.filestorage_vpc_full_notm}} is a zonal file storage offering that provides NFS-based file storage services for VPC customers. File shares are created in an availability zone within a region. They can be shared with multiple server instances within the same zone across multiple VPCs.
 
 The network attached storage for this architecture is limited to the {{site.data.keyword.vpc_short}} storage, which is available in the same {{site.data.keyword.vpc_short}} zone as the {{site.data.keyword.cloud_notm}} bare metal server.
 {: note}
 
-If you choose to use this file storage from {{site.data.keyword.vpc_short}}, you can attach an NFS share to your selected ESXi hosts and VMware clusters. This share can be used for management components such as vCenter Server, VMware NSX-T managers and NSX-T edge nodes, or for other VMware workloads and VMs.
+If you choose to use this {{site.data.keyword.filestorage_vpc_full_notm}}, you can attach an NFS share to your selected ESXi hosts and VMware clusters. This share can be used for management components such as vCenter Server, VMware NSX-T managers and NSX-T edge nodes, or for other VMware workloads and VMs.
 
 These file shares are accessible only within the zone in which you created them, for example `us-south-1`. They are identified by name and associated with a resource group in your {{site.data.keyword.cloud_notm}} customer account.
 
@@ -133,16 +133,16 @@ With custom IOPS profiles, you can choose the performance that you want, by sele
 
 The storage is attached by using the NFS v4.1 protocol to your hosts. To create an NFS mount path, you need to create mount targets. A mount target for a file share is a network endpoint or path. When you create a mount target, an NFS mount path is created for the file share. You can create a mount target by providing a VPC or subnet information. If you want to connect a file share to instances that are running in multiple VPCs in the same zone, you can create multiple mount targets for different VPCs.
 
-For more information about the shared storage, see [File Storage for VPC](/docs/vpc?topic=vpc-file-storage-vpc-about&interface=ui).
+For more information about the shared storage, see [About {{site.data.keyword.filestorage_vpc_short}}](/docs/vpc?topic=vpc-file-storage-vpc-about&interface=ui).
 
 ## Related links
 {: #vpc-ryo-infrastructure-physical-links}
 
-* [{{site.data.keyword.vpc_short}} getting started](/docs/vpc?topic=vpc-getting-started)
-* [{{site.data.keyword.vpc_short}} Bare Metal Servers](/docs/vpc?topic=vpc-planning-for-bare-metal-servers)
-* [{{site.data.keyword.vpc_short}} RYO VMware reference architecture](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-ryo-arch-overview)
-* [{{site.data.keyword.dl_full_notm}} overview](/docs/dl?topic=dl-get-started-with-ibm-cloud-dl)
-* [{{site.data.keyword.tg_full_notm}} overview](/docs/transit-gateway?topic=transit-gateway-getting-started)
-* [{{site.data.keyword.vpc_short}} VPN overview](/docs/vpc?topic=vpc-vpn-overview)
+* [Getting started with {{site.data.keyword.vpc_short}}](/docs/vpc?topic=vpc-getting-started)
+* [Planning for Bare Metal Servers on VPC](/docs/vpc?topic=vpc-planning-for-bare-metal-servers)
+* [Architecture overview of roll-your-own VMware solution on VPC](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-ryo-arch-overview)
+* [Getting started with IBM Cloud Direct Link](/docs/dl?topic=dl-get-started-with-ibm-cloud-dl)
+* [Getting started with IBM Cloud Transit Gateway](/docs/transit-gateway?topic=transit-gateway-getting-started)
+* [VPNs for VPC overview](/docs/vpc?topic=vpc-vpn-overview)
 * [VPC IaaS endpoints](/docs/vpc?topic=vpc-service-endpoints-for-vpc#infrastructure-as-a-service-iaas-endpoints)
-* [VMware on Bare Metal VPC tutorial](/docs/solution-tutorials?topic=solution-tutorials-vpc-bm-vmware)
+* [Deploying Roll Your Own VMware on IBM Cloud Bare Metal Servers for Virtual Private Cloud](/docs/solution-tutorials?topic=solution-tutorials-vpc-bm-vmware)

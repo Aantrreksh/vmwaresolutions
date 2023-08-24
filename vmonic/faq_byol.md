@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-05-25"
+lastupdated: "2023-07-28"
 
 keywords: FAQ, license, BYOL
 
@@ -68,5 +68,5 @@ IBM Support continues to be your point of contact for any instance configuration
 {: #faq_byol-related}
 
 * [Accessing the console](/docs/vmwaresolutions?topic=vmwaresolutions-loginmethod)
-* [Contacting IBM Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support)
+* [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support)
 * [FAQ about licensing](/docs/vmwaresolutions?topic=vmwaresolutions-faq_licensing)

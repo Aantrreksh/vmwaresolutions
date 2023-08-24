@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2023
 
-lastupdated: "2023-06-30"
+lastupdated: "2023-08-17"
 
 keywords: data encryption in VMware Solutions, data storage for VMware Solutions, bring your own keys for VMware Solutions, BYOK for VMware Solutions, key management for VMware Solutions, key encryption for VMware Solutions, personal data in VMware Solutions, data deletion for VMware Solutions, data in VMware Solutions, data security in VMware Solutions
 
@@ -29,12 +29,11 @@ When a user onboards to VMware Solutions and orders instances, we store and mana
    * IBMid (email)
    * Instance configuration information
    * Instance access information such as login credentials to VMware Cloud Director, VMware vCenter Server®, and VMware NSX® Manager.
-* For vCenter Server, the user data includes the following items:
-   * {{site.data.keyword.cloud_notm}} classic infrastructure credentials (username and API key)
+* Additionally for vCenter Server, the user data also includes the {{site.data.keyword.cloud_notm}} classic infrastructure credentials (username and API key).
 
 This configuration data and metadata is stored and managed by IBM. It is encrypted at REST and in transit. Additionally, sensitive data such as API key and access information are encrypted with customer–specific encryption keys.
 
-With vCenter Server, you can bring your own data to {{site.data.keyword.cloud_notm}} bare metal servers and {{site.data.keyword.cloud_notm}} File and Block storage that is managed by your VMware instance. All of this data is managed by you and not managed by IBM, and you have the option of encrypting it using various solutions.
+With vCenter Server, you can bring your own data to {{site.data.keyword.cloud_notm}} bare metal servers and {{site.data.keyword.filestorage_full_notm}} and {{site.data.keyword.cloud_notm}} {{site.data.keyword.blockstorageshort}} that is managed by your VMware instance. All of this data is managed by you and not managed by IBM, and you have the option of encrypting it using various solutions.
 
 These solutions include the following options:
 * KMIP™ for VMware service along with {{site.data.keyword.cloud_notm}} Key Protect or {{site.data.keyword.cloud_notm}} Hyper Protect Crypto Services to enable vSAN™ or VMware vSphere® encryption for your workloads
@@ -47,7 +46,7 @@ If you use VMware Shared, your workload data exists in an IBM–managed cloud in
 
 When you onboard to VMware Shared and order instances, you can get extra services, such as Veeam Availability Suite™, which is relevant to data storage and encryption.
 
-The Veeam Availability Suite backup storage uses a unique scale-out backup repository (SOBR) object for each customer. The SOBR is programmatically configured for each customer, with a dedicated location on each disk and a generated backup file encryption password. The SOBR includes an extent that is backed by IBM block storage in each of the physical data centers within the specific region. For example, if the virtual data center is in **Dallas 10**, the SOBR has extents in **Dallas 10**, **Dallas 12**, and **Dallas 13**. The SOBR includes a customer-specific Cloud Object Storage bucket for more cost-effective long-term storage and as a second copy. Depending on the regions and compliance requirements of each geography, the Cloud Object Storage buckets remain in the same country, which is sometimes the same physical site.
+The Veeam Availability Suite backup storage uses a unique scale-out backup repository (SOBR) object for each customer. The SOBR is programmatically configured for each customer, with a dedicated location on each disk and a generated backup file encryption password. The SOBR includes an extent that is backed by {{site.data.keyword.blockstoragefull}} in each of the physical data centers within the specific region. For example, if the virtual data center is in **Dallas 10**, the SOBR has extents in **Dallas 10**, **Dallas 12**, and **Dallas 13**. The SOBR includes a customer-specific Cloud Object Storage bucket for more cost-effective long-term storage and as a second copy. Depending on the regions and compliance requirements of each geography, the Cloud Object Storage buckets remain in the same country, which is sometimes the same physical site.
 
 When you decide to use the Veeam self-service portal to create backup jobs, identify which vApp and VM instances from any virtual data center in the organization participate in the backup job. Those backups are stored in the organizations SOBR.
 
@@ -67,7 +66,7 @@ You can manage (restore or delete) backups in the Veeam self-service portal. All
 
 For vCenter Server, you can take steps to limit {{site.data.keyword.cloud_notm}} access to your instance. These steps can include the following actions:
 * You must create a functional {{site.data.keyword.cloud_notm}} account to own the API key that you provide to VMware Solutions for provisioning. Ensure that you monitor the mailbox of this account for notices.
-* You can regenerate this API key to revoke automation and support access to your API key. When you need to restore {{site.data.keyword.cloud_notm}} access, for example, to deploy a new host, you must reenter the API key in the VMware Solutions Settings page.
+* You can regenerate this API key to revoke automation and support access to your API key. When you need to restore {{site.data.keyword.cloud_notm}} access, for example, to deploy a new host, you must reenter the API key on the **Settings** page of the VMware Solutions console.
 * {{site.data.keyword.cloud_notm}} retains a set of [user IDs](/docs/vmwaresolutions?topic=vmwaresolutions-audit_user_ids) in your instance. You can disable or revoke these user IDs. When you need to restore {{site.data.keyword.cloud_notm}} access, for example, to deploy a new host, you must re-enable these accounts. If you changed the password for these accounts, you must open a support ticket to provide the updated password to {{site.data.keyword.cloud_notm}}.
 
 ### About customer-managed keys

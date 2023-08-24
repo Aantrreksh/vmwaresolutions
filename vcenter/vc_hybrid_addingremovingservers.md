@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-06-16"
+lastupdated: "2023-07-17"
 
 keywords: vCenter Server Hybridity add host, add server vCenter Server Hybridity, remove host vCenter Server Hybridity
 
@@ -101,11 +101,3 @@ If you are adding ESXi servers during maintenance mode, virtual machines (VMs) a
 
    You are billed until the end of the {{site.data.keyword.cloud_notm}} infrastructure billing cycle for the deleted ESXi servers.
    {: note}
-
-## Related links
-{: #vc_hybrid_addingremovingservers-related}
-
-* [vCenter Server BOM](/docs/vmwaresolutions?topic=vmwaresolutions-vc_bom)
-* [Adding, viewing, and deleting clusters for vCenter Server with Hybridity Bundle instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_hybrid_addingviewingclusters)
-* [Place a host in maintenance mode](https://docs.vmware.com/en/VMware-vSphere/6.0/com.vmware.vsphere.resmgmt.doc/GUID-8F705E83-6788-42D4-93DF-63A2B892367F.html){: external}
-* [Enhanced vMotion Compatibility (EVC) processor support](https://kb.vmware.com/s/article/1003212){: external}

@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2023
 
-lastupdated: "2023-06-02"
+lastupdated: "2023-08-21"
 
 keywords: planning VMware Solutions Shared, data center, VMware Solutions Shared data centers
 
@@ -43,23 +43,23 @@ The VMware Shared deployment has strict requirements on the physical infrastruct
 
 The following {{site.data.keyword.cloud_notm}} data centers are available for VMware Shared deployment.
 
-| Geography | Site | Location | vSAN support | Multizone support |
-|:----------|:----------|:----------|:-------|:-------|
-| Europe | Frankfurt Director 01 | Frankfurt 02 | None | No |
-| Europe | Frankfurt Director 01 | Frankfurt 04 | None | No |
-| Europe | Frankfurt Director 01 | Frankfurt 05 | None | No |
-{: caption="Table 1. Available {{site.data.keyword.cloud_notm}} data centers for deployment" caption-side="bottom"}
+| Site | Location | vSAN support | Multizone support |
+|:---- |:-------- |:------------ |:----------------- |
+| Frankfurt Director 01 | Frankfurt 02 | None | No |
+| Frankfurt Director 01 | Frankfurt 04 | None | No |
+| Frankfurt Director 01 | Frankfurt 05 | None | No |
+{: caption="Table 1. Available {{site.data.keyword.cloud_notm}} data centers for deployment - Europe" caption-side="bottom"}
 {: tab-title="Europe"}
 {: tab-group="Data centers for deployment"}
 {: class="simple-tab-table"}
 {: #simpletabtable-cr-eur}
 
-| Geography | Site | Location | vSAN support | Multizone support |
-|:----------|:----------|:----------|:-------|:-------|
-| North America | Dallas Director 01 | Dallas 10 | vSAN | No |
-| North America | Dallas Director 01 | Dallas 12 | vSAN | No |
-| North America | Dallas Director 01 | Dallas 13 | vSAN | No |
-{: caption="Table 1. Available {{site.data.keyword.cloud_notm}} data centers for deployment" caption-side="bottom"}
+| Site | Location | vSAN support | Multizone support |
+|:---- |:-------- |:------------ |:----------------- |
+| Dallas Director 01 | Dallas 10 | vSAN | No |
+| Dallas Director 01 | Dallas 12 | vSAN | No |
+| Dallas Director 01 | Dallas 13 | vSAN | No |
+{: caption="Table 1. Available {{site.data.keyword.cloud_notm}} data centers for deployment - North America" caption-side="bottom"}
 {: tab-title="North America"}
 {: tab-group="Data centers for deployment"}
 {: class="simple-tab-table"}
@@ -83,14 +83,14 @@ Review [VMware Cloud Director 10.4 Configuration Limits](https://configmax.esp.v
 ### 10,000 vApps per Cloud Director organization
 {: #shared_ordering-cloud-dir-limits-vapp}
 
-One of the configuration limits in VMware Cloud Director is a maximum of 10,000 vApps per Cloud Director organization. In VMware Shared, this means you cannot have more than 10,000 vApps in a single account in a particular site location since each site location is the same Cloud Director instance. For more information about sites and VMware Cloud Director, see [VMware Shared overview](/docs/vmwaresolutions?topic=vmwaresolutions-shared_overview).
+One of the configuration limits in VMware Cloud Director is a maximum of 10,000 vApps per Cloud Director organization. In VMware Shared, it means you cannot have more than 10,000 vApps in a single account in a particular site location since each site location is the same Cloud Director instance. For more information about sites and VMware Cloud Director, see [VMware Shared overview](/docs/vmwaresolutions?topic=vmwaresolutions-shared_overview).
 
 If you need more than 10,000 vApps in a single account, consider the following design options.
 
 * Increase the number of virtual machines in each vApp.
-* Use a separate account in that region to host additional vApps.
+* Use a separate account in that region to host more vApps.
 
-The number of VMware Shared instances (or virtual data centers) do not impact this limit.
+The number of VMware Shared instances (or virtual data centers) does not impact this limit.
 {: note}
 
 ## Related links

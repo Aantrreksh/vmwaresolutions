@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2023
 
-lastupdated: "2023-03-24"
+lastupdated: "2023-07-17"
 
 subcollection: vmwaresolutions
 
@@ -86,5 +86,5 @@ When you design or deploy this architecture pattern, consider the following step
 ## Related links
 {: #arch-pattern-3rd-party-router-links}
 
-* [VMware vSphere overview](/docs/vmwaresolutions?topic=vmwaresolutions-vs_vsphereclusteroverview)
+* [VMware vSphere overview](/docs/vmwaresolutions?topic=vmwaresolutions-vs_vsphereoverview)
 * [About {{site.data.keyword.cloud_notm}} Gateway Appliance](/docs/gateway-appliance?topic=gateway-appliance-about)

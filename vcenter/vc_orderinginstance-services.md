@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-06-12"
+lastupdated: "2023-07-31"
 
 keywords: services for vCenter Server instance, order vCenter Server services, add-on services
 
@@ -32,7 +32,6 @@ The following services are recommended with your vCenter Server instance. The re
 Optionally, you can choose to install the following services:
 * [VMware HCX](/docs/vmwaresolutions?topic=vmwaresolutions-hcx_considerations)
 * [Zerto](/docs/vmwaresolutions?topic=vmwaresolutions-addingzertodr)
-* [Entrust CloudControl](/docs/vmwaresolutions?topic=vmwaresolutions-entrust-cc_considerations)
 * [F5 BIG-IP](/docs/vmwaresolutions?topic=vmwaresolutions-f5_considerations)
 * [FortiGate Virtual Appliance](/docs/vmwaresolutions?topic=vmwaresolutions-fortinetvm_considerations)
 * [Juniper vSRX](/docs/vmwaresolutions?topic=vmwaresolutions-juniper-overview)

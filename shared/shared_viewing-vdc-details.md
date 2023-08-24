@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2023
 
-lastupdated: "2023-02-22"
+lastupdated: "2023-07-28"
 
 keywords: manage shared resources, view shared virtual data centers details
 
@@ -56,7 +56,7 @@ You can view property details for VMware Shared sites and virtual data centers. 
 ### Opening a support ticket for additional IP addresses or subnet
 {: #shared_viewing-vdc-details-support}
 
-To request five additional public IP addresses or an entire subnet for your virtual data center, open an IBM Support ticket by following the steps in [Contacting IBM Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support). 
+To request five additional public IP addresses or an entire subnet for your virtual data center, open an IBM Support ticket by following the steps in [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support). 
 
 Include the following details in your support ticket:
 * Virtual data center region and location

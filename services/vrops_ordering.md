@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2023
 
-lastupdated: "2023-06-12"
+lastupdated: "2023-07-28"
 
 keywords: VMware Aria, VMware Aria configuration, order VMware Aria, vRealize
 
@@ -41,4 +41,4 @@ You can include the VMware Aria® Operations™ and VMware Aria Operations™ fo
 * [VMware Aria Operations and VMware Aria Operations for Logs overview](/docs/vmwaresolutions?topic=vmwaresolutions-vrops_overview)
 * [Managing VMware Aria Operations and VMware Aria Operations for Logs](/docs/vmwaresolutions?topic=vmwaresolutions-managing_vrops)
 * [Ordering services for vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices)
-* [Contacting IBM Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support)
+* [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support)

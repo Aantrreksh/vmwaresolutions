@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2023
 
-lastupdated: "2023-06-20"
+lastupdated: "2023-07-27"
 
 keywords: monitor, default dashboard, custom dashboard, virtual data center, platform metrics, monitoring
 
@@ -15,7 +15,7 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Visualizing your virtual data center environment with IBM Cloud Monitoring
+# Visualizing your virtual data center environment with {{site.data.keyword.mon_full_notm}}
 {: #shared-monitor}
 
 VMware Shared provides an integration with {{site.data.keyword.mon_full}}, which allows you to use a dashboard, provided by VMware Shared to view metrics for your virtual data centers. Alternatively, you can create your own dashboard to visualize performance, volume of usage, and to define alerts to monitor your environment.
@@ -27,9 +27,9 @@ Use {{site.data.keyword.mon_short}} dashboards to complete the following tasks.
 * Control cost of monitoring infrastructure.
 * Mitigate impact of abnormal situations with proactive notifications.
 
-For more information about the benefits of using {{site.data.keyword.mon_short}}, see the *Features* section in [Monitoring getting started tutorial](/docs/monitoring?topic=monitoring-getting-started#getting-started-features).
+For more information about the benefits of using {{site.data.keyword.mon_short}}, see [Getting started with {{site.data.keyword.mon_full_notm}}](/docs/monitoring?topic=monitoring-getting-started#getting-started-features).
 
-## Provisioning an IBM Cloud Monitoring instance
+## Provisioning an {{site.data.keyword.mon_full_notm}} instance
 {: #shared-monitor-create-instance}
 
 Before you can view platform metrics for your virtual data center, you must order a {{site.data.keyword.mon_short}} instance.
@@ -68,16 +68,76 @@ VMware Shared provides the following metrics for the default dashboard:
 Metrics updates can be delayed by up to 60 minutes.
 {: note}
 
+### VMware virtual data center vCPU usage
+{: #shared-monitor-metrics-vcpu-usage}
+
+The following table displays the total usage of the virtual data center vCPU.
+
+| Metadata | Description |
+|:-------- |:----------- |
+| `Metric Name` | `ibm_vmwaresolutions_vdc_vcpu_usage` | 
+| `Metric Type` | `gauge` |
+| `Unit` | `none` |
+| `Segment By` | `Service instance ID` |
+{: caption="Table 1. Virtual data center vCPU usage" caption-side="bottom"}
+
+### VMware virtual data center vCPU allocation
+{: #shared-monitor-metrics-vcpu-allocation}
+
+The following table displays the total allocation of the virtual data center vCPU.
+
+| Metadata | Description |
+|:-------- |:----------- |
+| `Metric Name` | `ibm_vmwaresolutions_vdc_vcpu_allocation` |
+| `Metric Type` | `gauge` |
+| `Unit` | `none` |
+| `Segment By` | `Service instance ID` |
+{: caption="Table 2. Virtual data center vCPU allocation" caption-side="bottom"}
+
+### VMware virtual data center memory usage
+{: #shared-monitor-metrics-memory-usage}
+
+The following table displays the total usage of the virtual data center memory.
+
+| Metadata | Description |
+|:-------- |:----------- |
+| `Metric Name` | `ibm_vmwaresolutions_vdc_memory_usage` |
+| `Metric Type` | `gauge` |
+| `Unit` | `byte` |
+| `Segment By` | `Service instance ID` |
+{: caption="Table 3. Virtual data center memory usage" caption-side="bottom"}
+
+### VMware virtual data center memory allocation
+{: #shared-monitor-metrics-memory-allocation}
+
+The following table displays the total allocation of the virtual data center memory.
+
+| Metadata | Description |
+|:-------- |:----------- |
+| `Metric Name` | `ibm_vmwaresolutions_vdc_memory_allocation`|
+| `Metric Type` | `gauge` |
+| `Unit` | `byte` |
+| `Segment By` | `Service instance ID` |
+{: caption="Table 4. Virtual data center memory allocation" caption-side="bottom"}
+
+### VMware virtual data center storage usage
+{: #shared-monitor-metrics-storage-usage}
+
+The following table displays the total usage of the virtual data center storage.
+
+| Metadata | Description |
+|:-------- |:----------- |
+| `Metric Name` | `ibm_vmwaresolutions_vdc_storage_usage`|
+| `Metric Type` | `gauge` |
+| `Unit` | `byte` |
+| `Segment By` | `Service instance ID` |
+{: caption="Table 5. Virtual data center storage usage" caption-side="bottom"}
+
 ## Customizing your VMware Shared dashboard
 {: #shared-monitor-view-customize}
 
-You can optionally customize your dashboard.
+You can customize your dashboard.
 
 1. In the {{site.data.keyword.mon_short}} console, click **Dashboards** from the left navigation pane.
-2. Click the **IBM** menu and click **VMware Shared**.
+2. Click the **IBM** menu and click **VMware Solutions Shared**.
 3. Customize your dashboard. For more information, see [Dashboards](/docs/monitoring?topic=monitoring-monitoring#monitoring_dashboards).
-
-## Related links
-{: #shared-monitor-related}
-
-* [{{site.data.keyword.cloud_notm}} Monitoring getting started tutorial](/docs/monitoring?topic=monitoring-getting-started)

@@ -4,7 +4,7 @@ copyright:
 
   years:  2023
 
-lastupdated: "2023-06-20"
+lastupdated: "2023-08-21"
 
 keywords: view vmware vSphere, view instance, view instance details, instance view vmware vSphere
 
@@ -24,9 +24,9 @@ View the summary and detailed information of the VMware vSphere® instances that
 
 To view a summary of all the VMware vSphere instances that are provisioned for a user account, complete the following steps:
 
-1. From the {{site.data.keyword.vmwaresolutions_full}} console, click **Resources > vSphere** from the left navigation pane.
+1. In the {{site.data.keyword.vmwaresolutions_full}} console, click **Resources > VMware vSphere** from the left navigation pane.
 2. From the console banner, click the **Avatar** icon ![Avatar icon](../../icons/i-avatar-icon.svg "Avatar"), and then click the **Account** field. Select the user account that you want to check instances for.
-3. In the **vSphere** table, view the list of instances that are provisioned in the selected user account.
+3. In the **VMware vSphere** table, view the list of instances that are provisioned in the selected user account.
 
 | Item | Description |
 |:---- |:----------- |
@@ -34,7 +34,7 @@ To view a summary of all the VMware vSphere instances that are provisioned for a
 | Location | The {{site.data.keyword.cloud_notm}} data center where the instance is hosted. |
 | Creation time | The date and time when the instance was created. |
 | Status | The status of the instance. |
-{: caption="Table 1. VMware vSphere instance items" caption-side="bottom"}
+{: caption="Table 1. VMware vSphere summary" caption-side="bottom"}
 
 The instance can have different statuses.
 
@@ -48,14 +48,14 @@ The instance can have different statuses.
 | Deleting | The instance is being deleted. |
 | Deletion error | An error occurred when the instance was being deleted. |
 | Deleted | The instance is deleted. |
-{: caption="Table 2. VMware vSphere instances status descriptions" caption-side="bottom"}
+{: caption="Table 2. VMware vSphere statuses" caption-side="bottom"}
 
 ## Procedure to view details for VMware vSphere instances
 {: #vs_viewinginstances-procedure-view-inst-property}
 
 To view the property details of an instance, complete the following steps.
 
-1. In the **vSphere** table, click an instance name.
+1. In the **VMware vSphere** table, click an instance name.
 2. On the **Summary** tab, view the details for the instance.
 
    | Property | Description |
@@ -70,7 +70,7 @@ To view the property details of an instance, complete the following steps.
 
    [^subdomain]: Existing vSphere 6 instances only
 
-3. On the **Infrastructure** tab, view the ESXi server and the network interface details.
+3. Click the **Infrastructure** tab to view the ESXi server and the network interface details.
 
    | Item | Description |
    |:---- |:----------- |
@@ -121,32 +121,11 @@ To view the property details of an instance, complete the following steps.
    {: tab-title="IP details"}
    {: tab-group="Network interface VLAN details"}
 
-## Procedure to view license details for VMware vSphere instances
-{: #vs_viewinginstances-procedure-view-licensing}
+5. Click the **Licensing** tab to view details about the existing licenses. You can also add licenses if any are available that you haven’t purchased yet.
 
-On the **Licensing** tab, view details about the existing licenses in the instance.
+6. Click the **Deployment history** tab to view the deployment history for the instance.
 
-| Item | Description |
-|:---- |:----------- |
-| Type | The VMware component that the license is for. |
-| License key | The license key, which you can view and copy. |
-{: caption="Table 6. VMware vSphere instance license details" caption-side="bottom"}
-
-## Procedure to view deployment history for VMware vSphere instances
-{: #vs_viewinginstances-procedure-view-deploy-history}
-
-On the **Deployment history** tab, view the deployment history for the instance.
-
-| Item | Description |
-|:---- |:----------- |
-| Date | The date and time when the instance status is changed. |
-| Summary | The details of the change. |
-{: caption="Table 7. VMware vSphere instance deployment history" caption-side="bottom"}
-
-### What to do if errors occur
-{: #vs_viewinginstances-if-errors-occur}
-
-If you see errors in the deployment history, the {{site.data.keyword.cloud_notm}} Support team is automatically notified. To inquire about the status of your ticket, follow the steps in [Contacting IBM Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support).
+   If you see errors in the deployment history, the {{site.data.keyword.cloud_notm}} Support team is automatically notified. To inquire about the status of your ticket, follow the steps in [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support).
 
 ## What to do next
 {: #vs_viewinginstances-next}
@@ -155,7 +134,7 @@ Manage your instances from the VMware Solutions console or the VMware vSphere We
 
 Review the following topics for information to help you complete the login instructions:
 * For the requirements and necessary steps before you access the vSphere Web Client, see [Timeout reached while connecting to the vSphere Web Client](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_timeout_vc_console).
-* For a list of access points to log in to the {{site.data.keyword.cloud_notm}} infrastructure Private Network by using VPN, see [VPN access](https://www.ibm.com/cloud/vpn-access){: external}.
+* For a list of access points to log in to the {{site.data.keyword.cloud_notm}} infrastructure Private Network by using VPN, see [Getting started with IBM Cloud Virtual Private Networking](/docs/iaas-vpn?topic=iaas-vpn-getting-started).
 * If you have problems when you deploy an OVF (Open Virtualization Format) file by using the vSphere Web Client, see [Deploying an OVF file using the vSphere Web Client](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_deploy_ovf).
 
 ## Related links

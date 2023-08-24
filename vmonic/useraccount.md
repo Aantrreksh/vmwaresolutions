@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-06-30"
+lastupdated: "2023-07-13"
 
 keywords: set credentials, update credentials, set notifications, IAM user, invite user
 
@@ -48,7 +48,7 @@ If email or console notifications are enabled for certain instance events, you'r
 ## Updating user account credentials
 {: #useraccount-set-cred}
 
-The requirement to update user account credentials applies only to the following offerings: VMware vSphere, VMware vCenter Server, VMware Regulated Workloads, and Cyber Recovery.
+The information about updating user account credentials applies only to the following offerings: VMware vSphere, VMware vCenter Server, VMware Regulated Workloads, and Cyber Recovery.
 {: note}
 
 {{site.data.keyword.vmwaresolutions_short}} communicates with the {{site.data.keyword.cloud_notm}} infrastructure through {{site.data.keyword.slapi_short}} calls. To access the {{site.data.keyword.slapi_short}} securely, you must link the credentials of your {{site.data.keyword.cloud_notm}} infrastructure account to your {{site.data.keyword.cloud_notm}} account. After your first order, you can update the user account credentials on the **Settings** page.
@@ -60,7 +60,7 @@ The requirement to update user account credentials applies only to the following
 * The {{site.data.keyword.cloud_notm}} infrastructure account that you're using must meet certain requirements. For more information, see [The {{site.data.keyword.cloud_notm}} infrastructure account](/docs/vmwaresolutions?topic=vmwaresolutions-signing_required_accounts#signing_required_accounts-infra).
 * If the API key for your {{site.data.keyword.cloud_notm}} infrastructure account changes, you must update the key on the **Settings** page in the {{site.data.keyword.vmwaresolutions_short}} console.
 
-   It is your responsibility to ensure that the API key that is saved on the **Settings** page is correct and up-to-date. Otherwise, operations that require API key validation might fail.
+   It is your responsibility to ensure that the API key that is saved on the **Settings** page is correct and up-to-date. Otherwise, operations that require API key validation, such as price calculation for your order, might fail.
    {: important}
 
 ### Procedure to update user account credentials

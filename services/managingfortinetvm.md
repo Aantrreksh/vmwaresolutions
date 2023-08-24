@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2022
+  years:  2016, 2023
 
-lastupdated: "2022-06-20"
+lastupdated: "2023-07-28"
 
 keywords: FortiGate console, FortiGate VA, login FortiGate console
 
@@ -31,7 +31,7 @@ For more information, see [Ordering services for vCenter Server instances](/docs
 {: #managingfortinetvm-related}
 
 * [FortiGate Virtual Appliance overview](/docs/vmwaresolutions?topic=vmwaresolutions-fortinetvm_considerations)
-* [Contacting {{site.data.keyword.IBM}} Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support)
+* [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support)
 * [FAQ](/docs/vmwaresolutions?topic=vmwaresolutions-faq-vmwaresolutions)
 * [fortinet.com website](https://www.fortinet.com/){: external}
 * [Fortinet document library](https://docs.fortinet.com/product/fortigate/6.2){: external}

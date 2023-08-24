@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-06-13"
+lastupdated: "2023-07-19"
 
 keywords: vmware vSphere order instance, order vSphere, order vmware vSphere instance
 
@@ -17,20 +17,33 @@ subcollection: vmwaresolutions
 # General information
 {: #vs_orderinginstances-sys-settings}
 
-The information that you specify for a new VMware vSphere® instance is based on a cluster configuration template.
+The information that you specify for a new VMware vSphere® instance is based on an instance configuration template.
 
-## Cluster configurations
-{: #vs_orderinginstance-cluster-config}
+## Instance configuration name
+{: #vs_orderinginstance-instance-config}
 
-* You can specify settings for an instance and place the order, or save the settings as a configuration template without placing an order.
-* You can also select a saved configuration template to further update it, and then save it as a new configuration template.
+{{site.data.content.paraone-orderinginstance-inst-config}}
 
-## Cluster name
-{: #vs_orderinginstances-cluster-name}
+{{site.data.content.paratwo-orderinginstance-inst-config}}
 
-The cluster name is set to **vss-_xx_** by default, where _xx_ represents two randomly generated alphabetic characters.
+## Instance name
+{: #vs_orderinginstances-instance-name}
 
-{{site.data.content.orderinginstance-cluster-name-list}}
+The instance name is set to **vss-_xx_** by default, where _xx_ represents two randomly generated alphabetic characters.
+
+You can also specify an instance name that meets the following requirements:
+* Only lowercase alphabetic, numeric, and dash (-) characters are allowed.
+* The instance name must start with a lowercase alphabetic character.
+* The instance name must end with a lowercase alphabetic or numeric character.
+* The maximum length of the instance name is 10 characters.
+* The instance name must be unique within your account.
+
+## Resource group
+{: #vs_orderinginstance-resource-group}
+
+{{site.data.content.para-orderinginstance-resource-group}}
+
+{{site.data.content.note-orderinginstance-resource-group}}
 
 ## Related links
 {: #vs_orderinginstances-sys-related}

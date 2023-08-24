@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2023
 
-lastupdated: "2023-03-28"
+lastupdated: "2023-07-28"
 
 keywords: Red Hat OpenShift for VMware, OpenShift configuration, order OpenShift
 
@@ -62,5 +62,5 @@ Alternately, you can configure your local `hosts` file with the following entrie
 {: #ocp_ordering-related}
 
 * [Ordering services for vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices)
-* [Contacting IBM Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support)
+* [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support)
 * [FAQ](/docs/vmwaresolutions?topic=vmwaresolutions-faq-vmwaresolutions)

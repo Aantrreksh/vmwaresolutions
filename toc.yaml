@@ -22,8 +22,13 @@ toc:
       - topic: index.md
         navtitle: Getting started
       - vmonic/inst_comp_chart.md
-      - topic: vmonic/release-notes.md
-      - vmonic/additional_resources.md
+      - topicgroup:
+          label: Release notes
+          topics:
+          - topic: vmonic/release-notes.md
+          - link:
+              label: Release notes for VMware as a Service
+              href: https://{DomainName}/docs/vmware-service?topic=vmware-service-vmware-service-relnotes
 
   - navgroup:
       id: howto
@@ -48,7 +53,6 @@ toc:
           label: VMware as a Service
           topics:
           - include: ../vmware-service/common/vmware-aas-overview.md
-          - include: ../vmware-service/common/release-notes.md
           - topicgroup:
               label: Managing instances
               topics:
@@ -119,7 +123,7 @@ toc:
           - topicgroup:
               label: Overview
               topics:
-              - vsphere/vs_vsphereclusteroverview.md
+              - vsphere/vs_vsphereoverview.md
               - vsphere/vs_bom.md
           - vsphere/vs_planning.md
           - vsphere/vs_vsphere_70_upgrade.md
@@ -228,8 +232,8 @@ toc:
               - vrw/vrw-orderinginstance-summary.md
               - vrw/vrw-orderinginstance-procedure.md
               - vrw/vrw-apply-updates.md
-          - vrw/vrw-addingremovingservers.md
           - vrw/vrw-addingviewingclusters.md
+          - vrw/vrw-addingremovingservers.md
           - vrw/vrw-view-delete-instance.md
       - topicgroup:
           label: Cyber Recovery
@@ -283,12 +287,6 @@ toc:
               - services/caveonix_license_ordering.md
               - services/caveonix_license_managing.md
           - topicgroup:
-              label: Entrust CloudControl
-              topics:
-              - services/entrust-cc_considerations.md
-              - services/entrust-cc_ordering.md
-              - services/managing-entrust-cc.md
-          - topicgroup:
               label: F5 BIG-IP
               topics:
               - services/f5_considerations.md
@@ -331,6 +329,7 @@ toc:
               - services/managingveeam.md
               - services/veeam_ordering_licenses.md
               - services/veeam_managing_licenses.md
+              - services/veeam_expand_storage.md
               - services/icos_ordering.md
           - topicgroup:
               label: VMware Aria Operations and VMware Aria Operations for Logs
@@ -358,12 +357,6 @@ toc:
         navtitle: Dizzion
       - topic: services/managing-ss-sap.md
         navtitle: Security Services for SAP
-      - topicgroup:
-          label: PrimaryIO HDM
-          topics:
-          - services/managing_pio.md
-          - services/pio_ordering.md
-          - services/pio_installing.md
       - topicgroup:
           label: Enhancing security
           topics:
@@ -409,12 +402,12 @@ toc:
               - services/mcv_addingremovingservers.md
               - services/mcv_addingnfs.md
           - topicgroup:
-              label: VMware Regulated Workloads multizone
+              label: Regulated Workloads multizone
               topics:
               - vrw/vrw-orderinginstance-mgmt.md
               - vrw/vrw-orderinginstance-witness.md
           - topicgroup:
-              label: vCenter Server with Hybridity Bundle
+              label: vCenter Server with Hybridity
               topics:
               - vcenter/vc_hybrid_overview.md
               - vcenter/vc_hybrid_compl_info.md
@@ -423,11 +416,24 @@ toc:
               - vcenter/vc_hybrid_upgrade-lic.md
               - vcenter/vc_hybrid_addingremovingservices.md
               - vcenter/vc_hybrid_viewinginstances.md
-              - vcenter/vc_hybrid_addinstancetousraccount.md
               - vcenter/vc_hybrid_deletingbundle.md
               - vcenter/vc_hybrid_deletinginstance.md
               - vcenter/vc_hybrid_deletinginstance_multi.md
-          - vcenter/vc_addinstancetousraccount.md
+          - topicgroup:
+              label: Security and Compliance Readiness Bundle
+              topics:
+              - vcenter/scb-overview.md
+              - vcenter/scb-orderinginstance-cons-work-cluster.md
+              - vcenter/scb-orderinginstance-network.md
+              - vcenter/scb_addingviewingclusters.md
+              - vcenter/scb_addingremovingservers.md
+              - vcenter/scb_addingremovingservices.md
+              - vcenter/scb-view-delete-instance.md
+          - topicgroup:
+              label: Entrust CloudControl
+              topics:
+              - services/entrust-cc_considerations.md
+              - services/managing-entrust-cc.md
           - topicgroup:
               label: Entrust DataControl
               topics:
@@ -446,20 +452,6 @@ toc:
               - services/spp_considerations.md
               - services/managingspp.md
           - services/veeam_considerations.md
-          - topicgroup:
-              label: Security and Compliance Readiness Bundle
-              topics:
-              - vcenter/scb-overview.md
-              - vcenter/scb-orderinginstance-cons-work-cluster.md
-              - vcenter/scb-orderinginstance-network.md
-              - topic: vcenter/scb_addingviewingclusters.md
-                navtitle: Adding, viewing, and deleting clusters
-              - topic: vcenter/scb_addingremovingservers.md
-                navtitle: Adding or removing servers and storage
-              - topic: vcenter/scb_addingremovingservices.md
-                navtitle: Adding, viewing, and deleting services
-              - topic: vcenter/scb-view-delete-instance.md
-                navtitle: Viewing and deleting instances
 
 # links to your REST API docs should be included in the Reference navigation group. For details on publishing API docs, see https://test.cloud.ibm.com/docs/api-docs.
 # links to your command line reference docs should be included in the Reference navigation group.
@@ -687,6 +679,8 @@ toc:
               - archiref/veeam-cr-sag/veeam-cr-sag-instantrestore.md
               - archiref/veeam-cr-sag/veeam-cr-sag-lnxmgdsvr.md
           - archiref/cr-byo/cr-byo-overview.md
+          - archiref/cr-dell/cr-dell-overview.md
+          - archiref/cr-predatar/cr-predatar-overview.md
           - topicgroup:
               label: VMware Update Manager guide
               topics:
@@ -774,8 +768,6 @@ toc:
   - navgroup:
       id: help
       topics:
-      - vmonic/trbl_support.md
-      - vmonic/iam_verify_permissions.md
       - topicgroup:
           label: FAQs
           topics:
@@ -785,9 +777,11 @@ toc:
           - vmonic/faq_esxi.md
           - vmonic/faq_licensing.md
           - vmonic/faq_byol.md
+          - vmonic/iam_verify_permissions.md
           - vcenter/vcenter_chg_impact.md
           - vmonic/trbl_limitations.md
           - archiref/vcs/vmware-inventory-export.md
+          - vmonic/additional_resources.md
       - topicgroup:
           label: Troubleshooting
           topics:
@@ -802,3 +796,5 @@ toc:
           - vmonic/trbl_add_host_bypass.md
           - vmonic/trbl_deploy_ovf.md
           - vmonic/trbl_vsan_alerts.md
+      - topic: vmonic/trbl_support.md
+        navtitle: Getting help and support

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2022
+  years:  2016, 2023
 
-lastupdated: "2022-12-09"
+lastupdated: "2023-07-28"
 
 keywords: HCX updates, HCX management console, login HCX console
 
@@ -36,7 +36,7 @@ HCX is deployed with the most recently tested build of VMware Hybrid Cloud Exten
 
 To apply any maintenance fixes pushed to your environment, you must use the HCX Manager Admin console in your on-premises data center and your vCenter Server instance.
 
-Open an IBM Support ticket by following the steps in [Contacting IBM Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support) for the following situations:
+Open an IBM Support ticket by following the steps in [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support) for the following situations:
 * You do not see a build update that you are expecting
 * You have problems with HCX
 * You want to have the most recent HCX build pushed to your system immediately

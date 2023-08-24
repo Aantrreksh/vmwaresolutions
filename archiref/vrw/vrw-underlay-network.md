@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2023
 
-lastupdated: "2023-03-21"
+lastupdated: "2023-07-10"
 
 subcollection: vmwaresolutions
 
@@ -43,7 +43,7 @@ Traffic from the SaaS consumer passes through the vSRX in an encrypted tunnel, w
 ## Workload cluster
 {: #vrw-underlay-network-workload}
 
-The workload cluster network design is closely aligned to that of a traditional vCenter Server deployment. VLANs and subnets are provisioned to support vMotion, vSAN, VTEPS for the Software-Defined Networking (SDN) network, and workload cluster host management functions.
+The workload cluster network design is closely aligned to that of a traditional vCenter Server deployment. VLANs and subnets are provisioned to support vMotion, vSAN, TEPS for the Software-Defined Networking (SDN) network, and workload cluster host management functions.
 
 Within the workload clusters, NSX-T™ provides a highly secure and flexible software defined network to support the application requirements. NSX-T management is external to the workload cluster thus ensuring that network and security changes are not possible by anyone other than the designated administrators. All north-south network access in the workload cluster is done through private and secure connections by using IPsec or IBM Direct Link. The workload clusters are protected by the same gateway cluster with the vSRX or the physical FortiGate that protects the management plane.
 
@@ -100,7 +100,7 @@ Removing physical network connectivity to the public or private network for the 
 
 While {{site.data.keyword.cloud_notm}} does offer an SSL VPN option, this option is discouraged and should be strictly limited to situations where out of band access to the {{site.data.keyword.cloud_notm}} for VMware Regulated Workloads is essential.
 
-![Physical host connections](../../images/vrw-nics-physical.svg "Physical host connections"){: caption="Figure 2. Physical host connections" caption-side="bottom"}
+![Physical host connections](../../images/vrw-v2-net-physical.svg "Physical host connections"){: caption="Figure 2. Physical host connections" caption-side="bottom"}
 
 ### VLANs and underlay to overlay routing
 {: #vrw-underlay-network-cloud-vlans}
@@ -109,13 +109,13 @@ The {{site.data.keyword.cloud_notm}} for VMware Solutions offerings are designed
 
 The public and the first private VLAN created and assigned in this design are untagged by default within the {{site.data.keyword.cloud_notm}}. Then, the additional private VLAN is trunked on the physical switch ports and tagged within the VMware port groups that are using these subnets.
 
-![VLAN connections](../../images/vrw-nics-vlans.svg "VLAN connections"){: caption="Figure 3. VLAN connections" caption-side="bottom"}
+![VLAN connections](../../images/vrw-v2-net-physical-vlans.svg "VLAN connections"){: caption="Figure 3. VLAN connections" caption-side="bottom"}
 
 The private network consists of two VLANs within this design. Three subnets are allocated to the first of these VLANs (here designated Private VLAN A):
 
 * The first subnet is a primary private IP subnet range that {{site.data.keyword.cloud_notm}} assigns to the physical hosts.
 * The second subnet is used for management virtual machines (VMs) such as vCenter Server Appliance and Platform Services Controller.
-* The third subnet is used for the encapsulated overlay network Tunnel Endpoints (VTEPs) assigned to each host through the NSX Manager.
+* The third subnet is used for the encapsulated overlay network Tunnel Endpoints (TEPs) assigned to each host through the NSX Manager.
 
 In addition to Private VLAN A, a second private VLAN (here designated Private VLAN B) exists to support VMware features such as vSAN and vMotion. As such, the VLAN is divided into two or more portable subnets:
 
@@ -139,7 +139,7 @@ Review the following table for a summary.
 | Public C | Primary  | Assigned to physical hosts for public network access.  |
 | Private A | Primary  | Single subnet assigned to physical hosts assigned by {{site.data.keyword.cloud_notm}}. Used by the management interface for vSphere management traffic. |
 | Private A | Portable | Single subnet that is assigned to VMs that function as management components |
-| Private A | Portable | Single subnet that is assigned to NSX-T VTEP |
+| Private A | Portable | Single subnet that is assigned to NSX-T TEP |
 | Private B | Portable | Single subnet that is assigned for vSAN, if in use |
 | Private B | Portable | Single subnet assigned for NAS, if in use |
 | Private B | Portable | Single subnet assigned for vMotion |

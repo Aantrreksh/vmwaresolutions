@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-06-09"
+lastupdated: "2023-07-28"
 
 keywords: Zerto certificate, Zerto config, update Zerto replication
 
@@ -48,7 +48,7 @@ The Management VMware NSX Edge™ Services Gateway (ESG) is preconfigured to all
 ## Updating Zerto Virtual Replication
 {: #managingzertodr-update}
 
-To update Zerto Virtual Replication, open an IBM Support ticket by following the steps in [Contacting IBM Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support) to get the Zerto installation executable file for your environment.
+To update Zerto Virtual Replication, open an IBM Support ticket by following the steps in [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support) to get the Zerto installation executable file for your environment.
 
 ## Deploying VRAs to newly added ESXi servers
 {: #managingzertodr-deploy}
@@ -62,7 +62,6 @@ When you add or remove ESXi servers for the primary cluster of your instance, VR
 * [Ordering Zerto](/docs/vmwaresolutions?topic=vmwaresolutions-zerto_ordering)
 * [Ordering Zerto licenses](/docs/vmwaresolutions?topic=vmwaresolutions-zerto_ordering_licenses)
 * [Managing Zerto licenses](/docs/vmwaresolutions?topic=vmwaresolutions-zerto_managing_licenses)
-* [Zerto](https://www.zerto.com){: external}
 * [Zerto product documentation](https://www.zerto.com/myzerto/technical-documentation/){: external}
 * [Zerto disaster recovery](https://www.zerto.com/solutions/use-cases/disaster-recovery/){: external}
 * [Zerto's alarms, alerts, and events](https://help.zerto.com/bundle/Alarms.Alerts.HTML.85/page/Content/ErrorsGuide/Alarms_and_Alerts.htm){: external}

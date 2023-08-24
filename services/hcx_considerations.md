@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-06-15"
+lastupdated: "2023-08-22"
 
 keywords: VMware HCX, HCX, tech specs HCX
 
@@ -21,7 +21,7 @@ subcollection: vmwaresolutions
 The VMware HCX service is not available to Business Partner users.
 {: important}
 
-VMware HCX™ on IBM Cloud extends the networks of on-premises data centers into {{site.data.keyword.cloud}}, and it helps you migrate virtual machines (VMs) to and from {{site.data.keyword.cloud_notm}} without any conversion or change. HCX creates an abstraction layer that enables application mobility and infrastructure hybridity through securely stretched networks. You can modernize your VMware® environment without the need to refactor or modify your existing application, as HCX enables a seamless transformation. With HCX, you can bring your IP subnet ranges into {{site.data.keyword.cloud_notm}} and ensure the IP consistency through a hybrid deployment and by providing high-level security with end-to-end Suite B encryptions. VMware HCX on IBM Cloud is a non-IBM product that is offered under terms and conditions from VMware, not IBM.
+VMware HCX™ on {{site.data.keyword.cloud_notm}} extends the networks of on-premises data centers into {{site.data.keyword.cloud}}, and it helps you migrate virtual machines (VMs) to and from {{site.data.keyword.cloud_notm}} without any conversion or change. HCX creates an abstraction layer that enables application mobility and infrastructure hybridity through securely stretched networks. You can modernize your VMware® environment without the need to refactor or modify your existing application, as HCX enables a seamless transformation. With HCX, you can bring your IP subnet ranges into {{site.data.keyword.cloud_notm}} and ensure the IP consistency through a hybrid deployment and by providing high-level security with end-to-end Suite B encryptions. VMware HCX on IBM Cloud is a non-IBM product that is offered under terms and conditions from VMware, not IBM.
 {: shortdesc}
 
 The HCX version available for deployment is periodically updated to the most recent version of HCX. VMware® requires you to be on one of their supported versions in order for you to open a support request for HCX. For more information, see [VMware HCX release notes](https://docs.vmware.com/en/search/#/VMware%20HCX%204.0.1%20Release%20Notes){: external}.
@@ -139,6 +139,6 @@ Only the VMs that were deployed during the initial installation of the HCX insta
 * [Ordering HCX](/docs/vmwaresolutions?topic=vmwaresolutions-hcx_ordering)
 * [Managing HCX](/docs/vmwaresolutions?topic=vmwaresolutions-managinghcx)
 * [Glossary of HCX terms](/docs/vmwaresolutions?topic=vmwaresolutions-hcx_glossary)
-* [Contacting IBM Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support)
+* [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support)
 * [VMware Hybrid Cloud Extension overview](https://cloud.vmware.com/vmware-hcx){: external}
 * [VMware Hybrid Cloud Extension documentation](https://cloud.vmware.com/vmware-hcx/resources){: external}

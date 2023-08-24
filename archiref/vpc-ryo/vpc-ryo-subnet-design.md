@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2022
+  years:  2022, 2023
 
-lastupdated: "2022-08-17"
+lastupdated: "2023-07-14"
 
 subcollection: vmwaresolutions
 
@@ -51,7 +51,7 @@ When you create a VLAN interface for either to a VMkernel adapter or to a VM, yo
 | vlan-nic-vm004        | vlan           | 1002    | vpc-vm-subnet-192-168-100.0-24 | true         | vnic1                | dpg-vm-3-vlan-1002 |
 {: caption="Table 1. VLAN interfaces for VMware VMs on VPC subnet example" caption-side="bottom"}
 
-You can create VLAN interfaces with the same VLAN ID, or you can use different VLAN IDs mapped to the same VPC subnet. The DPG used for the VM's vNIC must match the provisioned VLAN interface's VLAN ID. For more information, see [Security groups with VMware workloads](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-ryo-subnet#vpc-ryo-subnet-net-security-sg).
+You can create VLAN interfaces with the same VLAN ID, or you can use different VLAN IDs mapped to the same VPC subnet. The distribution port group used for the VM's vNIC must match the provisioned VLAN interface's VLAN ID. For more information, see [Security groups with VMware workloads](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-ryo-subnet#vpc-ryo-subnet-net-security-sg).
 {: note}
 
 Before you provision or migrate a VMware VM to a bare metal server in {{site.data.keyword.vpc_short}} subnet, you must create a VLAN interface for the VMs. A prerequisite for a VLAN interface creation is that you must define a VPC subnet in the VPC Zone prefix.

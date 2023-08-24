@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2022
+  years:  2016, 2023
 
-lastupdated: "2022-07-14"
+lastupdated: "2023-07-31"
 
 keywords: Entrust DataControl WebGUI, Entrust DataControl console, enable internet Entrust DataControl
 
@@ -18,10 +18,10 @@ subcollection: vmwaresolutions
 # Managing Entrust DataControl
 {: #managing-entrust-dc}
 
-New installations of Entrust DataControl® are no longer supported for new or existing deployments of vCenter Server® instances. You can still use or delete existing Entrust DataControl installations on your existing instances.
+New installations of Entrust DataControl® (formerly known as HyTrust DataControl) are not supported for new or existing deployments of VMware vCenter Server® instances. You can still use or delete existing Entrust DataControl installations on your existing instances.
 {: deprecated}
 
-To manage the Entrust DataControl service, access the Entrust DataControl WebGUI from the {{site.data.keyword.vmwaresolutions_full}} console, or access the Entrust DataControl console from the vSphere® Web Client.
+To manage Entrust DataControl, access the Entrust DataControl WebGUI from the {{site.data.keyword.vmwaresolutions_full}} console, or access the Entrust DataControl console from the vSphere® Web Client.
 
 ## Accessing the Entrust DataControl WebGUI from the VMware Solutions console
 {: #managing-entrust-dc-accessing-webgui}
@@ -41,7 +41,7 @@ For more information, see [Ordering services for vCenter Server instances](/docs
 ## Enabling internet access for the Entrust DataControl virtual machines
 {: #managing-entrust-dc-internet-access}
 
-For Entrust DataControl v4.3.2 and later, {{site.data.keyword.vmwaresolutions_short}} provides automatic renewal support for Entrust licenses with the Call Home feature enabled. For VMware vCenter Server® instances that are not private-only, Entrust DataControl is deployed with firewall and SNAT (Source Network Address Translation) rules that are defined on the management services ESG **mgmt-nsx-edge**.
+For Entrust DataControl v4.3.2 and later, {{site.data.keyword.vmwaresolutions_short}} provides automatic renewal support for Entrust licenses with the Call Home feature enabled. For vCenter Server instances that are not private-only, Entrust DataControl is deployed with firewall and SNAT (Source Network Address Translation) rules that are defined on the management services ESG **mgmt-nsx-edge**.
 
 These rules enable internet access for the Entrust virtual machines (VMs). If internet access is not enabled, the license that is applied to your Entrust DataControl installation will expire after a year.
 
@@ -71,11 +71,9 @@ For private-only vCenter Server environments, the VMware® NSX Edge Services Gat
 9. To confirm that the VM has access to the internet, ping a public IP address or website. Click **Manage Network Settings > Network Diagnostic Tools > Test Inbound Ports of Another Server**. Type a public website address. For example, `www.ibm.com`, click **OK**, type `80 443` for the ports (or any other ports you want to test). You must get an immediate response that shows the inbound ports with a message similar to `80 (OK) 443 (OK)`.
 10. Repeat steps 3 - 9 for the other Entrust VM.
 
+## Considerations when you delete Entrust DataControl
+{: #managing-entrust-dc_considerations-remove}
 
-## Related links
-{: #managing-entrust-dc-related}
-
-* [Entrust DataControl overview](/docs/vmwaresolutions?topic=vmwaresolutions-entrust-dc_considerations)
-* [Contacting IBM Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support)
-* [FAQ](/docs/vmwaresolutions?topic=vmwaresolutions-faq-vmwaresolutions)
-* [Entrust website](https://www.entrust.com/){: external}
+Review the following considerations before you delete the service:
+* Before you delete Entrust DataControl, decouple all clients from using DataControl. After you delete the service, the keys might be deleted, and you might be locked out of your virtual machines.
+* If you installed Entrust DataControl before VMware Solutions v4.0, and you delete the service, you must manually remove the DNS entries. For more information, see [Manually removing the DNS entries](/docs/vmwaresolutions?topic=vmwaresolutions-vc_deletingservices#vc_deletingservices-DNS-entries).

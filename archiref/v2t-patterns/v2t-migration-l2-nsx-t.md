@@ -4,7 +4,7 @@ copyright:
 
   years:  2023
 
-lastupdated: "2023-04-28"
+lastupdated: "2023-08-17"
 
 subcollection: vmwaresolutions
 
@@ -39,9 +39,9 @@ Regardless of the tool you choose to migrate the workloads, you typically need t
 
 To migrate virtual machines across vCenter Server instances in different vCenter Single Sign-On domains, you can use Advanced Cross vCenter vMotion. Тhe vCenter Server instance from which you initiate the import or export of virtual machines must be version 7.0 Update 1c or later.
 
-In this method, the existing instance and the new target instance have different data stores. When you migrate, you must take this issue into account, which also applies when you are using {{site.data.keyword.cloud_notm}} File Storage. Plan the storage migration as part of the migration process.
+In this method, the existing instance and the new target instance have different data stores. When you migrate, you must take this issue into account, which also applies when you are using {{site.data.keyword.filestorage_full_notm}}. Plan the storage migration as part of the migration process.
 
-It is possible to manually add and allow the existing {{site.data.keyword.cloud_notm}} File Storage volumes to be accessible to the new vCenter Server with NSX-T instance. However, it is not generally advised leaving the volumes accessible for a longer period. The vCenter Server with NSX-T instance's automation is not aware of the old and manually added storage, and when you add new hosts and clusters to the new instance you might see unwanted behavior and the new hosts might not have access to this data store.
+It is possible to manually add and allow the existing {{site.data.keyword.filestorage_full_notm}} volumes to be accessible to the new vCenter Server with NSX-T instance. However, it is not generally advised leaving the volumes accessible for a longer period. The vCenter Server with NSX-T instance's automation is not aware of the old and manually added storage, and when you add new hosts and clusters to the new instance you might see unwanted behavior and the new hosts might not have access to this data store.
 {: important}
 
 ## Migrating workloads with Veeam

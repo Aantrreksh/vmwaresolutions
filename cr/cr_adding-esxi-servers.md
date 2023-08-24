@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2023
 
-lastupdated: "2023-06-19"
+lastupdated: "2023-07-28"
 
 keywords: Cyber Recovery add host, add server Cyber Recovery
 
@@ -71,4 +71,4 @@ If you are adding ESXi servers during maintenance mode, VMs are not migrated to 
 * [Ordering Cyber Recovery](/docs/vmwaresolutions?topic=vmwaresolutions-cr_orderinginstance_reqs)
 * [Viewing Cyber Recovery instances](/docs/vmwaresolutions?topic=vmwaresolutions-cr_viewinginstances)
 * [Requirements for Cyber Recovery](/docs/vmwaresolutions?topic=vmwaresolutions-cr_orderinginstance_reqs)
-* [Contacting IBM Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support)
+* [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support)

@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-06-20"
+lastupdated: "2023-07-28"
 
 keywords: vCenter Server order instance, order vCenter Server, order vCenter Server instance
 
@@ -29,7 +29,7 @@ VMware vSphere® Enterprise Plus 7 is ordered by default.
 
 For vCenter Server instances with vSphere 6.7, upgrading to vSphere 7 is supported for selected configurations. If you want to use vSphere 7, you can:
 * Deploy a new vSphere 7 instance and migrate your current workloads to the new instance.
-* Contact [IBM Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support) for assistance with your upgrade process.
+* [Contact IBM Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support) for assistance with your upgrade process.
 
 Migrating your workloads is recommended if you want to:
 * Perform a hardware refresh.

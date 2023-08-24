@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2023
 
-lastupdated: "2023-06-23"
+lastupdated: "2023-08-04"
 
 keywords: cyber recovery, cyber recovery settings, cyber recovery license settings, cyber recovery versions, cyber recovery instances
 
@@ -19,7 +19,7 @@ subcollection: vmwaresolutions
 
 The following VMware® components are part of the Cyber Recovery instance.
 * VMware vSphere® 7.0u3
-* VMware NSX-T™ 3.2
+* VMware NSX® 4.1
 
 ## Instance name
 {: #cr_orderinginstance-inst-name}

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2022
+  years:  2016, 2023
 
-lastupdated: "2022-08-26"
+lastupdated: "2023-07-14"
 
 subcollection: vmwaresolutions
 
@@ -63,9 +63,9 @@ The HCX Disaster Recover service replicates and protects VMs to a remote data ce
 The VMware HCX service deploys four virtual appliance types that are installed and configured on both the on-premises datacenter and the {{site.data.keyword.cloud_notm}} target. Optionally, edge devices might be required depending upon the implementation design.
 
 ### Target side and client side
-{: #hcxclient-components-cloud-client-side}
+{: #hcx-archi-overview-target-client}
 
-HCX has the concept of cloud side (target - destination) and client side (source).
+HCX has the concept of cloud side (target - destination) and client side (source):
 * Cloud / Destination side - HCX Cloud is pre-deployed in {{site.data.keyword.cloud_notm}} vCenter Server Deployment on customer portal request and configured with the network and compute profiles ready for service mesh creation.  
 * Client / Source side - Any vSphere instances that meet the prerequisites for installation and operation. The client side of HCX is the primary that controls the cloud side secondary instance through its vCenter web client user interface (UI) snap-in.
 

@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2023
 
-lastupdated: "2023-07-12"
+lastupdated: "2023-08-15"
 
 keywords: vCenter Server add clusters, add cluster, vCenter Server cluster
 
@@ -28,6 +28,7 @@ Adding clusters to vCenter Server instances with VMware vSphere® 6.5 or 6.7 is 
 * {{site.data.content.para-vcenteraddclusters}}
 * The number of clusters, hosts, and virtual machines (VMs) determines the maximum number of clusters that you can add. You must remain within the VMware® sizing guidelines and limits for your deployment. For more information, see [VMware configuration maximums](https://configmax.vmware.com/home){: external}.
 * You can add a cluster while another cluster is being created or deleted.
+* For vCenter Server instances with VMware vSAN™, new vSAN clusters are provisioned with mirrored M.2 drives.
 
 ## Cluster type
 {: #vc_addingclusters-cluster-type}
@@ -60,7 +61,9 @@ Review the following information and specify the licensing setting for the VMwar
 ### Bare metal server settings
 {: #vc_addingclusters-bare-metal-settings}
 
-The CPU models differ depending on the version that your instance was initially deployed in. You can choose between the following server types: **Cascade Lake**, **SAP-certified Cascade Lake**, or **Skylake**.
+The CPU models differ depending on the version that your instance was initially deployed in. You can choose between **Cascade Lake** and **SAP-certified Cascade Lake** servers[^1u].
+
+[^1u]: For clusters with NFS storage, where locations with appropriate 1U servers are available, 1U servers (up to 4 drives of storage) are ordered silently rather than 2U servers. For gateway clusters and clusters with vSAN storage, 2U servers are ordered.
 
 #### Data center location
 {: #vc_addingclusters-dc-location}
@@ -69,33 +72,21 @@ The {{site.data.keyword.cloud}} data center location of the cluster is set to th
 
 If you deploy the cluster to a different {{site.data.keyword.cloud_notm}} data center or {{site.data.keyword.cloud_notm}} infrastructure pod, three extra VLANs are ordered for use with the ordered {{site.data.keyword.cloud_notm}} bare metal servers.
 
-#### Skylake
-{: #vc_addingclusters-skylake}
-
-{{site.data.content.skylake-para-intro}}
-Available options might differ depending on the version that your instance was initially deployed in.
-
-{{site.data.content.skylake-note}}
-
-{{site.data.content.simpletabtable-skylake-nsxt}}
-
-{{site.data.content.simpletabtable-skylake-nsxv}}
-
 #### Cascade Lake
 {: #vc_addingclusters-cascade}
 
 {{site.data.content.cascade-para-intro}}
 
-{{site.data.content.simpletabtable-cascade-nsxt}}
-
-{{site.data.content.simpletabtable-cascade-nsxv}}
+{{site.data.content.simpletabtable-cascade}}
 
 #### SAP-certified Cascade Lake
 {: #vc_addingclusters-sap}
 
 {{site.data.content.sap-para-intro}}
 
-{{site.data.content.simpletabtable-sap-netweaverandhana}}
+{{site.data.content.simpletabtable-sap-netweaver}}
+
+{{site.data.content.simpletabtable-sap-hana}}
 
 #### Number of bare metal servers
 {: #vc_addingclusters-bare-metal-number}
@@ -130,7 +121,7 @@ The following table indicates the performance level details.
 | 2 IOPS/GB | This option is designed for most general-purpose workloads. Example applications include hosting small databases, backing up web applications, or VM disk images for a hypervisor. |
 | 4 IOPS/GB | This option is designed for higher-intensity workloads that have a high percentage of active data at a time. Example applications include transactional databases. |
 | 10 IOPS/GB | This option is designed for the most demanding workload types, such as analytics. Example applications include high-transaction databases and other performance-sensitive databases. This performance level is limited to a maximum capacity of 4 TB per file share. |
-{: caption="Table 4. NFS performance level options" caption-side="bottom"}
+{: caption="Table 3. NFS performance level options" caption-side="bottom"}
 
 #### vSAN storage
 {: #vc_addingclusters-vsan-storage}
@@ -219,7 +210,7 @@ Network interface card (NIC) enablement settings are based on your selection of 
 The **Uplink speed** option is not available to gateway clusters.
 {: note}
 
-{{site.data.content.uplink-speed-options-cascadelake-list}}
+{{site.data.content.uplink-speed-options-list}}
 
 {{site.data.content.simpletable-uplink-speed-locations-ap}}
 
@@ -374,7 +365,7 @@ You can also add the provisioned resources to the {{site.data.keyword.cloud_notm
 
    2. Complete the bare metal server configuration. 
       * If you want to host the cluster in a different {{site.data.keyword.cloud_notm}} data center than the one that the instance is hosted in, toggle the **Select a different location** switch on and choose the {{site.data.keyword.cloud_notm}} data center to host the cluster.
-      * For **Skylake** or **Cascade Lake** CPU generation type, select the **CPU model**, **RAM size**, and the **Number of bare metal servers**.
+      * For **Cascade Lake**, select the **CPU model**, **RAM size**, and the **Number of bare metal servers**.
       * For **SAP-certified Cascade Lake**, select one of the preset configurations.
 
    3. Complete the storage configuration.

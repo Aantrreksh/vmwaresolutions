@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2023
 
-lastupdated: "2023-06-19"
+lastupdated: "2023-07-31"
 
 keywords: vCenter Server add service
 
@@ -19,7 +19,7 @@ subcollection: vmwaresolutions
 
 You can order services for your VMware vCenter Server® instances, such as a disaster recovery solution. Add-on services support varies between vCenter Server with NSX-T™ and existing vCenter Server with NSX-V instances V4.7 and earlier.
 
-If you want to migrate your F5 BIG-IP or Veeam services from VMware NSX-V to VMware NSX-T, open an IBM Support ticket by following the steps in [Contacting IBM Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support).
+If you want to migrate your F5 BIG-IP or Veeam services from VMware NSX-V to VMware NSX-T, open an IBM Support ticket by following the steps in [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support).
 {: note}
 
 ## Before you add services to vCenter Server instances
@@ -37,14 +37,12 @@ The following table shows the services that are available to vCenter Server inst
 | Service name | Current version | Notes |
 |:------------ |:--------------- |:----- |
 | [Caveonix RiskForesight](/docs/vmwaresolutions?topic=vmwaresolutions-caveonix_considerations) | 4.1 | |
-| [Entrust CloudControl](/docs/vmwaresolutions?topic=vmwaresolutions-entrust-cc_considerations) | 6.6 | NSX-T only |
 | [F5 BIG-IP](/docs/vmwaresolutions?topic=vmwaresolutions-f5_considerations) | BIG-IP VE 17.1 | |
-| [FortiGate Virtual Appliance](/docs/vmwaresolutions?topic=vmwaresolutions-fortinetvm_considerations) | 7.2.5 | |
+| [FortiGate Virtual Appliance](/docs/vmwaresolutions?topic=vmwaresolutions-fortinetvm_considerations) | 7.4 | |
 | [VMware HCX](/docs/vmwaresolutions?topic=vmwaresolutions-hcx_considerations) | Periodically updated to the most recent version | |
 | [{{site.data.keyword.IBM}} Security Services for SAP](/docs/vmwaresolutions?topic=vmwaresolutions-managing-ss-sap) |   | |
 | [Juniper vSRX](/docs/vmwaresolutions?topic=vmwaresolutions-juniper-overview) | 3.0 (23.1R2) | |
 | [KMIP for VMware](/docs/vmwaresolutions?topic=vmwaresolutions-kmip_standalone_considerations) | 2.0 | |
-| [PrimaryIO HDM](/docs/vmwaresolutions?topic=vmwaresolutions-managing_pio) |   | |
 | [{{site.data.keyword.redhat_openshift_notm}} for VMware](/docs/vmwaresolutions?topic=vmwaresolutions-ocp_overview) | 4.12 | NSX-T only \n If you add the service to an existing instance with an NSX-T version earlier than 3.1, you must first upgrade NSX-T to 3.1 or later. |
 | [Veeam](/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview) | 12 | |
 | [VMware Aria Operations and VMware Aria Operations for Logs](/docs/vmwaresolutions?topic=vmwaresolutions-vrops_overview) | VMware Aria® Operations™ 8.12 and VMware Aria Operations™ for Logs 8.12 | |
@@ -61,7 +59,7 @@ You can use promotion (promo) codes for one or more services when you:
 * Add a service to a vCenter Server instance
 * Order a stand-alone service license, such as Caveonix or Veeam®
 
-For services that charge per host, promo codes apply only to the hosts in the order or in the current environment. Examples of such services are HCX™, Entrust CloudControl™, and VMware Aria® Operations™ and VMware Aria Operations™ for Logs.
+For services that charge per host, promo codes apply only to the hosts in the order or in the current environment. Examples of such services are HCX™ and VMware Aria® Operations™ and VMware Aria Operations™ for Logs.
 
 You can use one promo code per order. Multiple promo codes are not allowed. However, you can use a promo code multiple times per account. A promo code might apply to multiple services, for example, Veeam and Caveonix RiskForesight™.
 
@@ -89,7 +87,6 @@ The following table provides the resource requirements for the services for whic
 | Caveonix RiskForesight | CPU - 8 CPUs \n RAM - 32 GB \n Storage - 100 GB |
 | F5 BIG-IP[^f5bigip] | CPU - 4, 8, or 16 CPUs, depending on license and bandwidth chosen \n RAM - 8, 16, or 32 GB, depending on license and bandwidth chosen |
 | FortiGate Virtual Appliance | CPU - 2, 4, 8, 16, or 32 CPUs, depending on deployment size chosen \n RAM - 4, 6, or 12 GB, depending on deployment size chosen |
-| Entrust CloudControl | CPU - 4 CPUs \n RAM - 16 GB \n Storage - 186 GB VMDK |
 | Juniper vSRX | You must have enough available capacity to accommodate two VMs with the following requirements, on different hosts: \n CPU - 6 CPUs \n RAM - 16 GB \n Storage - 18 GB \n If you install Juniper vSRX on clusters with 25 Gb uplink speed, the following capacity requirements apply. \n CPU - 10 CPUs \n RAM - 16 GB \n Storage - 18 GB |
 | {{site.data.keyword.redhat_openshift_notm}} | If you install {{site.data.keyword.redhat_openshift_notm}} with vSAN™ storage, the following capacity requirements apply. \n CPU - 9 CPUs \n RAM - 120 GB \n Storage - 1,170 GB \n If you install {{site.data.keyword.redhat_openshift_notm}} with NFS storage, a new 2-TB NFS datastore, which is dedicated to {{site.data.keyword.redhat_openshift_notm}}, is ordered. |
 | Veeam | If you select Veeam as a VSI option, capacity requirements don't apply. \n If you select Veeam as a VM option, the following capacity requirements apply. \n CPU - 8 CPUs \n RAM - 32 GB \n Storage - 100 GB \n If you select Veeam as a bare metal server option, capacity requirements don't apply. |
@@ -158,7 +155,6 @@ To order a service for your vCenter Server instance, click the appropriate servi
 
 Then, follow the instructions in the ordering topic for your chosen service to be installed on the instance. For more information, see:
 * [Ordering Caveonix RiskForesight](/docs/vmwaresolutions?topic=vmwaresolutions-caveonix_ordering)
-* [Ordering Entrust CloudControl](/docs/vmwaresolutions?topic=vmwaresolutions-entrust-cc_ordering)
 * [Ordering F5 BIG-IP](/docs/vmwaresolutions?topic=vmwaresolutions-f5_ordering)
 * [Ordering FortiGate Virtual Appliance](/docs/vmwaresolutions?topic=vmwaresolutions-fortinetvm_ordering)
 * [Ordering VMware HCX](/docs/vmwaresolutions?topic=vmwaresolutions-hcx_ordering)

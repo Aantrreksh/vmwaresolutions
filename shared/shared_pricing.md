@@ -4,7 +4,7 @@ copyright:
 
   years: 2020, 2023
 
-lastupdated: "2023-05-02"
+lastupdated: "2023-08-17"
 
 keywords: vmware solutions shared, price for shared, pricing plan
 
@@ -195,7 +195,7 @@ In the **{{site.data.keyword.cloud_notm}} Usage** view, locate the **VMware Solu
 No additional Veeam or Zerto usage charges for VMware Shared are incurred.
 {: note}
 
-For the Veeam service, initially, all backups go to the block storage that is closest to their VM workloads. Backups that are a part of an inactive backup chain are immediately moved to Cloud Object Storage. The restore speed for these inactive backups might be impacted.
+For the Veeam service, initially, all backups go to the {{site.data.keyword.blockstorageshort}} that is closest to their VM workloads. Backups that are a part of an inactive backup chain are immediately moved to Cloud Object Storage. The restore speed for these inactive backups might be impacted.
 
 You can change how fast the inactive backup chains are moved to Cloud Object Storage by opening an {{site.data.keyword.vmwaresolutions_short}} service ticket.
 

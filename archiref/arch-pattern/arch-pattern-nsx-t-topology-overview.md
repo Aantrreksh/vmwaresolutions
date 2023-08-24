@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2023
 
-lastupdated: "2023-03-24"
+lastupdated: "2023-07-17"
 
 subcollection: vmwaresolutions
 
@@ -87,11 +87,11 @@ Private connectivity pattern is summarized as follows:
 
 1. The automation deploys an NSX-T Tier 0 (T0) Gateway in the NSX-T workload edge cluster. The T0 gateway provides connectivity to {{site.data.keyword.cloud_notm}} private network. 
 2. The deployed T0 gateway has a route to {{site.data.keyword.cloud_notm}} private network `10.0.0.0/8` and {{site.data.keyword.cloud_notm}} Services networks `166.8.0.0/14` and `161.26.0.0/16` with BCR as a next-hop.
-3. The automation deploys an example NSX-T overlay topology with a Tier 1 (T1) Gateway and a few example segments attached both to the T1 and T0 Gateways. You might customize the topology based on your needs. 
+3. The automation deploys an example NSX-T overlay topology with a Tier 1 (T1) Gateway and a few example segments attached both to the T1 and T0 Gateways. You can customize the topology based on your needs.
 4. {{site.data.keyword.cloud_notm}} Services can be reached through {{site.data.keyword.cloud_notm}} private network by using Cloud Services Endpoints when it uses {{site.data.keyword.cloud_notm}} private network addresses.
 5. When you use BYOIP on NSX-T overlay networks, you must use SNAT at T0 or T1. If you use SNAT at T1, you can advertise the NAT IP addresses from T1 to T0, where proxy arp is used.
 6. You can create DNAT rules on T0 Gateway to access your workloads from {{site.data.keyword.cloud_notm}} private networks.
-7. You can use IP addresses from {{site.data.keyword.cloud_notm}} private portable subnet that is deployed for NSX-T Edge Uplinks for the NAT.
+7. You can use IP addresses from {{site.data.keyword.cloud_notm}} private portable subnet that is deployed for NSX-T Edge Uplinks for the NAT. Alternatively, you can order [{{site.data.keyword.cloud_notm}} Private static subnets](/docs/subnets?topic=subnets-getting-started) that are routed toward your T0's private HA VIP to be used for NAT-ing or on segments.
 
 ## Public connectivity
 {: #arch-pattern-nsx-t-topology-overview-public}
@@ -104,14 +104,14 @@ Public connectivity pattern is summarized as follows:
 
 1. The automation deploys an NSX-T Tier 0 (T0) Gateway in the NSX-T workload edge cluster. The T0 gateway provides connectivity to {{site.data.keyword.cloud_notm}} public network. 
 2. The deployed T0 gateway has a default route `0.0.0.0/0` to the internet with FCR as a next-hop.
-3. The automation deploys an example NSX-T overlay topology with a Tier 1 (T1) Gateway and a few example segments attached both to the T1 and T0 Gateways. You might customize the topology based on your needs.
+3. The automation deploys an example NSX-T overlay topology with a Tier 1 (T1) Gateway and a few example segments attached both to the T1 and T0 Gateways. You can customize the topology based on your needs.
 4. You can use IP addresses from {{site.data.keyword.cloud_notm}} private portable subnet that is deployed for NSX-T Edge Uplinks for NAT or for NSX-T network services (for example IPSec VPN).
 5. The automation deploys example SNAT rules for outbound internet access. You can customize and delete these rules based on your needs. 
-6. You can configure DNAT rules to access your workloads that are attached to NSX-T segments through internet. You can use the Edge.
+6. You can configure DNAT rules to access your workloads that are attached to NSX-T segments through internet.
 7. You can order [{{site.data.keyword.cloud_notm}} Public static subnets](/docs/subnets?topic=subnets-getting-started) for your HA VIP to allocate public subnets directly to NSX-T segments. They are routed through the T0 public uplink HA VIP.
 
 ## Related links
 {: #arch-pattern-nsx-t-topology-overview-links}
 
-* [VMware vSphere overview](/docs/vmwaresolutions?topic=vmwaresolutions-vs_vsphereclusteroverview)
+* [VMware vSphere overview](/docs/vmwaresolutions?topic=vmwaresolutions-vs_vsphereoverview)
 * [VMware NSX-T design](/docs/vmwaresolutions?topic=vmwaresolutions-nsx-t-design)

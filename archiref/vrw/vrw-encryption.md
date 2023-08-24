@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2020, 2022
+  years:  2020, 2023
 
-lastupdated: "2022-08-26"
+lastupdated: "2023-07-10"
 
 subcollection: vmwaresolutions
 
@@ -51,7 +51,7 @@ With HPCS, SaaS providers and SaaS consumers can move their most mission critica
 
 The SaaS provider is responsible for deploying and managing both Hyper Protect Crypto Services and the KMIP for VMware instance for their {{site.data.keyword.cloud_notm}} for VMware Regulated Workloads instance. The virtualization administrator creates the KMS cluster configuration in the vCenter. To protect the regulated data of the SaaS consumer and the SaaS provider, it is recommended that they use independent HPCS instances and root keys. The two-key approach balances both the stake holders rights and responsibilities.
 
-![Dual HPCS overview](../../images/vrw-dual-hpcs.svg){: caption="Figure 3. Dual HPCS overview" caption-side="bottom"}
+![Dual HPCS overview](../../images/vrw-v2-dual-hpcs.svg){: caption="Figure 3. Dual HPCS overview" caption-side="bottom"}
 
 ### HPCS - independent software vendor (ISV) view
 {: #vrw-encryption-keys-isv}

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2016, 2022
+  years: 2016, 2023
 
-lastupdated: "2022-10-05"
+lastupdated: "2023-07-31"
 
 keywords: user IDs vCenter, PSC user, user ID service
 
@@ -75,9 +75,9 @@ HTTP is used for vCenter setup, configuration, and VMware operations such as add
 | `prod-Caveonix-dynamicID-@domainName` | Used for installation and configuration of the Caveonix RiskForesight™ service. |
 | `prod-Fortigate-dynamicID-@domainName` | Used for installation and configuration of the FortiGate® Security Appliance service. This service is deprecated. |
 | `prod-FortigateVM-dynamicID-@domainName` | Used for installation and configuration of the FortiGate Virtual Appliance service. |
-| `prod-HyTrustCC-shortID-@domainName` | Used for installation and configuration of the Entrust CloudControl™ service. |
-| `prod-HyTrustDC-shortID-@domainName` | Used for configuration of the Entrust DataControl® service. |
-| `prod-HyTrustKC-shortID-@domainName` | Used for installation and configuration of the Entrust KeyControl™ service. |
+| `prod-HyTrustCC-shortID-@domainName` | Used for the configuration of the Entrust CloudControl™ service. |
+| `prod-HyTrustDC-shortID-@domainName` | Used for the configuration of the Entrust DataControl® service. |
+| `prod-HyTrustKC-shortID-@domainName` | Used for the configuration of the Entrust KeyControl™ service. |
 | `prod-KMIPAdapter-dynamicID-@domainName` | Used for installation and configuration of the KMIP™ for VMware service. |
 | `prod-ICP-dynamicID-@domainName` | Used for installation and configuration of the {{site.data.keyword.cloud_notm}} Private Hosted service. |
 | `prod-SPPlus-dynamicID-@domainName` | Used for installation and configuration of the IBM Spectrum® Protect Plus service. |

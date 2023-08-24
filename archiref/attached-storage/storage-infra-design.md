@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2022
+  years:  2016, 2023
 
-lastupdated: "2022-04-27"
+lastupdated: "2023-08-17"
 
 subcollection: vmwaresolutions
 
@@ -46,7 +46,7 @@ Review the following information for a description of the services network that 
 ### Private services network
 {: #storage-infra-design-private-net}
 
-{{site.data.keyword.cloud_notm}} has a private services network that provides common services such as block storage, file storage, Object Storage, DNS resolvers, and NTP servers. This private network is separate from the customer private network and it enables environments to seamlessly connect to services located in the {{site.data.keyword.cloud_notm}}. The private network is multitiered in that servers and other infrastructure are connected to aggregated back-end customer switches (BCS). These aggregated switches are attached to a pair of separate routers such as back-end customer routers or BCR, for L3 networking. The private network also supports the ability to use jumbo frames, such as, MTU 9000, for physical host connections.
+{{site.data.keyword.cloud_notm}} has a private services network that provides common services such as {{site.data.keyword.blockstoragefull}}, {{site.data.keyword.filestorage_full}}, Object Storage, DNS resolvers, and NTP servers. This private network is separate from the customer private network and it enables environments to seamlessly connect to services located in the {{site.data.keyword.cloud_notm}}. The private network is multitiered in that servers and other infrastructure are connected to aggregated back-end customer switches (BCS). These aggregated switches are attached to a pair of separate routers such as back-end customer routers or BCR, for L3 networking. The private network also supports the ability to use jumbo frames, such as, MTU 9000, for physical host connections.
 
 ### VLANs
 {: #storage-infra-design-vlans}
@@ -61,20 +61,20 @@ The following section describes the configuration of the attached storage device
 ## Attached storage performance
 {: #storage-infra-design-perf}
 
-Performance and Endurance storage are {{site.data.keyword.cloud_notm}} storage solutions that are designed to support high I/O applications that require predictable levels of performance. This predictable performance is achieved through the allocation of protocol-level input/output operations per second (IOPS) to individual volumes.
+Performance and endurance storage are {{site.data.keyword.cloud_notm}} storage solutions that are designed to support high I/O applications that require predictable levels of performance. This predictable performance is achieved through the allocation of protocol-level input/output operations per second (IOPS) to individual volumes.
 
-IOPS ranging from 100 through 96,000 can be ordered with storage sizes of 20 GB - 24 TB. Performance and Endurance storage volumes are available for both block storage and file storage.
+IOPS ranging from 100 through 96,000 can be ordered with storage sizes of 20 GB - 24 TB. Performance and endurance storage volumes are available for both {{site.data.keyword.blockstorageshort}} and {{site.data.keyword.filestorage_short}}.
 
-In this design, the vCenter Server solution offers Endurance storage for attached storage. As a result, you can select and attach (through automation) Endurance NFS exports ranging in size from 20 GB to a maximum of 24 TB. The {{site.data.keyword.cloud_notm}} allows up to 96 vSphere ESXi hosts to connect to a single Endurance NFS export.
+In this design, vCenter Server offers endurance storage for attached storage. As a result, you can select and attach (through automation) endurance NFS exports ranging in size from 20 GB to a maximum of 24 TB. The {{site.data.keyword.cloud_notm}} allows up to 96 vSphere ESXi hosts to connect to a single endurance NFS export.
 
-Endurance is available in three IOPS performance tiers to support varying application needs.
+Endurance storage is available in three IOPS performance tiers to support varying application needs.
 
 After an NFS share is ordered, it can be resized or reconfigured to allow for more or less IOPS.
 {: note}
 
 For detailed IOPS options, see the _Storage settings_ section in [Ordering vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-req).
 
-In addition to the tiers of storage, {{site.data.keyword.cloud_notm}} Endurance storage supports a wide selection of application needs, including snapshots and replication, and encryption at rest in the {{site.data.keyword.cloud_notm}} data center locations.
+In addition to the tiers of storage, {{site.data.keyword.cloud_notm}} endurance storage supports a wide selection of application needs, including snapshots and replication, and encryption at rest in the {{site.data.keyword.cloud_notm}} data center locations.
 
 ## Related links
 {: #storage-infra-design-related}

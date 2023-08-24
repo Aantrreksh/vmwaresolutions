@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2023
 
-lastupdated: "2023-06-13"
+lastupdated: "2023-07-10"
 
 subcollection: vmwaresolutions
 
@@ -19,7 +19,7 @@ subcollection: vmwaresolutions
 {{site.data.keyword.cloud}} for VMware® Regulated Workloads is delivered as a clean environment. Extensive work was done to identify and remediate common errors and warnings that are often found in a typical vSphere deployment. IBM and VMware® best practices, which are combined with standard and customized templates for VMware Aria® Operations™, ensure that all {{site.data.keyword.cloud_notm}} for VMware Regulated Workloads configurations are deployed as clean as possible, ready for onboarding. Caveonix RiskForesight is used to scan the environment for compliance with industry and government standards such as NIST, PCI, and more. RiskForesight is continually monitoring the{{site.data.keyword.cloud_notm}} for VMware Regulated Workloads for adherence to compliance standards. RiskForesight provides on-demand compliance posture reporting and at-a-glance compliance status.
 The operational tools support the customer in compliance with current standards and assist them in rapidly responding to a changing compliance landscape.
 
-![IBM Cloud for VMware Regulated Workloads operational tools overview](../../images/vrw-opstools.svg "IBM Cloud for VMware Regulated Workloads operational tools overview"){: caption="Figure 1. IBM Cloud for VMware Regulated Workloads operational tools overview" caption-side="bottom"}
+![IBM Cloud for VMware Regulated Workloads operational tools overview](../../images/vrw-v2-opstools.svg "IBM Cloud for VMware Regulated Workloads operational tools overview"){: caption="Figure 1. IBM Cloud for VMware Regulated Workloads operational tools overview" caption-side="bottom"}
 
 ## Management cluster
 {: #vrw-operations-management}
@@ -43,7 +43,7 @@ All operational tools are deployed into the management cluster. The {{site.data.
 
 All systems that generate logs are configured to send their logs to VMware Aria Operations™ for Logs. Centralized collection of all logging enables a comprehensive view of all aspects of the {{site.data.keyword.cloud_notm}} for VMware Regulated Workloads operation.VMware Aria Operations for Logs is also capable of forwarding logs to security scanning services such as IBM QRadar.
 
-![VMware Aria Operations for Logs integration](../../images/vrw-log-flow.svg "VMware Aria Operations for Logs integration"){: caption="Figure 2. VMware Aria Operations for Logs integration" caption-side="bottom"}
+![VMware Aria Operations for Logs integration](../../images/vrw-v2-operations-logs-flow.svg "VMware Aria Operations for Logs integration"){: caption="Figure 2. VMware Aria Operations for Logs integration" caption-side="bottom"}
 
 ### VMware Aria Operations for Networks
 {: #vrw-operations-management-vrni}

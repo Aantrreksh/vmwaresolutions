@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2021
+  years:  2016, 2023
 
-lastupdated: "2022-05-30"
+lastupdated: "2023-07-17"
 
 subcollection: vmwaresolutions
 
@@ -35,10 +35,3 @@ You are responsible for maintaining IBM Spectrum Protect Plus to keep it updated
 {: #managingspp-update-os}
 
 To update the operating system of the IBM Spectrum Protect Plus VM, you must log in as the `serveradmin` user. The `serveradmin` user password is the same as the password from the service details page for IBM Spectrum Protect Plus.
-
-## Related links
-{: #managingspp-related}
-
-* [IBM Spectrum Protect Plus overview](/docs/vmwaresolutions?topic=vmwaresolutions-spp_considerations)
-* [IBM Spectrum Protect Plus documentation](https://www.ibm.com/docs/en/spp/10.1.5)
-* [Opening a case for IBM Spectrum Protect Plus](https://www.ibm.com/mysupport/s/article/How-to-Open-a-Case)

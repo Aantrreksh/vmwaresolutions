@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2023
 
-lastupdated: "2023-03-24"
+lastupdated: "2023-08-03"
 
 subcollection: vmwaresolutions
 
@@ -32,7 +32,7 @@ In this architecture, the single gateway cluster hosts both T0 and T1s as shown 
 
 ![VPC gateway cluster](../../images/vpc-ryo-diagrams-nsx-t-edges.svg "VPC gateway cluster"){: caption="Figure 1. VPC gateway cluster" caption-side="bottom"}
 
-For more information about NSX-T Designs, see [NSX-T Reference Design Guide 3-0](https://nsx.techzone.vmware.com/resource/nsx-t-reference-design-guide-3-0){: external}.
+For more information about NSX designs, see the [NSX Reference Design Guide](https://nsx.techzone.vmware.com/resource/nsx-reference-design-guide){: external}.
 
 ## Tier-0 logical router
 {: #vpc-ryo-nsx-t-logical-routers-edge-tier-0}
@@ -182,7 +182,7 @@ When planning routing, try to summarize the NSX-T overlay subnets/prefixes to ke
 VPC routes are Zone specific.
 {: note}
 
-Creating a VPC route enables traffic within the Zone, and within the VPC depending on how the VPC route is created. If you use any of the interconnectivity options, such as Direct Link or Transit Gateway, and you need connectivity from another VPC attached to a TGW, in addition to the VPC route, you can create a VPC prefix matching the NSX-T overlay subnet or prefix. This action allows both DL and TGW to advertise your NSX-T overlay subnet or prefix to the attached TGW connections or DL. By using the previous example, you can create a VPC prefix matching the route `192.168.4.0/22`, which enables TGW to advertise this prefix to the other attached VPCs, or Classic. For more information about VPC prefixes and about creating prefixes, see [Bring your own subnet](/docs/vpc?topic=vpc-configuring-address-prefixes).
+Creating a VPC route enables traffic within the Zone, and within the VPC depending on how the VPC route is created. If you use any of the interconnectivity options, such as Direct Link or Transit Gateway, and you need connectivity from another VPC attached to a TGW, in addition to the VPC route, you can create a VPC prefix matching the NSX-T overlay subnet or prefix. This action allows both DL and TGW to advertise your NSX-T overlay subnet or prefix to the attached TGW connections or DL. By using the previous example, you can create a VPC prefix matching the route `192.168.4.0/22`, which enables TGW to advertise this prefix to the other attached VPCs, or Classic. For more information about VPC prefixes and about creating them, see [Bring your own subnet](/docs/vpc?topic=vpc-configuring-address-prefixes).
 
 ## Network services provided by Tier-0 and Tier-1 logical routers
 {: #vpc-ryo-nsx-t-logical-routers-edge-gateway}
@@ -200,7 +200,7 @@ IPsec Virtual Private Network (IPsec VPN) and Layer 2 VPN (L2 VPN) run on an NSX
 
 When you configure NSX-T VPN service in {{site.data.keyword.vpc_short}}, you can use the public `/32` floating IP addresses as the VPN Endpoints both Tier-0 and Tier-1 Logical Routers. You can have multiple VPN endpoints, if needed. When VPN service is configured on Tier-1 Logical Router, ensure that the floating IP is correctly advertised between Tier-0 and Tier-1 Logical Routers.
 
-For more information on VPN service, see [VMware Documentation](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.1/administration/GUID-A8B113EC-3D53-41A5-919E-78F1A3705F58.html){: external}.
+For more information about the VPN service, see the [VMware documentation](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.1/administration/GUID-A8B113EC-3D53-41A5-919E-78F1A3705F58.html){: external}.
 
 ### Network Address Translation
 {: #vpc-ryo-nsx-t-logical-routers-edge-services-nat}
@@ -216,7 +216,7 @@ You can also disable SNAT or DNAT for an IP address or a range of addresses. If 
 
 When configuring NSX-T NAT in {{site.data.keyword.vpc_short}}, you can use the public `/32` floating IP addresses as the public NAT IP addresses in both Tier-0 and Tier-1 Logical Routers. You can have multiple NAT IPs, if needed. When NAT is configured on Tier-1 Logical Router, ensure that the floating IP is correctly advertised between Tier-0 and Tier-1 Logical Routers.
 
-For more information on NAT in NSX-T, see [VMware Documentation](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.1/administration/GUID-7AD2C384-4303-4D6C-A44A-DEF45AA18A92.html){: external}.
+For more information about NAT and NSX-T, see the [VMware documentation](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.1/administration/GUID-7AD2C384-4303-4D6C-A44A-DEF45AA18A92.html){: external}.
 
 ### Firewall
 {: #vpc-ryo-nsx-t-logical-routers-edge-gateway-fw}
@@ -227,7 +227,7 @@ Gateway firewall represents rules that are applied to the perimeter firewall for
 
 Distributed firewall monitors all the East-West traffic on your VMs. Grouping of objects simplifies rule management. Groups include different objects that are added both statically and dynamically, and can be used as the source and destination of a firewall rule. They can be configured to contain a combination of VMs, IP sets, MAC sets, segment ports, segments, AD user groups, and other groups. Dynamic inclusion of groups can be based on tag, machine name, OS name, or computer name.
 
-For more information on Firewalls in NSX-T, see [VMware Documentation](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.1/administration/GUID-F206A4B8-0F33-482D-8727-E71FE253BBCD.html){: external}.
+For more information about firewalls and NSX-T, see the [VMware documentation](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.1/administration/GUID-F206A4B8-0F33-482D-8727-E71FE253BBCD.html){: external}.
 
 ## Related links
 {: #vpc-ryo-nsx-t-logical-routers-links}

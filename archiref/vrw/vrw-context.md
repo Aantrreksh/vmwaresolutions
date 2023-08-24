@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2023
 
-lastupdated: "2023-03-21"
+lastupdated: "2023-07-10"
 
 subcollection: vmwaresolutions
 
@@ -18,7 +18,7 @@ subcollection: vmwaresolutions
 
 Although {{site.data.keyword.cloud}} for VMware® Regulated Workloads is a self-contained design, some external dependencies exist. {{site.data.keyword.cloud_notm}} for VMware Regulated Workloads is designed without the use of {{site.data.keyword.cloud_notm}} shared offerings such as VSIs and shared storage offerings.
 
-![IBM Cloud for VMware Regulated Workloads context](../../images/vrw-context.svg "IBM Cloud for VMware Regulated Workloads context"){: caption="Figure 1. IBM Cloud for VMware Regulated Workloads context" caption-side="bottom"}
+![IBM Cloud for VMware Regulated Workloads context](../../images/vrw-v2-context.svg "IBM Cloud for VMware Regulated Workloads context"){: caption="Figure 1. IBM Cloud for VMware Regulated Workloads context" caption-side="bottom"}
 
 Connections between the on-premises environment, CSP (Cloud Service Provider), CHP (Cloud Hosting Provider), and {{site.data.keyword.cloud_notm}} traverse the internet and are required to use {{site.data.keyword.cloud_notm}} Direct Link, IPsec, or other secure protocol.
 

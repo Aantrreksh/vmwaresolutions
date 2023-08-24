@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-05-01"
+lastupdated: "2023-07-28"
 
 keywords: Veeam, Veeam configuration, order Veeam
 
@@ -83,7 +83,7 @@ For more information, see [Hardened Repository](https://helpcenter.veeam.com/doc
 
 Enter the number of VMs (virtual machines) to license (minimum 1).
 
-You can order a maximum of 3,000 licenses. If you need to have multiple licenses under a single license key, you must first purchase them. Then, open an IBM Support ticket by following the steps in [Contacting IBM Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support) to request that the license keys are consolidated into a single key.
+You can order a maximum of 3,000 licenses. If you need to have multiple licenses under a single license key, you must first purchase them. Then, open an IBM Support ticket by following the steps in [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support) to request that the license keys are consolidated into a single key.
 
 ## Related links
 {: #veeam_ordering-related}

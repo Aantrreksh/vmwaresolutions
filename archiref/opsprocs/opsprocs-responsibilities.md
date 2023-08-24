@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2022
+  years:  2016, 2023
 
-lastupdated: "2022-11-23"
+lastupdated: "2023-08-21"
 
 subcollection: vmwaresolutions
 
@@ -19,13 +19,13 @@ subcollection: vmwaresolutions
 Review the two key principles for Day 2 operations.
 
 * Your VMware vCenter Server® instance is not actively monitored by {{site.data.keyword.IBM}}. After deployment, use existing tools, use a managed service. Examples of a manged service include IBM Integrated Managed Infrastructure, a third-party managed service, or implement a self-managed monitoring solution as described in [Operations management introduction](/docs/vmwaresolutions?topic=vmwaresolutions-opsmgmt-intro).
-* IBM Support does not enter the VMware® management layer under normal operations without a client–written support ticket. You must raise a support ticket to engage support from IBM. For more information, see [Contacting IBM support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support). You must actively manage the ticket must be actively to ensure that you provide the requested information that is required by IBM in a timely manor. For more information, see [Managing your support cases](/docs/get-support?topic=get-support-managing-support-cases) and [Escalating support cases](/docs/get-support?topic=get-support-escalation).
+* IBM Support does not enter the VMware® management layer under normal operations without a client–written support ticket. You must raise a support ticket to engage support from IBM. For more information, see [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support). You must actively manage the ticket must be actively to ensure that you provide the requested information that is required by IBM in a timely manor. For more information, see [Managing your support cases](/docs/get-support?topic=get-support-managing-support-cases) and [Escalating support cases](/docs/get-support?topic=get-support-escalation).
 
 For more information about IBM and customer responsibilities that concern compliance, see [Customer versus IBM responsibility for vCenter Server](/docs/vmwaresolutions?topic=vmwaresolutions-vc_compl_info#vc_compl_info-responsibility).
 
 Day 2 responsibilities include the following items:
 
-* Service Support - IBM provides support for {{site.data.keyword.vmwaresolutions_full}} issues that you report. You must raise support tickets as directed in [Contacting IBM Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support).
+* Service Support - IBM provides support for {{site.data.keyword.vmwaresolutions_full}} issues that you report. You must raise support tickets as directed in [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support).
 * Service Provisioning - Provision and resize your VMware vCenter Server instances on demand, by using the [VMware Solutions console](https://cloud.ibm.com/vmware).
 * IBM Management component updates - For instances deployed in (or upgraded to) V2.5 or later, updates and patches for the IBM management components are applied automatically, as needed.
 * Incident and Problem Management - You are responsible for incident and problem management of your vCenter Server instances after deployment. You must have tools and processes to detect incidents, record the issues, classify their severity, escalate, and return the failing component to service.

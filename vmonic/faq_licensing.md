@@ -4,7 +4,7 @@ copyright:
 
   years:  2023
 
-lastupdated: "2023-06-13"
+lastupdated: "2023-07-28"
 
 keywords: FAQ, license, BYOL
 
@@ -60,5 +60,5 @@ The discrepancy does not indicate any service or licensing problem for VMware Ar
 {: #faq_licensing-related}
 
 * [Accessing the console](/docs/vmwaresolutions?topic=vmwaresolutions-loginmethod)
-* [Contacting IBM Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support)
+* [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support)
 * [FAQ about Bring Your Own License for VMware](/docs/vmwaresolutions?topic=vmwaresolutions-faq_byol)

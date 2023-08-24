@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-06-12"
+lastupdated: "2023-08-03"
 
 subcollection: vmwaresolutions
 
@@ -34,7 +34,7 @@ These dashboards provide the following functions.
 * A prioritized view of cyberrisk and compliance risks across hybrid cloud with Detect, Predict, Act dashboard views.
 * The ability for a user to visually interact with data to quickly identify assets at risk, based on risk priorities.
 * Easy-to-use graphs, metrics, and filters to develop insight into the identified risks.
-* Interactive drill downs for greater depth of information on application data flows, vulnerabilities or configuration issues across locations, organizations, applications, and assets.
+* Interactive drill downs for greater depth of information about application data flows, vulnerabilities or configuration issues across locations, organizations, applications, and assets.
 * Allow the user to develop complete knowledge of the operational stack that includes, infrastructure, platform, application, and data.
 * The ability to visualize and enforce policies for segmentation of networks, VMs, or applications across the hybrid cloud.
 

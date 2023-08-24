@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2023
 
-lastupdated: "2023-05-02"
+lastupdated: "2023-08-21"
 
 keywords: user account, ibm cloud account, ibm cloud infrastructure
 
@@ -22,7 +22,7 @@ subcollection: vmwaresolutions
 
 To use {{site.data.keyword.vmwaresolutions_full}} to order instances, you must have an {{site.data.keyword.cloud}} account. This requirement applies to all VMware Solutions offerings.
 
-You can sign up for an {{site.data.keyword.cloud_notm}} account by using an existing **IBMid** or by creating a new **IBMid**. For more information, see [Signing up for {{site.data.keyword.cloud_notm}}](/docs/vmwaresolutions?topic=vmwaresolutions-signing_required_accounts#signing_required_accounts-cloud).
+You can sign up for an {{site.data.keyword.cloud_notm}} account by using an existing **IBMid** or by creating a new **IBMid**. For more information, see [Setting up your {{site.data.keyword.cloud_notm}} account](/docs/account?topic=account-account-getting-started).
 
 ## The IBM Cloud infrastructure account
 {: #signing_required_accounts-infra}
@@ -32,7 +32,7 @@ The requirement to have an {{site.data.keyword.cloud_notm}} infrastructure accou
 
 Additionally, you must have an {{site.data.keyword.cloud_notm}} infrastructure account. The price of the components that are ordered in your instances is billed to that {{site.data.keyword.cloud_notm}} account.
 
-This account is also used to log in to the {{site.data.keyword.cloud_notm}} infrastructure customer portal which provides more functions to manage infrastructure products and services.
+This account is also used to log in to the {{site.data.keyword.cloud_notm}} infrastructure customer portal that provides more functions to manage infrastructure products and services.
 
 To sign up for an {{site.data.keyword.cloud_notm}} infrastructure account, upgrade your {{site.data.keyword.cloud_notm}} account to a billable account. For more information, see [How do I upgrade or convert my account type?](/docs/account?topic=account-accountfaqs#changeacct)
 
@@ -66,16 +66,16 @@ To verify or update permissions for classic infrastructure users, see [Classic i
 ### Virtual routing and forwarding with service endpoints enabled
 {: #signing_required_accounts-infra-vrf-se}
 
-Your {{site.data.keyword.cloud_notm}} infrastructure account must be a Virtual Routing and Forwarding (VRF) account. If your account is non-VRF, you must convert it to a VRF account. It is also recommended to enable your VRF account for using service endpoints.
+Your {{site.data.keyword.cloud_notm}} infrastructure account must be a VRF (Virtual routing and forwarding) account. If your account is non-VRF, you must convert it to a VRF account. It is also recommended to enable your VRF account for using service endpoints.
 
 For more information, see the following procedures:
 * [Virtual routing and forwarding on {{site.data.keyword.cloud_notm}}](/docs/direct-link?topic=direct-link-overview-of-virtual-routing-and-forwarding-vrf-on-ibm-cloud)
-* [Converting to VRF](/docs/direct-link?topic=direct-link-what-happens-during-the-account-conversion-process)
+* [Converting to virtual routing and forwarding](/docs/direct-link?topic=direct-link-what-happens-during-the-account-conversion-process)
 * [Enabling service endpoints](/docs/account?topic=account-vrf-service-endpoint#service-endpoint)
 
 ## Related links
 {: #signing_required_accounts-related}
 
 * [FAQ](/docs/vmwaresolutions?topic=vmwaresolutions-faq-vmwaresolutions)
-* [User account and settings](/docs/vmwaresolutions?topic=vmwaresolutions-useraccount)
-* [Requiring MFA for users in your account](/docs/account?topic=account-enablemfa#enablemfa)
+* [Managing user accounts and settings](/docs/vmwaresolutions?topic=vmwaresolutions-useraccount)
+* [Enabling MFA in your account](/docs/account?topic=account-enablemfa#enablemfa)

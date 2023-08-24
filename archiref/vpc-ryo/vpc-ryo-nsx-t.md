@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2023
 
-lastupdated: "2023-05-01"
+lastupdated: "2023-08-03"
 
 subcollection: vmwaresolutions
 
@@ -33,7 +33,7 @@ NSX-T consists of the following key components:
 
 When deployed on {{site.data.keyword.vpc_short}}, the VMware virtual machines (VMs) hosted on {{site.data.keyword.cloud_notm}} bare metal server for {{site.data.keyword.vpc_short}} can be connected to NSX-T overlay segments. NSX-T segments are logically abstracted network segments in a defined Transport Zone. A Transport Zone is a container that defines the potential reach of Transport Nodes, Hosts, or Edges. The NSX-T segments support line-rate switching and distributed routing in the ESXi hosts. Also, it uses Geneve encapsulation for this overlay traffic to identify and isolate L2 segments over a common L3 infrastructure. In this design, Geneve traffic traverses between the defined Transport Nodes that use {{site.data.keyword.vpc_short}} as the underlying transport network.
 
-In addition to basic software defined overlay networks, NSX-T brings many embedded advanced features. The features are Network Address translation, site to site IPsec VPNs, firewall policies, inclusion of guest introspection within firewall policies, and advanced netflow tracking. Describing these features in detail is beyond the scope of this document. For more information about NSX-T, see [VMware NSX-T Data Center Documentation](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/index.html){: external}.
+In addition to basic software defined overlay networks, NSX-T brings many embedded advanced features. The features are Network Address translation, site to site IPsec VPNs, firewall policies, inclusion of guest introspection within firewall policies, and advanced netflow tracking. Describing these features in detail is beyond the scope of this document. For more information, see [VMware NSX documentation](https://docs.vmware.com/en/VMware-NSX/index.html){: external}.
 
 ## NSX-T data center deployment architecture
 {: #vpc-ryo-nsx-t-dplarch-managers}
@@ -71,8 +71,8 @@ The following table shows the specifications for the Manager Nodes. You might se
 |:------------------|:----------------|:----------------|:----------------|
 | NSX managers      | 3 VMs           | 3 VMs           | 3 VMs           |
 | Number of vCPUs   | 4               | 6               | 12              |
-| Memory            | 16 GB            | 24 GB            | 48 GB            |
-| Disk              | 300 GB           | 300 GB           | 300 GB           |
+| Memory            | 16 GB           | 24 GB           | 48 GB           |
+| Disk              | 300 GB          | 300 GB          | 300 GB          |
 | Disk type         | Thin            | Thin            | Thin            |
 | Network           | vpc-mgmt-subnet | vpc-mgmt-subnet | vpc-mgmt-subnet |
 {: caption="Table 1. NSX-T Manager specifications" caption-side="bottom"}
@@ -80,16 +80,16 @@ The following table shows the specifications for the Manager Nodes. You might se
 A VLAN interface is provisioned for each NSX-T manager in the management subnet (`vpc-mgmt-subnet`) of the VPC. This VPC subnet is designated for VMware management components of your solution. If you deploy the NSX-T managers on the same VPC subnet in a zone, and you plan to use the NSX-T internal network load balancer, an additional VLAN interface is needed for this Virtual IP (VIP). All created VLAN interfaces are allowed to float, which means that they can be vMotioned between the ESXi hosts. The following table summarizes the required VLAN interfaces in {{site.data.keyword.vpc_short}}.
 
 | Interface name | Interface type | VLAN ID | Subnet | Allow float | NSX-T interface | Distributed Port Group name |
-| ---------------------- | ---------------- | --------- | --------------------- | -------------- | ------------------- | ------------------------------ |
-|vlan-nic-nsx-0        | vlan           | 100     | vpc-mgmt-subnet     | true         | NSX-T Manager 1   | dpg-mgmt |
-| vlan-nic-nsx-1        | vlan           | 100     | vpc-mgmt-subnet     | true         | NSX-T Manager 2   | dpg-mgmt |
-| vlan-nic-nsx-2        | vlan           | 100     | vpc-mgmt-subnet     | true         | NSX-T Manager 3   | dpg-mgmt |
-| vlan-nic-nsx-vip      | vlan           | 100     | vpc-mgmt-subnet     | true         | NSX-T Manager VIP | dpg-mgmt |
+| -------------- | -------------- | ------- | ------ | ----------- | --------------- | --------------------------- |
+| vlan-nic-nsx-0 | vlan           | 100     | vpc-mgmt-subnet     | true         | NSX-T Manager 1   | dpg-mgmt |
+| vlan-nic-nsx-1 | vlan           | 100     | vpc-mgmt-subnet     | true         | NSX-T Manager 2   | dpg-mgmt |
+| vlan-nic-nsx-2 | vlan           | 100     | vpc-mgmt-subnet     | true         | NSX-T Manager 3   | dpg-mgmt |
+| vlan-nic-nsx-vip | vlan         | 100     | vpc-mgmt-subnet     | true         | NSX-T Manager VIP | dpg-mgmt |
 {: caption="Table 2. VLAN interfaces for NSX-T Managers" caption-side="bottom"}
 
 When the initial NSX Manager is deployed into the host and cluster, you must register the vCenter as the compute manager to facilitate the deployment of other NSX Managers. Public Gateway attached to the management subnet can be used to download updates for the NSX Managers.
 
-For more information on deploying NSX Managers, see [VMware NSX-T Data Center Documentation](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/index.html){: external}.
+For more information about deploying NSX Managers, see [VMware NSX documentation](https://docs.vmware.com/en/VMware-NSX/index.html){: external}.
 
 ### Host transport nodes
 {: #vpc-ryo-nsx-t-dplarch-hosts}

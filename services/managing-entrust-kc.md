@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2022
+  years:  2016, 2023
 
-lastupdated: "2022-07-15"
+lastupdated: "2023-07-31"
 
 keywords: Entrust KeyControl WebGUI, Entrust KeyControl console, enable internet Entrust KeyControl
 
@@ -18,15 +18,15 @@ subcollection: vmwaresolutions
 # Managing Entrust KeyControl
 {: #managing-entrust-kc}
 
-New installations of Entrust KeyControl™ are no longer supported for new or existing deployments of vCenter Server instances. You can still use or delete existing Entrust KeyControl installations on your existing instances.
+New installations of Entrust KeyControl™ (formerly known as HyTrust KeyControl) are not supported for new or existing deployments of VMware vCenter Server® instances. You can still use or delete existing Entrust KeyControl installations on your existing instances.
 {: deprecated}
 
-To manage the Entrust KeyControl™ service, access the Entrust KeyControl web GUI from the {{site.data.keyword.vmwaresolutions_full}} console, or access the Entrust KeyControl console from the vSphere® Web Client.
+To manage Entrust KeyControl, access the Entrust KeyControl web GUI from the {{site.data.keyword.vmwaresolutions_full}} console, or access the Entrust KeyControl console from the vSphere® Web Client.
 
 ## Accessing the Entrust KeyControl web GUI from the VMware Solutions console
 {: #managing-entrust-kc-accessing-webgui}
 
-To log in to the web GUI of the primary or secondary Entrust KeyControl appliance, use the WebGUI credentials that are found on the Entrust KeyControl service details page.
+To log in to the WebGUI of the primary or secondary Entrust KeyControl appliance, use the WebGUI credentials that are found on the Entrust KeyControl service details page.
 
 ## Accessing the Entrust KeyControl console from the vSphere Web Client
 {: #managing-entrust-kc-accessing-console}
@@ -35,8 +35,6 @@ To access the Entrust KeyControl console from the vSphere Web Client, use the fo
 1. In the vSphere Web Client, find the virtual machines (VMs) that start with the names **KC1** and **KC2** that have the matching IP address that is found on the Entrust KeyControl service details page.
 2. Right-click **KC1** or **KC2**, and then click **Open Console**.
 3. Log in to the console by using the console credentials that you can find on the Entrust KeyControl service details page.
-
-For more information, see [Ordering services for vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices).
 
 ## Enabling internet access for the Entrust KeyControl VMs
 {: #managing-entrust-kc-internet-access}
@@ -71,9 +69,9 @@ For private-only vCenter Server environments, the VMware® NSX Edge Services Gat
 9. To confirm that the VM has access to the internet, ping a public IP address or website. Click **Manage Network Settings > Network Diagnostic Tools > Test Inbound Ports of Another Server**. Type a public website address, for example, `www.ibm.com`, click **OK**, type `80 443` for the ports (or any other ports you want to test). You must get an immediate response that shows the inbound ports with a message similar to `80 (OK) 443 (OK)`.
 10. Repeat steps 3 - 9 for the other Entrust VM.
 
-## Related links
-{: #managing-entrust-kc-related}
+## Considerations when you delete Entrust KeyControl
+{: #managing-entrust-kc_considerations-remove}
 
-* [Entrust KeyControl overview](/docs/vmwaresolutions?topic=vmwaresolutions-entrust-kc_considerations)
-* [FAQ](/docs/vmwaresolutions?topic=vmwaresolutions-faq-vmwaresolutions)
-* [Entrust website](https://www.entrust.com/){: external}
+Review the following considerations before you delete the service:
+* Before you delete Entrust KeyControl, decouple all clients from using Entrust KeyContol. After you delete the service, the keys might be deleted, and you might be locked out of your VMs.
+* If you installed the Entrust KeyControl service before VMware® Solutions v4.0 and you delete the service, you must manually remove the DNS entries. For more information, see [Manually removing the DNS entries](/docs/vmwaresolutions?topic=vmwaresolutions-vc_deletingservices#vc_deletingservices-DNS-entries).

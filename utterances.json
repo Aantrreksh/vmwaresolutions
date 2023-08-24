@@ -48,19 +48,6 @@
         "what comes in vSphere cluster",
         "what are components of vss "
     ],
-    "is-a-two-node-vcenter-server-instance-highly-available": [
-        "is two-node vCenter Server instance highly available",
-        "high availability of two-node vcenter server ",
-        "high availability of two-node vcs ",
-        "best practice for nsx controller availability ",
-        "two node deployment availability ",
-        "two-node deployment availablity ",
-        "does HA for two node cluster work ",
-        "does HA for two-node cluster work ",
-        "are two-node clusters resilient ",
-        "two node cluster resiliency ",
-        "how available is vcenter server "
-    ],
     "faq-ha": [
         "how to configure vCenter HA",
         "vcs ha configuration",

@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2023
 
-lastupdated: "2023-06-26"
+lastupdated: "2023-08-17"
 
 keywords: vCenter Server add NFS storage, add nfs
 
@@ -28,7 +28,7 @@ You can expand the capacity of your VMware vCenter Server® instance according t
 * You can add or remove NFS storage shares to or from an existing NFS or vSAN cluster.
 * If you mount {{site.data.keyword.cloud_notm}} Endurance NFS storage to your cluster, consider the following steps:
    * Ping the NFS server for the storage and note the subnet for the server IP address.
-   * Review the VMKernel adapters for the hosts that will use the storage and make note of the subnet for `vmk3`. Use the [file storage list](https://cloud.ibm.com/cloud-storage/file){: external} to authorize the `vmk3` subnet to access the NFS datastore.
+   * Review the VMKernel adapters for the hosts that will use the storage and make note of the subnet for `vmk3`. Use the [File Storage list](https://cloud.ibm.com/cloud-storage/file) to authorize the `vmk3` subnet to access the NFS datastore.
    * Review the static routes defined on the hosts with the `esxcli network ip route ipv4 list` command. A static route must be displayed for the NFS server IP subnet to the gateway for the `vmk3` subnet listed in the previous step.
 
 ## Procedure to add NFS storage to vCenter Server instances

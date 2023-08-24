@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2022
+  years:  2022, 2023
 
-lastupdated: "2022-06-09"
+lastupdated: "2023-07-17"
 
 subcollection: vmwaresolutions
 
@@ -47,6 +47,6 @@ When you design or deploy this architecture pattern, consider that you might alt
 {: #arch-pattern-bastion-vpc-links}
 
 * [Getting started with Virtual Private Cloud (VPC)](/docs/vpc?topic=vpc-getting-started)
-* [VMware vSphere overview](/docs/vmwaresolutions?topic=vmwaresolutions-vs_vsphereclusteroverview)
+* [VMware vSphere overview](/docs/vmwaresolutions?topic=vmwaresolutions-vs_vsphereoverview)
 * [Getting started with {{site.data.keyword.tg_full_notm}}](/docs/transit-gateway?topic=transit-gateway-getting-started)
 * [VPNs for VPC overview](/docs/vpc?topic=vpc-vpn-overview)

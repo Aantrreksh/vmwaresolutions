@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2023
 
-lastupdated: "2023-06-12"
+lastupdated: "2023-07-31"
 
 keywords: Cyber Recovery add service, add service Cyber Recovery, Cyber Recovery order service, order service Cyber Recovery
 
@@ -27,9 +27,8 @@ The following table shows the services that are available to Cyber Recovery inst
 | Service name | Current version |
 |--------------|-----------------|
 | [Caveonix RiskForesight](/docs/vmwaresolutions?topic=vmwaresolutions-caveonix_considerations) | 4.1 |
-| [Entrust CloudControl™](/docs/vmwaresolutions?topic=vmwaresolutions-entrust-cc_considerations) | 6.6 |
 | [F5® BIG-IP®](/docs/vmwaresolutions?topic=vmwaresolutions-f5_considerations) | BIG-IP VE 17.1 |
-| [FortiGate® Virtual Appliance](/docs/vmwaresolutions?topic=vmwaresolutions-fortinetvm_considerations) | 7.2.5 |
+| [FortiGate® Virtual Appliance](/docs/vmwaresolutions?topic=vmwaresolutions-fortinetvm_considerations) | 7.4 |
 | [VMware HCX™](/docs/vmwaresolutions?topic=vmwaresolutions-hcx_considerations) | Periodically updated to the most recent version |
 | [Juniper® vSRX](/docs/vmwaresolutions?topic=vmwaresolutions-juniper-overview) | 3.0 (23.1R2) |
 | [Red Hat OpenShift for VMware](/docs/vmwaresolutions?topic=vmwaresolutions-ocp_overview) | 4.12 |
@@ -48,7 +47,7 @@ You can use one promotion (promo) code for one or more services when you:
 * Add a service to a Cyber Recovery instance
 * Order a stand-alone service license, such as Caveonix or Veeam
 
-For services that charge per host, promo codes apply only to the hosts in the order or in the current environment. Examples of such services are HCX, Entrust CloudControl, and VMware Aria® Operations™ and VMware Aria Operations™ for Logs.
+For services that charge per host, promo codes apply only to the hosts in the order or in the current environment. Examples of such services are HCX and VMware Aria® Operations™ and VMware Aria Operations for Logs.
 
 You can use one promo code per order. Multiple promo codes are not allowed. However, you can use a promo code multiple times per account. A promo code might apply to multiple services, for example, Veeam and Caveonix RiskForesight.
 
@@ -76,7 +75,6 @@ The following table provides the resource requirements for the services for whic
 | Caveonix RiskForesight | CPU - 8 CPUs \n RAM - 32 GB \n Storage - 100 GB |
 | F5 BIG-IP[^f5bigip] | CPU - 4, 8, or 16 CPUs, depending on license and bandwidth chosen \n RAM - 8, 16, or 32 GB, depending on license and bandwidth chosen |
 | FortiGate Virtual Appliance | CPU - 2, 4, 8, 16, or 32 CPUs, depending on deployment size chosen \n RAM - 4, 6, or 12 GB, depending on deployment size chosen |
-| Entrust CloudControl | CPU - 4 CPUs \n RAM - 16 GB \n Storage - 186 GB VMDK |
 | Juniper vSRX | You must have enough available capacity to accommodate two VMs with the following requirements, on different hosts: \n CPU - 6 CPUs \n RAM - 16 GB \n Storage - 18 GB \n If you install Juniper vSRX on clusters with 25 Gb uplink speed, the following capacity requirements apply. \n CPU - 10 CPUs \n RAM - 16 GB \n Storage - 18 GB |
 | {{site.data.keyword.redhat_openshift_notm}} | If you install {{site.data.keyword.redhat_openshift_notm}} with vSAN™ storage, the following capacity requirements apply. \n CPU - 9 CPUs \n RAM - 120 GB \n Storage - 1,170 GB \n If you install {{site.data.keyword.redhat_openshift_notm}} with NFS storage, a new 2-TB NFS data store, which is dedicated to {{site.data.keyword.redhat_openshift_notm}}, is ordered. |
 | Veeam | If you select Veeam as a VSI option, there is no capacity requirement. \n If you select Veeam as a VM option, the following capacity requirements apply. \n CPU - 8 CPUs \n RAM - 32 GB \n Storage - 100 GB \n If you select Veeam as a bare metal server option, there is no capacity requirement. |
@@ -141,7 +139,7 @@ The following table lists the variables that are used in the previous formula.
 ## Procedure to order services for Cyber Recovery instances
 {: #cr_addingservices-procedure}
 
-For Cyber Recovery instances, a recommended service is Caveonix RiskForesight, which manages cyberrisk and compliance risk. You can have many other options, such as Zerto, Entrust CloudControl, and Red Hat OpenShift for VMware Solutions.
+For Cyber Recovery instances, a recommended service is Caveonix RiskForesight, which manages cyberrisk and compliance risk. You have other service options, such as Zerto or Red Hat OpenShift for VMware.
 
 For more information, see [Available services for Cyber Recovery instances](/docs/vmwaresolutions?topic=vmwaresolutions-cr_addingservices#cr_addingservices-available-services).
 

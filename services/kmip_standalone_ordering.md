@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-06-20"
+lastupdated: "2023-08-18"
 
 keywords: KMIP for VMware, order KMIP, Key Protect, Hyper Protect Crypto Services, HPCS
 
@@ -104,9 +104,9 @@ When you enable the nonactive KMIP for VMware instance, provide the following se
    * If you selected **Hyper Protect Crypto Services**, click **Retrieve** to get the list of available HPCS instances and select the one to use for key management.
    * If you selected **Key Protect**, enter your service ID API key, then click **Retrieve** to get the list of available key manager instances and select the one to use for key management.
 
-3. Select the Key Manager instance from the dropdown.
+3. Select the Key Manager instance from the list.
 
-4. If you selected Key Protect as the key management type, under Customer key ring, the names of the key rings belonging to the selected Key Manager instance are displayed. Select the Customer key ring from the dropdown.
+4. If you selected Key Protect as the key management type, under Customer key ring, the names of the key rings that belong to the selected Key Manager instance are displayed. Select the Customer key ring from the list.
 
     If you selected HPCS, the key ring field is not displayed.
 

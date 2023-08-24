@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-06-19"
+lastupdated: "2023-08-22"
 
 keywords: FortiGate VA, FortiGate Virtual Appliance, tech specs FortiGate VA
 
@@ -18,7 +18,7 @@ subcollection: vmwaresolutions
 # FortiGate Virtual Appliance on IBM Cloud overview
 {: #fortinetvm_considerations}
 
-FortiGate® Virtual Appliance on IBM Cloud deploys a pair of FortiGate Virtual Appliances to your environment, which can help you reduce risk by implementing critical security controls within your virtual infrastructure. FortiGate Virtual Appliance on IBM Cloud is a non-IBM product that is offered under terms and conditions from Fortinet, not IBM.
+FortiGate® Virtual Appliance on {{site.data.keyword.cloud_notm}} deploys a pair of FortiGate Virtual Appliances to your environment, which can help you reduce risk by implementing critical security controls within your virtual infrastructure. FortiGate Virtual Appliance on {{site.data.keyword.cloud_notm}} is a non-IBM product that is offered under terms and conditions from Fortinet, not IBM.
 {: shortdesc}
 
 * You can install multiple instances of this service as needed. You can manage this service by using the FortiOS web Client or the CLI through SSH.
@@ -27,7 +27,7 @@ FortiGate® Virtual Appliance on IBM Cloud deploys a pair of FortiGate Virtual A
 
 {{site.data.keyword.vmwaresolutions_full}} offers promotions for some add-on services. Promotional pricing offers a number of months at no cost for a service licenses, if the service has license charges. For more information, see [Promotions for VMware Solutions add-on services](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices#vc_addingservices-service-promotions).
 
-The FortiGate Virtual Appliance version available for deployment is 7.2.5.
+The FortiGate Virtual Appliance version available for deployment is 7.4.
 {: note}
 
 ## Technical specifications for FortiGate Virtual Appliance
@@ -178,7 +178,7 @@ Review the following considerations before you delete the service:
 
 * [Ordering FortiGate Virtual Appliance](/docs/vmwaresolutions?topic=vmwaresolutions-fortinetvm_ordering)
 * [Managing FortiGate Virtual Appliance](/docs/vmwaresolutions?topic=vmwaresolutions-managingfortinetvm)
-* [Contacting {{site.data.keyword.IBM}} Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support)
+* [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support)
 * [FAQ](/docs/vmwaresolutions?topic=vmwaresolutions-faq-vmwaresolutions)
 * [Fortinet website](https://www.fortinet.com/){: external}
 * [Fortinet Document Library](https://docs.fortinet.com/product/fortigate/6.2){: external}

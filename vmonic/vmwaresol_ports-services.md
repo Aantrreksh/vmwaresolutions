@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2023
 
-lastupdated: "2023-06-12"
+lastupdated: "2023-08-11"
 
 keywords: VLAN ports, vmware solutions ports, ports usage vmware solutions
 
@@ -72,23 +72,6 @@ The following table provides information about the VMware HCX™ ports.
 | IBM CloudDriver | Private primary subnet \n Infrastructure VMs | HCX | New subnet ordered in private VLAN | 9443 | TCP | Use the HCX appliance management interface for HCX system configuration | HTTPS |
 {: caption="Table 4. VMware HCX ports" caption-side="bottom"}
 
-## Ports for Entrust CloudControl, Entrust DataControl, and Entrust KeyControl
-{: #vmwaresol_ports-vmware-optional-services-entrust}
-
-The following table provides information about the Entrust CloudControl™, Entrust DataControl®, and Entrust KeyControl™ ports.
-
-| Source | Subnet, IP range | Target | Subnet, IP range | Port | Protocol | Purpose | Service |
-|:------ |:---------------- |:------ |:---------------- |:---- |:-------- |:------- |:------- |
-| Entrust CloudControl | Infrastructure VMs | {{site.data.keyword.cloud_notm}} infrastructure NTP service | {{site.data.keyword.cloud_notm}} infrastructure services network | 123 | UDP | Use {{site.data.keyword.cloud_notm}} infrastructure NTP service | NTP |
-| Entrust CloudControl | Infrastructure VMs | Windows Active Directory and DNS server | Private primary subnet \n Infrastructure VMs | 53 | UDP | Use Windows DNS service | DNS |
-| Entrust CloudControl | Infrastructure VMs | Windows Active Directory | Private primary subnet \n Infrastructure VMs | | ICMP | Ping | Ping |
-| Entrust CloudControl | Infrastructure VMs | Windows Active Directory | Private primary subnet \n Infrastructure VMs | 443 | TCP | Access Windows Active Directory | HTTPS |
-| Entrust DataControl | Infrastructure VMs | Windows Active Directory | {{site.data.keyword.cloud_notm}} infrastructure services network | 123 | UDP | Use {{site.data.keyword.cloud_notm}} infrastructure NTP service | NTP |
-| Entrust DataControl | Infrastructure VMs | Windows Active Directory | Private primary subnet \n Infrastructure VMs | 53 | UDP | Use Windows DNS service | DNS |
-| Entrust KeyControl | Infrastructure VMs | {{site.data.keyword.cloud_notm}} infrastructure NTP service | {{site.data.keyword.cloud_notm}} infrastructure services network | 123  | UDP | Use {{site.data.keyword.cloud_notm}} infrastructure NTP service | NTP |
-| Entrust KeyControl | Infrastructure VMs | Windows Active Directory | Private primary subnet \n Infrastructure VMs | 53 | UDP | Use Windows DNS service | DNS |
-{: caption="Table 5. Entrust CloudControl, Entrust DataControl, and Entrust KeyControl ports" caption-side="bottom"}
-
 ## Ports for Juniper vSRX
 {: #vmwaresol_ports-vmware-optional-services-juniper-vsrx}
 
@@ -136,7 +119,7 @@ The following table provides information about the Veeam® ports.
 | Veeam | Private primary subnet | {{site.data.keyword.cloud_notm}} infrastructure Windows KMS service | {{site.data.keyword.cloud_notm}} infrastructure services network | 1688 | TCP | Use {{site.data.keyword.cloud_notm}} infrastructure Windows KMS service | |
 | Veeam | Private primary subnet | {{site.data.keyword.cloud_notm}} service - Cloud Object Storage | {{site.data.keyword.cloud_notm}} endpoint service network | 443 | TCP | Use {{site.data.keyword.cloud_notm}} Object Storage service | HTTPS |
 | Veeam | Private primary subnet | {{site.data.keyword.cloud_notm}} infrastructure WSUS service | {{site.data.keyword.cloud_notm}} infrastructure services network | 80 | TCP | Use {{site.data.keyword.cloud_notm}} infrastructure WSUS service | HTPP |
-| Veeam | Private primary subnet | {{site.data.keyword.cloud_notm}} infrastructure endurance storage | {{site.data.keyword.cloud_notm}} infrastructure services network | 3260 | TCP | Use {{site.data.keyword.cloud_notm}} infrastructure endurance storage | ISCSI |
+| Veeam | Private primary subnet | {{site.data.keyword.cloud_notm}} infrastructure endurance storage | {{site.data.keyword.cloud_notm}} infrastructure services network | 3260 | TCP | Use {{site.data.keyword.cloud_notm}} infrastructure endurance storage | iSCSI |
 | {{site.data.keyword.cloud_notm}} infrastructure Service - Provision Windows VSI | {{site.data.keyword.cloud_notm}} infrastructure services network `10.0.0.0/14` | Veeam | Private primary subnet | 8051 | TCP | EMC2 (Legato) Networker or Sun Solstice Backup | |
 | {{site.data.keyword.cloud_notm}} infrastructure Service - Provision Windows VSI | {{site.data.keyword.cloud_notm}} infrastructure services network `10.200.0.0/14` | Veeam | Private primary subnet | | ICMP | ICMP | Ping |
 {: caption="Table 8. Veeam ports" caption-side="bottom"}
@@ -204,10 +187,29 @@ The following table provides information about Zerto ports.
 
 For more information about Zerto networking, see [Zerto - prerequisites and requirements for vSphere environments](https://help.zerto.com/en-US/bundle/Prereq.VC.HTML.90/page/Prerequisites_Requirements_vSphere_Environments.htm){: external}.
 
-## Ports for IBM Spectrum Protect Plus (deprecated)
+## Ports for Entrust CloudControl, Entrust DataControl, and Entrust KeyControl - deprecated
+{: #vmwaresol_ports-vmware-optional-services-entrust}
+
+The following table provides information about the Entrust CloudControl™, Entrust DataControl®, and Entrust KeyControl™ ports.
+{: deprecated}
+
+| Source | Subnet, IP range | Target | Subnet, IP range | Port | Protocol | Purpose | Service |
+|:------ |:---------------- |:------ |:---------------- |:---- |:-------- |:------- |:------- |
+| Entrust CloudControl | Infrastructure VMs | {{site.data.keyword.cloud_notm}} infrastructure NTP service | {{site.data.keyword.cloud_notm}} infrastructure services network | 123 | UDP | Use {{site.data.keyword.cloud_notm}} infrastructure NTP service | NTP |
+| Entrust CloudControl | Infrastructure VMs | Windows Active Directory and DNS server | Private primary subnet \n Infrastructure VMs | 53 | UDP | Use Windows DNS service | DNS |
+| Entrust CloudControl | Infrastructure VMs | Windows Active Directory | Private primary subnet \n Infrastructure VMs | | ICMP | Ping | Ping |
+| Entrust CloudControl | Infrastructure VMs | Windows Active Directory | Private primary subnet \n Infrastructure VMs | 443 | TCP | Access Windows Active Directory | HTTPS |
+| Entrust DataControl | Infrastructure VMs | Windows Active Directory | {{site.data.keyword.cloud_notm}} infrastructure services network | 123 | UDP | Use {{site.data.keyword.cloud_notm}} infrastructure NTP service | NTP |
+| Entrust DataControl | Infrastructure VMs | Windows Active Directory | Private primary subnet \n Infrastructure VMs | 53 | UDP | Use Windows DNS service | DNS |
+| Entrust KeyControl | Infrastructure VMs | {{site.data.keyword.cloud_notm}} infrastructure NTP service | {{site.data.keyword.cloud_notm}} infrastructure services network | 123  | UDP | Use {{site.data.keyword.cloud_notm}} infrastructure NTP service | NTP |
+| Entrust KeyControl | Infrastructure VMs | Windows Active Directory | Private primary subnet \n Infrastructure VMs | 53 | UDP | Use Windows DNS service | DNS |
+{: caption="Table 5. Entrust CloudControl, Entrust DataControl, and Entrust KeyControl ports" caption-side="bottom"}
+
+## Ports for IBM Spectrum Protect Plus - deprecated
 {: #vmwaresol_ports-vmware-optional-services-spp}
 
 The following table provides information about the IBM Spectrum® Protect Plus ports.
+{: deprecated}
 
 | Source | Subnet, IP range | Target | Subnet, IP range | Port | Protocol | Purpose | Service |
 |:------ |:---------------- |:------ |:---------------- |:---- |:-------- |:------- |:------- |

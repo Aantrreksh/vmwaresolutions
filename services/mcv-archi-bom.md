@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2023
 
-lastupdated: "2023-06-12"
+lastupdated: "2023-08-09"
 
 subcollection: vmwaresolutions
 
@@ -23,20 +23,17 @@ Review the Bill of Materials (BOM) for VMware vCenter Server® multizone instanc
 ## Components
 {: #mcv-archi-bom-components}
 
-The following components are available for vCenter Server multizone instances:
-* VMware vSphere® 7.0 Update 1c
+The following components are part of your existing vCenter Server multizone instance:
+* VMware vSphere®
 * VMware Aria components
-   * VMware Aria® Operations™ 8.2
-   * VMware Aria Operations™ for Logs 8.4
-   * VMware Aria Operations™ for Networks 4.8
-* VMware NSX-T™ 3.2.0.1. NSX-V is not supported.
-* Skylake and Cascade Lake when available. Skylake 4110 is supported for the witness and management clusters only.
-* Optane drives are the only supported option for VMware vSAN™ cache disks.
-* vSAN with the options of RAID 1, RAID 5, and RAID 6.
+   * VMware Aria® Operations™
+   * VMware Aria Operations™ for Logs
+   * VMware Aria Operations™ for Networks
+* VMware NSX-T™
+* VMware vSAN™ with the options of RAID 1, RAID 5, and RAID 6. Optane drives are the only supported option for vSAN cache disks.
 * Licensing:
-   * vSAN Enterprise.
-   * VMware NSX® Enterprise or Enterprise Plus.
-   * Bring Your Own Licenses (BYOL) is not supported.
+   * vSAN Enterprise
+   * VMware NSX® Enterprise or Enterprise Plus
 * HA Active Directory with two virtual machines or two VSIs distributed between the two workload sites.
 
 ### Component naming conventions

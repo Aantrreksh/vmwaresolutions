@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2023
 
-lastupdated: "2023-06-19"
+lastupdated: "2023-07-10"
 
 subcollection: vmwaresolutions
 
@@ -44,6 +44,12 @@ The workload cluster network design requires both the overlay network that is de
 
 Traffic from the SaaS consumer is peered with the overlay network virtual edge. It is the virtual edge that the SaaS consumer uses as the secure tunnel end point to establish an encrypted VPN.
 
+## Interconnectivity
+{: #vrw-overlay-network-interconnectivity}
+
+With {{site.data.keyword.tg_full}} (TGW), you can create one or more transit gateways to connect your VMware® Regulated Workloads with VPCs, other {{site.data.keyword.cloud}} infrastructure platforms, or on-premises networks through {{site.data.keyword.dl_full}}.
+
+{{site.data.keyword.tg_short}} supports GRE tunnels with BGP routing. These GRE tunnels can be used to connect your NSX-T overlay to the {{site.data.keyword.tg_short}}, which can further provide routed connectivity to the other connections of the {{site.data.keyword.tg_short}}.
 
 ## Related links
 {: #vrw-overlay-network-related}

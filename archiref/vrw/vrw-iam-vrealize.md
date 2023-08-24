@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2023
 
-lastupdated: "2023-06-16"
+lastupdated: "2023-07-10"
 
 subcollection: vmwaresolutions
 
@@ -21,7 +21,7 @@ subcollection: vmwaresolutions
 
 The operational tooling consists of the following components:
 
-* VMware Aria® Operations™ Manager (formerly known as VMware vRealize® Operations Manager™) - Using data collected from objects in the VMware® platform, VMware Aria Operations Manager uses detailed dashboards to show system health, capacity, and performance.
+* VMware Aria® Operations™ (formerly known as VMware vRealize® Operations Manager™) - Using data collected from objects in the VMware® platform, VMware Aria Operations uses detailed dashboards to show system health, capacity, and performance.
 * VMware Aria Operations™ for Logs (formerly known as VMware vRealize® Log Insight™) - Objects in the VMware platform have been configured to send their logging events to VMware Aria Operations for Logs to enable a centralized log management function.
 
 The following main principles or requirements for identity and access management to the operational tooling apply:
@@ -45,7 +45,7 @@ The following terminology is used to define the account types:
 
 The VMware Solutions infrastructure AD domain holds the resource objects and user accounts for the administration of the VMware platform only.
 
-## VMware Aria Operations Manager
+## VMware Aria Operations
 {: #vrw-iam-vrealize-vrops}
 
 By default, the following local users are configured during service instantiation:
@@ -57,19 +57,19 @@ By default, the following local users are configured during service instantiatio
 | `admin` | LocalID |
 | `maintenanceAdmin` | LocalID |
 | `migrationAdmin` | LocalID |
-{: caption="Table 1. VMware Aria Operations Manager user IDs" caption-side="bottom"}
+{: caption="Table 1. VMware Aria Operations user IDs" caption-side="bottom"}
 
 The following groups are configured during service instantiation:
 
 * Cloud Admin - The `cloudadmin` user ID is a member of this group.
 * Everyone - All users are a member of this group.
 
-![VMware Aria Operations Manager logical](../../images/vrw-vrops.svg){: caption="Figure 1. VMware Aria Operations Manager logical" caption-side="bottom"}
+![VMware Aria Operations logical](../../images/vrw-v2-operations.svg){: caption="Figure 1. VMware Aria Operations logical" caption-side="bottom"}
 
 ### Roles
 {: #vrw-iam-vrealize-vrops-roles}
 
-The following roles are defined in VMware Aria Operations Manager:
+The following roles are defined in VMware Aria Operations:
 * `Administrator` - System administrator
 * `AgentManager` - Deploy and configure EP Ops management agents
 * `ContentAdmin` - Manage all the contents in the product
@@ -81,14 +81,14 @@ The following roles are defined in VMware Aria Operations Manager:
 * `PowerUserMinusRemediation` - All the Privileges except the ones that are related to User Management. Cluster Management and Remediation Actions.
 * `Readonly` - Read-only access for the product.
 
-VMware Aria Operations Manager authentication sources are configured to use active directory to connect to the infrastructure AD. Within the infrastructure AD, the following groups are assigned roles:
+VMware Aria Operations authentication sources are configured to use active directory to connect to the infrastructure AD. Within the infrastructure AD, the following groups are assigned roles:
 
 | Group | Role |
 |---|---|
 | `icv4-vCenter` | Administrator |
 | `ic4v-infra`  | To be determined |
 | `ic4v-auditor` | Read only |
-{: caption="Table 2. VMware Aria Operations Manager groups" caption-side="bottom"}
+{: caption="Table 2. VMware Aria Operations groups" caption-side="bottom"}
 
 ## VMware Aria Operations for Logs
 {: #vrw-iam-vrealize-vrli}
@@ -98,11 +98,11 @@ By default, the following local users are configured during service instantiatio
 | ID | Type | Role |
 |---|---|---|
 | `admin` | Local ID | Super Admin |
-{: caption="Table 3. VMware Aria Operations Manager default user IDs" caption-side="bottom"}
+{: caption="Table 3. VMware Aria Operations default user IDs" caption-side="bottom"}
 
 This account is not used on a day-to-day basis or for configuration tasks.
 
-![VMware Aria Operations for Logs logical](../../images/vrw-vrli.svg){: caption="Figure 2. VMware Aria Operations for Logs logical" caption-side="bottom"}
+![VMware Aria Operations for Logs logical](../../images/vrw-v2-operations-logs.svg){: caption="Figure 2. VMware Aria Operations for Logs logical" caption-side="bottom"}
 
 ### VMware Aria Operations for Logs roles
 {: #vrw-iam-vrealize-vrli-roles}

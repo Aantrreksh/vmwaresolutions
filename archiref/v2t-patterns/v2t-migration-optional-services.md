@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2023
 
-lastupdated: "2023-06-12"
+lastupdated: "2023-08-21"
 
 subcollection: vmwaresolutions
 
@@ -23,8 +23,6 @@ The following list provides the services that you might currently use:
 * [Caveonix RiskForesight](/docs/vmwaresolutions?topic=vmwaresolutions-caveonix_considerations)
 * [F5 BIG-IP](/docs/vmwaresolutions?topic=vmwaresolutions-f5_considerations)
 * [VMware HCX](/docs/vmwaresolutions?topic=vmwaresolutions-hcx_considerations)
-* [Entrust CloudControl](/docs/vmwaresolutions?topic=vmwaresolutions-entrust-cc_considerations)
-* [Entrust DataControl](/docs/vmwaresolutions?topic=vmwaresolutions-entrust-dc_considerations)
 * [Juniper vSRX](/docs/vmwaresolutions?topic=vmwaresolutions-juniper-overview)
 * [{{site.data.keyword.redhat_openshift_notm}} for VMware](/docs/vmwaresolutions?topic=vmwaresolutions-ocp_overview)
 * [Veeam](/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview)
@@ -62,7 +60,7 @@ If you deploy a new Veeam instance, you must consider backup data and backup con
 * Backup data - Backup files will be hosted in the Veeam repository server. For more information, see [Importing Veeam Agent backups](https://helpcenter.veeam.com/docs/agentforwindows/userguide/integration_import.html?ver=50){: external}.
 * Backup configuration - The backup configuration can be saved to a file. For more information, see [Configuration backup and restore](https://helpcenter.veeam.com/docs/backup/vsphere/vbr_config.html?ver=120){: external}.
 
-If you want to migrate your Veeam service from VMware NSX-V to VMware NSX-T, open an IBM Support ticket by following the steps in [Contacting IBM Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support).
+If you want to migrate your Veeam service from VMware NSX-V to VMware NSX-T, open an IBM Support ticket by following the steps in [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support).
 {: note}
 
 ## Caveonix RiskForesight
@@ -98,32 +96,12 @@ FortiGate® Virtual Appliance is available for vCenter Server with NSX-T instanc
 * Configure NSX-T FortiGate Virtual Appliance.
 * Cut-over to the NSX-T FortiGate Virtual Appliance at the required point in the migration.
 
-## Entrust CloudControl
-{: #v2t-optionalservices-cc}
-
-Entrust CloudControl™ is available for vCenter Server with NSX-T instances.
-
-If a migration is required, review the following information.
-
-* Entrust can provide a CloudControl Migration tool. Contact the Entrust Professional Services at `HTCC-Migration@hytrust.com`
-* Entrust Professional Services are not required to use the migration tool. However, Entrust highly recommends that you use their Professional Services for a preemptive HealthCheck of the existing CloudControl installation.
-
-## Entrust DataControl
-{: #v2t-optionalservices-dc}
-
-Entrust DataControl® is not currently available for vCenter Server with NSX-T instances.
-
-## Entrust KeyControl
-{: #v2t-optionalservices-kc}
-
-Entrust KeyControl is no longer available in IBM Cloud. Investigate alternative solutions and implement.
-
 ## F5 BIG-IP
 {: #v2t-optionalservices-f5}
 
 F5® BIG-IP® is available for vCenter Server with NSX-T instances. The migration approach is to configure F5 BIG-IP in the NSX-T environment in parallel to the existing NSX-V configuration to allow testing. After verification, cut-over to NSX-T F5 BIG-IP appliances.
 
-If you want to migrate your F5 BIG-IP service from VMware NSX-V to VMware NSX-T, open an IBM Support ticket by following the steps in [Contacting IBM Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support).
+If you want to migrate your F5 BIG-IP service from VMware NSX-V to VMware NSX-T, open an IBM Support ticket by following the steps in [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support).
 {: note}
 
 ## Juniper vSRX

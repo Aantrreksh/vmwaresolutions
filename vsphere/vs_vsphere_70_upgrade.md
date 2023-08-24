@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-05-30"
+lastupdated: "2023-08-22"
 
 keywords: vSphere upgrade, NSX upgrade, PSC upgrade
 
@@ -41,7 +41,7 @@ If you are using the VMware vCenter Server® offering, migrate your instances to
 ## Important considerations
 {: #vs_vsphere_70_upgrade-considerations}
 
-* You are responsible to ensure that all VMware ESXi™ servers have proper firmware and drivers to support vSphere 7. Broadwell servers are not supported. Research and plan carefully for Skylake and Cascade Lake servers.
+* You are responsible to ensure that all VMware ESXi™ servers have proper firmware and drivers to support vSphere 7. Broadwell and Skylake servers are not supported. Research and plan carefully for Cascade Lake servers.
 * {{site.data.keyword.cloud_notm}} supports only Cascade Lake bare metal servers for newly deployed vSphere 7 instances.
 * If you add clusters or hosts to a vSphere 7 instance from the VMware Solutions console, only Cascade Lake bare metal servers are provisioned.
 * After you upgrade, your existing clusters will continue to use N-VDS switches, which are deprecated by VMware. Support for N-VDS (NSX-T Virtual Distributed Switch) will be removed in a future VMware NSX-T™ release.
@@ -77,7 +77,7 @@ The following table is a summary of the supported upgrade paths:
 |:------------------- |:--------------- |:----------------- |
 | vCenter Server (VCS) with NSX-V instances with vSphere V6 | **Preferred path** \n Provision a new vCenter Server with NSX-T instance with vSphere V7 and migrate workloads. See [NSX-V to NSX-T migration](/docs/vmwaresolutions?topic=vmwaresolutions-v2t-overview). \n **Alternative path** \n Self-upgrade by using the [upgrade procedure](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vsphere_70_upgrade). \n - For Cascade Lake servers, upgrade from vSphere V6 to V7. \n - Open a support ticket to obtain new V7 licenses. \n - Cluster expansion uses Cascade Lake servers. \n **Before December 2023**, you must provision a new vCenter Server with NSX-T instance with vSphere V7 and migrate workloads. See [NSX-V to NSX-T migration](/docs/vmwaresolutions?topic=vmwaresolutions-v2t-overview). | - Broadwell and Skylake servers are not supported. \n - Add-on services to upgraded instance are not supported. |
 | vCenter Server (VCS) with NSX-T instances with vSphere V6 | **Preferred path** \n Provision a new vCenter Server with NSX-T instance with vSphere V7 and migrate workloads. See [NSX-V to NSX-T migration](/docs/vmwaresolutions?topic=vmwaresolutions-v2t-overview). \n **Alternative path** \n Upgrade the instance by using the [upgrade procedure](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vsphere_70_upgrade). \n - For Cascade Lake servers, upgrade from vSphere V6 to V7. \n  - Open a support ticket to obtain new V7 licenses. \n - Cluster expansion uses Cascade Lake servers. \n **Before December 2023**, provision a new vCenter Server instance with NSX-T and vSphere V7 and migrate workloads. See [NSX-V to NSX-T migration](/docs/vmwaresolutions?topic=vmwaresolutions-v2t-overview). | - Broadwell and Skylake servers are not supported. \n - Add-on services to upgraded instance are not supported. \n - Conversion of vSphere switching from N-VDS to VDS is not supported. |
-| VMware vSphere Server (VSS) | **Preferred path** \n Consider provision vSphere bare metal server and deploy a new [VSS bare metal server](/docs/vmwaresolutions?topic=vmwaresolutions-vs_vsphereclusteroverview) or a bare metal server within [VPC Architecture](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-ryo-overview). \n Upgrade your VMware vSphere servers by using [the upgrade procedure](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vsphere_70_upgrade). \n - For Broadwell servers, provision new servers as this server type is not supported by vSphere V7. \n - For Cascade Lake servers, upgrade from vSphere V6 to V7. \n - Open a support ticket to obtain new V7 licenses. \n - Cluster expansion uses Cascade Lake servers. | - Broadwell and Skylake servers are not supported. |
+| VMware vSphere Server (VSS) | **Preferred path** \n Consider provision vSphere bare metal server and deploy a new [VSS bare metal server](/docs/vmwaresolutions?topic=vmwaresolutions-vs_vsphereoverview) or a bare metal server within [VPC Architecture](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-ryo-overview). \n Upgrade your VMware vSphere servers by using [the upgrade procedure](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vsphere_70_upgrade). \n - For Broadwell servers, provision new servers as this server type is not supported by vSphere V7. \n - For Cascade Lake servers, upgrade from vSphere V6 to V7. \n - Open a support ticket to obtain new V7 licenses. \n - Cluster expansion uses Cascade Lake servers. | - Broadwell and Skylake servers are not supported. |
 | Roll-your-own (classic bare metals servers) | **Preferred path** \n Consider provision vSphere bare metal server and deploy a new bare metal server or a bare metal server within [VPC Architecture](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-ryo-overview). \n - Provision a new bare metal server with VMware ESXi V7. \n - Swap out the ESXi V6 servers. \n - Reload OS image with ESXi V7. \n **Alternative path** \n Consider provision a new bare metal server within [VPC Architecture](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-ryo-overview). | - In-place upgrade from V6 to V7 is not supported. |
 {: caption="Table 1. Upgrade paths for VMware Solutions offerings" caption-side="bottom"}
 
@@ -170,9 +170,9 @@ You must upgrade the Broadcom driver before you upgrade the ESXi host.
 {: #vs_vsphere_70_upgrade-procedure-esxi-upgrade}
 
 1. From the vCenter Server user interface, go to **LCM menu > LifeCycle Manager**.
-2. Select **IMPORT ISO > IMPORT ISO**, then select the `VMware-VMvisor-Installer-7.0U1c-17325551.iso` file.
+2. Select **IMPORT ISO > IMPORT ISO**. Then, select the `VMware-VMvisor-Installer-7.0U1c-17325551.iso` file.
 3. Create the baseline. Select **BASELINE > CREATE** and use the imported ISO from the previous step.
-4. For each host, select the host in the vCenter browser tree, then select **update** (located in the far left in the main window).
+4. For each host, choose the host in the vCenter browser tree. Then, select **update** (located in the far left in the main window).
 5. If the Zerto VRA is present on the host, put the host into maintenance mode first. Recent releases of Zerto stop the VRA, which otherwise would prevent the update.
 6. Complete the update.  
    1. [ATTACH] Baseline, select the previously created baseline.
@@ -185,7 +185,7 @@ If the upgrade process fails immediately and the `host cannot enter maintenance 
 ### Updating vCenter Server and ESXi host licenses
 {: #vs_vsphere_70_upgrade-license-update}
 
-After you upgrade the vCenter Server and ESXi hosts to vSphere 7, you must update the licenses on the vCenter Server and the ESXi hosts. If you have a vSAN cluster, you must update the vSAN license. Contact [IBM Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support) to obtain the new licenses for vSphere 7.
+After you upgrade the vCenter Server and ESXi hosts to vSphere 7, you must update the licenses on the vCenter Server and the ESXi hosts. If you have a vSAN cluster, you must update the vSAN license. [Contact IBM Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support) to obtain the new licenses for vSphere 7.
 
 #### Procedure to update the vCenter Server license
 {: #vs_vsphere_70_upgrade-license-update-vcs}
@@ -244,4 +244,4 @@ Complete the following steps from the vCenter Server user interface.
 
 * [About vCenter Server upgrade](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vcenter.upgrade.doc/GUID-9ED7B32A-019F-4A97-BC58-1A9BF7D16C57.html){: external}
 * [About VMware ESXi upgrade](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.esxi.upgrade.doc/GUID-65B5B313-3DBB-4490-82D2-A225446F4C99.html){: external}
-* [Contacting IBM Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support)
+* [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support)

@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-06-16"
+lastupdated: "2023-08-21"
 
 keywords: view vCenter Server Hybridity, view instance, view instance details
 
@@ -59,7 +59,7 @@ To view the property details of a vCenter Server with Hybridity Bundle instance:
 1. In the **vCenter Server** table, click an instance name.
 2. Under **Properties**, view the details for the instance.
 
-| Property        | Description       |
+| Property      | Description   |
 |:------------- |:------------- |
 | Name | The name of the instance. |
 | ID | The ID of the instance. |
@@ -108,7 +108,7 @@ Click the **Deployment History** tab to view the deployment history for the inst
 ### What to do if errors occur
 {: #vc_hybrid_viewinginstances-if-errors-occur}
 
-If you see errors in the deployment history, the {{site.data.keyword.cloud_notm}} Support team is automatically notified. To inquire about the status of your ticket, follow the steps in [Contacting IBM Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support).
+If you see errors in the deployment history, the {{site.data.keyword.cloud_notm}} Support team is automatically notified. To inquire about the status of your ticket, follow the steps in [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support).
 
 ## What to do next
 {: #vc_hybrid_viewinginstances-next}
@@ -120,12 +120,5 @@ Before you click **vCenter console** on the instance summary page to go to the v
 
 Review the following topics for information to help you complete the login instructions:
 *  For the requirements and necessary steps before you access the vSphere Web Client, see [Timeout reached while connecting to the vSphere Web Client](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_timeout_vc_console).
-*  For a list of access points to log in to the {{site.data.keyword.cloud_notm}} infrastructure Private Network that uses VPN, see [VPN Access](https://www.ibm.com/cloud/vpn-access){: external}.
+*  For a list of access points to log in to the {{site.data.keyword.cloud_notm}} infrastructure Private Network that uses VPN, see [Getting started with IBM Cloud Virtual Private Networking](/docs/iaas-vpn?topic=iaas-vpn-getting-started).
 *  If you have problems when you deploy an OVF (Open Virtualization Format) file by using the vSphere Web Client, see [Deploying an OVF file using the vSphere Web Client](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_deploy_ovf).
-
-## Related links
-{: #vc_hybrid_viewinginstances-related}
-
-* [Adding, viewing, and deleting clusters for vCenter Server with Hybridity Bundle instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_hybrid_addingviewingclusters)
-* [Expanding and contracting capacity for vCenter Server with Hybridity Bundle instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_hybrid_addingremovingservers)
-* [Deleting vCenter Server with Hybridity Bundle instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_hybrid_deletinginstance)

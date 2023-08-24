@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-06-12"
+lastupdated: "2023-08-17"
 
 subcollection: vmwaresolutions
 
@@ -97,8 +97,8 @@ After you provision your VMware vCenter Server® instance, system administrators
 |:----- |:----------- |
 | Add {{site.data.keyword.cloud_notm}} Endurance NFS storage | For more information about adding an {{site.data.keyword.cloud_notm}} Endurance NFS share to an existing cluster, see [Adding NFS storage to vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingnfs). |
 | Remove {{site.data.keyword.cloud_notm}} Endurance NFS storage | For more information about removing an {{site.data.keyword.cloud_notm}} Endurance NFS share from an existing cluster, see [Removing NFS storage from vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_removingnfs).
-| Grow {{site.data.keyword.cloud_notm}} Endurance NFS storage | For more information about adding more capacity to an {{site.data.keyword.cloud_notm}} Endurance NFS share, see [Expanding block storage capacity](/docs/BlockStorage?topic=BlockStorage-expandingcapacity#expandingcapacity). |
-| Shrink {{site.data.keyword.cloud_notm}} Endurance NFS storage | For more information about shrinking capacity in an {{site.data.keyword.cloud_notm}} Endurance NFS share, see [Expanding block storage capacity](/docs/BlockStorage?topic=BlockStorage-expandingcapacity#expandingcapacity). |
+| Grow {{site.data.keyword.cloud_notm}} Endurance NFS storage | For more information about adding more capacity to an {{site.data.keyword.cloud_notm}} Endurance NFS share, see [Expanding {{site.data.keyword.blockstorageshort}} capacity](/docs/BlockStorage?topic=BlockStorage-expandingcapacity#expandingcapacity). |
+| Shrink {{site.data.keyword.cloud_notm}} Endurance NFS storage | For more information about shrinking capacity in an {{site.data.keyword.cloud_notm}} Endurance NFS share, see [Expanding {{site.data.keyword.blockstorageshort}} capacity](/docs/BlockStorage?topic=BlockStorage-expandingcapacity#expandingcapacity). |
 | vSAN policy best practice advice | For more information, see [vSAN policy design](/docs/vmwaresolutions?topic=vmwaresolutions-design_virtualinfrastructure#design_virtualinfrastructure-storage-policy){: external}. |
 | Enabling vSAN health check | For more information, see [Enable the vSAN online health workflow](/docs/vmwaresolutions?topic=vmwaresolutions-vum-updating-vsan#vum-updating-vsan-enable-vsan-workflow){: external} and [vSAN health check information (2114803)](https://kb.vmware.com/s/article/2114803){: external}. |
 | Enable encryption | For more information about using the KMIP for VMware service to enable encryption, see [KMIP for VMware overview](/docs/vmwaresolutions?topic=vmwaresolutions-kmip_standalone_considerations#kmip_standalone_considerations). For more information about enabling VM encryption, see [Virtual machine encryption](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.security.doc/GUID-E6C5CE29-CD1D-4555-859C-A0492E7CB45D.html){: external}. For more information about using data at rest encryption to protect data in your vSAN cluster, see [Using encryption on a vSAN cluster](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.virtualsan.doc/GUID-F3B2714F-3406-48E7-AC2D-3677355C94D3.html){: external}.|

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2022
+  years:  2022, 2023
 
-lastupdated: "2022-06-10"
+lastupdated: "2023-07-17"
 
 subcollection: vmwaresolutions
 
@@ -59,7 +59,7 @@ When you design or deploy this architecture pattern, consider the following step
 ## Related links
 {: #aarch-pattern-bridging-links}
 
-* [VMware vSphere overview](/docs/vmwaresolutions?topic=vmwaresolutions-vs_vsphereclusteroverview)
+* [VMware vSphere overview](/docs/vmwaresolutions?topic=vmwaresolutions-vs_vsphereoverview)
 * [Getting started with {{site.data.keyword.cloud_notm}} Gateway Appliance](/docs/gateway-appliance?topic=gateway-appliance-getting-started)
 * [Installing NSX-T edge transport nodes](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.2/installation/GUID-5EF2998C-4867-4DA6-B1C6-8A6F8EBCC411.html){: external}
 * [Administering NSX-T Layer 2 bridging](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.2/administration/GUID-B4ABDE64-52BC-40F0-A560-670D3B7EAF7A.html){: external}

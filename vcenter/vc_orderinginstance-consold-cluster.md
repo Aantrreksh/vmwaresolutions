@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-07-12"
+lastupdated: "2023-08-01"
 
 keywords: vCenter Server consolidated cluster, order consolidated cluster, order vCenter Server instance
 
@@ -51,36 +51,25 @@ Select the {{site.data.keyword.cloud_notm}} data center pod where you want to de
 ## CPU model
 {: #vc_orderinginstance-cpumodel}
 
-### Skylake
-{: #vc_orderinginstance-skylake}
+You can choose between **Cascade Lake** and **SAP-certified Cascade Lake** servers[^1u].
 
-{{site.data.content.skylake-para-intro}}
-
-{{site.data.content.skylake-note}}
-
-{{site.data.content.simpletabtable-skylake-nsxt}}
-
-{{site.data.content.vcenter-nsxv-note-skylake}}
-
-{{site.data.content.simpletabtable-skylake-nsxv}}
+[^1u]: For clusters with NFS storage, where locations with appropriate 1U servers are available, 1U servers (up to 4 drives of storage) are ordered silently rather than 2U servers. For gateway clusters and clusters with vSAN storage, 2U servers are ordered.
 
 ### Cascade Lake
 {: #vc_orderinginstance-cascade}
 
 {{site.data.content.cascade-para-intro}}
 
-{{site.data.content.simpletabtable-cascade-nsxt}}
-
-{{site.data.content.vcenter-nsxv-note-cascadelake}}
-
-{{site.data.content.simpletabtable-cascade-nsxv}}
+{{site.data.content.simpletabtable-cascade}}
 
 ### SAP-certified Cascade Lake
 {: #vc_orderinginstance-sap}
 
 {{site.data.content.sap-para-intro}}
 
-{{site.data.content.simpletabtable-sap-netweaverandhana}}
+{{site.data.content.simpletabtable-sap-netweaver}}
+
+{{site.data.content.simpletabtable-sap-hana}}
 
 ## RAM
 {: #vc_orderinginstance-consold-cluster-ram}
@@ -122,12 +111,12 @@ Choose performance level options according to your needs.
 | 2 IOPS/GB | This option is designed for most general-purpose workloads. For example, hosting small databases, backing up web applications, or virtual machine disk images for a hypervisor. |
 | 4 IOPS/GB | This option is designed for higher-intensity workloads that have a high percentage of active data at a time. For example, transactional databases. |
 | 10 IOPS/GB | This option is designed for the most demanding workload types, such as analytics. For example, high-transaction databases and other performance-sensitive databases. This performance level is limited to a maximum capacity of 4 TB per file share. |
-{: caption="Table 4. NFS performance level options" caption-side="bottom"}
+{: caption="Table 3. NFS performance level options" caption-side="bottom"}
 
 ### vSAN storage
 {: #vc_orderinginstance-vsan-storage}
 
-vSAN is available for the **Skylake** and **Cascade Lake** bare metal configurations only.
+Specify the following settings for vSAN storage.
 
 #### Size for vSAN capacity disks
 {: #vc_orderinginstance-vsan-storage-typesize-capdisks}
@@ -179,7 +168,7 @@ Select **Public and private network** or **Private network only**.
 ## Uplink speed
 {: #vc_orderinginstance-uplink}
 
-{{site.data.content.uplink-speed-options-cascadelake-list}}
+{{site.data.content.uplink-speed-options-list}}
 
 {{site.data.content.simpletable-uplink-speed-locations-ap}}
 

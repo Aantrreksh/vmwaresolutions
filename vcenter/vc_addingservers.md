@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2023
 
-lastupdated: "2023-06-20"
+lastupdated: "2023-08-22"
 
 keywords: vCenter Server add host, add server vCenter Server
 
@@ -26,14 +26,16 @@ You can expand the capacity of your VMware® vCenter Server® instance according
 * For existing instances with vSphere 7.0u2, you can add only ESXi servers with vSphere 7.0u3.
 * For the gateway cluster, you cannot add or delete ESXi servers.
 * {{site.data.content.para-vcenteraddESXiservers}}
-* A vCenter Server instance with NFS storage must have at least three ESXi servers. Each of the nondefault clusters can be expanded to have up to 59 ESXi servers.
-* A vCenter Server instance with vSAN™ storage must have at least four ESXi servers.
-* If your initial cluster has vSAN storage, adding one or more ESXi servers after deployment can increase the cluster storage capacity.
-* If your initial cluster has vSAN storage, SED SSD disks are no longer available. Non-SED SSD disks are ordered.
-* You can add 1-20 ESXi servers at a time. For more information about the minimum of ESXi servers, see [Is a two-node vCenter Server instance highly available?](/docs/vmwaresolutions?topic=vmwaresolutions-faq-vmwaresolutions#is-a-two-node-vcenter-server-instance-highly-available)
+* A vCenter Server instance with NFS storage must have at least 3 ESXi servers. A vCenter Server instance with vSAN™ storage must have at least 4 ESXi servers.
+* If your initial cluster has vSAN storage, SED SSD disks are not available. Non-SED SSD disks are ordered.
+* You can add up to 51 ESXi servers to a consolidated cluster and up to 59 ESXi servers to a workload or gateway cluster.
 
 Bring Your Own License (BYOL) is no longer supported except for migrations or upgrades of existing BYOL clusters. Add a host to a BYOL cluster only if you are performing a migration or upgrade of an existing BYOL cluster.
 {: important}
+
+For vCenter Server instances with vSAN:
+* If you are adding ESXi servers to clusters provisioned after 23 August 2023, the servers are provisioned with mirrored M.2 drives.
+* If you are adding ESXi servers to clusters provisioned before 23 August 2023, the servers are provisioned with mirrored M.2 drives only if you select a new bare metal server configuration.
 
 ## Procedure to add ESXi servers to vCenter Server instances
 {: #vc_addingservers-procedure}
@@ -79,4 +81,4 @@ If you are adding ESXi servers during maintenance mode, VMs are not migrated to 
 * [Requirements for vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-req)
 * [Viewing vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_viewinginstances)
 * [Managing virtual servers](/docs/virtual-servers?topic=virtual-servers-managing-virtual-servers)
-* [Contacting IBM Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support)
+* [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support)

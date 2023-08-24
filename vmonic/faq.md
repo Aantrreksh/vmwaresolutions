@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-05-25"
+lastupdated: "2023-08-22"
 
 keywords: FAQ vmware solutions dedicated, vmware solutions dedicated questions, user account, patch management
 
@@ -62,19 +62,7 @@ For more information, see [Technical specifications for vCenter Server instances
 {: #faq-vss}
 {: faq}
 
-For more information, see [Technical specifications for VMware vSphere instances](/docs/vmwaresolutions?topic=vmwaresolutions-vs_vsphereclusteroverview#vs_vsphereclusteroverview-specs).
-
-## Is a two node vCenter Server instance highly available?
-{: #is-a-two-node-vcenter-server-instance-highly-available}
-{: faq}
-
-Deploy production workloads into environments that have at least three nodes.
-
-The VMware vSphere DRS (Distributed Resource Scheduler) and VMware HA (High Availability) are enabled by default. However, VMware suggests that you place each of the three NSX Controllers on an individual node.
-
-In the two-node minimum deployment, one node has one NSX Controller, and the other node has two NSX Controllers. If the node with two NSX Controllers goes down, NSX Controller operations are placed in read-only mode, and new VMs (virtual machines) or vMotion VMs might experience networking issues.
-
-When a third node is added to a two-node cluster, vCenter Server automatically rebalances the three NSX Controllers across the three nodes and creates a highly available environment.
+For more information, see [Technical specifications for VMware vSphere instances](/docs/vmwaresolutions?topic=vmwaresolutions-vs_vsphereoverview#vs_vsphereoverview-specs).
 
 ## Can I set up VMware vCenter HA configuration?
 {: #faq-ha}
@@ -141,7 +129,7 @@ For more information, see the _IBM Cloud data center availability_ sections in:
 {: #faq-deploy}
 {: faq}
 
-You can check the status of the instance deployment by viewing the deployment history on the instance details page from the {{site.data.keyword.vmwaresolutions_short}} console.
+You can check the status of the instance deployment by viewing the [deployment history](/docs/vmwaresolutions?topic=vmwaresolutions-vc_viewinginstances#vc_viewinginstances-procedure-view-deploy-history) on the [instance details page](/docs/vmwaresolutions?topic=vmwaresolutions-vc_viewinginstances#vc_viewinginstances-procedure-view-inst-property) from the {{site.data.keyword.vmwaresolutions_short}} console.
 
 ## How do I add a public network to a vCenter Server instance ordered as private network only?
 {: #faq-private-only}
@@ -184,7 +172,7 @@ To view the complete notification history, click **Notifications** from the left
 {: faq}
 {: support}
 
-If you need assistance with {{site.data.keyword.vmwaresolutions_short}}, open an IBM Support ticket by following the steps in [Contacting IBM Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support).
+If you need assistance with {{site.data.keyword.vmwaresolutions_short}}, open an IBM Support ticket by following the steps in [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support).
 
 ## Related links
 {: #faq-related}

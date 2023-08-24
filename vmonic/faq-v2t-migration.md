@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2023
 
-lastupdated: "2023-04-29"
+lastupdated: "2023-08-17"
 
 subcollection: vmwaresolutions
 
@@ -19,7 +19,7 @@ subcollection: vmwaresolutions
 ## What happens to the networking or storage assets when I delete a vCenter Server instance?
 {: #faq-v2t-migration-existing-assets}
 
-When you delete a VMware vCenter Server® instance, the networking (VLANs with private and public subnets) and storage ({{site.data.keyword.cloud}} File Storage) assets are cancelled together with the {{site.data.keyword.cloud_notm}} bare metal Servers. If you have networking or storage assets in your migration, open a support ticket to ensure that {{site.data.keyword.cloud_notm}} decouples the VLANs and related subnets and NFS storage from the original instance. Then, these assets are not cancelled when the vCenter Server instance is deleted.
+When you delete a VMware vCenter Server® instance, the networking (VLANs with private and public subnets) and storage ({{site.data.keyword.filestorage_full}}) assets are cancelled together with the {{site.data.keyword.cloud_notm}} bare metal Servers. If you have networking or storage assets in your migration, open a support ticket to ensure that {{site.data.keyword.cloud_notm}} decouples the VLANs and related subnets and NFS storage from the original instance. Then, these assets are not cancelled when the vCenter Server instance is deleted.
 
 The following recommendations apply:
 
@@ -27,7 +27,7 @@ The following recommendations apply:
 * If you need any existing assets, note and list all assets carefully.
 * Open the support ticket before you delete the instance. List all assets that you want to maintain to ensure that these assets are decoupled from the original instance. If this process is not followed, the assets cannot be recovered after deletion.
 
-## Can I attach my existing {{site.data.keyword.cloud_notm}} File Storage to the new vCenter Server instance?
+## Can I attach my existing {{site.data.keyword.filestorage_full_notm}} to the new vCenter Server instance?
 {: #faq-v2t-migration-storage}
 
 If you are using NFS storage, you can manually attach the NFS storage to the new instance and perform a cross–vCenter vMotion without requiring a storage vMotion. You must authorize the NFS subnet from their new instance to the NFS storage.
@@ -91,7 +91,7 @@ General support for vSphere 6.x ended on 15 October 2022. For more information, 
 
 In addition, the vCenter Server instances with vSphere 6.5 or 6.7 typically run NSX-V 6.4. NSX-V 6.4 was End of General Support on 16 January 2022 and End of Technical Guidance on 16 January 2023. See more on VMware Official Product Lifecycle Matrix. An exclusive support agreement between VMware and IBM to support NSX-V until 31 December 2023 exists.
 
-{{site.data.keyword.cloud_notm}} recommends an upgrade to vSphere 7.x and NSX-T™ 3.x.
+{{site.data.keyword.cloud_notm}} recommends an upgrade to vSphere 7.x and NSX-T™ 3.x or later.
 
 To migrate from NSX-V to NSX-T (also called a V2T migration), {{site.data.keyword.cloud_notm}} uses a migration approach that is called _lift-and-shift_. In the lift-and-shift approach, the {{site.data.keyword.cloud_notm}} automation is used to deploy a new vCenter Server instance. You need to migrate network configurations from NSX-V to NSX-T and migrate workloads between instances. {{site.data.keyword.cloud_notm}} provides extensive documentation for a validated approach and guidance for existing {{site.data.keyword.vmwaresolutions_short}} customers with vCenter Server instances. 
 
@@ -108,7 +108,7 @@ Alternatively, you can upgrade your vCenter, set up vSphere Update Manager (VUM)
 You can use a VMware® platform on {{site.data.keyword.cloud_notm}} in the following ways.
 
 * Bare Metal - Use the Bare metal catalog for {{site.data.keyword.cloud_notm}} Classic Infrastructure and order a bare metal server with vSphere as the Operating System. For more information, see [VMware for Classic](/docs/vmware).
-* VMware vSphere - Use the VMware Solutions console to provision IBM-hosted VMware hosts. For more information, see [VMware vSphere overview](/docs/vmwaresolutions?topic=vmwaresolutions-vs_vsphereclusteroverview).
+* VMware vSphere - Use the VMware Solutions console to provision IBM-hosted VMware hosts. For more information, see [VMware vSphere overview](/docs/vmwaresolutions?topic=vmwaresolutions-vs_vsphereoverview).
 * vCenter Server - Use the VMware Solutions console to provision an IBM-hosted private cloud based on vSphere, NSX, and optionally vSAN. For more information, see [vCenter Server overview](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview).
 
 Upgrade and migration processes vary depending on the consumption model.
@@ -158,13 +158,13 @@ See also [different ways to run VMware workloads in {{site.data.keyword.cloud_no
 
 For a vCenter Server instance, the following information is displayed on the VMware Solutions user interface.
 
-* VMware NSX networking solution - NSX-T
-* NSX for vSphere - 3.1.1.0
+* VMware NSX networking solution - NSX
+* NSX for vSphere - 4.1.0.2
 * NSX license edition - VMware NSX Advanced
 
 What product is it running in the vCenter Server instance?
 
-This vCenter Server instance is running NSX-T version 3.1.1. Due to the licensing agreement between {{site.data.keyword.cloud_notm}} and VMware, NSX-V licenses were being used for NSX-T instances. Newer vCenter Server instances use NSX-T licenses, so the instance is correctly licensed.
+This vCenter Server instance is running NSX version 4.1.0.2. Due to the licensing agreement between {{site.data.keyword.cloud_notm}} and VMware, NSX-V licenses were being used for NSX-T instances. Newer vCenter Server instances use NSX-T licenses, so the instance is correctly licensed.
 
 ## Can I do an in place vSphere upgrade for my vSphere 6.7 with NSX-T VMware Solutions - vCenter Server instance?
 {: #faq-v2t-migration-67nsxt-upgrade}
@@ -177,7 +177,7 @@ Also, review the following key considerations:
 * For more information about the migration of N-VDS to VDS switches for vSphere 7.0 or later and NSX-T Data Center 3.0 and later, see [Migrate host switch to vSphere Distributed Switch](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.1/administration/GUID-1039A36F-F55E-4A0A-B6C6-2C383F4A716D.html){: external}. Currently, this procedure is not verified on a VMware Solutions vCenter Server instance.
 * {{site.data.keyword.cloud_notm}} is undertaking an assessment of the N-VDS to VDS conversion and the required changes to the automation database to allow this in-place upgrade.
 * Currently, Day 2 automation workflows such as add host or add cluster, are not tested against VMware Solutions vCenter Server instances that are upgraded from vSphere 6.7 to 7 and still using N-VDS distributed switches. Customers must assume that this automation might fail and that if this automation is required then the lift and shift migration approach used. If this automation is not needed, you can use the upgrade process that is documented.
-* A workaround for the add nodes and add cluster features is to use the VMware vSphere offering. For more information, see [VMware vSphere overview](/docs/vmwaresolutions?topic=vmwaresolutions-vs_vsphereclusteroverview). You must complete a number of manual tasks after the automated deployment.
+* A workaround for the add nodes and add cluster features is to use the VMware vSphere offering. For more information, see [VMware vSphere overview](/docs/vmwaresolutions?topic=vmwaresolutions-vs_vsphereoverview). You must complete a number of manual tasks after the automated deployment.
 * A workaround for add-on services is to deploy them manually using the documented reference architectures, see the Solution architectures on Classic and Solution Guides sections at [Getting started with VMware Solutions](/docs/vmwaresolutions).
 
 ## Can I reuse the portable subnets that are deployed for my existing NSX-V vCenter Server instance?

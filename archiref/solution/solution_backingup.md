@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2022
+  years:  2016, 2023
 
-lastupdated: "2022-06-15"
+lastupdated: "2023-08-09"
 
 subcollection: vmwaresolutions
 
@@ -73,7 +73,6 @@ If you deploy add-on solution components into your instance, plan for the backup
 * Zerto Virtual Replication - The Zerto Virtual Manager (ZVM) system is deployed as an {{site.data.keyword.cloud_notm}} virtual server instance (VSI) and its backup is not supported by Veeam. If your disaster recovery strategy requires you to recover the ZVM without you perform a site failover, use your preferred Windows® backup solution to back up and restore the ZVM.
 * F5® BIG-IP - F5 recommends [file-based backup of the F5 configuration](https://support.f5.com/csp/article/K13132){: external}, which you can direct to your file server.
 * FortiGate® Security Appliance or VM - Fortinet recommends [file-based backup of the FortiGate configuration](https://help.fortinet.com/fos50hlp/54/Content/FortiOS/fortigate-best-practices-54/Firmware/Performing_Config_Backup.htm){: external}, which you can direct to your file server.
-* Entrust CloudControl™ and Entrust DataControl® - Entrust supports both image and file-based backup of the Entrust server appliances. For more information, see the Entrust administration guides.
 * VMware HCX™ - Use the HCX appliance management interface to create and download a file-based backup of the HCX Manager configuration similar to the vCenter Server Appliance.
 
 ## More considerations

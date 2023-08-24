@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2019, 2022
+  years:  2019, 2023
 
-lastupdated: "2022-03-21"
+lastupdated: "2023-07-28"
 
 keywords: Red Hat OpenShift for VMware, manage OpenShift, OpenShift operations
 
@@ -121,5 +121,5 @@ To expand your {{site.data.keyword.redhat_openshift_notm}} cluster by adding mor
 {: #ocp_managing-related}
 
 * [Ordering services for vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices)
-* [Contacting IBM Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support)
+* [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support)
 * [FAQ](/docs/vmwaresolutions?topic=vmwaresolutions-faq-vmwaresolutions)

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2022
+  years:  2016, 2023
 
-lastupdated: "2022-05-30"
+lastupdated: "2023-08-17"
 
 subcollection: vmwaresolutions
 
@@ -15,7 +15,7 @@ subcollection: vmwaresolutions
 # IBM Spectrum Protect Plus overview
 {: #spp_considerations}
 
-New installations of the IBM Spectrum® Protect Plus service are no longer supported for new or existing deployments of vCenter Server instances. You can still use or delete existing IBM Spectrum Protect Plus installations on your existing instances. If you want to install IBM Spectrum Protect Plus yourself, see [IBM Spectrum Protect Plus documentation](https://www.ibm.com/docs/en/spp){: external}.
+New installations of the IBM Spectrum® Protect Plus service are no longer supported for new or existing deployments of vCenter Server instances. You can still use or delete existing IBM Spectrum Protect Plus installations on your existing instances. If you want to install IBM Spectrum Protect Plus yourself, see [IBM Spectrum Protect Plus documentation](https://www.ibm.com/docs/en/spp).
 {: deprecated}
 
 The IBM Spectrum Protect Plus service provides an efficient and scalable solution for data protection, data reuse, and data recovery for virtual environments. You can implement the service as a stand-alone solution or you can integrate it with your IBM Spectrum Protect environment to offload copies for long-term storage and data governance.
@@ -74,10 +74,3 @@ Review the following considerations before you delete the IBM Spectrum Protect P
 * When you delete the service, the storage for the backup repository is deleted from the IBM Spectrum Protect Plus VM and the storage order is canceled, which deletes the backup repository data permanently.
 * When you delete the service, the backup storage that is ordered for the service is deleted too. All the backups become inaccessible during service deletion.
 
-## Related links
-{: #spp_considerations-related}
-
-* [IBM Spectrum Protect Plus Preventive Service Planning](https://www-01.ibm.com/support/docview.wss?uid=swg22012650)
-* [Managing IBM Spectrum Protect Plus](/docs/vmwaresolutions?topic=vmwaresolutions-managingspp)
-* [IBM Spectrum Protect Plus documentation](https://www.ibm.com/docs/en/spp/10.1.5)
-* [Opening a case for IBM Spectrum Protect Plus](https://www.ibm.com/mysupport/s/article/How-to-Open-a-Case)

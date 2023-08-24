@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2022
+  years:  2016, 2023
 
-lastupdated: "2022-07-15"
+lastupdated: "2023-08-22"
 
 keywords: Entrust KeyControl, tech specs Entrust KeyControl
 
@@ -15,24 +15,22 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Entrust KeyControl overview
+# Entrust KeyControl on IBM Cloud overview
 {: #entrust-kc_considerations}
 
-New installations of Entrust KeyControl™ are no longer supported for new or existing deployments of vCenter Server® instances. You can still use or delete existing Entrust KeyControl installations on your existing instances.
+New installations of Entrust KeyControl™ (formerly known as HyTrust KeyControl) are not supported for new or existing deployments of VMware vCenter Server® instances. You can still use or delete existing Entrust KeyControl installations on your existing instances.
 {: deprecated}
 
-The Entrust KeyControl service simplifies the management of encrypted workloads. This service automates and simplifies the lifecycle of encryption keys, including key storage, key distribution, key rotation, and key revocation. Using FIPS 140-2 compliant encryption, enterprises can easily manage encryption keys at scale.
+Entrust KeyControl on {{site.data.keyword.cloud_notm}} simplifies the management of encrypted workloads. This service automates and simplifies the lifecycle of encryption keys, including key storage, key distribution, key rotation, and key revocation. Using FIPS 140-2 compliant encryption, enterprises can easily manage encryption keys at scale. Entrust KeyControl on {{site.data.keyword.cloud_notm}} is a non-IBM product that is offered under terms and conditions from Entrust, not IBM.
 {: shortdesc}
 
-The Entrust KeyControl service is not supported for VMware vCenter Server® with NSX-T™ instances. For vCenter Server with NSX-V instances, the installed version is 5.0.1.
+Previous installations of Entrust KeyControl 5.0.1 are supported for vCenter Server with NSX-V instances.
 {: note}
 
 ## Technical specifications for Entrust KeyControl
 {: #entrust-kc_considerations-specs}
 
-For more information about resource requirements and capacity checking for some services, see [Resource requirements for services](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices#vc_addingservices-resource-requirements).
-
-The following components are ordered and included in the Entrust KeyControl service:
+The following components are included in your existing Entrust KeyControl service:
 
 ### Entrust KeyControl appliance
 {: #entrust-kc_considerations-appliance}
@@ -45,27 +43,12 @@ The following components are ordered and included in the Entrust KeyControl serv
 ### High availability
 {: #entrust-kc_considerations-ha}
 
-By default, two KeyControl appliances are deployed in an active-active clustered configuration.
+Two KeyControl appliances in an active-active clustered configuration.
 
 Optionally, you can specify to deploy two KeyControl appliances in a stand-alone unclustered configuration.
 
 ### Licenses and fees
 {: #entrust-kc_considerations-licenses}
 
-An Entrust KeyControl license is ordered for each instance installation.
+An Entrust KeyControl license for each instance installation.
 
-## Considerations when you delete Entrust KeyControl
-{: #entrust-kc_considerations-remove}
-
-Review the following considerations before you delete the service:
-
-* Before you delete the Entrust KeyControl service, ensure that you decouple all clients from using Entrust KeyContol. After you delete the service, the keys might be deleted, and you might be locked out of your VMs.
-
-* If you installed the Entrust KeyControl service before VMware® Solutions v4.0, and you then delete that service, you must manually remove the DNS entries. For more information, see [Manually removing the DNS entries](/docs/vmwaresolutions?topic=vmwaresolutions-vc_deletingservices#vc_deletingservices-DNS-entries).
-
-## Related links
-{: #entrust-kc_considerations-related}
-
-* [Managing Entrust KeyControl](/docs/vmwaresolutions?topic=vmwaresolutions-managing-entrust-kc)
-* [FAQ](/docs/vmwaresolutions?topic=vmwaresolutions-faq-vmwaresolutions)
-* [Entrust website](https://www.entrust.com/){: external}

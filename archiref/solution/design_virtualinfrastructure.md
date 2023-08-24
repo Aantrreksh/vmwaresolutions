@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-04-29"
+lastupdated: "2023-08-16"
 
 subcollection: vmwaresolutions
 
@@ -38,7 +38,7 @@ By default, the only users who can log in directly are the _root_ and _ibmvmadmi
 
 | Attribute              | Configuration parameter |
 |:---------------------- |:----------------------- |
-| ESXi boot location     | In some cases, uses local disks that are configured in RAID 1; in other cases, uses single M.2 boot drive |
+| ESXi boot location     | Different host configurations might be deployed with: \n * local disks configured with RAID-1 \n * a pair of M.2 boot drives in a mirrored configuration \n * a single M.2 boot drive |
 | Time synchronization   | Uses {{site.data.keyword.cloud}} NTP server |
 | Host access            | Supports DCUI. SSH and ESXi Shell are supported but not enabled by default |
 | User access            | Local authentication and MSAD |
@@ -63,7 +63,12 @@ To support more user workloads, you can scale the environment by taking the foll
 
 In this design, VMware vSAN storage is employed in vCenter Server instances to provide shared storage for the vSphere hosts.
 
-As shown in the following figure, vSAN aggregates the local storage across multiple ESXi hosts within a vSphere cluster and manages the aggregated storage as a single VM datastore. Within this design, the compute nodes contain local disk drives for the ESXi operating system (OS) and the vSAN datastore. An M.2 SSD drive is included in each node to house the ESXi installation regardless of which cluster a node belongs to.
+As shown in the following figure, vSAN aggregates the local storage across multiple ESXi hosts within a vSphere cluster and manages the aggregated storage as a single VM datastore. Within this design, the compute nodes contain local disk drives for the ESXi operating system (OS) and the vSAN datastore. 
+
+Different host configurations might be deployed with:
+* local disks configured with RAID-1
+* a pair of M.2 boot drives in a mirrored configuration
+* a single M.2 boot drive
 
 ![vSAN concept](../../images/vcsv4radiagrams-ra-vsan.svg "vSAN aggregates the local storage across multiple ESXi hosts within a vSphere cluster and manages the aggregated storage as a single VM datastore"){: caption="Figure 2. vSAN concept" caption-side="bottom"}
 

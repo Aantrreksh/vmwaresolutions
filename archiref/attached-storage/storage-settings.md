@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2022
+  years:  2016, 2023
 
-lastupdated: "2022-04-28"
+lastupdated: "2023-08-17"
 
 subcollection: vmwaresolutions
 
@@ -66,7 +66,7 @@ When SIOC (Storage I/O Control) is enabled in the environment, it changes the de
 
 In order for SIOC to determine when a storage device is congested or constrained, it requires a defined threshold. The congestion threshold latency is different for different storage types. This design recommends and implements a threshold latency of 10 milliseconds.
 
-You can limit individual virtual disks for individual VMs or grant them different shares with SIOC. By limiting disks and granting different shares, you can match and align the environment to the workload with the acquired file storage volume IOPS number. The limit is set by IOPS and it is possible to set a different weight or shares.
+You can limit individual virtual disks for individual VMs or grant them different shares with SIOC. By limiting disks and granting different shares, you can match and align the environment to the workload with the acquired {{site.data.keyword.filestorage_full}} volume IOPS number. The limit is set by IOPS and it is possible to set a different weight or shares.
 
 Virtual disks shares set to **High** (2000 shares) receive twice as much I/O as a disk set to **Normal** (1000 shares) and four times as much as one set to **Low** (500 shares). **Normal** is the default value for all the VMs, so you need to adjust the **Normal** settings for the VMs that require it.
 

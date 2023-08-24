@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2023
 
-lastupdated: "2023-05-01"
+lastupdated: "2023-08-17"
 
 subcollection: vmwaresolutions
 
@@ -109,13 +109,13 @@ The following list includes an example design:
 ## NFS attached storage
 {: #vpc-ryo-infrastructure-virtual-nfs-storage}
 
-As described in the [Physical infrastructure design](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-ryo-infrastructure-physical#storage-shared) topic, {{site.data.keyword.cloud_notm}} file storage for {{site.data.keyword.vpc_short}} is a zonal file storage offering that provides NFS-based file storage services for VPC customers. File shares are created in an availability zone within a region. They can be shared with multiple server instances within the same zone across multiple VPCs.
+As described in the [Physical infrastructure design](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-ryo-infrastructure-physical#storage-shared) topic, {{site.data.keyword.filestorage_vpc_full_notm}} is a zonal file storage offering that provides NFS-based file storage services for VPC customers. File shares are created in an availability zone within a region. They can be shared with multiple server instances within the same zone across multiple VPCs.
 
-If you choose to use this file storage from {{site.data.keyword.vpc_short}}, you can attach an NFS share to your selected hosts and VMware clusters. This share can be used for management components such as vCenter Server, VMware NSX-T managers, and NSX-T edge nodes. More data stores can be attached to a cluster for workload use, in various sizes and performance tiers.
+If you choose to use this {{site.data.keyword.filestorage_vpc_full_notm}}, you can attach an NFS share to your selected hosts and VMware clusters. This share can be used for management components such as vCenter Server, VMware NSX-T managers, and NSX-T edge nodes. More data stores can be attached to a cluster for workload use, in various sizes and performance tiers.
 
 The storage is attached by using the NFS v4.1 protocol to your hosts. To create an NFS mount path, you must create mount targets. A mount target for a file share is a network endpoint or path. When you create a mount target, an NFS mount path is created for the file share. You can create a mount target by providing a VPC or subnet information. If you want to connect a file share to instances that are running in multiple VPCs in the same zone, you can create multiple mount targets for different VPCs.
 
-For more information about the shared storage, see [File Storage for VPC](/docs/vpc?topic=vpc-file-storage-vpc-about&interface=ui).
+For more information about the shared storage, see [About {{site.data.keyword.filestorage_vpc_short}}](/docs/vpc?topic=vpc-file-storage-vpc-about&interface=ui).
 
 Additionally, this architecture currently uses management `vmk` that hosts have for all NFS traffic for simplicity.
 

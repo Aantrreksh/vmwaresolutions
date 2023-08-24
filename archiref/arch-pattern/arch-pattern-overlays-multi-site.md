@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2022
+  years:  2022, 2023
 
-lastupdated: "2022-12-29"
+lastupdated: "2023-08-08"
 
 subcollection: vmwaresolutions
 
@@ -70,7 +70,7 @@ The following diagram shows an example of a multisite – multitenant topology. 
 This network topology example does not consider the management and control plane (vCenter and NSX Managers). The control plane high availability is discussed in another availability pattern. 
 {: note}
 
-Tier-0 Gateways support VRF lite, which can be used if needed to support more complex topologies for isolating routing tables also at Tier-0 level. For more information about capabilities and limitations, see the VMware documentation.
+Tier-0 Gateways support VRF lite, which can be used if needed to support more complex topologies for isolating routing tables also at Tier-0 level. For more information about capabilities and limitations, see the [VMware NSX documentation](https://docs.vmware.com/en/VMware-NSX/index.html){: external}.
 {: note}
 
 The main reason that you need two layers is for physical north-south connectivity in the data centers and each data center having their own private and public VLANs and IP addresses for the uplinks. These IP addresses cannot move between the data centers. Therefore, you must consider the routing and network address translation if you use public connectivity in this topology.
@@ -89,6 +89,6 @@ Most of the content in the VMware NSX-T design guides and documentation can be a
 ## Related links
 {: #arch-pattern-overlays-multi-site-links}
 
-* [VMware NSX-T Data Center documentation](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/index.html){: external}
+* [VMware NSX documentation](https://docs.vmware.com/en/VMware-NSX/index.html){: external}
 * [NSX-T Reference design guide 3-0](https://nsx.techzone.vmware.com/resource/nsx-t-reference-design-guide-3-0){: external}
 * [NSX-T Multilocation design guide (Federation + Multisite)](https://communities.vmware.com/t5/VMware-NSX-Documents/NSX-T-Multi-Location-Design-Guide-Federation-Multisite/ta-p/2810327){: external}

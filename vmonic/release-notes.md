@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2023
-lastupdated: "2023-07-05"
+lastupdated: "2023-08-24"
 
 keywords: release notes, what's new in VMware Solutions, what is new, new features, VMware Solutions release notes, VMware Solutions
 
@@ -14,8 +14,6 @@ content-type: release-note
 
 {{site.data.keyword.attribute-definition-list}}
 
-{:release-note: data-hd-content-type='release-note'}
-
 # Release notes for VMware Solutions
 {: #vmwaresolutions-relnotes}
 
@@ -25,12 +23,52 @@ Use these release notes to learn about updates to {{site.data.keyword.vmwaresolu
 ## 2023
 {: #year-2023}
 
+### 24 August 2023
+{: #vmwaresolutions-aug2423}
+{: release-note}
+
+Veeam 12 for VMware Shared
+:   Veeam® Backup and Replication 12 (Veeam 12) is now available for deployment with the VMware Shared offering.
+
+VMware NSX 4.1.0.2
+:   Newly deployed VMware vCenter Server® and VMware vSphere® instances are provisioned with VMware NSX® 4.1.0.2.
+
+vCenter Server and VMware vSphere BOM updates
+:   The following updates are applied to newly deployed instances, clusters, and hosts:
+
+   * VMware vCenter Server Appliance 7.0 Update 3m (build 21784236)
+   * VMware vSphere ESXi 7.0 Update 3n (build 21930508)
+
+Mirrored M.2 drives
+:   For vCenter Server with vSAN storage and for VMware vSphere instances with vSAN disks, mirrored M.2 drives are provisioned with your order when you add new vSAN clusters or when you add new ESXi servers to existing vSAN clusters and select a new bare metal server configuration.
+
+Entrust CloudControl - deprecated
+:   New installations of Entrust CloudControl™ are no longer supported for new or existing deployments of vCenter Server instances. You can still use or delete existing Entrust CloudControl installations on your existing instances.
+{: deprecated}
+
+FortiGate® Virtual Appliance v7.4
+:   The FortiGate® Virtual Appliance v7.4 add-on service is available for deployment.
+
+Name change for PrimaryIO
+:   The PrimaryIO add-on service name is changed to PrimaryIO Migrations and its [About](https://cloud.ibm.com/infrastructure/vmware-solutions/console/newserviceentry/PIO/vcs) page is updated with the most recent feature information.
+
+User interface updates and enhancements
+:   The user interface is updated with various messages and tooltips, and provides the following enhancements:
+
+   * For VMware vSphere, the term **cluster** is updated to **instance** throughout the UI, user documentation, and REST APIs.
+   * For VMware vSphere instances, the **Instance configuration name** field is changed to a side panel. You can manage your configuration templates from a list of saved configurations in the side panel.
+
+New and updated documentation
+
+   * The [VMware Shared metrics](/docs/vmwaresolutions?topic=vmwaresolutions-shared-monitor#shared-monitor-metrics) are updated with metadata details.
+   * New documentation is available to assist with [expanding ordered endurance storage](/docs/vmwaresolutions?topic=vmwaresolutions-veeam_expand_storage) after ordering the Veeam add-on service.
+
 ### 5 July 2023
-{: #jul-2023}
+{: #vmwaresolutions-jul0523}
 {: release-note}
 
 VMware vSphere Day 2 support
-:   You can view or delete VMware vSphere® instances from the VMware Solutions console. You can also add or delete VMware ESXi™ servers, and add or delete licenses for vSphere instances from the VMware Solutions console.
+:   You can view or delete VMware vSphere instances from the VMware Solutions console. You can also add or delete VMware ESXi™ servers, and add or delete licenses for vSphere instances from the VMware Solutions console.
 
 VMware Regulated Workloads multizone instances - deprecated
 :   New deployments of VMware Regulated Workloads multizone instances are no longer supported. You can still add or delete clusters, add or remove ESXi servers or NFS storage, and add or remove services for existing multizone instances.
@@ -46,7 +84,7 @@ Add-on services upgrades
 :   The following service versions are now available for deployment:
 
    * Caveonix RiskForesight™ v4.1
-   * FortiGate® Virtual Appliance v7.2.5
+   * FortiGate Virtual Appliance v7.2.5
    * F5® BIG-IP® v17.1
    * Juniper® vSRX v3.0 (23.1R1)
    * Red Hat® OpenShift® v4.12
@@ -69,15 +107,15 @@ REST API
    * Also for the VMware Solutions API, you can specify either `quantity` or `host_names` for the number of new hosts to be added in the `hosts_order_data` object.
 
 User interface updates and enhancements
-:   The user interface is updated with various messages and tooltips, and provides the following enhancements:
+:   The UI (user interface) is updated with various messages and tooltips, and provides the following enhancements:
 
-   * The **Instance configuration name** field is changed to a side panel. You can manage your configuration templates from a list of saved configurations in the side panel.
+   * For vCenter Server, Cyber Recovery, and Regulated Workloads instances, the **Instance configuration name** field is changed to a side panel. You can manage your configuration templates from a list of saved configurations in the side panel.
    * The checkbox **Select a different cluster location** is changed to a switch, for consistency with other similar UI options.
    * The **SAP-certified** Cascade Lake selections (**NetWeaver** and **HANA**) are merged into a single option for a more streamlined user experience when you choose the **CPU model** for your servers.
-   * The procedure to [set up your environment for your first order](/docs/vmwaresolutions?topic=vmwaresolutions-completing_checklist#completing_checklist-procedure) is simplified.
+   * The process to [set up your environment for your first order](/docs/vmwaresolutions?topic=vmwaresolutions-completing_checklist#completing_checklist-procedure) is simplified on the UI.
 
 ### 3 May 2023
-{: #may-2023}
+{: #vmwaresolutions-may0323}
 {: release-note}
 
 Madrid data centers available
@@ -95,7 +133,7 @@ Updates to VMware vCenter Server instances and VMware vSphere clusters
    * VMware vSAN Witness 7.0 Update 3c (build 19193900)
 
 Veeam 12 availability
-:   Veeam® Backup and Replication 12 (Veeam 12) is now available for deployment with VMware vCenter Server, Cyber Recovery, and VMware Regulated Workloads offerings. Veeam 12 allows you to write directly to {{site.data.keyword.cloud}} Object Storage and it provides other features, such as data protection, improved Recovery Point Objective using Continuous Data Protection for disaster recovery purposes, and general operational efficiency. For more information, see the [Veeam Backup and Replication 12 release notes](https://www.veeam.com/veeam_backup_12_release_notes_rn.pdf){: external}.
+:   Veeam Backup and Replication 12 (Veeam 12) is now available for deployment with VMware vCenter Server, Cyber Recovery, and VMware Regulated Workloads offerings. Veeam 12 allows you to write directly to {{site.data.keyword.cloud}} Object Storage and it provides other features, such as data protection, improved Recovery Point Objective using Continuous Data Protection for disaster recovery purposes, and general operational efficiency. For more information, see the [Veeam Backup and Replication 12 release notes](https://www.veeam.com/veeam_backup_12_release_notes_rn.pdf){: external}.
 
 New and updated documentation
 :   The table of contents is updated for topic rearrangement and removal of outdated content.
@@ -112,7 +150,7 @@ User interface updates and enhancements
    * A side panel is displayed when you add hosts to vCenter Server, Cyber Recovery, and VMware Regulated Workloads instances.
 
 ### 8 March 2023
-{: #march-2023}
+{: #vmwaresolutions-mar0823}
 {: release-note}
 
 VMware Cloud Director upgrade for VMware Shared
@@ -135,10 +173,10 @@ Add-on services upgrades
    * Zerto v9.7u1
 
 F5 BIG-IP migration from NSX-V to NSX-T
-:   To migrate the F5 BIG-IP service from VMware NSX-V to VMware NSX-T, open an IBM Support ticket by following the steps in [Contacting IBM Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support).
+:   To migrate the F5 BIG-IP service from VMware NSX-V to VMware NSX-T, open an IBM Support ticket by following the steps in Getting help and support.
 
 New and updated documentation
-:   Documentation is available to assist with your custom cyber-recovery requirements. For more information, see [Cyber Recovery with Bring Your Own appliances](/docs/vmwaresolutions?topic=vmwaresolutions-cr-byo-overview).
+:   Documentation is available to assist with your custom cyber-recovery requirements. For more information, see Cyber Recovery with Bring Your Own appliances.
 
 REST API updates
 :   The [VMware Solutions API](/apidocs/vmware-solutions) provides support for getting and canceling billing item IDs for VMware vSphere clusters, deleting hosts from vSphere clusters, and deleting vSphere clusters.
@@ -152,7 +190,7 @@ User interface updates and enhancements
 
 
 ### 10 January 2023
-{: #january-2023}
+{: #vmwaresolutions-jan1023}
 {: release-note}
 
 VMware Cloud Director upgrade for VMware Shared
@@ -178,7 +216,7 @@ Add-on services upgrades
    * Juniper vSRX v21.4 (R2)
 
 Veeam migration from NSX-V to NSX-T
-:   To migrate the Veeam service from VMware NSX-V to VMware NSX-T, open an IBM Support ticket by following the steps in Contacting IBM Support.
+:   To migrate the Veeam service from VMware NSX-V to VMware NSX-T, open an IBM Support ticket.
 
 REST API
 :   For VMware Shared, the V1 API support ended on 31 December 2022. Use the [V2 API](/apidocs/vmware-solutions-shared/vmware-solutions-shared-v2.0.0).
@@ -190,7 +228,7 @@ User interface updates and enhancements
 {: #year-2022}
 
 ### 31 October 2022
-{: #october-2022}
+{: #vmwaresolutions-oct3122}
 {: release-note}
 
 Cyber Recovery
@@ -253,7 +291,7 @@ User interface enhancements
 :   The left navigation pane on the VMware Solutions console now groups items as **Resources** and **Licenses** so that they are more aligned with the resource types and names.
 
 ### 29 August 2022
-{: #august-2022}
+{: #vmwaresolutions-aug2922}
 {: release-note}
 
 **HKG02** and **SEO01** data centers no longer available
@@ -311,7 +349,7 @@ User interface updates and enhancements
    * If you are running VMware NSX-V or a vSphere 6 version on the instances in your environment, you now receive notifications to update your environment to the most recent supported version of NSX or vSphere. You can go to the instance summary page to check the NSX solution type and the vSphere version that is most suitable for your environment.
 
 ### 22 June 2022
-{: #june-2022}
+{: #vmwaresolutions-jun2222}
 {: release-note}
 
 VMware vRealize Operations Tenant App V8.6 for VMware Shared
@@ -389,7 +427,7 @@ User interface updates and enhancements
       * The CPU model selection tile group is now changed to a list of items in a table. You can select the CPU model of your choice from the table.
 
 ### 25 April 2022
-{: #april-2022}
+{: #vmwaresolutions-apr2522}
 {: release-note}
 
 VMware Cloud Director upgrade for VMware Solutions Shared
@@ -457,7 +495,7 @@ User interface updates and enhancements
 :   The VMware Solutions documentation now has a [landing page](/docs/vmwaresolutions) where you can get oriented with the content available for the offering.
 
 ### 21 February 2022
-{: #february-2022}
+{: #vmwaresolutions-feb2122}
 {: release-note}
 
 VMware Cloud Director upgrade for VMware Solutions Shared
@@ -509,11 +547,11 @@ User interface updates and enhancements
 {: #year-2021}
 
 ### 13 December 2021
-{: #december-2021}
+{: #vmwaresolutions-dec1321}
 {: release-note}
 
 NSX-T Data Center SP license availability
-:   Starting with the 4.5 release, VMware NSX-T Data Center SP license editions are available for new instances for the following VMware Solutions offerings. Existing instances continue to use the previous NSX licenses for all new clusters and hosts.
+:   VMware NSX-T Data Center SP license editions are available for new instances for the following VMware Solutions offerings. Existing instances continue to use the previous NSX licenses for all new clusters and hosts.
    * VMware Solutions Dedicated instances offer Data Center SP Base, Data Center SP Professional, Data Center SP Advanced, or Data Center SP Enterprise Plus.
    * Security and Compliance Readiness Bundle instances offer Data Center SP Professional, Data Center SP Advanced, or Data Center SP Enterprise Plus.
    * VMware Regulated Workloads offer Data Center SP Advanced or Data Center SP Enterprise Plus.
@@ -560,7 +598,7 @@ New release notes format
 :   The release notes have been consolidated to one location for you to review the latest and previous offering updates.
 
 ### 13 October 2021
-{: #october-2021}
+{: #vmwaresolutions-oct1321}
 {: release-note}
 
 End of Support for instance deployments with vSphere 6.5 {: #october-2021-eos-vsphere5}
@@ -604,7 +642,7 @@ REST APIs
    * Adding and deleting services
 
 ### 9 August 2021
-{: #August-2021}
+{: #vmwaresolutions-aug0921}
 {: release-note}
 
 VMware vSphere 7.0 Update 2a support
@@ -667,7 +705,7 @@ REST APIs
 :   REST API support for vCenter Server multizone instances is no longer provided as a result of feature deprecation.
 
 ### 21 June 2021
-{: #june-2021}
+{: #vmwaresolutions-jun2121}
 {: release-note}
 
 VMware Solutions Shared - Veeam Backup and Replication V11
@@ -709,7 +747,7 @@ VMware vCenter Server - NFS storage limitation for VMware multizone instances
 :   The initial NFS storage that you order is used mainly for management. Its size must be at least 1,000 GB and the performance at least 2 IOPS/GB. Do not delete this storage. If you require extra storage, you can add it post-deployment. The size and performance of the NFS storage added post-deployment can have any of the available values.
 
 VMware vCenter Server - NFS host orders
-:   For locations where appropriate 1U servers are available, when you order hosts for clusters that use NFS storage, 1U servers are ordered silently rather than 2U servers. Clusters that use vSAN storage will continue to order 2U servers.
+:   For clusters with NFS storage, where locations with appropriate 1U servers are available, 1U servers (up to 4 drives of storage) are ordered silently rather than 2U servers. For gateway clusters and clusters with vSAN storage, 2U servers are ordered.
 
 Regulated Workloads - 25 Gb Uplink speed
 :   Enhanced support is now provided for 25 Gb uplink speed for VMware Regulated Workloads instances, both single-zone and multizone.
@@ -768,7 +806,7 @@ New and updated documentation
    * FAQ is updated to clarify how service license charges are being calculated.
 
 ### 5 April 2021
-{: #april-2021}
+{: #vmwaresolutions-apr0521}
 {: release-note}
 
 VMware Solutions Shared - support for Zerto
@@ -866,7 +904,7 @@ REST APIs
    * The `network` option for selecting a private only network or a public and private network is available through the VMware Solutions Shared API.
 
 ### 29 January 2021
-{: #january-2021}
+{: #vmwaresolutions-jan2921}
 {: release-note}
 
 VMware Regulated Workloads
@@ -1023,7 +1061,7 @@ User interface updates and enhancements
 {: #year-2020}
 
 ### 26 October 2020
-{: #october-2020}
+{: #vmwaresolutions-oct2620}
 {: release-note}
 
 VMware Solutions Shared - support for Dallas 12 and Dallas 13 {{site.data.keyword.cloud_notm}} data centers
@@ -1079,7 +1117,7 @@ User interface updates and enhancements
 :   A new **Uplink speed** option is available in the **Network interface** section when you order vCenter Server instances, order new vSphere clusters, and add clusters for vCenter Server instances.
 
 ### 24 August 2020
-{: #august-2020}
+{: #vmwaresolutions-aug2420}
 {: release-note}
 
 VMware Solutions Shared

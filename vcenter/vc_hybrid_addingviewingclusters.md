@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-06-20"
+lastupdated: "2023-07-17"
 
 keywords: vCenter Server Hybridity add cluster, view cluster vCenter Server Hybridity, delete cluster vCenter Server Hybridity
 
@@ -57,43 +57,26 @@ If you deploy the cluster to a different {{site.data.keyword.cloud_notm}} data c
 ### Bare metal server settings
 {: #vc_hybrid_addingviewingclusters-adding-bare-metal}
 
-You can choose **Skylake** or **Cascade Lake**. Options might differ depending on the version that your instance was initially deployed in.
-
-#### Skylake
-{: #vc_hybrid_addingviewingclusters-adding-skylake}
-
-When you select **Skylake**, you have options for the **CPU model** and **RAM**.
-
-| CPU model options        | Cores     | GHz     | RAM options       |
-|:------------------------ |:----------|:--------|:------------- |
-| Dual Intel® Xeon® Silver 4110 processor | 16 | 2.1 | 64 GB, 96 GB, 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
-| Dual Intel Xeon Gold 5120 processor | 28 | 2.2 | 64 GB, 96 GB, 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
-| Dual Intel Xeon Gold 6140 processor | 36 | 2.3 | 64 GB, 96 GB, 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
-{: caption="Table 1. Options for Skylake bare metal servers" caption-side="bottom"}
-
-#### Cascade Lake
-{: #vc_hybrid_addingviewingclusters-adding-cascade}
-
-For the **Cascade Lake** setting, you have options for the **CPU model** and **RAM**.
+You can choose a **Cascade Lake** bare metal server, with options for the **CPU model** and **RAM**. Options might differ depending on the version that your instance was initially deployed in.
 
 Cascade Lake bare metal servers are available only for VMware vSphere Enterprise Plus 6.7u3 instances.
 {: note}
 
 | CPU model options | Cores     | GHz     | RAM options |
 |:----------------- |:----------|:--------|:----------- |
-| Dual Intel Xeon Silver 4210 processor | 20 | 2.2 | 64 GB, 96 GB, 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
-| Dual Intel Xeon Gold 5218 processor | 32 | 2.3 | 64 GB, 96 GB, 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
-| Dual Intel Xeon Gold 6248 processor | 40 | 2.5 | 64 GB, 96 GB, 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
-| Dual Intel Xeon Gold 6250 processor | 16 | 3.9 | 64 GB, 96 GB, 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
-| Dual Intel Xeon Platinum 8260 processor | 48 | 2.4 | 64 GB, 96 GB, 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
-| Quad Intel Xeon Gold 6248 processor | 80 | 2.5 | 384 GB, 768 GB, 1.5 TB, 3 TB |
-| Quad Intel Xeon Platinum 8260 processor | 96 | 2.4 | 384 GB, 768 GB, 1.5 TB, 3 TB |
-{: caption="Table 2. Options for Cascade Lake bare metal servers" caption-side="bottom"}
+| Dual Intel Xeon Silver 4210 | 20 | 2.2 | 64 GB, 96 GB, 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
+| Dual Intel Xeon Gold 5218 | 32 | 2.3 | 64 GB, 96 GB, 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
+| Dual Intel Xeon Gold 6248 | 40 | 2.5 | 64 GB, 96 GB, 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
+| Dual Intel Xeon Gold 6250 | 16 | 3.9 | 64 GB, 96 GB, 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
+| Dual Intel Xeon Platinum 8260 | 48 | 2.4 | 64 GB, 96 GB, 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
+| Quad Intel Xeon Gold 6248 | 80 | 2.5 | 384 GB, 768 GB, 1.5 TB, 3 TB |
+| Quad Intel Xeon Platinum 8260 | 96 | 2.4 | 384 GB, 768 GB, 1.5 TB, 3 TB |
+{: caption="Table 1. Options for Cascade Lake bare metal servers" caption-side="bottom"}
 
-The Quad Intel Xeon Gold 6248 processor is available if you add new clusters or new ESXi servers for existing hybridity instances.
+The Quad Intel Xeon Gold 6248 processor is available only if you add new clusters or new ESXi servers to existing instances.
 {: note}
 
-#### Number of bare metal servers
+### Number of bare metal servers
 {: #vc_hybrid_addingviewingclusters-adding-bare-metal-number}
 
 You can order 4-59 servers. All servers have the same configuration.
@@ -101,14 +84,10 @@ You can order 4-59 servers. All servers have the same configuration.
 ### vSAN storage settings
 {: #vc_hybrid_addingviewingclusters-adding-vsan-storage-settings}
 
-VMware vSAN™ 6.6 is included with your vCenter Server with Hybridity Bundle instance order. Specify the following vSAN options:
+VMware vSAN™ 6.6 was included with your initial vCenter Server with Hybridity Bundle instance order. Specify the following vSAN options:
 * **Size for vSAN capacity disks** - Select an option for the capacity disks that you need.
 * **Number of vSAN capacity disks** - Specify the number of capacity disks that you want to add.
 * If you want to add more capacity disks, select the **High performance with Intel Optane** checkbox. This option provides two extra capacity disk bays that are useful for workloads that require less latency and higher IOPS throughput.
-
-   The **High performance with Intel Optane** option is available only for Skylake and Cascade Lake CPU models.
-   {: note}
-
 * Review the **Disk Type for vSAN Cache Disks** and **Number of vSAN cache disks** values. These values depend on whether you selected the **High performance with Intel Optane** checkbox.
 * **vSAN license** - Select the VMware vSAN 6.6 license edition (Advanced or Enterprise).
 
@@ -250,9 +229,3 @@ Deleting clusters from instances with vSphere 6.5 is not supported.
    {: important}
 
 3. Click the **Infrastructure** tab. In the **CLUSTERS** table, locate the cluster that you want to delete and click the **Delete** icon in the **Actions** column.
-
-## Related links
-{: #vc_hybrid_addingviewingclusters-related}
-
-* [Viewing vCenter Server with Hybridity Bundle instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_hybrid_viewinginstances)
-* [Expanding and contracting capacity for vCenter Server with Hybridity Bundle instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_hybrid_addingremovingservers)

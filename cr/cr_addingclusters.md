@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2023
 
-lastupdated: "2023-07-12"
+lastupdated: "2023-08-01"
 
 keywords: cyber recovery add clusters, add cluster, cyber recovery cluster
 
@@ -58,7 +58,9 @@ Bring Your Own License (BYOL) is no longer supported except for migrations or up
 ### Bare metal server settings
 {: #cr_addingclusters-bare-metal-settings}
 
-Options might differ depending on the version that your instance was initially deployed in. You can choose between the **Cascade Lake** or **SAP-certified Cascade Lake** server types.
+Options might differ depending on the version that your instance was initially deployed in. You can choose between **Cascade Lake** and **SAP-certified Cascade Lake** servers[^1u].
+
+[^1u]: For clusters with NFS storage, where locations with appropriate 1U servers are available, 1U servers (up to 4 drives of storage) are ordered silently rather than 2U servers. For gateway clusters and clusters with vSAN storage, 2U servers are ordered.
 
 #### Data center location
 {: #cr_addingclusters-dc-location}
@@ -72,43 +74,16 @@ If you deploy the cluster to a different {{site.data.keyword.cloud_notm}} data c
 
 {{site.data.content.cascade-para-intro}}
 
-| CPU model     | Cores     | GHz     | RAM         |
-|:------------- |:----------|:--------|:----------- |
-| Dual Intel Xeon Silver 4210 processor | 20 | 2.2 | 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
-| Dual Intel Xeon Gold 5218 processor | 32 | 2.3 | 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
-| Dual Intel Xeon Gold 6248 processor | 40 | 2.5 | 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
-| Dual Intel Xeon Gold 6250 processor | 16 | 3.9 | 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
-| Dual Intel Xeon Platinum 8260 processor | 48 | 2.4 | 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
-| Quad Intel Xeon Gold 6248 processor | 80 | 2.5 | 384 GB, 768 GB, 1.5 TB, 3 TB |
-| Quad Intel Xeon Platinum 8260 processor | 96 | 2.4 | 384 GB, 768 GB, 1.5 TB, 3 TB |
-{: caption="Table 1. Options for Cascade Lake bare metal servers - NSX-T instances" caption-side="bottom"}
-{: class="simple-tab-table"}
-{: tab-title="NSX-T instances"}
-{: tab-group="Cascade Lake Intel servers"}
-{: #simpletabtable-cascade-nsxt}
+{{site.data.content.simpletabtable-cascade}}
 
 #### SAP-certified Cascade Lake
 {: #cr_addingclusters-sap}
 
 {{site.data.content.sap-para-intro}}
 
-| CPU model     | SAP certification | Cores     | GHz     | RAM         | Storage type |
-|:------------- |:------------------|:----------|:--------|:------------|:------------ |
-| Dual Intel Xeon Gold 5218 processor (Cascade Lake, BI.S4.NW192) | NetWeaver | 32 | 2.3 | 192 GB | Up to 12 Drivers |
-| Dual Intel Xeon Gold 5218 processor (Cascade Lake, BI.S4.NW384) | NetWeaver | 32 | 2.3 | 384 GB | Up to 12 Drivers |
-| Dual Intel Xeon Gold 6248 processor (Cascade Lake, BI.S4.NW768) | NetWeaver | 40 | 2.5 | 768 GB | Up to 12 Drivers |
-| Dual Intel Xeon Platinum 8260 processor (Cascade Lake, BI.S4.NW768_v2) | Netweaver | 48 | 2.4 | 768 GB | Up to 12 Drivers |
-| Dual Intel Xeon Platinum 8280M processor (Cascade Lake, BI.S4.NW1500) | Netweaver | 56 |2.7 | 1.5 TB | Up to 12 Drivers |
-| Dual Intel Xeon Platinum 8280M processor (Cascade Lake, BI.S4.NW3000) | Netweaver | 56 | 2.7 | 3 TB | Up to 12 Drivers |
-| Dual Intel Xeon Gold 5218 processor (Cascade Lake, BI.S4.H2.192) | HANA and NetWeaver | 32 | 2.3 | 192 GB | Up to 12 Drivers |
-| Dual Intel Xeon Gold 5218 processor (Cascade Lake, BI.S4.H2.384) | HANA and NetWeaver | 32 | 2.3 | 384 GB | Up to 12 Drivers |
-| Dual Intel Xeon Gold 6248 processor (Cascade Lake, BI.S4.H2.768) | HANA and NetWeaver | 40 | 2.5 | 768 GB | Up to 12 Drivers |
-| Dual Intel Xeon Platinum 8280M processor (Cascade Lake, BI.S4.H2.1500) | HANA and NetWeaver | 56 | 2.7 | 1.5 TB | Up to 12 Drivers |
-| Dual Intel Xeon Platinum 8280M processor (Cascade Lake, BI.S4.H2.3000) | HANA and NetWeaver | 56 | 2.7 | 3 TB | Up to 12 Drivers |
-| Quad Intel Xeon Platinum 8280M processor (Cascade Lake, BI.S4.H4.3000) | HANA and NetWeaver | 112 | 2.7 | 3 TB | Up to 24 Drivers |
-| Quad Intel Xeon Platinum 8280M processor (Cascade Lake, BI.S4.H4.6000) | HANA and NetWeaver | 112 | 2.7 | 6 TB | Up to 24 Drivers |
-{: caption="Table 2. Options for SAP-certified Cascade Lake - NetWeaver and HANA" caption-side="bottom"}
-{: #simpletabtable-sap-netweaverandhana}
+{{site.data.content.simpletabtable-sap-netweaver}}
+
+{{site.data.content.simpletabtable-sap-hana}}
 
 #### Number of bare metal servers
 {: #cr_addingclusters-bare-metal-number}
@@ -228,7 +203,7 @@ Network interface card (NIC) enablement settings are based on your selection of 
 The **Uplink speed** option is not available to gateway clusters.
 {: note}
 
-{{site.data.content.uplink-speed-options-cascadelake-list}}
+{{site.data.content.uplink-speed-options-list}}
 
 {{site.data.content.simpletable-uplink-speed-locations-ap}}
 

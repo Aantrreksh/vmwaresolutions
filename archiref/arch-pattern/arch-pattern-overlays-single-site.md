@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2022
+  years:  2022, 2023
 
-lastupdated: "2022-12-29"
+lastupdated: "2023-08-03"
 
 subcollection: vmwaresolutions
 
@@ -84,5 +84,5 @@ Most of the content in the VMware NSX-T design guides and documentation can be a
 ## Related links
 {: #arch-pattern-overlays-single-site-links}
 
-* [VMware NSX-T Data Center documentation](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/index.html){: external}
+* [VMware NSX documentation](https://docs.vmware.com/en/VMware-NSX/index.html){: external}
 * [NSX-T Reference design guide 3-0](https://nsx.techzone.vmware.com/resource/nsx-t-reference-design-guide-3-0){: external}

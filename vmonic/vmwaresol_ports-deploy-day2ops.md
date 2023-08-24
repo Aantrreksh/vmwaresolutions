@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2023
 
-lastupdated: "2023-06-21"
+lastupdated: "2023-08-21"
 
 keywords: VLAN ports, vmware solutions ports, ports usage vmware solutions
 
@@ -25,11 +25,11 @@ Review the following information about the ports described in the [table](#vmwar
 * {{site.data.keyword.cloud}} infrastructure services network subnets vary from data center to data center. For more information, see [{{site.data.keyword.cloud_notm}} IP ranges](/docs/cloud-infrastructure?topic=cloud-infrastructure-ibm-cloud-ip-ranges).
 * Some Windows resources in your environment might use classic infrastructure services in Dallas.
 * {{site.data.keyword.cloud_notm}} endpoint service network includes 166.8.0.0/14.
-* IBM CloudDriver is an ephemeral VSI that is deployed by the {{site.data.keyword.cloud_notm}} automation to configure your instance. While IBM CloudDriver is being bootstrapped, it uses an ephemeral primary IP address. However, after bootstrapping it uses a predictable portable IP address that you can find on your instance details page. For more information, see [IBM CloudDriver](/docs/vmwaresolutions?topic=vmwaresolutions-design_infrastructuremgmt#design_infrastructuremgmt-cloud-driver).
+* IBM CloudDriver is an ephemeral VSI that is deployed by the {{site.data.keyword.cloud_notm}} automation to configure your instance. While IBM CloudDriver is being bootstrapped, it uses an ephemeral primary IP address. However, after bootstrapping, it uses a predictable portable IP address that you can find on your instance details page. For more information, see [IBM CloudDriver](/docs/vmwaresolutions?topic=vmwaresolutions-design_infrastructuremgmt#design_infrastructuremgmt-cloud-driver).
 * Infrastructure VMs refer to the private portable subnet allocated for use by vCenter, NSX manager, the cloud driver
 * Depending on your mode of deployment, your Windows Active Directory domain controllers can be VSIs on a primary subnet, or VMs on a portable subnet.
 
-For more information about {{site.data.keyword.redhat_openshift_full}} (OCP) networking, see [About the {{site.data.keyword.redhat_openshift_notm}} SDN network provider](https://docs.openshift.com/container-platform/4.4/networking/openshift_sdn/about-openshift-sdn.html){: external}.
+For more information about {{site.data.keyword.redhat_openshift_full}} (OCP) networking, see [About the OpenShift SDN network plugin](https://docs.openshift.com/container-platform/4.13/networking/openshift_sdn/about-openshift-sdn.html){: external}.
 
 | Source | Subnet, IP range | Target | Subnet, IP range | Port | Protocol | Purpose | Service |
 |:------ |:---------------- |:------ |:---------------- |:---- |:-------- |:------- |:------- |
@@ -64,7 +64,7 @@ For more information about {{site.data.keyword.redhat_openshift_full}} (OCP) net
 | NSX Manager | Infrastructure VMs | Customer edge subnet | Customer edge private traffic | 443 |  |  |  |
 | ESXi host shared storage | ESXi shared storage | {{site.data.keyword.cloud_notm}} infrastructure endurance storage | {{site.data.keyword.cloud_notm}} infrastructure services network | 111, 635, and 2049 | TCP and UDP | Use {{site.data.keyword.cloud_notm}} infrastructure endurance storage | |
 | IBM CloudDriver \n Windows Active Directory (VSI) | Private primary subnet | {{site.data.keyword.cloud_notm}} infrastructure engine | {{site.data.keyword.cloud_notm}} infrastructure services network | 80 | TCP | Provision IBM CloudDriver and Windows Active Directory (VSI) | |
-| {{site.data.keyword.cloud_notm}} infrastructure engine | {{site.data.keyword.cloud_notm}} infrastructure services network \n IBM CloudDriver \n Windows Active Directory (VSI) | Private primary subnet | Any | TCP and UDP | Provision IBM CloudDriver and Windows Active Directory (VSI) |   |
+| {{site.data.keyword.cloud_notm}} infrastructure engine | {{site.data.keyword.cloud_notm}} infrastructure services network | IBM CloudDriver \n Windows Active Directory (VSI) | Private primary subnet | Any | TCP and UDP | Provision IBM CloudDriver and Windows Active Directory (VSI) |
 | {{site.data.keyword.cloud_notm}} infrastructure engine | {{site.data.keyword.cloud_notm}} infrastructure services network | ESXi host management0 | Private primary subnet | 623 | TCP and UDP | {{site.data.keyword.cloud_notm}} infrastructure IPMI |   |
 | IBM CloudDriver |   | IBM Cloud Service \n `10.221.68.39` |   | 514 | TCP |   |   |
 | IBM CloudDriver |   | Internet |   |   |   |   | HTTPS |

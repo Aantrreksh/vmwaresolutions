@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2022
+  years:  2016, 2023
 
-lastupdated: "2022-04-27"
+lastupdated: "2023-08-21"
 
 subcollection: vmwaresolutions
 
@@ -160,7 +160,7 @@ In an aid to isolating the affected components, this documentation on troublesho
 ## Related links
 {: #opsprocs-trouble-links}
 
-* [Contacting IBM Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support#trbl_support)
+* [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support#trbl_support)
 * [vSphere troubleshooting overview](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.vcenterhost.doc/GUID-C70D5A5E-7D84-446C-B8CE-0766AA7351A4.html){: external}
 * [vSphere troubleshooting with logs](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.vcenterhost.doc/GUID-552CC9E8-441C-434A-88FC-3F50881245D7.html){: external}
 * [Operations management on {{site.data.keyword.cloud_notm}}](/docs/vmwaresolutions?topic=vmwaresolutions-opsmgmt-intro)

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2022
+  years:  2016, 2023
 
-lastupdated: "2022-11-22"
+lastupdated: "2023-08-04"
 
 keywords: vCenter Server delete instance, delete vCenter Server, remove vCenter Server, vmware multizone, vcenter server multizone, delete vCenter Server multizone
 
@@ -31,28 +31,32 @@ The instance remains in **Deleting** status and the monthly ESXi servers are ava
 
 After the ESXi server reclaim process completes, the subnets and VLANs are deleted and the instance deletion is completed.
 
-You can review the next account invoice to confirm that you are no longer billed for this instance. From the {{site.data.keyword.cloud_notm}} console, click **Manage > Billing and usage**, then click **Invoices**.
+You can review the next account invoice to confirm that you are no longer billed for this instance. From the {{site.data.keyword.cloud_notm}} console, click **Manage > Billing and usage** and click **Invoices**.
 
 ## Procedure to delete vCenter Server instances from the Resources page
 {: #vc_deletinginstance-procedure1}
 
-1. From the {{site.data.keyword.vmwaresolutions_short}} console, click **Resources > vCenter Server** from the left navigation pane.
+1. From the VMware Solutions console, click **Resources > vCenter Server** from the left navigation pane.
 2. In the **vCenter Server** table, find the instance to delete.
-3. Click the vertical overflow menu next to the **Status** column, and then click **Delete instance**.
-   The status of the instance is changed to **Deleting**. When the instance is deleted successfully, the components of the instance are released, and the status of the instance is changed to **Deleted**.
-4. If you want to delete the instance record from the {{site.data.keyword.vmwaresolutions_short}} console, complete the following steps:
-   1. Click the vertical overflow menu next to the **Status** column, and then click **Delete from the console**.
+3. Click the vertical overflow menu next to the **Status** column and click **Delete instance**.
+
+   The instance status is changed to **Deleting**. When the instance is deleted successfully, the instance components are released, and the instance status is changed to **Deleted**.
+
+4. If you want to delete the instance record from the VMware Solutions console, complete the following steps:
+   1. Click the vertical overflow menu next to the **Status** column and click **Delete from the console**.
    2. In the **Delete instance** window, click **Delete**.
 
 ## Procedure to delete vCenter Server instances from the instance details page
 {: #vc_deletinginstance-procedure2}
 
-1. From the {{site.data.keyword.vmwaresolutions_short}} console, click **Resources > vCenter Server** from the left navigation pane.
+1. From the VMware Solutions console, click **Resources > vCenter Server** from the left navigation pane.
 2. In the **vCenter Server** table, click the instance to delete.
-3. Click **Actions** next to **vCenter console**, and then click **Delete instance**.
-   The status of the instance is changed to **Deleting**. When the instance is deleted successfully, the components of the instance are released, and the status of the instance is changed to **Deleted**.
-4. If you want to delete the instance record from the {{site.data.keyword.vmwaresolutions_short}} console, complete the following steps:
-   1. Click **Actions** again and then click **Delete from the console**.
+3. Click **Actions** next to **vCenter console** and click **Delete instance**.
+
+   The instance status is changed to **Deleting**. When the instance is deleted successfully, the instance components are released, and the instance status is changed to **Deleted**.
+   
+4. If you want to delete the instance record from the VMware Solutions console, complete the following steps:
+   1. Click **Actions** again and click **Delete from the console**.
    2. In the **Delete instance** window, click **Delete**.
 
 ## Related links
@@ -62,4 +66,4 @@ You can review the next account invoice to confirm that you are no longer billed
 * [Viewing vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_viewinginstances)
 * [Expanding and contracting capacity for vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservers)
 * [Managing virtual servers](/docs/virtual-servers?topic=virtual-servers-managing-virtual-servers)
-* [Contacting IBM Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support)
+* [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support)

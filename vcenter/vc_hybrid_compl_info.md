@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-05-01"
+lastupdated: "2023-08-03"
 
 keywords: vCenter Server Hybridity compliance, compliance info Hybridity, vCenter Server Hybridity policy
 
@@ -78,7 +78,7 @@ VMware vCenter Server environments, which are delivered as {{site.data.keyword.v
 * Due to the level of specialization that is required to maintain superior technical expertise at the team level, it is sometimes necessary to involve more than one support team in resolving a particular software problem. This process is easily handled, as our support teams are all networked together and work as one to resolve whatever problems or issues arise.
 * In order to investigate the issue, IBM might need to access information on your system relative to the failure or might need to re-create the failure to get additional information.
 * A client–generated support ticket serves as acknowledgment that IBM Support can access the VMware management layer for investigation, debugging, and triage. If maintenance outage or changes to the environment are required, IBM Support will request additional documented confirmation from the client through tickets as part of our change management process.
-* For more information about support tickets, see [IBM Support Guide](https://www-01.ibm.com/support/docview.wss?uid=ibm10733923){: external} and follow the steps in [Contacting IBM Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support).
+* For more information about support tickets, see the [IBM Support Guide](https://www-01.ibm.com/support/docview.wss?uid=ibm10733923) and follow the steps in [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support).
 
 ## Client responsibilities
 {: #vc_hybrid_compl_info-client-responsibilities}
@@ -114,11 +114,11 @@ VMware vCenter Server environments, which are delivered as {{site.data.keyword.v
 ### Third-party services
 {: #vc_hybrid_compl_info-third-party-services}
 
-* Third-Party software or code is included or bundled with some of our IBM offerings. This code is included for your convenience but is not considered part of the IBM program.
+* Third-party software or code is included or bundled with some of our IBM offerings. This code is included for your convenience but is not considered part of the IBM program.
 * These non–IBM programs are licensed directly by their providers. Client agrees to use the non–IBM programs under the provider’s terms and conditions. These terms are provided in the IBM licensing agreement that accompanies the IBM offering at time of purchase.
 * IBM does testing to ensure that the third-party products work with IBM programs and that they function correctly.
-* IBM Support will diagnose client's problems by using the knowledge of how IBM offerings work with the Third-Party software. After it has been concluded that the IBM program is working correctly, but the issue still exists, IBM must refer the client to the Third-Party vendor for further diagnosis.
-* Further information on client responsibilities about Third-Party software or code can be found in the [IBM Support Guide](https://www-01.ibm.com/support/docview.wss?uid=ibm10733923){: external}.
+* IBM Support will diagnose client's problems by using the knowledge of how IBM offerings work with the third-party software. After it has been concluded that the IBM program is working correctly, but the issue still exists, IBM must refer the client to the third-party vendor for further diagnosis.
+* For more information about client responsibilities regarding third-party software or code, see the [IBM Support Guide](https://www-01.ibm.com/support/docview.wss?uid=ibm10733923).
 
 ## Consent to accessing client environments
 {: #vc_hybrid_compl_info-consent-to-access-client-environment}
@@ -138,9 +138,3 @@ VMware vCenter Server environments, which are delivered as {{site.data.keyword.v
 {: #vc_hybrid_compl_info-steady-state-operations}
 
 If the client has not granted consent to proactive support for an instance in the initial provisioning and ordering, they must include explicit consent in any future service tickets, if wanted. Statements of consent must follow the set guidelines or will be considered void.
-
-## Related links
-{: #vc_hybrid_compl_info-related}
-
-* [vCenter Server with Hybridity Bundle overview](/docs/vmwaresolutions?topic=vmwaresolutions-vc_hybrid_overview)
-* [Contacting IBM Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support)

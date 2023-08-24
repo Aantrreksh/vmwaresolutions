@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-06-14"
+lastupdated: "2023-07-17"
 
 keywords: vmware vSphere order instance, order vSphere, order vmware vSphere instance
 
@@ -81,9 +81,9 @@ Network settings are based on your selection of either **Order new VLANs** or **
 ### Order new VLANs
 {: #vs_orderinginstances-new-vlans}
 
-If you are ordering for a public and private network, one public VLAN and two private VLANs are required for your cluster order. The two private VLANs are trunked into each bare metal server.
+If you are ordering for a public and private network, one public VLAN and two private VLANs are required for your instance order. The two private VLANs are trunked into each bare metal server.
 
-If you are ordering for a private network, two private VLANs are only required for your cluster order.
+If you are ordering for a private network, two private VLANs are only required for your instance order.
 
 ### Select existing VLANs
 {: #vs_orderinginstances-existing-vlans}

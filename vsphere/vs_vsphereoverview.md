@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-06-13"
+lastupdated: "2023-08-01"
 
 keywords: vSphere, vSphere component, tech specs vSphere
 
@@ -15,7 +15,7 @@ subcollection: vmwaresolutions
 {{site.data.keyword.attribute-definition-list}}
 
 # VMware vSphere overview
-{: #vs_vsphereclusteroverview}
+{: #vs_vsphereoverview}
 
 VMware vSphere® is a streamlined and optimized ordering platform for VMware®. With this platform, you can build your own {{site.data.keyword.IBM}}-hosted VMware environment by customizing and ordering the VMware-compatible hardware based on your selected VMware components.
 {: shortdesc}
@@ -27,7 +27,7 @@ VMware vSphere does not automate the installation, configuration, and bring-up o
 Use this offering to create a new instance of VMware ESXi™ servers or scale out an existing instance of ESXi servers in an {{site.data.keyword.cloud_notm}} data center. Depending on the VMware components that you select, you can start with just one ESXi server and then scale the instance later as needed.
 
 ## Technical specifications for VMware vSphere
-{: #vs_vsphereclusteroverview-specs}
+{: #vs_vsphereoverview-specs}
 
 Review the components for VMware vSphere instances.
 
@@ -35,14 +35,10 @@ The availability and pricing of standardized hardware configurations might vary 
 {: note}
 
 ### VMware components
-{: #vs_vsphereclusteroverview-specs-vmware-components}
+{: #vs_vsphereoverview-specs-vmware-components}
 
-Select licenses (IBM-provided or BYOL) for the following VMware components:
+Select licenses for the following VMware components:
 * VMware vSphere Enterprise Plus 7.0u3
-
-   New VMware vSphere instances are provisioned with vSphere 7.0u3 or later. You can add capacity to an existing vSphere 6.7 instance by adding ESXi servers.
-   {: note}
-
 * The following VMware components are optional:
    * VMware vCenter Server® Standard
    * VMware NSX® (Data Center SP Base, Data Center SP Professional, Data Center SP Advanced, or Data Center SP Enterprise Plus)
@@ -53,7 +49,7 @@ Select licenses (IBM-provided or BYOL) for the following VMware components:
    * VMware Aria Operations™ for Logs
 
 ### Bare metal server
-{: #vs_vsphereclusteroverview-specs-bare-metal}
+{: #vs_vsphereoverview-specs-bare-metal}
 
 The options available depend on whether you selected the VMware vSAN component.
 {: note}
@@ -67,51 +63,47 @@ Additionally, the following disk and networking specifications apply:
 * One RAID disk controller
 
 ### Networking
-{: #vs_vsphereclusteroverview-specs-network}
+{: #vs_vsphereoverview-specs-network}
 
 * One VLAN (Virtual LAN) public VLAN and two private VLANs
 * (Optional) An HA-pair of FortiGate® Physical Appliance devices
 
 ### Storage
-{: #vs_vsphereclusteroverview-specs-storage}
+{: #vs_vsphereoverview-specs-storage}
 
 User-customized storage for vSAN configuration when the VMware vSAN component is selected:
 * Storage disk options - 960 GB SSD, 1.9 TB SSD, 3.8 TB SSD, or 7.68 TB SSD.
-* Disk quantity options - 2, 4, 6, 8, or 10.
+* Disk quantity options - 2, 4, 6, 8, or 10. Additionally, two cache disks of 960 GB are also ordered per host.
 
-   Additionally, two cache disks of 960 GB are also ordered per host.
-
-   3.8 TB SSD (Solid-State Disk) drives are supported when they are made generally available in a data center.
+   3.8 TB SSD (Solid-State Disk) drives are supported when they are made available in a data center.
    {: note}
 
-* High Performance with Intel Optane - this option provides two extra capacity disk bays for a total of 10 capacity disks. It's available only for vSphere 6, and for Skylake and dual-processor Cascade Lake CPU models.
-
 ## Technical specifications for VMware vSphere expansion nodes
-{: #vs_vsphereclusteroverview-expansion-node-specs}
+{: #vs_vsphereoverview-expansion-node-specs}
 
 Each VMware vSphere instance expansion node deploys and incurs charges for the following components in your {{site.data.keyword.slportal}} account.
 
 ### Hardware for expansion nodes
-{: #vs_vsphereclusteroverview-expansion-node-specs-hardware}
+{: #vs_vsphereoverview-expansion-node-specs-hardware}
 
-One {{site.data.keyword.cloud_notm}} bare metal server with the hardware configuration presented in [Technical specifications for VMware vSphere](/docs/vmwaresolutions?topic=vmwaresolutions-vs_vsphereclusteroverview#vs_vsphereclusteroverview-specs).
+One {{site.data.keyword.cloud_notm}} bare metal server with the hardware configuration presented in [Technical specifications for VMware vSphere](/docs/vmwaresolutions?topic=vmwaresolutions-vs_vsphereoverview#vs_vsphereoverview-specs).
 
 ### Networking for expansion nodes
-{: #vs_vsphereclusteroverview-expansion-node-specs-network}
+{: #vs_vsphereoverview-expansion-node-specs-network}
 
-One {{site.data.keyword.cloud_notm}} bare metal server with the networking configuration presented in [Technical specifications for VMware vSphere](/docs/vmwaresolutions?topic=vmwaresolutions-vs_vsphereclusteroverview#vs_vsphereclusteroverview-specs).
+One {{site.data.keyword.cloud_notm}} bare metal server with the networking configuration presented in [Technical specifications for VMware vSphere](/docs/vmwaresolutions?topic=vmwaresolutions-vs_vsphereoverview#vs_vsphereoverview-specs).
 
 ### VMware components for expansion nodes
-{: #vs_vsphereclusteroverview-expansion-node-specs-vmware-components}
+{: #vs_vsphereoverview-expansion-node-specs-vmware-components}
 
 * One {{site.data.keyword.cloud_notm}} bare metal server with VMware vSphere Enterprise Plus 7.0 or 6.7u3 for V4.7 and earlier.
-* Optional VMware components presented in [Technical specifications for VMware vSphere](/docs/vmwaresolutions?topic=vmwaresolutions-vs_vsphereclusteroverview#vs_vsphereclusteroverview-specs).
+* Optional VMware components presented in [Technical specifications for VMware vSphere](/docs/vmwaresolutions?topic=vmwaresolutions-vs_vsphereoverview#vs_vsphereoverview-specs).
 
 You must manage the ESXi servers, optional VMware components, and extra hardware that is ordered and delivered to your {{site.data.keyword.cloud_notm}} account only from the {{site.data.keyword.slportal}}. After you create a new instance in the {{site.data.keyword.vmwaresolutions_short}} console, you can return to the console, and add capacity to the new instance. For more information, see [Adding ESXi servers to VMware vSphere instances](/docs/vmwaresolutions?topic=vmwaresolutions-vs_addingservers).
 {: important}
 
 ## Related links
-{: #vs_vsphereclusteroverview-related}
+{: #vs_vsphereoverview-related}
 
 * [VMware vSphere BOM](/docs/vmwaresolutions?topic=vmwaresolutions-vs_bom)
 * [Planning for VMware vSphere](/docs/vmwaresolutions?topic=vmwaresolutions-vs_planning)

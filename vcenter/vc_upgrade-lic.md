@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2022
+  years:  2016, 2023
 
-lastupdated: "2022-11-23"
+lastupdated: "2023-07-28"
 
 keywords: NSX license upgrade, upgrade license hybridity, hybridity license
 
@@ -42,5 +42,5 @@ You can upgrade the NSX license for your instance to a later edition. Reverting 
 ## Related links
 {: #vc_upgrade-lic-related}
 
-* [Contacting IBM Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support)
+* [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support)
 * [FAQs](/docs/vmwaresolutions?topic=vmwaresolutions-faq-vmwaresolutions)

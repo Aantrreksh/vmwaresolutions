@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-05-01"
+lastupdated: "2023-07-17"
 
 keywords: Veeam 9.5, Veeam 9 overview, Veeam 9.5 deprecated
 
@@ -71,14 +71,3 @@ Veeam Availability Suite v9.5 (10, 25, 50, 100, or 200 VM license)
 {: #veeam_considerations-remove}
 
 Deleting the Veeam service stops all backups and deletes all the previous backups. The backup of the management VMs stops and the deletion of previous backups is irreversible. If the management VMs are corrupted, they can't be restored.
-
-## Related links
-{: #veeam_considerations-related}
-
-* [Veeam Backup and Replication 12 overview](/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview)
-* [Managing Veeam](/docs/vmwaresolutions?topic=vmwaresolutions-managingveeam)
-* [Managing Veeam licenses](/docs/vmwaresolutions?topic=vmwaresolutions-veeam_managing_licenses)
-* [Ordering and configuring IBM Cloud Object Storage with Veeam](/docs/vmwaresolutions?topic=vmwaresolutions-icos_ordering)
-* [FAQ](/docs/vmwaresolutions?topic=vmwaresolutions-faq-vmwaresolutions)
-* [Veeam Backup and Replication](https://www.ibm.com/cloud/architecture/architectures/virtualization_backup_veeam){: external}
-* [Veeam technical documentation)](https://www.veeam.com/documentation-guides-datasheets.html){: external}

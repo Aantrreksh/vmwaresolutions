@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-04-29"
+lastupdated: "2023-07-28"
 
 keywords: troubleshooting, Zerto Virtual Replication, Zerto ESXi server
 
@@ -30,4 +30,4 @@ Open an {{site.data.keyword.cloud}} Support ticket and work with IBM Support to 
 
 To access the Zerto console, click the **Zerto** card from the **Services** tab of the instance and click **View details**. Then, click **View Zerto console**.
 
-For more information about contacting IBM Support, see [Contacting IBM Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support#trbl_support).
+For more information about contacting IBM Support, see [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support#trbl_support).

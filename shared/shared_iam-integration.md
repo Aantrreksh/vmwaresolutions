@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2023
 
-lastupdated: "2023-02-22"
+lastupdated: "2023-08-21"
 
 keywords: manage shared resources, set IAM integration the VMware Cloud Director Management console, shared iam roles, iam roles
 
@@ -61,7 +61,7 @@ The IAM integration status can have the following results.
 | Status        | Description       |
 |:------------- |:------------- |
 | Integration pending | The IAM integration is in progress. |
-| Integration incomplete | The integration is not successful. Open an IBM Support ticket by following the steps in [Contacting IBM Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support). |
+| Integration incomplete | The integration is not successful. Open an IBM Support ticket by following the steps in [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support). |
 | Integration enabled | The IAM integration was previously enabled for the organization. You can reset the integration, if needed. |
 {: caption="Table 1. Status descriptions for IAM implementation" caption-side="bottom"}
 
@@ -83,5 +83,5 @@ After the IAM integration is enabled, you can use single sign-on to log in to th
 * [VMware Shared overview](/docs/vmwaresolutions?topic=vmwaresolutions-shared_overview)
 * [Viewing site and virtual data center details](/docs/vmwaresolutions?topic=vmwaresolutions-shared_viewing-vdc-details)
 * [Locating an IAM account administrator](/docs/vmwaresolutions?topic=vmwaresolutions-iam_verify_permissions)
-* [Contacting IBM Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support)
+* [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support)
 * [VMware Cloud Director](https://www.vmware.com/ca/products/cloud-director.html){: external}

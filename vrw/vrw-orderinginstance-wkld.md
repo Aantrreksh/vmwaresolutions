@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2023
 
-lastupdated: "2023-06-19"
+lastupdated: "2023-07-15"
 
 keywords: vmware regulated workloads, vmware regulated workloads order instance, order vmware regulated workloads, vmware regulated workloads instances
 
@@ -14,7 +14,7 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Workload cluster
+# Additional cluster for workloads
 {: #vrw-orderinginstance-wkld-cluster}
 
 For single-zone VMware® instances with a customizable consolidated cluster, you can toggle the **Deploy separate workload cluster** switch on to deploy a workload cluster. An extra cluster for workloads is required for a management-optimized cluster.
@@ -29,7 +29,7 @@ By default, the workload cluster name is set to **vrw-_xx_-workload**.
 ## Workload capacity
 {: #vrw-orderinginstance-wkld-capacity}
 
-* For the **Customizable** capacity, you can choose the Cascade Lake server and RAM size according to your needs.
+* For the **Customizable** capacity, you can choose a Cascade Lake CPU model and a RAM size according to your needs.
 * For the **Medium** capacity, you get a Cascade Lake server with 32 cores, 2.3 GHz, and 384 GB RAM.
 * For the **Large** capacity, you get a Cascade Lake server with 48 cores, 2.4 GHz, and 768 GB RAM.
 
@@ -65,7 +65,7 @@ The networking type is set to **Private network only** by default.
 ### Uplink speed
 {: #vrw-orderinginstance-wkld-uplink}
 
-{{site.data.content.uplink-speed-options-cascadelake-list}}
+{{site.data.content.uplink-speed-options-list}}
 
 {{site.data.content.simpletable-uplink-speed-locations-ap}}
 

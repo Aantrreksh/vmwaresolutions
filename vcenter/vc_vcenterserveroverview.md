@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-06-21"
+lastupdated: "2023-07-14"
 
 keywords: vCenter Server, vCenter Server architecture, tech specs vCenter Server
 
@@ -147,14 +147,10 @@ The NFS option offers customized shared file-level storage for workloads with va
 
 The vSAN option offers customized configurations, with various options for disk type, size, and quantity:
 * Disk quantity - 2, 4, 6, 8, or 10
-* Storage disk - 960 GB SSD, 1.9 TB SSD, 3.8 TB SSD, or 7.68 TB SSD (SSD SED disks are supported for Skylake servers.)
+* Storage disk - 960 GB SSD, 1.9 TB SSD, 3.8 TB SSD, or 7.68 TB SSD. In addition, two cache disks of 960 GB are also ordered per host.
 
-   In addition, two cache disks of 960 GB are also ordered per host.
-
-   3.8 TB SSD (solid-state disk) drives are supported when they are made generally available in a data center.
+   3.8 TB SSD (solid-state disk) drives are supported when they are made available in a data center.
    {: note}
-
-* High Performance with Intel Optane - this option provides two extra capacity disk bays for a total of 10 capacity disks. It's available only for vSphere 6 instances.
 
 ### Licenses (IBM-provided or BYOL) and fees
 {: #vc_vcenterserveroverview-license-and-fee}

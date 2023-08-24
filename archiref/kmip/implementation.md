@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-01-03"
+lastupdated: "2023-08-10"
 
 subcollection: vmwaresolutions
 
@@ -61,9 +61,8 @@ To use vSphere encryption, edit your VM storage policies to require disk encrypt
 Some VMs require special planning for encryption, especially if they are involved in a possible circular dependency to obtain the key material to operate themselves. Consider the following information:
 
 - vCenter Server is involved in retrieving encryption keys. This VM should not be encrypted using vSphere encryption or located on an encrypted vSAN datastore.
-- The Micorsoft Windows® Active Directory controllers in your environment are used for hostname resolution to connect to key management. You should not encrypt them using vSphere encryption or locate them on an encrypted vSAN datastore unless you are prepared to provide alternate hostname resolution if you need to restart your environment.
+- The Microsoft Windows® Active Directory controllers in your environment are used for hostname resolution to connect to key management. You should not encrypt them using vSphere encryption or locate them on an encrypted vSAN datastore unless you are prepared to provide alternate hostname resolution if you need to restart your environment.
 - VMware does not recommend encrypting VMware NSX® VMs by using vSphere encryption.
-- Entrust does not recommend encrypting Entrust CloudControl™ VMs that use vSphere encryption.
 
 ## Key rotation
 {: #kmip-implementation-key-rotation}

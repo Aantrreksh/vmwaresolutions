@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-06-19"
+lastupdated: "2023-07-17"
 
 keywords: vCenter Server Hybridity, hybridity, tech specs vCenter Server Hybridity
 
@@ -149,9 +149,3 @@ You must manage the {{site.data.keyword.vmwaresolutions_short}} components that 
 
    Exceptions to these activities include managing the shared storage file shares from the {{site.data.keyword.slportal}}. Such activities include: ordering, deleting (which might impact data stores if mounted), authorizing, and mounting shared storage file shares.
 
-## Related links
-{: #vc_hybrid_overview-related}
-
-* [vCenter Server BOM](/docs/vmwaresolutions?topic=vmwaresolutions-vc_bom)
-* [HCX overview](/docs/vmwaresolutions?topic=vmwaresolutions-hcx_considerations#hcx_considerations)
-* [Contacting IBM Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support)

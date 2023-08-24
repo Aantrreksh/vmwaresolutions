@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2023
 
-lastupdated: "2023-06-19"
+lastupdated: "2023-07-10"
 
 subcollection: vmwaresolutions
 
@@ -18,7 +18,7 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.cloud_notm}} for VMware® Regulated Workloads is designed following the concept of a zero trust model. Wherever practical, the scope of action of any one individual administrator is strictly limited to those actions necessary and appropriate to perform their assigned roles. Overlap of duties is minimized or eliminated to prevent the need for privilege escalation. The escalation can result in undesired flows of information in or out of any layer of the {{site.data.keyword.cloud_notm}} for VMware Regulated Workloads.
 
-![IBM Cloud for VMware Regulated Workloads roles](../../images/vrw-boundary.svg "IBM Cloud for VMware Regulated Workloads roles"){: caption="Figure 1. IBM Cloud for VMware Regulated Workloads roles" caption-side="bottom"}
+![IBM Cloud for VMware Regulated Workloads roles](../../images/vrw-v2-roles.svg "IBM Cloud for VMware Regulated Workloads roles"){: caption="Figure 1. IBM Cloud for VMware Regulated Workloads roles" caption-side="bottom"}
 
 
 ## Network and security administrator roles

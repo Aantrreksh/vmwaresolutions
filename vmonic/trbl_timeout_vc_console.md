@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2021
+  years:  2016, 2023
 
-lastupdated: "2021-12-10"
+lastupdated: "2023-08-17"
 
 keywords: troubleshooting, vSphere timeout, timeout console
 
@@ -22,7 +22,7 @@ subcollection: vmwaresolutions
 When you try to connect to the VMware vSphere® Web Client, you might get the following timeout error:
 {: tsSymptoms}
 
-`The server at <IP_address> is taking too long to respond.`
+> The server at <IP_address> is taking too long to respond.
 
 Use the following steps to investigate and fix the problem.
 {: tsResolve}

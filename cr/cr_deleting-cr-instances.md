@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2023
 
-lastupdated: "2023-01-30"
+lastupdated: "2023-08-04"
 
 keywords: Cyber Recovery delete instance, delete Cyber Recovery, remove Cyber Recovery
 
@@ -37,7 +37,7 @@ The instance remains in **Deleting** status and the monthly ESXi servers are ava
 
 After the ESXi server reclaim process completes, the subnets and VLANs are deleted, and the instance deletion is completed.
 
-You can review the next account invoice to confirm that you are no longer billed for this instance. From the {{site.data.keyword.cloud_notm}} console, click **Manage > Billing and usage**, then click **Invoices**.
+You can review the next account invoice to confirm that you are no longer billed for this instance. From the {{site.data.keyword.cloud_notm}} console, click **Manage > Billing and usage** and click **Invoices**.
 
 ## Procedure to delete Cyber Recovery instances from the Resources page
 {: #cr_deletinginstance-procedure1}
@@ -45,20 +45,24 @@ You can review the next account invoice to confirm that you are no longer billed
 1. From the VMware Solutions console, click **Resources > Cyber Recovery** from the left navigation pane.
 2. In the **Cyber Recovery** table, find the instance to delete.
 3. Click the vertical overflow menu next to the **Status** column, and then click **Delete instance**.
-   The status of the instance is changed to **Deleting**. When the instance is deleted successfully, the components of the instance are released, and the status of the instance is changed to **Deleted**.
+
+   The instance status is changed to **Deleting**. When the instance is deleted successfully, the instance components are released, and the instance status is changed to **Deleted**.
+
 4. If you want to delete the instance record from the VMware Solutions console, complete the following steps:
-   1. Click the vertical overflow menu next to the **Status** column, and then click **Delete from the console**.
+   1. Click the vertical overflow menu next to the **Status** column and click **Delete from the console**.
    2. In the **Delete instance** window, click **Delete**.
 
 ## Procedure to delete Cyber Recovery instances from the instance details page
 {: #cr_deletinginstance-procedure2}
 
-1. From the {{site.data.keyword.vmwaresolutions_short}} console, click **Resources > Cyber Recovery** from the left navigation pane.
+1. From the VMware Solutions console, click **Resources > Cyber Recovery** from the left navigation pane.
 2. In the **Cyber Recovery** table, click the instance to delete.
 3. Click **Actions** next to **vCenter console**, and then click **Delete instance**.
-   The status of the instance is changed to **Deleting**. When the instance is deleted successfully, the components of the instance are released, and the status of the instance is changed to **Deleted**.
+
+   The instance status is changed to **Deleting**. When the instance is deleted successfully, the instance components are released, and the instance status is changed to **Deleted**.
+
 4. If you want to delete the instance record from the VMware Solutions console, complete the following steps:
-   1. Click **Actions** again and then click **Delete from the console**.
+   1. Click **Actions** again and click **Delete from the console**.
    2. In the **Delete instance** window, click **Delete**.
 
 ## Related links
@@ -67,4 +71,4 @@ You can review the next account invoice to confirm that you are no longer billed
 * [Ordering Cyber Recovery](/docs/vmwaresolutions?topic=vmwaresolutions-cr_orderinginstance_reqs)
 * [Viewing Cyber Recovery instances](/docs/vmwaresolutions?topic=vmwaresolutions-cr_viewinginstances)
 * [Managing virtual servers](/docs/virtual-servers?topic=virtual-servers-managing-virtual-servers)
-* [Contacting IBM Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support)
+* [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support)

@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-02-25"
+lastupdated: "2023-07-31"
 
 keywords: Entrust CloudControl WebGUI, Entrust CloudControl console, enable internet Entrust CloudControl
 
@@ -18,7 +18,10 @@ subcollection: vmwaresolutions
 # Managing Entrust CloudControl
 {: #managing-entrust-cc}
 
-To manage the Entrust CloudControl™ service, access the Entrust CloudControl WebGUI from the {{site.data.keyword.vmwaresolutions_full}} console, or access the Entrust CloudControl console from the VMware vSphere® Web Client.
+New installations of Entrust CloudControl® (formerly known as HyTrust CloudControl) are not supported for new or existing deployments of VMware vCenter Server® instances. You can still use or delete existing Entrust CloudControl installations on your existing instances.
+{: deprecated}
+
+To manage Entrust CloudControl, access the Entrust CloudControl WebGUI from the {{site.data.keyword.vmwaresolutions_full}} console, or access the Entrust CloudControl console from the VMware vSphere® Web Client.
 
 ## Accessing the Entrust CloudControl WebGUI from the VMware Solutions console
 {: #managing-entrust-cc-accessing-webgui}
@@ -38,7 +41,7 @@ For more information, see [Ordering services for vCenter Server instances](/docs
 ## Considerations when you add and remove hosts and clusters
 {: #managing-entrust-cc-consider-addremove-hostsclusters}
 
-When you add and remove hosts and clusters to your instance, VMware Solutions do not manage your Entrust CloudControl inventory and credentials for you. IBM Cloud assumes that you take steps to lock IBM Cloud automation from having access to your Entrust CloudControl deployment.
+When you add and remove hosts and clusters to your instance, VMware Solutions does not manage the Entrust CloudControl inventory and credentials for you. IBM Cloud assumes that you take steps to lock IBM Cloud automation from having access to your Entrust CloudControl deployment.
 
 ## Procedure to find the firewall and SNAT rules defined (NSX-T only)
 {: #managing-entrust-cc-proc-find-firewall-nsxt}
@@ -101,10 +104,10 @@ The following steps apply for updating the Entrust CloudControl network settings
 
 7. To confirm that the primary VM has internet access, run a `wget` command to a public IP address or website. To do so, go back to vCenter Server and right-click **CC1 > Open Console**. Log in to the console by using the console credentials from the Entrust CloudControl service details page. Run a `wget` command such as `wget www.ibm.com` to receive an immediate response. Confirm that the request was sent and a `200` response was received.
 
-## Related links
-{: #managing-entrust-cc-related}
+## Considerations when you delete Entrust CloudControl
+{: #managing-entrust-cc_considerations-remove}
 
-* [Entrust CloudControl overview](/docs/vmwaresolutions?topic=vmwaresolutions-entrust-cc_considerations)
-* [Contacting IBM Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support)
-* [FAQ](/docs/vmwaresolutions?topic=vmwaresolutions-faq-vmwaresolutions)
-* [Entrust website](https://www.entrust.com/){: external}
+Review the following considerations before you delete the service:
+* Before you delete Entrust CloudControl, disable **Root Password Vaulting** if configured, and delete all protected hosts from Entrust CloudControl.
+* As part of Entrust CloudControl service configuration, global PIP was enabled. Sample users and groups were preconfigured in Active Directory (AD) and are displayed on the service details page. If you delete Entrust CloudControl, the sample users are deleted from AD too. A sample trust manifest is set up that gives single sign-on (SSO) permissions to the sample users that are created. You can customize this setting for your own requirements.
+* If you installed Entrust CloudControl before VMware Solutions v4.0 and you delete the service, you must manually remove the DNS entries. For more information, see [Manually removing the DNS entries](/docs/vmwaresolutions?topic=vmwaresolutions-vc_deletingservices#vc_deletingservices-DNS-entries).

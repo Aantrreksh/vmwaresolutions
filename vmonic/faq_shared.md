@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-04-12"
+lastupdated: "2023-07-28"
 
 keywords: FAQ vmware solutions shared, vmware solutions shared questions
 
@@ -88,7 +88,7 @@ For more information, see [IBM Cloud data center availability](/docs/vmwaresolut
 {: #faq-deploy-shared}
 {: faq}
 
-You can check the status of the instance deployment by viewing the deployment history on the instance details page from the {{site.data.keyword.vmwaresolutions_short}} console.
+You can check the status of the instance on the [instance details page](/docs/vmwaresolutions?topic=vmwaresolutions-shared_viewing-vdc-summary#shared_viewing-vdc-summary-procedure) from the {{site.data.keyword.vmwaresolutions_short}} console.
 
 ## How can I view a list of all notifications?
 {: #faq-notification-shared}
@@ -101,7 +101,7 @@ To view the complete notification history, click **Notifications** from the left
 {: faq}
 {: support}
 
-If you need assistance with {{site.data.keyword.vmwaresolutions_short}}, open an IBM Support ticket by following the steps in [Contacting IBM Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support).
+If you need assistance with {{site.data.keyword.vmwaresolutions_short}}, open an IBM Support ticket by following the steps in [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support).
 
 ## Can I bring my own firewall?
 {: #faq-byof}

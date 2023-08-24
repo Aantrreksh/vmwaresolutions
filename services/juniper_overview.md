@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2023
 
-lastupdated: "2023-06-12"
+lastupdated: "2023-08-22"
 
 keywords: Juniper vSRX, manage Juniper vSRX, Juniper vSRX virtual security appliance, Juniper virtual security appliance, Juniper vSRX console
 
@@ -17,7 +17,7 @@ subcollection: vmwaresolutions
 # Juniper vSRX on IBM Cloud overview
 {: #juniper-overview}
 
-Juniper® vSRX on IBM Cloud is a virtual security appliance that provides security and networking services at the perimeter or edge in virtualized private or public cloud environments. Within a VMware® infrastructure, vSRX runs as a pair of virtual machines (VMs) within the VMware vSphere® environment. Juniper vSRX on IBM Cloud is a non-IBM product that is offered under terms and conditions from Juniper Network, not IBM.
+Juniper® vSRX on {{site.data.keyword.cloud_notm}} is a virtual security appliance that provides security and networking services at the perimeter or edge in virtualized private or public cloud environments. Within a VMware® infrastructure, vSRX runs as a pair of virtual machines (VMs) within the VMware vSphere® environment. Juniper vSRX on {{site.data.keyword.cloud_notm}} is a non-IBM product that is offered under terms and conditions from Juniper Network, not IBM.
 {: shortdesc}
 
 {{site.data.content.para-promotion-add-on-services}}
@@ -115,8 +115,6 @@ Any network operations that rely on routes that are established through vSRX mig
 * [Ordering services for vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices)
 * [Viewing services for vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_viewingservices)
 * [Deleting services from vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_deletingservices)
-* [General FAQ about VMware Solutions](/docs/vmwaresolutions?topic=vmwaresolutions-faq-vmwaresolutions)
-* [Contacting IBM Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support)
 * [Juniper vSRX Virtual Firewall](https://www.juniper.net/us/en/products-services/security/srx-series/vsrx/){: external}
 * [Overview of the available virtual SRX models, vSRX, and vSRX 3.0](https://kb.juniper.net/InfoCenter/index?page=content&id=KB33572){: external}
 * [Juniper vSRX Documentation](https://www.juniper.net/documentation/product/en_US/vsrx){: external}

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2021
+  years:  2016, 2023
 
-lastupdated: "2021-10-21"
+lastupdated: "2023-07-28"
 
 keywords: F5 console, BIG-IP Web UI, login F5 console
 
@@ -29,6 +29,6 @@ For more information about viewing the service details, see [Ordering services f
 {: #managing_f5-related}
 
 * [F5 BIG-IP overview](/docs/vmwaresolutions?topic=vmwaresolutions-f5_considerations)
-* [Contacting {{site.data.keyword.IBM}} Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support)
+* [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support)
 * [FAQ](/docs/vmwaresolutions?topic=vmwaresolutions-faq-vmwaresolutions)
 * [F5 website](https://www.f5.com/){: external}
