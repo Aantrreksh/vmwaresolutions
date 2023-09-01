@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-07-20"
+lastupdated: "2023-08-25"
 
 keywords: planning vmware vSphere, data center, vSphere data centers
 
@@ -67,6 +67,9 @@ If you select a vSAN component, the location list is filtered by SSD (Solid-Stat
 | LON04 | 01 | Skylake, Cascade Lake, SAP-certified Cascade Lake |
 | LON05 | 01 | Skylake, Cascade Lake, SAP-certified Cascade Lake |
 | LON06 | 01 | Skylake, Cascade Lake, SAP-certified Cascade Lake |
+| MAD02  | 01 | Skylake, Cascade Lake, SAP-certified Cascade Lake |
+| MAD04  | 01 | Skylake, Cascade Lake, SAP-certified Cascade Lake |
+| MAD05  | 01 | Skylake, Cascade Lake, SAP-certified Cascade Lake |
 | MIL01  | 01 | Skylake, Cascade Lake, SAP-certified Cascade Lake |
 | PAR01 | 01 | Skylake, Cascade Lake, SAP-certified Cascade Lake |
 {: caption="Table 1. Available {{site.data.keyword.cloud_notm}} data centers for VMware vSphere instances - Europe" caption-side="bottom"}
@@ -104,8 +107,8 @@ If you select a vSAN component, the location list is filtered by SSD (Solid-Stat
 
 | Data center | Pod | Server options[^vsphere-7-05] |
 |:----------- |:--- |:----------------------------- |
-| SJC03 | 01-02 | Skylake, Cascade Lake, SAP-certified Cascade Lake |
-| SJC04 | 01 | Skylake, Cascade Lake, SAP-certified Cascade Lake |
+| SJC03 | 01-02 | Skylake, Cascade Lake |
+| SJC04 | 01 | Skylake, Cascade Lake |
 {: caption="Table 1. Available {{site.data.keyword.cloud_notm}} data centers for VMware vSphere instances - NA West" caption-side="bottom"}
 {: tab-title="NA West"}
 {: tab-group="Data centers for VMware vSphere"}
