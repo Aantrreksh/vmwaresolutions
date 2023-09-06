@@ -3,7 +3,7 @@
 copyright:
   years: 2022, 2023
 
-lastupdated: "2023-08-04"
+lastupdated: "2023-09-06"
 
 keywords: IBM Cloud for VMware Solutions, getting started, vmware solutions offerings, services for vmwaresolutions, vmwaresolutions use cases
 
@@ -117,6 +117,7 @@ The uplink speed provides two options:
 
 | Data center | Pod |
 |:----------- |:--- |
+| FRA02 | 02 |
 | FRA04 | 01 |
 | FRA05 | 01 |
 | LON06 | 01 |
@@ -135,8 +136,10 @@ The uplink speed provides two options:
 | Data center | Pod |
 |:----------- |:--- |
 | TOR04 | 01 |
+| WDC04 | 04 |
 | WDC04 | 05 |
 | WDC06 | 01 |
+| WDC07 | 01 |
 {: caption="Table. Available locations for 25 Gb uplink speed - NA East" caption-side="bottom"}
 {: tab-title="NA East"}
 {: tab-group="Data centers"}
@@ -145,6 +148,7 @@ The uplink speed provides two options:
 
 | Data center | Pod |
 |:----------- |:--- |
+| DAL10 | 03 |
 | DAL12 | 01 |
 | DAL13 | 02 |
 {: caption="Table. Available locations for 25 Gb uplink speed - NA South" caption-side="bottom"}
@@ -290,8 +294,8 @@ The section is referenced by the following files:
 CONTENT:
 
 You can also specify an instance name that meets the following requirements:
-* Only lowercase alphabetic, numeric, and dash (-) characters are allowed.
-* No consecutive dash characters are allowed.
+* Only lowercase alphabetic, numeric, and hyphen (-) characters are allowed.
+* No consecutive hyphens are allowed.
 * The instance name must start with a lowercase alphabetic character.
 * The instance name must end with a lowercase alphabetic or numeric character.
 * The maximum length of the instance name is 10 characters.
@@ -312,7 +316,7 @@ The section is referenced by the following files:
 CONTENT:
 
 You can also specify a cluster name that meets the following requirements:
-* Only lowercase alphabetic, numeric, and dash (-) characters are allowed.
+* Only lowercase alphabetic, numeric, and hyphen (-) characters are allowed.
 * The cluster name must start with a lowercase alphabetic character.
 * The cluster name must end with a lowercase alphabetic or numeric character.
 * The maximum length of the cluster name is 10 characters.
@@ -332,7 +336,7 @@ The section is referenced by the following files:
 CONTENT:
 
 You can also specify a new cluster name that meets the following requirements:
-* Only lowercase alphabetic, numeric, and dash (-) characters are allowed.
+* Only lowercase alphabetic, numeric, and hyphen (-) characters are allowed.
 * The cluster name must start with a lowercase alphabetic character.
 * The cluster name must end with a lowercase alphabetic or numeric character.
 * The maximum length of the cluster name is 30 characters.
