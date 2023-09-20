@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-07-28"
+lastupdated: "2023-09-20"
 
 keywords: FAQ, license, BYOL
 
@@ -63,6 +63,12 @@ You can manage your BYOL licenses by using the VMware vSphere Web Client.
 {: faq}
 
 IBM Support continues to be your point of contact for any instance configuration concern. However, if the reported concern is determined to be for a BYOL VMware component, you are directed to VMware Support.
+
+## Can you renew BYOL?
+{: #faq_byol-renew}
+{: faq}
+
+No. If the contract that is providing BYOL ends and is up for renewal, new licenses must be purchased from IBM.
 
 ## Related links
 {: #faq_byol-related}
