@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2023
 
-lastupdated: "2023-08-17"
+lastupdated: "2023-09-21"
 
 subcollection: vmwaresolutions
 
@@ -25,15 +25,15 @@ Managing a VMware in the {{site.data.keyword.cloud_notm}} requires the same plan
 ## Sizing your VMware vSphere clusters
 {: #vpc-ryo-considerations-sizing}
 
-A vSphere cluster is typically the boundary of shareable resources for VMware workloads. By definition, a vSphere High Availability (HA) cluster consists of two or more hosts. VMware vSphere® HA protects your virtual machines (VMs) if an ESXi host failure occurs by restarting VMs on other hosts in the cluster when an ESXi host fails. When you are planning the sizing for your VMware vSphere clusters in {{site.data.keyword.cloud_notm}} VPC, consider the VMware best practices that are documented in [VMware validated designs](https://docs.vmware.com/en/VMware-Validated-Design/5.1/sddc-architecture-and-design/){: external} to meet your capacity and high availability targets.
+A vSphere cluster is typically the boundary of shareable resources for VMware workloads. By definition, a vSphere High Availability (HA) cluster consists of two or more hosts. VMware vSphere® HA protects your virtual machines (VMs) if a VMware ESXi™ host failure occurs by restarting VMs on other hosts in the cluster when an ESXi host fails. When you are planning the sizing for your VMware vSphere clusters in {{site.data.keyword.cloud_notm}} VPC, consider the VMware best practices that are documented in [VMware validated designs](https://docs.vmware.com/en/VMware-Validated-Design/5.1/sddc-architecture-and-design/){: external} to meet your capacity and high availability targets.
 
-Theoretically, as each {{site.data.keyword.vpc_short}} Bare Metal Server is deployed individually, you can build a solution as small as one ESXi host per {{site.data.keyword.vpc_short}} zone. However, you need to take the high availability aspects into account. To protect your VMware workloads from host failures, for example in case one host stops functioning, you need to have a cluster with at least two hosts. To keep the workloads running, you need to size enough reserve capacity in each cluster even if a host would fail. In most use cases, a three node cluster is far more appropriate because you have the option of running maintenance tasks on ESXi hosts (such as host updates) without having to disable HA.
+Theoretically, as each {{site.data.keyword.vpc_short}} Bare Metal Server is deployed individually, you can build a solution as small as one ESXi host per {{site.data.keyword.vpc_short}} zone. However, you need to take the high availability aspects into account. To protect your VMware workloads from host failures, for example in case one host stops functioning, you need to have a cluster with at least two hosts. To keep the workloads running, you need to size enough reserve capacity in each cluster even if a host would fail. In most use cases, a 3-node cluster is far more appropriate because you have the option of running maintenance tasks on ESXi hosts (such as host updates) without having to disable HA.
 
-As the central point of SDDC management (vCenter Server and NSX-T Managers) runs on the same {{site.data.keyword.vpc_short}} Bare Metal Servers, protecting them is key. You can use vSphere HA and anti-affinity rules (to prevent specific VMs from running on a same host) for these in the vSphere HA cluster. As your initial cluster is typically a management cluster, VMware best practice is to build a management cluster of four hosts or more allowing the cluster to tolerate host failures better and you to perform maintenance tasks much easier, especially with NSX-T and vSAN deployments. Typically, it's not suitable to have three or fewer hosts for a management or a converged management and workload cluster in production.
+As the central point of SDDC management (vCenter Server and NSX-T Managers) runs on the same {{site.data.keyword.vpc_short}} Bare Metal Servers, protecting them is key. You can use vSphere HA and anti-affinity rules (to prevent specific VMs from running on a same host) for these in the vSphere HA cluster. As your initial cluster is typically a management cluster, VMware best practice is to build a management cluster of four hosts or more allowing the cluster to tolerate host failures better and you to perform maintenance tasks easily, especially with NSX-T and vSAN deployments. Typically, it's not suitable to have three or fewer hosts for a management or a converged management and workload cluster in production.
 
-In general, when you are deploying vSphere HA clusters, it is also important to consider the overall size of the cluster. Smaller sized clusters require a larger relative percentage of all the available cluster resources to be reserved to handle failures. For example, a cluster of three nodes requires at least 33% of the cluster resources to be held on reserve for failover where a cluster of eight nodes requires 12.5% of cluster resources that are reserved for failover. In a production environment, always consider at least one host as a failover minimum per 8 to 10 ESXi hosts to achieve N+1 redundancy.
+In general, when you are deploying vSphere HA clusters, it is also important to consider the overall size of the cluster. Smaller-sized clusters require a larger relative percentage of all the available cluster resources to be reserved to handle failures. For example, a cluster of three nodes requires at least 33% of the cluster resources to be held on reserve for failover where a cluster of eight nodes requires 12.5% of cluster resources that are reserved for failover. In a production environment, always consider at least one host as a failover minimum per 8 to 10 ESXi hosts to achieve N+1 redundancy.
 
-It is also considered the best practice to build the cluster out of identical server hardware. In {{site.data.keyword.vpc_short}}, use the same Bare Metal Server profiles for hosts in the same cluster. This practice greatly simplifies the management and configuration of servers. It also reduces resource fragmentation and increases the ability to handle server failures. The use of different hardware in a cluster leads to an unbalanced cluster and makes the cluster less productive.
+It is also considered the best practice to build the cluster out of identical server hardware. In {{site.data.keyword.vpc_short}}, use the same Bare Metal Server profiles for hosts in the same cluster. This practice greatly simplifies the management and configuration of servers. It also reduces resource fragmentation and increases the ability to handle server failures. The use of different hardware in a cluster might make the cluster unbalanced and less productive.
 
 ## {{site.data.keyword.cloud_notm}} account access
 {: #vpc-ryo-considerations-acct-access}
@@ -46,23 +46,18 @@ To manage access to your {{site.data.keyword.cloud_notm}} account, ensure that y
    * [{{site.data.keyword.dl_short}}](/docs/dl?topic=dl-iam)
    * [{{site.data.keyword.tg_short}}](/docs/transit-gateway?topic=transit-gateway-iam)
 
-For more information, see [How IBM Cloud IAM works](/docs/account?topic=account-iamoverview).
+For more information, see [How {{site.data.keyword.cloud_notm}} IAM works](/docs/account?topic=account-iamoverview).
 
 ## VMware licensing
 {: #vpc-ryo-considerations-licensing}
 
-For licensing, you have two options:
-
-* Use VMware licenses provided by {{site.data.keyword.cloud_notm}}.
-* Bring your own VMware license.
-
-When you order it, you can specify how a bare metal server is licensed by selecting from different ESXi image options: ESXi™ 7.x BYOL or ESXi 7.x. The ESXi 7.x BYOL option provides ESXi in evaluation mode. The evaluation period is 60 days and begins at the time of provisioning. At any time during the 60-day evaluation period, you can convert from evaluation mode to licensed mode with your appropriate customer-provided license. The ESXi 7.x option provides ESXi in licensed mode and it is activated during the provisioning process.
+The bare metal servers are licensed through the ESXi 7.x image, which provides ESXi in licensed mode. The license is activated during the provisioning process.
 
 For more information about how to license ESXi, see [Licensing ESXi hosts](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.esxi.install.doc/GUID-28D25806-748B-49C0-97A1-E7DE5CB335A9.html){: external}.
 
-For other VMware licenses, for example, vCenter Server and NSX-T, see [FAQ about licensing and BYOL](/docs/vmwaresolutions?topic=vmwaresolutions-faq_byol).
+For other VMware licenses, for example, vCenter Server and NSX-T, see [FAQ about BYOL for VMware](/docs/vmwaresolutions?topic=vmwaresolutions-faq_byol).
 
-Billing applies for all IBM rented licenses.
+Billing applies to all IBM-provided licenses.
 {: note}
 
 ## Network design and connectivity
@@ -99,7 +94,7 @@ Complete the following steps to ensure proper Single Sign On (SSO) configuration
 * If you choose the option to deploy AD servers into the VMware vSphere cluster, provide Microsoft® Windows® licensing and activation for the servers to ensure compliance and availability.
 * Establish mutual trust between the instance and your on-premises AD server.
 * Integrate NSX-T, if applicable, with your AD SSO.
-* Integrate VMware ESXi hosts with your AD SSO.
+* Integrate ESXi hosts with your AD SSO.
 
 ## Maintenance planning
 {: #vpc-ryo-considerations-maint-planning}
@@ -118,7 +113,7 @@ Ensure to plan for and implement the following solutions for monitoring your ins
 
 * A logging server that includes log forwarding or collection for all instance components and adequate log retention. The [VMware Aria Operations and VMware Aria Operations for Logs](/docs/vmwaresolutions?topic=vmwaresolutions-vrops_overview) offering can help you with log management and visibility.
 * An alert infrastructure, including configuration of the SMTP server and short message service (SMS) gateway, as needed.
-* Proactive monitoring of hosts, drives, management software, and network, including vSAN monitoring if applicable. The [VMware Aria Operations on IBM Cloud](/docs/vmwaresolutions?topic=vmwaresolutions-vrops_overview) offering can help you operate and monitor the performance, health, and capacity of your VMware environment.
+* Proactive monitoring of hosts, drives, management software, and network, including vSAN monitoring if applicable. The [VMware Aria Operations on {{site.data.keyword.cloud_notm}}](/docs/vmwaresolutions?topic=vmwaresolutions-vrops_overview) offering can help you operate and monitor the performance, health, and capacity of your VMware environment.
 * Monitoring your backup infrastructure and backup jobs.
 * vSphere Distributed Switch Health Check is enabled by default. It can generate a significant number of MAC addresses for testing team policy, MTU size, and VLAN configuration, which results in extra network traffic. Disable this health check and re-enable only as needed for network troubleshooting. For more information, see [vSphere Distributed Switch Health Check](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.networking.doc/GUID-4A6C1E1C-8577-4AE6-8459-EEB942779A82.html){: external}.
 
@@ -140,7 +135,7 @@ Considering your VMware instance is running on {{site.data.keyword.cloud_notm}} 
 
 In addition to capacity planning, complete the following to ensure that your storage configuration meets your performance and availability requirements:
 
-* Storage performance depends on various factors. This action includes RAID configuration and disk striping, network configuration, block size, IOPS configuration (input/output operations per second) for network-attached storage. Also, VM hardware configuration and method of storage attachment, clustering and replication methods, and use of storage policies such as encryption, deduplication, and compression. Plan time to test and adjust your configuration to meet your storage performance needs.
+* Storage performance depends on various factors. This action includes RAID configuration and disk striping, network configuration, block size, IOPS configuration (input/output operations per second) for network-attached storage. Also, VM hardware configuration and methods of storage attachment, clustering and replication methods, and use of storage policies such as encryption, deduplication, and compression. Plan time to test and adjust your configuration to meet your storage performance needs.
 * Review your vSAN storage policy:
    * RAID 1 provides better performance and smaller windows of susceptibility to sequential failure, such as shorter rebuild time, than RAID 5. However, RAID 5 has less storage overload.
    * RAID 6 provides protection against dual failures, but requires a minimum of six hosts compared to four hosts for RAID 5.
