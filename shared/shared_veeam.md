@@ -66,7 +66,7 @@ For more information about how Veeam Availability Suite stores backups, see [How
 
 Veeam Cloud Connect Replication provides seamless replication of your workloads from on-premises to {{site.data.keyword.cloud}}. Use Veeam Cloud Connect as disaster recovery for failover during on-premises outages or to permanently move workloads directly to {{site.data.keyword.cloud_notm}}.
 
-VMware Shared virtual data centers provide Veeam Backup and Replication 12 for the Veeam Cloud Connect Replication ready-to-use service. For more information about compatibility requirements between Veeam service providers and tenants, see [Product versions in Veeam Cloud Connect infrastructure](https://helpcenter.veeam.com/archive/backup/110/cloud/cloud_connect_versions.html){: external}.
+VMware Shared virtual data centers provide Veeam Backup and Replication 12 for the Veeam Cloud Connect Replication ready-to-use service. For more information about compatibility requirements between Veeam service providers and tenants, see [Product versions in Veeam Cloud Connect infrastructure](https://helpcenter.veeam.com/docs/backup/cloud/cloud_connect_versions.html){: external}.
 {: note}
 
 When you access Veeam Cloud Connect, **DNS name** and **Port** details are specific to the region where your virtual data center exists.
