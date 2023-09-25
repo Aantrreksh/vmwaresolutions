@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2023
-lastupdated: "2023-08-24"
+lastupdated: "2023-09-25"
 
 keywords: release notes, what's new in VMware Solutions, what is new, new features, VMware Solutions release notes, VMware Solutions
 
@@ -26,6 +26,12 @@ Use these release notes to learn about updates to {{site.data.keyword.vmwaresolu
 ### 24 August 2023
 {: #vmwaresolutions-aug2423}
 {: release-note}
+
+VMware vSphere 8 on Cascade Lake - not supported
+:   (Updated on 25 September 2023) IBM does not support VMware vSphere® 8.x on Intel® Cascade Lake hardware due to RAID Controller incompatibility and because IBM licenses for vSphere 8.x, VMware vCenter Server® 8.x, and VMware vSAN™ 8.x are not available currently.
+
+   Do not upgrade to vSphere 8.x on Cascade Lake servers. If you upgrade to vSphere 8.x, your environment configuration becomes unsupported by IBM and VMware.
+   {: important}
 
 Veeam 12 for VMware Shared
 :   Veeam® Backup and Replication 12 (Veeam 12) is now available for deployment with the VMware Shared offering.
