@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2023
 
-lastupdated: "2023-09-22"
+lastupdated: "2023-09-25"
 
 keywords: veeam, veeam install, tech specs veeam
 
@@ -49,7 +49,7 @@ If you do not see the **Data Protection with Veeam** option, open an IBM Support
 
 * For the Veeam **application aware image processing** and **guest file system indexing** options to work for Windows® VMs, the most recent VMware® Tools must be installed on the VMs. Linux® VMs do not support application awareness or guest file system indexing.
 * If you are using **application aware image processing** for MS SQL or Oracle DB backups, the options **application aware** and **Item** restore are not supported. The restore operation needs to complete a full VM restore, which requires a downtime window for any consumers of the database.
-* An immutable backup failure cannot be manually retried. You must run active full backup or wait for the next scheduled backup to run. For more information, see [Managing Cloud Director Backups](https://helpcenter.veeam.com/docs/backup/vsphere/vcloud_manage_backup.html?ver=120).{: external}
+* An immutable backup failure cannot be manually retried. You must run active full backup or wait for the next scheduled backup to run. For more information, see [Managing Cloud Director Backups](https://helpcenter.veeam.com/docs/backup/vsphere/vcloud_manage_backup.html?ver=120){: external}.
 
 ### Licenses and fees for Veeam Availability Suite
 {: #shared_veeam-portal-fees}
@@ -80,7 +80,7 @@ When you access Veeam Cloud Connect, **DNS name** and **Port** details are speci
 ### Procedure to connect to Veeam Cloud Connect for replication
 {: #shared_veeam-cloud-connect-proc-access}
 
-1. Add your service provider to your Veeam Backup and Replication Server: [Connecting to Service Providers](https://helpcenter.veeam.com/docs/backup/cloud/cloud_connect_sp.html?ver=100){: external}
+1. Add your service provider to your Veeam Backup and Replication Server. For more information, see  [Connecting to Service Providers](https://helpcenter.veeam.com/docs/backup/cloud/cloud_connect_sp.html?ver=100){: external}.
    * For **Step 2: Specify Cloud Gateway Settings**, use the DNS name, and the port details that are specific to your virtual data center region. You can locate your **DNS name** and **Port** details on the virtual data center details page. Scroll down to the **Recommended services** pane and locate **Connection Details** for Veeam Cloud Connect.
    * For **Step 3: Verify TLS Certificate and Specify User Account Settings**, use the following credentials:
     *Organization\Username* or *Username@Organization*, for example `OrganizationName\admin` Or `admin@OrganizationName`
