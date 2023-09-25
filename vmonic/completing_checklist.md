@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2023
 
-lastupdated: "2023-05-18"
+lastupdated: "2023-09-25"
 
 keywords: ordering prerequisites, before you order, pre-order checklist, before first order
 
@@ -33,7 +33,7 @@ The following table lists the possible instructions and additional information f
 
 | If you are asked to... | See... |
 | ---------------------- | ------ |
-| ...upgrade your account | [Upgrading to a Pay-As-You-Go account](/docs/account?topic=account-upgrading-account#upgrade-paygo). \n Subscription accounts are not supported for VMware®. |
+| ...upgrade your account | [Upgrading to a Pay-As-You-Go account](/docs/account?topic=account-upgrading-account#upgrade-paygo) |
 | ...create an API key | [Creating a classic infrastructure API key](/docs/account?topic=account-classic_keys#create-classic-infrastructure-key).\n Additional steps:\n 1. In the {{site.data.keyword.vmwaresolutions_full}} console, retrieve your API key and username.\n 2. Click **Settings** from the left navigation pane and click **Retrieve credentials**.\n 3. Review the username and API key that are automatically entered and click **Save credentials**. |
 | ...locate an account administrator because admin access is required | [Locating an IAM account administrator](/docs/vmwaresolutions?topic=vmwaresolutions-iam_verify_permissions) |
 | ...convert to a VRF account | [Converting to virtual routing and forwarding](/docs/direct-link?topic=direct-link-what-happens-during-the-account-conversion-process) |
