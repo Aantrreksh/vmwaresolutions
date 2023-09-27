@@ -3,7 +3,7 @@
 copyright:
   years: 2022, 2023
 
-lastupdated: "2023-09-06"
+lastupdated: "2023-09-27"
 
 keywords: IBM Cloud for VMware Solutions, getting started, vmware solutions offerings, services for vmwaresolutions, vmwaresolutions use cases
 
@@ -22,8 +22,10 @@ Conref section START.
 
 INFORMATION:
 The section is referenced by the following files:
+- cr\cr_orderinginstance-consolidwkld.md
 - vcenter\vc_orderinginstance-consold-cluster.md
 - vcenter\vc_addingclusters.md
+- vsphere\vs_orderinginstances-bare-metal.md
 
 CONTENT:
 
@@ -70,7 +72,6 @@ For **SAP-certified Cascade Lake** servers, choose from the following configurat
 | Dual Intel Xeon Platinum 8280M (BI.S4.H2.3000) | 56 | 2.7 | 3 TB | Up to 12 drives |
 | Quad Intel Xeon Platinum 8280M (BI.S4.H4.3000) | 112 | 2.7 | 3 TB | Up to 24 drives |
 | Quad Intel Xeon Platinum 8280M (BI.S4.H4.6000) | 112 | 2.7 | 6 TB | Up to 24 drives |
-| Octo Intel Xeon Platinum 8280M (BI.S4.H8.6000) | 224 | 2.7 | 6 TB | Up to 24 drives |
 {: caption="Table 2. Options for SAP-certified Cascade Lake bare metal servers - HANA and NetWeaver" caption-side="bottom"}
 {: tab-title="HANA and NetWeaver"}
 {: tab-group="SAP-certified Intel servers"}
@@ -84,7 +85,7 @@ Conref section START.
 INFORMATION:
 The section is referenced by the following files:
 
-- cr\cr_addingclusters.md
+- cr\cr_addingclusters.md *>> Replaced by* cr/cr_addingviewingclusters.md
 - cr\cr_orderinginstance-consolidwkld.md
 - cr\cr_orderinginstance-edge.md
 - vcenter\scb-orderinginstance-cons-work-cluster.md
@@ -259,9 +260,11 @@ The section is referenced by the following files:
 CONTENT:
 
 Whenever possible, add ESXi servers by using the {{site.data.keyword.vmwaresolutions_full}} console because changes that you make on the VMware vSphere® Web Client are not synchronized with the {{site.data.keyword.vmwaresolutions_short}} console. Therefore, add ESXi servers to vCenter Server only for on-premises ESXi servers or ESXi servers that you don't manage in the {{site.data.keyword.vmwaresolutions_short}} console.
+{: important}
 {: #para-vcenteraddESXiservers}
 
 Whenever possible, remove ESXi servers by using the {{site.data.keyword.vmwaresolutions_full}} console because changes that you make on the VMware vSphere® Web Client are not synchronized with the {{site.data.keyword.vmwaresolutions_short}} console. Therefore, remove ESXi servers from vCenter Server only for on-premises ESXi servers or ESXi servers that you don't manage in the {{site.data.keyword.vmwaresolutions_short}} console.
+{: important}
 {: #para-vcenterremoveESXiservers}
 
 Conref section END.
@@ -277,9 +280,11 @@ The section is referenced by the following files:
 CONTENT:
 
 Whenever possible, add clusters by using the {{site.data.keyword.vmwaresolutions_full}} console and not the VMware vSphere® Web Client. Changes that you make on the vSphere Web Client are not synchronized with the VMware Solutions console. If you want to add clusters to vCenter Server instances by using the vSphere Web Client, do so only for on-premises clusters or clusters that you don't manage in the VMware Solutions console.
+{: important}
 {: #para-vcenteraddclusters}
 
 Whenever possible, delete clusters by using the {{site.data.keyword.vmwaresolutions_full}} console and not the VMware vSphere® Web Client. Changes that you make on the vSphere Web Client are not synchronized with the VMware Solutions console. If you want to delete clusters from vCenter Server instances by using the vSphere Web Client, do so only for on-premises clusters or clusters that you don't manage in the VMware Solutions console.
+{: important}
 {: #para-vcenterremoveclusters}
 
 Conref section END.
@@ -363,10 +368,10 @@ If **No resource group available** is displayed in this field, you currently do 
 {: note}
 {: #note-orderinginstance-resource-group}
 
-Click **Browse configurations** to open the **Instance configuration manager** side panel. In this side panel, you can choose a configuration from the list of saved configuration templates to update it and then save it as a new configuration template, or to delete it.
+Click **Browse configurations** to open the configuration manager side panel. Here, you can choose a configuration from the list of saved templates to update it and then save it as a new configuration template.
 {: #paraone-orderinginstance-inst-config}
 
-If you do not see any configuration names in the **Instance configuration manager**, then you do not have any existing saved configuration templates and might want to create one. To create a new configuration, specify settings for your instance first as a configuration template without placing an order. To save the settings, click **Save configuration** on the **Summary** pane.
+If you do not see any configurations in the list, then you do not have any saved templates and might want to create one. To create a configuration, first specify the settings for your instance as a configuration template without placing an order. To save the settings, click **Save configuration** on the **Summary** pane.
 {: #paratwo-orderinginstance-inst-config}
 
 Select whether to order a new primary instance or a secondary instance for an existing primary instance.
