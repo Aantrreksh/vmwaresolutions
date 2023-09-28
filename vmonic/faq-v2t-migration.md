@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2023
 
-lastupdated: "2023-08-17"
+lastupdated: "2023-09-28"
 
 subcollection: vmwaresolutions
 
@@ -89,7 +89,7 @@ Instances with {{site.data.keyword.cloud_notm}} bare metal servers with vSphere 
 
 General support for vSphere 6.x ended on 15 October 2022. For more information, see [End of general support for vSphere 6.5 and vSAN 6.5 or 6.6](https://kb.vmware.com/s/article/83223){: external} and [VMware product lifecycle matrix](https://lifecycle.vmware.com/#/){: external}.
 
-In addition, the vCenter Server instances with vSphere 6.5 or 6.7 typically run NSX-V 6.4. NSX-V 6.4 was End of General Support on 16 January 2022 and End of Technical Guidance on 16 January 2023. See more on VMware Official Product Lifecycle Matrix. An exclusive support agreement between VMware and IBM to support NSX-V until 31 December 2023 exists.
+In addition, the vCenter Server instances with vSphere 6.5 or 6.7 typically run NSX-V 6.4. NSX-V 6.4 was End of General Support on 16 January 2022 and End of Technical Guidance on 16 January 2023. An exclusive support agreement between VMware and IBM to support NSX-V until 31 December 2024 exists.
 
 {{site.data.keyword.cloud_notm}} recommends an upgrade to vSphere 7.x and NSX-T™ 3.x or later.
 

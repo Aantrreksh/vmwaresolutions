@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2023
-lastupdated: "2023-09-25"
+lastupdated: "2023-09-28"
 
 keywords: release notes, what's new in VMware Solutions, what is new, new features, VMware Solutions release notes, VMware Solutions
 
@@ -373,7 +373,7 @@ Platform management roles
 :   New IAM platform management roles are available for VMware Solutions offerings.
 
 End of Marketing for NSX-V instance deployments
-:   VMware® support for all new VMware NSX-V deployments ended on 16 January 2022. However, VMware and IBM® worked closely to extend the existing NSX–V support until 31 December 2023. Beginning on 21 June 2022, you can no longer order new VMware vCenter Server with NSX-V instances.
+:   VMware® support for all new VMware NSX-V deployments ended on 16 January 2022. However, VMware and IBM® worked closely to extend the existing NSX–V support until 31 December 2024. Ordering new VMware vCenter Server with NSX-V instances is not supported after 21 June 2022.
 
 End of Marketing for vSphere 6.7 instance deployments
 :   VMware support for all new VMware vSphere 6.7 deployments ends on 15 October 2022.
@@ -608,7 +608,7 @@ New release notes format
 {: release-note}
 
 End of Support for instance deployments with vSphere 6.5 {: #october-2021-eos-vsphere5}
-:   {{site.data.keyword.cloud_notm}} support for ordering all update levels of VMware vSphere 6.5 ended on 10 October 2021. Beginning on this date, you can no longer order new VMware vCenter Server instances with vSphere 6.5 and your existing vCenter Server instances with vSphere 6.5 become read–only in the VMware Solutions console and through the public REST API.
+:   {{site.data.keyword.cloud_notm}} support for ordering all update levels of VMware vSphere 6.5 ended on 10 October 2021. Ordering new VMware vCenter Server instances with vSphere 6.5 is not supported after this date. Your existing vCenter Server instances with vSphere 6.5 are read–only in the VMware Solutions console and through the public REST API.
 
  VMware vCenter Server instances
 :   The 4.4 release applies the following upgrades and improvements for newly deployed instances, clusters, and hosts.
