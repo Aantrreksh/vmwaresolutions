@@ -106,7 +106,7 @@ Name change for VMware vRealize products
    * vRealize Log Insight™ (vRLI) is renamed to VMware Aria Operations for Logs.
    * vRealize Network Insight (vRNI) is renamed to VMware Aria Operations™ for Networks.
 
-REST API
+REST API updates
 :   The following updates are available:
 
    * The [VMware Solutions API](/apidocs/vmware-solutions) provides support for viewing and deleting VMware vSphere instances. You can also add or delete ESXi servers, and add or delete licenses for vSphere instances.
@@ -224,7 +224,7 @@ Add-on services upgrades
 Veeam migration from NSX-V to NSX-T
 :   To migrate the Veeam service from VMware NSX-V to VMware NSX-T, open an IBM Support ticket.
 
-REST API
+REST API updates
 :   For VMware Shared, the V1 API support ended on 31 December 2022. Use the [V2 API](/apidocs/vmware-solutions-shared/vmware-solutions-shared-v2.0.0).
 
 User interface updates and enhancements
@@ -287,7 +287,7 @@ Ordering Veeam stand-alone licenses
 
    There is no limit to the number of licenses that you can order.
 
-REST API
+REST API updates
 :   The following updates are available:
 
    * For VMware Shared, the support date for the [V1 API](/apidocs/vmware-solutions-shared/vmware-solutions-shared-v1.0.0) is being extended until 31 December 2022. To ensure smooth transition in the future, start using the [V2 API](/apidocs/vmware-solutions-shared/vmware-solutions-shared-v2.0.0).
@@ -707,7 +707,7 @@ FortiGate Virtual Appliance
 Juniper vSRX
 :   You can install Juniper vSRX on 25 Gb uplink speed consolidated and edge services clusters on vSphere 7 with NSX-T. On 25 Gb uplink speed clusters, only the Content Security Bundle license is available.
 
-REST APIs
+REST API updates
 :   REST API support for vCenter Server multizone instances is no longer provided as a result of feature deprecation.
 
 ### 21 June 2021
@@ -802,7 +802,7 @@ Veeam on vSphere 6.5 - deprecated
 :   New installations of Veeam are no longer supported for new or existing deployments of vCenter Server instances with VMware vSphere 6.5. You can still use or delete existing Veeam installations on your existing vSphere 6.5 instances.
 {: deprecated}
 
-REST APIs
+REST API updates
 :   REST API support is now available for the F5 BIG-IP and FortiGate Virtual Appliance services and for adding edge services clusters to vCenter Server instances.
 
 New and updated documentation
@@ -1046,7 +1046,7 @@ VMware HCX
 VMware vRealize Operations - vSAN storage requirements
 :   If you install VMware vRealize Operations and select vSAN storage, you must have an estimated 750 GB of vSAN storage to successfully install vRealize Operations. This storage requirement does not apply to NFS.
 
-REST APIs
+REST API updates
 :   REST API support for the VMware HCX service is now available.
 
 New and updated documentation
