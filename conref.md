@@ -3,7 +3,7 @@
 copyright:
   years: 2022, 2023
 
-lastupdated: "2023-09-27"
+lastupdated: "2023-10-02"
 
 keywords: IBM Cloud for VMware Solutions, getting started, vmware solutions offerings, services for vmwaresolutions, vmwaresolutions use cases
 
@@ -138,7 +138,6 @@ The uplink speed provides two options:
 |:----------- |:--- |
 | TOR04 | 01 |
 | WDC04 | 04 |
-| WDC04 | 05 |
 | WDC06 | 01 |
 | WDC07 | 01 |
 {: caption="Table. Available locations for 25 Gb uplink speed - NA East" caption-side="bottom"}
