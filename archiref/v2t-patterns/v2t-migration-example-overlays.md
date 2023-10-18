@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2023
 
-lastupdated: "2023-08-03"
+lastupdated: "2023-09-22"
 
 subcollection: vmwaresolutions
 
@@ -23,10 +23,10 @@ The following examples show how these topologies can be customized for your need
 The automated deployment provides you a single NSX-T workload edge cluster with two edge transport nodes. Some of the more advanced topologies might require additional NSX-T edge transport nodes and clusters. 
 {: note}
 
-## Single-site – single tenant
+## Single-site single-tenant
 {: #v2t-example-overlays-single-site-st}
 
-Single-site – single tenant is the most common use case and network deployment pattern. The vCenter Server® automation deploys an example topology by following this model, which includes single Tier-0 and Tier-1 gateways and a few NSX-T overlay segments as a starting point. This topology is highly scalable and can be automated.
+Single-site single-tenant is the most common use case and network deployment pattern. The vCenter Server® automation deploys an example topology by following this model, which includes single Tier-0 and Tier-1 gateways and a few NSX-T overlay segments as a starting point. This topology is highly scalable and can be automated.
 
 These options are suitable for customers with workload that run on a single data center, single tenant, and do not have overlapping IP addresses inside their own workloads.
 
@@ -35,7 +35,7 @@ Overlapping IP addresses refers to overlay segments between customer environment
 
 The following diagram shows an example of a customer deployment that uses the standard topology, when the segments are attached to the Tier-1 gateway. You can add more segments to the existing Tier-1 gateway or add more Tier-1 gateways on the same NSX-T edge clusters, if needed.
 
-![Single-site – single tenant example topology with Tier-1 gateway](../../images/v2t-diagrams-1-zone-t1.svg "Single-site – single tenant example topology by using both Tier-0 and Tier-1 gateways."){: caption="Figure 1. Single-site – single tenant example topology with Tier-1 gateway" caption-side="bottom"}
+![Single-site single-tenant example topology with Tier-1 gateway](../../images/v2t-diagrams-1-zone-t1.svg "Single-site single-tenant example topology by using both Tier-0 and Tier-1 gateways"){: caption="Figure 1. Single-site single-tenant example topology with Tier-1 gateway" caption-side="bottom"}
 
 1. The vCenter Server automation deploys an example single-site topology, which follows the principles that are presented in this model. The deployment includes a single vCenter and three NSX-T Managers that are deployed on the cluster on the initial {{site.data.keyword.cloud_notm}} data center location.
 2. The vCenter Server automation deploys two edge cluster transport nodes and a single edge cluster for your Tier-0 and Tier-1 gateways.
@@ -47,7 +47,7 @@ The following diagram shows an example of a customer deployment that uses the st
 
 The following diagram shows an example of a customer deployment by using the standard topology. Consider that the segments are attached directly to the Tier-0 gateway. You can add more segments to the Tier-0 gateway or delete the Tier-1 gateway that is deployed by the automation, if needed.
 
-![Single-site – single tenant example topology](../../images/v2t-diagrams-1-zone-t0.svg "Single-site – single tenant example topology for NSX-T deployment."){: caption="Figure 2. Single-site – single tenant example topology" caption-side="bottom"}
+![Single-site single-tenant example topology](../../images/v2t-diagrams-1-zone-t0.svg "Single-site single-tenant example topology for NSX-T deployment"){: caption="Figure 2. Single-site single-tenant example topology" caption-side="bottom"}
 
 1. The vCenter Server automation deploys an example single-site topology, which follows the principles that are presented in this model. The deployment includes a single vCenter and three NSX-T Managers that are deployed on the cluster on the initial {{site.data.keyword.cloud_notm}} data center location.
 2. The vCenter Server automation deploys two edge cluster transport nodes and a single edge cluster for your Tier-0 and Tier-1 gateways.
@@ -85,19 +85,19 @@ You can deploy edge nodes on the initial cluster for scalability manually, if ne
 Tier-0 gateways support VRF Lite, which can be used if needed to support more complex topologies for isolating routing tables at Tier-0 level as well. Refer to VMware® documentation for more details on capabilities and limitations.
 {: note}
 
-## Multisite – single tenant
+## Multisite single-tenant
 {: #v2t-example-overlays-multi-site-st}
 
-Multisite – single tenant is also a common use case and network deployment pattern. This topology provides seamless site recovery by using dynamic routing protocols, such as BGP. The vCenter Server automation does not deploy multisite topology automatically. However, you can customize the default single-site topology post initial vCenter Server deployment. When you have the compute capacity in the required data center, you can deploy the required extra edge nodes manually. Then, you can create a new edge cluster for the Tier-0 and Tier-1 gateways though NSX-T. This overlay topology is highly scalable and it is possible to automate, for example by using Ansible and Terraform.
+Multisite single-tenant is a common use case and network deployment pattern. This topology provides seamless site recovery by using dynamic routing protocols, such as BGP. The vCenter Server automation does not deploy multisite topology automatically. However, you can customize the default single-site topology post initial vCenter Server deployment. When you have the compute capacity in the required data center, you can deploy the required extra edge nodes manually. Then, you can create a new edge cluster for the Tier-0 and Tier-1 gateways though NSX-T. This overlay topology is highly scalable and it is possible to automate, for example by using Ansible and Terraform.
 
 This option is suitable for customers with workloads that run on a multiple data center, single tenant, and do not have overlapping IP addresses inside their own workloads.
 
 Overlapping IP addresses refers to overlay segments between customer environments that run on the vCenter Server instance.
 {: note}
 
-The following diagram shows an example of a multisite – single tenant network topology. It consists of a two layer Tier-0 design with three edge clusters. For this, consider two edge clusters in the two data centers or zones in a multizone region. And also, one edge cluster deployed across the multizone region with edge nodes in each participating zone or data center. 
+The following diagram shows an example of a multisite single-tenant network topology. It consists of a two layer Tier-0 design with three edge clusters. For this, consider two edge clusters in the two data centers or zones in a multizone region. And also, one edge cluster deployed across the multizone region with edge nodes in each participating zone or data center. 
 
-![Multisite – single tenant example topology](../../images/v2t-diagrams-2-zone.svg "Multisite – single tenant example topology for NSX-T deployment."){: caption="Figure 4. Multisite – single tenant example topology" caption-side="bottom"}
+![Multisite single-tenant example topology](../../images/v2t-diagrams-2-zone.svg "Multisite single-tenant example topology for NSX-T deployment"){: caption="Figure 4. Multisite single-tenant example topology" caption-side="bottom"}
 
 1. The vCenter Server automation deploys a single site solution, which can be manually expanded to support the target multisite topology. The deployment includes a single vCenter and three NSX-T Managers that are deployed on the cluster on the initial {{site.data.keyword.cloud_notm}} data center location. You must expand the compute capacity to have resources available in the other {{site.data.keyword.cloud_notm}} data center or zone in the specific {{site.data.keyword.cloud_notm}} multizone region.
 2. The vCenter Server automation deploys two edge cluster transport nodes and a single edge cluster for your Tier-0 and Tier-1 gateways. You do not need the default Tier-1 Gateway, and it can be removed.
@@ -118,7 +118,7 @@ The main reason that you need two layers is for physical north-south connectivit
 ## Multisite – multitenant
 {: #v2t-example-overlays-multi-site-mt}
 
-Multisite – single tenant is also a use case and network deployment pattern where tenants require a solution with conflicting IP spaces and complete route table isolation. This topology provides seamless site recovery by using dynamic routing protocols, such as BGP. The vCenter Server automation doesn't deploy multisite topology automatically. However, you can customize the default single-site topology post initial vCenter Server deployment. When you have the compute capacity in the required data center, you can deploy the required extra edge nodes manually. Then, you can create a new edge cluster for the Tier-0 and Tier-1 gateways through NSX-T. This overlay topology is highly scalable and it is possible to automate, for example by using Ansible and Terraform.
+Multisite single-tenant is also a use case and network deployment pattern where tenants require a solution with conflicting IP spaces and complete route table isolation. This topology provides seamless site recovery by using dynamic routing protocols, such as BGP. The vCenter Server automation doesn't deploy multisite topology automatically. However, you can customize the default single-site topology post initial vCenter Server deployment. When you have the compute capacity in the required data center, you can deploy the required extra edge nodes manually. Then, you can create a new edge cluster for the Tier-0 and Tier-1 gateways through NSX-T. This overlay topology is highly scalable and it is possible to automate, for example by using Ansible and Terraform.
 
 This option is suitable for customers with workloads that run on a multiple data center, single tenant, and have overlapping IP addresses inside their own workloads.
 

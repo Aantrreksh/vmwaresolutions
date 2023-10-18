@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2021, 2022
+  years:  2021, 2023
 
-lastupdated: "2022-12-29"
+lastupdated: "2023-09-26"
 
 subcollection: vmwaresolutions
 
@@ -20,14 +20,14 @@ The following diagram describes an architecture overview for Veeam® on VMware v
 ![Architecture overview for Veeam on bare metal server deployments](../../images/veeam-bms-aod.svg "Architecture overview for Veeam on bare metal server deployments"){: caption="Figure 1. Architecture overview for Veeam on bare metal server deployments" caption-side="bottom"}
 
 The following key components are part of the Veeam solution:
-- Veeam Backup & Replication server (VBR) - The configuration and control center of the Veeam Backup & Replication installation.
-- Veeam Enterprise Manager - The central management component that allows users to manage multiple Veeam Backup & Replication installations. In this architecture, Enterprise Manager is optional.
+- Veeam Backup and Replication server (VBR) - The configuration and control center of the Veeam Backup and Replication installation.
+- Veeam Enterprise Manager - The central management component that allows users to manage multiple Veeam Backup and Replication installations. In this architecture, Enterprise Manager is optional.
 - Veeam proxies – The servers that run the Data Mover Services and basic backup proxy tasks, which include retrieval of VM data from the production storage, compressing, deduplicating, encrypting, and sending it to the backup repository.
-- Veeam Backup & Replication configuration database - The database that stores data about the backup infrastructure, jobs, and sessions.
-- Veeam Backup & Replication console – The console that provides a user interface to the backup application functions for the Backup Administrator.
+- Veeam Backup and Replication configuration database - The database that stores data about the backup infrastructure, jobs, and sessions.
+- Veeam Backup and Replication console – The console that provides a user interface to the backup application functions for the Backup Administrator.
 - Backup repository – A local entity that provides storage capacity to be used for backups.
 - Scale-out backup repository – A logical entity that groups a number of backup repositories (known as extents) to create a scalable pool of storage.
-- FLR Appliance - For Linux® File Level Recovery (FLR), Veeam Backup & Replication uses a special FLR helper, which is a small virtual appliance based on a stripped-down Linux kernel.
+- FLR Appliance - For Linux® File Level Recovery (FLR), Veeam Backup and Replication uses a special FLR helper, which is a small virtual appliance based on a stripped-down Linux kernel.
 
 More information about Veeam software components is provided in section [Veeam solution components](/docs/vmwaresolutions?topic=vmwaresolutions-veeam-bms-archi-components).
 
@@ -44,5 +44,5 @@ The backup solution is self-managed and you can customize it post deployment. Fo
 ## Related links
 {: #veeam-bms-archi-overview-related}
 
-* [Veeam Backup & Replication](https://www.veeam.com/vm-backup-recovery-replication-software.html?ad=menu-products){: external}
+* [Veeam Backup and Replication](https://www.veeam.com/vm-backup-recovery-replication-software.html?ad=menu-products){: external}
 * [Veeam Help Center technical documentation](https://www.veeam.com/documentation-guides-datasheets.html?ad=menu-resources){: external}

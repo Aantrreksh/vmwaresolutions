@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2022
+  years:  2016, 2023
 
-lastupdated: "2022-06-20"
+lastupdated: "2023-09-26"
 
 keywords: Caveonix console, Caveonix RiskForesight license, login Caveonix console
 
@@ -38,19 +38,21 @@ To manage the Caveonix RiskForesight™ service, you must access the Caveonix Ri
 
 You are responsible for maintaining Caveonix RiskForesight to keep it updated to the most recent version. You can download the required updates from the [Caveonix service provider portal](https://support.caveonix.com/login){: external}.
 
-To obtain a login ID for the Caveonix service provider portal for product release notes and downloads, open a support case with the [IBM Cloud Support Center](https://cloud.ibm.com/unifiedsupport/supportcenter){: external}.
+To obtain a login ID for the Caveonix service provider portal for product release notes and downloads, open a support case with the [{{site.data.keyword.cloud_notm}} Support Center](https://cloud.ibm.com/unifiedsupport/supportcenter){: external}.
 
-Provide the instance name that Caveonix is installed on, your company name, and an email address for your administrator for the support case. IBM Cloud Support acquires the credentials for your login and email your administrator.
+Provide the instance name that Caveonix is installed on, your company name, and an email address for your administrator for the support case. {{site.data.keyword.cloud_notm}} Support acquires the credentials for your login and email your administrator.
 
-## Updating Caveonix RiskForesight licenses
-{: #managingcaveonix-updating-lic}
+## Considerations when you delete Caveonix RiskForesight
+{: #caveonix_considerations-remove}
 
-This information does not apply to Caveonix Foresight that is installed on VMware® Regulated Workloads or Security and Compliance Readiness Bundle instances.
-{: note}
+Review the following considerations before you delete the service:
 
-The Caveonix RiskForesight license is valid for five years. You can update the Caveonix RiskForesight license when it expires by using the following procedure:
-1. Order a new Caveonix RiskForesight license and copy it to the Caveonix RiskForesight console. For more information, see [Procedure to order Caveonix RiskForesight licenses](/docs/vmwaresolutions?topic=vmwaresolutions-caveonix_license_ordering#caveonix_license_ordering-procedure).
-2. Delete the expired license from the **Caveonix RiskForesight Licenses** table in the {{site.data.keyword.vmwaresolutions_short}} console. For more information, see [Procedure to delete Caveonix RiskForesight licenses](/docs/vmwaresolutions?topic=vmwaresolutions-caveonix_license_managing#caveonix_license_managing_procedure-delete).
+* Deleting Caveonix RiskForesight automatically deletes the initial Caveonix RiskForesight license that was originally associated with the service. However, you need to manually delete any other unwanted licenses from the **Caveonix RiskForesight licenses** table on the **Licenses** page in the {{site.data.keyword.vmwaresolutions_full}} console.
+* When you delete the service, the {{site.data.keyword.vmwaresolutions_short}} automation deletes only the single all-in-one Caveonix virtual machine (VM) that was deployed and the dedicated private subnet that was ordered for it. Therefore,
+   * If you scaled out the Caveonix VM into multiple VMs, those additional VMs are not deleted.
+   * If you used the IP addresses of the dedicated private subnet on more VMs, those VMs must be assigned new IP addresses to continue to function.
+   * If you delete the **vCenter Server instance A** with Caveonix RiskForesight installed, and you used the IP addresses of the dedicated private subnet that was ordered for the service in the **vCenter Server instance B**, the dedicated private subnet is canceled upon deletion of the **vCenter Server instance A**.
+* If you installed the Caveonix RiskForesight service before VMware Solutions v4.0, and you then delete that service, you must manually remove the DNS entries. For more information, see [Manually removing the DNS entries](/docs/vmwaresolutions?topic=vmwaresolutions-vc_deletingservices#vc_deletingservices-DNS-entries).
 
 ## Related links
 {: #managingcaveonix-related}

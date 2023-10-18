@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2022
+  years:  2022, 2023
 
-lastupdated: "2022-05-30"
+lastupdated: "2022-10-03"
 
 subcollection: vmwaresolutions
 
@@ -47,13 +47,13 @@ You can connect to the automation server that was ordered in the previous step f
 
 The `apt update` command downloads package information from all configured sources. The system knows which packages are available for upgrade, and where to retrieve that software. The `apt upgrade` command uses this information and upgrades all installed packages to their most recent versions.
 
-1. From your laptop, connect to the automation server by using the IP address and the root credentials from the {{site.data.keyword.cloud}} Portal `ssh root@<public_ip_address>`.
+1. From your laptop, connect to the automation server by using the IP address and the root credentials from the {{site.data.keyword.cloud}} console `ssh root@<public_ip_address>`
 2. At the command line, use command `apt update && apt upgrade -y` to update and upgrade the OS packages.
 
 ## Changing DNS
 {: #veeam-cr-sag-ascfg-dns}
 
-After provisioning, the VSI is configured to use the {{site.data.keyword.cloud_notm}} DNS resolvers: `10.0.80.11 and 10.0.80.12`, and not your VMware vCenter Server® instance - Active Directory™ DNS (AD/DNS) servers. You can change this configuration by using the following commands, and changing `<addns_1>` and `<addns_2>` to the IP addresses of your AD/DNS servers. Replace `<root_domain>` with your vCenter Server instance domain. For example, `test.ibmloud.local`.
+After provisioning, the VSI is configured to use the {{site.data.keyword.cloud_notm}} DNS resolvers: `10.0.80.11 and 10.0.80.12`, and not your VMware vCenter Server® instance - Active Directory™ DNS (AD/DNS) servers. You can change this configuration by using the following commands, and changing `<addns_1>` and `<addns_2>` to the IP addresses of your AD/DNS servers. Replace `<root_domain>` with your vCenter Server instance domain. For example, `test.ibmloud.local`
 
 ```text
 sudo sed -i 's/10.0.80.11/<addns_1>/g' /etc/netplan/50-cloud-init.yaml
@@ -74,7 +74,7 @@ resolvectl status
 ## Configuring NTP
 {: #veeam-cr-sag-ascfg-ntp}
 
-The following commands install NTP, configure "servertime.service.softlayer.com" as the NTP time source, remove the "ubuntu.pool.ntp.org" servers, and then restart the NTP service.
+The following commands install NTP, configure `servertime.service.softlayer.com` as the NTP time source, remove the `ubuntu.pool.ntp.org` servers, and then restart the NTP service.
 
 ```text
 apt install ntp -y
@@ -88,14 +88,14 @@ sudo service ntp restart
 ```
 {: codeblock}
 
-The command `ntpq -p` is used to verify NTP. The line `remote is 10.0.77.54` is shown in the output, which is the IP address of "servertime.service.softlayer.com".
+The command `ntpq -p` is used to verify NTP. The line `remote is 10.0.77.54` is shown in the output, which is the IP address of `servertime.service.softlayer.com`
 
 ## Creating the users
 {: #veeam-cr-sag-ascfg-user}
 
 Two users are created on the server. The first user is an account that you can use to connect to the server, as in a subsequent step SSH as root is removed. The second user is an account that is used by Ansible.
 
-1. Using the IP address and the root credentials of the {{site.data.keyword.cloud_notm}} Portal, from your laptop, connect to the Linux server `ssh root@<public_ip_address>`.
+1. Using the IP address and the root credentials of the {{site.data.keyword.cloud_notm}} console, from your laptop, connect to the Linux server `ssh root@<public_ip_address>`
 2. At the command line, enter the following commands and supply a password when prompted.
 
 ```text
@@ -120,7 +120,7 @@ Suppose that you are using a Mac or Linux laptop to create an SSH key pair and c
 1. Log out of the SSH session of the automation server.
 2. If you do not have a key pair on your laptop, create one with the command `ssh-keygen -b 4096`. A passphrase is recommended here.
 3. Transfer the public key to the automation server: `ssh-copy-id <your_username@<bastion_host_public_ip_address>`.
-4. Create or update your local user SSH config file by using a text editor, for example, `vi ~/.ssh/config`. The `<short_name>` is the name that you want to use at the SSH command, such as `ssh <short_name>`.
+4. Create or update your local user SSH config file by using a text editor, for example `vi ~/.ssh/config`. The `<short_name>` is the name that you want to use at the SSH command, such as `ssh <short_name>`.
 
 ```text
 Host *

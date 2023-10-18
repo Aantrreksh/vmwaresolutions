@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2023
 
-lastupdated: "2023-08-21"
+lastupdated: "2023-09-13"
 
 keywords: user account, ibm cloud account, ibm cloud infrastructure
 
@@ -17,14 +17,14 @@ subcollection: vmwaresolutions
 # Signing up for required accounts
 {: #signing_required_accounts}
 
-## The IBM Cloud account
+## The {{site.data.keyword.cloud_notm}} account
 {: #signing_required_accounts-cloud}
 
 To use {{site.data.keyword.vmwaresolutions_full}} to order instances, you must have an {{site.data.keyword.cloud}} account. This requirement applies to all VMware Solutions offerings.
 
 You can sign up for an {{site.data.keyword.cloud_notm}} account by using an existing **IBMid** or by creating a new **IBMid**. For more information, see [Setting up your {{site.data.keyword.cloud_notm}} account](/docs/account?topic=account-account-getting-started).
 
-## The IBM Cloud infrastructure account
+## The {{site.data.keyword.cloud_notm}} infrastructure account
 {: #signing_required_accounts-infra}
 
 The requirement to have an {{site.data.keyword.cloud_notm}} infrastructure account applies only to the following offerings: VMware vSphere, VMware vCenter Server, VMware Regulated Workloads, and Cyber Recovery.
@@ -36,7 +36,7 @@ This account is also used to log in to the {{site.data.keyword.cloud_notm}} infr
 
 To sign up for an {{site.data.keyword.cloud_notm}} infrastructure account, upgrade your {{site.data.keyword.cloud_notm}} account to a billable account. For more information, see [How do I upgrade or convert my account type?](/docs/account?topic=account-accountfaqs#changeacct)
 
-### Permissions for the IBM Cloud infrastructure account
+### Permissions for the {{site.data.keyword.cloud_notm}} infrastructure account
 {: #signing_required_accounts-infra-permissions}
 
 The {{site.data.keyword.cloud_notm}} infrastructure account that you are using must have certain permissions to be able to order the components in your instances and perform operations on your behalf. The permission requirements are applicable to all types of instances and services that you are ordering from the {{site.data.keyword.vmwaresolutions_short}} console.

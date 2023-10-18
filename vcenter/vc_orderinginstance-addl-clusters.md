@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-07-15"
+lastupdated: "2023-10-10"
 
 keywords: additional cluster, optional cluster, workload cluster, separate cluster, gateway cluster
 
@@ -50,32 +50,19 @@ You can also specify a new cluster name that meets the requirements listed in [C
 ### CPU model
 {: #vc_orderinginstance-addl-clusters-gate-cpu}
 
-You can choose the following CPU models:
-* Dual Intel® Xeon® Silver 4210 processor (Cascade Lake)
-* Dual Intel Xeon Gold 5218 processor (Cascade Lake)
+You can choose between the following CPU models:
+* Dual Intel Xeon® Silver 4210 processor (Cascade Lake) with 20 cores, 2.20 GHz, and 10 Gb of uplink speed.
+* Dual Intel Xeon Gold 5218 processor (Cascade Lake) with 32 cores, 2.30 GHz, and 25 Gb of uplink speed.
 
 ### RAM
 {: #vc_orderinginstance-addl-clusters-gate-ram}
 
-You can select different values between 64 GB and 1.5 TB.
+You can select different values of RAM in the range 64 GB - 1.5 TB.
 
 ### Number of bare metal servers
 {: #vc_orderinginstance-addl-clusters-gate-bm}
 
 The number of servers is set to 2 and cannot be changed. Both servers have the same configuration.
-
-### Uplink speed
-{: #vc_orderinginstance-addl-clusters-gate-uplink}
-
-{{site.data.content.uplink-speed-options-list}}
-
-{{site.data.content.simpletable-uplink-speed-locations-ap}}
-
-{{site.data.content.simpletable-uplink-speed-locations-eur}}
-
-{{site.data.content.simpletable-uplink-speed-locations-naeast}}
-
-{{site.data.content.simpletable-uplink-speed-locations-nasouth}}
 
 ### Networking type
 {: #vc_orderinginstance-addl-clusters-gate-netw}

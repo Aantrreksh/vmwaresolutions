@@ -4,7 +4,7 @@ copyright:
 
   years:  2023
 
-lastupdated: "2023-04-18"
+lastupdated: "2023-09-26"
 
 subcollection: vmwaresolutions
 
@@ -42,7 +42,7 @@ Capture the following details of the VMware vCenter ServerÂ® instance and VeeamÂ
 | `<addns_fqdn>` | The FQDN can be obtained from the UI by browsing to the Resources > vCenter Server > Summary page. |
 | `<addns_1>` | The IP address of the first AD/DNS server can be obtained from the UI by browsing to the Resources > vCenter Server > Summary page. |
 | `<addns_2>` | The IP address of the second AD/DNS server can be obtained from the UI by browsing to the Resources > vCenter Server > Summary page. |
-| `<vbr_ip>` | The IP address of the Veeam Backup & Replication server. |
+| `<vbr_ip>` | The IP address of the Veeam Backup and Replication server. |
 {: caption="Table 1. Capture parameters for Immutable backup planning" caption-side="bottom"}
 
 Define the following parameters:

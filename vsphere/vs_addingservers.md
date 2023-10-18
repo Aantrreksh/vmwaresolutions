@@ -4,7 +4,7 @@ copyright:
 
   years:  2023
 
-lastupdated: "2023-08-15"
+lastupdated: "2023-09-21"
 
 keywords: vmware vSphere add host, add server vmware vSphere
 
@@ -27,8 +27,8 @@ You can expand the capacity of your VMware vSphere® instance according to your 
 * You can add up to 59 ESXi servers to a VMware vSphere instance.
 
 For VMware vSphere instances with vSAN:
-* If you are adding ESXi servers to instances provisioned after 23 August 2023, the servers are provisioned with mirrored M.2 drives.
-* If you are adding ESXi servers to instances provisioned before 23 August 2023, the servers are provisioned with mirrored M.2 drives only if you select a new bare metal server configuration.
+* If you are adding ESXi servers to instances provisioned after 24 August 2023, the servers are provisioned with mirrored M.2 boot drives.
+* If you are adding ESXi servers to instances provisioned before 24 August 2023, the servers are provisioned with mirrored M.2 boot drives only if you select a new bare metal server configuration.
 
 ## Procedure to add ESXi servers to VMware vSphere instances
 {: #vs_addingservers-procedure}
@@ -40,11 +40,15 @@ For VMware vSphere instances with vSAN:
 3. Click the **Infrastructure** tab.
 4. In the **ESXi servers** section, click **Add**.
 5. On the **Add ESXi server** side panel, enter the number of bare metal servers that you want to add.
-6. From the list, select a bare metal server configuration and click **Next**.
-7. Complete the networking settings:
-    * You can use the previously selected primary subnets.
-    * You can specify different primary subnets. Then, use the list to select the **Private primary subnet**.
-    * If you want to customize the hostnames prefix individually, toggle the **Configure hostnames individually** switch on and enter the hostname prefix.
+6. Complete the bare metal server configuration.
+   * From the list, you can select a bare metal server configuration that is being used by the existing ESXi servers in the cluster. Then, click **Next**. This option is not available under the following conditions:
+     * The bare metal configuration that is used by the existing ESXi servers in the cluster is **Broadwell**.
+     * The storage type of the cluster is **Local disks**.
+   * You can also choose a new bare metal server configuration by selecting the option from the list and clicking **Next**. Select the **CPU model**, the amount of **RAM**, and **vSAN** if you have vSAN storage type.
+7. Click **Next** and complete the network settings.
+   * You can use the previously selected primary subnets.
+   * You can specify different primary subnets. Then, use the list to select the **Private primary subnet**.
+   * If you want to customize the hostnames prefix individually, toggle the **Configure hostnames individually** switch on and enter the hostname prefix.
 8. In the **Details** section, review the estimated pricing, ensure that the account to be charged is correct, and review and accept the terms. Then, click **Add**.
 
 ## Results after you add ESXi servers to VMware vSphere instances

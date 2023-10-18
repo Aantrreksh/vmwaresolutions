@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-07-28"
+lastupdated: "2023-09-13"
 
 keywords: FAQ vmware solutions shared, vmware solutions shared questions
 
@@ -51,7 +51,7 @@ With IBM managing the infrastructure up to the hypervisor, you do not need to wo
 * **{{site.data.keyword.cloud_notm}} account**. This account is required for provisioning. You can sign up for an {{site.data.keyword.cloud_notm}} account by using an existing **IBMid** or by creating a new **IBMid**.
 * **{{site.data.keyword.cloud_notm}} infrastructure account**. This account is used to log in to the {{site.data.keyword.cloud_notm}} infrastructure customer portal that provides some additional function to manage infrastructure products and services. You can get an {{site.data.keyword.cloud_notm}} infrastructure account by upgrading your **{{site.data.keyword.cloud_notm}} account** to a billable account, or by linking your existing {{site.data.keyword.cloud_notm}} infrastructure account with your {{site.data.keyword.cloud_notm}} account. The {{site.data.keyword.cloud_notm}} infrastructure account that you are using must meet certain requirements. For more information, see [Signing up for required accounts](/docs/vmwaresolutions?topic=vmwaresolutions-signing_required_accounts).
 
-## How do I associate my IBM Cloud infrastructure credentials with the VMware Solutions console?
+## How do I associate my {{site.data.keyword.cloud_notm}} infrastructure credentials with the VMware Solutions console?
 {: #faq-associate-credentials-shared}
 {: faq}
 {: support}
@@ -82,7 +82,7 @@ All costs for the physical and virtual infrastructure and the licenses that resu
 
 The instance deployments have strict physical infrastructure requirements, which vary among {{site.data.keyword.cloud_notm}} data centers. When you place your instance order, the available data centers are listed within regions and you can select the one that you want from the list.
 
-For more information, see [IBM Cloud data center availability](/docs/vmwaresolutions?topic=vmwaresolutions-shared_planning#shared_planning-dc-availability).
+For more information, see [{{site.data.keyword.cloud_notm}} data center availability](/docs/vmwaresolutions?topic=vmwaresolutions-shared_planning#shared_planning-dc-availability).
 
 ## How long does it take for my instance to be deployed?
 {: #faq-deploy-shared}
@@ -131,7 +131,7 @@ VMware Shared provides Microsoft® Windows® server 2016/2019 templates. You can
 {: #faq-sla}
 {: faq}
 
-VMware Shared uses the {{site.data.keyword.cloud_notm}} standard Service Level Agreement (SLA). SLAs are not offered for virtual machines and vApps. For more information, see [IBM Cloud (Public Cloud) Service Description (10-2020)](https://www-03.ibm.com/software/sla/sladb.nsf/sla/bm-6605-20){: external}.
+VMware Shared uses the {{site.data.keyword.cloud_notm}} standard Service Level Agreement (SLA). SLAs are not offered for virtual machines and vApps. For more information, see [{{site.data.keyword.cloud_notm}} (Public Cloud) Service Description (10-2020)](https://www-03.ibm.com/software/sla/sladb.nsf/sla/bm-6605-20).
 
 ## Do I get vCenter access?
 {: #faq-vcenter-access}

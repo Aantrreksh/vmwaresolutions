@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2023
 
-lastupdated: "2023-06-19"
+lastupdated: "2023-09-26"
 
 subcollection: vmwaresolutions
 
@@ -23,7 +23,7 @@ DR is defined as a plan to recover critical business systems and normal operatio
 {{site.data.keyword.cloud_notm}} provides three tiers of regions: multizone regions (MZRs), single campus MZRs, and data centers.
 
 * Single campus multizone region - Single campus MZRs contain three availability zones in different sections of the same building or within multiple buildings on a campus where the power, cooling, networking, and physical security dependencies overlap but are not identical between any two availability zones. For more information, see [Single campus MZRs](/docs/overview?topic=overview-locations#single-campus-mzr).
-* Data centers - More than 50 data centers exist around the world, including MON01 in Montreal, AMS02 in Amsterdam, and MEL01 Melbourne. For more information about all data centers, see [Data centers](/docs/overview?topic=overview-locations#data-centers). For more information about the data centers in which VMware Solutions can be deployed, see [IBM Cloud data center availability](/docs/vmwaresolutions?topic=vmwaresolutions-vc_planning#vc_planning-dc-availability).
+* Data centers - More than 50 data centers exist around the world, including MON01 in Montreal, AMS02 in Amsterdam, and MEL01 Melbourne. For more information about all data centers, see [Data centers](/docs/overview?topic=overview-locations#data-centers). For more information about the data centers in which VMware Solutions can be deployed, see [{{site.data.keyword.cloud_notm}} data center availability](/docs/vmwaresolutions?topic=vmwaresolutions-vc_planning#vc_planning-dc-availability).
 
 The focus of the {{site.data.keyword.cloud_notm}} for VMware Regulated Workloads DR design has the following specifications.
 * A design to deliver against the two key requirements:
@@ -69,7 +69,7 @@ Recovery Point Objective (RPO) and Recovery Time Objective (RTO) depend on many 
 
 The VMware Regulated Workloads dual region design incorporates a number of design decisions that are justified by design simplicity, maximizing the VMware Regulated Workloads instance deployment automation, and minimizing the restrictions upon DR of the workloads. The recovery of management workloads and customer workloads is considered to be independent and this design focuses on the recovery of these management components. Customer workloads can be recovered by similar methods or by using different tools.
 
-![IBM Cloud for VMware Regulated Workloads dual region overview diagram](../../images/vrw-v2-dualregion.svg "IBM Cloud for VMware Regulated Workloads dual region overview diagram"){: caption="Figure 2. IBM Cloud for VMware Regulated Workloads dual region overview diagram" caption-side="bottom"}
+![{{site.data.keyword.cloud_notm}} for VMware Regulated Workloads dual region overview diagram](../../images/vrw-v2-dualregion.svg "{{site.data.keyword.cloud_notm}} for VMware Regulated Workloads dual region overview diagram"){: caption="Figure 1. {{site.data.keyword.cloud_notm}} for VMware Regulated Workloads dual region overview diagram" caption-side="bottom"}
 
 The VMware Regulated Workloads dual region design uses the following specifications:
 * An {{site.data.keyword.cloud_notm}} for VMware Regulated Workloads instance in each region, two regions are required. Available regions are; Dallas, Washington DC, Sydney, London, Frankfurt, and Tokyo.
@@ -82,11 +82,11 @@ The VMware Regulated Workloads dual region design uses the following specificati
 * VMware Aria Operations Manager - An analytic cluster on a cross-region network in the protected region and remote collectors in both regions. Recovery of the analytics cluster is done through replicas.
 * VMware Aria Operations™ for Networks – An optional manual installation in each region.
 * AD/DNS/NTP - HA VMs in both regions. Each region is a separate forest.
-* Veeam - A single Veeam Backup & Replication instance with a bare metal server in each region. The management components are located in the recovery region. Backup and file copies are used to provide off-site copies. Veeam replication is used to provide replicas of the VMware Aria Operations analytic cluster.
+* Veeam - A single Veeam Backup and Replication instance with a bare metal server in each region. The management components are located in the recovery region. Backup and file copies are used to provide off-site copies. Veeam replication is used to provide replicas of the VMware Aria Operations analytic cluster.
 * Key Management Interoperability Protocol for VMware Service (KMIP) - An HA KMIP instance in each region.
 * Hyper Protect Crypto Services (HPCS) - An HA HPCS instance in each region.
 
 ## Related links
 {: #vrw-dualregion-overview-related}
 
-* [Veeam on IBM Cloud overview](/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview)
+* [Veeam on {{site.data.keyword.cloud_notm}} overview](/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview)

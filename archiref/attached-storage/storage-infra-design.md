@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-08-17"
+lastupdated: "2023-09-11"
 
 subcollection: vmwaresolutions
 
@@ -34,7 +34,7 @@ The physical infrastructure consists of three main components: physical compute,
 
 Physical networking is handled by {{site.data.keyword.cloud_notm}}. The following section describes the physical network that is provided by the {{site.data.keyword.cloud_notm}} as it relates to attached storage.
 
-### IBM Cloud network overview
+### {{site.data.keyword.cloud_notm}} network overview
 {: #storage-infra-design-ibm-cloud-net-ovw}
 
 The physical network of {{site.data.keyword.cloud_notm}} is separated into three distinct networks: Public, Private, and Management. For more information about the public, private, and management networks, see [Overview of VMware Solutions](/docs/vmwaresolutions?topic=vmwaresolutions-solution_overview).

@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2022
 
-lastupdated: "2022-07-12"
+lastupdated: "2022-09-29"
 
 keywords: vmware regulated workloads, add hosts vmware regulated workloads, add servers vmware regulated workloads, remove hosts vmware regulated workloads
 
@@ -22,7 +22,7 @@ Expand or contract the capacity of your VMware® Regulated Workloads instances a
 ## Before you add or delete ESXi servers
 {: #vrw-addingremovingservers-before}
 
-You must migrate the VMware vCenter Server® virtual machines (VMs) before you delete a server. This requirement applies to the vCenter Server VM and to the additional VCHA VMs on the management and witness clusters.
+You must migrate the VMware vCenter Server® virtual machines (VMs) before you delete a server. This requirement applies to the vCenter Server VM and to the additional vCenter HA VMs on the management and witness clusters.
 
 ## Adding or deleting ESXi servers
 {: #vrw-addingremovingservers-add-delete-esxi}

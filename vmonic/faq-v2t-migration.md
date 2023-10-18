@@ -84,7 +84,7 @@ Instances with {{site.data.keyword.cloud_notm}} bare metal servers with vSphere 
 * Check whether your server and its hardware options are compatible with vSphere 7.0. For more information, see [VMware compatibility guide](https://www.vmware.com/resources/compatibility/search.php){: external}. Alternatively, you can upgrade your vCenter Server, set up vSphere Update Manager (VUM) or vSphere Lifecycle Manager, and run hardware compatibility checks for the upgrade.
 * Order new {{site.data.keyword.cloud_notm}} bare metal servers with vSphere 7.x from the VMware Solutions console, the VMware vSphere offering, configure your vSphere host and vCenter Server, and migrate the workloads. After the workloads are migrated, you can remove the ESXi hosts from vCenter and decommission the old servers from the {{site.data.keyword.cloud_notm}} portal. 
 
-## I have VMware Solutions - vCenter Server with NSX-V, IBM Cloud Bare Metal Servers with vSphere 6.5 or 6.7, and the support is ending. What do I need to do to keep the environment supported, and what options do I have?
+## I have VMware Solutions - vCenter Server with NSX-V, {{site.data.keyword.cloud_notm}} Bare Metal Servers with vSphere 6.5 or 6.7, and the support is ending. What do I need to do to keep the environment supported, and what options do I have?
 {: #faq-v2t-migration-6x-vcs}
 
 General support for vSphere 6.x ended on 15 October 2022. For more information, see [End of general support for vSphere 6.5 and vSAN 6.5 or 6.6](https://kb.vmware.com/s/article/83223){: external} and [VMware product lifecycle matrix](https://lifecycle.vmware.com/#/){: external}.

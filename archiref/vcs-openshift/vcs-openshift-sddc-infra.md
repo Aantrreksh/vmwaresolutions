@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2016, 2022
+  years: 2016, 2023
 
-lastupdated: "2022-04-27"
+lastupdated: "2023-09-11"
 
 subcollection: vmwaresolutions
 
@@ -12,7 +12,7 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# IBM Cloud networking and infrastructure
+# {{site.data.keyword.cloud_notm}} networking and infrastructure
 {: #vcs-openshift-sddc-infra}
 
 ## Physical structure

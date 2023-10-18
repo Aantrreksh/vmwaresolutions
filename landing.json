@@ -1,6 +1,6 @@
 {
     "title": "VMware Solutions docs",
-    "lastupdated": "2023-08-24",
+    "lastupdated": "2023-10-18",
     "introduction": "VMware Solutions is a group of IBM Cloud offerings that provide deployment and management of VMware virtualized environments. Learn how to make the most of your VMware Solutions experience by using the user documentation, REST API documentation reference, solution architectures, and solution guides.",
     "section_devtools": {
       "api": "/docs?tab=api-docs&category=compute&subCategory=vmwaresolutions"
@@ -54,6 +54,11 @@
       "view_more": "/docs/vmwaresolutions?topic=vmwaresolutions-vmwaresolutions-relnotes",
       "tiles": [
         {
+          "date": "18 October 2023",
+          "title": "VMware vSphere Day 2 updates",
+          "description": "You can now choose a new bare metal server configuration when you add a host to your existing instances."
+        },
+        {
           "date": "24 August 2023",
           "title": "VMware NSX 4.1.0.2",
           "description": "Newly deployed VMware vCenter Server® and VMware vSphere® instances are provisioned with VMware NSX® 4.1.0.2."
@@ -62,11 +67,6 @@
           "date": "5 July 2023",
           "title": "VMware vSphere Day 2 support",
           "description": "You can view or delete VMware vSphere® instances from the VMware Solutions console. You can also add or delete VMware ESXi™ servers, and add or delete licenses for vSphere instances from the VMware Solutions console."
-        },
-        {
-          "date": "22 June 2023",
-          "title": "Madrid data centers available",
-          "description": "The data centers Madrid 02, Madrid 04, and Madrid 05 are now available for deployment."
         }
       ]
     }

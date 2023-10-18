@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-10-12"
+lastupdated: "2023-10-13"
 
 keywords: FAQ, license, BYOL
 
@@ -14,7 +14,7 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# FAQ about Bring Your Own License for VMware
+# FAQ about BYOL for VMware
 {: #faq_byol} 
 
 ## What is BYOL and is it supported for VMware perpetual licenses?
@@ -22,9 +22,11 @@ subcollection: vmwaresolutions
 {: faq}
 {: support}
 
-BYOL was a feature available to vCenter Server and VMware vSphere® instances in version 2.0 and later. IBM Cloud previously allowed clients to bring their own licenses (BYOL) when moving their existing on-premises VMware workloads to IBM Cloud. BYOL is no longer allowed by VMware. You can no longer bring your own licenses for any new hosts. This applies to all VMware products that are available through IBM Cloud.
+BYOL (Bring Your Own License) was a feature available to VMware vCenter Server® and VMware vSphere® instances in version 2.0 and later. Previously, {{site.data.keyword.cloud}} allowed clients to bring their own licenses (BYOL) when moving their existing on-premises VMware® workloads to {{site.data.keyword.cloud_notm}}. 
 
-Existing BYOL servers will be able to perform upgrades and migrations to refresh software and hardware.
+BYOL is no longer allowed by VMware. You cannot bring your own licenses for any new hosts. This restriction applies to all VMware products that are available through {{site.data.keyword.cloud_notm}}.
+
+For existing BYOL servers, you can complete upgrades and migrations to refresh the software and hardware.
 
 ## Can you use the BYOL feature for some VMware components and purchase monthly licenses for others?
 {: #faq_byol-mthly-license}
@@ -62,7 +64,7 @@ You can manage your BYOL licenses by using the VMware vSphere Web Client.
 {: #faq_byol-support}
 {: faq}
 
-IBM Support continues to be your first point of contact for any {{site.data.keyword.vmwaresolutions_short}} product. However, if the reported concern is determined to be for a BYOL VMware component, you are instructed to raise a service request directly to VMware Support.
+IBM Support continues to be your first point of contact for any {{site.data.keyword.vmwaresolutions_short}} offering. However, if the reported concern is determined to be for a BYOL VMware component, you are instructed to raise a service request directly to VMware Support.
 
 ## Can you renew BYOL?
 {: #faq_byol-renew}

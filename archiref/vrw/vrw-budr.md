@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2023
 
-lastupdated: "2023-07-10"
+lastupdated: "2023-09-11"
 
 subcollection: vmwaresolutions
 
@@ -84,6 +84,6 @@ Veeam backup server is the recommended solution.
 ## Related links
 {: #vrw-budr-related}
 
-* [IBM Cloud compliance programs](https://www.ibm.com/cloud/compliance)
+* [{{site.data.keyword.cloud_notm}} compliance programs](https://www.ibm.com/cloud/compliance)
 * [Veeam](/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview)
 * [vSRX archival configuration](https://www.juniper.net/documentation/en_US/junos/topics/task/configuration/junos-software-system-management-router-configuration-archiving.html#id-10944516){: external}

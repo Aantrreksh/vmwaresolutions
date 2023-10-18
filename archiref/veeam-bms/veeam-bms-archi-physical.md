@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2021, 2022
+  years:  2021, 2023
 
-lastupdated: "2022-04-27"
+lastupdated: "2023-09-26"
 
 subcollection: vmwaresolutions
 
@@ -12,7 +12,7 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Physical infrastructure for the Veeam server with IBM Cloud bare metal servers
+# Physical infrastructure for the Veeam server with {{site.data.keyword.cloud_notm}} bare metal servers
 {: #veeam-bms-archi-physical}
 
 ## Veeam all-in-one servers
@@ -48,5 +48,5 @@ Each Veeam bare metal server needs to be VLAN trunked to VLAN 2. They need the f
 ## Related links
 {: #veeam-bms-archi-physical-related}
 
-* [Veeam Backup & Replication](https://www.veeam.com/vm-backup-recovery-replication-software.html?ad=menu-products){: external}
+* [Veeam Backup and Replication](https://www.veeam.com/vm-backup-recovery-replication-software.html?ad=menu-products){: external}
 * [Veeam Help Center technical documentation](https://www.veeam.com/documentation-guides-datasheets.html?ad=menu-resources){: external}

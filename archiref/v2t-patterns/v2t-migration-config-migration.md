@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2023
 
-lastupdated: "2023-02-23"
+lastupdated: "2023-10-10"
 
 subcollection: vmwaresolutions
 
@@ -101,6 +101,6 @@ When you plan and design configuration migration, consider the following aspects
 {: #v2t-config-migration-links}
 
 * [cITopus for NSX](https://spjsolutions.com){: external}
-* [ReSTNSX's Migration Assistance Tool (M.A.T.)](https://restnsx.com/mat/){: external}
+* [ReSTNSX's Migration Assistance Tool (M.A.T.)](https://www.restnsx.com/post/migration-assistance-tool-mat){: external}
 * [PrimaryIO NSX-V to NSX-T Fasttrack Migration Service](https://hdm.primaryio.com/lp/nsxvtot){: external}
 * [PrimaryIO HDM Cloud Connect NSX-V to NSX-T](https://cloud.ibm.com/catalog/services/hdm-cloud-connect-nsx-v-to-nsx-t#about)

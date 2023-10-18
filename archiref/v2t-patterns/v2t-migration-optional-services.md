@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2023
 
-lastupdated: "2023-08-21"
+lastupdated: "2023-09-11"
 
 subcollection: vmwaresolutions
 
@@ -13,7 +13,7 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# IBM Cloud optional services considerations
+# {{site.data.keyword.cloud_notm}} optional services considerations
 {: #v2t-optionalservices}
 
 It is important to understand that any add-on services that you are using in your VMware NSX-V environment are related to that instance. These services are deleted when the NSX-V environment is deprovisioned.

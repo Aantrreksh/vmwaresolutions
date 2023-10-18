@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-07-28"
+lastupdated: "2023-10-03"
 
 keywords: FortiGate VA, FortiGate configuration, order FortiGate
 
@@ -21,6 +21,32 @@ subcollection: vmwaresolutions
 You can include the FortiGate® Virtual Appliance service with a new VMware vCenter Server® instance or add the service to your existing instance.
 
 You can deploy the service on a single-zone (new or existing) or multizone (existing only) instance. For multizone instances, three FortiGate Virtual Appliances are installed, one for each of the three gateway clusters.
+
+## Considerations when you install FortiGate Virtual Appliance
+{: #fortinetvm_considerations-install}
+
+Review the following considerations before you install the FortiGate Virtual Appliance service:
+
+* The FortiGate VMs are deployed on the management cluster or gateway cluster.
+* If you want to deploy FortiGate-VM16 or FortiGate-VM32, it is recommended that you consider deploying on a gateway cluster instead of a management cluster because of resource requirements. For more information about Fortinet® sizing, see [FortiGate-VM on VMware ESXi data sheet](https://www.fortinet.com/content/dam/fortinet/assets/data-sheets/FortiGate_VM_ESXi.pdf){: external}.
+* You cannot install Juniper® vSRX and FortiGate Virtual Appliance on the same gateway cluster.
+* The initial memory allocation is determined by your initial CPU selection. However, you can change the memory allocation after deployment.
+* For larger deployment sizes, such as FortiGate-VM16 and FortiGate-VM32, the initial CPU allocation is set to half the deployment size limit to ensure successful deployment. After deployment, you can change the CPU allocation up to the deployment size limit.
+* When you deploy FortiGate Virtual Appliances to your instance, SNAT and firewall rules are defined on the Management NSX Edge™ Services Gateway (ESG). In addition, static routes on the FortiGate Virtual Appliances are defined to allow outbound HTTPS communications from your instance to the public network. These communications are needed for license activation and for acquiring the most updated security policies and content.
+* For high CPU licenses, make sure you have enough CPUs available on the consolidated cluster.
+
+   * At least 2 VMware ESXi™ servers are available and each active host has sufficient resources to host a single FortiGate VM.
+   * VMware® vSphere HA has enough resources to host two FortiGate VMs.
+
+   Because of the requirements, you must plan carefully for the space that is needed for the FortiGate Virtual Appliance. If needed, before you order FortiGate Virtual Appliance, add 1 - 2 ESXi servers to your instance, or reduce the vSphere HA CPU reservation for failover, or both.      
+
+The following table shows the configuration of network and storage for your FortiGate Virtual Appliance, depending on where they are deployed.
+
+| Component | Management cluster | Gateway cluster |
+|---------- |------------------- |---------------- |
+| Management IP | Existing management subnet | {{site.data.keyword.cloud}} primary subnet |
+| Storage | Management data store (vSAN or NFS) | Local data store |
+{: caption="Table 2. Network and storage configuration" caption-side="bottom"}
 
 ## Ordering FortiGate Virtual Appliance for a new instance
 {: #fortinetvm_ordering-new}
@@ -65,7 +91,7 @@ Enter the service name.
 ### FortiGuard network connection
 {: #fortinetvm_ordering-config-network-connect}
 
-Select **Public network** or **Private network** for FortiGuard. If the target cluster is configured with private-only network interfaces or the deployment is for a multizone instance, only the **Private network** option is available. This selection determines how FortiGuard contacts the Fortinet license server to activate the license and to download security fixes, and it doesn't impact the workload data plane.
+Select either **Public network** or **Private network** for FortiGuard. If the target cluster is configured with private-only network interfaces or the deployment is for a multizone instance, only the **Private network** option is available. This selection determines how FortiGuard contacts the Fortinet license server to activate the license and to download security fixes, and it doesn't impact the workload data plane.
 
 If you select **Private network**, specify the following settings:
 * **Proxy IP address** - The IPv4 address of the proxy server.

@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-07-31"
+lastupdated: "2023-09-11"
 
 keywords: Entrust DataControl, tech specs Entrust DataControl
 
@@ -15,7 +15,7 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Entrust DataControl on IBM Cloud overview
+# Entrust DataControl on {{site.data.keyword.cloud_notm}} overview
 {: #entrust-dc_considerations}
 
 New installations of Entrust DataControl® (formerly known as HyTrust DataControl) are not supported for new or existing deployments of VMware vCenter Server® instances. You can still use or delete existing Entrust DataControl installations on your existing instances.

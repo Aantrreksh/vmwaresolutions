@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-08-15"
+lastupdated: "2023-08-22"
 
 keywords: vmware vSphere order instance, order vSphere, order vmware vSphere instance
 
@@ -19,9 +19,12 @@ subcollection: vmwaresolutions
 
 The **Storage** section of your VMware vSphere instance order is applicable only if you select the VMware vSAN™ component.
 
-* For VMware vSphere instances without VMware vSAN, VMware ESXi™ servers are ordered with a 12-disk chassis, with two disks for the ESXi operating system (OS).
-* For VMware vSphere instances with vSAN, ESXi servers are ordered with a 12-disk chassis and two disks are ordered for caching. The ESXi OS is placed on a single M.2 solid-state drive that does not use a disk bay. These settings are configured by default and cannot be changed. You can order more capacity disks by specifying values for  **Size for vSAN capacity disks** and **Number of vSAN capacity disks**.
-* For VMware vSphere instances with vSAN, all new instances are provisioned with mirrored M.2 drives.
+* New instances are provisioned with mirrored M.2 boot drives.
+* VMware ESXi™ servers are ordered with a 12-disk chassis and two disks are ordered for caching. The ESXi OS is placed on a single M.2 solid-state drive that does not use a disk bay. These settings are configured by default and cannot be changed.
+* You can order more capacity disks by specifying values for **Size for vSAN capacity disks** and **Number of vSAN capacity disks**.
+
+If you do not select the vSAN component for your order, the ESXi servers are ordered with a 12-disk chassis, with two disks for the ESXi operating system (OS).
+{: note}
 
 Specify the following settings for the vSAN component:
 * **Size for vSAN capacity disks** - Select an option for the capacity disks that you need.

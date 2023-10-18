@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-08-16"
+lastupdated: "2023-09-25"
 
 subcollection: vmwaresolutions
 
@@ -43,7 +43,7 @@ By default, the only users who can log in directly are the _root_ and _ibmvmadmi
 | Host access            | Supports DCUI. SSH and ESXi Shell are supported but not enabled by default |
 | User access            | Local authentication and MSAD |
 | Domain name resolution | Uses DNS as described in [Common services design](/docs/vmwaresolutions?topic=vmwaresolutions-design_commonservice). |
-| EVC Mode | Highest available level supported by vSphere version. However, for a management cluster with Cascade Lake processors, no EVC is set where Cascade Lake EVC is not supported by the vSphere version. |
+| EVC Mode | Highest available level supported by vSphere version. However, for a management cluster with Intel® Cascade Lake processors, no EVC is set where Cascade Lake EVC is not supported by the vSphere version. |
 {: caption="Table 1. vSphere ESXi configuration" caption-side="bottom"}
 
 The vSphere cluster houses the virtual machines (VMs) that manage the vCenter Server instance and the compute resources for user workloads.

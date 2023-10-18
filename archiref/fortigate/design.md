@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2023
 
-lastupdated: "2023-03-21"
+lastupdated: "2023-09-11"
 
 subcollection: vmwaresolutions
 
@@ -28,7 +28,7 @@ You can deploy FortiGate VM according to several different strategies as Figure 
 
 In this figure, FCR is the {{site.data.keyword.cloud_notm}} front–end (public) customer router, and BCR is the {{site.data.keyword.cloud_notm}} back–end (private) customer router. For more information about the {{site.data.keyword.cloud_notm}} network design, see [Physical network design](/docs/vmwaresolutions?topic=vmwaresolutions-design_physicalinfrastructure).
 
-### IBM Cloud edge services
+### {{site.data.keyword.cloud_notm}} edge services
 {: #fortigate-design-topologies-edge}
 
 You can deploy a VMware ESXi™ gateway cluster as part of your vCenter Server instance. This cluster is configured to peer with the {{site.data.keyword.cloud_notm}} customer routers to provide firewall and gateway services for {{site.data.keyword.cloud_notm}} public and private VLANs of your choice. While you can deploy any virtual firewall technology of your choice to this gateway cluster, {{site.data.keyword.cloud_notm}} features FortiGate VM as an option for these firewall and gateway services. Using this approach, your FortiGate VM appliances can provide services such as:

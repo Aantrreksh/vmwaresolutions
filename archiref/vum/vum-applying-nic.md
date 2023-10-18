@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2022
+  years:  2016, 2023
 
-lastupdated: "2022-06-21"
+lastupdated: "2023-09-11"
 
 subcollection: vmwaresolutions
 
@@ -37,7 +37,7 @@ For each host, successively:
 
 If you need to revert, and you can't SSH to the vSphere ESXi host, then you need to log in to the KVM console for the host that needs the revert via the {{site.data.keyword.cloud_notm}} control window.
 
-Use the ID and password that are listed in the {{site.data.keyword.cloud_notm}} control window with the IPMI IP address to log in to the IPMI web interface. You need to be connected to the data center where the host is located through VPN. For more information, see [Getting started with IBM Cloud SSL Virtual Private Networking](/docs/iaas-vpn?topic=iaas-vpn-getting-started).
+Use the ID and password that are listed in the {{site.data.keyword.cloud_notm}} control window with the IPMI IP address to log in to the IPMI web interface. You need to be connected to the data center where the host is located through VPN. For more information, see [Getting started with {{site.data.keyword.cloud_notm}} SSL Virtual Private Networking](/docs/iaas-vpn?topic=iaas-vpn-getting-started).
 
 1. Go to the **Device Details, Remote Mgmt** page for the vSphere ESXi host and select **Actions** > **KVM Console**. Enter the IPMI user and password.
 2. Select **Remote Control** > **iKVM/HTML5** and click **iKVM/HTML5** to restart. You can now be able to access the vSphere ESXi host’s console.

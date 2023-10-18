@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2023
 
-lastupdated: "2023-08-18"
+lastupdated: "2023-09-11"
 
 keywords: vmware solutions shared, get started shared, tech specs shared
 
@@ -367,12 +367,12 @@ Under the **NAT44 Rules**, click **SNAT Rule** and create the configuration by u
 * Set to **Enabled**.
 * Optionally, enable logging. Logs are not preserved. If you want to have historical data, you must set up a syslog server.
 
-##### Create the Organization virtual data center network firewall rule to allow access to the IBM Cloud Services Network
+##### Create the Organization virtual data center network firewall rule to allow access to the {{site.data.keyword.cloud_notm}} Services Network
 {: #shared_vcd-ops-guide-create-vdc-network-rule-ibm-services-network}
 
 From the virtual data center for that edge gateway, create the network firewall rule. For more information, see [Add an NSX data center for vSphere Edge Gateway firewall rule](https://docs.vmware.com/en/VMware-Cloud-Director/10.1/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-97ADAF42-598B-44B2-80EF-8B215B743C78.html){: external}.
 
-Review the following notes for creating the Organization virtual data center network firewall rule to allow access to the IBM Cloud Services Network.
+Review the following notes for creating the Organization virtual data center network firewall rule to allow access to the {{site.data.keyword.cloud_notm}} Services Network.
 
 * For **Source** you can use an IP address, a range of addresses, or an object.
 * In the **Browse objects of Type** menu, select **Org Vdc Networks**. Select the Organization virtual data center network that you created as the **Source** cell. Click the right arrow to move the Organization virtual data center network into the **Filter** column.

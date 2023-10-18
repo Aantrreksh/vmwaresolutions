@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2023
 
-lastupdated: "2023-06-16"
+lastupdated: "2023-09-11"
 
 subcollection: vmwaresolutions
 
@@ -21,7 +21,7 @@ The design extends and enhances the basic VMware vCenter Server® architecture t
 
 {{site.data.keyword.vmwaresolutions_full}} automation is used to deploy all layers of the platform thus consistently delivering a secure and compliant-ready build for every {{site.data.keyword.cloud_notm}} for VMware Regulated Workloads instance ordered.
 
-![IBM Cloud for VMware Regulated Workloads infrastructure overview](../../images/vrw-v2-overview.svg "IBM Cloud for VMware Regulated Workloads infrastructure overview"){: caption="Figure 1. IBM Cloud for VMware Regulated Workloads infrastructure overview" caption-side="bottom"}
+![{{site.data.keyword.cloud_notm}} for VMware Regulated Workloads infrastructure overview](../../images/vrw-v2-overview.svg "{{site.data.keyword.cloud_notm}} for VMware Regulated Workloads infrastructure overview"){: caption="Figure 1. {{site.data.keyword.cloud_notm}} for VMware Regulated Workloads infrastructure overview" caption-side="bottom"}
 
 The perimeter gateway cluster that is shown in the workload region is the same gateway that runs on the dedicated gateway cluster.
 
@@ -84,6 +84,6 @@ For more information, see:
 ## Related links
 {: #vrw-archi-overview-related}
 
-* [IBM Cloud compliance programs](https://www.ibm.com/cloud/compliance){: external}
+* [{{site.data.keyword.cloud_notm}} compliance programs](https://www.ibm.com/cloud/compliance){: external}
 * [Caveonix RiskForesight](/docs/vmwaresolutions?topic=vmwaresolutions-caveonix_considerations)
 * [VMware Aria Operations and VMware Aria Operations for Logs](/docs/vmwaresolutions?topic=vmwaresolutions-vrops_overview)

@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-07-17"
+lastupdated: "2023-10-16"
 
 keywords: vCenter Server Hybridity add host, add server vCenter Server Hybridity, remove host vCenter Server Hybridity
 
@@ -36,7 +36,8 @@ Because your initial cluster has vSAN™ storage, adding one or more ESXi server
 ### Before you add ESXi servers
 {: #vc_hybrid_addingremovingservers-adding-prereq}
 
-* {{site.data.content.para-vcenteraddESXiservers}}
+{{site.data.content.para-vcenteraddESXiservers}}
+
 * vSAN storage requires at least 4 ESXi servers.
 
 ## Procedure to add ESXi servers
@@ -66,7 +67,7 @@ Because your initial cluster has vSAN™ storage, adding one or more ESXi server
 {: #vc_hybrid_addingremovingservers-adding-results}
 
 1. You might experience a slight delay on the console while the instance status changes from **Available** to **Modifying**. Allow the operation to complete before you make more changes to the instance.
-2. You're notified by email that your request to add ESXi servers is being processed. On the console, the status of the cluster that is associated with the ESXi servers is changed to **Modifying**.
+2. You are notified by email that your request to add ESXi servers is being processed. On the console, the status of the cluster that is associated with the ESXi servers is changed to **Modifying**.
 3. If you don't see the new ESXi servers added to the list in the cluster, check your email or console notifications for more details.
 
 If you are adding ESXi servers during maintenance mode, virtual machines (VMs) are not migrated to the new servers until you remove the cluster from maintenance mode.   
@@ -78,10 +79,11 @@ If you are adding ESXi servers during maintenance mode, virtual machines (VMs) a
 ### Before you delete ESXi servers
 {: #vc_hybrid_addingremovingservers-removing-prereq}
 
-* {{site.data.content.para-vcenterremoveESXiservers}}
+{{site.data.content.para-vcenterremoveESXiservers}}
+
 * vSAN storage requires at least 4 ESXi servers.
 * Before you delete ESXi servers on which F5® or FortiGate® Virtual Appliance is installed, you must migrate the F5 BIG-IP® and FortiGate VMs to a different ESXi server than the one that is hosting the VMs.
-* When you delete ESXi servers, the servers are placed in maintenance mode. After that, all the virtual machines (VMs) running on the servers are migrated before they are deleted from vCenter Server. For maximum of control over the relocation of VMs, it is recommended that you place the ESXi serversin maintenance mode. Also, migrate the VMs running on them manually using the VMware vSphere Web Client. After that, delete the ESXi servers by using the {{site.data.keyword.vmwaresolutions_short}} console.
+* When you delete ESXi servers, the servers are placed in maintenance mode. After that, all the virtual machines (VMs) running on the servers are migrated before they are deleted from vCenter Server. For maximum of control over the relocation of VMs, it is recommended that you place the ESXi servers in maintenance mode. Also, migrate the VMs running on them manually using the VMware vSphere Web Client. After that, delete the ESXi servers by using the {{site.data.keyword.vmwaresolutions_short}} console.
 
 ## Procedure to delete ESXi servers
 {: #vc_hybrid_addingremovingservers-removing-procedure}

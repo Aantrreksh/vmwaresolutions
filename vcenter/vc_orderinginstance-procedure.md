@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-06-22"
+lastupdated: "2023-09-19"
 
 keywords: vCenter Server order instance, order vCenter Server, order vCenter Server instance
 
@@ -17,10 +17,12 @@ subcollection: vmwaresolutions
 # Procedure to order vCenter Server instances
 {: #vc_orderinginstance-procedure}
 
+<!-- The {: #step-1} tag and the ordered list that has only 1s are intentional. Do not delete. This coding is necessary for proper indentation when the procedure is translated. -->
+
 1. In the VMware Solutions console, click the **VMware vCenter Server** card in the **Platforms** section. {: #step-1}
-1. On the **Create** tab, enter the instance name and select a resource group.
-1. Specify the instance configuration name. Click **Browse configurations** to open the **Instance configuration manager** side panel and choose the configuration.
-   * If you do not see any list of saved configurations in the side panel and want to create a new configuration, you must save the instance settings first as a new configuration template without placing an order.
+1. Enter the instance name and select a resource group.
+1. To specify the instance configuration name, click **Browse configurations** and choose a configuration in the **VMware instance configuration manager**.
+   * If you do not see any configurations in the list and you want to create one, you must first save the instance settings as a new configuration without placing an order.
    * If you want to update a saved configuration or create a new configuration based on a saved one, select the configuration from the side panel, make your changes, and then save.
 1. Select the instance type:
    * Click **Primary instance** to deploy a single instance in the environment or to deploy the first instance in a multisite topology.

@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2023
 
-lastupdated: "2023-05-22"
+lastupdated: "2023-10-05"
 
 keywords: openshift for vmware, request openshift for vmware, tech specs openshift vmware
 
@@ -20,7 +20,7 @@ subcollection: vmwaresolutions
 
 The {{site.data.keyword.redhat_openshift_full}} for VMware® service deploys an {{site.data.keyword.redhat_openshift_notm}} cluster by using an automated deployment of the VMware SDDC (Software Defined Data Center) architecture. The {{site.data.keyword.redhat_openshift_notm}} components are deployed as virtual machines (VMs) or appliances by using VMware NSX® software-defined networking.
 
-The {{site.data.keyword.redhat_openshift_notm}} version available for deployment is 4.12.
+The {{site.data.keyword.redhat_openshift_notm}} version available for deployment is 4.13.10.
 {: note}
 
 Review the following information before you install the {{site.data.keyword.redhat_openshift_notm}} for VMware service:
@@ -30,7 +30,7 @@ Review the following information before you install the {{site.data.keyword.redh
 
 Existing installations of {{site.data.keyword.redhat_openshift_notm}} for VMware can be used or deleted for vSphere 6.7 instances.
 
-{{site.data.keyword.vmwaresolutions_full}} offers promotions for some services. Promotional pricing offers a number of months without charge for a service licenses, if the service has license charges. For more information, see [Promotions for VMware Solutions services](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices#vc_addingservices-service-promotions).
+{{site.data.content.para-promotion-services}}
 
 The cluster consists of the following components:
 * Three primary nodes
@@ -44,7 +44,7 @@ For more information about the architecture, see [{{site.data.keyword.redhat_ope
 ## Technical specifications for Red Hat OpenShift for VMware
 {: #ocp_overview-specs}
 
-The following capacity requirements apply only if your vCenter Server instance is using vSAN™ storage. If you are using NFS, a new 2-TB NFS datastore, which is dedicated to {{site.data.keyword.redhat_openshift_notm}}, is ordered.
+The following capacity requirements apply only if your vCenter Server instance is using vSAN™ storage. If you are using NFS, a new 2-TB NFS data store, which is dedicated to {{site.data.keyword.redhat_openshift_notm}}, is ordered.
 
 The solution topology has the following requirements:
 * 9 CPUs
@@ -76,9 +76,11 @@ The {{site.data.keyword.redhat_openshift_notm}}-related files from the bastion i
 ### SSH key
 {: #ocp_overview-bastion-ssh-key}
 
-The SSH key on the bastion is installed on all {{site.data.keyword.redhat_openshift_notm}} cluster VMs, which allows SSH login from the bastion into any cluster VM. The full path to the SSH key is displayed on the service details page. For security purposes, it is highly recommended that you generate a new SSH key and update the cluster VMs with the new key. For more information, see [Changing the SSH key on the {{site.data.keyword.redhat_openshift_notm}} bastion](/docs/vmwaresolutions?topic=vmwaresolutions-ocp_managing#ocp_managing-change-ssh-key).
+The SSH key on the bastion is installed on all {{site.data.keyword.redhat_openshift_notm}} cluster VMs, which allows SSH login from the bastion into any cluster VM. The full path to the SSH key is displayed on the service details page. For security purposes, it is highly recommended that you generate a new SSH key and update the cluster VMs with the new key. For more information, see [Changing the SSH key on the {{site.data.keyword.redhat_openshift_notm}} bastion VM](/docs/vmwaresolutions?topic=vmwaresolutions-ocp_managing#ocp_managing-change-ssh-key).
 
-When you log in to a cluster VM from the bastion, you must connect as the `core` user as shown in the following example: `root@bastion# ssh core@control-plane0`.
+When you log in to a cluster VM from the bastion, you must connect as the `core` user as shown in the following example:
+
+`root@bastion# ssh core@control-plane0`
 
 ### High availability
 {: #ocp_overview-high-avail}
@@ -94,7 +96,9 @@ The `oc` and `kubectl` command-line tools from the {{site.data.keyword.redhat_op
 
 The bastion also holds a file that is named `auth/kubeconfig`, needed for authentication. This file holds the initial kubeadmin credentials that are created during installation. Before you initially use the `oc` or `kubectl` tools, you must set the KUBECONFIG environment variable with the path to this file. For example, `export KUBECONFIG=auth/kubeconfig`.
 
-After that is done, any commands you run will be as the `kubeadmin` user. You can verify the user account by running the command `./oc whoami`.
+After that is done, any commands you run will be as the `kubeadmin` user. You can verify the user account by running the following command:
+
+`./oc whoami`
 
 After you configure your authentication and any additional users, you no longer need to source this file, and you can log in as the user that you created.
 
@@ -122,38 +126,17 @@ For more information, see [{{site.data.keyword.redhat_openshift_notm}} subscript
 
 By default, the {{site.data.keyword.redhat_openshift_notm}} installer creates a `kubeadmin` user that you can use to log in to the cluster. Create authentication backends or more users, as needed, for security purposes.
 
-For more information about how to configure {{site.data.keyword.redhat_openshift_notm}} authentication, see [Understanding authentication](https://docs.openshift.com/container-platform/4.7/authentication/understanding-authentication.html){: external}.
+For more information about how to configure {{site.data.keyword.redhat_openshift_notm}} authentication, see the Red Hat OpenShift documentation.
 
 ## Updating your Red Hat OpenShift cluster
 {: #ocp_overview-update-clus}
 
-For more information about updating {{site.data.keyword.redhat_openshift_notm}}, see:
-
-* [Updating a cluster within a minor version using the web console](https://docs.openshift.com/container-platform/4.7/updating/updating-cluster-within-minor.html){: external}.
-* [Updating a cluster within a minor version using the CLI](https://docs.openshift.com/container-platform/4.7/updating/updating-cluster-cli.html){: external}.
-
-## Considerations when you install Red Hat OpenShift for VMware
-{: #ocp_overview-consid-install}
-
-* Before the service is installed in your environment, a check is completed against the available capacity of the target cluster in the environment to ensure that the service components can fit. The storage capacity check applies only to vSAN storage. For NFS clusters, a new NFS datastore, dedicated to {{site.data.keyword.redhat_openshift_notm}}, is added.
-* The cluster is associated with the {{site.data.keyword.redhat_notm}} account from the pull secret that is provided.
-* The **Latency Sensitivity** setting of the {{site.data.keyword.redhat_openshift_notm}} cluster VMs can affect Kubernetes scheduling performance. By default, the setting is set to **Normal**, but it can be set to **High** if you encounter Kubernetes performance issues.
-
-## Considerations when you delete Red Hat OpenShift for VMware
-{: #ocp_overview-consid-remove}
-
-* Before you delete {{site.data.keyword.redhat_openshift_notm}} for VMware, you must remove any additional VMs that you created in the `ocp` directory on VMware. The VMware Solutions automation removes only the items that were deployed during the initial installation of {{site.data.keyword.redhat_openshift_notm}} (VMs, storage, and NSX). Any node that is deployed after the installation is not cleaned up.
-* The VXLAN, DLR, and the Edge Gateway that were created during the initial deployment of {{site.data.keyword.redhat_openshift_notm}} for VMware is deleted. The VMs that you deployed on VXLAN will lose connectivity after the removal of {{site.data.keyword.redhat_openshift_notm}} for VMware starts.
-* If your cluster uses NFS storage, deleting {{site.data.keyword.redhat_openshift_notm}} deletes the NFS datastore that was added during installation.
-* If you are using a vSAN datastore, delete any persistent volumes that you no longer need before you uninstall {{site.data.keyword.redhat_openshift_notm}}. Any volumes that are not deleted will remain in the vSAN storage after the {{site.data.keyword.redhat_openshift_notm}} uninstallation.
-* Before you delete the service, you must remove any personal VMs that were deployed with this service, from the storage. {{site.data.keyword.redhat_openshift_notm}} only orders personal VMs if it’s not vSAN.
+For more information about updating {{site.data.keyword.redhat_openshift_notm}}, see the Red Hat OpenShift documentation.
 
 ## Related links
 {: #ocp_overview-related}
 
 * [vCenter Server and {{site.data.keyword.redhat_openshift_notm}} architecture overview](/docs/vmwaresolutions?topic=vmwaresolutions-vcs-openshift-intro)
 * [VMware Solutions and {{site.data.keyword.redhat_openshift_notm}} overview](/docs/vmwaresolutions?topic=vmwaresolutions-openshift-runbook-runbook-intro)
-* [{{site.data.keyword.redhat_openshift_notm}} Container Platform 4.7 documentation](https://docs.openshift.com/container-platform/4.7/welcome/index.html){: external}
-* [{{site.data.keyword.redhat_openshift_notm}} Container Platform 4.7 release notes](https://docs.openshift.com/container-platform/4.7/release_notes/ocp-4-7-release-notes.html){: external}
 * [What's new in {{site.data.keyword.redhat_openshift_notm}}](https://www.openshift.com/learn/whats-new){: external}
 * [Succeeding with {{site.data.keyword.redhat_openshift_notm}} and VMware’s Software-Defined Datacenter (SDDC)](https://blog.openshift.com/red-hat-openshift-and-vmware-better-together/){: external}

@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-07-28"
+lastupdated: "2023-09-11"
 
 keywords: planning vCenter Server, data center, vCenter Server data centers
 
@@ -28,7 +28,7 @@ Plan your instance based on the {{site.data.keyword.cloud}} data center location
 
 The account that you are using must meet certain requirements. For more information, see [Signing up for required accounts](/docs/vmwaresolutions?topic=vmwaresolutions-signing_required_accounts).
 
-## IBM Cloud data center availability
+## {{site.data.keyword.cloud_notm}} data center availability
 {: #vc_planning-dc-availability}
 
 The vCenter Server deployment has strict requirements on the physical infrastructure. Therefore, you can deploy instances only in {{site.data.keyword.cloud_notm}} data centers that meet the requirements. The following {{site.data.keyword.cloud_notm}} data centers are available for vCenter Server deployment.

@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2023
 
-lastupdated: "2023-07-14"
+lastupdated: "2023-09-20"
 
 subcollection: vmwaresolutions
 
@@ -13,15 +13,14 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# VMware virtual machines on VPC subnets
+# VMware VMs on VPC subnets
 {: #vpc-ryo-subnet}
 
-The topic provides an introduction to {{site.data.keyword.vpc_full}} subnet-integrated VMware® virtual machines architecture, as shown on the following diagram.
+The topic provides an introduction to {{site.data.keyword.vpc_full}} subnet-integrated VMware® virtual machines (VMs) architecture, as shown on the following diagram.
 
-![Architecture Overview of VMware on {{site.data.keyword.vpc_short}}](../../images/vpc-ryo-diagrams-aod-non-nsx-based.svg "Architecture Overview of VMware on {{site.data.keyword.vpc_short}}"){: caption="Figure 1. Architecture Overview of VMware on {{site.data.keyword.vpc_short}}" caption-side="bottom"}
+![Architecture overview of VMware on {{site.data.keyword.vpc_short}}](../../images/vpc-ryo-diagrams-aod-non-nsx-based.svg "Architecture overview of VMware on {{site.data.keyword.vpc_short}}"){: caption="Figure 1. Architecture overview of VMware on {{site.data.keyword.vpc_short}}" caption-side="bottom"}
 
-
-## Overview to VMware virtual machine networking integration with VPC subnets
+## Overview ov VMware virtual machine networking integration with VPC subnets
 {: #vpc-ryo-subnet-intro}
 
 The {{site.data.keyword.cloud_notm}} bare metal server for VPC fully supports VMware vSphere® networking capabilities with standard and distributed vSwitches. Before setting up networks in the vSphere environment, it is important to understand the networking concepts between {{site.data.keyword.cloud_notm}} bare metal server in {{site.data.keyword.vpc_short}} and vSphere networking.
@@ -43,8 +42,8 @@ The following diagram presents an overview of the solution for hosting VMware VM
 
 When you create a VLAN interface for either to a VMkernel adapter or to a VM, you must specify a VLAN ID for the VLAN interface. This VLAN ID maps to the VLAN ID that is used in a standard or a distributed port group in vSphere. VLAN ID `0` cannot currently be used for a VLAN interface. The following table provides an example mapping of VLAN interfaces and distributed port groups.
 
-| Interface name        | Interface type | VLAN ID | Subnet                         | Allow float  | VM network interface | Distributed Port Group Name |
-| ---------------------- |---------------- | --------- | -------------------------------- | -------------- | ---------------------- | ---------------------------------- |
+| Interface name | Interface type | VLAN ID | Subnet | Allow float | VM network interface | Distributed Port Group name |
+| -------------- |--------------- | ------- | ------ | ----------- | -------------------- | ---------------- |
 | vlan-nic-vm001        | vlan           | 1000    | vpc-vm-subnet-192-168-100.0-24 | true         | vnic1                | dpg-vm-subnet-192-168-100-0-24 |
 | vlan-nic-vm002        | vlan           | 1000    | vpc-vm-subnet-192-168-100.0-24 | true         | vnic1                | dpg-vm-subnet-192-168-100-0-24 |
 | vlan-nic-vm003        | vlan           | 1001    | vpc-vm-subnet-192-168-100.0-24 | true         | vnic1                | dpg-vm-3-vlan-1001 |

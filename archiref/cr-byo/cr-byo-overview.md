@@ -4,7 +4,7 @@ copyright:
 
   years:  2023
 
-lastupdated: "2023-06-09"
+lastupdated: "2023-09-11"
 
 subcollection: vmwaresolutions
 
@@ -56,7 +56,7 @@ Key elements of the solution architecture include:
 ## How to
 {: #cr-byo-overview-how-to}
 
-Consider using a separate IBM Cloud account to deploy your cyber-recovery instance into. This process promotes separation of duties between ownership of any other production or disaster recovery solution that you might host in IBM Cloud.
+Consider using a separate {{site.data.keyword.cloud}} account to deploy your cyber-recovery instance into. This process promotes separation of duties between ownership of any other production or disaster recovery solution that you might host in {{site.data.keyword.cloud_notm}}.
 
 To create your custom cyber-recovery solution based on a VMware vCenter Server instance, follow the [procedure to order vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-procedure):
 
@@ -70,7 +70,7 @@ To create your custom cyber-recovery solution based on a VMware vCenter Server i
 After your vCenter Server instance is provisioned:
 
 1. Configure your firewalls by using the vendor’s documentation as a guide and the following information:
-   * [IBM Cloud IP ranges](/docs/cloud-infrastructure?topic=cloud-infrastructure-ibm-cloud-ip-ranges)
+   * [{{site.data.keyword.cloud_notm}} IP ranges](/docs/cloud-infrastructure?topic=cloud-infrastructure-ibm-cloud-ip-ranges)
    * [Ports that are used for deployment and Day 2 operations](/docs/vmwaresolutions?topic=vmwaresolutions-vmwaresol_ports-deploy-day2ops)
    * [Ports used by VMware](/docs/vmwaresolutions?topic=vmwaresolutions-vmwaresol_ports-vmwareuses)
    * [Ports for services](/docs/vmwaresolutions?topic=vmwaresolutions-vmwaresol_ports-services)

@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2023
 
-lastupdated: "2023-07-28"
+lastupdated: "2023-10-06"
 
 keywords: VMware Aria, VMware Aria configuration, order VMware Aria, vRealize
 
@@ -23,7 +23,7 @@ You can include the VMware Aria® Operations™ and VMware Aria Operations™ fo
 ## Ordering VMware Aria Operations and VMware Aria Operations for Logs for a new instance
 {: #vrops_ordering-new}
 
-1. When you [order the instance](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-procedure), scroll down to the **Add-on services** section. VMware Aria Operations and VMware Aria Operations for Logs is in the **Management tools** category.
+1. When you [order the instance](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-procedure), scroll down to the **Add-on services** section. The VMware Aria Operations and VMware Aria Operations for Logs service is in the **Management tools** category.
 2. Open the category, locate VMware Aria Operations and VMware Aria Operations for Logs, and toggle its switch on.
 3. Click **Edit** to review and specify the configuration information, then click **Save**.
 

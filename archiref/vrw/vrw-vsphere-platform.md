@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2023
 
-lastupdated: "2023-06-19"
+lastupdated: "2023-09-11"
 
 subcollection: vmwaresolutions
 
@@ -109,4 +109,4 @@ THe NSX-T gateway cluster VMs that house the Tier-0 and Tier-1 routers are on th
 ## Related links
 {: #vrw-vsphere-platform-related}
 
-* [IBM Cloud compliance programs](https://www.ibm.com/cloud/compliance)
+* [{{site.data.keyword.cloud_notm}} compliance programs](https://www.ibm.com/cloud/compliance)

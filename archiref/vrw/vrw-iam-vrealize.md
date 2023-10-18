@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2023
 
-lastupdated: "2023-07-10"
+lastupdated: "2023-09-11"
 
 subcollection: vmwaresolutions
 
@@ -125,5 +125,5 @@ VMware Aria Operations for Logs authentication configuration is configured to us
 ## Related links
 {: #vrw-iam-vrealize-related}
 
-* [IBM Cloud compliance programs](https://www.ibm.com/cloud/compliance)
-* [IBM Cloud Hyper Protect Crypto Services API](/apidocs/hs-crypto)
+* [{{site.data.keyword.cloud_notm}} compliance programs](https://www.ibm.com/cloud/compliance)
+* [{{site.data.keyword.cloud_notm}} Hyper Protect Crypto Services API](/apidocs/hs-crypto)

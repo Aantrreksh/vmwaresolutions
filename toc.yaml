@@ -53,32 +53,35 @@ toc:
           label: VMware as a Service
           topics:
           - include: ../vmware-service/common/vmware-aas-overview.md
+          - include: ../vmware-service/vmaas/tenant-plan-deploy.md
           - topicgroup:
-              label: Managing instances
-              topics:
-              - include: ../vmware-service/vmaas/tenant-plan-deploy.md
-              - include: ../vmware-service/vmaas/tenant-ordering.md
-              - include: ../vmware-service/vmaas/tenant-viewing.md
-              - include: ../vmware-service/vmaas/tenant-deleting.md
-          - include: ../vmware-service/vmaas/pvdc-adding-deleting.md
-          - include: ../vmware-service/vmaas/cluster-adding-deleting.md
-          - include: ../vmware-service/vmaas/host-adding-deleting.md
-          - include: ../vmware-service/vmaas/storage-adding-deleting.md
-          - topicgroup:
-              label: Managing virtual data centers
+              label: Ordering VMware as a Service instances
               topics:
               - include: ../vmware-service/vmaas/vdc-adding.md
-              - include: ../vmware-service/vmaas/vdc-view-delete.md
-              - include: ../vmware-service/common/iam-integration.md
+              - include: ../vmware-service/vmaas/tenant-ordering.md
+          - topicgroup:
+              label: Viewing VMware as a Service instances
+              topics:
+              - include: ../vmware-service/vmaas/tenant-viewing-mt.md
+              - include: ../vmware-service/vmaas/tenant-viewing.md
+          - include: ../vmware-service/vmaas/tenant-deleting.md
+          - topicgroup:
+              label: Managing VMware as a Service instances
+              topics:
+              - include: ../vmware-service/vmaas/pvdc-adding-deleting.md
+              - include: ../vmware-service/vmaas/cluster-adding-deleting.md
+              - include: ../vmware-service/vmaas/host-adding-deleting.md
+              - include: ../vmware-service/vmaas/storage-adding-deleting.md
+              - include: ../vmware-service/vmaas/capacity-adding-deleting.md
           - topicgroup:
               label: Managing Veeam Backup and Replication
               topics:
               - include: ../vmware-service/vmaas/tenant-veeam.md
               - include: ../vmware-service/vmaas/veeam-adding-deleting.md
+          - include: ../vmware-service/vmaas/mt_pricing.md
           - topicgroup:
               label: Reference
               topics:
-              - include: ../vmware-service/common/vmaas-understand-responsib.md
               - include: ../vmware-service/common/policies.md
               - include: ../vmware-service/common/ha.md
               - include: ../vmware-service/common/bc-dr.md
@@ -251,30 +254,10 @@ toc:
               - cr/cr_orderinginstance-network-interface.md
               - cr/cr_orderinginstance-addon-services.md
               - cr/cr_orderinginstance-order-procedure.md
-          - topicgroup:
-              label: Adding, viewing, and deleting clusters
-              topics:
-              - cr/cr_addingclusters.md
-              - cr/cr_viewingclusters.md
-              - cr/cr_deletingclusters.md
-          - topicgroup:
-              label: Expanding and contracting capacity
-              topics:
-              - cr/cr_adding-esxi-servers.md
-              - cr/cr_removing-esxi-servers.md
-              - cr/cr_adding-nfs-storage.md
-              - cr/cr_removing-nfs-storage.md
-          - topicgroup:
-              label: Ordering, viewing, and deleting services
-              topics:
-              - cr/cr_ordering-services.md
-              - cr/cr_viewing-services.md
-              - cr/cr_deleting-services.md
-          - topicgroup:
-              label: Viewing and deleting instances
-              topics:
-              - cr/cr_viewing-cr-instances.md
-              - cr/cr_deleting-cr-instances.md
+          - cr/cr_addingviewingclusters.md
+          - cr/cr_addingremovingservers.md
+          - cr/cr_addingviewingservices.md
+          - cr/cr_view-delete-instance.md
       - topicgroup:
           label: Add-on services
           topics:
@@ -364,12 +347,12 @@ toc:
               label: VMware as a Service
               topics:
               - include: ../vmware-service/common/architecture-workload-isolation.md
+              - include: ../vmware-service/common/iam-integration.md
               - include: ../vmware-service/common/vmaas-iam.md
               - include: ../vmware-service/common/vmaas-iam_vcd.md
               - include: ../vmware-service/common/vmaas-data-security.md
           - vmonic/data-security.md
           - vmonic/ha-dr.md
-          - vmonic/understand-responsib.md
           - topicgroup:
               label: Auditing
               topics:
@@ -475,6 +458,11 @@ toc:
           - link:
               label: VMware Shared API
               href: https://{DomainName}/apidocs/vmware-solutions-shared-v2.0.0
+      - topicgroup:
+          label: Understanding responsibilities
+          topics:
+          - include: ../vmware-service/common/vmaas-understand-responsib.md
+          - vmonic/understand-responsib.md
       - topicgroup:
           label: VMware NSX-V to NSX-T migration
           topics:
@@ -682,6 +670,23 @@ toc:
           - archiref/cr-dell/cr-dell-overview.md
           - archiref/cr-predatar/cr-predatar-overview.md
           - topicgroup:
+              label: Veeam backup guide
+              topics:
+              - archiref/veeam-backup/veeam_proxies_req.md
+              - archiref/veeam-backup/veeam_proxies_transp_modes.md
+              - archiref/veeam-backup/veeam_proxies_backup_proxy.md
+              - archiref/veeam-backup/veeam_proxies_vmware_backup_proxy.md
+              - archiref/veeam-backup/veeam_proxies_vmware_cdp_proxy.md
+              - archiref/veeam-backup/veeam_repo_create.md
+              - archiref/veeam-backup/veeam_repo_dir_storage.md
+              - archiref/veeam-backup/veeam_repo_net_storage.md
+              - archiref/veeam-backup/veeam_repo_obj_storage.md
+              - archiref/veeam-backup/veeam_repo_add_storage.md
+              - archiref/veeam-backup/veeam_repo_man_storage.md
+              - archiref/veeam-backup/veeam_repo_scale_backup.md
+              - archiref/veeam-backup/veeam_endurance_storage.md
+              - archiref/veeam-backup/veeam_expand_storage.md
+          - topicgroup:
               label: VMware Update Manager guide
               topics:
               - archiref/vum/vum-intro.md
@@ -771,15 +776,15 @@ toc:
       - topicgroup:
           label: FAQs
           topics:
-          - vmonic/faq-v2t-migration.md
-          - vmonic/faq_shared.md
           - vmonic/faq.md
+          - vmonic/faq_shared.md
           - vmonic/faq_esxi.md
           - vmonic/faq_licensing.md
+          - vmonic/faq-v2t-migration.md
           - vmonic/faq_byol.md
           - vmonic/iam_verify_permissions.md
-          - vcenter/vcenter_chg_impact.md
           - vmonic/trbl_limitations.md
+          - vcenter/vcenter_chg_impact.md
           - archiref/vcs/vmware-inventory-export.md
           - vmonic/additional_resources.md
       - topicgroup:

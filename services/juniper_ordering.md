@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2023
 
-lastupdated: "2023-07-28"
+lastupdated: "2023-10-05"
 
 keywords: Juniper vSRX, manage Juniper vSRX, Juniper vSRX console
 
@@ -23,7 +23,10 @@ You can install multiple instances of Juniper vSRX on the management cluster. On
 
 You can install Juniper vSRX on 25 Gb uplink speed management and gateway clusters on VMware vSphere® 7 with NSX-T. On 25 Gb uplink speed clusters, only the Content Security Bundle license is available.
 
-The license that is used depends on the target cluster you choose. For vCenter Server instances with vSphere 7 and NSX-T, management and gateway clusters with 25 Gb uplink speed use the 25 Gb uplink speed version of the license selected. For VMware Regulated Workloads (single-zone and multizone) and Security and Compliance Readiness Bundle instances, the same license selection process occurs for gateway clusters with 25 Gb uplink speeds.
+The license that is used depends on the target cluster you choose. 
+
+* For vCenter Server instances with vSphere 7 and NSX-T, management and gateway clusters with 25 Gb uplink speed use the 25 Gb uplink speed version of the license selected. 
+* For VMware Regulated Workloads (single-zone and multizone) and Security and Compliance Readiness Bundle instances, the same license selection process occurs for gateway clusters with 25 Gb uplink speeds.
 
 You cannot install Juniper vSRX and FortiGate Virtual Appliance on the same gateway cluster.
 {: restriction}

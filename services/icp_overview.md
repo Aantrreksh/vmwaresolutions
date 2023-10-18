@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2022
+  years:  2016, 2023
 
-lastupdated: "2022-03-31"
+lastupdated: "2023-09-11"
 
 keywords: IBM Cloud Private
 
@@ -15,7 +15,7 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# IBM Cloud Private Hosted
+# {{site.data.keyword.cloud_notm}} Private Hosted
 {: #icp_overview}
 
 The {{site.data.keyword.cloud}} Private Hosted service is no longer supported. Use the [{{site.data.keyword.redhat_openshift_notm}} for VMware](/docs/vmwaresolutions?topic=vmwaresolutions-ocp_overview) service instead.
@@ -33,7 +33,7 @@ If you want to deploy additional nodes, review the following information:
 * The default password for the Ubuntu template is `icponcloud`. It is recommended that you change this password before you use the template.
 * {{site.data.keyword.vmwaresolutions_short}} does not offer support for applying updates and patches for the Ubuntu template. You must monitor and apply these updates yourself.
 
-## Considerations when you delete IBM Cloud Private Hosted
+## Considerations when you delete {{site.data.keyword.cloud_notm}} Private Hosted
 {: #icp_overview-remove}
 
 * Only the virtual machines (VMs) that were deployed during the initial installation of the {{site.data.keyword.cloud_notm}} Private Hosted service are deleted. Any node that is deployed after the installation is not cleaned up.

@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2023
 
-lastupdated: "2023-06-19"
+lastupdated: "2023-09-22"
 
 subcollection: vmwaresolutions
 
@@ -25,7 +25,7 @@ Active-passive on the Tier0 provides IPsec capability for access through the HA 
 
 The following diagram shows an example of a customer deployment that uses the standard topology, when the segments are attached to the Tier-1 Gateway. You can add more segments to the existing Tier-1 Gateway or more Tier-1 Gateways on the same NSX-T edge clusters, if needed.
 
-![Single-site – single tenant example topology with Tier-1 Gateway](../../images/arch-pattern-1-zone-t1.svg "Single-site – single tenant example topology that uses both Tier-0 and Tier-1 Gateways."){: caption="Figure 1. Single-site – single tenant example topology with Tier-1 Gateway" caption-side="bottom"}
+![Single-site single-tenant example topology with Tier-1 Gateway](../../images/arch-pattern-1-zone-t1.svg "Single-site single-tenant example topology that uses both Tier-0 and Tier-1 Gateways"){: caption="Figure 1. Single-site single-tenant example topology with Tier-1 Gateway" caption-side="bottom"}
 
 1. The vCenter Server automation deploys an example single-site topology, which follows the principles that are presented in this model. The deployment includes a single vCenter and three NSX-T managers that are deployed in the cluster on the initial {{site.data.keyword.cloud_notm}} data center location.
 2. The vCenter Server automation deploys two edge cluster transport nodes and a single edge cluster for your Tier-0 and Tier-1 Gateways.
@@ -40,4 +40,4 @@ The following diagram shows an example of a customer deployment that uses the st
 ## Related links
 {: #vrw-nsxt-topologies-related}
 
-* [IBM Cloud compliance programs](https://www.ibm.com/cloud/compliance)
+* [{{site.data.keyword.cloud_notm}} compliance programs](https://www.ibm.com/cloud/compliance)

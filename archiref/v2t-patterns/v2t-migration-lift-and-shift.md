@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2022
+  years:  2022, 2023
 
-lastupdated: "2023-08-09"
+lastupdated: "2023-09-11"
 
 subcollection: vmwaresolutions
 
@@ -21,7 +21,7 @@ VMware NSX-V to VMware NSX-T™ migration in {{site.data.keyword.cloud}} is done
 In {{site.data.keyword.cloud_notm}}, you need to deploy a new vCenter Server® with NSX-T instance, which then runs in parallel with the existing vCenter Server with NSX-V instance. The NSX-T architecture is different than the NSX-V architecture, though they share similar concepts for overlay networking, distributed routing, and firewalling.
 
 
-![NSX-V to NSX-T lift–and-shift migration approach](../../images/v2t-diagrams-lift-and-shift.svg "NSX-V to NSX-T migration in IBM Cloud is done by following the VMware lift-and-shift migration model"){: caption="Figure 1. NSX-V to NSX-T lift–and-shift migration approach" caption-side="bottom"}
+![NSX-V to NSX-T lift–and-shift migration approach](../../images/v2t-diagrams-lift-and-shift.svg "NSX-V to NSX-T migration in {{site.data.keyword.cloud_notm}} is done by following the VMware lift-and-shift migration model"){: caption="Figure 1. NSX-V to NSX-T lift–and-shift migration approach" caption-side="bottom"}
 
 1. Your existing NSX-V based instance was deployed previously and it hosts the current workloads and NSX-V network configurations. Before you start the migration, you need to have a thorough understanding of the environment, the workloads that are deployed on it, and the NSX-V and underlay network configurations.
 2. Before you deploy a new NSX-T based vCenter Server target, analyze your capacity needs. Optimize and size your new hosts and clusters by using the latest hardware options available in {{site.data.keyword.cloud_notm}}. Check the options in the VMware Solutions console, or contact your local Sales representative for more details.

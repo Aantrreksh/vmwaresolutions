@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-07-28"
+lastupdated: "2023-10-03"
 
 keywords: VMware HCX standalone, HCX on-premises, tech specs HCX
 
@@ -28,14 +28,14 @@ A VMware vCenter Server® instance with HCX is limited to three simultaneous con
 
 The HCX components must be installed both on {{site.data.keyword.cloud}} and in your on-premises VMware vSphere® environment. It is recommended that you install the HCX service into your vCenter Server instance before you install the on-premises HCX instance.
 
-For more information, see [Considerations when you install HCX](/docs/vmwaresolutions?topic=vmwaresolutions-hcx_considerations#hcx_considerations-install).
+For more information, see [Considerations when you install HCX](/docs/vmwaresolutions?topic=vmwaresolutions-hcx_ordering#hcx_considerations-install).
 
 ### Notes for HCX installations
 {: #standalone_considerations-install-notes}
 
 * Before the service is installed in your environment, a check is performed against the available capacity of the default cluster in the environment to ensure that the service components can fit.
 * If the capacity check fails, the service is not installed and the service status is set to **Capacity Validation Failed** on the console. In addition, a console message with more details is displayed and you are notified by email.
-* To install the service, you must increase the capacity in your default cluster. Either add more hosts or by free up RAM, CPU, or disk space, and then add the service again in the console. Then, you can delete the existing service in the **Capacity Validation Failed** state by clicking the **Delete** icon ![Delete icon](../../icons/delete.svg "Delete") next to it.
+* To install the service, you must increase the capacity in your default cluster. Either add more hosts or release RAM, CPU, or disk space, and then add the service again in the console. Then, you can delete the existing service in the **Capacity Validation Failed** state by clicking the **Delete** icon ![Delete icon](../../icons/delete.svg "Delete") next to it.
 
 ### IP address requirements
 {: #standalone_considerations-ip}
@@ -46,6 +46,7 @@ For full HCX functions, you need at least five private IP addresses that have in
 {: #standalone_considerations-deploy}
 
 You must complete the following tasks for a successful installation of the on-premises HCX instance:
+
 1. In the {{site.data.keyword.vmwaresolutions_short}} console, order the on-premises HCX instance. For more information, see [Ordering on-premises HCX instances](/docs/vmwaresolutions?topic=vmwaresolutions-standalone_orderingserviceinstances).
 2. In the **HCX Cloud Console**, complete the following steps:
     1. Click the **Administration** tab.
@@ -63,31 +64,11 @@ You must complete the following tasks for a successful installation of the on-pr
     3. Click **URL**, and then enter the URL of the certificate you want to apply. The URL is the **HCX Cloud IP** (``https://<cloud-side public IP>``), which you can find on the HCX service details page in the {{site.data.keyword.vmwaresolutions_short}} console.
     4. Click **APPLY**.
 
-You now completed the basic setup of the on-premises HCX Manager. You can proceed to pair the on-premises HCX site with the cloud-side HCX site.
-
-For more information, see [VMware Hybrid Cloud Extension](https://cloud.vmware.com/vmware-hcx){: external}.
-
-## Considerations before you delete on-premises HCX instances
-{: #standalone_considerations-delete}
-
-Review the following considerations before you delete an HCX instance that was ordered for on-premises use:
-1. In the VMware vSphere Web Client, go to the HCX user interface and check the following items:
-    1. Ensure that no HCX migration or disaster recovery operation is running.
-    2. Ensure that all the extended networks are removed.
-    3. Ensure that all the interconnect components with paired cloud sites are removed.
-
-   You must complete all the previous steps before you proceed to the next step. Otherwise, the activation key for the on-premises HCX instance is canceled. If the activation key is canceled, migrations can't be performed and errors might occur for HCX components.
-   {: important}
-
-2. In the {{site.data.keyword.vmwaresolutions_short}} console, delete the on-premises HCX instance that was ordered to obtain the activation key for the on-premises HCX Manager. Ensure that the deleted instance is no longer available in the console before you proceed to the next step.
-
-   For more information, see [Deleting on-premises HCX instances](/docs/vmwaresolutions?topic=vmwaresolutions-standalone_deletingserviceinstances).
-3. In the VMware vSphere Web Client, delete the on-premises HCX Manager.
+The basic setup of the on-premises HCX Manager is complete. You can proceed to pair the on-premises HCX site with the cloud-side HCX site. For more information, see [VMware HCX documentation](https://docs.vmware.com/en/VMware-HCX/index.html){: external}.
 
 ## Related links
 {: #standalone_considerations-related}
 
 * [Viewing on-premises HCX instances](/docs/vmwaresolutions?topic=vmwaresolutions-standalone_viewingserviceinstances)
 * [Glossary of HCX terms](/docs/vmwaresolutions?topic=vmwaresolutions-hcx_glossary)
-* [VMware Hybrid Cloud Extension documentation](https://cloud.vmware.com/vmware-hcx/resources){: external}
 * [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support)

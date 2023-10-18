@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2021, 2022
+  years:  2021, 2023
 
-lastupdated: "2022-04-27"
+lastupdated: "2023-09-26"
 
 subcollection: vmwaresolutions
 
@@ -22,4 +22,4 @@ These tasks are manual, not automated. For more information, see [Veeam Help Cen
 ## Related links
 {: #veeam-bms-archi-post-deployment-related}
 
-* [Veeam Backup & Replication](https://www.veeam.com/vm-backup-recovery-replication-software.html?ad=menu-products){: external}
+* [Veeam Backup and Replication](https://www.veeam.com/vm-backup-recovery-replication-software.html?ad=menu-products){: external}

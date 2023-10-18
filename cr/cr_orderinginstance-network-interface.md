@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2023
 
-lastupdated: "2023-06-14"
+lastupdated: "2023-09-29"
 
 keywords: cyber recovery, IBM Cloud cyber recovery, cyber recovery network interface, network interface cyber recovery, cyber recovery order instance, order cyber recovery, cyber recovery instances
 
@@ -23,8 +23,8 @@ You must specify the following network interface settings when you order Cyber R
 {: #cr_orderinginstance-net-interface-hostname-prefix}
 
 The hostname prefix must meet the following requirements:
-* Only lowercase alphabetic, numeric, and dash (-) characters are allowed.
-* No consecutive dash characters are allowed.
+* Only lowercase alphabetic, numeric, and hyphen (-) characters are allowed.
+* No consecutive hyphens are allowed.
 * The hostname prefix must start with a lowercase alphabetic character.
 * The hostname prefix must end with a lowercase alphabetic or numeric character.
 * The maximum length of the hostname prefix is 10 characters.
@@ -38,8 +38,8 @@ The hostname prefix applies to all hosts in the instance.
 The domain name must meet the following requirements:
 * The domain name must consist of three or more strings that are separated by a period (.) with a maximum of 50 characters.
 * The first string (NetBIOS name) must start with a lowercase alphabetic character and end with a lowercase alphabetic or numeric character. It must not exceed 15 characters.
-* All strings, except for the last one, can contain only lowercase alphabetic, numeric, and dash (-) characters.
-* No consecutive dash characters are allowed.
+* All strings, except for the last one, can contain only lowercase alphabetic, numeric, and hyphen (-) characters.
+* No consecutive hyphens are allowed.
 * The last string can contain only lowercase alphabetic characters.
 * The length of the last string must be in the range 2 - 24 characters.
 
@@ -69,13 +69,12 @@ For more information about ordering Windows Server 2019 licenses, see [Get start
 You can customize the hostnames prefix individually by toggling the switch on. 
 
 The hostnames prefix must meet the following requirements:
-* Only lowercase alphabetic, numeric, and dash (-) characters are allowed.
-* No consecutive dash characters are allowed.
+* Only lowercase alphabetic, numeric, and hyphen (-) characters are allowed.
+* No consecutive hyphens are allowed.
 * The hostname prefix must start with a lowercase alphabetic character.
 * The hostname prefix must end with a lowercase alphabetic or numeric character.
 
 ## Related links
 {: #cr_orderinginstance-net-interface-related-links}
 
-* [Resource details](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-orderinginstance-resource-details)
-* [Procedure to order a Cyber Resource instance](/docs/vmwaresolutions?topic=vmwaresolutions-cr_orderinginstance-order-procedure)
+* [Procedure to order Cyber Recovery](/docs/vmwaresolutions?topic=vmwaresolutions-cr_orderinginstance-order-procedure)

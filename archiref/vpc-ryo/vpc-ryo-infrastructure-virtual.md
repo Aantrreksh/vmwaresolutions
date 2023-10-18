@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2023
 
-lastupdated: "2023-08-17"
+lastupdated: "2023-09-11"
 
 subcollection: vmwaresolutions
 
@@ -76,7 +76,7 @@ In this reference design, the vSAN traffic traverses between ESXi hosts on a ded
 vSAN does not load balance traffic across uplinks. High availability (HA) for the uplink is provided by the SmartNIC.
 {: note}
 
-For more information about physical NIC connections, see [Networking overview for IBM Cloud Bare Metal Servers on VPC](/vpc?topic=vpc-bare-metal-servers-network&interface=ui).
+For more information about physical NIC connections, see [Networking overview for {{site.data.keyword.cloud_notm}} Bare Metal Servers on VPC](/vpc?topic=vpc-bare-metal-servers-network&interface=ui).
 
 ### vSAN storage policy
 {: #vpc-ryo-infrastructure-virtual-storage-policy}

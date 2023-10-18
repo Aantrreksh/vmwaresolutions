@@ -4,7 +4,7 @@ copyright:
 
   years: 2019, 2023
 
-lastupdated: "2023-07-31"
+lastupdated: "2023-09-11"
 
 subcollection: vmwaresolutions
 
@@ -14,7 +14,7 @@ keywords: vmware solutions responsibilities, customer responsibilities, manageme
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Responsibilities when you use VMware Solutions
+# Understanding your responsibilities when you use VMware Solutions
 {: #understand-responsib}
 
 Learn about the management responsibilities and terms and conditions that you have when you use {{site.data.keyword.vmwaresolutions_full}}. For a high-level view of the service types in {{site.data.keyword.cloud_notm}} and the breakdown of responsibilities between the customer and {{site.data.keyword.IBM_notm}} for each type, see [Shared responsibilities for {{site.data.keyword.cloud_notm}} offerings](/docs/overview?topic=overview-shared-responsibilities).

@@ -4,7 +4,7 @@ copyright:
 
   years:  2023
 
-lastupdated: "2023-02-09"
+lastupdated: "2023-09-11"
 
 subcollection: vmwaresolutions
 
@@ -70,7 +70,7 @@ If you experience any issue during migration, see [Migrating a virtual machine b
 ## Considerations for using NSX-T L2 bridge in migration
 {: #v2t-l2-nsx-t-guide-considerations}
 
-A recommended practice is to use one NSX-T edge node to extend one NSX-V logical switch. This Edge node must be a virtual appliance because the NSX-T edge must be deployed on a IBM Cloud Bare Metal Server that is prepared for NSX-V. Each NSX-T edge node has two N-VDS switches: the first one is connected to the physical network to provide a TEP uplink and the second one is connected to the NSX-V logical switch. The NSX-V logical switches do not support VLAN tagging, so only one logical switch can be connected to the edge node's interface. For this reason, one edge cluster (two edge nodes) is required for each NSX-V logical switch that requires L2 extension.
+A recommended practice is to use one NSX-T edge node to extend one NSX-V logical switch. This Edge node must be a virtual appliance because the NSX-T edge must be deployed on a {{site.data.keyword.cloud_notm}} Bare Metal Server that is prepared for NSX-V. Each NSX-T edge node has two N-VDS switches: the first one is connected to the physical network to provide a TEP uplink and the second one is connected to the NSX-V logical switch. The NSX-V logical switches do not support VLAN tagging, so only one logical switch can be connected to the edge node's interface. For this reason, one edge cluster (two edge nodes) is required for each NSX-V logical switch that requires L2 extension.
 
 The default MAC address of the NSX-T virtual-distributed router needs to be changed so that it does not conflict with the one used by the NSX-V Distributed Logical Router (DLR). The virtual-distributed routers in all the transport nodes of an NSX-T environment use the default global MAC address, which is required even if the NSX-V DLR interface is disabled for that logical switch. For more information, see [Change the MAC Address of NSX-T Virtual Distributed Router](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.1/migration/GUID-538774C2-DE66-4F24-B9B7-537CA2FA87E9.html){: external}.
 

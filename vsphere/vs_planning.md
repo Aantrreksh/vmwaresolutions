@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-08-25"
+lastupdated: "2023-09-13"
 
 keywords: planning vmware vSphere, data center, vSphere data centers
 
@@ -27,7 +27,7 @@ You are responsible for setting up the environment, installing, and configuring 
 
 The account that you are using must meet certain requirements. For more information, see [Signing up for required accounts](/docs/vmwaresolutions?topic=vmwaresolutions-signing_required_accounts).
 
-## IBM Cloud data center availability
+## {{site.data.keyword.cloud_notm}} data center availability
 {: #vs_planning-dc-availability}
 
 The vSphere deployment has strict requirements on the physical infrastructure. Therefore, you can deploy instances only in {{site.data.keyword.cloud_notm}} data centers that meet the requirements. The following {{site.data.keyword.cloud_notm}} data centers are available for vSphere deployment.

@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2023
 
-lastupdated: "2023-07-28"
+lastupdated: "2023-10-05"
 
 keywords: Red Hat OpenShift for VMware, OpenShift configuration, order OpenShift
 
@@ -19,6 +19,13 @@ subcollection: vmwaresolutions
 {: #ocp_ordering}
 
 You can include the {{site.data.keyword.redhat_openshift_full}} for VMware® service with a new VMware vCenter Server® instance or add the service to your existing instance.
+
+## Considerations when you install Red Hat OpenShift for VMware
+{: #ocp_overview-consid-install}
+
+* Before the service is installed in your environment, a check is completed against the available capacity of the target cluster in the environment to ensure that the service components can fit. The storage capacity check applies only to vSAN storage. For NFS clusters, a new NFS data store, dedicated to {{site.data.keyword.redhat_openshift_notm}}, is added.
+* The cluster is associated with the {{site.data.keyword.redhat_notm}} account from the pull secret that is provided.
+* The **Latency Sensitivity** setting of the {{site.data.keyword.redhat_openshift_notm}} cluster VMs can affect the Kubernetes scheduling performance. This value is preset to **Normal**, but you can change it to **High** if you encounter Kubernetes performance issues.
 
 ## Ordering Red Hat OpenShift for VMware for a new instance
 {: #ocp_ordering-new}
@@ -47,16 +54,18 @@ When you order the service, you must provide a {{site.data.keyword.redhat_full}}
 
 Because the {{site.data.keyword.redhat_openshift_notm}} web console runs as an application within {{site.data.keyword.redhat_openshift_notm}}, your system must properly resolve DNS names before you can connect to the {{site.data.keyword.redhat_openshift_notm}} web console. You must complete the following steps before you open the {{site.data.keyword.redhat_openshift_notm}} console:
 
-1. Ensure you are connected to your environment by using the {{site.data.keyword.cloud_notm}} infrastructure VPN.
+1. Ensure that you are connected to your environment by using the {{site.data.keyword.cloud_notm}} infrastructure VPN.
+2. Ensure that the system used to connect to the {{site.data.keyword.redhat_openshift_notm}} web console can properly resolve hostnames in the DNS zone for your VMware environment. For an existing DNS infrastructure, configure the DNS delegation. Therefore, the queries for hostnames within the VMware instance's root zone are handled by the AD DNS server that is running within your VMware environment.
 
-2. Ensure the system that you use to connect to the {{site.data.keyword.redhat_openshift_notm}} web console can properly resolve hostnames in the DNS zone for your VMware environment. For an existing DNS infrastructure, configure the DNS delegation. Therefore, the queries for hostnames within the VMware instance's root zone are handled by the AD DNS server that is running within your VMware environment.
-
-Alternately, you can configure your local `hosts` file with the following entries so you can access the {{site.data.keyword.redhat_openshift_notm}} web console. Use the following details for the example.
-* Replace APPLICATION_IP with the {{site.data.keyword.redhat_openshift_notm}} application IP address shown in the {{site.data.keyword.redhat_openshift_notm}} service details page.
-* Replace ROOTDOMAIN with the root domain shown on the Summary page for the vCenter Server instance.
+Alternately, you can configure your local `hosts` file with the following entries so you can access the {{site.data.keyword.redhat_openshift_notm}} web console. Use the following example:
 
    `APPLICATION_IP  console-openshift-console.apps.ocp.ROOTDOMAIN`
+
    `APPLICATION_IP  oauth-openshift.apps.ocp.ROOTDOMAIN`
+
+In the previous example:
+* Replace `APPLICATION_IP` with the {{site.data.keyword.redhat_openshift_notm}} application IP address shown in the {{site.data.keyword.redhat_openshift_notm}} service details page.
+* Replace `ROOTDOMAIN` with the root domain shown on the Summary page for the vCenter Server instance.
 
 ## Related links
 {: #ocp_ordering-related}

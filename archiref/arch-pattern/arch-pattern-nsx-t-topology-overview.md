@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2023
 
-lastupdated: "2023-07-17"
+lastupdated: "2023-10-17"
 
 subcollection: vmwaresolutions
 
@@ -36,7 +36,7 @@ The following steps summarize a standard deployment.
 5. The automation deploys three VMware NSX-T™ managers and a cluster is formed which uses NSX-T virtual IP for High Availability. Your NSX-T managers have an IP address from the {{site.data.keyword.cloud_notm}} classic infrastructure provided `10/8` address space.
 6. The automation deploys an Active Directory for authentication and name resolution. You can select between a single Windows virtual server instance in {{site.data.keyword.cloud_notm}} IaaS hypervisor or two highly available dedicated Windows Server VMs (with bring your own license) on the VMware management cluster.
 7. The automation deploys four edge nodes in your deployment and forms two NSX-T edge clusters - Services edge cluster and Workload edge cluster.
-8. The gateway cluster is used to host a services Tier 0 Gateway, which provides network connectivity services for your management components.
+8. The services edge cluster is used to host services Tier 0 Gateway, which provides network connectivity services for your management components.
 9. Workload edge cluster hosts workload Tier 0 and Tier 1 Gateways for your workloads. A predefined example overlay network topology with one Tier 1 Gateway is provided by the automation. You can customize it for your own requirements by changing or deleting example segments or by adding new segments.
 
 ## VMware vCenter Server clusters
@@ -53,7 +53,7 @@ This clustering can be summarized as follows:
 3. You can expand the solution after initial deployment, by adding more hosts to existing clusters, by adding new clusters or by adding NFS storage to your instance.
 4. Each cluster might have different bare metal server hardware options and different storage options.
 5. The automation deploys four edge nodes in your deployment and forms two NSX-T edge clusters - Services edge cluster and Workload edge cluster.
-6. Gateway cluster is used to host services Tier 0 Gateway, which provides network connectivity services for your management components.
+6. The services edge cluster is used to host services Tier 0 Gateway, which provides network connectivity services for your management components.
 7. Workload edge cluster hosts workload Tier 0 and Tier 1 Gateways for your workloads. A predefined example overlay network topology with one Tier 1 Gateway is provided by automation. You can customize it for your own needs by changing or deleting example segments or by adding new segments.
 
 The gateway cluster must not be mixed with the NSX-T edge cluster, which consists of VMware NSX-T™ edge transport nodes. The gateway cluster provides compute capacity for hosting Juniper vSRX, Fortinet FortiGate, or other third-party routers or firewalls. The VLAN routing can be controlled by [gateway appliance configuration](/docs/gateway-appliance?topic=gateway-appliance-managing-vlans-and-gateway-appliances) though {{site.data.keyword.cloud_notm}} Classic portal.

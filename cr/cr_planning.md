@@ -24,7 +24,7 @@ Review the following requirements before you order your Cyber Recovery instance.
 
 The account that you are using must meet certain requirements. For more information, see [Signing up for required accounts](/docs/vmwaresolutions?topic=vmwaresolutions-signing_required_accounts).
 
-## IBM Cloud data center availability
+## {{site.data.keyword.cloud_notm}} data center availability
 {: #cr_planning-dc-availability}
 
 The Cyber Recovery deployment has strict requirements on the physical infrastructure. Therefore, you can deploy instances only in {{site.data.keyword.cloud_notm}} data centers that meet the requirements.

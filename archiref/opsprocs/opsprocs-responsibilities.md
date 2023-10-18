@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-08-21"
+lastupdated: "2023-09-08"
 
 subcollection: vmwaresolutions
 
@@ -36,7 +36,7 @@ Day 2 responsibilities include the following items:
 * VMware software upgrades - You must upgrade existing vCenter Server instances to continue to benefit from the automation. For more information, see [Upgrading vCenter Server vSphere software from vSphere 6.5 or 6.7 to 7.0](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vsphere_70_upgrade).
 * IBM provides notification of scheduled maintenance at [Planned maintenance](https://cloud.ibm.com/status?selected=maintenance).
 * Security - You are responsible for ensuring adequate protection of your deployed content including, but not limited to the following items. VM operating system patching, application security fixes, data encryption, access controls, roles and permissions granted to users, security of the virtual network components including distributive or gateway firewall rules. You are responsible for the detection, classification, and remediation of all security events within your deployed vCenter Server instances and the associated VMs, operating systems, applications, data, or content. In addition, you are responsible for any compliance or certification program in which you are required to participate. For more information about the automated deployment of services to assist with security responsibilities, see [Add-on services](/docs/vmwaresolutions?topic=vmwaresolutions-getting-started#getting-started-add-on-services).
-* Encryption - You are responsible for determining encryption requirements and implementing these requirements. Use encryption options such as [Entrust DataControl™](/docs/vmwaresolutions?topic=vmwaresolutions-entrust-dc_considerations), and vSphere or vSAN encryption with [KMIP for VMware](/docs/vmwaresolutions?topic=vmwaresolutions-kmip_standalone_considerations).
+* Encryption - You are responsible for determining encryption requirements and implementing these requirements. Use encryption options such as [Entrust DataControl](/docs/vmwaresolutions?topic=vmwaresolutions-entrust-dc_considerations), and vSphere or vSAN encryption with [KMIP for VMware](/docs/vmwaresolutions?topic=vmwaresolutions-kmip_standalone_considerations).
 * High availability - You are responsible to design and deploy your workload in a way that achieves your high availability requirements including anti-affinity rules and load balancing.
 * The [Cloud status page](/docs/get-support?topic=get-support-viewing-cloud-status) is the central place to find unplanned incidents, planned maintenance, announcements, and security bulletin notifications about key events that affect the {{site.data.keyword.cloud_notm}} platform, infrastructure, and major services.
 

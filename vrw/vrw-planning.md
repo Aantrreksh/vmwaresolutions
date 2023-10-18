@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2023
 
-lastupdated: "2023-07-31"
+lastupdated: "2023-09-13"
 
 keywords: planning vmware regulated workloads, data center vmware regulated workloads, vmware regulated workloads data centers
 
@@ -24,7 +24,7 @@ Review the following requirements before you order your VMware® Regulated Workl
 
 The account that you are using must meet certain requirements. For more information, see [Signing up for required accounts](/docs/vmwaresolutions?topic=vmwaresolutions-signing_required_accounts).
 
-## IBM Cloud data center availability
+## {{site.data.keyword.cloud_notm}} data center availability
 {: #vrw-planning-dc-availability}
 
 The VMware Regulated Workloads deployment has strict requirements on the physical infrastructure. Therefore, you can deploy instances only in {{site.data.keyword.cloud_notm}} data centers that meet the requirements.

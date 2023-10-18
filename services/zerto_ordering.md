@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-06-09"
+lastupdated: "2023-10-06"
 
 keywords: Zerto, Zerto replication billing, order Zerto
 
@@ -20,13 +20,13 @@ subcollection: vmwaresolutions
 
 You can include the Zerto service with a new VMware vCenter Server® instance or add the service to your existing instance.
 
-Zerto v9.5u1 does not support vSphere 6.5 and 6.7. However, you can still order stand-alone licenses for existing vSphere 6.x instances.
+Zerto v9.5u1 does not support VMware vSphere 6.5 and 6.7. However, you can still order stand-alone licenses for existing vSphere 6.x instances.
 {: important}
 
 ## Billing for Zerto replication
 {: #zerto_ordering-billing}
 
-VMs that are replicated by using Zerto are metered by Zerto and {{site.data.keyword.cloud}}. Your bill for this usage is charged through an {{site.data.keyword.cloud_notm}} billable account instead of an {{site.data.keyword.cloud_notm}} infrastructure account.
+VMs (virtual machines) that are replicated by using Zerto are metered by Zerto and {{site.data.keyword.cloud}}. Your bill for this usage is charged through an {{site.data.keyword.cloud_notm}} billable account instead of an {{site.data.keyword.cloud_notm}} infrastructure account.
 
 Before you order Zerto, ensure that your {{site.data.keyword.cloud_notm}} account is a billable account, and that it is linked to the same {{site.data.keyword.cloud_notm}} infrastructure account where your instance is deployed.
 
@@ -35,7 +35,7 @@ Before you order Zerto, ensure that your {{site.data.keyword.cloud_notm}} accoun
 
 To view your Zerto usage charges, follow these steps:
 
-1. Go to the [IBM Cloud Billing and Usage](https://cloud.ibm.com/billing/usage) page.
+1. Go to the [{{site.data.keyword.cloud_notm}} Billing and Usage](https://cloud.ibm.com/billing/usage) page.
 2. From the **Filter by group** list, select **VMware Solutions**.
 
 ## Ordering Zerto for a new instance
@@ -70,7 +70,6 @@ For more information about Zerto Call Home, see [How to configure Zerto Reportin
 
 * [Zerto overview](/docs/vmwaresolutions?topic=vmwaresolutions-addingzertodr)
 * [Managing Zerto](/docs/vmwaresolutions?topic=vmwaresolutions-managingzertodr)
-* [Ordering Zerto licenses](/docs/vmwaresolutions?topic=vmwaresolutions-zerto_ordering_licenses)
-* [Managing Zerto licenses](/docs/vmwaresolutions?topic=vmwaresolutions-zerto_managing_licenses)
-* [Zerto](https://www.zerto.com){: external}
+* [Ordering Zerto stand-alone licenses](/docs/vmwaresolutions?topic=vmwaresolutions-zerto_ordering_licenses)
+* [Managing Zerto stand-alone licenses](/docs/vmwaresolutions?topic=vmwaresolutions-zerto_managing_licenses)
 * [Zerto product documentation](https://www.zerto.com/myzerto/technical-documentation/){: external}

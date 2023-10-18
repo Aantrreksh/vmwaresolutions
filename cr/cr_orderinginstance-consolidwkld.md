@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2023
 
-lastupdated: "2023-08-01"
+lastupdated: "2023-10-02"
 
 keywords: cyber recovery, cyber recovery consolidated cluster, cyber recovery consolidated settings, cyber recovery instances
 
@@ -75,7 +75,7 @@ Select either **Cascade Lake** or **SAP-certified Cascade Lake**.
 
 {{site.data.content.number-of-baremetal-servers}}
 
-When you size the capacity of your servers, consider your current requirements, and include extra capacity to accommodate anticipated growth. For more information see [Exporting VMware inventory](/docs/vmwaresolutions?topic=vmwaresolutions-vmware-inventory-export).
+When you size the capacity of your servers, consider your current requirements, and include extra capacity to accommodate anticipated growth. For more information, see [Exporting VMware inventory](/docs/vmwaresolutions?topic=vmwaresolutions-vmware-inventory-export).
 
 ## Storage
 {: #cr_orderinginstance-consolidwkld-storage-settings}

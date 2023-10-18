@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2022-08-18"
+lastupdated: "2022-10-11"
 
 keywords: KMIP for VMware, KMIP stand-alone, tech specs KMIP
 
@@ -72,7 +72,7 @@ Before you install KMIP for VMware, complete the following tasks and review the 
    * [Importing root keys](/docs/hs-crypto?topic=hs-crypto-import-root-keys)
    * [Creating root keys](/docs/hs-crypto/get-started?topic=hs-crypto-create-root-keys)
    * [Creating import tokens](/docs/hs-crypto?topic=hs-crypto-create-import-tokens)
-   * [IBM Cloud Hyper Protect Crypto Services KMS API](/apidocs/hs-crypto)
+   * [{{site.data.keyword.cloud_notm}} Hyper Protect Crypto Services KMS API](/apidocs/hs-crypto)
 
 4. Ensure that your {{site.data.keyword.cloud_notm}} infrastructure account is enabled for Virtual Routing and Forwarding (VRF) and for connectivity to service endpoints. 
 
@@ -80,7 +80,8 @@ Before you install KMIP for VMware, complete the following tasks and review the 
    * [Virtual Routing and Forwarding on {{site.data.keyword.cloud_notm}}](/docs/direct-link?topic=direct-link-overview-of-virtual-routing-and-forwarding-vrf-on-ibm-cloud)
    * [Enabling service endpoints](/docs/account?topic=account-vrf-service-endpoint#service-endpoint)
 
-5. Only private connection is supported. As a result, you don't need to configure firewall or SNAT rules in vCenter Server for the network connectivity from vCenter Server to the endpoint of the KMIP for VMware instance. For more information, see [KMIP for VMware solution architecture](/docs/vmwaresolutions?topic=vmwaresolutions-kmip-overview).
+Only private connection is supported. As a result, you don't need to configure firewall or SNAT rules in vCenter Server for the network connectivity from vCenter Server to the endpoint of the KMIP for VMware instance. For more information, see [KMIP for VMware solution architecture](/docs/vmwaresolutions?topic=vmwaresolutions-kmip-overview).
+{: note}
 
 ## Related links
 {: #kmip_standalone_considerations-related}

@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-07-28"
+lastupdated: "2023-09-26"
 
 keywords: Caveonix RiskForesight, Caveonix configuration, order Caveonix
 
@@ -21,7 +21,7 @@ subcollection: vmwaresolutions
 You can include the Caveonix RiskForesight™ service with a new VMware vCenter Server® instance or add the service to your existing instance. 
 
 * For vCenter Servers instances, Caveonix RiskForesight generates a license for the number of VMs (virtual machines) that you select.
-* For VMware® Regulated Workloads and VMware Security and Compliance Readiness Bundle instances, Caveonix RiskForesight offers per host licensing. You are charged for every host in the instance, which includes management, workload, and gateway clusters.
+* For VMware® Regulated Workloads and Security and Compliance Readiness Bundle instances, Caveonix RiskForesight offers per host licensing. You are charged for every host in the instance, which includes management, workload, and gateway clusters.
 
 ## Ordering Caveonix RiskForesight for a new instance
 {: #caveonix_ordering-new}
@@ -42,31 +42,25 @@ You can include the Caveonix RiskForesight™ service with a new VMware vCenter 
 
 When you order the Caveonix RiskForesight service, provide the following settings.
 
+The configuration options do not apply to VMware Regulated Workloads and Security and Compliance Readiness Bundle instances.
+{: note}
+
 ### License name
 {: #caveonix_ordering-config-license-name}
-
-The license name does not apply to VMware Regulated Workloads or Security and Compliance Readiness Bundle instances.
-{: note}
 
 Specify a name for this license. The name must be unique across all Caveonix service instances and all instances in the {{site.data.keyword.cloud}} account.
 
 ### License notes
 {: #caveonix_ordering-config-license-notes}
 
-The license notes do not apply to VMware Regulated Workloads or Security and Compliance Readiness Bundle instances.
-{: note}
-
 Enter the notes for the service instance. You can edit the notes later on the license details page.
 
 ### Number of VMs to license
 {: #caveonix_ordering-config-vms}
 
-The number of VMs to license does not apply to VMware Regulated Workloads or Security and Compliance Readiness Bundle instances.
-{: note}
-
 Specify the number of VMs to license, in increments of 10. At least 10 VMs are required for license management.
 
-After you order the Caveonix RiskForesight service, if you want more VMs licensed than you specified initially, complete the following steps:
+After you order Caveonix RiskForesight, if you want more VMs licensed than you specified initially, complete the following steps:
 
 1. Replace your Caveonix RiskForesight license by ordering a larger license.
 2. Copy the license to your Caveonix RiskForesight console.

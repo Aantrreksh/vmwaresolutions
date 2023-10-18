@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2023
 
-lastupdated: "2023-02-20"
+lastupdated: "2023-10-18"
 
 keywords: end of support notice, vSphere 6.5 deployment, end of support vSphere 6.5, vSphere 6.5 deprecated, vSphere 6.5 support
 
@@ -18,7 +18,7 @@ subcollection: vmwaresolutions
 # End of Support for vSphere 6.5 instance deployments
 {: #eos-vsphere65}
 
-{{site.data.keyword.cloud_notm}} support for ordering all update levels of VMware vSphere® 6.5 ended on 10 October 2021. Beginning on this date, you can no longer order new VMware vCenter Server® instances with vSphere 6.5. Your existing vCenter Server instances with vSphere 6.5 become read–only in the VMware Solutions console.
+{{site.data.keyword.cloud_notm}} support for ordering all update levels of VMware vSphere® 6.5 ended on 10 October 2021. After that date, you can no longer order new VMware vCenter Server® instances with vSphere 6.5. Your existing vCenter Server instances with vSphere 6.5 are read–only in the VMware Solutions console.
 
 For more information about upgrading to vSphere 7, see [Upgrading vCenter Server vSphere software from vSphere 6.5 or 6.7 to 7.0](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vsphere_70_upgrade) or [Upgrading VMware vSphere software from vSphere 6.5 or 6.7 to 7.0](/docs/vmwaresolutions?topic=vmwaresolutions-vs_vsphere_70_upgrade).
 
@@ -35,7 +35,7 @@ vSphere 7 introduces the following features:
 
 vSphere 7 is also the exclusive basis for VMware Regulated Workloads.
 
-For more information about end of life procedures for {{site.data.keyword.cloud_notm}} infrastructure services and Third–Party software products, see [Lifecycle policy for IBM Cloud products](https://www.ibm.com/cloud/cloud-prod-life). If you have any questions or need assistance, email clouddigitalsales@us.ibm.com or open a support ticket in the VMware Solutions console.
+For more information about end of life procedures for {{site.data.keyword.cloud_notm}} infrastructure services and Third–Party software products, see [Lifecycle policy for {{site.data.keyword.cloud_notm}} products](https://www.ibm.com/cloud/cloud-prod-life). If you have any questions or need assistance, email clouddigitalsales@us.ibm.com or open a support ticket in the VMware Solutions console.
 
 ## Related links
 {: #eos-vsphere65-related}

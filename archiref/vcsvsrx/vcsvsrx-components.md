@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2019, 2022
+  years:  2019, 2023
 
-lastupdated: "2022-12-29"
+lastupdated: "2023-09-25"
 
 subcollection: vmwaresolutions
 
@@ -48,7 +48,7 @@ A redundant Ethernet interface inherits its failover properties from the redunda
 
 `st0` - Secure Tunnel interface, which is used for routing traffic in VPNs. For every new VPN destination, use a different `st0`. Don't use `st1`, `st2`, and so on.
 
-For more information, see [Interface naming overview](https://www.juniper.net/documentation/en_US/junos/topics/concept/interfaces-interface-naming-overview.html).{: external}
+For more information, see [Interface naming overview](https://www.juniper.net/documentation/en_US/junos/topics/concept/interfaces-interface-naming-overview.html){: external}.
 
 ## Related links
 {: #vcsvsrx-components-related}

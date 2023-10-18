@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-08-21"
+lastupdated: "2023-09-11"
 
 keywords: view vCenter Server, view instance, view instance details, vmware multizone, vcenter server multizone, view vCenter Server multizone, view multizone, view multizone instance details
 
@@ -69,7 +69,7 @@ To view the property details of an instance, complete the following steps.
 | Current version | The current version of {{site.data.keyword.vmwaresolutions_short}}. |
 | vCenter version | The vCenter Server version. \n \n **Note:** The vCenter Server versions that are displayed on the {{site.data.keyword.vmwaresolutions_short}} console and the VMware vSphere® Web Client are slightly different. Both are correct. |
 | VMware vSphere version[^vsphere] | The version of VMware vSphere. |
-| VMware NSX® networking solution[^NSX] | Either NSX-T or NSX-V. |
+| VMware NSX® networking solution[^NSX] | * NSX for instances provisioned with NSX version 4.0 or later. \n * NSX-T or NSX-V for instances provisioned with previous versions of NSX, earlier than version 4.0. |
 | NSX for vSphere | The VMware NSX for vSphere product version. |
 | _VMware component_ license | If you selected to use your own VMware® license for any of the VMware components on the **Licensing** page when you ordered the instance, the VMware component name and the license key that you entered for the component are displayed. \n \n Examples of VMware component licenses can include **NSX license**, **vCenter Server license**, and **vSAN license**. |
 | NSX license edition | The version and edition of the VMware NSX license. |
@@ -220,7 +220,7 @@ Before you click **vCenter console** on the instance summary page to go to the v
 
 Review the following topics for information to help you complete the login instructions:
 *  For the requirements and necessary steps before you access the vSphere Web Client, see [Timeout reached while connecting to the vSphere Web Client](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_timeout_vc_console).
-*  For a list of access points to log in to the {{site.data.keyword.cloud_notm}} infrastructure Private Network by using VPN, see [Getting started with IBM Cloud Virtual Private Networking](/docs/iaas-vpn?topic=iaas-vpn-getting-started).
+*  For a list of access points to log in to the {{site.data.keyword.cloud_notm}} infrastructure Private Network by using VPN, see [Getting started with {{site.data.keyword.cloud_notm}} Virtual Private Networking](/docs/iaas-vpn?topic=iaas-vpn-getting-started).
 *  If you have problems when you deploy an OVF (Open Virtualization Format) file by using the vSphere Web Client, see [Deploying an OVF file using the vSphere Web Client](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_deploy_ovf).
 
 ## Related links

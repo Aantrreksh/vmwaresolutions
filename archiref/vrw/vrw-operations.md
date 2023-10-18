@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2023
 
-lastupdated: "2023-07-10"
+lastupdated: "2023-09-11"
 
 subcollection: vmwaresolutions
 
@@ -19,7 +19,7 @@ subcollection: vmwaresolutions
 {{site.data.keyword.cloud}} for VMware® Regulated Workloads is delivered as a clean environment. Extensive work was done to identify and remediate common errors and warnings that are often found in a typical vSphere deployment. IBM and VMware® best practices, which are combined with standard and customized templates for VMware Aria® Operations™, ensure that all {{site.data.keyword.cloud_notm}} for VMware Regulated Workloads configurations are deployed as clean as possible, ready for onboarding. Caveonix RiskForesight is used to scan the environment for compliance with industry and government standards such as NIST, PCI, and more. RiskForesight is continually monitoring the{{site.data.keyword.cloud_notm}} for VMware Regulated Workloads for adherence to compliance standards. RiskForesight provides on-demand compliance posture reporting and at-a-glance compliance status.
 The operational tools support the customer in compliance with current standards and assist them in rapidly responding to a changing compliance landscape.
 
-![IBM Cloud for VMware Regulated Workloads operational tools overview](../../images/vrw-v2-opstools.svg "IBM Cloud for VMware Regulated Workloads operational tools overview"){: caption="Figure 1. IBM Cloud for VMware Regulated Workloads operational tools overview" caption-side="bottom"}
+![{{site.data.keyword.cloud_notm}} for VMware Regulated Workloads operational tools overview](../../images/vrw-v2-opstools.svg "VMware Regulated Workloads operational tools overview"){: caption="Figure 1. VMware Regulated Workloads operational tools overview" caption-side="bottom"}
 
 ## Management cluster
 {: #vrw-operations-management}
@@ -65,6 +65,6 @@ No operational tools are deployed to the workload cluster. The workload cluster 
 ## Related links
 {: #vrw-operations-related}
 
-* [IBM Cloud compliance programs](https://www.ibm.com/cloud/compliance)
+* [{{site.data.keyword.cloud_notm}} compliance programs](https://www.ibm.com/cloud/compliance)
 * [VMware Aria Operations and VMware Aria Operations for Logs](/docs/vmwaresolutions?topic=vmwaresolutions-vrops_overview)
 * [Caveonix RiskForesight](/docs/vmwaresolutions?topic=vmwaresolutions-caveonix_considerations)

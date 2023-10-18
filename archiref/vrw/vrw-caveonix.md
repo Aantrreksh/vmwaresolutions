@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2023
 
-lastupdated: "2023-06-19"
+lastupdated: "2023-09-11"
 
 subcollection: vmwaresolutions
 
@@ -29,7 +29,7 @@ The RMCP enables the SaaS provider to maintain continuous and real-time visibili
 
 RiskForesight’s unique Risk Management Control Plane (RMCP) interface slashes or eliminates needless security blind spots and compliance gaps, restoring risk visibility and confidence in compliant deployments.
 
-![IBM Cloud for VMware Regulated Workloads Caveonix](../../images/caveonix-app-components.svg "Caveonix components"){: caption="Figure 2. Caveonix components" caption-side="bottom"}
+![{{site.data.keyword.cloud_notm}} for VMware Regulated Workloads Caveonix](../../images/caveonix-app-components.svg "Caveonix components"){: caption="Figure 2. Caveonix components" caption-side="bottom"}
 
 ## Gateway cluster
 {: #vrw-caveonix-edge}
@@ -46,5 +46,5 @@ Caveonix RiskForesight can optionally monitor compliance of SaaS consumer worklo
 ## Related links
 {: #vrw-caveonix-related}
 
-* [IBM Cloud compliance programs](https://www.ibm.com/cloud/compliance)
+* [{{site.data.keyword.cloud_notm}} compliance programs](https://www.ibm.com/cloud/compliance)
 * [Caveonix RiskForesight](/docs/vmwaresolutions?topic=vmwaresolutions-caveonix_considerations)

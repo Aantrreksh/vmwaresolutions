@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-08-21"
+lastupdated: "2023-09-11"
 
 subcollection: vmwaresolutions
 
@@ -20,7 +20,7 @@ subcollection: vmwaresolutions
 
 Review the following considerations to understand your responsibilities for managing and operating the instance before and after it is deployed.
 
-## IBM Cloud account access
+## {{site.data.keyword.cloud_notm}} account access
 {: #solution_considerations-acct-access}
 
 To manage access to your {{site.data.keyword.cloud_notm}} account, permit other members of your team to access your instance in the {{site.data.keyword.vmwaresolutions_short}} console. For more information, see [Inviting users to access services and resources](/docs/vmwaresolutions?topic=vmwaresolutions-useraccount#useraccount-iamuserinv).
@@ -42,7 +42,7 @@ Complete the following steps to manage access to your {{site.data.keyword.cloud_
 - Access instance management endpoints by using the [{{site.data.keyword.cloud_notm}} VPN](/docs/iaas-vpn?topic=iaas-vpn-getting-started) or your [{{site.data.keyword.cloud_notm}} Direct Link connection](https://www.ibm.com/cloud/direct-link).
 - Devise a strategy for public network connectivity from within your instance. Your options include the sample customer VMware NSX Edge™ Services Gateway (ESG), gateway appliances such as Vyatta and FortiGate, and proxy servers deployed in the {{site.data.keyword.cloud_notm}} network or on your own network accessed through Direct Link.
 - Plan whether to deploy your workload on {{site.data.keyword.cloud_notm}} VLANs with [{{site.data.keyword.cloud_notm}} portable IP addresses](/docs/subnets?topic=subnets-getting-started) or [on NSX-T logical switches using your own IP addresses](/docs/vmwaresolutions?topic=vmwaresolutions-nsx-t-design). When you use NSX software-defined networking (SDN), it gives you the greatest flexibility to manage and secure your workload network in the {{site.data.keyword.cloud_notm}}.
-- Use NSX ESGs, [IBM Cloud Vyatta](https://cloud.ibm.com/catalog/infrastructure/virtual-router-appliance), and Direct Link peering to plan for connectivity to workloads (Network Address Translation, Virtual Private Network, routing).
+- Use NSX ESGs, [{{site.data.keyword.cloud_notm}} Vyatta](https://cloud.ibm.com/catalog/infrastructure/virtual-router-appliance), and Direct Link peering to plan for connectivity to workloads (Network Address Translation, Virtual Private Network, routing).
 - If you implement Cross-vCenter NSX, ensure that your local segment ID ranges are not overlapping before you deploy any local workloads.
 
 ## Security planning and hardening
@@ -53,7 +53,7 @@ You are responsible for securing, encrypting, and monitoring your VMware instanc
 - Change all passwords displayed in the {{site.data.keyword.vmwaresolutions_short}} console and use your own password management system. IBM retains distinct user IDs needed for ongoing automation and support.
 - Review password policies, such as complexity and expiration period, across all components.
 - Review encryption settings across all components.
-- Plan and implement appropriate physical or virtual firewall solutions, such as NSX Distributed Firewall (DFW), NSX ESGs, [FortiGate Virtual Appliance](/docs/vmwaresolutions?topic=vmwaresolutions-fortinetvm_considerations), and [IBM Cloud Vyatta](https://cloud.ibm.com/catalog/infrastructure/virtual-router-appliance).
+- Plan and implement appropriate physical or virtual firewall solutions, such as NSX Distributed Firewall (DFW), NSX ESGs, [FortiGate Virtual Appliance](/docs/vmwaresolutions?topic=vmwaresolutions-fortinetvm_considerations), and [{{site.data.keyword.cloud_notm}} Vyatta](https://cloud.ibm.com/catalog/infrastructure/virtual-router-appliance).
 - Plan and implement appropriate application load balancing and security solutions, such as [F5 BIG-IP](/docs/vmwaresolutions?topic=vmwaresolutions-f5_considerations).
 - Plan and implement appropriate security information and event management (SIEM) solutions, such as [IBM QRadar](https://www.ibm.com/us-en/marketplace/hosted-security-intelligence).
 - Plan and implement appropriate vulnerability scanning.
@@ -94,7 +94,7 @@ Complete the following steps to ensure proper planning for software maintenance.
 Ensure to plan for and implement the following solutions for monitoring your instance and instance components.
 - A logging server that includes log forwarding or collection for all instance components and adequate log retention. The [VMware Aria Operations and VMware Aria Operations for Logs](/docs/vmwaresolutions?topic=vmwaresolutions-vrops_overview) offering can help you with log management and visibility.
 - An alert infrastructure, including configuration of the SMTP server and short message service (SMS) gateway, as needed.
-- Proactive monitoring of hosts, drives, management software, and network, including vSAN monitoring if applicable. The [VMware Aria Operations on IBM Cloud](/docs/vmwaresolutions?topic=vmwaresolutions-vrops_overview) offering can help you operate and monitor the performance, health, and capacity of your VMware environment.
+- Proactive monitoring of hosts, drives, management software, and network, including vSAN monitoring if applicable. The [VMware Aria Operations on {{site.data.keyword.cloud_notm}}](/docs/vmwaresolutions?topic=vmwaresolutions-vrops_overview) offering can help you operate and monitor the performance, health, and capacity of your VMware environment.
 - Capacity monitoring and planning. You can [add clusters](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingclusters), [remove clusters](/docs/vmwaresolutions?topic=vmwaresolutions-vc_deletingclusters), [add hosts](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservers), and [remove hosts](/docs/vmwaresolutions?topic=vmwaresolutions-vc_removingservers) for your instance from the {{site.data.keyword.vmwaresolutions_short}} console.
 - Monitoring your backup infrastructure and backup jobs.
 - vSphere Distributed Switch Health Check is enabled by default and can generate a significant number of MAC addresses for testing team policy, MTU size, and VLAN configuration, which results in extra network traffic. Disable this health check and re-enable only as needed for network troubleshooting. For more information, see [vSphere Distributed Switch Health Check](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.networking.doc/GUID-4A6C1E1C-8577-4AE6-8459-EEB942779A82.html){: external}.

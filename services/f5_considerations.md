@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-08-22"
+lastupdated: "2023-09-26"
 
 keywords: F5 BIG-IP, F5 install, tech specs F5
 
@@ -15,16 +15,16 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# F5 BIG-IP on IBM Cloud overview
+# F5 BIG-IP on {{site.data.keyword.cloud_notm}} overview
 {: #f5_considerations}
 
-F5 BIG-IP® on {{site.data.keyword.cloud_notm}}(F5 BIG-IP Virtual Edition) provides:
+F5 BIG-IP® on {{site.data.keyword.cloud}}(F5 BIG-IP Virtual Edition) provides:
 
 * Intelligent L4-L7 load balancing and traffic management services at a local and global scale.
 * Robust network and web application firewall protection.
 * Secure and federated application access.
 
-F5 BIG-IP on IBM Cloud is a non-IBM product that is offered under terms and conditions from F5 Networks, not IBM.
+F5 BIG-IP on {{site.data.keyword.cloud_notm}} is a non-IBM product that is offered under terms and conditions from F5 Networks, not IBM.
 
 You can install more than one instance of this service as needed.
 {: shortdesc}
@@ -112,13 +112,14 @@ Due to these requirements, you must plan for the space that is needed for F5 BIG
 ## F5 BIG-IP order example
 {: #f5_considerations-example}
 
-You order a VMware® vCenter Server **Small** instance with two ESXi servers with the following configuration: 16 cores at 2.10 GHz each with 128 GB RAM. For F5 BIG-IP, you select the **Best** license model and a value of 5 Gbps for **Maximum Bandwidth**.
+You can order a VMware® vCenter Server **Small** instance with two ESXi servers with the following configuration: 16 cores at 2.10 GHz each with 128 GB RAM. For F5 BIG-IP, you select the **Best** license model and a value of 5 Gbps for **Maximum Bandwidth**.
 
-In this case, a single BIG-IP VM requires, on each server:
+In this case, a single BIG-IP VM requires on each server:
+
 * 2.1 GHz * 8 CPUs = 16.8 GHz of CPU
 * 16 GB RAM
 
-In total, that is 33.6 GHz CPU and 32 GB RAM for two BIG-IP VMs.
+In total that is 33.6 GHz CPU and 32 GB RAM for two BIG-IP VMs.
 
 Each ESXi server has a capacity of 16 cores * 2.1 GHz = 33.6 GHz. Therefore, the first two requirements are met if both servers are active and there is at least 16.8 GHz of CPU and 16 GB RAM available on each server.
 
@@ -129,15 +130,6 @@ However, by default, vSphere HA reserves 50% of CPU and RAM for failover on vCen
 Other workloads are also present on the ESXi servers, for example, VMware vCenter Server, VMware NSX® Controller™, and VMware NSX Edge™. Because these resources are used, the third requirement cannot be satisfied because 33.6 GHz of CPU and 32 GB RAM are needed for the two BIG-IP VMs.
 
 In this case, the F5 BIG-IP installation might fail, unless at least one ESXi server is added to the environment and vSphere HA failover reservations are updated to ensure that enough resources are available for two BIG-IP VE VMs. If more resources are needed to run the F5 BIG-IP service, you can add more ESXi servers before you install F5 BIG-IP.
-
-## Considerations when you delete F5 BIG-IP
-{: #f5_considerations-remove}
-
-Review the following considerations before you delete the service:
-
-* Before you delete the F5 BIG-IP service, ensure that the existing BIG-IP VE configuration is removed correctly. Specifically, network traffic must be routed around BIG-IP VE instead of through BIG-IP VE. Otherwise, the existing data traffic from your environment might be impacted.
-
-* If you installed the F5 BIG-IP service before VMware Solutions v4.0 and then deleted that service, you must manually remove the DNS entries. For more information, see [Manually removing the DNS entries](/docs/vmwaresolutions?topic=vmwaresolutions-vc_deletingservices#vc_deletingservices-DNS-entries).
 
 ## Related links
 {: #f5_considerations-related}

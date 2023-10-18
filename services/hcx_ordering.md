@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-08-03"
+lastupdated: "2023-10-03"
 
 keywords: VMware HCX deployment, HCX configuration, order HCX
 
@@ -19,6 +19,34 @@ subcollection: vmwaresolutions
 {: #hcx_ordering}
 
 You can include the VMware HCX™ service with a new VMware vCenter Server® instance or add the service to your existing instance.
+
+## Considerations when you install HCX
+{: #hcx_considerations-install}
+
+Review the following considerations before you install HCX.
+
+### Requirements on the number of ESXi servers
+{: #hcx_considerations-esxi-servers}
+
+The HCX service mesh target cluster cannot have more than 51 VMware ESXi servers. HCX requires eight IP addresses in the vMotion subnet from the service mesh target cluster. Because of this requirement, if the number of ESXi servers exceeds 51, no IP addresses in the vMotion subnet are available for HCX.
+
+For existing vCenter Server with NSX-V instances, the service mesh target cluster is the default cluster.
+{: note}
+
+### Requirements on firewall rules
+{: #hcx_considerations-firewall}
+
+Before you install the HCX service, you must add a firewall rule to any existing firewalls.
+
+1. From the VMware Solutions console, click **Resources > vCenter Server** from the left navigation pane.
+2. In the **vCenter Server** table, click the instance to view the clusters from that instance.
+3. Click the **Infrastructure** tab and select the cluster where you want to install the HCX service.
+4. Go to the **Network interface** section on the cluster page.
+5. Collapse the **Public VLAN** option and collapse the subnet with the description that corresponds to the portable subnet of the particular cluster.
+6. Use the IP address from the Service T0 uplink2 Virtual IP address to route the traffic in the firewall rule. The firewall rule is required to allow all outbound HTTPS traffic so that the HCX Manager virtual appliance (HCX Manager) can register itself.
+7. After the HCX Manager installation is completed, you can remove the firewall rule.
+
+In addition, you must configure firewall rules to allow HCX to function properly. For more information, see [Port access requirements for VMware HCX](/docs/vmwaresolutions?topic=vmwaresolutions-hcx-archi-port-req#hcx-archi-port-req).
 
 ## Ordering HCX for a new instance
 {: #hcx_ordering-new}
@@ -98,4 +126,4 @@ The deployment of HCX is automated. Whether you order a vCenter Server instance 
 * [Glossary of HCX terms](/docs/vmwaresolutions?topic=vmwaresolutions-hcx_glossary)
 * [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support)
 * [Why does the installation fail for HCX with BYOL NSX Data Center Enterprise Plus?](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_hcx_install_fail)
-* [VMware Hybrid Cloud Extension documentation](https://cloud.vmware.com/vmware-hcx/resources){: external}
+* [VMware HCX documentation](https://docs.vmware.com/en/VMware-HCX/index.html){: external}

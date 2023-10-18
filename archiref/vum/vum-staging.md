@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2022
+  years:  2016, 2023
 
-lastupdated: "2022-12-28"
+lastupdated: "2022-10-12"
 
 subcollection: vmwaresolutions
 
@@ -72,7 +72,7 @@ To remediate hosts and clusters, follow these steps:
       - You can let VUM continuously evaluate the maximum number of hosts it can remediate concurrently without disrupting DRS settings.
       - You can specify a limit of the number of concurrently remediated hosts in each cluster you remediate. Note, VUM remediates concurrently only the hosts on which VMs are powered off or suspended. You can choose to power off or suspend VMs from the VM Power State menu in the Maintenance Mode Options pane on the Host Remediation Options page. By design only one host from a vSAN cluster can be in a maintenance mode at any time. VUM remediates hosts that are part of a vSAN cluster sequentially even if you select the option to remediate them in parallel.
     * **Migrate powered off and suspended virtual machines to other hosts in the cluster**, if a host must enter maintenance mode. Update Manager migrates the suspended and powered off VMs from hosts that must enter maintenance mode to other hosts in the cluster. You can choose to power off or suspend VMs before remediation in the **Maintenance Mode Settings** pane.
-12. On the Ready to complete page, you can optionally click **Pre-check Remediation** to generate a cluster remediation options report and click **OK**. A Cluster Remediation Options Report dialog box opens. You can export this report or copy the entries for your own record and click **Next**.
+12. On the Ready to complete page, you can optionally click **Pre-check Remediation** to generate a cluster remediation options report and click **OK**. A Cluster Remediation Options Report window opens. You can export this report or copy the entries for your own record and click **Next**.
 13. Review the **Ready to Complete** page and then click **Finish**.
 
 ## Related links

@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2023
 
-lastupdated: "2023-04-05"
+lastupdated: "2023-10-03"
 
 keywords: shared order resource, order on demand shared, order on demand resources
 
@@ -64,7 +64,7 @@ The virtual data center name is set to **vdc-_xx_** by default, where _xx_ repre
 
 You can also specify a virtual data center name that meets the following requirements:
 * The maximum length is 128 characters.
-* Only alphanumeric, dash (-), and underscore (_) characters are allowed.
+* Only alphanumeric, hyphen (-), and underscore (_) characters are allowed.
 * The name must be unique within all active virtual data centers in your account. You can create a virtual data center that has the same name as a previously deleted virtual data center.
 
 ### Resource group
@@ -72,7 +72,7 @@ You can also specify a virtual data center name that meets the following require
 
 Use resource groups to organize the resources in your account for access control and billing purposes. The default resource group in your account is selected by default. You can also select another resource group according to your needs. The resource group that you select cannot be changed after the virtual data center is created.
 
-If **No resource group available** is displayed in this field, you currently do not have the permission to add the virtual data center to any resource group in this account. Contact the account owner to be assigned an Editor or Administrator role on a resource group in the account. For more information, see [IAM access](/docs/account?topic=account-userroles).
+If **No resource group available** is displayed in this field, you currently do not have the permission to add the virtual data center to any resource group in this account. Contact the account owner to be assigned an Editor or Administrator role on a resource group in the account. For more information, see [{{site.data.keyword.cloud_notm}} IAM roles](/docs/account?topic=account-userroles).
 
 ## Deployment topology
 {: #shared_ordering-deploytop}
@@ -83,7 +83,7 @@ If **No resource group available** is displayed in this field, you currently do 
 ## Data center location
 {: #shared_ordering-dc}
 
-Select the {{site.data.keyword.cloud_notm}} data center settings. For more information, see [IBM Cloud data center availability](/docs/vmwaresolutions?topic=vmwaresolutions-shared_planning#shared_planning-dc-availability).
+Select the {{site.data.keyword.cloud_notm}} data center settings. For more information, see [{{site.data.keyword.cloud_notm}} data center availability](/docs/vmwaresolutions?topic=vmwaresolutions-shared_planning#shared_planning-dc-availability).
 
 ### Geography
 {: #shared_orderinginstance-dc-region}

@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2023
 
-lastupdated: "2023-08-17"
+lastupdated: "2023-09-20"
 
 subcollection: vmwaresolutions
 
@@ -13,7 +13,7 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Target platforms in IBM Cloud
+# Target platforms in {{site.data.keyword.cloud_notm}}
 {: #v2t-targets}
 
 {{site.data.keyword.vmwaresolutions_full}} has a number of offerings, deployment patterns, and options that can be used to create your target VMware NSX-T™ environment:
@@ -87,7 +87,7 @@ In the previous diagram, the following terms require some additional comments:
 * Single edge cluster Tier-0 gateway for workloads - The automation deploys a single NSX-T edge cluster, consisting of a pair of edge appliances, hosting an active standby Tier-0 gateway for use by the workload VMs. These VMs provide connection between the overlay and underlay networks.
 * Stretched edge cluster Tier-0 gateways for workloads per site - To enable an active-active data plane, a stretched edge NSX-T cluster is created manually by deploying an edge appliance in each site. This action enables access to the stretched L2 NSX-T overlay segments, which host the workload VMs if a failure occurs in one of the sites. For more information, see [Multizone region data center active-active topology](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-nsxt-topologies#fss-nsx-topologiest-mzraa)
 * Single-zone vSAN - Regulated workloads automatically deploys management and resource clusters with stretched vSAN storage. For more information, see [Storage](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-storage)).
-* Mandated-regulated workload services - Regulated workloads must include add-on services, such as Veeam, Caveonix RiskForesight™, Entrust CloudControl, Juniper® vSRX, and VMware Aria® Operations™ and VMware Aria Operations™ for Logs. Service prerequisites are also required, such as Hyper Protect Crypto Services, KMIP™ for VMware and Direct Link Dedicated.
+* Mandated-regulated workload services - Regulated workloads must include add-on services, such as Veeam, Caveonix RiskForesight™, Entrust CloudControl™, Juniper® vSRX, and VMware Aria® Operations™ and VMware Aria Operations™ for Logs. Service prerequisites are also required, such as Hyper Protect Crypto Services, KMIP™ for VMware and Direct Link Dedicated.
 
 ## Automated offerings with manual customization tasks
 {: #v2t-targets-automated-manual}
@@ -102,7 +102,7 @@ The automated offerings with manual tasks patterns are not validated by {{site.d
 
 The following diagram can be used to compare and contrast the features that are offered by these offerings.
 
-![Automated offerings with manual customization tasks](../../images/v2t-diagrams-platforms-manual.svg "Automated offerings with manual customization tasks"){: caption="Figure 3 Automated offerings with manual customization tasks" caption-side="bottom"}
+![Automated offerings with manual customization tasks](../../images/v2t-diagrams-platforms-manual.svg "Automated offerings with manual customization tasks"){: caption="Figure 3. Automated offerings with manual customization tasks" caption-side="bottom"}
 
 In the previous diagram, the following terms require some additional comments:
 

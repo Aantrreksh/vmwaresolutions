@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2023
 
-lastupdated: "2023-07-10"
+lastupdated: "2023-09-11"
 
 subcollection: vmwaresolutions
 
@@ -18,8 +18,7 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.cloud_notm}} for VMware® Regulated Workloads is designed following the concept of a zero trust model. Wherever practical, the scope of action of any one individual administrator is strictly limited to those actions necessary and appropriate to perform their assigned roles. Overlap of duties is minimized or eliminated to prevent the need for privilege escalation. The escalation can result in undesired flows of information in or out of any layer of the {{site.data.keyword.cloud_notm}} for VMware Regulated Workloads.
 
-![IBM Cloud for VMware Regulated Workloads roles](../../images/vrw-v2-roles.svg "IBM Cloud for VMware Regulated Workloads roles"){: caption="Figure 1. IBM Cloud for VMware Regulated Workloads roles" caption-side="bottom"}
-
+![{{site.data.keyword.cloud_notm}} for VMware Regulated Workloads roles](../../images/vrw-v2-roles.svg "{{site.data.keyword.cloud_notm}} for VMware Regulated Workloads roles"){: caption="Figure 1. {{site.data.keyword.cloud_notm}} for VMware Regulated Workloads roles" caption-side="bottom"}
 
 ## Network and security administrator roles
 {: #vrw-separation-of-duties-network}
@@ -68,4 +67,4 @@ The SaaS provider might designate one or more NSX-T tenant network administrator
 ## Related links
 {: #vrw-separation-of-duties-related}
 
-* [IBM Cloud compliance programs](https://www.ibm.com/cloud/compliance)
+* [{{site.data.keyword.cloud_notm}} compliance programs](https://www.ibm.com/cloud/compliance)

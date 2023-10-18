@@ -4,7 +4,7 @@ copyright:
 
   years:  2023
 
-lastupdated: "2023-08-22"
+lastupdated: "2023-09-11"
 
 keywords: dizzion service, request dizzion, tech specs dizzion
 
@@ -15,7 +15,7 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Dizzion on IBM Cloud overview
+# Dizzion on {{site.data.keyword.cloud_notm}} overview
 {: #dizzion-overview}
 
 Organizations with high-performing, remote, and hybrid workforces choose Dizzion digital workspaces, Desktop as a Service (DaaS), and virtual applications to protect sensitive data and create a seamless, work-from-anywhere platform.

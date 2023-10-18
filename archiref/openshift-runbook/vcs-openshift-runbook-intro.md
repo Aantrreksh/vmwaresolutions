@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2022
+  years:  2016, 2023
 
-lastupdated: "2022-06-21"
+lastupdated: "2023-09-11"
 
 subcollection: vmwaresolutions
 
@@ -100,4 +100,4 @@ The deployment approach is described in the following phases:
 * [What is {{site.data.keyword.redhat_openshift_notm}}?](https://www.ibm.com/cloud/blog/what-is-openshift){: external}
 * [{{site.data.keyword.redhat_openshift_notm}} 4 Release Update](https://www.youtube.com/watch?v=YJvTu8jC6CU){: external}
 * [Installing a cluster on vSphere with user-provisioned infrastructure](https://docs.openshift.com/container-platform/4.7/installing/installing_vsphere/installing-vsphere.html){: external}
-* [Getting started with IBM Cloud Virtual Private Networking](/docs/iaas-vpn?topic=iaas-vpn-getting-started)
+* [Getting started with {{site.data.keyword.cloud_notm}} Virtual Private Networking](/docs/iaas-vpn?topic=iaas-vpn-getting-started)

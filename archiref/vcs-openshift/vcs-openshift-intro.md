@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2019, 2022
+  years:  2019, 2023
 
-lastupdated: "2022-05-10"
+lastupdated: "2023-09-11"
 
 subcollection: vmwaresolutions
 
@@ -23,9 +23,9 @@ This reference architecture is for {{site.data.keyword.redhat_openshift_notm}} c
 - **vCenter Server** is an offering from {{site.data.keyword.vmwaresolutions_short}} and is a VMware-based platform that is automatically provisioned on {{site.data.keyword.cloud_notm}}.
 - **Red Hat OpenShift** is an application platform for developing and managing containerized applications, which are deployed onto virtualized infrastructure platforms, such as VMware.
 
-![IBM Cloud for VMware Solutions and {{site.data.keyword.redhat_openshift_notm}}](../../images/openshift-sddc.svg "IBM Cloud for VMware Solutions and {{site.data.keyword.redhat_openshift_notm}}"){: caption="Figure 1. IBM Cloud for VMware Solutions and OpenShift" caption-side="bottom"}
+![{{site.data.keyword.cloud_notm}} for VMware Solutions and {{site.data.keyword.redhat_openshift_notm}}](../../images/openshift-sddc.svg "{{site.data.keyword.cloud_notm}} for VMware Solutions and {{site.data.keyword.redhat_openshift_notm}}"){: caption="Figure 1. {{site.data.keyword.cloud_notm}} for VMware Solutions and OpenShift" caption-side="bottom"}
 
-## Application modernization on IBM Cloud
+## Application modernization on {{site.data.keyword.cloud_notm}}
 {: #vcs-openshift-intro-app-mod}
 
 Application modernization is a term that describes the process of transitioning existing applications to use new approaches on the cloud. Customers today are seeking innovative, efficient approaches that help them make this transition based on business and application complexity.

@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2023
 
-lastupdated: "2023-08-17"
+lastupdated: "2023-09-11"
 
 keywords: data encryption in VMware Solutions, data storage for VMware Solutions, bring your own keys for VMware Solutions, BYOK for VMware Solutions, key management for VMware Solutions, key encryption for VMware Solutions, personal data in VMware Solutions, data deletion for VMware Solutions, data in VMware Solutions, data security in VMware Solutions
 
@@ -55,7 +55,7 @@ You can manage (restore or delete) backups in the Veeam self-service portal. All
 ## Protecting your sensitive data in VMware Solutions
 {: #data-security-data-encryption}
 
-### IBM Cloud Support access
+### {{site.data.keyword.cloud_notm}} Support access
 {: #data-security-ibm-access}
 
 {{site.data.keyword.cloud_notm}} Support has access to your VMware virtualization environment.

@@ -4,7 +4,7 @@ copyright:
 
   years:  2023
 
-lastupdated: "2023-07-07"
+lastupdated: "2023-09-20"
 
 subcollection: vmwaresolutions
 
@@ -41,7 +41,7 @@ If you are completing an instant mount from object storage, then the vSnap is us
 
 The following diagram shows the high-level architecture:
 
-![Overview diagram](../../images/cr-predatar-overview.svg "Overview diagram"){: caption="Figure 1. Overview for Predatar on VMware Solutions" caption-side="bottom"}
+![Overview of Predatar on VMware Solutions](../../images/cr-predatar-overview.svg "Overview diagram"){: caption="Figure 1. Overview of Predatar on VMware Solutions" caption-side="bottom"}
  
 1. VMs with VMware Tools including the Thin Agent (also known as Guest Introspection) installed, are backed up to the source backup servers.
 2. Backup data is replicated from the source backup servers to the {{site.data.keyword.cloud_notm}} hosted tertiary backup servers.
@@ -57,7 +57,7 @@ The following diagram shows the high-level architecture:
 
 The following diagram shows more details of the vCenter Server instance architecture:
 
-![Architecture diagram](../../images/cr-predatar-architecture.svg "Architecture diagram"){: caption="Figure 1. Architecture for Predatar on VMware Solutions" caption-side="bottom"}
+![Architecture of Predatar on VMware Solutions](../../images/cr-predatar-architecture.svg "Architecture diagram"){: caption="Figure 2. Architecture of Predatar on VMware Solutions" caption-side="bottom"}
 
 Primary or secondary data center:
 

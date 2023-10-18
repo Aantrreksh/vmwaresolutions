@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-07-31"
+lastupdated: "2023-09-11"
 
 keywords: Entrust CloudControl WebGUI, Entrust CloudControl console, enable internet Entrust CloudControl
 
@@ -18,7 +18,7 @@ subcollection: vmwaresolutions
 # Managing Entrust CloudControl
 {: #managing-entrust-cc}
 
-New installations of Entrust CloudControl® (formerly known as HyTrust CloudControl) are not supported for new or existing deployments of VMware vCenter Server® instances. You can still use or delete existing Entrust CloudControl installations on your existing instances.
+New installations of Entrust CloudControl™ (formerly known as HyTrust CloudControl) are not supported for new or existing deployments of VMware vCenter Server® instances. You can still use or delete existing Entrust CloudControl installations on your existing instances.
 {: deprecated}
 
 To manage Entrust CloudControl, access the Entrust CloudControl WebGUI from the {{site.data.keyword.vmwaresolutions_full}} console, or access the Entrust CloudControl console from the VMware vSphere® Web Client.
@@ -41,7 +41,7 @@ For more information, see [Ordering services for vCenter Server instances](/docs
 ## Considerations when you add and remove hosts and clusters
 {: #managing-entrust-cc-consider-addremove-hostsclusters}
 
-When you add and remove hosts and clusters to your instance, VMware Solutions does not manage the Entrust CloudControl inventory and credentials for you. IBM Cloud assumes that you take steps to lock IBM Cloud automation from having access to your Entrust CloudControl deployment.
+When you add and remove hosts and clusters to your instance, VMware Solutions does not manage the Entrust CloudControl inventory and credentials for you. {{site.data.keyword.cloud_notm}} assumes that you take steps to lock {{site.data.keyword.cloud_notm}} automation from having access to your Entrust CloudControl deployment.
 
 ## Procedure to find the firewall and SNAT rules defined (NSX-T only)
 {: #managing-entrust-cc-proc-find-firewall-nsxt}

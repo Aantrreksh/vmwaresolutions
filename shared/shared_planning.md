@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2023
 
-lastupdated: "2023-08-21"
+lastupdated: "2023-10-18"
 
 keywords: planning VMware Solutions Shared, data center, VMware Solutions Shared data centers
 
@@ -22,7 +22,7 @@ Review the following requirements before you order your VMware Shared virtual da
 
 Price calculations are automatically generated when you access the VMware Shared instance order page. Default selections for on-demand virtual data centers include public and private networking, 2000 vCPU, and 40960 RAM. Default selections for reserved virtual data centers include public and private networking, and customizable vCPU and RAM limits.
 
-## IBM Cloud account requirements
+## {{site.data.keyword.cloud_notm}} account requirements
 {: #shared_ordering-account-req}
 
 To order VMware Shared, you must have a **Pay As You Go** or **Subscription** {{site.data.keyword.cloud_notm}} account. The cost of the resources that are ordered is billed to that {{site.data.keyword.cloud_notm}} account.
@@ -32,11 +32,11 @@ To order VMware Shared, you must have a **Pay As You Go** or **Subscription** {{
 
 The virtual data center name must meet the following requirements:
 
-* Maximum length is 128 characters.
-* Only alphanumeric, dash (-), and underscore (_) characters are allowed.
+* The maximum length is 128 characters.
+* Only alphanumeric, hyphen (-), and underscore (_) characters are allowed.
 * The name must be unique from active virtual data centers within your account. You can create a virtual data center that has the same name as a previously deleted virtual data center.
 
-## IBM Cloud data center availability
+## {{site.data.keyword.cloud_notm}} data center availability
 {: #shared_planning-dc-availability}
 
 The VMware Shared deployment has strict requirements on the physical infrastructure. Therefore, you can deploy your virtual data centers only in {{site.data.keyword.cloud_notm}} data centers that meet the requirements.

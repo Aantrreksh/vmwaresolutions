@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2023
 
-lastupdated: "2023-06-26"
+lastupdated: "2023-10-10"
 
 keywords: cyber recovery order procedure, order procedure cyber recovery, cyber recovery order instance, order cyber recovery, order cyber recovery instance
 
@@ -17,10 +17,12 @@ subcollection: vmwaresolutions
 # Procedure to order Cyber Recovery
 {: #cr_orderinginstance-order-procedure}
 
+<!-- The {: #step-1} tag and the ordered list that has only 1s are intentional. Do not delete. This coding is necessary for proper indentation when the procedure is translated. -->
+
 1. In the {{site.data.keyword.vmwaresolutions_full}} console, click the **Cyber Recovery** card in the **Solutions** section. {: #step-1}
-1. On the **Cyber Recovery** page, under **General information**, accept or change the instance name, and select a resource group. 
-1. Select the instance configuration name. Click **Browse configurations** to open the **Instance configuration manager** side panel and choose the configuration.
-   * If you do not see any list of saved configurations in the side panel and want to create a new configuration, you must save the instance settings first as a new configuration template without placing an order.
+1. Enter the instance name and select a resource group. 
+1. To specify the instance configuration name, click **Browse configurations** and choose a configuration in the **VMware instance configuration manager**.
+   * If you do not see any configurations in the list and you want to create one, you must first save the instance settings as a new configuration without placing an order.
    * If you want to update a saved configuration or create a new configuration based on a saved one, select the configuration from the side panel, make your changes, and then save.
 1. Select the instance type.
    * Click **Primary instance** to deploy a single instance in the environment or to deploy the first instance in a multisite topology.
@@ -30,12 +32,12 @@ subcollection: vmwaresolutions
    Bring Your Own License (BYOL) is no longer supported except for migrations or upgrades of existing BYOL clusters. Select **I will provide** and enter your own license key only if you are performing an upgrade or migration of an existing BYOL cluster.
    {: important}
 
-1. In the **Consolidated cluster** section, accept or change the default name of the consolidated cluser. For more information, see [Cluster name](/docs/vmwaresolutions?topic=vmwaresolutions-cr_orderinginstance-consolidwkld#cr_orderinginstance-consolidwkld-cluster-name).
+1. In the **Consolidated cluster** section, accept or change the default name of the consolidated cluster. For more information, see [Cluster name](/docs/vmwaresolutions?topic=vmwaresolutions-cr_orderinginstance-consolidwkld#cr_orderinginstance-consolidwkld-cluster-name).
    1. For the **Data center location**, select the **Geography**, **Data Center**, and **Pod** to host the clusters. For more information, see [Data center location](/docs/vmwaresolutions?topic=vmwaresolutions-cr_orderinginstance-consolidwkld#cr_orderinginstance-consolidwkld-dc-location).
    1. For the **CPU model**, select either **Cascade Lake** or **SAP-certified Cascade Lake** and choose one of the available configurations. For **Cascade Lake**, also select the RAM size.
    1. Select the number of bare metal servers. You can order 4-51 bare metal servers.
    1. If you want to use **NFS storage**, select the corresponding option.
-      * To add and configure file shares individually, toggle the **Configure shares individually** switch on. You must select at least one file share. Then, click **Add shared storage** and select the **Size (GB)** and **Performance** for each file share.
+      * To add and configure file shares individually, toggle the **Configure shares individually** switch on. Select at least one file share. Then, click **Add shared storage** and select the **Size (GB)** and **Performance** for each file share.
       * To add and configure the same settings to all file shares, specify the **Number of shares** and then, select the **Size (GB)** and **Performance** for all the shares.
    1. If you want to use **vSAN storage**, select the corresponding option.
       1. Select the size for and number of **vSAN capacity disks**.
@@ -47,13 +49,13 @@ subcollection: vmwaresolutions
    1. Specify the VLAN settings:
       * To order new public and private VLANs, choose **Order new VLANs**. A new public VLAN and two private VLANs are provisioned.
       * To reuse existing public and private VLANs, if they are available, choose **Select existing VLANs**. Specify the VLANs and the subnets.
-1. If you want to deploy a separate workload cluster, in the **Workload cluser** section, toggle the **Deploy separate workload cluster** switch on and specify the cluster settings:
+1. If you want to deploy a separate workload cluster, in the **Workload cluster** section, toggle the **Deploy separate workload cluster** switch on and specify the cluster settings:
    1. Accept or change the default name of the workload cluster.
    1. For the **Data center location**, select the **Geography**, **Data Center**, and **Pod** to host the clusters. For more information, see [Data center location](/docs/vmwaresolutions?topic=vmwaresolutions-cr_orderinginstance-consolidwkld#cr_orderinginstance-consolidwkld-dc-location).
    1. For the **CPU model**, select either **Cascade Lake** or **SAP-certified Cascade Lake** and choose one of the available configurations. For **Cascade Lake**, also select the RAM size.
    1. Select the **number of bare metal servers**. You can order 4-59 bare metal servers.
    1. If you want to use **NFS storage**, select the corresponding option.
-      * To add and configure file shares individually, toggle the **Configure shares individually** switch on. You must select at least one file share. Then, click **Add shared storage** and select the **Size (GB)** and **Performance** for each file share.
+      * To add and configure file shares individually, toggle the **Configure shares individually** switch on. Select at least one file share. Then, click **Add shared storage** and select the **Size (GB)** and **Performance** for each file share.
       * To add and configure the same settings to all file shares, specify the **Number of shares** and select the **Size (GB)** and **Performance** for all the shares.
    1. If you want to use **vSAN storage**, select the corresponding option.
       1. Select the size for and number of **vSAN capacity disks**.
@@ -67,18 +69,17 @@ subcollection: vmwaresolutions
       * To reuse existing public and private VLANs, if they are available, choose **Select existing VLANs**. Specify the VLANs and the subnets.
       * If the consolidated or management cluster and the workload clusters are in the same location, you cannot use existing VLANs. Instead, choose **Reuse VLANs from the consolidated cluster** so that the workload cluster and the consolidated cluster use the same VLANs.
 1. Choose the firewall appliance for your instance and follow the steps, depending on your selection:
-   * For **Gateway cluster with Juniper® vSRX**, **Gateway cluster with FortiGate® Virtual Appliance**, and **Bring your own gateway appliance**, specify the gateway [cluster name](/docs/vmwaresolutions?topic=vmwaresolutions-cr-orderinginstance-edge#cr-orderinginstance-edge-cluster-name), the CPU model, the RAM size, the uplink speed, and the networking type.
+   * For **Gateway cluster with Juniper® vSRX**, **Gateway cluster with FortiGate® Virtual Appliance**, and **Bring your own gateway appliance**, specify the [gateway cluster name](/docs/vmwaresolutions?topic=vmwaresolutions-cr-orderinginstance-edge#cr-orderinginstance-edge-cluster-name), the CPU model, the RAM size, and the networking type.
    * For **Gateway cluster with Juniper vSRX** and **Gateway cluster with FortiGate Virtual Appliance**, you must also specify the corresponding service settings in a later step.
-   * For **FortiGate Security Appliance**, you must order the **FortiGate Security Appliance 10 Gbps** service from the [IBM Cloud catalog](https://cloud.ibm.com/catalog/infrastructure/fortigate-security-appliance-10gb). Confirm that you ordered the service and continue with the following steps.
+   * For **FortiGate Security Appliance**, you must order the **FortiGate Security Appliance 10 Gbps** service from the [{{site.data.keyword.cloud_notm}} catalog](https://cloud.ibm.com/catalog/infrastructure/fortigate-security-appliance-10gb). Confirm that you ordered the service and continue with the following steps.
 1. Specify the **Gateway cluster** settings:
    1. Accept or change the default name of the gateway cluster.
    1. Select the **CPU model** and the RAM size.
-   1. Select the **Uplink speed**. The 25 Gb option is available only for specific pods and data center locations. For more information, see [Uplink speed](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-addl-clusters#vc_orderinginstance-addl-clusters-gate-uplink).
    1. Select the **Networking type**, either **Public and private network** or **Private network only**.
 1. Specify the **Network interface** settings:
    1. Enter the **Hostname prefix** and the root **Domain name** for the instance that you are creating.
-   1. Specify the **DNS configuration**.
    1. If you want to customize the hostnames prefix individually, toggle the **Configure hostnames individually** switch on.
+   1. Specify the **DNS configuration**.
 1. Under **Add-on services**, review the available services:
     * The **Included services** category lists the services that are included in your order.
     * The **Recommended services** category lists the services that IBM recommends to fully use your resources.
@@ -92,5 +93,5 @@ subcollection: vmwaresolutions
 ## Related links
 {: #cr_orderinginstance-order-procedure-related-links}
 
-* [Adding clusters to Cyber Recovery instances](/docs/vmwaresolutions?topic=vmwaresolutions-cr_addingclusters)
-* [Expanding and contracting capacity](/docs/vmwaresolutions?topic=vmwaresolutions-cr_addingservers)
+* [Adding, viewing, and deleting clusters for Cyber Recovery instances](/docs/vmwaresolutions?topic=vmwaresolutions-cr_addingviewingclusters)
+* [Expanding and contracting capacity for Cyber Recovery instances](/docs/vmwaresolutions?topic=vmwaresolutions-cr-addingremovingservers)

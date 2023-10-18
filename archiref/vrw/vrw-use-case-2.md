@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2020, 2022
+  years:  2020, 2023
 
-lastupdated: "2022-08-26"
+lastupdated: "2023-09-11"
 
 subcollection: vmwaresolutions
 
@@ -33,4 +33,4 @@ Data and VM encryption options are included in the {{site.data.keyword.cloud_not
 ## Related links
 {: #vrw-use-case-2-related}
 
-* [IBM Cloud compliance programs](https://www.ibm.com/cloud/compliance)
+* [{{site.data.keyword.cloud_notm}} compliance programs](https://www.ibm.com/cloud/compliance)

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2022
+  years:  2022, 2023
 
-lastupdated: "2022-06-08"
+lastupdated: "2023-09-11"
 
 subcollection: vmwaresolutions
 
@@ -39,7 +39,7 @@ The specification for the {{site.data.keyword.cloud_notm}} bare metal server tha
 The Dual Intel Xeon Gold 5120 (28 Cores, 2.20 GHz) server has capacity for 12 drives. In the previous example, only 10 drives are used.
 {: note}
 
-### Example - Order the bare metal server by using IBM Cloud CLI
+### Example - Order the bare metal server by using {{site.data.keyword.cloud_notm}} CLI
 {: ##veeam-cr-sag-lhbr-exmpl}
 
 The following example uses the {{site.data.keyword.cloud_notm}} CLI to order the bare metal server. However, the following commands are used to capture the required inputs for the bare metal server order:

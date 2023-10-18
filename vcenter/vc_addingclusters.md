@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2023
 
-lastupdated: "2023-08-15"
+lastupdated: "2023-10-10"
 
 keywords: vCenter Server add clusters, add cluster, vCenter Server cluster
 
@@ -25,10 +25,11 @@ Adding clusters to vCenter Server instances with VMware vSphere® 6.5 or 6.7 is 
 ## Before you add clusters to vCenter Server instances
 {: #vc_addingclusters-before}
 
-* {{site.data.content.para-vcenteraddclusters}}
+{{site.data.content.para-vcenteraddclusters}}
+
+* New clusters are provisioned with mirrored M.2 boot drives.
 * The number of clusters, hosts, and virtual machines (VMs) determines the maximum number of clusters that you can add. You must remain within the VMware® sizing guidelines and limits for your deployment. For more information, see [VMware configuration maximums](https://configmax.vmware.com/home){: external}.
 * You can add a cluster while another cluster is being created or deleted.
-* For vCenter Server instances with VMware vSAN™, new vSAN clusters are provisioned with mirrored M.2 drives.
 
 ## Cluster type
 {: #vc_addingclusters-cluster-type}
@@ -108,7 +109,7 @@ When you select **NFS storage**, you can add file-level shared storage for your 
 
 Specify the following NFS options.
 * **Configure shares individually** - Toggle this switch on to specify different configuration settings for each file share.
-* **Number of shares** - When want to use the same configuration setting for each file share, specify the number of file shares for the NFS shared storage that you want to add.
+* **Number of shares** - If you want to use the same configuration setting for each file share, specify the number of file shares for the NFS shared storage that you want to add.
 * **Size (GB)** - Select the capacity that meets your shared storage needs.
 * **Performance** - Select the IOPS (input/output operations per second) per GB based on your workload requirements.
 * **Add shared storage** - Select to add individual file shares with different configuration settings.
@@ -182,7 +183,7 @@ When you add a cluster for a vCenter Server instance, you must specify the follo
 {: #vc_addingclusters-host-name}
 
 You can use the default hostname prefix or specify a new one. When you specify a new hostname prefix, the hostname prefix must meet the following requirements:
-- Only lowercase alphabetic, numeric, and dash (-) characters are allowed.
+- Only lowercase alphabetic, numeric, and hyphen (-) characters are allowed.
 - The hostname prefix must start with a lowercase alphabetic character.
 - The hostname prefix must end with a lowercase alphabetic or numeric character.
 - The maximum length of the hostname prefix is 10 characters.
@@ -193,8 +194,8 @@ You can use the default hostname prefix or specify a new one. When you specify a
 You can customize the hostnames prefix individually by toggling the switch on. 
 
 The hostnames prefix must meet the following requirements:
-* Only lowercase alphabetic, numeric, and dash (-) characters are allowed.
-* No consecutive dash characters are allowed.
+* Only lowercase alphabetic, numeric, and hyphen (-) characters are allowed.
+* No consecutive hyphens are allowed.
 * The hostname prefix must start with a lowercase alphabetic character.
 * The hostname prefix must end with a lowercase alphabetic or numeric character.
 * The maximum length of the hostname prefix is 13 characters.
@@ -251,7 +252,7 @@ Optionally, use **Advanced settings** to configure portable subnets for VLANs.
 
 Use the **Public VLAN**, **Private VLAN**, or **Secondary private VLAN** tabs to specify the **Portable subnet** for each applicable purpose. If you select the **Allocate a new one** option for this field, a new portable subnet is allocated automatically.
 **Notes**
-* You must complete the **Public VLAN**, **Private VLAN**, or **Secondary private VLAN** settings before you can configure portable subnets.
+* Complete the **Public VLAN**, **Private VLAN**, or **Secondary private VLAN** settings before you can configure portable subnets.
 * The number of portable subnets is displayed on the **Advanced settings** option after you save the portable subnet settings. Click **Portable subnets settings** to edit the settings.
 * The saved portable subnet settings are cleared if you change the **Public VLAN**, **Private VLAN**, or **Secondary private VLAN** settings.
 
@@ -293,14 +294,14 @@ You can also specify a new name for your clusters. The names must meet the requi
 ### CPU model
 {: #vc_addingclusters-edge-cluster-cpu}
 
-You can choose the following CPU models:
-* Dual Intel® Xeon® Silver 4210 processor (Cascade Lake)
-* Dual Intel Xeon Gold 5218 processor (Cascade Lake)
+You can choose between the following CPU models:
+* Dual Intel Xeon® Silver 4210 processor (Cascade Lake) with 20 cores, 2.20 GHz, and 10 Gb of uplink speed.
+* Dual Intel Xeon Gold 5218 processor (Cascade Lake) with 32 cores, 2.30 GHz, and 25 Gb of uplink speed.
 
 ### RAM
 {: #vc_addingclusters-edge-cluster-ram}
 
-You can select different values between 64 GB and 1.5 TB.
+You can select different values of RAM in the range 64 GB - 1.5 TB.
 
 ### Number of bare metal servers
 {: #vc_addingclusters-edge-cluster-bare-metal}
@@ -311,7 +312,7 @@ The number of servers is set to two and cannot be changed. Both servers have the
 {: #vc_addingclusters-edge-host-name-prefix}
 
 The hostname prefix applies to all clusters in the instance. It must meet the following requirements:
-* Only lowercase alphabetic, numeric, and dash (-) characters are allowed.
+* Only lowercase alphabetic, numeric, and hyphen (-) characters are allowed.
 * The hostname prefix must start with a lowercase alphabetic character.
 * The hostname prefix must end with a lowercase alphabetic or numeric character.
 * The maximum length of the hostname prefix is 10 characters.
@@ -322,16 +323,11 @@ The hostname prefix applies to all clusters in the instance. It must meet the fo
 You can customize the hostnames prefix individually by toggling the switch on. 
 
 The hostnames prefix must meet the following requirements:
-* Only lowercase alphabetic, numeric, and dash (-) characters are allowed.
-* No consecutive dash characters are allowed.
+* Only lowercase alphabetic, numeric, and hyphen (-) characters are allowed.
+* No consecutive hyphens are allowed.
 * The hostname prefix must start with a lowercase alphabetic character.
 * The hostname prefix must end with a lowercase alphabetic or numeric character.
 * The maximum length of the hostname prefix is 13 characters.
-
-### Uplink speed
-{: #vc_addingclusters-edge-uplink-speed}
-
-The uplink speed of 10 Gb is selected by default.
 
 ### Networking type
 {: #vc_addingclusters-edge-cluster-private-nics}
@@ -370,7 +366,7 @@ You can also add the provisioned resources to the {{site.data.keyword.cloud_notm
 
    3. Complete the storage configuration.
       * If you select **NFS storage** and want to add and configure the same settings to all file shares, specify the **Number of shares**, **Size (GB)**, and **Performance**.
-      * If you select **NFS storage** and want to add and configure file shares individually, toggle the **Configure shares individually** switch on, then click **Add shared storage** and select the **Size (GB)** and **Performance** for each individual file share. You must select at least one file share. 
+      * If you select **NFS storage** and want to add and configure file shares individually, toggle the **Configure shares individually** switch on, then click **Add shared storage** and select the **Size (GB)** and **Performance** for each individual file share. Select at least one file share. 
       * If you select **vSAN storage**, specify the following values:
          * Size for the vSAN capacity disks
          * Number of vSAN capacity disks
@@ -386,8 +382,9 @@ You can also add the provisioned resources to the {{site.data.keyword.cloud_notm
    1. For data center location, click the **Edit** icon ![Edit icon](../../icons/edit-tagging.svg "Edit") and select the geography, data center, and pod to host the cluster.
    2. Specify the cluster name.
    3. Select the CPU model, RAM size, and the number of bare metal servers.
-
-7. For network interface settings, enter the hostname prefix, and then select the uplink speed and network type.
+   4. For network interface settings, enter the hostname prefix. 
+   5. If you want to customize the hostnames prefix individually, toggle the **Configure hostnames individually** switch on. 
+   6. Select the **Networking type**, either **Public and private network** or **Private network only**.
 
 8. On the **Summary** pane, verify the cluster configuration before you add the cluster.
    1. Review the settings for the cluster.

@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2023
 
-lastupdated: "2023-07-10"
+lastupdated: "2023-09-11"
 
 subcollection: vmwaresolutions
 
@@ -54,4 +54,4 @@ With {{site.data.keyword.tg_full}} (TGW), you can create one or more transit gat
 ## Related links
 {: #vrw-overlay-network-related}
 
-* [IBM Cloud compliance programs](https://www.ibm.com/cloud/compliance)
+* [{{site.data.keyword.cloud_notm}} compliance programs](https://www.ibm.com/cloud/compliance)

@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2023
 
-lastupdated: "2023-06-19"
+lastupdated: "2023-09-26"
 
 subcollection: vmwaresolutions
 
@@ -56,7 +56,7 @@ It is recommended to also configure Veeam backup copy jobs. If a failure of the 
 
 Veeam is used to take an image level backup of the appliance. However, this type of backup does not quiesce the database and in rare occasions the image might not be usable. Therefore, a scheduled file level backup is also recommended.
 
-To restore the VCSA image, configure the Veeam Backup & Replication Manager to attach to an ESXi host in the management cluster first, as the connection through the VCSA is not available. Within the Veeam UI restore wizard, select Entire VM, select the VCSA, then select Restore to a new location and then select the ESXi server.
+To restore the VCSA image, configure the Veeam Backup and Replication Manager to attach to an ESXi host in the management cluster first, as the connection through the VCSA is not available. Within the Veeam UI restore wizard, select Entire VM, select the VCSA, then select Restore to a new location and then select the ESXi server.
 
 It is good practice to back up the vDS switch configuration as part of the backup, which can be achieved through a script that is triggered by the backup job. For more information, see [PowerCLI Gather complete Virtual Distributed Switch (VDS) information from VMware vCenter](http://vcloud-lab.com/entries/powercli/powercli-gather-complete-virtual-distributed-switch-vds--information-from-vmware-vcenter){: external}.
 
@@ -141,7 +141,7 @@ vSphere HA provides availability of the VMs themselves and the Microsoft domain 
 ## Veeam
 {: #vrw-dualregion-design-veeam}
 
-The following use cases are expected for Veeam Backup & Replication in {{site.data.keyword.cloud_notm}} for VMware® Regulated Workloads dual region:
+The following use cases are expected for Veeam Backup and Replication in {{site.data.keyword.cloud_notm}} for VMware® Regulated Workloads dual region:
 * Case 1. Backup and replication of management components only.
 * Case 2. Backup and replication of management components and backup of workloads.
 * Case 3. Backup and replication of management components and backup and replication of workloads.
@@ -150,7 +150,7 @@ The {{site.data.keyword.cloud_notm}} for VMware® Regulated Workloads dual regio
 
 Configure Veeam encryption for data at rest and data in transit so that VM data is not stored or transmitted unencrypted (which is the default setting). Veeam encryption requires the use of a password or passphrase and does not use the HPCS instance for the management of keys. When the VM is restored, select the encrypted storage policy to ensure that the VM is encrypted in the vSphere datastore.
 
-The use of Veeam Backup & Replication in the regulated Workloads dual region design means that protected region encryption keys are not required in the recovery region. Therefore, separate HPCS, and KMIP for VMware services can be used.
+The use of Veeam Backup and Replication in the regulated Workloads dual region design means that protected region encryption keys are not required in the recovery region. Therefore, separate HPCS, and KMIP for VMware services can be used.
 
 The following post deployment activities are required to create the deployment scenario used in the dual region pattern:
 * Remove the Veeam VMs at each region.
@@ -165,7 +165,7 @@ The protected region bare metal Windows server hosts the following components:
 
 The recovery region bare metal Windows server hosts the following components:
 * Backup server - In a two-site environment where replication is used, best practice is to install the Veeam Backup server component in the DR site. In a disaster situation, the backup server is available to start the recovery.
-* Veeam Backup & Replication Database - Veeam Backup & Replication stores information about backup infrastructure, jobs settings, job history, sessions, and other configuration data in a Microsoft SQL Server database.
+* Veeam Backup and Replication Database - Veeam Backup and Replication stores information about backup infrastructure, jobs settings, job history, sessions, and other configuration data in a Microsoft SQL Server database.
 * Enterprise Manager - Enterprise Manager provides centralized management and reporting for one or multiple backup servers through a web interface. While this design has only one backup server instance, it is recommended to deploy Enterprise Manager when encryption is used for backup or backup copy jobs. It is advised to install the Enterprise Manager server on the recovery site so it is available for disaster recovery.
 * Proxy server - This proxy is used for management components that are located in the recovery region.
 * Repository - A location used to store backup files for the management components in the recovery region and also the target for backup copy jobs from the protected region.
@@ -182,13 +182,13 @@ Review the following Veeam design decisions:
 * For the repository server, a bare metal server is recommended to maximize performance and to separate the production environment that needs to be protected from the backup storage. It is also recommended to combine this practice with the proxy role to keep overheads on the virtual environment and on the network to a minimum. Best practice is to avoid the usage of the same storage for backups and for the virtualized infrastructure because the loss of this single system might lead to the loss of both copies of the data, the production and the backups.
 * Repository servers can be either Windows or Linux. For the all-in-one deployment scenario, a Windows OS is used. Additionally, for Microsoft Windows-based repositories, Veeam uses the Windows Crypto API complying with the Federal Information Processing Standards (FIPS 140). For Linux-based repositories, Veeam uses a statically linked OpenSSL encryption library, without the FIPS 140 support.
 * For bare metal servers, the block storage device can be a local disk or a LUN provided through a SAN by using iSCSI. For the VMware Regulated Workloads design, SAN that uses iSCSI is not supported. Therefore, local disk is used.
-* Configure a scheduled, encrypted backup of the Veeam Backup & Replication configuration and use a Veeam file copy job to copy the file to the protected region. This way, if a failure occurs, the Veeam Backup server can be rebuilt and the configuration can be restored from an off-site copy.
+* Configure a scheduled, encrypted backup of the Veeam Backup and Replication configuration and use a Veeam file copy job to copy the file to the protected region. This way, if a failure occurs, the Veeam Backup server can be rebuilt and the configuration can be restored from an off-site copy.
 * A capacity tier that uses {{site.data.keyword.cloud_notm}} Object Storage is not configured as the storage requirements for use case 1 are low.
 
 The following guidance applies to use cases 2 and 3:
 * Deploy more bare metal servers hosted on the workload cluster primary subnet to enable separation and scaling of backup repositories and allow better performance.
 * For optimal performance and availability, placing the Veeam components on separate virtual and physical servers is considered best practice. Consider the use of a virtual machine for the Veeam Backup server as it provides high availability through vSphere HA. It also provides great flexibility in sizing and scaling as the environment grows.
-* Microsoft SQL Server 2016 Express edition is included in the Veeam Backup & Replication standard installation. In environments with more than 500 protected VMs, consider the use of a different version of Microsoft SQL Server.
+* Microsoft SQL Server 2016 Express edition is included in the Veeam Backup and Replication standard installation. In environments with more than 500 protected VMs, consider the use of a different version of Microsoft SQL Server.
 * For large storage requirements, it is recommended to not size volumes larger than 200 TB to keep failure domains small and manageable. For larger repositories, use a Scale-Out Backup Repository with multiple extents.
 * The {{site.data.keyword.cloud_notm}} Object Storage repository cannot be used on its own but can be configured as Capacity Tier in the Veeam Scale-out Backup Repository. Consider this type of repository for large deployments or for deployments with a large archive requirement.
 
@@ -205,7 +205,7 @@ KMIP is a region-based service. Therefore, in the {{site.data.keyword.cloud_notm
 The IBM Hyper Protect Crypto Service (HPCS) is backed by a FIPS 140-2 level 4 certified hardware security module. It allows the {{site.data.keyword.cloud_notm}} for VMware® Regulated Workloads SaaS provider and SaaS consumer to manage their encryption keys.
 
 For more information, see:
-* [Getting started with IBM Cloud Hyper Protect Crypto Services](/docs/hs-crypto?topic=hs-crypto-get-started)
+* [Getting started with {{site.data.keyword.cloud_notm}} Hyper Protect Crypto Services](/docs/hs-crypto?topic=hs-crypto-get-started)
 * [Encryption](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-encryption)
 
 Currently, HPCS is available in the following regions: Dallas, Washington DC, Sydney, and Frankfurt. It is possible, but not ideal, to use an HPCS instance in a different region for {{site.data.keyword.cloud_notm}} for VMware® Regulated Workloads instances in London and Tokyo.
@@ -239,5 +239,5 @@ For more information, see:
 {: #vrw-dualregion-design-related}
 
 * [Caveonix integration](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-caveonix)
-* [Veeam on IBM Cloud overview](/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview)
-* [Veeam Backup & Replication best practices](https://bp.veeam.com/vbr/){: external}
+* [Veeam on {{site.data.keyword.cloud_notm}} overview](/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview)
+* [Veeam Backup and Replication best practices](https://bp.veeam.com/vbr/){: external}

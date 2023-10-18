@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2023
 
-lastupdated: "2023-06-19"
+lastupdated: "2023-09-11"
 
 subcollection: vmwaresolutions
 
@@ -70,5 +70,5 @@ For more information, see the [VMware documentation - RBAC for NSX-T](https://do
 ## Related links
 {: #vrw-iam-nsxt-related}
 
-* [IBM Cloud compliance programs](https://www.ibm.com/cloud/compliance)
-* [IBM Cloud Hyper Protect Crypto Services API](/apidocs/hs-crypto)
+* [{{site.data.keyword.cloud_notm}} compliance programs](https://www.ibm.com/cloud/compliance)
+* [{{site.data.keyword.cloud_notm}} Hyper Protect Crypto Services API](/apidocs/hs-crypto)

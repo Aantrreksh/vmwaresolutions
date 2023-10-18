@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-06-12"
+lastupdated: "2023-09-11"
 
 subcollection: vmwaresolutions
 
@@ -74,7 +74,7 @@ The following list contains the most common procedures, guides, and tasks:
 
 Many of the previous tasks are automated in Operations Management on {{site.data.keyword.cloud_notm}}, and for those tasks that are not, these tools make the manual processes easier for your systems administrators. It is imperative that you have the core components of the VMware environment monitored, in Operations Management on {{site.data.keyword.cloud_notm}}, this is achieved as follows:
 
-## Operations management on IBM Cloud
+## Operations management on {{site.data.keyword.cloud_notm}}
 {: #opsprocs-intro-ops-mgmt}
 
 You can have enterprise tools in place that you can use to monitor and manage your vCenter Server instance. Table 1 describes the core components of the vCenter Server environment, why they need to be monitored and how they are monitored by using Operations Management on {{site.data.keyword.cloud_notm}}. For more information, see the reference architecture documentation.

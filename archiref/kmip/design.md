@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2022
+  years:  2016, 2023
 
-lastupdated: "2022-09-22"
+lastupdated: "2023-09-11"
 
 subcollection: vmwaresolutions
 
@@ -15,7 +15,7 @@ subcollection: vmwaresolutions
 # KMIP for VMware design
 {: #kmip-design}
 
-KMIP™ for VMware® provides a key management service compatible with VMware vSAN™ encryption and VMware vSphere® encryption, by using [IBM Key Protect](/docs/key-protect?topic=key-protect-getting-started-tutorial) or [IBM Cloud Hyper Protect Crypto Services](/docs/hs-crypto?topic=hs-crypto-get-started#get-started) to provide root key and data key storage. Key Protect and Hyper Protect Crypto Services function as the key management service in this solution.
+KMIP™ for VMware® provides a key management service compatible with VMware vSAN™ encryption and VMware vSphere® encryption, by using [IBM Key Protect](/docs/key-protect?topic=key-protect-getting-started-tutorial) or [{{site.data.keyword.cloud_notm}} Hyper Protect Crypto Services](/docs/hs-crypto?topic=hs-crypto-get-started#get-started) to provide root key and data key storage. Key Protect and Hyper Protect Crypto Services function as the key management service in this solution.
 
 ## Storage encryption options
 {: #kmip-design-storage-options}
@@ -105,7 +105,7 @@ In all cases, your VMware vCenter server access KMIP for VMware over the {{site.
 
 The architecture and topology differs depending on whether KMIP for VMware is using Key Protect or Hyper Protect Crypto Services for key management.
 
-![Topology of KMIP for VMware](../../images/kmip-topology.svg "The solution enables VMware vSphere encryption and vSAN encryption by using root keys that are stored in IBM Cloud Key Protect or Hyper Protect Crypto Services"){: caption="Figure 1. Topology of KMIP for VMware" caption-side="bottom"}
+![Topology of KMIP for VMware](../../images/kmip-topology.svg "The solution enables VMware vSphere encryption and vSAN encryption by using root keys that are stored in {{site.data.keyword.cloud_notm}} Key Protect or Hyper Protect Crypto Services"){: caption="Figure 1. Topology of KMIP for VMware" caption-side="bottom"}
 
 #### KMIP for VMware and Key Protect
 {: #kmip-design-topology-kp}

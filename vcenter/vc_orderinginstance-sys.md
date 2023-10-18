@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-07-28"
+lastupdated: "2023-09-07"
 
 keywords: vCenter Server order instance, order vCenter Server, order vCenter Server instance
 
@@ -39,7 +39,7 @@ Migrating your workloads is recommended if you want to:
 ## VMware NSX networking solution
 {: #vc_orderinginstance-nsx}
 
-For new instances, the VMware NSX® networking solution is NSX-T.
+For new instances, the VMware NSX® networking solution is NSX.
 
 ## Instance name
 {: #vc_orderinginstance-inst-name}

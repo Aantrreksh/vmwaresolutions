@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2023
 
-lastupdated: "2023-06-19"
+lastupdated: "2023-09-26"
 
 subcollection: vmwaresolutions
 
@@ -18,7 +18,7 @@ subcollection: vmwaresolutions
 
 Migration planning and preparation are the key to a successful migration project. It is imperative that the migration complexity is fully understood so that timescales, required tools, skills, and knowledge are available. An overview migration flow is shown in the following diagram.
 
-![Migration flow](../../images/v2t-diagrams-tree.svg "Make sure that the migration complexity is fully understood so that timescales, required tools, skills, and knowledge are available."){: caption="Figure 1 Migration flow" caption-side="bottom"}
+![Migration flow](../../images/v2t-diagrams-tree.svg "Make sure that the migration complexity is fully understood so that timescales, required tools, skills, and knowledge are available."){: caption="Figure 1. Migration flow" caption-side="bottom"}
 
 ## Classify migration complexity
 {: #v2t-planning-complexity}
@@ -83,7 +83,7 @@ Based on the source environment complexity, you must consider the following targ
 
 * Single site VMware vCenter Server® instance - An automated provisioning offering that deploys hardware and software in a defined pattern. After initial deployment, you must add capacity and additional services to a number of automated workflows as needed. For more information, see [vCenter Server overview](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview). The types of vCenter Server instances include:
    * Regulated Workloads. For more information, see [VMware Regulated Workloads overview](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-overview).
-   * VMware Security and Compliance Readiness Bundle. For more information, see [Security and Compliance Readiness Bundle overview](/docs/vmwaresolutions?topic=vmwaresolutions-scb-overview).
+   * Security and Compliance Readiness Bundle. For more information, see [Security and Compliance Readiness Bundle overview](/docs/vmwaresolutions?topic=vmwaresolutions-scb-overview).
 * Multisite or location vCenter Server instance - The vCenter Server offering can be deployed in multiple locations to create a multisite or location vCenter Server instance. The vCenter Server multisite deployment pattern is two or more instances that are deployed into a common root domain and single sign-on domain with vCenters in Enhanced Link Mode. Each site or location has its own NSX-T instance. For more information, see [Multisite configuration for vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_multisite).
 
 The vCenter Server multizone offering is now deprecated. For more information, see [vCenter Server multizone BOM](/docs/vmwaresolutions?topic=vmwaresolutions-mcv-archi-bom).

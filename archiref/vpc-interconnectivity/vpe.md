@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2022
+  years:  2022, 2023
 
-lastupdated: "2022-04-27"
+lastupdated: "2023-09-22"
 
 subcollection: vmwaresolutions
 
@@ -13,7 +13,7 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# IBM Cloud VPE overview
+# {{site.data.keyword.cloud_notm}} VPE overview
 {: #interconnectivity-vpe}
 
 With {{site.data.keyword.cloud}} {{site.data.keyword.vpe_full}}, you can connect to supported {{site.data.keyword.cloud_notm}} services from your VPC network. You can use IP addresses that you choose, which are allocated from a subnet within your VPC.
@@ -32,7 +32,7 @@ VPEs are located in your network address space within the VPC where your VMwareÂ
 
 The following diagram presents an overview when using VPEs with VMware workloads on VPC subnets.
 
-![VPEs with VMware Workloads on VPC Subnets](../../images/vpc-ryo-diagrams-vpe-sub-arch.svg "VPEs with VMware Workloads on VPC Subnets"){: caption="Figure 1. VPEs with VMware Workloads on VPC Subnets" caption-side="bottom"}
+![VPEs with VMware Workloads on VPC subnets](../../images/vpc-ryo-diagrams-vpe-sub-arch.svg "VPEs with VMware Workloads on VPC subnets"){: caption="Figure 1. VPEs with VMware Workloads on VPC subnets" caption-side="bottom"}
 
 The following diagram presents an overview when using VPEs with VMware NSX-T.
 

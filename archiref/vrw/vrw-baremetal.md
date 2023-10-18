@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2023
 
-lastupdated: "2023-06-19"
+lastupdated: "2023-09-11"
 
 subcollection: vmwaresolutions
 
@@ -18,7 +18,7 @@ subcollection: vmwaresolutions
 
 The {{site.data.keyword.cloud}} for VMware® Regulated Workloads is built upon multiple clusters of bare metal hosts with VMware ESXi™ as the hypervisor.
 
-![IBM Cloud for VMware Regulated Workloads infrastructure overview](../../images/vrw-v2-overview.svg "IBM Cloud for VMware Regulated Workloads infrastructure overview"){: caption="Figure 1. IBM Cloud for VMware Regulated Workloads infrastructure overview" caption-side="bottom"}
+![{{site.data.keyword.cloud_notm}} for VMware Regulated Workloads infrastructure overview](../../images/vrw-v2-overview.svg "{{site.data.keyword.cloud_notm}} for VMware Regulated Workloads infrastructure overview"){: caption="Figure 1. {{site.data.keyword.cloud_notm}} for VMware Regulated Workloads infrastructure overview" caption-side="bottom"}
 
 ## Management cluster
 {: #vrw-baremetal-management}
@@ -51,4 +51,4 @@ To prevent undesired access, the SaaS provider must change the IPMI password and
 ## Related links
 {: #vrw-baremetal-related}
 
-* [IBM Cloud compliance programs](https://www.ibm.com/cloud/compliance)
+* [{{site.data.keyword.cloud_notm}} compliance programs](https://www.ibm.com/cloud/compliance)

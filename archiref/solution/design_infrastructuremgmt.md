@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2022-06-09"
+lastupdated: "2022-09-25"
 
 subcollection: vmwaresolutions
 
@@ -73,7 +73,7 @@ By default, the **VM restart priority** option is set to medium and the **Host i
 ### Enhanced vMotion compatibility
 {: #design_infrastructuremgmt-evc}
 
-To simplify vMotion compatibility across cluster nodes with potentially differing CPU capabilities, Enhanced vMotion Compatibility (EVC) mode is enabled at the highest available level that is supported by the vSphere version. This setting ensures vMotion compatibility across cluster nodes when newer processors arrive within {{site.data.keyword.cloud}} inventory. The setting allows for cluster expansion in the future if the original processor is no longer in inventory. An exception to this rule is that EVC mode is not set for a management cluster with Cascade Lake processors where Cascade Lake EVC is not supported by the vSphere version.
+To simplify vMotion compatibility across cluster nodes with potentially differing CPU capabilities, Enhanced vMotion Compatibility (EVC) mode is enabled at the highest available level that is supported by the vSphere version. This setting ensures vMotion compatibility across cluster nodes when newer processors arrive within {{site.data.keyword.cloud}} inventory. The setting allows for cluster expansion in the future if the original processor is no longer in inventory. An exception to this rule is that EVC mode is not set for a management cluster with Intel® Cascade Lake processors where Cascade Lake EVC is not supported by the vSphere version.
 
 ## IBM CloudDriver
 {: #design_infrastructuremgmt-cloud-driver}

@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2023
 
-lastupdated: "2023-05-01"
+lastupdated: "2023-09-11"
 
 subcollection: vmwaresolutions
 
@@ -12,7 +12,7 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Storage options on IBM Cloud and Red Hat OpenShift
+# Storage options on {{site.data.keyword.cloud_notm}} and Red Hat OpenShift
 {: #vcs-openshift-storage}
 
 ## vSphere storage for Kubernetes

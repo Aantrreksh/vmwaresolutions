@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2022
+  years:  2016, 2023
 
-lastupdated: "2022-10-10"
+lastupdated: "2023-10-03"
 
 keywords: VMware HCX standalone, HCX on-premises, delete HCX
 
@@ -20,10 +20,21 @@ subcollection: vmwaresolutions
 
 Use this procedure to delete the VMware® HCX™ instances that you ordered for on-premises use.
 
-## Before you begin
-{: #standalone_deletingserviceinstances-reqs}
+## Considerations before you delete on-premises HCX instances
+{: #standalone_considerations-delete}
 
-Ensure that you reviewed the considerations in [Considerations before you delete on-premises HCX instances](/docs/vmwaresolutions?topic=vmwaresolutions-standalone_considerations).
+Review the following considerations before you delete an HCX instance that was ordered for on-premises use:
+1. In the VMware vSphere Web Client, go to the HCX user interface and check the following items:
+    1. Ensure that no HCX migration or disaster recovery operation is running.
+    2. Ensure that all the extended networks are removed.
+    3. Ensure that all the interconnect components with paired cloud sites are removed.
+
+   You must complete all the previous steps before you proceed to the next step. Otherwise, the activation key for the on-premises HCX instance is canceled. If the activation key is canceled, migrations can't be performed and errors might occur for HCX components.
+   {: important}
+
+2. In the {{site.data.keyword.vmwaresolutions_short}} console, delete the on-premises HCX instance that was ordered to obtain the activation key for the on-premises HCX Manager. Ensure that the deleted instance is no longer available in the console before you proceed to the next step.
+
+3. In the VMware vSphere Web Client, delete the on-premises HCX Manager.
 
 ## Procedure to delete on-premises HCX instances
 {: #standalone_deletingserviceinstances-procedure}
@@ -40,4 +51,4 @@ Ensure that you reviewed the considerations in [Considerations before you delete
 * [Ordering on-premises HCX instances](/docs/vmwaresolutions?topic=vmwaresolutions-standalone_orderingserviceinstances)
 * [Viewing on-premises HCX instances](/docs/vmwaresolutions?topic=vmwaresolutions-standalone_viewingserviceinstances)
 * [Glossary of HCX terms](/docs/vmwaresolutions?topic=vmwaresolutions-hcx_glossary)
-* [VMware Hybrid Cloud Extension documentation](https://cloud.vmware.com/vmware-hcx/resources){: external}
+* [VMware HCX documentation](https://docs.vmware.com/en/VMware-HCX/index.html){: external}

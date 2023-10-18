@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-08-22"
+lastupdated: "2023-10-12"
 
 keywords: vSphere upgrade, NSX upgrade, PSC upgrade
 
@@ -230,7 +230,7 @@ Complete the following steps from the vCenter Server user interface.
 6. Click the **...** in the *vSwitch0* display and then select **Remove**. Click **OK** to confirm you want to remove the switch.
 7. In the same display, select the private switch and click **MANAGE PHYSICAL ADAPTERS**.
 8. Select **uplink1** and click **+**. `vmnic2` is displayed.
-9. Click **OK**, and then **OK** again to exit the dialog.
+9. Click **OK**, and then **OK** again to exit the window.
 
 ## Related links
 {: #vc_vsphere_70_upgrade-related}

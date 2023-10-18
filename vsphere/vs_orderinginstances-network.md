@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-07-17"
+lastupdated: "2023-10-02"
 
 keywords: vmware vSphere order instance, order vSphere, order vmware vSphere instance
 
@@ -25,8 +25,8 @@ You must specify the following network interface settings when you order a new V
 The host name is used for all {{site.data.keyword.cloud}} bare metal server orders. It is recommended to use the host name for all management virtual machines, such as VMware vCenter Server® and VMware NSX®.
 
 The hostname prefix must meet the following requirements:
-* Only lowercase alphabetic, numeric, and dash (-) characters are allowed.
-* No consecutive dash characters are allowed.
+* Only lowercase alphabetic, numeric, and hyphen (-) characters are allowed.
+* No consecutive hyphens are allowed.
 * The hostname prefix must start with a lowercase alphabetic character.
 * The hostname prefix must end with a lowercase alphabetic or numeric character.
 * The maximum length of the hostname prefix is 10 characters.
@@ -36,8 +36,8 @@ The hostname prefix must meet the following requirements:
 
 The domain name is used for all {{site.data.keyword.cloud_notm}} bare metal servers and must meet the following requirements:
 * The domain name must consist of three or more strings that are separated by a period (.)
-* Only lowercase alphabetic, numeric, and dash (-) characters are allowed.
-* No consecutive dash characters are allowed.
+* Only lowercase alphabetic, numeric, and hyphen (-) characters are allowed.
+* No consecutive hyphens are allowed.
 * Each string must start with a lowercase alphabetic character and end with a lowercase alphabetic or numeric character.
 * The last string can contain only lowercase alphabetic characters.
 * The length of the last string must be in the range 2 - 24 characters.
@@ -49,8 +49,8 @@ The domain name is used for all {{site.data.keyword.cloud_notm}} bare metal serv
 You can customize the hostnames prefix individually by toggling the **Configure hostnames individually** switch on. 
 
 The hostnames prefix must meet the following requirements:
-* Only lowercase alphabetic, numeric, and dash (-) characters are allowed.
-* No consecutive dash characters are allowed.
+* Only lowercase alphabetic, numeric, and hyphen (-) characters are allowed.
+* No consecutive hyphens are allowed.
 * The hostname prefix must start with a lowercase alphabetic character.
 * The hostname prefix must end with a lowercase alphabetic or numeric character.
 * The maximum length of the hostname prefix is 13 characters.

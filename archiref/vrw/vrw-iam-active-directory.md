@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2023
 
-lastupdated: "2023-06-19"
+lastupdated: "2023-09-11"
 
 subcollection: vmwaresolutions
 
@@ -47,5 +47,5 @@ The {{site.data.keyword.cloud}} for VMware Regulated Workloads Active Directory 
 ## Related links
 {: #vrw-iam-active-directory-related}
 
-* [IBM Cloud compliance programs](https://www.ibm.com/cloud/compliance)
-* [IBM Cloud Hyper Protect Crypto Services API](/apidocs/hs-crypto)
+* [{{site.data.keyword.cloud_notm}} compliance programs](https://www.ibm.com/cloud/compliance)
+* [{{site.data.keyword.cloud_notm}} Hyper Protect Crypto Services API](/apidocs/hs-crypto)

@@ -4,7 +4,7 @@ copyright:
 
   years: 2021, 2023
 
-lastupdated: "2023-06-09"
+lastupdated: "2023-10-06"
 
 keywords: Zerto, Zerto license, manage Zerto license
 
@@ -14,30 +14,30 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Managing Zerto licenses
+# Managing Zerto stand-alone licenses
 {: #zerto_managing_licenses}
 
 You can view and delete the Zerto licenses that you ordered for stand-alone use.
 
-## Procedure to view Zerto licenses
+## Procedure to view Zerto stand-alone licenses
 {: #zerto_managing_licenses-procedure-view}
 
 1. From the {{site.data.keyword.vmwaresolutions_full}} console, click **Licenses** from the left navigation pane.
 2. Scroll down to the **Zerto licenses** table to view the license name, creation time, and status.
 3. To view more details of a specific license, click the license.
 
-The following information is displayed for the Zerto license:
-* License notes
-* Number of VMs licensed
-* Creation date
-* Email address
-* Status
+   The following information is displayed for the Zerto license:
+   * License notes
+   * Number of VMs licensed
+   * Creation date
+   * Email address
+   * Status
 
-The status is one of the following items.
-* Ordering - the order is submitted to IBM Support.
-* Completed - IBM Support receives your order and a license key request is sent to Zerto.
+   The status can have one of the following values:
+   * **Ordering** - the order is submitted to IBM Support.
+   * **Completed** - IBM Support received your order and a license key request was sent to Zerto.
 
-## Procedure to delete Zerto licenses
+## Procedure to delete Zerto stand-alone licenses
 {: #zerto_managing_licenses-procedure-delete}
 
 Deleting a Zerto license does not delete the Zerto service that is installed on a vCenter Server instance. To delete the service, you must do so in the {{site.data.keyword.vmwaresolutions_short}} console.
@@ -62,6 +62,5 @@ The license charge is reflected on your account until the end of the billing cyc
 
 * [Zerto overview](/docs/vmwaresolutions?topic=vmwaresolutions-addingzertodr)
 * [Managing Zerto](/docs/vmwaresolutions?topic=vmwaresolutions-managingzertodr)
-* [Ordering Zerto licenses](/docs/vmwaresolutions?topic=vmwaresolutions-zerto_ordering_licenses)
-* [Zerto](https://www.zerto.com){: external}
+* [Ordering Zerto stand-alone licenses](/docs/vmwaresolutions?topic=vmwaresolutions-zerto_ordering_licenses)
 * [Zerto technical documentation](https://www.zerto.com/myzerto/technical-documentation/){: external}

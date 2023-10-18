@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2023
 
-lastupdated: "2023-08-21"
+lastupdated: "2023-10-03"
 
 keywords: VLAN ports, vmware solutions ports, ports usage vmware solutions
 
@@ -51,7 +51,7 @@ For more information about {{site.data.keyword.redhat_openshift_full}} (OCP) net
 | IBM CloudDriver | Private primary subnet | NSX Manager | Infrastructure VMs | 80 | TCP | Set up and configure NSX Manager | HTTP |
 | IBM CloudDriver | Private primary subnet \n Infrastructure VMs | {{site.data.keyword.cloud_notm}} infrastructure provisioning API \n `10.0.80.0/25` | {{site.data.keyword.cloud_notm}} infrastructure services network | 443 | TCP | Order and provision {{site.data.keyword.cloud_notm}} infrastructure resources | HTTPS |
 | IBM CloudDriver | Private primary subnet \n Infrastructure VMs | {{site.data.keyword.cloud_notm}} infrastructure DNS service \n `10.0.80.11` \n `10.0.80.12` | {{site.data.keyword.cloud_notm}} infrastructure services network \n For more information, see [DNS FAQs](/docs/dns?topic=dns-dns-faq). | 53 | UDP | Use {{site.data.keyword.cloud_notm}} infrastructure DNS service | |
-| IBM CloudDriver | Private primary subnet \n Infrastructure VMs | {{site.data.keyword.cloud_notm}} infrastructure NTP service. | {{site.data.keyword.cloud_notm}} infrastructure services network \n For more information, see [NTP overview](/docs/cloud-infrastructure?topic=cloud-infrastructure-ntp-service-overview). | 123 | UDP | Use {{site.data.keyword.cloud_notm}} infrastructure NTP service | |
+| IBM CloudDriver | Private primary subnet \n Infrastructure VMs | {{site.data.keyword.cloud_notm}} infrastructure NTP service. | {{site.data.keyword.cloud_notm}} infrastructure services network. For more information, see [NTP overview](/docs/cloud-infrastructure?topic=cloud-infrastructure-ntp-service-overview). | 123 | UDP | Use {{site.data.keyword.cloud_notm}} infrastructure NTP service | |
 | IBM CloudDriver | Private primary subnet \n Infrastructure VMs | {{site.data.keyword.cloud_notm}} infrastructure endurance storage | {{site.data.keyword.cloud_notm}} infrastructure services network | Any | ICMP and TCP | Set up endurance storage for ESXi host | |
 | Windows Active Directory | Private primary subnet \n Infrastructure VMs | {{site.data.keyword.cloud_notm}} infrastructure DNS service \n `10.0.80.11` \n `10.0.80.12` | {{site.data.keyword.cloud_notm}} infrastructure services network \n For more information, see [DNS FAQs](/docs/dns?topic=dns-dns-faq). | 53 | UDP | Use {{site.data.keyword.cloud_notm}} infrastructure DNS service | |
 | Windows Active Directory | Private primary subnet \n Infrastructure VMs | {{site.data.keyword.cloud_notm}} infrastructure NTP service | {{site.data.keyword.cloud_notm}} infrastructure services network | 123 | UDP | Use {{site.data.keyword.cloud_notm}} infrastructure NTP service | |
@@ -66,7 +66,7 @@ For more information about {{site.data.keyword.redhat_openshift_full}} (OCP) net
 | IBM CloudDriver \n Windows Active Directory (VSI) | Private primary subnet | {{site.data.keyword.cloud_notm}} infrastructure engine | {{site.data.keyword.cloud_notm}} infrastructure services network | 80 | TCP | Provision IBM CloudDriver and Windows Active Directory (VSI) | |
 | {{site.data.keyword.cloud_notm}} infrastructure engine | {{site.data.keyword.cloud_notm}} infrastructure services network | IBM CloudDriver \n Windows Active Directory (VSI) | Private primary subnet | Any | TCP and UDP | Provision IBM CloudDriver and Windows Active Directory (VSI) |
 | {{site.data.keyword.cloud_notm}} infrastructure engine | {{site.data.keyword.cloud_notm}} infrastructure services network | ESXi host management0 | Private primary subnet | 623 | TCP and UDP | {{site.data.keyword.cloud_notm}} infrastructure IPMI |   |
-| IBM CloudDriver |   | IBM Cloud Service \n `10.221.68.39` |   | 514 | TCP |   |   |
+| IBM CloudDriver |   | {{site.data.keyword.cloud_notm}} Service \n `10.221.68.39` |   | 514 | TCP |   |   |
 | IBM CloudDriver |   | Internet |   |   |   |   | HTTPS |
 {: caption="Table 1. Ports for deployment and Day 2 operations" caption-side="bottom"}
 {: #vmwaresol_ports-deploy-day2ops-table}

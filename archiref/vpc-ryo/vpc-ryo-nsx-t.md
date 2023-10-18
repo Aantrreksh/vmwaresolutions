@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2023
 
-lastupdated: "2023-08-03"
+lastupdated: "2023-09-20"
 
 subcollection: vmwaresolutions
 
@@ -18,7 +18,7 @@ subcollection: vmwaresolutions
 
 The topic provides an introduction to VMware® NSX-T™ deployment architecture that uses {{site.data.keyword.cloud}} bare metal server for {{site.data.keyword.vpc_short}}. An overview of this architecture is shown in the following diagram.
 
-![Architecture Overview of VMware with NSX-T on {{site.data.keyword.vpc_short}}](../../images/vpc-ryo-diagrams-aod-nsx-t-based.svg "TArchitecture Overview of VMware with NSX-T."){: caption="Figure 1. Architecture overview of VMware with NSX-T on {{site.data.keyword.vpc_short}}" caption-side="bottom"}
+![Architecture overview of VMware with NSX-T on {{site.data.keyword.vpc_short}}](../../images/vpc-ryo-diagrams-aod-nsx-t-based.svg "Architecture overview of VMware with NSX-T"){: caption="Figure 1. Architecture overview of VMware with NSX-T on {{site.data.keyword.vpc_short}}" caption-side="bottom"}
 
 ## VMware NSX-T overview
 {: #vpc-ryo-nsx-t-overview}

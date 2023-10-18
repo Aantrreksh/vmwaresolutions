@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2019, 2022
+  years:  2019, 2023
 
-lastupdated: "2022-04-27"
+lastupdated: "2023-09-11"
 
 subcollection: vmwaresolutions
 
@@ -13,7 +13,7 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-#  The IBM Cloud IaaS vSRX default configuration
+#  The {{site.data.keyword.cloud_notm}} IaaS vSRX default configuration
 {: #vcsvsrx-iaas-def-config}
 
 The following configuration is provided as a reference and not intended for use in your vSRX cluster.

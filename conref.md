@@ -3,7 +3,7 @@
 copyright:
   years: 2022, 2023
 
-lastupdated: "2023-10-02"
+lastupdated: "2023-10-09"
 
 keywords: IBM Cloud for VMware Solutions, getting started, vmware solutions offerings, services for vmwaresolutions, vmwaresolutions use cases
 
@@ -87,12 +87,9 @@ The section is referenced by the following files:
 
 - cr\cr_addingclusters.md *>> Replaced by* cr/cr_addingviewingclusters.md
 - cr\cr_orderinginstance-consolidwkld.md
-- cr\cr_orderinginstance-edge.md
 - vcenter\scb-orderinginstance-cons-work-cluster.md
 - vcenter\vc_addingclusters.md
-- vcenter\vc_orderinginstance-addl-clusters.md
 - vcenter\vc_orderinginstance-consold-cluster.md
-- vrw\vrw-orderinginstance-edge.md
 - vrw\vrw-orderinginstance-mgmt.md
 - vrw\vrw-orderinginstance-primary.md
 - vrw\vrw-orderinginstance-witness.md
@@ -181,34 +178,19 @@ Conref section START.
 
 INFORMATION:
 The section is referenced by the following files:
-- services\vrops_overview.md
-- services\veeamvm_overview.md
-- services\managing-ss-sap.md
-- services\entrust-cc_considerations.md
-- services\hcx_considerations.md
-- services\f5_considerations.md
-- services\caveonix_considerations.md
-
-CONTENT:
-
-{{site.data.keyword.vmwaresolutions_full}} offers promotions for some services. Promotional pricing offers a number of months without charge for a service license, if the service has license charges. For more information, see [Promotions for VMware Solutions services](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices#vc_addingservices-service-promotions).
-{: #para-promotion-services}
-
-
-Conref section END.
-
-Conref section START.
-
-INFORMATION:
-The section is referenced by the following files:
-- services\juniper_overview.md
 - services\addingzertodr.md
+- services\caveonix_considerations.md
+- services\f5_considerations.md
+- services\hcx_considerations.md
+- services\juniper_overview.md
+- services\ocp_overview.md
+- services\veeamvm_overview.md
+- services\vrops_overview.md
 
 CONTENT:
 
-{{site.data.keyword.vmwaresolutions_full}} offers promotions for some add-on services. Promotional pricing offers a number of months without charge for a service license, if the service has license charges. For more information, see [Promotions for VMware Solutions add-on services](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices#vc_addingservices-service-promotions).
-{: #para-promotion-add-on-services}
-
+{{site.data.keyword.vmwaresolutions_full}} offers promotions for some add-on services. Promotional pricing offers a number of months at no cost for a service license, if the service has license charges. For more information, see [Promotions for services](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices#vc_addingservices-service-promotions).
+{: #para-promotion-services}
 
 Conref section END.
 
@@ -363,7 +345,7 @@ CONTENT:
 Use resource groups to organize the resources in your account for access control and billing purposes. The default resource group in your account is selected. You can also select another resource group according to your needs. The resource group that you select cannot be changed after the instance is created.
 {: #para-orderinginstance-resource-group}
 
-If **No resource group available** is displayed in this field, you currently do not have the permission to add the instance to any resource group in this account. Contact the account owner to be assigned an Editor or Administrator role on a resource group in the account. For more information, see [IAM access](/docs/account?topic=account-userroles).
+If **No resource group available** is displayed in this field, you currently do not have permissions to any resource group in this account. Contact the account owner to be assigned an Editor or Administrator role on a resource group in the account. For more information, see [{{site.data.keyword.cloud_notm}} IAM roles](/docs/account?topic=account-userroles).
 {: note}
 {: #note-orderinginstance-resource-group}
 

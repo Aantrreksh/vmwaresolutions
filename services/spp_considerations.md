@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-08-17"
+lastupdated: "2023-10-11"
 
 subcollection: vmwaresolutions
 
@@ -24,7 +24,7 @@ The IBM Spectrum Protect Plus service provides an efficient and scalable solutio
 ## Technical specifications for IBM Spectrum Protect Plus
 {: #spp_considerations-specs}
 
-The following components are ordered and included in the IBM Spectrum Protect Plus service:
+The following components are included in the IBM Spectrum Protect Plus service:
 
 ### vCenter Server resources
 {: #spp_considerations-vcenter}
@@ -73,4 +73,3 @@ Review the following considerations before you delete the IBM Spectrum Protect P
 * Ensure that all the backup job configurations are removed along with active backup or restore operations.
 * When you delete the service, the storage for the backup repository is deleted from the IBM Spectrum Protect Plus VM and the storage order is canceled, which deletes the backup repository data permanently.
 * When you delete the service, the backup storage that is ordered for the service is deleted too. All the backups become inaccessible during service deletion.
-

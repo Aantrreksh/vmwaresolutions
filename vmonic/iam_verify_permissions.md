@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2023
 
-lastupdated: "2023-06-30"
+lastupdated: "2023-10-03"
 
 keywords: IAM user, user role, user permission, IAM account administrator
 
@@ -21,7 +21,7 @@ Use {{site.data.keyword.cloud}} Identity and Access Management (IAM) to define u
 
 You must have an IAM account administrator role to complete various tasks. For example, setting account credentials and granting platform access to users.
 
-If you do not have an administrator role and you want to complete a task that requires the administrator role, you can locate someone with that role. The person that you located can then assign access. For more information about what an account administrator can do, see [IAM access](/docs/account?topic=account-userroles#userroles).
+If you do not have an administrator role and you want to complete a task that requires the administrator role, you can locate someone with that role. The person that you located can then assign access. For more information about what an account administrator can do, see [{{site.data.keyword.cloud_notm}} IAM roles](/docs/account?topic=account-userroles#userroles).
 
 ## Locating an account owner with the administrator role
 {: #iam_verify_permissions-locate-admin}
@@ -65,5 +65,5 @@ After you find the account owner or another user with an administrator role, tha
 ## Related links
 {: #iam_verify_permissions-related}
 
-* [How IBM Cloud IAM works](/docs/account?topic=account-iamoverview)
+* [How {{site.data.keyword.cloud_notm}} IAM works](/docs/account?topic=account-iamoverview)
 * [Managing access to resources](/docs/account?topic=account-assign-access-resources)

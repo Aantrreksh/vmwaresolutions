@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2023
 
-lastupdated: "2023-07-15"
+lastupdated: "2023-10-02"
 
 keywords: order Security and Compliance Readiness Bundle, order scb instances, order vcs scb
 subcollection: vmwaresolutions
@@ -27,7 +27,7 @@ You can select to include a separate workload cluster in the same way as you ord
 {: #scb-orderinginstance-consoli-cluster}
 
 By default, the consolidated cluster name is set to **vcs-_xx_-management**. You can also specify a new cluster name, which must meet the following requirements:
-* Only lowercase alphabetic, numeric, and dash (-) characters are allowed.
+* Only lowercase alphabetic, numeric, and hyphen (-) characters are allowed.
 * The cluster name must start with a lowercase alphabetic character.
 * The cluster name must end with a lowercase alphabetic or numeric character.
 * The maximum length of the cluster name is 10 characters.

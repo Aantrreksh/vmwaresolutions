@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2021, 2022
+  years:  2021, 2023
 
-lastupdated: "2022-12-29"
+lastupdated: "2023-09-26"
 
 subcollection: vmwaresolutions
 
@@ -20,7 +20,7 @@ Review the Veeam® software components.
 ## Backup server
 {: #veeam-bms-archi-components-vbr}
 
-The Veaam Backup server (VBR) is a Windows®-based server on which Veeam Backup & Replication is installed. VBR is the core component in the backup infrastructure that coordinates and manages the configuration and interaction of the other components of the system. This component includes the backup infrastructure, connections to the hypervisors, and the agents that run on customer hosts. This infrastructure eliminates much of the configuration that is traditionally required to be done across several systems into one single pane of glass that streamlines deployment and management. The VBR is backed by the MS SQL 2016 database, which holds the metadata.
+The Veaam Backup server (VBR) is a Windows®-based server on which Veeam Backup and Replication is installed. VBR is the core component in the backup infrastructure that coordinates and manages the configuration and interaction of the other components of the system. This component includes the backup infrastructure, connections to the hypervisors, and the agents that run on customer hosts. This infrastructure eliminates much of the configuration that is traditionally required to be done across several systems into one single pane of glass that streamlines deployment and management. The VBR is backed by the MS SQL 2016 database, which holds the metadata.
 
 The VBR is accessed primarily by way of the Veeam console application, with authentication enabled PowerShell access and authentication enabled API access. Network traffic rules are defined on the VBR server to encrypt all network traffic between Veeam components required for VM backup jobs.
 
@@ -29,7 +29,7 @@ In this design, the all-in-one {{site.data.keyword.cloud_notm}} bare metal serve
 ## Enterprise Manager
 {: #veeam-bms-archi-components-em}
 
-Enterprise Manager is a management and reporting component for managing multiple Veeam Backup & Replication installations from a single web console. Enterprise Manager is an optional component of this design.
+Enterprise Manager is a management and reporting component for managing multiple Veeam Backup and Replication installations from a single web console. Enterprise Manager is an optional component of this design.
 
 Enterprise Manager runs as an application on Windows 2019 operating system. You can install Enterprise Manager on the all-in-one server, or alternatively to a server in another suitable backup location based on their design. The customers need to remember, that Enterprise Manager requires a configuration database, which needs to be considered when you deploy Enterprise Manager.
 
@@ -40,7 +40,7 @@ The Veeam proxy is a component that sits between the backup server and the other
 
 The initial all-in-one {{site.data.keyword.cloud_notm}} bare metal server includes a Veeam proxy and is sized to handle up backups for approximately 500 VMs of nominal size. The solution can be scaled by deploying more {{site.data.keyword.cloud_notm}} bare metal proxies. The extra proxy servers provide the same function as the embedded proxy but specifically for additional compute and network transfer resources to perform intensive VM replication that might exceed the resources that are provided by the all-in-one server build.
 
-## Veeam Backup & Replication configuration database
+## Veeam Backup and Replication configuration database
 {: #veeam-bms-archi-components-database}
 
 The VBR is backed by an MS SQL 2016 database. By default, the design uses the Express version, which comes bundled with the standard Veeam installation. Express version is sufficient in size and performance through about 500VMs of nominal size before a full installation of MS SQL 2016 Standard would be required. The automation supports only local MS SQL 2016 Express as part of the service.
@@ -58,7 +58,7 @@ Review the layout and volume and drive sizes for disks and volumes for MS SQL in
 
 For VMware vCenter Server®, you are responsible for backing up the database. By default, VBR's backup is configured to use the RAID 6 array of the all-in-one server as the backup repository.
 
-## Veeam Backup & Replication console
+## Veeam Backup and Replication console
 {: #veeam-bms-archi-components-console}
 
 Veeam provides a self-service interface through the Veeam Console that is Role Based Access Controls (RBAC) enabled. The solution is deployed with one local administrator by default, and the solution can be integrated post deployment with the Infrastructure Active Directory™ of the vCenter Server instance. The design allows you to define more users on the Active Directory and assign them roles such as: system admin, reporting focal, or dba. Those users can then perform actions such as initiating restores and their scope is limited to the systems or data types for which they are responsible.
@@ -79,5 +79,5 @@ For more information about ordering and configuration, see the {{site.data.keywo
 ## Related links
 {: #veeam-bms-archi-components-related}
 
-* [Veeam Backup & Replication](https://www.veeam.com/vm-backup-recovery-replication-software.html?ad=menu-products){: external}
+* [Veeam Backup and Replication](https://www.veeam.com/vm-backup-recovery-replication-software.html?ad=menu-products){: external}
 * [Veeam Help Center technical documentation](https://www.veeam.com/documentation-guides-datasheets.html?ad=menu-resources){: external}

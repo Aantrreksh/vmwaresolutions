@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-07-28"
+lastupdated: "2023-10-06"
 
 keywords: Veeam, Veeam configuration, order Veeam
 
@@ -19,6 +19,25 @@ subcollection: vmwaresolutions
 {: #veeam_ordering}
 
 You can include the Veeam® service with a new VMware vCenter Server® instance or add the service to your existing instance.
+
+Veeam Backup and Replication 12 is available for deployment on new instances. 
+
+If you have Veeam 9.5u4b, you can continue to use it. However, you cannot install Veeam 9.5u4b on a new or existing instance.
+{: restriction}
+
+## Considerations when you install Veeam
+{: #veeamvm_overview-install}
+
+Before you install Veeam on an instance, review the [tasks that you can complete with Veeam](/docs/vmwaresolutions?topic=vmwaresolutions-managingveeam#managingveeam-fivetasks_v10).
+
+For more information about Veeam® license installation and deletion, see [Considerations for installing and deleting Veeam licenses](/docs/vmwaresolutions?topic=vmwaresolutions-managingveeam#managingveeam-install-delete-consid).
+
+## Considerations for a Linux hardened repository
+{: #managingveeam-linux-repository}
+
+When you install Veeam, you can optionally install a Linux® hardened repository. For more information, see [Linux hardened repository for immutable storage](/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview#veeamvm_overview-specs-linux-storage).
+
+As part of the automation, a setting is created to prevent the `root` user from being accessed by using SSH. This is done due to security considerations and best practices. You can access the Linux hardened repository through the IPMI (Intelligent Platform Management Interface) on the {{site.data.keyword.cloud_notm}} console.
 
 ## Ordering Veeam for a new instance
 {: #veeam_ordering-new}
@@ -50,14 +69,14 @@ Specify a name for this service instance. The name must be unique across all Vee
 Select one of the following options:
 * **Windows Server VM with iSCSI storage**. This option is not supported by VMware® Regulated Workloads instances.
 * **Single Windows VSI with iSCSI storage**. This option is not supported by Security and Compliance Readiness Bundle instances or VMware Regulated Workloads instances.
-* **Bare metal server with local storage**. This option requires VMware vSphere 7.
+* **Bare metal server with local storage**. This option requires VMware vSphere® 7.
 
 ### Storage size
 {: #veeam_ordering-config-storage-size}
 
 The capacity that meets your storage needs. This option is not applicable to the **Bare metal server with local storage** deployment type.
 
-For an example that shows what the capacity might be like, see [Capacity planning for backup repositories](https://helpcenter.veeam.com/docs/one/reporter/capacity_planning_for_repositories.html?ver=100){: external}.
+For an example that shows what the capacity might be like, see [Capacity planning for backup repositories](https://helpcenter.veeam.com/docs/one/reporter/capacity_planning_for_repositories.html?ver=120){: external}.
 
 ### Storage performance
 {: #veeam_ordering-config-storage-performance}
@@ -74,9 +93,10 @@ The backup disks are used as storage repositories for backups. This option is ap
 
 You can order a Linux® hardened repository (LHR) to use for immutable storage. If you select a Linux hardened repository, a list of backup disk size options is displayed. Select the disk size that you want to order.
 
-The Linux hardened repository is only supported for vSphere 7 NSX-T instances.
+The Linux hardened repository is supported only for vCenter Server with VMware NSX-T™ instances and vSphere 7.
+{: important}
 
-For more information, see [Hardened Repository](https://helpcenter.veeam.com/docs/backup/vsphere/hardened_repository.html?ver=120){: external} in the Veeam documentation.
+For more information, see [Hardened repository](https://helpcenter.veeam.com/docs/backup/vsphere/hardened_repository.html?ver=120){: external}.
 
 ### Number of VMs to license
 {: #veeam_ordering-config-vms}
@@ -88,11 +108,10 @@ You can order a maximum of 3,000 licenses. If you need to have multiple licenses
 ## Related links
 {: #veeam_ordering-related}
 
-* [Veeam Backup and Replication 12 overview](/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview)
+* [Veeam on {{site.data.keyword.cloud_notm}} overview](/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview)
 * [Managing Veeam](/docs/vmwaresolutions?topic=vmwaresolutions-managingveeam)
 * [Ordering Veeam stand-alone licenses](/docs/vmwaresolutions?topic=vmwaresolutions-veeam_ordering_licenses)
-* [Managing Veeam licenses](/docs/vmwaresolutions?topic=vmwaresolutions-veeam_managing_licenses)
-* [Ordering and configuring IBM Cloud Object Storage with Veeam](/docs/vmwaresolutions?topic=vmwaresolutions-icos_ordering)
+* [Managing Veeam stand-alone licenses](/docs/vmwaresolutions?topic=vmwaresolutions-veeam_managing_licenses)
+* [Ordering and configuring {{site.data.keyword.cloud_notm}} Object Storage with Veeam](/docs/vmwaresolutions?topic=vmwaresolutions-icos_ordering)
 * [Veeam Backup and Replication](https://www.ibm.com/cloud/architecture/architectures/virtualization_backup_veeam)
-* [Veeam website](https://www.veeam.com/){: external}
-* [Veeam Help Center](https://www.veeam.com/documentation-guides-datasheets.html){: external}
+* [Veeam Technical Documentation](https://www.veeam.com/documentation-guides-datasheets.html){: external}

@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2023
 
-lastupdated: "2023-08-17"
+lastupdated: "2023-09-22"
 
 subcollection: vmwaresolutions
 
@@ -36,8 +36,8 @@ Various configurations for CPU, RAM, and storage are available to satisfy differ
 * **x** represents the x86_64 CPU architecture.
 * **2** represents the current generation of processors (Cascade Lake).
 * **d** represents NVMe U.2 SSDs.
-* The field between the two dashes is "metal" for {{site.data.keyword.cloud_notm}} bare metal server.
-* The field after the second dash contains information about the number of vCPU and the memory size (in GB). For example, "192x768" means that this profile has 192 vCPU and a memory of 768 GB.
+* The field between the two hyphen (-) characters is "metal" for {{site.data.keyword.cloud_notm}} bare metal server.
+* The field after the second hyphen (-) contains information about the number of vCPU and the memory size (in GB). For example, "192x768" means that this profile has 192 vCPU and a memory of 768 GB.
 
 The previous example shows a **Balanced bare metal** profile with **192 vCPU** and **768 GB memory**. The profile has the **Cascade Lake processors** and **NVMe U.2 SSDs for additional storage**. For a detailed listing of available profiles with their specifications for the VMware {{site.data.keyword.cloud_notm}} bare metal server for {{site.data.keyword.vpc_short}}, see the [x86-64 bare metal server profiles](/docs/vpc?topic=vpc-bare-metal-servers-profile&interface=ui).
 
@@ -78,7 +78,7 @@ In this architecture, VLAN interfaces are used in many ways:
 
 Both PCI and VLAN interfaces can be attached to a VPC security group, and security group rules can be applied to these interfaces. Also, VPC ACLs can be used to control inbound and outbound traffic for a subnet to which these PCI and VLAN interfaces are attached.
 
-For more information about the networking concepts, see [Networking overview Bare Metal Servers on VPC](/docs/vpc?topic=vpc-bare-metal-servers-network).
+For more information about the networking concepts, see [Networking overview for Bare Metal Servers on VPC](/docs/vpc?topic=vpc-bare-metal-servers-network).
 
 ## Storage design
 {: #vpc-ryo-infrastructure-physical-storage}
@@ -138,11 +138,11 @@ For more information about the shared storage, see [About {{site.data.keyword.fi
 ## Related links
 {: #vpc-ryo-infrastructure-physical-links}
 
-* [Getting started with {{site.data.keyword.vpc_short}}](/docs/vpc?topic=vpc-getting-started)
+* [Getting started with Virtual Private Cloud (VPC)](/docs/vpc?topic=vpc-getting-started)
 * [Planning for Bare Metal Servers on VPC](/docs/vpc?topic=vpc-planning-for-bare-metal-servers)
 * [Architecture overview of roll-your-own VMware solution on VPC](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-ryo-arch-overview)
-* [Getting started with IBM Cloud Direct Link](/docs/dl?topic=dl-get-started-with-ibm-cloud-dl)
-* [Getting started with IBM Cloud Transit Gateway](/docs/transit-gateway?topic=transit-gateway-getting-started)
+* [Getting started with {{site.data.keyword.cloud_notm}} Direct Link](/docs/dl?topic=dl-get-started-with-ibm-cloud-dl)
+* [Getting started with {{site.data.keyword.cloud_notm}} Transit Gateway](/docs/transit-gateway?topic=transit-gateway-getting-started)
 * [VPNs for VPC overview](/docs/vpc?topic=vpc-vpn-overview)
 * [VPC IaaS endpoints](/docs/vpc?topic=vpc-service-endpoints-for-vpc#infrastructure-as-a-service-iaas-endpoints)
-* [Deploying Roll Your Own VMware on IBM Cloud Bare Metal Servers for Virtual Private Cloud](/docs/solution-tutorials?topic=solution-tutorials-vpc-bm-vmware)
+* [Deploying Roll Your Own VMware on {{site.data.keyword.cloud_notm}} Bare Metal Servers for Virtual Private Cloud](/docs/solution-tutorials?topic=solution-tutorials-vpc-bm-vmware)

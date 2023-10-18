@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2021, 2022
+  years:  2021, 2023
 
-lastupdated: "2022-12-29"
+lastupdated: "2023-09-26"
 
 subcollection: vmwaresolutions
 
@@ -24,5 +24,5 @@ The solution uses Direct Attached Storage (DAS), that is, local SATA disks with 
 ## Related links
 {: #veeam-bms-archi-overview-intro}
 
-* [Veeam Backup & Replication](https://www.veeam.com/vm-backup-recovery-replication-software.html?ad=menu-products){: external}
+* [Veeam Backup and Replication](https://www.veeam.com/vm-backup-recovery-replication-software.html?ad=menu-products){: external}
 * [Veeam Help Center technical documentation](https://www.veeam.com/documentation-guides-datasheets.html?ad=menu-resources){: external}

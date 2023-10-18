@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2023
 
-lastupdated: "2023-07-15"
+lastupdated: "2023-10-12"
 
 keywords: vmware regulated workloads, vmware regulated workloads order instance, order vmware regulated workloads, vmware regulated workloads instances
 
@@ -29,25 +29,19 @@ By default, the gateway cluster name is set to **mcv-_xx_-edge**.
 ## Compute capacity
 {: #vrw-orderinginstance-edge-compute}
 
-For compute capacity, you get a Cascade Lake server with 20 cores, 2.2 GHz, and you also get two cluster hosts and 2 * 3.8 TB SSD storage.
+For compute capacity, you get two cluster hosts and two 3.8 TB SSD storage.
+
+## CPU model
+{: #vrw_addingclusters-edge-cluster-cpu}
+
+You can choose between the following CPU models:
+* Dual Intel Xeon® Silver 4210 processor (Cascade Lake) with 20 cores, 2.20 GHz, and 10 Gb of uplink speed.
+* Dual Intel Xeon Gold 5218 processor (Cascade Lake) with 32 cores, 2.30 GHz, and 25 Gb of uplink speed.
 
 ## RAM
 {: #vrw-orderinginstance-edge-ram}
 
-You can select a RAM size from 64 GB, 96 GB, 128 GB, 192 GB, 384 GB, 768 GB, and 1.5 TB.
-
-## Uplink speed
-{: #vrw-orderinginstance-edge-uplink}
-
-{{site.data.content.uplink-speed-options-list}}
-
-{{site.data.content.simpletable-uplink-speed-locations-ap}}
-
-{{site.data.content.simpletable-uplink-speed-locations-eur}}
-
-{{site.data.content.simpletable-uplink-speed-locations-naeast}}
-
-{{site.data.content.simpletable-uplink-speed-locations-nasouth}}
+You can select different values of RAM in the range 64 GB - 1.5 TB.
 
 ## Networking type
 {: #vrw-orderinginstance-edge-net}

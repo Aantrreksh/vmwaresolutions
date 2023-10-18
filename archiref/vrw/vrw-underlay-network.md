@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2023
 
-lastupdated: "2023-07-10"
+lastupdated: "2023-09-11"
 
 subcollection: vmwaresolutions
 
@@ -47,12 +47,12 @@ The workload cluster network design is closely aligned to that of a traditional 
 
 Within the workload clusters, NSX-T™ provides a highly secure and flexible software defined network to support the application requirements. NSX-T management is external to the workload cluster thus ensuring that network and security changes are not possible by anyone other than the designated administrators. All north-south network access in the workload cluster is done through private and secure connections by using IPsec or IBM Direct Link. The workload clusters are protected by the same gateway cluster with the vSRX or the physical FortiGate that protects the management plane.
 
-## IBM Cloud networking
+## {{site.data.keyword.cloud_notm}} networking
 {: #vrw-underlay-network-cloud}
 
 The physical network of {{site.data.keyword.cloud_notm}} is separated into two distinct networks: public and private. The private network also contains the management Intelligent Platform Management Interface (IPMI) traffic to the physical servers.
 
-![IBM Cloud high–level network](../../images/vrw-ibmcloudnetwork.svg "IBM Cloud high–level network"){: caption="Figure 1. IBM Cloud high–level network" caption-side="bottom"}
+![{{site.data.keyword.cloud_notm}} high–level network](../../images/vrw-ibmcloudnetwork.svg "{{site.data.keyword.cloud_notm}} high–level network"){: caption="Figure 1. {{site.data.keyword.cloud_notm}} high–level network" caption-side="bottom"}
 
 ### Public network
 {: #vrw-underlay-network-cloud-public}
@@ -152,4 +152,4 @@ The private network connections are configured to use a jumbo frame MTU size of 
 ## Related links
 {: #vrw-underlay-network-related}
 
-* [IBM Cloud compliance programs](https://www.ibm.com/cloud/compliance)
+* [{{site.data.keyword.cloud_notm}} compliance programs](https://www.ibm.com/cloud/compliance)

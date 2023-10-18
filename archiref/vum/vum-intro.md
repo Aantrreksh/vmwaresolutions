@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-12-28"
+lastupdated: "2023-10-18"
 
 subcollection: vmwaresolutions
 
@@ -20,7 +20,7 @@ As the system administrator of a VMware vCenter Server® 6.7 instance, review th
 After 21 June 2022, provisioning new vCenter Server instances with NSX–V is no longer supported. However, you can add hosts and clusters to your existing NSX–V deployments. IBM strongly recommends that clients immediately assess their NSX–V networks and plan a much earlier migration to NSX–T.
 {: note}
 
-After 21 June 2022, you can no longer order new vCenter Server instance with vSphere 6.7. After 15 October 2022, the vCenter Server instances with vSphere 6.7 are read–only in the VMware Solutions console. When this happens, you can no longer add or remove hosts and clusters until you upgrade to vSphere 7.0.
+After 21 June 2022, you can no longer order new vCenter Server instance with vSphere 6.7. After 15 October 2022, the vCenter Server instances with vSphere 6.7 are read–only in the VMware Solutions console. You can no longer add or remove hosts and clusters until you upgrade to vSphere 7.0.
 {: note}
 
 If you have a vCenter Server instance that is deployed with vSphere 7, then VMware® added new functions and rebranded it as vSphere Lifecycle Manager (vLCM). For more information, read this blog entry [vSphere 7 – lifecycle management](https://blogs.vmware.com/vsphere/2020/04/vsphere-7-patching-lifecycle-management.html){: external}

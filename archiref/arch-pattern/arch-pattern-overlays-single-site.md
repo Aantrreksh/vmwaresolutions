@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2023
 
-lastupdated: "2023-08-03"
+lastupdated: "2023-09-22"
 
 subcollection: vmwaresolutions
 
@@ -20,14 +20,14 @@ VMware vCenter Server® instances offer a standard VMware NSX-T™ topology with
 
 This pattern provides a few examples on how these topologies can be customized for your needs.
 
-## Single-site – single tenant
+## Single-site single-tenant
 {: #arch-pattern-overlays-single-site-single-site-st}
 
-Single-site – single tenant is the most common use case and network deployment pattern. The vCenter Server automation deploys an example topology by following this model, which includes single Tier-0 and Tier-1 Gateways and a few NSX-T overlay segments as a starting point. This topology is highly scalable and easy to automate.
+Single-site single-tenant is the most common use case and network deployment pattern. The vCenter Server automation deploys an example topology by following this model, which includes single Tier-0 and Tier-1 Gateways and a few NSX-T overlay segments as a starting point. This topology is highly scalable and easy to automate.
 
 The following diagram shows an example of a customer deployment that uses the standard topology, when the segments are attached to the Tier-1 Gateway. You can add more segments to the existing Tier-1 Gateway or more Tier-1 Gateways on the same NSX-T edge clusters, if needed.
 
-![Single-site – single tenant example topology with Tier-1 Gateway](../../images/arch-pattern-1-zone-t1.svg "Single-site – single tenant example topology using both Tier-0 and Tier-1 Gateways."){: caption="Figure 1. Single-site – single tenant example topology with Tier-1 Gateway" caption-side="bottom"}
+![Single-site single-tenant example topology with Tier-1 Gateway](../../images/arch-pattern-1-zone-t1.svg "Single-site single-tenant example topology using both Tier-0 and Tier-1 Gateways"){: caption="Figure 1. Single-site single-tenant example topology with Tier-1 Gateway" caption-side="bottom"}
 
 1. The vCenter Server automation deploys an example single-site topology, which follows the principles that are presented in this model. The deployment includes a single vCenter and three NSX-T managers that are deployed in the cluster on the initial {{site.data.keyword.cloud_notm}} data center location.
 2. The vCenter Server automation deploys two edge cluster transport nodes and a single edge cluster for your Tier-0 and Tier-1 Gateways.
@@ -39,7 +39,7 @@ The following diagram shows an example of a customer deployment that uses the st
 
 The following diagram shows an example of a customer deployment that uses the standard topology, when the segments are attached directly to the Tier-0 Gateway. You can add more segments to the Tier-0 Gateway or and delete the Tier-1 Gateway that is deployed by the automation, if needed.
 
-![Single-site – single tenant example topology](../../images/arch-pattern-1-zone-t0.svg "Single-site – single tenant example topology for NSX-T deployment."){: caption="Figure 2. Single-site – single tenant example topology" caption-side="bottom"}
+![Single-site single-tenant example topology](../../images/arch-pattern-1-zone-t0.svg "Single-site single-tenant example topology for NSX-T deployment"){: caption="Figure 2. Single-site single-tenant example topology" caption-side="bottom"}
 
 1. The vCenter Server automation deploys an example topology by following this model. The deployment includes a single vCenter and three NSX-T Managers that are deployed in the cluster on the initial {{site.data.keyword.cloud_notm}} data center location.
 2. The vCenter Server automation deploys two edge cluster transport nodes and a single edge cluster for your Tier-0 and Tier-1 Gateways.
@@ -55,7 +55,7 @@ Single-site – multitenant pattern provides a simple highly scalable pattern if
 
 The following diagram shows an example of a multitenant deployment by using the standard topology. Also, it shows how to expand it for a simple multitenant pattern. You can manually deploy multiple Tier-1 Gateways through NSX-T and add each tenant segment to their own Tier-1 Gateway.
 
-![Single-site – multitenant example topology](../../images/arch-pattern-1-zone-t1-mt.svg "Single-site – multitenant example topology for NSX-T deployment."){: caption="Figure 3. Single-site – multitenant example topology" caption-side="bottom"}
+![Single-site multitenant example topology](../../images/arch-pattern-1-zone-t1-mt.svg "Single-site  multitenant example topology for NSX-T deployment"){: caption="Figure 3. Single-site multitenant example topology" caption-side="bottom"}
 
 1. The vCenter Server automation deploys an example single-site topology, which follows the principles that are presented in this model. The deployment includes a single vCenter and three NSX-T Managers that are deployed in the cluster on the initial {{site.data.keyword.cloud_notm}} data center location.
 2. The vCenter Server automation deploys two edge cluster transport nodes and a single edge cluster for your Tier-0 and Tier-1 Gateways.

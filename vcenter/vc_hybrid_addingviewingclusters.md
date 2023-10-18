@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-07-17"
+lastupdated: "2023-09-22"
 
 keywords: vCenter Server Hybridity add cluster, view cluster vCenter Server Hybridity, delete cluster vCenter Server Hybridity
 
@@ -30,7 +30,8 @@ Adding clusters to instances with VMware vSphere® 6.5 is not supported.
 ### Before you add clusters
 {: #vc_hybrid_addingviewingclusters-before-add}
 
-* {{site.data.content.para-vcenteraddclusters}}
+{{site.data.content.para-vcenteraddclusters}}
+
 * The number of clusters, hosts, and VMs determines the maximum number of clusters that you can add. You must remain within the VMware® sizing guidelines and limits for your deployment. For more information, see [VMware Configuration Maximums](https://configmax.vmware.com/home){: external}.
 
 ### System settings
@@ -42,7 +43,7 @@ When you add a cluster for a vCenter Server with Hybridity Bundle instance, you 
 {: #vc_hybrid_addingviewingclusters-adding-cluster-name}
 
 The cluster name must meet the following requirements:
-* Only alphanumeric and dash (-) characters are allowed.
+* Only alphanumeric and hyphen (-) characters are allowed.
 * The cluster name must start and end with an alphanumeric character.
 * The maximum length of the cluster name is 30 characters.
 * The cluster name must be unique within the vCenter Server with Hybridity Bundle instance.
@@ -115,24 +116,26 @@ You can also add the provisioned resources to the {{site.data.keyword.cloud_notm
 ## Procedure to add clusters to vCenter Server with Hybridity Bundle instances
 {: #vc_hybrid_addingviewingclusters-adding-procedure}
 
-1. From the {{site.data.keyword.vmwaresolutions_short}} console, click **Resources > vCenter Server** from the left navigation pane.
-2. In the **vCenter Server** table, click the instance to view the clusters in it.
+<!-- The {: #step-1} tag and the ordered list that has only 1s are intentional. Do not delete. This coding is necessary for proper indentation when the procedure is translated. -->
+
+1. From the {{site.data.keyword.vmwaresolutions_short}} console, click **Resources > vCenter Server** from the left navigation pane. {: #step-1}
+1. In the **vCenter Server** table, click the instance to view the clusters in it.
 
    Ensure that the instance status is **Available**. Otherwise, you can't add clusters to the instance.
    {: important}
 
-3. Click the **Infrastructure** tab and click **Create** at the upper right of the **Clusters** table.
-4. On the **Create cluster** page, enter the cluster name.
-5. You can host the cluster in a different {{site.data.keyword.cloud_notm}} data center than the one that the instance is hosted in. To do so, under **Bare metal server**, toggle the **Select a different location** switch on and choose the {{site.data.keyword.cloud_notm}} data center to host the cluster.
-6. Select the **CPU model**, the amount of **RAM**, and the **Number of bare metal servers** for the bare metal configuration.
-7.  Select **vSAN storage** and specify the disk types for the capacity and cache disks and the number of disks. If you want more storage, select the **High performance with Intel Optane** checkbox.
-8. Select the license edition for VMware vSAN for the license configuration.
-9. Select the network setting of either **Public and private network** or **Private network only**.
-10. On the **Summary** pane, verify the cluster configuration before you add the cluster.
-    1. Review the settings for the cluster.
-    2. Review the estimated price of the cluster. Click **Pricing details** to generate a PDF summary. To save or print your order summary, click the **Print** or **Download** icon on the upper right of the PDF window.
-    3. Click the link or links of the terms that apply to your order, and confirm that you agree with these terms before you add the cluster.
-    4. Click **Create**.
+1. Click the **Infrastructure** tab and click **Create** at the upper right of the **Clusters** table.
+1. On the **Create cluster** page, enter the cluster name.
+1. You can host the cluster in a different {{site.data.keyword.cloud_notm}} data center than the one that the instance is hosted in. To do so, under **Bare metal server**, toggle the **Select a different location** switch on and choose the {{site.data.keyword.cloud_notm}} data center to host the cluster.
+1. Select the **CPU model**, the amount of **RAM**, and the **Number of bare metal servers** for the bare metal configuration.
+1. Select **vSAN storage** and specify the disk types for the capacity and cache disks and the number of disks. If you want more storage, select the **High performance with Intel Optane** checkbox.
+1. Select the license edition for VMware vSAN for the license configuration.
+1. Select the network setting of either **Public and private network** or **Private network only**.
+1. On the **Summary** pane, verify the cluster configuration before you add the cluster.
+   1. Review the settings for the cluster.
+   1. Review the estimated price of the cluster. Click **Pricing details** to generate a PDF summary. To save or print your order summary, click the **Print** or **Download** icon on the upper right of the PDF window.
+   1. Click the link or links of the terms that apply to your order, and confirm that you agree with these terms before you add the cluster.
+   1. Click **Create**.
 
 ### Results after you add clusters to vCenter Server with Hybridity Bundle instances
 {: #vc_hybrid_addingviewingclusters-adding-results}
@@ -213,7 +216,8 @@ Deleting clusters from instances with vSphere 6.5 is not supported.
 ### Before you delete clusters from vCenter Server with Hybridity Bundle instances
 {: #vc_hybrid_addingviewingclusters-deleting-prereq}
 
-* {{site.data.content.para-vcenterremoveclusters}}
+{{site.data.content.para-vcenterremoveclusters}}
+
 * You can delete any cluster except for the first cluster (the one that is created during initial deployment).
 * You can delete multiple clusters at a time. You can also delete a cluster while another cluster is being created or deleted.
 * Ensure that all nodes in a cluster are powered on and operational before you delete the cluster.

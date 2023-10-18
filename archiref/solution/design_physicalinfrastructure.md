@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-08-17"
+lastupdated: "2023-09-11"
 
 subcollection: vmwaresolutions
 
@@ -48,7 +48,7 @@ The {{site.data.keyword.cloud_notm}} bare metal server has the following specifi
 
 Physical networking is handled by {{site.data.keyword.cloud_notm}}. Review the following descriptions of the physical network that is provided by the {{site.data.keyword.cloud_notm}} and physical host connections (VLANs, MTU) associated with the physical hosts.
 
-### IBM Cloud network overview
+### {{site.data.keyword.cloud_notm}} network overview
 {: #design_physicalinfrastructure-ibm-cloud-network}
 
 The physical network of {{site.data.keyword.cloud_notm}} is separated into two distinct networks: public and private. The private network also contains the management Intelligent Platform Management Interface (IPMI) traffic to the physical servers.

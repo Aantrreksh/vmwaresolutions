@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-07-28"
+lastupdated: "2023-09-26"
 
 keywords: F5 license activation, F5 configuration, order F5
 
@@ -58,11 +58,14 @@ Enter the service name.
 ### F5 license activation connection
 {: #f5_ordering-config-license}
 
-Select **Public network** or **Private network** for license activation. If the target cluster is configured with private-only network interfaces, only the **Private network** option is available. This selection determines how the F5 virtual servers contact the F5 license server, and it does not impact the workload data plane.
+Select **Public network** or **Private network** for license activation. This selection determines how the F5 virtual servers contact the F5 license server, and it does not impact the workload data plane.
+
+If the target cluster is configured with private-only network interfaces, only the **Private network** option is available. 
 
 If you select **Private network**, specify the following settings:
-* **Proxy IP address** The IPv4 address of the proxy server.
-* **Proxy port number** The port number of the proxy server, usually 8080 or 3128.
+
+* **Proxy IP address**: The IPv4 address of the proxy server.
+* **Proxy port number**: The port number of the proxy server, usually 8080 or 3128.
 
 Authenticated proxy is not supported.
 {: note}

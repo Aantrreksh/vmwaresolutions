@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-07-19"
+lastupdated: "2023-09-07"
 
 keywords: vmware vSphere order instance, order vSphere, order vmware vSphere instance
 
@@ -32,7 +32,7 @@ The information that you specify for a new VMware vSphere® instance is based on
 The instance name is set to **vss-_xx_** by default, where _xx_ represents two randomly generated alphabetic characters.
 
 You can also specify an instance name that meets the following requirements:
-* Only lowercase alphabetic, numeric, and dash (-) characters are allowed.
+* Only lowercase alphabetic, numeric, and hyphen (-) characters are allowed.
 * The instance name must start with a lowercase alphabetic character.
 * The instance name must end with a lowercase alphabetic or numeric character.
 * The maximum length of the instance name is 10 characters.
