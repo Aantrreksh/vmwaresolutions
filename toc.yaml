@@ -66,19 +66,13 @@ toc:
               - include: ../vmware-service/vmaas/tenant-viewing.md
           - include: ../vmware-service/vmaas/tenant-deleting.md
           - topicgroup:
-              label: Managing virtual data center instances
-              topics:
-              - include: ../vmware-service/vmaas/capacity-adding-deleting.md
-              - include: ../vmware-service/common/vmaas-iam.md
-              - include: ../vmware-service/common/vmaas-iam_vcd.md
-              - include: ../vmware-service/common/iam-integration.md
-          - topicgroup:
-              label: Managing Cloud Director site instances
+              label: Managing VMware as a Service instances
               topics:
               - include: ../vmware-service/vmaas/pvdc-adding-deleting.md
               - include: ../vmware-service/vmaas/cluster-adding-deleting.md
               - include: ../vmware-service/vmaas/host-adding-deleting.md
               - include: ../vmware-service/vmaas/storage-adding-deleting.md
+              - include: ../vmware-service/vmaas/capacity-adding-deleting.md
           - topicgroup:
               label: Managing Veeam Backup and Replication
               topics:
@@ -353,6 +347,9 @@ toc:
               label: VMware as a Service
               topics:
               - include: ../vmware-service/common/architecture-workload-isolation.md
+              - include: ../vmware-service/common/iam-integration.md
+              - include: ../vmware-service/common/vmaas-iam.md
+              - include: ../vmware-service/common/vmaas-iam_vcd.md
               - include: ../vmware-service/common/vmaas-data-security.md
           - vmonic/data-security.md
           - vmonic/ha-dr.md
