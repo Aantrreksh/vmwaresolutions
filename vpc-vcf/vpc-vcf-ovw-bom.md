@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-10-10"
+lastupdated: "2023-10-30"
 
 keywords: vmware cloud foundation BOM, bill of materials vmware cloud foundation, BOM
 
@@ -42,7 +42,7 @@ Review the following table for details about the BOM information for VMware Clou
 | --------- | ------- | ------------ |
 | Cloud Builder VM | 4.5.1 | 21682411 |
 | SDDC Manager | 4.5.1 | 21682411 |
-| VMware vCenter Server Appliance | 7.0 Update 3l | 21477706 |
+| VMware vCenter Server Appliance | 7.0 Update 3o | 22357613 |
 | VMware ESXi | 7.0 Update 3l | 21424296 |
 | VMware Virtual SAN Witness Appliance | 7.0 Update 3l | 21424296 |
 | VMware NSX-T | 3.2.2.1 | 21487560 |
