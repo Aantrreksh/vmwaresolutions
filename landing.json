@@ -54,6 +54,11 @@
       "view_more": "/docs/vmwaresolutions?topic=vmwaresolutions-vmwaresolutions-relnotes",
       "tiles": [
         {
+          "date": "3 November 2023",
+          "title": "VMware Cloud Foundation",
+          "description": "The IBM Cloud® for VMware Cloud Foundation offering is a full-stack Software Defined Data Center (SDDC) solution that is built on VMware Cloud Advanced and Enterprise Editions. It delivers compute, storage, networking, management automation, and security in a single platform on IBM Cloud Bare Metal Servers for Virtual Private Cloud (VPC)."
+        },
+        {
           "date": "18 October 2023",
           "title": "VMware vSphere Day 2 updates",
           "description": "You can now choose a new bare metal server configuration when you add a host to your existing instances."
@@ -62,11 +67,6 @@
           "date": "24 August 2023",
           "title": "VMware NSX 4.1.0.2",
           "description": "Newly deployed VMware vCenter Server® and VMware vSphere® instances are provisioned with VMware NSX® 4.1.0.2."
-        },
-        {
-          "date": "5 July 2023",
-          "title": "VMware vSphere Day 2 support",
-          "description": "You can view or delete VMware vSphere® instances from the VMware Solutions console. You can also add or delete VMware ESXi™ servers, and add or delete licenses for vSphere instances from the VMware Solutions console."
         }
       ]
     }
