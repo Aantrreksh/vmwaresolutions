@@ -265,6 +265,31 @@ toc:
           - cr/cr_addingviewingservices.md
           - cr/cr_view-delete-instance.md
       - topicgroup:
+          label: Cloud Foundation
+          topics:
+          - topicgroup:
+              label: Overview
+              topics:
+              - vpc-vcf/vpc-vcf-ovw.md
+              - vpc-vcf/vpc-vcf-ovw-bom.md
+          - vpc-vcf/vpc-vcf-plan.md
+          - topicgroup:
+              label: Ordering Cloud Foundation instances
+              topics:
+              - vpc-vcf/vpc-vcf-order-req.md
+              - vpc-vcf/vpc-vcf-ordering.md
+          - topicgroup:
+              label: Expanding and contracting capacity
+              topics:
+              - vpc-vcf/vpc-vcf-host-adding.md
+              - vpc-vcf/vpc-vcf-host-deleting.md
+          - topicgroup:
+              label: Viewing and deleting instances
+              topics:
+              - vpc-vcf/vpc-vcf-viewing.md
+              - vpc-vcf/vpc-vcf-deleting.md
+          - vpc-vcf/vpc-vcf-deploy-vvs.md
+      - topicgroup:
           label: Add-on services
           topics:
           - topicgroup:
@@ -637,6 +662,20 @@ toc:
               - archiref/vpc-ryo/vpc-ryo-nsx-t-vpc-edge-services.md
               - archiref/vpc-ryo/vpc-ryo-scaling.md
               - archiref/vpc-ryo/vpc-ryo-backingup.md
+
+          - topicgroup:
+              label: VMware Cloud Foundation on VPC
+              topics:
+              - archiref/vpc-vcf/vpc-vcf-overview.md
+              - archiref/vpc-vcf/vpc-vcf-architectures.md
+              - archiref/vpc-vcf/vpc-vcf-arch-overview.md
+              - archiref/vpc-vcf/vpc-vcf-vpc-vmw.md
+              - archiref/vpc-vcf/vpc-vcf-hosts.md
+              - archiref/vpc-vcf/vpc-vcf-storage.md
+              - archiref/vpc-vcf/vpc-vcf-mgmt-appliances.md
+              - archiref/vpc-vcf/vpc-vcf-nsx-t.md
+              - archiref/vpc-vcf/vpc-vcf-nsx-t-logical-routers.md
+              - archiref/vpc-vcf/vpc-vcf-nsx-t-vpc-routing.md
 
           - topicgroup:
               label: Interconnectivity for VMware workloads on VPC

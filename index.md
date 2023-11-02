@@ -4,7 +4,7 @@ copyright:
 
   years: 2016, 2023
 
-lastupdated: "2023-10-12"
+lastupdated: "2023-10-19"
 
 keywords: IBM Cloud for VMware Solutions, getting started, vmware solutions offerings, services for vmwaresolutions, vmwaresolutions use cases
 
@@ -63,6 +63,7 @@ Review and choose your deployment offering.
 | [VMware vCenter Server](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview) | This offering deploys a VMware virtual environment by using custom compute, storage, and network resources to best fit your business needs. |
 | [VMware Regulated Workloads](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-overview) | This offering includes a secure-by-default architecture that follows IBM's unique policy controls framework, it provides continuous compliance monitoring, and the highest level of data encryption (FIPS 140-2 Level 4). |
 | [Cyber Recovery](/docs/vmwaresolutions?topic=vmwaresolutions-cr_overview) | This offering provides air-gapped protection, immutable storage, and rapid recovery of applications and data for ransomware protection. |
+| [VMware Cloud Foundation](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-ovw) | This offering is a full-stack Software Defined Data Center (SDDC) solution that is built on VMware Cloud Advanced and Enterprise Editions. It delivers compute, storage, networking, management automation, and security in a single platform on {{site.data.keyword.bm_is_full}}. |
 {: caption="Table 2. Deployment offerings" caption-side="bottom"}
 
 ### Add-on services
