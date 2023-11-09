@@ -4,7 +4,7 @@ copyright:
 
   years:  2023
 
-lastupdated: "2023-10-10"
+lastupdated: "2023-11-09"
 
 keywords: vmware cloud editions, order vmware cloud editions, order vmware cloud editions on IBM Cloud, vmware cloud foundation
 
@@ -97,7 +97,7 @@ The tags added to your new created resources in {{site.data.keyword.cloud_notm}}
 ### Location
 {: #vpc-vcf-ordering-location}
 
-Locations are composed of regions (specific geographic areas) and zones (fault tolerant data centers within a region). Select the location where you want to deploy your instance. For the supported locations, see [{{site.data.keyword.cloud_notm}} region and zone availability for VMware Cloud Foundation deployment](https://test.cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-plan#vpc-vcf-plan-region).
+Locations are composed of regions (specific geographic areas) and zones (fault tolerant data centers within a region). Select the location where you want to deploy your instance. For the supported locations, see [{{site.data.keyword.cloud_notm}} region and zone availability for VMware Cloud Foundation deployment](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-plan#vpc-vcf-plan-region).
 
 ## Management domain
 {: #vpc-vcf-ordering-mgmt-domain}
@@ -119,7 +119,7 @@ The root domain name must meet the following requirements:
 ### Management host profile
 {: #vpc-vcf-ordering-mgmt-profile}
 
-The bare metal server profile that is used by the hosts in the management domain. For the supported profiles, see [{{site.data.keyword.cloud_notm}} region and zone availability for VMware Cloud Foundation deployment](https://test.cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-plan#vpc-vcf-plan-region).
+The bare metal server profile that is used by the hosts in the management domain. For the supported profiles, see [{{site.data.keyword.cloud_notm}} region and zone availability for VMware Cloud Foundation deployment](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-plan#vpc-vcf-plan-region).
 
 ### Management host list
 {: #vpc-vcf-ordering-mgmt-host-list}
@@ -204,7 +204,7 @@ The workload domain is created when you select the VMware Cloud Foundation Stand
 ### Workload host profile
 {: #vpc-vcf-ordering-wl-profile}
 
-The bare metal server profile that is used by the hosts in the workload domain. For the supported profiles, see [{{site.data.keyword.cloud_notm}} region and zone availability for VMware Cloud Foundation deployment](https://test.cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-plan#vpc-vcf-plan-region).
+The bare metal server profile that is used by the hosts in the workload domain. For the supported profiles, see [{{site.data.keyword.cloud_notm}} region and zone availability for VMware Cloud Foundation deployment](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-plan#vpc-vcf-plan-region).
 
 ### Workload host list
 {: #vpc-vcf-ordering-wl-host-list}

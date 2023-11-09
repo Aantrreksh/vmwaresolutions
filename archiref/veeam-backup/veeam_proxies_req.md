@@ -4,7 +4,7 @@ copyright:
 
   years: 2023
 
-lastupdated: "2023-10-13"
+lastupdated: "2023-11-09"
 
 keywords: connection to storage, requirements vmware backup proxy, limitations proxy linux
 
@@ -56,8 +56,8 @@ In addition to the general requirements and limitations, the following ones appl
 * Linux backup proxies cannot be used with VMware Cloud on AWS. This is because VDDK settings required by VMware cannot be enabled on Linux backup proxies.
 * Linux backup proxies that use virtual appliance (HotAdd) transport mode do not support the VM copy scenario.
 * Linux backup proxies cannot be used for guest interaction.
-* For [Direct SAN with iSCSI access](https://test.cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-veeam_proxies_transp_modes#veeam_proxies_transp_modes_dir_san), Linux backup proxies must have the Open-iSCSI initiator enabled.
-* For [Direct NFS access](https://test.cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-veeam_proxies_transp_modes#veeam_proxies_transp_modes_dir_nfs_access), review the following information:
+* For [Direct SAN with iSCSI access](/docs/vmwaresolutions?topic=vmwaresolutions-veeam_proxies_transp_modes#veeam_proxies_transp_modes_dir_san), Linux backup proxies must have the Open-iSCSI initiator enabled.
+* For [Direct NFS access](/docs/vmwaresolutions?topic=vmwaresolutions-veeam_proxies_transp_modes#veeam_proxies_transp_modes_dir_nfs_access), review the following information:
    * Linux backup proxies must have the NFS client package installed.
    * Debian-based backup proxies must have the nfs-common package installed.
    * RHEL-based backup proxies must have the nfs-utils package installed.
