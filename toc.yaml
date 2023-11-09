@@ -819,6 +819,7 @@ toc:
           label: FAQs
           topics:
           - vmonic/faq.md
+          - vmonic/vpc-vcf-faq.md
           - vmonic/faq_shared.md
           - vmonic/faq_esxi.md
           - vmonic/faq_licensing.md
