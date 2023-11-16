@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-10-02"
+lastupdated: "2023-11-16"
 
 keywords: vCenter Server consolidated cluster, order consolidated cluster, order vCenter Server instance
 

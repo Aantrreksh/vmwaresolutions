@@ -3,7 +3,7 @@
 copyright:
   years: 2022, 2023
 
-lastupdated: "2023-10-09"
+lastupdated: "2023-11-16"
 
 keywords: IBM Cloud for VMware Solutions, getting started, vmware solutions offerings, services for vmwaresolutions, vmwaresolutions use cases
 
@@ -85,7 +85,6 @@ Conref section START.
 INFORMATION:
 The section is referenced by the following files:
 
-- cr\cr_addingclusters.md *>> Replaced by* cr/cr_addingviewingclusters.md
 - cr\cr_orderinginstance-consolidwkld.md
 - vcenter\scb-orderinginstance-cons-work-cluster.md
 - vcenter\vc_addingclusters.md
@@ -147,7 +146,6 @@ The uplink speed provides two options:
 |:----------- |:--- |
 | DAL10 | 03 |
 | DAL12 | 01 |
-| DAL13 | 02 |
 {: caption="Table. Available locations for 25 Gb uplink speed - NA South" caption-side="bottom"}
 {: tab-title="NA South"}
 {: tab-group="Data centers"}
@@ -207,11 +205,12 @@ CONTENT:
 
 When you delete a vCenter Server instance, the following components are released sequentially:
 1. All deployed services
-2. The Support fee for NSX-T instances or the Support and Services fee for NSX-V instances
-3. VMware® product licenses
-4. VMware ESXi™ servers
-5. Subnets
-6. VLANs
+2. NFS storage
+3. The Support fee for NSX-T instances or the Support and Services fee for NSX-V instances
+4. VMware® product licenses
+5. VMware ESXi™ servers
+6. Subnets
+7. VLANs
 {: #deletinginstance-components-list}
 
 Review the following information before you proceed.
