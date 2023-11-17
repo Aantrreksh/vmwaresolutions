@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2023
-lastupdated: "2023-11-03"
+lastupdated: "2023-11-17"
 
 keywords: release notes, what's new in VMware Solutions, what is new, new features, VMware Solutions release notes, VMware Solutions
 
@@ -29,6 +29,15 @@ Use these release notes to learn about updates to {{site.data.keyword.vmwaresolu
 
 VMware Cloud Foundation
 :   (Updated on 3 November 2023) The {{site.data.keyword.cloud}} for VMware Cloud Foundation offering is a full-stack Software Defined Data Center (SDDC) solution that is built on VMware Cloud Advanced and Enterprise Editions. It delivers compute, storage, networking, management automation, and security in a single platform on {{site.data.keyword.bm_is_full_notm}} (VPC). For more information, see [Cloud Foundation overview](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-ovw).
+
+VMware Cloud Foundation BOM updates
+:   (Updated on 17 November 2023) The following updates are applied to newly deployed instances:
+
+   * Cloud Builder VM 4.5.2 (build 22223457)
+   * SDDC Manager 4.5.2 (build 22223457)
+   * VMware ESXi 7.0 Update 3n (build 21930508)
+   * VMware NSX-T 3.2.3.1. (build 22104592)
+   * VMware Aria® Suite Lifecycle Manager 8.12.0.9 (build 22652426)
 
 VMware vSphere Day 2 updates
 :   You can now choose a new bare metal server configuration when you add a host to your existing instances. For more information, see [Adding ESXi servers to VMware vSphere instances](/docs/vmwaresolutions?topic=vmwaresolutions-vs_addingservers#vs_addingservers-procedure).
