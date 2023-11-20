@@ -53,25 +53,17 @@ toc:
           label: VMware as a Service
           topics:
           - include: ../vmware-service/common/vmware-aas-overview.md
+          - topicgroup:
+              label: VMware as a Service pricing
+              topics:
+                - include: ../vmware-service/vmaas/st_pricing.md
+                - include: ../vmware-service/vmaas/mt_pricing.md
           - include: ../vmware-service/vmaas/tenant-plan-deploy.md
           - topicgroup:
               label: Ordering VMware as a Service instances
               topics:
-              - include: ../vmware-service/vmaas/vdc-adding.md
               - include: ../vmware-service/vmaas/tenant-ordering.md
-          - topicgroup:
-              label: Viewing VMware as a Service instances
-              topics:
-              - include: ../vmware-service/vmaas/tenant-viewing.md
-              - include: ../vmware-service/vmaas/tenant-viewing-mt.md
-          - include: ../vmware-service/vmaas/tenant-deleting.md
-          - topicgroup:
-              label: Managing virtual data center instances
-              topics:
-              - include: ../vmware-service/vmaas/capacity-adding-deleting.md
-              - include: ../vmware-service/common/vmaas-iam.md
-              - include: ../vmware-service/common/vmaas-iam_vcd.md
-              - include: ../vmware-service/common/iam-integration.md
+              - include: ../vmware-service/vmaas/vdc-adding.md
           - topicgroup:
               label: Managing Cloud Director site instances
               topics:
@@ -80,11 +72,34 @@ toc:
               - include: ../vmware-service/vmaas/host-adding-deleting.md
               - include: ../vmware-service/vmaas/storage-adding-deleting.md
           - topicgroup:
-              label: Managing Veeam Backup and Replication
+              label: Managing virtual data center instances
+              topics:
+              - include: ../vmware-service/vmaas/capacity-adding-deleting.md
+          - topicgroup:
+              label: Viewing and deleting VMware as a Service instances
+              topics:
+              - include: ../vmware-service/vmaas/tenant-viewing-sites.md
+              - include: ../vmware-service/vmaas/tenant-viewing-vdc.md
+          - topicgroup:
+              label: Accessing VMware as a Service instances
+              topics:
+              - include: ../vmware-service/common/vmaas-iam.md
+              - include: ../vmware-service/common/vmaas-iam_vcd.md
+              - include: ../vmware-service/common/iam-integration.md
+          - topicgroup:
+              label: Protecting VMs in VMware as a Service instances
               topics:
               - include: ../vmware-service/vmaas/tenant-veeam.md
               - include: ../vmware-service/vmaas/veeam-adding-deleting.md
-          - include: ../vmware-service/vmaas/mt_pricing.md
+          - topicgroup:
+              label: Migrating VMs to VMware as a Service instances
+              topics:
+                - include: ../vmware-service/vmaas/tenant-vcda.md
+                - include: ../vmware-service/vmaas/vcda-viewing.md
+                - include: ../vmware-service/vmaas/vcda-adding-capacity.md
+                - include: ../vmware-service/vmaas/vcda-adding-deleting-private-ep.md
+                - include: ../vmware-service/vmaas/vcda-migrating.md
+                - include: ../vmware-service/vmaas/vcda-adding-deleting.md
           - topicgroup:
               label: Reference
               topics:
