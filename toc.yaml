@@ -31,6 +31,12 @@ toc:
               href: https://{DomainName}/docs/vmware-service?topic=vmware-service-vmware-service-relnotes
 
   - navgroup:
+      id: tutorial
+      topics:
+      - include: ../solution-tutorials/vmware-as-a-service-vdc.md
+      - include: ../solution-tutorials/vmware-as-a-service-tf.md
+
+  - navgroup:
       id: howto
       topics:
       - topicgroup:
