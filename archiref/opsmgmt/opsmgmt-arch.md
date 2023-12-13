@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-06-12"
+lastupdated: "2023-12-11"
 
 subcollection: vmwaresolutions
 
@@ -39,7 +39,7 @@ The {{site.data.keyword.vmwaresolutions_short}} operations management consists o
     * Risk alerts - indicate issues that are not immediate threats but need to be addressed soon.
     * Efficiency alerts - information to improve performance or reclaim resources.
 
-    VMware Aria Operations Alerts are events that occur on the monitored objects when data analysis indicates deviations from normal metric values, or when an issue occurs with one of the monitored components. VMware Aria Operations alerts are assigned one of these categories:
+    VMware Aria Operations Alerts are events that occur on the monitored objects when data analysis indicates deviations from normal metric values, or when an issue occurs with one of the monitored components. VMware Aria Operations alerts are assigned to one of these categories:
     * Critical - must be acted upon immediately.
     * Immediate - must be acted on as soon as possible.
     * Warning - must be checked when time allows.
@@ -64,7 +64,7 @@ The following diagram shows the network overview.
 * A tooling private portable subnet is provisioned to provide {{site.data.keyword.cloud_notm}} IP address space that is used for the initial provisioning of the tooling VMs. After provisioning, it becomes the responsibility of the client to manage the IP address space for scale-out of the tooling. VMs on this subnet require access to the components hosted on the Management and Internal Management subnets.
 * Tooling VXLAN subnet is used to provide BYOIP IP address space that is used for the initial provisioning of the tooling VMs but then becomes the responsibility of the client to manage the IP address space for scale-out of the tooling. VMs on this subnet require access to the components hosted on the Overlay subnets. The ESG provides NAT between the {{site.data.keyword.cloud_notm}} and BYOIP address spaces.
 * The VMware Aria Operations Remote Collectors are deployed by the client if they would like to take advantage of the VMware Aria Operations to monitor their compute VMs.
-* The VMware Aria Operations for Logs Forwarders relay log messages from overlay components to the VMware Aria Operations for Logs cluster. The client can also configure their compute VMs to uses these forwarders, if required.
+* The VMware Aria Operations for Logs Forwarders relay log messages from overlay components to the VMware Aria Operations for Logs cluster. The client can also configure their compute VMs to use these forwarders, if required.
 * VMware Update Manager (VUM) provides updating of vSphere hosts and VM hardware and tools. VUM uses the Proxy to gain access to the internet repositories.
 
 VMware Aria Operations collects data from objects in the environment. Each piece of data that is collected is called a metric observation or value. VMware Aria Operations uses the vCenter adapter to collect raw metrics from vCenter. In addition to the metrics it collects, VMware Aria Operations calculates capacity metrics, badge metrics, and metrics to monitor the health of your system. Alert definitions are a combination of symptoms and recommendations that identify problem areas and generate alerts on which you act for those areas.

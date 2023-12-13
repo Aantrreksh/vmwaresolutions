@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-10-11"
+lastupdated: "2023-12-11"
 
 keywords: FortiGate security, FortiGate Security Appliance, tech specs FortiGate
 
@@ -57,7 +57,7 @@ Two appliances are deployed in active-passive configuration.
 
 After the FortiGate Security Appliance service is installed successfully, you can manage and configure firewall rules for the FSA from the FortiGate console.
 
-Ensure the FSA firewall rules are defined to allow outbound HTTPS (TCP port 443) communications that are initiated by management components such as the Zerto Virtual Manager to communicate with the external management database on the {{site.data.keyword.cloud}} infrastructure over the internet. The outbound HTTPS (TCP port 443) communications originate from the public IP address of the management services VMware NSX Edge Services Gateway (ESG) in your instance.
+Ensure that the FSA firewall rules are defined to allow outbound HTTPS (TCP port 443) communications that are initiated by management components such as the Zerto Virtual Manager to communicate with the external management database on the {{site.data.keyword.cloud}} infrastructure over the internet. The outbound HTTPS (TCP port 443) communications originate from the public IP address of the management services VMware NSX Edge Services Gateway (ESG) in your instance.
 {: important}
 
 ### Accessing the FortiGate 300 series console

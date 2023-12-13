@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-07-31"
+lastupdated: "2023-12-11"
 
 keywords: Entrust KeyControl WebGUI, Entrust KeyControl console, enable internet Entrust KeyControl
 
@@ -63,7 +63,7 @@ For private-only vCenter Server environments, the VMware® NSX Edge Services Gat
 3. Click **Home > Hosts and Clusters** and find the Entrust VMs. Right-click one of the VMs and click **Open Console**.
 4. Log in to the console by using the console credentials that you can find on the Entrust KeyControl service details page on the {{site.data.keyword.vmwaresolutions_short}} console.
 5. To get the current default gateway IP address from the VM, click **Manage Network Settings > Show Current Network Configuration**. Note the IP address that is listed for **Gateway**. This address becomes the gateway that is used for the static route.
-6. To set a static route for the VM, click **Manage Network Settings > Manage Static Routes > Add Static Route**. Set **Network address** to `10.0.0.0/8` and **Gateway** to the IP address noted in the previous step.
+6. To set a static route for the VM, click **Manage Network Settings > Manage Static Routes > Add Static Route**. Set the **Network address** to `10.0.0.0/8` and **Gateway** to the IP address noted in the previous step.
 7. To set the default gateway IP for the VM, click **Manage Network Settings > Change Current Network Configuration**. If you get a warning message, click **OK**, then click **Custom Configuration**. Set the **Gateway** field to the private uplink IP address noted in step 2 and click **OK**. Wait until the new network configuration is installed and the network services are restarted.
 8. If you see a message that asks for Entrust SecureOS reauthentication, click **OK** and enter the IP address of the other Entrust VM for this installation. If you are asked for a 16-character passphrase, press Enter to return to the main menu. Verify the current network configuration to ensure that your changes are applied.
 9. To confirm that the VM has access to the internet, ping a public IP address or website. Click **Manage Network Settings > Network Diagnostic Tools > Test Inbound Ports of Another Server**. Type a public website address, for example, `www.ibm.com`, click **OK**, type `80 443` for the ports (or any other ports you want to test). You must get an immediate response that shows the inbound ports with a message similar to `80 (OK) 443 (OK)`.

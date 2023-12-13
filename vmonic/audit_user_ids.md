@@ -4,7 +4,7 @@ copyright:
 
   years: 2016, 2023
 
-lastupdated: "2023-07-31"
+lastupdated: "2023-12-07"
 
 keywords: user IDs vCenter, PSC user, user ID service
 
@@ -23,7 +23,7 @@ subcollection: vmwaresolutions
 VMware instance operations fail if IBM user IDs are deleted, disabled, or if their passwords are changed.
 {: important}
 
-## vCenter and Platform Services Controller user IDs
+## vCenter user IDs
 {: #audit_user_ids-vcenter-psc}
 
 Starting with V2.5, {{site.data.keyword.vmwaresolutions_short}} uses the following user IDs to add an identity source, which is embedded by default, into vCenter.
@@ -31,7 +31,6 @@ Starting with V2.5, {{site.data.keyword.vmwaresolutions_short}} uses the followi
 | User     | User ID      | Method | Description |
 |:---------|:-------------|:-------|:------------|
 | IBM      | `root`       | SSH    | Used for VMware configuration such as setting up VMware High Availability and creating distributed switches. Used post deployment to pair primary and secondary VMware vCenter Server® instances. |
-| Customer | `customerroot` | SSH    | Created for customer use only. |
 | IBM      | `automation@root_domain`  \n (Active Directory™ user) | HTTP | Used post deployment to add and remove hosts and clusters and to deploy and configure virtual machines (VMs) for services. |
 | Customer | `administrator@vsphere.local` | HTTP | Created for customer use only. |
 {: caption="Table 1. vCenter and Platform Services Controller user IDs" caption-side="bottom"}
@@ -53,8 +52,7 @@ HTTP is used for vCenter setup, configuration, and VMware operations such as add
 
 | User     | User ID      | Description |
 |:---------|:-------------|:------------|
-| IBM      | `ic4vroot`   | Used post deployment to add more NFS storage, configure routes for that storage, and run all server validation code. |
-| Customer | `root`       | Created for customer use only. |
+| IBM      | `ic4vroot` - deprecated  | Used for existing deployments. |
 {: caption="Table 3. ESXi host user IDs" caption-side="bottom"}
 
 ## Microsoft Active Directory user IDs

@@ -4,7 +4,7 @@ copyright:
 
   years:  2023
 
-lastupdated: "2023-10-10"
+lastupdated: "2023-12-11"
   
 keywords: vmware cloud foundation, IBM Cloud, vpc
 
@@ -112,7 +112,7 @@ Deploying NSX Advanced Load Balancer Controllers require new {{site.data.keyword
 
 This solution is intended for cloud architects and administrators who want to use NSX Advanced Load Balancer for load balancing in VMware Cloud Foundation.
 
-Solution-added products for this VMware validated solutions include NSX Advanced Load Balancer.
+Solution-added products for VMware validated solutions include NSX Advanced Load Balancer.
 
 To deploy the Advanced Load Balancing for VMware Cloud Foundation validated solution in {{site.data.keyword.cloud_notm}}, see [Advanced Load Balancing for VMware Cloud Foundation](https://docs.vmware.com/en/VMware-Cloud-Foundation/services/vcf-nsx-advanced-load-balancer-v1/GUID-F8696F0A-D91B-46B1-A824-8FAE461E57B3.html){: external}.
 

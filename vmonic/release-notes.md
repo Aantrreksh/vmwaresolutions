@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2023
-lastupdated: "2023-11-17"
+lastupdated: "2023-12-13"
 
 keywords: release notes, what's new in VMware Solutions, what is new, new features, VMware Solutions release notes, VMware Solutions
 
@@ -22,6 +22,46 @@ Use these release notes to learn about updates to {{site.data.keyword.vmwaresolu
 
 ## 2023
 {: #year-2023}
+
+### 13 December 2023
+{: #vmwaresolutions-dec1323}
+{: release-note}
+
+vCenter Server and VMware vSphere BOM updates
+:   The following updates are applied to newly deployed instances, clusters, and hosts:
+
+   * VMware vCenter Server Appliance 7.0 Update 3o (build 22357613)
+   * VMware vSphere ESXi 7.0 Update 3o (build 22348816)
+
+Active Directory server OS upgrade
+:   To upgrade your Microsoft® Active Directory™ server, open an IBM Support ticket by following the steps in [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support#trbl_support-procedure). Before you proceed with a new server installation, ensure that you back up all domain controllers and vCenter Server instances.
+
+Add-on services upgrades
+:   The following service versions are now available for deployment:
+
+   * Caveonix RiskForesight™ v5.0 
+   * FortiGate® Virtual Appliance v7.4.1
+
+New region for KMIP for VMware
+:   The KMIP™ for VMware service is now available for use in the Madrid region.
+
+Ordering Veeam licenses
+:   You can order a maximum of 500 VMs under a single license key for Veeam®. If you need a single license key for more than 500 VMs, you must order a stand-alone license separately.
+
+REST API updates
+:   The following updates are available for the [VMware Solutions API](/apidocs/vmware-solutions):
+
+   * The `check_price` parameter is deprecated. Beginning with this release, the `verify_only` parameter performs a price check regardless of whether `check_price` is indicated.
+   * The `disks` parameter used to order vSAN storage can now also be defined as an object (size and quantity), in addition to an array of disk types.
+   * Outdated endpoints, such as `v2/supported_config_options` are removed.
+   * Performance improvements are made to the API calls.
+
+New documentation 
+:   A number of [tutorials](/docs/vmwaresolutions?topic=vmwaresolutions-vmware-as-a-service-vdc) are now available from the user documentation. These solution tutorials provide step-by-step instructions about using VMware as a Service to implement common patterns based on best practices.
+
+customerroot user - deprecated
+:   The `customerroot` user is no longer created by the VMware Solutions automation for newly deployed instances, clusters, hosts, and new vCenter Server VMs. The `root` user is used instead. Existing instances, clusters, hosts, and vCenter Server VMs might still use the `customerroot` credentials.
+{: deprecated}
 
 ### 18 October 2023
 {: #vmwaresolutions-oct1823}
@@ -64,12 +104,12 @@ User interface updates and enhancements
 :   The UI (user interface) is updated with various messages and tooltips, and provides the following enhancements:
 
    * The **VMware instance configuration manager** is enhanced with extra details and tooltips to differentiate and help you choose from the available saved configurations.
-   * The checkbox **Maintenance mode** in the **Add ESXi server** panel is changed to a switch, for consistency with other similar UI options.
-   * The contents of the **Add ESXi server** and **Add NFS storage** panels is better structured and organized for a more streamlined user experience.
+   * The checkbox **Maintenance mode** in the **Add ESXi server** window is changed to a switch, for consistency with other similar UI options.
+   * The contents of the **Add ESXi server** and **Add NFS storage** windows is better structured and organized for a more streamlined user experience.
    * For gateway and edge clusters, the uplink speed setting is now included in the **CPU model** table when you choose your servers.
 
 New documentation 
-:   The Veeam® backup guide provides information regarding expanding backup storage as a day-2 operation, recommendations for sizing and performance, and the deployment of proxy and repository servers. For more information, see [Veeam backup guide](/docs/vmwaresolutions?topic=vmwaresolutions-veeam_proxies_req).
+:   The Veeam backup guide provides information about expanding backup storage as a day-2 operation, the deployment of proxy and repository servers, and recommendations for sizing and performance. For more information, see [Veeam backup guide](/docs/vmwaresolutions?topic=vmwaresolutions-veeam_proxies_req).
 
 ### 24 August 2023
 {: #vmwaresolutions-aug2423}
@@ -82,7 +122,7 @@ VMware vSphere 8 on Cascade Lake - not supported
    {: important}
 
 Veeam 12 for VMware Shared
-:   Veeam® Backup and Replication 12 (Veeam 12) is now available for deployment with the VMware Shared offering.
+:   Veeam Backup and Replication 12 (Veeam 12) is now available for deployment with the VMware Shared offering.
 
 VMware NSX 4.1.0.2
 :   Newly deployed VMware vCenter Server and VMware vSphere® instances are provisioned with VMware NSX® 4.1.0.2.
@@ -101,7 +141,7 @@ Entrust CloudControl - deprecated
 {: deprecated}
 
 FortiGate Virtual Appliance v7.4
-:   The FortiGate® Virtual Appliance v7.4 add-on service is available for deployment.
+:   The FortiGate Virtual Appliance v7.4 add-on service is available for deployment.
 
 Name change for PrimaryIO
 :   The PrimaryIO add-on service name is changed to PrimaryIO Migrations and its [About](https://cloud.ibm.com/infrastructure/vmware-solutions/console/newserviceentry/PIO/vcs) page is updated with the most recent feature information.
@@ -138,7 +178,7 @@ Updates to VMware vCenter Server and VMware vSphere instances
 Add-on services upgrades
 :   The following service versions are now available for deployment:
 
-   * Caveonix RiskForesight™ v4.1
+   * Caveonix RiskForesight v4.1
    * FortiGate Virtual Appliance v7.2.5
    * F5® BIG-IP® v17.1
    * Juniper vSRX v3.0 (23.1R1)
@@ -329,7 +369,7 @@ Add-on services upgrades
    * Zerto v9.5u3
 
 KMIP support for Key Protect key rings
-:   KMIP™ for VMware supports Key Protect key rings.
+:   KMIP for VMware supports Key Protect key rings.
 
 Ordering Veeam stand-alone licenses
 :   Starting with this release, if you order Veeam stand-alone licenses, the ordering process automatically starts. You get an email confirming what you ordered. A license key is generated for you. When the key is ready, it is emailed to you.
@@ -1103,62 +1143,3 @@ User interface updates and enhancements
    * The previous **Start provisioning** section is renamed to **IaaS platforms**.
    * A new **VMware Regulated Workloads** section is added.
    * The previous **Services** section is renamed to **Add-on services**.
-
-## 2020
-{: #year-2020}
-
-### 26 October 2020
-{: #vmwaresolutions-oct2620}
-{: release-note}
-
-VMware Solutions Shared - support for Dallas 12 and Dallas 13 {{site.data.keyword.cloud_notm}} data centers
-:   Starting with release 3.9, Dallas 12 and Dallas 13 {{site.data.keyword.cloud_notm}} data centers are now available for deployment on VMware Solutions Shared instances.
-
-VMware Solutions Shared - Integration with {{site.data.keyword.cloud_notm}} Monitoring
-:   You can now use {{site.data.keyword.cloud_notm}} Monitoring to view and customize dashboards to visualize performance, volume of usage, and to define alerts to monitor your environment.
-
-VMware Solutions Dedicated - removed support for VMware vSphere 6.5u3
-:   VMware vSphere 6.5u3 is no longer supported for new VMware vCenter Server instances. Full support remains for existing instances, including support to add new hosts and clusters.
-
-   VMware vSphere 6.5u3 is no longer supported for new VMware vSphere clusters. Full support remains for existing clusters, including support to add new hosts.
-
-VMware Solutions Dedicated - VMware NSX updates
-:   Review the following information about vCenter Server with NSX-T instances.
-
-   * New instances of vCenter Server with NSX-T are provisioned with NSX-T 3.0.1.1.
-   * Day 2 operations continue to be supported for vCenter Server with NSX-T 2.5.1 instances.
-   * If you want to upgrade your existing vCenter Server with NSX-T instance, you must upgrade to NSX-T 3.0.2.
-
-VMware Solutions Dedicated - new Cascade Lake server support
-:   The following {{site.data.keyword.cloud_notm}} bare metal servers are available for deployment for vCenter Server instances and vSphere clusters with vSphere 6.7.
-
-   * Dual Intel Xeon Platinum 8260 / 48 Cores, 2.4 GHz
-   * Quad Intel Xeon Platinum 8260 / 96 Cores, 2.4 GHz
-
-VMware Solutions Dedicated - support for Osaka {{site.data.keyword.cloud_notm}} data centers
-:   The following {{site.data.keyword.cloud_notm}} data centers are available for deployment on vCenter Server, VMware vSphere, and {{site.data.keyword.cloud_notm}} for VMware Mission Critical Workloads instances: **Osaka 21**, **Osaka 22**, and **Osaka 23**.
-
-VMware Solutions Dedicated - updates for the edge services cluster
-:   The CPU model for new deployments of vCenter Server instance edge services clusters is Dual Intel Xeon Silver 4210 (Cascade).
-
-VMware Solutions Dedicated - increased local disk count
-:   For new vCenter Server instances and new clusters added to vCenter Server instances, the local disks option for storage now supports 10 and 12 disks.
-
-Add-on services
-:   The 3.9 release provides the following service versions on newly deployed instances.
-
-   * BIG-IP VE v15.1.0.5
-   * HyTrust CloudControl v6.2 for vCenter Server with NSX-T
-
-   During the pre-configuration of HyTrust CloudControl v6.2, global PIP is enabled.
-   * Juniper vSRX and Juniper vSRX Gateway Appliance 3.0 (20.1R1.11)
-   * Red Hat OpenShift for VMware v4.4.23
-
-   You can now install the Red Hat OpenShift for VMware service on vCenter Server with NSX-T instances. For NSX-T, you must have a new vCenter Server instance with NSX-T that is provisioned with NSX-T 3.0.1.1 or you must upgrade from NSX-T 2.5.1 to NSX-T 3.0.2.
-
-HyTrust CloudControl for vCenter Server with NSX-V - deprecated
-:   New installations of HyTrust CloudControl are no longer supported for new or existing deployments of vCenter Server with NSX-V instances. You can still view or delete existing HyTrust CloudControl installations on your existing instances.
-   {: deprecated}
-
-User interface updates and enhancements
-:   A new **Uplink speed** option is available in the **Network interface** section when you order vCenter Server instances, order new vSphere clusters, and add clusters for vCenter Server instances.

@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-10-06"
+lastupdated: "2023-11-09"
 
 keywords: Zerto, Zerto components, tech specs Zerto
 
@@ -69,7 +69,9 @@ Zerto Virtual Replication Appliance (VRA) components are deployed only into the 
 
 The Zerto service is not configured with an {{site.data.keyword.cloud_notm}} infrastructure portable IP address or with a NAT connection to the public network, even if you have public interfaces in your instance. This implementation helps to avoid the possibility of asymmetric routing when it uses a network gateway appliance.
 
-When you deploy Zerto, you must configure your own proxy or NAT connection to the public network. If you do not complete the configuration, Zerto blocks management activities in 15 days. For more information about the Call Home feature for Zerto, see [Considerations for ordering Zerto](/docs/vmwaresolutions?topic=vmwaresolutions-zerto_ordering#zerto_ordering-private-only).
+When you deploy Zerto, you must configure your own proxy or NAT connection to the public network. If you do not complete the configuration, Zerto blocks management activities in 15 days. 
+
+For more information, see [Considerations for ordering Zerto](/docs/vmwaresolutions?topic=vmwaresolutions-zerto_ordering#zerto_ordering-private-only).
 
 ### Licenses and fees
 {: #addingzertodr-specs-licenses}

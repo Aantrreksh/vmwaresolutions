@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-08-18"
+lastupdated: "2023-11-10"
 
 keywords: KMIP for VMware, order KMIP, Key Protect, Hyper Protect Crypto Services, HPCS
 
@@ -22,9 +22,9 @@ You can order a KMIP™ for VMware® instance without associating it to any VMwa
 ## Before you begin
 {: #kmip_standalone_ordering-req}
 
-Ensure that you completed the following tasks:
-* You configured the {{site.data.keyword.cloud}} infrastructure credentials on the **Settings** page. For more information, see [User accounts and settings](/docs/vmwaresolutions?topic=vmwaresolutions-useraccount).
-* You reviewed all the considerations in [Considerations when you install KMIP for VMware instances](/docs/vmwaresolutions?topic=vmwaresolutions-kmip_standalone_considerations#kmip_standalone_considerations-install).
+You must complete the following tasks:
+* Configure the {{site.data.keyword.cloud}} infrastructure credentials on the **Settings** page. For more information, see [User accounts and settings](/docs/vmwaresolutions?topic=vmwaresolutions-useraccount).
+* Review all the considerations in [Considerations when you install KMIP for VMware instances](/docs/vmwaresolutions?topic=vmwaresolutions-kmip_standalone_considerations#kmip_standalone_considerations-install).
 
 ## Step 1 - Ordering a KMIP for VMware instance
 {: #kmip_standalone_ordering-step1}
@@ -52,7 +52,7 @@ You can also specify a name for your KMIP for VMware instance.
 {: #kmip_standalone_ordering-step1-procedure}
 
 1. In the {{site.data.keyword.vmwaresolutions_short}} console, scroll down to the services section and click **KMIP for VMware** in the **Security and compliance** category.
-2. On the **KMIP for VMware** page, configure the service settings, as needed.
+2. On the **KMIP for VMware** page, configure the service settings as needed.
 3. Click **Create**.
 
 ### Results of Step 1
@@ -110,7 +110,7 @@ When you enable the nonactive KMIP for VMware instance, provide the following se
 
     If you selected HPCS, the key ring field is not displayed.
 
-5. Under Customer root key, the names and values of the root keys are displayed. Select the root key you want.
+5. Under the Customer root key, the names and values of the root keys are displayed. Select the root key that you want.
 
 6. (Optional) Add client SSL certificates.
     1. Click **Add**.
@@ -130,7 +130,7 @@ When you enable the nonactive KMIP for VMware instance, provide the following se
 ## Step 3 - (Optional) Adding client SSL certificates
 {: #kmip_standalone_ordering-step3}
 
-If you did not add client SSL certificates in Step 2, you must add it after the instance can be used.
+If you did not add the client SSL certificates in Step 2, you must add it after the instance can be used.
 
 ### Procedure
 {: #kmip_standalone_ordering-step3-procedure}
@@ -146,7 +146,7 @@ If you did not add client SSL certificates in Step 2, you must add it after the 
 ### Results of Step 3
 {: #kmip_standalone_ordering-step3-results}
 
-* You get console notification that your request to add the certificate is being processed.
+* You get a console notification that your request to add the certificate is being processed.
 * When the certificate is added successfully, you get console confirmation and the added certificate is displayed in the **Client SSL certificates** table on the service details page.
 
 ## Connecting vCenter Server to the KMIP instance
@@ -169,6 +169,7 @@ If your KMIP instance is connected to Key Protect, you must use the two regional
 | Tokyo | `kmip-1.private.ap-north.vmware-solutions.cloud.ibm.com:5696` \n `kmip-2.private.ap-north.vmware-solutions.cloud.ibm.com:5696` |
 | Toronto | `kmip-1.private.ca-tor.vmware-solutions.cloud.ibm.com:5696` \n `kmip-2.private.ca-tor.vmware-solutions.cloud.ibm.com:5696` |
 | Washington DC | `kmip-1.private.us-east.vmware-solutions.cloud.ibm.com:5696` \n `kmip-2.private.us-east.vmware-solutions.cloud.ibm.com:5696` |
+| Madrid | `kmip-1.private.eu-es.vmware-solutions.cloud.ibm.com:5696` \n `kmip-2.private.eu-es.vmware-solutions.cloud.ibm.com:5696` |
 {: caption="Table 2. KMIP for VMware network service endpoint locations" caption-side="bottom"}
 
 ## Related links

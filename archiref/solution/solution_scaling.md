@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2022
+  years:  2016, 2023
 
-lastupdated: "2022-08-08"
+lastupdated: "2023-12-07"
 
 subcollection: vmwaresolutions
 
@@ -44,7 +44,7 @@ You can also scale out the compute capacity by creating a new cluster from the {
 This method enables you to achieve the following things:
 * Creating an additional, separate cluster in the environment.
 * Separating management workloads from application workloads physically and logically.
-* Seoparating workloads based on other characteristics, for example, Microsoft® SQL database cluster.
+* Separating workloads based on other characteristics, for example, Microsoft® SQL database cluster.
 * Deploying applications in highly available topologies.
 
 When the initial cluster is converted into a management-only cluster, you must complete manual steps for the migration of existing workloads. This might involve the reattachment of data stores to the new cluster or alternately storage migration. The IP addresses of the workloads might need to be changed if the new cluster resides in a different {{site.data.keyword.cloud_notm}} pod or if the cluster is assigned to a different VLAN ID.

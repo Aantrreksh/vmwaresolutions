@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-10-03"
+lastupdated: "2023-12-11"
 
 keywords: FortiGate VA, FortiGate configuration, order FortiGate
 
@@ -33,7 +33,7 @@ Review the following considerations before you install the FortiGate Virtual App
 * The initial memory allocation is determined by your initial CPU selection. However, you can change the memory allocation after deployment.
 * For larger deployment sizes, such as FortiGate-VM16 and FortiGate-VM32, the initial CPU allocation is set to half the deployment size limit to ensure successful deployment. After deployment, you can change the CPU allocation up to the deployment size limit.
 * When you deploy FortiGate Virtual Appliances to your instance, SNAT and firewall rules are defined on the Management NSX Edge™ Services Gateway (ESG). In addition, static routes on the FortiGate Virtual Appliances are defined to allow outbound HTTPS communications from your instance to the public network. These communications are needed for license activation and for acquiring the most updated security policies and content.
-* For high CPU licenses, make sure you have enough CPUs available on the consolidated cluster.
+* For high CPU licenses, make sure that you have enough CPUs available on the consolidated cluster.
 
    * At least 2 VMware ESXi™ servers are available and each active host has sufficient resources to host a single FortiGate VM.
    * VMware® vSphere HA has enough resources to host two FortiGate VMs.

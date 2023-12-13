@@ -19,7 +19,7 @@ Cyber recovery is one of five functions that are described in the [NIST Cybersec
 
 This documentation describes a high-level architecture that can be used to assist with your custom cyber-recovery requirements. The solution architecture uses a {{site.data.keyword.vmwaresolutions_full}} vCenter Server®, and your choice of bring your own data mover with immutable data storage.
 
-This solution is suitable for clients who want to extend their own existing backup solution with an isolated recovery environment while minimizing costs.
+This solution is suitable for clients who want to extend their own existing backup solution with an isolated recovery environment while minimizing costs. 
 
 ![Architecture diagram](../../images/cr-byo-ire.svg "Architecture diagram"){: caption="Figure 1. Architecture for cyber-recovery isolated environment with bring your own data mover and immutable repository" caption-side="bottom"}
 
@@ -29,12 +29,12 @@ Key elements of the solution architecture include:
 * The vCenter Server instance can use VMware vSAN or use NFS datastores, see [Physical storage design](/docs/vmwaresolutions?topic=vmwaresolutions-design_physicalinfrastructure#design_physicalinfrastructure-storage-design).
 * The vCenter Server instance does not host production or disaster recovery workloads.
 * The vCenter Server instance includes a gateway cluster to host your choice of one of the following to protect vCenter Server instance networks. It also provides a network air gap between the production environment and the isolated recovery environment:
-
+  
    * Juniper® vSRX appliances
    * FortiGate® Security Appliance
    * FortiGate® Virtual Appliance
    * Bring your own gateway appliance
-
+  
 * The solution architecture does not preclude any of the vCenter Server options, such as Caveonix, Entrust, and VMware Aria® Operations™.
 * Optionally, you can use encryption with Hyper Protect Crypto Services, Key Protect, and the VMware KMIP service. For more information, see [KMIP for VMware overview](/docs/vmwaresolutions?topic=vmwaresolutions-kmip_standalone_considerations).
 * The BYO (Bring Your Own) data mover and immutable repository is your backup technology that you want to instantiate within the isolated recovery environment.
@@ -46,7 +46,7 @@ Key elements of the solution architecture include:
 
 * Sandboxes can be provisioned by using VMware NSX-T™ overlay segments, logical routing, distributed firewall, and network address translation to provide network-isolated zones to mount cyber-recovery backups for inspection by your cybertoolsets.
 * Cybertoolsets are customer-supplied tools that run as virtual machines in the isolated recovery environment and access your cyber-backups for verification and analysis.
-* Cyberadmins are customer personnel who are authorized to access the isolated recovery environment and are different than admins that manage the production and disaster recovery environments to promote separation of duties.
+* Cyberadmins are customer personnel who are authorized to access the isolated recovery environment and should be different than admins that manage the production and disaster recovery environments to promote separation of duties.
 * Jump servers are used by your cyberadmins to access the isolated recovery environment.
 * The air gap enables network connectivity between the production environment and the isolated recovery environment only when required.
 * The solution architecture is independent of the location of the production environment. However, network connectivity is required between the production environment and the cyber-recovery site.

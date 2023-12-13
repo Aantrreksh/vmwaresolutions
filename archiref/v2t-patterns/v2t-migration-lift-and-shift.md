@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2023
 
-lastupdated: "2023-09-11"
+lastupdated: "2023-12-07"
 
 subcollection: vmwaresolutions
 
@@ -39,7 +39,7 @@ In your VM migration between the NSX-V and NSX-T environments, the new vCenter S
 ## Considerations for NSX-V to NSX-T migrations
 {: #v2t-lift-and-shift-considerations}
 
-To ensure that your migration is seamless and to minimize the downtime, design the migration and its phases and waves carefully. Due to the differences in the architecture, opens you the possibility redesign parts of your network instead of just mirroring the configurations to best match your requirements and NSX-T best practices.
+To ensure that your migration is seamless and to minimize the downtime, design the migration and its phases and waves carefully. Due to the differences in the architecture, opens you the possibility to redesign parts of your network instead of just mirroring the configurations to best match your requirements and NSX-T best practices.
 
 If you do not think that you have skills in the house, you can get help from various service providers. For example, the {{site.data.keyword.cloud_notm}} partner PrimaryIO provides [an optional pro service](/catalog/services/hdm-cloud-connect-nsx-v-to-nsx-t#about) to help you [accelerate your NSX-V to NSX-T migration](https://hdm.primaryio.com/lp/nsxvtot){: external}.
 

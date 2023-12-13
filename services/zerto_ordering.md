@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-10-06"
+lastupdated: "2023-11-06"
 
 keywords: Zerto, Zerto replication billing, order Zerto
 
@@ -63,7 +63,7 @@ When you deploy Zerto, you must configure your own proxy or NAT connection to th
 
 Within 15 days, you must configure the Call Home feature for Zerto. If you do not complete the configuration in this time frame, Zerto blocks certain management activities.
 
-For more information about Zerto Call Home, see [How to configure Zerto Reporting for Enterprise environments (Call Home)](https://www.zerto.com/myzerto/knowledge-base/zerto-reporting-for-enterprise-environments-call-home/){: external}.
+For more information about Zerto Call Home, see [How to configure Zerto Reporting for Enterprise environments (Call Home)](https://help.zerto.com/kb/000004824){: external}.
 
 ## Related links
 {: #zerto_ordering-related}

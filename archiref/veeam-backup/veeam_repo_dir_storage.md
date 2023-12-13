@@ -4,7 +4,7 @@ copyright:
 
   years: 2023
 
-lastupdated: "2023-10-17"
+lastupdated: "2023-12-07"
 
 keywords: direct attached storage, microsoft windows server, requirements for microsoft windows server based repositories, linux server, requirements for linux backup repositories, hardened repository
 
@@ -255,40 +255,40 @@ The next time you log in with this user account, it will lose sudo permissions. 
 
 To launch the **New Backup Repository wizard**, complete the following steps:
 
-<!-- The {: #step-1} tag and the ordered list that has only 1s are intentional. Do not delete. This coding is necessary for proper indentation when the procedure is translated. -->
+<!-- The {: #step-2} tag and the ordered list that has only 2s are intentional. Do not delete. This coding is necessary for proper indentation when the procedure is translated. -->
 
-1. Open the **Backup infrastructure view**. In the inventory pane, right-click the **Backup repositories** node and select **Add backup repository**. Alternatively, you can click **Add repository** on the ribbon. {: #step-1}
-1. In the **Add backup repository** window, select **Direct attached storage > Linux (Hardened Repository)**.
-1. At the **Name** step of the wizard, specify a name and description for the repository. The default description contains information about the user who added the repository, date and time when the repository was added.
-1. From the repository server list, select a Linux server that you want to use as a hardened repository. Click **Populate** to see a list of disks connected to the server, their capacity and free space. The repository server list contains only those servers that are added to the backup infrastructure. If the server is not added to the backup infrastructure yet, click **Add New** on the right and follow the wizard:
+2. Open the **Backup infrastructure view**. In the inventory pane, right-click the **Backup repositories** node and select **Add backup repository**. Alternatively, you can click **Add repository** on the ribbon. {: #step-2}
+2. In the **Add backup repository** window, select **Direct attached storage > Linux (Hardened Repository)**.
+2. At the **Name** step of the wizard, specify a name and description for the repository. The default description contains information about the user who added the repository, date and time when the repository was added.
+2. From the repository server list, select a Linux server that you want to use as a hardened repository. Click **Populate** to see a list of disks connected to the server, their capacity and free space. The repository server list contains only those servers that are added to the backup infrastructure. If the server is not added to the backup infrastructure yet, click **Add New** on the right and follow the wizard:
 
-   1. At the **Name** step of the wizard, specify a full DNS name or IP address and description of the Linux server. The default description contains information about the user who added the server, date and time when the server was added.
-   1. At the **SSH Connection** step of the wizard, specify single-use credentials to connect to the Linux server and deploy Veeam data mover. The user account you specified must be a non-root account. Also, it must have the home directory created on the Linux server.
+   2. At the **Name** step of the wizard, specify a full DNS name or IP address and description of the Linux server. The default description contains information about the user who added the server, date and time when the server was added.
+   2. At the **SSH Connection** step of the wizard, specify single-use credentials to connect to the Linux server and deploy Veeam data mover. The user account you specified must be a non-root account. Also, it must have the home directory created on the Linux server.
 
       Veeam Backup and Replication does not store these credentials in the configuration database.
       {: note}
 
-1. The **Elevate account** privileges automatically check box is used by default. If you did not add the user account to the sudoers file, select the Use "su" if "sudo" fails check box and enter the password for the root account.If you want to change default SSH settings, click **Advanced**.
+2. The **Elevate account** privileges automatically check box is used by default. If you did not add the user account to the sudoers file, select the Use "su" if "sudo" fails check box and enter the password for the root account.If you want to change default SSH settings, click **Advanced**.
 
    If you added the user account to the sudoers file, you do not need to select the Use "su" if "sudo" fails check box and specify the root password. But after the server is added, you must remove the user account from the file.
    {: important}
 
-1. At the **Review** step of the wizard, review what Veeam Backup and Replication components are already installed on the server and what components will be installed. Click **Apply** to add the Linux server to the backup infrastructure.
-1. At the **Summary** step of the wizard, review details of the Linux server and click **Finish** to exit the wizard.
-1. At the **Repository** step of the wizard, specify path and repository settings:
+2. At the **Review** step of the wizard, review what Veeam Backup and Replication components are already installed on the server and what components will be installed. Click **Apply** to add the Linux server to the backup infrastructure.
+2. At the **Summary** step of the wizard, review details of the Linux server and click **Finish** to exit the wizard.
+2. At the **Repository** step of the wizard, specify path and repository settings:
 
-   1. In the **Location** section, specify a path to the directory that you created to store immutable backups when preparing Linux server. Click **Populate** to check capacity and available free space in the selected location.
-   1. Select the **Use fast cloning** on XFS volumes check box to enable copy-on-write functionality. For more information, see the [Fast Clone](/docs/vmwaresolutions?topic=vmwaresolutions-veeam_repo_man_storage#veeam_repo_man_storage_fast).
-   1. Specify the immutability period.
-   1. Specify load control settings to limit the number of concurrent tasks and prevent possible timeouts of storage I/O operations.
-   1. If you want to configure additional settings for the repository, click **Advanced**.
+   2. In the **Location** section, specify a path to the directory that you created to store immutable backups when preparing Linux server. Click **Populate** to check capacity and available free space in the selected location.
+   2. Select the **Use fast cloning** on XFS volumes check box to enable copy-on-write functionality. For more information, see the [Fast Clone](/docs/vmwaresolutions?topic=vmwaresolutions-veeam_repo_man_storage#veeam_repo_man_storage_fast).
+   2. Specify the immutability period.
+   2. Specify load control settings to limit the number of concurrent tasks and prevent possible timeouts of storage I/O operations.
+   2. If you want to configure additional settings for the repository, click **Advanced**.
 
-1. At the **Mount server** step of the wizard, specify settings for the mount server that you plan to use for file-level and application items restore.
-1. At the **Review** step of the wizard, review the hardened repository settings and list of components that will be installed.
+2. At the **Mount server** step of the wizard, specify settings for the mount server that you plan to use for file-level and application items restore.
+2. At the **Review** step of the wizard, review the hardened repository settings and list of components that will be installed.
     * If the backup repository contains backups that were previously created with Veeam Backup and Replication, select the Search the repository for existing backups and import them automatically check box. Veeam Backup and Replication will scan the backup repository to detect existing backup files and display them in the Veeam Backup and Replication console under the Imported > Backups node.
     * If the backup repository contains guest file system index files that were previously created by Veeam Backup and Replication, select the **Import guest file system index** check box. Index files will be imported with backup files, and you will be able to search for guest OS files inside imported backups.
-1. Click **Apply** and wait for Veeam Backup and Replication to install and configure all required components. At the **Summary** step of the wizard, review details of the added hardened repository and click Finish to exit the wizard.
-1. To maximize the repository security and protect your data from different attacks, after the deployment of Veeam data mover, change file permissions for authentication certificates, so that only the user account you specified to connect to the Linux server and the root account can read the certificate files. Use the following commands:
+2. Click **Apply** and wait for Veeam Backup and Replication to install and configure all required components. At the **Summary** step of the wizard, review details of the added hardened repository and click Finish to exit the wizard.
+2. To maximize the repository security and protect your data from different attacks, after the deployment of Veeam data mover, change file permissions for authentication certificates, so that only the user account you specified to connect to the Linux server and the root account can read the certificate files. Use the following commands:
 
    ```psh
    chown owner:group /opt/veeam/transport/certs

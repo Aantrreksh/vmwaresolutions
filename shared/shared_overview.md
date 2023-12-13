@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2023
 
-lastupdated: "2023-10-18"
+lastupdated: "2023-11-30"
 
 keywords: vmware solutions shared, get started shared, tech specs shared
 
@@ -53,7 +53,8 @@ The following graphic depicts the high-level architecture and components of VMwa
 {: #shared_overview-vcloud-dir}
 
 This layer represents the management interface. VMware Cloud Director provides role-based access to a web-based tenant portal. The portal allows the members of an organization to interact with the organization's resources to create and work with vApps and virtual machines (VMs).
-The supported version of VMware Cloud Director (vCD) is v10.4.1 and it supports up to virtual hardware version 19.
+
+The supported version of VMware Cloud Director is v10.4.1 and it supports up to virtual hardware version 19.
 
 ### Organization
 {: #shared_overview-org}

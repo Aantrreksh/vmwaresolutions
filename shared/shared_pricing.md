@@ -4,7 +4,7 @@ copyright:
 
   years: 2020, 2023
 
-lastupdated: "2023-08-17"
+lastupdated: "2023-11-08"
 
 keywords: vmware solutions shared, price for shared, pricing plan
 
@@ -28,8 +28,8 @@ subcollection: vmwaresolutions
 
 | Plans | Description |
 |:----- |:----------- |
-| VMware Shared On-demand | - The vCPU and RAM virtual data center are allocated based on the demand. Resources are not preallocated. If you have a large regional demand, delays in availability can occur.  \n  - The limits that are established for the amount of vCPU and RAM are maximums.  \n  - vCPU and RAM resource limits can be increased and decreased later as required.  \n  - The price is calculated hourly and it is based on the resource usage in the virtual data center.  \n  - The amount of storage that can be allocated and used in the virtual data center is unlimited. Charges are hourly based on GB of allocated storage.  \n  - The amount of inbound and outbound public networking is unlimited. Public outbound bandwidth is charged per GB. |
-| VMware Shared Reserved | - The vCPU and RAM virtual data center reservations are pre-allocated and their availability is guaranteed.  \n  - vCPU and RAM resources can be increased and decreased later as required.  \n  - The amount of storage that can be allocated and used in the virtual data center is unlimited. Charges are hourly based on GB of allocated storage.  \n  - The amount of inbound and outbound public networking is unlimited. Public outbound bandwidth is charged per GB. |
+| VMware Shared On-demand | - The vCPU and RAM virtual data center are allocated based on the demand. Resources are not preallocated. If you have a large regional demand, delays in availability can occur. \n - The limits that are established for the amount of vCPU and RAM are maximums. \n - vCPU and RAM resource limits can be increased and decreased later as required. \n - The price is calculated hourly and it is based on the resource usage in the virtual data center. \n - The amount of storage that can be allocated and used in the virtual data center is unlimited. Charges are hourly based on GB of allocated storage. \n - The amount of inbound and outbound public networking is unlimited. Public outbound bandwidth is charged per GB. |
+| VMware Shared Reserved | - The vCPU and RAM virtual data center reservations are pre-allocated and their availability is guaranteed. \n - vCPU and RAM resources can be increased and decreased later as required. \n - The amount of storage that can be allocated and used in the virtual data center is unlimited. Charges are hourly based on GB of allocated storage. \n - The amount of inbound and outbound public networking is unlimited. Public outbound bandwidth is charged per GB. |
 {: caption="Table 1. Pricing plans" caption-side="bottom"}
 
 ## Price breakdown
@@ -60,7 +60,6 @@ For example, a single zone reserved virtual data center is created with 100 vCPU
 {: #shared_pricing-term-hour-peak}
 
 The maximum value of the metric used over an hour. For example, if 100 vCPU is used for a minute of the hour with 0 vCPU used for the other 59 mins, the hourly peak metric usage is 100 vCPU.
-
 
 ## VMware Shared on-demand billing plan
 {: #shared_pricing-cost-ondemand}

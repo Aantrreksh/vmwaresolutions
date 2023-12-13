@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-10-06"
+lastupdated: "2023-11-27"
 
 keywords: Veeam, Veeam configuration, order Veeam
 
@@ -37,7 +37,7 @@ For more information about Veeam® license installation and deletion, see [Consi
 
 When you install Veeam, you can optionally install a Linux® hardened repository. For more information, see [Linux hardened repository for immutable storage](/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview#veeamvm_overview-specs-linux-storage).
 
-As part of the automation, a setting is created to prevent the `root` user from being accessed by using SSH. This is done due to security considerations and best practices. You can access the Linux hardened repository through the IPMI (Intelligent Platform Management Interface) on the {{site.data.keyword.cloud_notm}} console.
+Due to security considerations and best practices, as part of the automation, a setting is created to prevent the `root` user from being accessed by using SSH. You can access the Linux hardened repository through the IPMI (Intelligent Platform Management Interface) on the {{site.data.keyword.cloud_notm}} console.
 
 ## Ordering Veeam for a new instance
 {: #veeam_ordering-new}
@@ -50,7 +50,7 @@ As part of the automation, a setting is created to prevent the `root` user from 
 
 1. On the instance details page, click the **Services** tab.
 2. Click **Add** to add the service.
-3. On the **Add services** page, locate the **Veeam** service in the **Business continuity and migration** section and toggle its switch on.
+3. On the **Add services** page, locate the **Veeam** service in the **Business continuity and migration** section and toggle its switch to on.
 4. Click **Edit** to review and specify [the configuration information](/docs/vmwaresolutions?topic=vmwaresolutions-veeam_ordering#veeam_ordering-config), then click **Save**.
 
 ## Veeam configuration
@@ -103,14 +103,15 @@ For more information, see [Hardened repository](https://helpcenter.veeam.com/doc
 
 Enter the number of VMs (virtual machines) to license (minimum 1).
 
-You can order a maximum of 3,000 licenses. If you need to have multiple licenses under a single license key, you must first purchase them. Then, open an IBM Support ticket by following the steps in [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support) to request that the license keys are consolidated into a single key.
+You can order a maximum of 500 VMs under a single license key. If you need multiple licenses that are consolidated under a single license key, you must first purchase them. Then, open an IBM Support ticket by following the steps in [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support) to request that the license keys are consolidated into a single key.
+
+If you need a single license key for more than 500 VMs, you must order a stand-alone license separately. For more information, see [Ordering Veeam stand-alone licenses](/docs/vmwaresolutions?topic=vmwaresolutions-veeam_ordering_licenses).
 
 ## Related links
 {: #veeam_ordering-related}
 
 * [Veeam on {{site.data.keyword.cloud_notm}} overview](/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview)
 * [Managing Veeam](/docs/vmwaresolutions?topic=vmwaresolutions-managingveeam)
-* [Ordering Veeam stand-alone licenses](/docs/vmwaresolutions?topic=vmwaresolutions-veeam_ordering_licenses)
 * [Managing Veeam stand-alone licenses](/docs/vmwaresolutions?topic=vmwaresolutions-veeam_managing_licenses)
 * [Ordering and configuring {{site.data.keyword.cloud_notm}} Object Storage with Veeam](/docs/vmwaresolutions?topic=vmwaresolutions-icos_ordering)
 * [Veeam Backup and Replication](https://www.ibm.com/cloud/architecture/architectures/virtualization_backup_veeam)

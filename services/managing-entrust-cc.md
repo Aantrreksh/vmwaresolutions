@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-09-11"
+lastupdated: "2023-12-11"
 
 keywords: Entrust CloudControl WebGUI, Entrust CloudControl console, enable internet Entrust CloudControl
 
@@ -109,5 +109,5 @@ The following steps apply for updating the Entrust CloudControl network settings
 
 Review the following considerations before you delete the service:
 * Before you delete Entrust CloudControl, disable **Root Password Vaulting** if configured, and delete all protected hosts from Entrust CloudControl.
-* As part of Entrust CloudControl service configuration, global PIP was enabled. Sample users and groups were preconfigured in Active Directory (AD) and are displayed on the service details page. If you delete Entrust CloudControl, the sample users are deleted from AD too. A sample trust manifest is set up that gives single sign-on (SSO) permissions to the sample users that are created. You can customize this setting for your own requirements.
+* As part of the Entrust CloudControl service configuration, global PIP was enabled. Sample users and groups were preconfigured in Active Directory (AD) and are displayed on the service details page. If you delete Entrust CloudControl, the sample users are deleted from AD too. A sample trust manifest is set up that gives single sign-on (SSO) permissions to the sample users that are created. You can customize this setting for your own requirements.
 * If you installed Entrust CloudControl before VMware Solutions v4.0 and you delete the service, you must manually remove the DNS entries. For more information, see [Manually removing the DNS entries](/docs/vmwaresolutions?topic=vmwaresolutions-vc_deletingservices#vc_deletingservices-DNS-entries).

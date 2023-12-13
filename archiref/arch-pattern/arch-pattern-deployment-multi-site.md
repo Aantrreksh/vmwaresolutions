@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2023
 
-lastupdated: "2023-03-22"
+lastupdated: "2023-12-07"
 
 subcollection: vmwaresolutions
 
@@ -65,7 +65,7 @@ The following diagram shows an example of a customer deployment by using this to
 When you design or deploy this architecture pattern, consider the following steps:
 
 * You have several options to expand the capacity for the deployment, for example by provisioning new hosts on the initial cluster or by adding new clusters. 
-* This pattern provides a few examples how to expand and customize the initial deployment for a few use cases to fit your needs, but note that these are just examples. 
+* This pattern provides a few examples of how to expand and customize the initial deployment for a few use cases to fit your needs, but note that these are just examples. 
 * You must note VMware limitations. 
 
 To customize the NSX-T overlay topologies, see [the architecture pattern for multisite NSX-T topologies](/docs/vmwaresolutions?topic=vmwaresolutions-arch-pattern-overlays-multi-site).

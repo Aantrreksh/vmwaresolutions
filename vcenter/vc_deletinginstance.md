@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-08-04"
+lastupdated: "2023-11-15"
 
 keywords: vCenter Server delete instance, delete vCenter Server, remove vCenter Server, vmware multizone, vcenter server multizone, delete vCenter Server multizone
 

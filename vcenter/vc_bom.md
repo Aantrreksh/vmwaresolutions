@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-09-29"
+lastupdated: "2023-10-31"
 
 keywords: vCenter Server BOM, bill of materials vCenter Server, BOM
 
@@ -38,9 +38,9 @@ The following table details the BOM information for vCenter Server software comp
 
 | Manufacturer | Component | Version |
 |:------------ |:--------- |:------- |
-| VMware       | vSphere ESXi | ESXi 7.0 Update 3n (build 21930508)[^esxi70] or \n ESXi 6.7 P08 (20497097)[^esxi67] |
+| VMware       | vSphere ESXi | ESXi 7.0 Update 3o (build 22348816)[^esxi70] or \n ESXi 6.7 P08 (20497097)[^esxi67] |
 | VMware       | Distributed vSwitch | 7.0.0[^vcs-vsphere700] or 6.6.0[^vcs-vsphere660]
-| VMware       | vCenter Server Appliance | 7.0 Update 3n (21958406) |
+| VMware       | vCenter Server Appliance | 7.0 Update 3o (22357613) |
 | VMware       | vSAN[^vsan] | 7.0 Update 3l (21424296) |
 | VMware       | NSX for vSphere[^nsxt] | 4.1.0.2 (21761695) |
 | VMware       | NSX-V for vSphere[^nsxv] | 6.4.13 (19307994) |

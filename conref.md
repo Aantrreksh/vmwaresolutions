@@ -3,7 +3,7 @@
 copyright:
   years: 2022, 2023
 
-lastupdated: "2023-10-09"
+lastupdated: "2023-11-15"
 
 keywords: IBM Cloud for VMware Solutions, getting started, vmware solutions offerings, services for vmwaresolutions, vmwaresolutions use cases
 
@@ -207,11 +207,12 @@ CONTENT:
 
 When you delete a vCenter Server instance, the following components are released sequentially:
 1. All deployed services
-2. The Support fee for NSX-T instances or the Support and Services fee for NSX-V instances
-3. VMware® product licenses
-4. VMware ESXi™ servers
-5. Subnets
-6. VLANs
+2. NFS storage
+3. The Support fee for NSX-T instances or the Support and Services fee for NSX-V instances
+4. VMware® product licenses
+5. VMware ESXi™ servers
+6. Subnets
+7. VLANs
 {: #deletinginstance-components-list}
 
 Review the following information before you proceed.

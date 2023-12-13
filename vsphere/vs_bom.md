@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-07-20"
+lastupdated: "2023-10-31"
 
 keywords: vSphere BOM, bill of materials vSphere, BOM
 
@@ -22,7 +22,7 @@ The following table details the Bill of Materials (BOM) information for VMware v
 
 | Manufacturer | Component      | Version |
 | ------------ | -------------- | ------- |
-| VMware®       | vSphere ESXi™ | ESXi 7.0 Update 3n (build 21930508) or \n ESXi  6.7 P08 (20497097)[^esxi67] |
+| VMware®       | vSphere ESXi™ | ESXi 7.0 Update 3o (build 22348816) or \n ESXi  6.7 P08 (20497097)[^esxi67] |
 {: caption="Table 1. BOM for VMware vSphere instances" caption-side="bottom"}
 
 [^esxi67]: Applicable to existing vSphere 6.7 hosts

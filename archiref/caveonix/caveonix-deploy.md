@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2022
+  years:  2016, 2023
 
-lastupdated: "2022-08-26"
+lastupdated: "2023-11-07"
 
 subcollection: vmwaresolutions
 
@@ -86,7 +86,7 @@ The following table provides a summary of the deployments.
 
 |Deployment model | All-in-one | Partially distributed | Fully distributed |
 |---|---|---|---|
-| Number of assets | 100 |500 | 5,000 |
+| Number of assets | 100 | 500 | 5,000 |
 | Online data generated in 30 days (TB) | 4 | 22 | 219 |
 | Nearline data retention (90 days) (TB) | 7 | 33 | 329 |
 | Offline data retention (8 months) (TB) | 18 | 88 | 877 |

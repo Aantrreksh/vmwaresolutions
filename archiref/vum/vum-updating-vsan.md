@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-05-01"
+lastupdated: "2023-12-07"
 
 subcollection: vmwaresolutions
 
@@ -53,7 +53,7 @@ The first step is to add your my.vmware.com credentials to the vSAN Build Recomm
 4. To configure a proxy server, in the Proxy Settings pane, click **Edit**.
 5. Select **Use a Proxy Server**, enter the proxy server settings, and click **OK**.
 
-There have been reports where the proxy information is only set for HTTP but not for HTTPS. To configure the proxy information also for HTTPS traffic, it must be enabled first. After you log in to the VCSA via SSH, use the proxy.get command to view the configuration and confirm that the HTTPS parameters are not set.
+There have been reports where the proxy information is only set for HTTP but not for HTTPS. To configure the proxy information also for HTTPS traffic, it must be enabled first. After you log in to the VCSA through SSH, use the proxy.get command to view the configuration and confirm that the HTTPS parameters are not set.
 
 If the HTTPS parameters are not set, then use the following command:
    `proxy.set --protocol https --server ``<proxy ip>`` --port 3128`
@@ -89,7 +89,7 @@ Before you start the vSAN upgrade process, ensure that the following requirement
    * The VCSA must be at an equal or higher patch level than the vSphere ESXi hosts. Update the VCSA if required.
    * All hosts must be running the same build of ESXi. If the vSphere ESXi host versions are not matched, then update.
 * **All vSAN disks should be healthy**:
-   * No disk is failed or absent. This can be determined via the **vSAN Disk Management** view in the vSphere Web Client. **Home** > **Hosts and Clusters**, then select the **vSAN Cluster** and click the **vSAN** tab and then **Physical Disks**. Scroll through all the disks and review the vSAN Health Status.
+   * No disk is failed or absent. This can be determined through the **vSAN Disk Management** view in the vSphere Web Client. **Home** > **Hosts and Clusters**, then select the **vSAN Cluster** and click the **vSAN** tab and then **Physical Disks**. Scroll through all the disks and review the vSAN Health Status.
    * No inaccessible vSAN objects. This can be verified with the **vSAN Health Service** by clicking **Home** > **Hosts and Clusters**, then select the **vSAN Cluster**. Click the **Monitor** tab, **vSAN** and then click **Health**. Review the Test Results.
    * No active resync at the start of the upgrade process by clicking **Home** > **Hosts and Clusters**, then select the **vSAN Cluster** and click the **vSAN** tab and then click **Resync Components**. _The Resync components count should be 0_. Some resync activity is expected during the upgrade process, as data needs to be synchronized following host restarts.
 * **vSphere ESXi host preparation** - When you move a host into maintenance mode in a vSAN cluster, you have three options to choose:

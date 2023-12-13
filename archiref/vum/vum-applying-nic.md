@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-09-11"
+lastupdated: "2023-12-07"
 
 subcollection: vmwaresolutions
 
@@ -46,7 +46,7 @@ Use the ID and password that are listed in the {{site.data.keyword.cloud_notm}} 
 5. Watch the HTML5 console carefully as the host restarts. You have only a few seconds to go into recovery mode when ESXi restarts.
 6. Press **CMD + R** keys simultaneously to enter recovery mode.
 7. Type **Y** to enter recovery mode and boot the ESXi server with the previous version.
-8. Monitor its progress via the console. The boot can take 10 - 20 minutes.
+8. Monitor its progress through the console. The boot can take 10 - 20 minutes.
 
 ## Related links
 {: #vum-applying-nic-related}

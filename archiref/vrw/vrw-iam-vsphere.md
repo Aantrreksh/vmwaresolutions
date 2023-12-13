@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2023
 
-lastupdated: "2023-09-11"
+lastupdated: "2023-11-20"
 
 subcollection: vmwaresolutions
 
@@ -18,7 +18,7 @@ subcollection: vmwaresolutions
 
 Inside {{site.data.keyword.cloud}} for VMware® Regulated Workloads, multiple levels of access are available. The automation uses a set of user IDs to perform operations such as adding hosts, clusters, or storage to your VMware instance.
 
-## vCenter and Platform Services Controller user IDs
+## vCenter user IDs
 {: #vrw-iam-vsphere-vcenter}
 
 The following user IDs are used to add an identity source, which is embedded by default, into vCenter.
@@ -26,7 +26,6 @@ The following user IDs are used to add an identity source, which is embedded by 
 | User     | User ID      | Method | Description |
 |:---------|:-------------|:-------|:------------|
 | Privileged user | `root` | SSH | Used for VMware configuration such as setting up VMware High Availability and creating distributed switches. Used post deployment to pair primary and secondary vCenter Server instances. |
-| Privileged user | `customerroot` | SSH | Created for customer use only. |
 | IBM automation | `automation`@``root_domain`` \n (Active Directory user) | HTTPS | Used post deployment to add and remove hosts and clusters and to deploy and configure virtual machines (VMs) for add-on services. |
 | Privileged user | `cloudadmin`@`root_domain` \n (Active Directory user) | HTTPS | Created for customer use only. |
 {: caption="Table 1. vCenter and Platform Services Controller user IDs" caption-side="bottom"}

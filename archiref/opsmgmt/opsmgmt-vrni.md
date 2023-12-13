@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-06-13"
+lastupdated: "2023-11-07"
 
 subcollection: vmwaresolutions
 
@@ -27,7 +27,7 @@ The VMware Aria Operations for Networks Platform appliance provides the analytic
 ## System requirements
 {: #opsmgmt-vrni-requirements}
 
-This architecture supports 3000 VMs by using a Medium brick size.
+This architecture supports 3,000 VMs by using a Medium brick size.
 
 | Attribute | Specification |
 |-----------|---------------|

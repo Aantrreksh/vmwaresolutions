@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2023
 
-lastupdated: "2023-04-25"
+lastupdated: "2023-12-08"
 
 keywords: cyber recovery, cyber recovery requirements, requirements cyber recovery, cyber recovery order instance, order cyber recovery, cyber recovery instances
 
@@ -43,5 +43,5 @@ Ensure that you complete the following tasks:
 | NetBIOS name | First string of `<root_domain>`. The maximum length is 15 characters. |
 {: caption="Table 1. Value format for instance and domain names" caption-side="bottom"}
 
-After the instance is provisioned, do not modify any values that are set during instance order. Otherwise, the instance might become unusable.
+After the instance is provisioned, do not modify any values that are set during the instance order. Otherwise, the instance might become unusable.
 {: attention}

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2022
+  years:  2016, 2023
 
-lastupdated: "2022-05-27"
+lastupdated: "2023-11-15"
 
 keywords: vCenter Server delete instance, delete vCenter Server, delete multisite
 

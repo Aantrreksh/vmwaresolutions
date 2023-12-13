@@ -4,7 +4,7 @@ copyright:
 
   years: 2023
 
-lastupdated: "2023-10-16"
+lastupdated: "2023-12-07"
 
 keywords: transport modes, direct storage access, direct SAN acces, requirements for direct SAN access mode, limitations for direct SAN access mode, virtual appliance (HotAdd), network mode
 
@@ -82,7 +82,7 @@ Veeam Backup and Replication deploys its NFS agent on every VMware backup proxy 
 * If you instruct Veeam Backup and Replication to select a **VMware backup proxy** automatically for a job or task, it will select a VMware backup proxy with the minimum number of hops to the NFS datastore. If there are several backup proxies with equal number of hops in the backup infrastructure, Veeam Backup and Replication picks the least busy VMware backup proxy in the backup infrastructure. If all backup proxies with the minimum number of hops are busy at the moment, it will wait until these backup proxies are free. Veeam and Backup and Replication does not pick a VMware backup proxy that has a greater number of hops to the NFS datastore and works in the Direct NFS access or Virtual appliance transport mode.
 * If you select one or more backup proxies explicitly for a job or task, Veeam Backup and Replication does not regard the number of hops to the NFS datastore. Veeam Backup and Replication picks the least busy VMware backup proxy working in the Direct NFS access transport mode. If all backup proxies working in the Direct NFS access transport mode are busy, Veeam Backup and Replication waits until these backup proxies are free. Veeam Backup and Replication does not pick a VMware backup proxy working in the Virtual appliance transport mode.
 
-To detect the number of hops from a VMware backup proxy to the NFS datastore, Veeam Backup and Replication uses the host discovery process. During host discovery, Veeam Backup and Replication obtains information about the number of hops, checks which NFS datastores wehether the VMware backup proxy has access, and what permissions the VMware backup proxy has on NFS datastores. 
+To detect the number of hops from a VMware backup proxy to the NFS datastore, Veeam Backup and Replication uses the host discovery process. During host discovery, Veeam Backup and Replication obtains information about the number of hops, checks which NFS datastores whether the VMware backup proxy has access, and what permissions the VMware backup proxy has on NFS datastores. 
 
 The host discovery process rescans all machines to which the VMware backup proxy role is assigned. The process starts automatically every 4 hours. Host discovery is also triggered when you change the transport mode settings and choose to use the **Direct storage access** for the VMware backup proxy. If necessary, you can start the host discovery process manually. If necessary, you can start the host discovery process manually. To do this, perform the **Rescan operation** for a machine where the VMware backup proxy role is assigned. For more information, see [Rescanning backup repositories](/docs/vmwaresolutions?topic=vmwaresolutions-veeam_repo_man_storage#veeam_repo_man_storage_rescanning)
 

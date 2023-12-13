@@ -4,7 +4,7 @@ copyright:
 
   years: 2016, 2023
 
-lastupdated: "2023-10-19"
+lastupdated: "2023-12-13"
 
 keywords: IBM Cloud for VMware Solutions, getting started, vmware solutions offerings, services for vmwaresolutions, vmwaresolutions use cases
 
@@ -152,6 +152,8 @@ For more information about how to order an instance, see the following topics ba
 * [Ordering vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-req)
 * [Ordering Regulated Workloads instances](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-orderinginstance-req)
 * [Ordering Cyber Recovery instances](/docs/vmwaresolutions?topic=vmwaresolutions-cr_orderinginstance_reqs)
+* [Ordering KMIP for VMware instances](/docs/vmwaresolutions?topic=vmwaresolutions-kmip_standalone_ordering)
+* [Ordering Cloud Foundation instances](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-order-req)
 
 ## Viewing the instance
 {: #getting-started-step4}
@@ -166,3 +168,5 @@ For more information about how to view the instance you ordered, see the followi
 * [Viewing vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_viewinginstances)
 * [Viewing and deleting Regulated Workloads instances](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-view-delete-instance)
 * [Viewing and deleting Cyber Recovery instances](/docs/vmwaresolutions?topic=vmwaresolutions-cr-view-delete-instance)
+* [Viewing KMIP for VMware instances](/docs/vmwaresolutions?topic=vmwaresolutions-kmip_standalone_viewing)
+* [Viewing VMware Cloud Foundation instances](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-viewing)

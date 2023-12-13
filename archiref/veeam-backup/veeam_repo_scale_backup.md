@@ -4,7 +4,7 @@ copyright:
 
   years: 2023
 
-lastupdated: "2023-10-17"
+lastupdated: "2023-12-07"
 
 keywords: scale-out backup repositories, limitations for scale-out backup repositories, adding scale-out backup repositories, managing scale-out backup repositories, rescanning scale-out backup repositories
 
@@ -28,7 +28,7 @@ A scale-out backup repository can be used for the following types of jobs and ta
 * Backup jobs
 * Backup copy jobs
 * You can copy backups that reside in scale-out backup repositories and store backup copies in scale-out backup repositories.
-* Veeam® backups for Amazon and Microsoft® Azure (via backup copy jobs)
+* Veeam® backups for Amazon and Microsoft® Azure (through backup copy jobs)
 * VeeamZIP tasks
 * Backup jobs that are created by Veeam Agent for Linux® 2.0 or later
 * Backup jobs that are created by Veeam Agent for Unix 2.0 or later
@@ -208,7 +208,7 @@ To extend the capacity tier, perform the following steps:
 4. Move to the capacity tier step of the wizard.
 5. Click **Choose**.
 6. In the **Capacity tier extents** window, select the checkbox next to the backup repository that you want to add as a performance extent to the scale-out backup repository.
-7. If a backup repository that you add as a capacity extent is already used by jobs of the supported type or there are backups pointing at the backup repository (for example, independent backups created with VeeamZIP). Veeam Backup and Replication offers  to update a link to the backup repository in the job properties. Click **Yes** to update the link and target the jobs and backups at the scale-out backup repository. If you click **No**, you will not be able to continue with the wizard.
+7. If a backup repository that you add as a capacity extent is already used by jobs of the supported type or there are backups pointing at the backup repository (for example, independent backups created with VeeamZIP). Veeam Backup and Replication offers to update a link to the backup repository in the job properties. Click **Yes** to update the link and target the jobs and backups at the scale-out backup repository. If you click **No**, you will not be able to continue with the wizard.
 8. Go through the next wizard steps and finish working with the wizard. 
 
    The new capacity extent is added to the scale-out backup repository.

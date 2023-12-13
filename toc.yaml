@@ -35,6 +35,7 @@ toc:
       topics:
       - include: ../solution-tutorials/vmware-as-a-service-vdc.md
       - include: ../solution-tutorials/vmware-as-a-service-tf.md
+      - include: ../vmware-service/tutorials/vmwaas-ovftool.md
 
   - navgroup:
       id: howto
@@ -89,9 +90,9 @@ toc:
           - topicgroup:
               label: Accessing VMware as a Service instances
               topics:
-              - include: ../vmware-service/common/vmaas-iam.md
-              - include: ../vmware-service/common/vmaas-iam_vcd.md
-              - include: ../vmware-service/common/iam-integration.md
+                - include: ../vmware-service/common/vmaas-iam.md
+                - include: ../vmware-service/common/vmaas-iam_vcd.md
+                - include: ../vmware-service/common/iam-integration.md
           - topicgroup:
               label: Protecting VMs in VMware as a Service instances
               topics:
@@ -100,12 +101,12 @@ toc:
           - topicgroup:
               label: Migrating VMs to VMware as a Service instances
               topics:
-                - include: ../vmware-service/vmaas/tenant-vcda.md
-                - include: ../vmware-service/vmaas/vcda-viewing.md
-                - include: ../vmware-service/vmaas/vcda-adding-capacity.md
-                - include: ../vmware-service/vmaas/vcda-adding-deleting-private-ep.md
-                - include: ../vmware-service/vmaas/vcda-migrating.md
-                - include: ../vmware-service/vmaas/vcda-adding-deleting.md
+              - include: ../vmware-service/vmaas/tenant-vcda.md
+              - include: ../vmware-service/vmaas/vcda-viewing.md
+              - include: ../vmware-service/vmaas/vcda-adding-capacity.md
+              - include: ../vmware-service/vmaas/vcda-adding-deleting-private-ep.md
+              - include: ../vmware-service/vmaas/vcda-migrating.md
+              - include: ../vmware-service/vmaas/vcda-adding-deleting.md
           - topicgroup:
               label: Reference
               topics:
