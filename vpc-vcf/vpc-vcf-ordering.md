@@ -4,7 +4,7 @@ copyright:
 
   years:  2023
 
-lastupdated: "2023-11-09"
+lastupdated: "2023-12-14"
 
 keywords: vmware cloud editions, order vmware cloud editions, order vmware cloud editions on IBM Cloud, vmware cloud foundation
 
@@ -50,7 +50,7 @@ For the 1-year and 3-year offerings, you need to contact your IBM seller for pri
 ### VMware Cloud Foundation version
 {: #vpc-vcf-ordering-version}
 
-VMware Cloud Foundation 4.5.1 is installed on your VMware Cloud Foundation instance. For more information, see [Software BOM for VMware Cloud Foundation instances](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-ovw-bom#vpc-vcf-ovw-bom-software).
+VMware Cloud Foundation 4.5.2 is installed on your VMware Cloud Foundation instance. For more information, see [Software BOM for VMware Cloud Foundation instances](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-ovw-bom#vpc-vcf-ovw-bom-software).
 
 ### Architecture
 {: #vpc-vcf-ordering-archi}
@@ -309,7 +309,7 @@ Determine whether to create an {{site.data.keyword.cloud_notm}} Access Group wit
 ### Observability
 {: #vpc-vcf-ordering-adv-settings-log}
 
-For VMware Cloud Foundation deployment, you can determine whether to use IBM Log Analysis with 7-day pricing plan for viewing the logs of VMware Cloud Foundation deployment. If you want to view logging of VMware Cloud Foundation deployment with your existing IBM Log Analysis instance, you can configure the instance ingestion key, then the log is populated to your existing instance. By default, the IBM Log Analysis service is not ordered. For more information about IBM Log Analysis and its pricing plans, see [Getting started with IBM Log Analysis](/docs/log-analysis?topic=log-analysis-getting-started) and [Service plans](/docs/log-analysis?topic=log-analysis-service_plans).
+For VMware Cloud Foundation deployment, you can determine whether to use {{site.data.keyword.cloud_notm}} Log Analysis with 7-day pricing plan for viewing the logs of VMware Cloud Foundation deployment. If you want to view logging of VMware Cloud Foundation deployment with your existing {{site.data.keyword.cloud_notm}} Log Analysis instance, you can configure the instance ingestion key, then the log is populated to your existing instance. By default, the {{site.data.keyword.cloud_notm}} Log Analysis service is not ordered. For more information about {{site.data.keyword.cloud_notm}} Log Analysis and its pricing plans, see [Getting started with {{site.data.keyword.cloud_notm}} Log Analysis](/docs/log-analysis?topic=log-analysis-getting-started) and [Service plans](/docs/log-analysis?topic=log-analysis-service_plans).
 
 ## Procedure to order VMware Cloud Foundation instances on {{site.data.keyword.vpc_short}}
 {: #vpc-vcf-ordering-procedure}
@@ -358,7 +358,7 @@ For VMware Cloud Foundation deployment, you can determine whether to use IBM Log
 1. Specify the **Advanced integration settings**.
    1. Specify whether you want to create a Windows VM.
    1. Specify whether you want to create an IAM access group.
-   1. Specify whether you want to deploy or use an existing IBM Log Analysis instance for the VMware Cloud Foundation deployment logs.
+   1. Specify whether you want to deploy or use an existing {{site.data.keyword.cloud_notm}} Log Analysis instance for the VMware Cloud Foundation deployment logs.
 
 1. On the **Summary** pane, review the instance settings and the estimated price.
 1. To place the order, ensure that the account to be charged is correct, review and accept the terms, and then click **Create**.

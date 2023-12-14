@@ -4,7 +4,7 @@ copyright:
 
   years:  2023
 
-lastupdated: "2023-10-10"
+lastupdated: "2023-12-04"
   
 keywords: vmware cloud foundation, IBM Cloud, vpc, faq
 
@@ -55,21 +55,13 @@ Currently, only one cluster per Domain is supported. This limitation is valid fo
 
 SDDC Manager automates the entire system lifecycle, that is, from configuration and provisioning to upgrades and patching. SDDC Manager is connected to the VMware Depot after initial provisioning. You can select the bundles to download and you can apply updates and upgrades on your own.
 
-Before you complete an update, review the release notes and this FAQ section.
+Before you complete an update, review the release notes and the FAQ section.
 
-## Can I upgrade to VMware Cloud Foundation version 4.5.2?
-{: #vpc-vcf-faq-upgrade-4-5-2}
-{: faq}
-
-Yes, you can upgrade the solution to VMware Cloud Foundation version 4.5.2 using SDDC manager post initial provisioning. 
-
-To run the update, follow the procedure in [Upgrade the management domain to VMware Cloud Foundation 4.5.x](https://docs.vmware.com/en/VMware-Cloud-Foundation/4.5/vcf-lifecycle/GUID-E101AFB5-1034-4CF9-B96E-A2E70DCF02F5.html){: external}.
-
-## Can I upgrade my VMware Cloud Foundation 4.5.1 to VMware Cloud Foundation version 5.x?
+## Can I upgrade my VMware Cloud Foundation 4.5.2 to VMware Cloud Foundation version 5.x?
 {: #vpc-vcf-faq-upgrade-5-0}
 {: faq}
 
-VMware Cloud Foundation version 5.0 is not supported for VMware Cloud Foundation instances. For more information, see [VMware Cloud Foundation 5.0 – Important information and Knowledge base articles](https://kb.vmware.com/s/article/91751){: external}.
+Yes. For more information, see [VMware Cloud Foundation 5.0 – Important information and Knowledge base articles](https://kb.vmware.com/s/article/91751){: external}.
 
 ## What is the Async Patch Tool and how can I use it with my VMware Cloud Foundation instance?
 {: #vpc-vcf-faq-async-patch}
@@ -108,12 +100,6 @@ You can use the SDDC Manager UI to manage certificates in a VMware Cloud Foundat
 
 For more information, see [Managing certificates in VMware Cloud Foundation](https://docs.vmware.com/en/VMware-Cloud-Foundation/4.5/vcf-admin/GUID-80431626-B9CD-4F21-B681-A8F5024D2375.html?hWord=N4IghgNiBcIMYFMBOAXAlgMzXMKEgF8g){: external}.
 
-## One or more ESXi Transport Nodes show "Unknown" Node status in the NSX-T Manager UI, what can I do?
-{: #vpc-vcf-faq-esxi-unknown}
-{: faq}
-
-This problem is a known issue in the NSX deployed as part of VMware Cloud Foundation version 4.5.1. For more information, see [One or multiple ESXi transport nodes show "Unknown" node status in the NSX-T Manager UI](https://kb.vmware.com/s/article/84377){: external}. 
-
 You can fix this problem by logging with SSH into each host. However, it is a temporary workaround, and the issue might occur again.
 
 Workaround: restart the notepad service on the ESXi host by using the command `/etc/init.d/netopad restart`
@@ -145,24 +131,31 @@ Currently, for VMware Cloud Foundation instances, all principal and supplemental
 {: #vpc-vcf-faq-passwords-vcf}
 {: faq}
 
-For more information about the supported password complexity policies in VMware Cloud Foundation version 4.5.x, see [Configuring password complexity policies in VMware Cloud Foundation](https://docs.vmware.com/en/VMware-Cloud-Foundation/4.5/vcf-operations/GUID-22C6746A-6703-47E5-B17A-313EC959EC62.html){: external}.
+The initial passwords for your VMware Cloud Foundation instance are randomly generated as part of the provisioning and starting procedure. 
 
-The initial passwords for your VMware Cloud Foundation instance are randomly generated as part of the provisioning and VMware Cloud Foundation starting procedure.
+During initial deployment, the VMware Solutions automation creates an IBM Automation account that is named **ibm_admin**, which will be used only to get your updated password. If you changed the initial password, retrieving the updated password is necessary for running Day 2 operations, such as adding or removing hosts.
 
-Do not change the default password. If you changed the default password and you encounter problems, contact IBM Support by following the steps in [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support).
-{: important}
+We don’t recommend you to change the **ibm_admin** password, but if you changed it, you must follow these steps so that you can complete the Day 2 operations successfully:
 
-You can rotate and update some of these passwords by using the password management functions in the SDDC Manager UI, including:
-* The accounts used for service consoles, such as the ESXi root account
-* The single sign-on administrator account
-* The default administrative user account used by virtual appliances
-* Service accounts that are automatically generated during power-on, host commissioning, and workload creation
+1. Go to the VMware Cloud Foundation instance details page.
+2. Click the **Access information** tab and scroll down to the **SDDC Manager** section.
+3. Under the **IBM Automation** account, click **Update password** to enter your updated **ibm_admin** password.
 
-Service accounts have a limited set of privileges and are created for communication between products. Passwords for service accounts are randomly generated by SDDC Manager. You cannot manually set a password for service accounts. To update the credentials of service accounts, you can rotate the passwords.
+For more information about the supported password policies in VMware Cloud Foundation, see [Configuring password complexity policies in VMware Cloud Foundation](https://docs.vmware.com/en/VMware-Cloud-Foundation/4.5/vcf-operations/GUID-22C6746A-6703-47E5-B17A-313EC959EC62.html){: external}.
 
-To provide optimal security and proactively prevent any passwords from expiring, you must rotate passwords every 80 days.
+You can rotate and update some of these passwords by using the password management functions in the SDDC Manager UI. You can rotate passwords for the following accounts:
+
+* The accounts used for service consoles, such as the ESXi root account.
+* The single sign-on administrator account.
+* The default administrative user account used by virtual appliances.
+* Service accounts that are automatically generated during powering on, host commissioning, and workload creation.
+
+   Service accounts have a limited set of privileges and are created for communication between products. Passwords for service accounts are randomly generated by SDDC Manager. You cannot manually set a password for the service accounts. To update the credentials for service accounts, you can rotate the passwords.
+
+To provide optimal security and proactively prevent any passwords from expiring, rotate passwords every 80 days.
 
 For more information, see:
+
 * [Password management](https://docs.vmware.com/en/VMware-Cloud-Foundation/4.5/vcf-admin/GUID-1D25D0B6-E054-4F49-998C-6D386C800061.html?hWord=N4IghgNiBcIA5gM6IO4HsBOATABAWzADswBzAUzzMIBcQBfIA){: external}
 * [Password policy configuration for VMware Cloud Foundation](https://docs.vmware.com/en/VMware-Cloud-Foundation/4.5/vcf-operations/GUID-18A95158-30F5-460F-AF80-33F25B6533D0.html){: external}
 

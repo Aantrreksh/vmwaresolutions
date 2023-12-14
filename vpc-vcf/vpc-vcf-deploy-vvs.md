@@ -4,7 +4,7 @@ copyright:
 
   years:  2023
 
-lastupdated: "2023-12-11"
+lastupdated: "2023-12-14"
   
 keywords: vmware cloud foundation, IBM Cloud, vpc
 
@@ -34,9 +34,6 @@ Solution-added products for this VMware validated solution include VMware Worksp
 To deploy the Identity and Access Management for VMware Cloud Foundation validated solution in {{site.data.keyword.cloud_notm}}, follow the process in [Identity and Access Management for VMware Cloud Foundation](https://docs.vmware.com/en/VMware-Cloud-Foundation/services/vcf-identity-and-access-management-v1/GUID-FF35966D-2225-4825-9E38-C7287B069D4D.html){: external}.
 
 Use VMware Aria® Suite Lifecycle Manager (formerly known as VMware vRealize® Suite Lifecycle Manager) to deploy this VMware validated solution. Aria Suite Lifecycle Manager is deployed as part of the automation.
-{: important}
-
-If you are deploying a clustered or scaled out environment for Workspace ONE Access 3.3.7 X-Region, see [KB83928](https://kb.vmware.com/s/article/83928){: external}. If you need help, open an IBM Support ticket by following the steps in [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support).
 {: important}
 
 ## Developer Ready Infrastructure for VMware Cloud Foundation
