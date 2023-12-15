@@ -83,7 +83,7 @@ The vCenter Server offering is designed to manage east-west network traffic at t
 
 The required network design changes are modest and include all customer VM traffic no matter the destination, platform management traffic, direct-link traffic, where applicable, and internet bound traffic. Traffic that is explicitly excluded includes VTEP traffic, storage traffic, and vMotion traffic.
 
-NSX can be extended from the compute cluster to the gateway cluster. Or BGP over an IPsec VPN can be used to enable connectivity between the edge and compute clusters. When the traffic that flows between the vCenter Server compute cluster and the gateway cluster is not in conflict with the {{site.data.keyword.cloud_notm}} infrastructure assigned subnets, the use of a local VLAN and subnet is suitable as a transit link.
+NSX can be extended from the compute cluster to the gateway cluster. Or BGP over an IPsec VPN can be used to enable connectivity between the edge and compute clusters. When the traffic that flows between the vCenter Server compute cluster and the gateway cluster is not in conflict with the {{site.data.keyword.cloud_notm}} infrastructure-assigned subnets, the use of a local VLAN and subnet is suitable as a transit link.
 
 BGP over IPsec VPN is the preferred method of connecting to a customer on-premises data center whether the connection traverses the internet or passes between the customer and {{site.data.keyword.cloud_notm}} through one of the {{site.data.keyword.cloud_notm}} infrastructure direct-link offerings.
 
@@ -154,7 +154,7 @@ As noted previously, the default configuration merely represents a point from wh
 ## vSRX to client on-premises connections
 {: #vcsvsrx-planning-client-config}
 
-The preferred method of linking the {{site.data.keyword.cloud_notm}} vCenter Server instance to a client's existing on-premises data center is BGP.  
+The preferred method of linking the {{site.data.keyword.cloud_notm}} vCenter Server instance to a client's existing on-premises data center is BGP.
 
 If the client intends to connect over the Internet by using eBGP, they must obtain a public autonomous system number (ASN) or use BGP over an IPsec VPN to allow the use of private ASNs.
 

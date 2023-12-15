@@ -36,6 +36,9 @@ toc:
       - include: ../solution-tutorials/vmware-as-a-service-vdc.md
       - include: ../solution-tutorials/vmware-as-a-service-tf.md
       - include: ../vmware-service/tutorials/vmwaas-ovftool.md
+      - include: ../vmware-service/tutorials/vcda-migrating-onprem.md
+      - include: ../vmware-service/tutorials/vcda-migrating-cloudtocloud-shared.md
+      - include: ../vmware-service/tutorials/vcda-migrating-cloudtocloud-vmaas.md
 
   - navgroup:
       id: howto
@@ -105,8 +108,9 @@ toc:
               - include: ../vmware-service/vmaas/vcda-viewing.md
               - include: ../vmware-service/vmaas/vcda-adding-capacity.md
               - include: ../vmware-service/vmaas/vcda-adding-deleting-private-ep.md
-              - include: ../vmware-service/vmaas/vcda-migrating.md
+              - include: ../vmware-service/vmaas/vcda-creating-deleting-vmaas-pairing.md
               - include: ../vmware-service/vmaas/vcda-adding-deleting.md
+              - include: ../vmware-service/vmaas/vcda-migrating.md
           - topicgroup:
               label: Reference
               topics:
