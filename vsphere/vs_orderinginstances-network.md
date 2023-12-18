@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2023
 
-lastupdated: "2023-10-02"
+lastupdated: "2023-12-15"
 
 keywords: vmware vSphere order instance, order vSphere, order vmware vSphere instance
 

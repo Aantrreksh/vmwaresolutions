@@ -3,7 +3,7 @@
 copyright:
   years: 2022, 2023
 
-lastupdated: "2023-11-15"
+lastupdated: "2023-12-15"
 
 keywords: IBM Cloud for VMware Solutions, getting started, vmware solutions offerings, services for vmwaresolutions, vmwaresolutions use cases
 
@@ -85,7 +85,6 @@ Conref section START.
 INFORMATION:
 The section is referenced by the following files:
 
-- cr\cr_addingclusters.md *>> Replaced by* cr/cr_addingviewingclusters.md
 - cr\cr_orderinginstance-consolidwkld.md
 - vcenter\scb-orderinginstance-cons-work-cluster.md
 - vcenter\vc_addingclusters.md
@@ -107,6 +106,7 @@ The uplink speed provides two options:
 |:----------- |:--- |
 | TOK02 | 02 |
 | TOK04 | 01 |
+| TOK05 | 01 |
 {: caption="Table. Available locations for 25 Gb uplink speed - Asia-Pacific" caption-side="bottom"}
 {: tab-title="Asia-Pacific"}
 {: tab-group="Data centers"}
@@ -118,6 +118,7 @@ The uplink speed provides two options:
 | FRA02 | 02 |
 | FRA04 | 01 |
 | FRA05 | 01 |
+| LON04 | 01 |
 | LON06 | 01 |
 | MAD02 | 01 |
 | MAD04 | 01 |
@@ -136,7 +137,6 @@ The uplink speed provides two options:
 | TOR04 | 01 |
 | WDC04 | 04 |
 | WDC06 | 01 |
-| WDC07 | 01 |
 {: caption="Table. Available locations for 25 Gb uplink speed - NA East" caption-side="bottom"}
 {: tab-title="NA East"}
 {: tab-group="Data centers"}
@@ -145,8 +145,6 @@ The uplink speed provides two options:
 
 | Data center | Pod |
 |:----------- |:--- |
-| DAL10 | 03 |
-| DAL12 | 01 |
 | DAL13 | 02 |
 {: caption="Table. Available locations for 25 Gb uplink speed - NA South" caption-side="bottom"}
 {: tab-title="NA South"}
