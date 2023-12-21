@@ -32,6 +32,7 @@ vCenter Server and VMware vSphere BOM updates
 
    * VMware vCenter Server Appliance 7.0 Update 3o (build 22357613)
    * VMware vSphere ESXi 7.0 Update 3o (build 22348816)
+   * VMware NSX® 4.1.0.2 (build 21761695)
 
 Active Directory server OS upgrade
 :   To upgrade your Microsoft® Active Directory™ server, open an IBM Support ticket by following the steps in [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support#trbl_support-procedure). Before you proceed with a new server installation, ensure that you back up all domain controllers and vCenter Server instances.
@@ -123,9 +124,6 @@ VMware vSphere 8 on Cascade Lake - not supported
 
 Veeam 12 for VMware Shared
 :   Veeam Backup and Replication 12 (Veeam 12) is now available for deployment with the VMware Shared offering.
-
-VMware NSX 4.1.0.2
-:   Newly deployed VMware vCenter Server and VMware vSphere® instances are provisioned with VMware NSX® 4.1.0.2.
 
 vCenter Server and VMware vSphere BOM updates
 :   The following updates are applied to newly deployed instances, clusters, and hosts:
