@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2023
+  years: 2023, 2024
 
-lastupdated: "2023-08-30"
+lastupdated: "2024-01-08"
 
 keywords: view vmware cloud foundation instance, vmware cloud foundation instance, view instance, view vmware cloud edition instance
 
@@ -30,10 +30,10 @@ View the summary and detailed information of the VMware Cloud Foundation™ inst
 {: #vpc-vcf-viewing-details}
 
 1. In the **VMware Cloud Foundation** table, click an instance name.
-2. On the **Summary** tab, review the general information of the instance: the deployment infrastructure type, the resource group in which the resources are deployed, the {{site.data.keyword.vpc_full}} ({{site.data.keyword.vpc_short}}) region, and the zone where the instance is deployed. Click the plan to view the software bundles that are installed for the VMware Cloud Foundation instance.
+2. On the **Summary** tab, review the general information of the instance: the deployment infrastructure type, the resource group in which the resources are deployed, the {{site.data.keyword.vpc_full}} ({{site.data.keyword.vpc_short}}) region, and the zone where the instance is deployed. Click the link under **Plan** to view the software bundles that are installed for the VMware Cloud Foundation instance.
 
 3. Click the **Infrastructure** tab:
-   1. In the **Domain** table, review the domain name, domain type, cluster number in the domain, NSX-T Edge cluster in the domain the public floating IP addresses in the domain.
+   1. In the **Domains** table, review the domain name and type, the number of clusters, the NSX-T Edge cluster uplinks and nodes, and the public floating IP addresses in the domain.
    2. Click the table row to view the detailed information of the selected domain.
       * On the cluster details, view the number of hosts in this cluster.
       * Click the host profile to view the detailed information of the profile.

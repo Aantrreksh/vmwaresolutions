@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2023
+  years:  2023, 2024
 
-lastupdated: "2023-12-14"
+lastupdated: "2024-01-09"
 
 keywords: vmware cloud editions, order vmware cloud editions, order vmware cloud editions on IBM Cloud, vmware cloud foundation
 
@@ -17,22 +17,17 @@ subcollection: vmwaresolutions
 # Ordering VMware Cloud Foundation instances
 {: #vpc-vcf-ordering}
 
-VMware Cloud Foundation™ offers flexible configuration options to help you deploy VMware's software-defined data center, VMware Cloud Foundation, into your {{site.data.keyword.vpc_full}} ({{site.data.keyword.vpc_short}}) environment.
+VMware Cloud Foundation™ offers flexible options to help you deploy VMware's software-defined data center, VMware Cloud Foundation, into your {{site.data.keyword.vpc_full}} ({{site.data.keyword.vpc_short}}) environment.
 
 ## Requirements for VMware Cloud Foundation instances
 {: #vpc-vcf-ordering-req}
 
 Review the information in [Requirements for VMware Cloud Foundation instances](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-order-req).
 
-## Plans and subscriptions
-{: #vpc-vcf-ordering-plans-subscriptions}
+## General information
+{: #vpc-vcf-ordering-info}
 
-You must specify the following plans and subscriptions when you order a VMware Cloud Foundation instance.
-
-### Plans
-{: #vpc-vcf-ordering-plans}
-
-The VMware Cloud Foundation **Advanced** and **Enterprise** editions on {{site.data.keyword.cloud}} are provided for your requirements. For more information about VMware Cloud Foundation editions on {{site.data.keyword.cloud_notm}}, see [Supported VMware Cloud Foundation editions in {{site.data.keyword.vpc_short}}](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-ovw#vpc-vcf-ovw-supported-edition).
+For more information about the components that are provided, see [Supported VMware Cloud Foundation products in {{site.data.keyword.vpc_short}}](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-ovw#vpc-vcf-ovw-supported-edition).
 
 ### Subscriptions
 {: #vpc-vcf-ordering-subscriptions}
@@ -257,6 +252,11 @@ When you deploy the vCenter Server appliance, you must determine the required st
 
 A highly available NSX Global Manager instance is deployed in the VMware Cloud Foundation location instance. You can also select an NSX Global Manager appliance size according to the number of anticipated objects that are required to run the workload components of the private cloud. For more information, see [Deployment model for NSX Manager for a VI workload domain](https://docs.vmware.com/en/VMware-Cloud-Foundation/4.5/vcf-vi-workload-domain-design/GUID-F7044DCA-6780-4C9B-8822-C9CA4382F5AA.html){: external}.
 
+#### Workload NSX Edge VM size
+{: #vpc-vcf-ordering-wl-nsx-edge-vm}
+
+You can determine the size of the NSX Edge appliances for the VI workload domain according to the design objectives of your organization and aggregated requirements of the customer workloads of the SDDC. For more information, see [Deployment Model for the NSX Edge Nodes for a Virtual Infrastructure Workload Domain](https://docs.vmware.com/en/VMware-Cloud-Foundation/4.5/vcf-vi-workload-domain-design/GUID-28FCCC3C-5B34-4EB0-9D2F-EFFE9C718E17.html){: external}.
+
 ## Network interface
 {: #vpc-vcf-ordering-network}
 
@@ -285,15 +285,7 @@ The identifier used to define the name of the newly created {{site.data.keyword.
 
 A list of private routes created on NSX-T Tier-0 gateway, which includes all private ones that are created for VMware Cloud Foundation components.
 
-### Network interface optional settings
-{: #vpc-vcf-ordering-network-optional}
-
-### Customer public routes
-{: #vpc-vcf-ordering-network-pub-routes}
-
-A list of customized public routes created on the NSX-T Tier-0 gateway. It can include the ones that are located on-premises, in other VPCs, and advertised through {{site.data.keyword.cloud_notm}} Transit Gateway. The default value is `["0.0.0.0/0"]`.
-
-## Advanced integration settings
+## Advanced settings
 {: #vpc-vcf-ordering-adv-settings}
 
 ### Jump server

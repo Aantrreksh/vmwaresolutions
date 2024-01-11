@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2023
+  years:  2023, 2024
 
-lastupdated: "2023-10-10"
+lastupdated: "2024-01-04"
   
 keywords: vmware cloud foundation, IBM Cloud, vpc
 
@@ -39,7 +39,7 @@ With this single-tenant {{site.data.keyword.cloud_notm}} bare metal server infra
 
 Unlike the managed service offerings, VMware Cloud Foundation on {{site.data.keyword.vpc_short}} gives you flexibility to design a solution for your needs, and it provides you full and complete access to all components.
 
-## Supported VMware Cloud Foundation architectures in {{site.data.keyword.vpc_short}}
+## Supported VMware Cloud Foundation architecture models in {{site.data.keyword.vpc_short}}
 {: #vpc-vcf-ovw-supported-arch}
 
 VMware Cloud Foundation supports two architecture models - Standard and Consolidated. You can select your preferred architecture according to the specific requirements of your organization, such as the size of the deployment, the level of scalability needed. Both architecture models are supported for VMware Cloud Foundation on {{site.data.keyword.cloud_notm}}.
@@ -48,34 +48,32 @@ In VMware Cloud Foundation Standard, the management and workload domains are dep
 
 VMware Cloud Foundation Consolidated Architecture combines the management and workload domains on a single set of physical servers. This architecture is recommended for smaller-scale deployments.
 
-In both architectures, VMware Cloud Foundation provides a unified software-defined data center platform that includes vSphere, vSAN, NSX, and SDDC Manager. The main benefit of using VMware Cloud Foundation is that it simplifies the deployment and management of the software-defined data center infrastructure by providing a single integrated solution that reduces the complexity of deploying and configuring multiple VMware products.
+In both architecture models, VMware Cloud Foundation provides a unified software-defined data center platform that includes vSphere, vSAN, NSX, and SDDC Manager. The main benefit of using VMware Cloud Foundation is that it simplifies the deployment and management of the software-defined data center infrastructure by providing a single integrated solution that reduces the complexity of deploying and configuring multiple VMware products.
 
-For more information, see [Supported VMware Cloud Foundation architectures models](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-architectures).
+For more information, see [Supported VMware Cloud Foundation architecture models](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-architectures).
 
-## Supported VMware Cloud Foundation editions in {{site.data.keyword.vpc_short}}
+## Supported VMware Cloud Foundation products in {{site.data.keyword.vpc_short}}
 {: #vpc-vcf-ovw-supported-edition}
 
-VMware Cloud Foundation on {{site.data.keyword.cloud_notm}} supports two VMware Cloud Foundation editions - Advanced and Enterprise. The choice between the Advanced and Enterprise editions depends on the specific needs and requirements of the organization, such as the level of automation, management, and scalability needed for their environment.
+The following table shows the products that are included.
 
-The following table shows the differences between the Advanced and Enterprise editions.
+| VMware Cloud Foundation products |
+| ------------------ |
+| vSphere Enterprise Plus |
+| vCenter Standard |
+| SDDC Manager |
+| vSAN Enterprise |
+| NSX Enterprise Plus |
+| NSX Advanced Load Balancer |
+| NSX Distributed Firewall |
+| Aria Suite Lifecycle |
+| Aria Suite Enterprise: \n * Aria Operations Enterprise \n * Aria Operations for Logs \n * Aria Automation Enterprise |
+| Aria Operations for Networks Enterprise |
+| VMware HCX Enterprise |
+| Tanzu Kubernetes Grid |
+{: caption="Table 1. Supported products in VMware Cloud Foundation" caption-side="bottom"}
 
-| Advanced edition | Enterprise edition |
-| ---------------- | ------------------ |
-| vSphere Enterprise Plus | vSphere Enterprise Plus |
-| vCenter Standard | vCenter Standard |
-| SDDC Manager | SDDC Manager |
-| vSAN Advanced | vSAN Enterprise |
-| NSX Advanced | NSX Enterprise Plus |
-| NSX Advanced Load Balancer | NSX Advanced Load Balancer |
-| NSX Distributed Firewall | NSX Distributed Firewall |
-| Aria Suite Lifecycle | Aria Suite Lifecycle |
-| Aria Suite Advanced: \n * Aria Operations Advanced \n * Aria Operations for Logs \n * Aria Automation Advanced | Aria Suite Enterprise: \n * Aria Operations Enterprise \n * Aria Operations for Logs \n * Aria Automation Enterprise |
-| Aria Operations for Networks Enterprise | Aria Operations for Networks Enterprise |
-| VMware HCX Enterprise | VMware HCX Enterprise |
-| Tanzu Kubernetes Grid | Tanzu Kubernetes Grid |
-{: caption="Table 1. Differences between the Advanced and Enterprise editions for VMware Cloud Foundation" caption-side="bottom"}
-
-In the previous table, the following components:
+In the previous table, the following components are not installed by the VMware Solutions automation. However, you can install them separately after the VMware Cloud Foundation instance is deployed.
 
 * NSX Distributed Firewall
 * Aria Suite Advanced
@@ -86,8 +84,6 @@ In the previous table, the following components:
 * Aria Operations for Networks Enterprise
 * VMware HCX Enterprise
 * Tanzu Kubernetes Grid
-
-are not installed by the VMware Solutions automation. However, you can install them separately after the VMware Cloud Foundation instance is deployed. 
 
 ## Related links
 {: #vpc-vcf-ovw-links}

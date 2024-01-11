@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2019, 2023
-lastupdated: "2023-12-13"
+  years: 2019, 2024
+lastupdated: "2024-01-12"
 
 keywords: release notes, what's new in VMware Solutions, what is new, new features, VMware Solutions release notes, VMware Solutions
 
@@ -26,6 +26,9 @@ Use these release notes to learn about updates to {{site.data.keyword.vmwaresolu
 ### 13 December 2023
 {: #vmwaresolutions-dec1323}
 {: release-note}
+
+VMware Cloud Foundation - consolidated
+:   (Updated on 12 January 2024) The VMware Cloud Foundation offering is simplified to a single edition. All new deployments of VMware Cloud Foundation include Enterprise Edition software.
 
 vCenter Server and VMware vSphere BOM updates
 :   The following updates are applied to newly deployed instances, clusters, and hosts:
