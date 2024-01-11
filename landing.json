@@ -1,6 +1,6 @@
 {
     "title": "VMware Solutions docs",
-    "lastupdated": "2023-12-13",
+    "lastupdated": "2024-01-11",
     "introduction": "VMware Solutions is a group of IBM Cloud offerings that provide deployment and management of VMware virtualized environments. Learn how to make the most of your VMware Solutions experience by using the user documentation, REST API documentation reference, solution architectures, and solution guides.",
     "section_devtools": {
       "api": "/docs?tab=api-docs&category=compute&subCategory=vmwaresolutions"
@@ -61,7 +61,7 @@
         {
           "date": "3 November 2023",
           "title": "VMware Cloud Foundation",
-          "description": "The IBM Cloud® for VMware Cloud Foundation offering is a full-stack Software Defined Data Center (SDDC) solution that is built on VMware Cloud Edition. It delivers compute, storage, networking, management automation, and security in a single platform on IBM Cloud Bare Metal Servers for Virtual Private Cloud (VPC)."
+          "description": "The IBM Cloud® for VMware Cloud Foundation offering is a full-stack Software Defined Data Center (SDDC) solution that is built on VMware Cloud Foundation. It delivers compute, storage, networking, management automation, and security in a single platform on IBM Cloud Bare Metal Servers for Virtual Private Cloud (VPC)."
         },
         {
           "date": "18 October 2023",
