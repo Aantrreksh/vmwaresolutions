@@ -33,12 +33,22 @@ toc:
   - navgroup:
       id: tutorial
       topics:
-      - include: ../solution-tutorials/vmware-as-a-service-vdc.md
-      - include: ../solution-tutorials/vmware-as-a-service-tf.md
-      - include: ../vmware-service/tutorials/vmwaas-ovftool.md
-      - include: ../vmware-service/tutorials/vcda-migrating-onprem.md
-      - include: ../vmware-service/tutorials/vcda-migrating-cloudtocloud-shared.md
-      - include: ../vmware-service/tutorials/vcda-migrating-cloudtocloud-vmaas.md
+      - topicgroup:
+          label: Configuration tutorials
+          topics:
+            - include: ../solution-tutorials/vmware-as-a-service-vdc.md
+            - include: ../solution-tutorials/vmware-as-a-service-tf.md
+      - topicgroup:
+          label: Connectivity tutorials
+          topics:
+            - tutorials/vmwaas-ipsec-tunnel.md
+      - topicgroup:
+          label: Migration tutorials
+          topics:
+            - tutorials/vmwaas-ovftool.md
+            - tutorials/vcda-migrating-onprem.md
+            - tutorials/vcda-migrating-cloudtocloud-shared.md
+            - tutorials/vcda-migrating-cloudtocloud-vmaas.md
 
   - navgroup:
       id: howto
