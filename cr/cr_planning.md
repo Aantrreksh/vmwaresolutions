@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2022, 2023
+  years:  2022, 2024
 
-lastupdated: "2023-07-31"
+lastupdated: "2024-01-22"
 
 keywords: planning cyber recovery, cyber recovery, cyber recovery instance
 
@@ -63,6 +63,9 @@ The following {{site.data.keyword.cloud_notm}} data centers are available for Cy
 | LON04 | 01 |
 | LON05 | 01 |
 | LON06 | 01 |
+| MAD02 | 01 |
+| MAD04 | 01 |
+| MAD05 | 01 |
 | MIL01 | 01 |
 | PAR01 | 01 |
 {: caption="Table 1. Available {{site.data.keyword.cloud_notm}} data centers for Cyber Recovery - Europe" caption-side="bottom"}

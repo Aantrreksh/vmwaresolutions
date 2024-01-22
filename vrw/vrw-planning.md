@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2021, 2023
+  years:  2021, 2024
 
-lastupdated: "2023-09-13"
+lastupdated: "2024-01-22"
 
 keywords: planning vmware regulated workloads, data center vmware regulated workloads, vmware regulated workloads data centers
 
@@ -63,6 +63,9 @@ The following {{site.data.keyword.cloud_notm}} data centers are available for VM
 | LON04 | 01 |
 | LON05 | 01 |
 | LON06 | 01 |
+| MAD02 | 01 |
+| MAD04 | 01 |
+| MAD05 | 01 |
 | MIL01 | 01 |
 | PAR01 | 01 |
 {: caption="Table 1. Available {{site.data.keyword.cloud_notm}} data centers for Regulated Workloads single-zone - Europe" caption-side="bottom"}

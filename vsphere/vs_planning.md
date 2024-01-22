@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2023
+  years:  2016, 2024
 
-lastupdated: "2023-09-13"
+lastupdated: "2024-01-22"
 
 keywords: planning vmware vSphere, data center, vSphere data centers
 
@@ -67,10 +67,10 @@ If you select a vSAN component, the location list is filtered by SSD (Solid-Stat
 | LON04 | 01 | Skylake, Cascade Lake, SAP-certified Cascade Lake |
 | LON05 | 01 | Skylake, Cascade Lake, SAP-certified Cascade Lake |
 | LON06 | 01 | Skylake, Cascade Lake, SAP-certified Cascade Lake |
-| MAD02  | 01 | Skylake, Cascade Lake, SAP-certified Cascade Lake |
-| MAD04  | 01 | Skylake, Cascade Lake, SAP-certified Cascade Lake |
-| MAD05  | 01 | Skylake, Cascade Lake, SAP-certified Cascade Lake |
-| MIL01  | 01 | Skylake, Cascade Lake, SAP-certified Cascade Lake |
+| MAD02 | 01 | Cascade Lake, SAP-certified Cascade Lake |
+| MAD04 | 01 | Cascade Lake, SAP-certified Cascade Lake |
+| MAD05 | 01 | Cascade Lake, SAP-certified Cascade Lake |
+| MIL01 | 01 | Skylake, Cascade Lake, SAP-certified Cascade Lake |
 | PAR01 | 01 | Skylake, Cascade Lake, SAP-certified Cascade Lake |
 {: caption="Table 1. Available {{site.data.keyword.cloud_notm}} data centers for VMware vSphere instances - Europe" caption-side="bottom"}
 {: tab-title="Europe"}
