@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2022, 2023
+  years:  2022, 2024
 
-lastupdated: "2023-12-15"
+lastupdated: "2024-01-23"
 
 keywords: cyber recovery, cyber recovery consolidated cluster, cyber recovery consolidated settings, cyber recovery instances
 

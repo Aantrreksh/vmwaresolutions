@@ -1,9 +1,9 @@
 ---
 
 copyright:
-  years: 2022, 2023
+  years: 2022, 2024
 
-lastupdated: "2023-12-15"
+lastupdated: "2024-01-23"
 
 keywords: IBM Cloud for VMware Solutions, getting started, vmware solutions offerings, services for vmwaresolutions, vmwaresolutions use cases
 
@@ -145,6 +145,8 @@ The uplink speed provides two options:
 
 | Data center | Pod |
 |:----------- |:--- |
+| DAL10 | 03 |
+| DAL12 | 01 |
 | DAL13 | 02 |
 {: caption="Table. Available locations for 25 Gb uplink speed - NA South" caption-side="bottom"}
 {: tab-title="NA South"}

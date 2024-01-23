@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2021, 2023
+  years:  2021, 2024
 
-lastupdated: "2023-12-15"
+lastupdated: "2024-01-23"
 
 keywords: vCenter Server add clusters, add cluster, vCenter Server cluster
 
