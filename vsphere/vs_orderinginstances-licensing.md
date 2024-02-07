@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2023
+  years:  2016, 2024
 
-lastupdated: "2023-08-08"
+lastupdated: "2024-01-29"
 
 keywords: vmware vSphere order instance, order vSphere, order vmware vSphere instance
 
@@ -42,7 +42,7 @@ You can also include the following VMware® components in your order:
 
 If you're a non-Business Partner, you can select the following components for your vSphere instance:
 * VMware vSphere Enterprise Plus 7.0u3
-* VMware vCenter Server
+* VMware vCenter Server 7.0 or later
 * VMware NSX - Data Center SP Base, Data Center SP Professional, Data Center SP Advanced, or Data Center SP Enterprise Plus
 * VMware vSAN
 * VMware Site Recovery Manager

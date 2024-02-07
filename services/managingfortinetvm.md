@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2023
+  years:  2016, 2024
 
-lastupdated: "2023-10-03"
+lastupdated: "2024-01-31"
 
 keywords: FortiGate console, FortiGate VA, login FortiGate console
 
@@ -42,4 +42,4 @@ Review the following considerations before you delete the service:
 * [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support)
 * [FAQ](/docs/vmwaresolutions?topic=vmwaresolutions-faq-vmwaresolutions)
 * [fortinet.com website](https://www.fortinet.com/){: external}
-* [Fortinet document library](https://docs.fortinet.com/product/fortigate/6.2){: external}
+* [Fortinet document library](https://docs.fortinet.com/product/fortigate/7.4){: external}

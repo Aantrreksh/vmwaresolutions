@@ -4,7 +4,7 @@ copyright:
 
   years: 2016, 2024
 
-lastupdated: "2024-01-08"
+lastupdated: "2024-02-01"
 
 keywords: IBM Cloud for VMware Solutions, getting started, vmware solutions offerings, services for vmwaresolutions, vmwaresolutions use cases
 
@@ -94,7 +94,7 @@ The following table describes the data resiliency and migration services that ar
 |:------------ |:----------- |
 | [HCX™](/docs/vmwaresolutions?topic=vmwaresolutions-hcx_considerations#hcx_considerations) | This service can extend the networks of on-premises data centers into {{site.data.keyword.cloud_notm}}, which allows VMs to be migrated to and from the {{site.data.keyword.cloud_notm}} without any conversion or change. |
 | [PrimaryIO Migrations](https://www.primaryio.com/#){: external} | This service offers various capabilities to facilitate the cloud journey for organizations with an investment in VMware. |
-| [ProtectIO](https://cloud.ibm.com/catalog/services/protectio#about) | This service provides a robust disaster recovery solution while leveraging the latest cloud economics for an attractive Total Cost of Ownership. |
+| [ProtectIO](https://cloud.ibm.com/catalog#about) | This service provides a robust disaster recovery solution while leveraging the latest cloud economics for an attractive Total Cost of Ownership. |
 | [Veeam®](/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview) | This service integrates directly with your VMware hypervisors to help your enterprise achieve high availability. You can control both the backup and restore of all VMs for your infrastructure from the Veeam console. |
 | [Zerto](/docs/vmwaresolutions?topic=vmwaresolutions-addingzertodr) | This service provides replication and disaster recovery capabilities, which can be integrated into the deployment offerings to protect and recover data in your VMware virtual environment on {{site.data.keyword.cloud_notm}}. |
 {: caption="Table 4. Data resiliency and migration services" caption-side="bottom"}
@@ -162,7 +162,7 @@ For more information about how to order an instance, see the following topics ba
 After you place an instance order in **Step 3**, the deployment of the instance starts automatically. You can track the status of the deployment by viewing the instance details. When the instance deployment is completed, you can view the summary and detailed information of the instance and its services on the instance details page too.
 
 For more information about how to view the instance you ordered, see the following topics based on your selected deployment:
-* [Viewing VMware as a Service instances](/docs/vmwaresolutions?topic=vmwaresolutions-tenant-viewing)
+* [Viewing VMware as a Service instances](/docs/vmwaresolutions?topic=vmwaresolutions-tenant-viewing-sites)
 * [Viewing and managing VMware Share virtual data centers](/docs/vmwaresolutions?topic=vmwaresolutions-shared_viewing-vdc-summary)
 * [Viewing VMware vSphere instances](/docs/vmwaresolutions?topic=vmwaresolutions-vs_viewinginstances)
 * [Viewing vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_viewinginstances)

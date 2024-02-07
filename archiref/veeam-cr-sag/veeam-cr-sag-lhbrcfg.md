@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2023
+  years:  2023, 2024
 
-lastupdated: "2023-05-01"
+lastupdated: "2024-01-26"
 
 subcollection: vmwaresolutions
 
@@ -251,4 +251,4 @@ Save the file. Ensure that the file is saved in the `\swlib\ansible` directory o
 ## Related links
 {: #veeam-cr-sag-lhbrcfg-related}
 
-* [Cyber recovery with Veeam architecture overview](/docs/vmwaresolutions/?topic=vmwaresolutions-veeam-cr-sa-overview)
+* [Cyber recovery with Veeam architecture overview](/docs/vmwaresolutions?topic=vmwaresolutions-veeam-cr-sa-overview)

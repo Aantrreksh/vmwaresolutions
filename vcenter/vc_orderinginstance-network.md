@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2023
+  years:  2016, 2024
 
-lastupdated: "2023-08-29"
+lastupdated: "2024-01-31"
 
 keywords: network interface, domain name, hostname prefix, configure hostnames, dns configuration
 
@@ -46,7 +46,7 @@ The maximum length of the Fully Qualified Domain Name (FQDN) for hosts and VMs i
 ## Configure hostnames individually
 {: #vc_orderinginstance-network-diagram}
 
-You can customize the hostnames prefix individually by toggling the **Configure hostnames individually** switch on. 
+You can customize the hostnames prefix individually by toggling the **Configure hostnames individually** switch on.
 
 The hostnames prefix must meet the following requirements:
 * Only lowercase alphabetic, numeric, and hyphen (-) characters are allowed.
@@ -70,7 +70,7 @@ Each license can be assigned only to one single physical server and covers up to
 
 You have 30 days to activate the VMs.
 
-For more information about ordering Windows Server 2019 licenses, see [Get started with Windows Server 2019](https://docs.microsoft.com/en-us/windows-server/get-started-19/get-started-19){: external}.
+For more information about ordering Windows Server 2019 licenses, see [Get started with Windows Server 2019](https://learn.microsoft.com/en-us/windows-server/get-started/get-started-with-windows-server){: external}.
 
 ## Related links
 {: #vc_orderinginstance-network-related}

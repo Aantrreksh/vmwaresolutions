@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2023
+  years:  2016, 2024
 
-lastupdated: "2023-05-22"
+lastupdated: "2024-01-30"
 
 keywords: vCenter Server network config, network configuration, manage NSX ESG
 
@@ -20,7 +20,7 @@ subcollection: vmwaresolutions
 
 Configure the network for your virtual machines (VMs) so you can take advantage of the VMware NSX Edge™ Services Gateway (ESG) that is deployed in your VMware vCenter Server® instances. For more information about the security measures that are in place to help minimize security risk, see [Does the management services NSX Edge pose a security risk?](/docs/vmwaresolutions?topic=vmwaresolutions-faq-vmwaresolutions#faq-mgmt-nsx)
 
-VMware NSX® is a network virtualization platform that allows the virtualization of isolated networks and provides several networking services such as switches, routing, and firewalls. For more information about NSX, see [Overview of NSX for vSphere](https://docs.vmware.com/en/VMware-NSX-Data-Center-for-vSphere/6.3/com.vmware.nsx.install.doc/GUID-10944155-28FF-46AA-AF56-7357E2F20AF4.html){: external}.
+VMware NSX® is a network virtualization platform that allows the virtualization of isolated networks and provides several networking services such as switches, routing, and firewalls. For more information about NSX, see [Overview of NSX for vSphere](https://docs.vmware.com/en/VMware-NSX-Data-Center-for-vSphere/6.3/NSX-Data-Center-for-vSphere-63.zip){: external}.
 
 As part of the ordering process for your vCenter Server instance, the following actions are completed on your behalf:
 * A private customer subnet is ordered to be used by your VMs to access the {{site.data.keyword.cloud}} infrastructure private network.
@@ -58,7 +58,7 @@ To take advantage of NSX for your workload VMs, you must configure a number of s
 ## Enabling the SNAT rule for NSX-T
 {: #vc_nsx-t_esg_config-procedure-enable-snat-rule}
 
-NSX-T enables the SNAT rule by default. For more information about modifying the existing rules, see [Configure source and destination NAT on a Tier-0 logical router](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/2.4/administration/GUID-45949ACD-9029-4674-B29C-C2EABEB39E1D.html){: external}.
+NSX-T enables the SNAT rule by default. For more information about modifying the existing rules, see [Configure source and destination NAT on a Tier-0 logical router](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/2.4/VMware-NSX-T-Data-Center-24.zip){: external}.
 
 ## Enabling the firewall rule for NSX-T
 {: #vc_esg_config-procedure-enable-firewall-rule}

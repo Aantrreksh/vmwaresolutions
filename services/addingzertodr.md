@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2023
+  years:  2016, 2024
 
-lastupdated: "2023-11-09"
+lastupdated: "2024-01-09"
 
 keywords: Zerto, Zerto components, tech specs Zerto
 
@@ -28,7 +28,7 @@ Zerto is supported on VMware vCenter Server® instances that meet the following 
 
 {{site.data.content.para-promotion-services}}
 
-The Zerto version available for deployment is 9.7u3.
+The Zerto version available for deployment is 9.7u4.
 {: note}
 
 ## Before you begin
@@ -69,14 +69,14 @@ Zerto Virtual Replication Appliance (VRA) components are deployed only into the 
 
 The Zerto service is not configured with an {{site.data.keyword.cloud_notm}} infrastructure portable IP address or with a NAT connection to the public network, even if you have public interfaces in your instance. This implementation helps to avoid the possibility of asymmetric routing when it uses a network gateway appliance.
 
-When you deploy Zerto, you must configure your own proxy or NAT connection to the public network. If you do not complete the configuration, Zerto blocks management activities in 15 days. 
+When you deploy Zerto, you must configure your own proxy or NAT connection to the public network. If you do not complete the configuration, Zerto blocks management activities in 15 days.
 
 For more information, see [Considerations for ordering Zerto](/docs/vmwaresolutions?topic=vmwaresolutions-zerto_ordering#zerto_ordering-private-only).
 
 ### Licenses and fees
 {: #addingzertodr-specs-licenses}
 
-Zerto Replication version 9.7u3 license.
+Zerto Replication version 9.7u4 license.
 
 ## Related links
 {: #addingzertodr-related}

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2022
+  years:  2022, 2024
 
-lastupdated: "2022-11-23"
+lastupdated: "2024-01-26"
 
 subcollection: vmwaresolutions
 
@@ -58,4 +58,4 @@ PowerShell is installed by default with Windows® Server. However, PowerCLI need
 ## Related links
 {: #veeam-cr-sag-jmpcfg-related}
 
-* [Cyber recovery with Veeam architecture overview](/docs/vmwaresolutions/?topic=vmwaresolutions-veeam-cr-sa-overview)
+* [Cyber recovery with Veeam architecture overview](/docs/vmwaresolutions?topic=vmwaresolutions-veeam-cr-sa-overview)

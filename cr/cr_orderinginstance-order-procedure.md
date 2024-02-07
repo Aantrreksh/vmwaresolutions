@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2022, 2023
+  years:  2022, 2024
 
-lastupdated: "2023-10-10"
+lastupdated: "2024-02-05"
 
 keywords: cyber recovery order procedure, order procedure cyber recovery, cyber recovery order instance, order cyber recovery, order cyber recovery instance
 
@@ -20,7 +20,7 @@ subcollection: vmwaresolutions
 <!-- The {: #step-1} tag and the ordered list that has only 1s are intentional. Do not delete. This coding is necessary for proper indentation when the procedure is translated. -->
 
 1. In the {{site.data.keyword.vmwaresolutions_full}} console, click the **Cyber Recovery** card in the **Solutions** section. {: #step-1}
-1. Enter the instance name and select a resource group. 
+1. Select the vCenter Server version. Then, enter the instance name and select a resource group.
 1. To specify the instance configuration name, click **Browse configurations** and choose a configuration in the **VMware instance configuration manager**.
    * If you do not see any configurations in the list and you want to create one, you must first save the instance settings as a new configuration without placing an order.
    * If you want to update a saved configuration or create a new configuration based on a saved one, select the configuration from the side panel, make your changes, and then save.
@@ -71,7 +71,7 @@ subcollection: vmwaresolutions
 1. Choose the firewall appliance for your instance and follow the steps, depending on your selection:
    * For **Gateway cluster with Juniper® vSRX**, **Gateway cluster with FortiGate® Virtual Appliance**, and **Bring your own gateway appliance**, specify the [gateway cluster name](/docs/vmwaresolutions?topic=vmwaresolutions-cr-orderinginstance-edge#cr-orderinginstance-edge-cluster-name), the CPU model, the RAM size, and the networking type.
    * For **Gateway cluster with Juniper vSRX** and **Gateway cluster with FortiGate Virtual Appliance**, you must also specify the corresponding service settings in a later step.
-   * For **FortiGate Security Appliance**, you must order the **FortiGate Security Appliance 10 Gbps** service from the [{{site.data.keyword.cloud_notm}} catalog](https://cloud.ibm.com/catalog/infrastructure/fortigate-security-appliance-10gb). Confirm that you ordered the service and continue with the following steps.
+   * For **FortiGate Security Appliance**, you must order the **FortiGate Security Appliance 10 Gbps** service from the [{{site.data.keyword.cloud_notm}} catalog](https://cloud.ibm.com/netsec/firewalls/multi-vlan/provision#about). Confirm that you ordered the service and continue with the following steps.
 1. Specify the **Gateway cluster** settings:
    1. Accept or change the default name of the gateway cluster.
    1. Select the **CPU model** and the RAM size.

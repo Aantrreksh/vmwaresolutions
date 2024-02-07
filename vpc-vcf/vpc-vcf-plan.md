@@ -4,7 +4,7 @@ copyright:
 
   years:  2023
 
-lastupdated: "2023-10-10"
+lastupdated: "2023-12-14"
   
 keywords: vmware cloud foundation, IBM Cloud, vpc
 
@@ -21,7 +21,7 @@ subcollection: vmwaresolutions
 ## {{site.data.keyword.cloud_notm}} account requirements
 {: #vpc-vcf-plan-acc}
 
-To order a VMware Cloud Foundation™ instance, you must have a **Pay As You Go** {{site.data.keyword.cloud}} account. The cost of the resources that are ordered are billed to that {{site.data.keyword.cloud_notm}} account. For more information, see [Upgrading to a Pay-As-You-Go account](/docs/account?topic=account-upgrading-account#upgrade-paygo).
+To order a VMware Cloud Foundation™ instance, you must have a **Pay As You Go** {{site.data.keyword.cloud}} account. The cost of the resources that are ordered are billed to that {{site.data.keyword.cloud}} account. For more information, see [Upgrading to a Pay-As-You-Go account](/docs/account?topic=account-upgrading-account#upgrade-paygo).
 
 ## Required permissions for managing {{site.data.keyword.cloud_notm}} resources
 {: #vpc-vcf-plan-permission}
@@ -37,7 +37,7 @@ Ensure that the following requirements are met:
 * Your account meets the [required IAM permissions](/docs/vpc?topic=vpc-resource-authorizations-required-for-api-and-cli-calls) to interact with {{site.data.keyword.vpc_full}} ({{site.data.keyword.vpc_short}}) infrastructure objects.
 * Your account meets the [required IAM permissions](/docs/vpc?topic=vpc-planning-for-bare-metal-servers&interface=ui) for Bare Metal Servers on {{site.data.keyword.vpc_short}}.
 * Your account meets the [required IAM permissions](/docs/dns-svcs?topic=dns-svcs-iam) for {{site.data.keyword.cloud_notm}} DNS Services.
-* (Optional) Your account meets the [required IAM permissions](/docs/log-analysis?topic=log-analysis-work_iam) for IBM Log Analysis service.
+* (Optional) Your account meets the [required IAM permissions](/docs/log-analysis?topic=log-analysis-work_iam) for {{site.data.keyword.cloud_notm}} Log Analysis service.
 
 ## {{site.data.keyword.cloud_notm}} region and zone availability for VMware Cloud Foundation deployment
 {: #vpc-vcf-plan-region}

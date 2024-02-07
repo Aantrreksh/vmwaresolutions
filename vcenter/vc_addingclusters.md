@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2024
 
-lastupdated: "2024-01-23"
+lastupdated: "2024-01-30"
 
 keywords: vCenter Server add clusters, add cluster, vCenter Server cluster
 
@@ -28,7 +28,7 @@ Adding clusters to vCenter Server instances with VMware vSphere® 6.5 or 6.7 is 
 {{site.data.content.para-vcenteraddclusters}}
 
 * New clusters are provisioned with mirrored M.2 boot drives.
-* The number of clusters, hosts, and virtual machines (VMs) determines the maximum number of clusters that you can add. You must remain within the VMware® sizing guidelines and limits for your deployment. For more information, see [VMware configuration maximums](https://configmax.vmware.com/home){: external}.
+* The number of clusters, hosts, and virtual machines (VMs) determines the maximum number of clusters that you can add. You must remain within the VMware® sizing guidelines and limits for your deployment. For more information, see [VMware configuration maximums](https://configmax.esp.vmware.com/home){: external}.
 * You can add a cluster while another cluster is being created or deleted.
 
 ## Cluster type

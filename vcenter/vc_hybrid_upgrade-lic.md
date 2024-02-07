@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2023
+  years:  2016, 2024
 
-lastupdated: "2023-07-17"
+lastupdated: "2024-02-06"
 
 keywords: NSX license, upgrade license, Hybridity license
 
@@ -32,5 +32,5 @@ You can upgrade the VMware NSX® license for your instance to a later edition. R
 4. Click the **Licensing** tab and click **Upgrade**. In the **Upgrade NSX license edition** window, select the edition that you want to upgrade to and click **Upgrade**.
 
    The license upgrade replaces all existing NSX licenses on the instance. Extra charges might be incurred from an overlap of old and new licenses if you upgrade in the middle of a billing cycle. To avoid extra charges, it is recommended to upgrade the license at the end of the billing cycle.
-   {: note}
+   {: important}
 

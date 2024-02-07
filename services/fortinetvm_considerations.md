@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2023
+  years:  2016, 2024
 
-lastupdated: "2023-10-31"
+lastupdated: "2024-01-31"
 
 keywords: FortiGate VA, FortiGate Virtual Appliance, tech specs FortiGate VA
 
@@ -70,10 +70,10 @@ License fees for each VM are applied to each billing cycle. The fees depend on t
 
 The following information describes the different considerations for the uplink speed, deployment size, and CPU when you install FortiGate Virtual Appliance.
 
-### FortiGate Virtual Appliance on vCenter Server 7 with NSX-T
+### FortiGate Virtual Appliance on vCenter Server
 {: #fortinetvm_considerations-installvalues-vcs7}
 
-On vCenter Server 7 with NSX-T, you can install FortiGate Virtual Appliance on the consolidated cluster or the gateway cluster.
+On vCenter Server, you can install FortiGate Virtual Appliance on the consolidated cluster or the gateway cluster.
 
 On the consolidated cluster, note the following.
 
@@ -147,4 +147,4 @@ If more resources are needed to run the FortiGate Virtual Appliance service, you
 * [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support)
 * [FAQ](/docs/vmwaresolutions?topic=vmwaresolutions-faq-vmwaresolutions)
 * [Fortinet website](https://www.fortinet.com/){: external}
-* [Fortinet Document Library](https://docs.fortinet.com/product/fortigate/6.2){: external}
+* [Fortinet Document Library](https://docs.fortinet.com/product/fortigate/7.4){: external}

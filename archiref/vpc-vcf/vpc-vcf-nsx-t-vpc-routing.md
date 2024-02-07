@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2022, 2023
+  years:  2022, 2024
 
-lastupdated: "2023-08-25"
+lastupdated: "2024-01-29"
 
 subcollection: vmwaresolutions
 
@@ -47,7 +47,7 @@ You can use the public IP addresses for the following purposes:
 * To perform source NAT done in either Tier-0 or Tier-1 gateways for outbound public traffic from NSX overlay.
 * To establish VPNs in either Tier-0 or Tier-1.
 
-For more information, see [Network Services that are provided by Tier-0 and Tier-1 gateways](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-nsx-t-vpc-routing#vpc-vcf-nsx-t-vpc-routing-edge-services).
+For more information, see [Routing between Tier-0 and Tier-1 logical routers](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-ryo-nsx-t-vpc-routing#vpc-ryo-nsx-t-vpc-routing-edge-tier-0-routing-t1).
 
 For public IP addresses, you can currently use one or more `/32` IP address, but you cannot have subnets, such as `/29` or `/26`.
 {: note}

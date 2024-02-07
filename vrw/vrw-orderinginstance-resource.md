@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2020, 2023
+  years:  2020, 2024
 
-lastupdated: "2023-06-20"
+lastupdated: "2024-02-06"
 
 keywords: vmware regulated workloads, vmware regulated workloads order instance, order vmware regulated workloads, vmware regulated workloads instances
 
@@ -20,7 +20,7 @@ subcollection: vmwaresolutions
 Enter the instance name or accept the default value and specify the resource group for the VMware® Regulated Workloads instance.
 
 ## Instance name
-{: #vrw-orderinginstance-inst-name}
+{: #vrw-orderinginstance-resource-inst-name}
 
 The instance name is set to **vrw-_xx_** by default, where _xx_ represents two randomly generated alphabetic characters.
 

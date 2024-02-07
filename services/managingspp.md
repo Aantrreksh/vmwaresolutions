@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2023
+  years:  2016, 2024
 
-lastupdated: "2023-07-17"
+lastupdated: "2024-01-31"
 
 subcollection: vmwaresolutions
 
@@ -29,7 +29,7 @@ To manage the IBM Spectrum Protect Plus service, you must access the IBM Spectru
 ## Applying updates to IBM Spectrum Protect Plus
 {: #managingspp-updates}
 
-You are responsible for maintaining IBM Spectrum Protect Plus to keep it updated to the most recent version. Download the required updates from [IBM Spectrum Protect Plus Support](https://www.ibm.com/mysupport/s/topic/0TO50000000IQWtGAO/spectrum-protect-plus){: external}.
+You are responsible for maintaining IBM Spectrum Protect Plus to keep it updated to the most recent version. Download the required updates from [IBM Storage Protect Plus](https://www.ibm.com/mysupport/s/topic/0TO50000000IQWtGAO/storage-protect-plus?language=en_US){: external}.
 
 ## Updating the operating system of the IBM Spectrum Protect Plus VM
 {: #managingspp-update-os}

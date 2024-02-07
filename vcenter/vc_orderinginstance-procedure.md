@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2023
+  years:  2016, 2024
 
-lastupdated: "2023-09-19"
+lastupdated: "2024-01-30"
 
 keywords: vCenter Server order instance, order vCenter Server, order vCenter Server instance
 
@@ -20,7 +20,7 @@ subcollection: vmwaresolutions
 <!-- The {: #step-1} tag and the ordered list that has only 1s are intentional. Do not delete. This coding is necessary for proper indentation when the procedure is translated. -->
 
 1. In the VMware Solutions console, click the **VMware vCenter Server** card in the **Platforms** section. {: #step-1}
-1. Enter the instance name and select a resource group.
+1. Select the vCenter Server version. Then, enter the instance name and select a resource group.
 1. To specify the instance configuration name, click **Browse configurations** and choose a configuration in the **VMware instance configuration manager**.
    * If you do not see any configurations in the list and you want to create one, you must first save the instance settings as a new configuration without placing an order.
    * If you want to update a saved configuration or create a new configuration based on a saved one, select the configuration from the side panel, make your changes, and then save.
@@ -45,7 +45,7 @@ subcollection: vmwaresolutions
       * By default, the **Enable vSAN deduplication and compression** checkbox is selected. If you do not want to enable vSAN deduplication and compression, clear the checkbox.
       * Specify the vSAN license edition.
    1. Specify the networking type.
-   1. Select the uplink speed. The 25 Gb option is available only for specific pods and data center locations. 
+   1. Select the uplink speed. The 25 Gb option is available only for specific pods and data center locations.
    1. Select the VLAN settings:
       * If you want to order new public and private VLANs, click **Order new VLANs**.
       * If you want to reuse the existing public and private VLANs when they are available, click **Select existing VLANs** and specify the VLANs and the subnets. Optionally, click **Portable subnets settings**. Then, select the portable subnet for each purpose and click **Save**.

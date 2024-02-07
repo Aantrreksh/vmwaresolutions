@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2023
+  years:  2023, 2024
 
-lastupdated: "2023-09-13"
+lastupdated: "2024-01-26"
 
 keywords: view vmware vSphere, view instance, view instance details, instance view vmware vSphere
 
@@ -142,4 +142,4 @@ Review the following topics for information to help you complete the login instr
 
 * [Procedure to order VMware vSphere instances](/docs/vmwaresolutions?topic=vmwaresolutions-vs_orderinginstances-procedure)
 * [Adding ESXi servers to VMware vSphere instances](/docs/vmwaresolutions?topic=vmwaresolutions-vs_addingservers)
-* [Deleting VMware vSphere instances](/docs/vmwaresolutions?topic=vmwaresolutions-vs_deletinginstances)
+* [Deleting VMware vSphere instances](/docs/vmwaresolutions?topic=vmwaresolutions-vs_deletinginstance)

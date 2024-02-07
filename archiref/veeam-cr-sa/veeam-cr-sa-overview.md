@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2023
+  years:  2023, 2024
 
-lastupdated: "2023-06-12"
+lastupdated: "2024-01-02"
 
 subcollection: vmwaresolutions
 
@@ -61,8 +61,8 @@ This documentation uses the following terms and definitions:
 
 | Term | Definition
 |------|-----------
-| vCenter Server instance | A VMware vSphere environment that is hosted on a minimum of three {{site.data.keyword.cloud_notm}} bare metal servers and includes VMware NSX to provide a virtual network overlay. An instance includes a vCenter appliance and Microsoft® Windows® AD/DNS. For more information, see [vCenter Server overview](https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview).
-| Veeam service | A Veeam service is a deployment of Veeam Availability Suite that is associated with the vCenter server instance. For more information, see [Veeam Backup and Replication 12 overview](https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview).
+| vCenter Server instance | A VMware vSphere environment that is hosted on a minimum of three {{site.data.keyword.cloud_notm}} bare metal servers and includes VMware NSX to provide a virtual network overlay. An instance includes a vCenter appliance and Microsoft® Windows® AD/DNS. For more information, see [vCenter Server overview](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview).
+| Veeam service | A Veeam service is a deployment of Veeam Availability Suite that is associated with the vCenter server instance. For more information, see [Veeam Backup and Replication 12 overview](/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview).
 | Server instance | A server instance is an operating system that uses compute, storage, and network resources that host applications.
 | Virtual machine (VM) | A VM is a server instance that runs on a vSphere hypervisor.
 | Virtual Server Instance (VSI) | A VSI is a server instance that runs on the {{site.data.keyword.cloud_notm}} hypervisor.

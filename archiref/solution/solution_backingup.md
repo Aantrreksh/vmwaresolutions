@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2023
+  years:  2016, 2024
 
-lastupdated: "2023-08-09"
+lastupdated: "2024-02-02"
 
 subcollection: vmwaresolutions
 
@@ -20,7 +20,7 @@ You are responsible for the configuration, management, and monitoring of all sof
 
 As part of the solution, you can optionally deploy the Veeam® add-on service to satisfy the requirement for backing up your management components.
 
-These add-on services are deployed together with {{site.data.keyword.cloud}} Endurance storage. The services help you back up your workloads and the management components. The [Veeam architecture overview](https://www.ibm.com/cloud/architecture/architectures/virtualization_backup_veeam){: external} provides helpful guidance on planning and sizing your deployment.
+These add-on services are deployed together with {{site.data.keyword.cloud}} Endurance storage. The services help you back up your workloads and the management components.
 
 Different solution components require different strategies for backup. Some components are protected by using image-level backup, and other components are protected by using file-based backup for their configuration and data.
 
@@ -71,8 +71,8 @@ Plan to allocate enough Veeam licenses to back up these VMs, and plan for at lea
 If you deploy add-on solution components into your instance, plan for the backup of these components as part of your management backup strategy.
 
 * Zerto Virtual Replication - The Zerto Virtual Manager (ZVM) system is deployed as an {{site.data.keyword.cloud_notm}} virtual server instance (VSI) and its backup is not supported by Veeam. If your disaster recovery strategy requires you to recover the ZVM without you perform a site failover, use your preferred Windows® backup solution to back up and restore the ZVM.
-* F5® BIG-IP - F5 recommends [file-based backup of the F5 configuration](https://support.f5.com/csp/article/K13132){: external}, which you can direct to your file server.
-* FortiGate® Security Appliance or VM - Fortinet recommends [file-based backup of the FortiGate configuration](https://help.fortinet.com/fos50hlp/54/Content/FortiOS/fortigate-best-practices-54/Firmware/Performing_Config_Backup.htm){: external}, which you can direct to your file server.
+* F5® BIG-IP - F5 recommends [file-based backup of the F5 configuration](https://my.f5.com/manage/s/article/K13132){: external}, which you can direct to your file server.
+* FortiGate® Security Appliance or VM - Fortinet recommends [performing a configuration backup](https://docs.fortinet.com/document/fortigate/6.4.0/best-practices/262994/performing-a-configuration-backup){: external}, which you can direct to your file server.
 * VMware HCX™ - Use the HCX appliance management interface to create and download a file-based backup of the HCX Manager configuration similar to the vCenter Server Appliance.
 
 ## More considerations

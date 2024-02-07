@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2022
+  years:  2016, 2024
 
-lastupdated: "2022-07-17"
+lastupdated: "2024-02-06"
 
 keywords: vCenter Server Hybridity delete instance, delete vCenter Server Hybridity, remove vCenter Server Hybridity
 
@@ -21,7 +21,7 @@ subcollection: vmwaresolutions
 To remove the Hybridity Bundle license from your VMware vCenter Server® instance, you must replace the VMware NSX® and VMware vSAN™ rental license keys with Bring Your Own License (BYOL) keys in the VMware vSphere® Web Client. Additionally, you must open a support ticket to cancel charges for the rental licenses.
 
 Reverting your license to an earlier version might cause your vCenter Server instance to fail. You can choose to revert a license to an earlier version at your own risk, but first consider the functions that are not available when you are reverting. For more information, see [Comparison chart for VMware component editions](/docs/vmwaresolutions?topic=vmwaresolutions-solution-appendix).
-{: important}
+{: attention}
 
 ## Important considerations before you remove the Hybridity Bundle from a multisite environment
 {: #vc_hybrid_deletingbundle-considerations}
@@ -33,7 +33,7 @@ Review the following considerations before you remove the Hybridity Bundle from 
 * You must create a single support ticket to remove the Hybridity Bundle from all multisite deployments.
 
 When you remove the Hybridity Bundle from a multisite environment, BYOL licenses are applied. It is your responsibility to ensure that the license editions are consistent across all sites in the multisite configuration.
-{: note}
+{: important}
 
 ## Before you remove the Hybridity Bundle
 {: #vc_hybrid_deletingbundle-prereq}

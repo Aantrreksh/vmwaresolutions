@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2023
+  years:  2016, 2024
 
-lastupdated: "2023-11-27"
+lastupdated: "2024-01-31"
 
 keywords: Veeam, Veeam configuration, order Veeam
 
@@ -29,8 +29,6 @@ If you have Veeam 9.5u4b, you can continue to use it. However, you cannot instal
 {: #veeamvm_overview-install}
 
 Before you install Veeam on an instance, review the [tasks that you can complete with Veeam](/docs/vmwaresolutions?topic=vmwaresolutions-managingveeam#managingveeam-fivetasks_v10).
-
-For more information about Veeam® license installation and deletion, see [Considerations for installing and deleting Veeam licenses](/docs/vmwaresolutions?topic=vmwaresolutions-managingveeam#managingveeam-install-delete-consid).
 
 ## Considerations for a Linux hardened repository
 {: #managingveeam-linux-repository}
@@ -114,5 +112,5 @@ If you need a single license key for more than 500 VMs, you must order a stand-a
 * [Managing Veeam](/docs/vmwaresolutions?topic=vmwaresolutions-managingveeam)
 * [Managing Veeam stand-alone licenses](/docs/vmwaresolutions?topic=vmwaresolutions-veeam_managing_licenses)
 * [Ordering and configuring {{site.data.keyword.cloud_notm}} Object Storage with Veeam](/docs/vmwaresolutions?topic=vmwaresolutions-icos_ordering)
-* [Veeam Backup and Replication](https://www.ibm.com/cloud/architecture/architectures/virtualization_backup_veeam)
+* [Veeam on IBM Cloud](https://www.ibm.com/products/veeam){: external}
 * [Veeam Technical Documentation](https://www.veeam.com/documentation-guides-datasheets.html){: external}

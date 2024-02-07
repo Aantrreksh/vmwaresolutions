@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2019, 2023
+  years:  2019, 2024
 
-lastupdated: "2023-05-01"
+lastupdated: "2024-01-12"
 
 subcollection: vmwaresolutions
 
@@ -163,4 +163,4 @@ Disconnect-NsxServer
 {: #vcs-openshift-runbook-nsxdlr-related}
 
 * [{{site.data.keyword.redhat_openshift_notm}} Bastion node setup](/docs/vmwaresolutions?topic=vmwaresolutions-openshift-runbook-runbook-bastion-intro)
-* [{{site.data.keyword.redhat_openshift_notm}} 4.7 user provider infrastructure installation](/docs/vmwaresolutions?topic=vmwaresolutions-openshift-runbook-runbook-install-intro)
+* [{{site.data.keyword.redhat_openshift_notm}} 4.14 user provider infrastructure installation](/docs/vmwaresolutions?topic=vmwaresolutions-openshift-runbook-runbook-install-intro)

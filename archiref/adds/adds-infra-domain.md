@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2019, 2023
+  years:  2019, 2024
 
-lastupdated: "2023-05-01"
+lastupdated: "2024-01-30"
 
 subcollection: vmwaresolutions
 
@@ -45,7 +45,7 @@ During the ordering process, you can deploy:
 
 Currently, Microsoft Windows Server 2019 Standard is deployed for the operating system. The domain-functional level 2008 is set to allow for compatibility with an earlier version with any potential secondary instances. If compatibility with earlier (2008) secondary instances is not a consideration in your environment, you can upgrade the domain-functional level to a higher version.
 
-For more information, see [Forest and domain-functional levels](https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/active-directory-functional-levels){: external}.
+For more information, see [Forest and domain functional levels](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/active-directory-functional-levels){: external}.
 
 ### Single VSI domain controller
 {: #adds-infra-domain-controllers-vsi}

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2022, 2023
+  years:  2022, 2024
 
-lastupdated: "2023-09-29"
+lastupdated: "2024-01-31"
 
 keywords: cyber recovery, IBM Cloud cyber recovery, cyber recovery network interface, network interface cyber recovery, cyber recovery order instance, order cyber recovery, cyber recovery instances
 
@@ -61,12 +61,12 @@ Each license can be assigned only to one single physical server and covers up to
 
 You have 30 days to activate the VMs.
 
-For more information about ordering Windows Server 2019 licenses, see [Get started with Windows Server 2019](https://docs.microsoft.com/en-us/windows-server/get-started-19/get-started-19){: external}.
+For more information about ordering Windows Server 2019 licenses, see [Get started with Windows Server 2019](https://learn.microsoft.com/en-us/windows-server/get-started/get-started-with-windows-server){: external}.
 
 ## Configure hostnames individually
 {: #cr_orderinginstance-net-interface-network-diagram}
 
-You can customize the hostnames prefix individually by toggling the switch on. 
+You can customize the hostnames prefix individually by toggling the switch on.
 
 The hostnames prefix must meet the following requirements:
 * Only lowercase alphabetic, numeric, and hyphen (-) characters are allowed.

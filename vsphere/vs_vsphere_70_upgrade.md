@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2023
+  years:  2016, 2024
 
-lastupdated: "2023-12-07"
+lastupdated: "2024-01-31"
 
 keywords: vSphere upgrade, NSX upgrade, PSC upgrade
 
@@ -29,9 +29,9 @@ Use this offering to create a new instance of VMware ESXi™ servers or scale ou
 
 You must apply patches and upgrade the VMware software periodically, over the lifecycle of a vSphere Server instance.
 
-The following procedure provides the steps that are required to convert a VMware vSphere 6.5 or 6.7-based instance to a vSphere 7-based instance. These steps provide the initial upgrade to vSphere, and vSAN 6.7. After this upgrade, you might need to use the normal vSphere functions to upgrade virtual machine (VM) hardware levels and tools. 
+The following procedure provides the steps that are required to convert a VMware vSphere 6.5 or 6.7-based instance to a vSphere 7-based instance. These steps provide the initial upgrade to vSphere, and vSAN 6.7. After this upgrade, you might need to use the normal vSphere functions to upgrade virtual machine (VM) hardware levels and tools.
 
-The following procedure is for VMware vSphere instances or IaaS bare metal roll-your-own provisions, covering ESXi, vCenter, and VSAN. 
+The following procedure is for VMware vSphere instances or IaaS bare metal roll-your-own provisions, covering ESXi, vCenter, and VSAN.
 {: Important}
 
 If you are using the VMware vCenter Server® offering, migrate your instances to a vSphere 7.x environment. For more information, see the following topics:
@@ -53,7 +53,7 @@ If you are using the VMware vCenter Server® offering, migrate your instances to
 
 The time to complete the upgrade is unknown. It is possible that it might take several maintenance windows to completely upgrade an environment. Running up-leveled and down-leveled versions of the SDDC software is supported by VMware during the upgrade process. However, some functions such as vMotion, maybe limited during this process.
 
-Complete the following requirements before you begin the upgrade:  
+Complete the following requirements before you begin the upgrade:
 * Upgrade any extensions or snap-ins within the vCenter Server environment. Review the following documentation before you plan your upgrade:
    * [VMware vSphere 7.0 release notes](https://docs.vmware.com/en/VMware-vSphere/7.0/rn/vsphere-esxi-vcenter-server-70-release-notes.html){: external}
    * [About VMware ESXi upgrade](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.esxi.upgrade.doc/GUID-65B5B313-3DBB-4490-82D2-A225446F4C99.html){: external}
@@ -62,10 +62,10 @@ Complete the following requirements before you begin the upgrade:
 * Confirm whether the vCenter Server instance that you are upgrading is linked to another vCenter Server instance as primary or secondary in the {{site.data.keyword.vmwaresolutions_short}} console. All linked instances must have their Platform Services Controllers (PSCs) upgraded first as part of a particular site upgrade.
 * Confirm the following requirements for vSAN based instances:
    * Ensure that the vSAN Health tool is enabled and reports no critical errors. If critical errors are present, contact the IBM Support team with the upgrade support ticket ID.
-   * Ensure that each node has space to handle rebuilding redundancy of vSAN objects in case an ESXi host fails to come back up during the upgrade. You might need to either reduce disk usage or add an ESXi host before the upgrade.  
+   * Ensure that each node has space to handle rebuilding redundancy of vSAN objects in case an ESXi host fails to come back up during the upgrade. You might need to either reduce disk usage or add an ESXi host before the upgrade.
    * Verify whether the overall vSAN volume usage is higher than 70%. You might need to either reduce disk usage or add an ESXi host before the upgrade.
 *  Verify that the vCenter Server root user ID with its credentials are visible on the console. If your vCenter Server instance was initially ordered in a VMware Solutions version between V2.5 and V5.7, only the `customerroot` account is visible on the console. For new instances, clusters, hosts, and vCenter Server VMs ordered in VMware Solutions V5.7 and later, the `customerroot` user is no longer created by the VMware Solutions automation.
-* Confirm that you have a [My VMware](https://my.vmware.com){: external} user ID for which to download the required binary files to upgrade. If you don't, contact IBM Support with the upgrade support ticket ID.
+* Confirm that you have a [My VMware](https://customerconnect.vmware.com/home){: external} user ID for which to download the required binary files to upgrade. If you don't, contact IBM Support with the upgrade support ticket ID.
 * Confirm that VUM is configured to reach `https://www.vmware.com` to download patches. If it can't be configured because of security policies, then you must manually download the most recent patch sets and upload them into VUM. For more information, see [VMware Update Manager introduction](/docs/vmwaresolutions?topic=vmwaresolutions-vum-intro#vum-intro).
 
 ## Supported upgrade paths
@@ -145,8 +145,8 @@ Follow the VMware instructions for upgrading vCenter. For more information, see 
 Ensure to complete the following requirements during the upgrade:
 
 * Mount the VMware-VCSA ISO, go to the `visa-ui-installer\win32` directory, and run the installer.
-* In the vCenter Server 7.0 installer dialog, select the **Upgrade** flow and complete the steps in the installer.
-* You must use the IP and credentials (administrator and root) for the current vCenter Server appliance. Use the IP and root password for the ESXi host of the current vCenter Server Appliance and the host where you want to deploy the new 7.0 vCenter Server Appliance. You must use a new temporary IP address, gateway, and subnet mask for the new vCenter Server Appliance during installation.
+* In the vCenter Server installer dialog, select the **Upgrade** flow and complete the steps in the installer.
+* You must use the IP and credentials (administrator and root) for the current vCenter Server appliance. Use the IP and root password for the ESXi host of the current vCenter Server Appliance and the host where you want to deploy the new 7.0 or later vCenter Server Appliance. You must use a new temporary IP address, gateway, and subnet mask for the new vCenter Server Appliance during installation.
 * Complete Stage 2 when prompted. Ensure to note any warnings and take the appropriate actions.
 
 ### Procedure to upgrade Stor VIB (Broadcom driver)
@@ -157,7 +157,7 @@ You must upgrade the Broadcom driver before you upgrade the ESXi host.
 1. Extract the `007.1316.0000.0000_Unified_StorCLI_PUL.zip` file to a directory on your windows jump server.
 2. Locate the `vmware-storcli.vib` file in the extracted file contents.
 3. Copy the `.vib` file to either a vSAN or NFS data store that is mounted on the ESXi hosts for the instance. Use vCenter Server to reference the extracted file on your jump server.
-4. SSH into each ESXi host and run the following VIB Upgrade command: 
+4. SSH into each ESXi host and run the following VIB Upgrade command:
    `esxcli software vib update -v /<path to vsan or nfs datastore from step 3>/vmware-storcli.vib --no-sig-check`
    The following installation results are displayed.
     `Message: Operation finished successfully.    Reboot Required: false    VIBs Installed: Broadcom_bootbank_vmware-storcli_007.1316.0000.0000-01    VIBs Removed: LSI_bootbank_vmware-storcli_007.0916.0000.0000-01    VIBs Skipped:`
@@ -174,7 +174,7 @@ You must upgrade the Broadcom driver before you upgrade the ESXi host.
 3. Create the baseline. Select **BASELINE > CREATE** and use the imported ISO from the previous step.
 4. For each host, choose the host in the vCenter browser tree. Then, select **update** (located in the far left in the main window).
 5. If the Zerto VRA is present on the host, put the host into maintenance mode first. Recent releases of Zerto stop the VRA, which otherwise would prevent the update.
-6. Complete the update.  
+6. Complete the update.
    1. [ATTACH] Baseline, select the previously created baseline.
    2. Select Baseline and [REMEDIATE].
 7. Remediate each host in turn. After remediation, ensure to pull the host out of maintenance mode.
@@ -194,7 +194,7 @@ Complete the following steps from the vCenter Server user interface.
 
 1. Select **Administration menu > Licensing > Licenses**.
 2. From the **Licenses** page, click **+ Add New Licenses**.
-3. Enter the new vCenter Server 7.0 license key in the **New Licenses** field. Then, enter a name for the license and click **OK**.
+3. Enter the new vCenter Server license key in the **New Licenses** field. Then, enter a name for the license and click **OK**.
 4. From the **Assets** page, select the vCenter instance under **VCENTER SERVER SYSTEMS** and click **Assign License**. Then, select the new license and click **OK**.
 5. From the **Licenses** page, find the license with the product name **VMware vCenter Server 6 Standard** and click **Remove Licenses**.
 

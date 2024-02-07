@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2022, 2023
+  years:  2022, 2024
 
-lastupdated: "2023-09-22"
+lastupdated: "2024-01-30"
 
 subcollection: vmwaresolutions
 
@@ -90,5 +90,5 @@ Most of the content in the VMware NSX-T design guides and documentation can be a
 {: #arch-pattern-overlays-multi-site-links}
 
 * [VMware NSX documentation](https://docs.vmware.com/en/VMware-NSX/index.html){: external}
-* [NSX-T Reference design guide 3-0](https://nsx.techzone.vmware.com/resource/nsx-t-reference-design-guide-3-0){: external}
+* [NSX-T Reference Design Guide](https://nsx.techzone.vmware.com/resource/nsx-reference-design-guide){: external}
 * [NSX-T Multilocation design guide (Federation + Multisite)](https://communities.vmware.com/t5/VMware-NSX-Documents/NSX-T-Multi-Location-Design-Guide-Federation-Multisite/ta-p/2810327){: external}

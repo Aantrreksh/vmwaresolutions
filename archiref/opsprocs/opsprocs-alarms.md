@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2022
+  years:  2016, 2024
 
-lastupdated: "2022-12-28"
+lastupdated: "2024-01-31"
 
 subcollection: vmwaresolutions
 
@@ -223,8 +223,8 @@ If you have a vSAN cluster, the additional preconfigured alarms in the following
 |:---------- |:-------- |:------- |
 | Host flash capacity exceeds the licensed limit for vSAN | Not considered essential for notification. Alarm that is reviewed as part of proactive daily checks. | No additional information |
 | Expired vSAN license | Not considered essential for notification. Alarm that is reviewed as part of proactive daily checks. | [Troubleshooting licensing](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.vcenterhost.doc/GUID-3C4E8BF7-B0A9-46F0-BA50-D69F950AB958.html){: external} |
-| Errors occurred on the disks of a vSAN host | Configure to send email one time when a permanent error is on a vSAN disk. | [vSAN device encounters a permanent error when devices are not readable or writeable (2071075)](https://kb.vmware.com/s/article/2071075){: external}  |
-| Errors occurred on the disks of a vSAN host | Configure to send email one time when the `Virtual SAN device is under permanent failure` critical event occurs. | [vSAN device encounters a permanent error when devices are not readable or writeable (2071075)](https://kb.vmware.com/s/article/2071075){: external} |
+| Errors occurred on the disks of a vSAN host | Configure to send email one time when a permanent error is on a vSAN disk. | No additional information  |
+| Errors occurred on the disks of a vSAN host | Configure to send email one time when the `Virtual SAN device is under permanent failure` critical event occurs. | No additional information |
 | Expired vSAN license | Not considered essential for notification. Alarm that is reviewed as part of proactive daily checks. | [Considerations about the vSAN license](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.vsan-planning.doc/GUID-20731F2A-B001-4A05-AB4D-30C5B0044EC5.html){: external} |
 | Expired vSAN time-limited license | Not considered essential for notification. Alarm that is reviewed as part of proactive daily checks. | [Considerations about the vSAN License](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.vsan-planning.doc/GUID-20731F2A-B001-4A05-AB4D-30C5B0044EC5.html){: external} |
 | vSAN hardware compatibility issues | Not considered essential for notification. Alarm that is reviewed as part of proactive daily checks. | [vSAN Health Check Information (2114803)](https://kb.vmware.com/s/article/2114803?CoveoV2.CoveoLightningApex.getInitializationData=1&r=2&ui-communities-components-aura-components-forceCommunity-seoAssistant.SeoAssistant.getSeoData=1&other.KM_Utility.getArticleDetails=1&other.KM_Utility.getArticleMetadata=2&other.KM_Utility.getUrl=1&other.KM_Utility.getUser=1&other.KM_Utility.getAllTranslatedLanguages=2&ui-comm-runtime-components-aura-components-siteforce-qb.Quarterback.validateRoute=1){: external} |
@@ -233,11 +233,11 @@ If you have a vSAN cluster, the additional preconfigured alarms in the following
 | vSAN health alarm `After one additional host failure` | Configure to send email one time for a critical event. | [vSAN health warning `after one additional host failure` is reported incorrectly on two node ROBO/stretched clusters (2150568)](https://kb.vmware.com/s/article/2150568?lang=en_US){: external} |
 | vSAN health alarm `All hosts contributing stats` | Not considered essential for notification. Alarm that is reviewed as part of proactive daily checks. | [vSAN Health Service - performance service - All hosts contributing stats check (2144400)](https://kb.vmware.com/s/article/2144400){: external} |
 | vSAN health alarm `All hosts have a vSAN vmknic configured` | Not considered essential for notification. Alarm that is reviewed as part of proactive daily checks. | [vSAN Health Service - Network Health - All hosts have a vSAN vmknic configured (2108062)](https://kb.vmware.com/s/article/2108062){: external} |
-| vSAN health alarm `All hosts have matching multicast settings` |  Not considered essential for notification. Alarm that is reviewed as part of proactive daily checks. | [vSAN Health Service - Network Health - All hosts have matching multicast settings (2108092)](https://kb.vmware.com/s/article/2108092){: external} |
-| vSAN health alarm `All hosts have matching subnets` | Not considered essential for notification. Alarm that is reviewed as part of proactive daily checks. | [vSAN Health Service - Network Health - All hosts have matching subnets (2108066)](https://kb.vmware.com/s/article/2108066){: external} |
+| vSAN health alarm `All hosts have matching multicast settings` |  Not considered essential for notification. Alarm that is reviewed as part of proactive daily checks. | No additional information |
+| vSAN health alarm `All hosts have matching subnets` | Not considered essential for notification. Alarm that is reviewed as part of proactive daily checks. | No additional information |
 | vSAN health alarm `Basic (unicast) connectivity check (normal ping)` | Not considered essential for notification. Alarm that is reviewed as part of proactive daily checks. | [vSAN Health Service - Network Health - Hosts small ping test (connectivity check) and Hosts large ping test (MTU check) (2108285)](https://kb.vmware.com/s/article/2108285){: external} |
-| vSAN health alarm `Cluster health` | Not considered essential for notification. Alarm that is reviewed as part of proactive daily checks. | [vSAN Health Service - Cluster Health - vSAN Health service installation (2109874)](https://kb.vmware.com/s/article/2109874){: external} |
-| vSAN health alarm `Component metadata health` | Not considered essential for notification. Alarm that is reviewed as part of proactive daily checks. | [Component metadata health check fails with invalid state error (2145347)](https://kb.vmware.com/s/article/2145347){: external} |
+| vSAN health alarm `Cluster health` | Not considered essential for notification. Alarm that is reviewed as part of proactive daily checks. | No additional information |
+| vSAN health alarm `Component metadata health` | Not considered essential for notification. Alarm that is reviewed as part of proactive daily checks. | No additional information |
 | vSAN health alarm `Congestion` | Configure to send email one time for a critical event.| [vSAN Health Service - Physical Disk Health – Congestion (2109255)](https://kb.vmware.com/s/article/2109255){: external} |
 | vSAN health alarm `Controller disk group mode is VMware certified` | Not considered essential for notification. Alarm that is reviewed as part of proactive daily checks. | [vSAN Health Service - vSAN HCL Health – SCSI Controller on vSAN HCL (2109871)](https://kb.vmware.com/s/article/2109871){: external} |
 | vSAN health alarm `Controller driver is VMware certified` | Not considered essential for notification. Alarm that is reviewed as part of proactive daily checks. | [vSAN Health Service – vSAN HCL Health – Controller Driver (2109263)](https://kb.vmware.com/s/article/2109263){: external} |
@@ -249,7 +249,7 @@ If you have a vSAN cluster, the additional preconfigured alarms in the following
 | vSAN health alarm `Data health` | Configure to send email one time for a critical event. | [vSAN Health Service - Data Health – vSAN Object Health (2108319)](https://kb.vmware.com/s/article/2108319){: external} |
 | vSAN health alarm `Disk capacity` | Configure to send email one time for a warning event. | [vSAN Health Service - Physical Disk Health - Disk Capacity (2108907)](https://kb.vmware.com/s/article/2108907){: external} |
 | vSAN health alarm `Disk format version` | Not considered essential for notification. Alarm that is reviewed as part of proactive daily checks. | [vSAN Health Service - Cluster - Disk format version (2146135)](https://kb.vmware.com/s/article/2146135){: external} |
-| vSAN health alarm `ESXi vSAN Health service installation` | Not considered essential for notification. Alarm that is reviewed as part of proactive daily checks. | [vSAN Health Service - Cluster Health - vSAN Health Service up-do-date (2107705)](https://kb.vmware.com/s/article/2107705){: external} |
+| vSAN health alarm `ESXi vSAN Health service installation` | Not considered essential for notification. Alarm that is reviewed as part of proactive daily checks. | No additional information |
 | vSAN health alarm `Home object` | Not considered essential for notification. Alarm that is reviewed as part of proactive daily checks. | [vSAN Health Service - vSAN iSCSI target service - Home object (2147601)](https://kb.vmware.com/s/article/2147601){: external} |
 | vSAN health alarm `Host component limit` | Configure to send email one time for a critical event. | [vSAN Health Service - Limits - Host component (2146130)](https://kb.vmware.com/s/article/2146130){: external} |
 | vSAN health alarm `Host issues retrieving hardware info` | Not considered essential for notification. Alarm that is reviewed as part of proactive daily checks. | [vSAN Health Service - HCL Health - Host issues retrieving hardware information (2149290)](https://kb.vmware.com/s/article/2149290){: external} |
@@ -263,7 +263,7 @@ If you have a vSAN cluster, the additional preconfigured alarms in the following
 | vSAN health alarm `Memory pools (heaps)` | Configure to send email one time for a critical event. | [vSAN Health Service - Physical Disk Health – Memory pools (2109256)](https://kb.vmware.com/s/article/2109256){: external} |
 | vSAN health alarm `Memory pools (slabs)` | Configure to send email one time for a critical event. | [vSAN Health Service - Physical Disk Health – Memory pools (2109256)](https://kb.vmware.com/s/article/2109256){: external} |
 | vSAN health alarm `MTU check (ping with large packet size)` | Configure to send email one time for a critical event. | [vSAN Health Service - Network Health - Hosts small ping test (connectivity check) and Hosts large ping test (MTU check) (2108285)](https://kb.vmware.com/s/article/2108285){: external} |
-| vSAN health alarm `Multicast assessment based on other checks` | Not considered essential for notification. Alarm that is reviewed as part of proactive daily checks. | [vSAN Health Service - Network Health – Multicast assessment based on other checks (2108318)](https://kb.vmware.com/s/article/2108318){: external} |
+| vSAN health alarm `Multicast assessment based on other checks` | Not considered essential for notification. Alarm that is reviewed as part of proactive daily checks. | No additional information |
 | vSAN health alarm `Network configuration` | Not considered essential for notification. Alarm that is reviewed as part of proactive daily checks. | No additional information |
 | vSAN health alarm `Network health` | Not considered essential for notification. Alarm that is reviewed as part of proactive daily checks. | No additional information |
 | vSAN health alarm `Network latency check` | Configure to send email one time for a warning event. | [vSAN Health Service - Network Health - Network Latency Check (2149511)](https://kb.vmware.com/s/article/2149511){: external} |
@@ -274,7 +274,7 @@ If you have a vSAN cluster, the additional preconfigured alarms in the following
 | vSAN health alarm `Performance service status` | Not considered essential for notification. Alarm that is reviewed as part of proactive daily checks. | [vSAN health test fails on Performance Service (2150589)](https://kb.vmware.com/s/article/2150589){: external} |
 | vSAN health alarm `Physical disk component limit health` | Configure to send email one time for a critical event. | [vSAN Health Service - Physical disk - Component limit (2146086)](https://kb.vmware.com/s/article/2146086){: external} |
 | vSAN health alarm `Physical disk health retrieval issues` | Configure to send email one time for a critical event. | [vSAN Health Service - Physical Disk Health - Physical disk health retrieval issue (2149291)](https://kb.vmware.com/s/article/2149291){: external} |
-| vSAN health alarm `Physical disk health - Metadata Health` | Configure to send email one time for a critical event. | [vSAN Health Service - Physical Disk Health - Metadata Health (2108690)](https://kb.vmware.com/s/article/2108690){: external} |
+| vSAN health alarm `Physical disk health - Metadata Health` | Configure to send email one time for a critical event. | No additional information |
 | vSAN health alarm `Preferred fault domain unset` | Consider alarm only if vSAN is stretched. | [vSAN Health Service - Preferred fault domain unset (2130590)](https://kb.vmware.com/s/article/2130590){: external} |
 | vSAN health alarm `Resync operations throttling` | Not considered essential for notification. Alarm that is reviewed as part of proactive daily checks. | [vSAN Health Service - Cluster Health - Resynchronization Operations Throttling Check (2149504)](https://kb.vmware.com/s/article/2149504){: external} |
 | vSAN health alarm `SCSI controller is VMware certified` | Not considered essential for notification. Alarm that is reviewed as part of proactive daily checks. | [vSAN Health Service – vSAN HCL Health – Controller Driver (2109263)](https://kb.vmware.com/s/article/2109263){: external} |
@@ -325,10 +325,10 @@ The hybridity bundle installs HCX and creates the following additional preconfig
 
 | Alarm name | Guidance | Details |
 |:---------- |:-------- |:------- |
-| Bulk Migration Failed | Not considered essential for notification as migrations would be managed. | See [HCX troubleshooting](/docs/vmwaresolutions?topic=vmwaresolutions-hcxclient-troubleshooting) and [VMware HCX troubleshooting](https://docs.vmware.com/en/VMware-HCX/services/user-guide/GUID-B6CF4054-9C8C-43DE-AC67-01AE0679B190.html){: external}. |
-| Cold Migration Failed | Not considered essential for notification as migrations would be managed. | See [HCX troubleshooting](/docs/vmwaresolutions?topic=vmwaresolutions-hcxclient-troubleshooting) and [VMware HCX troubleshooting](https://docs.vmware.com/en/VMware-HCX/services/user-guide/GUID-B6CF4054-9C8C-43DE-AC67-01AE0679B190.html){: external}. |
-| HCX Cloud Database Upgrade Failed | Not considered essential for notification as upgrades would be managed. | See [HCX troubleshooting](/docs/vmwaresolutions?topic=vmwaresolutions-hcxclient-troubleshooting) and [VMware HCX troubleshooting](https://docs.vmware.com/en/VMware-HCX/services/user-guide/GUID-B6CF4054-9C8C-43DE-AC67-01AE0679B190.html){: external}. |
-| HCX Enterprise Database Upgrade Failed | Not considered essential for notification as upgrades would be managed. | See [HCX troubleshooting](/docs/vmwaresolutions?topic=vmwaresolutions-hcxclient-troubleshooting) and [VMware HCX troubleshooting](https://docs.vmware.com/en/VMware-HCX/services/user-guide/GUID-B6CF4054-9C8C-43DE-AC67-01AE0679B190.html){: external}. |
+| Bulk Migration Failed | Not considered essential for notification as migrations would be managed. | See [HCX troubleshooting](/docs/vmwaresolutions?topic=vmwaresolutions-hcxclient-troubleshooting) and [VMware HCX troubleshooting](https://docs.vmware.com/en/VMware-HCX/index.html){: external}. |
+| Cold Migration Failed | Not considered essential for notification as migrations would be managed. | See [HCX troubleshooting](/docs/vmwaresolutions?topic=vmwaresolutions-hcxclient-troubleshooting) and [VMware HCX troubleshooting](https://docs.vmware.com/en/VMware-HCX/index.html){: external}. |
+| HCX Cloud Database Upgrade Failed | Not considered essential for notification as upgrades would be managed. | See [HCX troubleshooting](/docs/vmwaresolutions?topic=vmwaresolutions-hcxclient-troubleshooting) and [VMware HCX troubleshooting](https://docs.vmware.com/en/VMware-HCX/index.html){: external}. |
+| HCX Enterprise Database Upgrade Failed | Not considered essential for notification as upgrades would be managed. | See [HCX troubleshooting](/docs/vmwaresolutions?topic=vmwaresolutions-hcxclient-troubleshooting) and [VMware HCX troubleshooting](https://docs.vmware.com/en/VMware-HCX/index.html){: external}. |
 | HCX Interconnect tunnel status | Configure to send email one time for a critical tunnel status is down event. | See [Network (WAN) connectivity](/docs/vmwaresolutions?topic=vmwaresolutions-hcxclient-troubleshooting#hcxclient-troubleshooting-wan-connect). |
 {: caption="Table 3. Preconfigured alarms - HCX" caption-side="bottom"}
 
@@ -348,4 +348,4 @@ The following table describes a number of procedures for events and alarms.
 ## Related links
 {: #opsprocs-alarms-links}
 
-* [vSphere monitoring and performance](https://docs.vmware.com/en/VMware-vSphere/6.7/vsphere-esxi-vcenter-server-67-monitoring-performance-guide.pdf){: external}
+* [vSphere monitoring and performance](https://docs.vmware.com/en/VMware-vSphere/6.7/vsphere-esxi-vcenter-server-672-monitoring-performance-guide.pdf){: external}

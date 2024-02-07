@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2023
+  years:  2016, 2024
 
-lastupdated: "2023-09-11"
+lastupdated: "2024-01-31"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # VMware Solutions and Red Hat OpenShift overview
 {: #openshift-runbook-runbook-intro}
 
-{{site.data.keyword.vmwaresolutions_full}} includes fully automated, rapid deployments of VMware vCenter Server® in the {{site.data.keyword.cloud_notm}}. These offerings complement the on-premises infrastructure and allow existing and future workloads to run in the {{site.data.keyword.cloud_notm}} without conversion by using the same tools, skills, and processes they use on-premises. For more information, see [Virtualization for extending virtualized private cloud](https://www.ibm.com/cloud/architecture/architectures/virtualizationArchitecture){: external}.
+{{site.data.keyword.vmwaresolutions_full}} includes fully automated, rapid deployments of VMware vCenter Server® in the {{site.data.keyword.cloud_notm}}. These offerings complement the on-premises infrastructure and allow existing and future workloads to run in the {{site.data.keyword.cloud_notm}} without conversion by using the same tools, skills, and processes they use on-premises. For more information, see [What is virtualization?](https://www.ibm.com/topics/virtualization){: external}.
 
 {{site.data.keyword.redhat_openshift_full}} for VMware Solutions is a reference architecture and a manual build process to deploy a {{site.data.keyword.redhat_openshift_notm}} cluster 4.7 on to an existing vCenter Server instance. The components of {{site.data.keyword.redhat_openshift_notm}} cluster are deployed as virtual machines (VMs) and appliances by using NSX software-defined networking.
 
@@ -65,7 +65,7 @@ This build process uses the following scripting tools and scripts:
 * PowerShell is used on the AD DNS server to create the DNS entries.
 * PowerShell Core is available for Windows, Linux, and macOS systems. This tool is optional and it can be used on the jump-server or remote device to enable the use of PowerCLI. For more information, see [PowerShell Core](https://github.com/PowerShell/PowerShell){: external}.
 * PowerCLI - PowerCLI is a PowerShell interface for managing VMware vSphere®. You can automate all aspects of vSphere management, including network, storage, VMs, and guest OS. This tool is optional and it can be used on the jump-server or remote device to help the preparation of the vCenter Server instance. These steps can be done by using the GUI. For more information about how to install this tool, see [Install PowerCLI](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.esxi.install.doc/GUID-F02D0C2D-B226-4908-9E5C-2E783D41FE2D.html){: external}.
-* PowerNSX - PowerNSX is a PowerShell module that abstracts the VMware NSX API to a set of easily used PowerShell functions. This tool is optional and it can be used on the jump-server or remote device to help the preparation of NSX on the vCenter Server instance. These steps can be done by using the GUI. For more information, see [PowerNSX](https://github.com/vmware/powernsx){: external}.
+* PowerNSX - PowerNSX is a PowerShell module that abstracts the VMware NSX API to a set of easily used PowerShell functions. This tool is optional and it can be used on the jump-server or remote device to help the preparation of NSX on the vCenter Server instance. These steps can be done by using the GUI. For more information, see [powernsx](https://github.com/vmware-archive/powernsx){: external}.
 
 ## Build process overview
 {: #openshift-runbook-runbook-intro-build-process-overview}
@@ -97,7 +97,7 @@ The deployment approach is described in the following phases:
 ## Related links
 {: #vcs-openshift-runbook-intro-related}
 
-* [What is {{site.data.keyword.redhat_openshift_notm}}?](https://www.ibm.com/cloud/blog/what-is-openshift){: external}
+* [Video - What is {{site.data.keyword.redhat_openshift_notm}}?](https://www.ibm.com/blog/what-is-openshift/){: external}
 * [{{site.data.keyword.redhat_openshift_notm}} 4 Release Update](https://www.youtube.com/watch?v=YJvTu8jC6CU){: external}
-* [Installing a cluster on vSphere with user-provisioned infrastructure](https://docs.openshift.com/container-platform/4.7/installing/installing_vsphere/installing-vsphere.html){: external}
+* [Installing a cluster on vSphere with user-provisioned infrastructure](https://docs.openshift.com/container-platform/4.14/installing/installing_vsphere/installing-vsphere.html){: external}
 * [Getting started with {{site.data.keyword.cloud_notm}} Virtual Private Networking](/docs/iaas-vpn?topic=iaas-vpn-getting-started)

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2023
+  years:  2023, 2024
 
-lastupdated: "2023-09-12"
+lastupdated: "2024-02-05"
   
 keywords: vmware cloud foundation, IBM Cloud, vpc
 
@@ -18,7 +18,7 @@ subcollection: vmwaresolutions
 # Requirements for VMware Cloud Foundation instances
 {: #vpc-vcf-order-req}
 
-With the bare metal server infrastructure provided in {{site.data.keyword.vpc_full}} ({{site.data.keyword.vpc_short}}), you can quickly deploy VMware Cloud Foundation™ on {{site.data.keyword.cloud}}.
+With the bare metal server infrastructure provided in {{site.data.keyword.vpc_full}} ({{site.data.keyword.vpc_short}}), you can quickly deploy VMware Cloud Foundation™ on {{site.data.keyword.cloud_notm}}.
 
 Ensure that you complete the following tasks:
 * Review the [{{site.data.keyword.cloud_notm}} account requirements](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-plan#vpc-vcf-plan-acc).

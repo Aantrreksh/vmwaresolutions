@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2020, 2023
+  years:  2020, 2024
 
-lastupdated: "2023-10-05"
+lastupdated: "2024-01-31"
 
 keywords: Juniper vSRX, manage Juniper vSRX, Juniper vSRX console
 
@@ -87,5 +87,5 @@ If you deploy Juniper vSRX on a gateway cluster, after deployment, you must conf
 * [Ordering services for vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices)
 * [General FAQ about VMware Solutions](/docs/vmwaresolutions?topic=vmwaresolutions-faq-vmwaresolutions)
 * [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support)
-* [Juniper vSRX Virtual Firewall](https://www.juniper.net/us/en/products-services/security/srx-series/vsrx/){: external}
-* [Juniper vSRX Documentation](https://www.juniper.net/documentation/product/en_US/vsrx){: external}
+* [Juniper vSRX Virtual Firewall](https://www.juniper.net/us/en/products/security/srx-series/vsrx-virtual-firewall.html){: external}
+* [Juniper vSRX Documentation](https://www.juniper.net/documentation/product/us/en/vsrx/){: external}

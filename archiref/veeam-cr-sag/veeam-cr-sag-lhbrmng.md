@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2023
+  years:  2023, 2024
 
-lastupdated: "2023-05-01"
+lastupdated: "2024-01-26"
 
 subcollection: vmwaresolutions
 
@@ -152,7 +152,7 @@ The following code snippet adds the Linux hardened repository as an extant to a 
 ## Related links
 {: #veeam-cr-sag-lhbrmng-related}
 
-* [Cyber recovery with Veeam architecture overview](/docs/vmwaresolutions/?topic=vmwaresolutions-veeam-cr-sa-overview)
+* [Cyber recovery with Veeam architecture overview](/docs/vmwaresolutions?topic=vmwaresolutions-veeam-cr-sa-overview)
 * [Add-VBRLinux](https://helpcenter.veeam.com/docs/backup/powershell/add-vbrlinux.html?ver=120){: external}
 * [Add-VBRBackupRepository](https://helpcenter.veeam.com/docs/backup/powershell/add-vbrbackuprepository.html?ver=120){: external}
 * [Per-Machine Backup Files](https://helpcenter.veeam.com/docs/backup/vsphere/per_vm_backup_files.html?ver=120){: external}

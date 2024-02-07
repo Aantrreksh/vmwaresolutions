@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2023
+  years:  2016, 2024
 
-lastupdated: "2023-09-11"
+lastupdated: "2024-01-11"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # Attached storage infrastructure design
 {: #storage-infra-design}
 
-{{site.data.keyword.vmwaresolutions_full}} provides VMware® technology that is deployed in an automated way within {{site.data.keyword.cloud_notm}} data centers across the globe. Within the WMware Solutions portfolio, the VMware vCenter Server® offering consists of up to 10 clusters. Each cluster contains up to 59 vSphere hosts, a single Platform Services Controller (PSC), and a vCenter Server Appliance capable of managing up to 400 hosts and 4,000 virtual machines.
+{{site.data.keyword.vmwaresolutions_full}} provides VMware® technology that is deployed in an automated way within {{site.data.keyword.cloud_notm}} data centers across the globe. Within the VMware Solutions portfolio, the VMware vCenter Server® offering consists of up to 10 clusters. Each cluster contains up to 59 vSphere hosts, a single Platform Services Controller (PSC), and a vCenter Server Appliance capable of managing up to 400 hosts and 4,000 virtual machines.
 
 The architecture that is presented here complements the vCenter Server solution by adding attached storage as a shared storage device for the environment. The attached storage device is located within the same {{site.data.keyword.cloud_notm}} data center as the vCenter Server deployment. The storage device consists of a single Network File System (NFS) share or multiple NFS exports from the {{site.data.keyword.cloud_notm}}.
 

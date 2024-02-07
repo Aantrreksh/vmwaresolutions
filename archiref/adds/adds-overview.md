@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2019, 2023
+  years:  2019, 2024
 
-lastupdated: "2023-04-13"
+lastupdated: "2024-01-30"
 
 subcollection: vmwaresolutions
 
@@ -48,7 +48,7 @@ Review the typical domain models available to a customer when they designate the
 * Single forest, multiple domains model.
 * Multiple forests model.
 
-For more information about forest and domain models, see [Designing the logical structure](https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/plan/designing-the-logical-structure).
+For more information about forest and domain models, see [Designing the logical structure](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/plan/designing-the-logical-structure).
 
 ### Single forest, single domain model
 {: #adds-overview-models-sfsd}

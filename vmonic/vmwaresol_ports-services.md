@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2020, 2023
+  years:  2020, 2024
 
-lastupdated: "2023-09-28"
+lastupdated: "2024-02-01"
 
 keywords: VLAN ports, vmware solutions ports, ports usage vmware solutions
 
@@ -40,7 +40,7 @@ The following table provides information about the F5 BIG-IP® ports.
 
 | Source | Subnet, IP range | Target | Subnet, IP range | Port | Protocol | Purpose | Service |
 |:------ |:---------------- |:------ |:---------------- |:---- |:-------- |:------- |:------- |
-| BigIP | New subnet ordered in private VLAN | Windows Active Directory | Private primary subnet \n Infrastructure VMs | 53 | UDP | Use Windows DNS service | DNS |
+| BigIP | Infrastructure VMs | Windows Active Directory | Private primary subnet \n Infrastructure VMs | 53 | UDP | Use Windows DNS service | DNS |
 | Management-nsx-edge public IP | Public subnet for management edge | BigIP license server | `104.219.111.132/32` | 443 | TCP | License registration | HTTPS |
 {: caption="Table 2. F5 BIG-IP ports" caption-side="bottom"}
 
@@ -99,9 +99,9 @@ The following table provides information about the {{site.data.keyword.redhat_op
 | IBM CloudDriver | Private primary subnet \n Infrastructure VMs | OCP | New subnet ordered in private VLAN | 22 | TCP | Set up and configure OCP | SSH |
 {: caption="Table 7. Red Hat OpenShift for VMware ports" caption-side="bottom"}
 
-[^osinst]: For more information, see [Configuring your firewall](https://docs.openshift.com/container-platform/4.13/installing/install_config/configuring-firewall.html){: external}.
+[^osinst]: For more information, see [Configuring your firewall](https://docs.openshift.com/container-platform/4.14/installing/install_config/configuring-firewall.html){: external}.
 
-For more information about OCP networking, see [About the {{site.data.keyword.redhat_openshift_notm}} SDN network provider](https://docs.openshift.com/container-platform/4.13/networking/openshift_sdn/about-openshift-sdn.html){: external}.
+For more information about OCP networking, see [About the {{site.data.keyword.redhat_openshift_notm}} SDN network provider](https://docs.openshift.com/container-platform/4.14/networking/openshift_sdn/about-openshift-sdn.html){: external}.
 
 ## Ports for Veeam
 {: #vmwaresol_ports-vmware-optional-services-veeam}
@@ -185,7 +185,7 @@ The following table provides information about Zerto ports.
 | ZVM VSI | Private primary subnet \n Infrastructure VMs | Zerto VRA agents | New subnet ordered in private VLAN | | ICMP | Check network connectivity from ZVM to the VRAs | Ping |
 {: caption="Table 11. Zerto ports" caption-side="bottom"}
 
-For more information about Zerto networking, see [Zerto - prerequisites and requirements for vSphere environments](https://help.zerto.com/en-US/bundle/Prereq.VC.HTML.90/page/Prerequisites_Requirements_vSphere_Environments.htm){: external}.
+For more information about Zerto networking, see [Zerto - prerequisites and requirements for vSphere environments](https://help.zerto.com/bundle/Prereq.VC.HTML.90/page/Prerequisites_Requirements_vSphere_Environments.htm){: external}.
 
 ## Ports for Entrust CloudControl, Entrust DataControl, and Entrust KeyControl - deprecated
 {: #vmwaresol_ports-vmware-optional-services-entrust}

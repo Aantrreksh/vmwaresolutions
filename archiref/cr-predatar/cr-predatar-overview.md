@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2023
+  years:  2023, 2024
 
-lastupdated: "2023-09-20"
+lastupdated: "2024-01-30"
 
 subcollection: vmwaresolutions
 
@@ -17,7 +17,7 @@ subcollection: vmwaresolutions
 
 A VMware vCenter Server instance can host Predatar® Cyber Recovery Orchestration and a Predatar CleanRoom™.
 
-Predatar Cyber Recovery Orchestration automates and orchestrates the recovery and malware scanning of backups into a Predatar CleanRoom. This process allows organizations to understand which of their virtual machines (VMs) fail to meet their required objectives and might jeopardize a quick recovery from a cyberattack. For more information, see [Protect your data against ransomware attacks](https://www.predatar.com/cyber-resilience){: external}.
+Predatar Cyber Recovery Orchestration automates and orchestrates the recovery and malware scanning of backups into a Predatar CleanRoom. This process allows organizations to understand which of their virtual machines (VMs) fail to meet their required objectives and might jeopardize a quick recovery from a cyberattack. For more information, see [Protect your data against ransomware attacks](https://www.predatar.com/cyber-resilience/?language=en-gb){: external}.
 
 This architecture is suitable for clients who are using either or both of the following in the source environment:
 
@@ -89,7 +89,7 @@ The vCenter Server instance:
 * Can include any of the vCenter Server options, such as Caveonix, Entrust, and VMware vRealize Operations.
 * Optionally, you can use encryption with Hyper Protect Crypto Services, Key Protect, and the VMware KMIP service. For more information, see [KMIP for VMware overview](/docs/vmwaresolutions?topic=vmwaresolutions-kmip_standalone_considerations).
 
-*  Tertiary backup servers – One or more hardened Red Hat Enterprise Linux [{{site.data.keyword.cloud_notm}} Bare Metal Servers](https://www.ibm.com/cloud/bare-metal-servers){: external} to host the following components:
+*  Tertiary backup servers – One or more hardened Red Hat Enterprise Linux [{{site.data.keyword.cloud_notm}} Bare Metal Servers](https://www.ibm.com/products/bare-metal-servers){: external} to host the following components:
    * IBM Spectrum Protect with IBM Spectrum Protect for Virtual Environments. For more information, see [IBM Spectrum Protect Cloud Blueprints](https://www.ibm.com/support/pages/node/1128567){: external}.
    * IBM Spectrum Protect Plus vSnap servers. For more information, see [IBM Spectrum Protect Plus Blueprints](https://www.ibm.com/support/pages/node/1119489){: external}.
 

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2019, 2023
+  years:  2019, 2024
 
-lastupdated: "2023-08-17"
+lastupdated: "2024-01-30"
 
 subcollection: vmwaresolutions
 
@@ -43,7 +43,7 @@ Review the following requirements.
 ## Downloading Red Hat OpenShift 4.7
 {: #openshift-runbook-runbook-prereq-download41}
 
-Access the [{{site.data.keyword.redhat_openshift_notm}} Infrastructure Providers page](https://cloud.redhat.com/openshift/install/vsphere/user-provisioned){: external}.
+Access the [{{site.data.keyword.redhat_openshift_notm}} Infrastructure Providers page](https://console.redhat.com/openshift/install/vsphere/user-provisioned){: external}.
 
 1. Download the installer.
 2. Download the Pull Secret.

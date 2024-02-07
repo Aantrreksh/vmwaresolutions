@@ -1,6 +1,6 @@
 {
     "title": "VMware Solutions docs",
-    "lastupdated": "2024-01-11",
+    "lastupdated": "2024-02-07",
     "introduction": "VMware Solutions is a group of IBM Cloud offerings that provide deployment and management of VMware virtualized environments. Learn how to make the most of your VMware Solutions experience by using the user documentation, REST API documentation reference, solution architectures, and solution guides.",
     "section_devtools": {
       "api": "/docs?tab=api-docs&category=compute&subCategory=vmwaresolutions"
@@ -46,13 +46,18 @@
     ],
     "section_learn": {
       "developer": "https://developer.ibm.com/depmodels/cloud/",
-      "architecture": "https://www.ibm.com/cloud/architecture",
+      "architecture": "https://www.ibm.com/architectures",
       "training": "https://www.ibm.com/training/cloud",
-      "community": "https://community.ibm.com/community/user/publiccloud/home"
+      "community": "https://community.ibm.com/community/user/cloud/home"
     },
     "section_updates": {
       "view_more": "/docs/vmwaresolutions?topic=vmwaresolutions-vmwaresolutions-relnotes",
       "tiles": [
+        {
+          "date": "7 February 2024",
+          "title": "vCenter Server 8 support",
+          "description": "VMware vCenter Server® 8.0 is available for newly deployed instances. For new instances with vCenter Server 8 and existing instances or clusters with vCenter Server 7, you can add only vCenter Server 7 clusters or hosts."
+        },
         {
           "date": "13 December 2023",
           "title": "Ordering Veeam licenses",
@@ -62,11 +67,6 @@
           "date": "3 November 2023",
           "title": "VMware Cloud Foundation",
           "description": "The IBM Cloud® for VMware Cloud Foundation offering is a full-stack Software Defined Data Center (SDDC) solution that is built on VMware Cloud Foundation. It delivers compute, storage, networking, management automation, and security in a single platform on IBM Cloud Bare Metal Servers for Virtual Private Cloud (VPC)."
-        },
-        {
-          "date": "18 October 2023",
-          "title": "VMware vSphere Day 2 updates",
-          "description": "You can now choose a new bare metal server configuration when you add a host to your existing instances."
         }
       ]
     }

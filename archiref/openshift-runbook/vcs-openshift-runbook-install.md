@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2019, 2023
+  years:  2019, 2024
 
-lastupdated: "2023-05-01"
+lastupdated: "2024-01-30"
 
 subcollection: vmwaresolutions
 
@@ -38,7 +38,7 @@ For more information about installing the {{site.data.keyword.redhat_openshift_n
 Use the following table to document the parameters you need for your deployment. Examples are shown that match the deployment described in this document.
 
 * The SSH key can be copied after it is displayed by using the command: `cat /root/.ssh/id_rsa.pub`.
-* The pull secret collected from {{site.data.keyword.redhat_full}}. For more information, see [{{site.data.keyword.redhat_openshift_notm}} infrastructure providers](https://cloud.redhat.com/openshift/install/vsphere/user-provisioned){: external}(requires logging in to your {{site.data.keyword.redhat_notm}} account).
+* The pull secret collected from {{site.data.keyword.redhat_full}}. For more information, see [{{site.data.keyword.redhat_openshift_notm}} infrastructure providers](https://console.redhat.com/openshift/install/vsphere/user-provisioned){: external} (requires logging in to your {{site.data.keyword.redhat_notm}} account).
 
 | Parameters | Example | Your deployment |
 |:---------- |:------- |:--------------- |

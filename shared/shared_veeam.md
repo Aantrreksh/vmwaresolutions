@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2020, 2023
+  years:  2020, 2024
 
-lastupdated: "2023-09-25"
+lastupdated: "2024-02-01"
 
 keywords: veeam, veeam install, tech specs veeam
 
@@ -80,7 +80,7 @@ When you access Veeam Cloud Connect, **DNS name** and **Port** details are speci
 ### Procedure to connect to Veeam Cloud Connect for replication
 {: #shared_veeam-cloud-connect-proc-access}
 
-1. Add your service provider to your Veeam Backup and Replication Server. For more information, see  [Connecting to Service Providers](https://helpcenter.veeam.com/docs/backup/cloud/cloud_connect_sp.html?ver=100){: external}.
+1. Add your service provider to your Veeam Backup and Replication Server. For more information, see  [Connecting to Service Providers](https://helpcenter.veeam.com/archive/backup/100/cloud/cloud_connect_sp.html){: external}.
    * For **Step 2: Specify Cloud Gateway Settings**, use the DNS name, and the port details that are specific to your virtual data center region. You can locate your **DNS name** and **Port** details on the virtual data center details page. Scroll down to the **Recommended services** pane and locate **Connection Details** for Veeam Cloud Connect.
    * For **Step 3: Verify TLS Certificate and Specify User Account Settings**, use the following credentials:
     *Organization\Username* or *Username@Organization*, for example `OrganizationName\admin` Or `admin@OrganizationName`
@@ -98,7 +98,7 @@ If you don't have access to your on-premises Veeam Backup and Replication Server
 You must add your organization name as a prefix to your **User** credential to log in to the Veeam Cloud Connect self-service portal. You can locate your organization name under the self-service portal access information under **Veeam Cloud Connect Replication**. For example, `8823e1828b208ef9380b3\admin`.
 {: important}
 
-For more information about using Veeam Cloud Connect, see the [Veeam Cloud Connect User Guide](https://helpcenter.veeam.com/docs/backup/cloud/cloud_connect_user_guide.html?ver=100){: external}.
+For more information about using Veeam Cloud Connect, see the [Veeam Cloud Connect User Guide](https://helpcenter.veeam.com/archive/backup/100/cloud/cloud_connect_user_guide.html){: external}.
 
 ## Deleting Veeam backups
 {: #shared_veeam-delete}
@@ -113,6 +113,6 @@ If you remove a VMware Cloud Director virtual data center from your account, all
 
 * [VMware Shared overview](/docs/vmwaresolutions?topic=vmwaresolutions-shared_overview)
 * [Ordering virtual data centers](/docs/vmwaresolutions?topic=vmwaresolutions-shared_ordering)
-* [Using Veeam Cloud Connect Portal](https://helpcenter.veeam.com/docs/backup/cloud/cloud_connect_portal_use.html?ver=100){: external}
+* [Using Veeam Cloud Connect Portal](https://helpcenter.veeam.com/archive/backup/100/cloud/cloud_connect_portal_use.html){: external}
 * [Veeam website](https://www.veeam.com/){: external}
 * [Veeam Help Center](https://www.veeam.com/documentation-guides-datasheets.html){: external}

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2023
+  years:  2016, 2024
 
-lastupdated: "2023-12-07"
+lastupdated: "2024-02-02"
 
 subcollection: vmwaresolutions
 
@@ -52,4 +52,4 @@ Use the ID and password that are listed in the {{site.data.keyword.cloud_notm}} 
 {: #vum-applying-nic-related}
 
 * [VMware HCX solution architecture](/docs/vmwaresolutions?topic=vmwaresolutions-hcx-archi-intro#hcx-archi-intro)
-* [{{site.data.keyword.vmwaresolutions_short}} Demos](https://www.ibm.com/demos/collection/IBM-Cloud-for-VMware-Solutions/) (demonstrations)
+* [{{site.data.keyword.vmwaresolutions_short}}](https://www.ibm.com/products/vmware)

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2022
+  years:  2016, 2024
 
-lastupdated: "2022-04-27"
+lastupdated: "2024-02-02"
 
 subcollection: vmwaresolutions
 
@@ -30,4 +30,4 @@ This section creates a new VM storage policy that allows the **ensure accessibil
 {: #vum-vsan-redundancy-related}
 
 * [VMware HCX solution architecture](/docs/vmwaresolutions?topic=vmwaresolutions-hcx-archi-intro#hcx-archi-intro)
-* [{{site.data.keyword.vmwaresolutions_short}} Demos](https://www.ibm.com/demos/collection/IBM-Cloud-for-VMware-Solutions/) (demonstrations)
+* [{{site.data.keyword.vmwaresolutions_short}}](https://www.ibm.com/products/vmware)

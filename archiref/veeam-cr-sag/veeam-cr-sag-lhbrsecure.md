@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2023
+  years:  2023, 2024
 
-lastupdated: "2023-05-01"
+lastupdated: "2024-01-26"
 
 subcollection: vmwaresolutions
 
@@ -148,9 +148,9 @@ The following code snippet secures the SSH access:
 ```
 {: codeblock}
 
-If you are creating the cyber-recovery immutable backup solution architecture, then the tasks are completed. For creating the cyber-recovery isolated recovery environment solution architecture, see [Creating the airgap by using Juniper vSRX](/docs/vmwaresolutions/?topic=vmwaresolutions-veeam-cr-sag-vsrx).
+If you are creating the cyber-recovery immutable backup solution architecture, then the tasks are completed. For creating the cyber-recovery isolated recovery environment solution architecture, see [Creating the airgap by using Juniper vSRX](/docs/vmwaresolutions?topic=vmwaresolutions-veeam-cr-sag-vsrx).
 
 ## Related links
 {: #veeam-cr-sag-lhbrsecure-related}
 
-* [Cyber recovery with Veeam architecture overview](/docs/vmwaresolutions/?topic=vmwaresolutions-veeam-cr-sa-overview)
+* [Cyber recovery with Veeam architecture overview](/docs/vmwaresolutions?topic=vmwaresolutions-veeam-cr-sa-overview)

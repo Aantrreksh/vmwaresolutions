@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2020, 2023
+  years:  2020, 2024
 
-lastupdated: "2023-07-27"
+lastupdated: "2024-02-06"
 
 keywords: monitor, default dashboard, custom dashboard, virtual data center, platform metrics, monitoring
 
@@ -27,7 +27,7 @@ Use {{site.data.keyword.mon_short}} dashboards to complete the following tasks.
 * Control cost of monitoring infrastructure.
 * Mitigate impact of abnormal situations with proactive notifications.
 
-For more information about the benefits of using {{site.data.keyword.mon_short}}, see [Getting started with {{site.data.keyword.mon_full_notm}}](/docs/monitoring?topic=monitoring-getting-started#getting-started-features).
+For more information about the benefits of using {{site.data.keyword.mon_short}}, see [Getting started with {{site.data.keyword.mon_full_notm}}](/docs/monitoring?topic=monitoring-getting-started).
 
 ## Provisioning an {{site.data.keyword.mon_full_notm}} instance
 {: #shared-monitor-create-instance}
@@ -40,7 +40,7 @@ Review the following requirements for your instance order.
 * The instance must be within the same region as your virtual data center instance.
 * You must enable the automatic collection of platform metrics.
 
-Order the {{site.data.keyword.mon_short}} instance.
+To order the {{site.data.keyword.mon_short}} instance:
 
 1. From the {{site.data.keyword.vmwaresolutions_short}} console, click **Resources > VMware Shared** from the left navigation pane.
 2. In the **VMware Shared** table, select the instance for which you want to collect platform metrics.
@@ -136,7 +136,7 @@ The following table displays the total usage of the virtual data center storage.
 ## Customizing your VMware Shared dashboard
 {: #shared-monitor-view-customize}
 
-You can customize your dashboard.
+To customize your dashboard:
 
 1. In the {{site.data.keyword.mon_short}} console, click **Dashboards** from the left navigation pane.
 2. Click the **IBM** menu and click **VMware Solutions Shared**.

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2022, 2023
+  years:  2022, 2024
 
-lastupdated: "2022-10-03"
+lastupdated: "2024-01-26"
 
 subcollection: vmwaresolutions
 
@@ -40,7 +40,7 @@ You can connect to the automation server that was ordered in the previous step f
 5. [Create an SSH key pair on the VSI for the _ansible_ user account](#veeam-cr-sag-ascfg-sakey) to connect to Ansible Linux hosts.
 6. [Create an SSH key pair on your laptop](#veeam-cr-sag-ascfg-userkey), and copy your public key to the Ansible server so that you can access the server without passwords.
 7. [Harden the SSH](#veeam-cr-sag-ascfg-ssh).
-8. [Install Ansible](/docs/vmwaresolutions/?topic=vmwaresolutions-veeam-cr-sag-ansible).
+8. [Install Ansible](/docs/vmwaresolutions?topic=vmwaresolutions-veeam-cr-sag-ansible).
 
 ## Updating OS packages
 {: #veeam-cr-sag-ascfg-os}
@@ -151,4 +151,4 @@ Save the file by pressing `Esc` and `wq`. Then, you can access the automation se
 ## Related links
 {: #veeam-cr-sag-ascfg-related}
 
-* [Cyber recovery with Veeam architecture overview](/docs/vmwaresolutions/?topic=vmwaresolutions-veeam-cr-sa-overview)
+* [Cyber recovery with Veeam architecture overview](/docs/vmwaresolutions?topic=vmwaresolutions-veeam-cr-sa-overview)

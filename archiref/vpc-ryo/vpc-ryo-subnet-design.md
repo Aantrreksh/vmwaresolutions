@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2022, 2023
+  years:  2022, 2024
 
-lastupdated: "2023-09-20"
+lastupdated: "2024-02-02"
 
 subcollection: vmwaresolutions
 
@@ -57,7 +57,7 @@ Before you provision or migrate a VMware VM to a bare metal server in {{site.dat
 
 VLAN interfaces are provisioned with IP and MAC address. They are always provisioned to a specific subnet, and you can either use VPC to allocate the IP, or define the IP address of the available IP addresses in the VPC subnet. When configuring the network settings in VMs Operating System, you can use either static network configurations or DHCP. If you want to use DHCP, you must modify the VMs vNIC MAC address to match the provisioned VLAN interface MAC address. For static IP usage, no special changes are needed, and you might use VMware provided MAC address.
 
-[VMware vSphere vMotion](https://www.vmware.com/fi/products/vsphere/vmotion.html){: external} refers to live migration of workloads from one ESXi host to another. If the VM needs to support vMotion, you must set the VLAN interface to `floatable` when provisioning it in VPC.
+[VMware vSphere vMotion](https://www.vmware.com/nordics/products/vsphere/vmotion.html){: external} refers to live migration of workloads from one ESXi host to another. If the VM needs to support vMotion, you must set the VLAN interface to `floatable` when provisioning it in VPC.
 
 Floating configuration cannot be changed after the VLAN interface is created. However, you can re-create the VLAN interface, and use the same IP address to minimize required changes.
 {: note}

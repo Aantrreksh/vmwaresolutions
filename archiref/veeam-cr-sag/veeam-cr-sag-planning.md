@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2023
+  years:  2023, 2024
 
-lastupdated: "2023-09-26"
+lastupdated: "2024-01-26"
 
 subcollection: vmwaresolutions
 
@@ -84,4 +84,4 @@ The following information is needed for the isolated recovery environment planni
 ## Related links
 {: #veeam-cr-sag-planning-related}
 
-* [Cyber recovery with Veeam architecture overview](/docs/vmwaresolutions/?topic=vmwaresolutions-veeam-cr-sa-overview)
+* [Cyber recovery with Veeam architecture overview](/docs/vmwaresolutions?topic=vmwaresolutions-veeam-cr-sa-overview)

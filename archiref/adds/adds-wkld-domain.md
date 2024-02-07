@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2019, 2023
+  years:  2019, 2024
 
-lastupdated: "2023-05-01"
+lastupdated: "2024-02-02"
 
 subcollection: vmwaresolutions
 
@@ -57,7 +57,7 @@ In this model, the customer provisions a minimum of two domain controllers as VM
 ## Extend domain with AD sites model
 {: #adds-wkld-domain-ext-sites}
 
-In this model, the customer provisions a minimum of two domain controllers as VMs hosted in each vCenter Server instance. These VMs would be connected to an overlay network and this network would have connectivity to existing customer domain controllers in the enterprise. A new AD site would be configured in the existing forest domain along with a new site link. The new domain controllers would be connected to the existing domain and moved into the new AD site. The AD site contains the overlay subnet. The new domain controllers would have the Additional Domain controller role while the existing domain controllers would have the primary domain controller role. For more information, see [Understanding AD site topology](https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/plan/understanding-active-directory-site-topology){: external}. The following diagram shows the Active Directory Domain Services topology for this extended domain with AD sites model.
+In this model, the customer provisions a minimum of two domain controllers as VMs hosted in each vCenter Server instance. These VMs would be connected to an overlay network and this network would have connectivity to existing customer domain controllers in the enterprise. A new AD site would be configured in the existing forest domain along with a new site link. The new domain controllers would be connected to the existing domain and moved into the new AD site. The AD site contains the overlay subnet. The new domain controllers would have the Additional Domain controller role while the existing domain controllers would have the primary domain controller role. For more information, see [Understanding Active Directory site topology](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/plan/understanding-active-directory-site-topology){: external}. The following diagram shows the Active Directory Domain Services topology for this extended domain with AD sites model.
 
 ![Extend domain with AD sites diagram](../../images/adds-extenddomainwithsites.svg "Extend domain with AD sites diagram"){: caption="Figure 4. Extend domain with AD sites diagram" caption-side="bottom"}
 
@@ -118,4 +118,3 @@ Review the following guidance for AD in a vCenter Server instance.
 
 * [Overview of VMware Solutions](/docs/vmwaresolutions?topic=vmwaresolutions-solution_overview)
 * [Getting started with VMware Solutions](/docs/vmwaresolutions?topic=vmwaresolutions-getting-started)
-

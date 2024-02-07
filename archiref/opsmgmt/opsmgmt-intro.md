@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2023
+  years:  2016, 2024
 
-lastupdated: "2023-09-19"
+lastupdated: "2024-01-31"
 
 subcollection: vmwaresolutions
 
@@ -65,8 +65,6 @@ This document is adding the following layer into the {{site.data.keyword.vmwares
 
 For a full enterprise architecture, the following layers might be required. However, they are outside of the {{site.data.keyword.vmwaresolutions_short}} architecture.
 
-* **Cloud Management Layer** - The cloud management layer is the top layer of the cloud architecture. This layer requests resources and orchestrates the lower layers from a user interface or application programming interface (API). VMware Aria Automation enables cloud automation on the {{site.data.keyword.cloud_notm}}. For more information, see [{{site.data.keyword.cloud_notm}} for VMware Solutions VMware Aria Automation 7.2 Solution Architecture](https://www.ibm.com/cloud/architecture/files/IBM_Cloud_for_VMware_Solutions_VRA_Architecture_v1.pdf){: external}.
-
-   For more information about how this architecture can be extended with Chef integration, see [{{site.data.keyword.cloud_notm}} for VMware Solutions VMware Aria Automation 7.2 Chef Integration](https://www.ibm.com/cloud/architecture/files/IBM_Cloud_for_VMware_Solutions_VRA_Chef_Integration_Architecture.pdf){: external}.
+* **Cloud Management Layer** - The cloud management layer is the top layer of the cloud architecture. This layer requests resources and orchestrates the lower layers from a user interface or application programming interface (API). VMware Aria Automation enables cloud automation on the {{site.data.keyword.cloud_notm}}. For more information, see the VMware documentation. For more information about how this architecture can be extended with Chef integration, see the VMware documentation.
 
 * **Service Management Layer** - This layer focuses on the full lifecycle of the IT environment and is typically implemented at the enterprise level combining inputs from all the silos of IT Operations and technologies. This layer has traditionally been, architected on IT Service Management (ITSM) frameworks such as the IT Infrastructure Library (ITIL) and ISO/IEC 20000, which are a framework of best practices for delivering IT services through the processes and stages of the IT service lifecycle. At a product level, ITSM is typified by a centralized workflow management system for handling incidents, service requests, problems, changes, and knowledge connected to a configuration management database.

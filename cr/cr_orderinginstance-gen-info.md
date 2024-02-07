@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2022, 2023
+  years:  2022, 2024
 
-lastupdated: "2023-09-07"
+lastupdated: "2024-02-05"
 
 keywords: cyber recovery, cyber recovery settings, cyber recovery license settings, cyber recovery versions, cyber recovery instances
 
@@ -20,6 +20,15 @@ subcollection: vmwaresolutions
 The following VMware® components are part of the Cyber Recovery instance.
 * VMware vSphere® 7.0u3
 * VMware NSX® 4.1
+
+## VMware vCenter Server version
+{: #cr_orderinginstance-vcenter-license}
+
+{{site.data.content.para-vcsversion80-vcsline1}}
+
+{{site.data.content.para-vcsversion80-vcsline2}}
+
+{{site.data.content.note-vcsversion80-vsphere8}}
 
 ## Instance name
 {: #cr_orderinginstance-inst-name}
@@ -50,7 +59,7 @@ The instance name is set to **vcs-_xx_** by default, where _xx_ represents two r
 ## Licensing
 {: #cr_orderinginstance-licensing-settings}
 
-* For Business Partner users, all licenses are included and purchased on your behalf. 
+* For Business Partner users, all licenses are included and purchased on your behalf.
 * For users who are not Business Partners, use the IBM-provided VMware licenses for these components by selecting **Include with purchase**.
 
 ## Related links

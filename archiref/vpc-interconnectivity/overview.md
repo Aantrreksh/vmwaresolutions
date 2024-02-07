@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2022
+  years:  2022, 2024
 
-lastupdated: "2022-04-27"
+lastupdated: "2024-01-26"
 
 subcollection: vmwaresolutions
 
@@ -55,7 +55,7 @@ When you use the services that were mentioned previously, the data remains withi
 
 * [{{site.data.keyword.vpc_short}} getting started](/docs/vpc?topic=vpc-getting-started)
 * [{{site.data.keyword.vpc_short}} Bare Metal Servers](/docs/vpc?topic=vpc-planning-for-bare-metal-servers)
-* [{{site.data.keyword.vpc_short}} RYO VMware reference architecture](/docs/vmwaresolutions?topic=vpc-ryo-overview)
+* [{{site.data.keyword.vpc_short}} RYO VMware reference architecture](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-ryo-overview)
 * [{{site.data.keyword.dl_full_notm}} overview](/docs/dl?topic=dl-get-started-with-ibm-cloud-dl)
 * [{{site.data.keyword.tg_full_notm}} overview](/docs/transit-gateway?topic=transit-gateway-getting-started)
 * [{{site.data.keyword.vpc_short}} VPN overview](/docs/vpc?topic=vpc-vpn-overview)

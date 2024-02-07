@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2023
+  years:  2016, 2024
 
-lastupdated: "2023-10-06"
+lastupdated: "2024-02-06"
 
 keywords: Veeam console, Veeam backup restore, update Veeam license
 
@@ -20,7 +20,7 @@ subcollection: vmwaresolutions
 
 After the service is deployed into your instance, you can access the Veeam® console by using Remote Desktop Protocol. With Remote Desktop Protocol, you can manage the backup and restore of all the VMs (virtual machines) in your environment, including the management components. You can also upgrade the service by downloading and installing the Veeam updates from the Veeam website.
 
-## Tasks that you can complete with Veeam 
+## Tasks that you can complete with Veeam
 {: #managingveeam-fivetasks_v10}
 
 * Order a new instance with Veeam or install Veeam on an existing instance
@@ -58,9 +58,9 @@ For more information, see [Ordering services for vCenter Server instances](/docs
 
 The Veeam service can be configured to back up the management components by using the Veeam console. For more information, see [Backing up components](/docs/vmwaresolutions?topic=vmwaresolutions-solution_backingup).
 
-The configuration changes to your environment are not automatically backed up. Therefore, before you change the configuration of your environment, it is recommended that you back up the management components manually by running the management backup job in the Veeam console. For more information about backing up manually, see the [Veeam technical instructions](https://helpcenter.veeam.com/backup/vsphere/scheduing_manual.html){: external}.
+The configuration changes to your environment are not automatically backed up. Therefore, before you change the configuration of your environment, it is recommended that you back up the management components manually by running the management backup job in the Veeam console. For more information about backing up manually, see the [Veeam technical instructions](https://helpcenter.veeam.com/archive/backup/90/vsphere/scheduing_manual.html){: external}.
 
-When failures occur on the management components, you can restore the management components to a previous backup by using the Veeam console. For more information about restoring manually, see the [Veeam technical instructions]( https://helpcenter.veeam.com/backup/vsphere/performing_full_recovery.html){: external}.
+When failures occur on the management components, you can restore the management components to a previous backup by using the Veeam console. For more information about restoring manually, see the [Veeam technical instructions](https://helpcenter.veeam.com/archive/backup/90/vsphere/performing_full_recovery.html){: external}.
 
 ## Applying updates to Veeam
 {: #managingveeam-updates}
@@ -96,7 +96,7 @@ On the Veeam console, when you’re automatically updating a license before it e
 {: #veeamvm_overview-remove}
 
 Deleting the Veeam service stops all backups and deletes all the previous backups. The backup of the management VMs or VSIs stops and the deletion of previous backups is irreversible. If the management VMs or VSIs are corrupted, they can’t be restored.
-{: important}
+{: attention}
 
 Review the following considerations before you delete the service:
 
@@ -113,6 +113,6 @@ Review the following considerations before you delete the service:
 * [Managing Veeam stand-alone licenses](/docs/vmwaresolutions?topic=vmwaresolutions-veeam_managing_licenses)
 * [Ordering and configuring {{site.data.keyword.cloud_notm}} Object Storage with Veeam](/docs/vmwaresolutions?topic=vmwaresolutions-icos_ordering)
 * [VMware Solutions FAQ](/docs/vmwaresolutions?topic=vmwaresolutions-faq-vmwaresolutions)
-* [Veeam Backup and Replication](https://www.ibm.com/cloud/architecture/architectures/virtualization_backup_veeam)
-* [Veeam Backup and Replication FAQ](https://www.veeam.com/availability-suite-faq.html){: external}
+* [Veeam on IBM Cloud](https://www.ibm.com/products/veeam){: external}
+* [Veeam Backup and Replication FAQ](https://www.veeam.com/vm-backup-recovery-replication-software.html#faq){: external}
 * [Veeam Technical Documentation](https://www.veeam.com/documentation-guides-datasheets.html){: external}

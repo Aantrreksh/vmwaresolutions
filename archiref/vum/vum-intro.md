@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2022
+  years:  2016, 2024
 
-lastupdated: "2023-10-18"
+lastupdated: "2024-02-02"
 
 subcollection: vmwaresolutions
 
@@ -79,4 +79,4 @@ This facility enables the automated updating for the management components of th
 {: #vum-intro-related}
 
 * [VMware HCX solution architecture](/docs/vmwaresolutions?topic=vmwaresolutions-hcx-archi-intro#hcx-archi-intro)
-* [{{site.data.keyword.vmwaresolutions_short}} Demos](https://www.ibm.com/demos/collection/IBM-Cloud-for-VMware-Solutions/) (demonstrations)
+* [{{site.data.keyword.vmwaresolutions_short}}](https://www.ibm.com/products/vmware)

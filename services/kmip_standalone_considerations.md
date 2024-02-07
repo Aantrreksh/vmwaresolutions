@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2023
+  years:  2016, 2024
 
-lastupdated: "2022-10-11"
+lastupdated: "2024-02-06"
 
 keywords: KMIP for VMware, KMIP stand-alone, tech specs KMIP
 
@@ -22,7 +22,9 @@ The Key Management Interoperability Protocol (KMIP™) for VMware® service prov
 
 The KMIP for VMware service is available as a stand-alone service without being associated to a VMware instance. Each instance of the service can serve one or more VMware vCenter Server® or VMware vSphere® instances.
 
-The supported client applications are vCenter Server 6.7 and 7.0 and vSphere 6.7 and 7.0.
+The supported client applications are:
+* vCenter Server 6.7, 7.0, and 8.0
+* vSphere 6.7 and 7.0
 
 ## Technical specifications for KMIP for VMware
 {: #technical-specifications-for-kmip-for-vmware-on-ibm-cloud}
@@ -39,7 +41,7 @@ The following specifications are included with the KMIP for VMware service:
 ## Before you order KMIP for VMware
 {: #kmip_standalone_considerations-install}
 
-KMIP for VMware uses either the IBM Key Protect service or the IBM Hyper Protect Crypto Services (HPCS) service to create, encrypt, and decrypt encryption keys. 
+KMIP for VMware uses either the IBM Key Protect service or the IBM Hyper Protect Crypto Services (HPCS) service to create, encrypt, and decrypt encryption keys.
 
 Before you install KMIP for VMware, complete the following tasks and review the following information:
 
@@ -49,7 +51,7 @@ Before you install KMIP for VMware, complete the following tasks and review the 
    * [Provisioning the Key Protect service](/docs/key-protect?topic=key-protect-provision)
    * [Provisioning HPCS service instances](/docs/hs-crypto?topic=hs-crypto-provision#provision)
    * [Initializing HPCS service instances using key part files](/docs/hs-crypto?topic=hs-crypto-initialize-hsm#initialize-hsm)
-   
+
 2. If you are using Key Protect, complete the following tasks:
    1. Create an {{site.data.keyword.cloud_notm}} service ID by following the steps in [Creating a service ID in the console](/docs/account?topic=account-serviceids&interface=ui#create_serviceid). This service ID is used to access the Key Protect instance that you created.
    2. Grant the following access levels for the service ID:
@@ -70,11 +72,11 @@ Before you install KMIP for VMware, complete the following tasks and review the 
 
    For more information about HPCS, see:
    * [Importing root keys](/docs/hs-crypto?topic=hs-crypto-import-root-keys)
-   * [Creating root keys](/docs/hs-crypto/get-started?topic=hs-crypto-create-root-keys)
+   * [Creating root keys](/docs/hs-crypto?topic=hs-crypto-create-root-keys)
    * [Creating import tokens](/docs/hs-crypto?topic=hs-crypto-create-import-tokens)
    * [{{site.data.keyword.cloud_notm}} Hyper Protect Crypto Services KMS API](/apidocs/hs-crypto)
 
-4. Ensure that your {{site.data.keyword.cloud_notm}} infrastructure account is enabled for Virtual Routing and Forwarding (VRF) and for connectivity to service endpoints. 
+4. Ensure that your {{site.data.keyword.cloud_notm}} infrastructure account is enabled for Virtual Routing and Forwarding (VRF) and for connectivity to service endpoints.
 
    For more information, see:
    * [Virtual Routing and Forwarding on {{site.data.keyword.cloud_notm}}](/docs/direct-link?topic=direct-link-overview-of-virtual-routing-and-forwarding-vrf-on-ibm-cloud)

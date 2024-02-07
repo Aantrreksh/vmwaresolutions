@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2023
+  years:  2016, 2024
 
-lastupdated: "2023-03-21"
+lastupdated: "2024-02-01"
 
 keywords: vCenter Server networking, networking components, networking vCenter
 
@@ -62,7 +62,7 @@ Review the following considerations before you attempt to change the passwords f
 {: faq}
 
 * You can change the NSX Manager password. This password is displayed on the **Summary** page of the instance in the VMware Solutions console.
-* You can change the NSX Controller password. This password is not displayed in the VMware Solutions console, but you can set a new password without the old password. For more information, see [Change Controller password](https://docs.vmware.com/en/VMware-NSX-Data-Center-for-vSphere/6.2/com.vmware.nsx.admin.doc/GUID-2667DD9E-E2F5-4403-BAC2-C7D1BBC23228.html){: external}.
+* You can change the NSX Controller password. This password is not displayed in the VMware Solutions console, but you can set a new password without the old password. For more information, see [Change Controller password](https://docs.vmware.com/en/VMware-NSX-Data-Center-for-vSphere/6.2/NSX-Data-Center-for-vSphere-62.zip){: external}.
 * You can change the password and the SSH settings for the customer-managed NSX ESG. This password is not displayed in the VMware Solutions console, but you can set a new password without the old password. For more information, see [Change CLI credentials](https://docs.vmware.com/en/VMware-NSX-Data-Center-for-vSphere/6.4/com.vmware.nsx.admin.doc/GUID-1DB9DE43-6B54-4FD1-903A-2DFFB87CD7FA.html?hWord=N4IghgNiBcIKYBMDmcAEAHMBnLB3A9gE4IgC+QA){: external}.
 * Do not change the passwords for the management VMware NSX ESG and the related Distributed Logical Router.
 

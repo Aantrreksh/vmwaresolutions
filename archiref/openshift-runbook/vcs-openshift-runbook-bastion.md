@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2019, 2023
+  years:  2019, 2024
 
-lastupdated: "2023-05-01"
+lastupdated: "2024-01-12"
 
 subcollection: vmwaresolutions
 
@@ -206,9 +206,9 @@ You must use a local key.
 ## Downloading the installation tools
 {: #openshift-runbook-runbook-bastion-install-red-hat}
 
-For more information about installing {{site.data.keyword.redhat_openshift_notm}} 4.7, see [Installing a cluster on vSphere with user-provisioned infrastructure](https://docs.openshift.com/container-platform/4.7/installing/installing_vsphere/installing-vsphere.html){: external}.
+For more information about installing {{site.data.keyword.redhat_openshift_notm}} 4.14, see [Installing a cluster on vSphere with user-provisioned infrastructure](https://docs.openshift.com/container-platform/4.14/installing/installing_vsphere/installing-vsphere.html){: external}.
 
-For more information about how to access the {{site.data.keyword.redhat_openshift_notm}} user provider infrastructure, see [Internet and Telemetry access for {{site.data.keyword.redhat_openshift_notm}} Container Platform](https://docs.openshift.com/container-platform/4.7/installing/installing_vsphere/installing-vsphere.html#cluster-entitlements_installing-vsphere){: external}.
+For more information about how to access the {{site.data.keyword.redhat_openshift_notm}} user provider infrastructure, see [Internet and Telemetry access for {{site.data.keyword.redhat_openshift_notm}} Container Platform](https://docs.openshift.com/container-platform/4.14/installing/installing_vsphere/installing-vsphere.html#cluster-entitlements_installing-vsphere){: external}.
 
 Before you install the {{site.data.keyword.redhat_openshift_notm}} Container Platform, you need to download a number of files onto the bastion node and then extract them. The following actions are completed:
 * Download `unzip` to extract the downloaded files.
@@ -220,7 +220,7 @@ Before you install the {{site.data.keyword.redhat_openshift_notm}} Container Pla
 * Clone the installer repository to the bastion node.
 * Download and extract Terraform to the `/usr/local/bin` directory for ease of use.
 
-These commands are used in the SSH session to the bastion node that has root privileges. Replace 4.x with the current {{site.data.keyword.redhat_openshift_notm}} version, for example, 4.7.
+These commands are used in the SSH session to the bastion node that has root privileges. Replace 4.x with the current {{site.data.keyword.redhat_openshift_notm}} version, for example, 4.14.
 
 ```bash
 # Download unzip
@@ -253,10 +253,10 @@ mv terraform /usr/local/bin
 ```
 {: pre}
 
-The Bastion node is now ready for the steps to install {{site.data.keyword.redhat_openshift_notm}} 4.7, which are described in [{{site.data.keyword.redhat_openshift_notm}} 4.7 user provider infrastructure installation](/docs/vmwaresolutions?topic=vmwaresolutions-openshift-runbook-runbook-install-intro).
+The Bastion node is now ready for the steps to install {{site.data.keyword.redhat_openshift_notm}} 4.14, which are described in [{{site.data.keyword.redhat_openshift_notm}} 4.14 user provider infrastructure installation](/docs/vmwaresolutions?topic=vmwaresolutions-openshift-runbook-runbook-install-intro).
 
 ## Related links
 {: #vcs-openshift-runbook-bastion-related}
 
-* [Installing a cluster on vSphere with user-provisioned infrastructure](https://docs.openshift.com/container-platform/4.7/installing/installing_vsphere/installing-vsphere.html){: external}
+* [Installing a cluster on vSphere with user-provisioned infrastructure](https://docs.openshift.com/container-platform/4.14/installing/installing_vsphere/installing-vsphere.html){: external}
 * [Using the vi text editor](http://etutorials.org/Linux+systems/red+hat+linux+bible+fedora+enterprise+edition/Part+II+Using+Red+Hat+Linux/Chapter+4+Using+Linux+Commands/Using+the+vi+Text+Editor/){: external}

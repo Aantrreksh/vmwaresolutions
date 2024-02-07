@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2022
+  years:  2016, 2024
 
-lastupdated: "2022-12-28"
+lastupdated: "2024-02-02"
 
 subcollection: vmwaresolutions
 
@@ -71,4 +71,4 @@ You can now use these baseline groups in the scan, review, staging, and remediat
 {: #vum-orchestr-updates-related}
 
 * [VMware HCX solution architecture](/docs/vmwaresolutions?topic=vmwaresolutions-hcx-archi-intro#hcx-archi-intro)
-* [{{site.data.keyword.vmwaresolutions_short}} Demos](https://www.ibm.com/demos/collection/IBM-Cloud-for-VMware-Solutions/) (demonstrations)
+* [{{site.data.keyword.vmwaresolutions_short}}](https://www.ibm.com/products/vmware)

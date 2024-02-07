@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2022, 2023
+  years:  2022, 2024
 
-lastupdated: "2023-09-28"
+lastupdated: "2024-01-31"
 
 subcollection: vmwaresolutions
 
@@ -53,7 +53,7 @@ You can preserve the existing Active Directory™ (AD) controllers for ongoing u
 ## Can I use vMotion with vSphere Encryption between the two vCenter Server instances?
 {: #faq-v2t-migration-encryption}
 
-With VMware vSphere® encryption, it is possible to perform an advanced cross vCenter vMotion on vSphere–encryption–protected VMs. You need to upgrade the source vCenter to v7.0 and connect both vCenters to the same Key Management System (KMS) and assign it the same name. Also, ensure that you have equivalent storage encryption policies in each vCenter Server.
+With VMware vSphere® encryption, it is possible to perform an advanced cross vCenter vMotion on vSphere–encryption–protected VMs. You need to upgrade the source vCenter to v7.0 or later and connect both vCenters to the same Key Management System (KMS) and assign it the same name. Also, ensure that you have equivalent storage encryption policies in each vCenter Server.
 
 ## What happens to assets that were deployed manually?
 {: #faq-v2t-migration-manual-custom}
@@ -142,7 +142,7 @@ See also [different ways to run VMware workloads in {{site.data.keyword.cloud_no
 
 Upgrading vSphere software is your responsibility. However, with Bring Your Own License (BYOL) you can access VMware Support directly by using your license agreement. {{site.data.keyword.cloud_notm}} provides support for your bare metal servers infrastructure on {{site.data.keyword.cloud_notm}}.
 
-For more information about upgrading, see [VMware ESXi upgrade VMware vSphere 6.7](https://docs.vmware.com/en/VMware-vSphere/6.7/vsphere-esxi-671-upgrade-guide.pdf){: external} and [vSphere upgrade VMware vSphere 6.5](https://docs.vmware.com/en/VMware-vSphere/6.5/vsphere-esxi-vcenter-server-651-upgrade-guide.pdf){: external}. As part of the upgrade planning, consider moving to the {{site.data.keyword.cloud_notm}} vCenter Server with NSX-T offering, this lift-and-shift upgrade approach might be more beneficial.
+For more information about upgrading, see [VMware ESXi upgrade VMware vSphere 6.7](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.esxi.upgrade.doc/GUID-FE668788-1F32-4CB2-845C-5547DD59EB48.html){: external} and [vSphere upgrade VMware vSphere 6.5](https://docs.vmware.com/en/VMware-vSphere/6.5/com.vmware.vsphere.upgrade.doc/GUID-FE668788-1F32-4CB2-845C-5547DD59EB48.html){: external}. As part of the upgrade planning, consider moving to the {{site.data.keyword.cloud_notm}} vCenter Server with NSX-T offering, this lift-and-shift upgrade approach might be more beneficial.
 
 See also [different ways to run VMware workloads in {{site.data.keyword.cloud_notm}}](/docs/vmwaresolutions?topic=vmwaresolutions-faq-v2t-migration#faq-v2t-migration-vmware-platforms).
 

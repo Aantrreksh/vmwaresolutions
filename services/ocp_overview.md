@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2019, 2023
+  years:  2019, 2024
 
-lastupdated: "2023-10-05"
+lastupdated: "2024-01-31"
 
 keywords: openshift for vmware, request openshift for vmware, tech specs openshift vmware
 
@@ -20,7 +20,7 @@ subcollection: vmwaresolutions
 
 The {{site.data.keyword.redhat_openshift_full}} for VMware® service deploys an {{site.data.keyword.redhat_openshift_notm}} cluster by using an automated deployment of the VMware SDDC (Software Defined Data Center) architecture. The {{site.data.keyword.redhat_openshift_notm}} components are deployed as virtual machines (VMs) or appliances by using VMware NSX® software-defined networking.
 
-The {{site.data.keyword.redhat_openshift_notm}} version available for deployment is 4.13.10.
+The {{site.data.keyword.redhat_openshift_notm}} version available for deployment is 4.14.
 {: note}
 
 Review the following information before you install the {{site.data.keyword.redhat_openshift_notm}} for VMware service:
@@ -53,7 +53,7 @@ The solution topology has the following requirements:
 
 For more information about resource requirements and capacity checking, see [Resource requirements for services](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices#vc_addingservices-resource-requirements).
 
-To successfully deploy {{site.data.keyword.redhat_openshift_notm}} for VMware on vCenter Server, you must have a {{site.data.keyword.redhat_notm}} account and the pull secret key from your account. All {{site.data.keyword.redhat_notm}} accounts have an associated pull secret, which you can retrieve by [logging in to your {{site.data.keyword.redhat_notm}} account](https://cloud.redhat.com/openshift/install/vsphere/user-provisioned){: external}. You must purchase {{site.data.keyword.redhat_notm}} support entitlements through {{site.data.keyword.redhat_notm}} and, if needed, send information for all {{site.data.keyword.redhat_openshift_notm}} support issues to {{site.data.keyword.redhat_notm}}.
+To successfully deploy {{site.data.keyword.redhat_openshift_notm}} for VMware on vCenter Server, you must have a {{site.data.keyword.redhat_notm}} account and the pull secret key from your account. All {{site.data.keyword.redhat_notm}} accounts have an associated pull secret, which you can retrieve by [logging in to your {{site.data.keyword.redhat_notm}} account](https://console.redhat.com/openshift/install/vsphere/user-provisioned){: external}. You must purchase {{site.data.keyword.redhat_notm}} support entitlements through {{site.data.keyword.redhat_notm}} and, if needed, send information for all {{site.data.keyword.redhat_openshift_notm}} support issues to {{site.data.keyword.redhat_notm}}.
 
 ### Selection of the target cluster for installation
 {: #ocp_overview-select-target-cluster}
@@ -138,5 +138,5 @@ For more information about updating {{site.data.keyword.redhat_openshift_notm}},
 
 * [vCenter Server and {{site.data.keyword.redhat_openshift_notm}} architecture overview](/docs/vmwaresolutions?topic=vmwaresolutions-vcs-openshift-intro)
 * [VMware Solutions and {{site.data.keyword.redhat_openshift_notm}} overview](/docs/vmwaresolutions?topic=vmwaresolutions-openshift-runbook-runbook-intro)
-* [What's new in {{site.data.keyword.redhat_openshift_notm}}](https://www.openshift.com/learn/whats-new){: external}
-* [Succeeding with {{site.data.keyword.redhat_openshift_notm}} and VMware’s Software-Defined Datacenter (SDDC)](https://blog.openshift.com/red-hat-openshift-and-vmware-better-together/){: external}
+* [What's new in {{site.data.keyword.redhat_openshift_notm}}](https://www.redhat.com/en/whats-new-red-hat-openshift){: external}
+* [Succeeding with {{site.data.keyword.redhat_openshift_notm}} and VMware’s Software-Defined Datacenter (SDDC)](https://www.redhat.com/en/blog/red-hat-openshift-and-vmware-better-together){: external}

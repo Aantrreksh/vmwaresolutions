@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2023
+  years:  2023, 2024
 
-lastupdated: "2023-06-19"
+lastupdated: "2024-01-02"
 
 subcollection: vmwaresolutions
 
@@ -52,7 +52,7 @@ Your existing vCenter server environment might differ from the previous due to a
 
 * You have a vCenter Server instance with vSAN. This solution architecture does not dictate the type of vSphere data store.
 * You have extra optional services, such as Caveonix, VMware Aria Operations Manager, and VMware Aria Operations™ for Logs.
-* You select a different option for the Veeam service as three options are available. This solution architecture does not dictate the VM option for the Veeam service. VSI or bare metal options are also available. For more information, see [Veeam Backup and Replication 12 overview](https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview).
+* You select a different option for the Veeam service as three options are available. This solution architecture does not dictate the VM option for the Veeam service. VSI or bare metal options are also available. For more information, see [Veeam Backup and Replication 12 overview](/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview).
 * You expand your Veeam service from a simple deployment "all-in-one" to an advanced deployment by deploying extra Veeam components on different servers.
 * You select a different ADDNS option. This solution architecture does not dictate the type of option, either two VMs or a single VSI options are available. For more information, see [Domain Name System Configuration](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-network-interface-settings#vc_orderinginstance-dns-config).
 

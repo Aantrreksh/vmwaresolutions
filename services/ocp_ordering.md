@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2019, 2023
+  years:  2019, 2024
 
-lastupdated: "2023-10-05"
+lastupdated: "2024-01-30"
 
 keywords: Red Hat OpenShift for VMware, OpenShift configuration, order OpenShift
 
@@ -45,7 +45,7 @@ You can include the {{site.data.keyword.redhat_openshift_full}} for VMware® ser
 ## Red Hat OpenShift for VMware configuration
 {: #ocp_ordering-config}
 
-When you order the service, you must provide a {{site.data.keyword.redhat_full}} pull secret. This pull secret is used to associate the new {{site.data.keyword.redhat_openshift_notm}} cluster with your existing {{site.data.keyword.redhat_notm}} account. You can obtain a copy of your pull secret by [logging in to your {{site.data.keyword.redhat_notm}} account](https://cloud.redhat.com/openshift/install/vsphere/user-provisioned){: external} and clicking **Copy Pull Secret**.
+When you order the service, you must provide a {{site.data.keyword.redhat_full}} pull secret. This pull secret is used to associate the new {{site.data.keyword.redhat_openshift_notm}} cluster with your existing {{site.data.keyword.redhat_notm}} account. You can obtain a copy of your pull secret by [logging in to your {{site.data.keyword.redhat_notm}} account](https://console.redhat.com/openshift/install/vsphere/user-provisioned){: external} and clicking **Copy Pull Secret**.
 
 ## Setting up DNS to access your Red Hat OpenShift console
 {: #ocp_ordering-dns-setup}

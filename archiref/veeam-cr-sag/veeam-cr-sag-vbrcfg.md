@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2022
+  years:  2022, 2024
 
-lastupdated: "2022-05-30"
+lastupdated: "2024-02-02"
 
 subcollection: vmwaresolutions
 
@@ -53,9 +53,9 @@ In this step, the following tasks are required to configure the Veeam backup ser
 
 4. Verify with `Get-LocalUser` and `Get-LocalGroupMember -Group "Administrators"`.
 
-For more information, see [Setting up a Windows host](https://docs.ansible.com/ansible/latest/user_guide/windows_setup.html){: external}.
+For more information, see [Setting up a Windows host](https://docs.ansible.com/ansible/latest/os_guide/windows_setup.html){: external}.
 
 ## Related links
 {: #veeam-cr-sag-vbrcfg-related}
 
-* [Cyber recovery with Veeam architecture overview](/docs/vmwaresolutions/?topic=vmwaresolutions-veeam-cr-sa-overview)
+* [Cyber recovery with Veeam architecture overview](/docs/vmwaresolutions?topic=vmwaresolutions-veeam-cr-sa-overview)

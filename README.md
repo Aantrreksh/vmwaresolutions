@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2016, 2023
+  years: 2016, 2024
 
-lastupdated: "2023-01-10"
+lastupdated: "2024-01-04"
 
 subcollection: vmwaresolutions
 

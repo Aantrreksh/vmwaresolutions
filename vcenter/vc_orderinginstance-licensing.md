@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2023
+  years:  2016, 2024
 
-lastupdated: "2023-08-08"
+lastupdated: "2024-01-29"
 
 keywords: vCenter Server order instance, order vCenter Server licenses
 
@@ -19,7 +19,7 @@ subcollection: vmwaresolutions
 
 Specify the licensing options for the VMware® components in the instance.
 
-* VMware vCenter Server® Standard 7.0
+* VMware vCenter Server® Standard 7.0 or later
 * VMware vSphere® Enterprise Plus 7.0
 * VMware NSX® 4.1 (Data Center SP Base, Data Center SP Professional, Data Center SP Advanced, or Data Center SP Enterprise Plus)
 

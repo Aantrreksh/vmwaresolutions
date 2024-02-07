@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-01-04"
+lastupdated: "2024-01-19"
 
 subcollection: vmwaresolutions
 
@@ -20,7 +20,7 @@ subcollection: vmwaresolutions
 
 ![{{site.data.keyword.cloud_notm}} for VMware Cloud Foundation overview](../../images/vcf-vpc-v2-overview.svg "{{site.data.keyword.cloud_notm}} for VMware Cloud Foundation overview"){: caption="Figure 1. {{site.data.keyword.cloud_notm}} for VMware Cloud Foundation overview" caption-side="bottom"}
 
-The VMware Cloud Foundation deployment provides a complete set of software-defined services for compute, storage, network security, Kubernetes management, and cloud management. It includes VMware vSphere® with VMware Tanzu™, VMware vSAN™, VMware NSX™ Data Center and it is managed through vCenter Server, SDDC manager, HCX, and VMware Aria® Suite (formerly known as VMware vRealize® Suite). The VMware Cloud Foundation management capabilities offer consistent VMware operations across private and public cloud deployments. The VMware Cloud Foundation solution provides access to a unique set of VMware Cloud Foundation capabilities in a bundled form.
+The VMware Cloud Foundation deployment provides a complete set of software-defined services for compute, storage, network security, Kubernetes management, and cloud management. It includes VMware vSphere® with VMware Tanzu™, VMware vSAN™, VMware NSX™ Data Center and it is managed through vCenter Server, SDDC manager, VMware HCX™, and VMware Aria® Suite (formerly known as VMware vRealize® Suite). The VMware Cloud Foundation management capabilities offer consistent VMware operations across private and public cloud deployments. The VMware Cloud Foundation solution provides access to a unique set of VMware Cloud Foundation capabilities in a bundled form.
 
 {{site.data.keyword.cloud}} for VMware Cloud Foundation automation provisions the required underlying infrastructure components in your own {{site.data.keyword.vpc_short}}, which is under your own control. The {{site.data.keyword.cloud_notm}} bare metal servers for {{site.data.keyword.vpc_short}} provide you with compute capacity provisioned in minutes. By using {{site.data.keyword.vpc_full}} as the underlying infrastructure, the deployment happens in an agile way inside a secure and logically isolated virtual network by using a private IP address space that you can define.
 

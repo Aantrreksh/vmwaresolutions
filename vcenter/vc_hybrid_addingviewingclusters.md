@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2023
+  years:  2016, 2024
 
-lastupdated: "2023-09-22"
+lastupdated: "2024-02-06"
 
 keywords: vCenter Server Hybridity add cluster, view cluster vCenter Server Hybridity, delete cluster vCenter Server Hybridity
 
@@ -32,7 +32,7 @@ Adding clusters to instances with VMware vSphere® 6.5 is not supported.
 
 {{site.data.content.para-vcenteraddclusters}}
 
-* The number of clusters, hosts, and VMs determines the maximum number of clusters that you can add. You must remain within the VMware® sizing guidelines and limits for your deployment. For more information, see [VMware Configuration Maximums](https://configmax.vmware.com/home){: external}.
+The number of clusters, hosts, and VMs determines the maximum number of clusters that you can add. You must remain within the VMware® sizing guidelines and limits for your deployment. For more information, see [VMware configuration maximums](https://configmax.esp.vmware.com/home){: external}.
 
 ### System settings
 {: #vc_hybrid_addingviewingclusters-adding-sys-settings}
@@ -61,7 +61,7 @@ If you deploy the cluster to a different {{site.data.keyword.cloud_notm}} data c
 You can choose a **Cascade Lake** bare metal server, with options for the **CPU model** and **RAM**. Options might differ depending on the version that your instance was initially deployed in.
 
 Cascade Lake bare metal servers are available only for VMware vSphere Enterprise Plus 6.7u3 instances.
-{: note}
+{: restriction}
 
 | CPU model options | Cores     | GHz     | RAM options |
 |:----------------- |:----------|:--------|:----------- |
@@ -75,7 +75,7 @@ Cascade Lake bare metal servers are available only for VMware vSphere Enterprise
 {: caption="Table 1. Options for Cascade Lake bare metal servers" caption-side="bottom"}
 
 The Quad Intel Xeon Gold 6248 processor is available only if you add new clusters or new ESXi servers to existing instances.
-{: note}
+{: restriction}
 
 ### Number of bare metal servers
 {: #vc_hybrid_addingviewingclusters-adding-bare-metal-number}
@@ -211,7 +211,7 @@ You can't change the cluster name. Changing the cluster name might cause the add
 You might want to delete a cluster from an instance when it's no longer needed.
 
 Deleting clusters from instances with vSphere 6.5 is not supported.
-{: note}
+{: restriction}
 
 ### Before you delete clusters from vCenter Server with Hybridity Bundle instances
 {: #vc_hybrid_addingviewingclusters-deleting-prereq}

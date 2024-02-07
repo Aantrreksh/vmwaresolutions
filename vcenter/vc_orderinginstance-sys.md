@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2023
+  years:  2016, 2024
 
-lastupdated: "2023-09-07"
+lastupdated: "2024-02-05"
 
 keywords: vCenter Server order instance, order vCenter Server, order vCenter Server instance
 
@@ -35,6 +35,15 @@ Migrating your workloads is recommended if you want to:
 * Perform a hardware refresh.
 * Migrate from VMware NSX–V to VMware NSX–T™.
 * Migrate your existing NSX–T topology with separate management and workload clusters to a converged topology.
+
+## VMware vCenter Server version
+{: #vc_orderinginstance-vcenter-license}
+
+{{site.data.content.para-vcsversion80-vcsline1}}
+
+{{site.data.content.para-vcsversion80-vcsline2}}
+
+{{site.data.content.note-vcsversion80-vsphere8}}
 
 ## VMware NSX networking solution
 {: #vc_orderinginstance-nsx}

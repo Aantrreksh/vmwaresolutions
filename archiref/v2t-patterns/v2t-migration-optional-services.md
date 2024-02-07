@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2022, 2023
+  years:  2022, 2024
 
-lastupdated: "2023-09-11"
+lastupdated: "2024-01-30"
 
 subcollection: vmwaresolutions
 
@@ -57,7 +57,7 @@ You must open a ticket to ask IBM Support to decouple the Veeam server, manageme
 
 If you deploy a new Veeam instance, you must consider backup data and backup configuration to migrate Veeam to the new NSX-T instance.
 
-* Backup data - Backup files will be hosted in the Veeam repository server. For more information, see [Importing Veeam Agent backups](https://helpcenter.veeam.com/docs/agentforwindows/userguide/integration_import.html?ver=50){: external}.
+* Backup data - Backup files will be hosted in the Veeam repository server. For more information, see [Importing Veeam Agent backups](https://helpcenter.veeam.com/archive/agentforwindows/50/userguide/integration_import.html){: external}.
 * Backup configuration - The backup configuration can be saved to a file. For more information, see [Configuration backup and restore](https://helpcenter.veeam.com/docs/backup/vsphere/vbr_config.html?ver=120){: external}.
 
 If you want to migrate your Veeam service from VMware NSX-V to VMware NSX-T, open an IBM Support ticket by following the steps in [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support).

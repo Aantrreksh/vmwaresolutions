@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2023
+  years:  2016, 2024
 
-lastupdated: "2023-09-13"
+lastupdated: "2024-01-30"
 
 keywords: FAQ vmware solutions shared, vmware solutions shared questions
 
@@ -131,7 +131,7 @@ VMware Shared provides Microsoft® Windows® server 2016/2019 templates. You can
 {: #faq-sla}
 {: faq}
 
-VMware Shared uses the {{site.data.keyword.cloud_notm}} standard Service Level Agreement (SLA). SLAs are not offered for virtual machines and vApps. For more information, see [{{site.data.keyword.cloud_notm}} (Public Cloud) Service Description (10-2020)](https://www-03.ibm.com/software/sla/sladb.nsf/sla/bm-6605-20).
+VMware Shared uses the {{site.data.keyword.cloud_notm}} standard Service Level Agreement (SLA). SLAs are not offered for virtual machines and vApps. For more information, see [{{site.data.keyword.cloud_notm}} Service Description](https://www.ibm.com/support/customer/csol/terms/?id=i126-6605).
 
 ## Do I get vCenter access?
 {: #faq-vcenter-access}

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2023
+  years:  2016, 2024
 
-lastupdated: "2023-09-13"
+lastupdated: "2024-02-01"
 
 keywords: vmware vSphere order instances, order vmware vSphere, order vmaware vSphere instance
 
@@ -28,7 +28,7 @@ subcollection: vmwaresolutions
    
    Bring your own license (BYOL) for VMware vSphere® Enterprise Plus is not supported, except for migrations or upgrades of existing BYOL clusters. If you do select that you are providing your own license, an {{site.data.keyword.cloud_notm}} ticket is opened automatically. This ticket requests the default vSphere licenses on your ordered bare metal servers to be replaced with your provided licenses.
 
-   You are responsible to track the ticket so that you replace the vSphere license on the newly ordered VMware ESXi® servers. This way the {{site.data.keyword.cloud_notm}} infrastructure grants the cancellation of the initially provided {{site.data.keyword.cloud_notm}} infrastructure vSphere license charge. To replace your ESXi vSphere license, see [Configure license settings for an ESXi host](https://docs.vmware.com/en/VMware-vSphere/6.0/com.vmware.vsphere.vcenterhost.doc/GUID-1B128360-0060-40F2-A6F0-43CD2534B034.html){: external}.
+   You are responsible to track the ticket so that you replace the vSphere license on the newly ordered VMware ESXi® servers. This way the {{site.data.keyword.cloud_notm}} infrastructure grants the cancellation of the initially provided {{site.data.keyword.cloud_notm}} infrastructure vSphere license charge. To replace your ESXi vSphere license, see [Configure license settings for an ESXi host](https://docs.vmware.com/en/VMware-vSphere/6.0/vsphere-60-guide-archive.zip){: external}.
    {: important}
 
 5. Complete the bare metal server settings:

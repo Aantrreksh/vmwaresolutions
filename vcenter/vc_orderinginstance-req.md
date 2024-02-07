@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2023
+  years:  2016, 2024
 
-lastupdated: "2023-06-09"
+lastupdated: "2024-02-05"
 
 keywords: vCenter Server order instance, order vCenter Server, order vCenter Server instance
 
@@ -38,7 +38,7 @@ The subdomain label is used only for existing VMware vSphere® 6.x instances.
 |:------------|:------------ |
 | Domain name | `<root_domain>` |  
 | vCenter Server login username | `<user_id>@<root_domain>` (Microsoft® Active Directory™ user) or `administrator@vsphere.local` |
-| vCenter Server (with embedded PSC) FQDN | `<instance_name>-vc.<root_domain>`. The maximum length is 50 characters. Any hyphen (-) characters from the instance name are removed. |
+| vCenter Server (with embedded PSC) FQDN | `<instance_name>-vc.<root_domain>`. The maximum length is 50 characters. Any hyphens (-) are removed from the instance name. |
 | Single Sign-On (SSO) site name | `<root_domain>` |
 | Fully qualified VMware ESXi™ server name | `<host_prefix><n>.<root_domain>`, where `n` is the sequence of the ESXi server. The maximum length is 50 characters. |
 | NetBIOS name | First string of `<root_domain>`. The maximum length is 15 characters. |

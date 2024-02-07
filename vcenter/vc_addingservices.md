@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2021, 2023
+  years:  2021, 2024
 
-lastupdated: "2023-10-31"
+lastupdated: "2024-01-19"
 
 keywords: vCenter Server add service
 
@@ -43,16 +43,16 @@ The following table shows the services that are available to vCenter Server inst
 | [{{site.data.keyword.IBM}} Security Services for SAP](/docs/vmwaresolutions?topic=vmwaresolutions-managing-ss-sap) |   | |
 | [Juniper vSRX](/docs/vmwaresolutions?topic=vmwaresolutions-juniper-overview) | 3.0 (23.2R1) | |
 | [KMIP for VMware](/docs/vmwaresolutions?topic=vmwaresolutions-kmip_standalone_considerations) | 2.0 | |
-| [{{site.data.keyword.redhat_openshift_notm}} for VMware](/docs/vmwaresolutions?topic=vmwaresolutions-ocp_overview) | 4.13.10 | NSX-T only \n If you add the service to an existing instance with an NSX-T version earlier than 3.1, you must first upgrade NSX-T to 3.1 or later. |
+| [{{site.data.keyword.redhat_openshift_notm}} for VMware](/docs/vmwaresolutions?topic=vmwaresolutions-ocp_overview) | 4.14 | NSX-T only \n If you add the service to an existing instance with an NSX-T version earlier than 3.1, you must first upgrade NSX-T to 3.1 or later. |
 | [Veeam](/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview) | 12 | |
-| [VMware Aria Operations and VMware Aria Operations for Logs](/docs/vmwaresolutions?topic=vmwaresolutions-vrops_overview) | VMware Aria® Operations™ 8.12.1 and VMware Aria Operations™ for Logs 8.12 | |
-| [Zerto](/docs/vmwaresolutions?topic=vmwaresolutions-addingzertodr) | 9.7u3 | VMware vSphere 7 only |
+| [VMware Aria Operations and VMware Aria Operations for Logs](/docs/vmwaresolutions?topic=vmwaresolutions-vrops_overview) | VMware Aria® Operations™ 8.14.1 and VMware Aria Operations™ for Logs 8.14 | |
+| [Zerto](/docs/vmwaresolutions?topic=vmwaresolutions-addingzertodr) | 9.7u4 | VMware vSphere 7 only |
 {: caption="Table 1. Available services for vCenter Server instances" caption-side="bottom"}
 
 ## Promotions for services
 {: #vc_addingservices-service-promotions}
 
-{{site.data.keyword.vmwaresolutions_full}} offers promotion pricing for some services. The promotions offer a number of months free of charge for service licenses, if the service has license charges.
+{{site.data.keyword.vmwaresolutions_full}} offers promotion pricing for some services. The promotions offer a number of months without any charge for service licenses, if the service has license charges.
 
 You can use promotion (promo) codes for one or more services when you:
 * Order a new VMware vCenter Server instance
@@ -67,7 +67,7 @@ After you start an order, enter the promo code for your services in the promo co
 
 If you apply a promo code for a service and then delete the service from your order, you must also remove the promo code from the order.
 
-Promotion pricing starts when the promo code is applied. The pricing is automatically changed to the recurring price when the promotion period ends. You can see the discounts, promotion price, and recurring price in the PDF file generated for your order.
+Promotion pricing starts when the promo code is applied. The pricing is automatically changed to the recurring price when the promotion period ends. You can see the discounts, the promotion price, and the recurring price in the PDF file generated for your order.
 
 ## Resource requirements for services
 {: #vc_addingservices-resource-requirements}
@@ -78,7 +78,7 @@ For certain services, the system completes a capacity check on the targeted clus
 
 During deployment, if the capacity check fails, the service is not installed and the service status is set to **Capacity Validation Failed** on the console. In addition, a console message with more details is displayed and you are notified by email. The message displays the expected capacity for all services that do not meet the requirements.
 
-To install the service, you must increase the capacity in your cluster either by adding more VMware ESXi™ servers or by freeing up RAM, CPU, or disk space. After that, you can add the service or services again. To remove the existing service in the **Capacity Validation Failed** state, click the **Delete** icon ![Delete icon](../../icons/delete.svg "Delete") next to it.
+To install the service, you must increase the capacity in your cluster either by adding more VMware ESXi™ servers or by freeing up RAM, CPU, or disk space. After that, you can add the service (or services) again. To remove the existing service in the **Capacity Validation Failed** state, click the **Delete** icon ![Delete icon](../../icons/delete.svg "Delete") next to it.
 
 The following table provides the resource requirements for the services for which a capacity check is completed.
 
@@ -140,7 +140,7 @@ The following table lists the variables that are used in the previous formula.
 | HostOverheadMemory | The number of GB of memory that is reserved by the ESXi server as overhead | GB | 4.6 | 4.6 |
 | MgmtOverheadMemory[^mgmtmem] | The number of GB of memory reserved by the vCenter Server management components (vCenter Server, PSC, AD/DNS, Edges) | GB | 77 | 77 |
 | vSphereHAHostTolerance[^vspherehamem] | The number of hosts to tolerate in the vSphere HA configuration | Hosts | 1 | 1 |
-| HostVsanOverheadMemoryDiskPercentage | The number of GB of memory reserved by vSAN management (represented as percentage of one of the capacity vSAN disks) | % | 2.75% | 2.75% |
+| HostVsanOverheadMemoryDiskPercentage | The number of GB of memory reserved by vSAN management (represented as a percentage of one of the capacity vSAN disks) | % | 2.75% | 2.75% |
 | HostVsanOverheadMemory | The number of GB of memory reserved by vSAN management regardless of disk size | GB | 7 | 0 |
 {: caption="Table 4. Description of variables in formula 2" caption-side="bottom"}
 
@@ -151,7 +151,7 @@ The following table lists the variables that are used in the previous formula.
 ## Procedure to order services for vCenter Server instances
 {: #vc_addingservices-procedure}
 
-To order a service for your vCenter Server instance, click the appropriate service link in [Available services for vCenter Server instances](#vc_addingservices-available-services). Review the considerations for the service and check the components that are deployed. 
+To order a service for your vCenter Server instance, click the appropriate service link in [Available services for vCenter Server instances](#vc_addingservices-available-services). Review the considerations for the service and check the components that are deployed.
 
 Then, follow the instructions in the ordering topic for your chosen service to be installed on the instance. For more information, see:
 * [Ordering Caveonix RiskForesight](/docs/vmwaresolutions?topic=vmwaresolutions-caveonix_ordering)

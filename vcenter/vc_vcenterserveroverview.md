@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2023
+  years:  2016, 2024
 
-lastupdated: "2023-07-14"
+lastupdated: "2024-01-23"
 
 keywords: vCenter Server, vCenter Server architecture, tech specs vCenter Server
 
@@ -156,7 +156,7 @@ The vSAN option offers customized configurations, with various options for disk 
 {: #vc_vcenterserveroverview-license-and-fee}
 
 * VMware vSphere Enterprise Plus 7.0 (NSX-T only)
-* VMware vCenter Server 7.0
+* VMware vCenter Server 7.0 or later
 * VMware NSX Service Providers Edition (Base, Advanced, or Enterprise) 6.4
 * (For vSAN clusters) VMware vSAN Advanced or Enterprise 7.0
 * Support and Services fee (one license per node)

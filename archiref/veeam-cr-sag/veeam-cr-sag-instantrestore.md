@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2022
+  years:  2022, 2024
 
-lastupdated: "2022-05-30"
+lastupdated: "2024-01-26"
 
 subcollection: vmwaresolutions
 
@@ -150,10 +150,10 @@ OpenSSH                    ALLOW       10.38.207.142              # Allow SSH fr
 
 The instant recovery session can be stopped by using the following command `Get-VBRInstantRecovery | Where-Object {$_.VMName -eq $RestoredVMName} | Stop-VBRInstantRecovery`.
 
-For a use case where a cyberadmin uses the Veeam data integration API to access the cyberbackup, see [create a Veeam Linux managed server](/docs/vmwaresolutions/?topic=vmwaresolutions-veeam-cr-sag-lnxmgdsvr).
+For a use case where a cyberadmin uses the Veeam data integration API to access the cyberbackup, see [create a Veeam Linux managed server](/docs/vmwaresolutions?topic=vmwaresolutions-veeam-cr-sag-lnxmgdsvr).
 
 ## Related links
 {: #veeam-cr-sag-instantrestore-related}
 
-* [Cyber recovery with Veeam architecture overview](/docs/vmwaresolutions/?topic=vmwaresolutions-veeam-cr-sa-overview)
+* [Cyber recovery with Veeam architecture overview](/docs/vmwaresolutions?topic=vmwaresolutions-veeam-cr-sa-overview)
 

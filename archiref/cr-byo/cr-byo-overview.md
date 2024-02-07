@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2023
+  years:  2023, 2024
 
-lastupdated: "2023-09-11"
+lastupdated: "2024-01-30"
 
 subcollection: vmwaresolutions
 
@@ -95,6 +95,6 @@ Review the following information about network connectivity for your cyber-recov
 
 * [Commvault - Enterprise data solutions](https://www.commvault.com){: external}
 * [Dell PowerProtect DD Virtual edition data sheet](https://www.delltechnologies.com/asset/en-my/products/data-protection/technical-support/h17925-dellemc-powerprotect-ddve-ds.pdf){: external}
-* [IBM Spectrum Protect](https://www.ibm.com/products/data-protection-and-recovery){: external}
-* [IBM Spectrum Protect Plus](https://www.ibm.com/products/ibm-spectrum-protect-plus){: external}
+* [IBM Spectrum Protect](https://www.ibm.com/products/storage-protect){: external}
+* [IBM Spectrum Protect Plus](https://www.ibm.com/products/ibm-storage-protect-plus){: external}
 * [Rubrik - Remote and Branch Office backup software](https://www.rubrik.com/solutions/remote-branch-office){: external}

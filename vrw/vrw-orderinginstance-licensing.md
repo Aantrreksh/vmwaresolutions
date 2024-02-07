@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2020, 2023
+  years:  2020, 2024
 
-lastupdated: "2023-08-08"
+lastupdated: "2024-01-29"
 
 keywords: vmware regulated workloads, vmware regulated workloads order instance, order vmware regulated workloads, vmware regulated workloads instances
 
@@ -18,7 +18,7 @@ subcollection: vmwaresolutions
 {: #vrw-orderinginstance-licensing}
 
 Specify the licensing options for the following VMware® components in the instance:
-* VMware vCenter Server® Standard 7.0
+* VMware vCenter Server® Standard 7.0 or later
 * VMware vSphere® Enterprise Plus 7.0
 * VMware NSX® 4.1 Enterprise edition (Data Center SP Advanced or Data Center SP Enterprise Plus)
 

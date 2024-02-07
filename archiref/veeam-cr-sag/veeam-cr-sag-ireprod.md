@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2023
+  years:  2023, 2024
 
-lastupdated: "2023-04-18"
+lastupdated: "2024-01-26"
 
 subcollection: vmwaresolutions
 
@@ -182,11 +182,11 @@ Disconnect-VIServer -Confirm:$false
 
 The steps are completed for creating the cyber-recovery isolated environment solution architecture.
 
-For a use case where a cyberadmin uses a PowerShell script that uses Veeam to do an instant restore of a production VM from the cyberbackup, see [Instant restore](/docs/vmwaresolutions/?topic=vmwaresolutions-veeam-cr-sag-instantrestore).
+For a use case where a cyberadmin uses a PowerShell script that uses Veeam to do an instant restore of a production VM from the cyberbackup, see [Instant restore](/docs/vmwaresolutions?topic=vmwaresolutions-veeam-cr-sag-instantrestore).
 
-Additionally, for a use case where a cyberadmin uses the Veeam data integration API to access the cyberbackup, see [create a Veeam Linux managed server](/docs/vmwaresolutions/?topic=vmwaresolutions-veeam-cr-sag-lnxmgdsvr).
+Additionally, for a use case where a cyberadmin uses the Veeam data integration API to access the cyberbackup, see [create a Veeam Linux managed server](/docs/vmwaresolutions?topic=vmwaresolutions-veeam-cr-sag-lnxmgdsvr).
 
 ## Related links
 {: #veeam-cr-sag-ireprod-related}
 
-* [Cyber recovery with Veeam architecture overview](/docs/vmwaresolutions/?topic=vmwaresolutions-veeam-cr-sa-overview)
+* [Cyber recovery with Veeam architecture overview](/docs/vmwaresolutions?topic=vmwaresolutions-veeam-cr-sa-overview)

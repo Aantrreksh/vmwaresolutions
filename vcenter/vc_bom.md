@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2023
+  years:  2016, 2024
 
-lastupdated: "2023-10-31"
+lastupdated: "2024-01-23"
 
 keywords: vCenter Server BOM, bill of materials vCenter Server, BOM
 
@@ -39,10 +39,10 @@ The following table details the BOM information for vCenter Server software comp
 | Manufacturer | Component | Version |
 |:------------ |:--------- |:------- |
 | VMware       | vSphere ESXi | ESXi 7.0 Update 3o (build 22348816)[^esxi70] or \n ESXi 6.7 P08 (20497097)[^esxi67] |
-| VMware       | Distributed vSwitch | 7.0.0[^vcs-vsphere700] or 6.6.0[^vcs-vsphere660]
-| VMware       | vCenter Server Appliance | 7.0 Update 3o (22357613) |
+| VMware       | Distributed vSwitch | 8.0.0 or 7.0.0[^vcs-vsphere700] or 6.6.0[^vcs-vsphere660]
+| VMware       | vCenter Server Appliance | 8.0 Update 2a (22617221) or \n 7.0 Update 3p (22837322) |
 | VMware       | vSAN[^vsan] | 7.0 Update 3l (21424296) |
-| VMware       | NSX for vSphere[^nsxt] | 4.1.0.2 (21761695) |
+| VMware       | NSX for vSphere[^nsxt] | 4.1.2.1 (22667789) |
 | VMware       | NSX-V for vSphere[^nsxv] | 6.4.13 (19307994) |
 | Microsoft®   | Windows® Server Standard edition | 2019 |
 | Microsoft    | Active Directory™ domain functional level | 2016 (WinThreshold)[^domain] |
@@ -103,9 +103,9 @@ Review the following table for an overview of the VMware NSX and port group conf
 | NSX VXLAN cluster-teaming policy |Load Balance - SRCID |
 | NSX VXLAN cluster VTEP | 2 |
 | Segment ID pool for primary instance | 6000 - 7999 |
-| Segment ID pool for subsequent secondary instance or instances | Previous end range in the multisite configuration + 1 to the previous end range in the multisite configuration + 2000 |  
+| Segment ID pool for subsequent secondary instance or instances | Previous end range in the multisite configuration + 1 to the previous end range in the multisite configuration + 2000 |
 | Port group SDDC-DPortGroup-vSAN (if applicable) | **Active uplinks** set to **uplink2** and **Standby uplinks** set to **uplink1** |
-| Port group SDDC-DPortGroup-Mgmt | **Port binding** set to **Static binding** and **Load balancing** set to **Route based on physical NIC load** |  
+| Port group SDDC-DPortGroup-Mgmt | **Port binding** set to **Static binding** and **Load balancing** set to **Route based on physical NIC load** |
 | Port group SDDC-DPortGroup-External | **Port binding** set to **Static binding** |
 {: caption="Table 5. NSX and port group configuration settings for vCenter Server instances" caption-side="bottom"}
 

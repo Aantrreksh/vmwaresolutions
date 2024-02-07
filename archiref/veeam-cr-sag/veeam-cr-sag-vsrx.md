@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2023
+  years:  2023, 2024
 
-lastupdated: "2023-05-01"
+lastupdated: "2024-02-02"
 
 subcollection: vmwaresolutions
 
@@ -24,9 +24,9 @@ The document also describes a second Ansible playbook that can be used to schedu
 
 The playbook might be extended to trigger the Veeam backup job instead of running the backup job on a schedule controlled by the Veeam backup server. For more information about using the Veeam PowerShell module, see [Start-VBRJob](https://helpcenter.veeam.com/docs/backup/powershell/start-vbrjob.html?ver=120){: external}.
 
-As an alternative, scripts can be used before and after the backup job that connects to the automation server and initiates the Ansible playbook. For more information, see [Script settings](https://helpcenter.veeam.com/docs/backup/vsphere/backup_job_advanced_scripts_vm.html?ver=120){: external} and [New-PSSession](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/new-pssession?view=powershell-7.2){: external}.
+As an alternative, scripts can be used before and after the backup job that connects to the automation server and initiates the Ansible playbook. For more information, see [Script settings](https://helpcenter.veeam.com/docs/backup/vsphere/backup_job_advanced_scripts_vm.html?ver=120){: external} and [New-PSSession](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/new-pssession?view=powershell-7.2){: external}.
 
-The New-PSSession module requires PowerShell 7. For more information, see [Installing the MSI package](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.2#msi){: external}.
+The New-PSSession module requires PowerShell 7. For more information, see [Installing the MSI package](https://learn.microsoft.com/en-us/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.2#msi){: external}.
 {: note}
 
 Another option is to use the Posh-Junos® PowerShell module to interface with the vSRX directly from the Veeam backup server. For more information, see [Scripting how to: Windows® PowerShell](https://community.juniper.net/browse/blogs/blogviewer?blogkey=0903395c-8f62-433d-be52-ad636d75ed9c){: external}.
@@ -202,17 +202,17 @@ The following file `sched_airgap.yml` uses cron on the automation server to open
 ```
 {: codeblock}
 
-If you are creating the cyber-recovery isolated recovery environment solution architecture, then see [Production environment configuration](/docs/vmwaresolutions/?topic=vmwaresolutions-veeam-cr-sag-ireprod) for details.
+If you are creating the cyber-recovery isolated recovery environment solution architecture, then see [Production environment configuration](/docs/vmwaresolutions?topic=vmwaresolutions-veeam-cr-sag-ireprod) for details.
 
 ## Related links
 {: #veeam-cr-sag-vsrx-related}
 
-* [Cyber recovery with Veeam architecture overview](/docs/vmwaresolutions/?topic=vmwaresolutions-veeam-cr-sa-overview)
+* [Cyber recovery with Veeam architecture overview](/docs/vmwaresolutions?topic=vmwaresolutions-veeam-cr-sa-overview)
 * [Juniper vSRX overview](/docs/vmwaresolutions?topic=vmwaresolutions-juniper-overview)
 * [Managing Juniper vSRX](/docs/vmwaresolutions?topic=vmwaresolutions-juniper-managing)
 * [Juniper Networks vSRX deployment and operation with vCenter Server on {{site.data.keyword.cloud_notm}}](/docs/vmwaresolutions?topic=vmwaresolutions-vcsvsrx-intro)
 * [Managing VLANs with a gateway appliance](/docs/gateway-appliance?topic=gateway-appliance-managing-vlans-and-gateway-appliances)
-* [{{site.data.keyword.cloud_notm}} IP ranges](/docs/gateway-appliance?topic=cloud-infrastructure-ibm-cloud-ip-ranges)
+* [{{site.data.keyword.cloud_notm}} IP ranges](/docs/gateway-appliance?topic=gateway-appliance-ibm-cloud-ip-ranges)
 * [VLANs and subnets in {{site.data.keyword.vmwaresolutions_full}}](/docs/vmwaresolutions?topic=vmwaresolutions-vmwaresol_ports-vlans-subnets)
 * [Ports that are used for deployment and Day 2 operations](/docs/vmwaresolutions?topic=vmwaresolutions-vmwaresol_ports-deploy-day2ops)
 * [Ports used by {{site.data.keyword.vmwaresolutions_short}}](/docs/vmwaresolutions?topic=vmwaresolutions-vmwaresol_ports-vmwareuses)

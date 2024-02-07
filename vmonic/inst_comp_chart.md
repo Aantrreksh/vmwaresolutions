@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2023
+  years:  2016, 2024
 
-lastupdated: "2023-08-01"
+lastupdated: "2024-01-23"
 
 keywords: vmware offering, vmware solutions functions, function support
 
@@ -27,15 +27,15 @@ Review the following table to understand the differences in feature support for 
 | Feature | vCenter Server | VMware vSphere |
 |:------- |:-------------- |:-------------- |
 | Powered by {{site.data.keyword.IBM}} advanced automation[^automation] | Yes | No. Self-built and configured. |
-| Storage options | * NFS or vSAN™ available with automation \n * iSCSI available with manual configuration | NFS, vSAN, or iSCSI available with manual configuration |
+| Storage options | * NFS or vSAN™ - available with automation \n * iSCSI - available with manual configuration | NFS, vSAN, or iSCSI - available with manual configuration |
 | Number of ESXi™ servers in the initial cluster | For vSAN: 4 servers \n \n For NFS: \n * At least 3 servers for consolidated clusters \n * At least 2 servers for other clusters | No limitation. One or more ESXi servers as allowed on the console. For example, you can deploy a 3-node vSAN cluster with FTT=1. |
 | Maximum number of ESXi servers | * 51 per consolidated cluster \n * 59 per workload cluster | 59 per cluster |
-| Cloud automated multisite deployment | Supported for new instances | Supported. Automated configuration not included. |
-| Add or remove ESXi servers | Supported | Supported. Automated configuration not included. |
-| Multicluster support | Maximum number depends on VMware® sizing guidelines | Supported. Automated configuration not included. |
+| Cloud automated multisite deployment | Supported for new instances | Supported. Automated configuration - not included. |
+| Add or remove ESXi servers | Supported | Supported. Automated configuration - not included. |
+| Multicluster support | Maximum number depends on VMware® by Broadcom sizing guidelines | Supported. Automated configuration - not included. |
 | Client-managed updating and patching of VMware stack | Client-managed updates - Native VMware tools (VMware Update Manager™)[^nsxv1] | Client-managed updates - Native VMware tools (VMware Update Manager) |
-| Backup and restore | Manually, by using Veeam® | Backup and restore solution not included |
-| Software-defined networking[^nsxvexist] | NSX DC SP Base, Professional, Advanced, or Enterprise Plus | NSX DC SP Base, Professional, Advanced, or Enterprise Plus. Automated configuration not included. |
+| Backup and restore | Manually, by using Veeam® | Backup and restore solution - not included |
+| Software-defined networking[^nsxvexist] | NSX DC SP Base, Professional, Advanced, or Enterprise Plus | NSX DC SP Base, Professional, Advanced, or Enterprise Plus. Automated configuration - not included. |
 | NSX license upgrade options[^nsxv3] | Upgrade available from NSX Advanced to Enterprise. | None |
 | vSAN license editions | vSAN Advanced or Enterprise | vSAN Advanced or Enterprise |
 | Add-on services | Supported[^services] | Not supported by the automation of this solution. You can bring and install your own software. |
@@ -49,7 +49,7 @@ Review the following table to understand the differences in feature support for 
 
 [^nsxv3]: Existing NSX-V instances only
 
-[^services]: Add-on services supported might vary.
+[^services]: Add-on services that are supported might vary.
 
 ## vCenter Server vs VMware Regulated Workloads
 {: #inst_comp_chart-vcs-vrw}

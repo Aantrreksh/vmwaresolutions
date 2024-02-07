@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2023
+  years:  2023, 2024
 
-lastupdated: "2023-09-11"
+lastupdated: "2024-02-02"
 
 keywords: dizzion service, request dizzion, tech specs dizzion
 
@@ -44,4 +44,4 @@ You can expect the following benefits when you request Dizzion for {{site.data.k
 ## Related links
 {: #dizzion-overview-related}
 
-* [Dizzion product documentation](https://help.dizzion.com/en_US/product-documentation){: external}
+* [Dizzion Support Center](https://support.dizzion.com/hc/en-us/){: external}

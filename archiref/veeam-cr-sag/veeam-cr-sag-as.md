@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2022
+  years:  2022, 2024
 
-lastupdated: "2022-05-27"
+lastupdated: "2024-01-26"
 
 subcollection: vmwaresolutions
 
@@ -90,4 +90,4 @@ ibmcloud sl vs create --hostname $hostname --domain $domain --cpu $vcpu --memory
 ## Related links
 {: #veeam-cr-sag-as-related}
 
-* [Cyber recovery with Veeam architecture overview](/docs/vmwaresolutions/?topic=vmwaresolutions-veeam-cr-sa-overview)
+* [Cyber recovery with Veeam architecture overview](/docs/vmwaresolutions?topic=vmwaresolutions-veeam-cr-sa-overview)

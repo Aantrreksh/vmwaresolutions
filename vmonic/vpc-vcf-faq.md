@@ -2,10 +2,10 @@
 
 copyright:
 
-  years:  2023
+  years:  2023, 2024
 
-lastupdated: "2023-12-04"
-  
+lastupdated: "2024-02-06"
+
 keywords: vmware cloud foundation, IBM Cloud, vpc, faq
 
 subcollection: vmwaresolutions
@@ -22,7 +22,7 @@ subcollection: vmwaresolutions
 {: #vpc-vcf-faq-vcf-glossary}
 {: faq}
 
-You can use the VMware Cloud Foundation™ documentation for most Day 2 operations. For more information, see [About getting started with VMware Cloud Foundation](https://docs.vmware.com/en/VMware-Cloud-Foundation/4.5/vcf-getting-started/GUID-F77789E2-5A3E-4055-AA4D-904DB2DDC8C3.html?hWord=N4IghgNiBcIG4FsDuYBOBTABAYwgewFcATTAM0IDsiwAXASzwpAF8g){: external}. 
+You can use the VMware Cloud Foundation™ documentation for most Day 2 operations. For more information, see [About getting started with VMware Cloud Foundation](https://docs.vmware.com/en/VMware-Cloud-Foundation/4.5/vcf-getting-started/GUID-F77789E2-5A3E-4055-AA4D-904DB2DDC8C3.html?hWord=N4IghgNiBcIG4FsDuYBOBTABAYwgewFcATTAM0IDsiwAXASzwpAF8g){: external}.
 
 Exceptions apply, some of which are documented in this FAQ. If you need assistance for the administration of your VMware Cloud Foundation instance, open an IBM Support ticket by following the steps in [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support).
 
@@ -115,7 +115,7 @@ In {{site.data.keyword.cloud_notm}} for VMware Cloud Foundation instances, the H
 
 When you deploy the solution, it is recommended to select a large enough NSX and edge node size.
 
-## Can I deploy more clusters in another zone in my {{site.data.keyword.vpc_short}}? 
+## Can I deploy more clusters in another zone in my {{site.data.keyword.vpc_short}}?
 {: #vpc-vcf-faq-vpc-zones}
 {: faq}
 
@@ -131,7 +131,7 @@ Currently, for VMware Cloud Foundation instances, all principal and supplemental
 {: #vpc-vcf-faq-passwords-vcf}
 {: faq}
 
-The initial passwords for your VMware Cloud Foundation instance are randomly generated as part of the provisioning and starting procedure. 
+The initial passwords for your VMware Cloud Foundation instance are randomly generated as part of the provisioning and starting procedure.
 
 During initial deployment, the VMware Solutions automation creates an IBM Automation account that is named **ibm_admin**, which will be used only to get your updated password. If you changed the initial password, retrieving the updated password is necessary for running Day 2 operations, such as adding or removing hosts.
 
@@ -159,7 +159,7 @@ For more information, see:
 * [Password management](https://docs.vmware.com/en/VMware-Cloud-Foundation/4.5/vcf-admin/GUID-1D25D0B6-E054-4F49-998C-6D386C800061.html?hWord=N4IghgNiBcIA5gM6IO4HsBOATABAWzADswBzAUzzMIBcQBfIA){: external}
 * [Password policy configuration for VMware Cloud Foundation](https://docs.vmware.com/en/VMware-Cloud-Foundation/4.5/vcf-operations/GUID-18A95158-30F5-460F-AF80-33F25B6533D0.html){: external}
 
-## I have an issue with my VMware Cloud Foundation™ passwords, what can I do?
+## I have an issue with my VMware Cloud Foundation passwords, what can I do?
 {: #vpc-vcf-faq-passwords}
 {: faq}
 
@@ -176,14 +176,14 @@ SSH into the SDDC manager by using user `vcf`. You can view the passwords by usi
 
    1. Request a bearer token to access the APIs: `curl -X POST -H "Content-Type: application/json" -d '{"username": "username@domain","password": "password"}' --insecure https://localhost/v1/tokens | json_pp`
    2. Run the lookup API: `curl -X GET -H "Content-Type:application/json" -H  "Authorization: Bearer <token value>"  'localhost/v1/credentials?resourceType=PSC' | json_pp`
-   
+
       For more information, see [VMware Cloud Foundation API reference](https://developer.vmware.com/apis/vcf/4.5.1/credentials/){: external}.
 
 ## How do I back up and restore VMware Cloud Foundation components?
 {: #vpc-vcf-faq-operations-backups-vcf}
 {: faq}
 
-VMware Cloud Foundation system backups are configured to use SDDC manager. Backups are configured to use the folder `/nfs/vmware/vcf/nfs-mount/backup` on the SDDC manager. You can change this configuration post-deplyoment to fit your own backup requirements.  
+VMware Cloud Foundation system backups are configured to use SDDC manager. Backups are configured to use the folder `/nfs/vmware/vcf/nfs-mount/backup` on the SDDC manager. You can change this configuration post-deplyoment to fit your own backup requirements.
 
 For more information about how to back up and restore VMware Cloud Foundation, see [Backup and restore of VMware Cloud Foundation](https://docs.vmware.com/en/VMware-Cloud-Foundation/4.5/vcf-admin/GUID-F8634D37-FA26-40DF-A135-62D0265DA4FA.html){: external}.
 

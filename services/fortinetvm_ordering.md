@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2023
+  years:  2016, 2024
 
-lastupdated: "2023-12-11"
+lastupdated: "2024-02-06"
 
 keywords: FortiGate VA, FortiGate configuration, order FortiGate
 
@@ -38,7 +38,7 @@ Review the following considerations before you install the FortiGate Virtual App
    * At least 2 VMware ESXi™ servers are available and each active host has sufficient resources to host a single FortiGate VM.
    * VMware® vSphere HA has enough resources to host two FortiGate VMs.
 
-   Because of the requirements, you must plan carefully for the space that is needed for the FortiGate Virtual Appliance. If needed, before you order FortiGate Virtual Appliance, add 1 - 2 ESXi servers to your instance, or reduce the vSphere HA CPU reservation for failover, or both.      
+   Because of the requirements, you must plan carefully for the space that is needed for the FortiGate Virtual Appliance. If needed, before you order FortiGate Virtual Appliance, add 1 - 2 ESXi servers to your instance, or reduce the vSphere HA CPU reservation for failover, or both.
 
 The following table shows the configuration of network and storage for your FortiGate Virtual Appliance, depending on where they are deployed.
 
@@ -48,17 +48,17 @@ The following table shows the configuration of network and storage for your Fort
 | Storage | Management data store (vSAN or NFS) | Local data store |
 {: caption="Table 2. Network and storage configuration" caption-side="bottom"}
 
-## Ordering FortiGate Virtual Appliance for a new instance
+## Ordering FortiGate Virtual Appliance for new instances
 {: #fortinetvm_ordering-new}
 
-1. When you [order the instance](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-procedure), scroll down to the **Add-on services** section. FortiGate Virtual Appliance is in the **Security and compliance** category. 
+1. When you [order the instance](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-procedure), scroll down to the **Add-on services** section. FortiGate Virtual Appliance is in the **Security and compliance** category.
 2. Open the category, locate FortiGate Virtual Appliance, and toggle its switch on.
 3. Click **Edit** to review and specify [the configuration information](/docs/vmwaresolutions?topic=vmwaresolutions-fortinetvm_ordering#fortinetvm_ordering-config), then click **Save**.
 
 You cannot install Juniper® vSRX and FortiGate Virtual Appliance on the same gateway cluster.
 {: restriction}
 
-## Ordering FortiGate Virtual Appliance for an existing instance
+## Ordering FortiGate Virtual Appliance for existing instances
 {: #fortinetvm_ordering-existing}
 
 1. On the instance details page, click the **Services** tab.
@@ -131,7 +131,7 @@ The monthly subscription license model for FortiGate Virtual Appliance offers th
     * Security rating - This service provides audit capabilities to identify critical vulnerabilities and configuration weaknesses and implement best practice recommendations.
 
 You can't change the monthly subscription license model after service installation. To change the monthly subscription license model, you must delete the existing service and reinstall the service by selecting a different license option.
-{: important}
+{: attention}
 
 ## Related links
 {: #fortinetvm_ordering-related}
@@ -142,4 +142,4 @@ You can't change the monthly subscription license model after service installati
 * [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support)
 * [FAQ](/docs/vmwaresolutions?topic=vmwaresolutions-faq-vmwaresolutions)
 * [Fortinet website](https://www.fortinet.com/){: external}
-* [Fortinet Document Library](https://docs.fortinet.com/product/fortigate/6.2){: external}
+* [Fortinet Document Library](https://docs.fortinet.com/product/fortigate/7.4){: external}

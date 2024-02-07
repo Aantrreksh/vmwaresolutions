@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2023
+  years:  2016, 2024
 
-lastupdated: "2023-09-08"
+lastupdated: "2024-01-31"
 
 subcollection: vmwaresolutions
 
@@ -31,7 +31,7 @@ Day 2 responsibilities include the following items:
 * Incident and Problem Management - You are responsible for incident and problem management of your vCenter Server instances after deployment. You must have tools and processes to detect incidents, record the issues, classify their severity, escalate, and return the failing component to service.
 * Capacity Management - You are responsible for capacity management of your vCenter Server instances, adding or removing additional capacity to match business demands. For more information, see [Adding ESXi servers to vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservers) and [Adding clusters for vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingclusters).
 * Data Recovery - You are responsible for all backup and restoration of the components in the vCenter Server instance, including vCenter Server Appliance, NSX Manager, virtual appliances, virtual machines, and content libraries. Use optional services, such as [Veeam](/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview) or implement your own enterprise systems.
-* Bare metal server firmware - You are responsible for updating out-of-date firmware. For more information, see [FAQs: Bare metal servers](/docs/bare-metal?topic=bare-metal-bm-faq#what-if-my-bare-metal-server-has-out-of-date-firmware-).
+* Bare metal server firmware - You are responsible for updating out-of-date firmware. For more information, see [FAQs: Bare metal servers](/docs/virtual-servers?topic=virtual-servers-bm-faq).
 * VMware software updates - Updates to the VMware software, such as fixes and service packs, are necessary to maintain the health and availability of your vCenter Server instance. Review these updates and apply them periodically. For more information, see [VMware update manager introduction](/docs/vmwaresolutions?topic=vmwaresolutions-vum-intro).
 * VMware software upgrades - You must upgrade existing vCenter Server instances to continue to benefit from the automation. For more information, see [Upgrading vCenter Server vSphere software from vSphere 6.5 or 6.7 to 7.0](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vsphere_70_upgrade).
 * IBM provides notification of scheduled maintenance at [Planned maintenance](https://cloud.ibm.com/status?selected=maintenance).

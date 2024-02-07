@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2020, 2023
+  years:  2020, 2024
 
-lastupdated: "2023-10-05"
+lastupdated: "2024-02-06"
 
 keywords: Juniper vSRX, manage Juniper vSRX, Juniper vSRX virtual security appliance, Juniper virtual security appliance, Juniper vSRX console
 
@@ -32,7 +32,7 @@ You can install Juniper vSRX as one of the following components:
 * As a security or gateway appliance on the gateway cluster. In this case, Juniper vSRX works like a gateway appliance, which you can set without having to configure any devices. Juniper vSRX protects all clusters in the same pod and data center. With this deployment, you route all traffic in the same pod and data center to protect a broader portion of the system.
 
    You cannot install Juniper vSRX and FortiGate Virtual Appliance on the same gateway cluster.
-   {: important}
+   {: restriction}
 
 Juniper vSRX is built on the Junos® operating system (Junos OS™) and delivers networking and security features similar to ones on the software releases for SRX Series Services Gateways.
 
@@ -54,7 +54,7 @@ You can manage this service by using the J-Web interface link that is provided o
 
 For more information about resource requirements and capacity checking for some services, see [Resource requirements for services](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices#vc_addingservices-resource-requirements).
 
-The following components are ordered and included in the Juniper vSRX service:
+The following components are ordered and included in the Juniper vSRX service.
 
 ### Virtual machines
 {: #juniper-overview-specs-vms}
@@ -90,7 +90,7 @@ Each license type includes a different set of features and options. The Content 
 * SSL Proxy
 
 On 25 Gb uplink speed clusters, only the Content Security Bundle license is available.
-{: note}
+{: restriction}
 
 For more information about the features and options in each license, see [Choosing a vSRX license](/docs/vsrx?topic=vsrx-getting-started#choosing-license).
 
@@ -119,6 +119,5 @@ For more information about extra configuration options that you might want to in
 * [Ordering services for vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices)
 * [Viewing services for vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_viewingservices)
 * [Deleting services from vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_deletingservices)
-* [Juniper vSRX Virtual Firewall](https://www.juniper.net/us/en/products-services/security/srx-series/vsrx/){: external}
-* [Overview of the available virtual SRX models, vSRX, and vSRX 3.0](https://kb.juniper.net/InfoCenter/index?page=content&id=KB33572){: external}
-
+* [Juniper vSRX Virtual Firewall](https://www.juniper.net/us/en/products/security/srx-series/vsrx-virtual-firewall.html){: external}
+* [Overview of the available virtual SRX models, vSRX, and vSRX 3.0](https://supportportal.juniper.net/s/article/Overview-of-the-available-virtual-SRX-models-vSRX-and-vSRX-3-0?language=en_US){: external}

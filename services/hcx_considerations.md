@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2023
+  years:  2016, 2024
 
-lastupdated: "2023-10-03"
+lastupdated: "2024-02-06"
 
 keywords: VMware HCX, HCX, tech specs HCX
 
@@ -24,7 +24,7 @@ The VMware HCX service is not available to Business Partner users.
 VMware HCX™ on {{site.data.keyword.cloud}} extends the networks of on-premises data centers into {{site.data.keyword.cloud}}, and it helps you migrate virtual machines (VMs) to and from {{site.data.keyword.cloud_notm}} without any conversion or change. HCX creates an abstraction layer that enables application mobility and infrastructure hybridity through securely stretched networks. You can modernize your VMware® environment without the need to refactor or modify your existing application, as HCX enables a seamless transformation. With HCX, you can bring your IP subnet ranges into {{site.data.keyword.cloud_notm}} and ensure the IP consistency through a hybrid deployment and by providing high-level security with end-to-end Suite B encryptions. VMware HCX on {{site.data.keyword.cloud_notm}} is a non-IBM product that is offered under terms and conditions from VMware, not IBM.
 {: shortdesc}
 
-The HCX version available for deployment is periodically updated to the most recent version of HCX. VMware® requires you to be on one of their supported versions in order for you to open a support request for HCX. For more information, see the [VMware HCX release notes](https://docs.vmware.com/en/search/#/VMware%20HCX%20Release%20Notes){: external}.
+The HCX version available for deployment is periodically updated to the most recent version of HCX. VMware® by Broadcom requires you to be on one of their supported versions in order for you to open a support request for HCX. For more information, see the [VMware HCX release notes](https://docs.vmware.com/en/search/#/VMware%20HCX%20Release%20Notes){: external}.
 {: note}
 
 For VMware vCenter Server with NSX-T™ instances, HCX is supported for NSX-T 3.1 or later and for VMware vSphere® 7. HCX requires you to use one of the following licenses from {{site.data.keyword.cloud_notm}}:
@@ -34,16 +34,12 @@ For VMware vCenter Server with NSX-T™ instances, HCX is supported for NSX-T 3.
 * NSX Data Center SP Advanced
 * NSX Data Center SP Enterprise Plus
 
-For vCenter Server® with NSX-V instances (VMware Solutions V4.7 and earlier), HCX is supported for vSphere 6.7. HCX requires you to use one of the following licenses from {{site.data.keyword.cloud_notm}}:
-
-* NSX Advanced
-* NSX Enterprise
-
-For more information, see [Comparison chart for VMware NSX-T, NSX-V, and vSAN](/docs/vmwaresolutions?topic=vmwaresolutions-solution-appendix).
+For vCenter Server® with NSX-V instances (VMware Solutions V4.7 and earlier), HCX is supported for vSphere 6.7. HCX requires you to use one the NSX Advanced or the NSX Enterprise license from {{site.data.keyword.cloud_notm}}. For more information, see [Comparison chart for VMware NSX-T, NSX-V, and vSAN](/docs/vmwaresolutions?topic=vmwaresolutions-solution-appendix).
 
 {{site.data.content.para-promotion-services}}
 
 A VMware vCenter Server® instance with HCX is limited to three simultaneous connections from on-premises sites.
+{: restriction}
 
 ## Technical specifications for HCX
 {: #hcx_considerations-specs}
@@ -51,7 +47,7 @@ A VMware vCenter Server® instance with HCX is limited to three simultaneous con
 The following components are ordered and included in the HCX service.
 
 On-premises HCX instances include only licensing and activation.
-{: note}
+{: restriction}
 
 ### HCX Management Appliance VM
 {: #hcx_considerations-vm}

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2023
+  years:  2016, 2024
 
-lastupdated: "2023-08-10"
+lastupdated: "2024-02-02"
 
 subcollection: vmwaresolutions
 
@@ -35,7 +35,7 @@ To enable vSphere encryption or vSAN encryption by using KMIP for VMware, you ne
 1. [Enable service endpoints in your account](/docs/account?topic=account-vrf-service-endpoint#service-endpoint).
 2. Create a key manager instance, by using either [IBM Key Protect](/docs/key-protect?topic=key-protect-getting-started-tutorial) or [{{site.data.keyword.cloud_notm}} Hyper Protect Crypto Services](/docs/hs-crypto?topic=hs-crypto-get-started#get-started). If you are using Hyper Protect Crypto Services (HPCS), be sure to [initialize your crypto instance](/docs/hs-crypto?topic=hs-crypto-initialize-hsm#initialize-hsm) so that Hyper Protect Crypto Services can provide key-related functions.
 3. Create a customer root key (CRK) within your key manager instance.
-4. If you are using Key Protect, create an Identity and Access Management (IAM) [API key for a service ID](/docs/account?topic=account-serviceidapikeys#create_service_key) for use with KMIP for VMware. Grant this service ID both Platform **Viewer** access and Service **Write** access to your Key Protect instance.
+4. If you are using Key Protect, create an Identity and Access Management (IAM) [API key for a service ID](/docs/account?topic=account-serviceidapikeys&interface=ui#create_service_key) for use with KMIP for VMware. Grant this service ID both Platform **Viewer** access and Service **Write** access to your Key Protect instance.
 5. [Create a KMIP for VMware instance](/docs/vmwaresolutions?topic=vmwaresolutions-kmip_standalone_ordering) from the {{site.data.keyword.vmwaresolutions_short}} console.
 6. If you are using HPCS, create an IAM service authorization for your KMIP for VMware instance to your HPCS instance. Grant your KMIP for VMware instance both Platform **Viewer** access and Service **VMware KMIP Manager** access to your HPCS instance.
 7. Configure your KMIP for VMware instance to connect to your Key Protect or HPCS instance and select which CRK to use with KMIP.

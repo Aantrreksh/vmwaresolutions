@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2019, 2023
+  years:  2019, 2024
 
-lastupdated: "2023-04-13"
+lastupdated: "2024-01-30"
 
 subcollection: vmwaresolutions
 
@@ -18,7 +18,7 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.vmwaresolutions_full}} is a deployment service that delivers the automated deployment of a VMware Software Defined Data Center (SDDC), along with optional third-party products, and with {{site.data.keyword.cloud_notm}} bare metal servers and network. After deployment, the systems are managed by the customer, who is responsible for ongoing software patches and updates. The customer has full access to the systems. For more information, see [Customer versus IBM responsibility for vCenter Server](/docs/vmwaresolutions?topic=vmwaresolutions-vc_compl_info#vc_compl_info-responsibility). To enable the deployment lifecycle (additions, removals), {{site.data.keyword.vmwaresolutions_short}} retains user IDs with administrator privileges to deploy and configure the SDDC software.
 
-Active Directory™ (AD) is a foundation of the IT infrastructure for many large enterprises. This document covers best practices for integrating Active Directory Domain Services architecture in {{site.data.keyword.vmwaresolutions_short}}. For the design of Active Directory Domain Services, see [Active Directory Domain Service](https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/active-directory-domain-services){: external}. AD serves as a distributed hierarchical data storage for information about corporate IT infrastructure; devices and users, user credentials, and access privileges based on group membership. It also includes the Domain Name System (DNS) zones and records.
+Active Directory™ (AD) is a foundation of the IT infrastructure for many large enterprises. This document covers best practices for integrating Active Directory Domain Services architecture in {{site.data.keyword.vmwaresolutions_short}}. For the design of Active Directory Domain Services, see [Active Directory Domain Services overview](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/get-started/virtual-dc/active-directory-domain-services-overview){: external}. AD serves as a distributed hierarchical data storage for information about corporate IT infrastructure; devices and users, user credentials, and access privileges based on group membership. It also includes the Domain Name System (DNS) zones and records.
 
 ## Terms used
 {: #adds-intro-terms-used}

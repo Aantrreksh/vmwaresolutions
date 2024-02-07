@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2024
 
-lastupdated: "2024-01-04"
+lastupdated: "2024-02-05"
   
 keywords: vmware cloud foundation, IBM Cloud, vpc
 
@@ -55,25 +55,22 @@ For more information, see [Supported VMware Cloud Foundation architecture models
 ## Supported VMware Cloud Foundation products in {{site.data.keyword.vpc_short}}
 {: #vpc-vcf-ovw-supported-edition}
 
-The following table shows the products that are included.
+The following list shows the products that are included:
 
-| VMware Cloud Foundation products |
-| ------------------ |
-| vSphere Enterprise Plus |
-| vCenter Standard |
-| SDDC Manager |
-| vSAN Enterprise |
-| NSX Enterprise Plus |
-| NSX Advanced Load Balancer |
-| NSX Distributed Firewall |
-| Aria Suite Lifecycle |
-| Aria Suite Enterprise: \n * Aria Operations Enterprise \n * Aria Operations for Logs \n * Aria Automation Enterprise |
-| Aria Operations for Networks Enterprise |
-| VMware HCX Enterprise |
-| Tanzu Kubernetes Grid |
-{: caption="Table 1. Supported products in VMware Cloud Foundation" caption-side="bottom"}
+* vSphere Enterprise Plus
+* vCenter Standard
+* SDDC Manager
+* vSAN Enterprise
+* NSX Enterprise Plus
+* NSX Advanced Load Balancer
+* NSX Distributed Firewall
+* Aria Suite Lifecycle
+* Aria Suite Enterprise (Aria Operations Enterprise, Aria Operations for Logs, and Aria Automation Enterprise)
+* Aria Operations for Networks Enterprise
+* VMware HCX Enterprise
+* Tanzu Kubernetes Grid
 
-In the previous table, the following components are not installed by the VMware Solutions automation. However, you can install them separately after the VMware Cloud Foundation instance is deployed.
+The following components are not installed by the VMware Solutions automation. However, you can install them separately after the VMware Cloud Foundation instance is deployed.
 
 * NSX Distributed Firewall
 * Aria Suite Advanced
@@ -92,4 +89,3 @@ In the previous table, the following components are not installed by the VMware 
 * [{{site.data.keyword.vpc_short}} network design](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-vpc-deployment)
 * [VMware Cloud Foundation architecture overview](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-arch-overview)
 * [IaaS endpoints](/docs/vpc?topic=vpc-service-endpoints-for-vpc#infrastructure-as-a-service-iaas-endpoints)
-* [VMware Cloud Foundation edition matrix](https://www.vmware.com/content/dam/digitalmarketing/vmware/en/pdf/products/cloud-foundation/vmw-vcf-4-edition-matrix.pdf){: external}

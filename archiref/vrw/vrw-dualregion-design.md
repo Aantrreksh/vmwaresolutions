@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2021, 2023
+  years:  2021, 2024
 
-lastupdated: "2023-09-26"
+lastupdated: "2024-02-02"
 
 subcollection: vmwaresolutions
 
@@ -156,7 +156,7 @@ The following post deployment activities are required to create the deployment s
 * Remove the Veeam VMs at each region.
 * Order a Windows bare metal server in each region. The specification of this server is documented in [Veeam on bare metal server introduction](/docs/vmwaresolutions?topic=vmwaresolutions-veeam-bms-archi-intro). The small server is adequate for use case 1.
 
-For use cases 2 and 3, the number and sizing of the bare metal servers needs to be calculated. For more information, see [Repository storage](https://bp.veeam.com/vbr/VBP/2_Design_Structures/D_Veeam_Components/D_backup_repositories/repositories%20storage.html){: external}.
+For use cases 2 and 3, the number and sizing of the bare metal servers needs to be calculated. For more information, see [Repository storage](https://bp.veeam.com/vbr/2_Design_Structures/D_Veeam_Components/D_backup_repositories/repositories%20storage.html){: external}.
 
 The protected region bare metal Windows server hosts the following components:
 * Proxy - A proxy is a “data mover” component that is used to retrieve VM data from the source datastore, process it and deliver to the target. As a rule, have the proxy as close as possible to the source data. This proxy is used for management components that are located in the protected region.
@@ -227,7 +227,7 @@ In the VMware Regulated Workloads dual-zone design, the following steps describe
 6. VM backup files are encrypted on disk in the recovery region Veeam Repository with Veeam encryption.
 7. If a restore is needed in the recovery region, the Veeam datastore encryption storage policy is used to reencrypt the VM by using an encryption key from the recovery region HPCS instance through the KMIP for VMware service.
 
-For more information about Veeam encryption, see [Encryption standards](https://helpcenter.veeam.com/docs/backup/vsphere/encryption_standards.html?ver=100){: external}.
+For more information about Veeam encryption, see [Encryption standards](https://helpcenter.veeam.com/archive/backup/100/vsphere/encryption_standards.html){: external}.
 
 In the {{site.data.keyword.cloud_notm}} for VMware® Regulated Workloads dual region design for SaaS Consumer key management, then the same encryption keys are required in the recovery region as used in the protected region. Currently, HPCS does not support the same encryption keys in two regions. If a failure of the first HPCS instance occurs, keys can be restored to another HPCS instance in another region.
 

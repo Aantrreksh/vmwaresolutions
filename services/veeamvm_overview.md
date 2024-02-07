@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2020, 2023
+  years:  2020, 2024
 
-lastupdated: "2023-10-06"
+lastupdated: "2024-01-31"
 
 keywords: Veeam, Veeam Backup and Replication 12, Veeam install, tech specs Veeam, Veeam overview
 
@@ -169,5 +169,5 @@ If you choose the option to install Veeam as a VM, you must provide a MicrosoftÂ
 * [Managing Veeam stand-alone licenses](/docs/vmwaresolutions?topic=vmwaresolutions-veeam_managing_licenses)
 * [Ordering and configuring {{site.data.keyword.cloud_notm}} Object Storage with Veeam](/docs/vmwaresolutions?topic=vmwaresolutions-icos_ordering)
 * [FAQ](/docs/vmwaresolutions?topic=vmwaresolutions-faq-vmwaresolutions)
-* [Veeam Backup and Replication](https://www.ibm.com/cloud/architecture/architectures/virtualization_backup_veeam){: external}
+* [Veeam on IBM Cloud](https://www.ibm.com/products/veeam){: external}
 * [Veeam Help Center (Technical Documentation)](https://www.veeam.com/documentation-guides-datasheets.html){: external}

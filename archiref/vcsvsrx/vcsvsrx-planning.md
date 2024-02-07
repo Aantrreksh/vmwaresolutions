@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2019, 2023
+  years:  2019, 2024
 
-lastupdated: "2023-09-26"
+lastupdated: "2024-02-01"
 
 subcollection: vmwaresolutions
 
@@ -83,11 +83,11 @@ The vCenter Server offering is designed to manage east-west network traffic at t
 
 The required network design changes are modest and include all customer VM traffic no matter the destination, platform management traffic, direct-link traffic, where applicable, and internet bound traffic. Traffic that is explicitly excluded includes VTEP traffic, storage traffic, and vMotion traffic.
 
-NSX can be extended from the compute cluster to the gateway cluster. Or BGP over an IPsec VPN can be used to enable connectivity between the edge and compute clusters. When the traffic that flows between the vCenter Server compute cluster and the gateway cluster is not in conflict with the {{site.data.keyword.cloud_notm}} infrastructure-assigned subnets, the use of a local VLAN and subnet is suitable as a transit link.
+NSX can be extended from the compute cluster to the gateway cluster. Or BGP over an IPsec VPN can be used to enable connectivity between the edge and compute clusters. When the traffic that flows between the vCenter Server compute cluster and the gateway cluster is not in conflict with the {{site.data.keyword.cloud_notm}} infrastructure assigned subnets, the use of a local VLAN and subnet is suitable as a transit link.
 
 BGP over IPsec VPN is the preferred method of connecting to a customer on-premises data center whether the connection traverses the internet or passes between the customer and {{site.data.keyword.cloud_notm}} through one of the {{site.data.keyword.cloud_notm}} infrastructure direct-link offerings.
 
-It is recommened that you review the architecture patterns in the [Architecture pattern for using gateway cluster with NSX-T](/docs/vmwaresolutions?topic=vmwaresolutions-arch-pattern-edge-services-cluster).
+It is recommened that you review the architecture patterns in the [Architecture pattern for using gateway cluster with NSX-T](/docs/vmwaresolutions?topic=vmwaresolutions-arch-pattern-edge-gateway-cluster).
 
 #### Interface mapping for vSRX on VMware
 {: #vcsvsrx-planning-interface-map}
@@ -154,7 +154,7 @@ As noted previously, the default configuration merely represents a point from wh
 ## vSRX to client on-premises connections
 {: #vcsvsrx-planning-client-config}
 
-The preferred method of linking the {{site.data.keyword.cloud_notm}} vCenter Server instance to a client's existing on-premises data center is BGP.
+The preferred method of linking the {{site.data.keyword.cloud_notm}} vCenter Server instance to a client's existing on-premises data center is BGP.  
 
 If the client intends to connect over the Internet by using eBGP, they must obtain a public autonomous system number (ASN) or use BGP over an IPsec VPN to allow the use of private ASNs.
 
@@ -170,8 +170,8 @@ The traffic that originates from the client facility flows through AT&T NetBond 
 {: #vcsvsrx-planning-related}
 
 * [Getting Started with {{site.data.keyword.cloud_notm}} Juniper vSRX](/docs/vsrx?topic=vsrx-getting-started)
-* [Juniper Networks vSRX Deployment Guide for VMware](https://www.juniper.net/documentation/en_US/vsrx/information-products/pathway-pages/security-vsrx-vmware-guide-pwp.html){: external}
-* [Juniper Networks Requirements for vSRX on VMware](https://www.juniper.net/documentation/en_US/vsrx/topics/reference/general/security-vsrx-vmware-system-requirement.html){: external}
-* [Juniper Networks vSRX installation with vSphere Web Client](https://www.juniper.net/documentation/en_US/vsrx/topics/task/installation/security-vsrx-vsphere-client-installing.html){: external}
-* [Juniper Networks configuring a vSRX Chassis Cluster in Junos OS](https://www.juniper.net/documentation/en_US/vsrx/topics/task/multi-task/security-vsrx-chassis-cluster-configuring.html){: external}
+* [Understand vSRX Virtual Firewall with VMware](https://www.juniper.net/documentation/us/en/software/vsrx/vsrx-consolidated-deployment-guide/vsrx-vmware/topics/concept/security-vsrx-vmware-overview.html){: external}
+* [Requirements for vSRX Virtual Firewall on VMware](https://www.juniper.net/documentation/us/en/software/vsrx/vsrx-consolidated-deployment-guide/vsrx-vmware/topics/concept/security-vsrx-vmware-system-requirement.html){: external}
+* [Install vSRX Virtual Firewall with VMware vSphere Web Client](https://www.juniper.net/documentation/us/en/software/vsrx/vsrx-consolidated-deployment-guide/vsrx-vmware/topics/task/security-vsrx-vsphere-client-installing.html){: external}
+* [Configure a vSRX Virtual Firewall Chassis Cluster in Junos OS](https://www.juniper.net/documentation/us/en/software/vsrx/vsrx-consolidated-deployment-guide/vsrx-hyper-v/topics/task/security-vsrx-chassis-cluster-configuring.html){: external}
 * [Configure ECMP on VMware NSX](https://letsv4real.com/2016/09/23/configure-ecmp-on-vmware-nsx/){: external}

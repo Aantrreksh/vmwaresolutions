@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2024
 
-lastupdated: "2024-01-09"
+lastupdated: "2024-02-05"
 
 keywords: vmware cloud editions, order vmware cloud editions, order vmware cloud editions on IBM Cloud, vmware cloud foundation
 
@@ -50,10 +50,14 @@ VMware Cloud Foundation 4.5.2 is installed on your VMware Cloud Foundation insta
 ### Architecture
 {: #vpc-vcf-ordering-archi}
 
-For the Consolidated architecture, instances are deployed with a management domain. To deploy a workload domain with your instance, select the Standard architecture. For more information, see [Supported VMware Cloud Foundation architectures in {{site.data.keyword.vpc_short}}](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-ovw#vpc-vcf-ovw-supported-arch).
+For the **Consolidated** architecture, instances are deployed with a management domain. To deploy a workload domain with your instance, select the **Standard** architecture. 
+
+For more information, see [Supported VMware Cloud Foundation architectures in {{site.data.keyword.vpc_short}}](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-ovw#vpc-vcf-ovw-supported-arch).
 
 ## Deployment
 {: #vpc-vcf-ordering-deployment}
+
+Review the deployment settings.
 
 ### Instance name
 {: #vpc-vcf-ordering-instance-name}
@@ -119,10 +123,12 @@ The bare metal server profile that is used by the hosts in the management domain
 ### Management host list
 {: #vpc-vcf-ordering-mgmt-host-list}
 
+Typically, the management domain is deployed as a cluster of vSphere ESXi hosts, which are managed by a vCenter Server instance. 
+
 #### Number of management hosts
 {: #vpc-vcf-ordering-mgmt-host-number}
 
-Typically, the management domain is deployed as a cluster of vSphere ESXi hosts, which are managed by a vCenter Server instance. It requires a minimum of 4 hosts and it allows a maximum of 25 hosts.
+The management domain requires a minimum of 4 hosts and it allows a maximum of 25 hosts.
 
 The quota for bare metal servers is set to 25 per account by default. To increase the quota for a resource, open an IBM Support ticket by following the steps in [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support).
 {: note}
@@ -183,6 +189,8 @@ A highly available NSX Global Manager instance is deployed in the VMware Cloud F
 ### VCF deployment
 {: #vpc-vcf-ordering-mgmt-vcf-deployment}
 
+Review the VCF deployment settings.
+
 #### VCF data center name
 {: #vpc-vcf-ordering-mgmt-vcf-dc-name}
 
@@ -204,10 +212,12 @@ The bare metal server profile that is used by the hosts in the workload domain. 
 ### Workload host list
 {: #vpc-vcf-ordering-wl-host-list}
 
+The workload domain is deployed as a cluster of vSphere ESXi hosts, which are managed by a vCenter Server instance. 
+
 #### Number of workload hosts
 {: #vpc-vcf-ordering-wl-host-number}
 
-The workload domain is deployed as a cluster of vSphere ESXi hosts, which are managed by a vCenter Server instance. It requires a minimum of 3 hosts and can have a maximum of 25 hosts.
+The workload domain requires a minimum of 3 hosts and can have a maximum of 25 hosts.
 
 The quota for bare metal servers is 25 per account by default. To increase the quota for a resource, open an IBM Support ticket by following the steps in [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support).
 {: note}
@@ -237,6 +247,8 @@ With these settings, you can configure your workload domain in a more flexible w
 ### VCF appliance sizing
 {: #vpc-vcf-ordering-wl-vcf-appliance}
 
+Review the VCF appliance sizing settings.
+
 #### Workload vCenter VM size
 {: #vpc-vcf-ordering-wl-vcf-vc-vm}
 
@@ -259,6 +271,8 @@ You can determine the size of the NSX Edge appliances for the VI workload domain
 
 ## Network interface
 {: #vpc-vcf-ordering-network}
+
+Review the network interface settings.
 
 ### DNS records
 {: #vpc-vcf-ordering-network-dns-records}
@@ -288,6 +302,8 @@ A list of private routes created on NSX-T Tier-0 gateway, which includes all pri
 ## Advanced settings
 {: #vpc-vcf-ordering-adv-settings}
 
+Review the advances settings.
+
 ### Jump server
 {: #vpc-vcf-ordering-adv-settings-jump}
 
@@ -309,7 +325,8 @@ For VMware Cloud Foundation deployment, you can determine whether to use {{site.
 <!-- The {: #step-1} tag and the ordered list that has only 1s are intentional. Do not delete. This coding is necessary for proper indentation when the procedure is translated. -->
 
 1. In the VMware Solutions console, click the **VMware Cloud Foundation** card in the **Featured services** section. {: #step-1}
-1. On the **Create** tab, choose the plan and subscription. To view detailed information of the software bundles contained in each plan, click **Compare plans**.
+1. On the **Create** tab, review the software components included by clicking **View components**.
+1. Choose the subscription type.
 1. Select the VMware Cloud Foundation architecture.
 
 1. Specify the **Deployment** settings.
@@ -358,7 +375,7 @@ For VMware Cloud Foundation deployment, you can determine whether to use {{site.
 ## Results after you placed an order
 {: #vpc-vcf-ordering-procedure-result}
 
-1. After you place the order, the web page will be redirected to the VMware Cloud Foundation page on the VMware Solutions console. The status of the newly created instance is **Creating**.
+1. After you place the order, you are redirected to the VMware Cloud Foundation page and the status of the newly created instance is **Creating**.
 2. After {{site.data.keyword.vpc_short}} resources and required cloud services are deployed, the VMware Cloud Foundation instance will be installed. When deployment is successful, the instance status is **Available**.
 3. The deployment result is sent to the current user by email. 
 

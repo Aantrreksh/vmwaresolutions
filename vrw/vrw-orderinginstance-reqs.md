@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2020, 2023
+  years:  2020, 2024
 
-lastupdated: "2023-04-25"
+lastupdated: "2024-02-06"
 
 keywords: vmware regulated workloads, vmware regulated workloads order instance, order vmware regulated workloads, vmware regulated workloads instances
 
@@ -31,13 +31,13 @@ Ensure that you complete the following tasks:
 |:------------|:------------ |
 | Domain name | `<root_domain>` (Microsoft® Active Directory™ domain name) |  
 | vCenter Server® login username | `<user_id>@<root_domain>` (Microsoft® Active Directory user) or `administrator@vsphere.local` |
-| vCenter Server (with embedded PSC) FQDN | `<instance_name>-vc.<root_domain>`. The maximum length is 50 characters. Any hyphen (-) characters from the instance name are removed. |
+| vCenter Server (with embedded PSC) FQDN | `<instance_name>-vc.<root_domain>`. The maximum length is 50 characters. Any hyphens (-) are removed from the instance name. |
 | Single Sign-On (SSO) site name | `<root_domain>` |
 | Fully qualified ESXi server name | `<host_prefix><n>.<root_domain>`, where `n` is the sequence of the VMware vSphere® ESXi™ server. The maximum length is 50 characters. |
 | NetBIOS name | First string of `<root_domain>`. The maximum length is 15 characters. |
 {: caption="Table 1. Value format for instance and domain names" caption-side="bottom"}
 
-After the instance is provisioned, do not modify any values that are set during instance order. Otherwise, the instance might become unusable.
+After the instance is provisioned, do not modify any values that are set during the instance order. Otherwise, the instance might become unusable.
 {: attention}
 
 ## Related links

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2023
+  years:  2016, 2024
 
-lastupdated: "2023-10-03"
+lastupdated: "2024-02-06"
 
 keywords: VMware HCX standalone, HCX on-premises, tech specs HCX
 
@@ -21,7 +21,7 @@ subcollection: vmwaresolutions
 Review the following considerations before you install or delete the VMware HCX® instances that you ordered for on-premises use.
 
 A VMware vCenter Server® instance with HCX is limited to three simultaneous connections from on-premises sites.
-{: note}
+{: restriction}
 
 ## Considerations before you install on-premises HCX instances
 {: #standalone_considerations-install}

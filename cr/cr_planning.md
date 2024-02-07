@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-01-22"
+lastupdated: "2024-02-05"
 
 keywords: planning cyber recovery, cyber recovery, cyber recovery instance
 
@@ -17,7 +17,7 @@ subcollection: vmwaresolutions
 # Planning for Cyber Recovery
 {: #cr_planning}
 
-Review the following requirements before you order your Cyber Recovery instance. Plan your instance based on the {{site.data.keyword.cloud}} data center location, your capacity requirements, and services requirements.
+Review the following requirements before you order your Cyber Recovery instance. Plan your instance based on the {{site.data.keyword.cloud}} data center location, your capacity requirements, and your service requirements.
 
 ## Account requirements
 {: #cr_planning-account-req}
@@ -125,23 +125,15 @@ The following {{site.data.keyword.cloud_notm}} data centers are available for Cy
 ## Services for Cyber Recovery
 {: #cr_planning-addon-services}
 
-The following services and components are required for Cyber Recovery instances.
+The following services and components are available for Cyber Recovery instances.
 
-* [Veeam Backup and Replication 12](/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview) is required and also included. For Veeam, a Linux hardened repository is selected for you.
-* An edge gateway is required. You can bring your own gateway appliance or choose from the following options:
+* [Veeam Backup and Replication 12](/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview) (required) is included and a Linux hardened repository is selected for you.
+* An edge gateway (required) provides the virtual air-gap and manages access to the isolated recovery environment. You can bring your own gateway appliance or choose from the following options:
    * Gateway cluster with Juniper® vSRX
    * Gateway cluster with FortiGate® Virtual Appliance
    * FortiGate Security Appliance
 
-The [Caveonix RiskForesight™](/docs/vmwaresolutions?topic=vmwaresolutions-caveonix_considerations) service is recommended.
-
-The following services are optional for Cyber Recovery.
-
-* [F5® BIG-IP®](/docs/vmwaresolutions?topic=vmwaresolutions-f5_considerations)
-* [HCX™](/docs/vmwaresolutions?topic=vmwaresolutions-hcx_considerations)
-* [Red Hat® OpenShift® for VMware](/docs/vmwaresolutions?topic=vmwaresolutions-ocp_overview)
-* [VMware Aria Operations and VMware Aria Operations for Logs](/docs/vmwaresolutions?topic=vmwaresolutions-vrops_overview)
-* [Zerto](/docs/vmwaresolutions?topic=vmwaresolutions-addingzertodr)
+The [Caveonix RiskForesight](/docs/vmwaresolutions?topic=vmwaresolutions-caveonix_considerations) service (optional) provides security and risk compliance.
 
 ## Related links
 {: #cr_planning-related-links}

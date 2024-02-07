@@ -3,7 +3,7 @@
 copyright:
   years: 2022, 2024
 
-lastupdated: "2024-01-23"
+lastupdated: "2024-02-05"
 
 keywords: IBM Cloud for VMware Solutions, getting started, vmware solutions offerings, services for vmwaresolutions, vmwaresolutions use cases
 
@@ -22,10 +22,10 @@ Conref section START.
 
 INFORMATION:
 The section is referenced by the following files:
-- cr\cr_orderinginstance-consolidwkld.md
-- vcenter\vc_orderinginstance-consold-cluster.md
-- vcenter\vc_addingclusters.md
-- vsphere\vs_orderinginstances-bare-metal.md
+- cr/cr_orderinginstance-consolidwkld.md
+- vcenter/vc_orderinginstance-consold-cluster.md
+- vcenter/vc_addingclusters.md
+- vsphere/vs_orderinginstances-bare-metal.md
 
 CONTENT:
 
@@ -85,15 +85,15 @@ Conref section START.
 INFORMATION:
 The section is referenced by the following files:
 
-- cr\cr_orderinginstance-consolidwkld.md
-- vcenter\scb-orderinginstance-cons-work-cluster.md
-- vcenter\vc_addingclusters.md
-- vcenter\vc_orderinginstance-consold-cluster.md
-- vrw\vrw-orderinginstance-mgmt.md
-- vrw\vrw-orderinginstance-primary.md
-- vrw\vrw-orderinginstance-witness.md
-- vrw\vrw-orderinginstance-wkld.md
-- vsphere\vs_orderinginstances-network.md
+- cr/cr_orderinginstance-consolidwkld.md
+- vcenter/scb-orderinginstance-cons-work-cluster.md
+- vcenter/vc_addingclusters.md
+- vcenter/vc_orderinginstance-consold-cluster.md
+- vrw/vrw-orderinginstance-mgmt.md
+- vrw/vrw-orderinginstance-primary.md
+- vrw/vrw-orderinginstance-witness.md
+- vrw/vrw-orderinginstance-wkld.md
+- vsphere/vs_orderinginstances-network.md
 
 CONTENT:
 
@@ -160,8 +160,8 @@ Conref section START.
 
 INFORMATION:
 The section is referenced by the following files:
-- vcenter\vc_orderinginstance-procedure.md
-- vcenter\vrw-orderinginstance-procedure.md
+- vcenter/vc_orderinginstance-procedure.md
+- vcenter/vrw-orderinginstance-procedure.md
 
 CONTENT:
 
@@ -178,14 +178,14 @@ Conref section START.
 
 INFORMATION:
 The section is referenced by the following files:
-- services\addingzertodr.md
-- services\caveonix_considerations.md
-- services\f5_considerations.md
-- services\hcx_considerations.md
-- services\juniper_overview.md
-- services\ocp_overview.md
-- services\veeamvm_overview.md
-- services\vrops_overview.md
+- services/addingzertodr.md
+- services/caveonix_considerations.md
+- services/f5_considerations.md
+- services/hcx_considerations.md
+- services/juniper_overview.md
+- services/ocp_overview.md
+- services/veeamvm_overview.md
+- services/vrops_overview.md
 
 CONTENT:
 
@@ -198,10 +198,10 @@ Conref section START.
 
 INFORMATION:
 The section is referenced by the following files:
-- vcenter\vc_deletinginstance.md
-- vcenter\vc_deletinginstance_multi.md
-- vcenter\vc_hybrid_deletinginstance.md
-- vcenter\vc_hybrid_deletinginstance_multi.md
+- vcenter/vc_deletinginstance.md
+- vcenter/vc_deletinginstance_multi.md
+- vcenter/vc_hybrid_deletinginstance.md
+- vcenter/vc_hybrid_deletinginstance_multi.md
 
 CONTENT:
 
@@ -235,9 +235,9 @@ Conref section START.
 
 INFORMATION:
 The section is referenced by the following files:
-- vcenter\vc_addingservers.md
-- vcenter\vc_hybrid_addingremovingservers.md
-- vcenter\vc_removingservers.md
+- vcenter/vc_addingservers.md
+- vcenter/vc_hybrid_addingremovingservers.md
+- vcenter/vc_removingservers.md
 
 CONTENT:
 
@@ -255,9 +255,9 @@ Conref section START.
 
 INFORMATION:
 The section is referenced by the following files:
-- vcenter\vc_addingclusters.md
-- vcenter\vc_hybrid_addingviewingclusters.md
-- vcenter\vc_deletingclusters.md
+- vcenter/vc_addingclusters.md
+- vcenter/vc_hybrid_addingviewingclusters.md
+- vcenter/vc_deletingclusters.md
 
 CONTENT:
 
@@ -275,8 +275,8 @@ Conref section START.
 
 INFORMATION:
 The section is referenced by the following files:
-- vcenter\vc_orderinginstance-sys.md
-- vcenter\vrw-orderinginstance-resource.md
+- vcenter/vc_orderinginstance-sys.md
+- vcenter/vrw-orderinginstance-resource.md
 
 CONTENT:
 
@@ -296,9 +296,9 @@ Conref section START.
 
 INFORMATION:
 The section is referenced by the following files:
-- vcenter\vrw-orderinginstance-wkld.md
-- vcenter\vrw-orderinginstance-primary.md
-- vcenter\vrw-orderinginstance-edge.md
+- vcenter/vrw-orderinginstance-wkld.md
+- vcenter/vrw-orderinginstance-primary.md
+- vcenter/vrw-orderinginstance-edge.md
 
 CONTENT:
 
@@ -317,8 +317,8 @@ Conref section START.
 
 INFORMATION:
 The section is referenced by the following files:
-- vcenter\vc_addingclusters.md
-- vcenter\vc_orderinginstance-consold-cluster.md
+- vcenter/vc_addingclusters.md
+- vcenter/vc_orderinginstance-consold-cluster.md
 
 CONTENT:
 
@@ -337,9 +337,10 @@ Conref section START.
 
 INFORMATION:
 The section is referenced by the following files:
-- cr\cr_orderinginstance-gen-info.md
-- vcenter\vc_orderinginstance-sys.md
-- vsphere\vs_orderinginstances-sys.md
+- cr/cr_orderinginstance-gen-info.md
+- vcenter/vc_orderinginstance-sys.md
+- vsphere/vs_orderinginstances-sys.md
+- vrw/vrw-orderinginstance-config.md
 
 CONTENT:
 
@@ -382,6 +383,116 @@ CONTENT:
 * If you are planning to use vSAN™ storage, you can order 4-59 servers.
 * All servers that you order have the same configuration.
 {: #exception-number-of-baremetal-servers}
+
+Conref section END.
+
+Conref section START.
+
+Conref section START.
+
+INFORMATION:
+The section is referenced by the following files:
+- vcenter/vc_vcs_80_upgrade.md
+- vcenter/vc_vsphere_70_upgrade.md
+
+CONTENT:
+
+* If you encounter a problem during the upgrade process, use the {{site.data.keyword.vmwaresolutions_short}} upgrade ticket that you opened at the beginning of the process to contact IBM Support. IBM Support then opens tickets with VMware Support if required.
+* You must follow the support process to ensure that {{site.data.keyword.vmwaresolutions_short}} provides VMware Support with all the information about the vCenter Server design and setup, and the {{site.data.keyword.cloud_notm}} information.
+* By following the support process, you ensure that accurate information is shared with VMware Support, which shortens the support experience. After IBM Support provides the necessary information to VMware Support, you can interact with VMware Support directly.
+* Ensure that you keep a record of all the new passwords and credentials that you create as part of the upgrade process. IBM Support requires these credentials at the end of the upgrade process to update their internal database.
+{: #ulist-vcs80upgrade-beforeyoubegin}
+
+You must set the cluster Distributed Resource Schedule (DRS) to manual to prevent unexpected migrations during the upgrade process.
+{: #para-vcs80upgrade-procstep1}
+
+Complete the following steps from the vCenter Server user interface.
+1. Select **Host and Clusters > Cluster > Configure > DRS**.
+2. Click **EDIT**.
+3. Set the **DRS** field to **Manual**.
+{: #olist-vcs80upgrade-procstep1}
+
+Temporarily install the new vCenter Server Appliance that you deploy onto a vSphere Standard Switch. One of the existing ``vmnics`` is reassigned from the distributed switch during the upgrade.
+{: #para-vcs80upgrade-procstep2}
+
+Complete the following steps from the vCenter Server user interface.
+1. Select **Hosts and Clusters > HOST > Configure > Virtual Switches**. Select a host for the new vCenter Server Appliance.
+2. For the private network switch, select **Managed Physical Adapters**. The private network switch name ends with ``-private``.
+3. Select **uplink1/vmnic2**, then click the **Close** icon ![Close icon](../../icons/close-icon.svg "Close") to delete the adapter. Click **OK**.
+4. Return to the **Virtual Switches** and click **Add Networking**.
+   1. Select **Virtual Machine Port Group** for a standard switch and click **Next**.
+   2. For **New Standard Switch**, set the MTU to 9000 and click **Next**.
+   3. Click the green **Add** icon ![Add icon](../../icons/add.svg "Add") to add an adapter. Click **OK**, then **Next** to accept ``vmnic2``.
+   4. For **Connection Settings**, keep the **VM Network** and **VLAN ID None** defaults. Click **Next**, then **Finish**. *Standard Switch: vSwitch0* is displayed in the list of switches.
+5. Make a note of the Network Setting for the vCenter Server Appliance VM. You must update the new vCenter appliance to match.
+   * From the vCenter Server user interface, click the VM for the vCenter appliance. Note the name, ending with ``vc``.
+   * From the middle pane, click the **Networks** tab. Note the name of the distributed port group, ending with ``-dpg-mgmt``.
+{: #olist-vcs80upgrade-procstep2}
+
+Follow the VMware instructions for upgrading vCenter.
+{: #para-vcs80upgrade-procstep3}
+
+Ensure to complete the following requirements during the upgrade:
+* Mount the VMware-VCSA ISO, go to the `visa-ui-installer\win32` directory, and run the installer.
+* In the vCenter Server installer dialog, select the **Upgrade** flow and complete the steps in the installer.
+* You must use the IP and credentials (administrator and root) for the current vCenter Server appliance. Use the IP and root password for the ESXi host of the current vCenter Server Appliance and the host where you want to deploy the latest vCenter Server Appliance. You must use a new temporary IP address, gateway, and subnet mask for the new vCenter Server Appliance during installation.
+* Complete Stage 2 when prompted. Ensure to note any warnings and take the appropriate actions.
+{: #ulist-vcs80upgrade-procstep3}
+
+Complete the following steps from the vCenter Server user interface.
+1. Select the **Administration menu > Licensing > Licenses**.
+2. From the **Licenses** page, click **+ Add New Licenses**.
+3. Enter the latest vCenter Server license key in the **New Licenses** field. Then, enter a name for the license and click **OK**.
+4. From the **Assets** page, select the vCenter instance under **VCENTER SERVER SYSTEMS** and click **Assign License**. Then, select the new license and click **OK**.
+5. From the **Licenses** page, find the license with the product name **VMware vCenter Server 6 Standard** and click **Remove Licenses**.
+{: #olist-vcs80upgrade-procstep4a}
+
+1. From the **Licenses** page, click **+ Add New Licenses**.
+2. Enter the new vSAN license keys in the **New Licenses** field. If you have multiple vSAN license keys, enter all the licenses in the **New Licenses** field, specify a name for each license, and then click **OK**.
+3. Complete the following steps from the **Assets** page.
+   1. Select **VSAN CLUSTERS**.
+   2. Select the vSAN cluster and click **Assign License**.
+   3. Select one of the new vSAN license keys and click **OK**.
+   4. Repeat this step for each vSAN cluster.
+4. From the **Licenses** page, select all the old vSAN cluster licenses and click **Remove Licenses**.
+{: #olist-vcs80upgrade-procstep4b}
+
+Reassign the ``vmnic`` that you temporarily used on the standard switch back to the distributed switch it was originally associated with.
+{: #para-vcs80upgrade-procstep5}
+
+Complete the following steps from the vCenter Server user interface.
+1. Go to the new vCenter Server appliance.
+2. Under **Actions** click **Edit Settings**.
+3. For network adapter 1, browse to the name of the distributed port group that ends with ``-dpg-mgmt`` that you previously noted. Save the changes.
+4. Go to the host where you deployed the new appliance. Select **Hosts and Clusters > HOST > Configure > Virtual Switches**. Then, click **MANAGE PHYSICAL ADAPTERS** for *vSwitch0*.
+5. Select **vmnic2** and click the red **X** to delete the adapter. Click **OK**. The ``There are no active physical network adapters for the switch.`` warning is displayed. Click **OK**.
+6. Click the **...** in the *vSwitch0* display and then select **Remove**. Click **OK** to confirm you want to remove the switch.
+7. In the same display, select the private switch and click **MANAGE PHYSICAL ADAPTERS**.
+8. Select **uplink1** and click **+**. `vmnic2` is displayed.
+9. Click **OK**, and then **OK** again to exit the window.
+{: #olist-vcs80upgrade-procstep5}
+
+
+Conref section END.
+
+Conref section START.
+
+INFORMATION:
+The section is referenced by the following files:
+- vcenter/vc_orderinginstance-sys.md
+- vrw/vrw-orderinginstance-config.md
+
+CONTENT:
+
+vCenter Server 7 is selected by default.
+{: #para-vcsversion80-vcsline1}
+
+For new instances, vCenter Server 8 is available to order, but for existing instances or clusters with vCenter Server 7, you can add only vCenter Server 7 clusters or hosts.
+{: #para-vcsversion80-vcsline2}
+
+vSphere 8 is not yet available to order from the VMware Solutions console.
+{: note}
+{: #note-vcsversion80-vsphere8}
 
 Conref section END.
 

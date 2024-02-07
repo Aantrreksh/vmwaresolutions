@@ -10,11 +10,11 @@ toc:
     audience: service
     href: /docs/vmwaresolutions
     console-page: /vmware
-    product-page: https://www.ibm.com/cloud/vmware
+    product-page: https://www.ibm.com/products/vmware
     path: vmwaresolutions
     label: VMware Solutions
 
-#  List your getting started tutorial (getting-started.md) as the first item in the Get started nav group. See https://test.cloud.ibm.com/docs/writing?topic=writing-navigation for more details on the toc design.
+#  List your getting started tutorial (getting-started.md) as the first item in the Get started nav group. See https://test.cloud.ibm.com/docs/writing?topic=writing-navigation-design for more details on the toc design.
   entries:
   - navgroup:
       id: learn
@@ -215,6 +215,7 @@ toc:
               label: Upgrading and migrating
               topics:
               - vcenter/vc_vsphere_70_upgrade.md
+              - vcenter/vc_vcs_80_upgrade.md
               - vcenter/vc_upgrade-lic.md
           - topicgroup:
               label: Ordering vCenter Server instances
@@ -379,7 +380,6 @@ toc:
               - services/managingveeam.md
               - services/veeam_ordering_licenses.md
               - services/veeam_managing_licenses.md
-              - services/veeam_expand_storage.md
               - services/icos_ordering.md
           - topicgroup:
               label: VMware Aria Operations and VMware Aria Operations for Logs
@@ -714,6 +714,21 @@ toc:
               - archiref/vpc-vcf/vpc-vcf-nsx-t-vpc-routing.md
 
           - topicgroup:
+              label: VMware Cloud Foundation architecture patterns
+              topics:
+              - archiref/arch-pattern-vcf/arch-pattern-vcf-clientvpn.md
+              - archiref/arch-pattern-vcf/arch-pattern-vcf-hcx-cons.md
+              - archiref/arch-pattern-vcf/arch-pattern-vcf-hcx-std.md
+              - archiref/arch-pattern-vcf/arch-pattern-vcf-hcx-xconnectivity.md
+              - archiref/arch-pattern-vcf/arch-pattern-vcf-tanzu.md
+              - archiref/arch-pattern-vcf/arch-pattern-vcf-veeam-con.md
+              - archiref/arch-pattern-vcf/arch-pattern-vcf-veeam-std.md
+              - archiref/arch-pattern-vcf/arch-pattern-vcf-veeam.xconnectivity.md
+              - archiref/arch-pattern-vcf/arch-pattern-vcf-zerto-con.md
+              - archiref/arch-pattern-vcf/arch-pattern-vcf-zerto-std.md
+              - archiref/arch-pattern-vcf/arch-pattern-vcf-zerto-xconnectivity.md
+
+          - topicgroup:
               label: Interconnectivity for VMware workloads on VPC
               topics:
               - archiref/vpc-interconnectivity/overview.md
@@ -750,20 +765,19 @@ toc:
           - topicgroup:
               label: Veeam backup guide
               topics:
-              - archiref/veeam-backup/veeam_proxies_req.md
-              - archiref/veeam-backup/veeam_proxies_transp_modes.md
-              - archiref/veeam-backup/veeam_proxies_backup_proxy.md
-              - archiref/veeam-backup/veeam_proxies_vmware_backup_proxy.md
-              - archiref/veeam-backup/veeam_proxies_vmware_cdp_proxy.md
-              - archiref/veeam-backup/veeam_repo_create.md
-              - archiref/veeam-backup/veeam_repo_dir_storage.md
-              - archiref/veeam-backup/veeam_repo_net_storage.md
-              - archiref/veeam-backup/veeam_repo_obj_storage.md
-              - archiref/veeam-backup/veeam_repo_add_storage.md
-              - archiref/veeam-backup/veeam_repo_man_storage.md
+              - archiref/veeam-backup/veeam_cloud_vmware.md
+              - archiref/veeam-backup/veeam_backup_server.md
+              - archiref/veeam-backup/veeam_server_host.md
+              - archiref/veeam-backup/vmware_backup_proxies.md
+              - archiref/veeam-backup/vmware_cdp_proxy.md
+              - archiref/veeam-backup/backup_repos.md
               - archiref/veeam-backup/veeam_repo_scale_backup.md
-              - archiref/veeam-backup/veeam_endurance_storage.md
-              - archiref/veeam-backup/veeam_expand_storage.md
+              - archiref/veeam-backup/veeam_guest_inter.md
+              - archiref/veeam-backup/veeam_gateway_server.md
+              - archiref/veeam-backup/veeam_mount_server.md
+              - archiref/veeam-backup/veeam_mover_service.md
+              - archiref/veeam-backup/veeam_wan_server.md
+              - archiref/veeam-backup/veeam_etp_manager.md
           - topicgroup:
               label: VMware Update Manager guide
               topics:

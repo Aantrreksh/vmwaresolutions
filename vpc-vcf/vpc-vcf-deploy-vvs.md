@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2023
+  years:  2023, 2024
 
-lastupdated: "2023-12-14"
+lastupdated: "2024-02-05"
   
 keywords: vmware cloud foundation, IBM Cloud, vpc
 
@@ -47,14 +47,12 @@ The solution does not include any new solution-added products, but the VMware do
 
 To deploy the Developer Ready Infrastructure for VMware Cloud Foundation validated solution in {{site.data.keyword.cloud_notm}}, follow the process in [Developer Ready Infrastructure for VMware Cloud Foundation](https://docs.vmware.com/en/VMware-Cloud-Foundation/services/vcf-developer-ready-infrastructure-v1/GUID-E3C98B72-EE54-491E-AC71-C07F52AAF5E2.html){: external}.
 
-Use Aria Suite Lifecycle Manager (formerly known as vRealize Suite Lifecycle Manager) to deploy this VMware validated solution. Aria Suite Lifecycle Manager is deployed as part of the automation.
-{: important}
+### Important notes
+{: #vpc-vcf-deploy-vvs-tanzu-notes}
 
-When you are deploying TKG Runtime in a VMware Cloud Foundation instance with {{site.data.keyword.cloud_notm}}, ensure that your edge cluster nodes appliance size is either Large or Extra Large. Currently, only the Active Standby edge cluster is supported in {{site.data.keyword.cloud_notm}}.
-{: important}
-
-To get the NSX edge cluster visible in compatible list under the SDDC Kubernetes deployment, before you deploy the TKG runtime, follow the steps in [Unable to get the NSX edge cluster visible in compatible list under the SDDC Kubernetes deployment](https://kb.vmware.com/s/article/83991){: external}.
-{: important}
+* Use Aria Suite Lifecycle Manager (formerly known as vRealize Suite Lifecycle Manager) to deploy this VMware validated solution. Aria Suite Lifecycle Manager is deployed as part of the automation.
+* When you are deploying TKG Runtime in a VMware Cloud Foundation instance with {{site.data.keyword.cloud_notm}}, ensure that your edge cluster nodes appliance size is either **Large** or **Extra Large**. Currently, only the Active Standby edge cluster is supported in {{site.data.keyword.cloud_notm}}.
+* To get the NSX edge cluster visible in compatible list under the SDDC Kubernetes deployment, before you deploy the TKG runtime, follow the steps in [Unable to get the NSX edge cluster visible in compatible list under the SDDC Kubernetes deployment](https://kb.vmware.com/s/article/83991){: external}.
 
 ## Intelligent Logging and Analytics for VMware Cloud Foundation
 {: #vpc-vcf-deploy-vvs-aria-operations-for-logs}
@@ -93,11 +91,11 @@ Solution-added products for this VMware validated solution include Aria Automati
 
 To deploy the Private Cloud Automation for VMware Cloud Foundation validated solution in {{site.data.keyword.cloud_notm}}, see [Private Cloud Automation for VMware Cloud Foundation](https://docs.vmware.com/en/VMware-Cloud-Foundation/services/vcf-private-cloud-automation-v1/GUID-33896484-4331-46F1-8875-B487BBEDCE05.html){: external}.
 
-Use Aria Suite Lifecycle Manager (formerly known as vRealize Suite Lifecycle Manager) to deploy this VMware validated solution. Aria Suite Lifecycle Manager is deployed as part of the automation.
-{: important}
+### Important notes
+{: #vpc-vcf-deploy-vvs-aria-automation-notes}
 
-Before deployment, upgrade vRealize Operations Manager (also known as Aria Operations Manager) 8.10.0 to the most recent version and follow the procedure in [Deployment of vRealize Suite Lifecycle Manager and Workspace ONE Access for Private Cloud Automation for VMware Cloud Foundation](https://docs.vmware.com/en/VMware-Cloud-Foundation/services/vcf-private-cloud-automation-v1/GUID-FD5C8968-55A8-463A-BE30-CC369A11EDCC.html){: external}.
-{: important}
+* Use Aria Suite Lifecycle Manager (formerly known as vRealize Suite Lifecycle Manager) to deploy this VMware validated solution. Aria Suite Lifecycle Manager is deployed as part of the automation.
+* Before deployment, upgrade vRealize Operations Manager (also known as Aria Operations Manager) 8.10.0 to the most recent version and follow the procedure in [Deployment of vRealize Suite Lifecycle Manager and Workspace ONE Access for Private Cloud Automation for VMware Cloud Foundation](https://docs.vmware.com/en/VMware-Cloud-Foundation/services/vcf-private-cloud-automation-v1/GUID-F9232A8B-69C8-4358-BC64-F9F186C04968.html){: external}.
 
 ## Advanced Load Balancing for VMware Cloud Foundation
 {: #vpc-vcf-deploy-vvs-nsx-advanced-load-balancing}
@@ -113,17 +111,17 @@ Solution-added products for VMware validated solutions include NSX Advanced Load
 
 To deploy the Advanced Load Balancing for VMware Cloud Foundation validated solution in {{site.data.keyword.cloud_notm}}, see [Advanced Load Balancing for VMware Cloud Foundation](https://docs.vmware.com/en/VMware-Cloud-Foundation/services/vcf-nsx-advanced-load-balancer-v1/GUID-F8696F0A-D91B-46B1-A824-8FAE461E57B3.html){: external}.
 
-VMware recommends customers use [NSX Advanced Load Balancer](https://www.vmware.com/products/nsx-advanced-load-balancer.html){: external} for load balancing. NSX Advanced Load Balancer – Basic Edition is included with NSX Advanced (VMware Cloud Foundation Advanced Edition) and NSX Enterprise Plus (VMware Cloud Foundation Enterprise Edition).
-{: note}
+### Notes
+{: #vpc-vcf-deploy-vvs-nsx-advanced-load-balancing-notes}
 
-VMware NSX Advanced Load Balancer – Basic Edition offers L4–L7 load balancing with SSL offload and pass-through, server health checks, application rules for programmability, and traffic manipulation by using the GUI or REST API. Advanced features of NSX Advanced Load Balancer are available as an add-on license.
-{: note}
+* VMware recommends customers use [NSX Advanced Load Balancer](https://www.vmware.com/products/nsx-advanced-load-balancer.html){: external} for load balancing. NSX Advanced Load Balancer – Basic Edition is included with NSX Advanced (VMware Cloud Foundation Advanced Edition) and NSX Enterprise Plus (VMware Cloud Foundation Enterprise Edition).
+* VMware NSX Advanced Load Balancer – Basic Edition offers L4–L7 load balancing with SSL offload and pass-through, server health checks, application rules for programmability, and traffic manipulation by using the GUI or REST API. Advanced features of NSX Advanced Load Balancer are available as an add-on license.
+* NSX Advanced Load Balancer Controllers implement the control plane for the NSX Advanced Load Balancer. For high availability, it is typically deployed as a 3-node cluster. In a VMware Cloud Foundation, NSX Advanced Load Balancer Controllers run as VMs in the management domain.
+* Deploying the Controller cluster nodes on the VMware Cloud Foundation management network requires 4 new {{site.data.keyword.cloud_notm}} bare metal server VLAN interfaces on the management network as shown in the following table. To create VLAN interfaces, see [Managing network interfaces for bare metal servers on {{site.data.keyword.vpc_short}}](/docs/vpc?topic=vpc-managing-nic-for-bare-metal-servers).
+* NSX Advanced Load Balancer Service Engine implements the data plane for the NSX Advanced Load Balancer. The NSX Advanced Load Balancer SEs perform load balancing for the configured applications. The NSX Advanced Load Balancer Controller cluster provides load-balancing services and it also manages the service engines that are deployed in the VI workload domain that is managed by the NSX-T Data Center.
+* A new overlay management network is required to deploy the Service Engines in the VI workload domain's overlay with connectivity to the management domain's management network. This solution might require an {{site.data.keyword.vpc_short}} egress and ingress routes with a workload domain's Tier 0 Gateway HA VIP as the next hop.  
 
-NSX Advanced Load Balancer Controllers implement the control plane for the NSX Advanced Load Balancer. For high availability, it is typically deployed as a 3-node cluster. In a VMware Cloud Foundation, NSX Advanced Load Balancer Controllers run as VMs in the management domain.
-{: important}
-
-Deploying the Controller cluster nodes on the VMware Cloud Foundation management network requires 4 new {{site.data.keyword.cloud_notm}} bare metal server VLAN interfaces on the management network as shown in the following table. To create VLAN interfaces, see [Managing network interfaces for bare metal servers on {{site.data.keyword.vpc_short}}](/docs/vpc?topic=vpc-managing-nic-for-bare-metal-servers). 
-{: important}
+The following table shows the VLAN interfaces for NSX Advanced Load Balancer Controllers.
 
 | Interface name | Interface type | VLAN ID | Subnet | Allow float | NSX interface | Distributed port group name |
 | ---------------|----------------|---------|--------|-------------|---------------|---------------------------- |
@@ -132,12 +130,6 @@ Deploying the Controller cluster nodes on the VMware Cloud Foundation management
 | `vlan-nic-avi-2` | `vlan` | 1611 | `vpc-mgmt-subnet` | `true` | NSX Advanced Load Balancer Controller 3 | `pg-mgmt` |
 | `vlan-nic-avi-vip` | `vlan` | 1611 | `vpc-mgmt-subnet` | `true` | NSX Advanced Load Balancer Controller VIP | `pg-mgmt` |
 {: caption="Table 1. VLAN interfaces for NSX Advanced Load Balancer Controllers" caption-side="bottom"}
-
-NSX Advanced Load Balancer Service Engine implements the data plane for the NSX Advanced Load Balancer. The NSX Advanced Load Balancer SEs perform load balancing for the configured applications. The NSX Advanced Load Balancer Controller cluster provides load-balancing services and it also manages the service engines that are deployed in the VI workload domain that is managed by the NSX-T Data Center.
-{: important}
-
-A new overlay management network is required to deploy the Service Engines in the VI workload domain's overlay with connectivity to the management domain's management network. This solution might require an {{site.data.keyword.vpc_short}} egress and ingress routes with a workload domain's Tier 0 Gateway HA VIP as the next hop.  
-{: important}
 
 ## Related links
 {: #vpc-vcf-deploy-vvs-links}

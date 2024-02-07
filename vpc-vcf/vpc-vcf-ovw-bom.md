@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2023
+  years:  2016, 2024
 
-lastupdated: "2023-11-08"
+lastupdated: "2024-02-05"
 
 keywords: vmware cloud foundation BOM, bill of materials vmware cloud foundation, BOM
 
@@ -19,24 +19,24 @@ subcollection: vmwaresolutions
 
 Review the Bill of Materials (BOM) information for VMware Cloud Foundation™ instances.
 
-## VPC Infrastructure BOM for VMware Cloud Foundation instances
+## VPC Infrastructure BOM for VMware Cloud Foundation
 {: #vpc-vcf-ovw-bom-vpc}
 
-Review the following table for details about the BOM information for Bare Metal Servers on {{site.data.keyword.vpc_full}} ({{site.data.keyword.vpc_short}}).
+Review the BOM information for Bare Metal Servers on {{site.data.keyword.vpc_full}} ({{site.data.keyword.vpc_short}}).
 
 | Type | Details |
 | ---- | ------- |
-| Bare Metal servers | Provides compute capacity, a minimum of 4 hosts in for the consolidated architecture, and a minimum of 7 hosts for the Standard architecture. |
+| Bare Metal Servers | Provides compute capacity, a minimum of 4 hosts for the consolidated architecture, and a minimum of 7 hosts for the standard architecture. |
 | VLANs | Assigned to physical VMware ESXi servers for traffic of VMware vSphere management, VMware vSAN, vSphere vMotion, and VMware NSX TEP. |
-| Subnets | Created for traffic of vSphere management, vSAN, vSphere vMotion, NSX TEP, and NSX-T Tier-0 gateway. |
+| Subnets | Created for vSphere management traffic, vSAN, vSphere vMotion, NSX TEP, and NSX-T Tier-0 Gateway. |
 | Security Groups | To create logical groups and apply rules to traffic of vSphere management, vSAN, vSphere vMotion, and NSX TEP. |
-| Virtual server instances | Optional. Windows Server 2019 Standard Edition (amd64), 2 vCPU, 8 GB RAM and bandwidth cap of 4 Gbps. |
-{: caption="Table 1. BOM for {{site.data.keyword.vpc_short}} infrastructure in VMware Cloud Foundation" caption-side="bottom"}
+| Virtual Server Instances | Optional. Windows Server 2019 Standard Edition (AMD64), 2 vCPU, 8 GB RAM, and a bandwidth cap of 4 Gbps. |
+{: caption="Table 1. BOM for {{site.data.keyword.vpc_short}} infrastructure in VMware Cloud Foundation instances" caption-side="bottom"}
 
-## Software BOM for VMware Cloud Foundation instances
+## Software BOM for VMware Cloud Foundation
 {: #vpc-vcf-ovw-bom-software}
 
-Review the following table for details about the BOM information for VMware Cloud Foundation software components.
+Review the BOM information for VMware Cloud Foundation software components.
 
 | Component | Version | Build number |
 | --------- | ------- | ------------ |
@@ -47,7 +47,7 @@ Review the following table for details about the BOM information for VMware Clou
 | VMware Virtual SAN Witness Appliance | 7.0 Update 3l | 21424296 |
 | VMware NSX-T | 3.2.3.1 | 22104592 |
 | VMware Aria® Suite Lifecycle Manager | 8.12.0.9 | 22652426 |
-{: caption="Table 2. BOM for the software components in VMware Cloud Foundation instances" caption-side="bottom"}
+{: caption="Table 2. BOM for software components in VMware Cloud Foundation instances" caption-side="bottom"}
 
 ## Network MTU configuration settings
 {: #vpc-vcf-ovw-bom-mtu-config}

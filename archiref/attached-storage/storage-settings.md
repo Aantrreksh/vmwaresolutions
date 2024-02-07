@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2023
+  years:  2016, 2024
 
-lastupdated: "2023-08-17"
+lastupdated: "2024-01-30"
 
 subcollection: vmwaresolutions
 
@@ -57,7 +57,7 @@ The following table shows the settings in the VMware vSphere® Web Client.
 | I/O latency threshold | 15 ms |
 {: caption="Table 1. Storage DRS runtime settings" caption-side="bottom"}
 
-For more information about configuring these settings in the vSphere Web Client, see [Set storage DRS runtime rules in the vSphere Web Client](https://docs.vmware.com/en/VMware-vSphere/5.5/com.vmware.vsphere.resmgmt.doc/GUID-AD2D13CE-539B-48C3-BBC9-E55A834874F0.html){: external}.
+For more information about configuring these settings in the vSphere Web Client, see the VMware vSphere documentation.
 
 ## Storage I/O Control for NFS v3
 {: #storage-settings-io-control-nfs-v3}

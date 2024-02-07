@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2022
+  years:  2016, 2024
 
-lastupdated: "2022-11-22"
+lastupdated: "2024-02-06"
 
 keywords: KMIP certificate, add certificate KMIP, delete certificate KMIP
 
@@ -35,7 +35,7 @@ You can view the certificates that you added to your KMIP™ for VMware® instan
 3. In the **Client SSL certificates** table, locate the certificate that you want to delete and click the **Delete** icon ![Delete icon](../../icons/delete.svg "Delete").
 
    The client immediately loses access to all keys for encrypting and decrypting data or backup data. For the client to gain access again, you must add the client SSL certificate again.
-   {: note}
+   {: attention}
 
 ## Related links
 {: #kmip_standalone_addingdeletingcert-related}

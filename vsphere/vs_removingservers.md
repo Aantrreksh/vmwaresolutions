@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2023
+  years:  2023, 2024
 
-lastupdated: "2023-08-03"
+lastupdated: "2024-02-01"
 
 keywords: vmware vSphere remove hosts, vmware vSphere remove ESXi servers, delete server
 
@@ -50,5 +50,5 @@ Before you delete ESXi servers, ensure that you remove your workloads from these
 
 * [Planning for VMware vSphere](/docs/vmwaresolutions?topic=vmwaresolutions-vs_planning)
 * [Procedure to order VMware vSphere instances](/docs/vmwaresolutions?topic=vmwaresolutions-vs_orderinginstances-procedure)
-* [Place a host in maintenance mode](https://docs.vmware.com/en/VMware-vSphere/6.0/com.vmware.vsphere.resmgmt.doc/GUID-8F705E83-6788-42D4-93DF-63A2B892367F.html){: external}
+* [Place a host in maintenance mode](https://docs.vmware.com/en/VMware-vSphere/6.0/vsphere-60-guide-archive.zip){: external}
 * [Enhanced vMotion Compatibility (EVC) processor support](https://kb.vmware.com/s/article/1003212){: external}

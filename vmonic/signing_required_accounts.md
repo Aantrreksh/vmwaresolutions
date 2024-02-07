@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2020, 2023
+  years:  2020, 2024
 
-lastupdated: "2023-09-13"
+lastupdated: "2024-01-26"
 
 keywords: user account, ibm cloud account, ibm cloud infrastructure
 
@@ -61,7 +61,7 @@ The {{site.data.keyword.cloud_notm}} infrastructure account that you are using m
 | Manage Server Monitoring | This permission is not required to place an order. However, it is required to retrieve and validate the monitoring status of the {{site.data.keyword.cloud_notm}} bare metal servers on which the VMware ESXi servers are running in your instance. |
 {: caption="Table 1. Required permissions for the {{site.data.keyword.cloud_notm}} infrastructure account" caption-side="bottom"}
 
-To verify or update permissions for classic infrastructure users, see [Classic infrastructure permissions](/docs/account?topic=account-infrapermission).
+To verify or update permissions for classic infrastructure users, see [Classic infrastructure permissions](/docs/account?topic=account-mngclassicinfra).
 
 ### Virtual routing and forwarding with service endpoints enabled
 {: #signing_required_accounts-infra-vrf-se}

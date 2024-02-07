@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2023
+  years:  2016, 2024
 
-lastupdated: "2023-10-16"
+lastupdated: "2024-02-06"
 
 keywords: vCenter Server Hybridity add host, add server vCenter Server Hybridity, remove host vCenter Server Hybridity
 
@@ -38,7 +38,7 @@ Because your initial cluster has vSAN™ storage, adding one or more ESXi server
 
 {{site.data.content.para-vcenteraddESXiservers}}
 
-* vSAN storage requires at least 4 ESXi servers.
+vSAN storage requires at least 4 ESXi servers.
 
 ## Procedure to add ESXi servers
 {: #vc_hybrid_addingremovingservers-adding-procedure}
@@ -52,7 +52,7 @@ Because your initial cluster has vSAN™ storage, adding one or more ESXi server
 7. Optionally, select the checkbox to add servers during maintenance mode. The checkbox is selected by default.
 
    When you provision the new ESXi server, virtual machines (VMs) are immediately migrated to the new servers if you do not select the **Maintenance mode** checkbox. You do not receive a confirmation message before the migration begins.
-   {: important}
+   {: attention}
 
 8. Complete the bare metal configuration.
    * Select a configuration from the existing hosts in the cluster.

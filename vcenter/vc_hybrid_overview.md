@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2023
+  years:  2016, 2024
 
-lastupdated: "2023-07-17"
+lastupdated: "2024-02-06"
 
 keywords: vCenter Server Hybridity, hybridity, tech specs vCenter Server Hybridity
 
@@ -89,8 +89,8 @@ Your instance contains the following networking components:
 *  Two VMware NSX Edge Services Gateways (ESGs):
    * A secure management services ESG for outbound HTTPS management traffic, which is deployed by IBM as part of the management networking typology. This ESG is used by the IBM management VMs to communicate with specific external IBM management components that are related to automation. For more information, see [Configuring your network to use the customer-managed ESG](/docs/vmwaresolutions?topic=vmwaresolutions-vc_esg_config).
 
-   This ESG is not accessible to you and you cannot use it. If you modify it, you might not be able to manage the vCenter Server with Hybridity Bundle instance from the {{site.data.keyword.vmwaresolutions_short}} console. In addition, when you use a firewall or disable the ESG communications to the external IBM management components cause {{site.data.keyword.vmwaresolutions_short}} to become unusable.
-    {: important}
+    This ESG is not accessible to you and you cannot use it. If you modify it, you might not be able to manage the vCenter Server with Hybridity Bundle instance from the {{site.data.keyword.vmwaresolutions_short}} console. In addition, when you use a firewall or disable the ESG communications to the external IBM management components cause {{site.data.keyword.vmwaresolutions_short}} to become unusable.
+    {: attention}
 
    * A secure customer-managed ESG for outbound and inbound HTTPS workload traffic, which is deployed by IBM as a template that can be modified by you to provide VPN access or public access. For more information, see [Does the customer-managed NSX Edge pose a security risk?](/docs/vmwaresolutions?topic=vmwaresolutions-faq-vmwaresolutions#faq-customer-nsx)
 
@@ -108,9 +108,7 @@ Your existing instance contains the following virtual server instances (VSIs):
 
 vSAN storage offers customized configurations, with various options for disk type and quantity:
 * Disk quantity: 2, 4, 6, 8, or 10
-* Storage disk: 960 GB SSD SED, 1.9 TB SSD SED, or 3.8 TB SSD SED
-
-   In addition, two cache disks of 960 GB are included per host.
+* Storage disk: 960 GB SSD SED, 1.9 TB SSD SED, or 3.8 TB SSD SED. In addition, two cache disks of 960 GB are included per host.
 * High Performance with Intel® Optane: this option provides two extra capacity disk bays. This option depends on the CPU model.
 
 ### IBM-provided licenses and fees

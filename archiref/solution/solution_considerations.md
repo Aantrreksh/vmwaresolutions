@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2023
+  years:  2016, 2024
 
-lastupdated: "2023-09-11"
+lastupdated: "2024-01-31"
 
 subcollection: vmwaresolutions
 
@@ -39,7 +39,7 @@ Familiarize yourself with the following limitations for your instance:
 
 Complete the following steps to manage access to your {{site.data.keyword.cloud_notm}} network and to your VMware management components and to plan your {{site.data.keyword.cloud_notm}} network topology.
 
-- Access instance management endpoints by using the [{{site.data.keyword.cloud_notm}} VPN](/docs/iaas-vpn?topic=iaas-vpn-getting-started) or your [{{site.data.keyword.cloud_notm}} Direct Link connection](https://www.ibm.com/cloud/direct-link).
+- Access instance management endpoints by using the [{{site.data.keyword.cloud_notm}} VPN](/docs/iaas-vpn?topic=iaas-vpn-getting-started) or your [{{site.data.keyword.cloud_notm}} Direct Link](https://www.ibm.com/products/direct-link){: external}.
 - Devise a strategy for public network connectivity from within your instance. Your options include the sample customer VMware NSX Edge™ Services Gateway (ESG), gateway appliances such as Vyatta and FortiGate, and proxy servers deployed in the {{site.data.keyword.cloud_notm}} network or on your own network accessed through Direct Link.
 - Plan whether to deploy your workload on {{site.data.keyword.cloud_notm}} VLANs with [{{site.data.keyword.cloud_notm}} portable IP addresses](/docs/subnets?topic=subnets-getting-started) or [on NSX-T logical switches using your own IP addresses](/docs/vmwaresolutions?topic=vmwaresolutions-nsx-t-design). When you use NSX software-defined networking (SDN), it gives you the greatest flexibility to manage and secure your workload network in the {{site.data.keyword.cloud_notm}}.
 - Use NSX ESGs, [{{site.data.keyword.cloud_notm}} Vyatta](https://cloud.ibm.com/catalog/infrastructure/virtual-router-appliance), and Direct Link peering to plan for connectivity to workloads (Network Address Translation, Virtual Private Network, routing).
@@ -55,7 +55,7 @@ You are responsible for securing, encrypting, and monitoring your VMware instanc
 - Review encryption settings across all components.
 - Plan and implement appropriate physical or virtual firewall solutions, such as NSX Distributed Firewall (DFW), NSX ESGs, [FortiGate Virtual Appliance](/docs/vmwaresolutions?topic=vmwaresolutions-fortinetvm_considerations), and [{{site.data.keyword.cloud_notm}} Vyatta](https://cloud.ibm.com/catalog/infrastructure/virtual-router-appliance).
 - Plan and implement appropriate application load balancing and security solutions, such as [F5 BIG-IP](/docs/vmwaresolutions?topic=vmwaresolutions-f5_considerations).
-- Plan and implement appropriate security information and event management (SIEM) solutions, such as [IBM QRadar](https://www.ibm.com/us-en/marketplace/hosted-security-intelligence).
+- Plan and implement appropriate security information and event management (SIEM) solutions, such as [IBM Security QRadar SIEM](https://www.ibm.com/products/qradar-siem){: external}.
 - Plan and implement appropriate vulnerability scanning.
 
 ## Customization

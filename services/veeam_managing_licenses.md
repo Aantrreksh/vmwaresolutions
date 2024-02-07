@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2020, 2023
+  years:  2020, 2024
 
-lastupdated: "2023-10-06"
+lastupdated: "2024-02-06"
 
 keywords: Veeam, Veeam license, manage Veeam license, Veeam Backup and Replication 12 
 
@@ -24,9 +24,8 @@ You can view, edit notes, or delete the Veeam® licenses that you ordered for st
 
 1. From the {{site.data.keyword.vmwaresolutions_full}} console, click **Licenses** from the left navigation pane.
 2. Scroll down to the **Veeam licenses** table.
-3. To view the details of a specific license, click the license.
+3. To view the details of a specific license, click the license. The following information is displayed for the Veeam license:
 
-The following information is displayed for the Veeam license:
 * License name
 * License notes
 * Number of virtual machines (VMs) licensed
@@ -39,6 +38,13 @@ The following information is displayed for the Veeam license:
    A license key is not displayed. When licenses are ordered, the system does not generate a key, but it applies a primary key.
    {: note}
 
+### Known issues about license date display
+{: #veeam_managing_licenses-considerations-date}
+
+If you are using Mozilla® Firefox® as your browser, the license start and end dates might be displayed with no values on the Veeam console. To resolve the issue, view the license information in another browser, such as Google Chrome™.
+
+If you are experiencing this problem and the only browser you can use is Firefox, contact [Veeam support](https://www.veeam.com/support.html){: external} for assistance.
+
 ## Procedure to edit notes for Veeam stand-alone licenses
 {: #veeam_managing_licenses-procedure-edit}
 
@@ -47,22 +53,13 @@ The following information is displayed for the Veeam license:
 3. Click the license that you want to edit the notes for.
 4. On the license details page, edit the license notes, and then click **Confirm**.
 
-## Known issues about license date display
-{: #veeam_managing_licenses-considerations-date}
-
-If you are using Mozilla® Firefox® as your browser, the license start and end dates might be displayed with no values on the Veeam console. To resolve the issue, view the license information in another browser, such as Google Chrome™.
-
-If you are experiencing this problem and the only browser you can use is Firefox, contact [Veeam support](https://www.veeam.com/support.html){: external} for assistance.
-
 ## Procedure to delete Veeam stand-alone licenses
 {: #veeam_managing_licenses-procedure-delete}
-
-Review the [considerations for installing and deleting Veeam licenses](/docs/vmwaresolutions?topic=vmwaresolutions-managingveeam#managingveeam-install-delete-consid) before you delete a Veeam license.
+ 
+Before you delete a Veeam license, review [Considerations when you delete Veeam](/docs/vmwaresolutions?topic=vmwaresolutions-managingveeam#veeamvm_overview-remove).
 {: important}
 
-Deleting a Veeam license does not delete the Veeam service that is installed on a vCenter Server instance. To delete the service, you must do so in the VMware Solutions console.
-
-For more information, see [Deleting services from vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_deletingservices).
+Deleting a Veeam license does not delete the Veeam service that is installed on a vCenter Server instance. To delete the service, you must do so in the VMware Solutions console. For more information, see [Deleting services from vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_deletingservices).
 
 To delete a Veeam license:
 

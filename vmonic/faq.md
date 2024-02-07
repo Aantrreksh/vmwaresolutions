@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2023
+  years:  2016, 2024
 
-lastupdated: "2023-09-13"
+lastupdated: "2024-02-01"
 
 keywords: FAQ vmware solutions dedicated, vmware solutions dedicated questions, user account, patch management
 
@@ -93,7 +93,7 @@ Newly deployed VMware ESXi™ servers and clusters are patched with recent, but 
 For all other VMware component updates, you must ensure that newly deployed ESXi servers and clusters have the most recent updates that you require. {{site.data.keyword.vmwaresolutions_short}} does not offer support for applying updates and patches for VMware components. You must monitor and apply these updates yourself.
 {: important}
 
-To download ESXi updates from VMware, you can configure VMware Update Manager (VUM), which is integrated into your vCenter Server. For more information, see [VMware Support](https://www.vmware.com/support.html){: external}.
+To download ESXi updates from VMware, you can configure VMware Update Manager (VUM), which is integrated into your vCenter Server. For more information, see [VMware Support](https://www.vmware.com/support/services.html){: external}.
 
 ## Does the management services NSX Edge pose a security risk?
 {: #faq-mgmt-nsx}

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2023
+  years:  2023, 2024
 
-lastupdated: "2023-04-18"
+lastupdated: "2024-01-26"
 
 subcollection: vmwaresolutions
 
@@ -211,5 +211,5 @@ tcp        0      0 10.38.207.157:53509    10.38.207.142:2502     ESTABLISHED
 ## Related links
 {: #veeam-cr-sag-lnxmgdsvr-related}
 
-* [Cyber recovery with Veeam architecture overview](/docs/vmwaresolutions/?topic=vmwaresolutions-veeam-cr-sa-overview)
+* [Cyber recovery with Veeam architecture overview](/docs/vmwaresolutions?topic=vmwaresolutions-veeam-cr-sa-overview)
 * [Veeam Data Integration API](https://helpcenter.veeam.com/docs/backup/vsphere/data_integration_api.html?ver=120){: external}

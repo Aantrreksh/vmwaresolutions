@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2019, 2023
+  years:  2019, 2024
 
-lastupdated: "2023-05-01"
+lastupdated: "2024-01-31"
 
 subcollection: vmwaresolutions
 
@@ -186,20 +186,20 @@ Certificate:
 ```
 {: pre}
 
-For more information about shutting down the cluster after installation, see [Enabling {{site.data.keyword.redhat_openshift_notm}} 4 Clusters to Stop and Resume Cluster VMs](https://blog.openshift.com/enabling-openshift-4-clusters-to-stop-and-resume-cluster-vms/){: external}.
+For more information about shutting down the cluster after installation, see [Enabling {{site.data.keyword.redhat_openshift_notm}} 4 Clusters to Stop and Resume Cluster VMs](https://www.redhat.com/en/blog/enabling-openshift-4-clusters-to-stop-and-resume-cluster-vms){: external}.
 
 After the initial 24 hours certificate renewal, cluster snapshot is enabled to resume at any time in the next 30 days. After the 30 days, the certificate validity will make the cluster snapshot unusable.
 
 ## Related links
 {: #vcs-openshift-runbook-trbl-related}
 
-* [Install on vSphere: User-Provisioned Infrastructure](https://cloud.redhat.com/openshift/install/vsphere/user-provisioned){: external}
+* [Install on vSphere: User-Provisioned Infrastructure](https://console.redhat.com/openshift/install/vsphere/user-provisioned){: external}
 * [Install a cluster on vSphere](https://docs.openshift.com/container-platform/4.7/installing/installing_vsphere/installing-vsphere.html){: external}
 * [Index of public {{site.data.keyword.redhat_openshift_notm}} v4 clients](https://mirror.openshift.com/pub/openshift-v4/clients/ocp/latest/?extIdCarryOver=true&sc_cid=701f2000001Css5AAC){: external}
 * [Understanding persistent storage](https://docs.openshift.com/container-platform/4.7/storage/understanding-persistent-storage.html#understanding-persistent-storage){: external}
-* [ssh-keygen - Generate a New SSH Key](https://www.ssh.com/ssh/keygen/){: external}
+* [ssh-keygen - Generate a New SSH Key](https://www.ssh.com/academy/ssh/keygen){: external}
 * [Configure PowerCLI and PowerNSX on macOS](https://readysetvirtual.wordpress.com/2018/04/06/configure-powercli-and-powernsx-on-macos/){: external}
 * [Visual Studio Code](https://code.visualstudio.com/){: external}
-* [Terraform Getting Started](https://learn.hashicorp.com/terraform#getting-started){: external}
-* [Windows 2016 PowerShell DNS](https://docs.microsoft.com/en-us/powershell/module/dnsserver/?view=win10-ps){: external}
+* [Terraform Getting Started](https://developer.hashicorp.com/terraform/tutorials#getting-started){: external}
+* [DnsServer](https://learn.microsoft.com/en-us/powershell/module/dnsserver/?view=windowsserver2022-ps&viewFallbackFrom=win10-ps){: external}
 * [PowerCLI core documentation](https://powercli-core.readthedocs.io/en/latest/index.html){: external}

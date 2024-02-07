@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2019, 2023
+  years:  2019, 2024
 
-lastupdated: "2023-06-16"
+lastupdated: "2024-02-06"
 
 subcollection: vmwaresolutions
 
@@ -32,7 +32,7 @@ You can expand the capacity of your vCenter Server multizone instances by adding
 6. On the **Add ESXi server** side panel, enter the number of servers that you want to add. You can keep the **Maintenance mode** checkbox selected to add servers during maintenance mode.
 
    When you provision new ESXi servers, virtual machines (VMs) are immediately migrated to the new servers if you do not select the **Maintenance mode** checkbox. You do not receive a confirmation message before the migration begins.
-   {: important}
+   {: attention}
 
 7. Review the estimated price and click **Create**.
 

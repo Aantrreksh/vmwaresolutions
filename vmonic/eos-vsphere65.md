@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2022, 2023
+  years:  2022, 2024
 
-lastupdated: "2023-10-18"
+lastupdated: "2024-02-06"
 
 keywords: end of support notice, vSphere 6.5 deployment, end of support vSphere 6.5, vSphere 6.5 deprecated, vSphere 6.5 support
 
@@ -35,7 +35,7 @@ vSphere 7 introduces the following features:
 
 vSphere 7 is also the exclusive basis for VMware Regulated Workloads.
 
-For more information about end of life procedures for {{site.data.keyword.cloud_notm}} infrastructure services and Third–Party software products, see [Lifecycle policy for {{site.data.keyword.cloud_notm}} products](https://www.ibm.com/cloud/cloud-prod-life). If you have any questions or need assistance, email clouddigitalsales@us.ibm.com or open a support ticket in the VMware Solutions console.
+For more information about end of life procedures for {{site.data.keyword.cloud_notm}} infrastructure services and third-party software products, see [Lifecycle policy for {{site.data.keyword.cloud_notm}} products](https://www.ibm.com/cloud/cloud-prod-life). If you have any questions or need assistance, email clouddigitalsales@us.ibm.com or open a support ticket in the VMware Solutions console.
 
 ## Related links
 {: #eos-vsphere65-related}

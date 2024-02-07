@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2022, 2023
+  years:  2022, 2024
 
-lastupdated: "2023-09-11"
+lastupdated: "2024-01-26"
 
 subcollection: vmwaresolutions
 
@@ -179,4 +179,4 @@ To add a DNS A and PTR record entries in the AD/DNS server for this bare metal s
 ## Related links
 {: #veeam-cr-sag-lhbr-related}
 
-* [Cyber recovery with Veeam architecture overview](/docs/vmwaresolutions/?topic=vmwaresolutions-veeam-cr-sa-overview)
+* [Cyber recovery with Veeam architecture overview](/docs/vmwaresolutions?topic=vmwaresolutions-veeam-cr-sa-overview)

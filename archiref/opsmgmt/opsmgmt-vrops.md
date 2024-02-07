@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2023
+  years:  2016, 2024
 
-lastupdated: "2023-06-13"
+lastupdated: "2024-01-30"
 
 subcollection: vmwaresolutions
 
@@ -144,7 +144,7 @@ The following components are installed by {{site.data.keyword.vmwaresolutions_sh
 * VMware Aria Operations Federation Management pack
 * Management Pack for Hybrid Cloud Extension (HCX™)
 
-Other management packs can be installed by the client. For more information, see [VMware Solution Exchange](https://marketplace.vmware.com/vsx/?contentType=1&listingStyle=table){: external}.
+Other management packs can be installed by the client. For more information, see [VMware Solution Exchange](https://marketplace.cloud.vmware.com/){: external}.
 
 ### Management Pack for VMware vCenter Server
 {: #opsmgmt-vrops-management-vCenter}
@@ -226,7 +226,7 @@ VMware Aria Operations Management Pack for HCX extends the Operations Management
 ## Related links
 {: #opsmgmt-vrops-links}
 
-* [VMware Aria Operations 8.12.x Sizing Guidelines](https://kb.vmware.com/s/article/91692){: external}
+* [VMware Aria Operations 8.14.x Sizing Guidelines](https://kb.vmware.com/s/article/94645){: external}
 * [VMware Aria Operations Documentation](https://docs.vmware.com/en/VMware-Aria-Operations/index.html){: external}
 * [Updating vSAN clusters](/docs/vmwaresolutions?topic=vmwaresolutions-vum-updating-vsan)
 * [vSAN Health Check Information](https://kb.vmware.com/s/article/2114803){: external}

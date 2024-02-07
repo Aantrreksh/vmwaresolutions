@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2023
+  years:  2016, 2024
 
-lastupdated: "2023-06-13"
+lastupdated: "2024-01-31"
 
 subcollection: vmwaresolutions
 
@@ -139,9 +139,9 @@ This design also installs:
 * VMware NSX for vSphere
 * VMware Aria Operations™ for Networks
 
-Other content packs can be obtained from [VMware Solution Exchange](https://marketplace.vmware.com/vsx/?contentType=2&listingStyle=table){: external}.
+Other content packs can be obtained from [VMware Solution Exchange](https://marketplace.cloud.vmware.com/){: external}.
 
-The VMware Aria Operations for Logs content pack for NSX-T™ provides more dashboards for viewing log information. For installation instructions, see the [VMware documentation](https://docs.vmware.com/en/VMware-Validated-Design/4.3/com.vmware.vvd.sddc-nsxt-domain-deploy.doc/GUID-EB5EDB4D-C4A1-4906-A6A9-379F898BA372.html){: external} about installing the content pack for NSX-T.
+The VMware Aria Operations for Logs content pack for NSX-T™ provides more dashboards for viewing log information. For more information, see the VMware documentation about installing the content pack for NSX-T.
 
 ## Related links
 {: #opsmgmt-vrli-related}

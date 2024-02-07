@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2023
+  years: 2023, 2024
 
-lastupdated: "2023-10-11"
+lastupdated: "2024-01-03"
 
 keywords: delete vmware cloud foundation instance, vmware cloud foundation instance, delete instance, delete vmware cloud edition instance
 
@@ -37,7 +37,7 @@ Only the resources that were created from the VMware Solutions console can be de
 
 1. In the VMware Solutions console, click **Resources > Cloud Foundation** from the left navigation pane.
 2. In the **VMware Cloud Foundation** table, find the instance to delete.
-3. Click the vertical overflow menu next to the **Status** column and click **Delete instance**.
+3. Click the recycle bin icon next to the **Status** column.
 
    The instance status is changed to **Deleting**. When the instance is deleted successfully, all {{site.data.keyword.vpc_short}} resources and {{site.data.keyword.cloud_notm}} service instances that are associated with this instance are deleted, and the instance is removed from the table.
 

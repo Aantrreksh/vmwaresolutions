@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2020, 2023
+  years:  2020, 2024
 
-lastupdated: "2023-10-10"
+lastupdated: "2024-02-05"
 
 keywords: vmware regulated workloads, vmware regulated workloads order instance, order vmware regulated workloads, vmware regulated workloads instances
 
@@ -21,6 +21,7 @@ subcollection: vmwaresolutions
 
 1. In the {{site.data.keyword.vmwaresolutions_full}} console, click the **VMware Regulated Workloads** card in the **Solutions** section. {: #step-1}
 1. Review the service prerequisites and confirm that you ordered the mandatory services listed.
+1. Enter the instance name and select a resource group. Then, select the vCenter Server version.
 1. To specify the instance configuration name, click **Browse configurations** and choose a configuration in the **VMware instance configuration manager**.
    * If you do not see any configurations in the list and you want to create one, you must first save the instance settings as a new configuration without placing an order.
    * If you want to update a saved configuration or create a new configuration based on a saved one, select the configuration from the side panel, make your changes, and then save.
@@ -47,7 +48,7 @@ subcollection: vmwaresolutions
 1. Choose the firewall appliance for your instance and follow the steps, depending on your selection:
    * For **Gateway cluster with Juniper® vSRX**, **Gateway cluster with FortiGate® Virtual Appliance**, and **Bring your own gateway appliance**, specify the [gateway cluster name](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-orderinginstance-edge#vrw-orderinginstance-edge-cluster-name), the CPU model, the RAM size, and the networking type.
    * For **Gateway cluster with Juniper vSRX** and **Gateway cluster with FortiGate Virtual Appliance**, you must also specify the corresponding service settings in a later step.
-   * For **FortiGate Security Appliance**, you must order the **FortiGate Security Appliance 10 Gbps** service from the [{{site.data.keyword.cloud_notm}} catalog](https://cloud.ibm.com/catalog/infrastructure/fortigate-security-appliance-10gb). Confirm that you ordered the service and continue with the following steps.
+   * For **FortiGate Security Appliance**, you must order the **FortiGate Security Appliance 10 Gbps** service from the [{{site.data.keyword.cloud_notm}} catalog](https://cloud.ibm.com/netsec/firewalls/multi-vlan/provision#about). Confirm that you ordered the service and continue with the following steps.
 1. Under **Network interface**, enter the hostname prefix for the regulated workload and the root domain name. If you want to customize the hostnames prefix individually, toggle the **Configure hostnames individually** switch on.
 1. Under **Resource details**, enter the instance name and select a resource group.
 1. Under **Included services**, review the add-on services to be deployed into the instance. If a service requires configuration, complete the service-specific settings by clicking **Edit** on the service card. Then, complete your edits and click **Save**. For more information about specific settings for a service, see the corresponding topic for ordering the service.

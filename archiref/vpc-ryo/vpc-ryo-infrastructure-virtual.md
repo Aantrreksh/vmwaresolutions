@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2022, 2023
+  years:  2022, 2024
 
-lastupdated: "2023-09-11"
+lastupdated: "2023-01-29"
 
 subcollection: vmwaresolutions
 
@@ -109,7 +109,7 @@ The following list includes an example design:
 ## NFS attached storage
 {: #vpc-ryo-infrastructure-virtual-nfs-storage}
 
-As described in the [Physical infrastructure design](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-ryo-infrastructure-physical#storage-shared) topic, {{site.data.keyword.filestorage_vpc_full_notm}} is a zonal file storage offering that provides NFS-based file storage services for VPC customers. File shares are created in an availability zone within a region. They can be shared with multiple server instances within the same zone across multiple VPCs.
+As described in [Shared file-level storage across hosts](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-ryo-infrastructure-physical#vpc-ryo-infrastructure-physical-storage-shared), {{site.data.keyword.filestorage_vpc_full_notm}} is a zonal file storage offering that provides NFS-based file storage services for VPC customers. File shares are created in an availability zone within a region. They can be shared with multiple server instances within the same zone across multiple VPCs.
 
 If you choose to use this {{site.data.keyword.filestorage_vpc_full_notm}}, you can attach an NFS share to your selected hosts and VMware clusters. This share can be used for management components such as vCenter Server, VMware NSX-T managers, and NSX-T edge nodes. More data stores can be attached to a cluster for workload use, in various sizes and performance tiers.
 

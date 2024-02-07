@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2016, 2023
+  years: 2016, 2024
 
-lastupdated: "2023-08-18"
+lastupdated: "2024-02-06"
 
 keywords: history message, audit history, error messages
 
@@ -20,7 +20,7 @@ subcollection: vmwaresolutions
 
 All operations that {{site.data.keyword.cloud}} performs for your VMware® instance are logged in the instance history. You can use the instance history as a reference to review these operations. For more information about reviewing your instance history, see [Procedure to view the deployment history for vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_viewinginstances#vc_viewinginstances-procedure-view-deploy-history).
 
-The following sections provide all of the possible messages that can be issued to your instance history.
+The following information details the messages that can be issued to your instance history.
 
 ## General instance history messages
 {: #audit_messages-general}

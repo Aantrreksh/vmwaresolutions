@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2023
+  years:  2016, 2024
 
-lastupdated: "2023-09-08"
+lastupdated: "2024-02-01"
 
 keywords: vmware solutions data sheet, vmware solutions developer, vmware solutions video
 
@@ -33,7 +33,7 @@ Review the following resources to get started faster or gain more in-depth techn
 ## Platform extensions
 {: #additional_resources-plat-extensions}
 
-Review the architecture of all the [Virtualization platform extensions](https://www.ibm.com/cloud/architecture/architectures/virtualizationArchitecture/extensions) such as:
+Review the architecture of all [virtualization platform extensions](https://www.ibm.com/topics/virtualization) such as:
 
 * VMware HCX™ on {{site.data.keyword.cloud_notm}}
 * {{site.data.keyword.cloud_notm}} file and block storage
@@ -48,11 +48,11 @@ Review the architecture of all the [Virtualization platform extensions](https://
 ## Videos and demonstrations
 {: #additional_resources-demos}
 
-* [Veeam on {{site.data.keyword.cloud_notm}}](https://www.ibm.com/demos/collection/Veeam-on-IBM-Cloud)
-* [Zerto on {{site.data.keyword.cloud_notm}}](https://www.ibm.com/demos/collection/Zerto-on-IBM-Cloud)
-* [Resources and videos](https://www.ibm.com/cloud/architecture/architectures/virtualizationArchitecture/resources)
+* [Veeam on {{site.data.keyword.cloud_notm}}](https://www.ibm.com/products/veeam)
+* [Zerto on {{site.data.keyword.cloud_notm}}](https://www.ibm.com/products/zerto)
+* [What is virtualization?](https://www.ibm.com/topics/virtualization)
 
 ## VMware documentation
 {: #additional_resources-vmware-doc}
 
-* [VMware Hybrid Cloud Extension documentation](https://cloud.vmware.com/vmware-hcx/resources){: external}
+* [VMware Cloud Solutions](https://www.vmware.com/cloud-solutions.html){: external}

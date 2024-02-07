@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2023
+  years:  2016, 2024
 
-lastupdated: "2023-10-10"
+lastupdated: "2024-02-02"
 
 subcollection: vmwaresolutions
 
@@ -31,7 +31,7 @@ Review the following best practice information:
 
 * NSX-T Data Center is updated by using a download from _my.vmware.com_. Therefore, you need an account to download the update. If you are using {{site.data.keyword.cloud}} subscription licensing with your VMware vCenter Server® instance, you cannot download the updates with your **my.vmware.com** account. [Contact IBM Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support).
 * Before you begin the upgrade, check the NSX-T Data Center notes for upgrade issues and workarounds. Using the release notes, verify that vCenter and the host OS meets the new system requirements for NSX-T Data Center.
-* If you installed any additional software from VMware Business Partners, consult the Business Partner documentation for compatibility and upgrade details. 
+* If you installed any additional software from VMware Business Partners, consult the Business Partner documentation for compatibility and upgrade details.
 * Back up the NSX Manager before you start the upgrade process. See [Configure Backups](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.2/administration/GUID-E6181BF1-2CB7-4870-B508-BFAF5B47D702.html){: external}.
 * Disable automatic backups before you start the upgrade process.
 * Ensure that your host OS is supported for NSX Manager. If your ESXi host is unsupported, manually upgrade your ESXi host to the supported version. Review [Software BOM for vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_bom#vc_bom-software) for currently supported software levels on vCenter Server instances.
@@ -43,4 +43,4 @@ Review the following best practice information:
 {: #vum-updating-nsx-related}
 
 * [VMware HCX solution architecture](/docs/vmwaresolutions?topic=vmwaresolutions-hcx-archi-intro#hcx-archi-intro)
-* [{{site.data.keyword.vmwaresolutions_short}} Demos](https://www.ibm.com/demos/collection/IBM-Cloud-for-VMware-Solutions/) (demonstrations)
+* [{{site.data.keyword.vmwaresolutions_short}}](https://www.ibm.com/products/vmware)

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2022, 2023
+  years:  2022, 2024
 
-lastupdated: "2023-09-20"
+lastupdated: "2024-02-05"
 
 subcollection: vmwaresolutions
 
@@ -36,7 +36,7 @@ The offerings are described in detail in the following documents:
 
 * [vCenter Server as a single site deployment](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview) - This offering deploys a VMware® based platform in a single {{site.data.keyword.cloud_notm}} data center automatically.
 * [vCenter Server as a multisite deployment](/docs/vmwaresolutions?topic=vmwaresolutions-vc_multisite) - This offering deploys a secondary VMware vCenter Server® instance in a single {{site.data.keyword.cloud_notm}} data center automatically. It is linked to a primary [vCenter Server single site](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview) previously deployed. Multiple secondary instances can be created.
-* vCenter Server dual-site - This deployment pattern is based on two [vCenter Server single site](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview) deployments but not in a primary-secondary relationship as in the [vCenter Server multisite](/docs/vmwaresolutions?topic=vmwaresolutions-vc_multisite) pattern. This is typically used in a production-disaster recovery pattern by using Zerto or Veeam® replication between the two sites. 
+* vCenter Server dual-site - This deployment pattern is based on two [vCenter Server single site](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview) deployments but not in a primary-secondary relationship as in the [vCenter Server multisite](/docs/vmwaresolutions?topic=vmwaresolutions-vc_multisite) pattern. This is typically used in a production-disaster recovery pattern by using Zerto or Veeam® replication between the two sites.
 
 In the vCenter Server deployments, each site, and each instance has its own NSX-T Manager cluster. In the multisite deployments, the vCenter, NSX-T managers, and domain controller components are deployed per site. Each instance on each site has [a default NSX-T overlay topology](/docs/vmwaresolutions?topic=vmwaresolutions-v2t-example-overlays#v2t-example-overlays-single-site-st) and no networking integrations nor dependencies exist between the sites.
 {: note}
@@ -81,12 +81,12 @@ In the previous diagram, the following terms require some additional comments:
 * Single NSX-T Manager cluster - The automation deploys three NSX-T Manager appliances in a cluster with a Virtual IP address.
 * Distributed NSX-T Manager cluster - In the regulated workloads multizone architecture, an NSX-T Manager appliance is deployed automatically into each of the three sites along with an {{site.data.keyword.cloud_notm}} private load balancer.
 * Active NSX-T data plane - All site ingress and egress traverses through the single edge cluster that is deployed in that site automatically.
-* Active-Active NSX-T data plane - The architecture supports a manually deployed active-active data plane, which enables a dynamic failover due to a failure in one of the sites. For more information, see [Multizone region data center active-active topology](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-nsxt-topologies#fss-nsx-topologiest-mzraa).
+* Active-Active NSX-T data plane - The architecture supports a manually deployed active-active data plane, which enables a dynamic failover due to a failure in one of the sites.
 * No stretched L2 capability - The stretching of layer 2 NSX-T overlay segments across sites is not possible.
-* Stretched L2 capable - The stretching of layer 2 NSX-T overlay segments across sites is possible by using manual configuration. For more information, see [Multizone region data center active-active topology](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-nsxt-topologies#fss-nsx-topologiest-mzraa).
+* Stretched L2 capable - The stretching of layer 2 NSX-T overlay segments across sites is possible by using manual configuration.
 * Single edge cluster Tier-0 gateway for workloads - The automation deploys a single NSX-T edge cluster, consisting of a pair of edge appliances, hosting an active standby Tier-0 gateway for use by the workload VMs. These VMs provide connection between the overlay and underlay networks.
-* Stretched edge cluster Tier-0 gateways for workloads per site - To enable an active-active data plane, a stretched edge NSX-T cluster is created manually by deploying an edge appliance in each site. This action enables access to the stretched L2 NSX-T overlay segments, which host the workload VMs if a failure occurs in one of the sites. For more information, see [Multizone region data center active-active topology](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-nsxt-topologies#fss-nsx-topologiest-mzraa)
-* Single-zone vSAN - Regulated workloads automatically deploys management and resource clusters with stretched vSAN storage. For more information, see [Storage](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-storage)).
+* Stretched edge cluster Tier-0 gateways for workloads per site - To enable an active-active data plane, a stretched edge NSX-T cluster is created manually by deploying an edge appliance in each site. This action enables access to the stretched L2 NSX-T overlay segments, which host the workload VMs if a failure occurs in one of the sites.
+* Single-zone vSAN - Regulated workloads automatically deploys management and resource clusters with stretched vSAN storage. For more information, see [Storage](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-storage).
 * Mandated-regulated workload services - Regulated workloads must include add-on services, such as Veeam, Caveonix RiskForesight™, Entrust CloudControl™, Juniper® vSRX, and VMware Aria® Operations™ and VMware Aria Operations™ for Logs. Service prerequisites are also required, such as Hyper Protect Crypto Services, KMIP™ for VMware and Direct Link Dedicated.
 
 ## Automated offerings with manual customization tasks
