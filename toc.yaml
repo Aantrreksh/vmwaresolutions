@@ -91,6 +91,7 @@ toc:
               - include: ../vmware-service/vmaas/cluster-adding-deleting.md
               - include: ../vmware-service/vmaas/host-adding-deleting.md
               - include: ../vmware-service/vmaas/storage-adding-deleting.md
+              - include: ../vmware-service/vmaas/private-subnets-adding-deleting.md
           - topicgroup:
               label: Managing virtual data center instances
               topics:
@@ -121,6 +122,11 @@ toc:
               - include: ../vmware-service/vmaas/vcda-creating-deleting-vmaas-pairing.md
               - include: ../vmware-service/vmaas/vcda-adding-deleting.md
               - include: ../vmware-service/vmaas/vcda-migrating.md
+          - topicgroup:
+              label: Creating secure interconnectivity with VMware as a Service
+              topics:
+                - include: ../vmware-service/vmaas/tgw-adding-connections.md
+                - include: ../vmware-service/vmaas/tgw-viewing-deleting-connections.md
           - topicgroup:
               label: Reference
               topics:
