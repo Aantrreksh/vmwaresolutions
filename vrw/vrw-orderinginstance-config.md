@@ -25,7 +25,7 @@ The instance name is set to **vrw-_xx_** by default, where _xx_ represents two r
 {{site.data.content.orderinginstance-inst-name-list}}
 
 ## Resource group
-{: #vrw-orderinginstance-resource-group}
+{: #vrw-orderinginstance-config-resource-group}
 
 {{site.data.content.para-orderinginstance-resource-group}}
 

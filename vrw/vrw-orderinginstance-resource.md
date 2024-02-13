@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2024
 
-lastupdated: "2024-02-06"
+lastupdated: "2024-02-07"
 
 keywords: vmware regulated workloads, vmware regulated workloads order instance, order vmware regulated workloads, vmware regulated workloads instances
 
@@ -27,7 +27,7 @@ The instance name is set to **vrw-_xx_** by default, where _xx_ represents two r
 {{site.data.content.orderinginstance-inst-name-list}}
 
 ## Resource group
-{: #vrw-orderinginstance-resource-group}
+{: #vrw-orderinginstance-resource-resource-group}
 
 {{site.data.content.para-orderinginstance-resource-group}}
 
