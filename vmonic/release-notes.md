@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2024
-lastupdated: "2024-02-07"
+lastupdated: "2024-02-14"
 
 keywords: release notes, what's new in VMware Solutions, what is new, new features, VMware Solutions release notes, VMware Solutions
 
@@ -26,6 +26,9 @@ Use these release notes to learn about updates to {{site.data.keyword.vmwaresolu
 ### 7 February 2024
 {: #vmwaresolutions-feb0724}
 {: release-note}
+
+VMware Cloud Director upgrade for VMware Shared
+:   (Updated on 14 February 2024) VMware Solutions 5.8 provides an upgrade to the VMware Shared infrastructure to an updated version of VMware Cloud Director v10.4.2.2. This release resolves various issues, includes security fixes, and introduces new features, such as an improved tenant login experience. For more information, see [VMware Cloud Director 10.4.2.2 release notes](https://docs.vmware.com/en/VMware-Cloud-Director/10.4.2.2/rn/vmware-cloud-director-10422-release-notes/index.html){: external}.
 
 vCenter Server 8 support
 :   VMware vCenter Server® 8.0 is available for newly deployed instances. For new instances with vCenter Server 8 and existing instances or clusters with vCenter Server 7, you can add only vCenter Server 7 clusters or hosts. For more information, see [Upgrading to vCenter Server 8.0](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcs_80_upgrade).

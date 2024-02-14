@@ -1,6 +1,6 @@
 {
     "title": "VMware Solutions docs",
-    "lastupdated": "2024-02-07",
+    "lastupdated": "2024-02-14",
     "introduction": "VMware Solutions is a group of IBM Cloud offerings that provide deployment and management of VMware virtualized environments. Learn how to make the most of your VMware Solutions experience by using the user documentation, REST API documentation reference, solution architectures, and solution guides.",
     "section_devtools": {
       "api": "/docs?tab=api-docs&category=compute&subCategory=vmwaresolutions"
@@ -54,6 +54,11 @@
       "view_more": "/docs/vmwaresolutions?topic=vmwaresolutions-vmwaresolutions-relnotes",
       "tiles": [
         {
+          "date": "14 February 2024",
+          "title": "VMware Cloud Director upgrade for VMware Shared",
+          "description": "VMware Solutions 5.8 provides an upgrade to the VMware Shared infrastructure to an updated version of VMware Cloud Director v10.4.2.2. This release resolves various issues, includes security fixes, and introduces new features, such as an improved tenant login experience."
+        },
+        {
           "date": "7 February 2024",
           "title": "vCenter Server 8 support",
           "description": "VMware vCenter Server® 8.0 is available for newly deployed instances. For new instances with vCenter Server 8 and existing instances or clusters with vCenter Server 7, you can add only vCenter Server 7 clusters or hosts."
@@ -62,11 +67,6 @@
           "date": "13 December 2023",
           "title": "Ordering Veeam licenses",
           "description": "You can order a maximum of 500 VMs under a single license key for Veeam®. If you need a single license key for more than 500 VMs, you must order a stand-alone license separately."
-        },
-        {
-          "date": "3 November 2023",
-          "title": "VMware Cloud Foundation",
-          "description": "The IBM Cloud® for VMware Cloud Foundation offering is a full-stack Software Defined Data Center (SDDC) solution that is built on VMware Cloud Foundation. It delivers compute, storage, networking, management automation, and security in a single platform on IBM Cloud Bare Metal Servers for Virtual Private Cloud (VPC)."
         }
       ]
     }
