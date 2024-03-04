@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-01-31"
+lastupdated: "2024-02-19"
 
 subcollection: vmwaresolutions
 
@@ -270,8 +270,8 @@ If you have a vSAN cluster, the additional preconfigured alarms in the following
 | vSAN health alarm `No disk claimed on witness host` | Consider alarm only if vSAN is stretched. | [vSAN Health Service - No disk claimed on witness host (2130584)](https://kb.vmware.com/s/article/2130584){: external} |
 | vSAN health alarm `Online health connectivity` | Not considered essential for notification. Alarm that is reviewed as part of proactive daily checks. | [vSAN Health Service - Online Health - Internet Connectivity Check (2149196)](https://kb.vmware.com/s/article/2149196){: external} |
 | vSAN health alarm `Operation health` | Not considered essential for notification. Alarm that is reviewed as part of proactive daily checks. | No additional information |
-| vSAN health alarm `Performance Data Collection` | Not considered essential for notification. Alarm that is reviewed as part of proactive daily checks. | [vSAN health test fails on Performance Service (2150589)](https://kb.vmware.com/s/article/2150589){: external} |
-| vSAN health alarm `Performance service status` | Not considered essential for notification. Alarm that is reviewed as part of proactive daily checks. | [vSAN health test fails on Performance Service (2150589)](https://kb.vmware.com/s/article/2150589){: external} |
+| vSAN health alarm `Performance Data Collection` | Not considered essential for notification. Alarm that is reviewed as part of proactive daily checks. | No additional information |
+| vSAN health alarm `Performance service status` | Not considered essential for notification. Alarm that is reviewed as part of proactive daily checks. | No additional information |
 | vSAN health alarm `Physical disk component limit health` | Configure to send email one time for a critical event. | [vSAN Health Service - Physical disk - Component limit (2146086)](https://kb.vmware.com/s/article/2146086){: external} |
 | vSAN health alarm `Physical disk health retrieval issues` | Configure to send email one time for a critical event. | [vSAN Health Service - Physical Disk Health - Physical disk health retrieval issue (2149291)](https://kb.vmware.com/s/article/2149291){: external} |
 | vSAN health alarm `Physical disk health - Metadata Health` | Configure to send email one time for a critical event. | No additional information |

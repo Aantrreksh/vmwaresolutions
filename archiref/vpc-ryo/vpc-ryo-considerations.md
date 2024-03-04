@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2022, 2023
+  years:  2022, 2024
 
-lastupdated: "2023-09-21"
+lastupdated: "2024-03-04"
 
 subcollection: vmwaresolutions
 
@@ -25,7 +25,7 @@ Managing a VMware in the {{site.data.keyword.cloud_notm}} requires the same plan
 ## Sizing your VMware vSphere clusters
 {: #vpc-ryo-considerations-sizing}
 
-A vSphere cluster is typically the boundary of shareable resources for VMware workloads. By definition, a vSphere High Availability (HA) cluster consists of two or more hosts. VMware vSphere® HA protects your virtual machines (VMs) if a VMware ESXi™ host failure occurs by restarting VMs on other hosts in the cluster when an ESXi host fails. When you are planning the sizing for your VMware vSphere clusters in {{site.data.keyword.cloud_notm}} VPC, consider the VMware best practices that are documented in [VMware validated designs](https://docs.vmware.com/en/VMware-Validated-Design/5.1/sddc-architecture-and-design/){: external} to meet your capacity and high availability targets.
+A vSphere cluster is typically the boundary of shareable resources for VMware workloads. By definition, a vSphere High Availability (HA) cluster consists of two or more hosts. VMware vSphere® HA protects your virtual machines (VMs) if a VMware ESXi™ host failure occurs by restarting VMs on other hosts in the cluster when an ESXi host fails. When you are planning the sizing for your VMware vSphere clusters in {{site.data.keyword.cloud_notm}} VPC, consider the VMware best practices that are documented in [VMware validated designs](https://core.vmware.com/vmware-validated-solutions){: external} to meet your capacity and high availability targets.
 
 Theoretically, as each {{site.data.keyword.vpc_short}} Bare Metal Server is deployed individually, you can build a solution as small as one ESXi host per {{site.data.keyword.vpc_short}} zone. However, you need to take the high availability aspects into account. To protect your VMware workloads from host failures, for example in case one host stops functioning, you need to have a cluster with at least two hosts. To keep the workloads running, you need to size enough reserve capacity in each cluster even if a host would fail. In most use cases, a 3-node cluster is far more appropriate because you have the option of running maintenance tasks on ESXi hosts (such as host updates) without having to disable HA.
 
@@ -152,4 +152,4 @@ In addition to capacity planning, complete the following to ensure that your sto
 * [{{site.data.keyword.vpc_short}} VPN overview](/docs/vpc?topic=vpc-vpn-overview)
 * [VPC IaaS endpoints](/docs/vpc?topic=vpc-service-endpoints-for-vpc#infrastructure-as-a-service-iaas-endpoints)
 * [VMware on Bare Metal VPC tutorial](/docs/solution-tutorials?topic=solution-tutorials-vpc-bm-vmware)
-* [VMware validated designs](https://docs.vmware.com/en/VMware-Validated-Design/5.1/sddc-architecture-and-design/){: external}.
+* [VMware validated designs](https://core.vmware.com/vmware-validated-solutions){: external}.
