@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2021, 2023
+  years:  2021, 2024
 
-lastupdated: "2023-07-28"
+lastupdated: "2024-03-05"
 
 keywords: manage shared resources, view shared virtual data centers details
 
@@ -90,4 +90,4 @@ For more information about recommended services details, see [Managing Veeam for
 * [Resizing your virtual data centers](/docs/vmwaresolutions?topic=vmwaresolutions-shared_resize)
 * [Deleting VMware Shared virtual data centers](/docs/vmwaresolutions?topic=vmwaresolutions-shared_deletinginstance)
 * [Accessing the VMware Cloud Director Management console](/docs/vmwaresolutions?topic=vmwaresolutions-shared_accessing-vcd-console)
-* [VMware Cloud Director](https://www.vmware.com/ca/products/cloud-director.html){: external}
+* [VMware Cloud Director](https://www.vmware.com/products/cloud-director.html){: external}

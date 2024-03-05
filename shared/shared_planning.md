@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2020, 2023
+  years:  2020, 2024
 
-lastupdated: "2023-10-18"
+lastupdated: "2024-03-05"
 
 keywords: planning VMware Solutions Shared, data center, VMware Solutions Shared data centers
 
@@ -99,4 +99,4 @@ The number of VMware Shared instances (or virtual data centers) does not impact 
 * [Ordering virtual data centers](/docs/vmwaresolutions?topic=vmwaresolutions-shared_ordering)
 * [Viewing and managing virtual data centers](/docs/vmwaresolutions?topic=vmwaresolutions-shared_viewing-vdc-summary)
 * [Operating VMware Shared](/docs/vmwaresolutions?topic=vmwaresolutions-shared_vcd-ops-guide)
-* [VMware Cloud Director](https://www.vmware.com/ca/products/cloud-director.html){: external}
+* [VMware Cloud Director](https://www.vmware.com/products/cloud-director.html){: external}

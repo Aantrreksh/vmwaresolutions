@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2020, 2023
+  years:  2020, 2024
 
-lastupdated: "2023-07-28"
+lastupdated: "2024-03-05"
 
 keywords: VMware Solutions Shared delete instance, delete VMware Solutions Shared, remove VMware Solutions Shared
 
@@ -62,5 +62,5 @@ Any job that includes instructions to back up the VM fails when the VM restore p
 * [Ordering virtual data centers](/docs/vmwaresolutions?topic=vmwaresolutions-shared_ordering)
 * [Viewing and managing virtual data centers](/docs/vmwaresolutions?topic=vmwaresolutions-shared_viewing-vdc-summary)
 * [Operating VMware Shared](/docs/vmwaresolutions?topic=vmwaresolutions-shared_vcd-ops-guide)
-* [VMware Cloud Director](https://www.vmware.com/ca/products/cloud-director.html){: external}
+* [VMware Cloud Director](https://www.vmware.com/products/cloud-director.html){: external}
 * [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support)

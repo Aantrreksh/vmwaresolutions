@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2024
 
-lastupdated: "2024-01-30"
+lastupdated: "2024-03-05"
 
 subcollection: vmwaresolutions
 
@@ -18,7 +18,7 @@ subcollection: vmwaresolutions
 
 Integrating the {{site.data.keyword.vmwaresolutions_full}} infrastructure domain with the {{site.data.keyword.vmwaresolutions_short}} workload domain is not recommended. You must allow the workload domain controllers that are connected to the underlay network to communicate with the infrastructure domain controllers that are connected to the underlay network. For more information, see the following documents.
 
-* [Description of support boundaries for Active Directory over NAT](https://learn.microsoft.com/en-US/troubleshoot/windows-server/identity/support-for-active-directory-over-nat){: external}
+* [Description of support boundaries for Active Directory over NAT](https://learn.microsoft.com/en-US/troubleshoot/windows-server/active-directory/support-for-active-directory-over-nat){: external}
 * [Steps to avoid registering unwanted NICs in DNS on a multihomed domain controller](https://learn.microsoft.com/en-US/troubleshoot/windows-server/networking/unwanted-nic-registered-dns-mulithomed-dc){: external}
 
 However, if you need information about this integration, review the following models.
@@ -64,5 +64,5 @@ The two-way trust between the {{site.data.keyword.vmwaresolutions_short}} infras
 ## Related links
 {: #adds-integration-related}
 
-* [Description of support boundaries for Active Directory over NAT](https://learn.microsoft.com/en-US/troubleshoot/windows-server/identity/support-for-active-directory-over-nat){: external}
+* [Description of support boundaries for Active Directory over NAT](https://learn.microsoft.com/en-US/troubleshoot/windows-server/active-directory/support-for-active-directory-over-nat){: external}
 * [Steps to avoid registering unwanted NICs in DNS on a multihomed domain controller](https://learn.microsoft.com/en-US/troubleshoot/windows-server/networking/unwanted-nic-registered-dns-mulithomed-dc){: external}

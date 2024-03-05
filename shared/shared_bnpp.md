@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2020, 2023
+  years:  2020, 2024
 
-lastupdated: "2023-05-22"
+lastupdated: "2024-03-05"
 
 keywords: troubleshooting VMware Solutions Shared, data center, VMware Solutions Shared data centers, Business Partners
 
@@ -60,4 +60,4 @@ This occurs because the roles were created before the update of VMware Cloud Dir
 {: #shared_bnpp-related}
 
 * [Operating VMware Shared](/docs/vmwaresolutions?topic=vmwaresolutions-shared_vcd-ops-guide)
-* [VMware Cloud Director](https://www.vmware.com/ca/products/cloud-director.html){: external}
+* [VMware Cloud Director](https://www.vmware.com/products/cloud-director.html){: external}
