@@ -3,7 +3,7 @@
 copyright:
   years: 2022, 2024
 
-lastupdated: "2024-02-05"
+lastupdated: "2024-03-06"
 
 keywords: IBM Cloud for VMware Solutions, getting started, vmware solutions offerings, services for vmwaresolutions, vmwaresolutions use cases
 
@@ -494,6 +494,6 @@ vSphere 8 is not yet available to order from the VMware Solutions console.
 {: note}
 {: #note-vcsversion80-vsphere8}
 
-Conref section END.
+<!-- Conref section END. -->
 
-For more information about the conref.md file template, see [Using conrefs to reuse chunks of content within your subcollection](https://test.cloud.ibm.com/docs/writing?topic=writing-conrefs).
+<!-- For more information about the conref.md file template, see [Using conrefs to reuse chunks of content within your subcollection](https://test.cloud.ibm.com/docs/writing?topic=writing-conrefs). -->
