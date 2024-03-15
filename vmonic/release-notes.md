@@ -67,7 +67,6 @@ New and updated documentation
 
    * [Architecture pattern for integrating IBM Cloud Security and Compliance Center Workload Protection with vCenter Server](/docs/vmwaresolutions?topic=vmwaresolutions-arch-pattern-sccwpp)
    * [Caveonix RiskForesight Security and Compliance Center integration](/docs/vmwaresolutions?topic=vmwaresolutions-caveonix-scc)
-   * [Architecture patterns for integrating IBM Cloud Security and Compliance Center Workload Protection with VMware as a Service](/docs/vmwaresolutions?topic=vmwaresolutions-arch-pattern-vmwaas-sccwpp)
    * [VMware Cloud Foundation architecture patterns](/docs/vmwaresolutions?topic=vmwaresolutions-arch-pattern-vcf-clientvpn)
    * [Veeam backup guide](/docs/vmwaresolutions?topic=vmwaresolutions-veeam_cloud_vmware)
 
