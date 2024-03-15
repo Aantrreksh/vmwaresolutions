@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2023
+  years:  2016, 2024
 
-lastupdated: "2023-09-11"
+lastupdated: "2024-03-15"
 
 subcollection: vmwaresolutions
 
@@ -90,7 +90,7 @@ KMIP for VMware stores the wrapped form of the KEKs within IBM Key Protect or Hy
 
 Three components make up your storage encryption solution: your VMware cluster, your KMIP for VMware instance, and your Key Protect or Hyper Protect Crypto Services instance.
 
-VMware vCenter and ESXi authenticate with your KMIP for VMware instance by using certificates that you install or generate in VMware vCenter when you create a key management server (KMS) connection. You install the public certificate into KMIP for VMware to identify the vCenter client or clients that are allowed to connect. Each client is authorized to all keys stored in that KMIP for VMware instance.
+VMware vCenter and ESXi authenticate with your KMIP for VMware instance by using certificates that you install or generate in VMware vCenter when you create a key management server (KMS) connection.  Install the public certificate into KMIP for VMware to identify the vCenter client or clients that are allowed to connect. Each client is authorized to all keys stored in that KMIP for the VMware instance.
 
 Your KMIP for VMware instance is authorized to your Key Protect or Hyper Protect Crypto Services instance by using {{site.data.keyword.cloud_notm}} Identity and Access Management (IAM).
 

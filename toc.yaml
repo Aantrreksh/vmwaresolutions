@@ -73,11 +73,7 @@ toc:
           label: VMware as a Service
           topics:
           - include: ../vmware-service/common/vmware-aas-overview.md
-          - topicgroup:
-              label: VMware as a Service pricing
-              topics:
-                - include: ../vmware-service/vmaas/st_pricing.md
-                - include: ../vmware-service/vmaas/mt_pricing.md
+          - include: ../vmware-service/common/vmaas-bom.md
           - include: ../vmware-service/vmaas/tenant-plan-deploy.md
           - topicgroup:
               label: Ordering VMware as a Service instances
