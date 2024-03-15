@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2024
 
-lastupdated: "2024-02-06"
+lastupdated: "2024-03-15"
 
 keywords: vmware cloud foundation, IBM Cloud, vpc, faq
 
@@ -63,18 +63,18 @@ Before you complete an update, review the release notes and the FAQ section.
 
 Yes. For more information, see [VMware Cloud Foundation 5.0 – Important information and Knowledge base articles](https://kb.vmware.com/s/article/91751){: external}.
 
-## What is the Async Patch Tool and how can I use it with my VMware Cloud Foundation instance?
+## What is the Async Patch tool and how can I use it with my VMware Cloud Foundation instance?
 {: #vpc-vcf-faq-async-patch}
 {: faq}
 
-You can use the Async Patch Tool utility to apply critical patches to certain VMware Cloud Foundation components (NSX Manager, vCenter Server, and ESXi) outside of VMware Cloud Foundation releases.
+You can use the Async Patch tool to apply critical patches to certain VMware Cloud Foundation components (NSX Manager, vCenter Server, and ESXi) outside of VMware Cloud Foundation releases.
 
-For example, you can use the Async Patch Tool to get a vCenter Server patch that addresses a critical security issue as described in a VMware Security Advisory (VMSA). You can use the Async Patch Tool to download the patch and upload it to the internal LCM repository on the SDDC Manager appliance. Then, you use the SDDC Manager UI to apply the patch to your instance.
+For example, you can use the Async Patch tool to get a vCenter Server patch that addresses a critical security issue as described in a VMware Security Advisory (VMSA). You can use the Async Patch tool to download the patch and upload it to the internal LCM repository on the SDDC Manager appliance. Then, you use the SDDC Manager UI to apply the patch to your instance.
 
 As the VMware Cloud Foundation instance does not provide you with the credentials to log in to VMware software depot, open an IBM Support ticket by following the steps in [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support). The {{site.data.keyword.cloud_notm}} Support team can provide you access to these Async Patch bundles.
 {: important}
 
-For more information, see [Async Patch Tool](https://docs.vmware.com/en/VMware-Cloud-Foundation/services/ap-tool/GUID-49818DF1-94EA-4C85-8CB6-6EFFCE5F8060.html){: external}.
+For more information, see [Async Patch tool](https://docs.vmware.com/en/VMware-Cloud-Foundation/services/ap-tool/GUID-49818DF1-94EA-4C85-8CB6-6EFFCE5F8060.html){: external}.
 
 ## How do I keep the Aria Suite on my VMware Cloud Foundation instance software up to date?
 {: #vpc-vcf-faq-aria-updates}

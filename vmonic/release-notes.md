@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2024
-lastupdated: "2024-02-14"
+lastupdated: "2024-03-15"
 
 keywords: release notes, what's new in VMware Solutions, what is new, new features, VMware Solutions release notes, VMware Solutions
 
@@ -27,6 +27,13 @@ Use these release notes to learn about updates to {{site.data.keyword.vmwaresolu
 {: #vmwaresolutions-feb0724}
 {: release-note}
 
+(Updated on 15 March 2024) VMware Cloud Foundation enhancements
+:   The following features are now available:
+
+   * **Async Patch tool**: You can apply critical patches for VMware Cloud Foundation components, such as VMware NSX® Manager, VMware vCenter Server®, and VMware ESXi™ by using the Async Patch tool. For more information, see [Viewing VMware Cloud Foundation instances](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-viewing#vpc-vcf-viewing-details).
+   * **New regions available**: VMware Cloud Foundation is now available for use in **Tokyo** and **London**.
+   * **BOM updates**: ESXi 7.0 Update 3p (build 23307199) is applied to newly deployed instances.
+
 VMware Cloud Director upgrade for VMware Shared
 :   (Updated on 14 February 2024) VMware Solutions 5.8 provides an upgrade to the VMware Shared infrastructure to an updated version of VMware Cloud Director v10.4.2.2. This release resolves various issues, includes security fixes, and introduces new features, such as an improved tenant login experience. For more information, see [VMware Cloud Director 10.4.2.2 release notes](https://docs.vmware.com/en/VMware-Cloud-Director/10.4.2.2/rn/vmware-cloud-director-10422-release-notes/index.html){: external}.
 
@@ -36,11 +43,11 @@ vCenter Server 8 support
 vCenter Server and VMware vSphere BOM updates
 :   The following updates are applied to newly deployed instances, clusters, and hosts:
 
-   * VMware vCenter Server® Appliance
+   * VMware vCenter Server Appliance
       * 8.0 Update 2a (build 22617221)
       * 7.0 Update 3p (build 22837322)
-   * VMware vSphere® ESXi™ 7.0 Update 3o (build 22348816)
-   * VMware NSX® 4.1.2.1 (build 22667789)
+   * VMware vSphere ESXi 7.0 Update 3o (build 22348816)
+   * VMware NSX 4.1.2.1 (build 22667789)
 
 Add-on services upgrades
 :   The following service versions are now available for deployment:
@@ -57,6 +64,10 @@ User interface updates and enhancements
 
 New and updated documentation
 :   The following technical documents are now available or updated:
+
+   * [Architecture pattern for integrating IBM Cloud Security and Compliance Center Workload Protection with vCenter Server](/docs/vmwaresolutions?topic=vmwaresolutions-arch-pattern-sccwpp)
+   * [Caveonix RiskForesight Security and Compliance Center integration](/docs/vmwaresolutions?topic=vmwaresolutions-caveonix-scc)
+   * [Architecture patterns for integrating IBM Cloud Security and Compliance Center Workload Protection with VMware as a Service](/docs/vmwaresolutions?topic=vmwaresolutions-arch-pattern-vmwaas-sccwpp)
    * [VMware Cloud Foundation architecture patterns](/docs/vmwaresolutions?topic=vmwaresolutions-arch-pattern-vcf-clientvpn)
    * [Veeam backup guide](/docs/vmwaresolutions?topic=vmwaresolutions-veeam_cloud_vmware)
 

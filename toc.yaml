@@ -444,9 +444,9 @@ toc:
       - topicgroup:
           label: Deprecated offerings
           topics:
-          - vmonic/eos-vsphere65.md
-          - vmonic/eos-vsphere67.md
           - vmonic/eos-nsx-v.md
+          - vmonic/eos-vsphere67.md
+          - vmonic/eos-vsphere65.md
           - topicgroup:
               label: vCenter Server multizone
               topics:
@@ -582,6 +582,7 @@ toc:
               - archiref/arch-pattern/arch-pattern-nsx-t-direct-link-ipsec.md
               - archiref/arch-pattern/arch-pattern-direct-link-edge.md
               - archiref/arch-pattern/arch-pattern-direct-link-evpn.md
+              - archiref/arch-pattern/arch-pattern-sccwpp.md
           - topicgroup:
               label: VMware Regulated Workloads architecture
               topics:
@@ -650,6 +651,7 @@ toc:
               - archiref/caveonix/caveonix-step2.md
               - archiref/caveonix/caveonix-step3.md
               - archiref/caveonix/caveonix-step4.md
+              - archiref/caveonix/caveonix-scc.md
               - archiref/caveonix/caveonix-terminology.md
           - topicgroup:
               label: Fortinet FortiGate solution architecture
@@ -733,6 +735,7 @@ toc:
               - archiref/arch-pattern-vcf/arch-pattern-vcf-zerto-con.md
               - archiref/arch-pattern-vcf/arch-pattern-vcf-zerto-std.md
               - archiref/arch-pattern-vcf/arch-pattern-vcf-zerto-xconnectivity.md
+              - archiref/arch-pattern-vcf/arch-pattern-vcf-sccwpp.md
 
           - topicgroup:
               label: Interconnectivity for VMware workloads on VPC
