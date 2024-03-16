@@ -741,7 +741,13 @@ toc:
               - archiref/vpc-interconnectivity/transit-gateway.md
               - archiref/vpc-interconnectivity/direct-link.md
               - archiref/vpc-interconnectivity/vpn.md
-
+      - topicgroup:
+          label: Solution architectures on VMware as a Service
+          topics:
+          - topicgroup:
+              label: VMware as a Service architecture patterns
+              topics:
+              - include: ../vmware-service/archiref/arch-pattern-vmwaas/arch-pattern-vmwaas-sccwpp.md
       - topicgroup:
           label: Solution guides
           topics:
