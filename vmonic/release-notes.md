@@ -23,19 +23,27 @@ Use these release notes to learn about updates to {{site.data.keyword.vmwaresolu
 ## 2024
 {: #year-2024}
 
-### 7 February 2024
-{: #vmwaresolutions-feb0724}
+### 15 March 2024
+{: #vmwaresolutions-mar1524}
 {: release-note}
 
-(Updated on 15 March 2024) VMware Cloud Foundation enhancements
+VMware Cloud Foundation enhancements
 :   The following features are now available:
 
    * **Async Patch tool**: You can apply critical patches for VMware Cloud Foundation components, such as VMware NSX® Manager, VMware vCenter Server®, and VMware ESXi™ by using the Async Patch tool. For more information, see [Viewing VMware Cloud Foundation instances](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-viewing#vpc-vcf-viewing-details).
    * **New regions available**: VMware Cloud Foundation is now available for use in **Tokyo** and **London**.
    * **BOM updates**: ESXi 7.0 Update 3p (build 23307199) is applied to newly deployed instances.
 
+### 14 February 2024
+{: #vmwaresolutions-feb1424}
+{: release-note}
+
 VMware Cloud Director upgrade for VMware Shared
-:   (Updated on 14 February 2024) VMware Solutions 5.8 provides an upgrade to the VMware Shared infrastructure to an updated version of VMware Cloud Director v10.4.2.2. This release resolves various issues, includes security fixes, and introduces new features, such as an improved tenant login experience. For more information, see [VMware Cloud Director 10.4.2.2 release notes](https://docs.vmware.com/en/VMware-Cloud-Director/10.4.2.2/rn/vmware-cloud-director-10422-release-notes/index.html){: external}.
+:   VMware Solutions 5.8 provides an upgrade to the VMware Shared infrastructure to an updated version of VMware Cloud Director v10.4.2.2. This release resolves various issues, includes security fixes, and introduces new features, such as an improved tenant login experience. For more information, see [VMware Cloud Director 10.4.2.2 release notes](https://docs.vmware.com/en/VMware-Cloud-Director/10.4.2.2/rn/vmware-cloud-director-10422-release-notes/index.html){: external}.
+
+### 7 February 2024
+{: #vmwaresolutions-feb0724}
+{: release-note}
 
 vCenter Server 8 support
 :   VMware vCenter Server® 8.0 is available for newly deployed instances. For new instances with vCenter Server 8 and existing instances or clusters with vCenter Server 7, you can add only vCenter Server 7 clusters or hosts. For more information, see [Upgrading to vCenter Server 8.0](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcs_80_upgrade).
