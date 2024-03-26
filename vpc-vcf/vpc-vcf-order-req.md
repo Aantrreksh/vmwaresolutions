@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2024
 
-lastupdated: "2024-02-05"
+lastupdated: "2024-03-26"
   
 keywords: vmware cloud foundation, IBM Cloud, vpc
 
@@ -37,4 +37,3 @@ Do not modify any values that are set during resource deployment and VMware Clou
 * [VPC network design](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-vpc-deployment)
 * [Architecture overview of roll-your-own VMware solution on VPC](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-ryo-arch-overview)
 * [IaaS endpoints](/docs/vpc?topic=vpc-service-endpoints-for-vpc#infrastructure-as-a-service-iaas-endpoints)
-* [Deploying roll-your-own VMware on {{site.data.keyword.cloud_notm}} Bare Metal Servers for {{site.data.keyword.vpc_short}}](/docs/solution-tutorials?topic=solution-tutorials-vpc-bm-vmware)

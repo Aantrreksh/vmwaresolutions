@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2022, 2023
+  years:  2022, 2024
 
-lastupdated: "2023-09-11"
+lastupdated: "2024-03-26"
 
 subcollection: vmwaresolutions
 
@@ -55,4 +55,3 @@ For more information, see [About networking](/docs/vpc?topic=vpc-about-networkin
 * [Getting started with {{site.data.keyword.tg_full_notm}}](/docs/transit-gateway?topic=transit-gateway-getting-started)
 * [VPNs for VPC overview](/docs/vpc?topic=vpc-vpn-overview)
 * [VPC IaaS endpoints](/docs/vpc?topic=vpc-service-endpoints-for-vpc#infrastructure-as-a-service-iaas-endpoints)
-* [Deploying Roll Your Own VMware on {{site.data.keyword.cloud_notm}} Bare Metal Servers for Virtual Private Cloud](/docs/solution-tutorials?topic=solution-tutorials-vpc-bm-vmware)

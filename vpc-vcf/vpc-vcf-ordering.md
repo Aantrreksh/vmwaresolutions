@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2024
 
-lastupdated: "2024-02-05"
+lastupdated: "2024-03-26"
 
 keywords: vmware cloud editions, order vmware cloud editions, order vmware cloud editions on IBM Cloud, vmware cloud foundation
 
@@ -385,7 +385,6 @@ For VMware Cloud Foundation deployment, you can determine whether to use {{site.
 * [Getting started: {{site.data.keyword.bplong_notm}}](/docs/schematics?topic=schematics-getting-started)
 * [VPC network design](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-vpc-deployment)
 * [Architecture overview of roll-your-own VMware solution on VPC](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-ryo-arch-overview)
-* [Deploying Roll Your Own VMware on {{site.data.keyword.cloud_notm}} Bare Metal Servers for {{site.data.keyword.vpc_short}}](/docs/solution-tutorials?topic=solution-tutorials-vpc-bm-vmware)
 * [Getting started with {{site.data.keyword.cloud_notm}} DNS Services](/docs/dns-svcs?topic=dns-svcs-getting-started&interface=ui)
 * [Managing logging instances in the Observability UI](/docs/log-analysis?topic=log-analysis-observe)
 * [VMware Cloud Foundation overview](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-ovw)
