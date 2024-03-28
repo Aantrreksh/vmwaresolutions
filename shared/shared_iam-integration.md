@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-03-05"
+lastupdated: "2024-03-19"
 
 keywords: manage shared resources, set IAM integration the VMware Cloud Director Management console, shared iam roles, iam roles
 
@@ -16,6 +16,8 @@ subcollection: vmwaresolutions
 
 # Enabling and managing Identity and Access Management
 {: #shared_set-iam}
+
+{{site.data.content.shared-deprecated-note}}
 
 You can optionally enable {{site.data.keyword.cloud}} Identity and Access Management (IAM) for your VMware Cloud Director Organization. For new organizations, IAM is enabled by default. For existing organizations, you can set or reset the IAM enablement from the virtual data center site details page.
 

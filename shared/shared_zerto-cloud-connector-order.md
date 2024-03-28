@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2021, 2023
+  years:  2021, 2024
 
-lastupdated: "2023-02-13"
+lastupdated: "2024-02-29"
 
 keywords: zerto, order zerto cloud connector
 
@@ -16,6 +16,8 @@ subcollection: vmwaresolutions
 
 # Ordering a Zerto Cloud Connector
 {: #shared_zerto-cc-order}
+
+{{site.data.content.shared-deprecated-note}}
 
 Optionally order Zerto Cloud Connector (ZCC) as an enhanced Zerto option to link on-premises workloads to {{site.data.keyword.cloud}} and replicate on-premises virtual machines (VMs) to {{site.data.keyword.cloud_notm}}. The Zerto and ZCC services seamlessly integrate as a managed solution to help your enterprise achieve VM replication and disaster recovery. You can order one ZCC per virtual data center.
 

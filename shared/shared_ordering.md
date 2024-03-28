@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2024
 
-lastupdated: "2024-03-05"
+lastupdated: "2024-03-19"
 
 keywords: shared order resource, order on demand shared, order on demand resources
 
@@ -17,12 +17,9 @@ subcollection: vmwaresolutions
 # Ordering virtual data centers
 {: #shared_ordering}
 
+{{site.data.content.shared-deprecated-note}}
+
 {{site.data.keyword.vmwaresolutions_full}} Shared offers either a standardized or customizable deployment option of VMware® virtual data center environments. Choose the **On-demand** or **Reserved** option.
-
-## Requirements for virtual data centers
-{: #shared_ordering-reqs}
-
-If you are ordering a virtual data center for the first time, ensure that you completed the tasks in the **Before you begin** section on the ordering page. For more information, see [Setting up your environment for your first order](/docs/vmwaresolutions?topic=vmwaresolutions-completing_checklist).
 
 ## System settings
 {: #shared_ordering-sys-settings}

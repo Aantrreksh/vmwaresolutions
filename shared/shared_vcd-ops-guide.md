@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2024
 
-lastupdated: "2024-02-12"
+lastupdated: "2024-02-29"
 
 keywords: vmware solutions shared, get started shared, tech specs shared
 
@@ -16,6 +16,8 @@ subcollection: vmwaresolutions
 
 # Operating VMware Shared
 {: #shared_vcd-ops-guide}
+
+{{site.data.content.shared-deprecated-note}}
 
 ## VMware Cloud Director tenant portal overview
 {: #shared_vcd-ops-guide-port-ovv}
@@ -628,12 +630,12 @@ Use Network High Availability to anchor your VMware Cloud Director network in tw
 
 You must access data center groups to use the Network High Availability feature. A data center group acts as a cross-virtual data center router that provides the following.
 * Centralized networking administration
-* Configuration for multiple egress points in multiple virtual data centers
+* Configuration for multiple Egress points in multiple virtual data centers
 * East-west traffic between all networks within the group
 
 For more information, see [Managing organization virtual data center networks](https://docs.vmware.com/en/VMware-Cloud-Director/10.4/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-B208CDD2-5D46-4841-8F3C-BED9E4F27F07.html){: external}.
 
-The data center groups do not require physical separation. However, for optimal redundancy, the recommended implementation of a data center group has the egress points in two different physical data centers, for example, **Dallas 10** and **Dallas 12**.
+The data center groups do not require physical separation. However, for optimal redundancy, the recommended implementation of a data center group has the Egress points in two different physical data centers, for example, **Dallas 10** and **Dallas 12**.
 
 ### Procedure to create a local data center group
 {: #shared_vcd-ops-guide-network-ha-create}
@@ -647,20 +649,20 @@ The data center groups do not require physical separation. However, for optimal 
 
 The data center group is created and an NSX Distributed Logical Router (DLR) is associated to the group.
 
-### Procedure to add an EGress point
+### Procedure to add an Egress point
 {: #shared_vcd-ops-guide-network-ha-egress}
 
-The NSX Edge Service Gateways (ESG) must have a free interface (vNIC) that is used to attach to the DLR. If the ESG does not have any available interfaces, the **Add EGress Point** or **Add StandBy Egress Point** task fails.
+The NSX Edge Service Gateways (ESG) must have a free interface (vNIC) that is used to attach to the DLR. If the ESG does not have any available interfaces, the **Add Egress Point** or **Add StandBy Egress Point** task fails.
 {: important}
 
 1. From the main navigation bar of the {{site.data.keyword.vmwaresolutions_short}} console, select **Data Centers > Data Center Groups**, then click **Details** for the data center group.
-2. On the **Network Topology** tab, click **Add EGress Point** or **Add Stand By EGress Point**.
-3. Select one of the ESGs from the virtual data centers that were added and click **ADD**. The EGress point is created.
+2. On the **Network Topology** tab, click **Add Egress Point** or **Add Stand By Egress Point**.
+3. Select one of the ESGs from the virtual data centers that were added and click **ADD**. The Egress point is created.
 
-If the EGress points must change roles, **Swap EGress Points** is displayed instead of **Add EGress Point** or **Add Stand By EGress Point**.
+If the Egress points must change roles, **Swap Egress Points** is displayed instead of **Add Egress Point** or **Add Stand By Egress Point**.
 {: note}
 
-From the tenant portal, the BGP Configurations are modified. In the ESG settings for the active and stand-by EGress points, click **Routing > BGP**. Review the changes for **Enable BGP**, **Enable Graceful Restart**, and **Enable Default Originate**.
+From the tenant portal, the BGP Configurations are modified. In the ESG settings for the active and stand-by Egress points, click **Routing > BGP**. Review the changes for **Enable BGP**, **Enable Graceful Restart**, and **Enable Default Originate**.
 
 A new neighbor is created and managed. If **Local AS** was previously set to a value other than `65010`, it is overwritten. The new neighbor is the group that is created by using the DLR interfaces to each ESG. The network is `192.168.253.0/30` and it cannot be changed currently or the DCG feature does not work as described. The active ESG weight is `60` and the stand-by weight of `30`.
 

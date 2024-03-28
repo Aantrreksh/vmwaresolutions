@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2024
 
-lastupdated: "2024-03-05"
+lastupdated: "2024-03-19"
 
 keywords: planning VMware Solutions Shared, data center, VMware Solutions Shared data centers
 
@@ -15,17 +15,12 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Requirements and planning for VMware Shared
+# Requirements for VMware Shared
 {: #shared_planning}
 
-Review the following requirements before you order your VMware Shared virtual data centers. Plan for your order by considering the {{site.data.keyword.cloud_notm}} data center location, your workload capacity requirements, and services requirements.
+{{site.data.content.shared-deprecated-note}}
 
-Price calculations are automatically generated when you access the VMware Shared instance order page. Default selections for on-demand virtual data centers include public and private networking, 2000 vCPU, and 40960 RAM. Default selections for reserved virtual data centers include public and private networking, and customizable vCPU and RAM limits.
-
-## {{site.data.keyword.cloud_notm}} account requirements
-{: #shared_ordering-account-req}
-
-To order VMware Shared, you must have a **Pay As You Go** or **Subscription** {{site.data.keyword.cloud_notm}} account. The cost of the resources that are ordered is billed to that {{site.data.keyword.cloud_notm}} account.
+Review the following requirements by considering the {{site.data.keyword.cloud_notm}} data center location, your workload capacity requirements, and services requirements.
 
 ## Virtual data center name requirements
 {: #shared_ordering-vdc-name-req}
@@ -85,7 +80,7 @@ Review [VMware Cloud Director 10.4 Configuration Limits](https://configmax.esp.v
 
 One of the configuration limits in VMware Cloud Director is a maximum of 10,000 vApps per Cloud Director organization. In VMware Shared, it means you cannot have more than 10,000 vApps in a single account in a particular site location since each site location is the same Cloud Director instance. For more information about sites and VMware Cloud Director, see [VMware Shared overview](/docs/vmwaresolutions?topic=vmwaresolutions-shared_overview).
 
-If you need more than 10,000 vApps in a single account, consider the following design options.
+If you need more than 10,000 vApps in a single account, consider the following options:
 
 * Increase the number of virtual machines in each vApp.
 * Use a separate account in that region to host more vApps.

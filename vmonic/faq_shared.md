@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-01-30"
+lastupdated: "2024-03-20"
 
 keywords: FAQ vmware solutions shared, vmware solutions shared questions
 
@@ -16,6 +16,8 @@ subcollection: vmwaresolutions
 
 # General FAQ about VMware Shared
 {: #faq-vmwaresolutions-shared}
+
+{{site.data.content.shared-deprecated-note}}
 
 Find answers to frequently asked questions about the VMware Shared offering.
 

@@ -3,7 +3,7 @@
 copyright:
   years: 2022, 2024
 
-lastupdated: "2024-03-06"
+lastupdated: "2024-03-20"
 
 keywords: IBM Cloud for VMware Solutions, getting started, vmware solutions offerings, services for vmwaresolutions, vmwaresolutions use cases
 
@@ -493,6 +493,41 @@ For new instances, vCenter Server 8 is available to order, but for existing inst
 vSphere 8 is not yet available to order from the VMware Solutions console.
 {: note}
 {: #note-vcsversion80-vsphere8}
+
+<!-- Conref section END. -->
+
+<!-- Conref section START.
+
+INFORMATION:
+The section is referenced by the following files:
+- shared/shared_planning.md
+- shared/shared_data_security.md
+- shared/shared_ordering.md
+- shared/shared_creating-endpoints.md
+- shared/shared_viewing-endpoints.md
+- shared/shared_modifying-endpoints.md
+- shared/shared_deleting-endpoints.md
+- shared/shared_veeam.md
+- shared/shared_zero-portal.md
+- shared/shared_zero-cloud-connector-order.md
+- shared/shared_zero-cloud-connector-view.md
+- shared/shared_zero-cloud-connector-delete.md
+- shared/shared_viewing-vdc-summary.md
+- shared/shared_viewing-vdc-details.md
+- shared/shared_viewing-vdc-summary.md
+- shared/shared_iam-integration.md
+- shared/shared_iam_vcd.md
+- shared/shared_accessing-vcd-console.md
+- shared/shared_vcd-ops-guide.md
+- shared/shared_resizeinstance.md
+- shared/shared_deletinginstance.md
+- shared/shared_pricing.md -->
+
+CONTENT:
+
+Starting on 28 March 2024, VMware Shared will no longer be available for new deployments. Existing instances will continue to be supported until 15 January 2025. Ensure that you migrate all your VMware Shared resources to [{{site.data.keyword.vmware-service_full}}](/docs/vmware-service) by 15 January 2025.
+{: deprecated}
+{: #shared-deprecated-note}
 
 <!-- Conref section END. -->
 

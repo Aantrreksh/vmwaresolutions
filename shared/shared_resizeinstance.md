@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2020, 2023
+  years:  2020, 2024
 
-lastupdated: "2023-04-05"
+lastupdated: "2024-02-29"
 
 keywords: manage shared resources, shared resources, shared resource tasks
 
@@ -16,6 +16,8 @@ subcollection: vmwaresolutions
 
 # Resizing your virtual data centers
 {: #shared_resize}
+
+{{site.data.content.shared-deprecated-note}}
 
 You can change the amount of resources that are assigned to a virtual data center when it is in the **Ready To Use** state.
 

@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2024
 
-lastupdated: "2024-03-05"
+lastupdated: "2024-03-19"
 
 keywords: manage shared resources, view shared virtual data centers summary
 
@@ -16,6 +16,8 @@ subcollection: vmwaresolutions
 
 # Viewing the virtual data center summary
 {: #shared_viewing-vdc-summary}
+
+{{site.data.content.shared-deprecated-note}}
 
 You can view a summary of all the {{site.data.keyword.vmwaresolutions_full}} Shared virtual data centers that are provisioned for the user account.
 
@@ -42,7 +44,7 @@ Expand the instance site to view the summary of each virtual data center that is
 |:---- |:----------- |
 | Name | The name of the virtual data center. |
 | Type | The pricing plan for the virtual data center: On-demand or Reserved. |
-| Location | The {{site.data.keyword.cloud_notm}} data center where the virtual data center is hosted. |  
+| Location | The {{site.data.keyword.cloud_notm}} data center where the virtual data center is hosted. |
 | Creation time | The date and time when the virtual data center was created. |
 | Status | The status of the virtual data center. |
 {: caption="Table 2. Virtual data center details by site" caption-side="bottom"}

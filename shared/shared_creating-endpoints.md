@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2021, 2023
+  years:  2021, 2024
 
-lastupdated: "2023-06-23"
+lastupdated: "2024-02-29"
 
 keywords: VMware Solutions Shared create private network endpoint
 
@@ -16,6 +16,8 @@ subcollection: vmwaresolutions
 
 # Creating a private network endpoint
 {: #shared_creating-endpoints}
+
+{{site.data.content.shared-deprecated-note}}
 
 VMware Shared now supports both public and private network endpoints. The public network endpoints that are provisioned by default are the five public IP addresses that are displayed in the VMware Shared virtual data center detail page. A private network endpoint allows a customer's {{site.data.keyword.cloud_notm}} account devices or resources to connect to their virtual data centers by using the {{site.data.keyword.cloud_notm}} private network. The **Private network endpoint** service is available and ready to use in all provisioned virtual data centers. After it is configured, the service allows your {{site.data.keyword.cloud_notm}} account resources to connect to virtual machines (VMs) in your virtual data center over the {{site.data.keyword.cloud_notm}} private network.
 

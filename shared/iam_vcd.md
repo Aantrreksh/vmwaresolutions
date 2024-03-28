@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2022, 2023
+  years:  2022, 2024
 
-lastupdated: "2023-04-21"
+lastupdated: "2024-02-29"
 
 keywords: IAM user, user role, user permission, IAM VMware Cloud Director
 
@@ -17,6 +17,8 @@ subcollection: vmwaresolutions
 
 # Roles and permissions for VMware Cloud Director
 {: #iam_vcd}
+
+{{site.data.content.shared-deprecated-note}}
 
 The following table provides information about the platform management roles and permissions for VMware Shared.
 

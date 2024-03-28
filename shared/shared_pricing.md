@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2020, 2023
+  years: 2020, 2024
 
-lastupdated: "2023-11-08"
+lastupdated: "2024-03-18"
 
 keywords: vmware solutions shared, price for shared, pricing plan
 
@@ -16,6 +16,8 @@ subcollection: vmwaresolutions
 
 # VMware Shared pricing
 {: #shared_pricing}
+
+{{site.data.content.shared-deprecated-note}}
 
 {{site.data.keyword.vmwaresolutions_full}} Shared offers two pricing plans for creating VMware® virtual data centers. Virtual data centers incur charges for the following virtual data center resource usages:
 

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2021, 2022
+  years:  2021, 2024
 
-lastupdated: "2022-11-23"
+lastupdated: "2024-02-29"
 
 keywords: VMware Solutions Shared modify private network endpoint
 
@@ -16,6 +16,8 @@ subcollection: vmwaresolutions
 
 # Modifying a private network endpoint for a virtual data center
 {: #shared_modifying-endpoints}
+
+{{site.data.content.shared-deprecated-note}}
 
 You can add or remove allow listed IP addresses or subnets for a private network endpoint.
 

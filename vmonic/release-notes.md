@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2024
-lastupdated: "2024-03-15"
+lastupdated: "2024-03-28"
 
 keywords: release notes, what's new in VMware Solutions, what is new, new features, VMware Solutions release notes, VMware Solutions
 
@@ -22,6 +22,13 @@ Use these release notes to learn about updates to {{site.data.keyword.vmwaresolu
 
 ## 2024
 {: #year-2024}
+
+### 28 March 2024
+{: #vmwaresolutions-mar2824}
+{: release-note}
+
+End of Support for VMware Shared deployments
+:   Starting on 28 March 2024, VMware Shared will no longer be available for new deployments. Existing instances will continue to be supported until 15 January 2025. Ensure that you migrate all your VMware Shared resources to [{{site.data.keyword.cloud_notm}} for VMware as a Service](/docs/vmware-service) by 15 January 2025.
 
 ### 15 March 2024
 {: #vmwaresolutions-mar1524}

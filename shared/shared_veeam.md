@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2024
 
-lastupdated: "2024-02-01"
+lastupdated: "2024-02-29"
 
 keywords: veeam, veeam install, tech specs veeam
 
@@ -16,6 +16,8 @@ subcollection: vmwaresolutions
 
 # Managing Veeam for VMware Shared
 {: #shared_veeam}
+
+{{site.data.content.shared-deprecated-note}}
 
 The Veeam Availability Suite™ and Veeam® Cloud Connect Replication services are available and ready to use in all virtual data centers. These services seamlessly integrate as a managed solution to help your enterprise achieve high availability. They provide recovery points for your applications and data. By using these services, you control both the backup and restore of all virtual machines (VMs) for your infrastructure directly from the Veeam console.
 

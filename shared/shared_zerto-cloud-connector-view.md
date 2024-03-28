@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2021, 2022
+  years:  2021, 2024
 
-lastupdated: "2022-11-16"
+lastupdated: "2024-02-29"
 
 keywords: zerto, view zerto cloud connector
 
@@ -16,6 +16,8 @@ subcollection: vmwaresolutions
 
 # Viewing Zerto Cloud Connector details
 {: #shared_zerto-cc-view}
+
+{{site.data.content.shared-deprecated-note}}
 
 View the Zerto Cloud Connector (ZCC) details in the **Zerto Cloud Connector (ZCC)** table.
 

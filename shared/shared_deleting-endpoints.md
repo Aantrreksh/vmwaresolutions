@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2021, 2022
+  years:  2021, 2024
 
-lastupdated: "2022-11-16"
+lastupdated: "2024-02-29"
 
 keywords: VMware Solutions Shared delete private network endpoint
 
@@ -16,6 +16,8 @@ subcollection: vmwaresolutions
 
 # Deleting a private network endpoint from a virtual data center
 {: #shared_deleting-endpoints}
+
+{{site.data.content.shared-deprecated-note}}
 
 You might want to delete a private network endpoint from a virtual data center when it's no longer needed.
 

@@ -1,5 +1,5 @@
 #  Name your file `toc.yaml`
-#  Make sure you include all nav file coding requirements, as defined in <!-- https://test.cloud.ibm.com/docs/writing?topic=writing-code-nav -->
+#  Make sure you include all nav file coding requirements
 #  Anything with a fully qualified URL with `http` or `https` will get an external link icon added to the nav entry
 
 toc:
@@ -14,7 +14,7 @@ toc:
     path: vmwaresolutions
     label: VMware Solutions
 
-#  List your getting started tutorial (getting-started.md) as the first item in the Get started nav group. <!-- See https://test.cloud.ibm.com/docs/writing?topic=writing-navigation-design for more details on the toc design. -->
+#  List your getting started tutorial (getting-started.md) as the first item in the Get started nav group
   entries:
   - navgroup:
       id: learn
@@ -73,7 +73,6 @@ toc:
           label: VMware as a Service
           topics:
           - include: ../vmware-service/common/vmware-aas-overview.md
-          - include: ../vmware-service/common/vmaas-bom.md
           - include: ../vmware-service/vmaas/tenant-plan-deploy.md
           - topicgroup:
               label: Ordering VMware as a Service instances
@@ -133,6 +132,11 @@ toc:
           label: VMware Shared
           topics:
           - shared/shared_overview.md
+          - topicgroup:
+              label: Migrating to VMware as a Service
+              topics:
+              - shared/shared_migration.md
+              - shared/shared-vmwaas-migration.md
           - shared/shared_planning.md
           - shared/shared_data_security.md
           - shared/shared_ordering.md
@@ -163,7 +167,6 @@ toc:
           - shared/shared_resizeinstance.md
           - shared/shared_deletinginstance.md
           - shared/shared_pricing.md
-          - shared/shared_bnpp.md
       - topicgroup:
           label: VMware vSphere
           topics:
@@ -440,6 +443,7 @@ toc:
       - topicgroup:
           label: Deprecated offerings
           topics:
+          - vmonic/eos-vmware-shared.md
           - vmonic/eos-nsx-v.md
           - vmonic/eos-vsphere67.md
           - vmonic/eos-vsphere65.md
@@ -502,8 +506,8 @@ toc:
               - services/managingspp.md
           - services/veeam_considerations.md
 
-# links to your REST API docs should be included in the Reference navigation group. <!-- For details on publishing API docs, see https://test.cloud.ibm.com/docs/api-docs. -->
-# links to your command line reference docs should be included in the Reference navigation group.
+# links to your REST API docs should be included in the Reference navigation group
+# links to your command line reference docs should be included in the Reference navigation group
   - navgroup:
       id: reference
       topics:
@@ -741,6 +745,7 @@ toc:
               - archiref/vpc-interconnectivity/transit-gateway.md
               - archiref/vpc-interconnectivity/direct-link.md
               - archiref/vpc-interconnectivity/vpn.md
+
       - topicgroup:
           label: Solution architectures on VMware as a Service
           topics:
@@ -748,6 +753,7 @@ toc:
               label: VMware as a Service architecture patterns
               topics:
               - include: ../vmware-service/archiref/arch-pattern-vmwaas/arch-pattern-vmwaas-sccwpp.md
+
       - topicgroup:
           label: Solution guides
           topics:
@@ -882,6 +888,7 @@ toc:
           - vmonic/faq.md
           - vmonic/vpc-vcf-faq.md
           - vmonic/faq_shared.md
+          - vmonic/faq_shared-eos.md
           - vmonic/faq_esxi.md
           - vmonic/faq_licensing.md
           - vmonic/faq-v2t-migration.md

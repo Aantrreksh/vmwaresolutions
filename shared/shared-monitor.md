@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2024
 
-lastupdated: "2024-02-06"
+lastupdated: "2024-03-01"
 
 keywords: monitor, default dashboard, custom dashboard, virtual data center, platform metrics, monitoring
 
@@ -17,6 +17,8 @@ subcollection: vmwaresolutions
 
 # Visualizing your virtual data center environment with {{site.data.keyword.mon_full_notm}}
 {: #shared-monitor}
+
+{{site.data.content.shared-deprecated-note}}
 
 VMware Shared provides an integration with {{site.data.keyword.mon_full}}, which allows you to use a dashboard, provided by VMware Shared to view metrics for your virtual data centers. Alternatively, you can create your own dashboard to visualize performance, volume of usage, and to define alerts to monitor your environment.
 

@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2024
 
-lastupdated: "2024-03-05"
+lastupdated: "2024-03-19"
 
 keywords: VMware Solutions Shared delete instance, delete VMware Solutions Shared, remove VMware Solutions Shared
 
@@ -16,6 +16,8 @@ subcollection: vmwaresolutions
 
 # Deleting virtual data centers
 {: #shared_deletinginstance}
+
+{{site.data.content.shared-deprecated-note}}
 
 You can delete a virtual data center when it's in the **Ready To Use** state.
 

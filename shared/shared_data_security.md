@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2020, 2023
+  years:  2020, 2024
 
-lastupdated: "2023-08-22"
+lastupdated: "2024-02-29"
 
 keywords: personal data, data deletion, PHI, data, data security, high availability, ha, disaster recovery, vmware solutions shared, compliance
 
@@ -18,7 +18,9 @@ subcollection: vmwaresolutions
 # Managing your data in VMware Shared
 {: #shared_data}
 
-Review the following data storage, high availability, and disaster recovery considerations before you order {{site.data.keyword.vmwaresolutions_full}} Shared.
+{{site.data.content.shared-deprecated-note}}
+
+Review the following data storage, high availability, and disaster recovery considerations for {{site.data.keyword.vmwaresolutions_full}} Shared.
 
 ## Data security
 {: #shared_data-security}
@@ -60,7 +62,7 @@ Use VMware Shared with vCenter Server to achieve high availability. You can depl
 
 Disaster recovery can become an issue if an {{site.data.keyword.cloud_notm}} location experiences a significant failure that includes the potential loss of data. Because MZRs are not available across locations, you must wait for IBM to bring a location back online if it becomes unavailable. If underlying data services are compromised by the failure, you must also wait for IBM to restore those data services.
 
-If a catastrophic failure occurs, IBM might not be able to recover data from database backups. In this case, you need to restore your data to return your service instance to its most recent state. You can restore the data to the same or to a different location, including a vCenter Server instance.
+If a failure occurs, IBM might not be able to recover data from database backups. In this case, you need to restore your data to return your service instance to its most recent state. You can restore the data to the same or to a different location, including a vCenter Server instance.
 
 Your disaster recovery plan includes knowing, preserving, and being prepared to restore all data that is maintained on {{site.data.keyword.cloud_notm}}.
 
