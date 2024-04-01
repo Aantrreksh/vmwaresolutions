@@ -70,7 +70,7 @@ VMware Shared on-demand virtual data center resources are allocated as needed. P
 
 The standard storage policy pricing is the same as the 4-IOPS/GB storage policy. The number of IOPS/GB for the standard storage policy is not guaranteed.
 
-Storage policy availability can vary by region and deployment topology. On the VMware Shared order page, select the **About** tab to view available storage policy offerings.
+Storage policy availability can vary by region and deployment topology. On the VMware Shared order page, select the [**About** tab](https://cloud.ibm.com/infrastructure/vmware-solutions/console/ordernew/vdc) to view available storage policy offerings.
 {: note}
 
 | Metric                                   | Frequency | Description |
@@ -101,8 +101,9 @@ Storage policy availability can vary by region and deployment topology. On the V
 | Metric                                   | Frequency | Description |
 |:-----------------------------------------|:------------|:------------|
 | MAX_WINDOWS_LICENSES | Hourly | The peak number of Windows® license **usage** based on Windows VM vCPU size. For example, if you have two Windows VMs, one VM with 16 vCPU and one VM with 8 vCPU, the usage is 24 vCPU of Windows license usage. |
-| TOTAL_RHEL_SMALL_LICENSES | Hourly | The peak (High Watermark) number of small RHEL licenses usage in 1-hour intervals. Small RHEL VMs are four cores or smaller. |
-| TOTAL_RHEL_LARGE_LICENSES | Hourly | The peak (High Watermark) number of large RHEL licenses usage in 1-hour intervals. Large RHEL VMs are larger than four cores. |
+| TOTAL_RHEL_SMALL_LICENSES | Hourly | The peak number of RHEL license usage based on VM vCPU size. One license is charged per vCPU. Small RHEL VMs are 8 vCPUs or smaller. |
+| TOTAL_RHEL_MID_LICENSES | Hourly | The peak number of RHEL license usage based on VM vCPU size. One license is charged per vCPU. Mid RHEL VMs are between 9 and 127 vCPUs. |
+| TOTAL_RHEL_LARGE_LICENSES | Hourly | The peak number of RHEL license usage based on VM vCPU size. One license is charged per vCPU. Large RHEL VMs are larger than 127 vCPUs. |
 {: caption="Table 2. VMware Shared Solutions On-demand billing plan - Operating system metrics" caption-side="bottom"}
 {: #table3}
 {: tab-title="Operating system metrics"}
@@ -116,7 +117,7 @@ VMware Shared Solutions Reserved virtual data center resources are preallocated 
 
 The standard storage policy pricing is the same as the 4-IOPS/GB storage policy. The number of IOPS/GB for the standard storage policy is not guaranteed.
 
-Storage policy availability can vary by region and deployment topology. On the VMware Shared order page, select the **About** tab to view available storage policy offerings.
+Storage policy availability can vary by region and deployment topology. On the VMware Shared order page, select the [**About** tab](https://cloud.ibm.com/infrastructure/vmware-solutions/console/ordernew/vdc) to view available storage policy offerings.
 {: note}
 
 | Metric                                   | Frequency | Description |
@@ -146,8 +147,9 @@ Storage policy availability can vary by region and deployment topology. On the V
 | Metric                                   | Frequency | Description |
 |:-----------------------------------------|:------------|:------------|
 | MAX_WINDOWS_LICENSES | Hourly | The peak number of Windows® license **usage** based on Windows VM vCPU size. For example, if you have two Windows VMs, one VM with 16 vCPU and one VM with 8 vCPU, the usage is 24 vCPU of Windows license usage. |
-| TOTAL_RHEL_SMALL_LICENSES | Hourly | The peak (High Watermark) number of small RHEL licenses usage in 1-hour intervals. Small RHEL VMs are four cores or smaller. |
-| TOTAL_RHEL_LARGE_LICENSES | Hourly | The peak (High Watermark) number of large RHEL licenses usage in 1-hour intervals. Large RHEL VMs are larger than four cores. |
+| TOTAL_RHEL_SMALL_LICENSES | Hourly | The peak number of RHEL license usage based on VM vCPU size. One license is charged per vCPU. Small RHEL VMs are 8 vCPUs or smaller. |
+| TOTAL_RHEL_MID_LICENSES | Hourly | The peak number of RHEL license usage based on VM vCPU size. One license is charged per vCPU. Mid RHEL VMs are between 9 and 127 vCPUs. |
+| TOTAL_RHEL_LARGE_LICENSES | Hourly | The peak number of RHEL license usage based on VM vCPU size. One license is charged per vCPU. Large RHEL VMs are larger than 127 vCPUs. |
 {: caption="Table 3. VMware Shared Solutions Reserved billing plan - Operating system metrics" caption-side="bottom"}
 {: #reservedbilling-table3}
 {: tab-title="Operating system metrics"}
@@ -157,7 +159,7 @@ Storage policy availability can vary by region and deployment topology. On the V
 ## Private network endpoint billing plan
 {: #shared_pricing-private-network-endpoints}
 
-Private network endpoint usage incurs charges as part of the on-demand or reserved virtual data center plan. On the **VMware Shared** order page, select the **About** tab to view the pricing plan details.
+Private network endpoint usage incurs charges as part of the on-demand or reserved virtual data center plan. On the **VMware Shared** order page, select the [**About** tab](https://cloud.ibm.com/infrastructure/vmware-solutions/console/ordernew/vdc) to view the pricing plan details.
 
 | Metric                                   | Frequency   | Description |
 |:-----------------------------------------|:------------|:------------|

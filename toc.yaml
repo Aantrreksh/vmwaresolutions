@@ -893,6 +893,7 @@ toc:
           - vmonic/faq_licensing.md
           - vmonic/faq-v2t-migration.md
           - vmonic/faq_byol.md
+          - vmonic/vmwaresol_packaging-pricing.md
           - vmonic/iam_verify_permissions.md
           - vmonic/trbl_limitations.md
           - vcenter/vcenter_chg_impact.md

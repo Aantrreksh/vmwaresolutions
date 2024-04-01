@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2024
-lastupdated: "2024-03-28"
+lastupdated: "2024-04-01"
 
 keywords: release notes, what's new in VMware Solutions, what is new, new features, VMware Solutions release notes, VMware Solutions
 
@@ -23,6 +23,16 @@ Use these release notes to learn about updates to {{site.data.keyword.vmwaresolu
 ## 2024
 {: #year-2024}
 
+### 1 April 2024
+{: #vmwaresolutions-apr0124}
+{: release-note}
+
+Updated packaging and pricing for VMware Solutions offerings
+:   {{site.data.keyword.cloud}} is changing its {{site.data.keyword.vmwaresolutions_short}} portfolio and pricing, in response to the changes to the packaging and pricing of the VMware® portfolio, announced by Broadcom. These changes will be effective on 1 May 2024. For more information, see [Packaging and pricing for VMware by Broadcom](/docs/vmwaresolutions?topic=vmwaresolutions-vmwaresol_packaging-pricing).
+
+Updated pricing structure for RHEL for VMware Shared
+:   The Red Hat Enterprise Linux (RHEL) pricing is updated from the existing 2-tier pricing structure (Small and Large) to a 3-tier pricing structure (Small, Medium, and Large). For more information, see [April 2024 price changes](/docs/overview?topic=overview-price-adjustments#april-2024).
+
 ### 28 March 2024
 {: #vmwaresolutions-mar2824}
 {: release-note}
@@ -37,7 +47,7 @@ End of Support for VMware Shared deployments
 VMware Cloud Foundation enhancements
 :   The following features are now available:
 
-   * **Async Patch tool**: You can apply critical patches for VMware Cloud Foundation components, such as VMware NSX® Manager, VMware vCenter Server®, and VMware ESXi™ by using the Async Patch tool. For more information, see [Viewing VMware Cloud Foundation instances](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-viewing#vpc-vcf-viewing-details).
+   * **Async Patch tool**: You can apply critical patches for VMware Cloud Foundation components, such as VMware NSX Manager, VMware vCenter Server®, and VMware ESXi™ by using the Async Patch tool. For more information, see [Viewing VMware Cloud Foundation instances](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-viewing#vpc-vcf-viewing-details).
    * **New regions available**: VMware Cloud Foundation is now available for use in **Tokyo** and **London**.
    * **BOM updates**: ESXi 7.0 Update 3p (build 23307199) is applied to newly deployed instances.
 
@@ -230,7 +240,7 @@ New and updated documentation
 {: release-note}
 
 VMware vSphere Day 2 support
-:   You can view or delete VMware vSphere instances from the VMware Solutions console. You can also add or delete VMware ESXi™ servers, and add or delete licenses for vSphere instances from the VMware Solutions console.
+:   You can view or delete VMware vSphere instances from the VMware Solutions console. You can also add or delete VMware ESXi servers, and add or delete licenses for vSphere instances from the VMware Solutions console.
 
 VMware Regulated Workloads multizone instances - deprecated
 :   New deployments of VMware Regulated Workloads multizone instances are no longer supported. You can still add or delete clusters, add or remove ESXi servers or NFS storage, and add or remove services for existing multizone instances.
@@ -524,7 +534,7 @@ Platform management roles
 :   New IAM platform management roles are available for VMware Solutions offerings.
 
 End of Marketing for NSX-V instance deployments
-:   VMware® support for all new VMware NSX-V deployments ended on 16 January 2022. However, VMware and IBM® worked closely to extend the existing NSX–V support until 31 December 2024. Ordering new VMware vCenter Server with NSX-V instances is not supported after 21 June 2022.
+:   VMware® support for all new VMware NSX-V deployments ended on 16 January 2022. However, VMware and IBM® worked closely to extend the existing NSX–V support until 15 January 2025. Ordering new VMware vCenter Server with NSX-V instances is not supported after 21 June 2022.
 
 End of Marketing for vSphere 6.7 instance deployments
 :   VMware support for all new VMware vSphere 6.7 deployments ends on 15 October 2022.
