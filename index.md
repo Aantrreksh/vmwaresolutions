@@ -4,7 +4,7 @@ copyright:
 
   years: 2016, 2024
 
-lastupdated: "2024-02-01"
+lastupdated: "2024-04-01"
 
 keywords: IBM Cloud for VMware Solutions, getting started, vmware solutions offerings, services for vmwaresolutions, vmwaresolutions use cases
 
@@ -58,7 +58,6 @@ Review and choose your deployment offering.
 | Deployment offering | Description |
 |:------------------- |:----------- |
 | [VMware as a Service](/docs/vmwaresolutions?topic=vmwaresolutions-vmware-aas-overview) | This offering provides the VMware Cloud Director platform as a managed service. {{site.data.keyword.IBM}} performs the configuration, hosting, operations, and lifecycle management of the VMware® software so you can quickly deploy your VMware-based cloud computing environments. |
-| [VMware Shared](/docs/vmwaresolutions?topic=vmwaresolutions-shared_overview) | This offering provides standardized and customizable deployment choices of VMware virtual data center environments. |
 | [VMware vSphere](/docs/vmwaresolutions?topic=vmwaresolutions-vs_vsphereoverview) | This offering provides a customizable virtualization service that combines VMware-compatible bare metal servers, hardware components, and licenses, to build your own IBM-hosted VMware environment. |
 | [VMware vCenter Server](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview) | This offering deploys a VMware virtual environment by using custom compute, storage, and network resources to best fit your business needs. |
 | [VMware Regulated Workloads](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-overview) | This offering includes a secure-by-default architecture that follows IBM's unique policy controls framework, it provides continuous compliance monitoring, and the highest level of data encryption (FIPS 140-2 Level 4). |
