@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2024
 
-lastupdated: "2024-01-09"
+lastupdated: "2024-04-02"
 
 keywords: VLAN ports, vmware solutions ports, ports usage vmware solutions
 
@@ -34,7 +34,7 @@ For more information about {{site.data.keyword.redhat_openshift_full}} (OCP) net
 | Source | Subnet, IP range | Target | Subnet, IP range | Port | Protocol | Purpose | Service |
 |:------ |:---------------- |:------ |:---------------- |:---- |:-------- |:------- |:------- |
 | IBM CloudDriver | Private primary subnet \n Infrastructure VMs | {{site.data.keyword.cloud_notm}} Service - Cloud Object Storage \n `10.1.129.0/24`[^vssreqa] | {{site.data.keyword.cloud_notm}} infrastructure services network | 443 | TCP | Use {{site.data.keyword.cloud_notm}} Object Storage service | HTTPS |
-| IBM CloudDriver | Private primary subnet \n Infrastructure VMs | {{site.data.keyword.cloud_notm}} Service - RabbitMQ `166.9.16.28` \n `166.9.12.34` \n `166.9.14.23` \n {{site.data.keyword.cloud_notm}} Service - Log Analysis[^vssreqb] | {{site.data.keyword.cloud_notm}} endpoint service network | 443, 30775 | TCP | Use {{site.data.keyword.cloud_notm}} RabbitMQ and Log Analysis services | |
+| IBM CloudDriver | Private primary subnet \n Infrastructure VMs | {{site.data.keyword.cloud_notm}} Service - RabbitMQ `166.9.59.6` \n `166.9.90.7` \n `166.9.58.162` \n {{site.data.keyword.cloud_notm}} Service - Log Analysis[^vssreqb] | {{site.data.keyword.cloud_notm}} endpoint service network | 443, 30560 | TCP | Use {{site.data.keyword.cloud_notm}} RabbitMQ and Log Analysis services | |
 | IBM CloudDriver | Private primary subnet | vCenter Server | Infrastructure VMs | | ICMP | Install and set up vCenter Server | |
 | IBM CloudDriver | Private primary subnet \n Infrastructure VMs | vCenter Server | Infrastructure VMs | 22 | TCP | Set up and configure vCenter Server | SSH |
 | IBM CloudDriver | Private primary subnet \n Infrastructure VMs | vCenter Server | Infrastructure VMs | 443 | TCP | Install and configure vCenter Server and cluster | SSH |
