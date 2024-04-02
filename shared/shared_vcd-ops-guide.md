@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2024
 
-lastupdated: "2024-02-29"
+lastupdated: "2024-04-02"
 
 keywords: vmware solutions shared, get started shared, tech specs shared
 

@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2024
 
-lastupdated: "2024-02-29"
+lastupdated: "2024-04-02"
 
 keywords: zerto, view zerto cloud connector
 

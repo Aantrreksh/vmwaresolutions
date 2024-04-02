@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-03-20"
+lastupdated: "2024-04-02"
 
 keywords: FAQ vmware solutions shared, vmware solutions shared questions
 

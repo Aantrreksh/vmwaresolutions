@@ -4,7 +4,7 @@ copyright:
 
   years:  2024
 
-lastupdated: "2024-03-20"
+lastupdated: "2024-04-02"
 
 keywords: FAQ vmware solutions shared, vmware shared, end of support vmware shared, vmware shared deprecated
 

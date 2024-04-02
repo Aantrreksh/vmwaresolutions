@@ -4,7 +4,7 @@ copyright:
 
   years:  2024
 
-lastupdated: "2024-03-26"
+lastupdated: "2024-04-02"
 
 keywords: end of support notice, vmware shared, end of support vmware shared, vmware shared deprecated, vmware shared support
 
@@ -18,7 +18,8 @@ subcollection: vmwaresolutions
 # End of Support for VMware Shared deployments
 {: #eos-vmware-shared}
 
-{{site.data.content.shared-deprecated-note}}
+Starting on 28 March 2024, VMware Shared will no longer be available for new deployments. Existing instances will continue to be supported until 15 January 2025. Ensure that you migrate all your VMware Shared resources to [{{site.data.keyword.vmware-service_full}}](/docs/vmware-service) by 15 January 2025.
+{: deprecated}
 
 {{site.data.keyword.cloud}} support for {{site.data.keyword.cloud_notm}} for VMware Shared will end on 15 January 2025. As stated in [End of Support for NSX-V instance deployments](/docs/vmwaresolutions?topic=vmwaresolutions-eos-nsx-v), IBM’s exclusive support extension for VMware® NSX-V will end on 15 January 2025.
 

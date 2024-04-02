@@ -4,7 +4,7 @@ copyright:
 
   years:  2024
 
-lastupdated: "2024-03-27"
+lastupdated: "2024-04-02"
 
 keywords: vmware solutions shared, vmware shared, migration, migration partner, partners for assisted migration
 
