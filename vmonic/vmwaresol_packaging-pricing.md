@@ -4,7 +4,7 @@ copyright:
 
   years:  2024
 
-lastupdated: "2024-03-28"
+lastupdated: "2024-04-02"
 
 keywords: vmware solutions packaging, vmware solutions pricing, vmware solutions naming
 
@@ -34,9 +34,9 @@ The following table shows the changes of the offering names across the portfolio
 | VMware Cloud Foundation | VMware Cloud Foundation for VPC |
 | VMware vCenter Server® | VMware Cloud Foundation for Classic - Automated |
 | VMware vSphere® | VMware Cloud Foundation for Classic - Flexible |
-| VMware Shared | VMware Shared (no change). \n This offering is reaching [End of Support](/docs/vmwaresolutions?topic=vmwaresolutions-eos-vmware-shared). |
-| VMware ESXi™ on Bare Metal for Classic | VMware ESXi on Bare Metal for Classic (no change) |
-| VMware ESXi on Bare Metal for VPC | VMware ESXi on Bare Metal for VPC (no change). \n This offering is reaching [End of Support](/docs/vpc?topic=vpc-release-notes&interface=ui#vpc-mar2824). |
+| VMware Shared | VMware Shared (no change) \n This offering is reaching [End of Support](/docs/vmwaresolutions?topic=vmwaresolutions-eos-vmware-shared). |
+| VMware ESXi™ on Bare Metal for Classic | VMware ESXi on Bare Metal for Classic (no name change) |
+| VMware ESXi on Bare Metal for VPC | VMware ESXi on Bare Metal for VPC (no name change) \n This offering is reaching [End of Support](/docs/vpc?topic=vpc-release-notes&interface=ui#vpc-mar2824). |
 {: caption="Table 1. Current and updated offering names" caption-side="bottom"}
 
 ## Pricing and discounts
@@ -66,7 +66,7 @@ For the most up-to-date pricing information, you can create a cost estimate by c
 ## Impact to existing users
 {: #vmwaresol_packaging-pricing-impact}
 
-If you are using VMware vSphere, VMware vCenter Server, or VMware ESXi on Bare Metal for Classic, you are migrated to VMware Cloud Foundation on 1 May 2024 and billed at its pricing.
+If you are using VMware vSphere, VMware vCenter Server, or VMware ESXi on Bare Metal for Classic, you are updated to VMware Cloud Foundation on 1 May 2024 and billed at its pricing.
 
 Customers will be entitled to all of the following VMware software products that are included in the VMware Cloud Foundation bundle:
 
