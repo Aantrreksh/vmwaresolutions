@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2024
-lastupdated: "2024-04-02"
+lastupdated: "2024-04-04"
 
 keywords: release notes, what's new in VMware Solutions, what is new, new features, VMware Solutions release notes, VMware Solutions
 
@@ -22,6 +22,13 @@ Use these release notes to learn about updates to {{site.data.keyword.vmwaresolu
 
 ## 2024
 {: #year-2024}
+
+### 4 April 2024
+{: #vmwaresolutions-apr0424}
+{: release-note}
+
+Veeam 12.1.1 for VMware Shared
+:   Veeam Backup and Replication 12.1.1 (Veeam 12.1.1) is now available for deployment with the VMware Shared offering.
 
 ### 1 April 2024
 {: #vmwaresolutions-apr0124}
