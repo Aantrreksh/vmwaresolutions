@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2023
+  years:  2016, 2024
 
-lastupdated: "2023-10-13"
+lastupdated: "2024-04-11"
 
 keywords: FAQ, license, BYOL
 
@@ -27,6 +27,13 @@ BYOL (Bring Your Own License) was a feature available to VMware vCenter Server®
 BYOL is no longer allowed by VMware. You cannot bring your own licenses for any new hosts. This restriction applies to all VMware products that are available through {{site.data.keyword.cloud_notm}}.
 
 For existing BYOL servers, you can complete upgrades and migrations to refresh the software and hardware.
+
+## How is BYOL affected by the new packaging and pricing on 1 May 2024?
+{: #faq_byol-new-pack}
+{: faq}
+{: support}
+
+If you are using BYOL (Bring Your Own License) for all VMware software licenses in your instance, this change does not impact you. However, if you are using VMware licenses that are provided by IBM or a mix of IBM-provided licenses and BYOL, you are updated to VMware Cloud Foundation on 1 May 2024 and billed at its pricing.
 
 ## Can you use the BYOL feature for some VMware components and purchase monthly licenses for others?
 {: #faq_byol-mthly-license}

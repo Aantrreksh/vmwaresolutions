@@ -4,7 +4,7 @@ copyright:
 
   years:  2024
 
-lastupdated: "2024-04-02"
+lastupdated: "2024-04-11"
 
 keywords: vmware solutions packaging, vmware solutions pricing, vmware solutions naming
 
@@ -65,6 +65,9 @@ For the most up-to-date pricing information, you can create a cost estimate by c
 
 ## Impact to existing users
 {: #vmwaresol_packaging-pricing-impact}
+
+If you are using BYOL (Bring Your Own License) for all VMware software licenses in your instance, this change does not impact you. However, if you are using VMware licenses that are provided by IBM or a mix of IBM-provided licenses and BYOL, you are updated to VMware Cloud Foundation on 1 May 2024 and billed at its pricing.
+{: note}
 
 If you are using VMware vSphere, VMware vCenter Server, or VMware ESXi on Bare Metal for Classic, you are updated to VMware Cloud Foundation on 1 May 2024 and billed at its pricing.
 
