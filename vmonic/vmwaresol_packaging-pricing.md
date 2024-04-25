@@ -42,12 +42,13 @@ The following table shows the changes of the offering names across the portfolio
 ## Pricing considerations
 {: #vmwaresol_packaging-pricing-considerations}
 
-* For existing VMware Cloud Foundation for VPC customers, this change represents a price reduction.
-* Discounted contract commitments are available for VMware Cloud Foundation as a Service (formerly VMware as a Service). For more information, contact your IBM Sales representative.
-* The VMware Solutions Support and Services fee will be removed on 1 May 2024.
-
 For the most up-to-date pricing information, you can create a cost estimate by clicking **Add to estimate** from either the provisioning or the plan page.
 {: important}
+
+* For VMware Cloud Foundation as a Service (formerly VMware as a Service), discounts are available for longer-term commitments. For more information, contact your IBM Sales representative.
+* VMware Cloud Foundation (for Classic and for VPC Bare Metal Servers) is charged at a flexible, on-demand rate of $38 per core and per month with a minimum of 16 cores per CPU. Discounts are available for longer-term commitments.
+* For existing VMware Cloud Foundation for VPC customers, this change represents a price reduction.
+* The VMware Solutions Support and Services fee will be removed on 1 May 2024.
 
 ## Impact to existing users
 {: #vmwaresol_packaging-pricing-impact}
