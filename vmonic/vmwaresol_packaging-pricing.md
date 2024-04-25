@@ -4,7 +4,7 @@ copyright:
 
   years:  2024
 
-lastupdated: "2024-04-11"
+lastupdated: "2024-04-25"
 
 keywords: vmware solutions packaging, vmware solutions pricing, vmware solutions naming
 
@@ -39,26 +39,12 @@ The following table shows the changes of the offering names across the portfolio
 | VMware ESXi on Bare Metal for VPC | VMware ESXi on Bare Metal for VPC (no name change) \n This offering is reaching [End of Support](/docs/vpc?topic=vpc-release-notes&interface=ui#vpc-mar2824). |
 {: caption="Table 1. Current and updated offering names" caption-side="bottom"}
 
-## Pricing and discounts
-{: #vmwaresol_packaging-pricing-options}
-
-VMware Cloud Foundation (for Classic and for VPC Bare Metal Servers) is charged at a flexible, on-demand rate of $38 per core and per month with a minimum of 16 cores per CPU. 
-
-Discounts are available for longer-term commitments as shown in the following table:
-
-| Contract commitment | Discounts and price (per month, per core) |
-|:--------------------|:----------------------------------------- |
-| 1 year | 30% discount |
-| 3 years | 38% discount |
-| On-demand | $38.00 |
-{: caption="Table 2. Pricing and discounts for contract commitments" caption-side="bottom"}
-
-### Considerations about pricing changes
+## Pricing considerations
 {: #vmwaresol_packaging-pricing-considerations}
 
 * For existing VMware Cloud Foundation for VPC customers, this change represents a price reduction.
-* On-demand pricing and 1-year contract commitments for VMware Cloud Foundation as a Service (formerly known as VMware as a Service) remain unchanged. A 50% discount applies for 3-year contract commitments.
-* The VMware Solutions Support and Services fee of $350.00 per host for vCenter Server instances will be removed on 1 May 2024.
+* Discounted contract commitments are available for VMware Cloud Foundation as a Service (formerly VMware as a Service). For more information, contact your IBM Sales representative.
+* The VMware Solutions Support and Services fee will be removed on 1 May 2024.
 
 For the most up-to-date pricing information, you can create a cost estimate by clicking **Add to estimate** from either the provisioning or the plan page.
 {: important}
