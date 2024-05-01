@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-02-06"
+lastupdated: "2024-04-04"
 
 keywords: end of support notice, vSphere 6.5 deployment, end of support vSphere 6.5, vSphere 6.5 deprecated, vSphere 6.5 support
 
@@ -33,7 +33,7 @@ vSphere 7 introduces the following features:
 * Enhancements to DRS and vMotion
 * Security enhancements such as multifactor authentication (MFA), vSphere Trust Authority (vTA), and in–flight encryption for vSAN
 
-vSphere 7 is also the exclusive basis for VMware Regulated Workloads.
+vSphere 7 is also the exclusive basis for {{site.data.keyword.rw}}.
 
 For more information about end of life procedures for {{site.data.keyword.cloud_notm}} infrastructure services and third-party software products, see [Lifecycle policy for {{site.data.keyword.cloud_notm}} products](https://www.ibm.com/cloud/cloud-prod-life). If you have any questions or need assistance, email clouddigitalsales@us.ibm.com or open a support ticket in the VMware Solutions console.
 

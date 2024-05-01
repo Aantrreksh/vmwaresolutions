@@ -2,11 +2,11 @@
 
 copyright:
 
-  years:  2016, 2023
+  years:  2016, 2024
 
-lastupdated: "2023-05-25"
+lastupdated: "2024-04-09"
 
-keywords: vmware vSphere order instance, order vSphere, order vmware vSphere instance
+keywords: flexible order instance, order vSphere, order flexible instance
 
 subcollection: vmwaresolutions
 
@@ -24,4 +24,4 @@ You can also add the provisioned resources to the {{site.data.keyword.cloud_notm
 ## Related links
 {: #vs_orderinginstances-summary-related}
 
-* [Procedure to order VMware vSphere instances](/docs/vmwaresolutions?topic=vmwaresolutions-vs_orderinginstances-procedure)
+* [Procedure to order Flexible instances](/docs/vmwaresolutions?topic=vmwaresolutions-vs_orderinginstances-procedure)

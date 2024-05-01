@@ -2,11 +2,11 @@
 
 copyright:
 
-  years:  2016, 2023
+  years:  2016, 2024
 
-lastupdated: "2023-07-31"
+lastupdated: "2024-04-25"
 
-keywords: services for vCenter Server instance, order vCenter Server services, add-on services
+keywords: services vcf classic instance, order vcf automated services, add-on services
 
 subcollection: vmwaresolutions
 
@@ -17,12 +17,12 @@ subcollection: vmwaresolutions
 # Add-on services
 {: #vc_orderinginstance-addon-services}
 
-When you order a VMware vCenter Server® instance, you can also order add-on services. Review services that are recommended and optional with your vCenter Server instance.
+When you order a {{site.data.keyword.vcf-auto}} instance, you can also order add-on services. Review services that are recommended and optional with your Automated instance.
 
 ## Recommended services
 {: #vc_orderinginstance-addon-services-recomm}
 
-The following services are recommended with your vCenter Server instance. The recommended add-on services require configuration setup.
+The following services are recommended with your Automated instance. The recommended add-on services require configuration setup.
 * [Veeam Backup and Replication](/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview)
 * [Caveonix RiskForesight](/docs/vmwaresolutions?topic=vmwaresolutions-caveonix_considerations)
 
@@ -38,10 +38,10 @@ Optionally, you can choose to install the following services:
 * [{{site.data.keyword.redhat_openshift_notm}} for VMware](/docs/vmwaresolutions?topic=vmwaresolutions-ocp_overview)
 * [VMware Aria Operations and VMware Aria Operations for Logs](/docs/vmwaresolutions?topic=vmwaresolutions-vrops_overview)
 
-For more information about the services, see [Available services for vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices#vc_addingservices-available-services).
+For more information about the services, see [Available services for Automated instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices#vc_addingservices-available-services).
 
 ## Related links
 {: #vc_orderinginstance-services-related}
 
 * [Summary](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-order-summary)
-* [Procedure to order vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-procedure)
+* [Procedure to order Automated instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-procedure)

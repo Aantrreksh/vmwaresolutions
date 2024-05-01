@@ -4,7 +4,7 @@ copyright:
 
   years: 2023, 2024
 
-lastupdated: "2024-01-05"
+lastupdated: "2024-04-12"
 
 keywords: backup repository, direct attached storage, network attached storage
 
@@ -48,7 +48,7 @@ To add {{site.data.keyword.cloud_notm}} object storage, see:
 * [Choosing a plan and creating an instance](/docs/cloud-object-storage?topic=cloud-object-storage-provision)
 * [Using HMAC credentials](/docs/cloud-object-storage?topic=cloud-object-storage-uhc-hmac-credentials-main)
 * [Locking objects](/docs/cloud-object-storage?topic=cloud-object-storage-ol-overview)
-* [Adding IBM Cloud Object Storage](https://helpcenter.veeam.com/docs/backup/vsphere/adding_ibm_object_storage.html?ver=120){: external}
+* [Adding {{site.data.keyword.cloud_notm}} Object Storage](https://helpcenter.veeam.com/docs/backup/vsphere/adding_ibm_object_storage.html?ver=120){: external}
 
 To add a Linux Hardened repository, see:
 * [Building a custom bare metal server](/docs/bare-metal?topic=bare-metal-ordering-baremetal-server)

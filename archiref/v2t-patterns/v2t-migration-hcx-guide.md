@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-01-30"
+lastupdated: "2024-04-04"
 
 subcollection: vmwaresolutions
 
@@ -23,7 +23,7 @@ You can provision an optional HCX service in the new vCenter Server instance wit
 
 ![HCX site peering over private network](../../images/v2t-hcx-site-peering.svg "HCX site peering happens over private network"){: caption="Figure 1. HCX site peering over private network" caption-side="bottom"}
 
-1. Order the HCX service on the new vCenter Server with NSX-T environment. For more information, see [Ordering VMware HCX](/docs/vmwaresolutions?topic=vmwaresolutions-hcx_ordering). This use case assumes that you specify the HCX network connection type of Public, which allows license registration and metering to be completed over the public network. 
+1. Order the HCX service on the new vCenter Server with NSX-T environment. For more information, see [Ordering VMware HCX](/docs/vmwaresolutions?topic=vmwaresolutions-hcx_ordering). This use case assumes that you specify the HCX network connection type of Public, which allows license registration and metering to be completed over the public network.
 
    However, if your NSX-T consolidated or management cluster is deployed with private network only, the only networking option that you can choose is private. You then need to configure a proxy server to enable license registration and metering over the public network. For more information, see [Deployment process for HCX](/docs/vmwaresolutions?topic=vmwaresolutions-hcx_ordering#hcx_ordering-deploy).
 2. When the automated HCX service deployment is completed, the following components are deployed and configured in the vCenter Server with NSX-T environment.
@@ -56,7 +56,7 @@ You can provision an optional HCX service in the new vCenter Server instance wit
 
 ![Deploying HCX fleet for migration](../../images/v2t-hcx-hcx-fleet.svg "Deploying HCX fleet for migration. You can deploy multiple appliances to scale the migration solution."){: caption="Figure 3. Deploying HCX fleet for migration" caption-side="bottom"}
 
-1. When you create a Service Mesh through the vCenter Server with NSX-V HCX Manager, HCX creates the HCX responder fleet appliances in the vCenter Server with NSX-T environment. These appliances consist of an interconnect appliance, WAN optimizer, and network extension appliance. One or more of these appliances are deployed depending on the settings that are used during the service mesh creation workflow. For more information, see [HCX deployment considerations and best practices](https://hybridityguru.files.wordpress.com/2019/07/hcx_dbp_wp.pdf){: external} and [HCX compute profiles](https://hybridityguru.files.wordpress.com/2020/02/hcx-compute-profiles.pdf){: external}.
+1. When you create a Service Mesh through the vCenter Server with NSX-V HCX Manager, HCX creates the HCX responder fleet appliances in the vCenter Server with NSX-T environment. These appliances consist of an interconnect appliance, WAN optimizer, and network extension appliance. One or more of these appliances are deployed depending on the settings that are used during the service mesh creation workflow. For more information, see [HCX deployment considerations and best practices](https://hcx.design/wp-content/uploads/2019/07/hcx_dbp_wp.pdf){: external} and [HCX compute profiles](https://hcx.design/wp-content/uploads/2020/02/hcx-compute-profiles.pdf){: external}.
 2. When you create a Service Mesh through the vCenter Server with NSX-V HCX Manager, HCX creates the HCX initiator fleet appliances in the vCenter Server with NSX-V environment. These appliances consist of an interconnect appliance, WAN optimizer, and network extension appliance. One or more of these appliances are deployed depending on the settings that are used during the service mesh creation workflow.
 3. The HCX network Extension service workflow is initiated through the vCenter Server with NSX-V HCX Manager. This workflow uses L2 bridging to connect the required NSX-V logical switches to automatically created NSX-T segments.
 4. The migration workflow is used to select the required VMs to be migrated by using the vMotion, bulk, or cold migration options. At this stage, the VMs are on the NSX-T environment but north-south traffic is through the NSX-V Edges.

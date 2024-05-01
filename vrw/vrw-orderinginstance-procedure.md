@@ -4,9 +4,9 @@ copyright:
 
   years:  2020, 2024
 
-lastupdated: "2024-02-05"
+lastupdated: "2024-04-23"
 
-keywords: vmware regulated workloads, vmware regulated workloads order instance, order vmware regulated workloads, vmware regulated workloads instances
+keywords: regulated workloads, regulated workloads order instance, order regulated workloads, regulated workloads instances
 
 subcollection: vmwaresolutions
 
@@ -14,41 +14,41 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Procedure to order VMware Regulated Workloads
+# Procedure to order {{site.data.keyword.rw}}
 {: #vrw-orderinginstance-procedure}
 
 <!-- The {: #step-1} tag and the ordered list that has only 1s are intentional. Do not delete. This coding is necessary for proper indentation when the procedure is translated. -->
 
-1. In the {{site.data.keyword.vmwaresolutions_full}} console, click the **VMware Regulated Workloads** card in the **Solutions** section. {: #step-1}
+1. In the VMware Solutions console, click the **VMware Cloud Foundation (VCF) for Classic** card in the **Create a resource** section. {: #step-1}
+1. On the **Create** tab, click the **{{site.data.keyword.rw}}** card in the **Resource type** section.
 1. Review the service prerequisites and confirm that you ordered the mandatory services listed.
 1. Enter the instance name and select a resource group. Then, select the vCenter Server version.
 1. To specify the instance configuration name, click **Browse configurations** and choose a configuration in the **VMware instance configuration manager**.
    * If you do not see any configurations in the list and you want to create one, you must first save the instance settings as a new configuration without placing an order.
    * If you want to update a saved configuration or create a new configuration based on a saved one, select the configuration from the side panel, make your changes, and then save.
-1. Use the IBM-provided licenses for VMware components by selecting **Include with purchase**. For NSX-T, specify the license edition.
+1. If you are a BYOL user, provide your own license keys for all VMware components. Toggle the **BYOL** switch to **Enabled** and enter your license keys.
 
-   Bring Your Own License (BYOL) is no longer supported except for migrations or upgrades of existing BYOL clusters. Select **I will provide** and enter your own license key only if you are performing an upgrade or migration of an existing BYOL cluster.
-   {: important}
+   {{site.data.content.attnnote-byol}}
 
 1. Specify the data center location. Click the **Edit** icon ![Edit icon](../../icons/edit-tagging.svg "Edit") and select the geography, data center, and pod to host the clusters.
 1. Specify the settings for the primary cluster:
    1. Specify the cluster name.
    1. Select the primary cluster type. For the **Customizable consolidated** cluster, select the CPU model and RAM size.
    1. Select the number of bare metal servers.
-   1. Under **vSAN configuration**, select the disk type and size for the vSAN™ capacity disks, the number of vSAN capacity disks, and the vSAN licensing option.
+   1. Under **vSAN configuration**, select the disk type and size for the vSAN capacity disks, the number of vSAN capacity disks, the disk size for vSAN cache disks, and the number of vSAN cache disks.
    1. Review the estimated resources available per cluster.
    1. Review the networking type and select the uplink speed.
 1. Specify the settings for the additional workload cluster. For VMware instances with a customizable consolidated cluster, optionally toggle the **Deploy separate workload cluster** switch on and complete the cluster settings.
    1. Specify the cluster name.
    1. Select the workload capacity. For the **Customizable** capacity, select the CPU model and RAM size.
    1. Select the number of bare metal servers.
-   1. Select the disk type and size for the vSAN capacity disks, and the number of vSAN capacity disks. Also, select the vSAN licensing option.
+   1. Select the disk type and size for the vSAN capacity disks, the number of vSAN capacity disks, the disk size for vSAN cache disks, and the number of vSAN cache disks.
    1. Review the estimated resources available per cluster.
    1. Review the networking type and select the uplink speed.
 1. Choose the firewall appliance for your instance and follow the steps, depending on your selection:
    * For **Gateway cluster with Juniper® vSRX**, **Gateway cluster with FortiGate® Virtual Appliance**, and **Bring your own gateway appliance**, specify the [gateway cluster name](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-orderinginstance-edge#vrw-orderinginstance-edge-cluster-name), the CPU model, the RAM size, and the networking type.
    * For **Gateway cluster with Juniper vSRX** and **Gateway cluster with FortiGate Virtual Appliance**, you must also specify the corresponding service settings in a later step.
-   * For **FortiGate Security Appliance**, you must order the **FortiGate Security Appliance 10 Gbps** service from the [{{site.data.keyword.cloud_notm}} catalog](https://cloud.ibm.com/netsec/firewalls/multi-vlan/provision#about). Confirm that you ordered the service and continue with the following steps.
+   * For **FortiGate Security Appliance**, you must order the **FortiGate Security Appliance 10 Gbps** service from the [{{site.data.keyword.cloud_notm}} catalog](/netsec/firewalls/multi-vlan/provision#about). Confirm that you ordered the service and continue with the following steps.
 1. Under **Network interface**, enter the hostname prefix for the regulated workload and the root domain name. If you want to customize the hostnames prefix individually, toggle the **Configure hostnames individually** switch on.
 1. Under **Resource details**, enter the instance name and select a resource group.
 1. Under **Included services**, review the add-on services to be deployed into the instance. If a service requires configuration, complete the service-specific settings by clicking **Edit** on the service card. Then, complete your edits and click **Save**. For more information about specific settings for a service, see the corresponding topic for ordering the service.
@@ -80,6 +80,6 @@ If you change these components outside of the VMware Solutions console, the chan
 {: #vrw-orderinginstance-procedure-related}
 
 * [Signing up for an {{site.data.keyword.cloud_notm}} account](/docs/vmwaresolutions?topic=vmwaresolutions-signing_required_accounts#signing_required_accounts-cloud)
-* [Planning for VMware Regulated Workloads](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-planning)
-* [Viewing and deleting VMware Regulated Workloads](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-view-delete-instance)
-* [VMware Regulated Workloads reference architecture overview](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-archi-overview)
+* [Planning for {{site.data.keyword.rw}}](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-planning)
+* [Viewing and deleting {{site.data.keyword.rw}}](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-view-delete-instance)
+* [{{site.data.keyword.rw}} reference architecture overview](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-archi-overview)

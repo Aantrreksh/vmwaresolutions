@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-02-02"
+lastupdated: "2024-04-29"
 
 subcollection: vmwaresolutions
 
@@ -33,7 +33,7 @@ These pre-defined baselines are as follows:
 
 To use baselines and baseline groups, you must attach them to selected inventory objects such as container objects, virtual machines, virtual appliances, or hosts. Although you can attach baselines and baseline groups to individual objects, a more efficient method is to attach them to container objects, such as folders, vApps, clusters or data centers. In this step, we use the predefined baselines against the hosts in the cluster.
 
-1. Using the vSphere® web Client, go to **Home** > **Hosts and Clusters**.
+1. Using the vSphere® Web Client, go to **Home** > **Hosts and Clusters**.
 2. Click the cluster object that you want to scan.
 3. Go to VUM, click **Attach Baseline**, and then select the two pre-defined Patch Baselines. Click **OK**.
 

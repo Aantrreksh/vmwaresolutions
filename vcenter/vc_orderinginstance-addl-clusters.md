@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2023
+  years:  2016, 2024
 
-lastupdated: "2023-10-10"
+lastupdated: "2024-04-12"
 
 keywords: additional cluster, optional cluster, workload cluster, separate cluster, gateway cluster
 
@@ -33,7 +33,7 @@ You can also specify a new cluster name that meets the requirements listed in [C
 
 The configuration options for the separate workload cluster are similar to the consolidated cluster, with the exception of the number of bare metal servers that you can order:
 
-{{site.data.content.exception-number-of-baremetal-servers}}
+{{site.data.content.number-of-baremetal-servers-wkld}}
 
 ### Reuse VLANs from the consolidated cluster
 {: #vc_orderinginstance-addl-clusters-wkld-reuse-vlans}
@@ -73,4 +73,4 @@ Select either **Public and private network** or **Private network only**.
 {: #vc_orderinginstance-addl-clusters-links}
 
 * [Network interface](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-network-interface-settings)
-* [Procedure to order vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-procedure)
+* [Procedure to order Automated instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-procedure)

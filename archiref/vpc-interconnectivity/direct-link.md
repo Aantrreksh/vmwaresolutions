@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-03-26"
+lastupdated: "2024-04-15"
 
 subcollection: vmwaresolutions
 
@@ -25,23 +25,22 @@ The {{site.data.keyword.dl_full_notm}} service is a routed OSI Layer-3 service. 
 
 For more information, see [About {{site.data.keyword.dl_full_notm}} (2.0)](/docs/dl?topic=dl-dl-about).
 
-## Considerations with roll-your-own VMware solution in VPC
-{: #interconnectivity-dl-ryo-considerations}
+## Considerations with VMware Cloud Foundation solution in VPC
+{: #interconnectivity-dl-vcf-considerations}
 
-When you use the VMware® virtual machines (VMs) on VPC subnets architecture, your VMs are attached to VPC subnets and the routing behaves in the same way as with VPC Virtual Servers. The VPC subnets are provisioned from the zone prefix, and when the VPC is attached to a {{site.data.keyword.dl_short}}, the routing works between on-premises without any required changes. If you are using IANA-registered IP addresses in your VPC, see [Routing considerations for IANA-registered IP assignments](/docs/vpc?topic=vpc-interconnectivity#routing-considerations-iana).
+When you use the VMware® virtual machines (VMs) on the VPC subnet architecture, your VMs are attached to VPC subnets and the routing behaves in the same way as with VPC Virtual Servers. The VPC subnets are provisioned from the zone prefix, and when the VPC is attached to a {{site.data.keyword.dl_short}}, the routing works between on-premises without any required changes. If you are using IANA-registered IP addresses in your VPC, see [Routing considerations for IANA-registered IP assignments](/docs/vpc?topic=vpc-interconnectivity#routing-considerations-iana).
 
-![Direct Link with VMware on VPC](../../images/vpc-ryo-diagrams-dl-sub-arch.svg "Direct Link with VMware on VPC"){: caption="Figure 1. {{site.data.keyword.dl_short}} with VMware on VPC" caption-side="bottom"}
+![Direct Link with VMware on VPC](../../images/vpc-vcf-diagrams-dl-sub-arch.svg "Direct Link with VMware on VPC"){: caption="Figure 1. {{site.data.keyword.dl_short}} with VMware on VPC" caption-side="bottom"}
 
-When you use NSX-T™ on your VMware® solution on VPC, the VMs are attached on the NSX-T overlay segments. They use an IP address range or prefix, which is reachable through VPC route. The IP address range or prefix points to the NSX-T Tier-0 private uplink VIP as described in the [VMware NSX-T logical routing on VPC](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-ryo-nsx-t-vpc-routing) topic. When you attach the VPC to a {{site.data.keyword.dl_short}}, you must create a VPC prefix that matches the VPC route, which points to NSX-T overlay. You must not define any subnets on the prefix. However, the prefix must exist so that {{site.data.keyword.dl_short}} can advertise the NSX-T overlay routes to on-premises network.
+When you use NSX-T™ on your VMware® solution on VPC, the VMs are attached on the NSX-T overlay segments. They use an IP address range or prefix, which is reachable through VPC route. The IP address range or prefix points to the NSX-T Tier-0 private uplink VIP as described in the [VMware NSX-T logical routing on VPC](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-nsx-t-vpc-routing) topic. When you attach the VPC to a {{site.data.keyword.dl_short}}, you must create a VPC prefix that matches the VPC route, which points to the NSX-T overlay. You must not define any subnets on the prefix. However, the prefix must exist so that {{site.data.keyword.dl_short}} can advertise the NSX-T overlay routes to the on-premises network.
 
-![Direct Link with VMware on VPC with NSX-T](../../images/vpc-ryo-diagrams-dl-nsx-t-arch.svg "Direct Link with VMware on VPC with NSX-T"){: caption="Figure 2. {{site.data.keyword.dl_short}} with VMware on VPC with NSX-T" caption-side="bottom"}
+![Direct Link with VMware on VPC with NSX-T](../../images/vpc-vcf-diagrams-dl-nsx-t-arch.svg "Direct Link with VMware on VPC with NSX-T"){: caption="Figure 2. {{site.data.keyword.dl_short}} with VMware on VPC with NSX-T" caption-side="bottom"}
 
 ## Related links
-{: #interconnectivity-dl-ryo-links}
+{: #interconnectivity-dl-vcf-links}
 
 * [{{site.data.keyword.vpc_short}} getting started](/docs/vpc?topic=vpc-getting-started)
 * [{{site.data.keyword.vpc_short}} Bare Metal Servers](/docs/vpc?topic=vpc-planning-for-bare-metal-servers)
-* [{{site.data.keyword.vpc_short}} RYO VMware reference architecture](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-ryo-overview)
 * [{{site.data.keyword.dl_full_notm}} overview](/docs/dl?topic=dl-get-started-with-ibm-cloud-dl)
 * [{{site.data.keyword.tg_full_notm}} overview](/docs/transit-gateway?topic=transit-gateway-getting-started)
 * [{{site.data.keyword.vpc_short}} VPN overview](/docs/vpc?topic=vpc-vpn-overview)

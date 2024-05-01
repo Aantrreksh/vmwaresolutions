@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2024
 
-lastupdated: "2024-01-30"
+lastupdated: "2024-04-29"
 
 keywords: Red Hat OpenShift for VMware, OpenShift configuration, order OpenShift
 
@@ -18,7 +18,7 @@ subcollection: vmwaresolutions
 # Ordering Red Hat OpenShift for VMware
 {: #ocp_ordering}
 
-You can include the {{site.data.keyword.redhat_openshift_full}} for VMware® service with a new VMware vCenter Server® instance or add the service to your existing instance.
+You can include the {{site.data.keyword.redhat_openshift_full}} for VMware® service with a new {{site.data.keyword.vcf-auto}} instance or add the service to your existing instance.
 
 ## Considerations when you install Red Hat OpenShift for VMware
 {: #ocp_overview-consid-install}
@@ -30,7 +30,7 @@ You can include the {{site.data.keyword.redhat_openshift_full}} for VMware® ser
 ## Ordering Red Hat OpenShift for VMware for a new instance
 {: #ocp_ordering-new}
 
-1. When you [order the instance](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-procedure), scroll down to the **Add-on services** section. Red Hat OpenShift for VMware is in the **Transformation and modernization of VMware applications** category. 
+1. When you [order the instance](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-procedure), scroll down to the **Add-on services** section. Red Hat OpenShift for VMware is in the **Transformation and modernization of VMware applications** category.
 2. Open the category, locate Red Hat OpenShift for VMware, and toggle its switch on.
 3. Click **Edit** to review and specify [the configuration information](/docs/vmwaresolutions?topic=vmwaresolutions-ocp_ordering#ocp_ordering-config), then click **Save**.
 
@@ -65,11 +65,11 @@ Alternately, you can configure your local `hosts` file with the following entrie
 
 In the previous example:
 * Replace `APPLICATION_IP` with the {{site.data.keyword.redhat_openshift_notm}} application IP address shown in the {{site.data.keyword.redhat_openshift_notm}} service details page.
-* Replace `ROOTDOMAIN` with the root domain shown on the Summary page for the vCenter Server instance.
+* Replace `ROOTDOMAIN` with the root domain shown on the Summary page for the {{site.data.keyword.vcf-auto-short}} instance.
 
 ## Related links
 {: #ocp_ordering-related}
 
-* [Ordering services for vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices)
+* [Ordering services for {{site.data.keyword.vcf-auto-short}} instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices)
 * [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support)
-* [FAQ](/docs/vmwaresolutions?topic=vmwaresolutions-faq-vmwaresolutions)
+* [General FAQ about VCF for Classic](/docs/vmwaresolutions?topic=vmwaresolutions-faq-vmwaresolutions)

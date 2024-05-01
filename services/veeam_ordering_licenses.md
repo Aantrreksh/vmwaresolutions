@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2020, 2023
+  years:  2020, 2024
 
-lastupdated: "2023-10-06"
+lastupdated: "2024-04-12"
 
 keywords: Veeam, Veeam standalone license, order Veeam standalone license
 
@@ -17,12 +17,12 @@ subcollection: vmwaresolutions
 # Ordering Veeam stand-alone licenses
 {: #veeam_ordering_licenses}
 
-You can order a Veeam® stand-alone license without associating it to any VMware® vCenter Server® instance for licensing and activation of your on-premises workloads.
+You can order a Veeam® stand-alone license without associating it to any {{site.data.keyword.vcf-auto}} instance for licensing and activation of your on-premises workloads.
 
 ## Considerations for installing and deleting Veeam licenses
 {: #managingveeam-install-delete-consid}
 
-The following information about licenses applies to both Veeam 12 and Veeam 9.5u4b.
+The following information about licenses applies to both Veeam 12.1 and Veeam 9.5u4b.
 
 For Veeam 10 and later versions, Veeam licenses are installed and deleted in a different way than previous Veeam versions.
 

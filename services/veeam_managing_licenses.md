@@ -4,9 +4,9 @@ copyright:
 
   years:  2020, 2024
 
-lastupdated: "2024-02-06"
+lastupdated: "2024-04-12"
 
-keywords: Veeam, Veeam license, manage Veeam license, Veeam Backup and Replication 12 
+keywords: Veeam, Veeam license, manage Veeam license, Veeam Backup and Replication 12.1
 
 subcollection: vmwaresolutions
 
@@ -55,11 +55,11 @@ If you are experiencing this problem and the only browser you can use is Firefox
 
 ## Procedure to delete Veeam stand-alone licenses
 {: #veeam_managing_licenses-procedure-delete}
- 
+
 Before you delete a Veeam license, review [Considerations when you delete Veeam](/docs/vmwaresolutions?topic=vmwaresolutions-managingveeam#veeamvm_overview-remove).
 {: important}
 
-Deleting a Veeam license does not delete the Veeam service that is installed on a vCenter Server instance. To delete the service, you must do so in the VMware Solutions console. For more information, see [Deleting services from vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_deletingservices).
+Deleting a Veeam license does not delete the Veeam service that is installed on a {{site.data.keyword.vcf-auto-short}} instance. To delete the service, you must do so in the VMware Solutions console. For more information, see [Deleting services from {{site.data.keyword.vcf-auto-short}} instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_deletingservices).
 
 To delete a Veeam license:
 

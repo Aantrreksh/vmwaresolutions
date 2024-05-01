@@ -4,9 +4,9 @@ copyright:
 
   years:  2020, 2024
 
-lastupdated: "2024-01-23"
+lastupdated: "2024-04-23"
 
-keywords: vmware regulated workloads, vmware regulated workloads order instance, order vmware regulated workloads, vmware regulated workloads instances
+keywords: regulated workloads, regulated workloads order instance, order regulated workloads, regulated workloads instances
 
 subcollection: vmwaresolutions
 
@@ -41,11 +41,10 @@ You can order 4-59 servers. All servers have the same configuration.
 ## vSAN configuration
 {: #vrw-orderinginstance-wkld-vsan}
 
-* You can choose the type and number of capacity disks according to your needs.
-* Use the IBM-provided VMware license for vSAN, which is included with purchase.
+* You can choose the type and number of capacity disks according to your requirements.
+* If you are a BYOL user, provide your own vSAN license key. Toggle the **BYOL** switch to **Enabled** and enter your license key.
 
-Bring Your Own License (BYOL) is no longer supported except for migrations or upgrades of existing BYOL clusters. Select **I will provide** and enter your own license key only if you are performing an upgrade or migration of an existing BYOL cluster.
-{: important}
+   {{site.data.content.attnnote-byol}}
 
 ## Estimated resources available per cluster
 {: #vrw-orderinginstance-wkld-est}
@@ -79,5 +78,5 @@ The networking type is set to **Private network only** by default.
 {: #vrw-orderinginstance-wkld-related}
 
 * [Firewall appliance](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-orderinginstance-firewall-appl)
-* [Procedure to order VMware Regulated Workloads](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-orderinginstance-procedure)
-* [VMware Regulated Workloads reference architecture overview](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-archi-overview)
+* [Procedure to order {{site.data.keyword.rw}}](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-orderinginstance-procedure)
+* [{{site.data.keyword.rw}} reference architecture overview](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-archi-overview)

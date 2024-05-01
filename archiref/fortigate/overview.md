@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2022, 2023
+  years:  2022, 2024
 
-lastupdated: "2023-03-21"
+lastupdated: "2024-04-26"
 
 subcollection: vmwaresolutions
 
@@ -12,10 +12,10 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Fortinet FortiGate virtual machine (VM) overview
+# Fortinet FortiGate VM overview
 {: #fortigate-overview}
 
-{{site.data.keyword.vmwaresolutions_full}} offers various solutions to meet your network security requirements. The base offering includes VMware NSX–T™ for integrated virtual networking and security. More network security features are available with the FortiGate® VM offering, which provides Fortinet®’s next–generation firewall (NGFW) capabilities in the form of a highly available pair of virtual FortiGate appliances. In addition to the architecture for FortiGate VM, {{site.data.keyword.cloud}} also offers a [FortiGate Security Appliance](/docs/fortigate-10g) offering, which provides a perimeter firewall, NAT, and VPN services in the form of a physical appliance.
+{{site.data.keyword.vmwaresolutions_full}} offers various solutions to meet your network security requirements. The base offering includes VMware NSX–T™ for integrated virtual networking and security. More network security features are available with the FortiGate® VM offering, which provides Fortinet®’s next–generation firewall (NGFW) capabilities in the form of a highly available pair of virtual FortiGate appliances. In addition to the architecture for FortiGate virtual machine (VM), {{site.data.keyword.cloud}} also offers a [FortiGate Security Appliance](/docs/fortigate-10g) offering, which provides a perimeter firewall, NAT, and VPN services in the form of a physical appliance.
 
 The solution is considered to be an extra component and extension of the VMware vCenter Server® offering on {{site.data.keyword.cloud_notm}}. As a result, this document doesn’t cover the existing configuration of the foundation solutions on {{site.data.keyword.cloud_notm}}. For more information about the foundation solution architecture, see [Overview of VMware Solutions](/docs/vmwaresolutions?topic=vmwaresolutions-solution_overview).
 

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2023
+  years:  2016, 2024
 
-lastupdated: "2022-09-25"
+lastupdated: "2024-04-17"
 
 subcollection: vmwaresolutions
 
@@ -83,10 +83,10 @@ Cornerstone to these solutions is automation. Automation reduces the complexity 
 IBM CloudDriver is an ephemeral {{site.data.keyword.cloud_notm}} VM virtual server instance (VSI), which is deployed as needed for initial deployment and for Day 2 operations such as adding hosts, clusters, or add-on services to your VMware instance. CloudDriver is deleted when the all current processes are completed.
 
 CloudDriver is deployed only on the private network that connects to the IBM management plane over a private message queue. They are IBM developed components, are not user accessible, and have the following attributes and functions:
-* Deployment and configuration of the vCenter Server instance within the user account.
-* Add and remove hosts from the vCenter Server clusters.
-* Add and remove clusters from vCenter Server instances.
-* Add and remove add on services or function to vCenter Server instances.
+* Deployment and configuration of the {{site.data.keyword.vcf-auto}} instance within the user account.
+* Add and remove hosts from the Automated clusters.
+* Add and remove clusters from Automated instances.
+* Add and remove add on services or function to Automated instances.
 
 ### Automation flow
 {: #design_infrastructuremgmt-auto-flow}

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2022, 2023
+  years:  2022, 2024
 
-lastupdated: "2023-09-11"
+lastupdated: "2024-04-26"
 
 subcollection: vmwaresolutions
 
@@ -12,17 +12,17 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Fortinet FortiGate virtual machine (VM) design
+# Fortinet FortiGate VM design
 {: #fortigate-design}
 
 The FortiGate® VM solution complements the {{site.data.keyword.vmwaresolutions_full}} offerings by providing next–generation firewall (NGFW) capabilities for networks within your VMware® estate. These services are provided by one or more pairs of FortiGate virtual appliances that are deployed to your VMware environment.
 
-FortiGate VM does not replace NSX–T™ but rather complements and enhances the existing VMware NSX® architecture when installed into your VMware vCenter Server® instance on {{site.data.keyword.cloud}}. FortiGate VM is deployed as a pair of virtual appliances with one network interface (port1) configured for management access and nine available network interfaces in the client’s data plane. With appropriate configuration of networks and routes, you can use FortiGate VM to provide network security between all tiers of your network topology.
+FortiGate VM does not replace NSX–T™ but rather complements and enhances the existing VMware NSX® architecture when installed into your VMware vCenter Server® instance on {{site.data.keyword.cloud}}. The FortiGate virtual machine (VM) is deployed as a pair of virtual appliances with one network interface (port1) configured for management access and nine available network interfaces in the client’s data plane. With appropriate configuration of networks and routes, you can use FortiGate VM to provide network security between all tiers of your network topology.
 
 ## Topologies
 {: #fortigate-design-topologies}
 
-You can deploy a FortiGate VM according to several different strategies as Figure 1 illustrates.
+You can deploy FortiGate VM according to several different strategies as Figure 1 illustrates.
 
 ![FortiGate VM deployment topologies](../../images/fortigate-vm.svg "FortiGate VM deployment topologies"){: caption="Figure 1. FortiGate VM deployment topologies" caption-side="bottom"}
 

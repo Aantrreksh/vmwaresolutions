@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2020, 2023
+  years:  2020, 2024
 
-lastupdated: "2023-09-25"
+lastupdated: "2024-04-29"
 
 keywords: ordering prerequisites, before you order, pre-order checklist, before first order
 
@@ -17,7 +17,7 @@ subcollection: vmwaresolutions
 # Setting up your environment for your first order
 {: #completing_checklist}
 
-The setup information applies only to the following offerings: VMware vSphere, VMware vCenter Server, VMware Regulated Workloads, and Cyber Recovery.
+The setup information applies only to the {{site.data.keyword.vcf-classic}} offerings: Automated, Flexible, {{site.data.keyword.cr}}, and {{site.data.keyword.rw}}.
 {: note}
 
 When you order an instance for the first time, you might be prompted to follow a set of instructions to ensure that your environment is ready for your order.
@@ -52,5 +52,5 @@ The following table lists the possible instructions and additional information f
 {: #completing_checklist-related}
 
 * [Managing user accounts and settings](/docs/vmwaresolutions?topic=vmwaresolutions-useraccount)
-* [FAQ](/docs/vmwaresolutions?topic=vmwaresolutions-faq-vmwaresolutions)
-* [Ordering vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-req)
+* [General FAQ about VCF for Classic](/docs/vmwaresolutions?topic=vmwaresolutions-faq-vmwaresolutions)
+* [Ordering Automated instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-req)

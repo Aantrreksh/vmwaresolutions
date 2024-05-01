@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2024
 
-lastupdated: "2024-04-02"
+lastupdated: "2024-04-04"
 
 keywords: zerto, zerto self-service portal, zerto portal access procedure
 
@@ -49,12 +49,12 @@ For more information about using the Zerto Self-Service Portal to create Virtual
 ## Licenses and fees for Zerto
 {: #shared_zerto-portal-fees}
 
-Zerto usage incurs charges on demand. For more information, see [VMware Shared pricing](/docs/vmwaresolutions?topic=vmwaresolutions-shared_pricing).
+Zerto usage incurs charges on demand. For more information, see [{{site.data.keyword.vm-shared}} pricing](/docs/vmwaresolutions?topic=vmwaresolutions-shared_pricing).
 
 ## Related links
 {: #shared_zerto-portal-related}
 
-* [VMware Shared overview](/docs/vmwaresolutions?topic=vmwaresolutions-shared_overview)
+* [{{site.data.keyword.vm-shared}} overview](/docs/vmwaresolutions?topic=vmwaresolutions-shared_overview)
 * [Ordering virtual data centers](/docs/vmwaresolutions?topic=vmwaresolutions-shared_ordering)
 * [Ordering a Zerto Cloud Connector](/docs/vmwaresolutions?topic=vmwaresolutions-shared_zerto-cc-order)
 * [Viewing Zerto Cloud Connector details](/docs/vmwaresolutions?topic=vmwaresolutions-shared_zerto-cc-view)

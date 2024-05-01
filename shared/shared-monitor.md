@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2024
 
-lastupdated: "2024-04-02"
+lastupdated: "2024-04-26"
 
 keywords: monitor, default dashboard, custom dashboard, virtual data center, platform metrics, monitoring
 
@@ -20,7 +20,7 @@ subcollection: vmwaresolutions
 
 {{site.data.content.shared-deprecated-note}}
 
-VMware Shared provides an integration with {{site.data.keyword.mon_full}}, which allows you to use a dashboard, provided by VMware Shared to view metrics for your virtual data centers. Alternatively, you can create your own dashboard to visualize performance, volume of usage, and to define alerts to monitor your environment.
+{{site.data.keyword.vm-shared}} provides an integration with {{site.data.keyword.mon_full}}, which allows you to use a dashboard, provided by {{site.data.keyword.vm-shared}} to view metrics for your virtual data centers. Alternatively, you can create your own dashboard to visualize performance, volume of usage, and to define alerts to monitor your environment.
 
 Use {{site.data.keyword.mon_short}} dashboards to complete the following tasks.
 
@@ -44,8 +44,8 @@ Review the following requirements for your instance order.
 
 To order the {{site.data.keyword.mon_short}} instance:
 
-1. From the {{site.data.keyword.vmwaresolutions_short}} console, click **Resources > VMware Shared** from the left navigation pane.
-2. In the **VMware Shared** table, select the instance for which you want to collect platform metrics.
+1. From the {{site.data.keyword.vmwaresolutions_short}} console, click **Resources > {{site.data.keyword.vm-shared}}** from the left navigation pane.
+2. In the **{{site.data.keyword.vm-shared}}** table, select the instance for which you want to collect platform metrics.
 3. From the instance details page, click the **Actions** menu and click **Add monitoring**.
 4. On the {{site.data.keyword.mon_short}} provisioning page, complete the steps in [Provisioning an instance](/docs/monitoring?topic=monitoring-provision) to order a {{site.data.keyword.mon_short}} instance and enable the automatic platform metrics collection.
 
@@ -54,13 +54,13 @@ To order the {{site.data.keyword.mon_short}} instance:
 
 After you order your {{site.data.keyword.mon_short}} instance, you can view the platform metrics in the {{site.data.keyword.mon_short}} console.
 
-1. In the **VMware Shared** table, select the virtual data center for which you want to view platform metrics.
+1. In the **{{site.data.keyword.vm-shared}}** table, select the virtual data center for which you want to view platform metrics.
 2. From the virtual data center details page, click the **Actions** menu and click **Monitoring**. The {{site.data.keyword.mon_short}} dashboard displays the metrics for the associated instance.
 
-## VMware Shared metrics
+## {{site.data.keyword.vm-shared}} metrics
 {: #shared-monitor-metrics}
 
-VMware Shared provides the following metrics for the default dashboard:
+{{site.data.keyword.vm-shared}} provides the following metrics for the default dashboard:
 * vCPU usage
 * vCPU allocation
 * Memory usage
@@ -77,7 +77,7 @@ The following table displays the total usage of the virtual data center vCPU.
 
 | Metadata | Description |
 |:-------- |:----------- |
-| `Metric Name` | `ibm_vmwaresolutions_vdc_vcpu_usage` | 
+| `Metric Name` | `ibm_vmwaresolutions_vdc_vcpu_usage` |
 | `Metric Type` | `gauge` |
 | `Unit` | `none` |
 | `Segment By` | `Service instance ID` |
@@ -135,7 +135,7 @@ The following table displays the total usage of the virtual data center storage.
 | `Segment By` | `Service instance ID` |
 {: caption="Table 5. Virtual data center storage usage" caption-side="bottom"}
 
-## Customizing your VMware Shared dashboard
+## Customizing your {{site.data.keyword.vm-shared}} dashboard
 {: #shared-monitor-view-customize}
 
 To customize your dashboard:

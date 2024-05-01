@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-02-19"
+lastupdated: "2024-04-29"
 
 subcollection: vmwaresolutions
 
@@ -230,7 +230,7 @@ If you have a vSAN cluster, the additional preconfigured alarms in the following
 | vSAN hardware compatibility issues | Not considered essential for notification. Alarm that is reviewed as part of proactive daily checks. | [vSAN Health Check Information (2114803)](https://kb.vmware.com/s/article/2114803?CoveoV2.CoveoLightningApex.getInitializationData=1&r=2&ui-communities-components-aura-components-forceCommunity-seoAssistant.SeoAssistant.getSeoData=1&other.KM_Utility.getArticleDetails=1&other.KM_Utility.getArticleMetadata=2&other.KM_Utility.getUrl=1&other.KM_Utility.getUser=1&other.KM_Utility.getAllTranslatedLanguages=2&ui-comm-runtime-components-aura-components-siteforce-qb.Quarterback.validateRoute=1){: external} |
 | vSAN health alarm `Active multicast connectivity check` | Configure to send email one time for a critical event. | [vSAN Health Service - Network Health - Active Multicast connectivity check (2116296)](https://kb.vmware.com/s/article/2116296){: external} |
 | vSAN health alarm `Advanced vSAN configuration in sync` | Not considered essential for notification. Alarm that is reviewed as part of proactive daily checks. | [vSAN Health Service - Cluster Health - Advanced vSAN configuration in sync (2107713)](https://kb.vmware.com/s/article/2107713){: external} |
-| vSAN health alarm `After one additional host failure` | Configure to send email one time for a critical event. | [vSAN health warning `after one additional host failure` is reported incorrectly on two node ROBO/stretched clusters (2150568)](https://kb.vmware.com/s/article/2150568?lang=en_US){: external} |
+| vSAN health alarm `After one additional host failure` | Configure to send email one time for a critical event. | No additional information |
 | vSAN health alarm `All hosts contributing stats` | Not considered essential for notification. Alarm that is reviewed as part of proactive daily checks. | [vSAN Health Service - performance service - All hosts contributing stats check (2144400)](https://kb.vmware.com/s/article/2144400){: external} |
 | vSAN health alarm `All hosts have a vSAN vmknic configured` | Not considered essential for notification. Alarm that is reviewed as part of proactive daily checks. | [vSAN Health Service - Network Health - All hosts have a vSAN vmknic configured (2108062)](https://kb.vmware.com/s/article/2108062){: external} |
 | vSAN health alarm `All hosts have matching multicast settings` |  Not considered essential for notification. Alarm that is reviewed as part of proactive daily checks. | No additional information |
@@ -318,20 +318,6 @@ If you have a vSAN cluster, the additional preconfigured alarms in the following
 | vSAN health service alarm for Overall Health Summary | Not considered essential for notification. Alarm that is reviewed as part of proactive daily checks. | No additional information |
 {: caption="Table 2. Preconfigured alarms - vSAN" caption-side="bottom"}
 
-## Preconfigured alarms - Hybridity bundle
-{: #opsprocs-alarms-preconfigured-hcx}
-
-The hybridity bundle installs HCX and creates the following additional preconfigured alarms.
-
-| Alarm name | Guidance | Details |
-|:---------- |:-------- |:------- |
-| Bulk Migration Failed | Not considered essential for notification as migrations would be managed. | See [HCX troubleshooting](/docs/vmwaresolutions?topic=vmwaresolutions-hcxclient-troubleshooting) and [VMware HCX troubleshooting](https://docs.vmware.com/en/VMware-HCX/index.html){: external}. |
-| Cold Migration Failed | Not considered essential for notification as migrations would be managed. | See [HCX troubleshooting](/docs/vmwaresolutions?topic=vmwaresolutions-hcxclient-troubleshooting) and [VMware HCX troubleshooting](https://docs.vmware.com/en/VMware-HCX/index.html){: external}. |
-| HCX Cloud Database Upgrade Failed | Not considered essential for notification as upgrades would be managed. | See [HCX troubleshooting](/docs/vmwaresolutions?topic=vmwaresolutions-hcxclient-troubleshooting) and [VMware HCX troubleshooting](https://docs.vmware.com/en/VMware-HCX/index.html){: external}. |
-| HCX Enterprise Database Upgrade Failed | Not considered essential for notification as upgrades would be managed. | See [HCX troubleshooting](/docs/vmwaresolutions?topic=vmwaresolutions-hcxclient-troubleshooting) and [VMware HCX troubleshooting](https://docs.vmware.com/en/VMware-HCX/index.html){: external}. |
-| HCX Interconnect tunnel status | Configure to send email one time for a critical tunnel status is down event. | See [Network (WAN) connectivity](/docs/vmwaresolutions?topic=vmwaresolutions-hcxclient-troubleshooting#hcxclient-troubleshooting-wan-connect). |
-{: caption="Table 3. Preconfigured alarms - HCX" caption-side="bottom"}
-
 ## Events and alarms procedures
 {: #opsprocs-alarms-procedures}
 
@@ -343,7 +329,7 @@ The following table describes a number of procedures for events and alarms.
 | Export events | You might need to export events to use tools in MS Excel to assist. Select the required inventory object. Click the **Monitor** tab, **Events**, and the **Export** icon. In the **Export Events** window, specify what types of event information you want to export. Select **Generate CSV Report** and click **Save**. Specify a file name and location and save the file. |
 | Event retention |  By default, the event retention is set to 30 days. You need to change this setting in the VMware vSphere Web Client. Click the **Configure** tab, **Settings**, and **General**. Click **Edit**, change the Event Retention to the required number of days, and click **OK**. |
 | View Triggered Alarms | To view the triggered alarms, navigate to vCenter and select either **All** or **New** in the **Alarms** pane. This list refreshes every 120 seconds. To view alarms triggered on a selected inventory object, select the object. Click the **Monitor** tab, **Issues**, and select **Triggered Alarms**. |
-{: caption="Table 4. Events and alarms procedures" caption-side="bottom"}
+{: caption="Table 3. Events and alarms procedures" caption-side="bottom"}
 
 ## Related links
 {: #opsprocs-alarms-links}

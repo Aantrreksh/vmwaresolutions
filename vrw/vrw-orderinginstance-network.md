@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2024
 
-lastupdated: "2024-01-31"
+lastupdated: "2024-04-03"
 
 keywords: vmware regulated workloads, vmware regulated workloads order instance, order vmware regulated workloads, vmware regulated workloads instances
 
@@ -17,7 +17,7 @@ subcollection: vmwaresolutions
 # Network interface
 {: #vrw-orderinginstance-network-interface}
 
-You must specify the following network interface settings when you order a VMware vCenter Server® instance.
+You must specify the following network interface settings when you order a {{site.data.keyword.vcf-auto}} instance.
 
 ## Hostname prefix
 {: #vrw-orderinginstance-hostname-prefix}
@@ -76,5 +76,5 @@ The hostnames prefix must meet the following requirements:
 {: #vrw-orderinginstance-network-related}
 
 * [Resource details](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-orderinginstance-resource-details)
-* [Procedure to order VMware Regulated Workloads](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-orderinginstance-procedure)
-* [VMware Regulated Workloads reference architecture overview](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-archi-overview)
+* [Procedure to order {{site.data.keyword.rw}}](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-orderinginstance-procedure)
+* [{{site.data.keyword.rw}} reference architecture overview](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-archi-overview)

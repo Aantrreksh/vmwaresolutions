@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2022, 2023
+  years:  2022, 2024
 
-lastupdated: "2023-10-10"
+lastupdated: "2024-04-26"
 
 subcollection: vmwaresolutions
 
@@ -16,22 +16,22 @@ subcollection: vmwaresolutions
 # Configuration migration
 {: #v2t-config-migration}
 
-Configuration migration covers all the NSX-V settings and parameters that must be transferred to the VMware NSX-T™ environment to provide similar functions of the NSX-V environment. 
+Configuration migration covers all the NSX-V settings and parameters that must be transferred to the VMware NSX-T™ environment to provide similar functions of the NSX-V environment.
 
-Depending on the complexity of your network, this can include as follows:
+Depending on the complexity of your network, it can include the following configurations:
 
-* VLAN and overlay-backed logical switches.
-* L2 Bridges, routing, and NAT.
-* Transport zones.
-* Distributed and edge firewall.
-* L2 and L3 VPNs.
-* Load balancer, DHCP, and DNS.
-* Service composer, guest, and network introspection.
-* Grouping objects, IP and MAC sets, security groups, tags, services and service groups.
+* VLAN and overlay-backed logical switches
+* L2 Bridges, routing, and NAT
+* Transport zones
+* Distributed and edge firewall
+* L2 and L3 VPNs
+* Load balancer, DHCP, and DNS
+* Service composer, guest, and network introspection
+* Grouping objects, IP and MAC sets, security groups, tags, services and service groups
 
 Configurations can be applied by one of the following approaches:
 
-* Manual or scripted - By using the NSX-T UI or scripting tools like Terraform, the NSX-T configuration can be applied to the required overlay pattern. 
+* Manual or scripted - By using the NSX-T UI or scripting tools like Terraform, the NSX-T configuration can be applied to the required overlay pattern.
 * Migration Coordinator - Migration Coordinator is a built-in and automated migration tool, which is designed to help migrate from NSX-V to NSX-T. This tool is fully supported by VMware® and is built into NSX-T Manager Appliance. Migration Coordinator might also be used as an assessment tool to check whether the existing NSX-V environment is suitable for migration with Migration Coordinator. This is nondisruptive and doesn't change the NSX-V infrastructure.
 * Third-party tool - It provides UI based scripts to enable the assessment, migration, and rollback of configurations. For more information, see [NSX-V to NSX-T migration tools](/docs/vmwaresolutions?topic=vmwaresolutions-v2t-l2-nsx-t).
 
@@ -41,7 +41,7 @@ If the configurations are simple, or there are not too many rules or definitions
 Migration Coordinator supports other migration approaches such as "in-place migration", which is not supported in {{site.data.keyword.cloud}}. Therefore, consider the documentation at [NSX-V to NSX-T 3.x Migration Coordinator](https://nsx.techzone.vmware.com/resource/nsx-v-nsx-t-3x-migration-coordinator#_Toc57645169){: external}.
 {: note}
 
-## Understanding-distributed firewall complexity
+## Understanding distributed firewall complexity
 {: #v2t-config-migration-understandingdfw}
 
 It is important to understand the complexity of your distributed firewall configuration.
@@ -103,4 +103,4 @@ When you plan and design configuration migration, consider the following aspects
 * [cITopus for NSX](https://spjsolutions.com){: external}
 * [ReSTNSX's Migration Assistance Tool (M.A.T.)](https://www.restnsx.com/post/migration-assistance-tool-mat){: external}
 * [PrimaryIO NSX-V to NSX-T Fasttrack Migration Service](https://hdm.primaryio.com/lp/nsxvtot){: external}
-* [PrimaryIO HDM Cloud Connect NSX-V to NSX-T](https://cloud.ibm.com/catalog/services/hdm-cloud-connect-nsx-v-to-nsx-t#about)
+* [VMware Cloud Migration Services (VMwaaS VPC NSX-T)](https://cloud.ibm.com/catalog/services/vmware-cloud-migration-services-vmwaas-vpc-nsx-t)

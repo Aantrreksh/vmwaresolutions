@@ -1,0 +1,38 @@
+#VMware Solutions subcollection keyref file
+
+# The keyref.yaml file from the 'vmwaresolutions' and 'vmware-service' subcollections must always be the same.
+# If you make any updates to this file, you must also update the corresponding file in the other subcollection.
+
+keyword:
+  cr:
+    Cyber Recovery
+  rw:
+    Regulated Workloads
+  vcf-aas:
+    VCF as a Service
+  vcf-aas-full:
+    VMware Cloud Foundation (VCF) as a Service
+  vcf-auto:
+    VMware Cloud Foundation for Classic - Automated
+  vcf-auto-short:
+    VCF for Classic - Automated
+  vcf-classic:
+    VMware Cloud Foundation for Classic
+  vcf-classic-short:
+    VCF for Classic
+  vcf-flex:
+    VMware Cloud Foundation for Classic - Flexible
+  vcf-flex-short:
+    VCF for Classic - Flexible
+  vcf-vpc:
+    VMware Cloud Foundation for VPC
+  vcf-vpc-short:
+    VCF for VPC
+  vm-shared:
+    VMware Shared
+  vmware-service-full:
+    IBM Cloud® for VMware Cloud Foundation as a Service
+  vmware-service-notm:
+    IBM Cloud for VMware Cloud Foundation as a Service
+  vmware-service-short:
+    VMware Cloud Foundation as a Service

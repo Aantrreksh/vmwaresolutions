@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2024
 
-lastupdated: "2024-02-29"
+lastupdated: "2024-04-26"
 
 keywords: veeam, veeam install, tech specs veeam
 
@@ -14,7 +14,7 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Managing Veeam for VMware Shared
+# Managing Veeam for {{site.data.keyword.vm-shared}}
 {: #shared_veeam}
 
 {{site.data.content.shared-deprecated-note}}
@@ -56,25 +56,25 @@ If you do not see the **Data Protection with Veeam** option, open an IBM Support
 ### Licenses and fees for Veeam Availability Suite
 {: #shared_veeam-portal-fees}
 
-Veeam usage incurs on-demand charges. For more information, see [VMware Shared pricing](/docs/vmwaresolutions?topic=vmwaresolutions-shared_pricing).
+Veeam usage incurs on-demand charges. For more information, see [{{site.data.keyword.vm-shared}} pricing](/docs/vmwaresolutions?topic=vmwaresolutions-shared_pricing).
 
 ### Backup data storage and encryption
 {: #shared_veeam-storage}
 
-For more information about how Veeam Availability Suite stores backups, see [How is your data stored and encrypted in the VMware Shared Veeam Availability Suite service](/docs/vmwaresolutions?topic=vmwaresolutions-data-security-mng-data#data-security-data-veeamshared).
+For more information about how Veeam Availability Suite stores backups, see [How is your data stored and encrypted in the {{site.data.keyword.vm-shared}} Veeam Availability Suite service](/docs/vmwaresolutions?topic=vmwaresolutions-data-security-mng-data#data-security-data-veeamshared).
 
 ## Veeam Cloud Connect Replication
 {: #shared_veeam-cloud-connect}
 
 Veeam Cloud Connect Replication provides seamless replication of your workloads from on-premises to {{site.data.keyword.cloud}}. Use Veeam Cloud Connect as disaster recovery for failover during on-premises outages or to permanently move workloads directly to {{site.data.keyword.cloud_notm}}.
 
-VMware Shared virtual data centers provide Veeam Backup and Replication 12 for the Veeam Cloud Connect Replication ready-to-use service. For more information about compatibility requirements between Veeam service providers and tenants, see [Product versions in Veeam Cloud Connect infrastructure](https://helpcenter.veeam.com/archive/backup/110/cloud/cloud_connect_versions.html){: external}.
+{{site.data.keyword.vm-shared}} virtual data centers provide Veeam Backup and Replication 12.1 for the Veeam Cloud Connect Replication ready-to-use service. For more information about compatibility requirements between Veeam service providers and tenants, see [Product versions in Veeam Cloud Connect infrastructure](https://helpcenter.veeam.com/archive/backup/110/cloud/cloud_connect_versions.html){: external}.
 {: note}
 
 When you access Veeam Cloud Connect, **DNS name** and **Port** details are specific to the region where your virtual data center exists.
 
-| {{site.data.keyword.cloud_notm}} data center location | DNS name   | Port |
-|:-------------------------------|:----------|:------|
+| {{site.data.keyword.cloud_notm}} data center location | DNS name | Port |
+|:----------------------------------------------------- |:-------- |:---- |
 | Dallas | ``dalvccgw.vmware-solutions.cloud.ibm.com`` | ``6180``|
 | Frankfurt | ``fravccgw.vmware-solutions.cloud.ibm.com`` | ``6180`` |
 {: caption="Table 1. Virtual data center region details" caption-side="bottom"}
@@ -113,7 +113,7 @@ If you remove a VMware Cloud Director virtual data center from your account, all
 ## Related links
 {: #shared_veeam-related}
 
-* [VMware Shared overview](/docs/vmwaresolutions?topic=vmwaresolutions-shared_overview)
+* [{{site.data.keyword.vm-shared}} overview](/docs/vmwaresolutions?topic=vmwaresolutions-shared_overview)
 * [Ordering virtual data centers](/docs/vmwaresolutions?topic=vmwaresolutions-shared_ordering)
 * [Using Veeam Cloud Connect Portal](https://helpcenter.veeam.com/archive/backup/100/cloud/cloud_connect_portal_use.html){: external}
 * [Veeam website](https://www.veeam.com/){: external}

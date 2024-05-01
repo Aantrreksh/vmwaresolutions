@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-01-31"
+lastupdated: "2024-04-03"
 
 keywords: cyber recovery, IBM Cloud cyber recovery, cyber recovery network interface, network interface cyber recovery, cyber recovery order instance, order cyber recovery, cyber recovery instances
 
@@ -17,7 +17,7 @@ subcollection: vmwaresolutions
 # Network interface
 {: #cr_orderinginstance-net-interface}
 
-You must specify the following network interface settings when you order Cyber Recovery.
+You must specify the following network interface settings when you order {{site.data.keyword.cr}}.
 
 ## Hostname prefix
 {: #cr_orderinginstance-net-interface-hostname-prefix}
@@ -77,4 +77,4 @@ The hostnames prefix must meet the following requirements:
 ## Related links
 {: #cr_orderinginstance-net-interface-related-links}
 
-* [Procedure to order Cyber Recovery](/docs/vmwaresolutions?topic=vmwaresolutions-cr_orderinginstance-order-procedure)
+* [Procedure to order {{site.data.keyword.cr}}](/docs/vmwaresolutions?topic=vmwaresolutions-cr_orderinginstance-order-procedure)

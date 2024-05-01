@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-01-30"
+lastupdated: "2024-04-29"
 
 keywords: troubleshooting, SAN health, virtual SAN issue
 
@@ -31,7 +31,7 @@ Use the following steps to clear the warnings from the vSphere Web Client:
 1. Go to http://partnerweb.vmware.com/service/vsan/all.json and save the JSON file, with the name `all.json`, on your local system.
 2. Ensure that you completed the steps in [vCenter console timeout](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_timeout_vc_console).
 3. On the details page of the instance, click **vCenter console**, and log in to the vSphere Web Client by using the credentials displayed on the {{site.data.keyword.vmwaresolutions_full}} console.
-4. On the vSphere web Client, go to **Manage > Settings** and open the **Virtual SAN > Health > HCL Database** section. Click **Update from file**, then upload the `all.json` file that you saved previously.
+4. On the vSphere Web Client, go to **Manage > Settings** and open the **Virtual SAN > Health > HCL Database** section. Click **Update from file**, then upload the `all.json` file that you saved previously.
 5. To clear the warnings, go to the **Alarms** pane on the upper right of the vSphere Web Client. Right-click each of the alarms, and select **Reset to green**.
 
 For more information, see [How to download offline vSAN HCL file for vSAN Health Check plug-in](https://williamlam.com/2015/05/how-to-download-offline-vsan-hcl-file-for-vsan-health-check-plugin.html){: external}.

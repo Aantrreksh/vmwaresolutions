@@ -4,9 +4,9 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-01-30"
+lastupdated: "2024-04-29"
 
-keywords: vCenter Server network config, network configuration, manage NSX ESG
+keywords: network config, network configuration, manage NSX ESG
 
 subcollection: vmwaresolutions
 
@@ -15,17 +15,17 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Configuring your network to use the customer-managed NSX ESG with your VMs
+# Configuring your network to use the customer-managed NSX edge cluster with your VMs
 {: #vc_esg_config}
 
-Configure the network for your virtual machines (VMs) so you can take advantage of the VMware NSX Edge™ Services Gateway (ESG) that is deployed in your VMware vCenter Server® instances. For more information about the security measures that are in place to help minimize security risk, see [Does the management services NSX Edge pose a security risk?](/docs/vmwaresolutions?topic=vmwaresolutions-faq-vmwaresolutions#faq-mgmt-nsx)
+Configure the network for your virtual machines (VMs) so you can take advantage of the VMware NSX Edge™ cluster that is deployed in your {{site.data.keyword.vcf-auto}} instances. For more information about the security measures that are in place to help minimize security risk, see [Does the management services NSX Edge pose a security risk?](/docs/vmwaresolutions?topic=vmwaresolutions-faq-vmwaresolutions#faq-mgmt-nsx)
 
 VMware NSX® is a network virtualization platform that allows the virtualization of isolated networks and provides several networking services such as switches, routing, and firewalls. For more information about NSX, see [Overview of NSX for vSphere](https://docs.vmware.com/en/VMware-NSX-Data-Center-for-vSphere/6.3/NSX-Data-Center-for-vSphere-63.zip){: external}.
 
-As part of the ordering process for your vCenter Server instance, the following actions are completed on your behalf:
+As part of the ordering process for your Automated instance, the following actions are completed on your behalf:
 * A private customer subnet is ordered to be used by your VMs to access the {{site.data.keyword.cloud}} infrastructure private network.
 * A public customer subnet is ordered to allow your VMs to access the internet.
-* NSX is deployed and configured in your vCenter Server instance.
+* NSX is deployed and configured in your Automated instance.
 * A sample NSX Logical Switch is deployed to be used by the customer workload VMs.
 * A sample router is deployed for potential east-west communication between local workloads that are connected to layer 2 (L2) networks. This router is a NSX-T™ Tier 1 Router for NSX-T and an NSX Distributed Logical Router for NSX-V.
 * An NSX Edge appliance is deployed and configured to perform network address translation (NAT). NAT is done from the range of IP addresses of the workload logical switch to a public IP address on the NAT rules.
@@ -84,8 +84,8 @@ The logical routers `<instance_name>-<podname>-<cluster_name>-T1-workload` and `
 
 To identify the details for the customer subnets so you can use the IP addresses ordered, complete the following steps in the NSX-T Web Client:
 
-1. From the {{site.data.keyword.vmwaresolutions_short}} console, click **Resources** > **vCenter Server** from the left navigation pane.
-2. Locate and select the instance.
+1. From the VMware Solutions console, click **Resources > {{site.data.keyword.vcf-classic-short}}** from the left navigation pane.
+2. In the **{{site.data.keyword.vcf-classic}}** table, locate and select the instance.
 3. Click the **Infrastructure** tab and select the management cluster.
 4. Go to the **Network interface** section on the cluster page.
 5. Collapse the **Public VLAN** and **Private VLAN** options. The public and private customer subnets are the ones that have **customer workload edge** in the **Description** field.
@@ -131,5 +131,5 @@ You can order more subnets if the provided subnets do not fulfill your requireme
 {: #vc_esg_config-related}
 
 * [Considerations about changing vCenter Server artifacts](/docs/vmwaresolutions?topic=vmwaresolutions-vcenter_chg_impact#vcenter_chg_impact)
-* [General FAQ about VMware Solutions](/docs/vmwaresolutions?topic=vmwaresolutions-faq-vmwaresolutions)
+* [General FAQ about VCF for Classic](/docs/vmwaresolutions?topic=vmwaresolutions-faq-vmwaresolutions)
 * [VMware NSX-T design](/docs/vmwaresolutions?topic=vmwaresolutions-nsx-t-design)

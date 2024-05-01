@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2023
+  years:  2016, 2024
 
-lastupdated: "2023-07-28"
+lastupdated: "2024-04-04"
 
 keywords: troubleshooting, Zerto Virtual Replication, Zerto ESXi server
 
@@ -19,7 +19,7 @@ subcollection: vmwaresolutions
 {: troubleshoot}
 {: support}
 
-Virtual Replication Appliances (VRAs) are not displayed on the Zerto Virtual Replication console after you add VMware ESXi™ servers to a VMware vCenter Server® instance with Zerto disaster recovery installed.
+Virtual Replication Appliances (VRAs) are not displayed on the Zerto Virtual Replication console after you add VMware ESXi™ servers to a {{site.data.keyword.vcf-auto}} instance with Zerto disaster recovery installed.
 {: tsSymptoms}
 
 The Zerto disaster recovery service is installed only on the ESXi server from the default cluster (**cluster1** for instances that are deployed in V3.1 or earlier). If new clusters are created in the same vCenter Server environment or if ESXi servers are added to new clusters, Zerto disaster recovery is not installed on them. On those clusters, you must install Zerto disaster recovery separately.

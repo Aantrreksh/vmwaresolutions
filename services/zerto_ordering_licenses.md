@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2024
 
-lastupdated: "2024-02-06"
+lastupdated: "2024-04-12"
 
 keywords: Zerto, Zerto license, order Zerto license
 
@@ -17,7 +17,7 @@ subcollection: vmwaresolutions
 # Ordering Zerto stand-alone licenses
 {: #zerto_ordering_licenses}
 
-You can order a Zerto license without associating it to any VMware® vCenter Server® instance for licensing and activation of your on-premises workloads.
+You can order a Zerto license without associating it to any {{site.data.keyword.vcf-auto}} instance for licensing and activation of your on-premises workloads.
 
 ## Before you begin
 {: #zerto_ordering_licenses-before-begin}
@@ -51,7 +51,7 @@ Within 15 days, you must configure the Call Home feature for Zerto. If you do no
 
 1. The status changes to **Ordering** when you submit your order.
 2. When IBM Support receives your order, a license key request is sent to Zerto and the status changes to **Completed**.
-3. IBM Support sends the key to the email address that is associated with the order, typically within two business days. 
+3. IBM Support sends the key to the email address that is associated with the order, typically within two business days.
 
    The email address is added by default to the **Email address** field of the order.
    {: note}

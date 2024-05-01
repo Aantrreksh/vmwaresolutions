@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2023
+  years:  2016, 2024
 
-lastupdated: "2023-09-11"
+lastupdated: "2024-04-12"
 
 keywords: Entrust KeyControl, tech specs Entrust KeyControl
 
@@ -18,13 +18,13 @@ subcollection: vmwaresolutions
 # Entrust KeyControl on {{site.data.keyword.cloud_notm}} overview
 {: #entrust-kc_considerations}
 
-New installations of Entrust KeyControl™ (formerly known as HyTrust KeyControl) are not supported for new or existing deployments of VMware vCenter Server® instances. You can still use or delete existing Entrust KeyControl installations on your existing instances.
+New installations of Entrust KeyControl™ (formerly known as HyTrust KeyControl) are not supported for new or existing deployments of {{site.data.keyword.vcf-auto}} instances. You can still use or delete existing Entrust KeyControl installations on your existing instances.
 {: deprecated}
 
 Entrust KeyControl on {{site.data.keyword.cloud}} simplifies the management of encrypted workloads. This service automates and simplifies the lifecycle of encryption keys, including key storage, key distribution, key rotation, and key revocation. Using FIPS 140-2 compliant encryption, enterprises can easily manage encryption keys at scale. Entrust KeyControl on {{site.data.keyword.cloud_notm}} is a non-IBM product that is offered under terms and conditions from Entrust, not IBM.
 {: shortdesc}
 
-Previous installations of Entrust KeyControl 5.0.1 are supported for vCenter Server with NSX-V instances.
+Previous installations of Entrust KeyControl 5.0.1 are supported for {{site.data.keyword.vcf-auto-short}} with NSX-V instances.
 {: note}
 
 ## Technical specifications for Entrust KeyControl
@@ -51,4 +51,3 @@ Optionally, you can specify to deploy two KeyControl appliances in a stand-alone
 {: #entrust-kc_considerations-licenses}
 
 An Entrust KeyControl license for each instance installation.
-

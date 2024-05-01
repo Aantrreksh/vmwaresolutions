@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2022, 2023
+  years:  2022, 2024
 
-lastupdated: "2023-06-19"
+lastupdated: "2024-04-26"
 
 subcollection: vmwaresolutions
 
@@ -26,11 +26,12 @@ You can use the following assessment approach:
 
 1. For each parameter, review your source NSX-V environment and select a complexity classification.
 2. Work through all the parameters.
-3. At the end of the process, see in which complexity column most of your parameter complexity classifications are aligned with, for example:
-   1. If all are aligned with Low complexity, then the migration complexity is Low. In this case, go to step 5.
-   2. If most is aligned with Medium complexity but the minority is High, then the migration complexity at this stage is Medium. Go to step 4.
+3. At the end of the process, see which complexity column most of your parameter complexity classifications are aligned with:
+   * If all are aligned with Low complexity, then the migration complexity is Low. In this case, go to step 5.
+   * If most are aligned with Medium complexity but the minority is High, then the migration complexity at this stage is Medium. Go to step 4.
 4. For those parameters that are not aligned in one column completely, review them and consider the impact on the classification by using the guidance on key parameters in the following sections. For instance, a key parameter might tip the assessment into a High complexity.
-5. The assessment is complete.
+
+The assessment is complete.
 
 Depending on the source environment complexity and the skills, experience and time commitments of your team, you might want to engage professional services. This action is done to plan and run the migration for you.
 {: note}

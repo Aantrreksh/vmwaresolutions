@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-04-02"
+lastupdated: "2024-04-26"
 
 keywords: IAM user, user role, user permission, IAM VMware Cloud Director
 
@@ -20,7 +20,7 @@ subcollection: vmwaresolutions
 
 {{site.data.content.shared-deprecated-note}}
 
-The following table provides information about the platform management roles and permissions for VMware Shared.
+The following table provides information about the platform management roles and permissions for {{site.data.keyword.vm-shared}}.
 
 * **Minimum** - roles with the bare minimum permissions in VMware Cloud Director.
 * **VMware Cloud Director** - roles that are provided by VMware Cloud Director. For more information, see [Rights in predefined global tenant roles](https://docs.vmware.com/en/VMware-Cloud-Director/10.4/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-AE42A8F6-868C-4FC0-B224-87CA0F3D6350.html#GUID-AE42A8F6-868C-4FC0-B224-87CA0F3D6350){: external}.
@@ -43,7 +43,7 @@ The following table provides information about the platform management roles and
 | Director Console User | View a virtual machine state, properties, and use the guest operating system in VMware Cloud Director. | VMware Cloud Director |
 | Director Backup User | Manage Veeam® backup jobs in VMware Cloud Director. | Custom |
 | Director Security Admin | View and edit the edge firewall and the distributed firewall in VMware Cloud Director. | Custom |
-{: caption="Table 1. Roles and actions for VMware Shared" caption-side="bottom"}
+{: caption="Table 1. Roles and actions for {{site.data.keyword.vm-shared}}" caption-side="bottom"}
 
 ## Custom defined roles and permissions
 {: #iam_vcd-custom}
@@ -245,7 +245,7 @@ The following table provides information about roles that are custom-defined by 
 | Catalog: CLSP Publish Subscribe | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | | | | |
 | Catalog: VCSP Publish Subscribe Caching | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | | | | |
 | vApp Template: Checkout | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | | | | |
-{: caption="Table 2. Custom-defined roles and permissions for VMware Shared" caption-side="bottom"}
+{: caption="Table 2. Custom-defined roles and permissions for {{site.data.keyword.vm-shared}}" caption-side="bottom"}
 
 ## Related links
 {: #iam_vcd-related}

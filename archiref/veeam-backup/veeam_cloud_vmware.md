@@ -4,7 +4,7 @@ copyright:
 
   years: 2023, 2024
 
-lastupdated: "2024-01-12"
+lastupdated: "2024-04-12"
 
 keywords: veeam, IBM cloud for vmware, veeam in IBM Cloud for vmware
 
@@ -14,7 +14,7 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Veeam in IBM Cloud for VMware
+# Veeam in {{site.data.keyword.cloud_notm}} for VMware
 {: #veeam_cloud_vmware}
 
 ## Overview 

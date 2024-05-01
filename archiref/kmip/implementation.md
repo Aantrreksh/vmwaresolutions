@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-02-02"
+lastupdated: "2024-04-26"
 
 subcollection: vmwaresolutions
 
@@ -40,8 +40,8 @@ To enable vSphere encryption or vSAN encryption by using KMIP for VMware, you ne
 6. If you are using HPCS, create an IAM service authorization for your KMIP for VMware instance to your HPCS instance. Grant your KMIP for VMware instance both Platform **Viewer** access and Service **VMware KMIP Manager** access to your HPCS instance.
 7. Configure your KMIP for VMware instance to connect to your Key Protect or HPCS instance and select which CRK to use with KMIP.
 8. Within vCenter Server, create a key provider cluster.
-   1. If you are using Key Protect, configure this cluster with two servers, one for each KMIP for VMware endpoint in your chosen region.
-   2. If you are using HPCS, configure this cluster to connect to the hostname and port that is uniquely assigned to your KMIP for VMware instance.
+   * If you are using Key Protect, configure this cluster with two servers, one for each KMIP for VMware endpoint in your chosen region.
+   * If you are using HPCS, configure this cluster to connect to the hostname and port that is uniquely assigned to your KMIP for VMware instance.
 9. Select one of VMware methods to generate or install a KMS client certificate in vCenter Server.
 10. Export the public version of the certificate and configure it as an allowed client certificate in your KMIP for VMware instance. The key manager instance has a maximum interval of 5 minutes to get the configured client certificates. Therefore, if you are unable to build KMS trust to vCenter Server, wait for 5 minutes and try again.
 

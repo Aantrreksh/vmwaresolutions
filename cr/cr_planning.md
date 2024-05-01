@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-02-05"
+lastupdated: "2024-04-18"
 
 keywords: planning cyber recovery, cyber recovery, cyber recovery instance
 
@@ -14,25 +14,30 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Planning for Cyber Recovery
+# Planning for {{site.data.keyword.cr}}
 {: #cr_planning}
 
-Review the following requirements before you order your Cyber Recovery instance. Plan your instance based on the {{site.data.keyword.cloud}} data center location, your capacity requirements, and your service requirements.
+Review the following requirements before you order your {{site.data.keyword.cr}} instance. Plan your instance based on the {{site.data.keyword.cloud}} data center location, your capacity requirements, and your service requirements.
 
 ## Account requirements
 {: #cr_planning-account-req}
 
 The account that you are using must meet certain requirements. For more information, see [Signing up for required accounts](/docs/vmwaresolutions?topic=vmwaresolutions-signing_required_accounts).
 
+## Licensing considerations
+{: #cr_planning-licensing}
+
+{{site.data.content.vmware-licensing}}
+
 ## {{site.data.keyword.cloud_notm}} data center availability
 {: #cr_planning-dc-availability}
 
-The Cyber Recovery deployment has strict requirements on the physical infrastructure. Therefore, you can deploy instances only in {{site.data.keyword.cloud_notm}} data centers that meet the requirements.
+The {{site.data.keyword.cr}} deployment has strict requirements on the physical infrastructure. Therefore, you can deploy instances only in {{site.data.keyword.cloud_notm}} data centers that meet the requirements.
 
 ### Data centers available
 {: #cr_planning-data-centers}
 
-The following {{site.data.keyword.cloud_notm}} data centers are available for Cyber Recovery.
+The following {{site.data.keyword.cloud_notm}} data centers are available for {{site.data.keyword.cr}}.
 
 | Data center | Pod |
 |:----------- |:--- |
@@ -47,9 +52,9 @@ The following {{site.data.keyword.cloud_notm}} data centers are available for Cy
 | TOK02 | 01-02 |
 | TOK04 | 01 |
 | TOK05 | 01 |
-{: caption="Table 1. Available {{site.data.keyword.cloud_notm}} data centers for Cyber Recovery - Asia-Pacific" caption-side="bottom"}
+{: caption="Table 1. Available {{site.data.keyword.cloud_notm}} data centers for {{site.data.keyword.cr}} - Asia-Pacific" caption-side="bottom"}
 {: tab-title="Asia-Pacific"}
-{: tab-group="Data centers for Cyber Recovery"}
+{: tab-group="Data centers for {{site.data.keyword.cr}}"}
 {: class="simple-tab-table"}
 {: #simpletabtable-cr-ap}
 
@@ -68,9 +73,9 @@ The following {{site.data.keyword.cloud_notm}} data centers are available for Cy
 | MAD05 | 01 |
 | MIL01 | 01 |
 | PAR01 | 01 |
-{: caption="Table 1. Available {{site.data.keyword.cloud_notm}} data centers for Cyber Recovery - Europe" caption-side="bottom"}
+{: caption="Table 1. Available {{site.data.keyword.cloud_notm}} data centers for {{site.data.keyword.cr}} - Europe" caption-side="bottom"}
 {: tab-title="Europe"}
-{: tab-group="Data centers for Cyber Recovery"}
+{: tab-group="Data centers for {{site.data.keyword.cr}}"}
 {: class="simple-tab-table"}
 {: #simpletabtable-cr-eur}
 
@@ -83,9 +88,9 @@ The following {{site.data.keyword.cloud_notm}} data centers are available for Cy
 | WDC04 | 01-05 |
 | WDC06 | 01 |
 | WDC07 | 01 |
-{: caption="Table 1. Available {{site.data.keyword.cloud_notm}} data centers for Cyber Recovery - NA East" caption-side="bottom"}
+{: caption="Table 1. Available {{site.data.keyword.cloud_notm}} data centers for {{site.data.keyword.cr}} - NA East" caption-side="bottom"}
 {: tab-title="NA East"}
-{: tab-group="Data centers for Cyber Recovery"}
+{: tab-group="Data centers for {{site.data.keyword.cr}}"}
 {: class="simple-tab-table"}
 {: #simpletabtable-cr-naeast}
 
@@ -95,9 +100,9 @@ The following {{site.data.keyword.cloud_notm}} data centers are available for Cy
 | DAL10 | 01-04 |
 | DAL12 | 01-02 |
 | DAL13 | 01-03 |
-{: caption="Table 1. Available {{site.data.keyword.cloud_notm}} data centers for Cyber Recovery - NA South" caption-side="bottom"}
+{: caption="Table 1. Available {{site.data.keyword.cloud_notm}} data centers for {{site.data.keyword.cr}} - NA South" caption-side="bottom"}
 {: tab-title="NA South"}
-{: tab-group="Data centers for Cyber Recovery"}
+{: tab-group="Data centers for {{site.data.keyword.cr}}"}
 {: class="simple-tab-table"}
 {: #simpletabtable-cr-nasouth}
 
@@ -105,9 +110,9 @@ The following {{site.data.keyword.cloud_notm}} data centers are available for Cy
 |:----------- |:--- |
 | SJC03 | 01-02 |
 | SJC04 | 01 |
-{: caption="Table 1. Available {{site.data.keyword.cloud_notm}} data centers for Cyber Recovery - NA West" caption-side="bottom"}
+{: caption="Table 1. Available {{site.data.keyword.cloud_notm}} data centers for {{site.data.keyword.cr}} - NA West" caption-side="bottom"}
 {: tab-title="NA West"}
-{: tab-group="Data centers for Cyber Recovery"}
+{: tab-group="Data centers for {{site.data.keyword.cr}}"}
 {: class="simple-tab-table"}
 {: #simpletabtable-cr-nawest}
 
@@ -116,18 +121,18 @@ The following {{site.data.keyword.cloud_notm}} data centers are available for Cy
 | SAO01 | 01 |
 | SAO04 | 01 |
 | SAO05 | 01 |
-{: caption="Table 1. Available {{site.data.keyword.cloud_notm}} data centers for Cyber Recovery - South America" caption-side="bottom"}
+{: caption="Table 1. Available {{site.data.keyword.cloud_notm}} data centers for {{site.data.keyword.cr}} - South America" caption-side="bottom"}
 {: tab-title="South America"}
-{: tab-group="Data centers for Cyber Recovery"}
+{: tab-group="Data centers for {{site.data.keyword.cr}}"}
 {: class="simple-tab-table"}
 {: #simpletabtable-cr-sa}
 
-## Services for Cyber Recovery
+## Services for {{site.data.keyword.cr}}
 {: #cr_planning-addon-services}
 
-The following services and components are available for Cyber Recovery instances.
+The following services and components are available for {{site.data.keyword.cr}} instances.
 
-* [Veeam Backup and Replication 12](/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview) (required) is included and a Linux hardened repository is selected for you.
+* [Veeam Backup and Replication 12.1](/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview) (required) is included and a Linux hardened repository is selected for you.
 * An edge gateway (required) provides the virtual air-gap and manages access to the isolated recovery environment. You can bring your own gateway appliance or choose from the following options:
    * Gateway cluster with Juniper® vSRX
    * Gateway cluster with FortiGate® Virtual Appliance
@@ -138,5 +143,5 @@ The [Caveonix RiskForesight](/docs/vmwaresolutions?topic=vmwaresolutions-caveoni
 ## Related links
 {: #cr_planning-related-links}
 
-* [Cyber Recovery overview](/docs/vmwaresolutions?topic=vmwaresolutions-cr_overview)
-* [Requirements for Cyber Recovery](/docs/vmwaresolutions?topic=vmwaresolutions-cr_orderinginstance_reqs)
+* [{{site.data.keyword.cr}} overview](/docs/vmwaresolutions?topic=vmwaresolutions-cr_overview)
+* [Requirements for {{site.data.keyword.cr}}](/docs/vmwaresolutions?topic=vmwaresolutions-cr_orderinginstance_reqs)

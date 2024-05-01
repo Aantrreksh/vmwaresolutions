@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-03-26"
+lastupdated: "2024-04-29"
 
 subcollection: vmwaresolutions
 
@@ -46,10 +46,10 @@ The following items are the core components of VMware Cloud Foundation:
 
 **VMware Aria Suite Lifecycle** (formerly VMware vRealize Suite Lifecycle Manager) provides a comprehensive solution for deploying, configuring, managing, and upgrading Aria Suite products. These products include Aria Suite products such as: 
 
-- Aria Operations (vRealize Operations Manager)
-- Aria Operations for Logs (vRealize Log Insight)
-- Aria Operations for Networks (vRealize Network Insight)
-- Aria Automation (vRealize Automation)
+- Aria Operations (formerly vRealize Operations Manager)
+- Aria Operations for Logs (formerly vRealize Log Insight)
+- Aria Operations for Networks (formerly vRealize Network Insight)
+- Aria Automation (formerly vRealize Automation)
 
 Aria Suite Lifecycle provides product installation and content lifecycle management capabilities to automate the deployment of Aria Suite content. The access to use these products depends on the selected VMware Cloud edition. The {{site.data.keyword.cloud}} for VMware Cloud Foundation automation deploys Aria Suite Lifecycle (vRealize Suite Lifecycle Manager) and you can deploy Aria Suite products post deployment by using the Aria Suite Lifecycle.
 

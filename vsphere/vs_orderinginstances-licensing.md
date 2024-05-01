@@ -4,9 +4,9 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-01-29"
+lastupdated: "2024-04-23"
 
-keywords: vmware vSphere order instance, order vSphere, order vmware vSphere instance
+keywords: flexible order instance, order vSphere, order flexible instance
 
 subcollection: vmwaresolutions
 
@@ -17,57 +17,23 @@ subcollection: vmwaresolutions
 # Licensing
 {: #vs_orderinginstances-licensing-settings}
 
-Select the VMware® components to be ordered with your instance and specify the licensing option for the components.
-
-## Component bundles for IBM Business Partner users
-{: #vs_orderinginstances-component-bundles-for-bp-users}
-
-If you are an IBM® Business Partner user, you can select a component license bundle when you order a new VMware vSphere® instance. The following bundles are available:
-
-| Bundle | Components |
-|:------ |:---------- |
-| Standard with Management | vSphere Enterprise Plus, VMware vCenter Server® Standard, VMware Aria Operations™ for Logs, VMware Aria® Operations™ Enterprise |
-| Advanced | vSphere Enterprise Plus, vCenter Server Standard, VMware Aria Operations for Logs, VMware Cloud Director, NSX® Base |
-| Advanced with Networking | vSphere Enterprise Plus, vCenter Server Standard, VMware Aria Operations for Logs, NSX Advanced |
-| Advanced with Networking and Management | vSphere Enterprise Plus, vCenter Server Standard, VMware Aria Operations for Logs, VMware Aria Operations Enterprise, VMware Cloud Director, NSX Enterprise |
-{: caption="Table 1. IBM Business Partner component bundles for vSphere instances" caption-side="bottom"}
-
-You can also include the following VMware® components in your order:
-* VMware vSAN™
-* VMware Site Recovery Manager
-* VMware Aria® Automation™ Enterprise
-
-## Individual components for non-Business Partner users
-{: #vs_orderinginstances-individual-components-for-non-bp-users}
-
-If you're a non-Business Partner, you can select the following components for your vSphere instance:
-* VMware vSphere Enterprise Plus 7.0u3
-* VMware vCenter Server 7.0 or later
-* VMware NSX - Data Center SP Base, Data Center SP Professional, Data Center SP Advanced, or Data Center SP Enterprise Plus
-* VMware vSAN
-* VMware Site Recovery Manager
-* VMware Aria Automation Enterprise
-* VMware Aria Operation Enterprise
-* VMware Aria Operations for Logs
-
-Small differences exist between NSX-T Data Center and Data Center SP editions. For more information, see the [VMware NSX documentation](https://docs.vmware.com/en/VMware-NSX/index.html){: external}.
+Select the VMware® components for your instance and specify the licensing option for them.
 
 ## Licensing options
 {: #vs_orderinginstances-licensing-options}
 
-Using individual license keys together with the combined license keys does not meet the payment requirements for the licenses you need.
-{: important}
-
 You have the following options for licensing the selected VMware components:
 * **Include license with purchase**: In this case, a new license for the VMware component is purchased on your behalf. A combined VMware license is generated to match the instance size of the order.
 
-   When you purchase any license, except for vSphere Enterprise Plus and vCenter Server, and you order multiple VMware ESXi™ servers, an {{site.data.keyword.cloud_notm}} ticket is opened automatically to combine license keys. You are responsible to follow up with the ticket to ensure that you use only the license keys that the VMware Solutions Support team generates.
+   When you purchase any license, except for VMware vSphere® Enterprise Plus and VMware vCenter Server®, and you order multiple VMware ESXi™ servers, an {{site.data.keyword.cloud_notm}} ticket is opened automatically to combine license keys. You are responsible to follow up with the ticket to ensure that you use only the license keys that the VMware Solutions Support team generates.
 
-* **I will provide the license**: Bring your own license (BYOL) is no longer allowed for VMware components except if you are migrating or upgrading an existing BYOL cluster. If you are upgrading your cluster, do not enter your BYOL licenses when you create your order for the first time, but do it later when the vSphere instance is created.
+* **Bring your own license (BYOL)**: If you are a BYOL user, provide your own license key for vSphere Enterprise Plus edition. Toggle the **BYOL** switch to **Enabled** and enter your license key.
+
+   {{site.data.content.attnnote-byol}}
 
 ## Related links
 {: #vs_orderinginstances-licensing-related}
 
 * [Bare metal server](/docs/vmwaresolutions?topic=vmwaresolutions-vs_orderinginstances-bare-metal)
-* [Procedure to order VMware vSphere instances](/docs/vmwaresolutions?topic=vmwaresolutions-vs_orderinginstances-procedure)
+* [Procedure to order Flexible instances](/docs/vmwaresolutions?topic=vmwaresolutions-vs_orderinginstances-procedure)
 * [VMware NSX documentation](https://docs.vmware.com/en/VMware-NSX/index.html){: external}

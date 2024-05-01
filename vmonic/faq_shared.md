@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-04-02"
+lastupdated: "2024-04-26"
 
 keywords: FAQ vmware solutions shared, vmware solutions shared questions
 
@@ -14,20 +14,20 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# General FAQ about VMware Shared
+# General FAQ about {{site.data.keyword.vm-shared}}
 {: #faq-vmwaresolutions-shared}
 
 {{site.data.content.shared-deprecated-note}}
 
-Find answers to frequently asked questions about the VMware Shared offering.
+Find answers to frequently asked questions about the {{site.data.keyword.vm-shared}} offering.
 
-## What is VMware Shared?
+## What is {{site.data.keyword.vm-shared}}?
 {: #faq-shared}
 {: faq}
 
-VMware Shared is a multitenant VMware® infrastructure solution based on a robust VMware® product called VMware Cloud Director. You can use this solution to rapidly create, migrate, and use your virtual machines (VMs) in the Cloud.
+{{site.data.keyword.vm-shared}} is a multitenant VMware® infrastructure solution based on a robust VMware® product called VMware Cloud Director. You can use this solution to rapidly create, migrate, and use your virtual machines (VMs) in the Cloud.
 
-## What are my options to use resources with VMware Shared?
+## What are my options to use resources with {{site.data.keyword.vm-shared}}?
 {: #faq-shared-options}
 {: faq}
 {: support}
@@ -36,15 +36,15 @@ You are provided with the following two consumption models:
 * **On-demand**. With this consumption model, you pay only for the compute resources that you use, in an hourly pricing model.
 * **Reserved**. With this consumption model, you can reserve compute resources in advance to ensure that your capacity is available when you need it. Billing for **Reserved** is available monthly, yearly, or on a multi-year basis. Other resources, such as storage and egress, are billed per usage, regardless of the consumption model.
 
-## Why do I want to subscribe to VMware Shared?
+## Why do I want to subscribe to {{site.data.keyword.vm-shared}}?
 {: #faq-shared-subscribe}
 {: faq}
 
-With VMware Shared, you can extend your VMs to the Cloud with ultimate capacity flexibility and scalability. Whether you are looking to begin your cloud journey with a Development or Test environment, a disaster recovery site, or a full enterprise-grade hybrid cloud transformation, VMware Shared provides a cost-effective and self-service way to start moving your VMs to the cloud within minutes.
+With {{site.data.keyword.vm-shared}}, you can extend your VMs to the Cloud with ultimate capacity flexibility and scalability. Whether you are looking to begin your cloud journey with a Development or Test environment, a disaster recovery site, or a full enterprise-grade hybrid cloud transformation, {{site.data.keyword.vm-shared}} provides a cost-effective and self-service way to start moving your VMs to the cloud within minutes.
 
 With IBM managing the infrastructure up to the hypervisor, you do not need to worry about managing patches, upgrades, and monitoring, which gives you more time and resources to focus on innovation. In addition, with a native like VMware experience, you can use your existing VMware resources and skill sets.
 
-## What user accounts do I need for VMware Shared?
+## What user accounts do I need for {{site.data.keyword.vm-shared}}?
 {: #faq-user-accts-shared}
 {: faq}
 {: support}
@@ -60,7 +60,7 @@ With IBM managing the infrastructure up to the hypervisor, you do not need to wo
 
 When you order your instance for the first time, follow the instructions on the **Settings** page in the console. These instructions help you locate and copy the {{site.data.keyword.cloud_notm}} infrastructure username and API key from the {{site.data.keyword.slportal}}. The {{site.data.keyword.cloud_notm}} infrastructure credentials are stored in the {{site.data.keyword.vmwaresolutions_short}} console after the first order. Future orders automatically use the stored credentials.
 
-## How do I connect my on-premises environment to VMware Shared?
+## How do I connect my on-premises environment to {{site.data.keyword.vm-shared}}?
 {: #faq-shared-connect}
 {: faq}
 {: support}
@@ -98,7 +98,7 @@ You can check the status of the instance on the [instance details page](/docs/vm
 
 To view the complete notification history, click **Notifications** from the left navigation pane.
 
-## What if I have issues with VMware Shared?
+## What if I have issues with {{site.data.keyword.vm-shared}}?
 {: #faq-support-shared}
 {: faq}
 {: support}
@@ -127,13 +127,13 @@ Other than the IP addresses used for internet access on each customer ESG, you c
 
 Yes. VMware Cloud Director supports the same set of guest operating systems as VMware vSphere® 6.7. For more information, see [VMware Guest OS Compatibility Guide](https://www.vmware.com/resources/compatibility/pdf/VMware_GOS_Compatibility_Guide.pdf){: external}.
 
-VMware Shared provides Microsoft® Windows® server 2016/2019 templates. You can provide your own image to run other versions.
+{{site.data.keyword.vm-shared}} provides Microsoft® Windows® server 2016/2019 templates. You can provide your own image to run other versions.
 
-## What are the Service Level Agreement options with VMware Shared?
+## What are the Service Level Agreement options with {{site.data.keyword.vm-shared}}?
 {: #faq-sla}
 {: faq}
 
-VMware Shared uses the {{site.data.keyword.cloud_notm}} standard Service Level Agreement (SLA). SLAs are not offered for virtual machines and vApps. For more information, see [{{site.data.keyword.cloud_notm}} Service Description](https://www.ibm.com/support/customer/csol/terms/?id=i126-6605).
+{{site.data.keyword.vm-shared}} uses the {{site.data.keyword.cloud_notm}} standard Service Level Agreement (SLA). SLAs are not offered for virtual machines and vApps. For more information, see [{{site.data.keyword.cloud_notm}} Service Description](https://www.ibm.com/support/customer/csol/terms/?id=i126-6605).
 
 ## Do I get vCenter access?
 {: #faq-vcenter-access}
@@ -145,7 +145,7 @@ No.
 ## Related links
 {: #faq_shared-related}
 
-* [VMware Shared overview](/docs/vmwaresolutions?topic=vmwaresolutions-shared_overview)
+* [{{site.data.keyword.vm-shared}} overview](/docs/vmwaresolutions?topic=vmwaresolutions-shared_overview)
 * [User accounts and settings](/docs/vmwaresolutions?topic=vmwaresolutions-useraccount)
 * [Accessing the console](/docs/vmwaresolutions?topic=vmwaresolutions-loginmethod)
 * [Notifications](/docs/vmwaresolutions?topic=vmwaresolutions-notifications)

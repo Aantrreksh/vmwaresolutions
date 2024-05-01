@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2024
 
-lastupdated: "2024-01-30"
+lastupdated: "2024-04-29"
 
 subcollection: vmwaresolutions
 
@@ -27,7 +27,7 @@ Before you can start the build process to install the {{site.data.keyword.redhat
    * VMware vCenter Server® instance details and passwords
    * The additional private portable subnet information
    * The additional public portable subnet information
-* Download and install govc - govc is a VMware vSphere® CLI, an alternative to the GUI, and suited for automation tasks.
+* Download and install `govc` - `govc` is a VMware vSphere® CLI, an alternative to the GUI, and suited for automation tasks.
 
 ## Ordering new subnets for the Red Hat OpenShift environment
 {: #openshift-runbook-runbook-prereq-cloud-subnets}
@@ -85,7 +85,7 @@ If you need to install Homebrew, see [Installing Homebrew on a Mac](https://tree
 
 If your jump-host or remote device uses Linux, complete the following steps:
 
-1. Download govc and make it executable. Run `curl -L https://github.com/vmware/govmomi/releases/download/v0.20.0/govc_linux_amd64.gz | gunzip > /usr/local/bin/govc`.
+1. Download `govc` and make it executable. Run `curl -L https://github.com/vmware/govmomi/releases/download/v0.20.0/govc_linux_amd64.gz | gunzip > /usr/local/bin/govc`.
 2. Run `chmod +x /usr/local/bin/govc`.
 
 ## Validating Distributed PortGroup and Datastore names
@@ -141,7 +141,7 @@ govc vm.markastemplate vm/rhcos-latest
 ## Uploading the ISO image to vCenter storage
 {: #openshift-runbook-runbook-prereq-cloud-iso}
 
-Use the following govc example to upload the ISO image for the creation of the bastion node:
+Use the following `govc` example to upload the ISO image for the creation of the bastion node:
 
 ```bash
 export GOVC_URL='10.208.17.2'

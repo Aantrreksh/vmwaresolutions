@@ -2,11 +2,11 @@
 
 copyright:
 
-  years:  2016, 2023
+  years:  2016, 2024
 
-lastupdated: "2023-07-28"
+lastupdated: "2024-04-25"
 
-keywords: vCenter Server multisite, multisite configuration, multisite deployment vCenter Server
+keywords: vcf automated multisite, multisite configuration, multisite deployment vcf for classic
 
 subcollection: vmwaresolutions
 
@@ -15,7 +15,7 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Multisite configuration for vCenter Server instances
+# Multisite configuration for Automated instances
 {: #vc_multisite}
 
 {{site.data.keyword.vmwaresolutions_full}} allows instances to be deployed across different locations and have them up and running in a short time.
@@ -25,19 +25,19 @@ subcollection: vmwaresolutions
 
 A multisite deployment consists of the following components.
 
-* **Primary instance** - The primary VMware vCenter Server® instance has the following configuration:
+* **Primary instance** - The primary {{site.data.keyword.vcf-auto}} instance has the following configuration:
    * Microsoft® Active Directory™ (AD) and DNS (Domain Name System) root domain
    * vCenter Server located in domain with instance-specific name
    * SSO (single sign-on) domain
    * SSO site name
    * vCenter Server Appliance with embedded Platform Services Controller (PSC)
-* **Secondary instance or instances** - One or more secondary vCenter Server instances, linked to the primary instance, with the following configuration:
+* **Secondary instance or instances** - One or more secondary Automated instances, linked to the primary instance, with the following configuration:
    * SSO site name
    * Same DNS domain as primary instance
    * DNS and AD replication setup between the AD virtual machines on the primary and secondary instances
    * VMware vCenter Server® on the secondary instances is set up with Enhanced Linked Mode (ELM) to the vCenter Server on the primary instance
 
-## vCenter Server multisite deployment
+## {{site.data.keyword.vcf-auto-short}} multisite deployment
 {: #vc_multisite-deployment}
 
 The multisite configuration feature uses a hub and spoke topology with a primary site and a maximum of seven secondary sites. A single layer of sites is supported, that is, you cannot configure subsequent sites that are linked to other secondary sites. You can have a total of 128 VMware ESXi™ servers in a multisite configuration across all instances.
@@ -45,9 +45,9 @@ The multisite configuration feature uses a hub and spoke topology with a primary
 If your configuration requires a multisite deployment with more than 128 ESXi servers, open an IBM Support ticket by following the steps in [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support).
 {: note}
 
-The following graphic depicts the overall view of the vCenter Server multisite deployment.
+The following graphic depicts the overall view of the {{site.data.keyword.vcf-auto-short}} multisite deployment.
 
-![vCenter Server multisite deployment](../images/multisite-hub-spoke.svg "vCenter Server multisite deployment"){: caption="Figure 1. vCenter Server multisite deployment" caption-side="bottom"}
+![{{site.data.keyword.vcf-auto-short}} multisite deployment](../images/multisite-hub-spoke.svg "{{site.data.keyword.vcf-auto-short}} multisite deployment"){: caption="Figure 1. {{site.data.keyword.vcf-auto-short}} multisite deployment" caption-side="bottom"}
 
 The model contains the following layers:
 
@@ -58,7 +58,7 @@ You can assign only one secondary instance to a primary instance at a time. You 
 
 You can have a maximum of 15 (one primary and 14 secondary) instances that are deployed in a multisite configuration.
 
-Deleting vCenter Server instances that are part of a multisite configuration requires special planning. For more information, see [Deleting vCenter Server instances in a multisite configuration](/docs/vmwaresolutions?topic=vmwaresolutions-vc_deletinginstance_multi).
+Deleting Automated instances that are part of a multisite configuration requires special planning. For more information, see [Deleting Automated instances in a multisite configuration](/docs/vmwaresolutions?topic=vmwaresolutions-vc_deletinginstance_multi).
 {: note}
 
 ## Related links

@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-02-01"
+lastupdated: "2024-04-26"
 
 keywords: FAQ vmware solutions dedicated, vmware solutions dedicated questions, user account, patch management
 
@@ -14,12 +14,12 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# General FAQ about VMware Solutions
+# General FAQ about {{site.data.keyword.vcf-classic-short}}
 {: #faq-vmwaresolutions}
 
-Find answers to frequently asked questions about the {{site.data.keyword.vmwaresolutions_full}} offering.
+Find answers to frequently asked questions about the {{site.data.keyword.vcf-classic}} offering.
 
-## What user accounts do I need for VMware Solutions?
+## What user accounts do I need?
 {: #faq-user-accts}
 {: faq}
 {: support}
@@ -41,28 +41,28 @@ When you order your instance for the first time, follow the instructions on the 
 
 All costs for the physical and virtual infrastructure and the licenses that result from the instance are charged to your {{site.data.keyword.cloud_notm}} account. When you order an instance, you must have an {{site.data.keyword.cloud_notm}} account and provide the {{site.data.keyword.slapi_short}} key that is associated with the account.
 
-## What is the difference between vCenter Server and VMware vSphere?
+## What is the difference between Automated and Flexible instances?
 {: #faq-vcs-cf-vss}
 {: faq}
 {: support}
 
 All instance types provide deployment choices for VMware® virtual environments. However, the difference is the extent of customizability and automation.
 
-* When you order a VMware vCenter Server® instance, you deploy a VMware® virtual environment with customized compute, storage, and network resources. For more information about the deployed components, see [Technical specifications for vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview#vc_vcenterserveroverview-specs).
-* When you order a VMware vSphere® instance, you obtain the maximum of flexibility to design and build your hosted VMware environment while you incorporate VMware-compatible hardware. However, {{site.data.keyword.cloud_notm}} does not automate the installation, configuration, and bring-up of the optional VMware components for the VMware vSphere instance.
-* The functions that are supported by vCenter Server instances and VMware vSphere instances are different. For more information, see [Offering comparison chart](/docs/vmwaresolutions?topic=vmwaresolutions-inst_comp_chart).
+* When you order a {{site.data.keyword.vcf-auto}} instance, you deploy a VMware® virtual environment with customized compute, storage, and network resources. For more information about the deployed components, see [Technical specifications for Automated instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview#vc_vcenterserveroverview-specs).
+* When you order a {{site.data.keyword.vcf-flex}} instance, you obtain the maximum of flexibility to design and build your hosted VMware environment while you incorporate VMware-compatible hardware. However, {{site.data.keyword.cloud_notm}} does not automate the installation, configuration, and starting of the optional VMware components for the {{site.data.keyword.vcf-flex-short}} instance.
+* The functions that are supported by {{site.data.keyword.vcf-auto-short}} and {{site.data.keyword.vcf-flex-short}} instances are different. For more information, see [Offering comparison chart](/docs/vmwaresolutions?topic=vmwaresolutions-inst_comp_chart).
 
-## What is included in a vCenter Server instance?
+## What is included in a {{site.data.keyword.vcf-auto-short}} instance?
 {: #faq-vcs}
 {: faq}
 
-For more information, see [Technical specifications for vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview#vc_vcenterserveroverview-specs).
+For more information, see [Technical specifications for Automated instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview#vc_vcenterserveroverview-specs).
 
-## What is included in a VMware vSphere instance?
+## What is included in a {{site.data.keyword.vcf-flex-short}} instance?
 {: #faq-vss}
 {: faq}
 
-For more information, see [Technical specifications for VMware vSphere instances](/docs/vmwaresolutions?topic=vmwaresolutions-vs_vsphereoverview#vs_vsphereoverview-specs).
+For more information, see [Technical specifications for Flexible instances](/docs/vmwaresolutions?topic=vmwaresolutions-vs_vsphereoverview#vs_vsphereoverview-specs).
 
 ## Can I set up VMware vCenter HA configuration?
 {: #faq-ha}
@@ -74,7 +74,7 @@ You can configure vCenter HA, but configuration support is not provided by {{sit
 {: #faq-rename-cluster}
 {: faq}
 
-For a new vCenter Server instance, you can set the name of the initial cluster that is created during deployment. When you add a cluster to a vCenter Server instance, you can specify the name that you want on the {{site.data.keyword.vmwaresolutions_short}} console.
+For a new {{site.data.keyword.vcf-auto-short}} instance, you can set the name of the initial cluster that is created during deployment. When you add a cluster to a {{site.data.keyword.vcf-auto-short}} instance, you can specify the name that you want on the {{site.data.keyword.vmwaresolutions_short}} console.
 
 ## How are patches managed?
 {: #faq-patches}
@@ -93,7 +93,7 @@ Newly deployed VMware ESXi™ servers and clusters are patched with recent, but 
 For all other VMware component updates, you must ensure that newly deployed ESXi servers and clusters have the most recent updates that you require. {{site.data.keyword.vmwaresolutions_short}} does not offer support for applying updates and patches for VMware components. You must monitor and apply these updates yourself.
 {: important}
 
-To download ESXi updates from VMware, you can configure VMware Update Manager (VUM), which is integrated into your vCenter Server. For more information, see [VMware Support](https://www.vmware.com/support/services.html){: external}.
+To download ESXi updates from VMware, you can configure VMware Update Manager (VUM) or vSphere Lifecycle Manager (vLCM), which are integrated into your vCenter Server. For more information, see [VMware Support](https://www.vmware.com/support/services.html){: external}.
 
 ## Does the management services NSX Edge pose a security risk?
 {: #faq-mgmt-nsx}
@@ -121,9 +121,10 @@ Although the customer-managed NSX Edge is connected to the public VLAN, security
 
 The instance deployments have strict physical infrastructure requirements, which vary among {{site.data.keyword.cloud_notm}} data centers. When you place your instance order, the available data centers are listed within regions and you can select the one that you want from the list.
 
-For more information, see the _IBM Cloud data center availability_ sections in:
-* [Requirements and planning for vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_planning)
-* [Requirements and planning for VMware vSphere](/docs/vmwaresolutions?topic=vmwaresolutions-vs_planning)
+For more information, see:
+
+* [Planning for Automated instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_planning)
+* [Planning for Flexible instances](/docs/vmwaresolutions?topic=vmwaresolutions-vs_planning)
 
 ## How long does it take for my instance to be deployed?
 {: #faq-deploy}
@@ -131,7 +132,7 @@ For more information, see the _IBM Cloud data center availability_ sections in:
 
 You can check the status of the instance deployment by viewing the [deployment history](/docs/vmwaresolutions?topic=vmwaresolutions-vc_viewinginstances#vc_viewinginstances-procedure-view-deploy-history) on the [instance details page](/docs/vmwaresolutions?topic=vmwaresolutions-vc_viewinginstances#vc_viewinginstances-procedure-view-inst-property) from the {{site.data.keyword.vmwaresolutions_short}} console.
 
-## How do I add a public network to a vCenter Server instance ordered as private network only?
+## How do I add a public network to an Automated instance ordered as private network only?
 {: #faq-private-only}
 {: faq}
 
@@ -148,18 +149,18 @@ The account owner can increase the RAM on ESXi servers by following these steps:
 4. Specify the higher limit. Then, confirm the change to place your order.
 5. Repeat these steps, as needed, for each additional ESXi server.
 
-An {{site.data.keyword.cloud_notm}} representative confirms the billing change and contacts you to schedule a maintenance window for adding the memory.
+An {{site.data.keyword.cloud_notm}} representative will confirm the billing change and contacts you to schedule a maintenance window for adding the memory.
 
 You must manage the VMware Solutions components that are created in your {{site.data.keyword.cloud_notm}} account only from the VMware Solutions console, not any other means outside of the console. If you change these components outside of the VMware Solutions console, the changes are not synchronized with the console.
 {: note}
 
-## Does VMware vSphere use automation to install, configure, and start the VMware stack?
+## Does the {{site.data.keyword.vcf-flex-short}} offering use automation to install, configure, and start the VMware stack?
 {: #faq-vss-automation}
 {: faq}
 
-No. VMware vSphere does not use the advanced automation from the vCenter Server platform. Based on what you order, the platform delivers optional VMware licenses, ESXi servers, and, optionally, an HA-pair of FortiGate® physical firewalls. If a new cluster is created, three new VLANs are also provisioned: a public VLAN and two private VLANs.
+No. {{site.data.keyword.vcf-flex-short}} does not use the advanced automation from the vCenter Server platform. Based on what you order, the platform delivers optional VMware licenses, ESXi servers, and, optionally, an HA-pair of FortiGate® physical firewalls. If a new cluster is created, three new VLANs are also provisioned: a public VLAN and two private VLANs.
 
-VMware ESXi is automatically installed on each {{site.data.keyword.cloud_notm}} bare metal server, but you are responsible for installing any additional VMware components like vCenter Server or NSX. While VMware vSphere ensures that VMware-compatible hardware is ordered based on the VMware components selected, no automation exists to configure and start the VMware environment. You are responsible for designing and architecting the IBM-hosted environment.
+VMware ESXi is automatically installed on each {{site.data.keyword.cloud_notm}} bare metal server, but you are responsible for installing any additional VMware components like vCenter Server or NSX. While {{site.data.keyword.vcf-flex-short}} ensures that VMware-compatible hardware is ordered based on the VMware components selected, no automation exists to configure and start the VMware environment. You are responsible for designing and architecting the IBM-hosted environment.
 
 ## How can I view a list of all notifications?
 {: #faq-notification}
@@ -178,6 +179,6 @@ If you need assistance with {{site.data.keyword.vmwaresolutions_short}}, open an
 {: #faq-related}
 
 * [Notifications](/docs/vmwaresolutions?topic=vmwaresolutions-notifications)
-* [vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview)
+* [{{site.data.keyword.vcf-auto-short}} overview](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview)
 * [Accessing the console](/docs/vmwaresolutions?topic=vmwaresolutions-loginmethod)
 * [User accounts and settings](/docs/vmwaresolutions?topic=vmwaresolutions-useraccount)

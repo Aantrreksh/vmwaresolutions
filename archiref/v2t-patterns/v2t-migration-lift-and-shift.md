@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2022, 2023
+  years:  2022, 2024
 
-lastupdated: "2023-12-07"
+lastupdated: "2024-04-26"
 
 subcollection: vmwaresolutions
 
@@ -36,12 +36,12 @@ When you deploy a new vCenter Server with NSX-T instance, you get a new Active D
 In your VM migration between the NSX-V and NSX-T environments, the new vCenter Server instance is provisioned with new storage, both vSAN and NFS.
 {: note}
 
-## Considerations for NSX-V to NSX-T migrations
+## Considerations for NSX-V to NSX-T migration
 {: #v2t-lift-and-shift-considerations}
 
 To ensure that your migration is seamless and to minimize the downtime, design the migration and its phases and waves carefully. Due to the differences in the architecture, opens you the possibility to redesign parts of your network instead of just mirroring the configurations to best match your requirements and NSX-T best practices.
 
-If you do not think that you have skills in the house, you can get help from various service providers. For example, the {{site.data.keyword.cloud_notm}} partner PrimaryIO provides [an optional pro service](/catalog/services/hdm-cloud-connect-nsx-v-to-nsx-t#about) to help you [accelerate your NSX-V to NSX-T migration](https://hdm.primaryio.com/lp/nsxvtot){: external}.
+If you do not think that you have skills in the house, you can get help from various service providers. For example, the {{site.data.keyword.cloud_notm}} partner PrimaryIO provides [an optional pro service](/catalog#about) to help you [accelerate your NSX-V to NSX-T migration](https://hdm.primaryio.com/lp/nsxvtot){: external}.
 
 ## Related links
 {: #v2t-lift-and-shift-links}

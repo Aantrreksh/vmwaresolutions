@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2024
 
-lastupdated: "2024-02-06"
+lastupdated: "2024-04-03"
 
 keywords: vmware regulated workloads, vmware regulated workloads order instance, order vmware regulated workloads, vmware regulated workloads instances
 
@@ -14,17 +14,17 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Requirements for VMware Regulated Workloads
+# Requirements for {{site.data.keyword.rw}}
 {: #vrw-orderinginstance-req}
 
-The VMware® Regulated Workloads offering includes a secure-by-default architecture that follows the {{site.data.keyword.IBM}} unique policy controls framework. It provides continuous compliance monitoring and the highest level of data encryption (FIPS 140-2 Level 4).
+The {{site.data.keyword.rw}} offering includes a secure-by-default architecture that follows the {{site.data.keyword.IBM}} unique policy controls framework. It provides continuous compliance monitoring and the highest level of data encryption (FIPS 140-2 Level 4).
 
-Price calculations are automatically generated when you access the VMware Regulated Workloads instance order page. Default selections include the Data Center SP Professional license for NSX-T™, the Dual Intel® Xeon® Platinum 8260 processor / 48 cores, 2.4 GHz CPU model, 768 GB RAM, the vSAN™ Advanced license for both workload and consolidated clusters, and four 3.8 TB SSD vSAN capacity disks for workload clusters.
+Price calculations are automatically generated when you access the {{site.data.keyword.rw}} instance order page. Default selections include the Data Center SP Professional license for NSX-T™, the Dual Intel® Xeon® Platinum 8260 processor / 48 cores, 2.4 GHz CPU model, 768 GB RAM, the vSAN™ Advanced license for both workload and consolidated clusters, and four 3.8 TB SSD vSAN capacity disks for workload clusters.
 
 Ensure that you complete the following tasks:
 * If you are ordering an instance for the first time, complete the tasks in the **Before you begin** section on the ordering page. For more information, see [Setting up your environment for your first order](/docs/vmwaresolutions?topic=vmwaresolutions-completing_checklist).
 * Review the information in [Signing up for required accounts](/docs/vmwaresolutions?topic=vmwaresolutions-signing_required_accounts).
-* Review the information in [VMware Regulated Workloads overview](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-overview).
+* Review the information in [{{site.data.keyword.rw}} overview](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-overview).
 * Review the domain name format. The domain name is used to generate the username and server names of the instance.
 
 | Name        | Value format |
@@ -43,4 +43,4 @@ After the instance is provisioned, do not modify any values that are set during 
 ## Related links
 {: #vrw-orderinginstance-reqs-related}
 
-* [VMware Regulated Workloads reference architecture overview](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-archi-overview)
+* [{{site.data.keyword.rw}} reference architecture overview](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-archi-overview)

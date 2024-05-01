@@ -4,9 +4,9 @@ copyright:
 
   years:  2023, 2024
 
-lastupdated: "2024-01-26"
+lastupdated: "2024-04-20"
 
-keywords: view vmware vSphere, view instance, view instance details, instance view vmware vSphere
+keywords: view flexible, view instance, view instance details, instance view flexible
 
 subcollection: vmwaresolutions
 
@@ -14,27 +14,28 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Viewing VMware vSphere instances
+# Viewing Flexible instances
 {: #vs_viewinginstances}
 
-View the summary and detailed information of the VMware vSphere® instances that are provisioned for different user accounts.
+View the summary and detailed information of the {{site.data.keyword.vcf-flex}} instances that are provisioned for different user accounts.
 
-## Procedure to view summary for VMware vSphere instances
+## Procedure to view summary for Flexible instances
 {: #vs_viewinginstances-procedure-view-inst-summary}
 
-To view a summary of all the VMware vSphere instances that are provisioned for a user account, complete the following steps:
+To view a summary of all the {{site.data.keyword.vcf-flex-short}} instances that are provisioned for a user account, complete the following steps:
 
-1. In the {{site.data.keyword.vmwaresolutions_full}} console, click **Resources > VMware vSphere** from the left navigation pane.
+1. In the {{site.data.keyword.vmwaresolutions_full}} console, click **Resources > {{site.data.keyword.vcf-classic-short}}** from the left navigation pane.
 2. From the console banner, click the **Avatar** icon ![Avatar icon](../../icons/i-avatar-icon.svg "Avatar"), and then click the **Account** field. Select the user account that you want to check instances for.
-3. In the **VMware vSphere** table, view the list of instances that are provisioned in the selected user account.
+3. In the **{{site.data.keyword.vcf-classic}}** table, view the list of instances that are provisioned in the selected user account.
 
 | Item | Description |
 |:---- |:----------- |
 | Name | The name of the instance. |
+| Resource type | The resource type of the instance. |
 | Location | The {{site.data.keyword.cloud_notm}} data center where the instance is hosted. |
 | Creation time | The date and time when the instance was created. |
 | Status | The status of the instance. |
-{: caption="Table 1. VMware vSphere summary" caption-side="bottom"}
+{: caption="Table 1. Flexible instances summary" caption-side="bottom"}
 
 The instance can have different statuses.
 
@@ -48,25 +49,26 @@ The instance can have different statuses.
 | Deleting | The instance is being deleted. |
 | Deletion error | An error occurred when the instance was being deleted. |
 | Deleted | The instance is deleted. |
-{: caption="Table 2. VMware vSphere statuses" caption-side="bottom"}
+{: caption="Table 2. Flexible instances statuses" caption-side="bottom"}
 
-## Procedure to view details for VMware vSphere instances
+## Procedure to view details for Flexible instances
 {: #vs_viewinginstances-procedure-view-inst-property}
 
 To view the property details of an instance, complete the following steps.
 
-1. In the **VMware vSphere** table, click an instance name.
+1. In the **{{site.data.keyword.vcf-classic}}** table, click an instance name.
 2. On the **Summary** tab, view the details for the instance.
 
    | Property | Description |
    |:-------- |:----------- |
    | Name | The name of the instance. |
+   | Resource type | The resource type of the instance. |
    | ID | The ID of the instance. |
    | Location | The {{site.data.keyword.cloud_notm}} data center where the instance is hosted. |
    | VMware vSphere version | The vSphere version. \n \n **Note:** The vSphere versions that are displayed on the {{site.data.keyword.vmwaresolutions_short}} console and the VMware vSphere® Web Client are slightly different. Both are correct. |
    | Root domain | The root domain name is the DNS domain name and the Microsoft® Active Directory™ (AD) forest root name. |
-   | Subdomain[^subdomain] | The subdomain is the DNS subdomain name of the root domain name where the local vSphere instance hostnames are located. The subdomain name is in the format `vsphere_instance_name.root.domain_name`. |
-   {: caption="Table 3. VMware vSphere instance properties" caption-side="bottom"}
+   | Subdomain[^subdomain] | The subdomain is the DNS subdomain name of the root domain name where the local {{site.data.keyword.vcf-flex-short}} instance hostnames are located. The subdomain name is in the format `vsphere_instance_name.root.domain_name`. |
+   {: caption="Table 3. Flexible instance properties" caption-side="bottom"}
 
    [^subdomain]: Existing vSphere 6 instances only
 
@@ -140,6 +142,6 @@ Review the following topics for information to help you complete the login instr
 ## Related links
 {: #vs_viewinginstances-related}
 
-* [Procedure to order VMware vSphere instances](/docs/vmwaresolutions?topic=vmwaresolutions-vs_orderinginstances-procedure)
-* [Adding ESXi servers to VMware vSphere instances](/docs/vmwaresolutions?topic=vmwaresolutions-vs_addingservers)
-* [Deleting VMware vSphere instances](/docs/vmwaresolutions?topic=vmwaresolutions-vs_deletinginstance)
+* [Procedure to order Flexible instances](/docs/vmwaresolutions?topic=vmwaresolutions-vs_orderinginstances-procedure)
+* [Adding ESXi servers to Flexible instances](/docs/vmwaresolutions?topic=vmwaresolutions-vs_addingservers)
+* [Deleting Flexible instances](/docs/vmwaresolutions?topic=vmwaresolutions-vs_deletinginstance)

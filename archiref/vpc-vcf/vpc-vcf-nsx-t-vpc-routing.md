@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-03-26"
+lastupdated: "2024-04-29"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # NSX and IP routing on {{site.data.keyword.vpc_short}}
 {: #vpc-vcf-nsx-t-vpc-routing}
 
-When logical network topologies are deployed on {{site.data.keyword.vpc_full}} hosted VMware NSX™ environments, you must decide how to route the traffic between NSX overlays, {{site.data.keyword.vpc_short}}, and public internet. The following diagram presents an overview of the routing setup between NSX Tier-0 gateway and {{site.data.keyword.vpc_short}}. 
+When logical network topologies are deployed on {{site.data.keyword.vpc_full}} hosted VMware NSX™ environments, you must decide how to route the traffic between NSX overlays, {{site.data.keyword.vpc_short}}, and public internet. The following diagram presents an overview of the routing setup between NSX Tier-0 gateway and {{site.data.keyword.vpc_short}}.
 
 ![VPC routing with NSX gateways](../../images/vcf-vpc-v2-overlay-routing.svg "VPC routing with NSX gateways"){: caption="Figure 1. VPC routing with NSX gateways" caption-side="bottom"}
 
@@ -25,7 +25,7 @@ The {{site.data.keyword.cloud}} for VMware Cloud Foundation automation deploys t
 In the consolidated deployment, you have only one edge cluster and one Tier-0 gateway. In the standard deployment, you have two edge clusters and two Tier-0 gateways. The Tier-0 gateways follow the same principles presented.
 {: note}
 
-If your design does not need direct inbound public access, you can customize the architecture and remove the public uplinks. 
+If your design does not need direct inbound public access, you can customize the architecture and remove the public uplinks.
 {: note}
 
 ## Public traffic between Tier-0 and VPC
@@ -46,8 +46,6 @@ You can use the public IP addresses for the following purposes:
 * To perform destination NAT done in either Tier-0 or Tier-1 gateways for inbound public traffic to NSX overlay.
 * To perform source NAT done in either Tier-0 or Tier-1 gateways for outbound public traffic from NSX overlay.
 * To establish VPNs in either Tier-0 or Tier-1.
-
-For more information, see [Routing between Tier-0 and Tier-1 logical routers](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-ryo-nsx-t-vpc-routing#vpc-ryo-nsx-t-vpc-routing-edge-tier-0-routing-t1).
 
 For public IP addresses, you can currently use one or more `/32` IP address, but you cannot have subnets, such as `/29` or `/26`.
 {: note}
@@ -103,11 +101,11 @@ VPC routes are Zone specific.
 
 When you create a VPC route, it enables traffic within the Zone or VPC depending on how it is created. If you use any of the interconnectivity options, such as {{site.data.keyword.dl_short}} or {{site.data.keyword.tg_short}}, and you need connectivity from another VPC attached to a TGW, in addition to the VPC route, you can create a VPC prefix by matching the NSX overlay subnet or prefix. This action allows both DL and TGW to advertise your NSX overlay subnet or prefix to the attached TGW connections or DL. By using the previous example, you can create a VPC prefix by matching the route `192.168.4.0/22`, which enables TGW to advertise this prefix to the other attached VPCs, or Classic. For more information about VPC prefixes and about creating prefixes, see [Bring your own subnet](/docs/vpc?topic=vpc-configuring-address-prefixes).
 
-In the interconnectivity use case, an ingress routing table is created. 
+In the interconnectivity use case, an ingress routing table is created.
 
-| Table description | Type    | Traffic sources | 
+| Table description | Type    | Traffic sources |
 | ------------------|---------|-----------------|
-| Ingress route     | Ingress | Direct Link, Transit Gateway | 
+| Ingress route     | Ingress | Direct Link, Transit Gateway |
 {: caption="Table 7. VPC ingress routing table" caption-side="bottom"}
 
 Ingress routes are also created in the zone where VMware Cloud Foundation is deployed. For example, if the deployment would be on `us-south-1` and the overlay prefix would be `192.168.4.0/22`:
@@ -124,7 +122,7 @@ For more information about VPC routes, see [VPC routing tables and routes](/docs
 
 T0 and T1 gateways provide native NSX routing between them, but you must configure that inside NSX. In this model, the workloads are typically connected to NSX overlay segments behind T1, and when T1 is connected to its parent T0, it has a default route that points to the T0. By default, T0 does not see prefixes of the segments that are attached to the T1 gateway, unless route advertisement is enabled in T1 to allow this.
 
-If you want to route natively with {{site.data.keyword.vpc_short}} subnets and other connected service without using NAT in T1, enable route advertisement of "All Connected Segments & Service Ports" in the specific T1. You do not need to configure a routing protocol or static routes between T1 and T0 gateways. After you enable the route advertisement, NSX shows and creates these routes automatically. With this approach, you have all connected segments of your T1 routed to T0, and then you can decide how to proceed with the public and private traffic in T0.
+If you want to route natively with {{site.data.keyword.vpc_short}} subnets and other connected service without using NAT in T1, enable route advertisement of **All Connected Segments & Service Ports** in the specific T1. You do not need to configure a routing protocol or static routes between T1 and T0 gateways. After you enable the route advertisement, NSX shows and creates these routes automatically. With this approach, you have all connected segments of your T1 routed to T0, and then you can decide how to proceed with the public and private traffic in T0.
 
 For example, if you have a public floating IP configured and provisioned on your T0's HA VIP, you might decide whether you want to create a NAT rule in T1 or T1. Or create a VPN server endpoint on either of these.
 
@@ -136,8 +134,8 @@ For private traffic, you can configure a subnet that is carved out of the privat
 Interconnectivity consists of multiple services and offerings that enable customers to connect from their remote network locations to {{site.data.keyword.cloud}} deployments and between workloads and services that run in {{site.data.keyword.cloud_notm}}.
 
 It can be divided into the following categories:
-- Interconnecting with on-premises networks.
-- Interconnecting VPCs and other {{site.data.keyword.cloud_notm}} infrastructure services.
+- Interconnecting with on-premises networks
+- Interconnecting VPCs and other {{site.data.keyword.cloud_notm}} infrastructure services
 
 The following diagram shows an overview of the interconnectivity solutions.
 
@@ -154,7 +152,6 @@ For more information, see [About {{site.data.keyword.tg_full_notm}}](/docs/trans
 
 * [{{site.data.keyword.vpc_short}} getting started](/docs/vpc?topic=vpc-getting-started)
 * [{{site.data.keyword.vpc_short}} bare metal servers](/docs/vpc?topic=vpc-planning-for-bare-metal-servers)
-* [{{site.data.keyword.vpc_short}} RYO VMware reference architecture](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-ryo-arch-overview)
 * [{{site.data.keyword.dl_full_notm}} overview](/docs/dl?topic=dl-get-started-with-ibm-cloud-dl)
 * [{{site.data.keyword.tg_full_notm}} overview](/docs/transit-gateway?topic=transit-gateway-getting-started)
 * [{{site.data.keyword.vpc_short}} VPN overview](/docs/vpc?topic=vpc-vpn-overview)

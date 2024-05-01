@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-01-02"
+lastupdated: "2024-04-29"
 
 subcollection: vmwaresolutions
 
@@ -61,7 +61,7 @@ The vCenter Server instance consists of a consolidated cluster with a minimum of
 
 * vCenter server appliance - The VCSA manages the vSphere resources and provides a single management plane for vSphere.
 * NSX-T™ manager cluster - The NSX-T manager cluster consists of three manager appliances that provide the management and control plane for the virtualized network, also known as the overlay network.
-* Active Directory™ and domain name service - The ADDNS VMs are two Microsoft® Windows 2019 VMs configured for Active Directory and DNS. This option is selected in the order process by selecting the "Two highly available dedicated Windows Server VMs on the management cluster" option. By selecting this option, you must provide your own licenses.
+* Active Directory™ and domain name service - The ADDNS VMs are two Microsoft® Windows 2019 VMs configured for Active Directory and DNS. This option is selected in the order process by selecting the **Two highly available dedicated Windows Server VMs on the management cluster** option. By selecting this option, you must provide your own licenses.
 * Veeam service instance - For more information, see [Veeam components](/docs/vmwaresolutions?topic=vmwaresolutions-veeam-cr-sa-components).
 * Gateway cluster - A gateway cluster consists of two vSphere ESXi hosts provisioned on {{site.data.keyword.cloud_notm}} gateways. It provides the resources to run the network edge gateway. These resources include firewalls and the ability to become the default gateways for {{site.data.keyword.cloud_notm}} subnets that are associated with them. In this solution architecture, the cluster hosts the Juniper vSRX firewalls that run as virtual appliances. While Juniper vSRX appliances can be run directly on the consolidated cluster, it cannot act as the default gateways to the {{site.data.keyword.cloud_notm}} subnets, as this requires the {{site.data.keyword.cloud_notm}} gateway appliance.
 

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2022, 2023
+  years:  2022, 2024
 
-lastupdated: "2023-07-31"
+lastupdated: "2024-04-03"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # Applying updates and version compatibility
 {: #vrw-apply-updates}
 
-The deployment of VMware Regulated Workloads instances provides the following components:
+The deployment of {{site.data.keyword.rw}} instances provides the following components:
 
 * VMware® components
     * VMware vSphere® Hypervisor (ESXi™)

@@ -4,7 +4,7 @@ copyright:
 
   years: 2016, 2024
 
-lastupdated: "2024-02-06"
+lastupdated: "2024-04-02"
 
 keywords: history message, audit history, error messages
 
@@ -18,7 +18,7 @@ subcollection: vmwaresolutions
 # Instance history messages
 {: #audit_messages}
 
-All operations that {{site.data.keyword.cloud}} performs for your VMware® instance are logged in the instance history. You can use the instance history as a reference to review these operations. For more information about reviewing your instance history, see [Procedure to view the deployment history for vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_viewinginstances#vc_viewinginstances-procedure-view-deploy-history).
+All operations that {{site.data.keyword.cloud}} performs for your VMware® instance are logged in the instance history. You can use the instance history as a reference to review these operations. For more information about reviewing your instance history, see [Procedure to view the deployment history for Automated instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_viewinginstances#vc_viewinginstances-procedure-view-deploy-history).
 
 The following information details the messages that can be issued to your instance history.
 
@@ -69,7 +69,7 @@ The following information details the messages that can be issued to your instan
 ## Cluster history messages
 {: #audit_messages-cluster}
 
-{{site.data.keyword.vmwaresolutions_short}} issues the following messages for VMware vCenter Server® clusters.
+{{site.data.keyword.vmwaresolutions_short}} issues the following messages for managing clusters for {{site.data.keyword.vcf-auto}} instances.
 
 * > Starting the cluster configuration...
 * > Starting the cluster configuration for `<cluster_name>`...

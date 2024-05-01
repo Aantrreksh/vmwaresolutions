@@ -4,7 +4,7 @@ copyright:
 
   years:  2024
 
-lastupdated: "2024-01-29"
+lastupdated: "2024-04-29"
 
 subcollection: vmwaresolutions
 
@@ -49,7 +49,7 @@ This architecture pattern deployment is summarized as follows:
 
 1. Deploy VPC VPN as a Service - Site to Site Gateway. You can use the NSX private uplink subnet in VPC; many IP addresses are available for the VPN Gateway.
 1. Establish an IPsec VPN between {{site.data.keyword.vpc_short}} and your on-premises networks. You can use either policy-based or route-based tunnels.
-1. With policy-based VPN tunnels, ensure that at least the management and VI workload domains' management subnets are included in the local networks. With route-based tunnels, create VPC routes to the on-premises networks and ensure that the on-premises networks have a route to at least to the management and VI workload domains' management subnets.
+1. With policy-based VPN tunnels, ensure that at least the management and the management subnets of VI workload domains are included in the local networks. With route-based tunnels, create VPC routes to the on-premises networks and ensure that the on-premises networks have a route to at least to the management and the management subnets of VI workload domains.
 1. Configure a virtual protection group (VPG) for replication between {{site.data.keyword.cloud_notm}} and on-premises environments.
 
 In this second alternative pattern, the connectivity is established by using NSX Tier 0 IPsec VPN and integrated routing with VPC networking (VPC routes). The following diagram introduces the high-level steps to configure and deploy this connectivity type. 
@@ -60,7 +60,7 @@ This architecture pattern deployment is summarized as follows:
 
 1. Create a VPN endpoint in the Tier 0 gateway by using one of the floating IP addresses provisioned for the Tier 0 HA public VIP.
 1. Establish an IPsec VPN between {{site.data.keyword.vpc_short}} and your on-premises networks. You can use either policy-based or route-based tunnels.
-1. With policy-based VPN tunnels, ensure that at least the management and VI workload domains' management subnets are included in the local networks. With route-based tunnels, use BGP or create static routes in Tier 0 gateway to the on-premises networks and ensure that the on-premises networks have a route to at least to the management and VI workload domains' management subnets.
+1. With policy-based VPN tunnels, ensure that at least the management and the management subnets of VI workload domains are included in the local networks. With route-based tunnels, use BGP or create static routes in Tier 0 gateway to the on-premises networks and ensure that the on-premises networks have a route to at least to tthe management and the management subnets of VI workload domains.
 1. Create a VPC route to the on-premises networks by using Tier 0's private HA VIP as the next-hop. This route is required for the Zerto components in the management subnet to reach the on-premises network.
 1. Configure a virtual protection group (VPG) for replication between {{site.data.keyword.cloud_notm}} and on-premises environments.
 

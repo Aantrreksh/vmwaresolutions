@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2023
+  years:  2016, 2024
 
-lastupdated: "2023-09-26"
+lastupdated: "2024-04-16"
 
 keywords: Caveonix RiskForesight, Caveonix configuration, order Caveonix
 
@@ -18,10 +18,10 @@ subcollection: vmwaresolutions
 # Ordering Caveonix RiskForesight
 {: #caveonix_ordering}
 
-You can include the Caveonix RiskForesight™ service with a new VMware vCenter Server® instance or add the service to your existing instance. 
+You can include the Caveonix RiskForesight™ service with a new {{site.data.keyword.vcf-auto}} instance or add the service to your existing instance.
 
-* For vCenter Servers instances, Caveonix RiskForesight generates a license for the number of VMs (virtual machines) that you select.
-* For VMware® Regulated Workloads and Security and Compliance Readiness Bundle instances, Caveonix RiskForesight offers per host licensing. You are charged for every host in the instance, which includes management, workload, and gateway clusters.
+* For {{site.data.keyword.vcf-auto-short}} instances, Caveonix RiskForesight generates a license for the number of VMs (virtual machines) that you select.
+* For {{site.data.keyword.rw}} and Security and Compliance Readiness Bundle instances, Caveonix RiskForesight offers per host licensing. You are charged for every host in the instance, which includes management, workload, and gateway clusters.
 
 ## Ordering Caveonix RiskForesight for a new instance
 {: #caveonix_ordering-new}
@@ -42,7 +42,7 @@ You can include the Caveonix RiskForesight™ service with a new VMware vCenter 
 
 When you order the Caveonix RiskForesight service, provide the following settings.
 
-The configuration options do not apply to VMware Regulated Workloads and Security and Compliance Readiness Bundle instances.
+The configuration options do not apply to {{site.data.keyword.rw}} and Security and Compliance Readiness Bundle instances.
 {: note}
 
 ### License name
@@ -75,5 +75,5 @@ For more information, see:
 
 * [Caveonix RiskForesight overview](/docs/vmwaresolutions?topic=vmwaresolutions-caveonix_considerations)
 * [Managing Caveonix RiskForesight](/docs/vmwaresolutions?topic=vmwaresolutions-managingcaveonix)
-* [Ordering services for vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices)
+* [Ordering services for {{site.data.keyword.vcf-auto-short}} instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices)
 * [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support)

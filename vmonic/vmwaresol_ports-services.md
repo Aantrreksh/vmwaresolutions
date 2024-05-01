@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2024
 
-lastupdated: "2024-02-01"
+lastupdated: "2024-04-02"
 
 keywords: VLAN ports, vmware solutions ports, ports usage vmware solutions
 
@@ -82,7 +82,7 @@ The following table provides information about the Juniper® vSRX ports.
 | IBM CloudDriver | Private primary subnet \n Infrastructure VMs | vSRX private IP addresses| New subnet ordered in private VLAN | 22 | TCP | Set up and configure vSRX | SSH |
 | IBM CloudDriver | Private primary subnet \n Infrastructure VMs | vSRX private IP addresses| New subnet ordered in private VLAN | 830 | TCP | Set up and configure vSRX by NETCONF over SSH | |
 | vSRX | vSRX Private IP | VMware Aria Operations™ for Logs (if VMware Aria® Operations™ service is installed) | VMware Aria Operations for Logs FQDN | 514 | UDP | Remote syslog to VMware Aria Operations for Logs if VMware Aria Operations service is installed | Syslog |
-{: caption="Table 6. Juniper vSRX ports" caption-side="bottom"}
+{: caption="Table 5. Juniper vSRX ports" caption-side="bottom"}
 
 ## Ports for Red Hat OpenShift for VMware
 {: #vmwaresol_ports-vmware-optional-services-red-hat-openshift}
@@ -97,7 +97,7 @@ The following table provides information about the {{site.data.keyword.redhat_op
 | OCP | New subnet ordered in private VLAN | OCP cluster network | OCP internal IP range `10.128.0.0/14` | 5443/8443 | TCP | OCP cluster management | WEBREST API |
 | OCP edge public IP addresses| New subnet ordered in public VLAN | Public websites required for {{site.data.keyword.redhat_openshift_notm}} installation[^osinst] | | 80/123/443 | TCP and UDP | Time service, {{site.data.keyword.redhat_openshift_notm}} installation content, and images | NTP/HTTP/HTTPS |
 | IBM CloudDriver | Private primary subnet \n Infrastructure VMs | OCP | New subnet ordered in private VLAN | 22 | TCP | Set up and configure OCP | SSH |
-{: caption="Table 7. Red Hat OpenShift for VMware ports" caption-side="bottom"}
+{: caption="Table 6. Red Hat OpenShift for VMware ports" caption-side="bottom"}
 
 [^osinst]: For more information, see [Configuring your firewall](https://docs.openshift.com/container-platform/4.14/installing/install_config/configuring-firewall.html){: external}.
 
@@ -122,12 +122,12 @@ The following table provides information about the Veeam® ports.
 | Veeam | Private primary subnet | {{site.data.keyword.cloud_notm}} infrastructure endurance storage | {{site.data.keyword.cloud_notm}} infrastructure services network | 3260 | TCP | Use {{site.data.keyword.cloud_notm}} infrastructure endurance storage | iSCSI |
 | {{site.data.keyword.cloud_notm}} infrastructure Service - Provision Windows VSI | {{site.data.keyword.cloud_notm}} infrastructure services network `10.0.0.0/14` | Veeam | Private primary subnet | 8051 | TCP | EMC2 (Legato) Networker or Sun Solstice Backup | |
 | {{site.data.keyword.cloud_notm}} infrastructure Service - Provision Windows VSI | {{site.data.keyword.cloud_notm}} infrastructure services network `10.200.0.0/14` | Veeam | Private primary subnet | | ICMP | ICMP | Ping |
-{: caption="Table 8. Veeam ports" caption-side="bottom"}
+{: caption="Table 7. Veeam ports" caption-side="bottom"}
 
-## Ports for VMware Aria Operations and VMware Aria Operations for Logs
+## Ports for VMware Aria Operations and VMware Aria Operations for Logs for Automated instances
 {: #vmwaresol_ports-vmware-optional-services-vrops-loginsight}
 
-The following table provides information about the VMware Aria Operations ports for vCenter Server with NSX-T instances.
+The following table provides information about the VMware Aria Operations ports for {{site.data.keyword.vcf-auto}} instances.
 
 | Source | Subnet, IP range | Target | Subnet, IP range | Port | Protocol | Purpose | Service |
 |:------ |:---------------- |:------ |:---------------- |:---- |:-------- |:------- |:------- |
@@ -151,25 +151,7 @@ The following table provides information about the VMware Aria Operations ports 
 | Service edge | Infrastructure VMs | Windows Active Directory | Private primary subnet \n Infrastructure VMs | 53 | TCP and UDP | Use Windows DNS service | DNS |
 | Service edge | Infrastructure VMs | {{site.data.keyword.cloud_notm}} infrastructure DNS service \n `10.0.80.11` \n `10.0.80.12` | {{site.data.keyword.cloud_notm}} infrastructure services network. For more information, see [DNS FAQs](/docs/dns?topic=dns-dns-faq) | 53 | UDP | Use {{site.data.keyword.cloud_notm}} infrastructure NTP | DNS |
 | Service edge | Infrastructure VMs | {{site.data.keyword.cloud_notm}} infrastructure NTP service | {{site.data.keyword.cloud_notm}} infrastructure services network. For more information, see [NTP overview](/docs-draft/cloud-infrastructure?topic=cloud-infrastructure-ntp-service-overview) | 123 | UDP | Use {{site.data.keyword.cloud_notm}} infrastructure NTP | NTP |
-{: caption="Table 9. VMware Aria Operations ports for NSX-T instances" caption-side="bottom"}
-
-The following table provides information about the VMware Aria Operations and VMware Aria Operations for Logs ports when VMware Aria Operations is deployed in a vCenter Server with NSX-V instance.
-
-| Source | Subnet, IP range | Target | Subnet, IP range | Port | Protocol | Purpose | Service |
-|:------ |:---------------- |:------ |:---------------- |:---- |:-------- |:------- |:------- |
-| ESXi host | Private primary subnet | VMware Aria Operations | New subnet ordered in private VLAN | 514 | UDP | Remote syslog | Syslog |
-| vCenter Server | Infrastructure VMs | VMware Aria Operations | New subnet ordered in private VLAN | 514 | UDP | Remote syslog | Syslog |
-| Local address `192.168.100.3` | Local address | VMware Aria Operations | New subnet ordered in private VLAN | 514 | UDP | Remote syslog | Syslog |
-| VMware Aria Operations | New subnet ordered in private VLAN | Windows Active Directory | Private primary subnet \n Infrastructure VMs| 53 | TCP and UDP | Use Windows DNS service | DNS |
-| VMware Aria Operations | New subnet ordered in private VLAN | vCenter Server | Infrastructure VMs | 443 | TCP | VMware Aria Operations configuration | HTTPS |
-| VMware Aria Operations | New subnet ordered in private VLAN | NSX Manager | Infrastructure VMs | 443 | TCP | VMware Aria Operations configuration | HTTPS |
-| NSX Manager | Infrastructure VMs | VMware Aria Operations | New subnet ordered in private VLAN | 514 | UDP | Remote syslog | Syslog |
-| Management edge private IP | Infrastructure VMs | VMware Aria Operations | New subnet ordered in private VLAN | 514 | UDP | Remote syslog | Syslog |
-| Customer-nsx-edge private IP | Customer edge gateway private | VMware Aria Operations | New subnet ordered in private VLAN | 514 | UDP | Remote syslog | Syslog |
-| IBM CloudDriver | Private primary subnet \n Infrastructure VMs | VMware Aria Operations | New subnet ordered in private VLAN | 22 | TCP | Set up and configure VMware Aria Operations | SSH |
-| IBM CloudDriver | Private primary subnet \n Infrastructure VMs | VMware Aria Operations | New subnet ordered in private VLAN | 443 | TCP | Set up and configure VMware Aria Operations | HTTPS |
-| Windows Active Directory | Private primary subnet \n Infrastructure VMs | VMware Aria Operations | New subnet ordered in private VLAN | 9543 | TCP | Set up and configure VMware Aria Operations | |
-{: caption="Table 10. VMware Aria Operations ports for NSX-V instances" caption-side="bottom"}
+{: caption="Table 8. VMware Aria Operations ports for Automated instances" caption-side="bottom"}
 
 For more information about port requirements for VMware Aria Operations, see [TCP and UDP ports required to access VMware Aria Operations Manager](https://kb.vmware.com/s/article/52964){: external}.
 
@@ -183,7 +165,7 @@ The following table provides information about Zerto ports.
 | Zerto Virtual Manager (ZVM) VSI | Private primary subnet \n Infrastructure VMs | Zerto VRA agents | New subnet ordered in private VLAN | 4006 | TCP | TLS over TCP communication between ZVM and local site VRAs | |
 | ZVM VSI | Private primary subnet \n Infrastructure VMs | Zerto VRA agents | New subnet ordered in private VLAN | 4009 | TCP | TLS over TCP communication between the ZVM and local site VRAs to handle checkpoints | |
 | ZVM VSI | Private primary subnet \n Infrastructure VMs | Zerto VRA agents | New subnet ordered in private VLAN | | ICMP | Check network connectivity from ZVM to the VRAs | Ping |
-{: caption="Table 11. Zerto ports" caption-side="bottom"}
+{: caption="Table 9. Zerto ports" caption-side="bottom"}
 
 For more information about Zerto networking, see [Zerto - prerequisites and requirements for vSphere environments](https://help.zerto.com/bundle/Prereq.VC.HTML.90/page/Prerequisites_Requirements_vSphere_Environments.htm){: external}.
 
@@ -203,7 +185,7 @@ The following table provides information about the Entrust CloudControl™, Entr
 | Entrust DataControl | Infrastructure VMs | Windows Active Directory | Private primary subnet \n Infrastructure VMs | 53 | UDP | Use Windows DNS service | DNS |
 | Entrust KeyControl | Infrastructure VMs | {{site.data.keyword.cloud_notm}} infrastructure NTP service | {{site.data.keyword.cloud_notm}} infrastructure services network. For more information, see [NTP overview](/docs-draft/cloud-infrastructure?topic=cloud-infrastructure-ntp-service-overview) | 123  | UDP | Use {{site.data.keyword.cloud_notm}} infrastructure NTP service | NTP |
 | Entrust KeyControl | Infrastructure VMs | Windows Active Directory | Private primary subnet \n Infrastructure VMs | 53 | UDP | Use Windows DNS service | DNS |
-{: caption="Table 5. Entrust CloudControl, Entrust DataControl, and Entrust KeyControl ports" caption-side="bottom"}
+{: caption="Table 10. Entrust CloudControl, Entrust DataControl, and Entrust KeyControl ports" caption-side="bottom"}
 
 ## Ports for IBM Spectrum Protect Plus - deprecated
 {: #vmwaresol_ports-vmware-optional-services-spp}
@@ -214,4 +196,26 @@ The following table provides information about the IBM Spectrum® Protect Plus p
 | Source | Subnet, IP range | Target | Subnet, IP range | Port | Protocol | Purpose | Service |
 |:------ |:---------------- |:------ |:---------------- |:---- |:-------- |:------- |:------- |
 | IBM Spectrum Protect Plus | Infrastructure VMs | {{site.data.keyword.cloud_notm}} infrastructure NTP service | {{site.data.keyword.cloud_notm}} infrastructure services network. For more information, see [NTP overview](/docs-draft/cloud-infrastructure?topic=cloud-infrastructure-ntp-service-overview) | 123 | UDP | Use {{site.data.keyword.cloud_notm}} infrastructure NTP service | NTP |
-{: caption="Table 12. IBM Spectrum Protect Plus ports" caption-side="bottom"}
+{: caption="Table 11. IBM Spectrum Protect Plus ports" caption-side="bottom"}
+
+## Ports for VMware Aria Operations and VMware Aria Operations for Logs for NSX-V instances - deprecated
+{: #vmwaresol_ports-vmware-aria-nsx-v}
+
+The following table provides information about the VMware Aria Operations and VMware Aria Operations for Logs ports when VMware Aria Operations is deployed in a vCenter Server with NSX-V instance.
+{: deprecated}
+
+| Source | Subnet, IP range | Target | Subnet, IP range | Port | Protocol | Purpose | Service |
+|:------ |:---------------- |:------ |:---------------- |:---- |:-------- |:------- |:------- |
+| ESXi host | Private primary subnet | VMware Aria Operations | New subnet ordered in private VLAN | 514 | UDP | Remote syslog | Syslog |
+| vCenter Server | Infrastructure VMs | VMware Aria Operations | New subnet ordered in private VLAN | 514 | UDP | Remote syslog | Syslog |
+| Local address `192.168.100.3` | Local address | VMware Aria Operations | New subnet ordered in private VLAN | 514 | UDP | Remote syslog | Syslog |
+| VMware Aria Operations | New subnet ordered in private VLAN | Windows Active Directory | Private primary subnet \n Infrastructure VMs| 53 | TCP and UDP | Use Windows DNS service | DNS |
+| VMware Aria Operations | New subnet ordered in private VLAN | vCenter Server | Infrastructure VMs | 443 | TCP | VMware Aria Operations configuration | HTTPS |
+| VMware Aria Operations | New subnet ordered in private VLAN | NSX Manager | Infrastructure VMs | 443 | TCP | VMware Aria Operations configuration | HTTPS |
+| NSX Manager | Infrastructure VMs | VMware Aria Operations | New subnet ordered in private VLAN | 514 | UDP | Remote syslog | Syslog |
+| Management edge private IP | Infrastructure VMs | VMware Aria Operations | New subnet ordered in private VLAN | 514 | UDP | Remote syslog | Syslog |
+| Customer-nsx-edge private IP | Customer edge gateway private | VMware Aria Operations | New subnet ordered in private VLAN | 514 | UDP | Remote syslog | Syslog |
+| IBM CloudDriver | Private primary subnet \n Infrastructure VMs | VMware Aria Operations | New subnet ordered in private VLAN | 22 | TCP | Set up and configure VMware Aria Operations | SSH |
+| IBM CloudDriver | Private primary subnet \n Infrastructure VMs | VMware Aria Operations | New subnet ordered in private VLAN | 443 | TCP | Set up and configure VMware Aria Operations | HTTPS |
+| Windows Active Directory | Private primary subnet \n Infrastructure VMs | VMware Aria Operations | New subnet ordered in private VLAN | 9543 | TCP | Set up and configure VMware Aria Operations | |
+{: caption="Table 12. VMware Aria Operations ports for NSX-V instances - Deprecated" caption-side="bottom"}

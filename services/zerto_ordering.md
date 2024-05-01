@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-02-06"
+lastupdated: "2024-04-25"
 
 keywords: Zerto, Zerto replication billing, order Zerto
 
@@ -18,9 +18,9 @@ subcollection: vmwaresolutions
 # Ordering Zerto
 {: #zerto_ordering}
 
-You can include the Zerto service with a new VMware vCenter Server® instance or add the service to your existing instance.
+You can include the Zerto service with a new {{site.data.keyword.vcf-auto}} instance or add the service to your existing instance.
 
-Zerto v9.5u1 does not support VMware vSphere 6.5 and 6.7. However, you can still order stand-alone licenses for existing vSphere 6.x instances.
+Zerto v9.5u1 does not support VMware vSphere 6.5 and 6.7. However, you can still order stand-alone licenses for existing instances with vSphere 6.x.
 {: restriction}
 
 ## Billing for Zerto replication
@@ -35,7 +35,7 @@ Before you order Zerto, ensure that your {{site.data.keyword.cloud_notm}} accoun
 
 To view your Zerto usage charges, follow these steps:
 
-1. Go to the [{{site.data.keyword.cloud_notm}} Billing and Usage](https://cloud.ibm.com/billing/usage) page.
+1. Go to the {{site.data.keyword.cloud_notm}} [Usage](/billing/usage) page.
 2. From the **Filter by group** list, select **VMware Solutions**.
 
 ## Ordering Zerto for a new instance
@@ -53,7 +53,7 @@ To view your Zerto usage charges, follow these steps:
 3. On the **Add services** page, locate the **Zerto** service in the **Data resiliency and migration** section and toggle its switch on.
 4. Click **Edit** to review and specify the configuration information, then click **Save**.
 
-If you add Zerto to a vCenter Server instance that has a VMware® ESXi™ server that is in maintenance mode, you must use the Zerto Virtual Manager (ZVM) console. Use the pre-populated Zerto Virtual Replication Appliance (VRA) IP address to manually deploy the VRA virtual machine (VM).
+If you add Zerto to a {{site.data.keyword.vcf-auto-short}} instance that has a VMware® ESXi™ server that is in maintenance mode, you must use the Zerto Virtual Manager (ZVM) console. Use the pre-populated Zerto Virtual Replication Appliance (VRA) IP address to manually deploy the VRA virtual machine (VM).
 {: important}
 
 ## Considerations for ordering Zerto

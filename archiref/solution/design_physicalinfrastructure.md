@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2023
+  years:  2016, 2024
 
-lastupdated: "2023-09-11"
+lastupdated: "2024-04-17"
 
 subcollection: vmwaresolutions
 
@@ -20,7 +20,7 @@ The physical infrastructure consists of the following components:
 * **Physical storage** - The physical storage provides the raw storage capacity that is used by the virtualization infrastructure. Storage components are provided either by {{site.data.keyword.cloud_notm}} bare metal servers or by shared Network Attached Storage (NAS) array that uses NFS v3.
 * **Physical network** - The physical network provides the network connectivity into the environment that is then used by the network virtualization. The network is provided by the {{site.data.keyword.cloud_notm}} services network and it includes extra services such as DNS and NTP.
 
-For more information about the physical components, see [vCenter Server BOM](/docs/vmwaresolutions?topic=vmwaresolutions-vc_bom).
+For more information about the physical components, see [{{site.data.keyword.vcf-auto-short}} BOM](/docs/vmwaresolutions?topic=vmwaresolutions-vc_bom).
 
 For more information about storage, see [Shared storage architecture](/docs/vmwaresolutions?topic=vmwaresolutions-storage-benefits#storage-benefits).
 
@@ -29,12 +29,12 @@ For more information about storage, see [Shared storage architecture](/docs/vmwa
 ## Physical compute design
 {: #design_physicalinfrastructure-host-design}
 
-The server configurations available in the solution meet or exceed the minimum requirements to install, configure, and manage vSphere ESXi™. Various configurations are available to satisfy different requirements. For the detailed listing of specifications used for the VMware® on {{site.data.keyword.cloud_notm}} solution, see the [vCenter Server BOM](/docs/vmwaresolutions?topic=vmwaresolutions-vc_bom).
+The server configurations available in the solution meet or exceed the minimum requirements to install, configure, and manage vSphere ESXi™. Various configurations are available to satisfy different requirements. For the detailed listing of specifications used for the VMware® on {{site.data.keyword.cloud_notm}} solution, see the [{{site.data.keyword.vcf-auto-short}} BOM](/docs/vmwaresolutions?topic=vmwaresolutions-vc_bom).
 
 The {{site.data.keyword.cloud_notm}} bare metal servers reside in the {{site.data.keyword.cloud_notm}}.
 {: note}
 
-Each vCenter Server instance begins with a 3- or 4-host deployment, depending on the choice of storage solution.
+Each {{site.data.keyword.vcf-auto}} instance begins with a 3- or 4-host deployment, depending on the choice of storage solution.
 
 The {{site.data.keyword.cloud_notm}} bare metal server has the following specifications:
 * CPU - Dual or Quad Intel® Xeon, varying core and speed configuration
@@ -110,7 +110,7 @@ As various connectivity options along with network routing options require that 
 
 Each physical host in this design has two redundant pairs of 10 Gbps or 25 Gbps Ethernet connections into each {{site.data.keyword.cloud_notm}} Top of Rack (ToR) switch (public and private). The adapters are set up as individual connections (unbonded) for a total of 4 x 10 Gbps or 4 x 25 Gbps connections. This configuration allows networking interface card (NIC) connections to work independently from each other.
 
-Removing physical network connectivity to the public or private network for the {{site.data.keyword.cloud_notm}} bare metal servers that are used within the vCenter Server offering is not possible. Physical ports on the internal NIC of the bare metal can be disabled, but no support exists for unplugging the cables.
+Removing physical network connectivity to the public or private network for the {{site.data.keyword.cloud_notm}} bare metal servers that are used within the Automated offering is not possible. Physical ports on the internal NIC of the bare metal can be disabled, but no support exists for unplugging the cables.
 
 ![Physical host connections](../../images/vcsv4radiagrams-ra-physical-host-connections.svg "Physical host connections"){: caption="Figure 3. Physical host connections" caption-side="bottom"}
 
@@ -149,9 +149,9 @@ Review the following table for a summary.
 | Private B | Portable | Single subnet assigned for vMotion |
 {: caption="Table 1. VLAN and subnet summary" caption-side="bottom"}
 
-In this design, all VLAN-backed hosts and VMs are configured to point to the {{site.data.keyword.cloud_notm}} back-end “private network” customer router (BCR) as the default route. While the vCenter Server instances enable the use of Software-Defined Networking (SDN), network overlays created within a VMware instance that include routing to internal subnets are not known by the {{site.data.keyword.cloud_notm}} managed routers.
+In this design, all VLAN-backed hosts and VMs are configured to point to the {{site.data.keyword.cloud_notm}} back-end “private network” customer router (BCR) as the default route. While the Automated instances enable the use of Software-Defined Networking (SDN), network overlays created within a VMware instance that include routing to internal subnets are not known by the {{site.data.keyword.cloud_notm}} managed routers.
 
-If you want to route between the overlay and underlay, you must deploy an IBM firewall device for the particular default private VLAN when the vCenter Server instance is deployed. This device allows the insertion of static routes and dynamic routing protocol peering with the overlay networking devices to allow routing between the underlay and overlay.
+If you want to route between the overlay and underlay, you must deploy an IBM firewall device for the particular default private VLAN when the Automated instance is deployed. This device allows the insertion of static routes and dynamic routing protocol peering with the overlay networking devices to allow routing between the underlay and overlay.
 
 The private network connections are configured to use a jumbo frame MTU size of 9000 to improve performance for large data transfers, such as storage and vMotion. This value is the maximum MTU that is allowed within VMware and by {{site.data.keyword.cloud_notm}}. The public network connections use a standard Ethernet MTU of 1500. This value must be maintained as any changes might cause packet fragmentation over the internet.
 
@@ -170,7 +170,7 @@ The vSphere ESXi hypervisor is installed in a persistent location. As a result, 
 
 This design allows for the option of using either VMware vSAN or shared network-attached storage as the primary datastore for VMs. For VMware vSAN, it is configured by using an all–flash configuration. This design allows for several configuration options, including 2U and 4U chassis, various numbers of disks, and various disk sizes. All configurations use two vSAN disk groups, with one solid-state disk (SSD) for cache and one or more SSDs for capacity. All drives that are allocated for vSAN consumption are configured in single-disk RAID 0.
 
-For more information about the supported configurations, see [vCenter Server BOM](/docs/vmwaresolutions?topic=vmwaresolutions-vc_bom).
+For more information about the supported configurations, see [{{site.data.keyword.vcf-auto-short}} BOM](/docs/vmwaresolutions?topic=vmwaresolutions-vc_bom).
 
 ### Shared File-level storage across hosts
 {: #design_physicalinfrastructure-shared-storage}
@@ -190,5 +190,5 @@ For more information about the shared NAS used in this solution, see [Shared sto
 ## Related links
 {: #design_physicalinfrastructure-related}
 
-* [vCenter Server BOM](/docs/vmwaresolutions?topic=vmwaresolutions-vc_bom)
+* [{{site.data.keyword.vcf-auto-short}} BOM](/docs/vmwaresolutions?topic=vmwaresolutions-vc_bom)
 * [Shared storage architecture](/docs/vmwaresolutions?topic=vmwaresolutions-storage-benefits#storage-benefits)

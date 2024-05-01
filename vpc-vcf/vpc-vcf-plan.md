@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2023
+  years:  2023, 2024
 
-lastupdated: "2023-12-14"
+lastupdated: "2024-04-03"
   
 keywords: vmware cloud foundation, IBM Cloud, vpc
 
@@ -15,13 +15,13 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Planning for VMware Cloud Foundation instances
+# Planning for {{site.data.keyword.vcf-vpc-short}} instances
 {: #vpc-vcf-plan}
 
 ## {{site.data.keyword.cloud_notm}} account requirements
 {: #vpc-vcf-plan-acc}
 
-To order a VMware Cloud Foundation™ instance, you must have a **Pay As You Go** {{site.data.keyword.cloud}} account. The cost of the resources that are ordered are billed to that {{site.data.keyword.cloud}} account. For more information, see [Upgrading to a Pay-As-You-Go account](/docs/account?topic=account-upgrading-account#upgrade-paygo).
+To order a {{site.data.keyword.vcf-vpc}} instance, you must have a **Pay As You Go** {{site.data.keyword.cloud}} account. The cost of the resources that are ordered are billed to that {{site.data.keyword.cloud}} account. For more information, see [Upgrading to a Pay-As-You-Go account](/docs/account?topic=account-upgrading-account#upgrade-paygo).
 
 ## Required permissions for managing {{site.data.keyword.cloud_notm}} resources
 {: #vpc-vcf-plan-permission}
@@ -39,10 +39,10 @@ Ensure that the following requirements are met:
 * Your account meets the [required IAM permissions](/docs/dns-svcs?topic=dns-svcs-iam) for {{site.data.keyword.cloud_notm}} DNS Services.
 * (Optional) Your account meets the [required IAM permissions](/docs/log-analysis?topic=log-analysis-work_iam) for {{site.data.keyword.cloud_notm}} Log Analysis service.
 
-## {{site.data.keyword.cloud_notm}} region and zone availability for VMware Cloud Foundation deployment
+## {{site.data.keyword.cloud_notm}} region and zone availability for {{site.data.keyword.vcf-vpc-short}} deployment
 {: #vpc-vcf-plan-region}
 
-The ESXi servers in VMware Cloud Foundation are built on Bare Metal Servers on {{site.data.keyword.vpc_short}}. Therefore, you can deploy instances only in {{site.data.keyword.cloud}} data centers that meet the requirements for {{site.data.keyword.vpc_short}} bare metal server profiles that are supported by VMware Cloud Foundation.
+The ESXi servers in {{site.data.keyword.vcf-vpc-short}} are built on Bare Metal Servers on {{site.data.keyword.vpc_short}}. Therefore, you can deploy instances only in {{site.data.keyword.cloud}} data centers that meet the requirements for {{site.data.keyword.vpc_short}} bare metal server profiles that are supported by {{site.data.keyword.vcf-vpc-short}}.
 
 The following Bare Metal Server profiles are supported:
 * `bx2d-metal-96×384`
@@ -53,4 +53,4 @@ For more information about {{site.data.keyword.vpc_short}} bare metal servers by
 ## {{site.data.keyword.cloud_notm}} quotas and service limits
 {: #vpc-vcf-plan-limits}
 
-When you plan your VMware Cloud Foundation deployment, you also need to consider [quotas and service limits](/docs/vpc?topic=vpc-quotas) for {{site.data.keyword.vpc_short}} and the resources available. For example, for bare metal server on {{site.data.keyword.vpc_short}}, the limitation is 25 per account by default. To increase a quota for a resource, open an IBM Support ticket by following the steps in [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support).
+When you plan your {{site.data.keyword.vcf-vpc-short}} deployment, you also need to consider [quotas and service limits](/docs/vpc?topic=vpc-quotas) for {{site.data.keyword.vpc_short}} and the resources available. For example, for bare metal server on {{site.data.keyword.vpc_short}}, the limitation is 25 per account by default. To increase a quota for a resource, open an IBM Support ticket by following the steps in [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support).

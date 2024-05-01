@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2022, 2023
+  years:  2022, 2024
 
-lastupdated: "2023-03-24"
+lastupdated: "2024-04-26"
 
 subcollection: vmwaresolutions
 
@@ -13,13 +13,13 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Fortinet FortiGate virtual machine (VM) implementation and management
+# Fortinet FortiGate VM implementation and management
 {: #fortigate-implementation}
 
 ## Planning
 {: #fortigate-implementation-planning}
 
-FortiGate® VM is available in several sizes and licensing options. The license sizes limit the number of virtual CPUs that you can operate. For example, FortiGate–VM08 entitles you to up to 8 virtual CPUs. The following license bundles are available.
+The FortiGate® virtual machine (VM) is available in several sizes and licensing options. The license sizes limit the number of virtual CPUs that you can operate. For example, FortiGate–VM08 entitles you to up to 8 virtual CPUs. The following license bundles are available.
 
 * Standard FW
 * Standard FW + Unified Threat Management

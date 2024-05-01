@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-02-06"
+lastupdated: "2024-04-09"
 
 keywords: KMIP for VMware, KMIP stand-alone, tech specs KMIP
 
@@ -20,7 +20,7 @@ subcollection: vmwaresolutions
 The Key Management Interoperability Protocol (KMIP™) for VMware® service provides a highly available service to manage encryption keys that are used by VMware in {{site.data.keyword.cloud}}. This service offers runtime capability to allow customers to create, retrieve, activate, revoke, and destroy the encryption keys. It also provides management capability to maintain the associations between the client credentials and the encryption keys.
 {: shortdesc}
 
-The KMIP for VMware service is available as a stand-alone service without being associated to a VMware instance. Each instance of the service can serve one or more VMware vCenter Server® or VMware vSphere® instances.
+The KMIP for VMware service is available as a stand-alone service without being associated to a VMware instance. Each instance of the service can serve one or more {{site.data.keyword.vcf-auto}} or {{site.data.keyword.vcf-flex}} instances.
 
 The supported client applications are:
 * vCenter Server 6.7, 7.0, and 8.0
@@ -34,7 +34,7 @@ For more information about resource requirements and planning for KMIP for VMwar
 The following specifications are included with the KMIP for VMware service:
 
 * A VMware-compatible KMIP
-* Two managed services - [Key Protect](https://cloud.ibm.com/catalog/services/key-protect) and [Hyper Protect Crypto Services](https://cloud.ibm.com/catalog/services/hyper-protect-crypto-services)
+* Two managed services - [Key Protect](/catalog/services/key-protect) and [Hyper Protect Crypto Services](/catalog/services/hyper-protect-crypto-services)
 * Available in multiple geographic regions worldwide
 * Highly available KMIP network service endpoints provided in each region
 

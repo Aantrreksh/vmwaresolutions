@@ -4,9 +4,9 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-01-29"
+lastupdated: "2024-04-23"
 
-keywords: vCenter Server order instance, order vCenter Server licenses
+keywords: automated order instance, automated licenses
 
 subcollection: vmwaresolutions
 
@@ -14,28 +14,15 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Licensing
+# Licensing (BYOL only)
 {: #vc_orderinginstance-licensing-settings}
 
-Specify the licensing options for the VMware® components in the instance.
+{{site.data.content.attnnote-byol}}
 
-* VMware vCenter Server® Standard 7.0 or later
-* VMware vSphere® Enterprise Plus 7.0
-* VMware NSX® 4.1 (Data Center SP Base, Data Center SP Professional, Data Center SP Advanced, or Data Center SP Enterprise Plus)
-
-Small differences exist between NSX-T Data Center and Data Center SP editions. For more information, see the [VMware NSX documentation](https://docs.vmware.com/en/VMware-NSX/index.html){: external}.
-{: note}
-
-For Business Partner users, the vCenter Server license (Standard edition), the vSphere license (Enterprise Plus edition), and the VMware NSX® license are included and purchased on your behalf. You need to specify only the edition for the NSX license.
-
-For users who are not Business Partners, use the IBM-provided VMware licenses for these components, which are included with purchase.
-
-Bring Your Own License (BYOL) is no longer supported except for migrations or upgrades of existing BYOL clusters. Select **I will provide** and enter your own license key only if you are performing an upgrade or migration of an existing BYOL cluster.
-{: important}
+If you are a BYOL user, provide your own license keys for VMware vCenter Server® (Enterprise Plus edition), VMware vSphere® (Enterprise Plus edition), and VMware NSX® (Data Center SP Enterprise Plus). Toggle the **BYOL** switch to **Enabled** and enter your license keys.
 
 ## Related links
 {: #vc_orderinginstance-licensing-related}
 
 * [Consolidated cluster](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-consold-cluster)
-* [Procedure to order vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-procedure)
-* [VMware NSX documentation](https://docs.vmware.com/en/VMware-NSX/index.html){: external}
+* [Procedure to order Automated instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-procedure)

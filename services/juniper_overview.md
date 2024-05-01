@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2024
 
-lastupdated: "2024-02-06"
+lastupdated: "2024-04-12"
 
 keywords: Juniper vSRX, manage Juniper vSRX, Juniper vSRX virtual security appliance, Juniper virtual security appliance, Juniper vSRX console
 
@@ -65,7 +65,7 @@ The following components are ordered and included in the Juniper vSRX service.
 ### High availability
 {: #juniper-overview-specs-ha}
 
-For installations on the management cluster, the two vSRX nodes are deployed with DRS rules. This deployment ensures that the VMs are located on two physically separate hosts and do not migrate, that is, they’re pinned. 
+For installations on the management cluster, the two vSRX nodes are deployed with DRS rules. This deployment ensures that the VMs are located on two physically separate hosts and do not migrate, that is, they’re pinned.
 
 If a host must be replaced or redeployed, you must adjust the preconfigured DRS rules before you can proceed.
 {: important}
@@ -116,8 +116,8 @@ For more information about extra configuration options that you might want to in
 {: #juniper-overview-related-links}
 
 * [Managing Juniper vSRX](/docs/vmwaresolutions?topic=vmwaresolutions-juniper-managing)
-* [Ordering services for vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices)
-* [Viewing services for vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_viewingservices)
-* [Deleting services from vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_deletingservices)
+* [Ordering services for {{site.data.keyword.vcf-auto-short}} instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices)
+* [Viewing services for {{site.data.keyword.vcf-auto-short}} instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_viewingservices)
+* [Deleting services from {{site.data.keyword.vcf-auto-short}} instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_deletingservices)
 * [Juniper vSRX Virtual Firewall](https://www.juniper.net/us/en/products/security/srx-series/vsrx-virtual-firewall.html){: external}
 * [Overview of the available virtual SRX models, vSRX, and vSRX 3.0](https://supportportal.juniper.net/s/article/Overview-of-the-available-virtual-SRX-models-vSRX-and-vSRX-3-0?language=en_US){: external}

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2023
+  years:  2016, 2024
 
-lastupdated: "2023-09-26"
+lastupdated: "2024-04-29"
 
 keywords: F5 BIG-IP, F5 install, tech specs F5
 
@@ -29,12 +29,12 @@ F5 BIG-IP on {{site.data.keyword.cloud_notm}} is a non-IBM product that is offer
 You can install more than one instance of this service as needed.
 {: shortdesc}
 
-* For vCenter Server with NSX-T™ instances, F5 BIG-IP is supported for NSX-T 3.1 or later and for VMware vSphere® 7.0.
-* For vCenter Server with NSX-V instances V4.7 and earlier, F5 BIG-IP is supported for vSphere 6.7.
+* For {{site.data.keyword.vcf-auto-short}} with NSX-T™ instances, F5 BIG-IP is supported for NSX-T 3.1 or later and for VMware vSphere® 7.0.
+* For {{site.data.keyword.vcf-auto-short}} with NSX-V instances V4.7 and earlier, F5 BIG-IP is supported for vSphere 6.7.
 
 {{site.data.content.para-promotion-services}}
 
-The F5 BIG-IP version available for deployment is 17.1.
+The F5 BIG-IP version available for deployment is 17.1.1.
 {: note}
 
 ## Technical specifications for F5 BIG-IP
@@ -112,7 +112,7 @@ Due to these requirements, you must plan for the space that is needed for F5 BIG
 ## F5 BIG-IP order example
 {: #f5_considerations-example}
 
-You can order a VMware® vCenter Server **Small** instance with two ESXi servers with the following configuration: 16 cores at 2.10 GHz each with 128 GB RAM. For F5 BIG-IP, you select the **Best** license model and a value of 5 Gbps for **Maximum Bandwidth**.
+You can order a {{site.data.keyword.vcf-auto-short}} **Small** instance with two ESXi servers with the following configuration: 16 cores at 2.10 GHz each with 128 GB RAM. For F5 BIG-IP, you select the **Best** license model and a value of 5 Gbps for **Maximum Bandwidth**.
 
 In this case, a single BIG-IP VM requires on each server:
 
@@ -123,7 +123,7 @@ In total that is 33.6 GHz CPU and 32 GB RAM for two BIG-IP VMs.
 
 Each ESXi server has a capacity of 16 cores * 2.1 GHz = 33.6 GHz. Therefore, the first two requirements are met if both servers are active and there is at least 16.8 GHz of CPU and 16 GB RAM available on each server.
 
-However, by default, vSphere HA reserves 50% of CPU and RAM for failover on vCenter Server instances that were initially deployed with two ESXi servers. For this example, the following configuration is available:
+However, by default, vSphere HA reserves 50% of CPU and RAM for failover on Automated instances that were initially deployed with two ESXi servers. For this example, the following configuration is available:
 
 `50% of 2 * 16 cores * 2.1 GHz = 33.6 GHz available`
 
@@ -137,5 +137,5 @@ In this case, the F5 BIG-IP installation might fail, unless at least one ESXi se
 * [Ordering F5 BIG-IP](/docs/vmwaresolutions?topic=vmwaresolutions-f5_ordering)
 * [Managing F5 BIG-IP](/docs/vmwaresolutions?topic=vmwaresolutions-managing_f5)
 * [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support)
-* [FAQ](/docs/vmwaresolutions?topic=vmwaresolutions-faq-vmwaresolutions)
+* [General FAQ about VCF for Classic](/docs/vmwaresolutions?topic=vmwaresolutions-faq-vmwaresolutions)
 * [F5 website](https://www.f5.com/){: external}

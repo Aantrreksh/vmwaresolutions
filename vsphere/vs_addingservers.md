@@ -2,11 +2,11 @@
 
 copyright:
 
-  years:  2023
+  years:  2023, 2024
 
-lastupdated: "2023-09-21"
+lastupdated: "2024-04-20"
 
-keywords: vmware vSphere add host, add server vmware vSphere
+keywords: flexible add host, add server flexible
 
 subcollection: vmwaresolutions
 
@@ -14,29 +14,31 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Adding ESXi servers to VMware vSphere instances
+# Adding ESXi servers to Flexible instances
 {: #vs_addingservers}
 
-You can expand the capacity of your VMware vSphere® instance according to your business needs by adding VMware ESXi™ servers.
+You can expand the capacity of your {{site.data.keyword.vcf-flex}} instance according to your business needs by adding VMware ESXi™ servers.
 
-## Before you add ESXi servers to VMware vSphere instances
+## Before you add ESXi servers to Flexible instances
 {: #vs_addingservers-prereq}
 
 * For existing instances with VMware vSphere® 6.5 or 6.7, you cannot add ESXi servers. To add ESXi servers, upgrade your vSphere® software to 7.0. For more information, see [Upgrading VMware vSphere software from vSphere 6.5 or 6.7 to 7.0](/docs/vmwaresolutions?topic=vmwaresolutions-vs_vsphere_70_upgrade).
 * For existing instances with vSphere 7.0u2, you can add only ESXi servers with vSphere 7.0u3.
-* You can add up to 59 ESXi servers to a VMware vSphere instance.
+* You can add up to 59 ESXi servers to a Flexible instance.
 
-For VMware vSphere instances with vSAN:
+{{site.data.content.attnnote-addhost-byol}}
+
+For Flexible instances with vSAN:
 * If you are adding ESXi servers to instances provisioned after 24 August 2023, the servers are provisioned with mirrored M.2 boot drives.
 * If you are adding ESXi servers to instances provisioned before 24 August 2023, the servers are provisioned with mirrored M.2 boot drives only if you select a new bare metal server configuration.
 
-## Procedure to add ESXi servers to VMware vSphere instances
+## Procedure to add ESXi servers to Flexible instances
 {: #vs_addingservers-procedure}
 {: help}
 {: support}
 
-1. From the {{site.data.keyword.vmwaresolutions_full}} console, click **Resources > VMware vSphere** from the left navigation pane.
-2. In the **VMware vSphere** table, click the instance for which you want to expand capacity.
+1. From the {{site.data.keyword.vmwaresolutions_full}} console, click **Resources > {{site.data.keyword.vcf-classic-short}}** from the left navigation pane.
+2. In the **{{site.data.keyword.vcf-classic}}** table, click the Flexible instance for which you want to expand capacity.
 3. Click the **Infrastructure** tab.
 4. In the **ESXi servers** section, click **Add**.
 5. On the **Add ESXi server** side panel, enter the number of bare metal servers that you want to add.
@@ -51,7 +53,7 @@ For VMware vSphere instances with vSAN:
    * If you want to customize the hostnames prefix individually, toggle the **Configure hostnames individually** switch on and enter the hostname prefix.
 8. In the **Details** section, review the estimated pricing, ensure that the account to be charged is correct, and review and accept the terms. Then, click **Add**.
 
-## Results after you add ESXi servers to VMware vSphere instances
+## Results after you add ESXi servers to Flexible instances
 {: #vs_addingservers-results}
 
 1. You might experience a slight delay on the console while the instance status changes from **Available** to **Modifying**. Allow the operation to complete before you make more changes to the instance.
@@ -61,7 +63,7 @@ For VMware vSphere instances with vSAN:
 ## Related links
 {: #vs_addingservers-related}
 
-* [Procedure to order VMware vSphere instances](/docs/vmwaresolutions?topic=vmwaresolutions-vs_orderinginstances-procedure)
-* [Viewing VMware vSphere instances](/docs/vmwaresolutions?topic=vmwaresolutions-vs_viewinginstances)
-* [Requirements for VMware vSphere](/docs/vmwaresolutions?topic=vmwaresolutions-vs_orderinginstances-req)
+* [Procedure to order Flexible instances](/docs/vmwaresolutions?topic=vmwaresolutions-vs_orderinginstances-procedure)
+* [Viewing Flexible instances](/docs/vmwaresolutions?topic=vmwaresolutions-vs_viewinginstances)
+* [Requirements for Flexible instances](/docs/vmwaresolutions?topic=vmwaresolutions-vs_orderinginstances-req)
 * [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support)

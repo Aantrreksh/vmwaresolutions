@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2022
+  years:  2016, 2024
 
-lastupdated: "2022-07-26"
+lastupdated: "2024-04-03"
 
 keywords: regulated workload order, order regulated workloads, order vmware regulated workload instance
 
@@ -24,4 +24,4 @@ You can also add the provisioned resources to the {{site.data.keyword.cloud_notm
 ## Related links
 {: #vrw-orderinginstance-summary-related}
 
-* [Procedure to order VMware Regulated Workloads](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-orderinginstance-procedure)
+* [Procedure to order {{site.data.keyword.rw}}](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-orderinginstance-procedure)

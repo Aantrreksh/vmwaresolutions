@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2023
+  years:  2023, 2024
 
-lastupdated: "2023-12-01"
+lastupdated: "2024-04-18"
 
 subcollection: vmwaresolutions
 
@@ -43,8 +43,6 @@ vSAN can be employed as follows:
 * A single vSAN data store is created from all storage.
 
 VMware Cloud Foundation deploys the vSAN automatically for you and you do not need to apply any specific configurations when deploying.
-
-The available vSAN features depend on the license edition that you select when you order the instance. For more information, see [VMware vSAN edition comparison](/docs/vmwaresolutions?topic=vmwaresolutions-solution-appendix#solution-appendix-vsan-editions).
 
 ## Virtual network setup for vSAN
 {: #vpc-vcf-storage-virtual-net-setup}

@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-02-02"
+lastupdated: "2024-04-29"
 
 subcollection: vmwaresolutions
 
@@ -32,14 +32,14 @@ In this step, the following tasks are required to configure the Veeam backup ser
 {: #veeam-cr-sag-vbrcfg-fw}
 
 1. From the jump server, use the Remote Desktop Protocol (RDP) client to access the Veeam backup server.
-2. On the Veeam backup server, open a PowerShell window with "Run as administrator" option.
+2. On the Veeam backup server, open a PowerShell window with **Run as administrator** option.
 3. Run the following command `New-NetFirewallRule -DisplayName "WinRM (HTTPS-In)" -Direction Inbound -Action Allow -Protocol TCP -LocalPort 5986` to create the required firewall rule.
 
 ## Creating a service account for ansible automation
 {: #veeam-cr-sag-vbrcfg-sa}
 
 1. From the jump server, use the RDP client to access the Veeam backup server.
-2. On the Veeam backup server, open a PowerShell window with "Run as administrator" option.
+2. On the Veeam backup server, open a PowerShell window with **Run as administrator** option.
 3. Use the following commands and enter a password at the prompt:
 
    ```text

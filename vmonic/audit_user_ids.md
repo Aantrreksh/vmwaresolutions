@@ -4,7 +4,7 @@ copyright:
 
   years: 2016, 2024
 
-lastupdated: "2024-02-06"
+lastupdated: "2024-04-30"
 
 keywords: user IDs vCenter, PSC user, user ID service
 
@@ -18,24 +18,24 @@ subcollection: vmwaresolutions
 # IBM user IDs
 {: #audit_user_ids}
 
-{{site.data.keyword.vmwaresolutions_full}} maintains a set of users in your account for use by {{site.data.keyword.cloud_notm}} automation when you run operations such as adding hosts, clusters, or storage to your VMware® instance. Users in your account can also be used for installation and configuration of services by {{site.data.keyword.cloud_notm}} services automation. Review the following sections for {{site.data.keyword.cloud_notm}} automation user IDs.
+{{site.data.keyword.vmwaresolutions_full}} maintains a set of users in your account for use by {{site.data.keyword.cloud_notm}} automation when you run operations such as adding hosts, clusters, or storage to your provisioned instance. Users in your account can also be used for installation and configuration of services by {{site.data.keyword.cloud_notm}} services automation. Review the following sections for {{site.data.keyword.cloud_notm}} automation user IDs.
 
 VMware instance operations fail if IBM user IDs are deleted, disabled, or if their passwords are changed.
 {: attention}
 
-## vCenter user IDs
+## vCenter Server user IDs
 {: #audit_user_ids-vcenter-psc}
 
-{{site.data.keyword.vmwaresolutions_short}} uses the following user IDs to add an identity source, which is embedded by default, into vCenter.
+{{site.data.keyword.vmwaresolutions_short}} uses the following user IDs to add an identity source, which is embedded by default, into VMware vCenter Server®.
 
 | User     | User ID      | Method | Description |
 |:---------|:-------------|:-------|:------------|
-| IBM      | `root`       | SSH    | Used for VMware configuration such as setting up VMware High Availability and creating distributed switches. Used post deployment to pair primary and secondary VMware vCenter Server® instances. |
+| IBM      | `root`       | SSH    | Used for VMware configuration such as setting up VMware High Availability and creating distributed switches. Used post deployment to pair primary and secondary {{site.data.keyword.vcf-auto}} instances. |
 | IBM      | `automation@root_domain`  \n (Active Directory™ user) | HTTP | Used post deployment to add and remove hosts and clusters and to deploy and configure virtual machines (VMs) for services. |
 | Customer | `administrator@vsphere.local` | HTTP | Created for customer use only. |
-{: caption="Table 1. vCenter and Platform Services Controller user IDs" caption-side="bottom"}
+{: caption="Table 1. vCenter Server and Platform Services Controller user IDs" caption-side="bottom"}
 
-HTTP is used for vCenter setup, configuration, and VMware operations such as adding hosts, clusters, or storage for vCenter management of resources.
+HTTP is used for vCenter Server setup, configuration, and VMware operations such as adding hosts, clusters, or storage for vCenter management of resources.
 {: note}
 
 ## NSX Manager user IDs
@@ -43,7 +43,7 @@ HTTP is used for vCenter setup, configuration, and VMware operations such as add
 
 | User     | User ID      | Description |
 |:---------|:-------------|:------------|
-| IBM      | `automation@root_domain`  \n (Active Directory user) | Used post deployment to manage NSX VTEP IP addresses, manage host and cluster configuration when you add and remove hosts and clusters. Also used to manage ESG configuration for services that require public network access for licensing, activation, or usage reporting. |
+| IBM      | `automation@root_domain`  \n (Active Directory user) | Used post deployment to manage NSX VTEP IP addresses, manage host, and cluster configuration when you add and remove hosts and clusters. Also used to manage ESG configuration for services that require public network access for licensing, activation, or usage reporting. |
 | Customer | `admin` | Created for customer use only. |
 {: caption="Table 2. NSX Manager user IDs" caption-side="bottom"}
 

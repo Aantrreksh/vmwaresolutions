@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-01-09"
+lastupdated: "2024-04-12"
 
 keywords: Zerto, Zerto components, tech specs Zerto
 
@@ -20,7 +20,7 @@ subcollection: vmwaresolutions
 
 Zerto on {{site.data.keyword.cloud}} integrates replication and disaster recovery capabilities into the deployment offerings to protect and recover data in your VMware® virtual environment on {{site.data.keyword.cloud}}. Zerto on {{site.data.keyword.cloud_notm}} is a non-IBM product that is offered under terms and conditions from Zerto, not IBM.
 
-Zerto is supported on VMware vCenter Server® instances that meet the following requirements:
+Zerto is supported on {{site.data.keyword.vcf-auto}} instances that meet the following requirements:
 
 * VMware NSX-T™ 3.1 or later
 * VMware vSphere® 7.0

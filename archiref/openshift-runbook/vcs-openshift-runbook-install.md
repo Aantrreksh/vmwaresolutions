@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2024
 
-lastupdated: "2024-01-30"
+lastupdated: "2024-04-29"
 
 subcollection: vmwaresolutions
 
@@ -333,7 +333,7 @@ Remove the dns module section as the file expects to use AWS route 53 for DNS. T
    `vi /opt/ocpinstall/installer/upi/vsphere/main.tf`
 2. Type `i` to enter insert mode.
 3. Scroll down the file until you reach the DNS module section.
-4. Delete the entire section shown in "File 3: Section to be removed".
+4. Delete the entire section shown in **File 3: Section to be removed**.
 5. Press Esc, then type `:wq` to save the file and exit the vi editor.
 
 ```bash

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2022
+  years:  2016, 2024
 
-lastupdated: "2022-08-26"
+lastupdated: "2024-04-26"
 
 subcollection: vmwaresolutions
 
@@ -59,7 +59,7 @@ The following table shows the ports and protocols that are required for each com
 | Index datastore primary nodes | 9200, 9300, 5601, 443 |
 {: caption="Table 1. Ports and protocols" caption-side="bottom"}
 
-The following diagram shows the network topology with the Caveonix portable private subnet that is associated with Private VLAN A. You are responsible for managing the IP address space for this subnet. If needed, you can scale out from the “all-in-one” deployment model, through the partially distributed model, and to the fully distributed model.
+The following diagram shows the network topology with the Caveonix portable private subnet that is associated with Private VLAN A. You are responsible for managing the IP address space for this subnet. If needed, you can scale out from the all-in-one deployment model, through the partially distributed model, and to the fully distributed model.
 
 ![Network diagram](../../images/caveonix-network.svg "Network diagram"){: caption="Figure 2. Network diagram" caption-side="bottom"}
 
@@ -70,13 +70,13 @@ The IP Subnet, VLAN assignments are described in the following table.
 | Public | Primary | Assigned to physical hosts for public network access. Not used upon initial deployment. |
 | Public | Portable | Assigned for uplink and NAT usage on `customer-nsx-esg`. |
 | Public | Portable | Assigned for uplink NAT usage on `mgmt-nsx-esg`. |
-| Public | Portable | Assigned for uplink NAT usage on `hcx-mgmt-esg`, if Hybridity Bundle selected. |
+| Public | Portable | Assigned for uplink NAT usage on `hcx-mgmt-esg`. |
 | Private A | Primary | Assigned to physical hosts assigned by {{site.data.keyword.cloud}}. Used by the management interface for vSphere management traffic. |
 | Private A | Portable | Assigned to VMs that function as management components. |
 | Private A | Portable | Assigned to NSX VTEP. |
-| Private A | Portable | Assigned to HCX for internal usage, if Hybridity bundle selected. |
+| Private A | Portable | Assigned to HCX for internal usage. |
 | Private A | Portable | Assigned for uplink usage on the customer-nsx-esg. |
-| Private A | Portable | Assigned to HCX, if Hybridity bundle selected. |
+| Private A | Portable | Assigned to HCX. |
 | Private A | Portable | Assigned to Zerto VRAs, if Zerto option selected. |
 | Private A | Portable | Assigned for Caveonix RiskForesight, if Caveonix option selected. |
 | Private B | Primary | Not used upon initial deployment. |

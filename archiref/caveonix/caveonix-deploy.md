@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2023
+  years:  2016, 2024
 
-lastupdated: "2023-11-07"
+lastupdated: "2024-04-26"
 
 subcollection: vmwaresolutions
 
@@ -84,7 +84,7 @@ Data storage has three tiers:
 
 The following table provides a summary of the deployments.
 
-|Deployment model | All-in-one | Partially distributed | Fully distributed |
+|Deployment model | All-in-one | Partially-distributed | Fully-distributed |
 |---|---|---|---|
 | Number of assets | 100 | 500 | 5,000 |
 | Online data generated in 30 days (TB) | 4 | 22 | 219 |

@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-01-31"
+lastupdated: "2024-04-29"
 
 subcollection: vmwaresolutions
 
@@ -83,7 +83,7 @@ The deployment approach is described in the following phases:
    * Using the {{site.data.keyword.vmwaresolutions_full}} console, [order a vCenter Server instance](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-procedure), which can include NFS or vSAN storage. You can use an existing instance if the instance has enough capacity.
    * Using the {{site.data.keyword.cloud_notm}} console, [order more private and public subnets](/docs/subnets?topic=subnets-getting-started) to be used by the {{site.data.keyword.redhat_openshift_notm}} cluster.
    * Download RHEL 8.0 ISO for the OS of the bastion or deployment node and the {{site.data.keyword.redhat_notm}} Enterprise Linux CoreOS (RHCOS) OVA image. This step is described in [Prerequisites for installation](/docs/vmwaresolutions?topic=vmwaresolutions-openshift-runbook-runbook-prereq-intro).
-   * Using govc, the OVA and ISO are uploaded to a datastore on the vCenter Server instance. This step is described in [Prerequisites for installation](/docs/vmwaresolutions?topic=vmwaresolutions-openshift-runbook-runbook-prereq-intro).
+   * Using `govc`, the OVA and ISO are uploaded to a datastore on the vCenter Server instance. This step is described in [Prerequisites for installation](/docs/vmwaresolutions?topic=vmwaresolutions-openshift-runbook-runbook-prereq-intro).
    * Add logical switches - Two logical switches are created; OpenShift-LS the network the OpenShift VMs are deployed onto and OpenShift-DLR-Transit, the uplink between the DLR and the Edge.
    * Add an ESG - An external services gateway (ESG) is a virtual appliance that provides North-South routing, and other network functions. In this architecture, the ESG is used for; routing, NAT, firewall, and load-balancing. As the ESGs are configured as active - passive pair, DRS anti-affinity rules are used to ensure that NSX Edges do not run on the same host. Static routes are used to direct traffic to either the internet or the IBM private Network. This step is described in [{{site.data.keyword.redhat_openshift_notm}} NSX Edge configuration](/docs/vmwaresolutions?topic=vmwaresolutions-openshift-runbook-runbook-nsxedge-intro).
    * Add a DLR - A distributed logical router (DLR) is a virtual appliance that contains the routing control plane and it distributes the data plane in kernel modules to each hypervisor host. The DLR provides East-West distributed routing and is the default gateway for the {{site.data.keyword.redhat_openshift_notm}} VMs that will be installed on the {{site.data.keyword.redhat_openshift_notm}} logical switch. The NSX DLR virtual machines are configured as an active - passive pair, and vSphere Distributed Resource Scheduler (DRS) anti-affinity rules are created to ensure that the DLR VMs do not run on the same host. This step is described in [{{site.data.keyword.redhat_openshift_notm}} NSX DLR configuration](/docs/vmwaresolutions?topic=vmwaresolutions-openshift-runbook-runbook-nsxdlr-intro).
@@ -99,5 +99,5 @@ The deployment approach is described in the following phases:
 
 * [Video - What is {{site.data.keyword.redhat_openshift_notm}}?](https://www.ibm.com/blog/what-is-openshift/){: external}
 * [{{site.data.keyword.redhat_openshift_notm}} 4 Release Update](https://www.youtube.com/watch?v=YJvTu8jC6CU){: external}
-* [Installing a cluster on vSphere with user-provisioned infrastructure](https://docs.openshift.com/container-platform/4.14/installing/installing_vsphere/installing-vsphere.html){: external}
+* [Installing a cluster on vSphere with user-provisioned infrastructure](https://docs.openshift.com/container-platform/4.14/installing/installing_vsphere/upi/installing-vsphere.html){: external}
 * [Getting started with {{site.data.keyword.cloud_notm}} Virtual Private Networking](/docs/iaas-vpn?topic=iaas-vpn-getting-started)

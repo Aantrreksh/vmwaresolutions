@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2023
+  years:  2023, 2024
 
-lastupdated: "2023-07-28"
+lastupdated: "2024-04-09"
 
 keywords: FAQ, license, BYOL
 
@@ -19,30 +19,13 @@ subcollection: vmwaresolutions
 
 Find answers to frequently asked questions about licensing.
 
-## What happens if the license key you provided is not correct?
-{: #faq_licensing-incorrect-license}
-{: faq}
-
-All license keys that you provide are validated to ensure that the following conditions are met:
-* They are correct for the corresponding VMware components.
-* They meet the minimum edition and CPU requirements of the VMware components.
-
-If the validation of any license key fails, you get a notification and you cannot proceed with the instance order.
-
-## Can you provide a license key with more than 8 CPUs?
-{: #faq_licensing-license-key}
-{: faq}
-
-Yes. For each VMware component, one license per CPU is required. Currently, all VMware vCenter Server® servers have two CPUs. Therefore, two licenses are required for each server. It is recommended that you provide a license key that can support the base instance and any expansion nodes that you want to add to the instance in the future.
-
 ## How are my service license charges being calculated?
 {: #faq_licensing-service-charges}
 {: faq}
 
-* For Caveonix RiskForesight™ on VMware Regulated Workloads or Security and Compliance Readiness Bundle, each server requires a service license.
-* For VMware HCX™, service licenses are charged per two CPUs. Dual servers require a single license each. Quad servers require two licenses each. For servers with more than 16 cores per CPU, an increase in the license charge occurs.
+* For Caveonix RiskForesight™ installed on {{site.data.keyword.rw}} or Security and Compliance Readiness Bundle, each server requires a service license.
 * For Entrust CloudControl™ and Entrust DataControl®, service licenses are charged per two CPUs. Dual servers require a single license each. Quad servers require two licenses each.
-* For VMware Aria® Operations™, license charges depend on the CPU type. Dual servers have different charges than Quad servers. For servers with more than 16 cores per CPU, an increase in the license charge occurs.
+* For VMware HCX™ and VMware Aria® Operations™, service licenses are included as part of the {{site.data.keyword.vcf-classic-short}} license bundle.
 * All other services have static service license charges that do not change based on the number of servers in the instance.
 
 ## Why is there a discrepancy in the supported number of VMs for VMware Aria Operations licenses?
@@ -55,10 +38,9 @@ This discrepancy is a result of VMware Aria Operations keys that are created for
 
 The discrepancy does not indicate any service or licensing problem for VMware Aria Operations and VMware Aria Operations™ for Logs. The service is fully licensed for all VMs on each vCenter Server host and continues to work properly.
 
-
 ## Related links
 {: #faq_licensing-related}
 
+* [FAQ about BYOL for VMware](/docs/vmwaresolutions?topic=vmwaresolutions-faq_byol)
 * [Accessing the console](/docs/vmwaresolutions?topic=vmwaresolutions-loginmethod)
 * [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support)
-* [FAQ about Bring Your Own License for VMware](/docs/vmwaresolutions?topic=vmwaresolutions-faq_byol)

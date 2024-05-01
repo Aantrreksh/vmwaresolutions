@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-03-26"
+lastupdated: "2024-04-29"
 
 subcollection: vmwaresolutions
 
@@ -13,7 +13,7 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# NSX Tier-0 and Tier-1 gateways on {{site.data.keyword.vpc_short}} 
+# NSX Tier-0 and Tier-1 gateways on {{site.data.keyword.vpc_short}}
 {: #vpc-vcf-nsx-t-logical-routers}
 
 A single VMware NSX™ edge cluster with two virtual edge nodes is used in consolidated architecture and standard architecture has its own edge cluster for workloads. Automation creates Tier-0 (T0) gateways and Tier-1 (T1) routers with uplinks that are connected to VPC subnets. In this architecture, the edge clusters host both T0 and T1 gateways. This topic discusses how these gateways interact with {{site.data.keyword.vpc_short}}.
@@ -33,7 +33,7 @@ Currently, Active-Active mode with T0 is not supported in {{site.data.keyword.vp
 When T0 is run in Active-Standby mode, both participate Edge Transport Node has their own uplink. High availability between these uplinks uses a High Availability VIP.
 {: note}
 
-The T0 is configured with **two uplink types**: two uplinks for **private** use and two uplinks for **public** use. HA VIPs are assigned to both public and private uplinks for high availability. For public and private uplinks, two VPC subnets are needed. These subnets are provisioned from the Zone prefix, and they can both use RFC 1918 private addresses, including the public subnet. In the consolidated architecture, only one set of uplink subnets are provisioned. In the standard architecture, both management and VI workload domain Tier-0s have their own uplink subnets. 
+The T0 is configured with **two uplink types**: two uplinks for **private** use and two uplinks for **public** use. HA VIPs are assigned to both public and private uplinks for high availability. For public and private uplinks, two VPC subnets are needed. These subnets are provisioned from the Zone prefix, and they can both use RFC 1918 private addresses, including the public subnet. In the consolidated architecture, only one set of uplink subnets are provisioned. In the standard architecture, both management and VI workload domain Tier-0s have their own uplink subnets.
 
 | Subnet name | System traffic type | Subnet sizing guidance |
 | ------------|---------------------|----------------------- |
@@ -139,14 +139,13 @@ A gateway firewall represents rules that are applied to the perimeter firewall f
 
 Distributed firewall monitors all the East-West traffic on your VMs. When you group objects, it simplifies the rule management. Groups include different objects that are added both statically and dynamically, and they can be used as the source and destination of a firewall rule. They can be configured to contain a combination of VMs, IP sets, MAC sets, segment ports, segments, AD user groups, and other groups. Dynamic inclusion of groups can be based on tag, machine name, OS name, or computer name.
 
-For more information about firewalls in NSX, see [VMware Documentation](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.1/administration/GUID-7C4C2848-E56D-490E-98BF-7D506DB8AA60.html?hWord=N4IghgNiBcIGYEsBOBTA7pCBnABAgdjgHIDKAGiAL5A){: external}.
+For more information about firewalls in NSX, see the [VMware documentation](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.1/administration/GUID-7C4C2848-E56D-490E-98BF-7D506DB8AA60.html?hWord=N4IghgNiBcIGYEsBOBTA7pCBnABAgdjgHIDKAGiAL5A){: external}.
 
 ## Related links
 {: #vpc-vcf-nsx-t-logical-routers-links}
 
 * [{{site.data.keyword.vpc_short}} getting started](/docs/vpc?topic=vpc-getting-started)
 * [{{site.data.keyword.vpc_short}} bare metal servers](/docs/vpc?topic=vpc-planning-for-bare-metal-servers)
-* [{{site.data.keyword.vpc_short}} RYO VMware reference architecture](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-ryo-arch-overview)
 * [{{site.data.keyword.dl_full_notm}} overview](/docs/dl?topic=dl-get-started-with-ibm-cloud-dl)
 * [{{site.data.keyword.tg_full_notm}} overview](/docs/transit-gateway?topic=transit-gateway-getting-started)
 * [{{site.data.keyword.vpc_short}} VPN overview](/docs/vpc?topic=vpc-vpn-overview)

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2023
+  years:  2016, 2024
 
-lastupdated: "2023-12-11"
+lastupdated: "2024-04-12"
 
 keywords: FortiGate security, FortiGate Security Appliance, tech specs FortiGate
 
@@ -67,7 +67,7 @@ To manage the FortiGate Security Appliance service, you must access the FortiGat
 * Log in to the FortiOS Web Client by using the credentials that you can find on the FortiGate Security Appliance service details page.
 * Access the console through SSH connection by using the credentials that you can find on the FortiGate Security Appliance service details page.
 
-For more information, see [Ordering services for vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices).
+For more information, see [Ordering services for {{site.data.keyword.vcf-auto-short}} instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices).
 
 ## Considerations when you delete FortiGate Security Appliance
 {: #fsa_considerations-remove}

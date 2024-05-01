@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2021, 2023
+  years:  2021, 2024
 
-lastupdated: "2023-06-14"
+lastupdated: "2024-04-04"
 
 subcollection: vmwaresolutions
 
@@ -32,7 +32,7 @@ The following services are available for Security and Compliance Readiness Bundl
 ## Procedures to order, view, or delete services for Security and Compliance Readiness Bundle instances
 {: #scb_addingremovingservices-procedure}
 
-The procedures to order, view, and delete services for Security and Compliance Readiness Bundle instances are similar to the procedures for VMware vCenter Server® instances. For more information, see the following topics:
-* [Ordering services for vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices)
-* [Viewing services for vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_viewingservices)
-* [Deleting services from vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_deletingservices)
+The procedures to order, view, and delete services for Security and Compliance Readiness Bundle instances are similar to the procedures for {{site.data.keyword.vcf-auto}} instances. For more information, see the following topics:
+* [Ordering services for Automated instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices)
+* [Viewing services for Automated instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_viewingservices)
+* [Deleting services from Automated instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_deletingservices)

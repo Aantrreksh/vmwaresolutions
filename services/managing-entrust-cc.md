@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2023
+  years:  2016, 2024
 
-lastupdated: "2023-12-11"
+lastupdated: "2024-04-12"
 
 keywords: Entrust CloudControl WebGUI, Entrust CloudControl console, enable internet Entrust CloudControl
 
@@ -18,7 +18,7 @@ subcollection: vmwaresolutions
 # Managing Entrust CloudControl
 {: #managing-entrust-cc}
 
-New installations of Entrust CloudControl™ (formerly known as HyTrust CloudControl) are not supported for new or existing deployments of VMware vCenter Server® instances. You can still use or delete existing Entrust CloudControl installations on your existing instances.
+New installations of Entrust CloudControl™ (formerly known as HyTrust CloudControl) are not supported for new or existing deployments of {{site.data.keyword.vcf-auto}} instances. You can still use or delete existing Entrust CloudControl installations on your existing instances.
 {: deprecated}
 
 To manage Entrust CloudControl, access the Entrust CloudControl WebGUI from the {{site.data.keyword.vmwaresolutions_full}} console, or access the Entrust CloudControl console from the VMware vSphere® Web Client.
@@ -36,7 +36,7 @@ To access the Entrust CloudControl console from the vSphere Web Client, use the 
 2. Right-click **CC1** or **CC2**, and then click **Open Console**.
 3. Log in to the console by using the console credentials that you can find on the Entrust CloudControl service details page.
 
-For more information, see [Ordering services for vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices).
+For more information, see [Ordering services for {{site.data.keyword.vcf-auto-short}} instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices).
 
 ## Considerations when you add and remove hosts and clusters
 {: #managing-entrust-cc-consider-addremove-hostsclusters}
@@ -60,7 +60,7 @@ On the Entrust CloudControl 5.x web console, if you go to **General > Health**, 
 ## Enabling internet access for the Entrust CloudControl VMs (Entrust CloudControl 5.x only)
 {: #managing-entrust-cc-internet-access}
 
-{{site.data.keyword.vmwaresolutions_short}} provides automatic renewal support for Entrust licenses with the Call Home feature enabled. For VMware vCenter Server® instances that are not private-only, Entrust CloudControl is deployed with firewall and SNAT (Source Network Address Translation) rules that are defined on the management services ESG **mgmt-nsx-edge**.
+{{site.data.keyword.vmwaresolutions_short}} provides automatic renewal support for Entrust licenses with the Call Home feature enabled. For {{site.data.keyword.vcf-auto-short}} instances that are not private-only, Entrust CloudControl is deployed with firewall and SNAT (Source Network Address Translation) rules that are defined on the management services ESG **mgmt-nsx-edge**.
 
 These rules enable internet access for the Entrust VMs. If internet access is not enabled, the license that is applied to your Entrust CloudControl installation will expire after a year.
 

@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2024
 
-lastupdated: "2024-01-31"
+lastupdated: "2024-04-29"
 
 keywords: Juniper vSRX, manage Juniper vSRX, Juniper vSRX console
 
@@ -17,16 +17,16 @@ subcollection: vmwaresolutions
 # Ordering Juniper vSRX
 {: #juniper-ordering}
 
-You can include the Juniper® vSRX service with a new VMware vCenter Server® instance or add the service to your existing instance.
+You can include the Juniper® vSRX service with a new {{site.data.keyword.vcf-auto}} instance or add the service to your existing instance.
 
 You can install multiple instances of Juniper vSRX on the management cluster. On a single gateway cluster, you can install only one instance of Juniper vSRX.
 
 You can install Juniper vSRX on 25 Gb uplink speed management and gateway clusters on VMware vSphere® 7 with NSX-T. On 25 Gb uplink speed clusters, only the Content Security Bundle license is available.
 
-The license that is used depends on the target cluster you choose. 
+The license that is used depends on the target cluster you choose.
 
-* For vCenter Server instances with vSphere 7 and NSX-T, management and gateway clusters with 25 Gb uplink speed use the 25 Gb uplink speed version of the license selected. 
-* For VMware Regulated Workloads (single-zone and multizone) and Security and Compliance Readiness Bundle instances, the same license selection process occurs for gateway clusters with 25 Gb uplink speeds.
+* For {{site.data.keyword.vcf-auto-short}} instances with vSphere 7 and NSX-T, management and gateway clusters with 25 Gb uplink speed use the 25 Gb uplink speed version of the license selected.
+* For {{site.data.keyword.rw}} (single-zone and multizone) and Security and Compliance Readiness Bundle instances, the same license selection process occurs for gateway clusters with 25 Gb uplink speeds.
 
 You cannot install Juniper vSRX and FortiGate Virtual Appliance on the same gateway cluster.
 {: restriction}
@@ -34,7 +34,7 @@ You cannot install Juniper vSRX and FortiGate Virtual Appliance on the same gate
 ## Ordering Juniper vSRX for a new instance
 {: #juniper-ordering-new-instance}
 
-1. When you [order the instance](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-procedure), scroll down to the **Add-on services** section. Juniper vSRX is in the **Security and compliance** category. 
+1. When you [order the instance](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-procedure), scroll down to the **Add-on services** section. Juniper vSRX is in the **Security and compliance** category.
 2. Open the category, locate Juniper vSRX, and toggle its switch on.
 3. Click **Edit** to review and specify [the configuration information](/docs/vmwaresolutions?topic=vmwaresolutions-juniper-ordering#juniper-ordering-service-config), then click **Save**.
 
@@ -48,7 +48,7 @@ You cannot install Juniper vSRX and FortiGate Virtual Appliance on the same gate
 3. On the **Add services** page, locate the **Juniper vSRX** service in the **Security and compliance** section and toggle its switch on.
 4. Click **Edit** to review and specify [the configuration information](/docs/vmwaresolutions?topic=vmwaresolutions-juniper-ordering#juniper-ordering-service-config), then click **Save**.
 
-   When you add Juniper vSRX to an existing vCenter Server instance, you can select the cluster on which to install Juniper vSRX, either a management cluster or a gateway cluster. For Juniper vSRX to function as a gateway for your instance, you must deploy the service to a gateway cluster.
+   When you add Juniper vSRX to an existing {{site.data.keyword.vcf-auto-short}} instance, you can select the cluster on which to install Juniper vSRX, either a management cluster or a gateway cluster. For Juniper vSRX to function as a gateway for your instance, you must deploy the service to a gateway cluster.
 
 ## Juniper vSRX service configuration
 {: #juniper-ordering-service-config}
@@ -58,7 +58,7 @@ When you order the service, provide the following settings:
 ### Name
 {: #juniper-ordering-service-config-name}
 
-Specify the nickname for the installed instance in the **Enter a name for the HA deployment** field. Because multiple copies of Juniper vSRX can be in a single vCenter Server instance, this name is used to ensure that the names of all networking components are unique.
+Specify the nickname for the installed instance in the **Enter a name for the HA deployment** field. Because multiple copies of Juniper vSRX can be in a single {{site.data.keyword.vcf-auto-short}} instance, this name is used to ensure that the names of all networking components are unique.
 
 ### License model
 {: #juniper-ordering-service-config-license-model}
@@ -84,8 +84,8 @@ If you deploy Juniper vSRX on a gateway cluster, after deployment, you must conf
 
 * [Juniper vSRX overview](/docs/vmwaresolutions?topic=vmwaresolutions-juniper-overview)
 * [Managing Juniper vSRX](/docs/vmwaresolutions?topic=vmwaresolutions-juniper-managing)
-* [Ordering services for vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices)
-* [General FAQ about VMware Solutions](/docs/vmwaresolutions?topic=vmwaresolutions-faq-vmwaresolutions)
+* [Ordering services for {{site.data.keyword.vcf-auto-short}} instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices)
+* [General FAQ about VCF for Classic](/docs/vmwaresolutions?topic=vmwaresolutions-faq-vmwaresolutions)
 * [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support)
 * [Juniper vSRX Virtual Firewall](https://www.juniper.net/us/en/products/security/srx-series/vsrx-virtual-firewall.html){: external}
 * [Juniper vSRX Documentation](https://www.juniper.net/documentation/product/us/en/vsrx/){: external}

@@ -4,7 +4,7 @@ copyright:
 
   years: 2019, 2024
 
-lastupdated: "2024-04-02"
+lastupdated: "2024-04-26"
 
 subcollection: vmwaresolutions
 
@@ -27,13 +27,13 @@ Review the following information for the specific responsibilities for you and f
 
 Incident and operations management includes tasks such as monitoring, event management, high availability, problem determination, recovery, and full state backup and recovery.
 
-### Incident and operations management for VMware Shared
+### Incident and operations management for {{site.data.keyword.vm-shared}}
 {: #understand-responsib-incident-and-ops-shared}
 
-Starting on 28 March 2024, VMware Shared will no longer be available for new deployments. Existing instances will continue to be supported until 15 January 2025. Ensure that you migrate all your VMware Shared resources to [{{site.data.keyword.vmware-service_full}}](/docs/vmware-service) by 15 January 2025. For more information, see [End of Support for VMware Shared deployments](/docs/vmwaresolutions?topic=vmwaresolutions-eos-vmware-shared).
+{{site.data.keyword.vm-shared}} is no longer available for new deployments. Existing instances will continue to be supported until 15 January 2025. Ensure that you migrate all your {{site.data.keyword.vm-shared}} resources to [{{site.data.keyword.vcf-aas}}](/docs/vmware-service) by 15 January 2025. For more information, see [End of Support for {{site.data.keyword.vm-shared}} deployments](/docs/vmwaresolutions?topic=vmwaresolutions-eos-vmware-shared).
 {: deprecated}
 
-The following table describes the responsibilities that are related to incident and operations management for VMware Shared.
+The following table describes the responsibilities that are related to incident and operations management for {{site.data.keyword.vm-shared}}.
 
 | Task | {{site.data.keyword.IBM_notm}} responsibilities | Your responsibilities |
 |:---- |:----------------------------------------------- |:--------------------- |
@@ -43,7 +43,7 @@ The following table describes the responsibilities that are related to incident 
 | Infrastructure management | New features, updates, and bug fixes are continuously delivered as needed in a manner transparent to you. Maintenance activities that have customer impact are scheduled in advance, and notifications are posted to the {{site.data.keyword.cloud_notm}} status page. | Set preferences to receive emails notifications. Monitor the {{site.data.keyword.cloud_notm}} status page for general announcements. |
 | Incident management | Unplanned incidents with customer impact are communicated through the CIE process. | Impacted customers can obtain a report about the incident upon request. |
 {: row-headers}
-{: caption="Table 1. Responsibilities for incident and operations for VMware Shared" caption-side="bottom"}
+{: caption="Table 1. Responsibilities for incident and operations for {{site.data.keyword.vm-shared}}" caption-side="bottom"}
 {: summary="The rows are read from left to right. The first column describes the task that a customer or IBM might be responsible for. The second column describes {{site.data.keyword.IBM_notm}} responsibilities for that task. The third column describes your responsibilities as the customer for that task."}
 {: #understand-responsib-incident-and-ops-shared-table}
 
@@ -51,10 +51,10 @@ The following table describes the responsibilities that are related to incident 
 
 [^mzr2]: Multizone region virtual data centers are limited to allow listed customers. For more information, contact your VMware Solutions representative.
 
-### Incident and operations management for VMware Solutions offerings (other than VMware Shared)
+### Incident and operations management for VMware Solutions offerings (other than {{site.data.keyword.vm-shared}})
 {: #understand-responsib-incident-and-ops-dedicated}
 
-The following table describes the responsibilities that are related to incident and operations management for all VMware Solutions offerings, other than VMware Shared.
+The following table describes the responsibilities that are related to incident and operations management for all VMware Solutions offerings, other than {{site.data.keyword.vm-shared}}.
 
 | Task | {{site.data.keyword.IBM_notm}} responsibilities | Your responsibilities |
 |:---- |:----------------------------------------------- |:--------------------- |
@@ -64,7 +64,7 @@ The following table describes the responsibilities that are related to incident 
 | Infrastructure management | | Implement monitoring and management system that is integrated with virtualization management. |
 | Incident management | Unplanned incidents with customer impact are communicated through the CIE process. | Impacted customers can obtain a report about the incident upon request. |
 {: row-headers}
-{: caption="Table 2. Responsibilities for incident and operations for VMware Solutions offerings (other than VMware Shared)" caption-side="bottom"}
+{: caption="Table 2. Responsibilities for incident and operations for VMware Solutions offerings (other than {{site.data.keyword.vm-shared}})" caption-side="bottom"}
 {: summary="The rows are read from left to right. The first column describes the task that a customer or IBM might be responsible for. The second column describes {{site.data.keyword.IBM_notm}} responsibilities for that task. The third column describes your responsibilities as the customer for that task."}
 {: #understand-responsib-incident-and-ops-dedicated-table}
 
@@ -73,34 +73,34 @@ The following table describes the responsibilities that are related to incident 
 
 Change management includes tasks such as deployment, configuration, upgrades, patching, configuration changes, and deletion.
 
-### Change management for VMware Shared
+### Change management for {{site.data.keyword.vm-shared}}
 {: #understand-responsib-change-management-shared}
 
-Starting on 28 March 2024, VMware Shared will no longer be available for new deployments. Existing instances will continue to be supported until 15 January 2025. Ensure that you migrate all your VMware Shared resources to [{{site.data.keyword.vmware-service_full}}](/docs/vmware-service) by 15 January 2025. For more information, see [End of Support for VMware Shared deployments](/docs/vmwaresolutions?topic=vmwaresolutions-eos-vmware-shared).
+{{site.data.keyword.vm-shared}} is no longer available for new deployments. Existing instances will continue to be supported until 15 January 2025. Ensure that you migrate all your {{site.data.keyword.vm-shared}} resources to [{{site.data.keyword.vcf-aas}}](/docs/vmware-service) by 15 January 2025. For more information, see [End of Support for {{site.data.keyword.vm-shared}} deployments](/docs/vmwaresolutions?topic=vmwaresolutions-eos-vmware-shared).
 {: deprecated}
 
-The following table describes the responsibilities that are related to change management for VMware Shared.
+The following table describes the responsibilities that are related to change management for {{site.data.keyword.vm-shared}}.
 
 | Task | {{site.data.keyword.IBM_notm}} responsibilities | Your responsibilities |
 |:---- |:----------------------------------------------- |:--------------------- |
 | Updates, fixes, and new features | Regular updates, bug fixes, and new features are provided, following a continuous delivery model in a way that is transparent to you. Notifications are posted for changes that impact you. | Set preferences to receive email notifications. Monitor the {{site.data.keyword.cloud_notm}} status page for general announcements. |
 | Scaling | Scale the customer VMware infrastructure as requested and to meet the capacity that you selected. | Choose the capacity for your VMware Solutions instances. |
 {: row-headers}
-{: caption="Table 3. Responsibilities for change management for VMware Shared" caption-side="bottom"}
+{: caption="Table 3. Responsibilities for change management for {{site.data.keyword.vm-shared}}" caption-side="bottom"}
 {: summary="The rows are read from left to right. The first column describes the task that a customer or IBM might be responsible for. The second column describes {{site.data.keyword.IBM_notm}} responsibilities for that task. The third column describes your responsibilities as the customer for that task."}
 {: #understand-responsib-change-management-shared-table}
 
-### Change management for VMware Solutions offerings (other than VMware Shared)
+### Change management for VMware Solutions offerings (other than {{site.data.keyword.vm-shared}})
 {: #understand-responsib-change-management-dedicated}
 
-The following table describes the responsibilities that are related to change management for all VMware Solutions offerings, other than VMware Shared.
+The following table describes the responsibilities that are related to change management for all VMware Solutions offerings, other than {{site.data.keyword.vm-shared}}.
 
 | Task | {{site.data.keyword.IBM_notm}} responsibilities | Your responsibilities |
 |:---- |:----------------------------------------------- |:--------------------- |
 | Scaling | Scale your VMware infrastructure as requested. | Choose the capacity for your VMware Solutions instances. |
-| Upgrading and patching | For VMware vCenter Server, VMware vSphere, VMware Regulated Workloads, and Cyber Recovery, IBM does not have access to components to perform upgrades and patching. | You have the responsibility to apply updates to VMware components (VMware vSphere Hypervisor ESXi, vCenter Server, VMware NSX-T, VMware vSAN, Microsoft Active Directory™) and any additional add-on components (VMware Aria, Caveonix RiskForesight, Veeam Backup and Replication). You can use [VMware Update Manager](/docs/vmwaresolutions?topic=vmwaresolutions-opsmgmt-vum) to assist with the updates. The Regulated Workloads section of this documentation also includes a [version compatibility matrix](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-apply-updates). |
+| Upgrading and patching | IBM does not have access to components to perform upgrades and patching. | It's your responsibility to apply updates to VMware components (VMware vSphere Hypervisor ESXi, vCenter Server, VMware NSX-T, VMware vSAN, Microsoft Active Directory™) and any additional add-on components (VMware Aria, Caveonix RiskForesight, Veeam Backup and Replication). You can use [VMware Update Manager](/docs/vmwaresolutions?topic=vmwaresolutions-opsmgmt-vum) to assist with the updates. The {{site.data.keyword.rw}} section of this documentation also includes a [version compatibility matrix](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-apply-updates). |
 {: row-headers}
-{: caption="Table 4. Responsibilities for change management for VMware Solutions offerings (other than VMware Shared)" caption-side="bottom"}
+{: caption="Table 4. Responsibilities for change management for VMware Solutions offerings (other than {{site.data.keyword.vm-shared}})" caption-side="bottom"}
 {: summary="The rows are read from left to right. The first column describes the task that a customer or IBM might be responsible for. The second column describes {{site.data.keyword.IBM_notm}} responsibilities for that task. The third column describes your responsibilities as the customer for that task."}
 {: #understand-responsib-change-management-dedicated-table}
 
@@ -124,32 +124,32 @@ The following table describes the responsibilities that are related to identity 
 
 Security and regulation compliance includes tasks such as security controls implementation and compliance certification.
 
-### Security and regulation compliance for VMware Shared
+### Security and regulation compliance for {{site.data.keyword.vm-shared}}
 {: #understand-responsib-security-compliance-shared}
 
-Starting on 28 March 2024, VMware Shared will no longer be available for new deployments. Existing instances will continue to be supported until 15 January 2025. Ensure that you migrate all your VMware Shared resources to [{{site.data.keyword.vmware-service_full}}](/docs/vmware-service) by 15 January 2025. For more information, see [End of Support for VMware Shared deployments](/docs/vmwaresolutions?topic=vmwaresolutions-eos-vmware-shared).
+{{site.data.keyword.vm-shared}} is no longer available for new deployments. Existing instances will continue to be supported until 15 January 2025. Ensure that you migrate all your {{site.data.keyword.vm-shared}} resources to [{{site.data.keyword.vcf-aas}}](/docs/vmware-service) by 15 January 2025. For more information, see [End of Support for {{site.data.keyword.vm-shared}} deployments](/docs/vmwaresolutions?topic=vmwaresolutions-eos-vmware-shared).
 {: deprecated}
 
-The following table describes the responsibilities that are related to security and regulation compliance for VMware Shared.
+The following table describes the responsibilities that are related to security and regulation compliance for {{site.data.keyword.vm-shared}}.
 
 | Task | {{site.data.keyword.IBM_notm}} responsibilities | Your responsibilities |
 |:---- |:----------------------------------------------- |:--------------------- |
 | Encryption | Secure connections are provided to administration portals and replication endpoints. Backups are encrypted uniquely per customer. | If required, secure with HTTPS. |
 {: row-headers}
-{: caption="Table 6. Responsibilities for security and regulation compliance for VMware Shared" caption-side="bottom"}
+{: caption="Table 6. Responsibilities for security and regulation compliance for {{site.data.keyword.vm-shared}}" caption-side="bottom"}
 {: summary="The rows are read from left to right. The first column describes the task that a customer or IBM might be responsible for. The second column describes {{site.data.keyword.IBM_notm}} responsibilities for that task. The third column describes your responsibilities as the customer for that task."}
 {: #understand-responsib-security-compliance-shared-table}
 
-### Security and regulation compliance for VMware Solutions offerings (other than VMware Shared)
+### Security and regulation compliance for VMware Solutions offerings (other than {{site.data.keyword.vm-shared}})
 {: #understand-responsib-security-compliance-dedicated}
 
-The following table describes the responsibilities that are related to security and regulation compliance for all VMware Solutions offerings, other than VMware Shared.
+The following table describes the responsibilities that are related to security and regulation compliance for all VMware Solutions offerings, other than {{site.data.keyword.vm-shared}}.
 
 | Task | {{site.data.keyword.IBM_notm}} responsibilities | Your responsibilities |
 |:---- |:----------------------------------------------- |:--------------------- |
 | Encryption | Provide integration with Key Protect and Hyper Protect Crypto Services through KMIP service as an option for implementing data at-rest encryption. | Configure and manage encryption for both data at rest and in transit, as needed. |
 {: row-headers}
-{: caption="Table 7. Responsibilities for security and regulation compliance for VMware Solutions offerings (other than VMware Shared)" caption-side="bottom"}
+{: caption="Table 7. Responsibilities for security and regulation compliance for VMware Solutions offerings (other than {{site.data.keyword.vm-shared}})" caption-side="bottom"}
 {: summary="The rows are read from left to right. The first column describes the task that a customer or IBM might be responsible for. The second column describes {{site.data.keyword.IBM_notm}} responsibilities for that task. The third column describes your responsibilities as the customer for that task."}
 {: #understand-responsib-security-compliance-dedicated-table}
 
@@ -163,13 +163,13 @@ Disaster recovery includes tasks such as:
 * Replicating data and configuration to the disaster recovery environment
 * Fail over on disaster events
 
-### Disaster recovery for VMware Shared
+### Disaster recovery for {{site.data.keyword.vm-shared}}
 {: #understand-responsib-disaster-recovery-shared}
 
-Starting on 28 March 2024, VMware Shared will no longer be available for new deployments. Existing instances will continue to be supported until 15 January 2025. Ensure that you migrate all your VMware Shared resources to [{{site.data.keyword.vmware-service_full}}](/docs/vmware-service) by 15 January 2025. For more information, see [End of Support for VMware Shared deployments](/docs/vmwaresolutions?topic=vmwaresolutions-eos-vmware-shared).
+{{site.data.keyword.vm-shared}} is no longer available for new deployments. Existing instances will continue to be supported until 15 January 2025. Ensure that you migrate all your {{site.data.keyword.vm-shared}} resources to [{{site.data.keyword.vcf-aas}}](/docs/vmware-service) by 15 January 2025. For more information, see [End of Support for {{site.data.keyword.vm-shared}} deployments](/docs/vmwaresolutions?topic=vmwaresolutions-eos-vmware-shared).
 {: deprecated}
 
-The following table describes the responsibilities that are related to disaster recovery for VMware Shared.
+The following table describes the responsibilities that are related to disaster recovery for {{site.data.keyword.vm-shared}}.
 
 | Task | {{site.data.keyword.IBM_notm}} responsibilities | Your responsibilities |
 |:---- |:----------------------------------------------- |:--------------------- |
@@ -178,20 +178,20 @@ The following table describes the responsibilities that are related to disaster 
 | Recovery of configuration | Recovery will be conducted in the original data center after the infrastructure is available. If long-term outage occurs, offsite recovery is conducted. | |
 | Recovery of workloads | Restore capabilities are available in normal operations. For configuration restores, customer restore services will be provided after the infrastructure is available. If an offsite recovery is required, IBM works with the customer to help recover. | Restore systems from the configured backup jobs. |
 {: row-headers}
-{: caption="Table 8. Responsibilities for disaster recovery for VMware Shared" caption-side="bottom"}
+{: caption="Table 8. Responsibilities for disaster recovery for {{site.data.keyword.vm-shared}}" caption-side="bottom"}
 {: summary="The rows are read from left to right. The first column describes the task that a customer or IBM might be responsible for. The second column describes {{site.data.keyword.IBM_notm}} responsibilities for that task. The third column describes your responsibilities as the customer for that task."}
 {: #understand-responsib-disaster-recovery-shared-table}
 
-### Disaster recovery for VMware Solutions offerings (other than VMware Shared)
+### Disaster recovery for VMware Solutions offerings (other than {{site.data.keyword.vm-shared}})
 {: #understand-responsib-disaster-recovery-dedicated}
 
-The following table describes the responsibilities that are related to disaster recovery for all VMware Solutions offerings, other than VMware Shared.
+The following table describes the responsibilities that are related to disaster recovery for all VMware Solutions offerings, other than {{site.data.keyword.vm-shared}}.
 
 | Task | {{site.data.keyword.IBM_notm}} responsibilities | Your responsibilities |
 |:---- |:----------------------------------------------- |:--------------------- |
 | Business continuity and Disaster Recovery (DR) | Provide automated provision and integration for third-party services, such as Veeam and Zerto. | Provision third-party solutions such as Veeam and Zerto, or other solutions of your choice, along with the VMware Solutions instance. Configure these solutions to meet your business continuity and DR requirements for your workload. |
 {: row-headers}
-{: caption="Table 9. Responsibilities for disaster recovery for VMware Solutions offerings (other than VMware Shared)" caption-side="bottom"}
+{: caption="Table 9. Responsibilities for disaster recovery for VMware Solutions offerings (other than {{site.data.keyword.vm-shared}})" caption-side="bottom"}
 {: summary="The rows are read from left to right. The first column describes the task that a customer or IBM might be responsible for. The second column describes {{site.data.keyword.IBM_notm}} responsibilities for that task. The third column describes your responsibilities as the customer for that task."}
 {: #understand-responsib-disaster-recovery-dedicated-table}
 
@@ -201,8 +201,8 @@ The following table describes the responsibilities that are related to disaster 
 Configuration changes can impact the ability to use the VMware Solutions console to view and manage instances. Preserving certain configurations and settings is critical for the VMware Solutions automation to continue to function properly.
 
 You must manage the VMware Solutions components that are created in your {{site.data.keyword.cloud_notm}} account only from the VMware Solutions console. For more information, see:
-* [vCenter Server overview](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview)
-* [Expanding and contracting capacity for vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservers)
+* [{{site.data.keyword.vcf-auto}} overview](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview)
+* [Expanding and contracting capacity for Automated instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservers)
 
 If you change your credentials, for example passwords, IBM Support might no longer be able to help you recover lost or forgotten credentials, or to troubleshoot any problems in your environment. For more information, see [Client responsibilities](/docs/vmwaresolutions?topic=vmwaresolutions-vc_compl_info#vc_compl_info-client-responsibilities).
 
@@ -217,8 +217,8 @@ In {{site.data.keyword.vmwaresolutions_short}}, every primary instance deploys a
 ## Related links
 {: #understand-responsib-related}
 
-* [Compliance information for vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_compl_info)
-* [Managing your data in VMware Shared](/docs/vmwaresolutions?topic=vmwaresolutions-shared_data)
+* [Compliance information for {{site.data.keyword.vcf-auto-short}} instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_compl_info)
+* [Managing your data in {{site.data.keyword.vm-shared}}](/docs/vmwaresolutions?topic=vmwaresolutions-shared_data)
 * [Post-deployment considerations for your VMware instance](/docs/vmwaresolutions?topic=vmwaresolutions-solution_considerations)
 * [Day 2 operational procedures guide](/docs/vmwaresolutions?topic=vmwaresolutions-opsprocs-intro-overview)
 * [Operations management guide](/docs/vmwaresolutions?topic=vmwaresolutions-opsmgmt-intro)

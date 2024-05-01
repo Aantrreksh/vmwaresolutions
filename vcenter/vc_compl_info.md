@@ -4,9 +4,9 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-02-01"
+lastupdated: "2024-04-25"
 
-keywords: vCenter Server compliance, compliance info, vCenter Server policy
+keywords: vcf automated compliance, compliance info, vcf automated policy
 
 subcollection: vmwaresolutions
 
@@ -15,22 +15,22 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Compliance information for vCenter Server instances
+# Compliance information for {{site.data.keyword.vcf-auto-short}} instances
 {: #vc_compl_info}
 
-Review the following information for details about compliance for VMware vCenter Server® instances.
+Review the following information for details about compliance for {{site.data.keyword.vcf-auto}} instances.
 
-## Customer versus IBM responsibility for vCenter Server
+## Customer versus IBM responsibility for Automated instances
 {: #vc_compl_info-responsibility}
 
 The following diagram provides details about the customer (you) and {{site.data.keyword.IBM}} responsibilities for compliance activities.
 
-![Customer versus IBM responsibility matrix](../images/customer_ibm_responsibility_matrix.svg "Customer versus IBM responsibility matrix"){: caption="Figure 1. Customer versus IBM responsibility matrix for vCenter Server" caption-side="bottom"}
+![Customer versus IBM responsibility matrix](../images/customer_ibm_responsibility_matrix.svg "Customer versus IBM responsibility matrix"){: caption="Figure 1. Customer versus IBM responsibility matrix for {{site.data.keyword.vcf-auto-short}}" caption-side="bottom"}
 
 ## Health data restrictions
 {: #vc_compl_info-health-data-restrictions}
 
-The following terms apply only to the vCenter Server offering.
+The following terms apply only to the {{site.data.keyword.vcf-auto-short}} offering.
 
 ### HIPAA
 {: #vc_compl_info-hipaa}
@@ -51,7 +51,7 @@ This Cloud Service is not designed to any specific security requirements for reg
 ## Policy configurations
 {: #vc_compl_info-default-policy-config}
 
-The generated password for vCenter Server primary instances is now 15 characters in length. Previously, the generated password was the vCenter Server default value of 8 characters in length.
+The generated password for {{site.data.keyword.vcf-auto-short}} primary instances is now 15 characters in length. Previously, the generated password was the vCenter Server default value of 8 characters in length.
 
 The following table details vCenter Server policy configurations for a new primary instance.
 
@@ -62,9 +62,9 @@ The following table details vCenter Server policy configurations for a new prima
 | vCenter lockout policy | 900 seconds between login failures | 180 seconds between login failures (vCenter default) |
 {: caption="Table 1. vCenter policy configurations" caption-side="bottom"}
 
-The generated NSX Manager password for vCenter Server primary instances is now 15 characters in length. Previously, the generated password was 8 characters in length.
+The generated NSX Manager password for {{site.data.keyword.vcf-auto-short}} primary instances is now 15 characters in length. Previously, the generated password was 8 characters in length.
 
-## Policy for accessing clients' instances
+## Policy for accessing clients instances
 {: #vc_compl_info-policy-for-access-client-inst}
 
 vCenter Server environments, which are delivered as {{site.data.keyword.vmwaresolutions_short}}, provide a VMware® management platform layer for our clients to manage the virtualization capabilities. Throughout the lifecycle of {{site.data.keyword.vmwaresolutions_short}} products and services, IBM Support might be required to help guarantee their success. Usually, intervention by IBM Support is the result of a client request (that is, a support ticket). However, on rare occasions, IBM Support might assist proactively and without a client–written support ticket to prevent future issues. This access is through the {{site.data.keyword.cloud_notm}} internal support network and is documented through a support ticket that is opened by IBM Support and continuously monitored by {{site.data.keyword.cloud_notm}} SOC. At no time will IBM Support modify instance configuration without prior consent from the client. The access is to the VMware management components and to the {{site.data.keyword.cloud_notm}} management components and never to the client's virtual machines or applications.
@@ -158,5 +158,5 @@ If the client does not grant consent to proactive support for an instance in the
 ## Related links
 {: #vc_compl_info-related}
 
-* [vCenter Server overview](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview)
+* [{{site.data.keyword.vcf-auto-short}} overview](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview)
 * [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support)

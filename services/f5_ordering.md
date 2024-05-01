@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-02-06"
+lastupdated: "2024-04-29"
 
 keywords: F5 license activation, F5 configuration, order F5
 
@@ -18,12 +18,12 @@ subcollection: vmwaresolutions
 # Ordering F5 BIG-IP
 {: #f5_ordering}
 
-You can include the F5 BIG-IP® service with a new vCenter Server® instance or add the service to your existing instance.
+You can include the F5 BIG-IP® service with a new {{site.data.keyword.vcf-auto}} instance or add the service to your existing instance.
 
 ## Ordering F5 BIG-IP for new instances
 {: #f5_ordering-new}
 
-1. When you [order the instance](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-procedure), scroll down to the **Add-on services** section. F5 BIG-IP is in the **Security and compliance** category. 
+1. When you [order the instance](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-procedure), scroll down to the **Add-on services** section. F5 BIG-IP is in the **Security and compliance** category.
 2. Open the category, locate F5 BIG-IP, and toggle its switch on.
 3. Click **Edit** to review and specify [the configuration information](/docs/vmwaresolutions?topic=vmwaresolutions-f5_ordering#f5_ordering-config), then click **Save**.
 
@@ -60,7 +60,7 @@ Enter the service name.
 
 Select **Public network** or **Private network** for license activation. This selection determines how the F5 virtual servers contact the F5 license server, and it does not impact the workload data plane.
 
-If the target cluster is configured with private-only network interfaces, only the **Private network** option is available. 
+If the target cluster is configured with private-only network interfaces, only the **Private network** option is available.
 
 If you select **Private network**, specify the following settings:
 
@@ -99,7 +99,7 @@ You cannot change the license model after service installation. To change the li
 
 * [F5 BIG-IP overview](/docs/vmwaresolutions?topic=vmwaresolutions-f5_considerations)
 * [Managing F5 BIG-IP](/docs/vmwaresolutions?topic=vmwaresolutions-managing_f5)
-* [Ordering services for vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices)
+* [Ordering services for {{site.data.keyword.vcf-auto-short}} instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices)
 * [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support)
-* [FAQ](/docs/vmwaresolutions?topic=vmwaresolutions-faq-vmwaresolutions)
-* [F5 Deployment Guides](https://www.f5.com/services/resources/deployment-guides){: external}
+* [General FAQ about VCF for Classic](/docs/vmwaresolutions?topic=vmwaresolutions-faq-vmwaresolutions)
+* [F5 Deployment Guides](https://www.f5.com/resources/deployment-guides){: external}

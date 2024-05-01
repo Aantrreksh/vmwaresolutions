@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-02-06"
+lastupdated: "2024-04-12"
 
 keywords: VMware HCX standalone, HCX on-premises, tech specs HCX
 
@@ -20,13 +20,13 @@ subcollection: vmwaresolutions
 
 Review the following considerations before you install or delete the VMware HCX® instances that you ordered for on-premises use.
 
-A VMware vCenter Server® instance with HCX is limited to three simultaneous connections from on-premises sites.
+A {{site.data.keyword.vcf-auto}} instance with HCX is limited to three simultaneous connections from on-premises sites.
 {: restriction}
 
 ## Considerations before you install on-premises HCX instances
 {: #standalone_considerations-install}
 
-The HCX components must be installed both on {{site.data.keyword.cloud}} and in your on-premises VMware vSphere® environment. It is recommended that you install the HCX service into your vCenter Server instance before you install the on-premises HCX instance.
+The HCX components must be installed both on {{site.data.keyword.cloud}} and in your on-premises VMware vSphere® environment. It is recommended that you install the HCX service into your {{site.data.keyword.vcf-auto-short}} instance before you install the on-premises HCX instance.
 
 For more information, see [Considerations when you install HCX](/docs/vmwaresolutions?topic=vmwaresolutions-hcx_ordering#hcx_considerations-install).
 

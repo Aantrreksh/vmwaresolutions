@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-02-06"
+lastupdated: "2024-04-12"
 
 keywords: Veeam console, Veeam backup restore, update Veeam license
 
@@ -51,7 +51,7 @@ To manage the Veeam service, access the Veeam console by completing the followin
 
    You can find the Windows IP address and the Administrator credentials on the Veeam service details page.
 
-For more information, see [Ordering services for vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices).
+For more information, see [Ordering services for {{site.data.keyword.vcf-auto-short}} instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices).
 
 ## Backing up and restoring management components for instances with Veeam installations
 {: #managing-veeam-backup-and-replication}
@@ -113,6 +113,6 @@ Review the following considerations before you delete the service:
 * [Managing Veeam stand-alone licenses](/docs/vmwaresolutions?topic=vmwaresolutions-veeam_managing_licenses)
 * [Ordering and configuring {{site.data.keyword.cloud_notm}} Object Storage with Veeam](/docs/vmwaresolutions?topic=vmwaresolutions-icos_ordering)
 * [VMware Solutions FAQ](/docs/vmwaresolutions?topic=vmwaresolutions-faq-vmwaresolutions)
-* [Veeam on IBM Cloud](https://www.ibm.com/products/veeam){: external}
+* [Veeam on {{site.data.keyword.cloud_notm}}](https://www.ibm.com/products/veeam){: external}
 * [Veeam Backup and Replication FAQ](https://www.veeam.com/vm-backup-recovery-replication-software.html#faq){: external}
 * [Veeam Technical Documentation](https://www.veeam.com/documentation-guides-datasheets.html){: external}

@@ -2,11 +2,11 @@
 
 copyright:
 
-  years:  2016, 2023
+  years:  2016, 2024
 
-lastupdated: "2023-09-27"
+lastupdated: "2024-04-16"
 
-keywords: vmware vSphere order instance, order vSphere, order vmware vSphere instance
+keywords: flexible order instance, order vSphere, order flexible instance
 
 subcollection: vmwaresolutions
 
@@ -56,7 +56,6 @@ You can choose between **Cascade Lake** and **SAP-certified Cascade Lake** serve
 | Dual Intel Xeon Silver 4210 | 20 | 2.2 | Up to 12 drives | 64 GB, 96 GB, 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
 | Dual Intel Xeon Gold 5218 | 32 | 2.3 | Up to 12 drives | 64 GB, 96 GB, 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
 | Dual Intel Xeon Gold 6248 | 40 | 2.5 | Up to 12 drives | 64 GB, 96 GB, 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
-| Dual Intel Xeon Gold 6250 | 16 | 3.9 | Up to 12 drives | 64 GB, 96 GB, 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
 | Dual Intel Xeon Platinum 8260 | 48 | 2.4 | Up to 12 drives | 64 GB, 96 GB, 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
 | Quad Intel Xeon Gold 6248 | 80 | 2.5 | Up to 24 drives | 384 GB, 768 GB, 1.5 TB, 3 TB |
 | Quad Intel Xeon Platinum 8260 | 96 | 2.4 | Up to 24 drives | 384 GB, 768 GB, 1.5 TB, 3 TB |
@@ -77,10 +76,10 @@ The **SAP-certified Cascade Lake** servers are not available if you selected VMw
 ## Number of bare metal servers
 {: #vs_orderinginstances-bare-metal-number}
 
-The number of VMware ESXi™ servers that you want add to the vSphere instance. You can order 1-59 servers. All servers have the same configuration.
+The number of VMware ESXi™ servers that you want add to the {{site.data.keyword.vcf-flex-short}} instance. You can order 1-59 servers. All servers have the same configuration.
 
 ## Related links
 {: #vs_orderinginstances-bare-metal-related}
 
 * [Storage](/docs/vmwaresolutions?topic=vmwaresolutions-vs_orderinginstances-storage-settings)
-* [Procedure to order VMware vSphere instances](/docs/vmwaresolutions?topic=vmwaresolutions-vs_orderinginstances-procedure)
+* [Procedure to order Flexible instances](/docs/vmwaresolutions?topic=vmwaresolutions-vs_orderinginstances-procedure)

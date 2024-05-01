@@ -27,7 +27,7 @@ toc:
           topics:
           - topic: vmonic/release-notes.md
           - link:
-              label: Release notes for VMware as a Service
+              label: Release notes for VCF as a Service
               href: https://{DomainName}/docs/vmware-service?topic=vmware-service-vmware-service-relnotes
 
   - navgroup:
@@ -59,9 +59,10 @@ toc:
           - vmonic/signing_required_accounts.md
           - vmonic/loginmethod.md
           - vmonic/completing_checklist.md
-          - vmonic/notifications.md
+          - vmonic/vmware-add-ons.md
           - vmonic/useraccount.md
           - vmonic/iam.md
+          - vmonic/notifications.md
           - topicgroup:
               label: Ports used by VMware Solutions
               topics:
@@ -70,12 +71,12 @@ toc:
               - vmonic/vmwaresol_ports-vmwareuses.md
               - vmonic/vmwaresol_ports-services.md
       - topicgroup:
-          label: VMware as a Service
+          label: VCF as a Service
           topics:
           - include: ../vmware-service/common/vmware-aas-overview.md
           - include: ../vmware-service/vmaas/tenant-plan-deploy.md
           - topicgroup:
-              label: Ordering VMware as a Service instances
+              label: Ordering VCF as a Service instances
               topics:
               - include: ../vmware-service/vmaas/tenant-ordering.md
               - include: ../vmware-service/vmaas/vdc-adding.md
@@ -92,23 +93,23 @@ toc:
               topics:
               - include: ../vmware-service/vmaas/capacity-adding-deleting.md
           - topicgroup:
-              label: Viewing and deleting VMware as a Service instances
+              label: Viewing and deleting VCF as a Service instances
               topics:
               - include: ../vmware-service/vmaas/tenant-viewing-sites.md
               - include: ../vmware-service/vmaas/tenant-viewing-vdc.md
           - topicgroup:
-              label: Accessing VMware as a Service instances
+              label: Accessing VCF as a Service instances
               topics:
                 - include: ../vmware-service/common/vmaas-iam.md
                 - include: ../vmware-service/common/vmaas-iam_vcd.md
                 - include: ../vmware-service/common/iam-integration.md
           - topicgroup:
-              label: Protecting VMs in VMware as a Service instances
+              label: Protecting VMs in VCF as a Service instances
               topics:
               - include: ../vmware-service/vmaas/tenant-veeam.md
               - include: ../vmware-service/vmaas/veeam-adding-deleting.md
           - topicgroup:
-              label: Migrating VMs to VMware as a Service instances
+              label: Migrating VMs to VCF as a Service instances
               topics:
               - include: ../vmware-service/vmaas/tenant-vcda.md
               - include: ../vmware-service/vmaas/vcda-viewing.md
@@ -118,7 +119,7 @@ toc:
               - include: ../vmware-service/vmaas/vcda-adding-deleting.md
               - include: ../vmware-service/vmaas/vcda-migrating.md
           - topicgroup:
-              label: Creating secure interconnectivity with VMware as a Service
+              label: Creating secure interconnectivity with VCF as a Service
               topics:
                 - include: ../vmware-service/vmaas/tgw-adding-connections.md
                 - include: ../vmware-service/vmaas/tgw-viewing-deleting-connections.md
@@ -129,79 +130,7 @@ toc:
               - include: ../vmware-service/common/ha.md
               - include: ../vmware-service/common/bc-dr.md
       - topicgroup:
-          label: VMware Shared
-          topics:
-          - shared/shared_overview.md
-          - topicgroup:
-              label: Migrating to VMware as a Service
-              topics:
-              - shared/shared_migration.md
-              - shared/shared-vmwaas-migration.md
-          - shared/shared_planning.md
-          - shared/shared_data_security.md
-          - shared/shared_ordering.md
-          - topicgroup:
-              label: Using and managing the private network endpoint service
-              topics:
-              - shared/shared_creating-endpoints.md
-              - shared/shared_viewing-endpoints.md
-              - shared/shared_modifying-endpoints.md
-              - shared/shared_deleting-endpoints.md
-          - shared/shared_veeam.md
-          - topicgroup:
-              label: Managing Zerto for VMware Shared
-              topics:
-              - shared/shared_zerto-portal.md
-              - shared/shared_zerto-cloud-connector-order.md
-              - shared/shared_zerto-cloud-connector-view.md
-              - shared/shared_zerto-cloud-connector-delete.md
-          - topicgroup:
-              label: Viewing and managing virtual data centers
-              topics:
-              - shared/shared_viewing-vdc-summary.md
-              - shared/shared_viewing-vdc-details.md
-              - shared/shared_iam-integration.md
-              - shared/iam_vcd.md
-              - shared/shared_accessing-vcd-console.md
-          - shared/shared_vcd-ops-guide.md
-          - shared/shared_resizeinstance.md
-          - shared/shared_deletinginstance.md
-          - shared/shared_pricing.md
-      - topicgroup:
-          label: VMware vSphere
-          topics:
-          - topicgroup:
-              label: Overview
-              topics:
-              - vsphere/vs_vsphereoverview.md
-              - vsphere/vs_bom.md
-          - vsphere/vs_planning.md
-          - vsphere/vs_vsphere_70_upgrade.md
-          - topicgroup:
-              label: Ordering VMware vSphere instances
-              topics:
-              - vsphere/vs_orderinginstances-req.md
-              - vsphere/vs_orderinginstances-sys.md
-              - vsphere/vs_orderinginstances-licensing.md
-              - vsphere/vs_orderinginstances-bare-metal.md
-              - vsphere/vs_orderinginstances-storage.md
-              - vsphere/vs_orderinginstances-network.md
-              - vsphere/vs_orderinginstances-summary.md
-              - vsphere/vs_orderinginstances-procedure.md
-          - vsphere/vs_orderingbasedonexistingconfig.md
-          - topicgroup:
-              label: Expanding and contracting capacity
-              topics:
-              - vsphere/vs_addingservers.md
-              - vsphere/vs_removingservers.md
-          - vsphere/vs_manage_licenses.md
-          - topicgroup:
-              label: Viewing and deleting instances
-              topics:
-              - vsphere/vs_viewinginstances.md
-              - vsphere/vs_deletinginstances.md
-      - topicgroup:
-          label: vCenter Server
+          label: VCF for Classic - Automated
           topics:
           - topicgroup:
               label: Overview
@@ -219,13 +148,13 @@ toc:
           - topicgroup:
               label: Upgrading and migrating
               topics:
-              - vcenter/vc_vsphere_70_upgrade.md
               - vcenter/vc_vcs_80_upgrade.md
-              - vcenter/vc_upgrade-lic.md
+              - vcenter/vc_vsphere_70_upgrade.md
           - topicgroup:
-              label: Ordering vCenter Server instances
+              label: Ordering Automated instances
               topics:
               - vcenter/vc_orderinginstance-req.md
+              - vcenter/vc_orderinginstance-resource.md
               - vcenter/vc_orderinginstance-sys.md
               - vcenter/vc_orderinginstance-licensing.md
               - vcenter/vc_orderinginstance-consold-cluster.md
@@ -260,15 +189,70 @@ toc:
               - vcenter/vc_deletinginstance.md
               - vcenter/vc_deletinginstance_multi.md
       - topicgroup:
+          label: VCF for Classic - Flexible
+          topics:
+          - topicgroup:
+              label: Overview
+              topics:
+              - vsphere/vs_vsphereoverview.md
+              - vsphere/vs_bom.md
+          - vsphere/vs_planning.md
+          - vsphere/vs_vsphere_70_upgrade.md
+          - topicgroup:
+              label: Ordering Flexible instances
+              topics:
+              - vsphere/vs_orderinginstances-req.md
+              - vsphere/vs_orderinginstance-resource.md
+              - vsphere/vs_orderinginstances-sys.md
+              - vsphere/vs_orderinginstances-licensing.md
+              - vsphere/vs_orderinginstances-bare-metal.md
+              - vsphere/vs_orderinginstances-storage.md
+              - vsphere/vs_orderinginstances-network.md
+              - vsphere/vs_orderinginstances-summary.md
+              - vsphere/vs_orderinginstances-procedure.md
+          - vsphere/vs_orderingbasedonexistingconfig.md
+          - topicgroup:
+              label: Expanding and contracting capacity
+              topics:
+              - vsphere/vs_addingservers.md
+              - vsphere/vs_removingservers.md
+          - vsphere/vs_manage_licenses.md
+          - topicgroup:
+              label: Viewing and deleting instances
+              topics:
+              - vsphere/vs_viewinginstances.md
+              - vsphere/vs_deletinginstances.md
+      - topicgroup:
+          label: Cyber Recovery
+          topics:
+          - cr/cr_overview.md
+          - cr/cr_planning.md
+          - topicgroup:
+              label: Ordering Cyber Recovery
+              topics:
+              - cr/cr_orderinginstance-reqs.md
+              - cr/cr_orderinginstance-resource.md
+              - cr/cr_orderinginstance-gen-info.md
+              - cr/cr_orderinginstance-consolidwkld.md
+              - cr/cr_orderinginstance-edge.md
+              - cr/cr_orderinginstance-firewall-appl.md
+              - cr/cr_orderinginstance-network-interface.md
+              - cr/cr_orderinginstance-addon-services.md
+              - cr/cr_orderinginstance-order-procedure.md
+          - cr/cr_addingviewingclusters.md
+          - cr/cr_addingremovingservers.md
+          - cr/cr_addingviewingservices.md
+          - cr/cr_view-delete-instance.md
+      - topicgroup:
           label: Regulated Workloads
           topics:
           - vrw/vrw-overview.md
           - vrw/vrw-planning.md
           - topicgroup:
-              label: Ordering VMware Regulated Workloads
+              label: Ordering Regulated Workloads
               topics:
               - vrw/vrw-orderinginstance-reqs.md
-              - vrw/vrw-orderinginstance-topology.md
+              - vrw/vrw-orderinginstance-resource-type.md
               - vrw/vrw-orderinginstance-serv-prereq.md
               - vrw/vrw-orderinginstance-config.md
               - vrw/vrw-orderinginstance-licensing.md
@@ -287,27 +271,7 @@ toc:
           - vrw/vrw-addingremovingservers.md
           - vrw/vrw-view-delete-instance.md
       - topicgroup:
-          label: Cyber Recovery
-          topics:
-          - cr/cr_overview.md
-          - cr/cr_planning.md
-          - topicgroup:
-              label: Ordering Cyber Recovery
-              topics:
-              - cr/cr_orderinginstance-reqs.md
-              - cr/cr_orderinginstance-gen-info.md
-              - cr/cr_orderinginstance-consolidwkld.md
-              - cr/cr_orderinginstance-edge.md
-              - cr/cr_orderinginstance-firewall-appl.md
-              - cr/cr_orderinginstance-network-interface.md
-              - cr/cr_orderinginstance-addon-services.md
-              - cr/cr_orderinginstance-order-procedure.md
-          - cr/cr_addingviewingclusters.md
-          - cr/cr_addingremovingservers.md
-          - cr/cr_addingviewingservices.md
-          - cr/cr_view-delete-instance.md
-      - topicgroup:
-          label: Cloud Foundation
+          label: VCF for VPC
           topics:
           - topicgroup:
               label: Overview
@@ -316,10 +280,11 @@ toc:
               - vpc-vcf/vpc-vcf-ovw-bom.md
           - vpc-vcf/vpc-vcf-plan.md
           - topicgroup:
-              label: Ordering Cloud Foundation instances
+              label: Ordering VCF for VPC instances
               topics:
               - vpc-vcf/vpc-vcf-order-req.md
               - vpc-vcf/vpc-vcf-ordering.md
+              - vpc-vcf/vpc-vcf-firewall.md
           - topicgroup:
               label: Expanding and contracting capacity
               topics:
@@ -416,7 +381,7 @@ toc:
           label: Enhancing security
           topics:
           - topicgroup:
-              label: VMware as a Service
+              label: VCF as a Service
               topics:
               - include: ../vmware-service/common/architecture-workload-isolation.md
               - include: ../vmware-service/common/vmaas-data-security.md
@@ -443,35 +408,49 @@ toc:
       - topicgroup:
           label: Deprecated offerings
           topics:
-          - vmonic/eos-vmware-shared.md
-          - vmonic/eos-nsx-v.md
-          - vmonic/eos-vsphere67.md
-          - vmonic/eos-vsphere65.md
           - topicgroup:
-              label: vCenter Server multizone
+              label: End of Support notices
+              topics:
+              - vmonic/eos-vmware-shared.md
+              - vmonic/eos-nsx-v.md
+              - vmonic/eos-vsphere67.md
+              - vmonic/eos-vsphere65.md
+          - topicgroup:
+              label: VMware Shared
+              topics:
+              - shared/shared_overview.md
+              - shared/shared_migration.md
+              - shared/shared-vmwaas-migration.md
+              - shared/shared_planning.md
+              - shared/shared_data_security.md
+              - shared/shared_ordering.md
+              - shared/shared_creating-endpoints.md
+              - shared/shared_viewing-endpoints.md
+              - shared/shared_modifying-endpoints.md
+              - shared/shared_deleting-endpoints.md
+              - shared/shared_veeam.md
+              - shared/shared_zerto-portal.md
+              - shared/shared_zerto-cloud-connector-order.md
+              - shared/shared_zerto-cloud-connector-view.md
+              - shared/shared_zerto-cloud-connector-delete.md
+              - shared/shared_viewing-vdc-summary.md
+              - shared/shared_viewing-vdc-details.md
+              - shared/shared_iam-integration.md
+              - shared/iam_vcd.md
+              - shared/shared_accessing-vcd-console.md
+              - shared/shared_vcd-ops-guide.md
+              - shared/shared_resizeinstance.md
+              - shared/shared_deletinginstance.md
+              - shared/shared_pricing.md
+          - topicgroup:
+              label: Multizone instances
               topics:
               - services/mcv-archi-bom.md
               - services/mcv_addviewdeleteclusters.md
               - services/mcv_addingremovingservers.md
               - services/mcv_addingnfs.md
-          - topicgroup:
-              label: Regulated Workloads multizone
-              topics:
               - vrw/vrw-orderinginstance-mgmt.md
               - vrw/vrw-orderinginstance-witness.md
-          - topicgroup:
-              label: vCenter Server with Hybridity
-              topics:
-              - vcenter/vc_hybrid_overview.md
-              - vcenter/vc_hybrid_compl_info.md
-              - vcenter/vc_hybrid_addingviewingclusters.md
-              - vcenter/vc_hybrid_addingremovingservers.md
-              - vcenter/vc_hybrid_upgrade-lic.md
-              - vcenter/vc_hybrid_addingremovingservices.md
-              - vcenter/vc_hybrid_viewinginstances.md
-              - vcenter/vc_hybrid_deletingbundle.md
-              - vcenter/vc_hybrid_deletinginstance.md
-              - vcenter/vc_hybrid_deletinginstance_multi.md
           - topicgroup:
               label: Security and Compliance Readiness Bundle
               topics:
@@ -515,10 +494,10 @@ toc:
           label: API reference
           topics:
           - topicgroup:
-              label: VMware as a Service
+              label: VCF as a Service
               topics:
               - link:
-                  label: VMware as a Service API
+                  label: VCF as a Service API
                   href: https://{DomainName}/apidocs/vmware-service
               - include: ../vmware-service/common/api-change-log.md
               - include: ../vmware-service/common/api-virtual-private-ep.md
@@ -564,7 +543,6 @@ toc:
               - archiref/solution/solution_scaling.md
               - archiref/solution/solution_backingup.md
               - archiref/solution/solution_considerations.md
-              - archiref/solution/appendix.md
           - topicgroup:
               label: VMware Solutions architecture patterns
               topics:
@@ -687,25 +665,6 @@ toc:
       - topicgroup:
           label: Solution architectures on VPC
           topics:
-          - topicgroup:
-              label: VMware RYO architecture on VPC
-              topics:
-              - archiref/vpc-ryo/vpc-ryo-overview.md
-              - archiref/vpc-ryo/vpc-ryo-vpc.md
-              - archiref/vpc-ryo/vpc-ryo-infrastructure-physical.md
-              - archiref/vpc-ryo/vpc-ryo-infrastructure-virtual.md
-              - archiref/vpc-ryo/vpc-ryo-commonservice.md
-              - archiref/vpc-ryo/vpc-ryo-infrastructure-mgmt.md
-              - archiref/vpc-ryo/vpc-ryo-considerations.md
-              - archiref/vpc-ryo/vpc-ryo-arch-overview.md
-              - archiref/vpc-ryo/vpc-ryo-vpc-vmw.md
-              - archiref/vpc-ryo/vpc-ryo-subnet-design.md
-              - archiref/vpc-ryo/vpc-ryo-nsx-t.md
-              - archiref/vpc-ryo/vpc-ryo-nsx-t-logical-routers.md
-              - archiref/vpc-ryo/vpc-ryo-nsx-t-vpc-routing.md
-              - archiref/vpc-ryo/vpc-ryo-nsx-t-vpc-edge-services.md
-              - archiref/vpc-ryo/vpc-ryo-scaling.md
-              - archiref/vpc-ryo/vpc-ryo-backingup.md
 
           - topicgroup:
               label: VMware Cloud Foundation on VPC
@@ -747,10 +706,10 @@ toc:
               - archiref/vpc-interconnectivity/vpn.md
 
       - topicgroup:
-          label: Solution architectures on VMware as a Service
+          label: Solution architectures on VCF as a Service
           topics:
           - topicgroup:
-              label: VMware as a Service architecture patterns
+              label: VCF as a Service architecture patterns
               topics:
               - include: ../vmware-service/archiref/arch-pattern-vmwaas/arch-pattern-vmwaas-sccwpp.md
 
@@ -885,15 +844,15 @@ toc:
       - topicgroup:
           label: FAQs
           topics:
+          - vmonic/vmwaresol_packaging-pricing.md
           - vmonic/faq.md
           - vmonic/vpc-vcf-faq.md
-          - vmonic/faq_shared.md
-          - vmonic/faq_shared-eos.md
-          - vmonic/faq_esxi.md
-          - vmonic/faq_licensing.md
-          - vmonic/faq-v2t-migration.md
           - vmonic/faq_byol.md
-          - vmonic/vmwaresol_packaging-pricing.md
+          - vmonic/faq_licensing.md
+          - vmonic/faq_esxi.md
+          - vmonic/faq-v2t-migration.md
+          - vmonic/faq_shared-eos.md
+          - vmonic/faq_shared.md
           - vmonic/iam_verify_permissions.md
           - vmonic/trbl_limitations.md
           - vcenter/vcenter_chg_impact.md
@@ -906,7 +865,6 @@ toc:
           - vmonic/trbl_esxi_firewall_config_nfs.md
           - vmonic/trbl_sec_inst_not_visible.md
           - vmonic/trbl_add_ha_cluster_config.md
-          - vmonic/trbl_hcx_install_fail.md
           - vmonic/trbl_no_zerto_vra.md
           - vmonic/trbl_zerto_vra.md
           - vmonic/trbl_host_displays_warning_msg.md

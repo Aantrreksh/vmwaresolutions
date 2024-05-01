@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2022, 2023
+  years:  2022, 2024
 
-lastupdated: "2023-05-01"
+lastupdated: "2024-04-29"
 
 subcollection: vmwaresolutions
 
@@ -51,7 +51,7 @@ When the IaaS is provisioned, the customer:
 
 The vSRX security policies enable the objectives that are listed in the following table:
 
-| Rule Name | Sources | Destinations | Services | Action |
+| Rule name | Sources | Destinations | Services | Action |
 |----------|---------|--------------|----------|-------|
 | Allow access to DMZ | Cyber Admins IPs | DMZ subnets | SSH, RDP | Allow |
 | Allow access to Instance Management | DMZ | Instance Management | SSH, HTTPS, TCP-9392, DNS | Allow |
@@ -69,9 +69,9 @@ The vSRX security policies enable the objectives that are listed in the followin
    * Proxy to backup server, such as TCP-2500 to 3300 (Veeam data transmission channels).
 * Veeam backup server access to isolated recovery vCenter and hosts is done through connected networks.
 * Veeam backup server access to the Linux hardened repository is done through the connected network.
-* The "Allow proxy access to Linux hardened repository" rule can be toggled between "Allow" and "Deny" to facilitate the air gap.
+* The **Allow proxy access to Linux hardened repository** rule can be toggled between "Allow" and "Deny" to facilitate the air gap.
 * If NFS is used, then this action bypasses the vSRX as the storage VLAN is not associated with the {{site.data.keyword.cloud_notm}} gateway devices that host the vSRX appliances.
-* If the "Allow access between vCenter Server subnets" rule needs to be locked down further, for more information, see [Ports that are used by VMware Solutions](/docs/vmwaresolutions?topic=vmwaresolutions-vmwaresol_ports-vmwareuses).
+* If the **Allow access between vCenter Server subnets** rule needs to be locked down further, for more information, see [Ports that are used by VMware Solutions](/docs/vmwaresolutions?topic=vmwaresolutions-vmwaresol_ports-vmwareuses).
 * If encryption is used, then vCenter needs access to the KMIP service. This service is accessed through the {{site.data.keyword.cloud_notm}} endpoint service network 166.8.0.0/14.
 * If automated Day 2 operations are required on the vCenter Server instance, for more information, see [Ports that are used for deployment and Day 2 operations](/docs/vmwaresolutions?topic=vmwaresolutions-vmwaresol_ports-deploy-day2ops).
 
@@ -100,7 +100,7 @@ To enable cyber-related tasks on the cyberbackups, such as scanning backup files
    * Name: Cyber-Isolated-Segments, Criteria: Segment Tag Equals Isolated-Segments, Scope: Cyber
 * Creates a distributed firewall policy that is named Cyber-Isolated, which contains the following rules to satisfy their isolation requirements:
 
-| Rule Name | Sources | Destinations | Services | Action |
+| Rule name | Sources | Destinations | Services | Action |
 | ----------|---------|--------------|----------|------- |
 | Allow access to Isolated | Cyber-Tools-Segments | Cyber-Isolated-Segments | All | Allow |
 | Allow access between Isolated | Cyber-Isolated-Segments | Cyber-Isolated-Segments | All | Allow |

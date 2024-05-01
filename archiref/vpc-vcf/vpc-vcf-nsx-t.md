@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-03-26"
+lastupdated: "2024-04-29"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # NSX deployment
 {: #vpc-vcf-nsx-t}
 
-The topic provides an introduction to VMware® NSX™ deployment details for VMware Cloud Foundation deployment architectures in {{site.data.keyword.vpc_short}}. 
+The following information provides an introduction to VMware® NSX™ deployment details for VMware Cloud Foundation deployment architectures in {{site.data.keyword.vpc_short}}.
 
 ## NSX deployment architectures for VMware Cloud Foundation
 {: #vpc-vcf-nsx-t-deployment-arch}
@@ -40,7 +40,7 @@ When you create {{site.data.keyword.cloud_notm}} bare metal server VLAN interfac
 Each physical host has redundant 100 Gb network connection for network access to {{site.data.keyword.vpc_short}}. The 100 Gb bandwidth is shared by the network interfaces that are on the bare metal server.
 {: note}
 
-The high availability for physical network connectivity is handled by {{site.data.keyword.cloud_notm}}, which manages the aggregation. The multiple PCI interfaces, as seen in VMware Cloud Foundation deployment, do not add redundancy, but are required in VMware Cloud Foundation deployments and they are up the uplink migrations from vSphere Standard Switch to vSphere Distributed Switch. 
+The high availability for physical network connectivity is handled by {{site.data.keyword.cloud_notm}}, which manages the aggregation. The multiple PCI interfaces, as seen in VMware Cloud Foundation deployment, do not add redundancy, but are required in VMware Cloud Foundation deployments and they are up the uplink migrations from vSphere Standard Switch to vSphere Distributed Switch.
 {: note}
 
 ## NSX manager deployment
@@ -67,7 +67,7 @@ The principles for deploying NSX managers for consolidated and standard VMware C
 
 For NSX, each ESXi host must be set as a Transport Node so that it becomes capable of participating in an NSX Data Center overlay or NSX Data Center VLAN networking. Cloud builder and SDDC manager handle the deployment in VMware Cloud Foundation. VPC Bare Metal Server VLAN interfaces are prepared for the TEP vmks in the hosts.
 
-The following table lists the required VLAN interfaces for NSX VMKs for each host. These interfaces are always local to the host and do not need to move, but are allowed to float to facilitate the use in NSX pools. They are provisioned on the `vpc-tep-subnet`. 
+The following table lists the required VLAN interfaces for NSX VMKs for each host. These interfaces are always local to the host and do not need to move, but are allowed to float to facilitate the use in NSX pools. They are provisioned on the `vpc-tep-subnet`.
 
 | Interface name | Interface type | VLAN ID | Subnet | Allow float | VMkernel adapter | Distributed port group name |
 | ---------------|----------------|---------|--------|-------------|------------------|---------------------------- |
@@ -163,7 +163,6 @@ The previous table shows the naming and numbering principles. The actual deploym
 
 * [{{site.data.keyword.vpc_short}} getting started](/docs/vpc?topic=vpc-getting-started)
 * [{{site.data.keyword.vpc_short}} bare metal servers](/docs/vpc?topic=vpc-planning-for-bare-metal-servers)
-* [{{site.data.keyword.vpc_short}} RYO VMware reference architecture](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-ryo-arch-overview)
 * [{{site.data.keyword.dl_full_notm}} overview](/docs/dl?topic=dl-get-started-with-ibm-cloud-dl)
 * [{{site.data.keyword.tg_full_notm}} overview](/docs/transit-gateway?topic=transit-gateway-getting-started)
 * [{{site.data.keyword.vpc_short}} VPN overview](/docs/vpc?topic=vpc-vpn-overview)

@@ -4,9 +4,9 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-01-23"
+lastupdated: "2024-04-23"
 
-keywords: vCenter Server consolidated cluster, order consolidated cluster, order vCenter Server instance
+keywords: automated consolidated cluster, order consolidated cluster, order automated instance
 
 subcollection: vmwaresolutions
 
@@ -17,7 +17,7 @@ subcollection: vmwaresolutions
 # Consolidated cluster
 {: #vc_orderinginstance-consold-cluster}
 
-VMware vCenter Server® instances are deployed with a consolidated cluster for VMware vSphere® 7 in which all the VMware® management components and user workloads run.
+{{site.data.keyword.vcf-auto}} instances are deployed with a consolidated cluster for VMware vSphere® 7 in which all the VMware® management components and user workloads run.
 
 Optionally, you can order a separate workload cluster or a gateway cluster, or both. For more information, see [Additional clusters (optional)](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-addl-clusters).
 
@@ -79,7 +79,7 @@ Various RAM sizes are available depending on the CPU model.
 ## Number of bare metal servers
 {: #vc_orderinginstance-bare-metal-number}
 
-{{site.data.content.number-of-baremetal-servers}}
+{{site.data.content.number-of-baremetal-servers-consol}}
 
 When you size the capacity of your bare metal servers, consider your current requirements and include extra capacity to accommodate anticipated growth. For more information about sizing, see [Exporting VMware inventory](/docs/vmwaresolutions?topic=vmwaresolutions-vmware-inventory-export).
 {: tip}
@@ -89,7 +89,7 @@ When you size the capacity of your bare metal servers, consider your current req
 
 Storage settings are based on your selection of bare metal server configuration and the storage type.
 
-For deployed instances, you can add NFS storage shares to an existing NFS or vSAN™ cluster. For more information, see [Adding NFS storage to vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingnfs).
+For deployed instances, you can add NFS storage shares to an existing NFS or vSAN™ cluster. For more information, see [Adding NFS storage to Automated instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingnfs).
 
 ### NFS storage
 {: #vc_orderinginstance-nfs-storage}
@@ -150,13 +150,12 @@ vSAN storage depends on the number of servers and your total disk capacity, and 
 The amount of storage reduction from deduplication and compression depends on many factors, including the type of data stored and the number of duplicate blocks. Larger disk groups tend to provide a higher deduplication ratio. For more information, see [Using deduplication and compression](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.vsan.doc/GUID-3D2D80CC-444E-454E-9B8B-25C3F620EFED.html){: external}.
 {: note}
 
-#### vSAN license
+#### vSAN license (BYOL only)
 {: #vc_orderinginstance-vsan-storage-license}
 
-Use the IBM-provided VMware license for the vSAN component, which is included with purchase.
+{{site.data.content.attnnote-byol}}
 
-Bring Your Own License (BYOL) is no longer supported except for migrations or upgrades of existing BYOL clusters. Select **I will provide** and enter your own license key only if you are performing an upgrade or migration of an existing BYOL cluster.
-{: important}
+If you are a BYOL user, provide your own vSAN license key. Toggle the **BYOL** switch to **Enabled** and enter your license key.
 
 If your initial cluster is a vSAN cluster, any additional vSAN clusters use the same vSAN license and have the same configuration as the initial one. This statement is also true for any initial or extra clusters in the instance for which you select vSAN. The first time, you must provide the vSAN license and the edition. The next time that you select vSAN for a new cluster, the license you initially chose will be reused.
 
@@ -212,7 +211,7 @@ Use the **Public VLAN**, **Private VLAN**, or **Secondary private VLAN** tabs to
 #### Portable subnets notes
 {: #vc_orderinginstance-existing-vlans-notes}
 
-* You must complete the **Public VLAN**, **Private VLAN**, or **Secondary private VLAN** settings before you can configure portable subnets.
+* Complete the **Public VLAN**, **Private VLAN**, or **Secondary private VLAN** settings before you can configure portable subnets.
 * The number of portable subnets is displayed under **Advanced settings** after you save the portable subnet settings. Click **Portable subnets settings** to edit the settings.
 * The saved portable subnet settings are cleared if you change the **Public VLAN**, **Private VLAN**, or **Secondary private VLAN** settings.
 
@@ -223,4 +222,4 @@ Use the **Public VLAN**, **Private VLAN**, or **Secondary private VLAN** tabs to
 {: #vc_orderinginstance-consold-cluster-related}
 
 * [Gateway cluster configuration](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-addl-clusters#vc_orderinginstance-addl-clusters-gate)
-* [Procedure to order vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-procedure)
+* [Procedure to order Automated instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-procedure)

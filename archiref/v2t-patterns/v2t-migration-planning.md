@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-01-30"
+lastupdated: "2024-04-16"
 
 subcollection: vmwaresolutions
 
@@ -51,21 +51,21 @@ When you assess the complexity, you must focus on skills and resource availabili
 * If existing resources have time to participate in migration activities while they are delivering their existing duties.
 * If existing resources have the skills, knowledge and experience that are needed to successfully deliver the required tasks.
 
-If it is deemed that in-house skills need to be supplemented, then it is advised to engage a migration services provider as soon as possible. 
+If it is deemed that in-house skills need to be supplemented, then it is advised to engage a migration services provider as soon as possible.
 
 In addition, to ensure successful Day 2 operations, improve the core VMware NSX-T™ skills by using the available [VMware Learning for NSX-T education](https://www.vmware.com/learning.html){: external}.
 
 ## Engage a migration services provider
 {: #v2t-planning-serviceprovider}
 
-You can engage PrimaryIO’s experienced Professional Services team through the IBM Catalog. For more information, see [HDM Cloud Connect NSX-V to NSX-T](https://cloud.ibm.com/catalog/services/hdm-cloud-connect-nsx-v-to-nsx-t).
+You can engage PrimaryIO’s experienced Professional Services team through the IBM Catalog. For more information, see [VMware Cloud Migration Services (VMwaaS VPC NSX-T)](https://cloud.ibm.com/catalog/services/primaryio-hdm-cloud-connect-nsx-v-to-nsx-t).
 
 PrimaryIO’s Fasttrack Migration Service is optimized to move customers away from NSX-V and onto NSX-T through short form engagements that continually drive progress by focusing on critical path objectives.
 
 ## Source environment complexity patterns
 {: #v2t-planning-complexitypatterns}
 
-The output of the [Assess migration complexity](/docs/vmwaresolutions?topic=vmwaresolutions-v2t-complexity) step is a complexity status of low, medium, or high. 
+The output of the [Assess migration complexity](/docs/vmwaresolutions?topic=vmwaresolutions-v2t-complexity) step is a complexity status of low, medium, or high.
 
 This status can be used to help the selection as follows:
 
@@ -150,4 +150,4 @@ A third possible Layer 2 approach is to use NSX-T L2VPN. In this approach, the N
 * [The NSX Terraform Provider](https://registry.terraform.io/providers/vmware/nsxt/latest/docs){: external}
 * [NSX-V to NSX-T 3.x Migration Coordinator](https://nsx.techzone.vmware.com/resource/nsx-v-nsx-t-3x-migration-coordinator#_Toc57645169){: external}
 * [NSX-V to NSX-T fast track migration service](https://hdm.primaryio.com/lp/nsxvtot){: external}
-* [HDM Cloud Connect NSX-V to NSX-T](https://cloud.ibm.com/catalog/services/hdm-cloud-connect-nsx-v-to-nsx-t#about)
+* [VMware Cloud Migration Services (VMwaaS VPC NSX-T)](https://cloud.ibm.com/catalog/services/vmware-cloud-migration-services-vmwaas-vpc-nsx-t)

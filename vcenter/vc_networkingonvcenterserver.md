@@ -4,9 +4,9 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-02-01"
+lastupdated: "2024-04-25"
 
-keywords: vCenter Server networking, networking components, networking vCenter
+keywords: vcf automated networking, networking components, networking vcf classic
 
 subcollection: vmwaresolutions
 
@@ -15,16 +15,16 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Networking considerations for vCenter Server instances
+# Networking considerations for Automated instances
 {: #vc_networkingonvcenterserver}
 
-Review the following information for details about networking considerations and requirements for your VMware vCenter Server® instances. Ensure that you meet the requirements so that your instance functions properly.
+Review the following information for details about networking considerations and requirements for your {{site.data.keyword.vcf-auto}} instances. Ensure that you meet the requirements so that your instance functions properly.
 
-## Networking components for vCenter Server instances
+## Networking components for Automated instances
 {: #vc_networkingonvcenterserver-networking-components}
 {: faq}
 
-To review the networking components that are included in your vCenter Server instance, see [Technical specifications for vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview#vc_vcenterserveroverview-specs).
+To review the networking components that are included in your Automated instance, see [Technical specifications for Automated instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview#vc_vcenterserveroverview-specs).
 
 ## Firewall considerations
 {: #vc_networkingonvcenterserver-firewall-considerations}
@@ -38,9 +38,9 @@ Some components might attempt to connect to the public network, although they ar
 {: #vc_networkingonvcenterserver-using-nsx-with-vm}
 {: faq}
 
-During vCenter Server instance deployment, VMware NSX® is ordered, installed, licensed, and configured in your instance. Also, NSX Manager, VMware NSX Controllers™, and NSX Transport Zone are set up, and each VMware ESXi™ server is configured with the NSX components.
+During {{site.data.keyword.vcf-auto-short}} instance deployment, VMware NSX® is ordered, installed, licensed, and configured in your instance. Also, NSX Manager, VMware NSX Controllers™, and NSX Transport Zone are set up, and each VMware ESXi™ server is configured with the NSX components.
 
-An VMware NSX Edge™ Services Gateway is also deployed to be used by your workload VM or VMs. For more information, see [Configuring your network to use the customer-managed NSX ESG with your VMs](/docs/vmwaresolutions?topic=vmwaresolutions-vc_esg_config).
+A VMware NSX Edge™ cluster is also deployed to be used by your workload VM or VMs. For more information, see [Configuring your network to use the customer-managed NSX edge cluster with your VMs](/docs/vmwaresolutions?topic=vmwaresolutions-vc_esg_config).
 
 ## Considerations when you change passwords for NSX components
 {: #vc_networkingonvcenterserver-change-nsx-component-password-considerations}
@@ -51,11 +51,10 @@ Review the following considerations before you attempt to change the passwords f
 {: #vc_networkingonvcenterserver-change-pwd-nsx-t}
 {: faq}
 
-* Do not change the NSX Manager admin password for NSX-T.
 * You can change the NSX Manager root password. This password is not displayed in the VMware Solutions console. However, the password is the same as the one for the root user for NSX Controllers, which is displayed in the console.
 * You can change the passwords for the root user for NSX Controllers. The root credentials are displayed in the VMware Solutions console.
-* You can change the passwords for the admin user and the root user for the customer-managed VMware NSX Edge Services Gateway (ESG). The admin credentials are displayed in the VMware Solutions console, but the root credentials are not displayed. The passwords for the root user and the admin user are the same.
-* You can change the passwords for admin user and root user for management services NSX ESG. The admin credentials are displayed in the VMware Solutions console, but the root credentials are not displayed. The passwords for the root user and the admin user are the same.
+* You can change the passwords for the admin user and the root user for the customer-managed VMware NSX edge nodes. The admin credentials are displayed in the VMware Solutions console, but the root credentials are not displayed. The passwords for the root user and the admin user are the same.
+* You can change the passwords for admin user and root user for management services edge nodes. The admin credentials are displayed in the VMware Solutions console, but the root credentials are not displayed. The passwords for the root user and the admin user are the same.
 
 ### Considerations when you change passwords for NSX-V components
 {: #vc_networkingonvcenterserver-change-pwd-nsx-v}
@@ -63,7 +62,7 @@ Review the following considerations before you attempt to change the passwords f
 
 * You can change the NSX Manager password. This password is displayed on the **Summary** page of the instance in the VMware Solutions console.
 * You can change the NSX Controller password. This password is not displayed in the VMware Solutions console, but you can set a new password without the old password. For more information, see [Change Controller password](https://docs.vmware.com/en/VMware-NSX-Data-Center-for-vSphere/6.2/NSX-Data-Center-for-vSphere-62.zip){: external}.
-* You can change the password and the SSH settings for the customer-managed NSX ESG. This password is not displayed in the VMware Solutions console, but you can set a new password without the old password. For more information, see [Change CLI credentials](https://docs.vmware.com/en/VMware-NSX-Data-Center-for-vSphere/6.4/com.vmware.nsx.admin.doc/GUID-1DB9DE43-6B54-4FD1-903A-2DFFB87CD7FA.html?hWord=N4IghgNiBcIKYBMDmcAEAHMBnLB3A9gE4IgC+QA){: external}.
+* You can change the password and the SSH settings for the customer-managed edge. This password is not displayed in the VMware Solutions console, but you can set a new password without the old password. For more information, see [Change CLI credentials](https://docs.vmware.com/en/VMware-NSX-Data-Center-for-vSphere/6.4/com.vmware.nsx.admin.doc/GUID-1DB9DE43-6B54-4FD1-903A-2DFFB87CD7FA.html?hWord=N4IghgNiBcIKYBMDmcAEAHMBnLB3A9gE4IgC+QA){: external}.
 * Do not change the passwords for the management VMware NSX ESG and the related Distributed Logical Router.
 
 ## Related links

@@ -4,7 +4,7 @@ copyright:
 
   years:  2024
 
-lastupdated: "2024-01-19"
+lastupdated: "2024-04-29"
 
 subcollection: vmwaresolutions
 
@@ -41,9 +41,8 @@ This architecture pattern deployment is summarized as follows:
 ## Considerations for deploying Tanzu on VMware Cloud Foundation standard architecture
 {: #arch-pattern-vcf-tanzu-std-considerations}
 
-When you design or deploy this architecture pattern, consider the following information:
-
-* Tanzu can only be deployed on the VMware Cloud Foundation standard architecture.
+When you design or deploy this architecture pattern, not that Tanzu can only be deployed on the VMware Cloud Foundation standard architecture.
+{: important}
 
 ## Related links
 {: #arch-pattern-vcf-tanzu-std-links}

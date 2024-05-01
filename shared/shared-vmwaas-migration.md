@@ -4,9 +4,9 @@ copyright:
 
   years:  2020, 2024
 
-lastupdated: "2024-04-02"
+lastupdated: "2024-04-26"
 
-keywords: migrating to VMware as a Service
+keywords: migrating to VMware Cloud Foundation as a Service
 
 subcollection: vmwaresolutions
 
@@ -15,23 +15,23 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Technical considerations about migrating from VMware Shared to {{site.data.keyword.vmware-service_short}}
+# Technical considerations about migrating from {{site.data.keyword.vm-shared}} to {{site.data.keyword.vcf-aas}}
 {: #shared-vmwaas-migration}
 
 {{site.data.content.shared-deprecated-note}}
 
-{{site.data.keyword.vmware-service_full}} can be considered as an evolution to {{site.data.keyword.cloud_notm}} for VMware Shared. {{site.data.keyword.vmware-service_notm}} provides the same VMware Cloud Director™ platform, but with two flavors, either a dedicated or shared managed service. {{site.data.keyword.IBM}} performs the configuration, hosting, operations, and lifecycle management of the VMware® by Broadcom software in the same way, so you can quickly deploy your VMware-based cloud computing environments. Compute resources are available as either dedicated or multitenant hosts that use {{site.data.keyword.cloud_notm}} bare metal servers. Dedicated single-tenant VMware sites provide extra isolation and support multiple host configuration options to support flexible workload requirements.
+{{site.data.keyword.vcf-aas-full}} can be considered as an evolution to {{site.data.keyword.cloud_notm}} for {{site.data.keyword.vm-shared}}. {{site.data.keyword.vcf-aas}} provides the same VMware Cloud Director™ platform, but with two flavors, either a dedicated or shared managed service. {{site.data.keyword.IBM}} performs the configuration, hosting, operations, and lifecycle management of the VMware® by Broadcom software in the same way, so you can quickly deploy your VMware-based cloud computing environments. Compute resources are available as either dedicated or multitenant hosts that use {{site.data.keyword.cloud_notm}} bare metal servers. Dedicated single-tenant VMware sites provide extra isolation and support multiple host configuration options to support flexible workload requirements.
 
-{{site.data.keyword.vmware-service_short}} multitenant instances are deployed to all supported regions by {{site.data.keyword.IBM_notm}}. You can create your virtual data centers (VDCs) on the {{site.data.keyword.IBM_notm}} managed infrastructure. {{site.data.keyword.vmware-service_short}} single-tenant instances are provisioned and managed by your organization.
+{{site.data.keyword.vcf-aas}} multitenant instances are deployed to all supported regions by {{site.data.keyword.IBM_notm}}. You can create your virtual data centers (VDCs) on the {{site.data.keyword.IBM_notm}} managed infrastructure. {{site.data.keyword.vcf-aas}} single-tenant instances are provisioned and managed by your organization.
 
-With the new versions for underlying VMware Cloud Director™ platform and its software defined networking, and due to changes to the add-on service options, you might need to change some components of the design. The following information describes the most significant changes to the platform and lists the design and implementation considerations for migrated virtual data centers. Review this information before migrating {{site.data.keyword.vmwaresolutions_full}} Shared virtual data centers to {{site.data.keyword.vmware-service_short}}.
+With the new versions for underlying VMware Cloud Director™ platform and its software defined networking, and due to changes to the add-on service options, you might need to change some components of the design. The following information describes the most significant changes to the platform and lists the design and implementation considerations for migrated virtual data centers. Review this information before migrating {{site.data.keyword.vmwaresolutions_full}} Shared virtual data centers to {{site.data.keyword.vcf-aas}}.
 
 ## Network edge type
 {: #shared-vmwaas-migration-edge-type}
 
 VDCs connect to the public and IBM private networks through edges. Edges can also be used to connect multiple VDC networks together. You can create your VDC with or without a network edge. Network edge types include: Efficiency, Performance - M, Performance - L, and Performance - XL.
 
-Performance edges are dedicated to a single virtual data center (VDC) and provide the most consistent performance. The larger size Performance edges offer support for more network service usage and throughput. The Efficiency edges can be shared by up to 64 separate virtual data centers and can be cost effective in large deployments with some sacrifice to network performance consistency. 
+Performance edges are dedicated to a single virtual data center (VDC) and provide the most consistent performance. The larger size Performance edges offer support for more network service usage and throughput. The Efficiency edges can be shared by up to 64 separate virtual data centers and can be cost effective in large deployments with some sacrifice to network performance consistency.
 
 | Edge type | Details |
 |:--------- |:------- |
@@ -44,7 +44,7 @@ Performance edges are dedicated to a single virtual data center (VDC) and provid
 ## Public network connectivity
 {: #shared-vmwaas-migration-network-public}
 
-When you deploy a new {{site.data.keyword.vmware-service_short}} VDC data center, you get new public IP addresses. Existing public IP addresses of the {{site.data.keyword.vmwaresolutions_full}} Shared VDC cannot be moved to the new {{site.data.keyword.vmware-service_short}} VDC.
+When you deploy a new {{site.data.keyword.vcf-aas}} VDC data center, you get new public IP addresses. Existing public IP addresses of the {{site.data.keyword.vmwaresolutions_full}} Shared VDC cannot be moved to the new {{site.data.keyword.vcf-aas}} VDC.
 
 * If you are accessing your VDC workloads by using NAT rules or other routing arrangements, you must reconfigure your DNS rules and other possible remote firewalls and their rules.
 * If you are accessing your VDC workloads by using IPsec tunnels, you must reconfigure your VPN tunnels to the new public IP addresses.
@@ -52,18 +52,18 @@ When you deploy a new {{site.data.keyword.vmware-service_short}} VDC data center
 ## Private network connectivity
 {: #shared-vmwaas-migration-network-private}
 
-{{site.data.keyword.vmware-service_short}} multitenant and single-tenant virtual data centers (VDCs) can use {{site.data.keyword.tg_full}} to securely interconnect with other {{site.data.keyword.vmware-service_short}} virtual data centers, {{site.data.keyword.cloud_notm}} Classic and Virtual Private Cloud (VPC) IaaS infrastructures, and your on-premises locations by using {{site.data.keyword.tg_short}} attached Direct Link connections.
+{{site.data.keyword.vcf-aas}} multitenant and single-tenant virtual data centers (VDCs) can use {{site.data.keyword.tg_full}} to securely interconnect with other {{site.data.keyword.vcf-aas}} virtual data centers, {{site.data.keyword.cloud_notm}} Classic and Virtual Private Cloud (VPC) IaaS infrastructures, and your on-premises locations by using {{site.data.keyword.tg_short}} attached Direct Link connections.
 
 * {{site.data.keyword.tg_short}} uses Generic Routing Encapsulation (GRE) tunnels to connect your single-tenant and multitenant virtual data centers (VDCs) to a {{site.data.keyword.tg_short}} resource.
 * Six unbound GRE tunnels and dynamic routing with BGP are used to establish redundant connectivity to each zone.
 * This way, your private connectivity options are enhanced in the new virtual data centers.
 
-To use this functionality, first use the VMware Solutions console to configure your GRE tunnel connections and add a connection group of six unbound GRE tunnels to your VDC. Then, you can add each GRE tunnel to the {{site.data.keyword.tg_short}} to attach the tunnels that belong to the connection group. For more information, see [Using {{site.data.keyword.tg_short}} to interconnect {{site.data.keyword.vmware-service_short}} with {{site.data.keyword.cloud_notm}} services](/docs/vmware-service?topic=vmware-service-tgw-adding-connections).
+To use this functionality, first use the VMware Solutions console to configure your GRE tunnel connections and add a connection group of six unbound GRE tunnels to your VDC. Then, you can add each GRE tunnel to the {{site.data.keyword.tg_short}} to attach the tunnels that belong to the connection group. For more information, see [Using {{site.data.keyword.tg_short}} to interconnect {{site.data.keyword.vcf-aas}} with {{site.data.keyword.cloud_notm}} services](/docs/vmware-service?topic=vmware-service-tgw-adding-connections).
 
 ## NSX version change
 {: #shared-vmwaas-migration-nsx-version}
 
-{{site.data.keyword.vmware-service_short}} virtual data centers networking uses the most recent version of VMware NSX (also known as NSX-T), while VMware Shared is based on NSX-V. This change enhances the networking capabilities of your virtual data centers.
+{{site.data.keyword.vcf-aas}} virtual data centers networking uses the most recent version of VMware NSX (also known as NSX-T), while {{site.data.keyword.vm-shared}} is based on NSX-V. This change enhances the networking capabilities of your virtual data centers.
 
 If you are using automation (such as Terraform), the API and Terraform resources are different. For more information, see [vCloud Director API](https://developer.vmware.com/apis/553/vcloud-director/){: external} and [Terraform VMware Cloud Director Provider](https://registry.terraform.io/providers/vmware/vcd/latest/docs){: external} documentation.
 {: note}
@@ -96,14 +96,14 @@ IPSec VPN offers site-to-site connectivity between an edge gateway and remote si
 
 Policy-based IPSec VPN requires a VPN policy to be applied to packets to determine which traffic is to be protected by IPsec before the traffic is passed through a VPN tunnel. This type of VPN is considered static because when a local network topology and configuration change, the VPN policy settings must also be updated to accommodate the changes.
 
-{{site.data.keyword.vmware-service_short}} virtual data centers support only policy-based IPsec VPNs. Route-based IPsec VPNs are not supported. For more information, see [IPsec Policy-Based VPN for NSX Edge Gateways](https://docs.vmware.com/en/VMware-Cloud-Director/10.4/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-019E8BF7-8669-4A15-B1AE-CDFD04EA77CB.html){: external}.
+{{site.data.keyword.vcf-aas}} virtual data centers support only policy-based IPsec VPNs. Route-based IPsec VPNs are not supported. For more information, see [IPsec Policy-Based VPN for NSX Edge Gateways](https://docs.vmware.com/en/VMware-Cloud-Director/10.4/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-019E8BF7-8669-4A15-B1AE-CDFD04EA77CB.html){: external}.
 
 ## NAT rules
 {: #shared-vmwaas-migration-network-nat}
 
 To change the source IP address from a private to a public IP address, you create a source NAT (SNAT) rule. To change the destination IP address from a public to a private IP address, you create a destination NAT (DNAT) rule.
 
-The following information lists the possible NAT options in the {{site.data.keyword.vmware-service_short}} Edge Gateway:
+The following information lists the possible NAT options in the {{site.data.keyword.vcf-aas}} Edge Gateway:
 
 * When you configure a `SNAT` or a `DNAT` rule on an edge gateway in the VMware Cloud Director environment, you always configure the rule from the perspective of your organization VDC.
 * An `SNAT` rule translates the source IP address of packets that are sent from an organization VDC network out to an external network or to another organization VDC network.
@@ -125,38 +125,38 @@ Data center group networks that are backed by NSX provide level-2 network sharin
 
 * After you create a data center group with an NSX network provider type, you can add data centers to the group, remove them, and edit the group settings.
 * A data center group can include up to 16 virtual data centers.
-* At least one virtual data centers in {{site.data.keyword.vmware-service_short}} must have edge networking enabled. You can choose between efficiency and performance edges. For more information, see [Network edge type](/docs/vmware-service?topic=vmware-service-tenant-plan-deploy#tenant-plan-deploy-edge).
-* You can optionally order virtual data centers in {{site.data.keyword.vmware-service_short}} without edge networking. For more information, see [Ordering virtual data centers for {{site.data.keyword.vmware-service_short}} single-tenant](/docs/vmware-service?topic=vmware-service-vdc-adding).
+* At least one virtual data centers in {{site.data.keyword.vcf-aas}} must have edge networking enabled. You can choose between efficiency and performance edges. For more information, see [Network edge type](/docs/vmware-service?topic=vmware-service-tenant-plan-deploy#tenant-plan-deploy-edge).
+* You can optionally order virtual data centers in {{site.data.keyword.vcf-aas}} without edge networking. For more information, see [Ordering virtual data center instances](/docs/vmware-service?topic=vmware-service-vdc-adding).
 * VDCs that you remove from the data center group must have no workloads attached to any of the networks that participate in the data center group.
 
 ## Migration tools
 {: #shared-vmwaas-migration-tooling-migration}
 
-You can use VMware Cloud Director Availability (VCDA) as a simple, secure, and cost-effective virtual machine migration from your {{site.data.keyword.vmwaresolutions_full}} Shared virtual data centers to new virtual data centers in your {{site.data.keyword.vmware-service_short}} Site.
+You can use VMware Cloud Director Availability (VCDA) as a simple, secure, and cost-effective virtual machine migration from your {{site.data.keyword.vmwaresolutions_full}} Shared virtual data centers to new virtual data centers in your {{site.data.keyword.vcf-aas}} Site.
 
-The VCDA service is included by default in all multitenant virtual data centers (VDCs) and optionally included in your single-tenant {{site.data.keyword.vmware-service_short}} Cloud Director site order at no charge.
+The VCDA service is included by default in all multitenant virtual data centers (VDCs) and optionally included in your single-tenant {{site.data.keyword.vcf-aas}} Cloud Director site order at no charge.
 
-For more information, see [VMware Cloud Director Availability for {{site.data.keyword.vmware-service_short}} overview](/docs/vmwaresolutions?topic=vmwaresolutions-tenant-vcda).
+For more information, see [VMware Cloud Director Availability for {{site.data.keyword.vcf-aas}} overview](/docs/vmwaresolutions?topic=vmwaresolutions-tenant-vcda).
 
-## Protecting VMs in {{site.data.keyword.vmware-service_short}}
+## Protecting VMs in {{site.data.keyword.vcf-aas}}
 {: #shared-vmwaas-migration-tooling-protection}
 
-The Veeam® Backup and Replication service are available and ready to use in your {{site.data.keyword.vmware-service_short}} instance. This service seamlessly integrates as a managed solution to help your enterprise achieve high availability and provides recovery points for your applications and data. By using this service, you control the backup of all virtual machines (VMs) for your infrastructure directly from the Veeam console.
+The Veeam® Backup and Replication service are available and ready to use in your {{site.data.keyword.vcf-aas}} instance. This service seamlessly integrates as a managed solution to help your enterprise achieve high availability and provides recovery points for your applications and data. By using this service, you control the backup of all virtual machines (VMs) for your infrastructure directly from the Veeam console.
 
 * Existing backups are not moved from {{site.data.keyword.vmwaresolutions_full}} Shared virtual data centers.
-* Re-configure backups in the new {{site.data.keyword.vmware-service_short}} VDC post migration.
-* Veeam Cloud Connect Replication is not available in {{site.data.keyword.vmware-service_short}}.
-* Zerto service is not available in {{site.data.keyword.vmware-service_short}}.
+* Re-configure backups in the new {{site.data.keyword.vcf-aas}} VDC post migration.
+* Veeam Cloud Connect Replication is not available in {{site.data.keyword.vcf-aas}}.
+* Zerto service is not available in {{site.data.keyword.vcf-aas}}.
 
-For more information, see [Managing Veeam for {{site.data.keyword.vmware-service_short}}](/docs/vmwaresolutions?topic=vmwaresolutions-tenant-veeam).
+For more information, see [Managing Veeam for {{site.data.keyword.vcf-aas}}](/docs/vmwaresolutions?topic=vmwaresolutions-tenant-veeam).
 
 ## Related links
 {: #shared-vmwaas-migration-related}
 
-* [Planning the {{site.data.keyword.vmware-service_short}} deployment](/docs/vmware-service?topic=vmware-service-tenant-plan-deploy)
+* [Planning the {{site.data.keyword.vcf-aas}} deployment](/docs/vmware-service?topic=vmware-service-tenant-plan-deploy)
 * [Managing Organization Virtual Data Center Networks](https://docs.vmware.com/en/VMware-Cloud-Director/10.4/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-B208CDD2-5D46-4841-8F3C-BED9E4F27F07.html){: external}
-* [Using {{site.data.keyword.tg_short}} to interconnect {{site.data.keyword.vmware-service_short}} with {{site.data.keyword.cloud_notm}} services](/docs/vmware-service?topic=vmware-service-tgw-adding-connections)
-* [Using VMware Cloud Director Availability with {{site.data.keyword.vmware-service_short}}](/docs/vmwaresolutions?topic=vmwaresolutions-tenant-vcda).
+* [Using {{site.data.keyword.tg_short}} to interconnect {{site.data.keyword.vcf-aas}} with {{site.data.keyword.cloud_notm}} services](/docs/vmware-service?topic=vmware-service-tgw-adding-connections)
+* [Using VMware Cloud Director Availability with {{site.data.keyword.vcf-aas}}](/docs/vmwaresolutions?topic=vmwaresolutions-tenant-vcda).
 * [VMware Cloud Director](https://www.vmware.com/products/cloud-director.html){: external}
 * [vCloud Director API](https://developer.vmware.com/apis/553/vcloud-director/){: external}
 * [Terraform VMware Cloud Director Provider](https://registry.terraform.io/providers/vmware/vcd/latest/docs){: external}

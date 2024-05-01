@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2022
+  years:  2016, 2024
 
-lastupdated: "2022-08-26"
+lastupdated: "2024-04-26"
 
 subcollection: vmwaresolutions
 
@@ -16,14 +16,14 @@ subcollection: vmwaresolutions
 # Step 1 - Initial planning and prerequisites
 {: #caveonix-step1}
 
-Each Caveonix RiskForesight™ application component is loosely coupled, but centrally managed. Therefore, they can be deployed in an “all-in-one” virtual machine deployment pattern or the application components can be “scaled-out” and deployed on multiple VMs for higher availability, performance, and capacity.
+Each Caveonix RiskForesight™ application component is loosely coupled, but centrally managed. Therefore, they can be deployed in an all-in-one virtual machine deployment pattern or the application components can be “scaled-out” and deployed on multiple VMs for higher availability, performance, and capacity.
 
 Deployment patterns are based on both availability requirements and sizing for data retention. RiskForesight deployment nodes can be characterized as:
 * Base VMs – The base VMs host the application components that do not scale due to data retention. These components are; RiskForesight UI, RiskForesight App, RiskForesight Plugins, Central Collector, Remote Collector, Index Datastore, Messaging Datastore, and Relational Datastore.
 * Scale-out VMs – The scale-out VMs (the database and the data index) scale according to the number of assets and the required data retention. These requirements might create demand for more scale-out hard disk space and more scale-out VMs.
 
 Review the three Caveonix RiskForesight deployment models:
-* “All-in-one” – An automated deployment and configuration of one VM that hosts all the application components:
+* All-in-one – An automated deployment and configuration of one VM that hosts all the application components:
    * All application components installed on one VM.
    * Remote Collectors can be installed on separate VMs.
    *  Small deployments – up to 100 assets with 7 - 30 days of indexing.

@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2024
 
-lastupdated: "2024-04-02"
+lastupdated: "2024-04-26"
 
 keywords: manage shared resources, view shared virtual data centers details
 
@@ -19,13 +19,13 @@ subcollection: vmwaresolutions
 
 {{site.data.content.shared-deprecated-note}}
 
-You can view property details for VMware Shared sites and virtual data centers. You can also review recommended services that are enabled or available for virtual data centers.
+You can view property details for {{site.data.keyword.vm-shared}} sites and virtual data centers. You can also review recommended services that are enabled or available for virtual data centers.
 
 ## Procedure to view site details
 {: #shared_viewing-site-details-procedure}
 
-1. From the VMware Solutions console, click **Resources > VMware Shared** from the left navigation pane.
-2. In the **VMware Shared** table, click the site.
+1. From the VMware Solutions console, click **Resources > {{site.data.keyword.vm-shared}}** from the left navigation pane.
+2. In the **{{site.data.keyword.vm-shared}}** table, click the site.
 3. Ensure that you are on the **Summary** tab to view the property details of a site.
 
 | Property | Description |
@@ -83,13 +83,13 @@ Under **Resource reservation**, view the total reserved virtual CPU (vCPU) and R
 
 Click the **Services** tab to view the virtual data center recommended services details.
 
-For more information about recommended services details, see [Managing Veeam for VMware Shared virtual data centers](/docs/vmwaresolutions?topic=vmwaresolutions-shared_veeam) and [Managing Zerto for VMware Shared virtual data centers](/docs/vmwaresolutions?topic=vmwaresolutions-shared_zerto-portal).
+For more information about recommended services details, see [Managing Veeam for {{site.data.keyword.vm-shared}} virtual data centers](/docs/vmwaresolutions?topic=vmwaresolutions-shared_veeam) and [Managing Zerto for {{site.data.keyword.vm-shared}} virtual data centers](/docs/vmwaresolutions?topic=vmwaresolutions-shared_zerto-portal).
 
 ## Related links
 {: #shared_viewing-vdc-details-related}
 
 * [Creating a private network endpoint](/docs/vmwaresolutions?topic=vmwaresolutions-shared_creating-endpoints)
 * [Resizing your virtual data centers](/docs/vmwaresolutions?topic=vmwaresolutions-shared_resize)
-* [Deleting VMware Shared virtual data centers](/docs/vmwaresolutions?topic=vmwaresolutions-shared_deletinginstance)
+* [Deleting {{site.data.keyword.vm-shared}} virtual data centers](/docs/vmwaresolutions?topic=vmwaresolutions-shared_deletinginstance)
 * [Accessing the VMware Cloud Director Management console](/docs/vmwaresolutions?topic=vmwaresolutions-shared_accessing-vcd-console)
 * [VMware Cloud Director](https://www.vmware.com/products/cloud-director.html){: external}

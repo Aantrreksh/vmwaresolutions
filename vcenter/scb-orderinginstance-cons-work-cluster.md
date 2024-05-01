@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2024
 
-lastupdated: "2024-01-23"
+lastupdated: "2024-04-23"
 
 keywords: order Security and Compliance Readiness Bundle, order scb instances, order vcs scb
 subcollection: vmwaresolutions
@@ -40,7 +40,6 @@ You can choose the following CPU models:
 * Dual Intel® Xeon® Silver 4210 processor, 20 cores, 2.2 GHz
 * Dual Intel Xeon Gold 5218 processor, 32 cores, 2.3 GHz
 * Dual Intel Xeon Gold 6248 processor, 40 cores, 2.5 GHz
-* Dual Intel Xeon Gold 6250 processor, 16 cores, 3.9 GHz
 * Dual Intel Xeon Platinum 8260 processor, 48 cores, 2.4 GHz
 * Quad Intel Xeon Gold 6248 processor, 80 cores, 2.5 GHz
 * Quad Intel Xeon Platinum 8260 processor, 96 cores, 2.4 GHz
@@ -53,14 +52,20 @@ You can choose the RAM size from 128 GB, 192 GB, 384 GB, 768 GB, and 1.5 TB.
 ## Number of bare metal servers
 {: #scb-orderinginstance-consoli-bare-metal-number}
 
-{{site.data.content.number-of-baremetal-servers}}
+For the consolidated cluster:
+
+{{site.data.content.number-of-baremetal-servers-consol}}
+
+For the workload cluster:
+
+{{site.data.content.number-of-baremetal-servers-wkld}}
 
 ## Storage
 {: #scb-orderinginstance-consoli-storage}
 
 Storage settings are based on your selection of the storage type.
 
-For deployed instances, you can add NFS storage shares to an existing NFS or vSAN cluster. For more information, see [Adding NFS storage to vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingnfs).
+For deployed instances, you can add NFS storage shares to an existing NFS or vSAN cluster. For more information, see [Adding NFS storage to Automated instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingnfs).
 
 ### NFS storage
 {: #scb-orderinginstance-consoli-nfs}
@@ -117,15 +122,14 @@ vSAN storage depends on the number of servers and your total disk capacity, and 
 The amount of storage reduction from deduplication and compression depends on many factors, including the type of data stored and the number of duplicate blocks. Larger disk groups tend to provide a higher deduplication ratio. For more information, see [Using deduplication and compression](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.vsan.doc/GUID-3D2D80CC-444E-454E-9B8B-25C3F620EFED.html){: external}.
 {: note}
 
-#### vSAN Enterprise license
-{: #scb-orderinginstance-consoli-vsan-license}
+#### vSAN license (BYOL only)
+{: #scb-orderinginstance-vsan-storage-license}
 
-Use the IBM-provided VMware license for the vSAN component by selecting **Include with purchase**.
+{{site.data.content.attnnote-byol}}
 
-Bring Your Own License (BYOL) is no longer supported except for migrations or upgrades of existing BYOL clusters. Select **I will provide** and enter your own license key only if you are performing an upgrade or migration of an existing BYOL cluster.
-{: important}
+If you are a BYOL user, provide your own vSAN license key. Toggle the **BYOL** switch to **Enabled** and enter your license key.
 
-If your initial cluster is a vSAN cluster, any additional vSAN clusters use the same vSAN license and have the same configuration as the initial one. This is also true if any cluster (initial or additional) in the instance has vSAN selected to be deployed on it. The first time you're prompted for the vSAN license and the edition. The next time that you select vSAN for a new cluster, the license that is chosen initially is reused.
+If your initial cluster is a vSAN cluster, any additional vSAN clusters use the same vSAN license and have the same configuration as the initial one. This statement is also true for any initial or extra clusters in the instance for which you select vSAN. The first time, you must provide the vSAN license and the edition. The next time that you select vSAN for a new cluster, the license you initially chose will be reused.
 
 ## Networking type
 {: #scb-orderinginstance-consoli-private-nics}

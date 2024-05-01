@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2023
+  years:  2016, 2024
 
-lastupdated: "2023-10-03"
+lastupdated: "2024-04-20"
 
 keywords: VMware HCX deployment, HCX configuration, order HCX
 
@@ -18,7 +18,7 @@ subcollection: vmwaresolutions
 # Ordering VMware HCX
 {: #hcx_ordering}
 
-You can include the VMware HCX™ service with a new VMware vCenter Server® instance or add the service to your existing instance.
+You can include the VMware HCX™ service with a new {{site.data.keyword.vcf-auto}} instance or add the service to your existing instance.
 
 ## Considerations when you install HCX
 {: #hcx_considerations-install}
@@ -30,7 +30,7 @@ Review the following considerations before you install HCX.
 
 The HCX service mesh target cluster cannot have more than 51 VMware ESXi servers. HCX requires eight IP addresses in the vMotion subnet from the service mesh target cluster. Because of this requirement, if the number of ESXi servers exceeds 51, no IP addresses in the vMotion subnet are available for HCX.
 
-For existing vCenter Server with NSX-V instances, the service mesh target cluster is the default cluster.
+For existing {{site.data.keyword.vcf-auto-short}} with NSX-V instances, the service mesh target cluster is the default cluster.
 {: note}
 
 ### Requirements on firewall rules
@@ -38,8 +38,8 @@ For existing vCenter Server with NSX-V instances, the service mesh target cluste
 
 Before you install the HCX service, you must add a firewall rule to any existing firewalls.
 
-1. From the VMware Solutions console, click **Resources > vCenter Server** from the left navigation pane.
-2. In the **vCenter Server** table, click the instance to view the clusters from that instance.
+1. From the VMware Solutions console, click **Resources > {{site.data.keyword.vcf-auto-short}}** from the left navigation pane.
+2. In the **{{site.data.keyword.vcf-auto-short}}** table, click the instance to view the clusters from that instance.
 3. Click the **Infrastructure** tab and select the cluster where you want to install the HCX service.
 4. Go to the **Network interface** section on the cluster page.
 5. Collapse the **Public VLAN** option and collapse the subnet with the description that corresponds to the portable subnet of the particular cluster.
@@ -71,7 +71,7 @@ To install HCX, complete the following settings:
 1. Select the **HCX Service Mesh target cluster**, either the management or the workload cluster.
 2. Specify the **HCX network connection** by selecting one of the following options. If any of the management or service mesh target clusters are deployed with private network only, the only networking option that you can choose is private.
    * **Public network** - HCX creates an encrypted connection between sites over the public network. License registration and metering are completed over the public network.
-   * **Private network** - HCX creates an encrypted connection between sites over the private network. License registration and metering are completed over a private network through HTTP proxy.  
+   * **Private network** - HCX creates an encrypted connection between sites over the private network. License registration and metering are completed over a private network through HTTP proxy.
 3. If private network connection is selected, proxy information is displayed. Otherwise, a proxy option is not available.
    Complete the following fields:
    * **Proxy IP address** - The IPv4 address of the proxy server.
@@ -89,7 +89,10 @@ To install HCX, complete the following settings:
 ## Deployment process for HCX
 {: #hcx_ordering-deploy}
 
-The deployment of HCX is automated. Whether you order a vCenter Server instance with the service included or you deploy the service later into your instance, the following steps are completed by the {{site.data.keyword.vmwaresolutions_short}} automation process:
+The deployment of HCX is automated. Whether you order a {{site.data.keyword.vcf-auto-short}} instance with the service included or you deploy the service later into your instance, the following steps are completed by the {{site.data.keyword.vmwaresolutions_short}} automation process:
+
+{{site.data.content.impnote-deploymanual-hcx}}
+
 1. Three subnets are ordered for HCX from the {{site.data.keyword.cloud_notm}} infrastructure:
    * One private portable subnet for HCX management.
    * One private portable subnet for HCX interconnects. This subnet is used when the **Private network** option is selected for **HCX connection type**.
@@ -100,8 +103,8 @@ The deployment of HCX is automated. Whether you order a vCenter Server instance 
 
 2. If **Private Network** was selected for **HCX Network Connection**, a port group that is named **SDDC-DPortGroup-HCX-Private** is created on the private Distributed Virtual Switch (DVS).
 3. An HCX activation key is ordered from VMware.
-4. For vCenter Server with NSX-T instances, the firewall rules and network address translation (NAT) rules are configured to allow inbound and outbound HTTPS traffic to and from the HCX Manager.
-5. For vCenter Server with NSX-V instances, a pair of NSX Edge Services Gateways (ESGs) for the HCX management traffic is deployed and configured:
+4. For {{site.data.keyword.vcf-auto-short}} with NSX-T instances, the firewall rules and network address translation (NAT) rules are configured to allow inbound and outbound HTTPS traffic to and from the HCX Manager.
+5. For {{site.data.keyword.vcf-auto-short}} with NSX-V instances, a pair of NSX Edge Services Gateways (ESGs) for the HCX management traffic is deployed and configured:
    * Public and private uplink interfaces are configured by using the ordered subnets.
    * The ESGs are configured as a pair of extra large edge appliances with High Availability (HA) enabled.
    * The firewall rules and network address translation (NAT) rules are configured to allow inbound and outbound HTTPS traffic to and from the HCX Manager.
@@ -122,8 +125,7 @@ The deployment of HCX is automated. Whether you order a vCenter Server instance 
 
 * [HCX overview](/docs/vmwaresolutions?topic=vmwaresolutions-hcx_considerations#hcx_considerations)
 * [Managing HCX](/docs/vmwaresolutions?topic=vmwaresolutions-managinghcx)
-* [Ordering services for vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices)
+* [Ordering services for {{site.data.keyword.vcf-auto-short}} instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices)
 * [Glossary of HCX terms](/docs/vmwaresolutions?topic=vmwaresolutions-hcx_glossary)
 * [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support)
-* [Why does the installation fail for HCX with BYOL NSX Data Center Enterprise Plus?](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_hcx_install_fail)
 * [VMware HCX documentation](https://docs.vmware.com/en/VMware-HCX/index.html){: external}

@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2024
 
-lastupdated: "2024-01-12"
+lastupdated: "2024-04-29"
 
 subcollection: vmwaresolutions
 
@@ -113,7 +113,6 @@ Use the following table to document the parameters that you need for your deploy
 | vCenter Server instance cluster | `cluster1` | |
 | vCenter Server instance datastore | `vsanDatastore` | |
 {: caption="Table 8. PowerNSX DLR parameters" caption-side="bottom"}
-
 
 ```text
 # Connect to NSX Manager

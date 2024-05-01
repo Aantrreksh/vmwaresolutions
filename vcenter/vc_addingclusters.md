@@ -4,9 +4,9 @@ copyright:
 
   years:  2021, 2024
 
-lastupdated: "2024-01-30"
+lastupdated: "2024-04-29"
 
-keywords: vCenter Server add clusters, add cluster, vCenter Server cluster
+keywords: automated add clusters, add cluster, automated cluster
 
 subcollection: vmwaresolutions
 
@@ -14,21 +14,21 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Adding clusters to vCenter Server instances
+# Adding clusters to Automated instances
 {: #vc_addingclusters}
 
-You can add clusters to VMware vCenter Server® instances to expand the compute and storage capacity. Within a cluster, you can manage VMware ESXi™ servers for better resource allocation and high availability.
+You can add clusters to {{site.data.keyword.vcf-auto}} instances to expand the compute and storage capacity. Within a cluster, you can manage VMware ESXi™ servers for better resource allocation and high availability.
 
-Adding clusters to vCenter Server instances with VMware vSphere® 6.5 or 6.7 is not supported.
+Adding clusters to Automated instances with VMware vSphere® 6.5 or 6.7 is not supported.
 {: deprecated}
 
-## Before you add clusters to vCenter Server instances
+## Before you add clusters to Automated instances
 {: #vc_addingclusters-before}
 
 {{site.data.content.para-vcenteraddclusters}}
 
 * New clusters are provisioned with mirrored M.2 boot drives.
-* The number of clusters, hosts, and virtual machines (VMs) determines the maximum number of clusters that you can add. You must remain within the VMware® sizing guidelines and limits for your deployment. For more information, see [VMware configuration maximums](https://configmax.esp.vmware.com/home){: external}.
+* The number of clusters, hosts, and virtual machines (VMs) determines the maximum number of clusters that you can add. Remain within the VMware® sizing guidelines and limits for your deployment. For more information, see [VMware configuration maximums](https://configmax.esp.vmware.com/home){: external}.
 * You can add a cluster while another cluster is being created or deleted.
 
 ## Cluster type
@@ -39,7 +39,7 @@ Select the cluster type: **Workload cluster** or **Gateway cluster**.
 ## System settings for workload clusters
 {: #vc_addingclusters-sys-settings-workload}
 
-When you add a workload cluster to a vCenter Server instance, you must specify the following settings.
+When you add a workload cluster to an Automated instance, you must specify the following settings.
 
 ### Cluster name
 {: #vc_addingclusters-cluster-name}
@@ -48,16 +48,14 @@ The cluster name is set to **vcs-_xx_** by default, where _xx_ represents two ra
 
 {{site.data.content.cluster-name-requirements-list}}
 
-### Licensing settings
+### Licensing settings (BYOL only)
 {: #vc_addingclusters-licensing-settings}
 
-Review the following information and specify the licensing setting for the VMware vSphere component in the cluster:
-* For Business Partner users, the vSphere license (Enterprise Plus edition) is included and purchased on your behalf.
-* For users who are not Business Partners, use the IBM-provided VMware licenses for this component, which are included with purchase.
-* The **Use existing license** option is available only if you are using a BYOL vSphere license for your instance. When the option is enabled, you can select the existing license only if the instance has enough capacity for the additional hosts.
+{{site.data.content.attnnote-byol}}
 
-   Bring Your Own License (BYOL) is no longer supported except for migrations or upgrades of existing BYOL clusters. Select **I will provide** or **Use existing license** and enter your own license key only if you are performing an upgrade or migration of an existing BYOL cluster.
-   {: important}
+If you are a BYOL user, provide your own license key for vSphere:
+* Select **I will provide** and enter your own vSphere license key.
+* Select **Use existing license** only if you are using a BYOL vSphere license for your instance. When the option is enabled, you can select the existing license only if the instance has enough capacity for the additional hosts.
 
 ### Bare metal server settings
 {: #vc_addingclusters-bare-metal-settings}
@@ -69,7 +67,7 @@ The CPU models differ depending on the version that your instance was initially 
 #### Data center location
 {: #vc_addingclusters-dc-location}
 
-The {{site.data.keyword.cloud}} data center location of the cluster is set to the {{site.data.keyword.cloud_notm}} data center of the vCenter Server instance by default. You can deploy the cluster to a different {{site.data.keyword.cloud_notm}} data center than the deployed instance if you ensure that the network latency between the two {{site.data.keyword.cloud_notm}} data centers is less than 150 ms.
+The {{site.data.keyword.cloud}} data center location of the cluster is set to the {{site.data.keyword.cloud_notm}} data center of the Automated instance by default. You can deploy the cluster to a different {{site.data.keyword.cloud_notm}} data center than the deployed instance if you ensure that the network latency between the two {{site.data.keyword.cloud_notm}} data centers is less than 150 ms.
 
 If you deploy the cluster to a different {{site.data.keyword.cloud_notm}} data center or {{site.data.keyword.cloud_notm}} infrastructure pod, three extra VLANs are ordered for use with the ordered {{site.data.keyword.cloud_notm}} bare metal servers.
 
@@ -92,14 +90,14 @@ If you deploy the cluster to a different {{site.data.keyword.cloud_notm}} data c
 #### Number of bare metal servers
 {: #vc_addingclusters-bare-metal-number}
 
-{{site.data.content.exception-number-of-baremetal-servers}}
+{{site.data.content.number-of-baremetal-servers-wkld}}
 
 ### Storage settings
 {: #vc_addingclusters-storage-settings}
 
 Storage settings are based on your selection of {{site.data.keyword.cloud_notm}} bare metal server configuration and the storage type.
 
-You can add NFS storage shares to an existing vSAN or NFS cluster. For more information, see [Adding NFS storage to vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingnfs).
+You can add NFS storage shares to an existing vSAN or NFS cluster. For more information, see [Adding NFS storage to Automated instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingnfs).
 {: note}
 
 #### NFS storage
@@ -141,7 +139,7 @@ Specify the number of capacity disks that you want to add.
 
 If you want to add more capacity disks, select the **High performance with Intel Optane** checkbox. This option provides two extra capacity disk bays, which are useful for workloads that require less latency and higher IOPS throughput.
 
-The **High performance with Intel Optane** option is available only for vSphere 6 instances.
+The **High performance with Intel Optane** option is available only for instances with vSphere 6.
 {: note}
 
 ##### Size for vSAN cache disks
@@ -162,22 +160,22 @@ vSAN storage depends on the number of servers and your total disk capacity, and 
 The amount of storage reduction from deduplication and compression depends on many factors, including the type of data stored and the number of duplicate blocks. Larger disk groups tend to provide a higher deduplication ratio. For more information, see [Using deduplication and compression](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.vsan.doc/GUID-3D2D80CC-444E-454E-9B8B-25C3F620EFED.html){: external}.
 {: note}
 
-##### vSAN license
+##### vSAN license (BYOL only)
 {: #vc_addingclusters-vsan-storage-lic}
 
-Use the IBM-provided VMware license for the vSAN component, which is included with purchase.
+Bring Your Own License (BYOL) is no longer supported except for migrations or upgrades of existing BYOL clusters. Use this feature only if you are upgrading or migrating an existing BYOL cluster.
+{: attention}
 
-Bring Your Own License (BYOL) is no longer supported except for migrations or upgrades of existing BYOL clusters. Select **I will provide** or **Use existing license** and enter your own license key only if you are performing an upgrade or migration of an existing BYOL cluster.
-{: important}
+If you are a BYOL user, provide your own vSAN license key. Select **I will provide** or **Use existing license** and enter your license key. 
 
 The **Use existing license** option is available only if you are using a BYOL vSAN license for your instance. When the option is enabled, you can select the existing license only if the instance has enough capacity for the additional hosts.
 
-If your initial cluster was a vSAN cluster, any additional vSAN clusters use the same vSAN license and have the same configuration as the initial one. This behavior is also true if any cluster (initial or additional) in the instance has vSAN chosen to be deployed on it. The first time you're prompted for the vSAN license and the edition. The next time that you select vSAN for a new cluster, the license that was chosen initially is reused.
+If your initial cluster is a vSAN cluster, any additional vSAN clusters use the same vSAN license and have the same configuration as the initial one. This statement is also true for any initial or extra clusters in the instance for which you select vSAN. The first time, you must provide the vSAN license and the edition. The next time that you select vSAN for a new cluster, the license you initially chose will be reused.
 
 ### Network interface settings
 {: #vc_addingclusters-network-interface-settings}
 
-When you add a cluster for a vCenter Server instance, you must specify the following network interface settings.
+When you add a cluster for an Automated instance, you must specify the following network interface settings.
 
 #### Hostname prefix
 {: #vc_addingclusters-host-name}
@@ -262,7 +260,7 @@ Use the **Public VLAN**, **Private VLAN**, or **Secondary private VLAN** tabs to
 ## System settings for gateway clusters
 {: #vc_addingclusters-sys-settings-edge}
 
-When you add a gateway cluster to a vCenter Server instance, you must specify the following settings.
+When you add a gateway cluster to an Automated instance, you must specify the following settings.
 
 ### Data center location
 {: #vc_orderinginstance-dc-edge}
@@ -306,7 +304,7 @@ You can select different values of RAM in the range 64 GB - 1.5 TB.
 ### Number of bare metal servers
 {: #vc_addingclusters-edge-cluster-bare-metal}
 
-The number of servers is set to two and cannot be changed. Both servers have the same configuration.
+The number of servers is set to 2 and cannot be changed. Both servers have the same configuration.
 
 ### Hostname prefix
 {: #vc_addingclusters-edge-host-name-prefix}
@@ -341,11 +339,11 @@ Based on your selected configuration for the cluster, the estimated price is ins
 
 You can also add the provisioned resources to the {{site.data.keyword.cloud_notm}} estimate tool, by clicking **Add to estimate**. The estimate tool is useful if you want to get an approximate price of the selected VMware Solutions resources together with other {{site.data.keyword.cloud_notm}} resources that you might consider purchasing.
 
-## Procedure to add clusters to vCenter Server instances
+## Procedure to add clusters to Automated instances
 {: #vc_addingclusters-procedure}
 
-1. From the VMware Solutions console, click **Resources > vCenter Server** from the left navigation pane.
-2. In the **vCenter Server** table, click the instance that you want to add clusters to.
+1. From the VMware Solutions console, click **Resources > {{site.data.keyword.vcf-classic-short}}** from the left navigation pane.
+2. In the **{{site.data.keyword.vcf-classic}}** table, click the instance that you want to add clusters to.
 
    Ensure that the instance status is **Available**. Otherwise, you cannot add clusters to the instance.
    {: important}
@@ -353,9 +351,7 @@ You can also add the provisioned resources to the {{site.data.keyword.cloud_notm
 3. Click the **Infrastructure** tab and click **Create** on the upper right of the **Clusters** table.
 4. On the **Create cluster** page, select the cluster type.
 5. For workload clusters, enter the cluster name and complete the following configuration.
-   1. Complete the licensing settings.
-      * For Business Partner users, the vSphere license (Enterprise Plus edition) is included and purchased on your behalf.
-      * For users who are not Business Partners, select **Include with purchase** for the new vSphere license to be purchased on your behalf. 
+   1. Complete the licensing settings if you are a BYOL user. You must provide your own license key for the VMware vSphere component.
       * Bring Your Own License (BYOL) is no longer supported except for migrations or upgrades of existing BYOL clusters. Select **I will provide** or **Use existing license** and enter your own license key only if you are performing an upgrade or migration of an existing BYOL cluster.
       * The **Use existing license** option is available only if you are using a BYOL vSphere or vSAN license for your instance. When the option is enabled, you can select the existing license only if the instance has enough capacity for the additional hosts.
 
@@ -372,7 +368,7 @@ You can also add the provisioned resources to the {{site.data.keyword.cloud_notm
          * Number of vSAN capacity disks
          * Size for vSAN cache disks
          * Number of vSAN cache disks
-         * vSAN license edition
+         * If you are a BYOL user, provide your own vSAN license key.
 
       If you want more storage, check the **High performance with Intel Optane** box.
 
@@ -392,7 +388,7 @@ You can also add the provisioned resources to the {{site.data.keyword.cloud_notm
    3. Click the link or links of the terms that apply to your order, and confirm that you agree with these terms before you add the cluster.
    4. Click **Create**.
 
-## Results after you add clusters to vCenter Server instances
+## Results after you add clusters to Automated instances
 {: #vc_addingclusters-results}
 
 1. The deployment of the cluster starts automatically and the status of the cluster is changed to **Initializing**. You can check the status of the deployment by viewing the deployment history on the instance details page.
@@ -404,5 +400,5 @@ You cannot change the cluster name. Changing the cluster name might cause the ad
 ## Related links
 {: #vc_addingclusters-related}
 
-* [Viewing vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_viewinginstances)
-* [Expanding and contracting capacity for vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservers)
+* [Viewing Automated instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_viewinginstances)
+* [Expanding and contracting capacity for Automated instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservers)

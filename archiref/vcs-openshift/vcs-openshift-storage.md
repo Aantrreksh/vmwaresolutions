@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2019, 2023
+  years:  2019, 2024
 
-lastupdated: "2023-09-11"
+lastupdated: "2024-04-29"
 
 subcollection: vmwaresolutions
 
@@ -22,7 +22,7 @@ You can use the VMware vSphere® datastores as a location for storing persistent
 
 Complete the following steps to create a new volume:
 
-1. From the bastion host, use govc to enable the vSphere connection.
+1. From the bastion host, use `govc` to enable the vSphere connection.
 
    ```bash
    export GOVC_URL='10.208.17.2'

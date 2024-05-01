@@ -2,11 +2,11 @@
 
 copyright:
 
-  years:  2016, 2023
+  years:  2016, 2024
 
-lastupdated: "2023-08-22"
+lastupdated: "2024-04-09"
 
-keywords: vmware vSphere order instance, order vSphere, order vmware vSphere instance
+keywords: flexible order instance, order vSphere, order flexible instance
 
 subcollection: vmwaresolutions
 
@@ -17,7 +17,7 @@ subcollection: vmwaresolutions
 # Storage (vSAN only)
 {: #vs_orderinginstances-storage-settings}
 
-The **Storage** section of your VMware vSphere instance order is applicable only if you select the VMware vSAN™ component.
+The **Storage** section of your {{site.data.keyword.vcf-flex}} instance order is applicable only if you select the VMware vSAN™ component.
 
 * New instances are provisioned with mirrored M.2 boot drives.
 * VMware ESXi™ servers are ordered with a 12-disk chassis and two disks are ordered for caching. The ESXi OS is placed on a single M.2 solid-state drive that does not use a disk bay. These settings are configured by default and cannot be changed.
@@ -43,4 +43,4 @@ The amount of storage reduction from deduplication and compression depends on ma
 {: #vs_orderinginstances-storage-related}
 
 * [Network interface](/docs/vmwaresolutions?topic=vmwaresolutions-vs_orderinginstances-network-interface-settings)
-* [Procedure to order VMware vSphere instances](/docs/vmwaresolutions?topic=vmwaresolutions-vs_orderinginstances-procedure)
+* [Procedure to order Flexible instances](/docs/vmwaresolutions?topic=vmwaresolutions-vs_orderinginstances-procedure)

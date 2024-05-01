@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2022, 2023
+  years:  2022, 2024
 
-lastupdated: "2023-10-10"
+lastupdated: "2024-03-27"
 
 subcollection: vmwaresolutions
 
@@ -37,7 +37,7 @@ The journey from NSX-V to NSX-T requires careful planning and preparation. You m
 * Education - Training for the team who migrates to NSX-T and then runs NSX-T.
 * Migration planning and preparation - Review the current NSX-V environment to understand the complexity of the migration, and key business drivers that impact migration. Select the topology for the target NSX-T environment.
 * Target platform selection, deployment, and configuration - This step also includes the setting-up of migration tools such as L2 bridging or VMware HCX. Or also third-party tools such as SPJ's cITopus or ReSTNSX's Migration Assistance Tool.
-* Configuration migration - These tasks include the setting-up of overlay components, which includes NSX-T segments, routing, load balancing, edge firewall, distributed firewall, and tagging. Configuration migration can be done manually through scripting, such as Terraform or third-party tools such as SPJ's cITopus. 
+* Configuration migration - These tasks include the setting-up of overlay components, which includes NSX-T segments, routing, load balancing, edge firewall, distributed firewall, and tagging. Configuration migration can be done manually through scripting, such as Terraform or third-party tools such as SPJ's cITopus.
 * Workload migration - This step includes layer 2 network stretching, if required, and virtual machine migration. Migration techniques include VMware HCX migrations or Advanced vCenter vMotion.
 
 An example of high-level migration workflow that uses the lift-and-shift migration approach with NSX-T L2 Bridge is as follows:
@@ -70,6 +70,6 @@ You must be familiar with NSX-T concepts and administration tasks before any mig
 {: #v2t-overview-links}
 
 * [PrimaryIO NSX-V to NSX-T fast track migration service](https://hdm.primaryio.com/lp/nsxvtot){: external}
-* [PrimaryIO HDM Cloud Connect NSX-V to NSX-T](https://cloud.ibm.com/catalog/services/hdm-cloud-connect-nsx-v-to-nsx-t#about)
+* [VMware Cloud Migration Services (VMwaaS VPC NSX-T)](https://cloud.ibm.com/catalog/services/vmware-cloud-migration-services-vmwaas-vpc-nsx-t)
 * [cITopus tool for VMware NSX](https://spjsolutions.com){: external}
 * [MAT - ReSTNSX's migration assistance tool](https://www.restnsx.com/post/migration-assistance-tool-mat){: external}

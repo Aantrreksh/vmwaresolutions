@@ -4,9 +4,9 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-02-05"
+lastupdated: "2024-04-25"
 
-keywords: vCenter Server order instance, order vCenter Server, order vCenter Server instance
+keywords: vcf automated order instance, order vcf classic, order vmware cloud foundation instance
 
 subcollection: vmwaresolutions
 
@@ -14,21 +14,21 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Requirements for vCenter Server instances
+# Requirements for Automated instances
 {: #vc_orderinginstance-req}
 
-To deploy a flexible and customizable VMware® virtualized platform that best fits your workload needs, order a VMware vCenter Server® instance.
+To deploy a flexible and customizable VMware® virtualized platform that best fits your workload needs, order a {{site.data.keyword.vcf-auto}} instance.
 
-New deployments of vCenter Server multizone instances are not supported.
+New deployments of multizone instances are not supported.
 {: deprecated}
 
-You can also add services, such as [Zerto](/docs/vmwaresolutions?topic=vmwaresolutions-addingzertodr) for disaster recovery. For more information about the available services, see [Available services for vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices#vc_addingservices-available-services).
+You can also add services, such as [Zerto](/docs/vmwaresolutions?topic=vmwaresolutions-addingzertodr) for disaster recovery. For more information about the available services, see [Available services for Automated instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices#vc_addingservices-available-services).
 
-Price calculations are automatically generated when you access the VMware vCenter Server® instance order page. Default selections include the Data Center SP Professional license for NSX-T, the Dual Intel® Xeon® Platinum 8260 processor / 48 cores, 2.4 GHz CPU model, and 768 GB RAM.
+Price calculations are automatically generated when you access the instance order page. Default selections include the Data Center SP Professional license for NSX-T, the Dual Intel® Xeon® Platinum 8260 processor / 48 cores, 2.4 GHz CPU model, and 768 GB RAM.
 
 Ensure that you complete the following tasks:
 * If you are ordering an instance for the first time, complete the tasks in the **Before you begin** section on the ordering page. For more information, see [Setting up your environment for your first order](/docs/vmwaresolutions?topic=vmwaresolutions-completing_checklist).
-* Review the information in [Planning for vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_planning).
+* Review the information in [Planning for Automated instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_planning).
 * Review the domain name format. The domain name is used to generate the username and server names of the instance.
 
 The subdomain label is used only for existing VMware vSphere® 6.x instances.

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2022
+  years:  2022, 2024
 
-lastupdated: "2022-12-19"
+lastupdated: "2024-04-29"
 
 subcollection: vmwaresolutions
 
@@ -32,7 +32,7 @@ A single-use credential is used by the Veeam backup server to initially configur
 
 After the initial configuration, Secure Shell (SSH) access is not required for Veeam operations. However, it is required for server updates and other maintenance tasks, unless all console access is done through the server IPMI port.
 
-During initial configuration, when the "Make recent backup immutable for x days" is set, all compatible new backups to this repository become immutable for at least the number of "x days". The immutable time can be longer. For example, earlier incremental backups in a backup chain are immutable for longer. This action ensures that entire backup chain has the same immutable time as incremental backup files depend on each other in a backup chain.
+During initial configuration, when the **Make recent backup immutable for x days** is set, all compatible new backups to this repository become immutable for at least the number of _x days_. The immutable time can be longer. For example, earlier incremental backups in a backup chain are immutable for longer. This action ensures that entire backup chain has the same immutable time as incremental backup files depend on each other in a backup chain.
 
 When no backups or restores run, only the TCP 6162 inbound port is opened on the Linux hardened repository to allow the Veeam Transport Service to communicate with other Veeam components. 
 

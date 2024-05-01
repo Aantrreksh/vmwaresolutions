@@ -4,9 +4,9 @@ copyright:
 
   years:  2021, 2024
 
-lastupdated: "2024-01-19"
+lastupdated: "2024-04-29"
 
-keywords: vCenter Server add service
+keywords: add service, order service, add-on service
 
 subcollection: vmwaresolutions
 
@@ -14,40 +14,40 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Ordering services for vCenter Server instances
+# Ordering services for Automated instances
 {: #vc_addingservices}
 
-You can order services for your VMware vCenter Server® instances, such as a disaster recovery solution. Add-on services support varies between vCenter Server with NSX-T™ and existing vCenter Server with NSX-V instances V4.7 and earlier.
+You can order services for your {{site.data.keyword.vcf-auto}} instances, such as a disaster recovery solution. Add-on services support varies between {{site.data.keyword.vcf-auto-short}} and existing {{site.data.keyword.vcf-auto-short}} with NSX-V instances V4.7 and earlier.
 
 If you want to migrate your F5 BIG-IP or Veeam services from VMware NSX-V to VMware NSX-T, open an IBM Support ticket by following the steps in [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support).
 {: note}
 
-## Before you add services to vCenter Server instances
+## Before you add services to Automated instances
 {: #vc_addingservices-prereq}
 
-* Adding services to vCenter Server instances with VMware vSphere® 6.5 is not supported.
-* For existing vCenter Server multizone instances, adding services is not supported. However, you can view or delete existing add-on services. After a service is deleted, it cannot be reinstalled.
-* By default, the service assumes that NSX-T is installed. For existing vCenter Server instances V4.7 and earlier, if NSX-T is not supported for a service, then NSX-V is used.
+* Adding services to instances with VMware vSphere® 6.5 is not supported.
+* For existing multizone instances, adding services is not supported. However, you can view or delete existing add-on services. After a service is deleted, it cannot be reinstalled.
+* By default, the service assumes that NSX-T is installed. For existing instances V4.7 and earlier, if NSX-T is not supported for a service, then NSX-V is used.
 
-## Available services for vCenter Server instances
+## Available services for Automated instances
 {: #vc_addingservices-available-services}
 
-The following table shows the services that are available to vCenter Server instances, together with the service versions.
+The following table shows the services that are available to Automated instances, together with the service versions.
 
 | Service name | Current version | Notes |
 |:------------ |:--------------- |:----- |
 | [Caveonix RiskForesight](/docs/vmwaresolutions?topic=vmwaresolutions-caveonix_considerations) | 5.0 | |
-| [F5 BIG-IP](/docs/vmwaresolutions?topic=vmwaresolutions-f5_considerations) | BIG-IP VE 17.1 | |
-| [FortiGate Virtual Appliance](/docs/vmwaresolutions?topic=vmwaresolutions-fortinetvm_considerations) | 7.4.1 | |
+| [F5 BIG-IP](/docs/vmwaresolutions?topic=vmwaresolutions-f5_considerations) | BIG-IP VE 17.1.1 | |
+| [FortiGate Virtual Appliance](/docs/vmwaresolutions?topic=vmwaresolutions-fortinetvm_considerations) | 7.4.3 | |
 | [VMware HCX](/docs/vmwaresolutions?topic=vmwaresolutions-hcx_considerations) | Periodically updated to the most recent version | |
 | [{{site.data.keyword.IBM}} Security Services for SAP](/docs/vmwaresolutions?topic=vmwaresolutions-managing-ss-sap) |   | |
 | [Juniper vSRX](/docs/vmwaresolutions?topic=vmwaresolutions-juniper-overview) | 3.0 (23.2R1) | |
 | [KMIP for VMware](/docs/vmwaresolutions?topic=vmwaresolutions-kmip_standalone_considerations) | 2.0 | |
-| [{{site.data.keyword.redhat_openshift_notm}} for VMware](/docs/vmwaresolutions?topic=vmwaresolutions-ocp_overview) | 4.14 | NSX-T only \n If you add the service to an existing instance with an NSX-T version earlier than 3.1, you must first upgrade NSX-T to 3.1 or later. |
-| [Veeam](/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview) | 12 | |
+| [{{site.data.keyword.redhat_openshift_notm}} for VMware](/docs/vmwaresolutions?topic=vmwaresolutions-ocp_overview) | 4.14 | NSX-T only \n If you want to add the service to an existing instance with an NSX-T version earlier than 3.1, you must first upgrade to 3.1 or later. |
+| [Veeam](/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview) | 12.1 | |
 | [VMware Aria Operations and VMware Aria Operations for Logs](/docs/vmwaresolutions?topic=vmwaresolutions-vrops_overview) | VMware Aria® Operations™ 8.14.1 and VMware Aria Operations™ for Logs 8.14 | |
 | [Zerto](/docs/vmwaresolutions?topic=vmwaresolutions-addingzertodr) | 9.7u4 | VMware vSphere 7 only |
-{: caption="Table 1. Available services for vCenter Server instances" caption-side="bottom"}
+{: caption="Table 1. Available services for Automated instances" caption-side="bottom"}
 
 ## Promotions for services
 {: #vc_addingservices-service-promotions}
@@ -55,8 +55,8 @@ The following table shows the services that are available to vCenter Server inst
 {{site.data.keyword.vmwaresolutions_full}} offers promotion pricing for some services. The promotions offer a number of months without any charge for service licenses, if the service has license charges.
 
 You can use promotion (promo) codes for one or more services when you:
-* Order a new VMware vCenter Server instance
-* Add a service to a vCenter Server instance
+* Order a new Automated instance
+* Add a service to an Automated instance
 * Order a stand-alone service license, such as Caveonix or Veeam®
 
 For services that charge per host, promo codes apply only to the hosts in the order or in the current environment. Examples of such services are HCX™ and VMware Aria® Operations™ and VMware Aria Operations™ for Logs.
@@ -148,10 +148,10 @@ The following table lists the variables that are used in the previous formula.
 
 [^vspherehamem]: Management and workload clusters only. No hosts are reserved for the gateway cluster or the single-node management cluster.
 
-## Procedure to order services for vCenter Server instances
+## Procedure to order services for Automated instances
 {: #vc_addingservices-procedure}
 
-To order a service for your vCenter Server instance, click the appropriate service link in [Available services for vCenter Server instances](#vc_addingservices-available-services). Review the considerations for the service and check the components that are deployed.
+To order a service for your Automated instance, click the appropriate service link in [Available services for Automated instances](#vc_addingservices-available-services). Review the considerations for the service and check the components that are deployed.
 
 Then, follow the instructions in the ordering topic for your chosen service to be installed on the instance. For more information, see:
 * [Ordering Caveonix RiskForesight](/docs/vmwaresolutions?topic=vmwaresolutions-caveonix_ordering)
@@ -164,7 +164,7 @@ Then, follow the instructions in the ordering topic for your chosen service to b
 * [Ordering VMware Aria Operations and VMware Aria Operations for Logs](/docs/vmwaresolutions?topic=vmwaresolutions-vrops_ordering)
 * [Ordering Zerto](/docs/vmwaresolutions?topic=vmwaresolutions-zerto_ordering)
 
-## Results after you order services for vCenter Server instances
+## Results after you order services for Automated instances
 {: #vc_addingservices-results}
 
 When the installation of the service is completed successfully, you are notified by email, and the service is displayed on the **Services** page of the instance with the **Installed** status.
@@ -172,4 +172,4 @@ When the installation of the service is completed successfully, you are notified
 ## Related links
 {: #vc_addingservices-related}
 
-* [FAQ](/docs/vmwaresolutions?topic=vmwaresolutions-faq-vmwaresolutions)
+* [General FAQ about VCF for Classic](/docs/vmwaresolutions?topic=vmwaresolutions-faq-vmwaresolutions)

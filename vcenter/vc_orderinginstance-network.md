@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-01-31"
+lastupdated: "2024-04-04"
 
 keywords: network interface, domain name, hostname prefix, configure hostnames, dns configuration
 
@@ -17,7 +17,7 @@ subcollection: vmwaresolutions
 # Network interface
 {: #vc_orderinginstance-network-interface-settings}
 
-You must specify the following network interface settings when you order a VMware vCenter Server® instance.
+You must specify the following network interface settings when you order a {{site.data.keyword.vcf-auto}} instance.
 
 ## Hostname prefix
 {: #vc_orderinginstance-host-name-prefix}
@@ -76,4 +76,4 @@ For more information about ordering Windows Server 2019 licenses, see [Get start
 {: #vc_orderinginstance-network-related}
 
 * [Add-on services](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-addon-services)
-* [Procedure to order vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-procedure)
+* [Procedure to order Automated instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-procedure)

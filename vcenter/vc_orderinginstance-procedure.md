@@ -4,9 +4,9 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-01-30"
+lastupdated: "2024-04-23"
 
-keywords: vCenter Server order instance, order vCenter Server, order vCenter Server instance
+keywords: automated instance, order automated, order automated instance
 
 subcollection: vmwaresolutions
 
@@ -14,23 +14,23 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Procedure to order vCenter Server instances
+# Procedure to order Automated instances
 {: #vc_orderinginstance-procedure}
 
 <!-- The {: #step-1} tag and the ordered list that has only 1s are intentional. Do not delete. This coding is necessary for proper indentation when the procedure is translated. -->
 
-1. In the VMware Solutions console, click the **VMware vCenter Server** card in the **Platforms** section. {: #step-1}
-1. Select the vCenter Server version. Then, enter the instance name and select a resource group.
+1. In the VMware Solutions console, click the **VMware Cloud Foundation (VCF) for Classic** card in the **Create a resource** section. {: #step-1}
+1. On the **Create** tab, click the **Automated** card in the **Resource type** section.
+1. Select the VMware vCenter Server® version. Then, enter the instance name and select a resource group.
 1. To specify the instance configuration name, click **Browse configurations** and choose a configuration in the **VMware instance configuration manager**.
    * If you do not see any configurations in the list and you want to create one, you must first save the instance settings as a new configuration without placing an order.
    * If you want to update a saved configuration or create a new configuration based on a saved one, select the configuration from the side panel, make your changes, and then save.
 1. Select the instance type:
    * Click **Primary instance** to deploy a single instance in the environment or to deploy the first instance in a multisite topology.
    * Click **Secondary instance** to connect the instance with an existing (primary) instance in the environment for high availability. Select the primary instance that you want the secondary instance to be connected with, then enter the vCenter Server Administrator password for the primary instance.
-1. Use the IBM-provided licenses for VMware components, which are included with purchase. For NSX, specify the license edition.
+1. If you are a BYOL user, provide your own license keys for all VMware components. Toggle the **BYOL** switch to **Enabled** and enter your license keys.
 
-   Bring Your Own License (BYOL) is no longer supported except for migrations or upgrades of existing BYOL clusters. Select **I will provide** and enter your own license key only if you are performing an upgrade or migration of an existing BYOL cluster.
-   {: important}
+   {{site.data.content.attnnote-byol}}
 
 1. Specify the settings for the consolidated cluster:
    1. Specify the cluster name.
@@ -41,9 +41,8 @@ subcollection: vmwaresolutions
       * To add and configure file shares individually, toggle the **Configure shares individually** switch on. Then, click **Add shared storage** and select the **Size (GB)** and **Performance** for each file share. You must select at least one file share.
       * To add and configure the same settings to all file shares, specify the **Number of shares**, **Size (GB)**, and **Performance**.
    1. If you want to use vSAN™ storage, select the corresponding option.
-      * Specify the disk type and size for the vSAN capacity disks, the number of vSAN capacity disks, the disk size for vSAN cache disks, and the number of vSAN cache disks.
+      * Select the disk type and size for the vSAN capacity disks, the number of vSAN capacity disks, the disk size for vSAN cache disks, and the number of vSAN cache disks.
       * By default, the **Enable vSAN deduplication and compression** checkbox is selected. If you do not want to enable vSAN deduplication and compression, clear the checkbox.
-      * Specify the vSAN license edition.
    1. Specify the networking type.
    1. Select the uplink speed. The 25 Gb option is available only for specific pods and data center locations.
    1. Select the VLAN settings:
@@ -76,11 +75,11 @@ You get a console notification that the configuration is saved successfully, and
 
 1. The deployment of the instance starts automatically and you receive confirmation that the order is being processed. You can check the deployment status, including any issues that might require your attention, by viewing the **Deployment history** tab of the instance details.
 2. If you experience vSAN Health alerts and warnings, see [How do I manage vSAN Health alerts and warnings?](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_vsan_alerts)
-3. When the instance is successfully deployed, the components that are described in [Technical specifications for vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview#vc_vcenterserveroverview-specs) are installed on your VMware virtual platform. If you ordered add-on services, the deployment of the services starts after your order is completed.
+3. When the instance is successfully deployed, the components that are described in [Technical specifications for Automated instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview#vc_vcenterserveroverview-specs) are installed on your VMware virtual platform. If you ordered add-on services, the deployment of the services starts after your order is completed.
 4. When the instance is ready to use, its status changes to **Available**, and then you receive a notification by email.
 5. When you order a secondary instance, the VMware vSphere Web Client for the primary instance (linked to the secondary one) might be restarted after your secondary instance order is completed.
 
-Next, you can view and manage the vCenter Server instance that you ordered.
+Next, you can view and manage the Automated instance that you ordered.
 
 You must manage the {{site.data.keyword.vmwaresolutions_short}} components that are created in your {{site.data.keyword.cloud_notm}} account only from the VMware Solutions console, not the {{site.data.keyword.slportal}}, or any other means outside of the console.
 If you change these components outside of the VMware Solutions console, the changes are not synchronized with the console.
@@ -93,5 +92,5 @@ If you change these components outside of the VMware Solutions console, the chan
 ## Related links
 {: #vc_orderinginstance-procedure-related}
 
-* [Adding clusters to vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingclusters)
-* [Expanding and contracting capacity for vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservers)
+* [Adding clusters to Automated instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingclusters)
+* [Expanding and contracting capacity for Automated instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservers)

@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-03-26"
+lastupdated: "2024-04-29"
 
 subcollection: vmwaresolutions
 
@@ -15,7 +15,7 @@ subcollection: vmwaresolutions
 # VPC network design
 {: #vpc-vcf-vpc-deployment}
 
-The topic provides an overview to the {{site.data.keyword.vpc_full}} deployment for a VMware® deployment. In this topic, it is important to understand the separation and integration of VMware infrastructure networking with VPC, its requirements how to integrate and configure connectivity with other workload traffic.
+The following information provides an overview to the {{site.data.keyword.vpc_full}} deployment for a VMware® deployment. It's important to understand the separation and integration of VMware infrastructure networking with VPC, its requirements how to integrate and configure connectivity with other workload traffic.
 
 ## VPC subnets
 {: #vpc-vcf-vpc-deployment-subnets}
@@ -109,8 +109,8 @@ In this design, your security groups are used to create a logical grouping of ma
 | `sg-vsan`           | VMkernel adapters for vSAN |
 | `sg-tep`            | VMkernel adapters for TEP |
 | `sg-uplink-pub`     | VMkernel adapters for Tier-0 public uplinks |
-| `sg-uplink-priv`    | VMkernel adapters for Tier-0 private uplinks | 
-| `sg-bastion`        | VMkernel adapters for bastion hosts (automation VSI) | 
+| `sg-uplink-priv`    | VMkernel adapters for Tier-0 private uplinks |
+| `sg-bastion`        | VMkernel adapters for bastion hosts (automation VSI) |
 {: caption="Table 3. VPC security groups" caption-side="bottom"}
 
 The basic principle for the default rules is to allow practical minimum, for example `sg-vmot` allows traffic between the security group members and inbound `icmp` from security group `sg-mgmt`. The same principle is applied to all security groups used for VMkernel adapters. `sg-mgmt` allows connectivity from private RFC 1918 networks. These rules can be customized post initial provisioning and the following information provides simplified guidance and principles.
@@ -150,7 +150,6 @@ For more information about overlay and NSX public connectivity, see [VMware NSX 
 
 * [{{site.data.keyword.vpc_short}} getting started](/docs/vpc?topic=vpc-getting-started)
 * [{{site.data.keyword.vpc_short}} bare metal servers](/docs/vpc?topic=vpc-planning-for-bare-metal-servers)
-* [{{site.data.keyword.vpc_short}} RYO VMware reference architecture](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-ryo-arch-overview)
 * [{{site.data.keyword.dl_full_notm}} overview](/docs/dl?topic=dl-get-started-with-ibm-cloud-dl)
 * [{{site.data.keyword.tg_full_notm}} overview](/docs/transit-gateway?topic=transit-gateway-getting-started)
 * [{{site.data.keyword.vpc_short}} VPN overview](/docs/vpc?topic=vpc-vpn-overview)

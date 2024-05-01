@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-03-26"
+lastupdated: "2024-04-29"
 
 subcollection: vmwaresolutions
 
@@ -15,7 +15,7 @@ subcollection: vmwaresolutions
 # Networking for VMware Cloud Foundation appliances
 {: #vpc-vcf-mgmt-appliances}
 
-The topic provides an overview of networking deployment for VMware Cloud Foundation™ appliances in {{site.data.keyword.vpc_short}} and inside the NSX deployment of the VMware Cloud Foundation instance.
+The following information provides an overview of networking deployment for VMware Cloud Foundation™ appliances in {{site.data.keyword.vpc_short}} and inside the NSX deployment of the VMware Cloud Foundation instance.
 
 ## VLAN interfaces for Cloud Builder, SDDC manager, and VMware vCenter Server on VPC subnet
 {: #vpc-vcf-mgmt-appliances-vlan-nics}
@@ -38,14 +38,13 @@ The following table summarizes the required VLAN interfaces in {{site.data.keywo
 ## Overlay subnets for Aria Lifecycle
 {: #vpc-vcf-mgmt-appliances-overlay}
 
-Aria Suite Lifecycle (vRealize Suite Lifecycle Manager) is deployed at the NSX overlay. Two segments (`avn-local-network` and `avn-x-region-network`) are created in the management domain behind the management Tier-0 gateway on AVN segment. The automation configures and provisions the required routing so that the Aria Suite Lifecycle appliance can communicate with other VMware Cloud Foundation assets in VPC subnets and access Internet (egress only) to download the required deployment and update files for other Aria products from VMware public repositories. Internet access is provided through SNAT configured on the Tier-0 gateway. A VPC floating IP address is provisioned and configured in Tier-0 gateway for this purpose.  
+Aria Suite Lifecycle (vRealize Suite Lifecycle Manager) is deployed at the NSX overlay. Two segments (`avn-local-network` and `avn-x-region-network`) are created in the management domain behind the management Tier-0 gateway on AVN segment. The automation configures and provisions the required routing so that the Aria Suite Lifecycle appliance can communicate with other VMware Cloud Foundation assets in VPC subnets and access Internet (egress only) to download the required deployment and update files for other Aria products from VMware public repositories. Internet access is provided through SNAT configured on the Tier-0 gateway. A VPC floating IP address is provisioned and configured in Tier-0 gateway for this purpose.
 
 ## Related links
 {: #vpc-vcf-mgmt-appliances-links}
 
 * [{{site.data.keyword.vpc_short}} getting started](/docs/vpc?topic=vpc-getting-started)
 * [{{site.data.keyword.vpc_short}} bare metal servers](/docs/vpc?topic=vpc-planning-for-bare-metal-servers)
-* [{{site.data.keyword.vpc_short}} RYO VMware reference architecture](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-ryo-arch-overview)
 * [{{site.data.keyword.dl_full_notm}} overview](/docs/dl?topic=dl-get-started-with-ibm-cloud-dl)
 * [{{site.data.keyword.tg_full_notm}} overview](/docs/transit-gateway?topic=transit-gateway-getting-started)
 * [{{site.data.keyword.vpc_short}} VPN overview](/docs/vpc?topic=vpc-vpn-overview)

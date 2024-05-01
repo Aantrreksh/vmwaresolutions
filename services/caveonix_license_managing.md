@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-02-06"
+lastupdated: "2024-04-16"
 
 keywords: Caveonix view license, Caveonix manage license, delete Caveonix license
 
@@ -18,7 +18,7 @@ subcollection: vmwaresolutions
 # Managing Caveonix RiskForesight licenses
 {: #caveonix_license_managing}
 
-This information does not apply to VMware® Regulated Workloads or Security and Compliance Readiness Bundle instances.
+This information does not apply to {{site.data.keyword.rw}} or Security and Compliance Readiness Bundle instances.
 {: note}
 
 You can view, edit notes, or delete the Caveonix RiskForesight™ licenses that you ordered for stand-alone use.
@@ -43,7 +43,7 @@ Review the following Caveonix RiskForesight license details.
 
 If you are using Mozilla® Firefox® as your browser, the license start and end dates might be displayed with no values on the Caveonix RiskForesight console. To resolve the issue, view the license information in another browser, such as Google Chrome™.
 
-If you are experiencing this problem and the only browser you can use is Firefox, contact [Caveonix Support](https://caveonix.com/support/){: external} for assistance.
+If you are experiencing this problem and the only browser you can use is Firefox, contact [Caveonix Support](https://www.caveonix.com/){: external} for assistance.
 {: note}
 
 ## Procedure to edit notes for Caveonix RiskForesight licenses
@@ -65,7 +65,7 @@ The Caveonix RiskForesight license is valid for five years. You can update the C
 
 Deleting the Caveonix RiskForesight service also deletes the initial Caveonix RiskForesight license that was originally associated with the service. However, you need to manually delete any other unwanted licenses from the **Caveonix RiskForesight licenses** table on the **Resources** page in the VMware Solutions console.
 
-To delete the Caveonix RiskForesight service, you must do so in the {{site.data.keyword.vmwaresolutions_full}} console. For more information, see [Deleting services from vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_deletingservices).
+To delete the Caveonix RiskForesight service, you must do so in the {{site.data.keyword.vmwaresolutions_full}} console. For more information, see [Deleting services from {{site.data.keyword.vcf-auto-short}} instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_deletingservices).
 {: important}
 
 1. From the {{site.data.keyword.vmwaresolutions_short}} console, click **Licenses** from the left navigation pane.

@@ -4,7 +4,7 @@ copyright:
 
   years: 2021, 2024
 
-lastupdated: "2024-02-06"
+lastupdated: "2024-04-12"
 
 keywords: Zerto, Zerto license, manage Zerto license
 
@@ -39,9 +39,9 @@ You can view and delete the Zerto licenses that you ordered for stand-alone use.
 ## Procedure to delete Zerto stand-alone licenses
 {: #zerto_managing_licenses-procedure-delete}
 
-Deleting a Zerto license does not delete the Zerto service that is installed on a vCenter Server instance. To delete the service, you must do so in the {{site.data.keyword.vmwaresolutions_short}} console.
+Deleting a Zerto license does not delete the Zerto service that is installed on a {{site.data.keyword.vcf-auto-short}} instance. To delete the service, you must do so in the {{site.data.keyword.vmwaresolutions_short}} console.
 
-For more information, see [Deleting services from vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_deletingservices).
+For more information, see [Deleting services from {{site.data.keyword.vcf-auto-short}} instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_deletingservices).
 
 To delete a Zerto license:
 
@@ -49,7 +49,7 @@ To delete a Zerto license:
 2. Scroll down to the **Zerto licenses** table and select the license that you want to delete.
 3. From the **Actions** menu, click **Delete license**.
 4. In the **Notes** field, optionally enter a reason for license deletion.
-5. Enter the license name to confirm deletion and click **Delete**. 
+5. Enter the license name to confirm deletion and click **Delete**.
 
    The status of the license is changed to **Removing**. When the license deletion is complete, the license is no longer listed in the **Zerto licenses** table and you receive an email that confirms the license deletion.
 

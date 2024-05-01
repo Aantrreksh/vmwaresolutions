@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-03-26"
+lastupdated: "2024-04-29"
 
 subcollection: vmwaresolutions
 
@@ -15,7 +15,7 @@ subcollection: vmwaresolutions
 # Bare metal servers for {{site.data.keyword.vpc_short}}
 {: #vpc-vcf-hosts}
 
-The topic provides an overview of how {{site.data.keyword.cloud_notm}} bare metal servers are deployed in {{site.data.keyword.cloud}} for VMware Cloud Foundation.
+The following information provides an overview of how {{site.data.keyword.cloud_notm}} bare metal servers are deployed in {{site.data.keyword.cloud}} for VMware Cloud Foundation.
 
 ## Physical host connections in VPC
 {: #vpc-vcf-hosts-connections}
@@ -69,7 +69,7 @@ The following table lists the VMKs that are required for each ESXi host in a VMw
 | `vlan-nic-vcf-vmk1` | `vlan` | 1611 | `vpc-vmot-subnet` | `true` | `vmk1` | `pg-vmotion` |
 {: caption="Table 1. Host management networks and VMkernel adapters" caption-side="bottom"}
 
-As VMware Cloud Builder and SDDC manager use pool concepts for assigning IP addresses for VMkernel adapters, you must do this action in two steps in {{site.data.keyword.vpc_short}}. First, make sure that you have consecutive IP addresses that are available on the VPC subnet. You can use reserved IP address concept, and reserve the IP addresses from each System Traffic Type subnet. In the second step, you must create a VLAN interface for each pool as shown in the following table. How many IP addresses you need to reserve and how many VLAN interfaces to create depend on the size of your deployment. 
+As VMware Cloud Builder and SDDC manager use pool concepts for assigning IP addresses for VMkernel adapters, you must do this action in two steps in {{site.data.keyword.vpc_short}}. First, make sure that you have consecutive IP addresses that are available on the VPC subnet. You can use reserved IP address concept, and reserve the IP addresses from each System Traffic Type subnet. In the second step, you must create a VLAN interface for each pool as shown in the following table. How many IP addresses you need to reserve and how many VLAN interfaces to create depend on the size of your deployment.
 
 | Interface name | Interface type | VLAN ID | Subnet | Allow float | VMkernel adapter | Distributed port group name |
 | ---------------|----------------|---------|--------|-------------|------------------|---------------------------- |
@@ -93,7 +93,6 @@ As VMkernel adapters do not need to move between hosts, but to be able to facili
 
 * [{{site.data.keyword.vpc_short}} getting started](/docs/vpc?topic=vpc-getting-started)
 * [{{site.data.keyword.vpc_short}} bare metal servers](/docs/vpc?topic=vpc-planning-for-bare-metal-servers)
-* [{{site.data.keyword.vpc_short}} RYO VMware reference architecture](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-ryo-arch-overview)
 * [{{site.data.keyword.dl_full_notm}} overview](/docs/dl?topic=dl-get-started-with-ibm-cloud-dl)
 * [{{site.data.keyword.tg_full_notm}} overview](/docs/transit-gateway?topic=transit-gateway-getting-started)
 * [{{site.data.keyword.vpc_short}} VPN overview](/docs/vpc?topic=vpc-vpn-overview)

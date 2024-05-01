@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2022, 2023
+  years:  2022, 2024
 
-lastupdated: "2023-09-11"
+lastupdated: "2024-04-04"
 
 keywords: end of support notice, vSphere 6.7 deployment, end of support vSphere 6.7, vSphere 6.7 deprecated, vSphere 6.7 support
 
@@ -18,7 +18,7 @@ subcollection: vmwaresolutions
 # End of Support for vSphere 6.7 instance deployments
 {: #eos-vsphere67}
 
-VMware® support for all new VMware vSphere® 6.7 deployments ended on 15 October 2022.
+VMware® by Broadcom support for all new VMware vSphere® 6.7 deployments ended on 15 October 2022.
 
 For more information about upgrading to vSphere 7, see [Upgrading vCenter Server vSphere software from vSphere 6.5 or 6.7 to 7.0](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vsphere_70_upgrade) or [Upgrading VMware vSphere software from vSphere 6.5 or 6.7 to 7.0](/docs/vmwaresolutions?topic=vmwaresolutions-vs_vsphere_70_upgrade).
 
@@ -33,7 +33,7 @@ vSphere 7 introduces the following features:
 * Enhancements to DRS and vMotion
 * Security enhancements such as multifactor authentication (MFA), vSphere Trust Authority (vTA), and in–flight encryption for vSAN
 
-vSphere 7 is also the exclusive basis for VMware Regulated Workloads.
+vSphere 7 is also the exclusive basis for {{site.data.keyword.rw}}.
 
 For more information about end of life procedures for {{site.data.keyword.cloud_notm}} infrastructure services and third-party software products, see [Lifecycle policy for {{site.data.keyword.cloud_notm}} products](https://www.ibm.com/cloud/cloud-prod-life). If you have any questions or need assistance, email clouddigitalsales@us.ibm.com or open a support ticket in the VMware Solutions console.
 

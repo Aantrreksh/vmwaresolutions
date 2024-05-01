@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2016, 2022
+  years: 2016, 2024
 
-lastupdated: "2022-12-28"
+lastupdated: "2024-04-26"
 
 keywords: activity tracker, event, security, vmware solutions events, vmware solutions shared events, instance events, view events
 
@@ -22,10 +22,12 @@ Use the {{site.data.keyword.at_full}} service to track how users and application
 
 {{site.data.keyword.at_full_notm}} records user-initiated activities that change the state of a service in the {{site.data.keyword.cloud_notm}}. You can use this service to investigate for abnormal activity and critical actions, and comply with regulatory audit requirements. In addition, you can be alerted on actions as they happen. The events that are collected comply with the Cloud Auditing Data Federation (CADF) standard. For more information, see [Getting started with {{site.data.keyword.at_short}}](/docs/activity-tracker?topic=activity-tracker-getting-started).
 
-## Events for VMware Shared
+## Events for {{site.data.keyword.vm-shared}}
 {: #at-events-vdc}
 
-When you use {{site.data.keyword.vmwaresolutions_short}} Shared, an event is generated to track how users and applications interact with virtual data centers.
+{{site.data.content.shared-deprecated-note}}
+
+When you use {{site.data.keyword.vm-shared}}, an event is generated to track how users and applications interact with virtual data centers.
 
 The following table lists the actions that generate and send an event to {{site.data.keyword.at_short}}.
 
@@ -34,9 +36,9 @@ The following table lists the actions that generate and send an event to {{site.
 | `vmware-solutions.vdc.create` | An event is generated when a virtual data center instance is created. |`pending` \n `success` \n `failure` |
 | `vmware-solutions.vdc.delete` | An event is generated when a virtual data center instance is deleted. | `pending` \n `success` \n `failure` |
 | `vmware-solutions.vdc.update` | An event is generated when capacity is added to a virtual data center instance. \n An event is generated when capacity is removed from a virtual data center instance. | `pending` \n `success` \n `failure` |
-{: caption="Table 1. Description of actions that generate VMware Shared events" caption-side="bottom"}
+{: caption="Table 1. Description of actions that generate {{site.data.keyword.vm-shared}} events" caption-side="bottom"}
 
-## Events for vCenter Server instance management
+## Events for {{site.data.keyword.vcf-classic-short}} instance management
 {: #at-events-instance-mgmt}
 
 When you manage user accounts, instances, clusters, and services in {{site.data.keyword.vmwaresolutions_short}}, an event is generated.
@@ -49,20 +51,20 @@ The following table provides the actions that generate and send management event
 | `vmware-solutions.account-notification.update` | The notification setting for an account is updated. |
 | `vmware-solutions.instance-secure-data.wipe` | The instance-secure data is wiped. |
 | `vmware-solutions.instance-bss-account.migrate` | An instance is migrated to a BSS account. |
-| `vmware-solutions.vcs.create` | A VMware vCenter Server® instance is created. |
-| `vmware-solutions.vcs.delete` | A vCenter Server instance is deleted. |
-| `vmware-solutions.vcs-host.add` | A host is added to a vCenter Server instance. |
-| `vmware-solutions.vcs-host.remove` | A host is removed from a vCenter Server instance. |
-| `vmware-solutions.vcs.update` | A vCenter Server instance is updated. |
-| `vmware-solutions.vcs-cluster.create` | A cluster is created for a vCenter Server instance. |
-| `vmware-solutions.vcs-cluster.delete` | A cluster is deleted for a vCenter Server instance. |
-| `vmware-solutions.vcs-nsx-license.update` | The VMware NSX® license is updated for a vCenter Server instance. |
-| `vmware-solutions.vcs-nfs-storage.add` | NFS storage is added to a vCenter Server instance. |
-| `vmware-solutions.vcs-nfs-storage.remove` | NFS storage is removed from a vCenter Server instance. |
-| `vmware-solutions.vcs-plan.update` | A vCenter Server instance's plan is updated. |
-| `vmware-solutions.vss.create` | A vSphere instance is created. |
-| `vmware-solutions.vss.update` | A vSphere instance is updated. |
-| `vmware-solutions.vss-template.remove` | A vSphere template is removed. |
+| `vmware-solutions.vcs.create` | A {{site.data.keyword.vcf-classic}} instance is created. |
+| `vmware-solutions.vcs.delete` | A {{site.data.keyword.vcf-classic-short}} instance is deleted. |
+| `vmware-solutions.vcs-host.add` | A host is added to a {{site.data.keyword.vcf-classic-short}} instance. |
+| `vmware-solutions.vcs-host.remove` | A host is removed from a {{site.data.keyword.vcf-classic-short}} instance. |
+| `vmware-solutions.vcs.update` | A {{site.data.keyword.vcf-classic-short}} instance is updated. |
+| `vmware-solutions.vcs-cluster.create` | A cluster is created for a {{site.data.keyword.vcf-classic-short}} instance. |
+| `vmware-solutions.vcs-cluster.delete` | A cluster is deleted for a {{site.data.keyword.vcf-classic-short}} instance. |
+| `vmware-solutions.vcs-nsx-license.update` | The VMware NSX® license is updated for a {{site.data.keyword.vcf-classic-short}} instance. |
+| `vmware-solutions.vcs-nfs-storage.add` | NFS storage is added to a {{site.data.keyword.vcf-classic-short}} instance. |
+| `vmware-solutions.vcs-nfs-storage.remove` | NFS storage is removed from a {{site.data.keyword.vcf-classic-short}} instance. |
+| `vmware-solutions.vcs-plan.update` | A {{site.data.keyword.vcf-classic-short}} instance's plan is updated. |
+| `vmware-solutions.vss.create` | A {{site.data.keyword.vcf-flex}} instance is created. |
+| `vmware-solutions.vss.update` | A {{site.data.keyword.vcf-flex-short}} instance is updated. |
+| `vmware-solutions.vss-template.remove` | A {{site.data.keyword.vcf-flex-short}} template is removed. |
 | `vmware-solutions.service.create` | A service is created. |
 | `vmware-solutions.service.delete` | A service is deleted. |
 {: caption="Table 2. Description of actions that generate management events" caption-side="bottom"}
@@ -89,7 +91,7 @@ The initiator ID is derived from the TLS (Transport Layer Security) certificate
 ## Viewing events
 {: #at-events-viewing}
 
-VMware Shared and vCenter Server events are global events. The KMIP for VMware events are location-based events that are automatically forwarded to the {{site.data.keyword.at_full_notm}} service instance that is available in the same location as the KMIP for VMware instance. For more information, see [Monitoring global and location-based events](/docs/activity-tracker?topic=activity-tracker-monitor_events#mon_def_event_type).
+{{site.data.keyword.vcf-classic-short}} and {{site.data.keyword.vm-shared}} events are global events. The KMIP for VMware events are location-based events that are automatically forwarded to the {{site.data.keyword.at_full_notm}} service instance that is available in the same location as the KMIP for VMware instance. For more information, see [Monitoring global and location-based events](/docs/activity-tracker?topic=activity-tracker-monitor_events#mon_def_event_type).
 
 {{site.data.keyword.at_full_notm}} can have only one instance per location. To view events, you must access the web UI of the {{site.data.keyword.at_full_notm}} service in the same location where your service instance is available. For more information, see [Navigating to the UI](/docs/activity-tracker?topic=activity-tracker-launch#launch).
 

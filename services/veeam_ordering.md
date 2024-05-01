@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-01-31"
+lastupdated: "2024-04-16"
 
 keywords: Veeam, Veeam configuration, order Veeam
 
@@ -18,9 +18,9 @@ subcollection: vmwaresolutions
 # Ordering Veeam
 {: #veeam_ordering}
 
-You can include the Veeam® service with a new VMware vCenter Server® instance or add the service to your existing instance.
+You can include the Veeam® service with a new {{site.data.keyword.vcf-auto}} instance or add the service to your existing instance.
 
-Veeam Backup and Replication 12 is available for deployment on new instances. 
+Veeam Backup and Replication 12.1 is available for deployment on new instances.
 
 If you have Veeam 9.5u4b, you can continue to use it. However, you cannot install Veeam 9.5u4b on a new or existing instance.
 {: restriction}
@@ -65,8 +65,8 @@ Specify a name for this service instance. The name must be unique across all Vee
 {: #veeam_ordering-depl-type}
 
 Select one of the following options:
-* **Windows Server VM with iSCSI storage**. This option is not supported by VMware® Regulated Workloads instances.
-* **Single Windows VSI with iSCSI storage**. This option is not supported by Security and Compliance Readiness Bundle instances or VMware Regulated Workloads instances.
+* **Windows Server VM with iSCSI storage**. This option is not supported by {{site.data.keyword.rw}} instances.
+* **Single Windows VSI with iSCSI storage**. This option is not supported by Security and Compliance Readiness Bundle instances or {{site.data.keyword.rw}} instances.
 * **Bare metal server with local storage**. This option requires VMware vSphere® 7.
 
 ### Storage size
@@ -91,7 +91,7 @@ The backup disks are used as storage repositories for backups. This option is ap
 
 You can order a Linux® hardened repository (LHR) to use for immutable storage. If you select a Linux hardened repository, a list of backup disk size options is displayed. Select the disk size that you want to order.
 
-The Linux hardened repository is supported only for vCenter Server with VMware NSX-T™ instances and vSphere 7.
+The Linux hardened repository is supported only for {{site.data.keyword.vcf-auto-short}} with VMware NSX-T™ instances and vSphere 7.
 {: important}
 
 For more information, see [Hardened repository](https://helpcenter.veeam.com/docs/backup/vsphere/hardened_repository.html?ver=120){: external}.
@@ -112,5 +112,5 @@ If you need a single license key for more than 500 VMs, you must order a stand-a
 * [Managing Veeam](/docs/vmwaresolutions?topic=vmwaresolutions-managingveeam)
 * [Managing Veeam stand-alone licenses](/docs/vmwaresolutions?topic=vmwaresolutions-veeam_managing_licenses)
 * [Ordering and configuring {{site.data.keyword.cloud_notm}} Object Storage with Veeam](/docs/vmwaresolutions?topic=vmwaresolutions-icos_ordering)
-* [Veeam on IBM Cloud](https://www.ibm.com/products/veeam){: external}
+* [Veeam on {{site.data.keyword.cloud_notm}}](https://www.ibm.com/products/veeam){: external}
 * [Veeam Technical Documentation](https://www.veeam.com/documentation-guides-datasheets.html){: external}

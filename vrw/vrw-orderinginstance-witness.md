@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2024
 
-lastupdated: "2024-01-23"
+lastupdated: "2024-04-26"
 
 keywords: vmware regulated workloads, vmware regulated workloads order instance, order vmware regulated workloads, vmware regulated workloads instances
 
@@ -14,10 +14,10 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Witness cluster (multizone VMware instance only)
+# Witness cluster for {{site.data.keyword.rw}} multizone
 {: #vrw-orderinginstance-witness-cluster}
 
-New deployments of VMware Regulated Workloads multizone instances are no longer supported. You can still add or delete clusters, add or delete ESXi servers or NFS storage, and add or remove services for existing multizone instances.
+New deployments of {{site.data.keyword.rw}} multizone instances are no longer supported. You can still add or delete clusters, add or delete ESXi servers or NFS storage, and add or remove services for existing multizone instances.
 {: deprecated}
 
 ## Cluster name
@@ -44,7 +44,6 @@ You can choose the following CPU models and a supported RAM size:
 | Dual Intel® Xeon® Silver 4210 (Cascade Lake) | 20 | 2.2 | 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
 | Dual Intel Xeon Gold 5218 (Cascade Lake) | 32 | 2.3 | 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
 | Dual Intel Xeon Gold 6248 (Cascade Lake) | 40 | 2.5 | 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
-| Dual Intel Xeon Gold 6250 (Cascade Lake) | 16 | 3.9 | 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
 | Dual Intel Xeon Platinum 8260 (Cascade Lake) | 48 | 2.4 | 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
 | Quad Intel Xeon Gold 6248 (Cascade Lake) | 80 | 2.5 | 384 GB, 768 GB, 1.5 TB, 3 TB |
 | Quad Intel Xeon Platinum 8260 (Cascade Lake) | 96 | 2.4 | 384 GB, 768 GB, 1.5 TB, 3 TB |
@@ -58,7 +57,7 @@ You can order 3 - 30 servers. All servers have the same configuration.
 ## vSAN configuration
 {: #vrw-orderinginstance-witness-cluster-vsan}
 
-Specify the following settings for vSAN™ configuration.
+Specify the following settings for the vSAN™ configuration.
 
 ### Size for vSAN capacity disks
 {: #vrw-orderinginstance-witness-cluster-vsan-disktype}

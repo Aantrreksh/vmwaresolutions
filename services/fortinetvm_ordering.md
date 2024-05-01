@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-02-06"
+lastupdated: "2024-04-29"
 
 keywords: FortiGate VA, FortiGate configuration, order FortiGate
 
@@ -18,7 +18,7 @@ subcollection: vmwaresolutions
 # Ordering FortiGate Virtual Appliance
 {: #fortinetvm_ordering}
 
-You can include the FortiGate® Virtual Appliance service with a new VMware vCenter Server® instance or add the service to your existing instance.
+You can include the FortiGate® Virtual Appliance service with a new {{site.data.keyword.vcf-auto}} instance or add the service to your existing instance.
 
 You can deploy the service on a single-zone (new or existing) or multizone (existing only) instance. For multizone instances, three FortiGate Virtual Appliances are installed, one for each of the three gateway clusters.
 
@@ -138,8 +138,8 @@ You can't change the monthly subscription license model after service installati
 
 * [FortiGate Virtual Appliance overview](/docs/vmwaresolutions?topic=vmwaresolutions-fortinetvm_considerations)
 * [Managing FortiGate Virtual Appliance](/docs/vmwaresolutions?topic=vmwaresolutions-managingfortinetvm)
-* [Ordering services for vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices)
+* [Ordering services for {{site.data.keyword.vcf-auto-short}} instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices)
 * [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support)
-* [FAQ](/docs/vmwaresolutions?topic=vmwaresolutions-faq-vmwaresolutions)
+* [General FAQ about VCF for Classic](/docs/vmwaresolutions?topic=vmwaresolutions-faq-vmwaresolutions)
 * [Fortinet website](https://www.fortinet.com/){: external}
 * [Fortinet Document Library](https://docs.fortinet.com/product/fortigate/7.4){: external}

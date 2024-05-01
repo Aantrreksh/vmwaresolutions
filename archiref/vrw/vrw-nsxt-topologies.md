@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2020, 2023
+  years:  2020, 2024
 
-lastupdated: "2023-09-22"
+lastupdated: "2024-04-26"
 
 subcollection: vmwaresolutions
 
@@ -34,8 +34,6 @@ The following diagram shows an example of a customer deployment that uses the st
 5. If you provision your instance with public interfaces, the access to public network is provided through public uplinks. These uplinks are attached to a portable subnet on a public VLAN on the {{site.data.keyword.cloud_notm}} public network. The routing to internet uses these uplinks, and the public IP addresses to the uplinks are provisioned by the automation.
 6. A single Tier-1 Gateway is provisioned by the automation for the workloads. You can use this topology or customize it by provisioning new Tier-1 Gateways.
 7. You can expand the default topology by adding new segments to the existing Tier-1 Gateway (or to the new Tier-1 Gateways provisioned by you). The route advertisements between T1 and T0 gateways are fully customizable by you and are done by NSX-T. No routing protocol is required or used between T1 and T0 advertisements.
-
-The following diagram shows an example of a customer deployment that uses the standard topology, when the segments are attached directly to the Tier-0 Gateway. You can add more segments to the Tier-0 Gateway or and delete the Tier-1 Gateway that is deployed by the automation, if needed.
 
 ## Related links
 {: #vrw-nsxt-topologies-related}

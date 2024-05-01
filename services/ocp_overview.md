@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2024
 
-lastupdated: "2024-01-31"
+lastupdated: "2024-04-12"
 
 keywords: openshift for vmware, request openshift for vmware, tech specs openshift vmware
 
@@ -24,9 +24,9 @@ The {{site.data.keyword.redhat_openshift_notm}} version available for deployment
 {: note}
 
 Review the following information before you install the {{site.data.keyword.redhat_openshift_notm}} for VMware service:
-* {{site.data.keyword.redhat_openshift_notm}} for VMware cannot be installed on multiple VMware vCenter Server® instances in a multisite configuration. Before you install {{site.data.keyword.redhat_openshift_notm}} for VMware on an instance, verify that the service is not installed on any other instances in the multisite configuration.
-* {{site.data.keyword.redhat_openshift_notm}} for VMware is supported for vCenter Server instances with VMware vSphere® 7.0 and VMware NSX-T™ 3.1 or later.
-* {{site.data.keyword.redhat_openshift_notm}} for VMware is not supported for new deployments or for ordering post-deployment for vCenter Server with NSX-V instances with vSphere 6.7.
+* {{site.data.keyword.redhat_openshift_notm}} for VMware cannot be installed on multiple {{site.data.keyword.vcf-auto}} instances in a multisite configuration. Before you install {{site.data.keyword.redhat_openshift_notm}} for VMware on an instance, verify that the service is not installed on any other instances in the multisite configuration.
+* {{site.data.keyword.redhat_openshift_notm}} for VMware is supported for {{site.data.keyword.vcf-auto-short}} instances with VMware vSphere® 7.0 and VMware NSX-T™ 3.1 or later.
+* {{site.data.keyword.redhat_openshift_notm}} for VMware is not supported for new deployments or for ordering post-deployment for {{site.data.keyword.vcf-auto-short}} with NSX-V instances with vSphere 6.7.
 
 Existing installations of {{site.data.keyword.redhat_openshift_notm}} for VMware can be used or deleted for vSphere 6.7 instances.
 
@@ -44,7 +44,7 @@ For more information about the architecture, see [{{site.data.keyword.redhat_ope
 ## Technical specifications for Red Hat OpenShift for VMware
 {: #ocp_overview-specs}
 
-The following capacity requirements apply only if your vCenter Server instance is using vSAN™ storage. If you are using NFS, a new 2-TB NFS data store, which is dedicated to {{site.data.keyword.redhat_openshift_notm}}, is ordered.
+The following capacity requirements apply only if your {{site.data.keyword.vcf-auto-short}} instance is using vSAN™ storage. If you are using NFS, a new 2-TB NFS data store, which is dedicated to {{site.data.keyword.redhat_openshift_notm}}, is ordered.
 
 The solution topology has the following requirements:
 * 9 CPUs

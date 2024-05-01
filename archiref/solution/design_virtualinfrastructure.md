@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2023
+  years:  2016, 2024
 
-lastupdated: "2023-09-25"
+lastupdated: "2024-04-18"
 
 subcollection: vmwaresolutions
 
@@ -38,7 +38,7 @@ By default, the only users who can log in directly are the _root_ and _ibmvmadmi
 
 | Attribute              | Configuration parameter |
 |:---------------------- |:----------------------- |
-| ESXi boot location     | Different host configurations might be deployed with: \n * local disks configured with RAID-1 \n * a pair of M.2 boot drives in a mirrored configuration \n * a single M.2 boot drive |
+| ESXi boot location     | Different host configurations might be deployed with: \n * Local disks configured with RAID-1 \n * A pair of M.2 boot drives in a mirrored configuration \n * A single M.2 boot drive |
 | Time synchronization   | Uses {{site.data.keyword.cloud}} NTP server |
 | Host access            | Supports DCUI. SSH and ESXi Shell are supported but not enabled by default |
 | User access            | Local authentication and MSAD |
@@ -76,8 +76,6 @@ vSAN employs the following components:
 * Two-disk group vSAN design; each disk group with two or more disks. One SSD or NVMe drive of the smallest size in the group serves as the cache tier and the remaining SSDs serve as the capacity tier.
 * The onboard RAID controller is configured in a RAID 0 array for each individual drive that is used for vSAN cache or capacity.
 * A single vSAN datastore is created from all storage.
-
-The available vSAN features depend on the license edition that you select when you order the instance. For more information, see [VMware vSAN edition comparison](/docs/vmwaresolutions?topic=vmwaresolutions-solution-appendix#solution-appendix-vsan-editions).
 
 ### Virtual network setup for vSAN
 {: #design_virtualinfrastructure-net-setup}

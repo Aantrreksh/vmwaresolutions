@@ -2,11 +2,11 @@
 
 copyright:
 
-  years:  2016, 2023
+  years:  2016, 2024
 
-lastupdated: "2023-09-07"
+lastupdated: "2024-04-09"
 
-keywords: vmware vSphere order instance, order vSphere, order vmware vSphere instance
+keywords: flexible order instance, order vSphere, order flexible instance
 
 subcollection: vmwaresolutions
 
@@ -17,7 +17,7 @@ subcollection: vmwaresolutions
 # General information
 {: #vs_orderinginstances-sys-settings}
 
-The information that you specify for a new VMware vSphere® instance is based on an instance configuration template.
+The information that you specify for a new {{site.data.keyword.vcf-flex}} instance is based on an instance configuration template.
 
 ## Instance configuration name
 {: #vs_orderinginstance-instance-config}
@@ -49,4 +49,4 @@ You can also specify an instance name that meets the following requirements:
 {: #vs_orderinginstances-sys-related}
 
 * [Licensing](/docs/vmwaresolutions?topic=vmwaresolutions-vs_orderinginstances-licensing-settings)
-* [Procedure to order VMware vSphere instances](/docs/vmwaresolutions?topic=vmwaresolutions-vs_orderinginstances-procedure)
+* [Procedure to order Flexible instances](/docs/vmwaresolutions?topic=vmwaresolutions-vs_orderinginstances-procedure)

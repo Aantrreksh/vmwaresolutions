@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2020, 2023
+  years:  2020, 2024
 
-lastupdated: "2023-09-28"
+lastupdated: "2024-04-16"
 
 keywords: Caveonix license, Caveonix order license, Caveonix BYOL license
 
@@ -17,7 +17,7 @@ subcollection: vmwaresolutions
 # Ordering Caveonix RiskForesight licenses
 {: #caveonix_license_ordering}
 
-This information does not apply to VMware® Regulated Workloads or Security and Compliance Readiness Bundle instances.
+This information does not apply to {{site.data.keyword.rw}} or Security and Compliance Readiness Bundle instances.
 {: note}
 
 You can order a Caveonix RiskForesight™ license without associating it to an instance for licensing and activation of your on-premises workloads.

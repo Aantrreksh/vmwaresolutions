@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2019, 2023
+  years:  2019, 2024
 
-lastupdated: "2023-08-09"
+lastupdated: "2024-04-12"
 
 subcollection: vmwaresolutions
 
@@ -12,18 +12,18 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# vCenter Server multizone BOM
+# {{site.data.keyword.vcf-auto-short}} multizone BOM
 {: #mcv-archi-bom}
 
-New deployments of vCenter Server multizone instances are no longer supported. You can still add and delete clusters, add and remove ESXi servers, and add and delete storage for existing multizone instances.
+New deployments of multizone instances are no longer supported. You can still add and delete clusters, add and remove ESXi servers, and add and delete storage for existing multizone instances.
 {: deprecated}
 
-Review the Bill of Materials (BOM) for VMware vCenter Server® multizone instances.
+Review the Bill of Materials (BOM) for {{site.data.keyword.vcf-auto}} multizone instances.
 
 ## Components
 {: #mcv-archi-bom-components}
 
-The following components are part of your existing vCenter Server multizone instance:
+The following components are part of your existing {{site.data.keyword.vcf-auto-short}} multizone instance:
 * VMware vSphere®
 * VMware Aria components
    * VMware Aria® Operations™

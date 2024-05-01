@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2021, 2022
+  years:  2021, 2024
 
-lastupdated: "2022-06-14"
+lastupdated: "2024-04-04"
 
 subcollection: vmwaresolutions
 
@@ -20,8 +20,8 @@ New deployments of Security and Compliance Readiness Bundle instances are no lon
 
 Expand or contract the capacity of your Security and Compliance Readiness Bundle instance according to your business needs, by adding or deleting VMware ESXi servers or Network File System (NFS) storage.
 
-The procedures to add or delete servers and storage for Security and Compliance Readiness Bundle instances are similar to procedures for VMware vCenter Server® instances. For more information, see the following topics:
-* [Adding ESXi servers to vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservers)
-* [Adding NFS storage to vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingnfs)
-* [Deleting ESXi servers from vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_removingservers)
-* [Removing NFS storage from vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_removingnfs)
+The procedures to add or delete servers and storage for Security and Compliance Readiness Bundle instances are similar to procedures for {{site.data.keyword.vcf-auto}} instances. For more information, see the following topics:
+* [Adding ESXi servers to Automated instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservers)
+* [Adding NFS storage to Automated instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingnfs)
+* [Deleting ESXi servers from Automated instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_removingservers)
+* [Removing NFS storage from Automated instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_removingnfs)

@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2024
 
-lastupdated: "2024-02-06"
+lastupdated: "2024-04-29"
 
 keywords: Red Hat OpenShift for VMware, manage OpenShift, OpenShift operations
 
@@ -27,7 +27,7 @@ Review the following information to manage your {{site.data.keyword.redhat_opens
 
 The initial certificates that are created during installation expire 24 hours after they are created. IBM's automation process, which installs {{site.data.keyword.redhat_openshift_notm}}, handles the approval of the CSRs for this initial rotation, which is done by running a script on the bastion for the first 30 hours. The script is named `/root/approve-csr.sh` and its log file is named `/root/approve-csr.log`. 
 
-For the script to run successfully, the initial `kubeadmin` credentials must be the same until the initial certificate rotation is complete. Do not change the kubeadmin credentials for the first 24 hours. If the credentials are changed, you must monitor and approve the CSRs for the initial certificate rotation. For more information, see [Approving the CSRs for your machines](https://docs.openshift.com/container-platform/4.14/installing/installing_vsphere/installing-vsphere.html#installation-approve-csrs_installing-vsphere){: external}.
+For the script to run successfully, the initial `kubeadmin` credentials must be the same until the initial certificate rotation is complete. Do not change the kubeadmin credentials for the first 24 hours. If the credentials are changed, you must monitor and approve the CSRs for the initial certificate rotation. For more information, see [Approving the CSRs for your machines](https://docs.openshift.com/container-platform/4.14/installing/installing_vsphere/upi/installing-vsphere.html#installation-approve-csrs_installing-vsphere){: external}.
 
 Do not restart any of the {{site.data.keyword.redhat_openshift_notm}} cluster virtual machines (VMs) or the bastion VM until the first certificate rotation is done.
 {: attention}
@@ -97,10 +97,10 @@ To expand your {{site.data.keyword.redhat_openshift_notm}} cluster by adding mor
    6. Click **Save** and then click **Apply**.
 
 6. Create DNS records for the new worker:
-   1. Log in to the AD NS server for your vCenter Server instance.
+   1. Log in to the AD NS server for your {{site.data.keyword.vcf-auto-short}} instance.
    2. Using the DNS Manager, add a new A record to the corresponding `ocp` zone. When you create the A record, ensure that the option to create associated PTR record is selected.
 
-7. Approve any certificate signing requests (CSRs) from the bastion. During the provisioning of the new worker, you might have to [approve CSRs](https://docs.openshift.com/container-platform/4.14/installing/installing_vsphere/installing-vsphere.html#installation-approve-csrs_installing-vsphere){: external} from the bastion:
+7. Approve any certificate signing requests (CSRs) from the bastion. During the provisioning of the new worker, you might have to [approve CSRs](https://docs.openshift.com/container-platform/4.14/installing/installing_vsphere/upi/installing-vsphere.html#installation-approve-csrs_installing-vsphere){: external} from the bastion:
    1. Log in to the bastion as the `root` user and change to the bastion installation directory. For more information, see [Bastion details](/docs/vmwaresolutions?topic=vmwaresolutions-ocp_overview#ocp_overview-bastion).
    2. Before you can run any commands, you must authenticate to {{site.data.keyword.redhat_openshift_notm}}:
       * If authentication is not configured and you are using the default `kubeadmin` account and password, run the command `export KUBECONFIG=auth/kubeconfig` and verify that you are authenticated by running the command `./oc whoami`.
@@ -130,6 +130,6 @@ To expand your {{site.data.keyword.redhat_openshift_notm}} cluster by adding mor
 ## Related links
 {: #ocp_managing-related}
 
-* [Ordering services for vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices)
+* [Ordering services for {{site.data.keyword.vcf-auto-short}} instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices)
 * [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support)
-* [FAQ](/docs/vmwaresolutions?topic=vmwaresolutions-faq-vmwaresolutions)
+* [General FAQ about VCF for Classic](/docs/vmwaresolutions?topic=vmwaresolutions-faq-vmwaresolutions)

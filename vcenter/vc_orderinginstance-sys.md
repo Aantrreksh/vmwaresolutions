@@ -4,9 +4,9 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-02-05"
+lastupdated: "2024-04-25"
 
-keywords: vCenter Server order instance, order vCenter Server, order vCenter Server instance
+keywords: vcf classic order instance, order vcf automated, order vmware cloud foundation instance
 
 subcollection: vmwaresolutions
 
@@ -17,7 +17,7 @@ subcollection: vmwaresolutions
 # General information
 {: #vc_orderinginstance-sys-settings}
 
-Specify or accept the following settings when you order a VMware vCenter Server® instance.
+Specify or accept the following settings when you order a {{site.data.keyword.vcf-auto}} instance.
 
 ## VMware vSphere version
 {: #vc_orderinginstance-vsphere-license}
@@ -27,7 +27,7 @@ VMware vSphere® Enterprise Plus 7 is ordered by default.
 ### Notes on upgrading to vSphere 7
 {: #vc_orderinginstance-vsphere-v6-7-upgrade}
 
-For vCenter Server instances with vSphere 6.7, upgrading to vSphere 7 is supported for selected configurations. If you want to use vSphere 7, you can:
+For instances with vSphere 6.7, upgrading to vSphere 7 is supported for selected configurations. If you want to use vSphere 7, you can:
 * Deploy a new vSphere 7 instance and migrate your current workloads to the new instance.
 * [Contact IBM Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support) for assistance with your upgrade process.
 
@@ -44,11 +44,6 @@ Migrating your workloads is recommended if you want to:
 {{site.data.content.para-vcsversion80-vcsline2}}
 
 {{site.data.content.note-vcsversion80-vsphere8}}
-
-## VMware NSX networking solution
-{: #vc_orderinginstance-nsx}
-
-For new instances, the VMware NSX® networking solution is NSX.
 
 ## Instance name
 {: #vc_orderinginstance-inst-name}
@@ -80,4 +75,4 @@ The instance name is set to **vcs-_xx_** by default, where _xx_ represents two r
 {: #vc_orderinginstance-sys-related}
 
 * [Licensing](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-licensing-settings)
-* [Procedure to order vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-procedure)
+* [Procedure to order Automated instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-procedure)

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2023
+  years:  2016, 2024
 
-lastupdated: "2023-04-19"
+lastupdated: "2024-05-01"
 
 keywords: change vCenter Server artifacts, automation ID, VMware resource
 
@@ -46,48 +46,48 @@ The user ID for this account is in the format `<service_name>-<truncated service
 The `<service_name>` together with the `<service_uuid>` truncates to 20 characters.
 {: note}
 
-## VMware resources for vCenter Server instances (V1.9 and later)
+## VMware resources for instances V1.9 and later
 {: #vcenter_chg_impact-vmware-resources-for-inst-v1.9-and-later}
 {: faq}
 
-If the status of the vCenter Server instance is **Available**, you can modify the VMware virtual data center, cluster, switches, port groups, and customer Network File System (NFS) datastore names from the VMware vSphere Web Client.
+If the status of the {{site.data.keyword.vcf-auto}} instance is **Available**, you can modify the VMware virtual data center, cluster, switches, port groups, and customer Network File System (NFS) datastore names from the VMware vSphere Web Client.
 
 Review the following restrictions:
-* Do not change the vCenter Server instance name and the vCenter Server virtual machine name.
+* Do not change the Automated instance name and the vCenter Server virtual machine name.
 * Do not change the name of the management datastore from its default value. The default value is **vsanDatastore** for VMware vSAN™ instances and **management-share** for NFS instances.
-* Do not change the names and do not delete any of the management subnets that are created for the vCenter Server instances.
+* Do not change the names and do not delete any of the management subnets that are created for the Automated instances.
 * Do not change the name of the network uplinks that are created during provisioning.
 * Do not rename or remove NSX-T components. These operations might generate add and remove failures or delays. The NSX-T components with the names that are documented in [Naming conventions](/docs/vmwaresolutions?topic=vmwaresolutions-nsx-t-design#nsx-t-design-naming) are used when automation adds or removes hosts, clusters, and services.
-* Do not change the VMware ESXi™ server names and the IP addresses because they are registered for Windows® DNS resolution. Changes might result in failure during deployment or failure of vCenter Server functions.
+* Do not change the VMware ESXi™ server names and the IP addresses because they are registered for Windows® DNS resolution. Changes might result in failure during deployment or failure of Automated instance functions.
 
-## VMware resources for vCenter Server instances (V1.8 and earlier)
+## VMware resources for instances V1.8 and earlier
 {: #vcenter_chg_impact-vmware-resources-for-inst-v1.8-and-earlier}
 {: faq}
 
-The following table lists the operations that might be impacted if the SSO administrator changes VMware vCenter Server resources outside of the {{site.data.keyword.vmwaresolutions_short}} console. If a solution to recover is available, it is provided as well.
+The following table lists the operations that might be impacted if the SSO administrator changes resources outside of the {{site.data.keyword.vmwaresolutions_short}} console. If a solution to recover is available, it is provided as well.
 
 The following table is applicable to instances deployed in V1.8 and earlier, including the ones that were initially deployed in V1.8 and earlier and then upgraded to V1.9 or later.
 
-| Attempted change  | Impacted operations  | Severity  | Recovery method  |
-|:------------- |:------------- |:--------------|:--------------|
+| Attempted change | Impacted operations | Severity | Recovery method |
+|:---------------- |:------------------- |:-------- |:--------------- |
 | Change the VMware virtual data center name. | Adding a VMware virtual data center might fail because the new ESXi server cannot join the changed virtual data center. | Important | Change the VMware virtual data center name back to the original name. |
 | Change any port group names. | Adding an ESXi server might fail. | Important | Change the port group name back to the original name. |
 | Change the cluster name. | Adding an ESXi server might fail. | Important | Change the cluster name back to the original name.
 | Change the public or private Distributed Virtual Switch (DVS) name. | Adding an ESXi server might fail. | Important | Change the public or private Distributed Virtual Switch (DVS) name to the original name.
 | Change the vSAN datastore name in the instance that uses vSAN. | Adding an ESXi server might fail. \n \n Upgrading the instance might fail. | Important | Change the vSAN datastore name back to the original name, **vsanDatastore**.
-| Change the management NFS datastore name in the instance that uses NFS. | Adding an ESXi server might fail. \n \n Upgrading the instance might fail. | Important | Change the NFS management datastore name back to the original name, **management-share**, and remount the NFS datastore as read-only on the ESXi server.
+| Change the management NFS datastore name in the instance that uses NFS. | Adding an ESXi server might fail. \n \n Upgrading the instance might fail. | Important | Change the NFS management datastore name back to the original name, **management-share**, and remount the NFS datastore as read-only on the ESXi server. |
 {: caption="Table 1. Operations that are impacted by changing VMware resources" caption-side="bottom"}
 
 The following table lists the operations that might be impacted if SSH or shell access is disabled for various resources.
 
-| Attempted change  | Impacted operations  | Severity  | Recovery method  |
-|:------------- |:------------- |:--------------|:--------------|
-| Disable SSH or shell access for vCenter Server or PSC. | Pairing a primary and secondary instance might fail.    | Important    |    |
+| Attempted change | Impacted operations  | Severity  | Recovery method |
+|:---------------- |:-------------------- |:--------- |:--------------- |
+| Disable SSH or shell access for vCenter Server or PSC | Pairing a primary and secondary instance might fail. | Important | |
 {: caption="Table 2. Operations that are impacted by SSH and shell access (local)" caption-side="bottom"}
 
 If you choose to disable SSH or shell access, re-enable it temporarily before you complete the indicated operations.
 
-## Management subnets for vCenter Server instances
+## Management subnets for Automated instances
 {: #vcenter_chg_impact-mgmt-subnets}
 {: faq}
 

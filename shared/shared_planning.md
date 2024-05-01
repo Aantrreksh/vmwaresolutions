@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2024
 
-lastupdated: "2024-04-02"
+lastupdated: "2024-04-26"
 
 keywords: planning VMware Solutions Shared, data center, VMware Solutions Shared data centers
 
@@ -15,7 +15,7 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Requirements for VMware Shared
+# Requirements for {{site.data.keyword.vm-shared}}
 {: #shared_planning}
 
 {{site.data.content.shared-deprecated-note}}
@@ -34,9 +34,9 @@ The virtual data center name must meet the following requirements:
 ## {{site.data.keyword.cloud_notm}} data center availability
 {: #shared_planning-dc-availability}
 
-The VMware Shared deployment has strict requirements on the physical infrastructure. Therefore, you can deploy your virtual data centers only in {{site.data.keyword.cloud_notm}} data centers that meet the requirements.
+The {{site.data.keyword.vm-shared}} deployment has strict requirements on the physical infrastructure. Therefore, you can deploy your virtual data centers only in {{site.data.keyword.cloud_notm}} data centers that meet the requirements.
 
-The following {{site.data.keyword.cloud_notm}} data centers are available for VMware Shared deployment.
+The following {{site.data.keyword.cloud_notm}} data centers are available for {{site.data.keyword.vm-shared}} deployment.
 
 | Site | Location | vSAN support | Multizone support |
 |:---- |:-------- |:------------ |:----------------- |
@@ -60,12 +60,12 @@ The following {{site.data.keyword.cloud_notm}} data centers are available for VM
 {: class="simple-tab-table"}
 {: #simpletabtable-cr-northamerica}
 
-## Services for VMware Shared instances
+## Services for {{site.data.keyword.vm-shared}} instances
 {: #shared_planning-addon-services}
 
 The following preinstalled services are available for your virtual data center based on your needs.
-* [Managing Veeam for VMware Shared](/docs/vmwaresolutions?topic=vmwaresolutions-shared_veeam)
-* [Managing Zerto for VMware Shared](/docs/vmwaresolutions?topic=vmwaresolutions-shared_zerto-portal)
+* [Managing Veeam for {{site.data.keyword.vm-shared}}](/docs/vmwaresolutions?topic=vmwaresolutions-shared_veeam)
+* [Managing Zerto for {{site.data.keyword.vm-shared}}](/docs/vmwaresolutions?topic=vmwaresolutions-shared_zerto-portal)
 
 Service charges are incurred only if you choose to use the service.
 {: note}
@@ -78,14 +78,14 @@ Review [VMware Cloud Director 10.4 Configuration Limits](https://configmax.esp.v
 ### 10,000 vApps per Cloud Director organization
 {: #shared_ordering-cloud-dir-limits-vapp}
 
-One of the configuration limits in VMware Cloud Director is a maximum of 10,000 vApps per Cloud Director organization. In VMware Shared, it means you cannot have more than 10,000 vApps in a single account in a particular site location since each site location is the same Cloud Director instance. For more information about sites and VMware Cloud Director, see [VMware Shared overview](/docs/vmwaresolutions?topic=vmwaresolutions-shared_overview).
+One of the configuration limits in VMware Cloud Director is a maximum of 10,000 vApps per Cloud Director organization. In {{site.data.keyword.vm-shared}}, it means you cannot have more than 10,000 vApps in a single account in a particular site location since each site location is the same Cloud Director instance. For more information about sites and VMware Cloud Director, see [{{site.data.keyword.vm-shared}} overview](/docs/vmwaresolutions?topic=vmwaresolutions-shared_overview).
 
 If you need more than 10,000 vApps in a single account, consider the following options:
 
 * Increase the number of virtual machines in each vApp.
 * Use a separate account in that region to host more vApps.
 
-The number of VMware Shared instances (or virtual data centers) does not impact this limit.
+The number of {{site.data.keyword.vm-shared}} instances (or virtual data centers) does not impact this limit.
 {: note}
 
 ## Related links
@@ -93,5 +93,5 @@ The number of VMware Shared instances (or virtual data centers) does not impact 
 
 * [Ordering virtual data centers](/docs/vmwaresolutions?topic=vmwaresolutions-shared_ordering)
 * [Viewing and managing virtual data centers](/docs/vmwaresolutions?topic=vmwaresolutions-shared_viewing-vdc-summary)
-* [Operating VMware Shared](/docs/vmwaresolutions?topic=vmwaresolutions-shared_vcd-ops-guide)
+* [Operating {{site.data.keyword.vm-shared}}](/docs/vmwaresolutions?topic=vmwaresolutions-shared_vcd-ops-guide)
 * [VMware Cloud Director](https://www.vmware.com/products/cloud-director.html){: external}

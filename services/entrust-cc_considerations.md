@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2023
+  years:  2016, 2024
 
-lastupdated: "2023-09-11"
+lastupdated: "2024-04-12"
 
 keywords: Entrust CloudControl, tech specs Entrust CloudControl
 
@@ -18,14 +18,14 @@ subcollection: vmwaresolutions
 # Entrust CloudControl on {{site.data.keyword.cloud_notm}} overview
 {: #entrust-cc_considerations}
 
-New installations of Entrust CloudControl™ (formerly known as HyTrust CloudControl) are not supported for new or existing deployments of VMware vCenter Server® instances. You can still use or delete existing Entrust CloudControl installations on your existing instances.
+New installations of Entrust CloudControl™ (formerly known as HyTrust CloudControl) are not supported for new or existing deployments of {{site.data.keyword.vcf-auto}} instances. You can still use or delete existing Entrust CloudControl installations on your existing instances.
 {: deprecated}
 
 Entrust CloudControl on {{site.data.keyword.cloud}} enforces and controls compliance against security standards, which includes role-based access control (RBAC), approval, and auditing. Entrust CloudControl on {{site.data.keyword.cloud_notm}} is a non-IBM product that is offered under terms and conditions from Entrust, not IBM.
 {: shortdesc}
 
-* Previous installations of Entrust CloudControl 6.6 are supported for existing vCenter Server with NSX-T™ instances.
-* Previous installations of Entrust CloudControl 5.6 are supported for existing vCenter Server with NSX-V instances.
+* Previous installations of Entrust CloudControl 6.6 are supported for existing {{site.data.keyword.vcf-auto-short}} with NSX-T™ instances.
+* Previous installations of Entrust CloudControl 5.6 are supported for existing {{site.data.keyword.vcf-auto-short}} with NSX-V instances.
 
 ## Technical specifications for Entrust CloudControl
 {: #entrust-cc_considerations-specs}

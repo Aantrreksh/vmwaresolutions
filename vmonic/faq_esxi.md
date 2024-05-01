@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2023
+  years:  2016, 2024
 
-lastupdated: "2023-08-24"
+lastupdated: "2024-04-09"
 
 keywords: FAQ, host, ESXi server
 
@@ -24,7 +24,7 @@ Find answers to frequently asked questions about the VMware ESXi™ servers mana
 {: #faq_esxi-instance}
 {: faq}
 
-Your VMware vCenter Server® instance allows you to expand the consolidated cluster to have up to 51 ESXi servers. Each of the workload clusters can be expanded to have up to 59 ESXi servers. Since you can add up to 10 clusters to an instance, each deployed instance can have a maximum of 51 + 9x59 = 582 ESXi servers across all clusters.
+Your {{site.data.keyword.vcf-auto}} instance allows you to expand the consolidated cluster to have up to 51 ESXi servers. Each of the workload clusters can be expanded to have up to 59 ESXi servers. Since you can add up to 10 clusters to an instance, each deployed instance can have a maximum of 51 + 9x59 = 582 ESXi servers across all clusters.
 
 ## How many ESXi servers can I add to a cluster?
 {: #faq_esxi-cluster}
@@ -51,7 +51,7 @@ If necessary, you can disable root access when the ESXi servers have a status of
 
 You must re-enable root access for subsequent automation operations. For example, when you add or remove file shares, or when you install add-on services such as Zerto.
 
-## Can I use OS reload on the ESXi servers in my vCenter Server instance?
+## Can I use OS reload on the ESXi servers in my Automated instance?
 {: #faq_esxi-OS-reload}
 {: faq}
 
@@ -61,7 +61,7 @@ By using OS (operating system) reload, the ESXi servers are returned to a previo
 
 The OS reload deletes the automated configuration of vCenter Server and that configuration cannot be restored.
 
-Only ESXi servers that are part of vCenter Server instances are affected by OS reloads. Hosts that are part of VMware vSphere instances are not affected.
+Only ESXi servers that are part of {{site.data.keyword.vcf-auto-short}} instances are affected by OS reloads. Hosts that are part of {{site.data.keyword.vcf-flex}} instances are not affected.
 
 ## How do I place a host in maintenance mode?
 {: #faq_esxi-maint-mode}
@@ -85,6 +85,6 @@ Adding static routes for vMotion is not supported. Changes in vMotion subnet con
 ## Related links
 {: #faq_esxi-related}
 
-* [Expanding and contracting capacity for vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservers)
-* [Adding clusters for vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingclusters)
+* [Expanding and contracting capacity for Automated instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservers)
+* [Adding clusters to Automated instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingclusters)
 * [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support)

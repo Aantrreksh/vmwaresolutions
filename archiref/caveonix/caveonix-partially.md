@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2022
+  years:  2016, 2024
 
-lastupdated: "2022-08-26"
+lastupdated: "2024-04-26"
 
 subcollection: vmwaresolutions
 
@@ -21,8 +21,7 @@ This deployment model is expected to service up to 500 assets with up to 30 days
 
 Select the next available IP addresses from the {{site.data.keyword.cloud}} private portable subnet. Configure FQDN names in ADDNS.
 
-Find the details of the base VM, scale-out VM, and Remote collector VM in the following tables.
-
+Find the details of the base VM, scale-out VM, and Remote collector VM in the following table:
 |Parameter | Value |
 |----------|-------|
 | Type | Base |

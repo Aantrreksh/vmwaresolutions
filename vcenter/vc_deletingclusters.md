@@ -2,11 +2,11 @@
 
 copyright:
 
-  years:  2022, 2023
+  years:  2022, 2024
 
-lastupdated: "2023-09-22"
+lastupdated: "2024-05-01"
 
-keywords: vCenter Server delete clusters, delete clusters, delete vCenter Server cluster, vmware multizone, vCenter Server multizone delete clusters, delete vCenter Server cluster
+keywords: vcf classic delete clusters, delete clusters, delete vcf classic cluster, delete vcf classic cluster
 
 subcollection: vmwaresolutions
 
@@ -14,15 +14,15 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Deleting clusters from vCenter Server instances
+# Deleting clusters from Automated instances
 {: #vc_deletingclusters}
 
-You can delete clusters from VMware vCenter Server® instances when you do not need them.
+You can delete clusters from {{site.data.keyword.vcf-auto}} instances when you do not need them.
 
-Deleting clusters from vCenter Server instances with VMware vSphere® 6.5 is not supported.
+Deleting clusters from instances with VMware vSphere® 6.5 is not supported.
 {: note}
 
-## Before you delete clusters from vCenter Server instances
+## Before you delete clusters from Automated instances
 {: #vc_deletingclusters-before}
 
 {{site.data.content.para-vcenterremoveclusters}}
@@ -34,13 +34,13 @@ Deleting clusters from vCenter Server instances with VMware vSphere® 6.5 is not
 * When you delete a cluster, all storage and subnets that are associated with the cluster are deleted as well. To view the storage and subnets that are associated with a cluster, see the cluster details page.
 * You do not have to delete any services that are installed on the cluster, including services on a gateway cluster. The services are automatically deleted when you delete the cluster.
 
-## Procedure to delete clusters from vCenter Server instances
+## Procedure to delete clusters from Automated instances
 {: #vc_deletingclusters-procedure}
 {: help}
 {: support}
 
-1. From the {{site.data.keyword.vmwaresolutions_short}} console, click **Resources > vCenter Server** from the left navigation pane.
-2. In the **vCenter Server** table, click the instance that you want to delete clusters from.
+1. From the VMware Solutions console, click **Resources > {{site.data.keyword.vcf-classic-short}}** from the left navigation pane.
+2. In the **{{site.data.keyword.vcf-classic}}** table, click the instance that you want to delete clusters from.
 
    Ensure that the instance status is **Available**. Otherwise, you can't delete clusters from the instance.
    {: important}
@@ -51,5 +51,5 @@ Deleting clusters from vCenter Server instances with VMware vSphere® 6.5 is not
 ## Related links
 {: #vc_deletingclusters-related}
 
-* [Viewing vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_viewinginstances)
-* [Expanding and contracting capacity for vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservers)
+* [Viewing Automated instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_viewinginstances)
+* [Expanding and contracting capacity for Automated instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservers)

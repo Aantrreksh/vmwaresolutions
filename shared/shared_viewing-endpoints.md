@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2024
 
-lastupdated: "2024-04-02"
+lastupdated: "2024-04-26"
 
 keywords: VMware Solutions Shared view private network endpoint
 
@@ -24,8 +24,8 @@ You can view the details of a private network endpoint for a virtual data center
 ## Procedure to view a private network endpoint for a virtual data center
 {: #shared_viewing-endpoints-procedure}
 
-1. From the {{site.data.keyword.vmwaresolutions_full}} console, click **Resources > VMware Shared** from the left navigation pane.
-2. In the **VMware Shared** table, expand the site and click a virtual data center name.
+1. From the {{site.data.keyword.vmwaresolutions_full}} console, click **Resources > {{site.data.keyword.vm-shared}}** from the left navigation pane.
+2. In the **{{site.data.keyword.vm-shared}}** table, expand the site and click a virtual data center name.
 3. View the **Private network endpoint** details. Expand **Allow listed IPs and subnets** to view the list of IP addresses and subnets that you added when you ordered the private network endpoint.
 
 | Item | Description |
@@ -54,8 +54,8 @@ The private network endpoint can have different statuses.
 ## Related links
 {: #shared_viewing-endpoints-related}
 
-* [Operating VMware Shared](/docs/vmwaresolutions?topic=vmwaresolutions-shared_vcd-ops-guide)
-* [VMware Shared pricing](/docs/vmwaresolutions?topic=vmwaresolutions-shared_pricing)
+* [Operating {{site.data.keyword.vm-shared}}](/docs/vmwaresolutions?topic=vmwaresolutions-shared_vcd-ops-guide)
+* [{{site.data.keyword.vm-shared}} pricing](/docs/vmwaresolutions?topic=vmwaresolutions-shared_pricing)
 * [Creating a private network endpoint](/docs/vmwaresolutions?topic=vmwaresolutions-shared_creating-endpoints)
 * [Modifying a private network endpoint for a virtual data center](/docs/vmwaresolutions?topic=vmwaresolutions-shared_modifying-endpoints)
 * [Deleting a private network endpoint from a virtual data center](/docs/vmwaresolutions?topic=vmwaresolutions-shared_deleting-endpoints)

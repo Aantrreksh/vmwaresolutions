@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-01-30"
+lastupdated: "2024-04-26"
 
 subcollection: vmwaresolutions
 
@@ -88,7 +88,7 @@ The following table shows the settings for the vSphere HA cluster in the VMware 
 | Failure interval | 50 s |
 | Minimum uptime | 90 s |
 | Maximum per-VM resets | 10 |
-| Maximum resets time window | Within 1 hr |
+| Maximum resets time window | Within 1 h |
 {: caption="Table 2. Failure Conditions and VM Response settings for the vSphere HA cluster" caption-side="bottom"}
 
 For more information about configuring these settings in the vSphere Web Client, see the VMware vSphere documentation.

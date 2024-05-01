@@ -2,11 +2,11 @@
 
 copyright:
 
-  years:  2021, 2023
+  years:  2021, 2024
 
-lastupdated: "2023-06-14"
+lastupdated: "2024-04-25"
 
-keywords: vCenter Server view clusters, view clusters, view vCenter Server cluster
+keywords: vcf automated view clusters, view clusters, view vcf classic cluster
 
 subcollection: vmwaresolutions
 
@@ -14,16 +14,16 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Viewing clusters for vCenter Server instances
+# Viewing clusters for Automated instances
 {: #vc_viewingclusters}
 
-View the summary and detailed information of the clusters that are provisioned in a VMware vCenter Server® instance.
+View the summary and detailed information of the clusters that are provisioned in a {{site.data.keyword.vcf-auto}} instance.
 
-## Procedure to view clusters for vCenter Server instances
+## Procedure to view clusters for Automated instances
 {: #vc_viewingclusters-procedure}
 
-1. From the {{site.data.keyword.vmwaresolutions_short}} console, click **Resources > vCenter Server** from the left navigation pane.
-2. In the **vCenter Server** table, click an instance to view the clusters in it.
+1. From the VMware Solutions console, click **Resources > {{site.data.keyword.vcf-classic-short}}** from the left navigation pane.
+2. In the **{{site.data.keyword.vcf-classic}}** table, click an instance to view the clusters in it.
 3. Click the **Infrastructure** tab. In the **Clusters** table, view the summary about the clusters:
    * **Cluster name**: The name and type of the cluster.
    * **Cluster type**: The type of cluster. Types include witness, consolidated, workload, and edge gateway.
@@ -120,5 +120,5 @@ Click **View resource** to access the VLAN details, including the subnet details
 ## Related links
 {: #vc_viewingclusters-related}
 
-* [Viewing vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_viewinginstances)
-* [Expanding and contracting capacity for vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservers)
+* [Viewing Automated instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_viewinginstances)
+* [Expanding and contracting capacity for Automated instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservers)

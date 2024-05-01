@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2024
-lastupdated: "2024-04-04"
+lastupdated: "2024-05-01"
 
 keywords: release notes, what's new in VMware Solutions, what is new, new features, VMware Solutions release notes, VMware Solutions
 
@@ -22,6 +22,60 @@ Use these release notes to learn about updates to {{site.data.keyword.vmwaresolu
 
 ## 2024
 {: #year-2024}
+
+### 1 May 2024
+{: #vmwaresolutions-may0124}
+{: release-note}
+
+Updated offerings for VMware Solutions
+
+:   Existing {{site.data.keyword.vmwaresolutions_short}} offerings are no longer available as separate components and are replaced by VMware Cloud Foundation. The following offering name changes are available across the portfolio, including the documentation and REST API.
+
+   * VMware as a Service is now called **{{site.data.keyword.vmware-service-short}}** or **{{site.data.keyword.vcf-aas}}**.
+   * VMware vCenter Server, VMware vSphere, {{site.data.keyword.cr}}, and {{site.data.keyword.rw}} are merged into **{{site.data.keyword.vcf-classic}}** or **{{site.data.keyword.vcf-classic-short}}**.
+   * VMware Cloud Foundation is now called **{{site.data.keyword.vcf-vpc}}** or **{{site.data.keyword.vcf-vpc-short}}**.
+
+   For more information, see [Packaging and naming for offerings](/docs/vmwaresolutions?topic=vmwaresolutions-vmwaresol_packaging-pricing#vmwaresol_packaging-naming).
+
+   Some documentation, including, but not limited to, tutorials, solutions architectures, solution guides, videos, and diagrams might still be using the old offering names. This information will be gradually updated to the new offering names in future releases.
+   {: note}
+
+Licensing updates
+:   The VMware® licensing model is changed. You are now entitled to the [VMware software products](/docs/vmwaresolutions?topic=vmwaresolutions-vmwaresol_packaging-pricing#vmwaresol_packaging-pricing-impact) that are included in the VMware Cloud Foundation™ bundle. To request VMware NSX® license upgrades and other licensing changes, open an IBM Support ticket by following the steps in [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support).
+
+VMware add-ons
+:   As a result of the new VMware Cloud Foundation bundle and the new VMware licensing model, you must order separately a number of VMware add-ons. For more information, see [VMware add-ons for VMware Cloud Foundation](/docs/vmwaresolutions?topic=vmwaresolutions-vmware-add-ons).
+
+BOM updates for {{site.data.keyword.vcf-classic}}
+:   The following updates are applied to newly deployed instances, clusters, and hosts:
+
+   * VMware vCenter Server® Appliance 8.0 Update 2b (build 23319993)
+   * VMware vSphere® ESXi™ 7.0 Update 3p (build 23307199)
+   * VMware NSX 4.1.2.3 (build 23382408)
+
+Add-on services upgrades
+:   The following service versions are available for deployment:
+
+   * FortiGate® Virtual Appliance v7.4.3
+   * F5® BIG-IP® v17.1.1
+
+vCenter Server with Hybridity Bundle no longer available
+:   vCenter Server with Hybridity Bundle is no longer available. This offering is now integrated into {{site.data.keyword.vcf-auto}}.
+
+User interface updates and enhancements
+:   The following enhancements are available on the UI (user interface):
+
+   * The behavior of the **Add** button for clusters, hosts, storage, and add-on services is changed for a better user experience. If you are not allowed to add an item, the button is no longer disabled. Instead, when you click it, you get a message that explains why you cannot add the item.
+   * When you order new Automated and Flexible instances, or add clusters and hosts, the **Licensing** section is available only for Bring Your Own License (BYOL) users.
+   * The UI is updated with various messages and tooltips.
+
+REST API updates
+:   The following updates are available for the [VMware Solutions API](/apidocs/vmware-solutions):
+
+   * Support for adding new instances and clusters with BYOL is removed. If you want to use BYOL, you must add these instances and clusters through the UI.
+   * Support for deleting licenses for {{site.data.keyword.vcf-flex}} is removed.
+   * Method descriptions are updated for consistency.
+   * Outdated information is removed.
 
 ### 4 April 2024
 {: #vmwaresolutions-apr0424}
@@ -97,9 +151,9 @@ User interface updates and enhancements
 New and updated documentation
 :   The following technical documents are now available or updated:
 
-   * [Architecture pattern for integrating IBM Cloud Security and Compliance Center Workload Protection with vCenter Server](/docs/vmwaresolutions?topic=vmwaresolutions-arch-pattern-sccwpp)
+   * [Architecture pattern for integrating {{site.data.keyword.cloud_notm}} Security and Compliance Center Workload Protection with vCenter Server](/docs/vmwaresolutions?topic=vmwaresolutions-arch-pattern-sccwpp)
    * [Caveonix RiskForesight Security and Compliance Center integration](/docs/vmwaresolutions?topic=vmwaresolutions-caveonix-scc)
-   * [Architecture patterns for integrating IBM Cloud Security and Compliance Center Workload Protection with VMware as a Service](/docs/vmwaresolutions?topic=vmwaresolutions-arch-pattern-vmwaas-sccwpp)
+   * [Architecture patterns for integrating {{site.data.keyword.cloud_notm}} Security and Compliance Center Workload Protection with VMware as a Service](/docs/vmwaresolutions?topic=vmwaresolutions-arch-pattern-vmwaas-sccwpp)
    * [VMware Cloud Foundation architecture patterns](/docs/vmwaresolutions?topic=vmwaresolutions-arch-pattern-vcf-clientvpn)
    * [Veeam backup guide](/docs/vmwaresolutions?topic=vmwaresolutions-veeam_cloud_vmware)
 
@@ -127,7 +181,7 @@ Add-on services upgrades
 :   The following service versions are now available for deployment:
 
    * Caveonix RiskForesight™ v5.0
-   * FortiGate® Virtual Appliance v7.4.1
+   * FortiGate Virtual Appliance v7.4.1
 
 New region for KMIP for VMware
 :   The KMIP™ for VMware service is now available for use in the Madrid region.
@@ -228,7 +282,7 @@ FortiGate Virtual Appliance v7.4
 :   The FortiGate Virtual Appliance v7.4 add-on service is available for deployment.
 
 Name change for PrimaryIO
-:   The PrimaryIO add-on service name is changed to PrimaryIO Migrations and its [About](https://cloud.ibm.com/infrastructure/vmware-solutions/console/newserviceentry/PIO/vcs) page is updated with the most recent feature information.
+:   The PrimaryIO add-on service name is changed to PrimaryIO Migrations and its [About](/infrastructure/vmware-solutions/console/newserviceentry/PIO/vcs) page is updated with the most recent feature information.
 
 User interface updates and enhancements
 :   The UI is updated with various messages and tooltips, and provides the following enhancements:
@@ -264,14 +318,14 @@ Add-on services upgrades
 
    * Caveonix RiskForesight v4.1
    * FortiGate Virtual Appliance v7.2.5
-   * F5® BIG-IP® v17.1
+   * F5 BIG-IP v17.1
    * Juniper vSRX v3.0 (23.1R1)
    * {{site.data.keyword.redhat_openshift_notm}} v4.12
    * VMware Aria Operations and VMware Aria Operations for Logs v8.12
    * Zerto v9.7u3
 
 Name change for VMware vRealize products
-:   VMware changed the vRealize® Suite Lifecycle Manager product name to VMware Aria® Suite Lifecycle. All vRealize products that are managed by vRealize Suite Lifecycle Manager are now referred as VMware Aria. The names are updated throughout the {{site.data.keyword.vmwaresolutions_short}} documentation. The following products are rebranded:
+:   VMware changed the vRealize® Suite Lifecycle Manager product name to VMware Aria® Suite Lifecycle. All vRealize products that are managed by vRealize Suite Lifecycle Manager are now referred as VMware Aria. The names are updated throughout the VMware Solutions documentation. The following products are rebranded:
 
    * vRealize Operations and Log Insight is renamed to VMware Aria Operations and VMware Aria Operations for Logs.
    * vRealize Automation is renamed to VMware Aria® Automation™.
@@ -333,7 +387,7 @@ User interface updates and enhancements
 {: release-note}
 
 VMware Cloud Director upgrade for VMware Shared
-:   VMware Solutions 5.2 provides an upgrade to the VMware Shared infrastructure to an updated version of VMware Cloud Director v10.4.1. This release resolves various issues, includes several deprecations, and introduces new features, such as API tokens and edge static routes. For more information, see [VMware Cloud Director 10.4.1 release notes](https://docs.vmware.com/en/VMware-Cloud-Director/10.4.1/rn/vmware-cloud-director-1041-release-notes/index.html){: external}.
+:   VMware Solutions 5.2 provides an upgrade to the VMware Shared infrastructure to an updated version of VMware Cloud Director v10.4.1. This release resolves various issues, includes several deprecations, and introduces new features, such as API tokens and edge static routes.
 
 End of Marketing for {{site.data.keyword.cloud_notm}} Secure Virtualization
 :   The {{site.data.keyword.cloud_notm}} Secure Virtualization offering is no longer available for new deployments. Support for existing customers who are using the offering is still provided.
@@ -358,7 +412,7 @@ New and updated documentation
 :   Documentation is available to assist with your custom cyber-recovery requirements.
 
 REST API updates
-:   The [VMware Solutions API](/apidocs/vmware-solutions) provides support for getting and canceling billing item IDs for VMware vSphere clusters, deleting hosts from vSphere clusters, and deleting vSphere clusters.
+:   The VMware Solutions API provides support for getting and canceling billing item IDs for VMware vSphere clusters, deleting hosts from vSphere clusters, and deleting vSphere clusters.
 
 User interface updates and enhancements
 :   The UI is updated with various messages and tooltips, and provides the following enhancements.
@@ -976,101 +1030,3 @@ New and updated documentation
 
    * Upgrading vCenter Server vSphere software from VMware vSphere 6.5 or 6.7 to 7.0 now includes important considerations and a section for updating licenses.
    * FAQ is updated to clarify how service license charges are being calculated.
-
-### 5 April 2021
-{: #vmwaresolutions-apr0521}
-{: release-note}
-
-VMware Solutions Shared - support for Zerto
-:   Starting with the 4.1 release, the Zerto service is available and ready-to-use to provide disaster recovery for critical workloads in your virtual data center instances. Additionally, you can order the Zerto Cloud Connector (ZCC) service after you deploy your virtual data center instance. Use ZCC to replicate your on-premises virtual data centers to {{site.data.keyword.cloud_notm}}.
-
-   Charges are incurred only if you choose to use the services.
-
-VMware Solutions Shared - network type options
-:   The option to select a private only network or a public and private network is now available when you order VMware Solutions Shared instances.
-
-VMware Solutions Dedicated - upgrade support for vSphere 7.0 instances
-:   For VMware vCenter Server instances with VMware vSphere 6.5 or vSphere 6.7, in-place upgrade to vSphere 7.0 is now supported for select configurations. Not all hardware configurations are supported, and the upgrade cannot help you migrate from VMware NSX-V to NSX-T or from a nonconverged NSX-T topology to a converged NSX-T topology.
-
-   You must contact {{site.data.keyword.vmwaresolutions_short}} Support before and after you upgrade your instance.
-{: important}
-
-   {{site.data.keyword.cloud_notm}} supports only Cascade Lake bare metal servers for vSphere 7.0 instances. You must ensure that all VMware ESXi servers have the proper firmware and drivers to support 7.0.
-
-   After you complete an upgrade to vSphere 7.0, you can add clusters and hosts to your upgraded instance. When you add a cluster or host to the upgraded instance, you must keep the original deployment configuration, naming, and network topology.
-
-   The following upgrade scenarios are supported:
-   * Adding NFS storage, hosts, and clusters (NFS or vSAN) on instances upgraded from vSphere 6.5 or 6.7
-   * Adding hosts and clusters on upgraded NSX-V or nonconverged NSX-T instances
-   * Adding hosts in an upgraded NFS or vSAN cluster
-
-   {{site.data.keyword.cloud_notm}} recommends that you deploy a new vSphere 7.0 instance and migrate your current network topology and workload to the new instance.
-   {: note}
-
-VMware Solutions Dedicated - SAP-certified servers support for vSphere 7
-:   The following SAP-certified bare metal server models are now available for deployment with vSphere 7.0. These models are available for vCenter Server instances and clusters, and for VMware vSphere clusters.
-   * Dual Intel Xeon Platinum 8280M (Cascade Lake, BI.S4.NW1500)
-   * Dual Intel Xeon Platinum 8280M (Cascade Lake, BI.S4.NW3000)
-   * Dual Intel Xeon Platinum 8280M (Cascade Lake)
-   * Quad Intel Xeon Platinum 8280M (Cascade Lake)
-
-VMware Solutions Dedicated - 25 Gb uplink speed
-:   Enhanced support is now provided for the 25 Gb uplink speed option for vCenter Server instances and clusters, and VMware vSphere clusters:
-   * This option is now available for vSphere 7.0.
-   * More data centers now support this option.
-
-VMware Solutions Dedicated - {{site.data.keyword.cloud_notm}} data centers
-:   (Updated on 20 April 2021) The {{site.data.keyword.cloud_notm}} data centers **Sao Paulo 04** and **Sao Paulo 05** are now available for deployment.
-
-VMware Solutions Dedicated - {{site.data.keyword.cloud_notm}} for VMware Mission Critical Workloads
-:   The following updates are available for vCenter Server multizone instances:
-
-   * You can select to use IBM-provided or your own licenses for vCenter Server Standard and vSphere Enterprise Plus licenses.
-   * You can specify an initial cluster name for your witness and consolidated clusters.
-   * You can optionally order an additional workload cluster and an edge services cluster to new vCenter Server multizone instances.
-   * You can add or remove the additional workload cluster or edge services cluster to existing vCenter Server multizone instances.
-   * You can add or remove VMware ESXi servers to and from your additional workload cluster.
-   * You can add or remove services to new or existing vCenter Server multizone instances.
-
-VMware Solutions Dedicated - known issue for {{site.data.keyword.cloud_notm}} for VMware Mission Critical Workloads
-:   For Mission Critical Workloads, a known issue with vCenter HA failover exists. If eth0 is not active on the passive node before failover is initiated, the passive node is isolated and fails to take over as the active node. vCenter HA might not activate `eth0` when failover is initiated.
-{: important}
-
-VMware Regulated Workloads
-:   (Updated on 4 May 2021) The VMware Regulated Workloads offering delivers a new multizone architecture to instances that are deployed in 4.1 and later releases. The multizone architecture can help to prevent downtime for cloud applications and to automate failovers within a cloud region.
-
-Security and Compliance Readiness Bundle
-:   The Security and Compliance Readiness Bundle is a prescriptive offering that provides many of the security and compliance features of {{site.data.keyword.cloud_notm}} for Financial Services at a lower entry price. The offering is packaged with security and compliance tools and templates for you to use with your preferred regulation standard.
-
-Add-on services
-:   The 4.1 release provides the following service versions on newly deployed instances.
-
-   * BIG-IP VE v15.1.2
-   * FortiGate Virtual Appliance 6.4.4
-   * HyTrust CloudControl v6.3
-   * Veeam v11
-
-Services support for vCenter Server multizone instances
-:   Starting with the 4.1 release, the following add-on services are supported on vCenter Server multizone instances.
-
-   * Caveonix RiskForesight
-   * HyTrust CloudControl
-   * Veeam
-   * vRealize Operations and Log Insight
-
-Caveonix RiskForesight
-:   Review the following information about Caveonix RiskForesight for the 4.1 release.
-
-   * Caveonix RiskForesight is offered as a per-host license for new deployments of Caveonix on VMware Regulated Workloads and Security and Compliance Readiness Bundle instances. For vCenter Server deployments, Caveonix is still offered as license packs that are priced per virtual machine (VM).
-   * A Caveonix RiskForesight license is valid for five years.
-   * Deleting Caveonix RiskForesight deletes the initial Caveonix RiskForesight license that was associated with the service.
-
-Veeam on bare metal server
-:   You can install Veeam v11 on a bare metal server. This new feature is supported only for vSphere 7.0 with NSX-T.
-
-REST APIs
-:   The following API updates are available:
-
-   * The VMware Solutions API provides support for the additional edge services cluster and workload cluster on multizone instances.
-   * The VMware Solutions API provides support for the following services on multizone instances: Caveonix RiskForesight, HyTrust CloudControl, Veeam, and vRealize Operations and Log Insight.
-   * The `network` option for selecting a private only network or a public and private network is available through the VMware Solutions Shared API.

@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2024
 
-lastupdated: "2024-04-02"
+lastupdated: "2024-04-30"
 
 keywords: VLAN ports, vmware solutions ports, ports usage vmware solutions
 
@@ -24,7 +24,7 @@ Review the following information about the ports described in the [table](#vmwar
 * Windows® Active Directory™ has two options: single Windows Virtual Service Instance (VSI) and two HA dedicated Windows Server virtual machines (VMs). For single Windows VSI, the VSI is in the primary subnet. For Windows Server VMs, the VMs are in the [infrastructure VMs](/docs/vmwaresolutions?topic=vmwaresolutions-vmwaresol_ports-vlans-subnets) subnet.
 * {{site.data.keyword.cloud}} infrastructure services network subnets vary from data center to data center. For more information, see [{{site.data.keyword.cloud_notm}} IP ranges](/docs/cloud-infrastructure?topic=cloud-infrastructure-ibm-cloud-ip-ranges).
 * Some Windows resources in your environment might use classic infrastructure services in Dallas.
-* {{site.data.keyword.cloud_notm}} endpoint service network includes 166.8.0.0/14.
+* {{site.data.keyword.cloud_notm}} endpoint service network includes `166.8.0.0/14`.
 * IBM CloudDriver is an ephemeral VSI that is deployed by the {{site.data.keyword.cloud_notm}} automation to configure your instance. While IBM CloudDriver is being bootstrapped, it uses an ephemeral primary IP address. However, after bootstrapping, it uses a predictable portable IP address that you can find on your instance details page. For more information, see [IBM CloudDriver](/docs/vmwaresolutions?topic=vmwaresolutions-design_infrastructuremgmt#design_infrastructuremgmt-cloud-driver).
 * Infrastructure VMs refer to the private portable subnet allocated for use by vCenter, NSX manager, the cloud driver
 * Depending on your mode of deployment, your Windows Active Directory domain controllers can be VSIs on a primary subnet, or VMs on a portable subnet.
@@ -35,7 +35,7 @@ For more information about {{site.data.keyword.redhat_openshift_full}} (OCP) net
 |:------ |:---------------- |:------ |:---------------- |:---- |:-------- |:------- |:------- |
 | IBM CloudDriver | Private primary subnet \n Infrastructure VMs | {{site.data.keyword.cloud_notm}} Service - Cloud Object Storage \n `10.1.129.0/24`[^vssreqa] | {{site.data.keyword.cloud_notm}} infrastructure services network | 443 | TCP | Use {{site.data.keyword.cloud_notm}} Object Storage service | HTTPS |
 | IBM CloudDriver | Private primary subnet \n Infrastructure VMs | {{site.data.keyword.cloud_notm}} Service - RabbitMQ `166.9.59.6` \n `166.9.90.7` \n `166.9.58.162` \n {{site.data.keyword.cloud_notm}} Service - Log Analysis[^vssreqb] | {{site.data.keyword.cloud_notm}} endpoint service network | 443, 30560 | TCP | Use {{site.data.keyword.cloud_notm}} RabbitMQ and Log Analysis services | |
-| IBM CloudDriver | Private primary subnet | vCenter Server | Infrastructure VMs | | ICMP | Install and set up vCenter Server | |
+| IBM CloudDriver | Private primary subnet | vCenter Server | Infrastructure VMs | | ICMP | Install and configure vCenter Server | |
 | IBM CloudDriver | Private primary subnet \n Infrastructure VMs | vCenter Server | Infrastructure VMs | 22 | TCP | Set up and configure vCenter Server | SSH |
 | IBM CloudDriver | Private primary subnet \n Infrastructure VMs | vCenter Server | Infrastructure VMs | 443 | TCP | Install and configure vCenter Server and cluster | SSH |
 | IBM CloudDriver | Private primary subnet \n Infrastructure VMs | vCenter Server | Infrastructure VMs | 9443 | TCP | Install and configure vCenter Server and cluster | |
@@ -71,8 +71,8 @@ For more information about {{site.data.keyword.redhat_openshift_full}} (OCP) net
 {: caption="Table 1. Ports for deployment and Day 2 operations" caption-side="bottom"}
 {: #vmwaresol_ports-deploy-day2ops-table}
 
-[^vssreqa]: VMware vSphere instances require access to Cloud Object Storage, RabbitMQ, and Log Analysis.
-[^vssreqb]: VMware vSphere instances require access to Cloud Object Storage, RabbitMQ, and Log Analysis.
+[^vssreqa]: Flexible instances require access to Cloud Object Storage, RabbitMQ, and Log Analysis.
+[^vssreqb]: Flexible instances require access to Cloud Object Storage, RabbitMQ, and Log Analysis.
 
 ## Related links
 {: #vmwaresol_ports-deploy-day2ops-related}

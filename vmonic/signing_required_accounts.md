@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2024
 
-lastupdated: "2024-01-26"
+lastupdated: "2024-04-29"
 
 keywords: user account, ibm cloud account, ibm cloud infrastructure
 
@@ -27,7 +27,7 @@ You can sign up for an {{site.data.keyword.cloud_notm}} account by using an exis
 ## The {{site.data.keyword.cloud_notm}} infrastructure account
 {: #signing_required_accounts-infra}
 
-The requirement to have an {{site.data.keyword.cloud_notm}} infrastructure account applies only to the following offerings: VMware vSphere, VMware vCenter Server, VMware Regulated Workloads, and Cyber Recovery.
+The requirement to have an {{site.data.keyword.cloud_notm}} infrastructure account applies only to the {{site.data.keyword.vcf-classic}} offerings: Automated, Flexible, {{site.data.keyword.cr}}, and {{site.data.keyword.rw}}.
 {: note}
 
 Additionally, you must have an {{site.data.keyword.cloud_notm}} infrastructure account. The price of the components that are ordered in your instances is billed to that {{site.data.keyword.cloud_notm}} account.
@@ -50,7 +50,7 @@ The {{site.data.keyword.cloud_notm}} infrastructure account that you are using m
 | Manage Storage | This permission is required to manage backup storage and shared storage for the instance. |
 | Hardware Firewall | This permission is required to edit or view firewall log files and settings for the Fortinet service, if it is installed on your instance. |
 | Add Compute with Public Network Port | This permission is required to order hardware and VSIs (Virtual Server Instances) with public network ports. |
-| Add IP Addresses | This permission is required to order portable private subnet ranges on your behalf, which is needed to manage the virtual machines that run in a VMware vSphere® cluster. When more services are added to your instance, the portable private IP addresses are assigned to VMware ESXi servers to isolate and allocate bandwidth. |
+| Add IP Addresses | This permission is required to order portable private subnet ranges on your behalf, which is needed to manage the virtual machines that run in a {{site.data.keyword.vcf-flex}} cluster. When more services are added to your instance, the portable private IP addresses are assigned to VMware ESXi servers to isolate and allocate bandwidth. |
 | Add Tickets | This permission is required to open service tickets on your behalf. Tickets might be created for the following operations: to initiate restore operations and to initiate problem resolution processes automatically when issues are found. |
 | Edit Tickets | This permission is required to edit the service tickets that are created on your behalf. |
 | View Tickets | This permission is required to monitor the service tickets that are related to the components in your instance for {{site.data.keyword.cloud_notm}} infrastructure provisioning delays and problems. |
@@ -76,6 +76,6 @@ For more information, see the following procedures:
 ## Related links
 {: #signing_required_accounts-related}
 
-* [FAQ](/docs/vmwaresolutions?topic=vmwaresolutions-faq-vmwaresolutions)
+* [General FAQ about VCF for Classic](/docs/vmwaresolutions?topic=vmwaresolutions-faq-vmwaresolutions)
 * [Managing user accounts and settings](/docs/vmwaresolutions?topic=vmwaresolutions-useraccount)
 * [Enabling MFA in your account](/docs/account?topic=account-enablemfa#enablemfa)

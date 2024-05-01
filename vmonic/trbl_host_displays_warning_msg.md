@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2021
+  years:  2016, 2024
 
-lastupdated: "2021-09-10"
+lastupdated: "2024-03-25"
 
 keywords: troubleshooting, configuration issue, ESXi server issue
 
@@ -31,5 +31,5 @@ The message is displayed even though two uplinks are available for the private d
 This configuration issue is a VMware® known issue.
 {: tsCauses}
 
-To resolve the problem, follow the instructions in [ESX/ESXi host displays warning message when test condition is false (2008602)](https://kb.vmware.com/s/article/2008602){: external}.
+To resolve the problem, refer to the instructions provided in the VMware documentation.
 {: tsResolve}

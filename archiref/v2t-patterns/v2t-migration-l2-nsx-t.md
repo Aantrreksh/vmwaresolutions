@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2023
+  years:  2023, 2024
 
-lastupdated: "2023-08-17"
+lastupdated: "2024-04-26"
 
 subcollection: vmwaresolutions
 
@@ -76,7 +76,6 @@ After all the workloads are migrated from NSX-V to NSX-T, you can remove the bri
 
 * [Overview of edge bridging in NSX-T](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.2/migration/GUID-12FE83E9-2FA9-40F7-A3FF-BC21E13F6720.html){: external}
 * [Extending Layer 2 networks with NSX-T edge bridge](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.2/migration/GUID-5B9390FB-7E52-4669-AF63-3C3490841432.html){: external}
-* [Ordering services for vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices)
 * [Veeam technical documentation](https://www.veeam.com/documentation-guides-datasheets.html?ad=in-text-link){: external}
 * [Zerto product documentation](https://help.zerto.com){: external}
 * [Migration between vCenter Server systems](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.vcenterhost.doc/GUID-59C7D7FF-D17E-45BC-9145-06B2993880A2.html){: external}

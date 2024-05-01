@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2021, 2023
+  years:  2021, 2024
 
-lastupdated: "2023-09-29"
+lastupdated: "2024-04-04"
 
 subcollection: vmwaresolutions
 
@@ -20,8 +20,8 @@ New deployments of Security and Compliance Readiness Bundle instances are no lon
 
 You can add clusters to Security and Compliance Readiness Bundle instances to expand the compute and storage capacity. Within a cluster, you can manage VMware ESXi servers for better resource allocation and high availability. When no longer needed, delete the added clusters from your instances.
 
-The procedures to add, view, and delete clusters for Security and Compliance Readiness Bundle instances are similar to the procedures for VMware vCenter Server® instances. For more information, see the following topics:
+The procedures to add, view, and delete clusters for Security and Compliance Readiness Bundle instances are similar to the procedures for {{site.data.keyword.vcf-auto}} instances. For more information, see the following topics:
 
-* [Adding clusters to vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingclusters)
-* [Viewing clusters for vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_viewingclusters)
-* [Deleting clusters from vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_deletingclusters)
+* [Adding clusters to Automated instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingclusters)
+* [Viewing clusters for Automated instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_viewingclusters)
+* [Deleting clusters from Automated instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_deletingclusters)

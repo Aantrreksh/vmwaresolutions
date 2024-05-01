@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-02-05"
+lastupdated: "2024-04-23"
 
 keywords: cyber recovery, cyber recovery settings, cyber recovery license settings, cyber recovery versions, cyber recovery instances
 
@@ -17,7 +17,7 @@ subcollection: vmwaresolutions
 # General information and licensing
 {: #cr_orderinginstance-gen-info}
 
-The following VMware® components are part of the Cyber Recovery instance.
+The following VMware® components are part of the {{site.data.keyword.cr}} instance.
 * VMware vSphere® 7.0u3
 * VMware NSX® 4.1
 
@@ -56,16 +56,17 @@ The instance name is set to **vcs-_xx_** by default, where _xx_ represents two r
 
 {{site.data.content.para-orderinginstance-primary-secondary}}
 
-## Licensing
+## Licensing (BYOL only)
 {: #cr_orderinginstance-licensing-settings}
 
-* For Business Partner users, all licenses are included and purchased on your behalf.
-* For users who are not Business Partners, use the IBM-provided VMware licenses for these components by selecting **Include with purchase**.
+{{site.data.content.attnnote-byol}}
+
+If you are a BYOL user, provide your own license keys for VMware vCenter Server® (Enterprise Plus edition), VMware vSphere® (Enterprise Plus edition), and VMware NSX® (Data Center SP Enterprise Plus). Toggle the **BYOL** switch to **Enabled** and enter your license keys.
 
 ## Related links
 {: #cr_orderinginstance-gen-info-related}
 
-* [Cyber Recovery overview](/docs/vmwaresolutions?topic=vmwaresolutions-cr_overview)
-* [Planning for Cyber Recovery](/docs/vmwaresolutions?topic=vmwaresolutions-cr_planning)
-* [Requirements for Cyber Recovery](/docs/vmwaresolutions?topic=vmwaresolutions-cr_orderinginstance_reqs)
-* [Procedure to order Cyber Recovery](/docs/vmwaresolutions?topic=vmwaresolutions-cr_orderinginstance-order-procedure)
+* [{{site.data.keyword.cr}} overview](/docs/vmwaresolutions?topic=vmwaresolutions-cr_overview)
+* [Planning for {{site.data.keyword.cr}}](/docs/vmwaresolutions?topic=vmwaresolutions-cr_planning)
+* [Requirements for {{site.data.keyword.cr}}](/docs/vmwaresolutions?topic=vmwaresolutions-cr_orderinginstance_reqs)
+* [Procedure to order {{site.data.keyword.cr}}](/docs/vmwaresolutions?topic=vmwaresolutions-cr_orderinginstance-order-procedure)

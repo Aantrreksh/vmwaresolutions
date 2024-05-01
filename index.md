@@ -4,7 +4,7 @@ copyright:
 
   years: 2016, 2024
 
-lastupdated: "2024-04-01"
+lastupdated: "2024-04-29"
 
 keywords: IBM Cloud for VMware Solutions, getting started, vmware solutions offerings, services for vmwaresolutions, vmwaresolutions use cases
 
@@ -57,12 +57,9 @@ Review and choose your deployment offering.
 
 | Deployment offering | Description |
 |:------------------- |:----------- |
-| [VMware as a Service](/docs/vmwaresolutions?topic=vmwaresolutions-vmware-aas-overview) | This offering provides the VMware Cloud Director platform as a managed service. {{site.data.keyword.IBM}} performs the configuration, hosting, operations, and lifecycle management of the VMware® software so you can quickly deploy your VMware-based cloud computing environments. |
-| [VMware vSphere](/docs/vmwaresolutions?topic=vmwaresolutions-vs_vsphereoverview) | This offering provides a customizable virtualization service that combines VMware-compatible bare metal servers, hardware components, and licenses, to build your own IBM-hosted VMware environment. |
-| [VMware vCenter Server](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview) | This offering deploys a VMware virtual environment by using custom compute, storage, and network resources to best fit your business needs. |
-| [VMware Regulated Workloads](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-overview) | This offering includes a secure-by-default architecture that follows IBM's unique policy controls framework, it provides continuous compliance monitoring, and the highest level of data encryption (FIPS 140-2 Level 4). |
-| [Cyber Recovery](/docs/vmwaresolutions?topic=vmwaresolutions-cr_overview) | This offering provides air-gapped protection, immutable storage, and rapid recovery of applications and data for ransomware protection. |
-| [VMware Cloud Foundation](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-ovw) | This offering is a full-stack Software Defined Data Center (SDDC) solution that is built on VMware Cloud Foundation. It delivers compute, storage, networking, management automation, and security in a single platform on {{site.data.keyword.bm_is_full}}. |
+| [{{site.data.keyword.vmware-service-short}}](/docs/vmwaresolutions?topic=vmwaresolutions-vmware-aas-overview) | This offering provides the VMware Cloud Director platform as a managed service. {{site.data.keyword.IBM}} performs the configuration, hosting, operations, and lifecycle management of the VMware® by Broadcom software so you can quickly deploy your VMware-based cloud computing environments. |
+| {{site.data.keyword.vcf-classic}} | - [Automated](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview): This offering deploys a VMware virtual environment by using custom compute, storage, and network resources to best fit your business needs. \n - [Flexible](/docs/vmwaresolutions?topic=vmwaresolutions-vs_vsphereoverview): This offering provides a customizable virtualization service that combines VMware-compatible bare metal servers, hardware components, and licenses, to build your own IBM-hosted VMware environment. \n - [{{site.data.keyword.cr}}](/docs/vmwaresolutions?topic=vmwaresolutions-cr_overview): This offering provides air-gapped protection, immutable storage, and rapid recovery of applications and data for ransomware protection. \n - [{{site.data.keyword.rw}}](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-overview): This offering includes a secure-by-default architecture that follows IBM's unique policy controls framework, it provides continuous compliance monitoring, and the highest level of data encryption (FIPS 140-2 Level 4). |
+| [{{site.data.keyword.vcf-vpc}}](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-ovw) | This offering is a full-stack Software Defined Data Center (SDDC) solution that is built on VMware Cloud Foundation™. It delivers compute, storage, networking, management automation, and security in a single platform on {{site.data.keyword.bm_is_full}}. |
 {: caption="Table 2. Deployment offerings" caption-side="bottom"}
 
 ### Add-on services
@@ -93,7 +90,7 @@ The following table describes the data resiliency and migration services that ar
 |:------------ |:----------- |
 | [HCX™](/docs/vmwaresolutions?topic=vmwaresolutions-hcx_considerations#hcx_considerations) | This service can extend the networks of on-premises data centers into {{site.data.keyword.cloud_notm}}, which allows VMs to be migrated to and from the {{site.data.keyword.cloud_notm}} without any conversion or change. |
 | [PrimaryIO Migrations](https://www.primaryio.com/#){: external} | This service offers various capabilities to facilitate the cloud journey for organizations with an investment in VMware. |
-| [ProtectIO](https://cloud.ibm.com/catalog#about) | This service provides a robust disaster recovery solution while leveraging the latest cloud economics for an attractive Total Cost of Ownership. |
+| [ProtectIO](/infrastructure/vmware-solutions/console/newserviceentry/ProtectIO/vcs) | This service provides a robust disaster recovery solution while leveraging the latest cloud economics for an attractive Total Cost of Ownership. |
 | [Veeam®](/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview) | This service integrates directly with your VMware hypervisors to help your enterprise achieve high availability. You can control both the backup and restore of all VMs for your infrastructure from the Veeam console. |
 | [Zerto](/docs/vmwaresolutions?topic=vmwaresolutions-addingzertodr) | This service provides replication and disaster recovery capabilities, which can be integrated into the deployment offerings to protect and recover data in your VMware virtual environment on {{site.data.keyword.cloud_notm}}. |
 {: caption="Table 4. Data resiliency and migration services" caption-side="bottom"}
@@ -145,14 +142,12 @@ For more information about how to set up your environment for your first order, 
 After you set up your environment properly, begin the ordering process.
 
 For more information about how to order an instance, see the following topics based on your selected deployment:
-* [Ordering VMware as a Service instances](/docs/vmwaresolutions?topic=vmwaresolutions-tenant-ordering)
-* [Ordering VMware Shared virtual data centers](/docs/vmwaresolutions?topic=vmwaresolutions-shared_ordering)
-* [Ordering VMware vSphere instances](/docs/vmwaresolutions?topic=vmwaresolutions-vs_orderinginstances-req)
-* [Ordering vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-req)
-* [Ordering Regulated Workloads instances](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-orderinginstance-req)
-* [Ordering Cyber Recovery instances](/docs/vmwaresolutions?topic=vmwaresolutions-cr_orderinginstance_reqs)
-* [Ordering KMIP for VMware instances](/docs/vmwaresolutions?topic=vmwaresolutions-kmip_standalone_ordering)
-* [Ordering Cloud Foundation instances](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-order-req)
+* [Ordering {{site.data.keyword.vcf-aas}} instances](/docs/vmwaresolutions?topic=vmwaresolutions-tenant-ordering)
+* [Ordering Automated instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-req)
+* [Ordering Flexible instances](/docs/vmwaresolutions?topic=vmwaresolutions-vs_orderinginstances-req)
+* [Ordering {{site.data.keyword.cr}} instances](/docs/vmwaresolutions?topic=vmwaresolutions-cr_orderinginstance_reqs)
+* [Ordering {{site.data.keyword.rw}} instances](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-orderinginstance-req)
+* [Ordering {{site.data.keyword.vcf-vpc-short}} instances](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-order-req)
 
 ## Viewing the instance
 {: #getting-started-step4}
@@ -161,11 +156,9 @@ For more information about how to order an instance, see the following topics ba
 After you place an instance order in **Step 3**, the deployment of the instance starts automatically. You can track the status of the deployment by viewing the instance details. When the instance deployment is completed, you can view the summary and detailed information of the instance and its services on the instance details page too.
 
 For more information about how to view the instance you ordered, see the following topics based on your selected deployment:
-* [Viewing VMware as a Service instances](/docs/vmwaresolutions?topic=vmwaresolutions-tenant-viewing-sites)
-* [Viewing and managing VMware Share virtual data centers](/docs/vmwaresolutions?topic=vmwaresolutions-shared_viewing-vdc-summary)
-* [Viewing VMware vSphere instances](/docs/vmwaresolutions?topic=vmwaresolutions-vs_viewinginstances)
-* [Viewing vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_viewinginstances)
-* [Viewing and deleting Regulated Workloads instances](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-view-delete-instance)
-* [Viewing and deleting Cyber Recovery instances](/docs/vmwaresolutions?topic=vmwaresolutions-cr-view-delete-instance)
-* [Viewing KMIP for VMware instances](/docs/vmwaresolutions?topic=vmwaresolutions-kmip_standalone_viewing)
-* [Viewing VMware Cloud Foundation instances](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-viewing)
+* [Viewing {{site.data.keyword.vcf-aas}} instances](/docs/vmwaresolutions?topic=vmwaresolutions-tenant-viewing-sites)
+* [Viewing Automated instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_viewinginstances)
+* [Viewing Flexible instances](/docs/vmwaresolutions?topic=vmwaresolutions-vs_viewinginstances)
+* [Viewing and deleting {{site.data.keyword.cr}} instances](/docs/vmwaresolutions?topic=vmwaresolutions-cr-view-delete-instance)
+* [Viewing and deleting {{site.data.keyword.rw}} instances](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-view-delete-instance)
+* [Viewing {{site.data.keyword.vcf-vpc-short}} instances](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-viewing)

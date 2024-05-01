@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2024
 
-lastupdated: "2024-01-30"
+lastupdated: "2024-02-09"
 
 subcollection: vmwaresolutions
 
@@ -71,7 +71,7 @@ Primary or secondary data center:
 Predatar Cloud:
 
 * Predatar Cloud - Predatar is a SaaS cloud solution that is hosted in the Predatar Cloud. Predatar currently has clouds in Dallas, London, and Frankfurt. They are all provided by {{site.data.keyword.cloud_notm}} and are used to hold customers’ IBM Spectrum Protect and Protect Plus metadata.
-* Metadata - Predatar stores an unlimited amount of metadata history in its multi-tenant data lake. This data is used by Predatar to power the platform’s analytics and machine learning capabilities.
+* Metadata - Predatar stores an unlimited amount of metadata history in its multitenant data lake. This data is used by Predatar to power the platform’s analytics and machine learning capabilities.
 * Client access - Role-based access controls (RBAC) are used to govern access to data and can be configured at a granular level for customers.
 
 {{site.data.keyword.cloud_notm}} account:

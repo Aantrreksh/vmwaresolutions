@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-02-06"
+lastupdated: "2024-04-12"
 
 keywords: KMIP for VMware, order KMIP, Key Protect, Hyper Protect Crypto Services, HPCS
 
@@ -17,7 +17,7 @@ subcollection: vmwaresolutions
 # Ordering KMIP for VMware instances
 {: #kmip_standalone_ordering}
 
-You can order a KMIP™ for VMware® instance without associating it to any VMware vCenter Server® instance for flexible management of the service and instances.
+You can order a KMIP™ for VMware® instance without associating it to any {{site.data.keyword.vcf-auto}} instance for flexible management of the service and instances.
 
 ## Before you begin
 {: #kmip_standalone_ordering-req}
@@ -78,7 +78,7 @@ When you enable the nonactive KMIP for VMware instance, provide the following se
 | Setting | Description |
 |:------- |:----------- |
 | **HPCS instances** | The list of available HPCS instances that you can select to use for key management |
-| **Customer root key** | The list of customer root keys that are stored in your selected HPCS instance | 
+| **Customer root key** | The list of customer root keys that are stored in your selected HPCS instance |
 {: caption="Table 1. Configuration settings for HPCS" caption-side="bottom"}
 {: class="simple-tab-table"}
 {: #simpletabtable1}
@@ -89,7 +89,7 @@ When you enable the nonactive KMIP for VMware instance, provide the following se
 |:------- |:----------- |
 | **API key for service ID**| The API key for the {{site.data.keyword.cloud_notm}} Service ID that is used to access the service instance of Key Protect |
 | **Key Manager instance**| The list of available Key Protect instances that you can select to use for key management |
-| **Customer root key**| The list of customer root keys that are stored in your selected key manager instance | 
+| **Customer root key**| The list of customer root keys that are stored in your selected key manager instance |
 {: caption="Table 1. Configuration settings for Key Protect" caption-side="bottom"}
 {: #simpletabtable2}
 {: tab-title="Key Protect"}
@@ -165,7 +165,7 @@ If your KMIP instance is connected to Key Protect, you must use the two regional
 | Frankfurt | `kmip-1.private.eu-central.vmware-solutions.cloud.ibm.com:5696` \n `kmip-2.private.eu-central.vmware-solutions.cloud.ibm.com:5696` |
 | London | `kmip-1.private.uk-south.vmware-solutions.cloud.ibm.com:5696` \n `kmip-2.private.uk-south.vmware-solutions.cloud.ibm.com:5696` |
 | Osaka | `kmip-1.private.jp-osa.vmware-solutions.cloud.ibm.com:5696` \n `kmip-2.private.jp-osa.vmware-solutions.cloud.ibm.com:5696` |
-| Sao Paulo | `kmip-1.private.br-sao.vmware-solutions.cloud.ibm.com:5696` \n `kmip-2.private.br-sao.vmware-solutions.cloud.ibm.com:5696` | 
+| Sao Paulo | `kmip-1.private.br-sao.vmware-solutions.cloud.ibm.com:5696` \n `kmip-2.private.br-sao.vmware-solutions.cloud.ibm.com:5696` |
 | Sydney | `kmip-1.private.ap-south.vmware-solutions.cloud.ibm.com:5696` \n `kmip-2.private.ap-south.vmware-solutions.cloud.ibm.com:5696` |
 | Tokyo | `kmip-1.private.ap-north.vmware-solutions.cloud.ibm.com:5696` \n `kmip-2.private.ap-north.vmware-solutions.cloud.ibm.com:5696` |
 | Toronto | `kmip-1.private.ca-tor.vmware-solutions.cloud.ibm.com:5696` \n `kmip-2.private.ca-tor.vmware-solutions.cloud.ibm.com:5696` |

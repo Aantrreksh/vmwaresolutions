@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2023
+  years:  2016, 2024
 
-lastupdated: "2023-12-11"
+lastupdated: "2024-04-12"
 
 keywords: Entrust KeyControl WebGUI, Entrust KeyControl console, enable internet Entrust KeyControl
 
@@ -18,7 +18,7 @@ subcollection: vmwaresolutions
 # Managing Entrust KeyControl
 {: #managing-entrust-kc}
 
-New installations of Entrust KeyControl™ (formerly known as HyTrust KeyControl) are not supported for new or existing deployments of VMware vCenter Server® instances. You can still use or delete existing Entrust KeyControl installations on your existing instances.
+New installations of Entrust KeyControl™ (formerly known as HyTrust KeyControl) are not supported for new or existing deployments of {{site.data.keyword.vcf-auto}} instances. You can still use or delete existing Entrust KeyControl installations on your existing instances.
 {: deprecated}
 
 To manage Entrust KeyControl, access the Entrust KeyControl web GUI from the {{site.data.keyword.vmwaresolutions_full}} console, or access the Entrust KeyControl console from the vSphere® Web Client.
@@ -39,7 +39,7 @@ To access the Entrust KeyControl console from the vSphere Web Client, use the fo
 ## Enabling internet access for the Entrust KeyControl VMs
 {: #managing-entrust-kc-internet-access}
 
-For Entrust KeyControl 4.3.2 and later, {{site.data.keyword.vmwaresolutions_short}} provides automatic renewal support for Entrust licenses with the Call Home feature enabled. For VMware vCenter Server® instances that are not private-only, Entrust KeyControl is deployed with firewall and SNAT (Source Network Address Translation) rules that are defined on the management services ESG **mgmt-nsx-edge**.
+For Entrust KeyControl 4.3.2 and later, {{site.data.keyword.vmwaresolutions_short}} provides automatic renewal support for Entrust licenses with the Call Home feature enabled. For {{site.data.keyword.vcf-auto}} instances that are not private-only, Entrust KeyControl is deployed with firewall and SNAT (Source Network Address Translation) rules that are defined on the management services ESG **mgmt-nsx-edge**.
 
 These rules enable internet access for the Entrust VMs. If internet access is not enabled, the license that is applied to your Entrust KeyControl installation will expire after a year.
 

@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-01-23"
+lastupdated: "2024-04-23"
 
 keywords: cyber recovery, cyber recovery consolidated cluster, cyber recovery consolidated settings, cyber recovery instances
 
@@ -17,7 +17,7 @@ subcollection: vmwaresolutions
 # Consolidated and workload cluster
 {: #cr_orderinginstance-consolidwkld}
 
-Cyber Recovery instances are deployed with a consolidated cluster for VMware vSphere® 7, in which all the VMware® management components and user workloads run.
+{{site.data.keyword.cr}} instances are deployed with a consolidated cluster for VMware vSphere® 7, in which all the VMware® management components and user workloads run.
 
 You can also order an extra workload cluster.
 
@@ -73,7 +73,13 @@ Select either **Cascade Lake** or **SAP-certified Cascade Lake**.
 ## Number of bare metal servers
 {: #cr_orderinginstance-consolidwkld-bare-metal-number}
 
-{{site.data.content.number-of-baremetal-servers}}
+For the consolidated cluster:
+
+{{site.data.content.number-of-baremetal-servers-consol}}
+
+For the workload cluster:
+
+{{site.data.content.number-of-baremetal-servers-wkld}}
 
 When you size the capacity of your servers, consider your current requirements, and include extra capacity to accommodate anticipated growth. For more information, see [Exporting VMware inventory](/docs/vmwaresolutions?topic=vmwaresolutions-vmware-inventory-export).
 
@@ -82,7 +88,7 @@ When you size the capacity of your servers, consider your current requirements, 
 
 Storage settings are based on your selection of bare metal server configuration and the storage type.
 
-For deployed instances, you can add NFS storage shares to an existing NFS or vSAN cluster. For more information, see [Adding NFS storage to vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingnfs).
+For deployed instances, you can add NFS storage shares to an existing NFS or vSAN cluster. For more information, see [Adding NFS storage to Automated instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingnfs).
 
 ### NFS storage
 {: #cr_orderinginstance-consolidwkld-nfs-storage}
@@ -146,15 +152,14 @@ vSAN storage depends on the number of servers and your total disk capacity, and 
 The amount of storage reduction from deduplication and compression depends on many factors, including the type of data stored and the number of duplicate blocks. Larger disk groups tend to provide a higher deduplication ratio. For more information, see [Using deduplication and compression](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.vsan.doc/GUID-3D2D80CC-444E-454E-9B8B-25C3F620EFED.html){: external}.
 {: note}
 
-#### vSAN license
+#### vSAN license (BYOL only)
 {: #cr_orderinginstance-consolidwkld-vsan-storage-license}
 
-Use the IBM-provided VMware license for the vSAN component, which is included with purchase.
+{{site.data.content.attnnote-byol}}
 
-Bring Your Own License (BYOL) is no longer supported except for migrations or upgrades of existing BYOL clusters. Select **I will provide** and enter your own license key only if you are performing an upgrade or migration of an existing BYOL cluster.
-{: important}
+If you are a BYOL user, provide your own vSAN license key. Toggle the **BYOL** switch to **Enabled** and enter your license key.
 
-If your initial cluster is a vSAN cluster, any additional vSAN clusters use the same vSAN license and have the same configuration as the initial one. This statement is also true for any initial or additional clusters in the instance for which you select vSAN. The first time, you're prompted for the vSAN license and the edition. The next time that you select vSAN for a new cluster, the license that is chosen initially is reused.
+If your initial cluster is a vSAN cluster, any additional vSAN clusters use the same vSAN license and have the same configuration as the initial one. This statement is also true for any initial or extra clusters in the instance for which you select vSAN. The first time, you must provide the vSAN license and the edition. The next time that you select vSAN for a new cluster, the license you initially chose will be reused.
 
 ## Networking type
 {: #cr_orderinginstance-consolidwkld-public-private-network}
@@ -177,7 +182,7 @@ Select **Public and private network** or **Private network only**.
 ## VLANs
 {: #cr_orderinginstance-consolidwkld-vlans}
 
-Network settings are based on your selection of **Order new VLANs** or **Select existing VLANs**. For your first purchase of Cyber Recovery, only the **Order new VLANs** selection is available.
+Network settings are based on your selection of **Order new VLANs** or **Select existing VLANs**. For your first purchase of {{site.data.keyword.cr}}, only the **Order new VLANs** selection is available.
 
 One public VLAN and two private VLANs are required for your instance order. The two private VLANs are trunked into each {{site.data.keyword.cloud_notm}} bare metal server.
 
@@ -189,7 +194,7 @@ When you select to **Order new VLANs**, one new public VLAN and two new private 
 ### Select existing VLANs
 {: #cr_orderinginstance-consolidwkld-existing-vlans}
 
-For your first purchase of Cyber Recovery, only the **Order new VLANs** selection is available.
+For your first purchase of {{site.data.keyword.cr}}, only the **Order new VLANs** selection is available.
 {: note}
 
 Depending on the {{site.data.keyword.cloud_notm}} data center that you selected, existing public and private VLANs might be available.
@@ -222,4 +227,4 @@ Use the **Public VLAN**, **Private VLAN**, or **Secondary private VLAN** tabs to
 {: #cr_orderinginstance-consolidwkld-related-links}
 
 * [Gateway cluster](/docs/vmwaresolutions?topic=vmwaresolutions-cr-orderinginstance-edge)
-* [Procedure to order Cyber Recovery](/docs/vmwaresolutions?topic=vmwaresolutions-cr_orderinginstance-order-procedure)
+* [Procedure to order {{site.data.keyword.cr}}](/docs/vmwaresolutions?topic=vmwaresolutions-cr_orderinginstance-order-procedure)

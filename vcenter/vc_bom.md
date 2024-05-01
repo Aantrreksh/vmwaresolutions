@@ -4,9 +4,9 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-01-23"
+lastupdated: "2024-05-01"
 
-keywords: vCenter Server BOM, bill of materials vCenter Server, BOM
+keywords: automated instances bom, bill materials vcf classic, vcf bom
 
 subcollection: vmwaresolutions
 
@@ -14,39 +14,39 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# vCenter Server BOM
+# {{site.data.keyword.vcf-auto-short}} BOM
 {: #vc_bom}
 
-Review the Bill of Materials (BOM) information for VMware vCenter Server® instances.
+Review the Bill of Materials (BOM) information for {{site.data.keyword.vcf-auto}} instances.
 
-## VLANs BOM for vCenter Server instances
+## VLANs BOM for Automated instances
 {: #vc_bom-vlans}
 
-The following table details the BOM information for the vCenter Server VLANs.
+The following table details the BOM information for the {{site.data.keyword.vcf-auto-short}} VLANs.
 
 | VLAN | Type | Details |
 |:---- |:---- |:------- |
 | VLAN1 | Public, Primary | Assigned to physical VMware ESXi™ servers for public network access. The servers are assigned a public IP address but this IP address is not configured on the servers, so they are not directly accessible on the public network. Instead, the public VLAN is intended to provide public internet access for other components, such as VMware NSX Edge™ Services Gateways (ESGs). |
 | VLAN2 | Private A, Primary | Assigned by {{site.data.keyword.cloud}} to physical ESXi servers. Used by the management interface for VMware vSphere® management traffic. \n Assigned to VMs (virtual machines) that function as management components. \n For NSX-T™ instances with vSphere 6.7, used by some VMware NSX TEP (Geneve Tunnel Endpoint). |
 | VLAN3 | Private B, Portable | Assigned to VMware vSAN™, if used. \n Assigned to VMware NFS, if used. \n Assigned to VMware vSphere® vMotion. \n For NSX-T™ instances with vSphere 6.7, used by VMware NSX TEP. For vSphere 7, all NSX VTEPs are put in VLAN2. |
-{: caption="Table 1. BOM for the VLANs in vCenter Server instances" caption-side="bottom"}
+{: caption="Table 1. BOM for the VLANs in Automated instances" caption-side="bottom"}
 
-## Software BOM for vCenter Server instances
+## Software BOM for Automated instances
 {: #vc_bom-software}
 
-The following table details the BOM information for vCenter Server software components.
+The following table details the BOM information for {{site.data.keyword.vcf-auto-short}} software components.
 
 | Manufacturer | Component | Version |
 |:------------ |:--------- |:------- |
-| VMware       | vSphere ESXi | ESXi 7.0 Update 3o (build 22348816)[^esxi70] or \n ESXi 6.7 P08 (20497097)[^esxi67] |
-| VMware       | Distributed vSwitch | 8.0.0 or 7.0.0[^vcs-vsphere700] or 6.6.0[^vcs-vsphere660]
-| VMware       | vCenter Server Appliance | 8.0 Update 2a (22617221) or \n 7.0 Update 3p (22837322) |
-| VMware       | vSAN[^vsan] | 7.0 Update 3l (21424296) |
-| VMware       | NSX for vSphere[^nsxt] | 4.1.2.1 (22667789) |
-| VMware       | NSX-V for vSphere[^nsxv] | 6.4.13 (19307994) |
-| Microsoft®   | Windows® Server Standard edition | 2019 |
-| Microsoft    | Active Directory™ domain functional level | 2016 (WinThreshold)[^domain] |
-{: caption="Table 2. BOM for the software components in vCenter Server instances" caption-side="bottom"}
+| VMware® by Broadcom | vSphere ESXi | ESXi 7.0 Update 3p (build 23307199)[^esxi70] or \n ESXi 6.7 (202403001)[^esxi67] |
+| VMware by Broadcom | Distributed vSwitch | 8.0.0 or 7.0.0[^vcs-vsphere700] or 6.6.0[^vcs-vsphere660]
+| VMware by Broadcom | vCenter Server Appliance | 8.0 Update 2b (23319993) or \n 7.0 Update 3p (22837322) |
+| VMware by Broadcom | vSAN[^vsan] | 7.0 Update 3l (21424296) |
+| VMware by Broadcom | NSX for vSphere[^nsxt] | 4.1.2.3 (23382408) |
+| VMware by Broadcom | NSX-V for vSphere[^nsxv] | 6.4.13 (19307994) |
+| Microsoft® | Windows® Server Standard edition | 2019 |
+| Microsoft | Active Directory™ domain functional level | 2016 (WinThreshold)[^domain] |
+{: caption="Table 2. BOM for the software components in Automated instances" caption-side="bottom"}
 
 [^esxi70]: Applicable to vSphere 7
 
@@ -80,7 +80,7 @@ Review the following table for an overview of the advanced configuration setting
 | Queue Full Threshold | **/Disk/QFullThreshold** = 8 |
 | TCP/IP Heap Size | **/Net/TcpipHeapSize** = 32 |
 | TCP/IP Heap Maximum | **/Net/TcpipHeapMax** = 1536 |
-{: caption="Table 3. ESXi servers advanced configuration settings for vCenter Server instances and clusters" caption-side="bottom"}
+{: caption="Table 3. ESXi servers advanced configuration settings for Automated instances and clusters" caption-side="bottom"}
 
 [^maxvol]: This setting is required for IBM Spectrum® Protect Plus because this service might use more than the default number of NFS mounts on the ESXi server.
 
@@ -91,12 +91,12 @@ Review the following table for an overview of the advanced configuration setting
 | Block guest sourced BPDU frames | **/Net/BlockGuestBPDU** = 1 |
 | Duration, in seconds, to lock out a user's account after it exceeds the maximum allowed failed login attempts. | **Security.AccountUnlockTime** = 1800 |
 | Maximum allowed failed login attempts before a user's account is locked out. Zero disables locking of account. | **Security.AccountLockFailures** = 6 |
-{: caption="Table 4. ESXi servers advanced configuration settings for vCenter Server instances and clusters" caption-side="bottom"}
+{: caption="Table 4. ESXi servers advanced configuration settings for Automated instances and clusters" caption-side="bottom"}
 
 ## NSX and port group configuration settings
 {: #vc_bom-nsx-port-group-config}
 
-Review the following table for an overview of the VMware NSX and port group configuration settings for vCenter Server instances.
+Review the following table for an overview of the VMware NSX and port group configuration settings for Automated instances.
 
 | Configuration setting | Value |
 |:--------------------- |:----- |
@@ -107,7 +107,7 @@ Review the following table for an overview of the VMware NSX and port group conf
 | Port group SDDC-DPortGroup-vSAN (if applicable) | **Active uplinks** set to **uplink2** and **Standby uplinks** set to **uplink1** |
 | Port group SDDC-DPortGroup-Mgmt | **Port binding** set to **Static binding** and **Load balancing** set to **Route based on physical NIC load** |
 | Port group SDDC-DPortGroup-External | **Port binding** set to **Static binding** |
-{: caption="Table 5. NSX and port group configuration settings for vCenter Server instances" caption-side="bottom"}
+{: caption="Table 5. NSX and port group configuration settings for Automated instances" caption-side="bottom"}
 
 Security policies for promiscuous mode, MAC address changes, and forged transmits are accepted on distributed port groups.
 
@@ -126,7 +126,7 @@ Review the following table for an overview of the Network MTU configuration sett
 |:--------------------- |:----- |
 | Public switch | 1500 (default) |
 | Private switch | 9000 (Jumbo Frames) |
-{: caption="Table 6. MTU configuration settings for vCenter Server instances and clusters" caption-side="bottom"}
+{: caption="Table 6. MTU configuration settings for Automated instances and clusters" caption-side="bottom"}
 
 ### Updating the public switch MTU setting
 {: #vc_bom-procedure-update-public-switch-mtu-setting}
@@ -152,15 +152,21 @@ The allocation of distributed switches varies if you have existing instances and
 ## EVC mode settings
 {: #vc_bom-evc-mode-settings}
 
-Review the following table for an overview of the EVC (Enhanced VMware vMotion Compatibility) mode settings for vCenter Server instances and the differences between vSphere versions.
+Review the following table for an overview of the EVC (Enhanced VMware vMotion Compatibility) mode settings for Automated instances and the differences between vSphere versions.
 
 | Bare metal server CPU model | vSphere 6.7[^evc-vsphere67] | vSphere 7.0 |
 |:--------------------------- |:--------------------------- |:----------- |
 | Skylake | EVC is set to Intel® **Broadwell** Generation. | Skylake is not supported. |
 | Cascade Lake | For the management cluster, EVC is not set. For all other clusters, EVC is set to Intel **Skylake** Generation. | EVC is set to Intel **Cascade Lake** Generation. |
-{: caption="Table 7. EVC mode settings for vCenter Server instances and clusters" caption-side="bottom"}
+{: caption="Table 7. EVC mode settings for Automated instances and clusters" caption-side="bottom"}
 
 [^evc-vsphere67]: Existing vSphere 6.7 clusters only
+
+## Active Directory Certificate Services
+{: #vc_bom-ad-certificate-services}
+
+* For instances deployed on or after 1 April 2024, Active Directory Certificate Services are installed and configured only on the first domain controller in a domain.
+* For instances deployed before 1 April 2024, the Certificate Services are installed on every domain controller. However, you can simplify your topology to a single instance of Certificate Services without impacting the {{site.data.keyword.cloud_notm}} automation.
 
 ## Related links
 {: #vc_bom-related}
@@ -169,5 +175,5 @@ Review the following table for an overview of the EVC (Enhanced VMware vMotion C
 * [Build numbers and versions of VMware vCenter Server (2143838)](https://kb.vmware.com/s/article/2143838){: external}
 * [Enabling Jumbo Frames on virtual switches](https://kb.vmware.com/s/article/1038827){: external}
 * [{{site.data.keyword.vmwaresolutions_short}} Protection data sheet](https://www.ibm.com/software/reports/compatibility/clarity-reports/report/html/softwareReqsForProduct?deliverableId=236C87407E7411E6BA51E79BE9476040){: external}
-* [vCenter Server overview](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview)
-* [Planning vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_planning)
+* [{{site.data.keyword.vcf-auto-short}} overview](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview)
+* [Planning for Automated instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_planning)

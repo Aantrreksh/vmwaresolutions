@@ -4,7 +4,7 @@ copyright:
 
   years:  2024
 
-lastupdated: "2024-02-26"
+lastupdated: "2024-04-05"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # Caveonix RiskForesight Security and Compliance Center integration
 {: #caveonix-scc}
 
-The {{site.data.keyword.cloud}} Security and Compliance Center is a comprehensive Cloud-Native Application Protection Platform (CNAPP) solution suite that you can use to centrally manage your organization’s security, risk, and compliance response to regulatory standards. It enables your security and DevOps teams to secure sensitive data and protect workloads with real-time threat detection and prioritization of vulnerabilities. For more information, see [Getting started with Security and Compliance Center](/docs/security-compliance?topic=security-compliance-getting-started).
+{{site.data.keyword.cloud}} Security and Compliance Center is a comprehensive Cloud-Native Application Protection Platform (CNAPP) solution suite that you can use to centrally manage your organization’s security, risk, and compliance response to regulatory standards. It enables your security and DevOps teams to secure sensitive data and protect workloads with real-time threat detection and prioritization of vulnerabilities. For more information, see [Getting started with Security and Compliance Center](/docs/security-compliance?topic=security-compliance-getting-started).
 
 The Caveonix Security Baselines for VMware profile is now available in the Security and Compliance Center. The Caveonix Security Baselines for VMware is a collection of controls that are designed to validate the compliance of VMware® infrastructure components that run on {{site.data.keyword.cloud_notm}}. For more information, see [Change log: Caveonix Security Baselines for VMware](/docs/security-compliance?topic=security-compliance-caveonix-vmware).
 
@@ -36,15 +36,15 @@ If you are using the Security and Compliance Center private endpoints, then no c
 
 Before any integration is possible, you must have a Security and Compliance Center instance. Complete the following steps:
 
-1. [Create an instance](/docs/security-compliance?topic=security-compliance-getting-started&interface=ui#gs-instance)
-2. [Assign access](/docs/security-compliance?topic=security-compliance-getting-started&interface=ui#gs-access)
-3. [Configure storage](/docs/security-compliance?topic=security-compliance-getting-started&interface=ui#gs-storage)
+1. [Create an instance](/docs/security-compliance?topic=security-compliance-getting-started&interface=ui#gs-instance).
+2. [Assign access](/docs/security-compliance?topic=security-compliance-getting-started&interface=ui#gs-access).
+3. [Configure storage](/docs/security-compliance?topic=security-compliance-getting-started&interface=ui#gs-storage).
 
 When you have a Security and Compliance Center instance available, complete the following steps:
 
-1. [Create an API key](https://cloud.ibm.com/docs/security-compliance?topic=security-compliance-setup-caveonix&interface=ui#caveonix-create-key)
-2. [Create a connection](https://cloud.ibm.com/docs/security-compliance?topic=security-compliance-setup-caveonix&interface=ui#caveonix-create-connection)
-3. [Create an attachment](https://cloud.ibm.com/docs/security-compliance?topic=security-compliance-setup-caveonix&interface=ui#caveonix-attachment)
+1. [Create an API key](/docs/security-compliance?topic=security-compliance-setup-caveonix&interface=ui#caveonix-create-key).
+2. [Create a connection](/docs/security-compliance?topic=security-compliance-setup-caveonix&interface=ui#caveonix-create-connection).
+3. [Create an attachment](/docs/security-compliance?topic=security-compliance-setup-caveonix&interface=ui#caveonix-attachment).
 
 ## Caveonix Cloud tasks
 {: #caveonix-scc-integration}

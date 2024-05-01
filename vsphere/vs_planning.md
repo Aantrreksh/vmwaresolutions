@@ -4,9 +4,9 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-01-22"
+lastupdated: "2024-04-18"
 
-keywords: planning vmware vSphere, data center, vSphere data centers
+keywords: planning flexible, data center, vSphere data centers
 
 subcollection: vmwaresolutions
 
@@ -14,10 +14,10 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Planning for VMware vSphere
+# Planning for Flexible instances
 {: #vs_planning}
 
-Review the following requirements before you order a VMware vSphere® instance. Plan your VMware vSphere based on the {{site.data.keyword.cloud}} data center location and your workload capacity requirements.
+Review the following requirements before you order a {{site.data.keyword.vcf-flex}} instance. Plan your {{site.data.keyword.vcf-flex-short}} based on the {{site.data.keyword.cloud}} data center location and your workload capacity requirements.
 
 You are responsible for setting up the environment, installing, and configuring various VMware® components after the VMware ESXi™ servers are deployed. The following examples are VMware components: VMware vCenter Server®, VMware NSX®, and VMware vSAN™.
 {: note}
@@ -26,6 +26,11 @@ You are responsible for setting up the environment, installing, and configuring 
 {: #vs_planning-account-req}
 
 The account that you are using must meet certain requirements. For more information, see [Signing up for required accounts](/docs/vmwaresolutions?topic=vmwaresolutions-signing_required_accounts).
+
+## Licensing considerations
+{: #vs_planning-licensing}
+
+{{site.data.content.vmware-licensing}}
 
 ## {{site.data.keyword.cloud_notm}} data center availability
 {: #vs_planning-dc-availability}
@@ -51,9 +56,9 @@ If you select a vSAN component, the location list is filtered by SSD (Solid-Stat
 | TOK02 | 01-02 | Skylake, Cascade Lake, SAP-certified Cascade Lake |
 | TOK04 | 01 | Skylake, Cascade Lake, SAP-certified Cascade Lake |
 | TOK05 | 01 | Skylake, Cascade Lake, SAP-certified Cascade Lake |
-{: caption="Table 1. Available {{site.data.keyword.cloud_notm}} data centers for VMware vSphere instances - Asia-Pacific" caption-side="bottom"}
+{: caption="Table 1. Available {{site.data.keyword.cloud_notm}} data centers for Flexible instances - Asia-Pacific" caption-side="bottom"}
 {: tab-title="Asia-Pacific"}
-{: tab-group="Data centers for VMware vSphere"}
+{: tab-group="Data centers for Flexible instances"}
 {: class="simple-tab-table"}
 {: #simpletabtable-cr-ap}
 
@@ -72,9 +77,9 @@ If you select a vSAN component, the location list is filtered by SSD (Solid-Stat
 | MAD05 | 01 | Cascade Lake, SAP-certified Cascade Lake |
 | MIL01 | 01 | Skylake, Cascade Lake, SAP-certified Cascade Lake |
 | PAR01 | 01 | Skylake, Cascade Lake, SAP-certified Cascade Lake |
-{: caption="Table 1. Available {{site.data.keyword.cloud_notm}} data centers for VMware vSphere instances - Europe" caption-side="bottom"}
+{: caption="Table 1. Available {{site.data.keyword.cloud_notm}} data centers for Flexible instances - Europe" caption-side="bottom"}
 {: tab-title="Europe"}
-{: tab-group="Data centers for VMware vSphere"}
+{: tab-group="Data centers for Flexible instances"}
 {: class="simple-tab-table"}
 {: #simpletabtable-cr-eur}
 
@@ -87,9 +92,9 @@ If you select a vSAN component, the location list is filtered by SSD (Solid-Stat
 | WDC04 | 01-05 | Skylake, Cascade Lake, SAP-certified Cascade Lake |
 | WDC06 | 01 | Skylake, Cascade Lake, SAP-certified Cascade Lake |
 | WDC07 | 01 | Skylake, Cascade Lake, SAP-certified Cascade Lake |
-{: caption="Table 1. Available {{site.data.keyword.cloud_notm}} data centers for VMware vSphere instances - NA East" caption-side="bottom"}
+{: caption="Table 1. Available {{site.data.keyword.cloud_notm}} data centers for Flexible instances - NA East" caption-side="bottom"}
 {: tab-title="NA East"}
-{: tab-group="Data centers for VMware vSphere"}
+{: tab-group="Data centers for Flexible instances"}
 {: class="simple-tab-table"}
 {: #simpletabtable-cr-naeast}
 
@@ -99,9 +104,9 @@ If you select a vSAN component, the location list is filtered by SSD (Solid-Stat
 | DAL10 | 01-04 | Skylake, Cascade Lake, SAP-certified Cascade Lake |
 | DAL12 | 01-02 | Skylake, Cascade Lake, SAP-certified Cascade Lake |
 | DAL13 | 01-03 | Skylake, Cascade Lake, SAP-certified Cascade Lake |
-{: caption="Table 1. Available {{site.data.keyword.cloud_notm}} data centers for VMware vSphere instances - NA South" caption-side="bottom"}
+{: caption="Table 1. Available {{site.data.keyword.cloud_notm}} data centers for Flexible instances - NA South" caption-side="bottom"}
 {: tab-title="NA South"}
-{: tab-group="Data centers for VMware vSphere"}
+{: tab-group="Data centers for Flexible instances"}
 {: class="simple-tab-table"}
 {: #simpletabtable-cr-nasouth}
 
@@ -109,9 +114,9 @@ If you select a vSAN component, the location list is filtered by SSD (Solid-Stat
 |:----------- |:--- |:----------------------------- |
 | SJC03 | 01-02 | Skylake, Cascade Lake |
 | SJC04 | 01 | Skylake, Cascade Lake |
-{: caption="Table 1. Available {{site.data.keyword.cloud_notm}} data centers for VMware vSphere instances - NA West" caption-side="bottom"}
+{: caption="Table 1. Available {{site.data.keyword.cloud_notm}} data centers for Flexible instances - NA West" caption-side="bottom"}
 {: tab-title="NA West"}
-{: tab-group="Data centers for VMware vSphere"}
+{: tab-group="Data centers for Flexible instances"}
 {: class="simple-tab-table"}
 {: #simpletabtable-cr-nawest}
 
@@ -120,9 +125,9 @@ If you select a vSAN component, the location list is filtered by SSD (Solid-Stat
 | SAO01 | 01 | Skylake, Cascade Lake, SAP-certified Cascade Lake |
 | SAO04 | 01 | Cascade Lake, SAP-certified Cascade Lake |
 | SAO05 | 01 | Cascade Lake, SAP-certified Cascade Lake |
-{: caption="Table 1. Available {{site.data.keyword.cloud_notm}} data centers for VMware vSphere instances - South America" caption-side="bottom"}
+{: caption="Table 1. Available {{site.data.keyword.cloud_notm}} data centers for Flexible instances - South America" caption-side="bottom"}
 {: tab-title="South America"}
-{: tab-group="Data centers for VMware vSphere"}
+{: tab-group="Data centers for Flexible instances"}
 {: class="simple-tab-table"}
 {: #simpletabtable-cr-sa}
 
@@ -141,5 +146,5 @@ If you select a vSAN component, the location list is filtered by SSD (Solid-Stat
 ## Related links
 {: #vs_planning-related}
 
-* [Ordering VMware vSphere instances](/docs/vmwaresolutions?topic=vmwaresolutions-vs_orderinginstances-req)
-* [Adding ESXi servers to VMware vSphere instances](/docs/vmwaresolutions?topic=vmwaresolutions-vs_addingservers)
+* [Ordering Flexible instances](/docs/vmwaresolutions?topic=vmwaresolutions-vs_orderinginstances-req)
+* [Adding ESXi servers to Flexible instances](/docs/vmwaresolutions?topic=vmwaresolutions-vs_addingservers)

@@ -4,9 +4,9 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-01-22"
+lastupdated: "2024-04-25"
 
-keywords: planning vCenter Server, data center, vCenter Server data centers
+keywords: planning vcf classic, data center, vcf automated data centers
 
 subcollection: vmwaresolutions
 
@@ -14,24 +14,29 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Planning for vCenter Server instances
+# Planning for Automated instances
 {: #vc_planning}
 
-Plan your instance based on the {{site.data.keyword.cloud}} data center location, your workload capacity requirements, and add-on services requirements. Review the following requirements before you order your VMware vCenter Server® instance.
+Plan your instance based on the {{site.data.keyword.cloud}} data center location, your workload capacity requirements, and add-on services requirements. Review the following requirements before you order your {{site.data.keyword.vcf-auto}} instance.
 
-* New deployments of vCenter Server instances with VMware vSphere® 6.5 or 6.7 are not supported.
-* New deployments of vCenter Server multizone instances are not supported.
-* New deployments of vCenter Server with NSX-V instances are not supported.
+* New deployments of instances with VMware vSphere® 6.5 or 6.7 are not supported.
+* New deployments of multizone instances are not supported.
+* New deployments of {{site.data.keyword.vcf-auto-short}} with NSX-V instances are not supported.
 
 ## Account requirements
 {: #vc_planning-account-req}
 
 The account that you are using must meet certain requirements. For more information, see [Signing up for required accounts](/docs/vmwaresolutions?topic=vmwaresolutions-signing_required_accounts).
 
+## Licensing considerations
+{: #vc_planning-licensing}
+
+{{site.data.content.vmware-licensing}}
+
 ## {{site.data.keyword.cloud_notm}} data center availability
 {: #vc_planning-dc-availability}
 
-The vCenter Server deployment has strict requirements on the physical infrastructure. Therefore, you can deploy instances only in {{site.data.keyword.cloud_notm}} data centers that meet the requirements. The following {{site.data.keyword.cloud_notm}} data centers are available for vCenter Server deployment.
+The {{site.data.keyword.vcf-auto-short}} deployment has strict requirements on the physical infrastructure. Therefore, you can deploy instances only in {{site.data.keyword.cloud_notm}} data centers that meet the requirements. The following {{site.data.keyword.cloud_notm}} data centers are available for {{site.data.keyword.vcf-auto-short}} deployment.
 
 | Data center | Pod | Server options for NSX-T[^nsx-t-7] | Server options for NSX-V[^nsx-v] |
 |:----------- |:--- |:---------------------------------- |:-------------------------------- |
@@ -46,9 +51,9 @@ The vCenter Server deployment has strict requirements on the physical infrastruc
 | TOK02 | 01-02 | Skylake, Cascade Lake, SAP-certified Cascade Lake | Skylake, Cascade Lake, SAP-certified Cascade Lake |
 | TOK04 | 01 | Skylake, Cascade Lake, SAP-certified Cascade Lake | Skylake, Cascade Lake, SAP-certified Cascade Lake |
 | TOK05 | 01 | Skylake, Cascade Lake, SAP-certified Cascade Lake | Skylake, Cascade Lake, SAP-certified Cascade Lake |
-{: caption="Table 1. Available {{site.data.keyword.cloud_notm}} data centers for vCenter Server instances - Asia-Pacific" caption-side="bottom"}
+{: caption="Table 1. Available {{site.data.keyword.cloud_notm}} data centers for Automated instances - Asia-Pacific" caption-side="bottom"}
 {: tab-title="Asia-Pacific"}
-{: tab-group="Data centers for vCenter Server instances"}
+{: tab-group="Data centers for Automated instances"}
 {: class="simple-tab-table"}
 {: #simpletabtable-cr-ap}
 
@@ -67,9 +72,9 @@ The vCenter Server deployment has strict requirements on the physical infrastruc
 | MAD05 | 01 | Cascade Lake, SAP-certified Cascade Lake | Cascade Lake, SAP-certified Cascade Lake |
 | MIL01 | 01 | Skylake, Cascade Lake, SAP-certified Cascade Lake | Skylake, Cascade Lake, SAP-certified Cascade Lake[^sap-mil01] |
 | PAR01 | 01 | Skylake, Cascade Lake, SAP-certified Cascade Lake | Skylake, Cascade Lake, SAP-certified Cascade Lake[^sap-par01] |
-{: caption="Table 1. Available {{site.data.keyword.cloud_notm}} data centers for vCenter Server instances - Europe" caption-side="bottom"}
+{: caption="Table 1. Available {{site.data.keyword.cloud_notm}} data centers for Automated instances - Europe" caption-side="bottom"}
 {: tab-title="Europe"}
-{: tab-group="Data centers for vCenter Server instances"}
+{: tab-group="Data centers for Automated instances"}
 {: class="simple-tab-table"}
 {: #simpletabtable-cr-eur}
 
@@ -82,9 +87,9 @@ The vCenter Server deployment has strict requirements on the physical infrastruc
 | WDC04 | 01-05 | Skylake, Cascade Lake, SAP-certified Cascade Lake | Skylake, Cascade Lake, SAP-certified Cascade Lake |
 | WDC06 | 01 | Skylake, Cascade Lake, SAP-certified Cascade Lake | Skylake, Cascade Lake, SAP-certified Cascade Lake |
 | WDC07 | 01 | Skylake, Cascade Lake, SAP-certified Cascade Lake | Skylake, Cascade Lake, SAP-certified Cascade Lake |
-{: caption="Table 1. Available {{site.data.keyword.cloud_notm}} data centers for vCenter Server instances - NA East" caption-side="bottom"}
+{: caption="Table 1. Available {{site.data.keyword.cloud_notm}} data centers for Automated instances - NA East" caption-side="bottom"}
 {: tab-title="NA East"}
-{: tab-group="Data centers for vCenter Server instances"}
+{: tab-group="Data centers for Automated instances"}
 {: class="simple-tab-table"}
 {: #simpletabtable-cr-naeast}
 
@@ -94,9 +99,9 @@ The vCenter Server deployment has strict requirements on the physical infrastruc
 | DAL10 | 01-04 | Skylake, Cascade Lake, SAP-certified Cascade Lake | Skylake, Cascade Lake, SAP-certified Cascade Lake |
 | DAL12 | 01-02 | Skylake, Cascade Lake, SAP-certified Cascade Lake | Skylake, Cascade Lake, SAP-certified Cascade Lake |
 | DAL13 | 01-03 | Skylake, Cascade Lake, SAP-certified Cascade Lake | Skylake, Cascade Lake, SAP-certified Cascade Lake |
-{: caption="Table 1. Available {{site.data.keyword.cloud_notm}} data centers for vCenter Server instances - NA South" caption-side="bottom"}
+{: caption="Table 1. Available {{site.data.keyword.cloud_notm}} data centers for Automated instances - NA South" caption-side="bottom"}
 {: tab-title="NA South"}
-{: tab-group="Data centers for vCenter Server instances"}
+{: tab-group="Data centers for Automated instances"}
 {: class="simple-tab-table"}
 {: #simpletabtable-cr-nasouth}
 
@@ -104,9 +109,9 @@ The vCenter Server deployment has strict requirements on the physical infrastruc
 |:----------- |:--- |:------------------------------------- |:----------------------------------- |
 | SJC03 | 01-02 | Skylake, Cascade Lake, SAP-certified Cascade Lake | Skylake, Cascade Lake |
 | SJC04 | 01 | Skylake, Cascade Lake, SAP-certified Cascade Lake | Skylake, Cascade Lake |
-{: caption="Table 1. Available {{site.data.keyword.cloud_notm}} data centers for vCenter Server instances - NA West" caption-side="bottom"}
+{: caption="Table 1. Available {{site.data.keyword.cloud_notm}} data centers for Automated instances - NA West" caption-side="bottom"}
 {: tab-title="NA West"}
-{: tab-group="Data centers for vCenter Server instances"}
+{: tab-group="Data centers for Automated instances"}
 {: class="simple-tab-table"}
 {: #simpletabtable-cr-nawest}
 
@@ -115,9 +120,9 @@ The vCenter Server deployment has strict requirements on the physical infrastruc
 | SAO01 | 01 | Skylake, Cascade Lake, SAP-certified Cascade Lake | Skylake, Cascade Lake, SAP-certified Cascade Lake |
 | SAO04 | 01 | Cascade Lake, SAP-certified Cascade Lake | Cascade Lake, SAP-certified Cascade Lake |
 | SAO05 | 01 | Cascade Lake, SAP-certified Cascade Lake | Cascade Lake, SAP-certified Cascade Lake |
-{: caption="Table 1. Available {{site.data.keyword.cloud_notm}} data centers for vCenter Server instances - South America" caption-side="bottom"}
+{: caption="Table 1. Available {{site.data.keyword.cloud_notm}} data centers for Automated instances - South America" caption-side="bottom"}
 {: tab-title="South America"}
-{: tab-group="Data centers for vCenter Server instances"}
+{: tab-group="Data centers for Automated instances"}
 {: class="simple-tab-table"}
 {: #simpletabtable-cr-sa}
 
@@ -158,12 +163,12 @@ The vCenter Server deployment has strict requirements on the physical infrastruc
 
 You are responsible for maintaining and ensuring the availability of all instance components. It is recommended that you plan for backup or high availability of all management components. For more information, see [Backing up components](/docs/vmwaresolutions?topic=vmwaresolutions-solution_backingup).
 
-## Services for vCenter Server instances
+## Services for Automated instances
 {: #vc_planning-addon-services}
 
-You can order services for your instance based on your needs, for example, disaster recovery. For more information, see [Ordering services for vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices).
+You can order services for your instance based on your needs, for example, disaster recovery. For more information, see [Ordering services for Automated instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices).
 
-Add-on services support varies between vCenter Server with NSX-T™ and existing vCenter Server with NSX-V instances V4.7 and earlier.
+Add-on services support varies between instance types and versions.
 
 If you want to migrate your F5 BIG-IP or Veeam services from VMware NSX-V to VMware NSX-T, open an IBM Support ticket by following the steps in [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support).
 {: note}
@@ -176,7 +181,7 @@ For more information about capacity considerations, see [Scaling capacity](/docs
 ## Related links
 {: #vc_planning-related}
 
-* [vCenter Server overview](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview)
-* [Ordering vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-req)
-* [Expanding and contracting capacity for vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservers)
-* [Ordering services for vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices)
+* [{{site.data.keyword.vcf-auto-short}} overview](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview)
+* [Ordering Automated instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-req)
+* [Expanding and contracting capacity for Automated instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservers)
+* [Ordering services for Automated instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices)

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2022
+  years:  2022, 2024
 
-lastupdated: "2022-06-01"
+lastupdated: "2024-04-26"
 
 subcollection: vmwaresolutions
 
@@ -62,7 +62,7 @@ The customer creates the following items.
    * Name `Cyber-Isolated-Segments`, Criteria `Segment Tag Equals Isolated-Segments`, Scope `Cyber`
 * A distributed firewall policy that is named `Cyber-Isolated`, which contains the following rules to satisfy their isolation requirements:
 
-| Rule Name | Sources | Destinations | Services | Action |
+| Rule name | Sources | Destinations | Services | Action |
 |:--------- |:------- |:------------ |:-------- |:------ |
 | Allow access to Isolated | Cyber-Tools-Segments | Cyber-Isolated-Segments | All | Allow |
 | Allow access between Isolated | Cyber-Isolated-Segments | Cyber-Isolated-Segments | All | Allow |
@@ -100,7 +100,7 @@ The distributed firewall groups configuration is defined as:
 
 The distributed firewall policy configuration in a policy named `Cyber-Isolated` is defined as:
 
-| Rule Name | Sources | Destinations | Services | Action |
+| Rule name | Sources | Destinations | Services | Action |
 |:--------- |:------- |:------------ |:-------- |:------ |
 | Allow access to Isolated | Cyber-Tools-Segments | Cyber-Isolated-Segments | All | Allow |
 | Allow access between isolated | Cyber-Isolated-Segments | Cyber-Isolated-Segments | All | Allow |

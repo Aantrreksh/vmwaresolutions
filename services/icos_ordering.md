@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-01-30"
+lastupdated: "2024-04-12"
 
 keywords: IBM Cloud Object Storage, ICOS configuration, order Cloud Object Storage
 
@@ -46,7 +46,7 @@ For more information about creating service credentials, see [Service credential
 ## Veeam on an instance deployed with private network only
 {: #icos_ordering-private-network}
 
-If you want to access {{site.data.keyword.cloud_notm}} Object Storage by using Veeam on a private-only vCenter Server instance, you must configure Veeam to access the internet through a proxy server. This way, Veeam can verify the TLS certificate that is used by {{site.data.keyword.cloud_notm}} Object Storage.
+If you want to access {{site.data.keyword.cloud_notm}} Object Storage by using Veeam on a private-only {{site.data.keyword.vcf-auto-short}} instance, you must configure Veeam to access the internet through a proxy server. This way, Veeam can verify the TLS certificate that is used by {{site.data.keyword.cloud_notm}} Object Storage.
 
 For more information, see [How to configure an HTTP proxy for Veeam components](https://www.veeam.com/kb3090){: external}.
 

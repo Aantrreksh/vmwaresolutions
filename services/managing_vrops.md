@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2019, 2023
+  years:  2019, 2024
 
-lastupdated: "2023-06-12"
+lastupdated: "2024-04-09"
 
 keywords: VMware Aria console, VMware Aria license, login VMware Aria console, vRealize console
 
@@ -140,7 +140,7 @@ Review the following considerations before you delete the service:
 ### Removing the Syslog Server from the NSX Controller nodes (NSX-V only)
 {: #vrops_overview-remove-nsx-controller}
 
-1. Log in to the VMware vSphere™ Web Client.
+1. Log in to the VMware vSphere® Web Client.
 2. Go to **Networking & Security > Installation and Upgrade > Management > NSX Controller Nodes**.
 3. Select the NSX Manager that manages the NSX Controller nodes that you want to modify.
 4. Click the Common Controller Attributes EDIT link.

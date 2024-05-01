@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2024
 
-lastupdated: "2024-04-02"
+lastupdated: "2024-04-26"
 
 keywords: vmware solutions shared, get started shared, tech specs shared
 
@@ -15,25 +15,25 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# VMware Shared overview
+# {{site.data.keyword.vm-shared}} overview
 {: #shared_overview}
 
 {{site.data.content.shared-deprecated-note}}
 
-The {{site.data.keyword.vmwaresolutions_full}} Shared offering provides standardized and customizable deployment choices of VMware® virtual data center environments. With VMware Shared virtual data centers, you can quickly and seamlessly migrate or deploy VMware workloads to the cloud, on IBM-hosted VMware infrastructure. {{site.data.keyword.IBM_notm}} provides a self-service on-demand VMware cloud computing platform with VMware Cloud Director running on {{site.data.keyword.cloud_notm}}. This Infrastructure as a Service (IaaS) on-demand offering provides the option to use specific virtual CPU (vCPU), storage, vRAM, Network, and IP, as needed.
+The {{site.data.keyword.vmwaresolutions_full}} Shared offering provides standardized and customizable deployment choices of VMware® virtual data center environments. With {{site.data.keyword.vm-shared}} virtual data centers, you can quickly and seamlessly migrate or deploy VMware workloads to the cloud, on IBM-hosted VMware infrastructure. {{site.data.keyword.IBM_notm}} provides a self-service on-demand VMware cloud computing platform with VMware Cloud Director running on {{site.data.keyword.cloud_notm}}. This Infrastructure as a Service (IaaS) on-demand offering provides the option to use specific virtual CPU (vCPU), storage, vRAM, Network, and IP, as needed.
 
-VMware Shared has the following IaaS subscription service types:
+{{site.data.keyword.vm-shared}} has the following IaaS subscription service types:
 
 * Multitenant on-demand virtual data centers
 * Multitenant reserved virtual data centers
 
-You can manage the lifecycle of virtual data centers by using VMware Shared. The following functions are supported when you use the VMware Cloud Director Management console or public API:
+You can manage the lifecycle of virtual data centers by using {{site.data.keyword.vm-shared}}. The following functions are supported when you use the VMware Cloud Director Management console or public API:
 
 * Virtual data center creation
 * Virtual data center elasticity
 * Virtual data center deletion
 
-VMware Shared comes standard with five public IP addresses on an NSX Edge Service Gateway with unlimited ingress over the public network.
+{{site.data.keyword.vm-shared}} comes standard with five public IP addresses on an NSX Edge Service Gateway with unlimited ingress over the public network.
 
 Virtual data centers incur charges for the following components:
 
@@ -44,12 +44,12 @@ Virtual data centers incur charges for the following components:
 * Commercial operating system licenses used
 * Optional VMware services
 
-## VMware Shared architecture
+## {{site.data.keyword.vm-shared}} architecture
 {: #shared_overview-archi}
 
-The following graphic depicts the high-level architecture and components of VMware Shared deployment.
+The following graphic depicts the high-level architecture and components of {{site.data.keyword.vm-shared}} deployment.
 
-![VMware Shared architecture](../images/vclouddirector-architecture-public.svg "VMware Shared architecture"){: caption="Figure 1. VMware Shared architecture" caption-side="bottom"}
+![{{site.data.keyword.vm-shared}} architecture](../images/vclouddirector-architecture-public.svg "{{site.data.keyword.vm-shared}} architecture"){: caption="Figure 1. {{site.data.keyword.vm-shared}} architecture" caption-side="bottom"}
 
 ### VMware Cloud Director
 {: #shared_overview-vcloud-dir}
@@ -78,7 +78,7 @@ Organizations use catalogs to store vApp templates and media files. The members 
 
 An Organization virtual data center provides resources to an organization. Virtual data centers provide an environment where virtual systems can be stored, deployed, and operated. They also provide storage for virtual CD and DVD media. An organization can have multiple virtual data centers.
 
-![VMware Shared virtual data center architecture](../images/virtual-datacenter-architecture-public.svg "{{site.data.keyword.cloud_notm}} for virtual data center architecture"){: caption="Figure 2. VMware Shared virtual data center architecture" caption-side="bottom"}
+![{{site.data.keyword.vm-shared}} virtual data center architecture](../images/virtual-datacenter-architecture-public.svg "{{site.data.keyword.cloud_notm}} for virtual data center architecture"){: caption="Figure 2. {{site.data.keyword.vm-shared}} virtual data center architecture" caption-side="bottom"}
 
 ### Sites
 {: #shared_overview-sites}
@@ -87,12 +87,12 @@ A site is a Cloud Director instance that is set up over a set of zones in a mult
 
 For example, the following graphic depicts two Cloud Director instances, *VCD1* and *VCD2*. The clusters span across the dal10 and dal12 locations. Two organizations, *Org A* and *Org B* belong to the same customer and one organization, *Org C* belongs to a different customer.
 
-![VMware Shared site architecture](../images/shared-site-policy.svg "VMware Shared site architecture"){: caption="Figure 3. VMware Shared site architecture" caption-side="bottom"}
+![{{site.data.keyword.vm-shared}} site architecture](../images/shared-site-policy.svg "{{site.data.keyword.vm-shared}} site architecture"){: caption="Figure 3. {{site.data.keyword.vm-shared}} site architecture" caption-side="bottom"}
 
-## Role-based access policies (VMware Shared V4.8 and later)
+## Role-based access policies ({{site.data.keyword.vm-shared}} V4.8 and later)
 {: #shared_overview-access-policies}
 
-Role-based access control is achieved by using a site and organization IAM policy for VMware Shared resources.
+Role-based access control is achieved by using a site and organization IAM policy for {{site.data.keyword.vm-shared}} resources.
 
 | Access policy level | Access |
 |:------------------- |:------ |
@@ -100,9 +100,9 @@ Role-based access control is achieved by using a site and organization IAM polic
 | VDC IAM Policy | View and delete only |
 | Global Resource List | Organizations only |
 | VMware Console Resource List | Organizations and associated virtual data centers only|
-{: caption="Table 1. Site and Organization IAM policy control for VMware Shared" caption-side="bottom"}
+{: caption="Table 1. Site and Organization IAM policy control for {{site.data.keyword.vm-shared}}" caption-side="bottom"}
 
-For VMware Shared versions earlier than V4.8, role-based access control is achieved by using a virtual data center IAM policy for VMware Shared resources.
+For {{site.data.keyword.vm-shared}} versions earlier than V4.8, role-based access control is achieved by using a virtual data center IAM policy for {{site.data.keyword.vm-shared}} resources.
 
 | Access policy level | Access |
 |:------------------- |:------ |
@@ -110,7 +110,7 @@ For VMware Shared versions earlier than V4.8, role-based access control is achie
 | VDC IAM Policy | Exposed and active |
 | Global Resource List | Virtual data center only |
 | VMware Console Resource List | Virtual data center only|
-{: caption="Table 2. Virtual data center IAM policy control for VMware Shared" caption-side="bottom"}
+{: caption="Table 2. Virtual data center IAM policy control for {{site.data.keyword.vm-shared}}" caption-side="bottom"}
 
 ### Access policy updates
 {: #shared_overview-access-policies-reqs}
@@ -139,7 +139,7 @@ A new access policy is required at the VMware Solutions service level for all yo
 Virtual data center based access policies are named after the site. If you did not make the required policy updates before the V4.8 release, your virtual data center based policy is ineffective.
 {: attention}
 
-## Technical specifications for VMware Shared
+## Technical specifications for {{site.data.keyword.vm-shared}}
 {: #shared_overview-specs}
 
 The following components are included in your virtual data center:
@@ -232,8 +232,8 @@ to {{site.data.keyword.vmwaresolutions_short}} service instances. For more infor
 ## Related links
 {: #shared_overview-related}
 
-* [Requirements for VMware Shared](/docs/vmwaresolutions?topic=vmwaresolutions-shared_planning)
+* [Requirements for {{site.data.keyword.vm-shared}}](/docs/vmwaresolutions?topic=vmwaresolutions-shared_planning)
 * [Ordering virtual data centers](/docs/vmwaresolutions?topic=vmwaresolutions-shared_ordering)
-* [Operating VMware Shared](/docs/vmwaresolutions?topic=vmwaresolutions-shared_vcd-ops-guide)
+* [Operating {{site.data.keyword.vm-shared}}](/docs/vmwaresolutions?topic=vmwaresolutions-shared_vcd-ops-guide)
 * [VMware Cloud Director](https://docs.vmware.com/en/VMware-Cloud-Director/10.4/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-74C9E10D-9197-43B0-B469-126FFBCB5121.html){: external}
 * [Troubleshooting NSX Edge](https://docs.vmware.com/en/VMware-NSX-Data-Center-for-vSphere/6.4/com.vmware.nsx.troubleshooting.doc/GUID-E6CD6FAA-3DA7-4AD7-9577-EE121AA7E1E6.html){: external}

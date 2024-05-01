@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2023
+  years:  2016, 2024
 
-lastupdated: "2023-07-31"
+lastupdated: "2024-04-12"
 
 keywords: Entrust DataControl WebGUI, Entrust DataControl console, enable internet Entrust DataControl
 
@@ -18,7 +18,7 @@ subcollection: vmwaresolutions
 # Managing Entrust DataControl
 {: #managing-entrust-dc}
 
-New installations of Entrust DataControl® (formerly known as HyTrust DataControl) are not supported for new or existing deployments of VMware vCenter Server® instances. You can still use or delete existing Entrust DataControl installations on your existing instances.
+New installations of Entrust DataControl® (formerly known as HyTrust DataControl) are not supported for new or existing deployments of {{site.data.keyword.vcf-auto}} instances. You can still use or delete existing Entrust DataControl installations on your existing instances.
 {: deprecated}
 
 To manage Entrust DataControl, access the Entrust DataControl WebGUI from the {{site.data.keyword.vmwaresolutions_full}} console, or access the Entrust DataControl console from the vSphere® Web Client.
@@ -36,12 +36,12 @@ To access the Entrust DataControl console from the vSphere Web Client, use the f
 2. Right-click **KC1** or **KC2**, and then click **Open Console**.
 3. Log in to the console by using the console credentials that you can find on the Entrust DataControl service details page.
 
-For more information, see [Ordering services for vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices).
+For more information, see [Ordering services for {{site.data.keyword.vcf-auto-short}} instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices).
 
 ## Enabling internet access for the Entrust DataControl virtual machines
 {: #managing-entrust-dc-internet-access}
 
-For Entrust DataControl v4.3.2 and later, {{site.data.keyword.vmwaresolutions_short}} provides automatic renewal support for Entrust licenses with the Call Home feature enabled. For vCenter Server instances that are not private-only, Entrust DataControl is deployed with firewall and SNAT (Source Network Address Translation) rules that are defined on the management services ESG **mgmt-nsx-edge**.
+For Entrust DataControl v4.3.2 and later, {{site.data.keyword.vmwaresolutions_short}} provides automatic renewal support for Entrust licenses with the Call Home feature enabled. For {{site.data.keyword.vcf-auto-short}} instances that are not private-only, Entrust DataControl is deployed with firewall and SNAT (Source Network Address Translation) rules that are defined on the management services ESG **mgmt-nsx-edge**.
 
 These rules enable internet access for the Entrust virtual machines (VMs). If internet access is not enabled, the license that is applied to your Entrust DataControl installation will expire after a year.
 

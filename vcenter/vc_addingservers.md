@@ -2,11 +2,11 @@
 
 copyright:
 
-  years:  2021, 2023
+  years:  2021, 2024
 
-lastupdated: "2023-09-22"
+lastupdated: "2024-04-25"
 
-keywords: vCenter Server add host, add server vCenter Server
+keywords: add host, add server
 
 subcollection: vmwaresolutions
 
@@ -14,12 +14,12 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Adding ESXi servers to vCenter Server instances
+# Adding ESXi servers to Automated instances
 {: #vc_addingservers}
 
-You can expand the capacity of your VMware® vCenter Server® instance according to your business needs by adding VMware ESXi™ servers.
+You can expand the capacity of your {{site.data.keyword.vcf-auto}} instance according to your business needs by adding VMware ESXi™ servers.
 
-## Before you add ESXi servers to vCenter Server instances
+## Before you add ESXi servers to Automated instances
 {: #vc_addingservers-prereq}
 
 * For existing instances with VMware vSphere® 6.5 or 6.7, you cannot add ESXi servers. To add ESXi servers, upgrade your vSphere® software to 7.0. For more information, see [Upgrading VMware vSphere software from vSphere 6.5 or 6.7 to 7.0](/docs/vmwaresolutions?topic=vmwaresolutions-vs_vsphere_70_upgrade).
@@ -28,28 +28,27 @@ You can expand the capacity of your VMware® vCenter Server® instance according
 
 {{site.data.content.para-vcenteraddESXiservers}}
 
-* A vCenter Server instance with NFS storage must have at least 3 ESXi servers. A vCenter Server instance with vSAN™ storage must have at least 4 ESXi servers.
+* An Automated instance with NFS storage must have at least 3 ESXi servers. An Automated instance with vSAN™ storage must have at least 4 ESXi servers.
 * If your initial cluster has vSAN storage, SED SSD disks are not available. Non-SED SSD disks are ordered.
 * You can add up to 51 ESXi servers to a consolidated cluster and up to 59 ESXi servers to a workload or gateway cluster.
 
-Bring Your Own License (BYOL) is no longer supported except for migrations or upgrades of existing BYOL clusters. Add a host to a BYOL cluster only if you are performing a migration or upgrade of an existing BYOL cluster.
-{: important}
+{{site.data.content.attnnote-addhost-byol}}
 
-For vCenter Server instances with vSAN:
+For Automated instances with vSAN:
 * If you are adding ESXi servers to clusters provisioned after 24 August 2023, the servers are provisioned with mirrored M.2 boot drives.
 * If you are adding ESXi servers to clusters provisioned before 24 August 2023, the servers are provisioned with mirrored M.2 boot drives only if you select a new bare metal server configuration.
 
-For vCenter Server instances with NFS storage:
+For Automated instances with NFS storage:
 * If you are adding ESXi servers to clusters provisioned after 18 October 2023, the servers are provisioned with mirrored M.2 boot drives.
 * If you are adding ESXi servers to clusters provisioned before 18 October 2023, the servers are provisioned with mirrored M.2 boot drives only if you select a new bare metal server configuration.
 
-## Procedure to add ESXi servers to vCenter Server instances
+## Procedure to add ESXi servers to Automated instances
 {: #vc_addingservers-procedure}
 {: help}
 {: support}
 
-1. From the {{site.data.keyword.vmwaresolutions_short}} console, click **Resources > vCenter Server** from the left navigation pane.
-2. In the **vCenter Server** table, click the instance for which you want to expand capacity.
+1. From the VMware Solutions console, click **Resources > {{site.data.keyword.vcf-classic-short}}** from the left navigation pane.
+2. In the **{{site.data.keyword.vcf-classic}}** table, click the instance for which you want to expand capacity.
 3. Click the **Infrastructure** tab.
 4. In the **Clusters** table, click the cluster to which you want to add ESXi servers.
 5. In the **ESXi servers** section, click **Add**.
@@ -70,21 +69,21 @@ For vCenter Server instances with NFS storage:
     * If you want to customize the hostnames prefix individually, toggle the **Configure hostnames individually** switch on.
 9. In the **Details** section, review the estimated pricing, ensure that the account to be charged is correct, and review and accept the terms. Then, click **Add**.
 
-## Results after you add ESXi servers to vCenter Server instances
+## Results after you add ESXi servers to Automated instances
 {: #vc_addingservers-results}
 
 1. You might experience a slight delay on the console while the instance status changes from **Available** to **Modifying**. Allow the operation to complete before you make more changes to the instance.
 2. You are notified by email that your request to add ESXi servers is being processed. On the console, the status of the cluster that is associated with the ESXi servers is changed to **Modifying**.
 3. If you do not see the new ESXi servers added to the list in the cluster, check your email or console notifications for more details.
 
-If you are adding ESXi servers during maintenance mode, VMs are not migrated to the new servers until you remove maintenance mode.   
+If you are adding ESXi servers during maintenance mode, VMs are not migrated to the new servers until you remove maintenance mode.
 {: important}
 
 ## Related links
 {: #vc_addingservers-related}
 
-* [Deleting vCenter Server instances in a multisite configuration](/docs/vmwaresolutions?topic=vmwaresolutions-vc_deletinginstance_multi)
-* [Requirements for vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-req)
-* [Viewing vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_viewinginstances)
+* [Deleting Automated instances in a multisite configuration](/docs/vmwaresolutions?topic=vmwaresolutions-vc_deletinginstance_multi)
+* [Requirements for Automated instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-req)
+* [Viewing Automated instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_viewinginstances)
 * [Managing virtual servers](/docs/virtual-servers?topic=virtual-servers-managing-virtual-servers)
 * [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support)

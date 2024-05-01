@@ -4,9 +4,9 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-01-23"
+lastupdated: "2024-04-09"
 
-keywords: vmware vSphere order instance, order vSphere, order vmware vSphere instance
+keywords: flexible order instance, order vSphere, order flexible instance
 
 subcollection: vmwaresolutions
 
@@ -17,7 +17,7 @@ subcollection: vmwaresolutions
 # Network interface
 {: #vs_orderinginstances-network-interface-settings}
 
-You must specify the following network interface settings when you order a new VMware vSphere® instance.
+You must specify the following network interface settings when you order a new {{site.data.keyword.vcf-flex}} instance.
 
 ## Hostname prefix
 {: #vs_orderinginstances-host-name-prefix}
@@ -46,7 +46,7 @@ The domain name is used for all {{site.data.keyword.cloud_notm}} bare metal serv
 ## Configure hostnames individually
 {: #vs_orderinginstances-network-diagram}
 
-You can customize the hostnames prefix individually by toggling the **Configure hostnames individually** switch on. 
+You can customize the hostnames prefix individually by toggling the **Configure hostnames individually** switch on.
 
 The hostnames prefix must meet the following requirements:
 * Only lowercase alphabetic, numeric, and hyphen (-) characters are allowed.
@@ -115,4 +115,4 @@ This option is only available for an order with both a public and private networ
 {: #vs_orderinginstances-network-related}
 
 * [Summary](/docs/vmwaresolutions?topic=vmwaresolutions-vs_orderinginstances-order-summary)
-* [Procedure to order VMware vSphere instances](/docs/vmwaresolutions?topic=vmwaresolutions-vs_orderinginstances-procedure)
+* [Procedure to order Flexible instances](/docs/vmwaresolutions?topic=vmwaresolutions-vs_orderinginstances-procedure)

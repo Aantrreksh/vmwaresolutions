@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-03-11"
+lastupdated: "2024-04-03"
 
 keywords: vmware cloud foundation BOM, bill of materials vmware cloud foundation, BOM
 
@@ -14,12 +14,12 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# VMware Cloud Foundation BOM
+# {{site.data.keyword.vcf-vpc-short}} BOM
 {: #vpc-vcf-ovw-bom}
 
-Review the Bill of Materials (BOM) information for VMware Cloud Foundation™ instances.
+Review the Bill of Materials (BOM) information for {{site.data.keyword.vcf-vpc}} instances.
 
-## VPC Infrastructure BOM for VMware Cloud Foundation
+## VPC Infrastructure BOM for {{site.data.keyword.vcf-vpc-short}}
 {: #vpc-vcf-ovw-bom-vpc}
 
 Review the BOM information for Bare Metal Servers on {{site.data.keyword.vpc_full}} ({{site.data.keyword.vpc_short}}).
@@ -31,12 +31,12 @@ Review the BOM information for Bare Metal Servers on {{site.data.keyword.vpc_ful
 | Subnets | Created for vSphere management traffic, vSAN, vSphere vMotion, NSX TEP, and NSX-T Tier-0 Gateway. |
 | Security Groups | To create logical groups and apply rules to traffic of vSphere management, vSAN, vSphere vMotion, and NSX TEP. |
 | Virtual Server Instances | Optional. Windows Server 2019 Standard Edition (AMD64), 2 vCPU, 8 GB RAM, and a bandwidth cap of 4 Gbps. |
-{: caption="Table 1. BOM for {{site.data.keyword.vpc_short}} infrastructure in VMware Cloud Foundation instances" caption-side="bottom"}
+{: caption="Table 1. BOM for {{site.data.keyword.vpc_short}} infrastructure in {{site.data.keyword.vcf-vpc-short}} instances" caption-side="bottom"}
 
-## Software BOM for VMware Cloud Foundation
+## Software BOM for {{site.data.keyword.vcf-vpc-short}}
 {: #vpc-vcf-ovw-bom-software}
 
-Review the BOM information for VMware Cloud Foundation software components.
+Review the BOM information for {{site.data.keyword.vcf-vpc-short}} software components.
 
 | Component | Version | Build number |
 | --------- | ------- | ------------ |
@@ -47,7 +47,7 @@ Review the BOM information for VMware Cloud Foundation software components.
 | VMware Virtual SAN Witness Appliance | 7.0 Update 3l | 21424296 |
 | VMware NSX-T | 3.2.3.1 | 22104592 |
 | VMware Aria® Suite Lifecycle Manager | 8.12.0.9 | 22652426 |
-{: caption="Table 2. BOM for software components in VMware Cloud Foundation instances" caption-side="bottom"}
+{: caption="Table 2. BOM for software components in {{site.data.keyword.vcf-vpc-short}} instances" caption-side="bottom"}
 
 ## Network MTU configuration settings
 {: #vpc-vcf-ovw-bom-mtu-config}
@@ -69,12 +69,12 @@ Review the following table for an overview of the Network MTU configuration sett
 | VMkernel adapters for TEP traffic | 9000 (Jumbo Frames) |
 | Tier 0 private uplinks | 9000 (Jumbo Frames) |
 | Tier 0 public uplinks | 1500 (Default) |
-{: caption="Table 3. MTU configuration settings for VMware Cloud Foundation" caption-side="bottom"}
+{: caption="Table 3. MTU configuration settings for {{site.data.keyword.vcf-vpc-short}}" caption-side="bottom"}
 
 NSX Global Gateway Configuration is set to MTU of 1500 for the router links and interfaces at the overlay.
 
 ## Related links
 {: #vpc-vcf-ovw-bom-links}
 
-* [VMware Cloud Foundation overview](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-ovw)
-* [Planning for VMware Cloud Foundation instances](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-plan)
+* [{{site.data.keyword.vcf-vpc-short}} overview](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-ovw)
+* [Planning for {{site.data.keyword.vcf-vpc-short}} instances](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-plan)

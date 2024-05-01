@@ -2,11 +2,11 @@
 
 copyright:
 
-  years:  2016, 2023
+  years:  2016, 2024
 
-lastupdated: "2023-05-31"
+lastupdated: "2024-04-25"
 
-keywords: vCenter Server summary order, order summary instance, order summary
+keywords: vcf classic summary order, order summary instance, order summary
 
 subcollection: vmwaresolutions
 
@@ -24,4 +24,4 @@ You can also add the provisioned resources to the {{site.data.keyword.cloud_notm
 ## Related links
 {: #vc_orderinginstance-summary-related}
 
-* [Procedure to order vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-procedure)
+* [Procedure to order Automated instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-procedure)

@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-01-31"
+lastupdated: "2024-04-29"
 
 keywords: FortiGate console, FortiGate VA, login FortiGate console
 
@@ -25,7 +25,7 @@ To manage the FortiGate® Virtual Appliance service, you must access the FortiGa
 * Log in to the FortiOS Web Client by using the credentials that you can find on the FortiGate Virtual Appliance service details page.
 * Access the console through SSH connection by using the credentials that you can find on the FortiGate Virtual Appliance service details page.
 
-For more information, see [Ordering services for vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices).
+For more information, see [Ordering services for {{site.data.keyword.vcf-auto-short}} instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices).
 
 ## Considerations when you delete FortiGate Virtual Appliance
 {: #fortinetvm_considerations-remove}
@@ -40,6 +40,6 @@ Review the following considerations before you delete the service:
 
 * [FortiGate Virtual Appliance overview](/docs/vmwaresolutions?topic=vmwaresolutions-fortinetvm_considerations)
 * [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support)
-* [FAQ](/docs/vmwaresolutions?topic=vmwaresolutions-faq-vmwaresolutions)
+* [General FAQ about VCF for Classic](/docs/vmwaresolutions?topic=vmwaresolutions-faq-vmwaresolutions)
 * [fortinet.com website](https://www.fortinet.com/){: external}
 * [Fortinet document library](https://docs.fortinet.com/product/fortigate/7.4){: external}
