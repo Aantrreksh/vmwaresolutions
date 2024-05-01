@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-04-29"
+lastupdated: "2024-05-01"
 
 subcollection: vmwaresolutions
 
@@ -28,7 +28,7 @@ Key elements of the isolated recovery environment solution architecture include:
 * The solution architecture supports only production data that is hosted in a VMware vSphere® environment. It does not support physical servers or other hypervisors.
 * The Veeam service in the isolated recovery environment provides a cyber-recovery backup of the specified production virtual machines (VMs). It writes the backup data to the Linux hardened backup repository in the isolated recovery environment.
 * Cyber-recovery backup proxies, managed by the Veeam service in the isolated recovery environment, are required to be hosted in the production site. These proxies can be Windows® or Linux based and virtual or physical.
-* The solution architecture is independent of existing production backup environment and does not integrate to any production systems except for the production vCenter and vSphere hosts.
+* The solution architecture is independent of the existing production backup environment and does not integrate to any production systems except for the production vCenter and vSphere hosts.
 * For cyber-recovery tasks, the Veeam service enables the mounting of the cyber-recovery backup files from the Linux hardened repository in read-only mode into a sandbox. The sandbox is hosted on the vSphere Server instance.
 * There can be many sandboxes, for example:
    * One can be used daily to scan cyber-recovery backup files.
@@ -63,7 +63,7 @@ The vCenter Server instance consists of a consolidated cluster with a minimum of
 * NSX-T™ manager cluster - The NSX-T manager cluster consists of three manager appliances that provide the management and control plane for the virtualized network, also known as the overlay network.
 * Active Directory™ and domain name service - The ADDNS VMs are two Microsoft® Windows 2019 VMs configured for Active Directory and DNS. This option is selected in the order process by selecting the **Two highly available dedicated Windows Server VMs on the management cluster** option. By selecting this option, you must provide your own licenses.
 * Veeam service instance - For more information, see [Veeam components](/docs/vmwaresolutions?topic=vmwaresolutions-veeam-cr-sa-components).
-* Gateway cluster - A gateway cluster consists of two vSphere ESXi hosts provisioned on {{site.data.keyword.cloud_notm}} gateways. It provides the resources to run the network edge gateway. These resources include firewalls and the ability to become the default gateways for {{site.data.keyword.cloud_notm}} subnets that are associated with them. In this solution architecture, the cluster hosts the Juniper vSRX firewalls that run as virtual appliances. While Juniper vSRX appliances can be run directly on the consolidated cluster, it cannot act as the default gateways to the {{site.data.keyword.cloud_notm}} subnets, as this requires the {{site.data.keyword.cloud_notm}} gateway appliance.
+* Gateway cluster - A gateway cluster consists of two vSphere ESXi hosts provisioned on {{site.data.keyword.cloud_notm}} gateways. It provides the resources to run the network edge gateway. These resources include firewalls and the ability to become the default gateways for {{site.data.keyword.cloud_notm}} subnets that are associated with them. In this solution architecture, the cluster hosts the Juniper vSRX firewalls that run as virtual appliances. While Juniper vSRX appliances can be run directly on the consolidated cluster, it cannot act as the default gateway to the {{site.data.keyword.cloud_notm}} subnets, as this requires the {{site.data.keyword.cloud_notm}} gateway appliance.
 
 The solution architecture adds the following components to the vCenter Server instance:
 
