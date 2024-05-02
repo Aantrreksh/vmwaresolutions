@@ -4,7 +4,7 @@ copyright:
 
   years:  2024
 
-lastupdated: "2024-04-26"
+lastupdated: "2024-05-01"
 
 keywords: vmware solutions packaging, vmware solutions pricing, vmware solutions naming
 
@@ -19,7 +19,7 @@ subcollection: vmwaresolutions
 
 Broadcom announced several changes to the packaging and pricing of the VMware® portfolio that are effective on 1 May 2024. Cloud service providers, including {{site.data.keyword.cloud}}, can no longer sell individual VMware software solutions. These solutions are available only as part of VMware Cloud Foundation™, for which Broadcom announced a new pricing structure.
 
-Starting on 1 May 2024, {{site.data.keyword.cloud_notm}} is changing its {{site.data.keyword.vmwaresolutions_short}} portfolio and pricing in response the the VMware portfolio changes.
+Starting on 1 May 2024, {{site.data.keyword.cloud_notm}} is changing its {{site.data.keyword.vmwaresolutions_short}} portfolio and pricing in response to the VMware portfolio changes.
 
 ## Packaging and naming for offerings
 {: #vmwaresol_packaging-naming}
