@@ -4,7 +4,7 @@ copyright:
 
   years:  2024
 
-lastupdated: "2024-05-01"
+lastupdated: "2024-05-13"
 
 keywords: vmware solutions packaging, vmware solutions pricing, vmware solutions naming
 
@@ -30,7 +30,7 @@ The following table shows the changes of the offering names across the VMware So
 
 | Current offering | Updated offering |
 |:---------------- |:---------------- |
-| VMware as a Service | **{{site.data.keyword.vmware-service-short}}** or **{{site.data.keyword.vcf-aas}}** |
+| VMware as a Service | **{{site.data.keyword.vmware-service_short}}** or **{{site.data.keyword.vcf-aas}}** |
 | VMware Cloud Foundation | **{{site.data.keyword.vcf-vpc}}** or **{{site.data.keyword.vcf-vpc-short}}** |
 | VMware vCenter Server® | **{{site.data.keyword.vcf-auto}}** or **{{site.data.keyword.vcf-auto-short}}** |
 | VMware vSphere® | **{{site.data.keyword.vcf-flex}}** or **{{site.data.keyword.vcf-flex-short}}** |
@@ -45,7 +45,7 @@ The following table shows the changes of the offering names across the VMware So
 For the most up-to-date pricing information, you can create a cost estimate by clicking **Add to estimate** from the provisioning page.
 {: important}
 
-* For {{site.data.keyword.vmware-service-short}} customers, discounts are available for longer-term commitments. For more information, contact your IBM Sales representative.
+* For {{site.data.keyword.vmware-service_short}} customers, discounts are available for longer-term commitments. For more information, contact your IBM Sales representative.
 * VMware Cloud Foundation (for Classic and for VPC Bare Metal Servers) is charged at a flexible, on-demand rate of $38 per core and per month with a minimum of 16 cores per CPU. Discounts are available for longer-term commitments.
 * For existing {{site.data.keyword.vcf-vpc}} customers, this change represents a price reduction.
 * Starting on 1 May 2024, the VMware Solutions Support and Services fee is removed.
@@ -69,8 +69,10 @@ You are entitled to the following VMware software products that are included in 
 * VMware Tanzu Kubernetes Grid
 * VMware Data Services Manager
 
-If you need access to a VMware software product or edition that you are entitled to with VMware Cloud Foundation, contact your IBM Business Partner representative or [IBM Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support).
+For Tanzu Kubernetes Grid and for Data Services Manager, there might be a delay in providing the license keys.
 {: note}
+
+If you need access to a VMware software product or edition that you are entitled to with VMware Cloud Foundation, contact your IBM Business Partner representative or [IBM Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support).
 
 ## Related links
 {: #vmwaresol_packaging-pricing-related}
