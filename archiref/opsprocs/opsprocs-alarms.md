@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-04-29"
+lastupdated: "2024-05-16"
 
 subcollection: vmwaresolutions
 
@@ -109,17 +109,17 @@ The following table describes the standard preconfigured alarms.
 | Host CPU usage | Configure to send email one time when host CPU usage > 90% for 5 mins. | [Knowledge - KB0012707 v0.01](https://watson.service-now.com/nav_to.do?uri=kb_knowledge.do?sys_id=342e3d6adbc5730030c93a1b7c961976){: external} |
 | Host memory usage | Configure to send email one time when host memory usage > 95% for 5 mins. | [Knowledge - KB0012712 v0.01](https://watson.service-now.com/nav_to.do?uri=kb_knowledge.do?sys_id=30110ee2db49730030c93a1b7c96194f){: external} |
 | Virtual machine CPU usage | Configure to send email one time when VM CPU usage > 90% for 5 mins for critical appliances. | [Virtual machine CPU usage alarm (2057830)](https://kb.vmware.com/s/article/2057830){: external} |
-| Virtual machine memory usage | Configure to send email one time when VM memory usage > 95% for 5 mins for critical appliances. | [Virtual machine memory usage alarm (2057846)](https://kb.vmware.com/s/article/2057846){: external} |
+| Virtual machine memory usage | Configure to send email one time when VM memory usage > 95% for 5 mins for critical appliances. | [Virtual machine memory usage alarm](https://knowledge.broadcom.com/external/article?articleNumber=318857){: external} |
 | Datastore usage on disk | For vSAN, configure to send email one time when datastore usage > 70%. For non-vSAN, configure to send email one time when datastore usage > 85%. | [Knowledge - KB0012713 v0.01](https://watson.service-now.com/nav_to.do?uri=kb_knowledge.do?sys_id=ddb3422edb89730030c93a1b7c9619f6){: external} |
 | Virtual machine CPU ready | Configure to send email one time when VM CPU ready > 2000 ms for 5 mins for critical appliances. | [Knowledge - KB0012718 v0.01](https://watson.service-now.com/nav_to.do?uri=kb_knowledge.do?sys_id=7056426adb0d730030c93a1b7c9619e6){: external} |
 | Virtual machine total disk latency | Configure to send email one time when VM total disk latency > 30 ms for 5 mins for critical appliances. | [Knowledge - KB0012729 v0.01](https://watson.service-now.com/nav_to.do?uri=kb_knowledge.do?sys_id=15dddea2db857300d5a971198c961995){: external} |
 | Virtual machine disk commands canceled | Do not set initially. Consider for critical appliances at second stage. | No additional information |
 | Virtual machine disk reset | Do not set initially. Consider for critical appliances at second stage. | No additional information |
-| License inventory monitoring | Not considered essential for notification. Alarm reviewed as part of proactive daily checks. | [Troubleshooting licensing](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.vcenterhost.doc/GUID-3C4E8BF7-B0A9-46F0-BA50-D69F950AB958.html){: external} and [Licensing ESXi 6.x and vCenter Server 6.x](https://kb.vmware.com/s/article/2107538){: external} |
+| License inventory monitoring | Not considered essential for notification. Alarm reviewed as part of proactive daily checks. | [Troubleshooting licensing](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.vcenterhost.doc/GUID-3C4E8BF7-B0A9-46F0-BA50-D69F950AB958.html){: external} |
 | License user threshold monitoring | Not considered essential for notification. Alarm reviewed as part of proactive daily checks. | [Troubleshooting licensing](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.vcenterhost.doc/GUID-3C4E8BF7-B0A9-46F0-BA50-D69F950AB958.html){: external} |
 | License capacity monitoring | Not considered essential for notification. Alarm reviewed as part of proactive daily checks. | [Troubleshooting licensing](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.vcenterhost.doc/GUID-3C4E8BF7-B0A9-46F0-BA50-D69F950AB958.html){: external} |
 | The host license edition is not compatible with the vCenter Server license edition | Not considered essential for notification. Alarm reviewed as part of proactive daily checks. | [Troubleshooting host licensing](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.vcenterhost.doc/GUID-B9DAAF47-94EC-47F5-8523-9C8C019412E1.html){: external} |
-| Timed out starting Secondary VM * | Not configured as it monitors VMware Fault Tolerance, which is not recommended for vCenter Server instances. | [Timeout starting Secondary VM alarm (2064169)](https://kb.vmware.com/s/article/2064169){: external} |
+| Timed out starting Secondary VM * | Not configured as it monitors VMware Fault Tolerance, which is not recommended for vCenter Server instances. | No additional information |
 | No compatible host for Secondary VM | Not configured as it monitors VMware Fault Tolerance, which is not recommended for vCenter Server instances. | No additional information |
 | Virtual machine Fault Tolerance state changed | Not configured as it monitors VMware Fault Tolerance, which is not recommended for vCenter Server instances. | No additional information |
 | Virtual machine fault tolerance vLockStep interval status changed | Not configured as it monitors VMware Fault Tolerance, which is not recommended for vCenter Server instances. | No additional information |

@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2024
 
-lastupdated: "2024-04-26"
+lastupdated: "2024-05-16"
 
 keywords: migrating to VMware Cloud Foundation as a Service
 
@@ -65,7 +65,7 @@ To use this functionality, first use the VMware Solutions console to configure y
 
 {{site.data.keyword.vcf-aas}} virtual data centers networking uses the most recent version of VMware NSX (also known as NSX-T), while {{site.data.keyword.vm-shared}} is based on NSX-V. This change enhances the networking capabilities of your virtual data centers.
 
-If you are using automation (such as Terraform), the API and Terraform resources are different. For more information, see [vCloud Director API](https://developer.vmware.com/apis/553/vcloud-director/){: external} and [Terraform VMware Cloud Director Provider](https://registry.terraform.io/providers/vmware/vcd/latest/docs){: external} documentation.
+If you are using automation (such as Terraform), the API and Terraform resources are different. For more information, see [vCloud Director API](https://developer.broadcom.com/xapis/vmware-cloud-director-openapi/latest/){: external} and [Terraform VMware Cloud Director Provider](https://registry.terraform.io/providers/vmware/vcd/latest/docs){: external} documentation.
 {: note}
 
 ## VDC gateways
@@ -158,6 +158,6 @@ For more information, see [Managing Veeam for {{site.data.keyword.vcf-aas}}](/do
 * [Using {{site.data.keyword.tg_short}} to interconnect {{site.data.keyword.vcf-aas}} with {{site.data.keyword.cloud_notm}} services](/docs/vmware-service?topic=vmware-service-tgw-adding-connections)
 * [Using VMware Cloud Director Availability with {{site.data.keyword.vcf-aas}}](/docs/vmwaresolutions?topic=vmwaresolutions-tenant-vcda).
 * [VMware Cloud Director](https://www.vmware.com/products/cloud-director.html){: external}
-* [vCloud Director API](https://developer.vmware.com/apis/553/vcloud-director/){: external}
+* [vCloud Director API](https://developer.broadcom.com/xapis/vmware-cloud-director-openapi/latest/){: external}
 * [Terraform VMware Cloud Director Provider](https://registry.terraform.io/providers/vmware/vcd/latest/docs){: external}
 * [Network Edge Size](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.2/installation/GUID-22F87CA8-01A9-4F2E-B7DB-9350CA60EA4E.html){: external}

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2020, 2023
+  years:  2020, 2024
 
-lastupdated: "2023-04-13"
+lastupdated: "2024-05-16"
 
 keywords: VLAN ports, vmware solutions ports, ports usage vmware solutions
 
@@ -39,10 +39,9 @@ The following table shows the ports that are used by VMware®. The ports in VMwa
 | NSX Manager | Infrastructure VMs | Windows Active Directory | Private primary subnet \n Infrastructure VMs | 53 | UDP |
 {: caption="Table 1. Ports used by VMware" caption-side="bottom"}
 
-For more information, see [TCP and UDP ports required to access VMware components](https://kb.vmware.com/s/article/1012382){: external}.
+For more information, see [TCP and UDP ports required to access VMware components](https://knowledge.broadcom.com/external/article?legacyId=1012382){: external}.
 
 ## Related links
 {: #vmwaresol_ports-vmwareuses-related}
 
 * [Ports for services](/docs/vmwaresolutions?topic=vmwaresolutions-vmwaresol_ports-services)
-
