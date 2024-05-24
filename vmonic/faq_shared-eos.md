@@ -4,7 +4,7 @@ copyright:
 
   years:  2024
 
-lastupdated: "2024-04-26"
+lastupdated: "2024-05-24"
 
 keywords: FAQ vmware solutions shared, vmware shared, end of support vmware shared, vmware shared deprecated
 
@@ -25,7 +25,7 @@ Find answers to frequently asked questions about the End of Support for {{site.d
 {: #faq-shared-eos}
 {: faq}
 
-If you are an existing customer, support for {{site.data.keyword.cloud_notm}} for {{site.data.keyword.vm-shared}} deployments will continue until 15 January 2025. You can also add instances during this period, but it is recommended that you deply any new instances on the next-generation multitenant offering {{site.data.keyword.vcf-aas-full}}. {{site.data.keyword.vcf-aas}} is based on the same underlying software VMware Cloud Director, which retains the same admin console. You also benefit from performance improvements, options of network edge tier, improved private networking through {{site.data.keyword.tg_full_notm}}, greater regional coverage, and minor rebalancing in pricing. All these benefits make {{site.data.keyword.vcf-aas}} the ideal landing zone for your workloads.
+If you are an existing customer, support for {{site.data.keyword.cloud_notm}} for {{site.data.keyword.vm-shared}} deployments will continue until 15 January 2025. You can also add instances during this period, but it is recommended that you deploy any new instances on the next-generation multitenant offering {{site.data.keyword.vcf-aas-full}}. {{site.data.keyword.vcf-aas}} is based on the same underlying software VMware Cloud Director, which retains the same admin console. You also benefit from performance improvements, options of network edge tier, improved private networking through {{site.data.keyword.tg_full_notm}}, greater regional coverage, and minor rebalancing in pricing. All these benefits make {{site.data.keyword.vcf-aas}} the ideal landing zone for your workloads.
 
 If you are new to {{site.data.keyword.vm-shared}}, and don't have any existing deployments, you are not able to provision new instances of {{site.data.keyword.vm-shared}}. You can directly use the next-generation performance that is offered by {{site.data.keyword.vcf-aas}}, with on-demand pricing (hourly) and discounted reserved usage (monthly). For more discounts for continued use, contact your {{site.data.keyword.IBM}} seller.
 
@@ -34,7 +34,7 @@ If you are new to {{site.data.keyword.vm-shared}}, and don't have any existing d
 {: faq}
 {: support}
 
-It is important to understand that {{site.data.keyword.cloud_notm}} for {{site.data.keyword.vm-shared}} is based on VMware NSX-V, which will continue to be supported until the end of 2024. {{site.data.keyword.IBM_notm}}'s exclusive support extension contract with VMware® by Broadcom will end in January 2025, thus rendering {{site.data.keyword.cloud_notm}} for {{site.data.keyword.vm-shared}} unsupported.
+It is important to understand that {{site.data.keyword.cloud_notm}} for {{site.data.keyword.vm-shared}} is based on VMware NSX-V, which continues to be supported until the end of 2024. {{site.data.keyword.IBM_notm}}'s exclusive support extension contract with VMware® by Broadcom will end in January 2025, thus rendering {{site.data.keyword.cloud_notm}} for {{site.data.keyword.vm-shared}} unsupported.
 
 ## What is the next step?
 {: #faq-shared-eos-next}
@@ -86,7 +86,7 @@ Some migrations require redesigning and reestablishing network connections, edge
 {: #faq-shared-eos-promotions}
 {: faq}
 
-Yes. {{site.data.keyword.IBM_notm}} offers migration promotions and discounts for existing {{site.data.keyword.vm-shared}} customers. Contact your IBM Customer Success Manager or IBM Sales representative for details about approved promotions that you can take advantage of and start your upgrade or migration. You will also receive a personalized email with the promotion details in April 2024.
+Yes. {{site.data.keyword.IBM_notm}} offers migration promotions and discounts for existing {{site.data.keyword.vm-shared}} customers. Contact your IBM Customer Success Manager or IBM Sales representative for details about approved promotions that you can take advantage of and start your upgrade or migration.
 
 ## Does {{site.data.keyword.vcf-aas}} offer all the features and capabilities that are available in {{site.data.keyword.vm-shared}}? If any parity gaps exist, when will they be addressed?
 {: #faq-shared-eos-features}
@@ -94,7 +94,7 @@ Yes. {{site.data.keyword.IBM_notm}} offers migration promotions and discounts fo
 
 {{site.data.keyword.vcf-aas}} has nearly identical features and capabilities that are used in {{site.data.keyword.vm-shared}}, in addition to a few new capabilities and performance improvements.
 
-The key capabilities that both platforms offer are:
+The key capabilities of both platforms are:
 * Private-only connectivity
 * IBM Operated Management Plane with 99.99 availability SLA, based on VMware Cloud Director, with API connectivity
 * On-demand (hourly), reserved (monthly), 1 and 3-year committed use
@@ -114,6 +114,39 @@ If you rely on the roadmap features, contact your IBM Customer Success Manager o
 
 Self-managed disaster recovery that uses Zerto is not on the roadmap for 2024.
 {: note}
+
+## Does the migration tool also migrate the network configuration?
+{: #faq-shared-eos-mig-tool}
+{: faq}
+
+No. VCDA does not include any capability to migrate the network configuration.
+
+## If the network configurations are not migrated, would it be advisable to use new subnets to minimize potential issues?
+{: #faq-shared-eos-subnets}
+{: faq}
+
+You can use new subnets, however most customers don't. If you plan to migrate a subnet in multiple batches, then you need to reassign IP addresses as no L2 extension capability exists.
+
+## What are the recommended steps for an optimal migration? 
+{: #faq-shared-eos-optimal-mig}
+{: faq}
+
+We recommend the following best practices:
+
+1. Provision your {{site.data.keyword.vmware-service_short}} instance in the same region as the existing {{site.data.keyword.vm-shared}} instance.
+2. Create your network or networks in {{site.data.keyword.vcf-aas}}: segments, networks, firewall rules, NAT, and so on. For more information, see [Technical considerations about migrating from {{site.data.keyword.vm-shared}} to {{site.data.keyword.vcf-aas}}](/docs/vmwaresolutions?topic=vmwaresolutions-shared-vmwaas-migration).
+3. (Optional) If you are planning to use {{site.data.keyword.tg_full}} to connect to other resources, configure interconnectivity. 
+
+   If you are planning to keep the existing subnets, do not advertise these routes through {{site.data.keyword.tg_short}} until the VMs are migrated.
+   {: attention}
+
+4. Verify that your workloads are ready to be migrated, that is, you can see the source VMs and destination VDC and networks. For more information, see [Migrating {{site.data.keyword.vm-shared}} workloads to {{site.data.keyword.vcf-aas}} with cloud-to-cloud connections](/docs/vmware-service?topic=vmware-service-vcda-migrating-cloudtocloud-shared).
+5. Set up the replication in advance and plan to perform the migration outside working hours, for example, a weekend evening. 
+
+   The workloads are restarted as part of the migration.
+   {: note}
+
+6. (Optional) If you are using {{site.data.keyword.tg_short}}, after the workloads are migrated, advertise the appropriate routes.
 
 ## Related links
 {: #faq_shared-eos-related}
