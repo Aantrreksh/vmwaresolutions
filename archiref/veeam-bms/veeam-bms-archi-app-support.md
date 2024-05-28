@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2021, 2023
+  years:  2021, 2024
 
-lastupdated: "2023-09-26"
+lastupdated: "2024-05-21"
 
 subcollection: vmwaresolutions
 
@@ -26,7 +26,7 @@ The guest interaction proxy deploys the runtime process only in Microsoft® Wind
 
 For Windows virtual machine (VM) file level restores, Veeam first tries to connect to the Guest VM through the network, and since the network is isolated, the VMware vSphere® Guest Interaction API is then used to complete a network-less restore.
 
-For Linux® VM file level restores, a File Level Restore (FLR) appliance needs to be deployed before you attempt the file level restore by the IBM Backup Administrator. Otherwise, the first time a tenant tries to restore a file, they receive an error in the Veeam Backup and Replication Console. For two of the three restore options, the FLR appliance requires network connectivity to the Linux VM where the file is to be restored, since the network is isolated. Therefore, only the download option is applicable to this service. This download needs to be moved to the correct place in the file system.
+For Linux® VM file level restores, a File Level Restore (FLR) appliance needs to be deployed before you attempt the file level restore by the {{site.data.keyword.IBM_notm}} Backup Administrator. Otherwise, the first time a tenant tries to restore a file, they receive an error in the Veeam Backup and Replication Console. For two of the three restore options, the FLR appliance requires network connectivity to the Linux VM where the file is to be restored, since the network is isolated. Therefore, only the download option is applicable to this service. This download needs to be moved to the correct place in the file system.
 
 For more information about file level restore, see the Veeam documentation.
 

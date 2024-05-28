@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2016, 2023
+  years: 2016, 2024
 
-lastupdated: "2023-09-11"
+lastupdated: "2024-05-28"
 
 subcollection: vmwaresolutions
 
@@ -18,7 +18,7 @@ subcollection: vmwaresolutions
 ## Physical structure
 {: #vcs-openshift-sddc-infra-phys-struct}
 
-The physical infrastructure required to deploy a {{site.data.keyword.redhat_openshift_full}} production instance onto a VMware® vCenter Server® cluster requires the following minimum specification.
+The physical infrastructure required to deploy a {{site.data.keyword.redhat_openshift_full}} production instance onto a {{site.data.keyword.vcf-classic}} cluster requires the following minimum specification.
 
 | Item | NFS deployment | vSAN deployment |
 |:---- |:-------------- |:--------------- |
@@ -26,7 +26,7 @@ The physical infrastructure required to deploy a {{site.data.keyword.redhat_open
 | CPU | 28 Cores 2.2 GHz | 28 Cores 2.2 GHz |
 | Memory (GB) | 384 | 384 |
 | Storage |2,000 GB 2 IOPS/GB Management </br>2,000 GB 4 IOPS/GB Workload </br>4,000 GB 4 IOPS/GB | Min 960-GB SSD x2 |
-{: caption="Table 1. vCenter Server specification for Red Hat OpenShift" caption-side="bottom"}
+{: caption="Table 1. {{site.data.keyword.vcf-classic-short}} specification for Red Hat OpenShift" caption-side="bottom"}
 
 In addition to the {{site.data.keyword.redhat_openshift_notm}} hardware requirements, you must create persistent volumes in the {{site.data.keyword.redhat_openshift_notm}} environment to store images from the container register or customer workloads.
 
@@ -35,13 +35,13 @@ In addition to the {{site.data.keyword.redhat_openshift_notm}} hardware requirem
 
 ![Physical structure](../../images/openshift-networking41.svg){: caption="Figure 1. Physical structure" caption-side="bottom"}
 
-Within the vCenter Server instance, the {{site.data.keyword.redhat_openshift_notm}} instance is deployed with a dedicated NSX® Edge Services Gateway (ESG) and Distributed Logical Router (DLR). The {{site.data.keyword.redhat_openshift_notm}} installation is loaded into the VXLAN subnet that is defined in the previous components.
+Within the {{site.data.keyword.vcf-classic-short}} instance, the {{site.data.keyword.redhat_openshift_notm}} instance is deployed with a dedicated NSX® Edge Services Gateway (ESG) and Distributed Logical Router (DLR). The {{site.data.keyword.redhat_openshift_notm}} installation is loaded into the VXLAN subnet that is defined in the previous components.
 
 The ESG is configured with a source NAT rule (SNAT) to allow outbound traffic, which enables internet connectivity to download the {{site.data.keyword.redhat_openshift_notm}} prerequisites and to connect to GitHub and {{site.data.keyword.redhat_full}}. Alternatively, you can use a web-proxy for internet connectivity. The ESG is also configured to provide access to DNS and NTP services within the {{site.data.keyword.cloud}} environment.
 
 The ESG is also configured to use the load balancer capability, thus reducing the need for HAProxy nodes. The load balancers are configured for the apps wildcard DNS URL and the API / API-INT DNS Records. The apps DNS record load balancers to the worker nodes provisioned, while the api and api-int DNS records are load balanced against the control-plane nodes.
 
-{{site.data.keyword.redhat_openshift_notm}} 4.1 installation on the VMware platform requires a capability to download their ignition files to install and configure the RHCOS bootstrap / control-plane and worker nodes. The ESG is configured to provide DHCP and DHCP relay services for the OpenShift logical switch / VXLAN defined.
+{{site.data.keyword.redhat_openshift_notm}} 4.1 installation on the VMware platform requires a capability to download their ignition files to install and configure the RHCOS bootstrap / control-plane and worker nodes. The ESG is configured to provide DHCP and DHCP relay services for the {{site.data.keyword.redhat_openshift_notm}} logical switch / VXLAN defined.
 
 ## NSX Edge specifications
 {: #vcs-openshift-sddc-infra-nsx-edge-spec}
@@ -61,7 +61,7 @@ Because the NSX Edges are configured as active/passive in either the internal or
 
 | Field   | Value         |
 |:------- |:------------- |
-| Name    | NSX Edge OpenShift |
+| Name    | NSX Edge {{site.data.keyword.redhat_openshift_notm}} |
 | Type    | Separate VMs |
 | Members | `openshift-edge-0` </br>`openshift-edge-1` |
 {: caption="Table 3. vSphere Distributed Resource Scheduler rules" caption-side="bottom"}
@@ -118,7 +118,7 @@ The following tables show the specifications of the management node, control pla
 ## Related links
 {: #vcs-openshift-sddc-infra-related}
 
-* [VMware vCenter Server and {{site.data.keyword.redhat_openshift_notm}} architecture overview](/docs/vmwaresolutions?topic=vmwaresolutions-vcs-openshift-intro)
-* [System context for vCenter Server and {{site.data.keyword.redhat_openshift_notm}} architecture](/docs/vmwaresolutions?topic=vmwaresolutions-vcs-openshift-syscontext)
+* [{{site.data.keyword.vcf-classic-short}} and {{site.data.keyword.redhat_openshift_notm}} architecture overview](/docs/vmwaresolutions?topic=vmwaresolutions-vcs-openshift-intro)
+* [System context for {{site.data.keyword.vcf-classic-short}} and {{site.data.keyword.redhat_openshift_notm}} architecture](/docs/vmwaresolutions?topic=vmwaresolutions-vcs-openshift-syscontext)
 * [{{site.data.keyword.redhat_openshift_notm}} architecture](/docs/vmwaresolutions?topic=vmwaresolutions-vcs-openshift-redhat-arch)
 * [{{site.data.keyword.vmwaresolutions_short}} SDDC architecture](/docs/vmwaresolutions?topic=vmwaresolutions-vcs-openshift-arch)

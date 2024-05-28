@@ -562,7 +562,7 @@ toc:
               - archiref/arch-pattern/arch-pattern-direct-link-evpn.md
               - archiref/arch-pattern/arch-pattern-sccwpp.md
           - topicgroup:
-              label: VMware Regulated Workloads architecture
+              label: Regulated Workloads architecture
               topics:
               - archiref/vrw/vrw-archi-overview.md
               - archiref/vrw/vrw-context.md
@@ -647,7 +647,7 @@ toc:
               - archiref/hcx-archi/hcx-archi-target-nsx-t.md
               - archiref/hcx-archi/hcx-archi-port-req.md
           - topicgroup:
-              label: vCenter Server and Red Hat OpenShift architecture
+              label: VCF for Classic and Red Hat OpenShift architecture
               topics:
               - archiref/vcs-openshift/vcs-openshift-intro.md
               - archiref/vcs-openshift/vcs-openshift-syscontext.md

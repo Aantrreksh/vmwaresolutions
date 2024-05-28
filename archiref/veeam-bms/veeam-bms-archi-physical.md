@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2021, 2023
+  years:  2021, 2024
 
-lastupdated: "2023-09-26"
+lastupdated: "2024-05-21"
 
 subcollection: vmwaresolutions
 
@@ -26,7 +26,7 @@ The server CPU and RAM are sized to handle up backups for 500 VMs. You can selec
 
 RAID health is monitored through the {{site.data.keyword.cloud_notm}} standard RAID monitoring for bare metal servers. For more information, see [Name and location of the RAID monitoring daemon](/docs/bare-metal?topic=bare-metal-bm-raid-monitoring-daemon){: external}.
 
-You can configure RAID alerts to bypass the monitoring process by changing the SMTP server and notification email destination in the configuration for a RAID card. However, if you change these configurations, IBM cannot notify you of RAID issues or track the problem until resolution. You are advised not to alter the provided configuration.
+You can configure RAID alerts to bypass the monitoring process by changing the SMTP server and notification email destination in the configuration for a RAID card. However, if you change these configurations, {{site.data.keyword.IBM_notm}} cannot notify you of RAID issues or track the problem until resolution. You are advised not to alter the provided configuration.
 
 ## Network requirements
 {: #veeam-bms-archi-physical-network}
