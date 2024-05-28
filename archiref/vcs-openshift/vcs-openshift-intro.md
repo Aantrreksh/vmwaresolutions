@@ -23,7 +23,7 @@ This reference architecture is for {{site.data.keyword.redhat_openshift_notm}} c
 - **{{site.data.keyword.vcf-classic-short}}** is an offering from {{site.data.keyword.vmwaresolutions_short}} and is a VMware-based platform that is automatically provisioned on {{site.data.keyword.cloud_notm}}.
 - **{{site.data.keyword.redhat_openshift_notm}}** is an application platform for developing and managing containerized applications, which are deployed onto virtualized infrastructure platforms, such as VMware.
 
-![{{{site.data.keyword.vcf-classic-short}} and {{site.data.keyword.redhat_openshift_notm}}](../../images/openshift-sddc.svg "{{site.data.keyword.vcf-classic-short}} and {{site.data.keyword.redhat_openshift_notm}}"){: caption="Figure 1. {{site.data.keyword.vcf-classic-short}} and OpenShift" caption-side="bottom"}
+![{{site.data.keyword.vcf-classic-short}} and {{site.data.keyword.redhat_openshift_notm}}](../../images/openshift-sddc.svg "{{site.data.keyword.vcf-classic-short}} and {{site.data.keyword.redhat_openshift_notm}}"){: caption="Figure 1. {{site.data.keyword.vcf-classic-short}} and OpenShift" caption-side="bottom"}
 
 ## Application modernization on {{site.data.keyword.cloud_notm}}
 {: #vcs-openshift-intro-app-mod}
