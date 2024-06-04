@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-02-02"
+lastupdated: "2024-05-31"
 
 subcollection: vmwaresolutions
 
@@ -27,7 +27,7 @@ Different solution components require different strategies for backup. Some comp
 ## File server for file-based backup
 {: #solution_backingup-fileserver-backup}
 
-Some components, such as VMware vCenter Server® with an embedded Platform Services Controller (PSC) and VMware NSX®, require their configuration to be backed up to a file server.
+Some components, such as VMware vCenter Server® and VMware NSX®, require their configuration to be backed up to a file server.
 
 To host these backups, deploy a Linux® file server into your cluster by using the following steps:
 
@@ -40,11 +40,9 @@ To host these backups, deploy a Linux® file server into your cluster by using t
 ## vCenter file-based backup
 {: #solution_backingup-vcenter}
 
-VMware vCenter Server with embedded PSC provides an appliance management user interface and API to export the database and configuration to a file server that uses various protocols. For more information, see [File-Based Backup and Restore of vCenter Server Appliance](https://docs.vmware.com/en/VMware-vSphere/6.5/com.vmware.vsphere.install.doc/GUID-3EAED005-B0A3-40CF-B40D-85AD247D7EA4.html){: external}.
+VMware vCenter Server provides an appliance management user interface and API to export the database and configuration to a file server that uses various protocols. For more information, see [File-Based Backup and Restore of vCenter Server Appliance](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vcenter.install.doc/GUID-3EAED005-B0A3-40CF-B40D-85AD247D7EA4.html){: external}.
 
-VMware documents an example of how you can configure the API to run periodically as a cron job directly on the vCenter Server Appliance and PSC.
-
-If you have an external PSC, you must back up both the vCenter Server Appliance and the PSC separately by using this technique. If you have an embedded PSC, then the PSC backup is included in your vCenter backup. Familiarize yourself with and plan for the considerations and limitations that are documented by VMware. Also, plan for a regular rotation and expiration of the file backups on your file server.
+VMware documents an example of how you can configure the API to run periodically as a cron job directly on the vCenter Server Appliance.
 
 VMware requires the backup location to be an empty folder, so plan for your backup rotation or automation to leave the location empty for each subsequent backup job.
 {: note}
@@ -80,15 +78,15 @@ If you deploy add-on solution components into your instance, plan for the backup
 
 If you choose to deploy your AD/DNS server as an {{site.data.keyword.cloud_notm}} virtual server instance (VSI), you cannot back it up by using Veeam. In this case, use your preferred Microsoft Windows® backup solution for backup and restore operations. Or, plan to deploy your instance by using AD/DNS VMs within your VMware cluster, which can be backed up by Veeam.
 
-Beginning with VMware vCenter 6.5u2, VMware supports the backup of the vCenter Postgres database by using image-based backups. These backups use integrated suspend and resume scripts for the database during the backup window to ensure database integrity. If you want to use this method, choose to use Veeam to back up your vCenter Server and PSC. Use this service instead of using file-based backups. If you do so, you must use the Veeam quiesce feature to ensure database integrity.
+Beginning with VMware vCenter 6.5u2, VMware supports the backup of the vCenter Postgres database by using image-based backups. These backups use integrated suspend and resume scripts for the database during the backup window to ensure database integrity. If you want to use this method, choose to use Veeam to back up your vCenter Server. Use this service instead of using file-based backups. If you do so, you must use the Veeam quiesce feature to ensure database integrity.
 
 ## Restoring from backup
 {: #solution_backingup-restore}
 
 Review the following special considerations when you restore your management backups.
 
-* For vCenter and PSC, VMware provides an installer that can deploy a new virtual appliance and restore the configuration from backup.
-* When you restore an appliance from backup, the installer detects the type of appliance (vCenter Server with embedded PSC) based on the backup information you provide.
+* For vCenter, VMware provides an installer that can deploy a new virtual appliance and restore the configuration from backup.
+* When you restore an appliance from backup, the installer detects the type of appliance (vCenter Server) based on the backup information you provide.
 * Because you deploy directly to one of your hosts, you might not be able to deploy to a distributed switch or port group. Create a temporary standard switch and port group for deploying the recovered appliances. Then, migrate one of your vmnics temporarily to this switch to provide network connectivity for your VMs. After deployment, you can migrate the VMs to the distributed port group and return the vmnic to the dvSwitch.
 * For NSX, you might need to redeploy your NSX Manager and controllers before you restore the configuration from backup.
 * Ensure that you familiarize yourself with the VMware considerations and limitations for vCenter backup and restore.

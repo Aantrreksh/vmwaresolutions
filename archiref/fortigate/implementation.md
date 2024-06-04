@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-04-26"
+lastupdated: "2024-06-03"
 
 subcollection: vmwaresolutions
 
@@ -57,10 +57,10 @@ When deployed to a management cluster that has public interfaces, a firewall and
 
 When deployed to a gateway cluster, or to a management cluster that has only private interfaces, you must instead provide the details for a proxy server that the FortiGate appliances can use to connect to the public network for licensing. The appliances might attempt to access any of the following hostnames:
 
-* update.fortiguard.net
-* service.fortiguard.net
-* support.fortinet.com
-* guard.fortinet.com
+* `update.fortiguard.net`
+* `service.fortiguard.net`
+* `support.fortinet.com`
+* `guard.fortinet.com`
 
 ### HA interface
 {: #fortigate-implementation-ha-network}
@@ -96,4 +96,4 @@ It is not possible to change the licensing tier or licensed throughput of your F
 
 * [Solution overview](/docs/vmwaresolutions?topic=vmwaresolutions-fortigate-overview)
 * [Solution design](/docs/vmwaresolutions?topic=vmwaresolutions-fortigate-design)
-* [FortiGate–VM on VMware ESXi data sheet](https://www.fortinet.com/content/dam/fortinet/assets/data-sheets/FortiGate_VM_ESXi.pdf)
+* [FortiGate–VM on VMware ESXi data sheet](https://www.fortinet.com/content/dam/fortinet/assets/data-sheets/FortiGate_VM_ESXi.pdf){: external}

@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-04-18"
+lastupdated: "2024-05-31"
 
 subcollection: vmwaresolutions
 
@@ -34,7 +34,7 @@ The following table outlines the specifications for each aspect. After the confi
 
 With this design, you can access the virtual hosts through Direct Console User Interface (DCUI) and vSphere Web Client. Secure Shell (SSH) and ESXi Shell are disabled after provisioning as a best practice.
 
-By default, the only users who can log in directly are the _root_ and _ibmvmadmin_ users for the physical machine of the host. The administrator can add users from the Microsoft® Active Directory™ (MSAD) domain to enable user access to the host. All hosts in the vCenter Server solution design are configured to synchronize with a central NTP server.
+By default, the only users who can log in directly are the _root_ and _ibmvmadmin_ users for the physical machine of the host. The administrator can add users from the Microsoft® Active Directory™ (MSAD) domain to enable user access to the host. All hosts in the {{site.data.keyword.vcf-auto}} solution design are configured to synchronize with a central NTP server.
 
 | Attribute              | Configuration parameter |
 |:---------------------- |:----------------------- |
@@ -46,22 +46,22 @@ By default, the only users who can log in directly are the _root_ and _ibmvmadmi
 | EVC Mode | Highest available level supported by vSphere version. However, for a management cluster with Intel® Cascade Lake processors, no EVC is set where Cascade Lake EVC is not supported by the vSphere version. |
 {: caption="Table 1. vSphere ESXi configuration" caption-side="bottom"}
 
-The vSphere cluster houses the virtual machines (VMs) that manage the vCenter Server instance and the compute resources for user workloads.
+The vSphere cluster houses the virtual machines (VMs) that manage the {{site.data.keyword.vcf-auto}} instance and the compute resources for user workloads.
 
-* When a vCenter Server instance uses vSAN, the minimum number of ESXi hosts at initial deployment is four.
-* When a vCenter Server instance uses shared file–level or block-level storage, the minimum number of ESXi hosts at initial deployment is three.
+* When a {{site.data.keyword.vcf-auto}} instance uses vSAN, the minimum number of ESXi hosts at initial deployment is four.
+* When a {{site.data.keyword.vcf-auto}} instance uses shared file–level or block-level storage, the minimum number of ESXi hosts at initial deployment is three.
 
 You can deploy up to 20 ESXi hosts in this cluster during initial deployment. After initial deployment, you can scale the cluster up to a maximum of 50 hosts in increments of up to 20 hosts at a time.
 
 To support more user workloads, you can scale the environment by taking the following actions:
 * Deploying more compute hosts in existing clusters.
 * Deploying more clusters that are managed by the same vCenter Server appliance.
-* Deploying new vCenter Server instances with their own vCenter Server appliance.
+* Deploying new {{site.data.keyword.vcf-auto}} instances with their own vCenter Server appliance.
 
 ## VMware vSAN design
 {: #design_virtualinfrastructure-vsan-design}
 
-In this design, VMware vSAN storage is employed in vCenter Server instances to provide shared storage for the vSphere hosts.
+In this design, VMware vSAN storage is employed in {{site.data.keyword.vcf-auto}} instances to provide shared storage for the vSphere hosts.
 
 As shown in the following figure, vSAN aggregates the local storage across multiple ESXi hosts within a vSphere cluster and manages the aggregated storage as a single VM datastore. Within this design, the compute nodes contain local disk drives for the ESXi operating system (OS) and the vSAN datastore. 
 

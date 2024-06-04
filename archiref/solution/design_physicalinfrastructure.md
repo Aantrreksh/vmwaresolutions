@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-04-17"
+lastupdated: "2024-05-31"
 
 subcollection: vmwaresolutions
 
@@ -123,7 +123,7 @@ The public and the first private VLAN created and assigned in this design are un
 
 The private network consists of two VLANs within this design. Four subnets are allocated to the first of these VLANs (here designated Private VLAN A):
 * The first subnet is a primary private IP subnet range that {{site.data.keyword.cloud_notm}} assigns to the physical hosts.
-* The second subnet is used for management virtual machines (VMs), such as vCenter Server Appliance and Platform Services Controller.
+* The second subnet is used for management virtual machines (VMs), such as vCenter Server Appliance and NSX Controller.
 * The third subnet is used for the encapsulated overlay network Tunnel Endpoints (VTEPs) assigned to each host and edge through the NSX Manager.
 * The fourth subnet is used for egress from the encapsulated overlay network.
 
@@ -133,7 +133,7 @@ In addition to Private VLAN A, a second private VLAN (here designated Private VL
    * If you use vSAN, a subnet is assigned to kernel port groups that are used for vSAN traffic.
    * If you use NFS attached NAS, a subnet is assigned to a port group that is dedicated to NFS traffic.
 
-All subnets that are configured as part of a vCenter Server automated deployment use {{site.data.keyword.cloud_notm}} managed ranges, which ensure that any IP address can be routed to any data center within the {{site.data.keyword.cloud_notm}} account when you need the connection.
+All subnets that are configured as part of a {{site.data.keyword.vcf-auto}} deployment use {{site.data.keyword.cloud_notm}} managed ranges, which ensure that any IP address can be routed to any data center within the {{site.data.keyword.cloud_notm}} account when you need the connection.
 
 Review the following table for a summary.
 

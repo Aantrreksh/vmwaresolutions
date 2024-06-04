@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-04-17"
+lastupdated: "2024-05-31"
 
 subcollection: vmwaresolutions
 
@@ -16,20 +16,16 @@ subcollection: vmwaresolutions
 # Infrastructure management design
 {: #design_infrastructuremgmt}
 
-Infrastructure management refers to the components that are managing the VMware® infrastructure.
-* The VMware vCenter Server® with an embedded Platform Services Controller (PSC) is the centralized platform for managing VMware vSphere® environments and is one of the fundamental components in this solution.
-* The PSC is used in this solution to provide a set of infrastructure services, which include VMware vCenter Single Sign On, license service, lookup service, and VMware certificate authority.
-
-This design uses a PSC function that is integrated into an instance of vCenter Server. The PSC and vCenter Server are housed within the same virtual machine (VM).
+Infrastructure management refers to the components that are managing the VMware® infrastructure. The VMware vCenter Server® appliance is the centralized platform for managing VMware vSphere® environments and is one of the fundamental components in this solution.
 
 ![Infrastructure management](../../images/vcsv4radiagrams-ra-inframgmt.svg "Infrastructure management"){: caption="Figure 1. Infrastructure management" caption-side="bottom"}
 
-The PSC located in the primary instance is assigned the default SSO domain of `vsphere.local`.
+The vCenter Server appliance is assigned the default SSO domain of `vsphere.local`.
 
 ## vCenter Server design
 {: #design_infrastructuremgmt-vcenter}
 
-The vCenter Server with an embedded PSC is installed on a portable subnet on the private VLAN that is associated with management VMs. Its default gateway is set to the IP address assigned on the BCR for that particular subnet. The virtual appliance is configured with the specifications in the following table.
+The vCenter Server appliance is installed on a portable subnet on the private VLAN that is associated with management VMs. Its default gateway is set to the IP address assigned on the BCR for that particular subnet. The virtual appliance is configured with the specifications in the following table.
 
 | Attribute                    | Specification                       |
 |:---------------------------- |:----------------------------------- |
@@ -98,7 +94,7 @@ The following flow describes the order of events when you use the {{site.data.ke
 4. Deployment of the Cloud Driver VSI.
 5. Validation of the networking and deployed hardware.
 6. If applicable, the initial configuration of the single node vSAN.
-7. Deployment and configuration of vCenter (with embedded PSC) and NSX.
+7. Deployment and configuration of vCenter and NSX.
 8. Clustering of remaining ESXi nodes, expansion of vSAN if applicable, and configuration of NSX components (VTEP).
 9. Validating the installation and configuration of the environment.
 10. Deployment of optional services, such as backup server and storage.

@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-05-01"
+lastupdated: "2024-05-31"
 
 subcollection: vmwaresolutions
 
@@ -114,12 +114,14 @@ When your KMIP for VMware instance is connected to Key Protect, your VMware vCen
 
 KMIP for VMware also connects to {{site.data.keyword.cloud_notm}} Key Protect by using the {{site.data.keyword.cloud_notm}} private network rather than the public internet, and is additionally protected by TLS encryption and authentication.
 
-When integrated with {{site.data.keyword.cloud_notm}} Key Protect, KMIP for VMware periodically validates that your service ID has sufficient permission to your Key Protect instance and Customer Root Key. In Activity Tracker, you might occasionally see *wrap* events from Key Protect for these checks. The checks are started by the service ID and are not paired with corresponding key creation events from KMIP for VMware.
+When integrated with {{site.data.keyword.cloud_notm}} Key Protect, KMIP for VMware periodically validates that your service ID has sufficient permission to your Key Protect instance and Customer Root Key. In {{site.data.keyword.at_full}}, you might occasionally see *wrap* events from Key Protect for these checks. The checks are started by the service ID and are not paired with corresponding key creation events from KMIP for VMware.
+
+{{site.data.content.impnote-at-deprecation}}
 
 #### KMIP for VMware and Hyper Protect Crypto Services
 {: #kmip-design-topology-hpcs}
 
-When you use {{site.data.keyword.cloud_notm}} Hyper Protect Crypto Services (HPCS), your vCenter Server is connecting to a single-tenant KMIP service that is hosted within HPCS by using IBM Secure Service Containers running on IBM LinuxOne servers, and your keys are stored in an IBM Z HSM. The KMIP endpoint is exposed by using a single DNS name and port. If you have multiple HPCS crypto units, this DNS name is load balanced to separate availability zones.
+When you use {{site.data.keyword.cloud_notm}} Hyper Protect Crypto Services (HPCS), your vCenter Server is connected to a single-tenant KMIP service that is hosted within HPCS by using IBM Secure Service Containers running on IBM LinuxONE servers, and your keys are stored in an IBM Z HSM. The KMIP endpoint is exposed by using a single DNS name and port. If you have multiple HPCS crypto units, this DNS name is load balanced to separate availability zones.
 
 ## Related links
 {: #kmip-design-related}

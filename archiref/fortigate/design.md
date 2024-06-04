@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-04-26"
+lastupdated: "2024-05-31"
 
 subcollection: vmwaresolutions
 
@@ -17,7 +17,7 @@ subcollection: vmwaresolutions
 
 The FortiGate® VM solution complements the {{site.data.keyword.vmwaresolutions_full}} offerings by providing next–generation firewall (NGFW) capabilities for networks within your VMware® estate. These services are provided by one or more pairs of FortiGate virtual appliances that are deployed to your VMware environment.
 
-FortiGate VM does not replace NSX–T™ but rather complements and enhances the existing VMware NSX® architecture when installed into your VMware vCenter Server® instance on {{site.data.keyword.cloud}}. The FortiGate virtual machine (VM) is deployed as a pair of virtual appliances with one network interface (port1) configured for management access and nine available network interfaces in the client’s data plane. With appropriate configuration of networks and routes, you can use FortiGate VM to provide network security between all tiers of your network topology.
+FortiGate VM does not replace NSX–T™ but rather complements and enhances the existing VMware NSX® architecture when installed into your {{site.data.keyword.vcf-auto}} instance on {{site.data.keyword.cloud}}. FortiGate VM is deployed as a pair of virtual appliances with one network interface (port1) configured for management access and nine available network interfaces in the client’s data plane. With appropriate configuration of networks and routes, you can use FortiGate VM to provide network security between all tiers of your network topology.
 
 ## Topologies
 {: #fortigate-design-topologies}
@@ -31,7 +31,7 @@ In this figure, FCR is the {{site.data.keyword.cloud_notm}} front–end (public)
 ### {{site.data.keyword.cloud_notm}} edge services
 {: #fortigate-design-topologies-edge}
 
-You can deploy a VMware ESXi™ gateway cluster as part of your vCenter Server instance. This cluster is configured to peer with the {{site.data.keyword.cloud_notm}} customer routers to provide firewall and gateway services for {{site.data.keyword.cloud_notm}} public and private VLANs of your choice. While you can deploy any virtual firewall technology of your choice to this gateway cluster, {{site.data.keyword.cloud_notm}} features FortiGate VM as an option for these firewall and gateway services. Using this approach, your FortiGate VM appliances can provide services such as:
+You can deploy a VMware ESXi™ gateway cluster as part of your {{site.data.keyword.vcf-auto}} instance. This cluster is configured to peer with the {{site.data.keyword.cloud_notm}} customer routers to provide firewall and gateway services for {{site.data.keyword.cloud_notm}} public and private VLANs of your choice. While you can deploy any virtual firewall technology of your choice to this gateway cluster, {{site.data.keyword.cloud_notm}} features FortiGate VM as an option for these firewall and gateway services. Using this approach, your FortiGate VM appliances can provide services such as:
 
 * The firewall between public and private networks.
 * The firewall between your private VLANs and the subnets within them. For example, you can deploy separate clusters for workload and management on to separate VLANs and use the edge to limit connectivity between management and workload.
