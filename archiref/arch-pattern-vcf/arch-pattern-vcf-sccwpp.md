@@ -4,7 +4,7 @@ copyright:
 
   years:  2024
 
-lastupdated: "2024-02-15"
+lastupdated: "2024-06-03"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # Architecture patterns for integrating {{site.data.keyword.cloud_notm}} Security and Compliance Center Workload Protection with VMware Cloud Foundation deployment in VPC
 {: #arch-pattern-vcf-sccwpp}
 
-This architecture pattern describes how to use {{site.data.keyword.cloud}} Security and Compliance Center Workload Protection with an {{site.data.keyword.cloud_notm}} for VMware Cloud Foundation deployment in VPC (Virtual Private Cloud).
+This architecture pattern describes how to use {{site.data.keyword.cloud}} Security and Compliance Center Workload Protection with an {{site.data.keyword.vcf-vpc}} deployment in VPC (Virtual Private Cloud).
 
 Security and Compliance Center Workload Protection offers functions to protect your Microsoft Windows® and Linux® virtual machines (VMs) that are hosted on your VMware® environment. These functions include compliance, vulnerability scanning, and threat detection. For more information, see [Key features of {{site.data.keyword.cloud_notm}} Security and Compliance Center Workload Protection](/docs/workload-protection?topic=workload-protection-key-features).
 

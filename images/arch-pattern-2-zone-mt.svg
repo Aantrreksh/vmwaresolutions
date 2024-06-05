@@ -284,11 +284,11 @@
             <xhtml:div
                style="display: inline-block; font-size: 9px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">
               <xhtml:span
-                 style="font-family: &quot;helvetica neue&quot; ; font-size: 9px ; background-color: rgb(255 , 255 , 255)">vCenter Server</xhtml:span>
+                 style="font-family: &quot;helvetica neue&quot; ; font-size: 9px ; background-color: rgb(255 , 255 , 255)">VCF for Classic</xhtml:span>
               <xhtml:br
                  style="font-family: &quot;helvetica neue&quot; ; font-size: 9px" />
               <xhtml:span
-                 style="font-family: &quot;helvetica neue&quot; ; font-size: 9px ; background-color: rgb(255 , 255 , 255)">with NSX-T instance</xhtml:span>
+                 style="font-family: &quot;helvetica neue&quot; ; font-size: 9px ; background-color: rgb(255 , 255 , 255)">with NSX instance</xhtml:span>
             </xhtml:div>
           </xhtml:div>
         </xhtml:div>
@@ -1105,7 +1105,7 @@ Node</xhtml:div>
              data-drawio-colors="color: rgb(0, 0, 0); "
              style="box-sizing: border-box; font-size: 0px; text-align: left;">
             <xhtml:div
-               style="display: inline-block; font-size: 8px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">NSX-T Overlay<xhtml:br />
+               style="display: inline-block; font-size: 8px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">NSX Overlay<xhtml:br />
 Transit Segments</xhtml:div>
           </xhtml:div>
         </xhtml:div>
@@ -1116,7 +1116,7 @@ Transit Segments</xhtml:div>
          fill="#000000"
          font-family="Helvetica"
          font-size="8px"
-         id="text1044">NSX-T Overlay...</text>
+         id="text1044">NSX Overlay...</text>
     </switch>
   </g>
   <path
@@ -1990,7 +1990,7 @@ Node</xhtml:div>
              data-drawio-colors="color: rgb(0, 0, 0); "
              style="box-sizing: border-box; font-size: 0px; text-align: left;">
             <xhtml:div
-               style="display: inline-block; font-size: 8px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">NSX-T Overlay<xhtml:br />
+               style="display: inline-block; font-size: 8px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">NSX Overlay<xhtml:br />
 Segments</xhtml:div>
           </xhtml:div>
         </xhtml:div>
@@ -2001,7 +2001,7 @@ Segments</xhtml:div>
          fill="#000000"
          font-family="Helvetica"
          font-size="8px"
-         id="text1244">NSX-T Overlay...</text>
+         id="text1244">NSX Overlay...</text>
     </switch>
   </g>
   <path
@@ -2607,7 +2607,7 @@ Segments</xhtml:div>
              data-drawio-colors="color: rgb(0, 0, 0); "
              style="box-sizing: border-box; font-size: 0px; text-align: left;">
             <xhtml:div
-               style="display: inline-block; font-size: 8px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: nowrap;">NSX-T<xhtml:br />
+               style="display: inline-block; font-size: 8px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: nowrap;">NSX<xhtml:br />
 Managers</xhtml:div>
           </xhtml:div>
         </xhtml:div>
@@ -2618,7 +2618,7 @@ Managers</xhtml:div>
          fill="#000000"
          font-family="Helvetica"
          font-size="8px"
-         id="text1392">NSX-T...</text>
+         id="text1392">NSX...</text>
     </switch>
   </g>
   <rect

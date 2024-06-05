@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2020, 2023
+  years:  2020, 2024
 
-lastupdated: "2023-09-11"
+lastupdated: "2024-06-04"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # Overlay networking
 {: #vrw-overlay-network}
 
-{{site.data.keyword.cloud}} for VMware® Regulated Workloads uses NSX-T™ as the software-defined network overlay provider.
+{{site.data.keyword.cloud}} for VMware® Regulated Workloads uses NSX™ as the software-defined network overlay provider.
 
 ![Regulated overlay network](../../images/vrw-v2-net.svg "Cluster overlay network"){: caption="Figure 1. Cluster overlay network" caption-side="bottom"}
 
@@ -40,7 +40,7 @@ Traffic from the SaaS consumer passes through the vSRX in an encrypted tunnel, w
 ## Workload cluster
 {: #vrw-overlay-network-workload}
 
-The workload cluster network design requires both the overlay network that is delivered with NSX-T and two or more VLANs to support the infrastructure layer functions.
+The workload cluster network design requires both the overlay network that is delivered with NSX and two or more VLANs to support the infrastructure layer functions.
 
 Traffic from the SaaS consumer is peered with the overlay network virtual edge. It is the virtual edge that the SaaS consumer uses as the secure tunnel end point to establish an encrypted VPN.
 
@@ -49,7 +49,7 @@ Traffic from the SaaS consumer is peered with the overlay network virtual edge. 
 
 With {{site.data.keyword.tg_full}} (TGW), you can create one or more transit gateways to connect your VMware® Regulated Workloads with VPCs, other {{site.data.keyword.cloud}} infrastructure platforms, or on-premises networks through {{site.data.keyword.dl_full}}.
 
-{{site.data.keyword.tg_short}} supports GRE tunnels with BGP routing. These GRE tunnels can be used to connect your NSX-T overlay to the {{site.data.keyword.tg_short}}, which can further provide routed connectivity to the other connections of the {{site.data.keyword.tg_short}}.
+{{site.data.keyword.tg_short}} supports GRE tunnels with BGP routing. These GRE tunnels can be used to connect your NSX overlay to the {{site.data.keyword.tg_short}}, which can further provide routed connectivity to the other connections of the {{site.data.keyword.tg_short}}.
 
 ## Related links
 {: #vrw-overlay-network-related}

@@ -4,7 +4,7 @@ copyright:
 
   years:  2024
 
-lastupdated: "2024-01-25"
+lastupdated: "2024-06-05"
 
 subcollection: vmwaresolutions
 
@@ -16,14 +16,14 @@ subcollection: vmwaresolutions
 # Architecture pattern for HCX site peering and service mesh in {{site.data.keyword.cloud_notm}}
 {: #arch-pattern-vcf-hcx-xconnectivity}
 
-This architecture pattern explains how to deploy and configure connectivity for VMware HCX™ on {{site.data.keyword.cloud}} for VMware Cloud Foundation instances that are running on {{site.data.keyword.vpc_short}}. These connectivity patterns use a combination of {{site.data.keyword.cloud_notm}} native services and networking services that are provided by VMware NSX®.
+This architecture pattern explains how to deploy and configure connectivity for VMware HCX™ on {{site.data.keyword.vcf-vpc}} instances that are running on {{site.data.keyword.vpc_short}}. These connectivity patterns use a combination of {{site.data.keyword.cloud_notm}} native services and networking services that are provided by VMware NSX®.
 
 This pattern assumes that HCX is deployed following the guidance for [consolidated](/docs/vmwaresolutions?topic=vmwaresolutions-arch-pattern-vcf-hcx-con) or [standard](/docs/vmwaresolutions?topic=vmwaresolutions-arch-pattern-vcf-hcx-std) architecture models.
 
 ## Connectivity over private network
 {: #arch-pattern-vcf-hcx-xconnectivity-private}
 
-{{site.data.keyword.cloud_notm}} for VMware Cloud Foundation can be both a target and a source for a site peering and service mesh over private network though Transit Gateway and Direct Link. HCX appliance uplinks use {{site.data.keyword.vpc_short}} routing capabilities to access on-premises, other {{site.data.keyword.vpc_short}} VMware or Classic VMware deployments.
+{{site.data.keyword.vcf-vpc}} can be both a target and a source for a site peering and service mesh over private network though Transit Gateway and Direct Link. HCX appliance uplinks use {{site.data.keyword.vpc_short}} routing capabilities to access on-premises, other {{site.data.keyword.vpc_short}} VMware or Classic VMware deployments.
 
 The following diagram introduces the high-level steps to configure and deploy this connectivity type.
 
@@ -41,7 +41,7 @@ This architecture pattern deployment is summarized as follows:
 ## Connectivity over the internet
 {: #arch-pattern-vcf-hcx-xconnectivity-public-internet}
 
-{{site.data.keyword.cloud_notm}} for VMware Cloud Foundation currently supports to be a source *only* when creating site peering and service mesh over a public network. Though HCX is used as a source, migration is possible both ways. In this model, HCX appliances use {{site.data.keyword.vpc_short}} public gateway for the egress traffic. 
+{{site.data.keyword.vcf-vpc}} currently supports to be a source *only* when creating site peering and service mesh over a public network. Though HCX is used as a source, migration is possible both ways. In this model, HCX appliances use {{site.data.keyword.vpc_short}} public gateway for the egress traffic. 
 
 The following diagram introduces the high-level steps to configure and deploy this connectivity type.
 

@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-01-30"
+lastupdated: "2024-06-03"
 
 subcollection: vmwaresolutions
 
@@ -13,26 +13,26 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Architecture pattern for multisite NSX-T topologies
+# Architecture pattern for multisite NSX topologies
 {: #arch-pattern-overlays-multi-site}
 
-VMware vCenter Server® instances offer a standard NSX-T topology with a single NSX-T edge cluster, which includes a single Tier-0 (T0) and Tier-1 (T1) Gateways. You have several options to build and customize multisite overlay topologies. You can manually provision new NSX-T edge clusters and deploy new Tier-0 (T0) and Tier-1 (T1) Gateways after initial deployment by following VMware NSX-T™ documentation.
+{{site.data.keyword.vcf-auto}} instances offer a standard NSX topology with a single NSX edge cluster, which includes a single Tier-0 (T0) and Tier-1 (T1) Gateways. You have several options to build and customize multisite overlay topologies. You can manually provision new NSX edge clusters and deploy new Tier-0 (T0) and Tier-1 (T1) Gateways after initial deployment by following VMware NSX™ documentation.
 
 This section provides a few examples on how these topologies can be customized for your needs.
 
-The automated deployment provides you a single NSX-T workload edge cluster with two edge transport nodes. Multisite topologies require additional NSX-T edge transport nodes and clusters. You can manually deploy these after deployment by using {{site.data.keyword.cloud_notm}} private IP addresses for edge management and TEPs.
+The automated deployment provides you a single NSX workload edge cluster with two edge transport nodes. Multisite topologies require additional NSX edge transport nodes and clusters. You can manually deploy these after deployment by using {{site.data.keyword.cloud_notm}} private IP addresses for edge management and TEPs.
 {: note}
 
 ## Multisite single-tenant
 {: #arch-pattern-overlays-multi-site-multi-site-st}
 
-Multisite single-tenant is a common use case and network deployment pattern. This topology provides seamless site recovery by using dynamic routing protocols, such as BGP. The vCenter Server automation does not deploy multisite topology automatically. However, you can customize the default single-site topology after initial vCenter Server deployment. When you have the compute capacity in the required data center, you can manually deploy the required additional edge nodes. Then, create a new edge cluster for the Tier-0 and Tier-1 Gateways through NSX-T. This overlay topology is highly scalable and it is possible to automate, for example, by using Ansible and Terraform.
+Multisite single-tenant is a common use case and network deployment pattern. This topology provides seamless site recovery by using dynamic routing protocols, such as BGP. The vCenter Server automation does not deploy multisite topology automatically. However, you can customize the default single-site topology after initial vCenter Server deployment. When you have the compute capacity in the required data center, you can manually deploy the required additional edge nodes. Then, create a new edge cluster for the Tier-0 and Tier-1 Gateways through NSX. This overlay topology is highly scalable and it is possible to automate, for example, by using Ansible and Terraform.
 
 The following diagram shows an example of a multisite single-tenant network topology. It consists of a two layer Tier-0 design with three edge clusters. Two edge clusters in the two data centers or zones in a multizone region, and one edge cluster deployed across the multizone region with edge nodes in each participating zone or data center. 
 
-![Multisite single-tenant example topology](../../images/arch-pattern-2-zone.svg "Multisite single-tenant example topology for NSX-T deployment"){: caption="Figure 1. Multisite single-tenant example topology" caption-side="bottom"}
+![Multisite single-tenant example topology](../../images/arch-pattern-2-zone.svg "Multisite single-tenant example topology for NSX deployment"){: caption="Figure 1. Multisite single-tenant example topology" caption-side="bottom"}
 
-1. The vCenter Server automation deploys a single site solution, which can be manually expanded to support the target multisite topology. The deployment includes a single vCenter and three NSX-T Managers that are deployed in the cluster on the initial {{site.data.keyword.cloud_notm}} data center location. You must expand the compute capacity to have resources available in the other {{site.data.keyword.cloud_notm}} data center or zone in the specific {{site.data.keyword.cloud_notm}} multizone region.
+1. The vCenter Server automation deploys a single site solution, which can be manually expanded to support the target multisite topology. The deployment includes a single vCenter and three NSX Managers that are deployed in the cluster on the initial {{site.data.keyword.cloud_notm}} data center location. You must expand the compute capacity to have resources available in the other {{site.data.keyword.cloud_notm}} data center or zone in the specific {{site.data.keyword.cloud_notm}} multizone region.
 2. The vCenter Server automation deploys two edge cluster transport nodes and a single edge cluster for your Tier-0 and Tier-1 Gateways. You do not need the default Tier-1 Gateway, and it can be removed.
 3. In the initial {{site.data.keyword.cloud_notm}} data center, the access to private network is provided through private uplinks. They are attached to a portable subnet in a private primary VLAN on the {{site.data.keyword.cloud_notm}} private network. If you provision your instance with public interfaces, the access to public network is provided through public uplinks. They are attached to a portable subnet on a public VLAN on the {{site.data.keyword.cloud_notm}} public network. The uplinks have IP addresses specific to this data center and they cannot move between the data centers.
 4. You must manually deploy two additional edge cluster transport nodes. Also, you must create a new edge cluster for your Tier-0 and Tier-1 Gateways in the second {{site.data.keyword.cloud_notm}} data center hosts.
@@ -51,13 +51,13 @@ The main reason that you need two layers is for physical north-south connectivit
 ## Multisite multitenant
 {: #arch-pattern-overlays-multi-site-multi-site-mt}
 
-Multisite multitenant is a use case and network deployment pattern where tenants require a solution with conflicting IP spaces and complete route table isolation. This topology provides seamless site recovery by using dynamic routing protocols, such as BGP. The vCenter Server automation does not deploy multisite topology automatically. However, you can customize the default single-site topology after initial vCenter Server deployment. When you have the compute capacity in the required data center, you can manually deploy the required additional edge nodes. Then, create a new edge cluster for the Tier-0 and Tier-1 Gateways through NSX-T. This overlay topology is highly scalable and it is possible to automate, for example, by using Ansible and Terraform.
+Multisite multitenant is a use case and network deployment pattern where tenants require a solution with conflicting IP spaces and complete route table isolation. This topology provides seamless site recovery by using dynamic routing protocols, such as BGP. The vCenter Server automation does not deploy multisite topology automatically. However, you can customize the default single-site topology after initial vCenter Server deployment. When you have the compute capacity in the required data center, you can manually deploy the required additional edge nodes. Then, create a new edge cluster for the Tier-0 and Tier-1 Gateways through NSX. This overlay topology is highly scalable and it is possible to automate, for example, by using Ansible and Terraform.
 
 The following diagram shows an example of a multisite – multitenant topology. It consists of a two layer Tier-0 design with three edge clusters. The routing table separation is done at Tier-1 and optionally, also at the regional Tier-0 level. Two edge clusters in the two data centers or zones in a multizone region, and one edge cluster deployed across the multizone region with edge nodes in each participating zone or data center.
 
-![Multisite multitenant example topology](../../images/arch-pattern-2-zone-mt.svg "Multisite multitenant example topology for NSX-T deployment"){: caption="Figure 2. Multisite multitenant example topology" caption-side="bottom"}
+![Multisite multitenant example topology](../../images/arch-pattern-2-zone-mt.svg "Multisite multitenant example topology for NSX deployment"){: caption="Figure 2. Multisite multitenant example topology" caption-side="bottom"}
 
-1. The vCenter Server automation deploys a single site solution, which can be manually expanded to support the target multisite topology. The deployment includes a single vCenter and three NSX-T Managers deployed in the cluster on the initial {{site.data.keyword.cloud_notm}} data center location. You must expand the compute capacity to have resources available in the other {{site.data.keyword.cloud_notm}} data center or zone in the specific {{site.data.keyword.cloud_notm}} multizone region.
+1. The vCenter Server automation deploys a single site solution, which can be manually expanded to support the target multisite topology. The deployment includes a single vCenter and three NSX Managers deployed in the cluster on the initial {{site.data.keyword.cloud_notm}} data center location. You must expand the compute capacity to have resources available in the other {{site.data.keyword.cloud_notm}} data center or zone in the specific {{site.data.keyword.cloud_notm}} multizone region.
 2. The vCenter Server automation deploys two edge cluster transport nodes and a single edge cluster for your Tier-0 and Tier-1 Gateways. You do not need the default Tier-1 Gateway, and it can be removed.
 3. In the initial {{site.data.keyword.cloud_notm}} data center, the access to private network is provided through private uplinks. They are attached to a portable subnet on a private primary VLAN on the {{site.data.keyword.cloud_notm}} private network. If you provision your instance with public interfaces, the access to public network is provided through public uplinks. They are attached to a portable subnet on a public VLAN on the {{site.data.keyword.cloud_notm}} public network. The uplinks have IP addresses specific to this data center and they cannot move between the data centers.
 4. You must manually deploy two additional edge cluster transport nodes and create a new edge cluster for your Tier-0 and Tier-1 Gateways in the second {{site.data.keyword.cloud_notm}} data center hosts.
@@ -79,16 +79,16 @@ The main reason that you need two layers is for physical north-south connectivit
 ## Considerations for selecting an overlay network topology
 {: #arch-pattern-overlays-multi-site-considerations}
 
-VMware NSX-T™ provides many ways to build the network topologies, and the default network topology is useful for many use cases. You can typically start with this, and expand it as your needs grow. Once the initial deployment is done, {{site.data.keyword.cloud_notm}} automation does use the workload overlay topology and you can change the example topology based on your needs. When changing the configuration, note that the default uplinks provide the basic routed connectivity to {{site.data.keyword.cloud_notm}} private and public networks. If you change the IP addresses or routing, your overlay workloads might lose connectivity.
+VMware NSX™ provides many ways to build the network topologies, and the default network topology is useful for many use cases. You can typically start with this, and expand it as your needs grow. Once the initial deployment is done, {{site.data.keyword.cloud_notm}} automation does use the workload overlay topology and you can change the example topology based on your needs. When changing the configuration, note that the default uplinks provide the basic routed connectivity to {{site.data.keyword.cloud_notm}} private and public networks. If you change the IP addresses or routing, your overlay workloads might lose connectivity.
 
-{{site.data.keyword.cloud_notm}} offers a flexible way to build the NSX-T topology to your needs. When designing your own overlay network solution, it is important to know that you might deploy new NSX-T edge nodes and new NSX-T edge clusters manually. Also, consider to use Ansible and Terraform to meet your goals. You can do this by following VMware documentation and design guidelines after the initial deployment.
+{{site.data.keyword.cloud_notm}} offers a flexible way to build the NSX topology to your needs. When designing your own overlay network solution, it is important to know that you might deploy new NSX edge nodes and new NSX edge clusters manually. Also, consider to use Ansible and Terraform to meet your goals. You can do this by following VMware documentation and design guidelines after the initial deployment.
 
-Most of the content in the VMware NSX-T design guides and documentation can be applied in {{site.data.keyword.cloud_notm}}. Consider, for example, the number of required VLANs and the use of stretched VLAN in the underlay between data centers in multizone region. Also, {{site.data.keyword.cloud_notm}} private network must not be considered as Top of the Rack (ToR) switch. Backend Customer Router (BCR) does not provide dynamic routing support (BGP) by default.
+Most of the content in the VMware NSX design guides and documentation can be applied in {{site.data.keyword.cloud_notm}}. Consider, for example, the number of required VLANs and the use of stretched VLAN in the underlay between data centers in multizone region. Also, {{site.data.keyword.cloud_notm}} private network must not be considered as Top of the Rack (ToR) switch. Backend Customer Router (BCR) does not provide dynamic routing support (BGP) by default.
 {: note}
 
 ## Related links
 {: #arch-pattern-overlays-multi-site-links}
 
 * [VMware NSX documentation](https://docs.vmware.com/en/VMware-NSX/index.html){: external}
-* [NSX-T Reference Design Guide](https://nsx.techzone.vmware.com/resource/nsx-reference-design-guide){: external}
-* [NSX-T Multilocation design guide (Federation + Multisite)](https://communities.vmware.com/t5/VMware-NSX-Documents/NSX-T-Multi-Location-Design-Guide-Federation-Multisite/ta-p/2810327){: external}
+* [NSX Reference Design Guide](https://nsx.techzone.vmware.com/resource/nsx-reference-design-guide){: external}
+* [NSX Multilocation design guide (Federation + Multisite)](https://communities.vmware.com/t5/VMware-NSX-Documents/NSX-Multi-Location-Design-Guide-Federation-Multisite/ta-p/2810327){: external}

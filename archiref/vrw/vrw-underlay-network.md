@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2020, 2023
+  years:  2020, 2024
 
-lastupdated: "2023-09-11"
+lastupdated: "2024-06-04"
 
 subcollection: vmwaresolutions
 
@@ -45,7 +45,7 @@ Traffic from the SaaS consumer passes through the vSRX in an encrypted tunnel, w
 
 The workload cluster network design is closely aligned to that of a traditional vCenter Server deployment. VLANs and subnets are provisioned to support vMotion, vSAN, TEPS for the Software-Defined Networking (SDN) network, and workload cluster host management functions.
 
-Within the workload clusters, NSX-T™ provides a highly secure and flexible software defined network to support the application requirements. NSX-T management is external to the workload cluster thus ensuring that network and security changes are not possible by anyone other than the designated administrators. All north-south network access in the workload cluster is done through private and secure connections by using IPsec or IBM Direct Link. The workload clusters are protected by the same gateway cluster with the vSRX or the physical FortiGate that protects the management plane.
+Within the workload clusters, NSX™ provides a highly secure and flexible software defined network to support the application requirements. NSX management is external to the workload cluster thus ensuring that network and security changes are not possible by anyone other than the designated administrators. All north-south network access in the workload cluster is done through private and secure connections by using IPsec or IBM Direct Link. The workload clusters are protected by the same gateway cluster with the vSRX or the physical FortiGate that protects the management plane.
 
 ## {{site.data.keyword.cloud_notm}} networking
 {: #vrw-underlay-network-cloud}
@@ -80,7 +80,7 @@ In addition to the public and private networks, each {{site.data.keyword.cloud_n
 
 {{site.data.keyword.cloud_notm}} allocates two types of IP addresses to be used within the {{site.data.keyword.cloud_notm}} infrastructure:
 * Primary IP addresses are assigned to devices, bare metal, and virtual servers that are provisioned by {{site.data.keyword.cloud_notm}}. Do not manually assign any IP addresses in these blocks.
-* Portable IP addresses are provided for you to assign and manage as needed. The {{site.data.keyword.cloud_notm}} for VMware Regulated Workloads automation provisions several portable IP ranges for its use. Use only the portable IP address ranges that are assigned to specific NSX-T components and specified for SaaS provider use.
+* Portable IP addresses are provided for you to assign and manage as needed. The {{site.data.keyword.cloud_notm}} for VMware Regulated Workloads automation provisions several portable IP ranges for its use. Use only the portable IP address ranges that are assigned to specific NSX components and specified for SaaS provider use.
 
 Primary or portable IP addresses can be made routable to any VLAN within your account when the account is configured as a **Virtual Routing and Forwarding (VRF)** account.
 
@@ -120,8 +120,7 @@ The private network consists of two VLANs within this design. Three subnets are 
 In addition to Private VLAN A, a second private VLAN (here designated Private VLAN B) exists to support VMware features such as vSAN and vMotion. As such, the VLAN is divided into two or more portable subnets:
 
 * The first subnet is assigned to a kernel port group for vMotion traffic.
-* The remaining subnet or subnets are used for storage traffic:
-   * When using vSAN, a subnet is assigned to kernel port groups that are used for vSAN traffic.
+* The remaining subnet or subnets are used for storage traffic. When using vSAN, a subnet is assigned to kernel port groups that are used for vSAN traffic.
 
 The public network consists of one VLAN within this design. The following subnets are allocated to the VLAN:
 
@@ -139,7 +138,7 @@ Review the following table for a summary.
 | Public C | Primary  | Assigned to physical hosts for public network access.  |
 | Private A | Primary  | Single subnet assigned to physical hosts assigned by {{site.data.keyword.cloud_notm}}. Used by the management interface for vSphere management traffic. |
 | Private A | Portable | Single subnet that is assigned to VMs that function as management components |
-| Private A | Portable | Single subnet that is assigned to NSX-T TEP |
+| Private A | Portable | Single subnet that is assigned to NSX TEP |
 | Private B | Portable | Single subnet that is assigned for vSAN, if in use |
 | Private B | Portable | Single subnet assigned for NAS, if in use |
 | Private B | Portable | Single subnet assigned for vMotion |

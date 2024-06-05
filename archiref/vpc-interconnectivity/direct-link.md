@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-04-15"
+lastupdated: "2024-06-04"
 
 subcollection: vmwaresolutions
 
@@ -32,9 +32,9 @@ When you use the VMware® virtual machines (VMs) on the VPC subnet architecture,
 
 ![Direct Link with VMware on VPC](../../images/vpc-vcf-diagrams-dl-sub-arch.svg "Direct Link with VMware on VPC"){: caption="Figure 1. {{site.data.keyword.dl_short}} with VMware on VPC" caption-side="bottom"}
 
-When you use NSX-T™ on your VMware® solution on VPC, the VMs are attached on the NSX-T overlay segments. They use an IP address range or prefix, which is reachable through VPC route. The IP address range or prefix points to the NSX-T Tier-0 private uplink VIP as described in the [VMware NSX-T logical routing on VPC](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-nsx-t-vpc-routing) topic. When you attach the VPC to a {{site.data.keyword.dl_short}}, you must create a VPC prefix that matches the VPC route, which points to the NSX-T overlay. You must not define any subnets on the prefix. However, the prefix must exist so that {{site.data.keyword.dl_short}} can advertise the NSX-T overlay routes to the on-premises network.
+When you use NSX™ on your VMware® solution on VPC, the VMs are attached on the NSX overlay segments. They use an IP address range or prefix, which is reachable through VPC route. The IP address range or prefix points to the NSX Tier-0 private uplink VIP as described in the [VMware NSX logical routing on VPC](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-nsx-t-vpc-routing) topic. When you attach the VPC to a {{site.data.keyword.dl_short}}, you must create the VPC routes with advertise flag so that they will get advertised.
 
-![Direct Link with VMware on VPC with NSX-T](../../images/vpc-vcf-diagrams-dl-nsx-t-arch.svg "Direct Link with VMware on VPC with NSX-T"){: caption="Figure 2. {{site.data.keyword.dl_short}} with VMware on VPC with NSX-T" caption-side="bottom"}
+![Direct Link with VMware on VPC with NSX](../../images/vpc-vcf-diagrams-dl-nsx-t-arch.svg "Direct Link with VMware on VPC with NSX"){: caption="Figure 2. {{site.data.keyword.dl_short}} with VMware on VPC with NSX" caption-side="bottom"}
 
 ## Related links
 {: #interconnectivity-dl-vcf-links}
@@ -45,3 +45,4 @@ When you use NSX-T™ on your VMware® solution on VPC, the VMs are attached on 
 * [{{site.data.keyword.tg_full_notm}} overview](/docs/transit-gateway?topic=transit-gateway-getting-started)
 * [{{site.data.keyword.vpc_short}} VPN overview](/docs/vpc?topic=vpc-vpn-overview)
 * [VPC IaaS endpoints](/docs/vpc?topic=vpc-service-endpoints-for-vpc#infrastructure-as-a-service-iaas-endpoints)
+* [VMware on Bare Metal VPC tutorial](/docs/solution-tutorials?topic=solution-tutorials-vpc-bm-vmware)

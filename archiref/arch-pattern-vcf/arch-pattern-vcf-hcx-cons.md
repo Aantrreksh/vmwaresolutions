@@ -4,7 +4,7 @@ copyright:
 
   years:  2024
 
-lastupdated: "2024-01-19"
+lastupdated: "2024-06-05"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # Architecture pattern for deploying HCX on VMware Cloud Foundation consolidated architecture
 {: #arch-pattern-vcf-hcx-con}
 
-This architecture pattern explains how to deploy VMware HCX™ on {{site.data.keyword.cloud}} for VMware Cloud Foundation consolidated architecture deployment. With HCX, you can streamline workload migration, manage workload rebalancing, and ensure business continuity across data centers and clouds.
+This architecture pattern explains how to deploy VMware HCX™ on {{site.data.keyword.vcf-vpc}} consolidated architecture deployment in {{site.data.keyword.vpc_short}}. With HCX, you can streamline workload migration, manage workload rebalancing, and ensure business continuity across data centers and clouds.
 
 An overview of this architecture pattern is shown in the following diagram.
 
@@ -45,7 +45,7 @@ This architecture pattern deployment is summarized as follows:
 
 When you design or deploy this architecture pattern, consider the following information:
 
-* {{site.data.keyword.cloud_notm}} for VMware Cloud Foundation currently supports to be a source *only* when creating site peering and service mesh **over a public network**. Therefore, HCX shows as a source, but migration is still possible both ways. HCX appliances use {{site.data.keyword.vpc_short}} public gateway for the egress traffic. For more information, see [Architecture pattern for HCX site peering and service mesh in {{site.data.keyword.cloud_notm}}](/docs/vmwaresolutions?topic=vmwaresolutions-arch-pattern-vcf-hcx-xconnectivity).
+* {{site.data.keyword.vcf-vpc}} currently supports to be a source *only* when creating site peering and service mesh **over a public network**. Therefore, HCX shows as a source, but migration is still possible both ways. HCX appliances use {{site.data.keyword.vpc_short}} public gateway for the egress traffic. For more information, see [Architecture pattern for HCX site peering and service mesh in {{site.data.keyword.cloud_notm}}](/docs/vmwaresolutions?topic=vmwaresolutions-arch-pattern-vcf-hcx-xconnectivity).
 * **Private networking** supports both **source and destination** HCX site peering deployments.
 
 ## Related links

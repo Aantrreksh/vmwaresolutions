@@ -4,7 +4,7 @@ copyright:
 
   years:  2024
 
-lastupdated: "2024-02-02"
+lastupdated: "2024-06-05"
 
 subcollection: vmwaresolutions
 
@@ -16,14 +16,14 @@ subcollection: vmwaresolutions
 # Architecture pattern for Veeam replication connectivity in {{site.data.keyword.cloud_notm}}
 {: #arch-pattern-vcf-veeam-xconnectivity}
 
-This architecture pattern explains how to deploy and configure Veeam® replication connectivity on {{site.data.keyword.cloud}} for VMware Cloud Foundation instances that are running on {{site.data.keyword.vpc_short}}. These connectivity patterns use a combination of {{site.data.keyword.cloud_notm}} native services and networking services that are provided by VMware NSX®.
+This architecture pattern explains how to deploy and configure Veeam® replication connectivity on {{site.data.keyword.vcf-vpc}} instances that are running on {{site.data.keyword.vpc_short}}. These connectivity patterns use a combination of {{site.data.keyword.cloud_notm}} native services and networking services that are provided by VMware NSX®.
 
 This pattern assumes that Veeam is deployed by following the guidance for [consolidated](/docs/vmwaresolutions?topic=vmwaresolutions-arch-pattern-vcf-veeam-con) or [standard](/docs/vmwaresolutions?topic=vmwaresolutions-arch-pattern-vcf-veeam-std) architecture models.
 
 ## Replication connectivity over private network
 {: #arch-pattern-vcf-veeam-xconnectivity-private}
 
-When replicating over a private network, the {{site.data.keyword.cloud_notm}} for VMware Cloud Foundation instance needs to connect to on-premises or Classic VMware® and Veeam deployments. The connectivity can be established by using Transit Gateways or Direct Link.  
+When replicating over a private network, the {{site.data.keyword.vcf-vpc}} instance needs to connect to on-premises or Classic VMware® and Veeam deployments. The connectivity can be established by using Transit Gateways or Direct Link.  
 
 The following diagram introduces the high-level steps to configure and deploy this connectivity type.
 
@@ -39,7 +39,7 @@ This architecture pattern deployment is summarized as follows:
 ## Replication connectivity over the internet
 {: #arch-pattern-vcf-veeam-xconnectivity-public-internet}
 
-When replicating over a public network, the {{site.data.keyword.cloud_notm}} for VMware Cloud Foundation instance needs to connect to on-premises VMware and Veeam deployments. 
+When replicating over a public network, the {{site.data.keyword.vcf-vpc}} instance needs to connect to on-premises VMware and Veeam deployments. 
 
 Two alternative patterns are introduced for this connectivity.
 

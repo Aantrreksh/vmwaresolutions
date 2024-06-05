@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-02-05"
+lastupdated: "2024-06-04"
 
 subcollection: vmwaresolutions
 
@@ -34,11 +34,11 @@ A summary and key capabilities of the target VMware Solutions offerings in {{sit
 
 The offerings are described in detail in the following documents:
 
-* [vCenter Server as a single site deployment](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview) - This offering deploys a VMware® based platform in a single {{site.data.keyword.cloud_notm}} data center automatically.
-* [vCenter Server as a multisite deployment](/docs/vmwaresolutions?topic=vmwaresolutions-vc_multisite) - This offering deploys a secondary VMware vCenter Server® instance in a single {{site.data.keyword.cloud_notm}} data center automatically. It is linked to a primary [vCenter Server single site](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview) previously deployed. Multiple secondary instances can be created.
-* vCenter Server dual-site - This deployment pattern is based on two [vCenter Server single site](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview) deployments but not in a primary-secondary relationship as in the [vCenter Server multisite](/docs/vmwaresolutions?topic=vmwaresolutions-vc_multisite) pattern. This is typically used in a production-disaster recovery pattern by using Zerto or Veeam® replication between the two sites.
+* [{{site.data.keyword.vcf-auto-short}} as a single site deployment](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview) - This offering deploys a VMware® based platform in a single {{site.data.keyword.cloud_notm}} data center automatically.
+* [{{site.data.keyword.vcf-auto-short}} as a multisite deployment](/docs/vmwaresolutions?topic=vmwaresolutions-vc_multisite) - This offering deploys a secondary VMware {{site.data.keyword.vcf-auto-short}}® instance in a single {{site.data.keyword.cloud_notm}} data center automatically. It is linked to a primary [{{site.data.keyword.vcf-auto-short}} single site](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview) previously deployed. Multiple secondary instances can be created.
+* {{site.data.keyword.vcf-auto-short}} dual-site - This deployment pattern is based on two [{{site.data.keyword.vcf-auto-short}} single site](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview) deployments but not in a primary-secondary relationship as in the [{{site.data.keyword.vcf-auto-short}} multisite](/docs/vmwaresolutions?topic=vmwaresolutions-vc_multisite) pattern. This is typically used in a production-disaster recovery pattern by using Zerto or Veeam® replication between the two sites.
 
-In the vCenter Server deployments, each site, and each instance has its own NSX-T Manager cluster. In the multisite deployments, the vCenter, NSX-T managers, and domain controller components are deployed per site. Each instance on each site has [a default NSX-T overlay topology](/docs/vmwaresolutions?topic=vmwaresolutions-v2t-example-overlays#v2t-example-overlays-single-site-st) and no networking integrations nor dependencies exist between the sites.
+In the {{site.data.keyword.vcf-auto-short}} deployments, each site, and each instance has its own NSX-T Manager cluster. In the multisite deployments, the vCenter, NSX-T managers, and domain controller components are deployed per site. Each instance on each site has [a default NSX-T overlay topology](/docs/vmwaresolutions?topic=vmwaresolutions-v2t-example-overlays#v2t-example-overlays-single-site-st) and no networking integrations nor dependencies exist between the sites.
 {: note}
 
 The following diagram can be used to compare and contrast the features that are offered by these offerings.
@@ -50,7 +50,7 @@ In the previous diagram, the following terms require some additional comments:
 * Single SSO and root domain - A single instance of Active Directory™ and Domain Name Services is automatically deployed with replication if more than one domain controller is selected for automatic deployment. For more information, see [Multisite deployment components](/docs/vmwaresolutions?topic=vmwaresolutions-vc_multisite#vc_multisite-deployment-components).
 * Two SSO and root domains - A single instance of Active Directory and Domain Name Services is deployed, one for each instance. No replication occurs between the two sites.
 * Single vCenter - The automation deploys a single vCenter appliance.
-* Dual vCenters with ELM - Enhanced Link Mode (ELM) offers a single window of glass across multiple vCenter Servers that are in the same vSphere Single-Sing-On (SSO) domain. This allows the management of multiple sites from one vCenter. For more information, see [vCenter Enhanced Linked Mode](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vcenter.install.doc/GUID-4394EA1C-0800-4A6A-ADBF-D35C41868C53.html){: external}. The automation deploys and configures the vCenter appliances.
+* Dual vCenters with ELM - Enhanced Link Mode (ELM) offers a single window of glass across multiple {{site.data.keyword.vcf-auto-short}}s that are in the same vSphere Single-Sing-On (SSO) domain. This allows the management of multiple sites from one vCenter. For more information, see [vCenter Enhanced Linked Mode](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vcenter.install.doc/GUID-4394EA1C-0800-4A6A-ADBF-D35C41868C53.html){: external}. The automation deploys and configures the vCenter appliances.
 * Dual vCenters - Each site has a vCenter deployed automatically. However, they are not linked.
 * Single NSX-T Manager cluster - The automation deploys three NSX-T Manager appliances in a cluster with a Virtual IP address.
 * Dual NSX-T Manager clusters - Each site has its own NSX-T Manager cluster that is deployed automatically, which is independent of each other. In NSX-T, it doesn't exist a concept equivalent to Cross-vCenter NSX-V.
@@ -59,7 +59,7 @@ In the previous diagram, the following terms require some additional comments:
 * Single edge gateway - Each virtual data center uses an active-standby edge gateway for external access to the public network or the services network. This gateway includes features such as NAT, IPsec VPN, and load balancing.
 * Single edge cluster Tier-0 gateway for workloads - The automation deploys a single NSX-T edge cluster, consisting of a pair of edge appliances, hosting an active/standby Tier-0 gateway for use by the workload VMs. These VMs provide connection between the overlay and underlay networks. For more information, see [Single-site - single-tenant](/docs/vmwaresolutions?topic=vmwaresolutions-v2t-example-overlays#v2t-example-overlays-single-site-st) and [Single-site - multitenant](/docs/vmwaresolutions?topic=vmwaresolutions-v2t-example-overlays#v2t-example-overlays-single-site-mt ).
 * Single-zone NFS storage - vSphere data stores that use {{site.data.keyword.filestorage_full_notm}} of different IOPS ratings are available and deployed automatically. {{site.data.keyword.filestorage_full_notm}} can be accessed only from hosts in the same site as the vSphere hosts. For more information, see [Shared File-level storage across hosts](/docs/vmwaresolutions?topic=vmwaresolutions-design_physicalinfrastructure#design_physicalinfrastructure-shared-storage).
-* Single-zone vSAN™ - The vCenter Server instance can be ordered with VMware vSAN and it uses disks in the vSphere hosts as a consolidated data store.
+* Single-zone vSAN™ - The {{site.data.keyword.vcf-auto-short}} instance can be ordered with VMware vSAN and it uses disks in the vSphere hosts as a consolidated data store.
 
 The vCenter dual site topology is a candidate for [NSX-T Federation](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.2/administration/GUID-D5B6DC79-6733-44A7-8072-50221CF2122A.html){: external}. NSX-T Federation is a relatively new NSX-T feature and architecture. Before you plan to use it, you must know what [features are supported](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.2/administration/GUID-29998FC5-C1AB-40BC-B669-6E8E9937F345.html){: external}, and how NSX Federation works for your use case. NSX-T Federation is not validated by {{site.data.keyword.cloud_notm}} fully, but it is a solution and architecture that is supported by VMware.
 {: note}
@@ -92,7 +92,7 @@ In the previous diagram, the following terms require some additional comments:
 ## Automated offerings with manual customization tasks
 {: #v2t-targets-automated-manual}
 
-These automated offerings use a [vCenter Server single site](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview) with the [Adding clusters to vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingclusters). Also, they use a number of manual tasks to create a target platform suitable for the following NSX-T patterns:
+These automated offerings use a [{{site.data.keyword.vcf-auto-short}} single site](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview) with the [Adding clusters to {{site.data.keyword.vcf-auto-short}} instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingclusters). Also, they use a number of manual tasks to create a target platform suitable for the following NSX-T patterns:
 
 * NSX-T multisite centralized - Management plane components centralized in one data center.
 * NSX-T multisite distributed - Management plane components distributed across multiple data centers.
@@ -118,11 +118,11 @@ In the previous diagram, the following terms require some additional comments:
 * Stretched edge cluster Tier-0 gateways for workloads per site - To enable an active-active data plane, a stretched edge NSX-T cluster is created manually by deploying an edge appliance in each site. This action enables access to the stretched L2 NSX-T overlay segments, which host the workload VMs if a failure occurs in one of the sites. For more information, see [Multisite - single-tenant](/docs/vmwaresolutions?topic=vmwaresolutions-v2t-example-overlays#v2t-example-overlays-multi-site-st) and [Multisite - multitenant](/docs/vmwaresolutions?topic=vmwaresolutions-v2t-example-overlays#v2t-example-overlays-multi-site-mt).
 * Single-zone NFS storage - vSphere data stores that use {{site.data.keyword.filestorage_full_notm}} of different IOPS ratings are available. {{site.data.keyword.filestorage_full_notm}} can be accessed only from hosts in the same site as the vSphere hosts. For more information, see [Shared File-level storage across hosts](/docs/vmwaresolutions?topic=vmwaresolutions-design_physicalinfrastructure#design_physicalinfrastructure-shared-storage).
 * Stretch vSAN storage capable - By using the automation, stretched vSAN clusters cannot be deployed. If stretched vSAN is required, vSphere hosts must be deployed manually and a stretched vSAN cluster must be created.
-* Optional add-on services - For more information, see [Available services for vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices#vc_addingservices-available-services).
+* Optional add-on services - For more information, see [Available services for {{site.data.keyword.vcf-auto-short}} instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices#vc_addingservices-available-services).
 
 ## Related links
 {: #v2t-targets-links}
 
-* [vCenter Server single site](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview)
-* [vCenter Server multisite](/docs/vmwaresolutions?topic=vmwaresolutions-vc_multisite)
+* [{{site.data.keyword.vcf-auto-short}} single site](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview)
+* [{{site.data.keyword.vcf-auto-short}} multisite](/docs/vmwaresolutions?topic=vmwaresolutions-vc_multisite)
 * [Regulated workloads - single site](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-overview)

@@ -4,7 +4,7 @@ copyright:
 
   years:  2024
 
-lastupdated: "2024-04-29"
+lastupdated: "2024-06-05"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # Architecture pattern for deploying Tanzu on VMware Cloud Foundation standard architecture
 {: #arch-pattern-vcf-tanzu-std}
 
-This architecture pattern explains how to deploy VMware Tanzu on {{site.data.keyword.cloud}} for VMware Cloud Foundation standard architecture deployment. Tanzu is a modular, cloud-native application platform that accelerates development, delivery, and operations across multiple clouds. With Tanzu, you can deploy containers on a Kubernetes-based platform that is integrated with VMware vSphere® and VMware NSX®.
+This architecture pattern explains how to deploy VMware Tanzu on {{site.data.keyword.vcf-vpc}} standard architecture deployment in {{site.data.keyword.vpc_short}}. Tanzu is a modular, cloud-native application platform that accelerates development, delivery, and operations across multiple clouds. With Tanzu, you can deploy containers on a Kubernetes-based platform that is integrated with VMware vSphere® and VMware NSX®.
 
 An overview of this architecture pattern is shown in the following diagram.
 

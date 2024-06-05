@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2022, 2023
+  years:  2022, 2024
 
-lastupdated: "2023-07-17"
+lastupdated: "2024-06-03"
 
 subcollection: vmwaresolutions
 
@@ -13,31 +13,31 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Architecture pattern for using IPsec over {{site.data.keyword.dl_short}} with a vCenter Server with NSX-T instance
+# Architecture pattern for using IPsec over {{site.data.keyword.dl_short}} with a vCenter Server with NSX instance
 {: #arch-pattern-nsx-t-direct-link-ipsec}
 
-On [VMware vCenter Server](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview) instance in {{site.data.keyword.cloud}} classic infrastructure, your workloads are deployed and run on VMware NSX-T™ overlay networks. As part of the deployment, the automation deploys an example NSX-T topology. You can use the provisioned examples as your base or build your own topologies on overlay. These overlay networks are not automatically advertised to {{site.data.keyword.cloud_notm}} classic infrastructure network. 
+On [{{site.data.keyword.vcf-auto}}](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview) instance in {{site.data.keyword.cloud}} classic infrastructure, your workloads are deployed and run on VMware NSX™ overlay networks. As part of the deployment, the automation deploys an example NSX topology. You can use the provisioned examples as your base or build your own topologies on overlay. These overlay networks are not automatically advertised to {{site.data.keyword.cloud_notm}} classic infrastructure network. 
 
-This architecture pattern presents private connectivity for VMware vCenter Server® that uses [{{site.data.keyword.dl_full_notm}}](/docs/dl?topic=dl-dl-about) and tunneling. This solution is applicable for [NSX-T based vCenter Server instance](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview), which is provisioned in {{site.data.keyword.cloud_notm}} classic infrastructure. You can use Gateway Appliance or vCenter Server gateway cluster with Juniper® vSRX or other device as part of the solution as an option.
+This architecture pattern presents private connectivity for {{site.data.keyword.vcf-auto}}  that uses [{{site.data.keyword.dl_full_notm}}](/docs/dl?topic=dl-dl-about) and tunneling. This solution is applicable for [NSX based {{site.data.keyword.vcf-auto-short}} instance](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview), which is provisioned in {{site.data.keyword.cloud_notm}} classic infrastructure. You can use Gateway Appliance or vCenter Server gateway cluster with Juniper® vSRX or other device as part of the solution as an option.
 
-The tunnel is established between NSX-T T0 and a customer router routable through {{site.data.keyword.dl_short}}. If vSRX or other third-party device is used in gateway cluster, you can terminate the tunnel in these devices as well. In this case, NSX-T T0 will advertise routes in the vSRX (or other third-party device) through BGP or Static Routes.
+The tunnel is established between NSX T0 and a customer router routable through {{site.data.keyword.dl_short}}. If vSRX or other third-party device is used in gateway cluster, you can terminate the tunnel in these devices as well. In this case, NSX T0 will advertise routes in the vSRX (or other third-party device) through BGP or Static Routes.
 
-## Deploying IPsec over {{site.data.keyword.dl_short}} with vCenter Server and NSX-T
+## Deploying IPsec over {{site.data.keyword.dl_short}} with vCenter Server and NSX
 {: #arch-pattern-nsx-t-direct-link-ipsec-overview}
 
-The following diagram presents an overview for an architecture pattern for deploying IPsec over {{site.data.keyword.dl_short}} with vCenter Server and NSX-T.
+The following diagram presents an overview for an architecture pattern for deploying IPsec over {{site.data.keyword.dl_short}} with vCenter Server and NSX.
 
-![Using IPsec over {{site.data.keyword.dl_short}} with vCenter Server and NSX-T](../../images/arch-pattern-vcs-nsx-t-direct-link.svg "Using IPsec over {{site.data.keyword.dl_short}} with vCenter Server and NSX-T."){: caption="Figure 1. Using IPsec over {{site.data.keyword.dl_short}} with vCenter Server and NSX-T" caption-side="bottom"}
+![Using IPsec over {{site.data.keyword.dl_short}} with {{site.data.keyword.vcf-auto}}](../../images/arch-pattern-vcs-nsx-t-direct-link.svg "Using IPsec over {{site.data.keyword.dl_short}} with {{site.data.keyword.vcf-auto}}."){: caption="Figure 1. Using IPsec over {{site.data.keyword.dl_short}} with {{site.data.keyword.vcf-auto}}" caption-side="bottom"}
 
 This architecture pattern deployment is summarized as follows:
 
-1. vCenter Server instance is deployed at {{site.data.keyword.cloud_notm}} classic infrastructure. Two {{site.data.keyword.cloud_notm}} private VLANs and one {{site.data.keyword.cloud_notm}} public VLAN (optional) are deployed. Each of these host multiple subnets. You can see the details on {{site.data.keyword.vmwaresolutions_short}} portal.
-2. NSX-T T0 is deployed with two interfaces - private and public (optional). If you opt for a public, this interface is attached to your Public VLAN and has direct internet access. Your T0's private interface is attached to the Private VLAN and uses {{site.data.keyword.cloud_notm}} portable private IP.
-3. If vCenter Server gateway cluster with vSRX (or other third-party device) or {{site.data.keyword.cloud_notm}} Gateway Appliance is deployed to your classic infrastructure, you must configure your vCenter Server instance Private Primary VLAN. It must be routed through the vSRX or Gateway Appliance. Also, establish routing between your NSX-T T0 and vSRX, such as BGP.
+1. {{site.data.keyword.vcf-auto-short}} instance is deployed at {{site.data.keyword.cloud_notm}} classic infrastructure. Two {{site.data.keyword.cloud_notm}} private VLANs and one {{site.data.keyword.cloud_notm}} public VLAN (optional) are deployed. Each of these host multiple subnets. You can see the details on {{site.data.keyword.vmwaresolutions_short}} portal.
+2. NSX T0 is deployed with two interfaces - private and public (optional). If you opt for a public, this interface is attached to your Public VLAN and has direct internet access. Your T0's private interface is attached to the Private VLAN and uses {{site.data.keyword.cloud_notm}} portable private IP.
+3. If vCenter Server gateway cluster with vSRX (or other third-party device) or {{site.data.keyword.cloud_notm}} Gateway Appliance is deployed to your classic infrastructure, you must configure your {{site.data.keyword.vcf-auto-short}} instance Private Primary VLAN. It must be routed through the vSRX or Gateway Appliance. Also, establish routing between your NSX T0 and vSRX, such as BGP.
 4. Create a {{site.data.keyword.dl_short}} at your {{site.data.keyword.cloud_notm}} data center or zone location and attach your classic network as a connection. All your classic networks in the Region will be advertised with Local routing option (or all with Global option).
 5. Configure a Policy or Route Based IPsec connection between your customer router to vSRX or Gateway Appliance private IP ({{site.data.keyword.cloud_notm}} private portable). Ensure that your T0, vSRX, or Gateway Appliance has a route to this tunnel end point. Large MTU is supported in {{site.data.keyword.cloud_notm}} private network and {{site.data.keyword.dl_short}}.
 6. You can exchange routes through BGP, or static between your overlay and the on-premises customer router through the tunnel.
-7. You can attach any other required VPC connections to the {{site.data.keyword.dl_short}}, for example, VPCs. Your VPC IP address allocation design must ensure that you do not overlap with the attached classic network nor with the NSX-T overlay networks.
+7. You can attach any other required VPC connections to the {{site.data.keyword.dl_short}}, for example, VPCs. Your VPC IP address allocation design must ensure that you do not overlap with the attached classic network nor with the NSX overlay networks.
 
 {{site.data.keyword.dl_short}} does not provide direct connectivity between the VPC and classic. But, depending on your routing setup, it is possible to do a hair pinning on the customer router. Alternatively, use transit gateway for this use case.
 {: note}
@@ -55,4 +55,4 @@ When you design or deploy this architecture pattern, consider the following step
 
 * [VMware vSphere overview](/docs/vmwaresolutions?topic=vmwaresolutions-vs_vsphereoverview)
 * [Getting started with {{site.data.keyword.dl_full_notm}} (2.0)](/docs/dl?topic=dl-get-started-with-ibm-cloud-dl)
-* [Virtual Private Network (VPN)](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.1/administration/GUID-A8B113EC-3D53-41A5-919E-78F1A3705F58.html){: external}
+* [Virtual Private Network (VPN)](https://docs.vmware.com/en/VMware-NSX-Data-Center/3.1/administration/GUID-A8B113EC-3D53-41A5-919E-78F1A3705F58.html){: external}

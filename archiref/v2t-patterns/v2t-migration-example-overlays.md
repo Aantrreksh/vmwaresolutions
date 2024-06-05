@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-01-30"
+lastupdated: "2024-06-04"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # Target NSX-T environment example topologies 
 {: #v2t-example-overlays}
 
-VMware vCenter Server® instances offer a standard VMware NSX-T™ topology with a single NSX-T edge cluster, which includes a single Tier-0 (T0) and Tier-1 (T1) gateways. You have several options to build and customize the overlay topology. Also, you can provision new NSX-T edge clusters and deploy new Tier-0 (T0) and Tier-1 (T1) gateways. 
+VMware {{site.data.keyword.vcf-auto}} instances offer a standard VMware NSX-T™ topology with a single NSX-T edge cluster, which includes a single Tier-0 (T0) and Tier-1 (T1) gateways. You have several options to build and customize the overlay topology. Also, you can provision new NSX-T edge clusters and deploy new Tier-0 (T0) and Tier-1 (T1) gateways. 
 
 The following examples show how these topologies can be customized for your needs.
 
@@ -26,19 +26,19 @@ The automated deployment provides you a single NSX-T workload edge cluster with 
 ## Single-site single-tenant
 {: #v2t-example-overlays-single-site-st}
 
-Single-site single-tenant is the most common use case and network deployment pattern. The vCenter Server® automation deploys an example topology by following this model, which includes single Tier-0 and Tier-1 gateways and a few NSX-T overlay segments as a starting point. This topology is highly scalable and can be automated.
+Single-site single-tenant is the most common use case and network deployment pattern. The {{site.data.keyword.vcf-auto}} automation deploys an example topology by following this model, which includes single Tier-0 and Tier-1 gateways and a few NSX-T overlay segments as a starting point. This topology is highly scalable and can be automated.
 
 These options are suitable for customers with workload that run on a single data center, single tenant, and do not have overlapping IP addresses inside their own workloads.
 
-Overlapping IP addresses refers to overlay segments between customer environments that run on the vCenter Server instance.
+Overlapping IP addresses refers to overlay segments between customer environments that run on the {{site.data.keyword.vcf-auto}} instance.
 {: note}
 
 The following diagram shows an example of a customer deployment that uses the standard topology, when the segments are attached to the Tier-1 gateway. You can add more segments to the existing Tier-1 gateway or add more Tier-1 gateways on the same NSX-T edge clusters, if needed.
 
 ![Single-site single-tenant example topology with Tier-1 gateway](../../images/v2t-diagrams-1-zone-t1.svg "Single-site single-tenant example topology by using both Tier-0 and Tier-1 gateways"){: caption="Figure 1. Single-site single-tenant example topology with Tier-1 gateway" caption-side="bottom"}
 
-1. The vCenter Server automation deploys an example single-site topology, which follows the principles that are presented in this model. The deployment includes a single vCenter and three NSX-T Managers that are deployed on the cluster on the initial {{site.data.keyword.cloud_notm}} data center location.
-2. The vCenter Server automation deploys two edge cluster transport nodes and a single edge cluster for your Tier-0 and Tier-1 gateways.
+1. The {{site.data.keyword.vcf-auto}} automation deploys an example single-site topology, which follows the principles that are presented in this model. The deployment includes a single vCenter and three NSX-T Managers that are deployed on the cluster on the initial {{site.data.keyword.cloud_notm}} data center location.
+2. The {{site.data.keyword.vcf-auto}} automation deploys two edge cluster transport nodes and a single edge cluster for your Tier-0 and Tier-1 gateways.
 3. The Tier-0 gateway provides north-south routing capabilities and access to {{site.data.keyword.cloud_notm}} private network is provided though its uplinks.
 4. Access to private network is provided though private uplinks, which are attached to a portable subnet on a private primary VLAN on the {{site.data.keyword.cloud_notm}} private network. The routing to {{site.data.keyword.cloud_notm}} services uses these uplinks. IP addresses for the uplinks are provisioned by automating the 10/8 address space that is managed by the {{site.data.keyword.cloud_notm}}.
 5. If you provision your instance with public interfaces, access to public network is provided though public uplinks. They are attached to a portable subnet on a public VLAN on the {{site.data.keyword.cloud_notm}} public network. The routing to internet uses these uplinks and public IP addresses to the uplinks are provisioned by the automation.
@@ -49,8 +49,8 @@ The following diagram shows an example of a customer deployment by using the sta
 
 ![Single-site single-tenant example topology](../../images/v2t-diagrams-1-zone-t0.svg "Single-site single-tenant example topology for NSX-T deployment"){: caption="Figure 2. Single-site single-tenant example topology" caption-side="bottom"}
 
-1. The vCenter Server automation deploys an example single-site topology, which follows the principles that are presented in this model. The deployment includes a single vCenter and three NSX-T Managers that are deployed on the cluster on the initial {{site.data.keyword.cloud_notm}} data center location.
-2. The vCenter Server automation deploys two edge cluster transport nodes and a single edge cluster for your Tier-0 and Tier-1 gateways.
+1. The {{site.data.keyword.vcf-auto}} automation deploys an example single-site topology, which follows the principles that are presented in this model. The deployment includes a single vCenter and three NSX-T Managers that are deployed on the cluster on the initial {{site.data.keyword.cloud_notm}} data center location.
+2. The {{site.data.keyword.vcf-auto}} automation deploys two edge cluster transport nodes and a single edge cluster for your Tier-0 and Tier-1 gateways.
 3. The Tier-0 gateway provides north-south routing capabilities and access to {{site.data.keyword.cloud_notm}} private network is provided though its uplinks.  
 4. Access to private network is provided though private uplinks, which are attached to a portable subnet on a private primary VLAN on the {{site.data.keyword.cloud_notm}} private network. The routing to {{site.data.keyword.cloud_notm}} services uses these uplinks. IP addresses for the uplinks are provisioned by automating the 10/8 address space that is managed by the {{site.data.keyword.cloud_notm}}.
 5. If you provision your instance with public interfaces, access to public network is provided though public uplinks. They are attached to a portable subnet on a public VLAN on the {{site.data.keyword.cloud_notm}} public network. The routing to internet uses these uplinks and public IP addresses to the uplinks are provisioned by the automation.
@@ -60,19 +60,19 @@ The following diagram shows an example of a customer deployment by using the sta
 ## Single-site - multitenant
 {: #v2t-example-overlays-single-site-mt}
 
-Single-site - multitenant pattern provides a simple highly scalable pattern if you need multiple tenants. For example, different business units that require route table isolation or have conflicting IP address spaces. This deployment pattern uses the base topology that is provided by {{site.data.keyword.cloud_notm}} vCenter Server automation. This includes single Tier-0 and Tier-1 gateways and a few NSX-T overlay segments as a starting point. If you have multiple tenants, you can divide them by using multiple Tier-1 gateways and by controlling routing advertisements and use network address translation (NAT). 
+Single-site - multitenant pattern provides a simple highly scalable pattern if you need multiple tenants. For example, different business units that require route table isolation or have conflicting IP address spaces. This deployment pattern uses the base topology that is provided by {{site.data.keyword.cloud_notm}} {{site.data.keyword.vcf-auto}} automation. This includes single Tier-0 and Tier-1 gateways and a few NSX-T overlay segments as a starting point. If you have multiple tenants, you can divide them by using multiple Tier-1 gateways and by controlling routing advertisements and use network address translation (NAT). 
 
 This option is suitable for customers with workloads that run on a multiple data center, single tenant, and have some overlapping IP addresses inside their own workloads.
 
-Overlapping IP addresses refers to overlay segments between customer environments that run on the vCenter Server instance.
+Overlapping IP addresses refers to overlay segments between customer environments that run on the {{site.data.keyword.vcf-auto}} instance.
 {: note}
 
 The following diagram shows an example of a multitenant deployment by using the standard topology. Also, you can see how to expand that for a simple multitenant pattern. You can deploy multiple Tier-1 gateways manually through NSX-T and add each tenant segment to their own Tier-1 gateway.
 
 ![Single-site – multitenant example topology](../../images/v2t-diagrams-1-zone-t1-mt.svg "Single-site – multitenant example topology for NSX-T deployment."){: caption="Figure 3. Single-site – multitenant example topology" caption-side="bottom"}
 
-1. The vCenter Server automation deploys an example single-site topology, which follows the principles that presented in this model. The deployment includes a single vCenter and three NSX-T Managers that are deployed on the cluster on the initial {{site.data.keyword.cloud_notm}} data center location.
-2. The vCenter Server automation deploys two edge cluster transport nodes and a single edge cluster for your Tier-0 and Tier-1 gateways.
+1. The {{site.data.keyword.vcf-auto}} automation deploys an example single-site topology, which follows the principles that presented in this model. The deployment includes a single vCenter and three NSX-T Managers that are deployed on the cluster on the initial {{site.data.keyword.cloud_notm}} data center location.
+2. The {{site.data.keyword.vcf-auto}} automation deploys two edge cluster transport nodes and a single edge cluster for your Tier-0 and Tier-1 gateways.
 3. The Tier-0 gateway provides north-south routing capabilities and access to {{site.data.keyword.cloud_notm}} private network is provided though its uplinks.  
 4. Access to private network is provided though private uplinks, which are attached to a portable subnet on a private primary VLAN on the {{site.data.keyword.cloud_notm}} private network. The routing to {{site.data.keyword.cloud_notm}} services uses these uplinks. IP addresses for the uplinks are provisioned by automating the 10/8 address space that is managed by the {{site.data.keyword.cloud_notm}}.
 5. If you provision your instance with public interfaces, access to public network is provided though public uplinks. They are attached to a portable subnet on a public VLAN on the {{site.data.keyword.cloud_notm}} public network. The routing to internet uses these uplinks and public IP addresses to the uplinks are provisioned by the automation.
@@ -88,19 +88,19 @@ Tier-0 gateways support VRF Lite, which can be used if needed to support more co
 ## Multisite single-tenant
 {: #v2t-example-overlays-multi-site-st}
 
-Multisite single-tenant is a common use case and network deployment pattern. This topology provides seamless site recovery by using dynamic routing protocols, such as BGP. The vCenter Server automation does not deploy multisite topology automatically. However, you can customize the default single-site topology post initial vCenter Server deployment. When you have the compute capacity in the required data center, you can deploy the required extra edge nodes manually. Then, you can create a new edge cluster for the Tier-0 and Tier-1 gateways though NSX-T. This overlay topology is highly scalable and it is possible to automate, for example by using Ansible and Terraform.
+Multisite single-tenant is a common use case and network deployment pattern. This topology provides seamless site recovery by using dynamic routing protocols, such as BGP. The {{site.data.keyword.vcf-auto}} automation does not deploy multisite topology automatically. However, you can customize the default single-site topology post initial {{site.data.keyword.vcf-auto}} deployment. When you have the compute capacity in the required data center, you can deploy the required extra edge nodes manually. Then, you can create a new edge cluster for the Tier-0 and Tier-1 gateways though NSX-T. This overlay topology is highly scalable and it is possible to automate, for example by using Ansible and Terraform.
 
 This option is suitable for customers with workloads that run on a multiple data center, single tenant, and do not have overlapping IP addresses inside their own workloads.
 
-Overlapping IP addresses refers to overlay segments between customer environments that run on the vCenter Server instance.
+Overlapping IP addresses refers to overlay segments between customer environments that run on the {{site.data.keyword.vcf-auto}} instance.
 {: note}
 
 The following diagram shows an example of a multisite single-tenant network topology. It consists of a two layer Tier-0 design with three edge clusters. For this, consider two edge clusters in the two data centers or zones in a multizone region. And also, one edge cluster deployed across the multizone region with edge nodes in each participating zone or data center. 
 
 ![Multisite single-tenant example topology](../../images/v2t-diagrams-2-zone.svg "Multisite single-tenant example topology for NSX-T deployment"){: caption="Figure 4. Multisite single-tenant example topology" caption-side="bottom"}
 
-1. The vCenter Server automation deploys a single site solution, which can be manually expanded to support the target multisite topology. The deployment includes a single vCenter and three NSX-T Managers that are deployed on the cluster on the initial {{site.data.keyword.cloud_notm}} data center location. You must expand the compute capacity to have resources available in the other {{site.data.keyword.cloud_notm}} data center or zone in the specific {{site.data.keyword.cloud_notm}} multizone region.
-2. The vCenter Server automation deploys two edge cluster transport nodes and a single edge cluster for your Tier-0 and Tier-1 gateways. You do not need the default Tier-1 Gateway, and it can be removed.
+1. The {{site.data.keyword.vcf-auto}} automation deploys a single site solution, which can be manually expanded to support the target multisite topology. The deployment includes a single vCenter and three NSX-T Managers that are deployed on the cluster on the initial {{site.data.keyword.cloud_notm}} data center location. You must expand the compute capacity to have resources available in the other {{site.data.keyword.cloud_notm}} data center or zone in the specific {{site.data.keyword.cloud_notm}} multizone region.
+2. The {{site.data.keyword.vcf-auto}} automation deploys two edge cluster transport nodes and a single edge cluster for your Tier-0 and Tier-1 gateways. You do not need the default Tier-1 Gateway, and it can be removed.
 3. In the initial {{site.data.keyword.cloud_notm}} data center, access to private network is provided though private uplinks, which are attached to a portable subnet on a private primary VLAN on the {{site.data.keyword.cloud_notm}} private network. If you provision your instance with public interfaces, access to public network is provided though public uplinks. They are attached to a portable subnet on a public VLAN on the {{site.data.keyword.cloud_notm}} public network. The uplinks have specific IP addresses to this data center and they cannot move between the data centers.
 4. You must deploy two additional edge cluster transport nodes manually. Also, you must create a new edge cluster for your Tier-0 and Tier-1 gateways in the second {{site.data.keyword.cloud_notm}} data center hosts.
 5. In the second {{site.data.keyword.cloud_notm}} data center, access to private network is provided though private uplinks, which are attached to a portable subnet on a private primary VLAN on the {{site.data.keyword.cloud_notm}} private network. If you provision your instance with public interfaces, access to public network is provided though public uplinks, which are attached to a portable subnet on a public VLAN on the {{site.data.keyword.cloud_notm}} public network. The uplinks have specific IP addresses to this data center and they cannot move between the data centers.
@@ -118,19 +118,19 @@ The main reason that you need two layers is for physical north-south connectivit
 ## Multisite – multitenant
 {: #v2t-example-overlays-multi-site-mt}
 
-Multisite single-tenant is also a use case and network deployment pattern where tenants require a solution with conflicting IP spaces and complete route table isolation. This topology provides seamless site recovery by using dynamic routing protocols, such as BGP. The vCenter Server automation doesn't deploy multisite topology automatically. However, you can customize the default single-site topology post initial vCenter Server deployment. When you have the compute capacity in the required data center, you can deploy the required extra edge nodes manually. Then, you can create a new edge cluster for the Tier-0 and Tier-1 gateways through NSX-T. This overlay topology is highly scalable and it is possible to automate, for example by using Ansible and Terraform.
+Multisite single-tenant is also a use case and network deployment pattern where tenants require a solution with conflicting IP spaces and complete route table isolation. This topology provides seamless site recovery by using dynamic routing protocols, such as BGP. The {{site.data.keyword.vcf-auto}} automation doesn't deploy multisite topology automatically. However, you can customize the default single-site topology post initial {{site.data.keyword.vcf-auto}} deployment. When you have the compute capacity in the required data center, you can deploy the required extra edge nodes manually. Then, you can create a new edge cluster for the Tier-0 and Tier-1 gateways through NSX-T. This overlay topology is highly scalable and it is possible to automate, for example by using Ansible and Terraform.
 
 This option is suitable for customers with workloads that run on a multiple data center, single tenant, and have overlapping IP addresses inside their own workloads.
 
-Overlapping IP addresses refers to overlay segments between customer environments that run on the vCenter Server instance.
+Overlapping IP addresses refers to overlay segments between customer environments that run on the {{site.data.keyword.vcf-auto}} instance.
 {: note}
 
 The following diagram shows an example of a multisite – multitenant topology. It consists of a two layer Tier-0 design with three edge clusters. The routing table separation is done at Tier-1 and optionally also at the regional Tier-0 level. For this, consider two edge clusters in the two data centers or zones in a multizone region. And also, one edge cluster deployed across the multizone region with edge nodes in each participating zone or data center.
 
 ![Multisite – multitenant example topology](../../images/v2t-diagrams-2-zone-mt.svg "Multisite – multitenant example topology for NSX-T deployment."){: caption="Figure 5. Multisite – multitenant example topology" caption-side="bottom"}
 
-1. The vCenter Server automation deploys a single site solution, which can be manually expanded to support the target multisite topology. The deployment includes a single vCenter and three NSX-T Managers that are deployed on the cluster on the initial {{site.data.keyword.cloud_notm}} data center location. You must expand the compute capacity to have resources available in the other {{site.data.keyword.cloud_notm}} data center or zone in the specific {{site.data.keyword.cloud_notm}} multizone region.
-2. The vCenter Server automation deploys two edge cluster transport nodes and a single edge cluster for your Tier-0 and Tier-1 gateways. The default Tier-1 Gateway is not necessary, and it can be removed.
+1. The {{site.data.keyword.vcf-auto}} automation deploys a single site solution, which can be manually expanded to support the target multisite topology. The deployment includes a single vCenter and three NSX-T Managers that are deployed on the cluster on the initial {{site.data.keyword.cloud_notm}} data center location. You must expand the compute capacity to have resources available in the other {{site.data.keyword.cloud_notm}} data center or zone in the specific {{site.data.keyword.cloud_notm}} multizone region.
+2. The {{site.data.keyword.vcf-auto}} automation deploys two edge cluster transport nodes and a single edge cluster for your Tier-0 and Tier-1 gateways. The default Tier-1 Gateway is not necessary, and it can be removed.
 3. In the initial {{site.data.keyword.cloud_notm}} data center, access to private network is provided though private uplinks, which are attached to a portable subnet on a private primary VLAN on the {{site.data.keyword.cloud_notm}} private network. If you provision your instance with public interfaces, access to public network is provided though public uplinks, which are attached to a portable subnet on a public VLAN on the {{site.data.keyword.cloud_notm}} public network. The uplinks have specific IP addresses to this data center and they cannot move between the data centers.
 4. You must deploy two additional edge cluster transport nodes manually. Also, you must create a new edge cluster for your Tier-0 and Tier-1 gateways in the second {{site.data.keyword.cloud_notm}} data center hosts.
 5. In the second {{site.data.keyword.cloud_notm}} data center, access to private network is provided though private uplinks, which are attached to a portable subnet on a private primary VLAN on the {{site.data.keyword.cloud_notm}} private network. If you provision your instance with public interfaces, access to public network is provided though public uplinks, which are attached to a portable subnet on a public VLAN on the {{site.data.keyword.cloud_notm}} public network. The uplinks have specific IP addresses to this data center and they cannot move between the data centers.

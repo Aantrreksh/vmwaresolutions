@@ -4,7 +4,7 @@ copyright:
 
   years:  2024
 
-lastupdated: "2024-04-29"
+lastupdated: "2024-06-05"
 
 subcollection: vmwaresolutions
 
@@ -16,14 +16,14 @@ subcollection: vmwaresolutions
 # Architecture pattern for Zerto replication connectivity in {{site.data.keyword.cloud_notm}}
 {: #arch-pattern-vcf-zerto-xconnectivity}
 
-This architecture pattern explains how to deploy and configure Zerto replication connectivity on {{site.data.keyword.cloud}} for VMware Cloud Foundation instances that are running on {{site.data.keyword.vpc_short}}. These connectivity patterns use a combination of {{site.data.keyword.cloud_notm}} native services and networking services that are provided by VMware NSX®.
+This architecture pattern explains how to deploy and configure Zerto replication connectivity on {{site.data.keyword.vcf-vpc}} instances that are running on {{site.data.keyword.vpc_short}}. These connectivity patterns use a combination of {{site.data.keyword.cloud_notm}} native services and networking services that are provided by VMware NSX®.
 
 This pattern assumes that Zerto is deployed by following the guidance for [consolidated](/docs/vmwaresolutions?topic=vmwaresolutions-arch-pattern-vcf-zerto-con) or [standard](/docs/vmwaresolutions?topic=vmwaresolutions-arch-pattern-vcf-zerto-std) architecture models.
 
 ## Replication connectivity over private network
 {: #arch-pattern-vcf-zerto-xconnectivity-private}
 
-When replicating over a private network, the {{site.data.keyword.cloud_notm}} for VMware Cloud Foundation instance needs to connect to on-premises or Classic VMware® and Zerto deployments.
+When replicating over a private network, the {{site.data.keyword.vcf-vpc}} instance needs to connect to on-premises or Classic VMware® and Zerto deployments.
 
 The following diagram introduces the high-level steps to configure and deploy this connectivity type.
 
@@ -39,7 +39,7 @@ This architecture pattern deployment is summarized as follows:
 ## Replication connectivity over the Internet
 {: #arch-pattern-vcf-zerto-xconnectivity-public-internet}
 
-When replicating over a public network, the {{site.data.keyword.cloud_notm}} for VMware Cloud Foundation instance needs to connect to on-premises VMware and Zerto deployments. Two alternative patterns are introduced for this connectivity.
+When replicating over a public network, the {{site.data.keyword.vcf-vpc}} instance needs to connect to on-premises VMware and Zerto deployments. Two alternative patterns are introduced for this connectivity.
 
 In this first alternative pattern, the connectivity is established by using VPC VPNaaS site-to-site IPsec VPN. The following diagram introduces the high-level steps to configure and deploy this connectivity type.
 

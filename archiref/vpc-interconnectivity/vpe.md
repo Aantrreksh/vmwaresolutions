@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-04-15"
+lastupdated: "2024-06-04"
 
 subcollection: vmwaresolutions
 
@@ -24,25 +24,24 @@ For more information about supported {{site.data.keyword.cloud_notm}} services, 
 
 For more information about {{site.data.keyword.cloud_notm}} VPEs, see [Virtual Private Endpoint Gateways in VPC](/docs/vpc?topic=vpc-about-vpe).
 
-
 ## Considerations with VMware Cloud Foundation solution in VPC
 {: #interconnectivity-vpe-vcf-considerations}
 
-VPEs are located in your network address space within the VPC where your VMware® workloads are hosted. When you access {{site.data.keyword.cloud_notm}} services from VMware workloads, you can use VPE for VPCs as the endpoint for the service. Your VMware Workloads can be either attached to the VPC subnet, or to NSX-T™ overlay segments. VPE uses {{site.data.keyword.cloud_notm}} private backbone network to access the specific service, and data remains within the private {{site.data.keyword.cloud_notm}} backbone.
+VPEs are located in your network address space within the VPC where your VMware® workloads are hosted. When you access {{site.data.keyword.cloud_notm}} services from VMware workloads, you can use VPE for VPCs as the endpoint for the service. Your VMware Workloads can be either attached to the VPC subnet, or to NSX™ overlay segments. VPE uses {{site.data.keyword.cloud_notm}} private backbone network to access the specific service, and data remains within the private {{site.data.keyword.cloud_notm}} backbone.
 
 The following diagram presents an overview when you are using VPEs with VMware workloads on VPC subnets.
 
 ![VPEs with VMware Workloads on VPC subnets](../../images/vpc-vcf-diagrams-vpe-sub-arch.svg "VPEs with VMware Workloads on VPC subnets"){: caption="Figure 1. VPEs with VMware Workloads on VPC subnets" caption-side="bottom"}
 
-The following diagram presents an overview when you are using VPEs with VMware NSX-T.
+The following diagram presents an overview when you are using VPEs with VMware NSX.
 
-![VPEs with VMware Workloads with NSX-T](../../images/vpc-vcf-diagrams-vpe-nsx-t-arch.svg "VPEs with VMware Workloads with NSX-T"){: caption="Figure 2. VPEs with VMware Workloads with NSX-T" caption-side="bottom"}
+![VPEs with VMware Workloads with NSX](../../images/vpc-vcf-diagrams-vpe-nsx-t-arch.svg "VPEs with VMware Workloads with NSX"){: caption="Figure 2. VPEs with VMware Workloads with NSX" caption-side="bottom"}
 
 VPE is integrated with {{site.data.keyword.dns_short}}. If your VMware workloads use {{site.data.keyword.dns_full_notm}}, they can resolve your VPE FQDNs to your private IP address instances that are provisioned under {{site.data.keyword.dns_full_notm}}. {{site.data.keyword.cloud_notm}} network can use resource records that are configured through {{site.data.keyword.dns_full_notm}} by querying {{site.data.keyword.dns_short}} resolvers.
 
 Therefore, the first architectural decision you must make is how your VMware Workloads resolve DNS queries. {{site.data.keyword.dns_full_notm}} provide custom resolvers as a service that offers the ability to customize the hostname, which resolves rules for different hostnames. If your VMware workloads are attached to VPC subnet, you can use the DNS server IP addresses as defined in [VPC IaaS endpoints](/docs/vpc?topic=vpc-service-endpoints-for-vpc#infrastructure-as-a-service-iaas-endpoints).
 
-The custom resolver feature offers fine-grained control of name resolution and forwarding of DNS Queries to and from on-premises DNS resolvers. You can create a custom resolver to run inside your VPC address space, and in a subnet you define. You can then use this custom resolver for your VMware Workloads on NSX-T overlays. For more information, see [Working with custom resolvers](/docs/dns-svcs?topic=dns-svcs-custom-resolver&interface=ui).
+The custom resolver feature offers fine-grained control of name resolution and forwarding of DNS Queries to and from on-premises DNS resolvers. You can create a custom resolver to run inside your VPC address space, and in a subnet you define. You can then use this custom resolver for your VMware Workloads on NSX overlays. For more information, see [Working with custom resolvers](/docs/dns-svcs?topic=dns-svcs-custom-resolver&interface=ui).
 
 VPE for VPC IP addresses uses a multizone region, logical endpoint gateway to connect to a service endpoint on the {{site.data.keyword.cloud_notm}} private backbone. The endpoint gateway is designed to support the best practice of binding a single IP from each zone of the VPC.
 
@@ -59,3 +58,4 @@ As more {{site.data.keyword.cloud_notm}} services are enabled for VPE for VPC, e
 * [{{site.data.keyword.tg_full_notm}} overview](/docs/transit-gateway?topic=transit-gateway-getting-started)
 * [{{site.data.keyword.vpc_short}} VPN overview](/docs/vpc?topic=vpc-vpn-overview)
 * [VPC IaaS endpoints](/docs/vpc?topic=vpc-service-endpoints-for-vpc#infrastructure-as-a-service-iaas-endpoints)
+* [VMware on Bare Metal VPC tutorial](/docs/solution-tutorials?topic=solution-tutorials-vpc-bm-vmware)

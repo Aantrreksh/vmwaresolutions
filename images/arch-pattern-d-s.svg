@@ -31,9 +31,9 @@
                     <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe flex-start; justify-content: unsafe flex-start; width: 313px; height: 1px; padding-top: 135px; margin-left: 389px;">
                         <div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: left;">
                             <div style="display: inline-block; font-size: 9px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">
-                                <span style="font-size: 9px ; font-family: &quot;helvetica neue&quot; ; background-color: rgb(255 , 255 , 255)">vCenter Server</span>
+                                <span style="font-size: 9px ; font-family: &quot;helvetica neue&quot; ; background-color: rgb(255 , 255 , 255)">VCF for Classic</span>
                                 <br style="font-size: 9px ; font-family: &quot;helvetica neue&quot;" />
-                                <span style="font-size: 9px ; font-family: &quot;helvetica neue&quot; ; background-color: rgb(255 , 255 , 255)">with NSX-T instance - B</span>
+                                <span style="font-size: 9px ; font-family: &quot;helvetica neue&quot; ; background-color: rgb(255 , 255 , 255)">with NSX instance - B</span>
                             </div>
                         </div>
                     </div>
@@ -49,9 +49,9 @@
                     <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe flex-start; justify-content: unsafe flex-start; width: 308px; height: 1px; padding-top: 135px; margin-left: 44px;">
                         <div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: left;">
                             <div style="display: inline-block; font-size: 9px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">
-                                <span style="font-size: 9px ; font-family: &quot;helvetica neue&quot; ; background-color: rgb(255 , 255 , 255)">vCenter Server</span>
+                                <span style="font-size: 9px ; font-family: &quot;helvetica neue&quot; ; background-color: rgb(255 , 255 , 255)">VCF for Classic</span>
                                 <br style="font-size: 9px ; font-family: &quot;helvetica neue&quot;" />
-                                <span style="font-size: 9px ; font-family: &quot;helvetica neue&quot; ; background-color: rgb(255 , 255 , 255)">with NSX-T instance - A</span>
+                                <span style="font-size: 9px ; font-family: &quot;helvetica neue&quot; ; background-color: rgb(255 , 255 , 255)">with NSX instance - A</span>
                             </div>
                         </div>
                     </div>
@@ -138,14 +138,14 @@
                     <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe flex-end; width: 1px; height: 1px; padding-top: 339px; margin-left: 213px;">
                         <div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: right;">
                             <div style="display: inline-block; font-size: 8px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: nowrap;">
-                                NSX-T
+                                NSX
                                 <br />
                                 Managers
                             </div>
                         </div>
                     </div>
                 </foreignObject>
-                <text x="213" y="341" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="8px" text-anchor="end">NSX-T...</text>
+                <text x="213" y="341" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="8px" text-anchor="end">NSX...</text>
             </switch>
         </g>
         <rect x="142" y="325.46" width="27.4" height="28.54" fill="none" stroke="none" pointer-events="all" />
@@ -342,14 +342,14 @@
                     <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe flex-end; width: 1px; height: 1px; padding-top: 339px; margin-left: 561px;">
                         <div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: right;">
                             <div style="display: inline-block; font-size: 8px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: none; white-space: nowrap;">
-                                NSX-T
+                                NSX
                                 <br />
                                 Managers
                             </div>
                         </div>
                     </div>
                 </foreignObject>
-                <text x="561" y="341" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="8px" text-anchor="end">NSX-T...</text>
+                <text x="561" y="341" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="8px" text-anchor="end">NSX...</text>
             </switch>
         </g>
         <path d="M 501.67 325.46 C 499.33 325.46 497.43 327.37 497.43 329.72 L 497.43 332.88 L 494.19 332.88 C 491.88 332.88 490 334.77 490 337.1 L 490 349.78 C 490 352.11 491.88 354 494.19 354 L 505.79 354 C 508.1 354 509.98 352.11 509.98 349.78 L 509.98 346.45 L 513.16 346.45 C 515.5 346.45 517.4 344.54 517.4 342.19 L 517.4 329.72 C 517.4 327.37 515.5 325.46 513.16 325.46 Z M 501.67 326.5 L 513.16 326.5 C 514.95 326.5 516.37 327.93 516.37 329.72 L 516.37 342.19 C 516.37 343.98 514.95 345.41 513.16 345.41 L 509.47 345.41 C 509.16 345.41 508.95 345.66 508.95 345.97 L 508.95 349.78 C 508.95 351.55 507.55 352.96 505.79 352.96 L 494.19 352.96 C 492.43 352.96 491.03 351.55 491.03 349.78 L 491.03 337.1 C 491.03 335.33 492.43 333.92 494.19 333.92 L 497.92 333.92 C 498.3 333.92 498.46 333.65 498.46 333.31 L 498.46 329.72 C 498.46 327.93 499.89 326.5 501.67 326.5 Z M 504.23 331.96 C 503.85 331.96 503.54 332.27 503.54 332.66 L 503.54 339.28 C 503.54 339.31 503.54 339.35 503.55 339.39 C 503.47 339.36 503.38 339.35 503.3 339.35 L 497.21 339.35 C 496.78 339.35 496.44 339.69 496.44 340.12 L 496.44 346.65 C 496.44 347.08 496.78 347.42 497.21 347.42 L 503.3 347.42 C 503.72 347.42 504.06 347.08 504.06 346.65 L 504.06 340.12 C 504.06 340.06 504.06 340 504.04 339.95 C 504.1 339.97 504.17 339.98 504.23 339.98 L 510.41 339.98 C 510.8 339.98 511.11 339.67 511.11 339.28 L 511.11 332.66 C 511.11 332.27 510.8 331.96 510.41 331.96 Z" fill="#434445" stroke="none" pointer-events="none" />

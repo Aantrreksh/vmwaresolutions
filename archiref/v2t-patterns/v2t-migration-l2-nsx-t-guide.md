@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2023
+  years:  2023, 2024
 
-lastupdated: "2023-09-11"
+lastupdated: "2024-06-04"
 
 subcollection: vmwaresolutions
 
@@ -28,17 +28,17 @@ After all the workloads are migrated from NSX-V to NSX-T, the L2 bridge can be r
 ![Setting up NSX-T L2 bridge in NSX-V environment](../../images/v2t-nsx-t-l2-bridge-1.svg "Set up NSX-T L2 bridge in NSX-V environment by installing an NSX-T edge node in the NSX-V environment"){: caption="Figure 1. Setting up NSX-T L2 bridge in NSX-V environment" caption-side="bottom"}
 
 1. Register the vCenter appliance of the vCenter server with NSX-V environment as a compute manager in the NSX-T Manager. For more information, see [Add a Compute Manager](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.1/installation/GUID-D225CAFC-04D4-44A7-9A09-7C365AAFCA0E.html){: external}.
-2. On the vCenter Server with NSX-V instance, complete the following steps:
+2. On the {{site.data.keyword.vcf-auto-short}} with NSX-V instance, complete the following steps:
    * Order a private portable subnet on the Private VLAN for use by the NSX-T Edge node VMs.
    * Create a distributed port group on the private vDS for use by the management and the overlay transport zone.
-3. Using NSX-T Manager, the NSX-T Edge VMs are deployed onto hosts in the vCenter Server with NSX-V environment and configured:
+3. Using NSX-T Manager, the NSX-T Edge VMs are deployed onto hosts in the {{site.data.keyword.vcf-auto-short}} with NSX-V environment and configured:
    * Configure an IP Pool that contains IP addresses from the private portable subnet that were ordered previously. For example, TEP-NSX-V-IP-POOL.
    * The Edge Node VM requires two host switches:
      * `nsxHostSwitch overlay` - is associated with an overlay transport zone that is shared with the NSX-T ESXi transport nodes and uses the IP pool that was previously configured.
      * `nsxHostSwitch vlan` - is associated with a VLAN transport zone and is used to enable bridging the virtual wire that is connected to this interface to an NSX-T segment.
    * The Edge node VM must be part of an Edge cluster. An Edge cluster can consist of a single Edge node VM. If HA is required, deploy two Edge node VMs with the same configuration and add to the cluster.
 4. Create NSX-T segments with connectivity turned off while the north-south traffic is being routed through the ESGs in the NSX-V environment. For more information, see [Create the NSX-T Data Center Topology](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.1/migration/GUID-48287E4C-7C0F-4146-94D4-6D295623E7EB.html){: external}. Using NSX-T Manager, create an Edge Bridge Profile associated with the NSX-T Edges nodes. The profile defines the Edge cluster that is used for bridging, the primary node, the (optionally) backup node, and failover policy. Configure the bridging on the required NSX-T segment.
-5. The NSX-V logical switch is now bridged to the associated NSX-T logical segment. You can test by deploying a VM on the vCenter Server with NSX-T environment on the bridged segment with an IP address from the subnet that is used on the NSX-V logical switch.
+5. The NSX-V logical switch is now bridged to the associated NSX-T logical segment. You can test by deploying a VM on the {{site.data.keyword.vcf-auto-short}} with NSX-T environment on the bridged segment with an IP address from the subnet that is used on the NSX-V logical switch.
 
 ## Network switchover between NSX-V and NSX-T environments
 {: #v2t-l2-nsx-t-guide-switchover}
@@ -55,7 +55,7 @@ The network switchover enables all north-south network traffic to and from the m
 ## Migrating virtual machines
 {: #v2t-l2-nsx-t-guide-migrate}
 
-After the network switchover is complete, the workloads can be migrated. The migration can be achieved by using the Advanced Cross vCenter Server vMotion capability that is available with vSphere 7 Update 1c by using the UI or PowerCLI. Advanced Cross vCenter Server vMotion enables the migration of VMs between vCenter Server instances, without the requirement for Enhanced Linked Mode or Hybrid Linked Mode and hence it is now possible to migrate VMs between vCenter appliances that are in different Single Sign-On domains. Advanced Cross vCenter Server vMotion can be used for single VMs or bulk migrations. The source vCenter needs to be version 6.5 or greater.
+After the network switchover is complete, the workloads can be migrated. The migration can be achieved by using the Advanced Cross {{site.data.keyword.vcf-auto-short}} vMotion capability that is available with vSphere 7 Update 1c by using the UI or PowerCLI. Advanced Cross {{site.data.keyword.vcf-auto-short}} vMotion enables the migration of VMs between {{site.data.keyword.vcf-auto-short}} instances, without the requirement for Enhanced Linked Mode or Hybrid Linked Mode and hence it is now possible to migrate VMs between vCenter appliances that are in different Single Sign-On domains. Advanced Cross vCenter Server vMotion can be used for single VMs or bulk migrations. The source vCenter needs to be version 6.5 or greater.
 
 The vMotion involves a network backing change that might be disruptive. For more information, see [vMotion between VDS/VSS and NSX-T virtual switch](https://kb.vmware.com/s/article/56991){: external}.
 
@@ -64,7 +64,7 @@ If you experience any issue during migration, see [Migrating a virtual machine b
 ![Migrating network connectivity with NSX-T L2 bridge solution](../../images/v2t-nsx-t-l2-bridge-3.svg "Migrating network connectivity with NSX-T L2 bridge solution."){: caption="Figure 3. Migrating network connectivity with NSX-T L2 bridge solution" caption-side="bottom"}
 
 1. Before migrating VMs, ensure that you migrated the distributed firewall configuration to allow the required traffic flow to and from the VMs. If you are considering the Migration Coordinator, see [Migrating distributed firewall configuration](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.1/migration/GUID-CFFE8C28-2D32-4AC5-98C2-9F1AEE525190.html){: external}.
-2. To migrate the VMs hosted on the NSX-V logical switch that is stretched to the NSX-T environment, log in to the vCenter appliance on the vCenter Server with NSX-T environment and initiate the import VMs workflow. This process asks for credentials on the vCenter appliance on the vCenter Server with NSX-T environment and vMotion one or more VMs. For more information, see [Introducing the Advanced Cross vCenter Server vMotion capability](https://core.vmware.com/resource/introducing-advanced-cross-vcenter-server-vmotion-capability#section1){: external}.
+2. To migrate the VMs hosted on the NSX-V logical switch that is stretched to the NSX-T environment, log in to the vCenter appliance on the {{site.data.keyword.vcf-auto-short}} with NSX-T environment and initiate the import VMs workflow. This process asks for credentials on the vCenter appliance on the {{site.data.keyword.vcf-auto-short}} with NSX-T environment and vMotion one or more VMs. For more information, see [Introducing the Advanced Cross vCenter Server vMotion capability](https://core.vmware.com/resource/introducing-advanced-cross-vcenter-server-vmotion-capability#section1){: external}.
 3. When all the VMs are migrated, the L2 bridge can be disconnected.
 
 ## Considerations for using NSX-T L2 bridge in migration
@@ -91,4 +91,4 @@ The management NIC on the NSX-T Edge node VM must be able to reach the NSX-T Man
 
 * [Overview of Edge Bridging in NSX-T](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.2/migration/GUID-12FE83E9-2FA9-40F7-A3FF-BC21E13F6720.html){: external}
 * [Extending Layer 2 Networks with NSX-T Edge Bridge](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.2/migration/GUID-5B9390FB-7E52-4669-AF63-3C3490841432.html){: external}
-* [Ordering services for vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices)
+* [Ordering services for {{site.data.keyword.vcf-auto-short}} instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices)

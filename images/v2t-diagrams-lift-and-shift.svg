@@ -377,7 +377,7 @@
               <xhtml:font
                  style="font-size: 9px">
                 <xhtml:span
-                   style="font-family: &quot;helvetica neue&quot; ; background-color: rgb(255 , 255 , 255) ; font-size: 9px">vCenter Server</xhtml:span>
+                   style="font-family: &quot;helvetica neue&quot; ; background-color: rgb(255 , 255 , 255) ; font-size: 9px">VCF for Classic</xhtml:span>
                 <xhtml:br
                    style="font-family: &quot;helvetica neue&quot; ; font-size: 9px" />
                 <xhtml:span
@@ -393,7 +393,7 @@
          fill="#000000"
          font-family="Helvetica"
          font-size="9px"
-         id="text1526">vCenter Server...</text>
+         id="text1526">VCF for Classic...</text>
     </switch>
   </g>
   <image
@@ -1406,7 +1406,7 @@ Router</xhtml:span>
             <xhtml:div
                style="display: inline-block; font-size: 9px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">
               <xhtml:span
-                 style="font-family: &quot;helvetica neue&quot; ; background-color: rgb(255 , 255 , 255) ; font-size: 9px">vCenter Server <xhtml:br
+                 style="font-family: &quot;helvetica neue&quot; ; background-color: rgb(255 , 255 , 255) ; font-size: 9px">VCF for Classic <xhtml:br
    style="font-size: 9px" />
 with NSX-T instance</xhtml:span>
             </xhtml:div>
@@ -1419,7 +1419,7 @@ with NSX-T instance</xhtml:span>
          fill="#000000"
          font-family="Helvetica"
          font-size="9px"
-         id="text1758">vCenter Server...</text>
+         id="text1758">VCF for Classic...</text>
     </switch>
   </g>
   <image

@@ -4,7 +4,7 @@ copyright:
 
   years:  2024
 
-lastupdated: "2024-01-29"
+lastupdated: "2024-06-05"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # Architecture pattern for deploying Veeam on VMware Cloud Foundation standard architecture
 {: #arch-pattern-vcf-veeam-std}
 
-This architecture pattern explains how to deploy Veeam® on {{site.data.keyword.cloud}} for VMware Cloud Foundation standard architecture deployment. With Veeam, you can increase the resiliency of your VMware Cloud Foundation instance and the workloads that are running on it through a secure backup and recovery solution.
+This architecture pattern explains how to deploy Veeam® on {{site.data.keyword.vcf-vpc}} standard architecture deployment in {{site.data.keyword.vpc_short}}. With Veeam, you can increase the resiliency of your VMware Cloud Foundation instance and the workloads that are running on it through a secure backup and recovery solution.
 
 An overview of this architecture pattern is shown in the following diagram.
 

@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-03-27"
+lastupdated: "2024-06-04"
 
 subcollection: vmwaresolutions
 
@@ -16,12 +16,15 @@ subcollection: vmwaresolutions
 # NSX-V to NSX-T migration overview
 {: #v2t-overview}
 
-This documentation provides a validated approach and guidance for existing {{site.data.keyword.vmwaresolutions_full}} customers with VMware vCenter Server® with NSX-V instances. In that way, they can move and migrate their workloads to new vCenter Server with NSX-T™ instances (also referred as V2T migration). This documentation is not primarily aimed at customers that want to migrate on-premises workloads to {{site.data.keyword.cloud_notm}}, although some of the approach and guidance is applicable.
+Starting with version 4.0, VMware NSX-T Data Center is known as VMware NSX. This document uses NSX-T and NSX-V for clarity between the two NSX solutions.
+{: note}
+
+This documentation provides a validated approach and guidance for existing {{site.data.keyword.vmwaresolutions_full}} customers with VMware {{site.data.keyword.vcf-auto-short}}® with NSX-V instances. In that way, they can move and migrate their workloads to new {{site.data.keyword.vcf-auto-short}} with NSX-T™ instances (also referred as V2T migration). This documentation is not primarily aimed at customers that want to migrate on-premises workloads to {{site.data.keyword.cloud_notm}}, although some of the approach and guidance is applicable.
 
 While VMware documentation describes a number of migration approaches, only the coexist or lift-and-shift approaches are validated by {{site.data.keyword.cloud_notm}}. In the co-exist approach, NSX-V, and NSX-T are run side by side and new workloads are placed on the new NSX-T environment and old workloads are decommissioned on the NSX-V environment. When the NSX-V environment is empty, it can be de-provisioned. This approach is not discussed further in the documentation, but it can be a validated option if you want to follow this path.
 {: note}
 
-In the lift-and-shift approach, the {{site.data.keyword.cloud_notm}} automation is used to deploy a new vCenter Server instance on the same or different VLANs. With this action, you can perform both NSX-V to NSX-T migration and workload migration.
+In the lift-and-shift approach, the {{site.data.keyword.cloud_notm}} automation is used to deploy a new {{site.data.keyword.vcf-auto-short}} instance on the same or different VLANs. With this action, you can perform both NSX-V to NSX-T migration and workload migration.
 
 The lift-and-shift migration approach enables:
 
@@ -42,7 +45,7 @@ The journey from NSX-V to NSX-T requires careful planning and preparation. You m
 
 An example of high-level migration workflow that uses the lift-and-shift migration approach with NSX-T L2 Bridge is as follows:
 
-* Deploy the new vCenter Server with NSX-T instance.
+* Deploy the new {{site.data.keyword.vcf-auto-short}} with NSX-T instance.
 * Create your required NSX-T network topology and configure the necessary network services.
 * Configure an NSX-T Edge bridge to extend the NSX-V VXLAN/logical switch/virtual wire to an overlay segment in NSX-T.
 * Use the VMware Migration Coordinator to migrate (copy across) the Distributed Firewall (dFW) configuration.
@@ -51,7 +54,7 @@ An example of high-level migration workflow that uses the lift-and-shift migrati
 * Use NSX-T Edge bridge and vSphere vMotion to migrate workload VMs to the overlay segment in NSX-T.
 * Migrate the Security Tags to the workload VMs in NSX-T.
 * Continue with all NSX-V logical switches until all VMs be evacuated from the NSX-V environment.
-* Decommission the old vCenter Server with NSX-V environment.
+* Decommission the old {{site.data.keyword.vcf-auto-short}} with NSX-V environment.
 
 Depending on the source environment complexity and the skills, experience and time commitments of your team you might want to engage professional services. This action can develop a migration plan and also run the migration for you.
 {: note}
@@ -63,7 +66,7 @@ You must be familiar with NSX-T concepts and administration tasks before any mig
 
 * [VMware Learning for NSX-T education](https://www.vmware.com/learning.html){: external}
 * [{{site.data.keyword.cloud_notm}} VMware NSX-T Architecture](/docs/vmwaresolutions?topic=vmwaresolutions-nsx-t-design)
-* [vCenter Server Overview](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview)
+* [{{site.data.keyword.vcf-auto-short}} Overview](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview)
 * [NSX-V to NSX-T 3.x Migration Coordinator](https://nsx.techzone.vmware.com/resource/nsx-v-nsx-t-3x-migration-coordinator#_Toc57645169){: external}
 
 ## Related links

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2020, 2023
+  years:  2020, 2024
 
-lastupdated: "2023-09-11"
+lastupdated: "2024-06-04"
 
 subcollection: vmwaresolutions
 
@@ -21,7 +21,7 @@ The {{site.data.keyword.cloud}} for VMware® Regulated Workloads is built with v
 ## Management cluster
 {: #vrw-vsphere-platform-management}
 
-The management software stack consists of vCenter Server, AD/DNS, and VMware Aria® Operations™ tooling. vCenter Server manages all hosts in the vCenter Server instance. AD/DNS provide Domain Name Services (DNS) and management authentication services, a local NTP source, and role-based access control (RBAC) for access to the vCenter, VMware Aria operations tooling, and NSX-T™ administration portal. The VMware Aria operations tooling includes VMware Aria Operations Manager, and VMware Aria Operations™ for Logs. These components collectively provide a native console for vSphere operations, ability to automate management of the cloud platform, centralized log collection and analysis, and network visibility and optimization up to the hypervisor. SaaS consumer workloads are not monitored by default.
+The management software stack consists of vCenter Server, AD/DNS, and VMware Aria® Operations™ tooling. vCenter Server manages all hosts in the vCenter Server instance. AD/DNS provide Domain Name Services (DNS) and management authentication services, a local NTP source, and role-based access control (RBAC) for access to the vCenter, VMware Aria operations tooling, and NSX™ administration portal. The VMware Aria operations tooling includes VMware Aria Operations Manager, and VMware Aria Operations™ for Logs. These components collectively provide a native console for vSphere operations, ability to automate management of the cloud platform, centralized log collection and analysis, and network visibility and optimization up to the hypervisor. SaaS consumer workloads are not monitored by default.
 
 Within the Management cluster, shared storage is used to provide enhanced resiliency to the management stack. The use of shared storage provides rapid restoration of management components if an ESXi host is lost. vSAN based storage is used to keep all management stack data in the account boundary. vSAN requires a minimum cluster size of four ESXi hosts.
 
@@ -46,14 +46,14 @@ The vCenter Server with an embedded PSC is installed on a portable subnet on the
 
 One vCenter Server is deployed to manage the management cluster, the gateway cluster, and the SaaS consumer workload clusters.
 
-### NSX-T
+### NSX
 {: #vrw-vsphere-platform-management-nsxt}
 
-NSX-T™ provides a highly secure and flexible software-defined network to support the application requirements. NSX-T controllers are hosted in the management cluster.
+NSX™ provides a highly secure and flexible software-defined network to support the application requirements. NSX controllers are hosted in the management cluster.
 
-NSX-T is configured with three controllers, which provide a highly available and redundant configuration. Additionally a virtual IP (VIP) address is used to access the cluster to provide fault tolerance and high availability to NSX Manager nodes. Each controller manager is assigned a VLAN–backed IP address from the private portable address block that is designated for management components.
+NSX is configured with three controllers, which provide a highly available and redundant configuration. Additionally a virtual IP (VIP) address is used to access the cluster to provide fault tolerance and high availability to NSX Manager nodes. Each controller manager is assigned a VLAN–backed IP address from the private portable address block that is designated for management components.
 
-Hosting the NSX-T controllers in the management cluster ensures that network and security changes are not possible by anyone other than the designated administrators.
+Hosting the NSX controllers in the management cluster ensures that network and security changes are not possible by anyone other than the designated administrators.
 
 ### VMware Aria Operations Manager
 {: #vrw-vsphere-platform-management-vrops}
@@ -78,8 +78,8 @@ VMware Aria Operations for Logs collects log events from the following virtual i
 
 - vCenter Server
 - ESXi hosts
-- NSX controllers
-- NSX routers
+- NSX managers
+- NSX gateways
 - NSX distributed firewall ESXi kernel module
 - VMware Aria Operations Manager analytics cluster nodes and remote collectors
 - VMware Aria Operations for Logs instance in the other instances as a result of event forwarding (MZR configuration)
@@ -104,7 +104,7 @@ No vSphere management components are deployed to the gateway cluster. The toolin
 ## Workload cluster
 {: #vrw-vsphere-platform-workload}
 
-THe NSX-T gateway cluster VMs that house the Tier-0 and Tier-1 routers are on the workload clusters. No vSphere management components are deployed to the workload cluster. The tooling in the management cluster is used to manage the workload cluster ESXi hosts.
+THe NSX gateway cluster VMs that house the Tier-0 and Tier-1 routers are on the workload clusters. No vSphere management components are deployed to the workload cluster. The tooling in the management cluster is used to manage the workload cluster ESXi hosts.
 
 ## Related links
 {: #vrw-vsphere-platform-related}

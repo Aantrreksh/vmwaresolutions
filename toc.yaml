@@ -667,7 +667,7 @@ toc:
           topics:
 
           - topicgroup:
-              label: VMware Cloud Foundation on VPC
+              label: VMware Cloud Foundation for VPC
               topics:
               - archiref/vpc-vcf/vpc-vcf-overview.md
               - archiref/vpc-vcf/vpc-vcf-architectures.md

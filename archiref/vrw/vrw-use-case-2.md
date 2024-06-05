@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2020, 2023
+  years:  2020, 2024
 
-lastupdated: "2023-09-11"
+lastupdated: "2024-06-04"
 
 subcollection: vmwaresolutions
 
@@ -22,7 +22,7 @@ The architecture of the {{site.data.keyword.cloud_notm}} for VMware Regulated Wo
 
 Compute and storage resources are offered in a dedicated workload region where the deployment of multiple clusters allows isolation of workloads by business unit or other designation, such as PCI workloads, further enhancing the security of the {{site.data.keyword.cloud_notm}} for VMware Regulated Workloads.
 
-Network isolation is maintained between the workload region, the management plane, and the edge region by using a gateway appliance at the physical plant level. The workloads also benefit from the inclusion of an SDN overlay that is delivered with NSX-T™. NSX-T uses micro-segmentation to enforce traffic isolation. Micro-segmentation policies applied to workload VMs are configured by the user to meet business requirements.
+Network isolation is maintained between the workload region, the management plane, and the edge region by using a gateway appliance at the physical plant level. The workloads also benefit from the inclusion of an SDN overlay that is delivered with NSX™. NSX uses micro-segmentation to enforce traffic isolation. Micro-segmentation policies applied to workload VMs are configured by the user to meet business requirements.
 
 The use of shared resources, such as VSIs or shared storage options, is prohibited to prevent any data leakage out of the {{site.data.keyword.cloud_notm}} for VMware Regulated Workloads. All resources necessary to support the workloads are delivered from within the {{site.data.keyword.cloud_notm}} for VMware Regulated Workloads dedicated instance.
 

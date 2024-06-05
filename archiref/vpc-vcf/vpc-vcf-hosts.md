@@ -4,9 +4,10 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-04-29"
+lastupdated: "2024-06-04"
 
 subcollection: vmwaresolutions
+
 
 ---
 
@@ -15,7 +16,7 @@ subcollection: vmwaresolutions
 # Bare metal servers for {{site.data.keyword.vpc_short}}
 {: #vpc-vcf-hosts}
 
-The following information provides an overview of how {{site.data.keyword.cloud_notm}} bare metal servers are deployed in {{site.data.keyword.cloud}} for VMware Cloud Foundation.
+The following information provides an overview of how {{site.data.keyword.cloud_notm}} bare metal servers are deployed in {{site.data.keyword.vcf-vpc}}.
 
 ## Physical host connections in VPC
 {: #vpc-vcf-hosts-connections}

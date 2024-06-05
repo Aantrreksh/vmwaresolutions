@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2024
 
-lastupdated: "2024-04-18"
+lastupdated: "2024-06-04"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # VMware storage options
 {: #vpc-vcf-storage-overview}
 
-The architecture for {{site.data.keyword.cloud}} for VMware Cloud Foundation is built upon {{site.data.keyword.vpc_short}} network architecture and uses bare metal servers for {{site.data.keyword.vpc_short}}. VMware Cloud Foundation uses the locally attached NVMe drives on bare metal servers to create a software-defined storage for the VMware Cloud Foundation deployment. 
+The architecture for {{site.data.keyword.vcf-vpc}} is built upon {{site.data.keyword.vpc_short}} network architecture and uses bare metal servers for {{site.data.keyword.vpc_short}}. VMware Cloud Foundation uses the locally attached NVMe drives on bare metal servers to create a software-defined storage for the VMware Cloud Foundation deployment. 
 
 ![vSAN deployment with NVMe SSD drives](../../images/vcf-vpc-v2-bms-vsan.svg "vSAN deployment with NVMe SSD drives"){: caption="Figure 1. vSAN deployment with NVMe SSD drives" caption-side="bottom"}
 
@@ -26,7 +26,7 @@ Currently, VMware vSAN is the only storage option. {{site.data.keyword.vpc_short
 VMware Cloud Foundation version 4.5.2 is supported for the VMware Cloud Foundation deployments, which comes with VMware vSphere 7.0 Update 3l hosts and vSAN 7.0 Update 3l. Therefore, Original Storage Architecture (OSA) is the only supported vSAN architecture.
 {: note}
 
-As part of {{site.data.keyword.cloud}} for VMware Cloud Foundation automation, vSAN is deployed automatically for you and there is no need to apply any specific configurations for this. However, you can configure various storage policies for your virtual machines to meet various availability or performance goals post initial provisioning though vCenter server.
+As part of {{site.data.keyword.vcf-vpc}} automation, vSAN is deployed automatically for you and there is no need to apply any specific configurations for this. However, you can configure various storage policies for your virtual machines to meet various availability or performance goals post initial provisioning though vCenter server.
 
 ## VMware vSAN design
 {: #vpc-vcf-storage-virtual-vsan-design}
@@ -57,7 +57,7 @@ For more information about physical NIC connections, see [Networking overview fo
 ## vSAN storage policy
 {: #vpc-vcf-storage-virtual-storage-policy}
 
-When vSAN is enabled and configured, storage policies are configured to define the VM storage characteristics. Storage policies specify different levels of service for different VMs. With {{site.data.keyword.cloud}} for VMware Cloud Foundation, default policies are created for you, but you are responsible for configuring the storage policies based on your needs for each VM.
+When vSAN is enabled and configured, storage policies are configured to define the VM storage characteristics. Storage policies specify different levels of service for different VMs. With {{site.data.keyword.vcf-vpc}}, default policies are created for you, but you are responsible for configuring the storage policies based on your needs for each VM.
 
 The default storage policy in this design tolerates a single failure. It is configured with erasure coding, with the Failure tolerance method set to RAID-5/6 (Erasure Coding) - Capacity and Primary level of failures set to 1. The RAID 5 configuration requires a minimum of four hosts.
 

@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-04-29"
+lastupdated: "2024-06-04"
 
 subcollection: vmwaresolutions
 
@@ -20,7 +20,7 @@ When logical network topologies are deployed on {{site.data.keyword.vpc_full}} h
 
 ![VPC routing with NSX gateways](../../images/vcf-vpc-v2-overlay-routing.svg "VPC routing with NSX gateways"){: caption="Figure 1. VPC routing with NSX gateways" caption-side="bottom"}
 
-The {{site.data.keyword.cloud}} for VMware Cloud Foundation automation deploys these routes based on customer-given variables. This topic explains the core principles for these routing configurations done both in VPC and in NSX Tier-0 and Tier-1 gateways.
+The {{site.data.keyword.vcf-vpc}} automation deploys these routes based on customer-given variables. This topic explains the core principles for these routing configurations done both in VPC and in NSX Tier-0 and Tier-1 gateways.
 
 In the consolidated deployment, you have only one edge cluster and one Tier-0 gateway. In the standard deployment, you have two edge clusters and two Tier-0 gateways. The Tier-0 gateways follow the same principles presented.
 {: note}
@@ -99,7 +99,7 @@ When you plan the routing, summarize the NSX overlay subnets or prefixes to keep
 VPC routes are Zone specific.
 {: note}
 
-When you create a VPC route, it enables traffic within the Zone or VPC depending on how it is created. If you use any of the interconnectivity options, such as {{site.data.keyword.dl_short}} or {{site.data.keyword.tg_short}}, and you need connectivity from another VPC attached to a TGW, in addition to the VPC route, you can create a VPC prefix by matching the NSX overlay subnet or prefix. This action allows both DL and TGW to advertise your NSX overlay subnet or prefix to the attached TGW connections or DL. By using the previous example, you can create a VPC prefix by matching the route `192.168.4.0/22`, which enables TGW to advertise this prefix to the other attached VPCs, or Classic. For more information about VPC prefixes and about creating prefixes, see [Bring your own subnet](/docs/vpc?topic=vpc-configuring-address-prefixes).
+When you create a VPC route, it enables traffic within the Zone or VPC depending on how it is created. 
 
 In the interconnectivity use case, an ingress routing table is created.
 
@@ -114,6 +114,8 @@ Ingress routes are also created in the zone where VMware Cloud Foundation is dep
 | ------------------|------|--------------|------|--------|------|--------- |
 | NSX overlay networks | `us-south-1` | Ingress | `192.168.4.0/22` | Deliver | IP | `192.168.0.10` |
 {: caption="Table 8. VPC ingress routes" caption-side="bottom"}
+
+If you use any of the interconnectivity options, such as {{site.data.keyword.dl_short}} or {{site.data.keyword.tg_short}}, and you need connectivity from another VPC attached to a TGW, in addition to the VPC route, you can create a VPC (ingress) routes with advertise flags. This action allows both DL and TGW to advertise your NSX overlay subnet or prefix to the attached TGW connections or DL.
 
 For more information about VPC routes, see [VPC routing tables and routes](/docs/vpc?topic=vpc-about-custom-routes).
 

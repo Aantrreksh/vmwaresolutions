@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-04-16"
+lastupdated: "2024-06-04"
 
 subcollection: vmwaresolutions
 
@@ -81,12 +81,12 @@ You are not able to neatly classify every source environment due to the multiple
 
 Based on the source environment complexity, you must consider the following target platform:
 
-* Single site VMware vCenter Server® instance - An automated provisioning offering that deploys hardware and software in a defined pattern. After initial deployment, you must add capacity and additional services to a number of automated workflows as needed. For more information, see [vCenter Server overview](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview). The types of vCenter Server instances include:
+* Single site VMware {{site.data.keyword.vcf-auto-short}}® instance - An automated provisioning offering that deploys hardware and software in a defined pattern. After initial deployment, you must add capacity and additional services to a number of automated workflows as needed. For more information, see [{{site.data.keyword.vcf-auto-short}} overview](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview). The types of {{site.data.keyword.vcf-auto-short}} instances include:
    * Regulated Workloads. For more information, see [VMware Regulated Workloads overview](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-overview).
    * Security and Compliance Readiness Bundle. For more information, see [Security and Compliance Readiness Bundle overview](/docs/vmwaresolutions?topic=vmwaresolutions-scb-overview).
-* Multisite or location vCenter Server instance - The vCenter Server offering can be deployed in multiple locations to create a multisite or location vCenter Server instance. The vCenter Server multisite deployment pattern is two or more instances that are deployed into a common root domain and single sign-on domain with vCenters in Enhanced Link Mode. Each site or location has its own NSX-T instance. For more information, see [Multisite configuration for vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_multisite).
+* Multisite or location {{site.data.keyword.vcf-auto-short}} instance - The {{site.data.keyword.vcf-auto-short}} offering can be deployed in multiple locations to create a multisite or location {{site.data.keyword.vcf-auto-short}} instance. The {{site.data.keyword.vcf-auto-short}} multisite deployment pattern is two or more instances that are deployed into a common root domain and single sign-on domain with vCenters in Enhanced Link Mode. Each site or location has its own NSX-T instance. For more information, see [Multisite configuration for {{site.data.keyword.vcf-auto-short}} instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_multisite).
 
-The vCenter Server multizone offering is now deprecated. For more information, see [vCenter Server multizone BOM](/docs/vmwaresolutions?topic=vmwaresolutions-mcv-archi-bom).
+The {{site.data.keyword.vcf-auto-short}} multizone offering is now deprecated. For more information, see [{{site.data.keyword.vcf-auto-short}} multizone BOM](/docs/vmwaresolutions?topic=vmwaresolutions-mcv-archi-bom).
 {: note}
 
 For more information about comparisons of the previous available offerings to enable a selection, see [Target platforms in {{site.data.keyword.cloud_notm}}](/docs/vmwaresolutions?topic=vmwaresolutions-v2t-targets).
@@ -115,7 +115,7 @@ Considerations include the following questions:
 
 * Do you need to move workload VM with or without limited downtime?
 * Do you need to move workload VMs individually or in small batches but cannot move a subnet at a time?
-* Do you need to extend Layer 2 between the existing and new vCenter Server environments?
+* Do you need to extend Layer 2 between the existing and new {{site.data.keyword.vcf-auto-short}} environments?
    * How many networks do you need to extend at one time?
    * Do you need high availability?
    * How much spare capacity do you have on the NSX-V prepared host to deploy the required number of NSX-T Edge node VMs for L2 Bridge edge VMs?
@@ -123,7 +123,7 @@ Considerations include the following questions:
 The following migration patterns for workload migration must be considered:
 
 * HCX™ - VMware HCX application migration enables the scheduling and migration of thousands of VMs. For more information, see [VMware HCX Migration Types](https://docs.vmware.com/en/VMware-HCX/4.3/VMware%20HCX%20Documentation%204.3.zip){: external}.
-* Advanced vCenter vMotion - From vSphere 7.0 Update 1c (Patch 02), vCenter supports the import of VMs from another vCenter Server that is not part of the same SSO Domain. The source vCenter Server must be version 6.5 or later. For more information, see [Introducing the Advanced Cross vCenter Server vMotion Capability](https://core.vmware.com/resource/introducing-advanced-cross-vcenter-server-vmotion-capability#){: external}.
+* Advanced vCenter vMotion - From vSphere 7.0 Update 1c (Patch 02), vCenter supports the import of VMs from another {{site.data.keyword.vcf-auto-short}} that is not part of the same SSO Domain. The source {{site.data.keyword.vcf-auto-short}} must be version 6.5 or later. For more information, see [Introducing the Advanced Cross vCenter Server vMotion Capability](https://core.vmware.com/resource/introducing-advanced-cross-vcenter-server-vmotion-capability#){: external}.
 * Zerto or Veeam® - You might have Zerto or Veeam installed on your NAX-V environment and be competent in their usage. These products can be used to replicate VMs from the source data store to the target data store and then initiate a fail-over. And also to replicate a backup from the source cluster to a recovery on the target cluster.
 
 ## Network L2 extension
@@ -140,7 +140,7 @@ Consider the following details for Layer 2 network extension during migration:
 * NSX-T L2 bridge - In this approach an NSX-T Edge VM or preferably a pair of NSX-T Edge VMs, are deployed on the NSX-V prepared hosts. These Edge VMs are registered with NSX-T Manager and a L2Bridge configured to connect the required NSX-V VXLAN (virtual wire) to an NSX-T segment. For more information, see [Migration that uses vMotion or third-party tools and NSX-T L2 bridge](/docs/vmwaresolutions?topic=vmwaresolutions-v2t-l2-nsx-t).
 * VMware HCX - VMware HCX is a solution that is primarily used for migrating workloads between environments, and consists of a number of services to achieve workload mobility. HCX integrates into both NSX-V and NSX-T. HCX Network Extension (NCX-NE) allows simultaneous bridging of multiple networks. The solution is useful in cases where the applications are spread across multiple segments and need inter-app connectivity for extended periods of time during the migration. Using HCX allows bridging of eight segments at a time per HCX-NE pair. This action is especially useful if a workload spans multiple segments. For more information, see [Workload migration with HCX](/docs/vmwaresolutions?topic=vmwaresolutions-v2t-hcx).
 
-A third possible Layer 2 approach is to use NSX-T L2VPN. In this approach, the NSX-V environment acts as the L2VPN client and the NSX-T environment acts as the L2VPN server. The L2 VPN connection is secured with a route-based IPsec tunnel between the L2 VPN server and the L2 VPN client. This approach is not recommended in {{site.data.keyword.cloud_notm}} between two vCenter Server instances for V2T migration as NSX-T L2 Bridge offers better performance. And also because {{site.data.keyword.cloud_notm}} private network supports large MTU (jumbo frames).
+A third possible Layer 2 approach is to use NSX-T L2VPN. In this approach, the NSX-V environment acts as the L2VPN client and the NSX-T environment acts as the L2VPN server. The L2 VPN connection is secured with a route-based IPsec tunnel between the L2 VPN server and the L2 VPN client. This approach is not recommended in {{site.data.keyword.cloud_notm}} between two {{site.data.keyword.vcf-auto-short}} instances for V2T migration as NSX-T L2 Bridge offers better performance. And also because {{site.data.keyword.cloud_notm}} private network supports large MTU (jumbo frames).
 {: note}
 
 ## Related links

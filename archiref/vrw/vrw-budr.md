@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2024
 
-lastupdated: "2024-02-02"
+lastupdated: "2024-06-04"
 
 subcollection: vmwaresolutions
 
@@ -27,7 +27,7 @@ The management cluster relies upon native vSphere® DRS capabilities to keep man
 |---|---|---
 |**Active Directory / DNS** | Image through the Veeam® agent | Daily |
 |**vCenter** | Backup server file| Daily |
-|**NSX-T™ Managers** | Backup server file | Daily|
+|**NSX™ Managers** | Backup server file | Daily|
 |**VMware Aria® Operations™ Manager** | VMDK through Veeam | Daily |
 |**VMware Aria Operations™ for Logs** | VMDK through Veeam | Daily |
 |**Virtual Machine Backup Server** | VMDK through Veeam| |

@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2024
 
-lastupdated: "2024-02-02"
+lastupdated: "2024-06-04"
 
 subcollection: vmwaresolutions
 
@@ -38,7 +38,7 @@ The key design element at the network level is the adoption of cross-region netw
 
 Review the following network design decisions:
 * The {{site.data.keyword.cloud}} classic network environment does not allow the stretching of VLANs across data centers. Therefore, this design does not use stretched VLANs at the physical network infrastructure level.
-* While some VMware NSX-T™ designs can stretch segments across geographically distant vSphere clusters, these designs require a common NSX-T cluster, which does not meet the design requirements for independence between regions.
+* While some VMware NSX™ designs can stretch segments across geographically distant vSphere clusters, these designs require a common NSX cluster, which does not meet the design requirements for independence between regions.
 * It's possible to stretch networks between geographically dispersed vSRX appliances. However, this design does not present this use case.
 * Recovered management components use the same IP addressing to minimize recovery effort.
 * To provide isolation of traffic, the design uses tunnels (GRE or IPsec driven by customer requirements) between regions and also between the region and the SaaS consumer and SaaS provider.
@@ -67,15 +67,15 @@ For a file-based restore, the process consists of deploying a new VCSA and resto
 ## NSX Manager
 {: #vrw-dualregion-design-nsxmanager}
 
-NSX-T Manager provides the user interface and the API for creating, configuring, and monitoring the NSX-T components, such as virtual network segments, Tier-0 and Tier-1 gateways. NSX-T Manager implements both the management and the control planes for the NSX-T infrastructure. In the design, the protected region and the recovery region have their own NSX-T Manager cluster and the span of the Transport Zones is limited to the region. NSX-T managers per region enable service isolation so that each region is considered to be independent.
+NSX Manager provides the user interface and the API for creating, configuring, and monitoring the NSX components, such as virtual network segments, Tier-0 and Tier-1 gateways. NSX Manager implements both the management and the control planes for the NSX infrastructure. In the design, the protected region and the recovery region have their own NSX Manager cluster and the span of the Transport Zones is limited to the region. NSX managers per region enable service isolation so that each region is considered to be independent.
 
-The use of the cluster virtual IP address provides high availability of the user interface and API of the NSX-T Manager cluster. The use of vSphere HA enables business continuity of a failed appliance.
+The use of the cluster virtual IP address provides high availability of the user interface and API of the NSX Manager cluster. The use of vSphere HA enables business continuity of a failed appliance.
 
-Image-based backups of NSX-T manager are not supported. Therefore, it is recommended to configure a scheduled NSX-T appliance backup by using an SFTP server, as the only option with NSX-T. In the design, the SFTP server destination is a directory on the local Veeam Repository server. This Windows® server is configured as an SFTP server and used for the recovery of the backup files when needed. To limit the number of components needed, a separate stand-alone SFTP server is not used and instead the SFTP service within the Windows OS of the Veeam Repository server is used.
+Image-based backups of NSX manager are not supported. Therefore, it is recommended to configure a scheduled NSX appliance backup by using an SFTP server, as the only option with NSX. In the design, the SFTP server destination is a directory on the local Veeam Repository server. This Windows® server is configured as an SFTP server and used for the recovery of the backup files when needed. To limit the number of components needed, a separate stand-alone SFTP server is not used and instead the SFTP service within the Windows OS of the Veeam Repository server is used.
 
-If the Veeam Repository server fails, then VCSA and NSX-T Manager backups are lost. Therefore, Veeam file copy jobs are used to copy the files from the local region to the remote region, which provides an off-site copy of the backup.
+If the Veeam Repository server fails, then VCSA and NSX Manager backups are lost. Therefore, Veeam file copy jobs are used to copy the files from the local region to the remote region, which provides an off-site copy of the backup.
 
-While the NSX-T Manager appliance is inoperable, the data plane is not affected, however, configuration changes are not possible. The restore process restores one node first and then prompts you to add the other nodes.
+While the NSX Manager appliance is inoperable, the data plane is not affected, however, configuration changes are not possible. The restore process restores one node first and then prompts you to add the other nodes.
 
 As region management is independent, network configurations in the protected region and the recovery region need to be in sync according to the customer's network resiliency strategy and overlay network design. You can choose different network resiliency strategies for the workload networks. After recovery, you might require some workloads to use the same IP addresses or a different IP addressing scheme.
 
@@ -84,7 +84,7 @@ It is recommended to use automation to create overlay network components so that
 ## Caveonix RiskForesight
 {: #vrw-dualregion-design-caveonix}
 
-The {{site.data.keyword.cloud_notm}} for VMware® Regulated Workloads automation deploys a Caveonix RiskForesight all-in-one appliance in both the protected region and the recovery region. In the dual region design only the recovery region appliance is used, and is reconfigured so that the protected region vCenter, NSX-T manager are configured as Asset Repositories. The use of a single instance of Caveonix RiskForesight to manage compliance and cyberrisk across both the protected and recovery regions allows a single view of all environments. By placing the single instance of Caveonix RiskForesight in the recovery region, that instance is available when in DR invocation without any DR activities.
+The {{site.data.keyword.cloud_notm}} for VMware® Regulated Workloads automation deploys a Caveonix RiskForesight all-in-one appliance in both the protected region and the recovery region. In the dual region design only the recovery region appliance is used, and is reconfigured so that the protected region vCenter, NSX manager are configured as Asset Repositories. The use of a single instance of Caveonix RiskForesight to manage compliance and cyberrisk across both the protected and recovery regions allows a single view of all environments. By placing the single instance of Caveonix RiskForesight in the recovery region, that instance is available when in DR invocation without any DR activities.
 
 vSphere HA provides availability of the RiskForesight instance and for business resiliency. For image-level backups of the VM, configure and store them in the recovery region of the Veeam Repository server. Configure a Veeam backup copy job to copy the backup to the protected site so you can provide an off-site copy of the backup.
 

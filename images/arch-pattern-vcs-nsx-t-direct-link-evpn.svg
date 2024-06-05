@@ -76,13 +76,13 @@
                     <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe flex-start; justify-content: unsafe flex-start; width: 647px; height: 1px; padding-top: 111px; margin-left: 300px;">
                         <div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: left;">
                             <div style="display: inline-block; font-size: 9px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">
-                                <span style="font-size: 9px ; font-family: &quot;helvetica neue&quot; ; background-color: rgb(255 , 255 , 255)">vCenter Server</span>
-                                <span style="font-size: 9px ; font-family: &quot;helvetica neue&quot; ; background-color: rgb(255 , 255 , 255)">instance with NSX-T</span>
+                                <span style="font-size: 9px ; font-family: &quot;helvetica neue&quot; ; background-color: rgb(255 , 255 , 255)">VCF for Classic</span>
+                                <span style="font-size: 9px ; font-family: &quot;helvetica neue&quot; ; background-color: rgb(255 , 255 , 255)">instance with NSX</span>
                             </div>
                         </div>
                     </div>
                 </foreignObject>
-                <text x="300" y="120" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="9px">vCenter Server instance with NSX-T</text>
+                <text x="300" y="120" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="9px">VCF for Classic instance with NSX</text>
             </switch>
         </g>
         <image x="271.5" y="105.5" width="25" height="25" xlink:href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjNweCIgaGVpZ2h0PSI1NnB4IiB2aWV3Qm94PSIwIDAgNjMgNTYiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+JiN4YTsgICAgPCEtLSBHZW5lcmF0b3I6IFNrZXRjaCA1MyAoNzI1MjApIC0gaHR0cHM6Ly9za2V0Y2hhcHAuY29tIC0tPiYjeGE7ICAgIDx0aXRsZT5Hcm91cCAxMjwvdGl0bGU+JiN4YTsgICAgPGRlc2M+Q3JlYXRlZCB3aXRoIFNrZXRjaC48L2Rlc2M+JiN4YTsgICAgPGRlZnM+JiN4YTsgICAgICAgIDxwb2x5Z29uIGlkPSJwYXRoLTEiIHBvaW50cz0iMC4wMDIwOTU0MDY0NSAwLjI0Njc2NjgzNiA2Mi42NzE1MTE0IDAuMjQ2NzY2ODM2IDYyLjY3MTUxMTQgNTUuNTc1OTc0MSAwLjAwMjA5NTQwNjQ1IDU1LjU3NTk3NDEiLz4mI3hhOyAgICA8L2RlZnM+JiN4YTsgICAgPGcgaWQ9IlBhZ2UtMSIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+JiN4YTsgICAgICAgIDxnIGlkPSJOZXR3b3JrLUljb25zIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMjYxMS4wMDAwMDAsIC0yMDE1LjAwMDAwMCkiPiYjeGE7ICAgICAgICAgICAgPGcgaWQ9Ikdyb3VwLTEyIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyNjExLjAwMDAwMCwgMjAxNC4wMDAwMDApIj4mI3hhOyAgICAgICAgICAgICAgICA8ZyBpZD0iR3JvdXAtMyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMC4wMDAwMDAsIDAuODQ5Njg3KSI+JiN4YTsgICAgICAgICAgICAgICAgICAgIDxtYXNrIGlkPSJtYXNrLTIiIGZpbGw9IndoaXRlIj4mI3hhOyAgICAgICAgICAgICAgICAgICAgICAgIDx1c2UgeGxpbms6aHJlZj0iI3BhdGgtMSIvPiYjeGE7ICAgICAgICAgICAgICAgICAgICA8L21hc2s+JiN4YTsgICAgICAgICAgICAgICAgICAgIDxnIGlkPSJDbGlwLTIiLz4mI3hhOyAgICAgICAgICAgICAgICAgICAgPHBvbHlnb24gaWQ9IkZpbGwtMSIgZmlsbD0iIzAwODgyQiIgbWFzaz0idXJsKCNtYXNrLTIpIiBwb2ludHM9IjAuMDAyMDk1NDA2NDUgNTUuNTc1OTc0MSA2Mi42NzM2MDY4IDU1LjU3NTk3NDEgNjIuNjczNjA2OCAwLjI0Njc2NjgzNiAwLjAwMjA5NTQwNjQ1IDAuMjQ2NzY2ODM2Ii8+JiN4YTsgICAgICAgICAgICAgICAgPC9nPiYjeGE7ICAgICAgICAgICAgICAgIDxwb2x5Z29uIGlkPSJGaWxsLTQiIGZpbGw9IiMwMDg4MkIiIHBvaW50cz0iMzAuNDkwNDY4NyAyMi4yNTY0OTcxIDQuMTExMzk2OTkgMjkuNzgzMTk3IDMyLjM2Mzc2MjEgMzkuODUxNjI1IDU4LjU2MDUzMzUgMzAuNjYzMjY3NyIvPiYjeGE7ICAgICAgICAgICAgICAgIDxwb2x5Z29uIGlkPSJTdHJva2UtNSIgc3Ryb2tlPSIjRkZGRkZGIiBzdHJva2Utd2lkdGg9IjIuODM2IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHBvaW50cz0iMzAuNDkwNDY4NyAyMi4yNTY0OTcxIDQuMTExMzk2OTkgMjkuNzgzMTk3IDMyLjM2Mzc2MjEgMzkuODUxNjI1IDU4LjU2MDUzMzUgMzAuNjYzMjY3NyIvPiYjeGE7ICAgICAgICAgICAgICAgIDxwb2x5Z29uIGlkPSJGaWxsLTYiIGZpbGw9IiMwMDg4MkIiIHBvaW50cz0iMzAuNDkwNDY4NyAxNi4wNzQ2MjkgNC4xMTEzOTY5OSAyMy42MDEzMjg5IDMyLjM2Mzc2MjEgMzMuNjY5NzU2OSA1OC41NjA1MzM1IDI0LjQ4MTM5OTYiLz4mI3hhOyAgICAgICAgICAgICAgICA8cG9seWdvbiBpZD0iU3Ryb2tlLTciIHN0cm9rZT0iI0ZGRkZGRiIgc3Ryb2tlLXdpZHRoPSIyLjgzNiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBwb2ludHM9IjMwLjQ5MDQ2ODcgMTYuMDc0NjI5IDQuMTExMzk2OTkgMjMuNjAxMzI4OSAzMi4zNjM3NjIxIDMzLjY2OTc1NjkgNTguNTYwNTMzNSAyNC40ODEzOTk2Ii8+JiN4YTsgICAgICAgICAgICAgICAgPHBhdGggZD0iTTMwLjQ5MDQ2ODcsOS4wMTg5NzYzOCBMNC4xMTEzOTY5OSwxNi41NDU2NzYzIEwzMi4zNjM3NjIxLDI2LjYxNDEwNDMgTDU4LjU2MDUzMzUsMTcuNDI1NzQ3IEwzMC40OTA0Njg3LDkuMDE4OTc2MzggWiIgaWQ9IlN0cm9rZS04IiBzdHJva2U9IiNGRkZGRkYiIHN0cm9rZS13aWR0aD0iMi44MzYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLWRhc2hhcnJheT0iNS4xMTAwMDAxMzM1MTQ0MDQiLz4mI3hhOyAgICAgICAgICAgICAgICA8cG9seWxpbmUgaWQ9IlN0cm9rZS05IiBzdHJva2U9IiNGRkZGRkYiIHN0cm9rZS13aWR0aD0iMi44MzYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgcG9pbnRzPSI0LjExMTYwNjUzIDI5Ljc4Mjc3NzkgNC4xMTE2MDY1MyAzOC41ODEzODk2IDMyLjM2MTg3NjIgNDguNTAzMTM5MSA1OC41NTg2NDc2IDM5LjQ2MTQ2MDMgNTguNTU4NjQ3NiAzMC42NjI4NDg3Ii8+JiN4YTsgICAgICAgICAgICAgICAgPHBhdGggZD0iTTMxLjMzNTU0NjIsNDMuNzAzODIwMiBDMzEuMzM1NTQ2Miw0NC43NTc4MDk3IDMwLjY1MDM0ODMsNDUuNjE0ODMwOSAyOS44MDU4OTk1LDQ1LjYxNDgzMDkgQzI4Ljk1NzI1OTgsNDUuNjE0ODMwOSAyOC4yNzIwNjE5LDQ0Ljc1NzgwOTcgMjguMjcyMDYxOSw0My43MDM4MjAyIEMyOC4yNzIwNjE5LDQyLjY0NzczNTQgMjguOTU3MjU5OCw0MS43OTI4MDk1IDI5LjgwNTg5OTUsNDEuNzkyODA5NSBDMzAuNjUwMzQ4Myw0MS43OTI4MDk1IDMxLjMzNTU0NjIsNDIuNjQ3NzM1NCAzMS4zMzU1NDYyLDQzLjcwMzgyMDIiIGlkPSJGaWxsLTEwIiBmaWxsPSIjRkZGRkZGIi8+JiN4YTsgICAgICAgICAgICA8L2c+JiN4YTsgICAgICAgIDwvZz4mI3hhOyAgICA8L2c+JiN4YTs8L3N2Zz4=" preserveAspectRatio="none" />
@@ -115,14 +115,14 @@
                     <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe flex-end; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 130px; margin-left: 529px;">
                         <div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;">
                             <div style="display: inline-block; font-size: 8px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: nowrap;">
-                                NSX-T
+                                NSX
                                 <br />
                                 Managers
                             </div>
                         </div>
                     </div>
                 </foreignObject>
-                <text x="529" y="130" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="8px" text-anchor="middle">NSX-T...</text>
+                <text x="529" y="130" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="8px" text-anchor="middle">NSX...</text>
             </switch>
         </g>
         <rect x="471" y="134" width="27.4" height="28.54" fill="none" stroke="none" pointer-events="all" />
@@ -183,11 +183,11 @@
                 <foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;">
                     <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe flex-end; width: 102px; height: 1px; padding-top: 138px; margin-left: 686px;">
                         <div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: right;">
-                            <div style="display: inline-block; font-size: 8px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">NSX-T Overlay Segments</div>
+                            <div style="display: inline-block; font-size: 8px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">NSX Overlay Segments</div>
                         </div>
                     </div>
                 </foreignObject>
-                <text x="788" y="140" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="8px" text-anchor="end">NSX-T Overlay Segments</text>
+                <text x="788" y="140" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="8px" text-anchor="end">NSX Overlay Segments</text>
             </switch>
         </g>
         <path d="M 726.5 155.5 L 726.5 146" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke" />

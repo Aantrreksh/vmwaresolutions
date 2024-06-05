@@ -4,8 +4,7 @@ copyright:
 
   years:  2024
 
-lastupdated: "2024-01-29"
-
+lastupdated: "2024-06-05"
 
 subcollection: vmwaresolutions
 
@@ -17,7 +16,7 @@ subcollection: vmwaresolutions
 # Architecture pattern for deploying Zerto on VMware Cloud Foundation standard architecture
 {: #arch-pattern-vcf-zerto-std}
 
-This architecture pattern explains how to deploy Zerto on {{site.data.keyword.cloud}} for VMware Cloud Foundation standard architecture deployment. With Zerto, you can increase the resiliency of your VMware Cloud Foundation instance and the workloads through a continuous data protection-based disaster recovery and data protection solution.
+This architecture pattern explains how to deploy Zerto on {{site.data.keyword.vcf-vpc}} standard architecture deployment in {{site.data.keyword.vpc_short}}. With Zerto, you can increase the resiliency of your VMware Cloud Foundation instance and the workloads through a continuous data protection-based disaster recovery and data protection solution.
 
 ![Zerto on VMware Cloud Foundation standard architecture](../../images/vcf-arch-zerto-std.svg "Zerto on VMware Cloud Foundation standard architecture."){: caption="Figure 1. Zerto on VMware Cloud Foundation standard architecture" caption-side="bottom"}
 

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2020, 2023
+  years:  2020, 2024
 
-lastupdated: "2023-09-11"
+lastupdated: "2024-06-04"
 
 subcollection: vmwaresolutions
 
@@ -50,7 +50,7 @@ All systems that generate logs are configured to send their logs to VMware Aria 
 
 [VMware Aria Operations for Networks](https://www.vmware.com/products/aria-operations-for-networks.html){: external} helps you build an optimized, highly available, and secure network infrastructure across hybrid and multicloud environments. It provides network visibility and analytics to accelerate micro-segmentation security, minimize risk during application migration, optimize network performance and confidently manage and scale NSX deployments.
 
-VMware Aria Operations™ for Networks monitors network components and management traffic throughout the entire {{site.data.keyword.cloud_notm}} for VMware Regulated Workloads instance. The monitoring scope includes insight into the operation of the NSX-T™ overlay network. VMware Aria Operations for Networks is also used to help optimizing performance by eliminating network bottlenecks. VMware Aria Operations for Networks is an optional component that requires manual installation.
+VMware Aria Operations™ for Networks monitors network components and management traffic throughout the entire {{site.data.keyword.cloud_notm}} for VMware Regulated Workloads instance. The monitoring scope includes insight into the operation of the NSX™ overlay network. VMware Aria Operations for Networks is also used to help optimizing performance by eliminating network bottlenecks. VMware Aria Operations for Networks is an optional component that requires manual installation.
 
 ## Gateway cluster
 {: #vrw-operations-edge}

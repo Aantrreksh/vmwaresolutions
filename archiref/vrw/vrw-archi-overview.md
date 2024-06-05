@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2020, 2023
+  years:  2020, 2024
 
-lastupdated: "2023-09-11"
+lastupdated: "2024-06-04"
 
 subcollection: vmwaresolutions
 
@@ -15,9 +15,9 @@ subcollection: vmwaresolutions
 # Architecture overview
 {: #vrw-archi-overview}
 
-The {{site.data.keyword.cloud}} for VMware® Regulated Workloads architecture is an extension of the VMware vCenter Server® offering.
+The {{site.data.keyword.cloud}} for VMware® Regulated Workloads architecture is an extension of the {{site.data.keyword.vcf-auto}} offering.
 
-The design extends and enhances the basic VMware vCenter Server® architecture to deliver a secure, high-performance platform. Clients are able to run both classic virtualized workloads and containerized applications with the addition of {{site.data.keyword.redhat_openshift_full}}.
+The design extends and enhances the basic {{site.data.keyword.vcf-auto}} architecture to deliver a secure, high-performance platform. Clients are able to run both classic virtualized workloads and containerized applications with the addition of {{site.data.keyword.redhat_openshift_full}}.
 
 {{site.data.keyword.vmwaresolutions_full}} automation is used to deploy all layers of the platform thus consistently delivering a secure and compliant-ready build for every {{site.data.keyword.cloud_notm}} for VMware Regulated Workloads instance ordered.
 
@@ -27,21 +27,21 @@ The perimeter gateway cluster that is shown in the workload region is the same g
 
 The minimum viable product consists of the following components:
 * At least one workload cluster that includes four or more ESXi™ hosts
-* vSAN™ and NSX-T™
+* vSAN™ and NSX™
 * A management cluster of four ESXi hosts
 * A gateway cluster of two ESXi hosts or a physical FortiGate® appliance
 
 ## Management cluster
 {: #vrw-archi-overview-management}
 
-The management cluster is sized to support only the requirements of the management software stack. Do not run nonmanagement function workloads in the management cluster. Keeping the management functions fully isolated from the workload cluster makes it impossible for a runaway workload VM to use resources that are dedicated to platform management. This way, administrators ensure that they can maintain full control of the environment.
+The management cluster is sized to support only the requirements of the management software stack. Do not run non-management function workloads in the management cluster. Keeping the management functions fully isolated from the workload cluster makes it impossible for a runaway workload VM to use resources that are dedicated to platform management. This way, administrators ensure that they can maintain full control of the environment.
 
 vSAN is used to provide enhanced resiliency to the management stack. The use of shared storage provides rapid restoration of management components if an ESXi host is lost.
 
 The management software stack includes the following components:
 * vCenter Server, which manages all hosts in the entire {{site.data.keyword.cloud_notm}} for VMware Regulated Workloads instance.
 * Microsoft® AD/DNS servers, which provide DNS and authentication services.
-* NSX-T management components to fully isolate the SDN control plane from the workload cluster.
+* NSX management components to fully isolate the SDN control plane from the workload cluster.
 * Security is further enhanced by IBM Hyper Protect Crypto Services (HPCS). HPCS uses a FIPS 140-2 Level 4 hardware security module (HSM) that gives access to the highest level of security for regulated data and digital assets. HPCS helps meet regulatory compliance requirements by providing complete control of data encryption keys, including the HSM primary key.
 * Caveonix RiskForesight provides a common Risk Management Control Plane (RMCP) for continuous and proactive protection of management and edge workloads. It provides a comprehensive cloud workload protection platform for {{site.data.keyword.cloud_notm}} for VMware Regulated Workloads. The {{site.data.keyword.cloud_notm}} for VMware Regulated Workloads architecture is designed to enable compliance with NIST and other necessary certifications, as required for the SaaS provider and SaaS consumer.
 * VMware Aria® Operations™ Manager, VMware Aria Operations™ for Logs, and the optional VMware Aria Operations™ for Networks. These components collectively provide a console for vSphere operations, the ability to automate management of the cloud platform, centralized log collection, and network visibility, analysis, and optimization.  
@@ -59,7 +59,7 @@ The sizing of four ESXi servers for the workload cluster is based on the require
 
 vSAN is the storage provider and is fully contained within the workload environment. Therefore, all regulated data is isolated from external access and threats.
 
-NSX-T provides a highly secure and flexible software-defined network to support the application requirements. NSX-T management is external to the workload cluster thus ensuring that network and security changes are not possible by anyone other than the designated administrators. All north-south network access in the workload cluster is done through private and secure connections by using IPsec or IBM Direct Link.
+NSX provides a highly secure and flexible software-defined network to support the application requirements. NSX management is external to the workload cluster thus ensuring that network and security changes are not possible by anyone other than the designated administrators. All north-south network access in the workload cluster is done through private and secure connections by using IPsec or IBM Direct Link.
 
 Add more workload clusters to deliver dedicated resources for more applications or to satisfy business or compliance requirements.
 
