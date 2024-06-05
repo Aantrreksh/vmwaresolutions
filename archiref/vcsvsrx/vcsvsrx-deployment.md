@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2024
 
-lastupdated: "2024-02-01"
+lastupdated: "2024-06-05"
 
 subcollection: vmwaresolutions
 
@@ -44,7 +44,6 @@ Open the [{{site.data.keyword.cloud_notm}} infrastructure customer portal](https
    A pod is identified by a name, which is unique. A Pod name follows the format `dddnn.podii`, where `ddd` is a data center code, `nn` is the data center number, and `pod` is a literal string. The value `ii` is a two-digit number, zero-padded to the left, which corresponds to a Backend Customer Router (BCR) of the data center. For example,
 
       `dal09.pod01` is Dallas 9, Pod 1 (that is, bcr01)
-      `sjc01.pod04` is San Jose 1, Pod 4 (that is, bcr04)
       `ams01.pod01` is Amsterdam 1, Pod 1 (that is, bcr01)
 
 * Select Dual Processor hardware option - Intel Xeon 5120, 28 core
