@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2023
+  years:  2016, 2024
 
-lastupdated: "2023-05-22"
+lastupdated: "2024-06-05"
 
 subcollection: vmwaresolutions
 
@@ -18,7 +18,7 @@ subcollection: vmwaresolutions
 
 After the virtual machines (VMs) are deployed and the application components are installed, the Caveonix RiskForesight™ solution can be set up for the service provider and the first tenant or organization.
 
-The Service Provider is the top-level organization. The service provider supports one or more tenants or organizations. The service provider assigns assets that are collected from VMware vCenter Server® to the tenant or organization, who then assigns them to applications or subapplications. These applications are then subject to a compliance regime.
+The Service Provider is the top-level organization. The service provider supports one or more tenants or organizations. The service provider assigns assets that are collected from the VMware vCenter appliance to the tenant or organization, who then assigns them to applications or subapplications. These applications are then subject to a compliance regime.
 
 This step is initially completed by the {{site.data.keyword.vmwaresolutions_full}} automation that uses information that is supplied by the client during the ordering process and default information. The setup process can be started by the client, post deployment, to modify the Service Provider or Tenant Organization as required postinstallation.
 

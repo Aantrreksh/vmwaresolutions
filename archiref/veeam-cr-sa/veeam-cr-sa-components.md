@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2023
+  years:  2023, 2024
 
-lastupdated: "2023-05-01"
+lastupdated: "2024-06-05"
 
 subcollection: vmwaresolutions
 
@@ -38,7 +38,7 @@ The Veeam service instance is based on an "all-in-one" [Simple deployment](https
 
 The "all-in-one" server is installed automatically when the Veeam service instance is ordered. At order time, one of the following deployment options can be selected:
 
-* VM - Veeam components that are installed on a Windows®-based virtual machine (VM) hosted on the vCenter Server® instance.
+* VM - Veeam components that are installed on a Windows®-based virtual machine (VM) hosted on the {{site.data.keyword.vcf-auto}} instance.
 * VSI - Veeam components installed on a Windows-based VSI.
 * Bare metal - Veeam components installed on a Windows-based bare metal server.
 
@@ -133,7 +133,7 @@ Managed servers can be added to the backup infrastructure so that Veeam can use 
 
 More managed servers are added in the advanced deployment scenario, such as:
 
-* VMware vSphere servers - vCenter Servers and the associated ESXi hosts to be used as a source or target for backup/restore of VMs.
+* VMware vSphere servers - VMware vCenter® appliances and the associated ESXi hosts to be used as a source or target for backup/restore of VMs.
 * Microsoft Windows servers - For hosting Veeam components, such as backup proxy, backup repository, mount server and vPower NFS server.
 * Linux servers - For hosting Veeam components, such as helper host, backup proxy, and backup repository components.
 

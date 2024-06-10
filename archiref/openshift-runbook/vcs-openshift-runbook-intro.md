@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-04-29"
+lastupdated: "2024-06-05"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # VMware Solutions and Red Hat OpenShift overview
 {: #openshift-runbook-runbook-intro}
 
-{{site.data.keyword.vmwaresolutions_full}} includes fully automated, rapid deployments of VMware vCenter Server® in the {{site.data.keyword.cloud_notm}}. These offerings complement the on-premises infrastructure and allow existing and future workloads to run in the {{site.data.keyword.cloud_notm}} without conversion by using the same tools, skills, and processes they use on-premises. For more information, see [What is virtualization?](https://www.ibm.com/topics/virtualization){: external}.
+{{site.data.keyword.vmwaresolutions_full}} includes fully automated, rapid deployments of {{site.data.keyword.vcf-auto}} in the {{site.data.keyword.cloud_notm}}. These offerings complement the on-premises infrastructure and allow existing and future workloads to run in the {{site.data.keyword.cloud_notm}} without conversion by using the same tools, skills, and processes they use on-premises. For more information, see [What is virtualization?](https://www.ibm.com/topics/virtualization){: external}.
 
 {{site.data.keyword.redhat_openshift_full}} for VMware Solutions is a reference architecture and a manual build process to deploy a {{site.data.keyword.redhat_openshift_notm}} cluster 4.7 on to an existing vCenter Server instance. The components of {{site.data.keyword.redhat_openshift_notm}} cluster are deployed as virtual machines (VMs) and appliances by using NSX software-defined networking.
 

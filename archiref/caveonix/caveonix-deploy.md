@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-04-26"
+lastupdated: "2024-06-05"
 
 subcollection: vmwaresolutions
 
@@ -38,7 +38,7 @@ The sizing of the deployment is calculated by using the following volumes.
 | Data type | Volume |
 |---|---|
 | Scans per day | 1 |
-| Scan data (MB) |  20 |
+| Scan data (MB) | 20 |
 | Log data (MB) | 500 |
 | Flow data (MB) | 200 |
 | Asset data (MB) |46 |
@@ -102,4 +102,4 @@ The following table provides a summary of the deployments.
 When you delete the Caveonix RiskForesight service, the {{site.data.keyword.vmwaresolutions_short}} automation deletes only the single all-in-one Caveonix VM that was deployed and the dedicated private subnet that was ordered for it. Therefore,
 * If you scaled out the Caveonix VM into multiple VMs, those additional VMs are not removed.
 * If you used the IP addresses of the dedicated private subnet on additional VMs, those VMs must be assigned new IP addresses to continue to function.
-* If you delete vCenter Server instance A with the Caveonix RiskForesight service installed, and you used the IP addresses of the dedicated private subnet that is ordered for the service in vCenter Server instance B, the dedicated private subnet is canceled upon deletion of vCenter Server instance A.
+* If you delete {{site.data.keyword.vcf-auto}} instance A with the Caveonix RiskForesight service installed, and you used the IP addresses of the dedicated private subnet that is ordered for the service in {{site.data.keyword.vcf-auto-short}} instance B, the dedicated private subnet is canceled upon deletion of {{site.data.keyword.vcf-auto-short}} instance A.

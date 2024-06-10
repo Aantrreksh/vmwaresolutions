@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-02-02"
+lastupdated: "2024-06-05"
 
 subcollection: vmwaresolutions
 
@@ -43,7 +43,7 @@ The downloading of upgrades, host patches, extensions, and related metadata is a
 * Notifications, alerts, and patch recalls for ESXi 5.5 and ESXi 6.x hosts.
 * Metadata about upgrades for virtual appliances.
 
-VUM supports the recall of patches for hosts that are running ESXi 5.0 or later. A patch is recalled if the released patch has problems or potential issues. After you scan the hosts in your VMware vCenter Server® instance, VUM alerts you if the recalled patch is installed on a certain host. Recalled patches cannot be installed on hosts with VUM. VUM also deletes all the recalled patches from the patch repository. After a patch fix to the problem is released, VUM downloads the new patch to its patch repository. If you installed the problematic patch, VUM notifies you that a fix was released and prompts you to apply the new patch.
+VUM supports the recall of patches for hosts that are running ESXi 5.0 or later. A patch is recalled if the released patch has problems or potential issues. After you scan the hosts in your {{site.data.keyword.vcf-auto}} instance, VUM alerts you if the recalled patch is installed on a certain host. Recalled patches cannot be installed on hosts with VUM. VUM also deletes all the recalled patches from the patch repository. After a patch fix to the problem is released, VUM downloads the new patch to its patch repository. If you installed the problematic patch, VUM notifies you that a fix was released and prompts you to apply the new patch.
 
 The VUM client interface provides the following views:
 * Administration view

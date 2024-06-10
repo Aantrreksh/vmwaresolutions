@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-01-30"
+lastupdated: "2024-06-05"
 
 subcollection: vmwaresolutions
 
@@ -26,7 +26,7 @@ Review the source architecture for the VMware® HCX™ components that are typic
 ## Understanding HCX
 {: #hcx-archi-source-understand-hcx}
 
-HCX supports a many-to-many relationship between on-premises vCenters and {{site.data.keyword.cloud_notm}}. vCenter Server in Linked Mode is supported.
+HCX supports a many-to-many relationship between on-premises vCenters and {{site.data.keyword.cloud_notm}}. VMware vCenter® in Linked Mode is supported.
 
 During the installation, the HCX Manager virtual appliance is imported and configured as a plug-in for the on-premises vCenter. This plug-in is then used to configure the software-defined WAN service deployment. The automated configuration provisions each hybrid service appliance as a VM in the on-premises vCenter, and deploys a corresponding VM in {{site.data.keyword.cloud_notm}}.
 
@@ -53,7 +53,7 @@ The following steps are basic installation tasks:
 Architecture planning includes the VMs to be migrated, the networks that are used for VM traffic, and the networks to be extended.
 
 The following settings are the maximum and minimum values for the deployment components:
-* vSphere vCenter. The HCX Manager appliance must be installed on the vCenter Server that requires hybrid services. You can have one HCX deployment per vCenter only. This restriction applies to linked mode. The HCX management appliance is only installed in the primary vCenter. HCX supports up to five registered vCenters in linked mode.
+* vCenter. The HCX Manager appliance must be installed on the vCenter that requires hybrid services. You can have one HCX deployment per vCenter only. This restriction applies to linked mode. The HCX management appliance is only installed in the primary vCenter. HCX supports up to five registered vCenters in linked mode.
 * Cloud registrations. The maximum number of cloud endpoints is ten. To find the number of endpoints, Hybrid Cloud Services tracks vCenter connections to the cloud.
 
 ### HCX virtual appliances
@@ -121,14 +121,14 @@ To deploy the HCX, the proper number of IP addresses must be available both on-p
 
 Proximity routing is a networking feature that can be enabled when the HCX-IX is configured. Proximity routing is only available with NSX-V target.
 
-After 21 June 2022, provisioning new vCenter Server instances with NSX–V is no longer supported. However, you can add hosts and clusters to your existing NSX–V deployments. IBM strongly recommends that clients immediately assess their NSX–V networks and plan a much earlier migration to NSX–T.
+After 21 June 2022, provisioning new {{site.data.keyword.vcf-auto}} instances with NSX–V is no longer supported. However, you can add hosts and clusters to your existing NSX–V deployments. IBM strongly recommends that clients immediately assess their NSX–V networks and plan a much earlier migration to NSX–T.
 {: note}
 
 Proximity routing ensures forwarding between VMs that are connected to stretched and routed networks, both on-premises and in the cloud, is symmetrical. This feature requires Dynamic Routing to be configured between the customer premises and the cloud.
 
 When users extend their networks to the cloud, Layer 2 connectivity is stretched onto {{site.data.keyword.cloud_notm}}. However, without route optimization, Layer 3 communication requests must return to the on-premises network origin to be routed. This return trip is called `tromboning` or `hairpinning`.
 
-Tromboning is inefficient because packets must travel back and forth between the network origin and the Cloud, even when both the source and destination VMs are in the Cloud. In addition to inefficiency, if the forwarding path includes stateful firewalls, or other inline equipment that must see both sides of the connection, communication might fail. VM communication (without route optimization) failure occurs when the egress path that exits the cloud can be either the stretched Layer 2 network or through the vCenter Server NSX Edge Gateway. The on-premises network does not know about the stretched network "shortcut." This problem is called asymmetric routing. The solution is to enable proximity routing so the on-premises network can learn the routes from {{site.data.keyword.cloud_notm}}.
+Tromboning is inefficient because packets must travel back and forth between the network origin and the Cloud, even when both the source and destination VMs are in the Cloud. In addition to inefficiency, if the forwarding path includes stateful firewalls, or other inline equipment that must see both sides of the connection, communication might fail. VM communication (without route optimization) failure occurs when the egress path that exits the cloud can be either the stretched Layer 2 network or through the NSX Edge Gateway. The on-premises network does not know about the stretched network "shortcut." This problem is called asymmetric routing. The solution is to enable proximity routing so the on-premises network can learn the routes from {{site.data.keyword.cloud_notm}}.
 
 To prevent tromboning, HCX uses intelligent route management to choose routes appropriate to the VM state. The Cloud Gateway maintains an inventory of VMs in the cloud and it understands the VM states, which can be one of the following values:
 * Transferred to the cloud with vMotion (zero-downtime migration).

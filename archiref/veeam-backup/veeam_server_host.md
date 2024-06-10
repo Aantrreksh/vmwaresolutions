@@ -4,7 +4,7 @@ copyright:
 
   years: 2023, 2024
 
-lastupdated: "2024-01-05"
+lastupdated: "2024-06-05"
 
 keywords: servers and hosts, virtualization servers and hosts
 
@@ -17,7 +17,7 @@ subcollection: vmwaresolutions
 # Virtualization servers and hosts
 {: #veeam_server_host}
 
-The virtualization servers and hosts are an infrastructure that must be integrated with Veeam® managed infrastructure. During service deployment, the vCenter Server instance is automatically registered. You can add the following types of servers and hosts to the backup infrastructure:
+The virtualization servers and hosts are an infrastructure that must be integrated with Veeam® managed infrastructure. During service deployment, the {{site.data.keyword.vcf-auto}} instance is automatically registered. You can add the following types of servers and hosts to the backup infrastructure:
 
 * [VMware vSphere Server](https://helpcenter.veeam.com/docs/backup/vsphere/add_vmware_server.html?ver=120){: external}
 * [VMware Cloud Director](https://helpcenter.veeam.com/docs/backup/vsphere/adding_vcloud_director.html?ver=120){: external}

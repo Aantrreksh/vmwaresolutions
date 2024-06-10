@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2022
+  years:  2016, 2024
 
-lastupdated: "2022-10-10"
+lastupdated: "2024-06-05"
 
 subcollection: vmwaresolutions
 
@@ -146,13 +146,13 @@ Install the HCX Manager appliance in the on-premises vCenter.
 2. On the **Dashboard** pane, complete the following steps:
    1. In the left pane, under **Configure Systems**, select vCenter.
    2. Click **Add vCenter** on the upper right.
-   3. Enter the IP address of the vCenter Server in the form `https://vCenter-host-name` or `https://vCenter-IP-address`. For example, `https://My-vCenter` or `https://1.1.1.1`.
-   4. Enter the vCenter Server username and password. The account that is used must have the vCenter Administrator role.
+   3. Enter the IP address of the VMware vCenter® in the form `https://vCenter-host-name` or `https://vCenter-IP-address`. For example, `https://My-vCenter` or `https://1.1.1.1`.
+   4. Enter the vCenter username and password. The account that is used must have the vCenter Administrator role.
    5. Click **OK**. Do not restart when the _You need to restart the app_ message is displayed.
 3. Configure the SSO lookup service.
    1. Click the **Manage** tab.
    2. Click **Edit** next to the **Lookup Service URL** text box.
-   3. Enter the lookup network service endpoint in the following form, for vCenter Server 6.5: `https://psc/`.
+   3. Enter the lookup network service endpoint in the following form, for vCenter version 6.5: `https://psc/`.
    4. Provide NSX details if required.
    5. Click **OK**. Do not restart when a message to restart the web engine is displayed.
 4. Click the **Summary** tab and find the **Hybridity Management Components** section. Stop and start both the application engine and the web engine.

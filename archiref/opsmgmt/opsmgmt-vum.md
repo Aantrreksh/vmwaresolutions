@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2022
+  years:  2016, 2024
 
-lastupdated: "2022-04-27"
+lastupdated: "2024-06-05"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # VMware Update Manager
 {: #opsmgmt-vum}
 
-VMware® Update Manager (VUM) enables centralized, automated patch and version management for VMware vSphere®. VUM provides the following tasks in your VMware vCenter Server® on {{site.data.keyword.cloud}} environment:
+VMware® Update Manager (VUM) enables centralized, automated patch and version management for VMware vSphere®. VUM enables you to do the following tasks in your {{site.data.keyword.vcf-auto}} instance:
 * Upgrade and patch the vSphere ESXi™ hosts
 * Install and update third-party software on the hosts
 * Upgrade virtual machine (VM) hardware, VMware Tools, and virtual appliances

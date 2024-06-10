@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2023
+  years:  2016, 2024
 
-lastupdated: "2023-07-14"
+lastupdated: "2024-06-05"
 
 subcollection: vmwaresolutions
 
@@ -66,12 +66,12 @@ The VMware HCX service deploys four virtual appliance types that are installed a
 {: #hcx-archi-overview-target-client}
 
 HCX has the concept of cloud side (target - destination) and client side (source):
-* Cloud / Destination side - HCX Cloud is pre-deployed in {{site.data.keyword.cloud_notm}} vCenter Server Deployment on customer portal request and configured with the network and compute profiles ready for service mesh creation.  
+* Cloud / Destination side - HCX Cloud is pre-deployed in your {{site.data.keyword.vcf-auto}} instance on customer portal request and configured with the network and compute profiles ready for service mesh creation.  
 * Client / Source side - Any vSphere instances that meet the prerequisites for installation and operation. The client side of HCX is the primary that controls the cloud side secondary instance through its vCenter web client user interface (UI) snap-in.
 
 The source and destination sites are paired together for HCX operations. An HCX Connector cannot be paired with another HCX Connector.
 
-In both the source and destination environments, HCX is deployed to the management zone, next to each site's vCenter Server, which provides a single plane (HCX Manager) for administering VMware HCX. This HCX Manager provides a framework for deploying HCX service VMs across both the source and destination sites. VMware HCX administrators are authenticated, and each task authorized through the existing vSphere SSO identity sources. VMware HCX mobility, extension, protection actions can be initiated from the HCX User Interface or from within the vCenter Server Navigator screen's menus.
+In both the source and destination environments, HCX is deployed to the management zone, next to each site's VMware vCenter® Server Appliance (VCSA), which provides a single plane (HCX Manager) for administering VMware HCX. This HCX Manager provides a framework for deploying HCX service VMs across both the source and destination sites. VMware HCX administrators are authenticated, and each task authorized through the existing vSphere SSO identity sources. VMware HCX mobility, extension, protection actions can be initiated from the HCX User Interface or from within the VCSA Navigator screen's menus.
 
 ### HCX Cloud and HCX Connector
 {: #hcxclient-components-manager}
@@ -80,7 +80,7 @@ In the HCX site-to-site architecture, an HCX source environment and an HCX desti
 
 The source and destination sites are paired together for HCX operations. An HCX Connector cannot be paired with another HCX Connector.
 
-In both the source and destination environments, HCX is deployed to the management zone, next to each site's vCenter Server, which provides a single plane (HCX Manager) for administering VMware HCX. This HCX Manager provides a framework for deploying HCX service VMs across both the source and destination sites. VMware HCX administrators are authenticated, and each task authorized through the existing vSphere SSO identity sources. VMware HCX mobility, extension, protection actions can be initiated from the HCX User Interface or from within the vCenter Server Navigator screen's menus.
+In both the source and destination environments, HCX is deployed to the management zone, next to each site's VCSA, which provides a single plane (HCX Manager) for administering VMware HCX. This HCX Manager provides a framework for deploying HCX service VMs across both the source and destination sites. VMware HCX administrators are authenticated, and each task authorized through the existing vSphere SSO identity sources. VMware HCX mobility, extension, protection actions can be initiated from the HCX User Interface or from within the VCSA Navigator screen's menus.
 
 ### HCX-IX Interconnect Appliance (HCX-IX)
 {: #hcx-archi-overview-comp-hcx-ix}
@@ -116,16 +116,16 @@ The source can be placed within the {{site.data.keyword.cloud_notm}} environment
 {: #hcx-archi-overview-base-design}
 
 The base deployment must follow the minimum requirements:
-* The source environment must contain a vSphere implementation that is managed by a vCenter Server. Supported vCenter of 5.5U3 or vCenter 6.0U2 and higher, with ESXi 5.5 or higher is required for Hybrid Cloud Services.
+* The source environment must contain a vSphere implementation that is managed by a vCenter. Supported vCenter of 5.5U3 or vCenter 6.0U2 and higher, with ESXi 5.5 or higher is required for Hybrid Cloud Services.
 * If NSX is used, version 6.2.2 or higher. NSX is required for policy migration.
 * If cross-cloud vMotion is intended, the same affinity restrictions apply across clouds as they do on-premises.
 * The source environment must have a method to connect to cloud environments, which includes public internet access or private connections by using {{site.data.keyword.cloud_notm}} Direct link.
 * The source environment VM’s and networks to be migrated or stretched must be on portgroups within a Virtual Distributed Switch.
-* The {{site.data.keyword.cloud_notm}} must contain at least one instance of VMware vCenter Server®.
+* The {{site.data.keyword.cloud_notm}} must contain at least one instance of {{site.data.keyword.vcf-auto-short}}.
 * Sufficient resources for the virtual appliances.
 * The networks must allow the appliances to communicate with both local and remote virtual appliances, and other VMs.
 * The port access requirements topic lists ports that must be opened so that Hybrid Cloud Services virtual appliances can be installed successfully.
-* A vSphere service account exists and the Administrator vCenter Server system role is assigned to it.
+* A vSphere service account exists and the Administrator vCenter system role is assigned to it.
 * Enough disk space for installing Hybrid Cloud Services and the associated service appliances.
 * Sufficient IP addresses for the on-premises VMs provisioned during the installation.
 * If the SSO server is remote, the URL of the vCenter, external SSO Server, or Platform Services Controller (PSC) that runs the external lookup service must be identified. When the HCX service is registered with the vCenter, this URL must be supplied.

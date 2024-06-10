@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-01-31"
+lastupdated: "2024-06-05"
 
 subcollection: vmwaresolutions
 
@@ -44,7 +44,7 @@ The {{site.data.keyword.vmwaresolutions_short}} operations management consists o
     * Immediate - must be acted on as soon as possible.
     * Warning - must be checked when time allows.
 
-* Logging - VMware Aria Operations™ for Logs provides real-time log management and log analysis with machine learning-based intelligent grouping, high performance searching, and troubleshooting across the physical and virtual objects in the {{site.data.keyword.vmwaresolutions_short}} architecture. VMware Aria Operations for Logs collects data from vSphere hosts by using the `syslog` protocol. It also collects events, tasks, and alarm data for other VMware products, like vCenter Server. It integrates with VMware Aria Operations to send notification events and enable launch-in-context. Other objects in the {{site.data.keyword.vmwaresolutions_short}} architecture that can send `syslog` data are pointed to VMware Aria Operations for Logs. Optionally, the client can configure any system that can send syslog data to forward this data to VMware Aria Operations for Logs.
+* Logging - VMware Aria Operations™ for Logs provides real-time log management and log analysis with machine learning-based intelligent grouping, high performance searching, and troubleshooting across the physical and virtual objects in the {{site.data.keyword.vmwaresolutions_short}} architecture. VMware Aria Operations for Logs collects data from vSphere hosts by using the `syslog` protocol. It also collects events, tasks, and alarm data for other VMware products, like VMware vCenter®. It integrates with VMware Aria Operations to send notification events and enable launch-in-context. Other objects in the {{site.data.keyword.vmwaresolutions_short}} architecture that can send `syslog` data are pointed to VMware Aria Operations for Logs. Optionally, the client can configure any system that can send syslog data to forward this data to VMware Aria Operations for Logs.
 
 * Network Health - VMware Aria Operations™ for Networks is an analytics tool that is focused on proactively enabling:
    * Network health and performance monitoring.

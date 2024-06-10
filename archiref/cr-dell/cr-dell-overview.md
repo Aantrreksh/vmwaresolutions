@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2023
+  years:  2023, 2024
 
-lastupdated: "2023-09-20"
+lastupdated: "2024-06-05"
 
 subcollection: vmwaresolutions
 
@@ -15,7 +15,7 @@ subcollection: vmwaresolutions
 # Cyber recovery with Dell
 {: #cr-dell-overview}
 
-A VMware vCenter Server® instance can host a Dell® Cyber Recovery vault.
+A {{site.data.keyword.vcf-auto}} instance can host a Dell® Cyber Recovery vault.
 
 The Dell Cyber Recovery vault maintains your mission-critical business data and technology configurations in a secure, air-gapped vault environment that can be used for recovery and analysis.
 
@@ -143,7 +143,7 @@ If you plan to use CyberSense, then you need to size the ESXi hosts considering 
 * For vSAN storage, see [vSAN Storage](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-consold-cluster#vc_orderinginstance-vsan-storage). 
 * For NFS storage, see [NFS Storage](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-consold-cluster#vc_orderinginstance-nfs-storage).
 
-To create your Dell Cyber Recovery vault based on a VMware vCenter Server instance, follow the procedure to [order vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-procedure):
+To create your Dell Cyber Recovery vault based on a {{site.data.keyword.vcf-auto-short}} instance, follow the procedure to [order vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-procedure):
 
 1. In Step 4, select **Primary**.
 2. In Step 6, order **Private Networks**.

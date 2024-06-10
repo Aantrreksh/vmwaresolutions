@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-01-26"
+lastupdated: "2024-06-05"
 
 subcollection: vmwaresolutions
 
@@ -31,14 +31,14 @@ For a detailed understanding of the two solution architectures, see [Overview of
 ### Assumptions
 {: #veeam-cr-sag-overview-immutbckup-assumptions}
 
-* The VMware vCenter Server® instance is already deployed and consists of three hosts in a consolidated cluster that runs VMware NSX-T™ and uses NFS data stores. Your vCenter Server instance might be different, and the step-by-step instructions can accommodate different instances.
+* The {{site.data.keyword.vcf-auto}} instance is already deployed and consists of three hosts in a consolidated cluster that runs VMware NSX-T™ and uses NFS data stores. Your {{site.data.keyword.vcf-auto-short}} instance might be different, and the step-by-step instructions can accommodate different instances.
 * The Veeam service is already deployed and uses the bare metal option. However, the VSI instance is similar from a network perspective with two IP addresses; one on the primary subnet and one on the instance management subnet. The virtual machine (VM) option has a single IP address only on the instance management subnet.
 
 ### High-level steps
 {: #veeam-cr-sag-overview-immutbckup-highlvlsteps}
 
 * The [Planning the deployment](/docs/vmwaresolutions?topic=vmwaresolutions-veeam-cr-sag-planning) step captures and defines the information that is needed for the subsequent steps.
-* [Provisioning the jump server](/docs/vmwaresolutions?topic=vmwaresolutions-veeam-cr-sag-jmp) and [Configuring the jump server](/docs/vmwaresolutions?topic=vmwaresolutions-veeam-cr-sag-jmpcfg) steps describe the tasks for the jump server. The jump server is a virtual server instance that runs Microsoft® Windows® and has public and private network interfaces. The public network interface is attached to a security group that restricts inbound traffic to MS RDP, TCP 3389, from a known IP address. The jump server provides access to UI consoles, such as vCenter and Veeam console. If you already have remote access to your vCenter Server instance, then you can skip this step.
+* [Provisioning the jump server](/docs/vmwaresolutions?topic=vmwaresolutions-veeam-cr-sag-jmp) and [Configuring the jump server](/docs/vmwaresolutions?topic=vmwaresolutions-veeam-cr-sag-jmpcfg) steps describe the tasks for the jump server. The jump server is a virtual server instance that runs Microsoft® Windows® and has public and private network interfaces. The public network interface is attached to a security group that restricts inbound traffic to MS RDP, TCP 3389, from a known IP address. The jump server provides access to UI consoles, such as vCenter and Veeam console. If you already have remote access to your {{site.data.keyword.vcf-auto-short}} instance, then you can skip this step.
 * [Provisioning the automation server](/docs/vmwaresolutions?topic=vmwaresolutions-veeam-cr-sag-as) and [Configuring the automation server](/docs/vmwaresolutions?topic=vmwaresolutions-veeam-cr-sag-ascfg) steps define the tasks for an automation server. The automation server is a virtual server instance that runs Ubuntu Linux® and has public and private network interfaces. The public network interface is attached to a security group that restricts inbound traffic to SSH, TCP 22, from a known IP address.
 * [Provisioning the Linux hardened repository server](/docs/vmwaresolutions?topic=vmwaresolutions-veeam-cr-sag-lhbr) step describes the provisioning of the Veeam Linux hardened repository server. The Veeam Linux hardened repository server is an {{site.data.keyword.cloud}} bare metal server that runs Ubuntu Linux or {{site.data.keyword.redhat_full}} Enterprise Linux.
 * [Configuring the Veeam backup server](/docs/vmwaresolutions?topic=vmwaresolutions-veeam-cr-sag-vbrcfg) step defines the configuration of the Veeam backup server so that it can be accessed by the automation server.
@@ -58,8 +58,8 @@ Optionally, you can use the following information:
 ### Assumptions
 {: #veeam-cr-sag-overview-ire-assumptions}
 
-* The vCenter Server instance is already deployed and consists of:
-   * A three-host consolidated cluster that runs NSX-T and uses NFS data stores. Your vCenter Server instance might be different, and the step-by-step instructions can accommodate different instances.
+* The {{site.data.keyword.vcf-auto-short}} instance is already deployed and consists of:
+   * A three-host consolidated cluster that runs NSX-T and uses NFS data stores. Your {{site.data.keyword.vcf-auto-short}} instance might be different, and the step-by-step instructions can accommodate different instances.
    * A gateway cluster that hosts vSRX firewall appliances.
 * The Veeam service is already deployed and uses the bare metal option. However, the VSI instance is similar from a network perspective with two IP addresses; one on the primary subnet and one on the instance management subnet. The VM option has a single IP address only on the instance management subnet.
 

@@ -4,7 +4,7 @@ copyright:
 
   years:  2024
 
-lastupdated: "2024-04-05"
+lastupdated: "2024-06-05"
 
 subcollection: vmwaresolutions
 
@@ -26,7 +26,7 @@ The integration is only available with the Caveonix Cloud 5.0 version. If you do
 ## Integration overview
 {: #caveonix-scc-overview}
 
-The integration allows Caveonix Cloud to send VMware infrastructure findings to the Security and Compliance Center Dashboard. Caveonix Cloud conducts comprehensive infrastructure compliance scans encompassing VMware NSX-T, VMware ESXi, and VMware vCenter Server components. After the vulnerability assessment process is successfully completed, Caveonix Cloud forwards the findings and you can access the evaluated findings through the Security and Compliance Center dashboard. The integration uses a Security and Compliance Center Batch job in Caveonix Cloud, which transmits the assessed findings to the Security and Compliance Center platform. Currently, Caveonix Cloud supports 267 rules to evaluate VMware infrastructure findings.
+The integration allows Caveonix Cloud to send VMware infrastructure findings to the Security and Compliance Center Dashboard. Caveonix Cloud conducts comprehensive infrastructure compliance scans encompassing VMware NSX-T, VMware ESXi, and VMware vCenter components. After the vulnerability assessment process is successfully completed, Caveonix Cloud forwards the findings and you can access the evaluated findings through the Security and Compliance Center dashboard. The integration uses a Security and Compliance Center Batch job in Caveonix Cloud, which transmits the assessed findings to the Security and Compliance Center platform. Currently, Caveonix Cloud supports 267 rules to evaluate VMware infrastructure findings.
 
 If you are using the Security and Compliance Center private endpoints, then no connection to the Internet from your Caveonix Cloud instance is required. Any firewall that you placed between the Caveonix Cloud instance and the private endpoint needs an outbound policy that enables TCP port 443. If you are using the public Security and Compliance Center endpoints, then a connection to the Internet from your Caveonix Cloud instance is required. Use a firewall or configure a proxy server to enable this communication as the Caveonix Cloud instance is only connected to the {{site.data.keyword.cloud_notm}} private network.
 {: note}
@@ -81,16 +81,17 @@ If you are using a proxy, then it is deployed and configured and you updated the
 The following tasks are performed on your Caveonix Cloud instance:
 
 1. Configure the Security and Compliance Center integration in the Event Log Collector module. The event log collector provides authentication information to submit infrastructure findings to the Security and Compliance Center. You need the following details when you configure an Event Log Collector module:
-   * Security and Compliance Center URL
-   * Security and Compliance Center Instance ID
-   * Attachment ID
-   * Provider Type Instance ID
-   * API key
+   
+* Security and Compliance Center URL
+* Security and Compliance Center Instance ID
+* Attachment ID
+* Provider Type Instance ID
+* API key
 
    Currently, Caveonix Cloud supports one event log collector per instance.
    {: note}
-
-2. Create a Security and Compliance Center Batch Job. This batch job collects infrastructure vulnerabilities to identify security risks. This job posts the VMware infrastructure findings (NSX-T, ESXi, and vCenter Server) to your Security and Compliance Center instance. Findings are posted to your Security and Compliance Center instance in batches of 100. This batch job submits the infrastructure findings periodically, at the wanted frequency, for example, once a day.
+  
+2. Create a Security and Compliance Center Batch Job. This batch job collects infrastructure vulnerabilities to identify security risks. This job posts the VMware infrastructure findings (NSX-T, ESXi, and VMware vCenter® Server Appliance (VCSA)) to your Security and Compliance Center instance. Findings are posted to your Security and Compliance Center instance in batches of 100. This batch job submits the infrastructure findings periodically, at the wanted frequency, for example, once a day.
 
 ## Viewing VMware findings in the Security and Compliance Center dashboard
 {: #caveonix-scc-view}
@@ -103,8 +104,8 @@ When integrated, your Caveonix Cloud provides a centralized management platform 
 
 When you are reviewing the details on the dashboard, be aware of the following information:
 
-* Your vCenter Server instance includes three NSX managers in a load-balanced cluster. Caveonix Cloud is configured with an asset repository, which points to the FQDN of the load balancer and so is registered as an infrastructure asset type. As the load-balancer points to an NSX manager, it gets registered as an infrastructure asset type. The other two NSX managers get registered as VM asset types. Caveonix Cloud sends findings only for assets of the infrastructure type, which includes the ESXi hosts, vCenter Server, and the two entries for NSX Manager.
-* Caveonix Cloud registers the vCenter Server infrastructure components as vCenter, NSX, ESXi, or ESX-VM. The ESXi-VM category is used for the VMs hosted on the ESXi hosts. Within Security and Compliance Center, if there are more findings for VMs on the host than for the ESXi host itself, then Security and Compliance Center displays ESXi-VM rather than ESXi.
+* Your {{site.data.keyword.vcf-auto}} instance includes three NSX managers in a load-balanced cluster. Caveonix Cloud is configured with an asset repository, which points to the FQDN of the load balancer and so is registered as an infrastructure asset type. As the load-balancer points to an NSX manager, it gets registered as an infrastructure asset type. The other two NSX managers get registered as VM asset types. Caveonix Cloud sends findings only for assets of the infrastructure type, which includes the ESXi hosts, VCSA, and the two entries for NSX Manager.
+* Caveonix Cloud registers the {{site.data.keyword.vcf-auto-short}} infrastructure components as vCenter, NSX, ESXi, or ESX-VM. The ESXi-VM category is used for the VMs hosted on the ESXi hosts. Within Security and Compliance Center, if there are more findings for VMs on the host than for the ESXi host itself, then Security and Compliance Center displays ESXi-VM rather than ESXi.
 * The number of total, passed, and failed findings might differ when viewed in Security and Compliance Center and Caveonix Cloud. This is due to the way that Security and Compliance Center summarizes the results from Caveonix Cloud. In Caveonix Cloud, the findings for each VM hosted on the ESXi host is counted whereas in Security and Compliance Center only a single finding from all VMs hosted on the ESXi host is counted. If there are 4 VMs that pass and 1 VM that fails then Security and Compliance Center summarizes this as 1 failure. Additionally Caveonix Cloud has a finding status of warning and Security and Compliance Center does not, therefore, these findings are not displayed in Security and Compliance Center.
 * Currently, the fix to the findings is not displayed in the Security and Compliance Center. To see the fix, log in to Caveonix Cloud.
 

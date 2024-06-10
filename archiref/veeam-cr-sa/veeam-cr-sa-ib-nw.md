@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-04-26"
+lastupdated: "2024-06-05"
 
 subcollection: vmwaresolutions
 
@@ -27,9 +27,9 @@ While Veeam® DataLabs enables the sandbox concept, it is not yet enabled for VM
 
 ![Immutable backup environment network overview](../../images/veeam-cr-sa-sb-ib.svg){: caption="Figure 1. Immutable backup environment network overview" caption-side="bottom"}
 
-The previous diagram shows an example sandbox that is hosted on the consolidated cluster of the VMware vCenter Server® instance. The customer orders the following resources.
+The previous diagram shows an example sandbox that is hosted on the consolidated cluster of the {{site.data.keyword.vcf-auto}} instance. The customer orders the following resources.
 
-* A vCenter Server instance
+* A {{site.data.keyword.vcf-auto-short}} instance
 * The Veeam service
 * A bare metal server that runs Ubuntu 20.04 LTS
 

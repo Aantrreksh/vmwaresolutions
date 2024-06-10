@@ -4,7 +4,7 @@ copyright:
 
   years:  2024
 
-lastupdated: "2024-06-03"
+lastupdated: "2024-06-05"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # Architecture pattern for integrating {{site.data.keyword.cloud_notm}} Security and Compliance Center Workload Protection with vCenter Server
 {: #arch-pattern-sccwpp}
 
-This architecture pattern describes how to use {{site.data.keyword.cloud}} Security and Compliance Center Workload Protection with a VMware vCenter Server with NSX-T instance on the {{site.data.keyword.cloud_notm}} classic infrastructure.
+This architecture pattern describes how to use {{site.data.keyword.cloud}} Security and Compliance Center Workload Protection with a {{site.data.keyword.vcf-auto}} with NSX-T instance on the {{site.data.keyword.cloud_notm}} classic infrastructure.
 
 Security and Compliance Center Workload Protection offers functions to protect your Microsoft Windows® and Linux® virtual machines (VMs) that are hosted on your VMware® environment. These functions include compliance, vulnerability scanning, and threat detection. For more information, see [Key features of {{site.data.keyword.cloud_notm}} Security and Compliance Center Workload Protection](/docs/workload-protection?topic=workload-protection-key-features).
 

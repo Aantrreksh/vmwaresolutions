@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-01-26"
+lastupdated: "2024-06-05"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # Provisioning the Linux hardened repository server
 {: #veeam-cr-sag-lhbr}
 
-The Linux® hardened repository server is an {{site.data.keyword.cloud}} bare metal server that is deployed in the {{site.data.keyword.cloud_notm}} account where the vCenter Server instance with the Veeam service is located. The bare metal server is connected to the {{site.data.keyword.cloud_notm}} private network only.
+The Linux® hardened repository server is an {{site.data.keyword.cloud}} bare metal server that is deployed in the {{site.data.keyword.cloud_notm}} account where the {{site.data.keyword.vcf-auto}} instance with the Veeam service is located. The bare metal server is connected to the {{site.data.keyword.cloud_notm}} private network only.
 
 ## Assumptions
 {: #veeam-cr-sag-lhbr-assumptions}

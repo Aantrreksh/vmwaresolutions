@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-02-02"
+lastupdated: "2024-06-05"
 
 subcollection: vmwaresolutions
 
@@ -35,7 +35,7 @@ Remediation is the process in which VUM applies patches, extensions, and upgrade
 * Powered on, suspended, or powered off VMs and templates for VMware Tools and VM hardware upgrade.
 * Powered on virtual appliances that are created with VMware Studio 2.0 and later, for virtual appliance upgrade.
 
-If the update requires it, hosts are put into maintenance mode before remediation. The vCenter Server® Appliance (VCSA) migrates the VMs to other hosts within VMware vCenter Server instance before the host is put in maintenance mode.
+If the update requires it, hosts are put into maintenance mode before remediation. The VMware vCenter® Server Appliance (VCSA) migrates the VMs to other hosts within the {{site.data.keyword.vcf-auto}} instance before the host is put in maintenance mode.
 
 ## For hosts in a vSAN cluster
 {: #vum-staging-hosts-vsan}
@@ -62,7 +62,7 @@ To remediate hosts and clusters, follow these steps:
    * **Do Not Change VM Power State** - Leave VMs and virtual appliances in their current power state.
 
 8. Optionally, select **Disable any removable media devices connected to the virtual machine on the host**. VUM does not remediate hosts on which VMs have connected CD, DVD, or diskette drives. In cluster environments, connected media devices might prevent vMotion if the destination host does not have an identical device or mounted ISO image, which in turn prevents the source host from entering maintenance mode. After remediation, VUM reconnects the removable media devices if they are still available.
-9. Optionally, select **Retry entering maintenance mode in case of failure**, specify the number of retries, and specify the time to wait between retries. VUM waits for the retry delay period and retries putting the host into maintenance mode as many times as you indicate in Number of retries field. There is no requirement in a vCenter Server instance to select the checkbox under ESXi Patch Settings to enable Update Manager to patch powered on PXE booted ESXi hosts.
+9. Optionally, select **Retry entering maintenance mode in case of failure**, specify the number of retries, and specify the time to wait between retries. VUM waits for the retry delay period and retries putting the host into maintenance mode as many times as you indicate in Number of retries field. There is no requirement in a {{site.data.keyword.vcf-auto-short}} instance to select the checkbox under ESXi Patch Settings to enable Update Manager to patch powered on PXE booted ESXi hosts.
 10. Click **Next**.
 11. If you remediate hosts in a cluster, edit the cluster remediation options. The **Cluster remediation options** page is available only when you remediate clusters. The following options can be selected:
     * **Disable Distributed Power Management (DPM)** if it is enabled for any of the selected clusters - VUM does not remediate clusters with active DPM. DPM monitors the resource use of the running VMs in the cluster. If sufficient excess capacity exists, DPM recommends moving VMs to other hosts in the cluster and placing the original host into standby mode to conserve power. Putting hosts into standby mode might interrupt remediation.

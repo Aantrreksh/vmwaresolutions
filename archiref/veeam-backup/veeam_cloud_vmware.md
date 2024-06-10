@@ -4,7 +4,7 @@ copyright:
 
   years: 2023, 2024
 
-lastupdated: "2024-04-12"
+lastupdated: "2024-06-05"
 
 keywords: veeam, IBM cloud for vmware, veeam in IBM Cloud for vmware
 
@@ -14,13 +14,13 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Veeam in {{site.data.keyword.cloud_notm}} for VMware
+# Veeam in {{site.data.keyword.vcf-auto}}
 {: #veeam_cloud_vmware}
 
 ## Overview 
 {: #veeam_cloud_vmware_overview}
 
-Veeam® in {{site.data.keyword.cloud_notm}} for VMware is an optional add-on service that can be ordered during the initial ordering of a vCenter Server instance or added to an existing vCenter Server instance.
+Veeam® in {{site.data.keyword.vcf-auto-short}} is an optional add-on service that can be ordered during the initial ordering of a {{site.data.keyword.vcf-auto-short}} instance or added to an existing {{site.data.keyword.vcf-auto-short}} instance.
 
 The service can be deployed by using the following options:
 

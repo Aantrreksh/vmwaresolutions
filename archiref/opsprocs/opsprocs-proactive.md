@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-01-31"
+lastupdated: "2024-06-05"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # Proactive tasks
 {: #opsprocs-proactive}
 
-The goal of these proactive checks is to enable system administrators to maintain the VMware vCenter Server® environment in a health state. When carried out daily, it prevents many common issues that are related to usage, capacity and performance issues, from impacting your workloads. These proactive checks can be classified into the following structure.
+The goal of these proactive checks is to enable system administrators to maintain their {{site.data.keyword.vcf-auto}} instance in a healthy state. When carried out daily, it prevents many common issues that are related to usage, capacity and performance issues, from impacting your workloads. These proactive checks can be classified into the following structure.
 
 * Health - Checks that indicate issues that are currently affecting the health of your environment and require immediate attention to minimize impact that is, hardware failures.
 * Risk - Checks that indicate issues that are not immediate threats but must be addressed soon. For example, capacity issues.
@@ -24,7 +24,7 @@ The goal of these proactive checks is to enable system administrators to maintai
 
 Many of these proactive tasks can be made much simpler with the Operations Management on {{site.data.keyword.cloud}} and reduce the management time.
 
-It is important to understand your "baseline". This baseline reflects normal operations in your environment. All clients have a different baseline that is determined by their standard practices, the workloads that run on the vCenter Server instance, and more. These proactive checks are then comparing the recent capacity/performance/utilization against this baseline. These proactive usage checks are answering the following four questions.
+It is important to understand your "baseline". This baseline reflects normal operations in your environment. All clients have a different baseline that is determined by their standard practices, the workloads that run on the {{site.data.keyword.vcf-auto-short}} instance, and more. These proactive checks are then comparing the recent capacity/performance/utilization against this baseline. These proactive usage checks are answering the following four questions.
 
 1. Am I over-utilized now?
 2. Will I run out of capacity soon?
@@ -67,10 +67,10 @@ The following guidelines assist you in being proactive and maintaining a stable 
 | VM hardware updates | For more information about checking for the availability of VM hardware updates, see [Creating baselines and attaching to inventory objects](/docs/vmwaresolutions?topic=vmwaresolutions-vum-baselines#vum-baselines). |
 | VM Tools updates | For more information, see [Creating baselines and attaching to inventory objects](/docs/vmwaresolutions?topic=vmwaresolutions-vum-baselines#vum-baselines). |
 | vSphere vSAN patching | For more information about checking for the availability of vSphere vSAN patches and the patch process, see [Updating vSAN clusters](/docs/vmwaresolutions?topic=vmwaresolutions-vum-updating-vsan#vum-updating-vsan). |
-| vCenter Server patching | For more information about checking for the availability of vCenter Server Appliance (VCSA) patches and applying the update, see [VCSA update and SSO-linked vCenters](/docs/vmwaresolutions?topic=vmwaresolutions-vum-updating-vcsa#vum-updating-vcsa). |
+| VMware vCenter® patching | For more information about checking for the availability of vCenter patches and applying the update, see [VCSA update and SSO-linked vCenters](/docs/vmwaresolutions?topic=vmwaresolutions-vum-updating-vcsa#vum-updating-vcsa). |
 | Updating NSX | For more information about checking for the availability of NSX patches and applying the upgrades, see [NSX patching](/docs/vmwaresolutions?topic=vmwaresolutions-vum-updating-nsx#vum-updating-nsx). |
 | Check for VMs without VM Tools | It is good practice to install VM Tools as this allows greater interaction with the OS, that is, graceful power down of the VM. You can use vCenter to check which VMs do not have VM Tools that are installed. Go to the cluster, select **Related Objects**, **VMs**, and in the table enable the columns for **VM Tools running** and **VM Tools version**. Review the list and install VM Tools if needed. |
-| VMs with snapshots | For more information about best practices when you work with snapshots, see [Best practices for using snapshots in the vSphere environment (1025279)](https://kb.vmware.com/s/article/1025279){: external}. It is important to identify the existence of VMs with snapshots as using a single snapshot for more than 72 hours creates a snapshot file that continues to grow in size and can cause the snapshot storage location to run out of space and impact the system performance. To review VMs with snapshots, connect to vCenter by using the Web Client, select the vCenter Server and go to Related Objects tab. Right-click on the column titles and go to Show/Hide Columns list. From the list of columns chose Needs Consolidation option. This column shows a summary of all the VMs that are currently running. |
+| VMs with snapshots | For more information about best practices when you work with snapshots, see [Best practices for using snapshots in the vSphere environment (1025279)](https://kb.vmware.com/s/article/1025279){: external}. It is important to identify the existence of VMs with snapshots as using a single snapshot for more than 72 hours creates a snapshot file that continues to grow in size and can cause the snapshot storage location to run out of space and impact the system performance. To review VMs with snapshots, connect to vCenter by using the Web Client, select the vCenter and go to Related Objects tab. Right-click on the column titles and go to Show/Hide Columns list. From the list of columns chose Needs Consolidation option. This column shows a summary of all the VMs that are currently running. |
 | AD/DNS OS patching | The Microsoft® Active Directory™ (AD) / Domain Name Server (DNS) is automatically set up to download the updates only. For more information, see [More limitations and considerations](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_limitations#trbl_limitations) for further updating advice. |
 | Check storage latency | Check storage latency to understand any changes for the vSphere ESXi hosts to access the datastores. Too high a latency causes applications that are hosted in the VMs to slow down. In vCenter, go to the Performance tab. On each of the datastores, review the average write latency per VM. |
 | Review VMs with virtual devices | Virtual devices such as CD or diskette drives create an overhead, therefore, remove any devices that are not needed for a VM. |

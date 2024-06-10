@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-02-02"
+lastupdated: "2024-06-05"
 
 subcollection: vmwaresolutions
 
@@ -15,7 +15,7 @@ subcollection: vmwaresolutions
 # Initial configuration
 {: #vum-init-config}
 
-The {{site.data.keyword.vmwaresolutions_full}} automation configures the vCenter Server® Appliance (VCSA) with a default gateway set to the {{site.data.keyword.cloud_notm}} Backend Customer Router (BCR). However, no route to the internet though the BCR exists. The standard route to the internet from the VMware® vCenter Server instance for management components is through the services T0. As it isn't advised changing the configuration of the VCSA or the services T0, a proxy server implementation on the customer subnet is recommended to enable VMware Update Manager (VUM).
+The {{site.data.keyword.vcf-auto}} automation configures the VMware vCenter® Server Appliance (VCSA) with a default gateway set to the {{site.data.keyword.cloud_notm}} Backend Customer Router (BCR). However, no route to the internet though the BCR exists. The standard route to the internet from the {{site.data.keyword.vcf-auto-short}} instance for management components is through the services T0. As it isn't advised changing the configuration of the VCSA or the services T0, a proxy server implementation on the customer subnet is recommended to enable VMware Update Manager (VUM).
 
 This approach means that you don't need to reconfigure the VCSA or the services T0, however, a small virtual machine (VM) must be installed. A proxy server is a system, which sits between two endpoint devices and acts as an intermediate device. In this case, it sits between the VCSA and the update servers at VMware.
 
@@ -35,7 +35,7 @@ Before you can start this task, collect the information to populate the followin
 
 To find your customer private portable subnet details, complete the following steps:
 
-1. From the {{site.data.keyword.vmwaresolutions_short}} console, click **Resources** > **vCenter Server** from the left navigation pane.
+1. From the {{site.data.keyword.vmwaresolutions_short}} console, click **Resources** > **VCF for Classic** from the left navigation pane.
 2. Select the required instance.
 3. Click the **Infrastructure** tab and select the required cluster.
 4. Select **Private VLAN** and locate the subnet that is labeled `Private subnet for customer workload edge`.
@@ -51,7 +51,7 @@ To find your customer private portable subnet details, complete the following st
 | Address | Proxy IP | A spare IP address must be used from the Customer, private portable subnet assigned during the provisioning process. |
 | Netmask | 255.255.255.192 | None |
 | Gateway| Customer T0 uplink1 virtual IP address | This parameter is the default gateway setting for the proxy server, which is the private uplink IP address of customer T0. The IP address can be found by reviewing details in the {{site.data.keyword.vmwaresolutions_short}} console by browsing to the Portable private subnet for customer workload edge. |
-| DNS Server | AD/DNS IP | This IP address can be found in the {{site.data.keyword.vmwaresolutions_short}} console by browsing to the **Resources** > **vCenter Server** > Summary page. |
+| DNS Server | AD/DNS IP | This IP address can be found in the {{site.data.keyword.vmwaresolutions_short}} console by browsing to the **Resources** > **VCF for classic** > Summary page. |
 | BCR IP | BCR IP| On the same page where you selected the proxy IP, note the address that is labeled **Gateway**. This address is the IP address of the {{site.data.keyword.cloud_notm}} Backend Customer Router and is the gateway for `10.0.0.0/8`, `161.26.0.0/16`, and `166.8.0.0/14`. You use this address later in a static route in the proxy server so that it can reach the VCSA and the AD/DNS server. |
 | NAT IP | T1 SNAT address | The public T1 SNAT address of the customer workload edge serves as the public NAT address for the proxy. This IP address can be found by reviewing details in the {{site.data.keyword.vmwaresolutions_short}} console by browsing to the Portable public subnet for customer workload edge. |
 {: caption="Table 1. Deployment values" caption-side="bottom"}
@@ -108,7 +108,7 @@ Using a browser on your jump server download the required Linux ISO file.
 ### Configuring a content library and populating it with the CentOS ISO file
 {: #vum-init-config-config-content-library}
 
-Create a local vCenter content library, see [Create a library](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.vm_admin.doc/GUID-2A0F1C13-7336-45CE-B211-610D39A6E1F4.html){: external}. The library is accessible only in the vCenter Server instance where it is created. Populate the library with the Linux ISO. See [Import Items to a Content Library](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.vm_admin.doc/GUID-897EEEC2-B378-41A7-B92B-D1159B5F6095.html){: external}.
+Create a local vCenter content library, see [Create a library](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.vm_admin.doc/GUID-2A0F1C13-7336-45CE-B211-610D39A6E1F4.html){: external}. The library is accessible only in the {{site.data.keyword.vcf-auto-short}} instance where it is created. Populate the library with the Linux ISO. See [Import Items to a Content Library](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.vm_admin.doc/GUID-897EEEC2-B378-41A7-B92B-D1159B5F6095.html){: external}.
 
 ### Configuring the VM and installing CentOS and Squid
 {: #vum-init-config-config-proxy}

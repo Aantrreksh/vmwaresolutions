@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2023
+  years:  2016, 2024
 
-lastupdated: "2023-05-01"
+lastupdated: "2024-06-05"
 
 subcollection: vmwaresolutions
 
@@ -24,7 +24,7 @@ Review the following information for common HCX™ issues and fixes.
 ### HCX user interface token timeout
 {: #hcxclient-troubleshooting-hcx-ui-issues}
 
-Typically, if the VMware vCenter Server® user interface has been opened for some time you might encounter a timeout in the HCX™ user interface, because the login token to the HCX Manager server timed out. Log out of the vSphere web user interface and back in to refresh the token.
+Typically, if the {{site.data.keyword.vcf-auto}} user interface has been opened for some time you might encounter a timeout in the HCX™ user interface, because the login token to the HCX Manager server timed out. Log out of the vSphere web user interface and back in to refresh the token.
 
 ### HCX Client user interface displaying “NaN” for all metrics on the dashboard screen
 {: #hcxclient-troubleshooting-nan-display}

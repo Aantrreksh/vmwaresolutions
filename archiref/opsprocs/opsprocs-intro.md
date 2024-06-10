@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2023
+  years:  2016, 2024
 
-lastupdated: "2023-09-11"
+lastupdated: "2024-06-05"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # Operational procedures overview
 {: #opsprocs-intro-overview}
 
-This document provides a view of Day 2 operations that you must complete after your VMware vCenter Server® instance has been provisioned. {{site.data.keyword.vmwaresolutions_full}} is a deployment service that automatically deploys VMware’s Software-Defined Data Center software on to the {{site.data.keyword.cloud_notm}}. Many of the following day 0 and day 1 tasks are completed by the deployment automation.
+This document provides a view of Day 2 operations that you must complete after your {{site.data.keyword.vcf-auto}} instance has been provisioned. {{site.data.keyword.vmwaresolutions_full}} is a deployment service that automatically deploys VMware’s Software-Defined Data Center software on to the {{site.data.keyword.cloud_notm}}. Many of the following day 0 and day 1 tasks are completed by the deployment automation.
 
 * Day 0
    * Requirements
@@ -52,7 +52,7 @@ Many IT organizations document their operational procedures in a runbook. A runb
    * Disaster recovery plans and procedures - Details on how to recover the service at another location due to a disaster at the primary location.
    * Service level agreement - The agreed service parameters such as operational level agreements, key point indicators, availability goals, recovery point objectives, recovery time objective.
 
-Most IT organizations have multiple runbooks that act as their reference manuals. This series of documentation is designed for use as a general runbook for your organization using vCenter Server instances. While every runbook's content is specific to the organization's needs, the methodology of runbook creation is fairly standard and uses the following two stages.
+Most IT organizations have multiple runbooks that act as their reference manuals. This series of documentation is designed for use as a general runbook for your organization using {{site.data.keyword.vcf-auto-short}} instances. While every runbook's content is specific to the organization's needs, the methodology of runbook creation is fairly standard and uses the following two stages.
 
 * The first stage is to decide which procedures need to be documented, and when listed, document each one with sufficient detail.
 * The second stage is ongoing and consists of maintaining, updating, and correcting these procedures, adding new procedures and retiring procedures that are no longer needed.
@@ -77,7 +77,7 @@ Many of the previous tasks are automated in Operations Management on {{site.data
 ## Operations management on {{site.data.keyword.cloud_notm}}
 {: #opsprocs-intro-ops-mgmt}
 
-You can have enterprise tools in place that you can use to monitor and manage your vCenter Server instance. Table 1 describes the core components of the vCenter Server environment, why they need to be monitored and how they are monitored by using Operations Management on {{site.data.keyword.cloud_notm}}. For more information, see the reference architecture documentation.
+You can have enterprise tools in place that you can use to monitor and manage your {{site.data.keyword.vcf-auto-short}} instance. Table 1 describes the core components of the {{site.data.keyword.vcf-auto-short}} instance, why they need to be monitored and how they are monitored by using Operations Management on {{site.data.keyword.cloud_notm}}. For more information, see the reference architecture documentation.
 
 | Component     | Why | Monitored by |
 | ------------- | --- | ------------ |
@@ -85,7 +85,7 @@ You can have enterprise tools in place that you can use to monitor and manage yo
 | vSphere Hosts | vSphere hosts provide the virtualized CPU, RAM, and network to the compute VMs. | VMware Aria Operations via vCenter. VMware Aria Operations for Logs collects the log data. |
 | vSAN | vSAN provides a datastore by consolidating storage in the hosts for use by the VMs. Issues that affect capacity and performance effect the applications that run on these VMs. | VMware Aria Operations and the Management Pack for vSAN provides additional dashboards to aid with the monitoring of vSAN. vCenter vSAN Health Checks are collected via VMware Aria Operations. VMware Aria Operations for Logs collects the log data from vCenter. |
 | NSX® | NSX provides the virtualized network components that are used by the compute VMs, any failures of the network can impact the applications that run on these VMs. | VMware Aria Operations and the VMware Aria Operations Management Pack for VMware NSX provides visibility into the network topology. VMware Aria Operations for Logs collects the log data from the NSX components such as Controllers, ESG, and logical switches. VMware Aria Operations™ for Networks provides in-depth troubleshooting of network issues. |
-{: caption="Table 1. vCenter Server environment core components" caption-side="bottom"}
+{: caption="Table 1. {{site.data.keyword.vcf-auto-short}} instance core components" caption-side="bottom"}
 
 In addition to monitoring, Operations Management on {{site.data.keyword.cloud_notm}}, helps with configuration, compliance, and many of the proactive tasks detailed in this documentation.
 
@@ -95,4 +95,4 @@ In addition to monitoring, Operations Management on {{site.data.keyword.cloud_no
 * [About vSphere Monitoring and Performance](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.monitoring.doc/GUID-A8B06BE0-E5FC-435C-B12F-A31618B21E2C.html){: external}
 * [VMware security hardening guides](https://www.vmware.com/security/hardening-guides.html){: external}
 * [Operations management introduction](/docs/vmwaresolutions?topic=vmwaresolutions-opsmgmt-intro)
-* [Considerations about changing vCenter Server artifacts](/docs/vmwaresolutions?topic=vmwaresolutions-vcenter_chg_impact#vcenter_chg_impact)
+* [Considerations about changing {{site.data.keyword.vcf-auto-short}} artifacts](/docs/vmwaresolutions?topic=vmwaresolutions-vcenter_chg_impact#vcenter_chg_impact)

@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2024
 
-lastupdated: "2024-02-01"
+lastupdated: "2024-06-05"
 
 subcollection: vmwaresolutions
 
@@ -37,7 +37,7 @@ The following features are common to both deployment types:
 
 The following features are unique to a deployment with the ESXi as the host OS:
 
-* VXLAN connectivity into a VMware vCenter Server® instance
+* VXLAN connectivity into a {{site.data.keyword.vcf-auto}} instance
 * Ability to host extra virtual machines (VMs) on the gateway cluster
 * NSX edges and load balancers
 
@@ -47,7 +47,7 @@ The following figure represents the typical vSRX deployment.
 
 ![vSRX overview](../../images/vcsvsrx-logical-overview.svg){: caption="Figure 1. vSRX overview" caption-side="bottom"}
 
-The deployment of the VMware vCenter Server® instance is required before the vSRX edge gateway appliance order is placed.
+The deployment of the {{site.data.keyword.vcf-auto}} instance is required before the vSRX edge gateway appliance order is placed.
 {: important}
 
 ## Understanding the default vSRX configuration for VMware Solutions
@@ -57,19 +57,19 @@ Understanding the default configuration helps both an understanding of the vSRX 
 
 For more information, see [Understanding the vSRX Default Configuration](/docs/vsrx?topic=vsrx-understanding-the-vsrx-default-configuration#understanding-the-vsrx-default-configuration) and [{{site.data.keyword.cloud_notm}} IaaS vSRX default configuration](/docs/vmwaresolutions?topic=vmwaresolutions-vcsvsrx-iaas-def-config).
 
-## vSRX and vCenter Server-integrated design
+## vSRX and {{site.data.keyword.vcf-auto-short}} integrated design
 {: #vcsvsrx-planning-vsrx-design}
 
-![vSRX and vCenter Server integration](../../images/vcsvsrx-vsrx-with-vcs-architecture.svg){: caption="Figure 2. vSRX and vCenter Server integration" caption-side="bottom"}
+![vSRX and {{site.data.keyword.vcf-auto-short}} integration](../../images/vcsvsrx-vsrx-with-vcs-architecture.svg){: caption="Figure 2. vSRX and {{site.data.keyword.vcf-auto-short}} integration" caption-side="bottom"}
 
-The tight integration of the vSRX HA Chassis Cluster into a vCenter Server instance extends the basic vCenter Server architecture in a few key areas.
+The tight integration of the vSRX HA Chassis Cluster into a {{site.data.keyword.vcf-auto-short}} instance extends the basic {{site.data.keyword.vcf-auto-short}} architecture in a few key areas.
 
-### vCenter Server cluster design
+### {{site.data.keyword.vcf-auto-short}} cluster design
 {: #vcsvsrx-planning-vcs-design}
 
-When a vCenter Server instance is deployed to a customer account it is typically a single hyper-converged cluster in which compute, management, and edge functions are delivered by a single three ESXi host (NFS shared storage) or four node (vSAN shared storage) cluster configuration.
+When a {{site.data.keyword.vcf-auto-short}}instance is deployed to a customer account it is typically a single hyper-converged cluster in which compute, management, and edge functions are delivered by a single three ESXi host (NFS shared storage) or four node (vSAN shared storage) cluster configuration.
 
-The addition of the vSRX offering on ESXi impacts the basic vCenter Server design by moving the edge gateway out of the hyper-converged cluster onto a dedicated two ESXi host cluster. The gateway cluster is managed by the existing vCenter Server that is deployed with the initial vCenter Server instance.
+The addition of the vSRX offering on ESXi impacts the basic {{site.data.keyword.vcf-auto-short}} design by moving the edge gateway out of the hyper-converged cluster onto a dedicated two ESXi host cluster. The gateway cluster is managed by the existing VMware vCenter® that is deployed with the initial {{site.data.keyword.vcf-auto-short}} instance.
 
 #### Host sizing
 {: #vcsvsrx-planning-host-sizing}
@@ -79,11 +79,11 @@ The current vSRX offering has limited hardware options for deployment. Since the
 ### Network design
 {: #vcsvsrx-planning-network-design}
 
-The vCenter Server offering is designed to manage east-west network traffic at the SDN layer by using NSX Tier-1 and virtual tunnel endpoints (VTEP) on each ESXi host and north-south traffic through NSX Tier-0. The vSRX is not a replacement for the NSX-T Tier0/1 edge clusters but can either assist or potentially replace the Tier-0 firewall services in managing the north-south traffic flows.
+The {{site.data.keyword.vcf-auto-short}} offering is designed to manage east-west network traffic at the SDN layer by using NSX Tier-1 and virtual tunnel endpoints (VTEP) on each ESXi host and north-south traffic through NSX Tier-0. The vSRX is not a replacement for the NSX-T Tier0/1 edge clusters but can either assist or potentially replace the Tier-0 firewall services in managing the north-south traffic flows.
 
 The required network design changes are modest and include all customer VM traffic no matter the destination, platform management traffic, direct-link traffic, where applicable, and internet bound traffic. Traffic that is explicitly excluded includes VTEP traffic, storage traffic, and vMotion traffic.
 
-NSX can be extended from the compute cluster to the gateway cluster. Or BGP over an IPsec VPN can be used to enable connectivity between the edge and compute clusters. When the traffic that flows between the vCenter Server compute cluster and the gateway cluster is not in conflict with the {{site.data.keyword.cloud_notm}} infrastructure assigned subnets, the use of a local VLAN and subnet is suitable as a transit link.
+NSX can be extended from the compute cluster to the gateway cluster. Or BGP over an IPsec VPN can be used to enable connectivity between the edge and compute clusters. When the traffic that flows between the {{site.data.keyword.vcf-auto-short}} compute cluster and the gateway cluster is not in conflict with the {{site.data.keyword.cloud_notm}} infrastructure assigned subnets, the use of a local VLAN and subnet is suitable as a transit link.
 
 BGP over IPsec VPN is the preferred method of connecting to a customer on-premises data center whether the connection traverses the internet or passes between the customer and {{site.data.keyword.cloud_notm}} through one of the {{site.data.keyword.cloud_notm}} infrastructure direct-link offerings.
 
@@ -92,9 +92,9 @@ It is recommened that you review the architecture patterns in the [Architecture 
 #### Interface mapping for vSRX on VMware
 {: #vcsvsrx-planning-interface-map}
 
-The vSRX on the {{site.data.keyword.cloud_notm}} vCenter Server platform has specific connection requirements to enable and maintain the HA chassis cluster.
+The vSRX in the {{site.data.keyword.vcf-auto-short}} instance has specific connection requirements to enable and maintain the HA chassis cluster.
 
-![vSRX HA chassis cluster on vCenter Server interconnections](../../images/vcsvsrx-vsrx-vcs-connections.svg){: caption="Figure 3. vSRX HA chassis cluster on vCenter Server interconnections" caption-side="bottom"}
+![vSRX HA chassis cluster on {{site.data.keyword.vcf-auto-short}} interconnections](../../images/vcsvsrx-vsrx-vcs-connections.svg){: caption="Figure 3. vSRX HA chassis cluster on {{site.data.keyword.vcf-auto-short}} interconnections" caption-side="bottom"}
 
 Each network adapter that is defined on the vSRX is mapped to a specific interface, depending on whether the vSRX instance is a stand-alone VM or one of a cluster pair for high availability.
 
@@ -154,7 +154,7 @@ As noted previously, the default configuration merely represents a point from wh
 ## vSRX to client on-premises connections
 {: #vcsvsrx-planning-client-config}
 
-The preferred method of linking the {{site.data.keyword.cloud_notm}} vCenter Server instance to a client's existing on-premises data center is BGP.  
+The preferred method of linking the {{site.data.keyword.vcf-auto-short}} instance to a client's existing on-premises data center is BGP.  
 
 If the client intends to connect over the Internet by using eBGP, they must obtain a public autonomous system number (ASN) or use BGP over an IPsec VPN to allow the use of private ASNs.
 

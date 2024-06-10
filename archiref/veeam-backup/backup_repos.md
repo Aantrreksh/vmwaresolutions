@@ -4,7 +4,7 @@ copyright:
 
   years: 2023, 2024
 
-lastupdated: "2024-04-12"
+lastupdated: "2024-06-05"
 
 keywords: backup repository, direct attached storage, network attached storage
 
@@ -67,7 +67,7 @@ For postinstallation, consider the following Veeam recommendations:
       * The user account that you create during the installation. This account is used to connect to the Linux server and deploy the required Veeam Backup and Replication components.
 
 For {{site.data.keyword.cloud_notm}}, consider:
-* The choice of storage regarding the location of primary data. If your vCenter server instance has an NFS cluster, then an NFS share for backup data might place the primary and secondary data on the same storage appliance.
+* The choice of storage regarding the location of primary data. If your {{site.data.keyword.vcf-auto}} instance has an NFS cluster, then an NFS share for backup data might place the primary and secondary data on the same storage appliance.
 * No SMB (CIFS) share is available as a service in {{site.data.keyword.cloud_notm}}.
 * Only virtual appliances versions of deduplicating storage appliances can be installed in {{site.data.keyword.cloud_notm}}. Furthermore, consider what storage that these appliances use.
 * For object storage, see [Considerations and Limitations](https://helpcenter.veeam.com/docs/backup/vsphere/object_storage_repository_cal.html?ver=120){: external}.

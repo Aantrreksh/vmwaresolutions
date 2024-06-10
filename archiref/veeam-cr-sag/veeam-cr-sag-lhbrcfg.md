@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2024
 
-lastupdated: "2024-01-26"
+lastupdated: "2024-06-05"
 
 subcollection: vmwaresolutions
 
@@ -226,7 +226,7 @@ The code snippet does the following actions:
 ## Changing the DNS
 {: #veeam-cr-sag-lhbrcfg-dns}
 
-The following code snippet changes the DNS from the {{site.data.keyword.cloud}} DNS resolvers - `10.0.80.11` and `10.0.80.12`, with the vCenter Server instances DNS - `addns1` and `addns2`.
+The following code snippet changes the DNS from the {{site.data.keyword.cloud}} DNS resolvers - `10.0.80.11` and `10.0.80.12`, with the {{site.data.keyword.vcf-auto}} instances DNS - `addns1` and `addns2`.
 
 ```text
     - name: Change resolv nameserver_1

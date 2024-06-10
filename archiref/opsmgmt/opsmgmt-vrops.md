@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-01-30"
+lastupdated: "2024-06-05"
 
 subcollection: vmwaresolutions
 
@@ -108,7 +108,7 @@ Deployment of the VMware Aria Operations appliance requires six IP addresses fro
 
 | Component | Protocol | Port |
 |:--------- |:-------- |:---- |
-| vCenter Server | TCP | 443 |
+| VMware vCenter® | TCP | 443 |
 | DNS | TCP/UDP | 53 |
 | LDAP/LDAPS | TCP | 389/636 |
 | LDAP GC | TCP | 3268/3269 |
@@ -164,12 +164,12 @@ VMware Aria Operations Management Pack for vSAN enables vSAN specific dashboards
 ### VMware SDDC Health Management Pack
 {: #opsmgmt-vrops-management-sddc}
 
-The VMware SDDC Health Management Pack for VMware Aria Operations monitors the SDDC management stack. Color-coded metrics are provided for health and efficiency of different components present as part of the SDDC management stack. With the dashboards in the VMware SDDC Health Management Pack, you can monitor the following components of the vCenter Server instance and management tools:
+The VMware SDDC Health Management Pack for VMware Aria Operations monitors the SDDC management stack. Color-coded metrics are provided for health and efficiency of different components present as part of the SDDC management stack. With the dashboards in the VMware SDDC Health Management Pack, you can monitor the following components of the {{site.data.keyword.vcf-auto}} instance and management tools:
 * VMware Aria Operations Manager
 * NSX for vSphere and VMware NSX-T
 * VMware vSAN
 * VMware Aria Operations for Logs
-* vCenter Server
+* vCenter
 
 If the client installed the following, you can monitor them.
 * VMware Aria Automation
@@ -183,7 +183,7 @@ The VMware SDDC Health Management Pack provides the following dashboards:
 * SDDC VMware Aria Operations Manager Sizing Dashboard - The SDDC VMware Aria Operations Manager Sizing Dashboard provides VMware Aria Operations Manager cluster capacity to process object and metrics.
 
 The plug-ins in the VMware SDDC Health Management Pack collect metrics for object types that are contained in the plug-ins. The Management Pack collects health metrics for the following components:
-* vCenter Server
+* vCenter
 * Management Pack for NSX for vSphere
 * VMware Aria Automation
 * VMware Aria Operations Manager
@@ -192,7 +192,7 @@ The plug-ins in the VMware SDDC Health Management Pack collect metrics for objec
 * VMware Site Recovery Manager
 * vCenter HA
 * vMware vSAN Health
-* Services in vCenter Server Appliance
+* Services in vCenter
 * VMware Aria Operations Manager Sizing
 * VMware Aria Orchestrator
 

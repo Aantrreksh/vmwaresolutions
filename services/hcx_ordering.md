@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-04-20"
+lastupdated: "2024-05-06"
 
 keywords: VMware HCX deployment, HCX configuration, order HCX
 
@@ -108,17 +108,17 @@ The deployment of HCX is automated. Whether you order a {{site.data.keyword.vcf-
    * Public and private uplink interfaces are configured by using the ordered subnets.
    * The ESGs are configured as a pair of extra large edge appliances with High Availability (HA) enabled.
    * The firewall rules and network address translation (NAT) rules are configured to allow inbound and outbound HTTPS traffic to and from the HCX Manager.
-   * The load balancer rules and resource pools are configured. These rules and resource pools are used to forward HCX-related inbound traffic to the appropriate virtual appliances of HCX Manager and vCenter Server (with embedded Platform Services Controller).
+   * The load balancer rules and resource pools are configured. These rules and resource pools are used to forward HCX-related inbound traffic to the appropriate virtual appliances of HCX Manager and VMware vCenter® Server Appliance (VCSA).
    * An SSL certificate to encrypt the HCX-related inbound HTTPS traffic that is coming through the ESGs is applied.
 
    The HCX management edge is dedicated to the HCX management traffic between the on-premises HCX components and the cloud-side HCX components. Do not modify the HCX management edge or use it for HCX network extensions. Instead, create separate edges for network extensions. In addition, if you use a firewall or you disable the HCX management edge communications to the private IBM management components or the internet, the HCX functions might be impacted.
    {: important}
 
 6. The HCX Manager is deployed, activated, and configured:
-   * The HCX Manager is registered with vCenter Server.
-   * The HCX Manager, vCenter Server (with embedded Platform Services Controller), and NSX Manager are configured.
+   * The HCX Manager is registered with the VCSA.
+   * The HCX Manager, VCSA, and NSX Manager are configured.
    * The HCX Compute and Network profiles are created.
-7. The hostname and IP address of the HCX Manager is registered with the DNS server of vCenter Server.
+7. The hostname and IP address of the HCX Manager is registered with the DNS server of the {{site.data.keyword.vcf-auto-short}} instance.
 
 ## Related links
 {: #hcx_ordering-related}

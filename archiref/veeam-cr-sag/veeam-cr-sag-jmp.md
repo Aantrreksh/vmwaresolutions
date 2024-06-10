@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-01-26"
+lastupdated: "2024-06-05"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # Provisioning the jump server
 {: #veeam-cr-sag-jmp}
 
-The jump server is a small Microsoft® Windows® Virtual Server Instance (VSI) deployed in the {{site.data.keyword.cloud}} account where the VMware vCenter Server® instance with the Veeam® service is located. The VSI is connected to both the {{site.data.keyword.cloud_notm}} private and public networks. The public network interface is protected by a security group that restricts Remote Desktop Protocol (RDP) access to a known remote IP address.
+The jump server is a small Microsoft® Windows® Virtual Server Instance (VSI) deployed in the {{site.data.keyword.cloud}} account where the {{site.data.keyword.vcf-auto}} instance with the Veeam® service is located. The VSI is connected to both the {{site.data.keyword.cloud_notm}} private and public networks. The public network interface is protected by a security group that restricts Remote Desktop Protocol (RDP) access to a known remote IP address.
 
 The jump server is used to provide graphical access to the Veeam Backup and replication server, vCenter appliance, and NSX-T Manager. In this step, the following tasks are included:
 
@@ -60,7 +60,7 @@ The jump server host is a small Microsoft Windows 2019 public VSI:
 
 * The `ibmcloud sl vlan list` and `ibmcloud sl subnet list` need to be run first so that the IDs of the public and private VLANs and the primary subnets are captured for use in the ordering process.
 * The `<js_hostname>` is the required hostname for the jump server, such as `winjs01`.
-* The `<root_domain>` the required domain name, such as the matching root-domain name of your vCenter Server instance.
+* The `<root_domain>` the required domain name, such as the matching root-domain name of your {{site.data.keyword.vcf-auto-short}} instance.
 * The Linux® server is ordered with 2 vCPU and 4 GB RAM.
 * The `<dc_code>` is the code for the data center in which the VSI is provisioned into, such as DAL10.
 * The `<public_vlan_number>` and `<private_vlan_number>` are the VLAN numbers of the required public and private VLANs previously captured.

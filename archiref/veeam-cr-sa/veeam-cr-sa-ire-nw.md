@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-04-29"
+lastupdated: "2024-06-05"
 
 subcollection: vmwaresolutions
 
@@ -29,9 +29,9 @@ The isolated recovery environment also uses vSRX appliances that are hosted on a
 
 ![Isolated recovery environment network overview](../../images/veeam-cr-sa-sb-ire.svg){: caption="Figure 1. Isolated recovery environment network overview" caption-side="bottom"}
 
-The previous diagram shows the networks that are associated with a consolidated cluster of the vCenter Server® instance that is used for an isolated recovery environment. The customer order is:
+The previous diagram shows the networks that are associated with a consolidated cluster of the {{site.data.keyword.vcf-auto}} instance that is used for an isolated recovery environment. The customer order is:
 
-* A private network only vCenter Server® instance with gateway cluster and Juniper® vSRX firewalls.
+* A private network only {{site.data.keyword.vcf-auto-short}} instance with gateway cluster and Juniper® vSRX firewalls.
 * The Veeam service on a bare metal server.
 * A bare metal server that runs Ubuntu 20.04 LTS.
 
@@ -47,7 +47,7 @@ When the IaaS is provisioned, the customer:
    * Interfaces and zones.
    * Address books, services, and security policies.
    * NAT, routing, and VPN.
-* Associates and routes-through the vCenter Server instance VLANs with the {{site.data.keyword.cloud}} gateway devices, which are the ESXi hosts in the gateway cluster.
+* Associates and routes-through the {{site.data.keyword.vcf-auto-short}} instance VLANs with the {{site.data.keyword.cloud}} gateway devices, which are the ESXi hosts in the gateway cluster.
 
 The vSRX security policies enable the objectives that are listed in the following table:
 
@@ -59,7 +59,7 @@ The vSRX security policies enable the objectives that are listed in the followin
 | Allow Veeam access to proxies | Veeam backup server IP | Production proxy network | SSH, TCP-6162, TCP-2500 - 3300 | Allow |
 | Allow proxy access to Linux hardened repository | Production proxy network | Linux Hardened repository IP | TCP-2500 - 3300 | Allow |
 | Allow ADDNS access to {{site.data.keyword.cloud_notm}} services | ADDNS IPs | DNS and NTP IPs | TCP/UDP-53, UDP-123 | Allow |
-| Allow access between vCenter Server subnets | vCenter Server subnets | vCenter Server subnets | Any | Allow |
+| Allow access between {{site.data.keyword.vcf-auto-short}} subnets | {{site.data.keyword.vcf-auto-short}} subnets | {{site.data.keyword.vcf-auto-short}} subnets | Any | Allow |
 | Allow vCenter to KMIP | vCenter IP | {{site.data.keyword.cloud_notm}} endpoint service network | TCP 5696 | Allow |
 {: caption="Table 1. vSRX security policies objectives" caption-side="bottom"}
 
@@ -71,9 +71,9 @@ The vSRX security policies enable the objectives that are listed in the followin
 * Veeam backup server access to the Linux hardened repository is done through the connected network.
 * The **Allow proxy access to Linux hardened repository** rule can be toggled between "Allow" and "Deny" to facilitate the air gap.
 * If NFS is used, then this action bypasses the vSRX as the storage VLAN is not associated with the {{site.data.keyword.cloud_notm}} gateway devices that host the vSRX appliances.
-* If the **Allow access between vCenter Server subnets** rule needs to be locked down further, for more information, see [Ports that are used by VMware Solutions](/docs/vmwaresolutions?topic=vmwaresolutions-vmwaresol_ports-vmwareuses).
+* If the **Allow access between {{site.data.keyword.vcf-auto-short}} subnets** rule needs to be locked down further, for more information, see [Ports that are used by VMware Solutions](/docs/vmwaresolutions?topic=vmwaresolutions-vmwaresol_ports-vmwareuses).
 * If encryption is used, then vCenter needs access to the KMIP service. This service is accessed through the {{site.data.keyword.cloud_notm}} endpoint service network 166.8.0.0/14.
-* If automated Day 2 operations are required on the vCenter Server instance, for more information, see [Ports that are used for deployment and Day 2 operations](/docs/vmwaresolutions?topic=vmwaresolutions-vmwaresol_ports-deploy-day2ops).
+* If automated Day 2 operations are required on the {{site.data.keyword.vcf-auto-short}} instance, for more information, see [Ports that are used for deployment and Day 2 operations](/docs/vmwaresolutions?topic=vmwaresolutions-vmwaresol_ports-deploy-day2ops).
 
 To enable the air gap, the customer:
 

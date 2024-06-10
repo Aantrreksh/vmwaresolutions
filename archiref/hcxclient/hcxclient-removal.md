@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2022
 
-lastupdated: "2022-04-27"
+lastupdated: "2024-06-05"
 
 subcollection: vmwaresolutions
 
@@ -52,7 +52,7 @@ Never delete virtual appliances from the vSphere inventory. Always use the manag
 4. On the lower right, click the Delete icon to remove the appliance.
 5. If a stretched network does not share an IP address with the Hybrid Cloud Gateway, you must remove it separately. Expand the Network Extensions Service details, and click the Delete icon to remove the Layer 2 Concentrator.
 
-The Hybrid Cloud Gateway and any hybrid service virtual appliances that use the Hybrid Cloud Gateway are removed from both the vCenter and the vCenter Server Hybrid Cloud Services Cloud.
+The Hybrid Cloud Gateway and any hybrid service virtual appliances that use the Hybrid Cloud Gateway are removed from both the on-premises VMware vCenter® and the {{site.data.keyword.vcf-auto}} vCenter.
 
 ## Uninstalling HCX Manager
 {: #hcxclient-removal-uninstall-unist-hcxm}

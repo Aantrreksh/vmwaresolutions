@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-01-26"
+lastupdated: "2024-06-05"
 
 subcollection: vmwaresolutions
 
@@ -18,14 +18,14 @@ subcollection: vmwaresolutions
 
 Now that the jump server is ordered and available for connection on its public IP address from your laptop, you can follow these steps:
 
-1. [Change the Domain Name Services (DNS)](#veeam-cr-sag-jmpcfg-dns) client so that it points to the VMware vCenter Server® instances - Active Directory™ DNS (AD/DNS) server instead of the {{site.data.keyword.cloud}} DNS resolver. It allows name resolution for components, such as the vCenter appliance and VMware NSX-T™ Manager. The VSI has two Ethernet interfaces, one for the private network and one for the public network.
+1. [Change the Domain Name Services (DNS)](#veeam-cr-sag-jmpcfg-dns) client so that it points to the {{site.data.keyword.vcf-auto}} instances - Active Directory™ DNS (AD/DNS) server instead of the {{site.data.keyword.cloud}} DNS resolver. It allows name resolution for components, such as the vCenter appliance and VMware NSX-T™ Manager. The VSI has two Ethernet interfaces, one for the private network and one for the public network.
 2. [Download software](#veeam-cr-sag-jmpcfg-sw) that enables administration functions, such as mRemoteNG and Firefox®.
 3. [Install PowerCLI](#veeam-cr-sag-jmpcfg-powercli). PowerCLI is a collection of PowerShell Modules to manage VMware® infrastructure, including network, storage, virtual machine (VM), and guest OS.
 
 ## Changing DNS
 {: #veeam-cr-sag-jmpcfg-dns}
 
-1. From the {{site.data.keyword.vmwaresolutions_full}} console, click **Resources** > **vCenter Server** from the left navigation pane. Select the instance and click the **Access information** tab to capture the IP address of your AD/DNS servers `DNS1` and `DNS2`.
+1. From the {{site.data.keyword.vmwaresolutions_full}} console, click **Resources** > **VCF for Classic** from the left navigation pane. Select the instance and click the **Access information** tab to capture the IP address of your AD/DNS servers `DNS1` and `DNS2`.
 2. From your laptop, use an RDP client to access the jump server.
 3. When connected to the jump server, open a PowerShell console with admin privileges.
 4. Use `Get-DNSClientServerAddress` to display the interfaces and their parameters. You need to capture the Interface Indexes `IF1` and `IF2` for the Ethernet interfaces for use in the next command.

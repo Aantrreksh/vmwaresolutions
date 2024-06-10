@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2024
 
-lastupdated: "2024-01-30"
+lastupdated: "2024-06-05"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # VMware Solutions infrastructure domain
 {: #adds-infra-domain}
 
-The {{site.data.keyword.vmwaresolutions_full}} infrastructure domain holds the resource objects and user accounts for the administration of the VMware vCenter Server® instance only. Using this domain to hold resource objects and user accounts for your workload VMs is not recommended.
+The {{site.data.keyword.vmwaresolutions_full}} infrastructure domain holds the resource objects and user accounts for the administration of the {{site.data.keyword.vcf-auto}} instance only. Using this domain to hold resource objects and user accounts for your workload VMs is not recommended.
 
 Within the vCenter Server design, the {{site.data.keyword.vmwaresolutions_short}} infrastructure Active Directory™ (AD) domain is used for:
 

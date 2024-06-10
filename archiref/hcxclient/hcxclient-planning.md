@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2022
+  years:  2016, 2024
 
-lastupdated: "2022-08-26"
+lastupdated: "2024-06-05"
 
 subcollection: vmwaresolutions
 
@@ -26,7 +26,7 @@ The installation of VMware HCX™ has the following software requirements:
 
 HCX must traverse the public internet and private lines, and connect to data center components, such as networks, switches, and port groups.
 * For more information about the ports that must be opened so that HCX virtual appliances can install successfully, see [Port access requirements](/docs/vmwaresolutions?topic=vmwaresolutions-hcx-archi-port-req).
-* Both the on premises vSphere environment and the vCenter Server HCX Cloud environment must allow Network Time Protocol (NTP) clock synchronization among vSphere on-premises devices and the vCenter Server HCX devices. UDP port 123 must be accessible to HCX virtual appliances and networks.
+* Both the on premises vSphere environment and the {{site.data.keyword.vcf-auto}} HCX Cloud environment must allow Network Time Protocol (NTP) clock synchronization among vSphere on-premises devices and the {{site.data.keyword.vcf-auto-short}} HCX devices. UDP port 123 must be accessible to HCX virtual appliances and networks.
 
 ## On-premises environment
 {: #hcxclient-planning-on-prem-env}
@@ -34,14 +34,14 @@ HCX must traverse the public internet and private lines, and connect to data cen
 Before you install HCX, verify that your environment can support the tasks that you want to accomplish. The on-premises environment must support the following tasks before HCX can be installed.
 * Virtual Center with vSphere 5.5 Update 3 or 6.0 Update 2.
 * vMotion and policy migration features require NSX version 6.2.2 or higher.
-* A vSphere service account with the Administrator vCenter Server system role that is assigned to it.
+* A vSphere service account with the Administrator system role that is assigned to it.
 * In the vCenter, enough disk space for the HCX appliances to be installed.
 * Sufficient IP addresses for the on-premises VMs provisioned during the installation.
 * Ports and firewalls opened as required as documented in Port Access Requirements.
 * If the single sign-on (SSO) server is remote, the URL of the vCenter, external SSO Server, or Platform Services Controller (PSC) that runs the external lookup service must be identified. When the HCX Manager is registered with the vCenter, this URL must be supplied.
-* If a vCenter Server does not have its own internal instance of the lookup service, it might be for one of the following reasons.
+* If a VMware vCenter® does not have its own internal instance of the lookup service, it might be for one of the following reasons.
    * vCenter 6.0u2 is running an external Platform Services Controller.
-   * vCenter Server is in linked mode (where the secondary vCenter uses the SSO service from the primary vCenter or an external SSO service).
+   * vCenter is in linked mode (where the secondary vCenter uses the SSO service from the primary vCenter or an external SSO service).
 
 ## Verifying Layer 2 installation environment
 {: #hcxclient-planning-verify-layer-2-inst}
@@ -52,7 +52,7 @@ Layer 2 network stretching has the following requirements:
    * vSphere Enterprise Plus license.
    * Must have a vSphere Distributed Switch (vDS). The distributed switch is available with vSphere Enterprise Plus Edition.
    * When installed, the on-premises Layer 2 concentrator service appliance must have access to a vNIC port and any VLANs to be stretched.
-   * If the network is to be stretched over the public internet or a VPN (on an alternative path), the L2C VM in vCenter Server requires an IP address. The remote IP address is required to configure the Layer 2 concentrator.
+   * If the network is to be stretched over the public internet or a VPN (on an alternative path), the L2C VM in {{site.data.keyword.vcf-auto-short}} requires an IP address. The remote IP address is required to configure the Layer 2 concentrator.
    * If multiple Layer 2 concentrators are wanted, each must have an IP address on-premises and in the cloud.
 
 ## Pre-deployment planning
@@ -142,7 +142,7 @@ Network swing occurs after the evacuation of the VMs on source side networks is 
 
 For network extension, only port groups with a vSphere virtual distributed switch (vDS) are supported. This also implies that stand-alone ESXi hosts are not supported as you can have only a vDS when ESXi hosts are managed by vCenter.
 * vSphere 5.1 (command line only for vCenter 5.1 through API)
-* vSphere 5.5 (VMware vSphere Web Client supported on vCenter Server 5.5u3 and earlier)
+* vSphere 5.5 (VMware vSphere Web Client supported on vCenter 5.5u3 and earlier)
 * vSphere 6.0
 * vSphere 6.5 (vDS must be at a 6.0 level)
 

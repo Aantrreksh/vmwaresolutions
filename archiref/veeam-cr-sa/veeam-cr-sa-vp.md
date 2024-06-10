@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2023
+  years:  2023, 2024
 
-lastupdated: "2023-04-18"
+lastupdated: "2024-06-05"
 
 subcollection: vmwaresolutions
 
@@ -56,8 +56,8 @@ For more information, see [Transport modes](https://helpcenter.veeam.com/docs/ba
 When you use a VM based backup proxy:
 
 * If the production environment is not on {{site.data.keyword.cloud_notm}}, then the most efficient transport mode depends on the storage architecture.
-* If the production environment is on {{site.data.keyword.cloud_notm}} and the vCenter Server instance is using NFS, then Direct NFS access mode is the most efficient.
-* If the production environment is on {{site.data.keyword.cloud_notm}} and the vCenter Server instance is using vSAN, then the Virtual appliance (HotAdd) is the most efficient.
+* If the production environment is on {{site.data.keyword.cloud_notm}} and the {{site.data.keyword.vcf-auto}} instance is using NFS, then Direct NFS access mode is the most efficient.
+* If the production environment is on {{site.data.keyword.cloud_notm}} and the {{site.data.keyword.vcf-auto-short}} instance is using vSAN, then the Virtual appliance (HotAdd) is the most efficient.
 
 ## Backup proxy in the immutable backup solution architecture
 {: #veeam-cr-sa-vp-ib}

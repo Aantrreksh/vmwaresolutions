@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2024
 
-lastupdated: "2024-03-05"
+lastupdated: "2024-05-02"
 
 subcollection: vmwaresolutions
 
@@ -48,7 +48,7 @@ If the other parent domain has a child domain, due to the two-way trust, those u
 
 VMware always recommends two-way trusts for forest trusts. For more information, see [Microsoft Active Directory Trusts supported by VMware vCenter Single Sign-On](https://kb.vmware.com/s/article/2064250){: external}.
 
-Due to the use of the two-way trusts between the {{site.data.keyword.vmwaresolutions_short}} infrastructure forest and the {{site.data.keyword.vmwaresolutions_short}} workload forest, vSphere SSO can use this trust so users can be authenticated from all parent and child domains in the {{site.data.keyword.vmwaresolutions_short}} workload forest. The following diagram shows the Active Directory Domain Services topology for this two-way forest trust model.
+Because two-way trusts are used between the {{site.data.keyword.vmwaresolutions_short}} infrastructure forest and the {{site.data.keyword.vmwaresolutions_short}} workload forest, vSphere SSO can use this trust so users can be authenticated from all parent and child domains in the {{site.data.keyword.vmwaresolutions_short}} workload forest. The following diagram shows the Active Directory Domain Services topology for this two-way forest trust model.
 
 ![Two-way forest trust diagram](../../images/adds-twowayforesttrust.svg "Two-way forest trust diagram"){: caption="Figure 3. Two-way forest trust diagram" caption-side="bottom"}
 

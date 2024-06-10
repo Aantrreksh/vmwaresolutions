@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2024
 
-lastupdated: "2024-02-02"
+lastupdated: "2024-06-05"
 
 subcollection: vmwaresolutions
 
@@ -210,7 +210,7 @@ If you are creating the cyber-recovery isolated recovery environment solution ar
 * [Cyber recovery with Veeam architecture overview](/docs/vmwaresolutions?topic=vmwaresolutions-veeam-cr-sa-overview)
 * [Juniper vSRX overview](/docs/vmwaresolutions?topic=vmwaresolutions-juniper-overview)
 * [Managing Juniper vSRX](/docs/vmwaresolutions?topic=vmwaresolutions-juniper-managing)
-* [Juniper Networks vSRX deployment and operation with vCenter Server on {{site.data.keyword.cloud_notm}}](/docs/vmwaresolutions?topic=vmwaresolutions-vcsvsrx-intro)
+* [Juniper Networks vSRX deployment and operation with {{site.data.keyword.vcf-auto-short}}](/docs/vmwaresolutions?topic=vmwaresolutions-vcsvsrx-intro)
 * [Managing VLANs with a gateway appliance](/docs/gateway-appliance?topic=gateway-appliance-managing-vlans-and-gateway-appliances)
 * [{{site.data.keyword.cloud_notm}} IP ranges](/docs/gateway-appliance?topic=gateway-appliance-ibm-cloud-ip-ranges)
 * [VLANs and subnets in {{site.data.keyword.vmwaresolutions_full}}](/docs/vmwaresolutions?topic=vmwaresolutions-vmwaresol_ports-vlans-subnets)

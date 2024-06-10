@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-01-31"
+lastupdated: "2024-06-05"
 
 subcollection: vmwaresolutions
 
@@ -41,7 +41,7 @@ Notifications are alert notifications that meet the filter criteria in the notif
 ## Integration use case
 {: #opsmgmt-integration-usecase}
 
-This example use case is based on an existing generic service management layer that is used by an enterprise. The client provisioned a vCenter Server instance with the Operations Management option, and they want to integrate this platform into their service management platform. They use an event aggregation system to integrate the alerts generated from the domain-specific monitoring tools:
+This example use case is based on an existing generic service management layer that is used by an enterprise. The client provisioned a {{site.data.keyword.vcf-auto}} instance with the Operations Management option, and they want to integrate this platform into their service management platform. They use an event aggregation system to integrate the alerts generated from the domain-specific monitoring tools:
 
 * A tool set to monitor the OS, middleware and applications across their UNIX®, Linux®, and Windows® workloads, but this tool does not monitor the infrastructure components like VMware®, networking devices, or storage.
 * An SNMP manager to receive SNMP traps from their network infrastructure. This tool also collects SNMP metrics to enable performance and capacity alerts.

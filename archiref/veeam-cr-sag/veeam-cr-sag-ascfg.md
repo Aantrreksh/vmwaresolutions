@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-01-26"
+lastupdated: "2024-06-05"
 
 subcollection: vmwaresolutions
 
@@ -53,7 +53,7 @@ The `apt update` command downloads package information from all configured sourc
 ## Changing DNS
 {: #veeam-cr-sag-ascfg-dns}
 
-After provisioning, the VSI is configured to use the {{site.data.keyword.cloud_notm}} DNS resolvers: `10.0.80.11 and 10.0.80.12`, and not your VMware vCenter Server® instance - Active Directory™ DNS (AD/DNS) servers. You can change this configuration by using the following commands, and changing `<addns_1>` and `<addns_2>` to the IP addresses of your AD/DNS servers. Replace `<root_domain>` with your vCenter Server instance domain. For example, `test.ibmloud.local`
+After provisioning, the VSI is configured to use the {{site.data.keyword.cloud_notm}} DNS resolvers: `10.0.80.11 and 10.0.80.12`, and not your {{site.data.keyword.vcf-auto}} instance - Active Directory™ DNS (AD/DNS) servers. You can change this configuration by using the following commands, and changing `<addns_1>` and `<addns_2>` to the IP addresses of your AD/DNS servers. Replace `<root_domain>` with your {{site.data.keyword.vcf-auto-short}} instance domain. For example, `test.ibmloud.local`
 
 ```text
 sudo sed -i 's/10.0.80.11/<addns_1>/g' /etc/netplan/50-cloud-init.yaml

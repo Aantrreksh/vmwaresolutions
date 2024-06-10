@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2022
+  years:  2016, 2024
 
-lastupdated: "2022-08-26"
+lastupdated: "2024-06-05"
 
 subcollection: vmwaresolutions
 
@@ -38,7 +38,7 @@ HCX Service Mesh components are responsible for creating the data and control pl
 * Interconnect Appliance (HCX-IX) - The interconnect appliance creates encrypted tunnels that support vMotion and replication (bulk migration) traffic.
 * WAN Optimizer Appliance (HCX-WAN) - HCX includes an optionally deployed Silver Peak™ WAN optimization appliance. It is deployed as a VM appliance. When deployed, the CGW tunnel traffic is redirected to traverse the WAN Optimizer. Since the WAN optimizer significantly decreases traffic across the WAN (typically 3:1 to 6:1 observed) while it increases connection reliability, it is recommended to deploy the WAN optimizer with the CGW. The added benefit of deploying the WAN optimizer is extended to limiting the WAN bandwidth used by VM migration traffic. The WAN optimizer management interface is not configured by default.
 * Network Extension (HCX-NE) - Provides the Layer 2 network extension capabilities, enabling migrations between the on-premises location and the vSphere environment with the need to reassign IP addresses to the VMs.
-* Proxy ESXi host - Whenever the HCX-IX is configured to connect to the cloud side HCX site, a proxy ESXi host appears in the vCenter Server outside of any cluster. This ESXi host has the same management and vMotion IP address as the corresponding HCX-IX appliance. As a result, the vSphere environment at both the client and the cloud side work as if it performs a local vMotion.
+* Proxy ESXi host - Whenever the HCX-IX is configured to connect to the cloud side HCX site, a proxy ESXi host appears in the VMware vCenter® outside of any cluster. This ESXi host has the same management and vMotion IP address as the corresponding HCX-IX appliance. As a result, the vSphere environment at both the client and the cloud side work as if it performs a local vMotion.
 
 This method has the following benefits:
 * The management IP ranges on either side might be overlapping with no loss in functionality.

@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-04-26"
+lastupdated: "2024-06-05"
 
 subcollection: vmwaresolutions
 
@@ -16,12 +16,12 @@ subcollection: vmwaresolutions
 # Caveonix RiskForesight use cases and benefits
 {: #caveonix-on-vcs}
 
-Caveonix RiskForesight™ provides an automated deployment of the Caveonix RiskForesight solution in an all-in-one virtual machine (VM) deployment. It is initially configured with a Service Provider and a Tenant and integrated into vCenter and NSX Manager. The Asset Repository is populated with the VMware® vCenter Server infrastructure components and an Application and Sub-Application, which represent the VMware infrastructure platform, are configured. On the dashboard, the cyberrisk scores, compliance risk scores, and compliance reports for the required compliance regimes are available.
+Caveonix RiskForesight™ provides an automated deployment of the Caveonix RiskForesight solution in an all-in-one virtual machine (VM) deployment. It is initially configured with a Service Provider and a Tenant and integrated into vCenter and NSX Manager. The Asset Repository is populated with the {{site.data.keyword.vcf-auto}} infrastructure components and an Application and Sub-Application, which represent the VMware infrastructure platform, are configured. On the dashboard, the cyberrisk scores, compliance risk scores, and compliance reports for the required compliance regimes are available.
 
 The following list is an overview of the initial workflows:
 1. Client orders the service and initiates an automated installation of the RiskForesight Application.
 2. Service Provider data is configured.
-3. Tenant Organization and Assets are initially configured through vCenter. An Application and Sub-Application is configured for the vCenter Server® instance.
+3. Tenant Organization and Assets are initially configured through vCenter. An Application and Sub-Application is configured for the {{site.data.keyword.vcf-auto-short}} instance.
 4. Dashboards are populated for the tenant to manage their cyberrisk and compliance posture:
     - Compliance Management
     - Risk Management

@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2024
 
-lastupdated: "2024-02-09"
+lastupdated: "2024-06-05"
 
 subcollection: vmwaresolutions
 
@@ -15,7 +15,7 @@ subcollection: vmwaresolutions
 # Cyber recovery with Predatar
 {: #cr-predatar-overview}
 
-A VMware vCenter Server instance can host Predatar® Cyber Recovery Orchestration and a Predatar CleanRoom™.
+A {{site.data.keyword.vcf-auto}} instance can host Predatar® Cyber Recovery Orchestration and a Predatar CleanRoom™.
 
 Predatar Cyber Recovery Orchestration automates and orchestrates the recovery and malware scanning of backups into a Predatar CleanRoom. This process allows organizations to understand which of their virtual machines (VMs) fail to meet their required objectives and might jeopardize a quick recovery from a cyberattack. For more information, see [Protect your data against ransomware attacks](https://www.predatar.com/cyber-resilience/?language=en-gb){: external}.
 
@@ -113,7 +113,7 @@ The smallest {{site.data.keyword.cloud_notm}} Classic Bare metal server for the 
 
 For more information about small, medium, and large configurations with direct-to-cloud or disk-to-cloud tiering models, see [IBM Spectrum Protect Cloud Blueprints](https://www.ibm.com/support/pages/ibm-spectrum-protect-cloud-blueprints){: external}.
 
-To create your Predatar CleanRoom based on a VMware vCenter Server instance, follow the procedure to [order vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-procedure):
+To create your Predatar CleanRoom based on a {{site.data.keyword.vcf-auto-short}} instance, follow the procedure to [order vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-procedure):
 
 1. In Step 4, select **Primary**.
 2. In Step 6, order **Private Networks**.

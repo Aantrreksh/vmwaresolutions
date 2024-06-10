@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2024
 
-lastupdated: "2024-02-01"
+lastupdated: "2024-06-05"
 
 subcollection: vmwaresolutions
 
@@ -13,10 +13,10 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Juniper Networks vSRX deployment and operation with vCenter Server on {{site.data.keyword.cloud_notm}}
+# Juniper Networks vSRX deployment and operation with {{site.data.keyword.vcf-auto}}
 {: #vcsvsrx-intro}
 
-This information is intended for the deployment and operations of a high availability vSRX cluster as the gateway for the VMware vCenter Server®. The guide follows best practices as currently accepted and understood.
+This information is intended for the deployment and operations of a high availability vSRX cluster as the gateway for the {{site.data.keyword.vcf-auto-short}}. The guide follows best practices as currently accepted and understood.
 
 Currently, the vSRX is only available as an {{site.data.keyword.cloud}} infrastructure offering. Orders are placed from the [{{site.data.keyword.cloud_notm}} infrastructure customer portal](https://control.softlayer.com/network/gatewayappliances), Networking, Gateway Appliances section.
 

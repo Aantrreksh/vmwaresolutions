@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2024
 
-lastupdated: "2024-05-16"
+lastupdated: "2024-06-05"
 
 subcollection: vmwaresolutions
 
@@ -17,29 +17,29 @@ subcollection: vmwaresolutions
 
 Cyber recovery is one of five functions that are described in the [NIST Cybersecurity framework](https://www.nist.gov/cyberframework){: external}. It is defined as the development and implementation of appropriate activities to maintain plans for resilience and to restore any capabilities or services that are impaired due to a cybersecurity incident. The other four functions are identify, protect, detect, and respond.
 
-This documentation describes two solution architectures that can be used to assist with your cyber-recovery requirements. The solution architectures use {{site.data.keyword.vmwaresolutions_full}} vCenter Server® and Veeam® Backup and Recovery for VMware vSphere®. The two solution architectures are named as Immutable backup and Isolated recovery environment.
+This documentation describes two solution architectures that can be used to assist with your cyber-recovery requirements. The solution architectures use {{site.data.keyword.vcf-auto}} and Veeam® Backup and Recovery for VMware vSphere®. The two solution architectures are named as Immutable backup and Isolated recovery environment.
 
 ![Immutable backup overview](../../images/veeam-cr-sa-overview-ib.svg){: caption="Figure 1. Immutable backup overview" caption-side="bottom"}
 
 The immutable backup solution architecture uses the Veeam Linux® hardened repository design as an immutable storage repository within the production environment. Key elements of the solution architecture include:
 
-* A vCenter Server instance that provides compute, storage, and network resources for the virtual machines.
+* A {{site.data.keyword.vcf-auto-short}} instance that provides compute, storage, and network resources for the virtual machines.
 * The Veeam service that provides backup for the virtual machines.
 * The Veeam service is enhanced with a Veeam Linux hardened repository that is hosted on an {{site.data.keyword.cloud}} bare metal server.
 * Optionally you can use Veeam technologies, such as vPower NFS Service and Mount servers to assist with cyber-recovery tasks.
-* The solution architecture does not preclude any of the vCenter Server options, such as Caveonix, Entrust, and VMware Aria® Operations™.
+* The solution architecture does not preclude any of the {{site.data.keyword.vcf-auto-short}} options, such as Caveonix, Entrust, and VMware Aria® Operations™.
 * This solution is suitable for clients who want to extend their Veeam backup with immutability by minimizing costs and by using existing processes and resources.
 
 ![Isolated recovery environment overview](../../images/veeam-cr-sa-overview-ire.svg){: caption="Figure 2. Isolated recovery environment overview" caption-side="bottom"}
 
-The isolated recovery solution architecture uses a vCenter Server instance in an air-gapped recovery environment separate from the production environment. It is managed and accessed by using a separate team of cyber-recovery specialists. Key elements of the solution architecture include:
+The isolated recovery solution architecture uses a {{site.data.keyword.vcf-auto-short}} instance in an air-gapped recovery environment separate from the production environment. It is managed and accessed by using a separate team of cyber-recovery specialists. Key elements of the solution architecture include:
 
-* A vCenter Server instance used for cyber-recovery tasks only, deployed in an {{site.data.keyword.cloud_notm}} account restricted to cyber-recovery activities.
-* The vCenter Server instance does not host production or disaster recovery workloads.
-* The vCenter Server instance includes an edge cluster to host Juniper® vSRX appliances to protect vCenter Server instance networks. It also provides a network air gap between the production environment and the isolated recovery environment.
+* A {{site.data.keyword.vcf-auto-short}} instance used for cyber-recovery tasks only, deployed in an {{site.data.keyword.cloud_notm}} account restricted to cyber-recovery activities.
+* The {{site.data.keyword.vcf-auto-short}} instance does not host production or disaster recovery workloads.
+* The {{site.data.keyword.vcf-auto-short}} instance includes an edge cluster to host Juniper® vSRX appliances to protect {{site.data.keyword.vcf-auto-short}} instance networks. It also provides a network air gap between the production environment and the isolated recovery environment.
 * A Veeam instance under separate management used for cyber recovery only.
 * An immutable repository based on the Veeam Linux hardened repository hosted on an {{site.data.keyword.cloud_notm}} bare metal server.
-* The solution architecture does not preclude any of the vCenter Server options such as Caveonix, Entrust, and VMware Aria Operations.
+* The solution architecture does not preclude any of the {{site.data.keyword.vcf-auto-short}} options such as Caveonix, Entrust, and VMware Aria Operations.
 * Sandboxes can be provisioned by using VMware NSX-T™ overlay segments to provide network-isolated zones to mount cyber-recovery backups for inspection by your cyber toolsets.
 * Cyber toolsets are customer-supplied tools that run as virtual machines (VMs) in the isolated recovery environment.
 * Cyber admins are customer personnel who are authorized to access the isolated recovery environment.
@@ -52,7 +52,7 @@ The isolated recovery solution architecture uses a vCenter Server instance in an
    * Requires that the cyber-recovery backup infrastructure has access with sufficient privileges to the production vCenter and ESXi hosts.
 * This solution is suitable for clients who want to copy critical data away from the production environment. Also, that cyber-recovery backup systems and personnel are separate from production and disaster recovery processes.
 
-[The definitive guide to ransomware: Readiness, response, and remediation](https://www.ibm.com/downloads/cas/OW1D41LK){: external} provides an overview of ransomware history, its current prevalence, and resources to help fortify organizations and technical-level guidance on techniques to protect networks before an attack can happen. Also, a recovery guidance if an attacker makes it through defenses.
+[The definitive guide to ransomware: Readiness, response, and remediation](https://www.ibm.com/downloads/cas/EV6NAQR4){: external} provides an overview of ransomware history, its current prevalence, and resources to help fortify organizations and technical-level guidance on techniques to protect networks before an attack can happen. Also, a recovery guidance if an attacker makes it through defenses.
 
 ## Terms and definitions
 {: #veeam-cr-sa-overview-terms}
@@ -61,15 +61,15 @@ This documentation uses the following terms and definitions:
 
 | Term | Definition
 |------|-----------
-| vCenter Server instance | A VMware vSphere environment that is hosted on a minimum of three {{site.data.keyword.cloud_notm}} bare metal servers and includes VMware NSX to provide a virtual network overlay. An instance includes a vCenter appliance and Microsoft® Windows® AD/DNS. For more information, see [vCenter Server overview](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview).
-| Veeam service | A Veeam service is a deployment of Veeam Availability Suite that is associated with the vCenter server instance. For more information, see [Veeam Backup and Replication 12 overview](/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview).
+| {{site.data.keyword.vcf-auto-short}} instance | A VMware vSphere environment that is hosted on a minimum of three {{site.data.keyword.cloud_notm}} bare metal servers and includes VMware NSX to provide a virtual network overlay. An instance includes a vCenter appliance and Microsoft® Windows® AD/DNS. For more information, see [{{site.data.keyword.vcf-auto-short}} overview](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview).
+| Veeam service | A Veeam service is a deployment of Veeam Availability Suite that is associated with the {{site.data.keyword.vcf-auto-short}} instance. For more information, see [Veeam Backup and Replication 12 overview](/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview).
 | Server instance | A server instance is an operating system that uses compute, storage, and network resources that host applications.
 | Virtual machine (VM) | A VM is a server instance that runs on a vSphere hypervisor.
 | Virtual Server Instance (VSI) | A VSI is a server instance that runs on the {{site.data.keyword.cloud_notm}} hypervisor.
 | Bare metal server | A bare metal server is a server instance that runs directly on the {{site.data.keyword.cloud_notm}} x86 hardware.
 | Veeam Backup and Replication (BUR) | The Veeam application that enables backups of server instances and the replication of VMs. While the Veeam product name includes "Replication", only the backup feature is used in these cyber-recovery architectures.
 | Air-gap | An air gap is a term that is used to denote network isolation where the Linux backup repository is not accessible directly from the production networks. For backup transfer, the air gap is selectively unlocked and then locked when the transfer is complete.
-| Production environment | The vSphere environment that hosts the production data. For the isolated recovery environment, the production environment can be in {{site.data.keyword.cloud_notm}} or elsewhere.
+| Production environment | The vSphere environment that hosts the production data. For the isolated recovery environment, the production environment can be in {{site.data.keyword.cloud_notm}} or elsewhere. 
 | Cyber-recovery site | The location of the isolated recovery environment.
 | Production data | Production data refers specifically to the VM images (VMDKs) of the VMs running in production environment.
 | Cyber-recovery data | Copies of the production VM images (VMDKs) in the isolated recovery environment.

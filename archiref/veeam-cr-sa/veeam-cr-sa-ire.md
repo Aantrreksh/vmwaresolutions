@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-05-01"
+lastupdated: "2024-06-05"
 
 subcollection: vmwaresolutions
 
@@ -15,9 +15,9 @@ subcollection: vmwaresolutions
 # Isolated recovery environment solution architecture
 {: #veeam-cr-sa-ire}
 
-The isolated recovery environment solution architecture uses a VMware vCenter Server® instance with the Veeam® service, gateway cluster, and Juniper® vSRX options. They create an air gapped cyber-recovery environment separate from the production environment. This isolated recovery environment is managed and accessed by using a separate cyber-recovery team. The Veeam service is enhanced with a Veeam Linux® hardened repository for immutable storage.
+The isolated recovery environment solution architecture uses a {{site.data.keyword.vcf-auto}} instance with the Veeam® service, gateway cluster, and Juniper® vSRX options. They create an air gapped cyber-recovery environment separate from the production environment. This isolated recovery environment is managed and accessed by using a separate cyber-recovery team. The Veeam service is enhanced with a Veeam Linux® hardened repository for immutable storage.
 
-The solution architecture is suitable for clients who want to move a copy of critical data away from the production environment, backup systems, and personnel to an environment that requires separate security credentials. The solution architecture does not preclude any of the vCenter Server options, such as Caveonix, Entrust, and VMware Aria® Operations™.
+The solution architecture is suitable for clients who want to move a copy of critical data away from the production environment, backup systems, and personnel to an environment that requires separate security credentials. The solution architecture does not preclude any of the {{site.data.keyword.vcf-auto-short}} options, such as Caveonix, Entrust, and VMware Aria® Operations™.
 
 ![Isolated recovery environment solution architecture](../../images/veeam-cr-sa-ire.svg){: caption="Figure 1. Isolated recovery environment solution architecture" caption-side="bottom"}
 
@@ -28,7 +28,7 @@ Key elements of the isolated recovery environment solution architecture include:
 * The solution architecture supports only production data that is hosted in a VMware vSphere® environment. It does not support physical servers or other hypervisors.
 * The Veeam service in the isolated recovery environment provides a cyber-recovery backup of the specified production virtual machines (VMs). It writes the backup data to the Linux hardened backup repository in the isolated recovery environment.
 * Cyber-recovery backup proxies, managed by the Veeam service in the isolated recovery environment, are required to be hosted in the production site. These proxies can be Windows® or Linux based and virtual or physical.
-* The solution architecture is independent of the existing production backup environment and does not integrate to any production systems except for the production vCenter and vSphere hosts.
+* The solution architecture is independent of existing production backup environment and does not integrate to any production systems except for the production vCenter and vSphere hosts.
 * For cyber-recovery tasks, the Veeam service enables the mounting of the cyber-recovery backup files from the Linux hardened repository in read-only mode into a sandbox. The sandbox is hosted on the vSphere Server instance.
 * There can be many sandboxes, for example:
    * One can be used daily to scan cyber-recovery backup files.
@@ -52,28 +52,28 @@ The production environment is the vSphere environment that hosts the production 
 * Control traffic is the access that is required by the Veeam backup server to the production vCenter and ESXi hosts to enable cyber-backup operations.
 * Cyber-recovery backup proxy is a Veeam VMware backup proxy that is used to transport data from the production environment to the cyber-recovery site. It is an architecture component that sits between the cyber-backup server and other components of the cyber-backup infrastructure. While the cyber-backup server administers tasks, the cyber-recovery backup proxy processes jobs and delivers backup traffic. Basic backup proxy tasks include retrieving VM data, compression, de-duplicating, encrypting, and forwarding to the cyber-recovery backup repository. For more information, see [Veeam backup proxy](/docs/vmwaresolutions?topic=vmwaresolutions-veeam-cr-sa-vp).
 
-## vCenter Server instance
+## {{site.data.keyword.vcf-auto-short}} instance
 {: #veeam-cr-sa-ire-vcs}
 
-The vCenter Server instance provides the compute and network resources to host VMs and sandboxes. If the vSAN option in the vCenter Server instance ordering is used, then the vCenter Server instance also provides the storage resources.
+The {{site.data.keyword.vcf-auto-short}} instance provides the compute and network resources to host VMs and sandboxes. If the vSAN option in the {{site.data.keyword.vcf-auto-short}} instance ordering is used, then the {{site.data.keyword.vcf-auto-short}} instance also provides the storage resources.
 
-The vCenter Server instance consists of a consolidated cluster with a minimum of three vSphere ESXi hosts. This cluster hosts the following VMs:
+The {{site.data.keyword.vcf-auto-short}} instance consists of a consolidated cluster with a minimum of three vSphere ESXi hosts. This cluster hosts the following VMs:
 
-* vCenter server appliance - The VCSA manages the vSphere resources and provides a single management plane for vSphere.
+* VMware vCenter® server appliance (VCSA) - The VCSA manages the vSphere resources and provides a single management plane for vSphere.
 * NSX-T™ manager cluster - The NSX-T manager cluster consists of three manager appliances that provide the management and control plane for the virtualized network, also known as the overlay network.
 * Active Directory™ and domain name service - The ADDNS VMs are two Microsoft® Windows 2019 VMs configured for Active Directory and DNS. This option is selected in the order process by selecting the **Two highly available dedicated Windows Server VMs on the management cluster** option. By selecting this option, you must provide your own licenses.
 * Veeam service instance - For more information, see [Veeam components](/docs/vmwaresolutions?topic=vmwaresolutions-veeam-cr-sa-components).
-* Gateway cluster - A gateway cluster consists of two vSphere ESXi hosts provisioned on {{site.data.keyword.cloud_notm}} gateways. It provides the resources to run the network edge gateway. These resources include firewalls and the ability to become the default gateways for {{site.data.keyword.cloud_notm}} subnets that are associated with them. In this solution architecture, the cluster hosts the Juniper vSRX firewalls that run as virtual appliances. While Juniper vSRX appliances can be run directly on the consolidated cluster, it cannot act as the default gateway to the {{site.data.keyword.cloud_notm}} subnets, as this requires the {{site.data.keyword.cloud_notm}} gateway appliance.
+* Gateway cluster - A gateway cluster consists of two vSphere ESXi hosts provisioned on {{site.data.keyword.cloud_notm}} gateways. It provides the resources to run the network edge gateway. These resources include firewalls and the ability to become the default gateways for {{site.data.keyword.cloud_notm}} subnets that are associated with them. In this solution architecture, the cluster hosts the Juniper vSRX firewalls that run as virtual appliances. While Juniper vSRX appliances can be run directly on the consolidated cluster, it cannot act as the default gateways to the {{site.data.keyword.cloud_notm}} subnets, as this requires the {{site.data.keyword.cloud_notm}} gateway appliance.
 
-The solution architecture adds the following components to the vCenter Server instance:
+The solution architecture adds the following components to the {{site.data.keyword.vcf-auto-short}} instance:
 
 * Management VM - This VM is a Linux VM that runs Ansible. Ansible playbooks are used for automation tasks that include the opening of the air gap to allow cyberbackups.
 * Jump servers - Jump servers and bastion hosts allow access into the isolated recovery environment for the cyberadmins.
 * Cybertoolsets - The cyber-recovery toolsets are your applications for use within the cyber-recovery site to scan, analyze, or clean cyber-recovery data.
 
-The vCenter Server instance uses the following {{site.data.keyword.cloud_notm}} services:
+The {{site.data.keyword.vcf-auto-short}} instance uses the following {{site.data.keyword.cloud_notm}} services:
 
-* NFS service - If VMware vSAN is not specified for the vCenter Server instance, then {{site.data.keyword.filestorage_full_notm}} (NFS) is used or the VMware datastores. The {{site.data.keyword.filestorage_full_notm}} (NFS) is in the {{site.data.keyword.cloud_notm}} services network in the data center. Customers don't have direct access to the underlying storage infrastructure and use file shares.
+* NFS service - If VMware vSAN is not specified for the {{site.data.keyword.vcf-auto-short}} instance, then {{site.data.keyword.filestorage_full_notm}} (NFS) is used or the VMware datastores. The {{site.data.keyword.filestorage_full_notm}} (NFS) is in the {{site.data.keyword.cloud_notm}} services network in the data center. Customers don't have direct access to the underlying storage infrastructure and use file shares.
 * NTP service - In this architecture, the isolated recovery environment uses the ADDNS servers as a time source. The ADDNS servers use the {{site.data.keyword.cloud_notm}} NTP service for their time reference.
 * DNS service - In this architecture, the isolated recovery environment uses the ADDNS servers for name resolution. The ADDNS servers use the {{site.data.keyword.cloud_notm}} DNS service for requests that they cannot resolve directly.
 

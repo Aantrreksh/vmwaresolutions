@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-01-26"
+lastupdated: "2024-06-05"
 
 subcollection: vmwaresolutions
 
@@ -16,9 +16,9 @@ subcollection: vmwaresolutions
 # Provisioning the automation server
 {: #veeam-cr-sag-as}
 
-The automation server is a small Linux® Virtual Server Instance (VSI) deployed in the {{site.data.keyword.cloud}} account where the VMware vCenter Server® instance with the Veeam® service is located. The VSI is connected to both the {{site.data.keyword.cloud_notm}} private and public networks. The public network interface is protected by a security group that restricts SSH access to a known remote IP address. This server can be removed after the builds or kept for ongoing use cases.
+The automation server is a small Linux® Virtual Server Instance (VSI) deployed in the {{site.data.keyword.cloud}} account where the {{site.data.keyword.vcf-auto}} instance with the Veeam® service is located. The VSI is connected to both the {{site.data.keyword.cloud_notm}} private and public networks. The public network interface is protected by a security group that restricts SSH access to a known remote IP address. This server can be removed after the builds or kept for ongoing use cases.
 
-The automation server can be a virtual machine (VM) hosted on the vCenter Server instance. However, external connectivity requires extra configuration that is not discussed here.
+The automation server can be a virtual machine (VM) hosted on the {{site.data.keyword.vcf-auto-short}} instance. However, external connectivity requires extra configuration that is not discussed here.
 {: note}
 
 The automation server is used to host Ansible®. Ansible is used to automate many of the manual steps to configure the Linux hardened repository server after they are provisioned for applications, such as the Veeam backup server. In this step, the following tasks are included:
@@ -64,7 +64,7 @@ The {{site.data.keyword.cloud_notm}} CLI is used to order an Ubuntu public VSI.
 
 * The `ibmcloud sl vlan list` and `ibmcloud sl subnet list` need to be run first so that the IDs of the public and private VLANs and the primary subnets that are captured for use in the ordering process.
 * The `<as_hostname>` is the required hostname for the automation server, such as `lnxas01`.
-* The `<root_domain>` is the required domain name, such as the matching root-domain name of your vCenter Server instance.
+* The `<root_domain>` is the required domain name, such as the matching root-domain name of your {{site.data.keyword.vcf-auto-short}} instance.
 * The Linux server is ordered with 2 vCPU and 4 GB RAM.
 * The `<dc_code>` is the code for the data center in which the VSI is provisioned into, such as DAL10.
 * The `<public_vlan_number>` and `<private_vlan_number>` are the VLAN numbers of the required public and private VLANs previously captured.

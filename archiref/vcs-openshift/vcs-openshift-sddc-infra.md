@@ -4,7 +4,7 @@ copyright:
 
   years: 2016, 2024
 
-lastupdated: "2024-05-28"
+lastupdated: "2024-06-05"
 
 subcollection: vmwaresolutions
 
@@ -18,7 +18,7 @@ subcollection: vmwaresolutions
 ## Physical structure
 {: #vcs-openshift-sddc-infra-phys-struct}
 
-The physical infrastructure required to deploy a {{site.data.keyword.redhat_openshift_full}} production instance onto a {{site.data.keyword.vcf-classic}} cluster requires the following minimum specification.
+The physical infrastructure required to deploy a {{site.data.keyword.redhat_openshift_full}} production instance onto a {{site.data.keyword.vcf-auto}} cluster requires the following minimum specification.
 
 | Item | NFS deployment | vSAN deployment |
 |:---- |:-------------- |:--------------- |
@@ -35,7 +35,7 @@ In addition to the {{site.data.keyword.redhat_openshift_notm}} hardware requirem
 
 ![Physical structure](../../images/openshift-networking41.svg){: caption="Figure 1. Physical structure" caption-side="bottom"}
 
-Within the {{site.data.keyword.vcf-classic-short}} instance, the {{site.data.keyword.redhat_openshift_notm}} instance is deployed with a dedicated NSX® Edge Services Gateway (ESG) and Distributed Logical Router (DLR). The {{site.data.keyword.redhat_openshift_notm}} installation is loaded into the VXLAN subnet that is defined in the previous components.
+Within the {{site.data.keyword.vcf-auto-short}} instance, the {{site.data.keyword.redhat_openshift_notm}} instance is deployed with a dedicated NSX® Edge Services Gateway (ESG) and Distributed Logical Router (DLR). The {{site.data.keyword.redhat_openshift_notm}} installation is loaded into the VXLAN subnet that is defined in the previous components.
 
 The ESG is configured with a source NAT rule (SNAT) to allow outbound traffic, which enables internet connectivity to download the {{site.data.keyword.redhat_openshift_notm}} prerequisites and to connect to GitHub and {{site.data.keyword.redhat_full}}. Alternatively, you can use a web-proxy for internet connectivity. The ESG is also configured to provide access to DNS and NTP services within the {{site.data.keyword.cloud}} environment.
 
@@ -46,7 +46,7 @@ The ESG is also configured to use the load balancer capability, thus reducing th
 ## NSX Edge specifications
 {: #vcs-openshift-sddc-infra-nsx-edge-spec}
 
-The first component that is configured within the vCenter Server with {{site.data.keyword.redhat_openshift_notm}} is a pair of NSX Edge virtual machines. The NSX Edge virtual machines are configured as an active-passive pair of X-Large NSX Edge devices.
+The first component that is configured within the {{site.data.keyword.vcf-auto-short}} with {{site.data.keyword.redhat_openshift_notm}} is a pair of NSX Edge virtual machines. The NSX Edge virtual machines are configured as an active-passive pair of X-Large NSX Edge devices.
 
 The Quad-Large NSX Edge was chosen and as part of the configuration process, the NSX Edge is connected to the {{site.data.keyword.cloud_notm}} public and private VLAN.
 

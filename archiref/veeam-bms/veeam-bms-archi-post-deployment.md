@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2024
 
-lastupdated: "2024-05-21"
+lastupdated: "2024-06-05"
 
 subcollection: vmwaresolutions
 
@@ -12,10 +12,10 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Post deployment customization options with self-managed vCenter Server
+# Post deployment customization options with {{site.data.keyword.vcf-auto}}
 {: #veeam-bms-archi-post-deployment}
 
-In a self-managed vCenter Server® solution, you can reconfigure provisioned backup servers, configure Veeam® configuration backups, add more proxy servers, add more {{site.data.keyword.cloud}} File, Block, or Object storage, or add OS agents on virtual machines.
+In a {{site.data.keyword.vcf-auto-short}} instance, you can reconfigure provisioned backup servers, configure Veeam® configuration backups, add more proxy servers, add more {{site.data.keyword.cloud}} File, Block, or Object storage, or add OS agents on virtual machines.
 
 These tasks are manual, not automated. For more information, see [Veeam Help Center technical documentation](https://www.veeam.com/documentation-guides-datasheets.html?ad=menu-resources){: external}.
 

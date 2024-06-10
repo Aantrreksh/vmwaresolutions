@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2024
 
-lastupdated: "2024-04-29"
+lastupdated: "2024-06-05"
 
 subcollection: vmwaresolutions
 
@@ -24,7 +24,7 @@ Before you can start the build process to install the {{site.data.keyword.redhat
 * Download {{site.data.keyword.redhat_openshift_notm}} 4.7 - Access to a {{site.data.keyword.redhat_full}} subscription to download the installer, pull secret and {{site.data.keyword.redhat_notm}} Enterprise CoreOS OVA.
 * Download RHEL 8.0 ISO - Access to a {{site.data.keyword.redhat_notm}} subscription to download the {{site.data.keyword.redhat_notm}} Enterprise Linux® 8.x ISO for the bastion host.
 * {{site.data.keyword.cloud}} environment details - Collect the following details for {{site.data.keyword.cloud_notm}} for VMware® Solutions environment.
-   * VMware vCenter Server® instance details and passwords
+   * {{site.data.keyword.vcf-auto}} instance details and passwords
    * The additional private portable subnet information
    * The additional public portable subnet information
 * Download and install `govc` - `govc` is a VMware vSphere® CLI, an alternative to the GUI, and suited for automation tasks.

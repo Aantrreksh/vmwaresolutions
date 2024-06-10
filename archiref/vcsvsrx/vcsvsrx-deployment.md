@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # vSRX deployment
 {: #vcsvsrx-deployment}
 
-Deploy the VMware vCenter Server® instance before the vSRX edge gateway appliance order is placed.
+Deploy the {{site.data.keyword.vcf-auto}} instance before the vSRX edge gateway appliance order is placed.
 
 ## Ordering Juniper gateway devices
 {: #vcsvsrx-deployment-order-gateway}
@@ -26,17 +26,17 @@ The following procedure assumes that you are deploying the IaaS KVM-based Junipe
 Open the [{{site.data.keyword.cloud_notm}} infrastructure customer portal](https://control.softlayer.com), then select **Infrastructure > Network > Gateway Appliances > Create Gateway**.
 * Gateway vendor - Juniper
 * Gateway Appliance
-   * Hostname - Provide hostname for node 1 in the gateway cluster. For example, `gateway01`. Select a hostname consistent with the existing vCenter Server naming convention since the vSRX nodes are manually added to the vCenter Server AD/DNS server for hostname resolution.
-   * Domain - Enter the applicable domain name for the gateway cluster. For example, `myvcsdomain.local`, where `myvcsdomain.local` is the domain that is assigned to the previously deployed vCenter Server instance.
+   * Hostname - Provide hostname for node 1 in the gateway cluster. For example, `gateway01`. Select a hostname consistent with the existing {{site.data.keyword.vcf-auto-short}} naming convention since the vSRX nodes are manually added to the {{site.data.keyword.vcf-auto-short}} AD/DNS server for hostname resolution.
+   * Domain - Enter the applicable domain name for the gateway cluster. For example, `myvcsdomain.local`, where `myvcsdomain.local` is the domain that is assigned to the previously deployed {{site.data.keyword.vcf-auto-short}} instance.
    * Select High availability.
-      * HA hostname - Provide hostname for node 2 in the gateway cluster. For example, `gateway02`. Select a hostname consistent with the existing vCenter Server naming convention since the vSRX nodes are manually added to the vCenter Server AD/DNS server for hostname resolution.
+      * HA hostname - Provide hostname for node 2 in the gateway cluster. For example, `gateway02`. Select a hostname consistent with the existing {{site.data.keyword.vcf-auto-short}} naming convention since the vSRX nodes are manually added to the {{site.data.keyword.vcf-auto-short}} AD/DNS server for hostname resolution.
       * HA Domain - Verify that this value is the same domain name that is provided for node1. For example, `myvcsdomain.local`
 * Location
    * Select geography, for example, `NA South`
    * Select dataCenter, for example, `Dallas 10`
 * POD
-   * Select POD where existing vCenter Server instance is deployed to. For example, `dal10.pod01`
-   * Ensure that you order the vSRX in the same POD as your vCenter Server instance. VLANs don't span PODs so you must deploy to the correct POD.
+   * Select POD where existing {{site.data.keyword.vcf-auto-short}} instance is deployed to. For example, `dal10.pod01`
+   * Ensure that you order the vSRX in the same POD as your {{site.data.keyword.vcf-auto-short}} instance. VLANs don't span PODs so you must deploy to the correct POD.
    * Determining `SoftLayer_Network_Pod`
 
    The setting `SoftLayer_Network_Pod` refers to a portion of a data center that share a Backend Customer Router (BCR) and usually a front-end counterpart that is known as a Frontend Customer Router (FCR). A Pod primarily denotes a logical location within the network and the physical aspects that support networks, in contrast to representing a specific physical location.

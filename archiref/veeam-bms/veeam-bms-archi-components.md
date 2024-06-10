@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2021, 2023
+  years:  2021, 2024
 
-lastupdated: "2023-09-26"
+lastupdated: "2024-06-05"
 
 subcollection: vmwaresolutions
 
@@ -56,12 +56,12 @@ Review the layout and volume and drive sizes for disks and volumes for MS SQL in
       - Database drive 250 GB
       - Log drive 100 GB
 
-For VMware vCenter Server®, you are responsible for backing up the database. By default, VBR's backup is configured to use the RAID 6 array of the all-in-one server as the backup repository.
+For {{site.data.keyword.vcf-auto}}, you are responsible for backing up the database. By default, VBR's backup is configured to use the RAID 6 array of the all-in-one server as the backup repository.
 
 ## Veeam Backup and Replication console
 {: #veeam-bms-archi-components-console}
 
-Veeam provides a self-service interface through the Veeam Console that is Role Based Access Controls (RBAC) enabled. The solution is deployed with one local administrator by default, and the solution can be integrated post deployment with the Infrastructure Active Directory™ of the vCenter Server instance. The design allows you to define more users on the Active Directory and assign them roles such as: system admin, reporting focal, or dba. Those users can then perform actions such as initiating restores and their scope is limited to the systems or data types for which they are responsible.
+Veeam provides a self-service interface through the Veeam Console that is Role Based Access Controls (RBAC) enabled. The solution is deployed with one local administrator by default, and the solution can be integrated post deployment with the Infrastructure Active Directory™ of the {{site.data.keyword.vcf-auto-short}} instance. The design allows you to define more users on the Active Directory and assign them roles such as: system admin, reporting focal, or dba. Those users can then perform actions such as initiating restores and their scope is limited to the systems or data types for which they are responsible.
 
 ## Backup repository and scale-out backup repository
 {: #veeam-bms-archi-components-scaleout}

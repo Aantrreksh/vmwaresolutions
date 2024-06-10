@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2019, 2023
+  years:  2019, 2024
 
-lastupdated: "2023-05-01"
+lastupdated: "2024-06-05"
 
 subcollection: vmwaresolutions
 
@@ -110,9 +110,9 @@ Complete the following steps to create a new volume.
     The persistent volume claim can now be mapped to the container application.  
 
 ## Related links
-{: #vcs-openshift-runbook-config-related }
+{: #vcs-openshift-runbook-config-related}
 
-* [VMware vCenter Server and {{site.data.keyword.redhat_openshift_notm}} architecture overview](/docs/vmwaresolutions?topic=vmwaresolutions-vcs-openshift-intro)
+* [{{site.data.keyword.vcf-auto}} and {{site.data.keyword.redhat_openshift_notm}} architecture overview](/docs/vmwaresolutions?topic=vmwaresolutions-vcs-openshift-intro)
 * [System context for vCenter Server and {{site.data.keyword.redhat_openshift_notm}} architecture](/docs/vmwaresolutions?topic=vmwaresolutions-vcs-openshift-syscontext)
 * [{{site.data.keyword.redhat_openshift_notm}} architecture](/docs/vmwaresolutions?topic=vmwaresolutions-vcs-openshift-redhat-arch)
 * [{{site.data.keyword.vmwaresolutions_full}} SDDC architecture](/docs/vmwaresolutions?topic=vmwaresolutions-vcs-openshift-arch)
