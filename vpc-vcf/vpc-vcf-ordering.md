@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2024
 
-lastupdated: "2024-04-30"
+lastupdated: "2024-06-05"
 
 keywords: vmware cloud editions, order vmware cloud editions, order vmware cloud editions on IBM Cloud, vmware cloud foundation
 
@@ -37,12 +37,12 @@ For the on-demand offering, you are billed hourly based on your {{site.data.keyw
 ### 1-year and 3-year subscriptions
 {: #vpc-vcf-ordering-1-year}
 
-For the 1-year and 3-year offerings, you need to contact IBM for pricing and discounts.
+For the 1-year or 3-year subscription, use [this form](https://www.ibm.com/account/reg/us-en/subscribe?formid=MAIL-platformvmware) to contact an IBM representative for product pricing, discounts, or more information.
 
 ### VMware Cloud Foundation version
 {: #vpc-vcf-ordering-version}
 
-VMware Cloud Foundation™ 4.5.2 is installed on your {{site.data.keyword.vcf-vpc-short}} instance. For more information, see [Software BOM for {{site.data.keyword.vcf-vpc-short}} instances](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-ovw-bom#vpc-vcf-ovw-bom-software).
+VMware Cloud Foundation™ 5.1.1 is installed on your {{site.data.keyword.vcf-vpc-short}} instance. For more information, see [Software BOM for {{site.data.keyword.vcf-vpc-short}} instances](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-ovw-bom#vpc-vcf-ovw-bom-software).
 
 ### Architecture
 {: #vpc-vcf-ordering-archi}
@@ -195,6 +195,16 @@ Review the VCF deployment settings.
 
 The data center name in your {{site.data.keyword.vcf-vpc-short}} instance. The default value is `dc01`. The {{site.data.keyword.vcf-vpc-short}} data center name can contain only alphanumeric characters, must start with a letter, and can have a maximum length of 10 characters.
 
+#### Management domain backup
+{: #vpc-vcf-ordering-mgmt-domain-backup}
+
+To enable the virtual server for backing up SDDC Manager, vCenter Server, and NSX Manager, toggle the **Backup server** switch on.
+
+##### SSH keys
+{: #vpc-vcf-ordering-mgmt-ssh-keys}
+
+You can choose existing SSH keys from the list or create a new one by clicking the **Create SSH key** button. After creating it, refresh the list to see the new SSH key. For more information about VCF backup, see [Backup and restore of VMware Cloud Foundation](https://docs.vmware.com/en/VMware-Cloud-Foundation/5.1/vcf-admin/GUID-F8634D37-FA26-40DF-A135-62D0265DA4FA.html){: external}.
+
 ## Workload domain
 {: #vpc-vcf-ordering-wl-vcf}
 
@@ -316,7 +326,7 @@ Determine whether to create an {{site.data.keyword.cloud_notm}} Access Group wit
 ### Observability
 {: #vpc-vcf-ordering-adv-settings-log}
 
-For {{site.data.keyword.vcf-vpc-short}} deployment, you can determine whether to use {{site.data.keyword.cloud_notm}} Log Analysis with 7-day pricing plan for viewing the logs of {{site.data.keyword.vcf-vpc-short}}n deployment. If you want to view logging of {{site.data.keyword.vcf-vpc-short}} deployment with your existing {{site.data.keyword.cloud_notm}} Log Analysis instance, you can configure the instance ingestion key, then the log is populated to your existing instance. By default, the {{site.data.keyword.cloud_notm}} Log Analysis service is not ordered. For more information about {{site.data.keyword.cloud_notm}} Log Analysis and its pricing plans, see [Getting started with {{site.data.keyword.cloud_notm}} Log Analysis](/docs/log-analysis?topic=log-analysis-getting-started) and [Service plans](/docs/log-analysis?topic=log-analysis-service_plans).
+For {{site.data.keyword.vcf-vpc-short}} deployment, you can determine whether to use {{site.data.keyword.la_full}} with 7-day pricing plan for viewing the logs of {{site.data.keyword.vcf-vpc-short}} deployment. If you want to view logging of {{site.data.keyword.vcf-vpc-short}} deployment with your existing {{site.data.keyword.la_full_notm}} instance, you can configure the instance ingestion key, then the log is populated to your existing instance. By default, the {{site.data.keyword.la_short}} service is not ordered. For more information about {{site.data.keyword.la_short}} and its pricing plans, see [Getting started with {{site.data.keyword.la_short}}](/docs/log-analysis?topic=log-analysis-getting-started) and [Service plans](/docs/log-analysis?topic=log-analysis-service_plans).
 
 ## Procedure to order {{site.data.keyword.vcf-vpc-short}} instances on {{site.data.keyword.vpc_short}}
 {: #vpc-vcf-ordering-procedure}
@@ -342,7 +352,7 @@ For {{site.data.keyword.vcf-vpc-short}} deployment, you can determine whether to
    1. Specify the {{site.data.keyword.vpc_short}} routes for NSX-T AVN networks.
    1. Specify the {{site.data.keyword.vpc_short}} routes for NSX overlay network in the management domain.
    1. Specify the number of public floating IP addresses.
-   1. Specify the **Optional management domain settings**: the vCenter appliance size and storage size in the management domain and the NSX-T manager appliance size.
+   1. Specify the **Optional management domain settings**: the vCenter appliance size and storage size in the management domain and the NSX-T manager appliance size, the VCF data center name for the VCF deployment, and the backup server for the management domain backup.
 
 1. Specify the **Workload domain** settings.
 
@@ -366,7 +376,7 @@ For {{site.data.keyword.vcf-vpc-short}} deployment, you can determine whether to
 1. Specify the **Advanced integration settings**.
    1. Specify whether you want to create a Windows VM.
    1. Specify whether you want to create an IAM access group.
-   1. Specify whether you want to deploy or use an existing {{site.data.keyword.cloud_notm}} Log Analysis instance for the {{site.data.keyword.vcf-vpc-short}} deployment logs.
+   1. Specify whether you want to deploy or use an existing {{site.data.keyword.la_short}} instance for the {{site.data.keyword.vcf-vpc-short}} deployment logs.
 
 1. On the **Summary** pane, review the instance settings and the estimated price.
 1. To place the order, ensure that the account to be charged is correct, review and accept the terms, and then click **Create**.

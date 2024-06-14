@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2024
 
-lastupdated: "2024-04-15"
+lastupdated: "2024-05-23"
 
 keywords: vmware cloud foundation, IBM Cloud, vpc, faq
 
@@ -57,12 +57,6 @@ SDDC Manager automates the entire system lifecycle, that is, from configuration 
 
 Before you complete an update, review the release notes and the FAQ section.
 
-## Can I upgrade my VMware Cloud Foundation 4.5.2 to version 5.x?
-{: #vpc-vcf-faq-upgrade-5-0}
-{: faq}
-
-Yes. For more information, see [VMware Cloud Foundation 5.0 – Important information and knowledge base articles](https://kb.vmware.com/s/article/91751){: external}.
-
 ## What is the Async Patch tool and how can I use it with my {{site.data.keyword.vcf-vpc-short}} instance?
 {: #vpc-vcf-faq-async-patch}
 {: faq}
@@ -82,7 +76,7 @@ For more information, see [Async Patch tool](https://docs.vmware.com/en/VMware-C
 
 In {{site.data.keyword.vcf-vpc-short}}, VMware Aria Suite Lifecycle Manager (formerly vRealize Suite Lifecycle Manager) provides lifecycle management capabilities for Aria Suite components and VMware Workspace ONE Access, including automated deployment, configuration, patching, and upgrade, and content management across these products. Aria Suite Lifecycle Manager is deployed as part of the automation.
 
-For more information about the Aria Suite supported upgrade paths in VMware Cloud Foundation, see [vRealize Suite (Aria Suite) install and upgrade paths on VMware Cloud Foundation](https://kb.vmware.com/s/article/88829){: external}.
+For more information about the Aria Suite supported upgrade paths in VMware Cloud Foundation, see [vRealize Suite (Aria Suite) install and upgrade paths on VMware Cloud Foundation](https://knowledge.broadcom.com/external/article?legacyId=88829){: external}.
 
 ## How do I manage certificates in Aria Suite installations?
 {: #vpc-vcf-faq-aria-certificates}
@@ -173,13 +167,13 @@ SSH into the SDDC manager by using user `vcf`. You can view the passwords by usi
    1. Request a bearer token to access the APIs: `curl -X POST -H "Content-Type: application/json" -d '{"username": "username@domain","password": "password"}' --insecure https://localhost/v1/tokens | json_pp`
    2. Run the lookup API: `curl -X GET -H "Content-Type:application/json" -H  "Authorization: Bearer <token value>"  'localhost/v1/credentials?resourceType=PSC' | json_pp`
 
-      For more information, see [{{site.data.keyword.vcf-vpc-short}} API reference](https://developer.vmware.com/apis/vcf/4.5.1/credentials/){: external}.
+      For more information, see [{{site.data.keyword.vcf-vpc-short}} API reference](https://developer.broadcom.com/xapis/vmware-cloud-foundation-api/4.5.1/credentials/){: external}.
 
 ## How do I back up and restore {{site.data.keyword.vcf-vpc-short}} components?
 {: #vpc-vcf-faq-operations-backups-vcf}
 {: faq}
 
-{{site.data.keyword.vcf-vpc-short}} system backups are configured to use SDDC manager. Backups are configured to use the folder `/nfs/vmware/vcf/nfs-mount/backup` on the SDDC manager. You can change this configuration post-deplyoment to fit your own backup requirements.
+{{site.data.keyword.vcf-vpc-short}} system backups are configured to use SDDC manager. Backups are configured to use the folder `/nfs/vmware/vcf/nfs-mount/backup` on the SDDC manager. You can change this configuration post-deployment to fit your own backup requirements.
 
 For more information about how to back up and restore {{site.data.keyword.vcf-vpc-short}}, see [Backup and restore of VMware Cloud Foundation](https://docs.vmware.com/en/VMware-Cloud-Foundation/4.5/vcf-admin/GUID-F8634D37-FA26-40DF-A135-62D0265DA4FA.html){: external}.
 

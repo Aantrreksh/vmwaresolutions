@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2024
-lastupdated: "2024-05-01"
+lastupdated: "2024-06-14"
 
 keywords: release notes, what's new in VMware Solutions, what is new, new features, VMware Solutions release notes, VMware Solutions
 
@@ -22,6 +22,24 @@ Use these release notes to learn about updates to {{site.data.keyword.vmwaresolu
 
 ## 2024
 {: #year-2024}
+
+### 14 June 2024
+{: #vmwaresolutions-jun1424}
+{: release-note}
+
+VMware Cloud Foundation enhancements
+:   The following features are now available:
+
+   * **Server backup**: You can do regular backups of management components, such as SDDC Manager, VMware vCenter Server®, and NSX Manager. For more information, see [Management domain backup](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-ordering#vpc-vcf-ordering-mgmt-domain-backup).
+   * **Contact form**: You can now use a form to contact an IBM representative through the 1-year and 3-year subscription options. 
+   * The following **BOM updates** are applied to newly deployed instances:
+      * Cloud Builder VM 5.1.1 (build 23480823)
+      * SDDC Manager 5.1.1 (build 23480823)
+      * VMware vCenter Server Appliance 8.0 Update 2b (build 23319993)
+      * VMware ESXi™ 8.0 Update 2b (build 23305546)
+      * VMware Virtual SAN Witness Appliance 8.0 Update 2 (build 22443122)
+      * VMware NSX-T™ 4.1.2.3 (build 23382408)
+      * VMware Aria® Suite Lifecycle Manager 8.16 (build 23377566)
 
 ### 1 May 2024
 {: #vmwaresolutions-may0124}
@@ -49,7 +67,7 @@ VMware add-ons
 BOM updates for {{site.data.keyword.vcf-classic}}
 :   The following updates are applied to newly deployed instances, clusters, and hosts:
 
-   * VMware vCenter Server® Appliance 8.0 Update 2b (build 23319993)
+   * VMware vCenter Server Appliance 8.0 Update 2b (build 23319993)
    * VMware vSphere® ESXi™ 7.0 Update 3p (build 23307199)
    * VMware NSX 4.1.2.3 (build 23382408)
 
@@ -108,7 +126,7 @@ End of Support for VMware Shared deployments
 VMware Cloud Foundation enhancements
 :   The following features are now available:
 
-   * **Async Patch tool**: You can apply critical patches for VMware Cloud Foundation components, such as VMware NSX Manager, VMware vCenter Server®, and VMware ESXi™ by using the Async Patch tool. For more information, see [Viewing VMware Cloud Foundation instances](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-viewing#vpc-vcf-viewing-details).
+   * **Async Patch tool**: You can apply critical patches for VMware Cloud Foundation components, such as VMware NSX Manager, VMware vCenter Server®, and VMware ESXi by using the Async Patch tool. For more information, see [Viewing VMware Cloud Foundation instances](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-viewing#vpc-vcf-viewing-details).
    * **New regions available**: VMware Cloud Foundation is now available for use in **Tokyo** and **London**.
    * **BOM updates**: ESXi 7.0 Update 3p (build 23307199) is applied to newly deployed instances.
 
@@ -218,7 +236,7 @@ VMware Cloud Foundation BOM updates
    * SDDC Manager 4.5.2 (build 22223457)
    * VMware ESXi 7.0 Update 3n (build 21930508)
    * VMware NSX-T 3.2.3.1. (build 22104592)
-   * VMware Aria® Suite Lifecycle Manager 8.12.0.9 (build 22652426)
+   * VMware Aria Suite Lifecycle Manager 8.12.0.9 (build 22652426)
 
 VMware vSphere Day 2 updates
 :   You can now choose a new bare metal server configuration when you add a host to your existing instances. For more information, see [Adding ESXi servers to VMware vSphere instances](/docs/vmwaresolutions?topic=vmwaresolutions-vs_addingservers#vs_addingservers-procedure).
@@ -358,7 +376,7 @@ Bring Your Own License (BYOL) no longer available
 :   BYOL is now disabled in the **Licensing** section for VMware vCenter Server® instances, VMware vSphere clusters, adding hosts and clusters, and vRealize Operations and Log Insight service.
 
 VMware NSX-T 4.0.1.1 manual upgrade
-:   VMware NSX-T™ version 4.0.1.1 is now available if you want to upgrade your existing NSX-T instances manually. All newly deployed VMware NSX-T instances are still provisioned with NSX-T version 3.2.0.1.
+:   VMware NSX-T version 4.0.1.1 is now available if you want to upgrade your existing NSX-T instances manually. All newly deployed VMware NSX-T instances are still provisioned with NSX-T version 3.2.0.1.
 
 Updates to VMware vCenter Server instances and VMware vSphere clusters
 :   The following upgrades are applied to newly deployed instances, clusters, and hosts.

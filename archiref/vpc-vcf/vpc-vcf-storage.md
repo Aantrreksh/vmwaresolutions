@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2024
 
-lastupdated: "2024-06-04"
+lastupdated: "2024-06-13"
 
 subcollection: vmwaresolutions
 
@@ -21,9 +21,6 @@ The architecture for {{site.data.keyword.vcf-vpc}} is built upon {{site.data.key
 ![vSAN deployment with NVMe SSD drives](../../images/vcf-vpc-v2-bms-vsan.svg "vSAN deployment with NVMe SSD drives"){: caption="Figure 1. vSAN deployment with NVMe SSD drives" caption-side="bottom"}
 
 Currently, VMware vSAN is the only storage option. {{site.data.keyword.vpc_short}} File Shares are not supported in VMware Cloud Foundation deployments.
-{: note}
-
-VMware Cloud Foundation version 4.5.2 is supported for the VMware Cloud Foundation deployments, which comes with VMware vSphere 7.0 Update 3l hosts and vSAN 7.0 Update 3l. Therefore, Original Storage Architecture (OSA) is the only supported vSAN architecture.
 {: note}
 
 As part of {{site.data.keyword.vcf-vpc}} automation, vSAN is deployed automatically for you and there is no need to apply any specific configurations for this. However, you can configure various storage policies for your virtual machines to meet various availability or performance goals post initial provisioning though vCenter server.

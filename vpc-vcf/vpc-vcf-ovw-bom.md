@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-04-03"
+lastupdated: "2024-05-17"
 
 keywords: vmware cloud foundation BOM, bill of materials vmware cloud foundation, BOM
 
@@ -40,13 +40,13 @@ Review the BOM information for {{site.data.keyword.vcf-vpc-short}} software comp
 
 | Component | Version | Build number |
 | --------- | ------- | ------------ |
-| Cloud Builder VM | 4.5.2 | 22223457 |
-| SDDC Manager | 4.5.2 | 22223457 |
-| VMware vCenter Server Appliance | 7.0 Update 3o | 22357613 |
-| VMware ESXi | 7.0 Update 3p | 23307199 |
-| VMware Virtual SAN Witness Appliance | 7.0 Update 3l | 21424296 |
-| VMware NSX-T | 3.2.3.1 | 22104592 |
-| VMware Aria® Suite Lifecycle Manager | 8.12.0.9 | 22652426 |
+| Cloud Builder VM | 5.1.1 | 23480823 |
+| SDDC Manager | 5.1.1 | 23480823 |
+| VMware vCenter Server Appliance | 8.0 Update 2b | 23319993 |
+| VMware ESXi | 8.0 Update 2b | 23305546 |
+| VMware Virtual SAN Witness Appliance | 8.0 Update 2 | 22443122 |
+| VMware NSX-T | 4.1.2.3 | 23382408 |
+| VMware Aria® Suite Lifecycle Manager | 8.16 | 23377566 |
 {: caption="Table 2. BOM for software components in {{site.data.keyword.vcf-vpc-short}} instances" caption-side="bottom"}
 
 ## Network MTU configuration settings

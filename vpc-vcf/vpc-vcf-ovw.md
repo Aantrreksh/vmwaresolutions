@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2024
 
-lastupdated: "2024-04-03"
+lastupdated: "2024-05-16"
   
 keywords: vmware cloud foundation, IBM Cloud, vpc
 
@@ -18,7 +18,7 @@ subcollection: vmwaresolutions
 # {{site.data.keyword.vcf-vpc-short}} overview
 {: #vpc-vcf-ovw}
 
-{{site.data.keyword.vcf-vpc}} provides a ubiquitous hybrid cloud platform for both traditional enterprise apps and modern apps. {{site.data.keyword.vcf-vpc-short}} is based on a comprehensive software-defined stack, which includes VMware vSphere® with VMware Tanzu™, VMware vSAN™, VMware NSX-T™ Data Center, and VMware Aria® Suite (formerly known as VMware vRealize® Suite). It provides a complete set of software-defined services for compute, storage, network security, Kubernetes management, and cloud management. The VMware Cloud Builder automates the initial deployment of the entire software-defined stack, and after the initial deployment it is managed with SDDC manager. The result is agile, reliable, and efficient. The cloud infrastructure offers consistent operations across private and public clouds.
+{{site.data.keyword.vcf-vpc}} provides a ubiquitous hybrid cloud platform for both traditional enterprise apps and modern apps. {{site.data.keyword.vcf-vpc-short}} is based on a comprehensive software-defined stack, which includes VMware vSphere® with VMware Tanzu™, VMware vSAN™, VMware NSX-T™ Data Center, and VMware Aria® Suite (formerly VMware vRealize® Suite). It provides a complete set of software-defined services for compute, storage, network security, Kubernetes management, and cloud management. The VMware Cloud Builder automates the initial deployment of the entire software-defined stack, and after the initial deployment it is managed with SDDC manager. The result is agile, reliable, and efficient. The cloud infrastructure offers consistent operations across private and public clouds.
 
 The {{site.data.keyword.vpc_full}} provides the underlying infrastructure for running {{site.data.keyword.vcf-vpc-short}} in {{site.data.keyword.cloud_notm}}. {{site.data.keyword.cloud_notm}} Bare Metal Servers on {{site.data.keyword.vpc_short}} provide you with compute capacity provisioned in minutes for your {{site.data.keyword.vcf-vpc-short}} deployment. The {{site.data.keyword.vcf-vpc-short}} provisioning is done in a similar way that you deploy on-premises. However, it happens in a much more agile way in a secure and isolated virtual network inside your {{site.data.keyword.vpc_short}}.
 
@@ -27,7 +27,7 @@ The {{site.data.keyword.vpc_full}} provides the underlying infrastructure for ru
 ## Key benefits
 {: #vpc-vcf-ovw-benefits}
 
-The {{site.data.keyword.vcf-vpc-short}} architecture provides you with the fundamental building blocks, which include vSphere, VMware vCenter Server, NSX-T, vSAN, and SDDC manager. The VMware Cloud Builder appliance automates the {{site.data.keyword.vcf-vpc-short}} deployment, including the entire VMware software-defined stack. After the initial provisioning, you have the same architecture and user experience as in on-premises {{site.data.keyword.vcf-vpc-short}} deployments. Using Aria® Suite Lifecycle Manager (formerly known as vRealize Suite Lifecycle Manager), you can deploy more Aria Suite components, depending on the selected {{site.data.keyword.vcf-vpc-short}} edition.
+The {{site.data.keyword.vcf-vpc-short}} architecture provides you with the fundamental building blocks, which include vSphere, VMware vCenter Server, NSX-T, vSAN, and SDDC manager. The VMware Cloud Builder appliance automates the {{site.data.keyword.vcf-vpc-short}} deployment, including the entire VMware software-defined stack. After the initial provisioning, you have the same architecture and user experience as in on-premises {{site.data.keyword.vcf-vpc-short}} deployments. Using Aria® Suite Lifecycle Manager (formerly vRealize Suite Lifecycle Manager), you can deploy more Aria Suite components, depending on the selected {{site.data.keyword.vcf-vpc-short}} edition.
 
 VMware Solutions on {{site.data.keyword.vpc_short}} has the following key benefits:
 
@@ -55,7 +55,7 @@ For more information, see [Supported {{site.data.keyword.vcf-vpc-short}} archite
 ## Supported {{site.data.keyword.vcf-vpc-short}} products in {{site.data.keyword.vpc_short}}
 {: #vpc-vcf-ovw-supported-edition}
 
-The following list shows the products that are included:
+The following components are installed by the {{site.data.keyword.IBM}} automation, and licenses for them are provided by {{site.data.keyword.IBM_notm}}.
 
 * vSphere Enterprise Plus
 * vCenter Standard
@@ -64,12 +64,18 @@ The following list shows the products that are included:
 * NSX Enterprise Plus
 * Aria Suite Lifecycle
 
-The following components are not installed by the VMware Solutions automation. However, you can install them separately after the {{site.data.keyword.vcf-vpc-short}} instance is deployed.
+The following components are not installed by the {{site.data.keyword.IBM_notm}} automation, but licenses for them are provided by {{site.data.keyword.IBM_notm}}. You can install them separately after the {{site.data.keyword.vcf-vpc-short}} instance is deployed. For more information, see [Deploying VMware validated solutions](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-deploy-vvs).
 
 * Aria Suite Enterprise (Aria Operations Enterprise, Aria Operations for Logs, and Aria Automation Enterprise)
 * Aria Operations for Networks Enterprise
 * VMware HCX Enterprise
 * Tanzu Kubernetes Grid
+
+The following components are not installed by the {{site.data.keyword.IBM_notm}} automation. They are optional and require add-on licenses. You can order them from the {{site.data.keyword.cloud}} console. For more information, see [VMware add-ons for VMware Cloud Foundation](/docs/vmwaresolutions?topic=vmwaresolutions-vmware-add-ons).
+
+* NSX Distributed Firewall
+* NSX Gateway Firewall
+* NSX Load Balancer
 
 ## Related links
 {: #vpc-vcf-ovw-links}
