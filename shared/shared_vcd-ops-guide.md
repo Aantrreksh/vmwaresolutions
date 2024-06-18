@@ -128,7 +128,7 @@ Complete the following steps to register the Red Hat VM with your RHEL activatio
 3. Run the following commands from the Red Hat VM.
      1. `rpm -ivh http://52.117.132.7/pub/katello-ca-consumer-latest.noarch.rpm`
      2. `uuid = uuidgen`
-       Where the character ` used around uuidgen is the grave accent or backtick.
+       Where the character that is used around `uuidgen` is the grave accent or backtick.
      3. `echo '{"dmi.system.uuid": "'$uuid'"}' > /etc/rhsm/facts/uuid_override.facts`
      4. `cat /etc/rhsm/facts/uuid_override.facts`
        Ensure the contents of the `uuid_override.facts` contains a generated UUID.
