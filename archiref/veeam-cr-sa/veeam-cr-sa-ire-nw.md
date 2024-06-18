@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-06-05"
+lastupdated: "2024-06-13"
 
 subcollection: vmwaresolutions
 
@@ -65,7 +65,7 @@ The vSRX security policies enable the objectives that are listed in the followin
 
 * TCP-9392 - TCP port number used by Veeam remote console to access the Veeam server.
 * In this solution architecture, the Veeam backup proxies are Linux. Therefore, the following steps are required:
-   * Backup server to proxy, such as SSH, TCP-6162 (Veeam Data Mover port) and TCP-2500 to 3300 (Veeam data transmission channels).
+   * Backup server to proxies, such as SSH, TCP-6162 (Veeam Data Mover port) and TCP-2500 to 3300 (Veeam data transmission channels).
    * Proxy to backup server, such as TCP-2500 to 3300 (Veeam data transmission channels).
 * Veeam backup server access to isolated recovery vCenter and hosts is done through connected networks.
 * Veeam backup server access to the Linux hardened repository is done through the connected network.
@@ -77,7 +77,7 @@ The vSRX security policies enable the objectives that are listed in the followin
 
 To enable the air gap, the customer:
 
-* Creates a new T1 named Cyber-Tools-T1 and links it to the workload T0. The Cyber-T1 is configured to advertise connected segments. This action enables the routing of traffic to and from VMs on connected segments.
+* Creates a T1 named `Cyber-Tools-T1` and links it to the workload T0. The `Cyber-T1` is configured to advertise connected segments. This action enables the routing of traffic to and from VMs on connected segments.
 * Creates a segment for their management VM.
 * Creates a management VM that runs Linux and Ansible. The management VM changes the security policy on the vSRX appliances at the required times.
 * Uses a cron job on the automation server to schedule the running of an Ansible playbook that changes the inbound firewall rule from "Deny" to "Allow". After the backup window, the customer changes the inbound firewall rule from "Allow" to "Deny".
@@ -94,7 +94,7 @@ To enable cyberbackup of the production environment, the customer:
 To enable cyber-related tasks on the cyberbackups, such as scanning backup files for malware and recovering VMs from backups on isolated networks, the customer:
 
 * Creates a segment for their cybertoolsets, which include the malware scanners.
-* Creates a new T1 named Isolated-NW-T1 and links it to the workload T0. The Isolated-NW-T1 is configured to advertise all NAT IPs only. This action stops the advertisement of connected segments and advertises only the NAT IP addresses of the segments.
+* Creates a T1 named `Isolated-NW-T1` and links it to the workload T0. The `I`solated-NW-T1` is configured to advertise all NAT IPs only. This action stops the advertisement of connected segments and advertises only the NAT IP addresses of the segments.
 * Creates the following two distributed firewall groups:
    * Name: Cyber-Tools-Segments, Category: Segments, Members: cybertools
    * Name: Cyber-Isolated-Segments, Criteria: Segment Tag Equals Isolated-Segments, Scope: Cyber

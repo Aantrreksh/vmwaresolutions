@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-06-05"
+lastupdated: "2024-06-11"
 
 subcollection: vmwaresolutions
 
@@ -36,7 +36,7 @@ Review the following SCAP components:
       * Reporting the results of this assessment.
 * **Security Technical Implementation Guide (STIG)** - A cybersecurity methodology for standardizing security protocols within networks, servers, computers, and logical designs to enhance overall security. When these guidelines are implemented, they enhance security for software, hardware, physical, and logical architectures to further reduce vulnerabilities.
 * **Service Provider** - The top-level organization.
-* **Cloud Provider** - Provides the infrastructure that the software defined cloud operates on. RiskForesight can be configured for multiple Cloud Providers.
+* **Cloud Provider** - Provides the infrastructure that the software-defined cloud operates on. RiskForesight can be configured for multiple Cloud Providers.
 * **Organizations** - Tenant organizations and suborganizations of the service provider. If the asset repository is VMware vCenter® Server Appliance (VCSA), the organization or tenant list must be created manually.
 * **Roles** - Pre-configured roles and service provider-created roles. Preconfigured roles are not editable by the service provider.
 * **Organization Users** - Users of the Tenant Organizations and Sub-Organizations.
@@ -62,14 +62,14 @@ Review the following SCAP components:
    * **VMware Infrastructure Scan** - This scan carries out an infrastructure scan of the VMware Assets.
    * **VMware Vulnerability Scan** - This scan carries out a Vulnerability scan of the VMware Assets.
 * **Compliance Regime** - Available through license; NIST, NESA, PCI, ISO, HIPAA, GDPR, Custom, FFIEC, FedRAMP Low, FedRAMP Moderate, FedRAMP High
-* **Policy Manager** - The Policy Manager serves policy creation function for an Organization based on the machine learning output. Caveonix provides three types of machine learning jobs per organization, which are non-editable. Additional jobs are not supported yet.
+* **Policy Manager** - The Policy Manager serves the policy creation function for an Organization based on the machine learning output. Caveonix provides three types of machine learning jobs per organization, which are noneditable. Additional jobs are not supported yet.
 
    The following jobs are currently supported:
    * Caveo Logs
    * Caveo Networks
    * Caveo Scan
 
-* **Anomaly** - Based on the anomalies that are found in the data, you can configure the policies act based on the user-defined conditions. You can select the job type and configure Boolean conditions for the anomaly score and define action when condition is true.
+* **Anomaly** - Based on the anomalies that are found in the data, you can configure the policies act based on the user-defined conditions. You can select the job type and configure Boolean conditions for the anomaly score and you can define an action when the condition is true.
 
 See the following example:
 ```text

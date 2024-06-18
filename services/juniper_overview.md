@@ -22,7 +22,7 @@ Juniper® vSRX on {{site.data.keyword.cloud}} is a virtual security appliance th
 
 {{site.data.content.para-promotion-services}}
 
-The Juniper vSRX version available for deployment is 3.0 (23.2R1).
+The Juniper vSRX version available for deployment is 3.0 (23.4R1).
 {: note}
 
 For more information about vSRX and the vSRX 3.0 architecture, see [vSRX Virtual Firewall Deployment Guide for Private and Public Cloud Platforms](https://www.juniper.net/documentation/us/en/software/vsrx/vsrx-consolidated-deployment-guide/index.html){: external}.

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2019, 2022
+  years:  2019, 2024
 
-lastupdated: "2022-06-16"
+lastupdated: "2024-06-12"
 
 subcollection: vmwaresolutions
 
@@ -48,11 +48,11 @@ The NSX Edges are configured as active or passive in either the internal or dedi
 
 The edge is deployed with an interface uplink to the {{site.data.keyword.cloud_notm}} Public network and an interface uplink to the {{site.data.keyword.cloud_notm}} Private network. Additionally, an interface for the Transit network connection to the Distributed Logical Router (DLR) is available.
 
-| Interface name| Interface type | IP address | Port group / Logical switch |
+| Interface name| Interface type | IP address | Port group or logical switch |
 | --- | ---| --- | --- |
-| Private Uplink | Uplink | 10.208.242.130/26 </p> 10.208.242.131/26 </p>| SDDC-DPortGroup-Mgmt |
-| Public Uplink | Uplink | 169.48.73.42/29 169.48.73.43/29</p> | SDDC-DPortGroup-External |
-| Transit | Internal | 192.168.100.1/24 | OpenShift-Transit  |
+| Private Uplink | Uplink | `10.208.242.130/26` \n `10.208.242.131/26` | `SDDC-DPortGroup-Mgmt` |
+| Public Uplink | Uplink | `169.48.73.42/29` \n `169.48.73.43/29` | SDDC-DPortGroup-External |
+| Transit | Internal | `192.168.100.1/24` | OpenShift-Transit  |
 {: caption="Table 3. Configuration for NSX Edge - interfaces" caption-side="bottom"}
 
 ## NSX ESG firewall
@@ -62,10 +62,10 @@ Configure rules to allow communication to the internet, to the {{site.data.keywo
 
 | Firewall rule | Source | Destination | Service | Action |
 | --- | --- | --- | --- | --- |
-| Private Outbound | 10.208.242.128/26 | Any | Any | Accept |
-| Public Outbound | 169.48.73.40/29 | Any | Any | Accept |
-| OpenShift Network | 192.168.133.0/24 | Any | Any | Accept |
-| Transit Network | 192.168.100.0/24 | Any | Any | Accept |
+| Private Outbound | `10.208.242.128/26` | Any | Any | Accept |
+| Public Outbound | `169.48.73.40/29` | Any | Any | Accept |
+| OpenShift Network | `192.168.133.0/24` | Any | Any | Accept |
+| Transit Network | `192.168.100.0/24` | Any | Any | Accept |
 {: caption="Table 4. Configuration for NSX Edge - NSX firewalls" caption-side="bottom"}
 
 ## NSX ESG DHCP
@@ -98,9 +98,9 @@ Define NAT to provide a mechanism to allow the {{site.data.keyword.redhat_opensh
 | NAT Type | SNAT | SNAT | DNAT |
 | Interface | Public | Private | Private |
 | Protocol | Any | Any | Any |
-| Original Source IP/Range | 192.168.133.0/24 | 192.168.133.0/24 | 10.208.242.133 |
-| Destination IP/Range | Any | Any | 192.168.133.8 |
-| Translated Source IP/Range | 169.48.73.43 | 10.208.242.140 | 10.208.242.133 |
+| Original Source IP/Range | `192.168.133.0/24` | `192.168.133.0/24` | `10.208.242.133` |
+| Destination IP/Range | Any | Any | `192.168.133.8` |
+| Translated Source IP/Range | `169.48.73.43` | `10.208.242.140` | `10.208.242.133` |
 | Status | Enabled | Enabled | Enabled |
 | Logging | Disable | Disabled | Disabled |
 {: caption="Table 6. Configuration for NSX Edge - NAT definitions" caption-side="bottom"}
@@ -124,10 +124,10 @@ On the edge, configure the default route to be to the public internet, then add 
 
 | Property | Network | Next Hop | Interface|
 | :--- | --- | --- | --- |
-| Static route 1 | 10.0.0.0/8 | 10.208.242.129 | Private |
-| Static route 2 | 100.0.0.0/8 | 10.208.242.129 | Private |
-| Static route 3 | 161.26.0.0/16 | 10.208.242.129 | Private |
-| Static route 4 | 192.168.133.0/24 | 192.168.100.2 | Private |
+| Static route 1 | `10.0.0.0/8` | 10.208.242.129 | Private |
+| Static route 2 | `100.0.0.0/8` | 10.208.242.129 | Private |
+| Static route 3 | `161.26.0.0/16` | 10.208.242.129 | Private |
+| Static route 4 | `192.168.133.0/24` | 192.168.100.2 | Private |
 {: caption="Table 8. Configuration for NSX Edge - static routes" caption-side="bottom"}
 
 ## NSX load balancers
@@ -160,7 +160,7 @@ Within the {{site.data.keyword.redhat_openshift_notm}} environment, two load bal
 | Field | LB 6443 | LB 22623  | LB 80 | LB 443 |
 |--- | --- | --- | --- | --- |
 | Name | api-6443-lb | api-22623-lb | apps-80-lb | apps-443-lb |
-| Description | API / API-INT | API / API-INT | Application HTTP | Application HTTPs |
+| Description | `API/API-INT` | `API/API-INT` | Application HTTP | Application HTTPs |
 | Default pool | pool-1 | pool-2 | pool-3 | pool-4 |
 | IP address | 10.208.242.132 | 10.208.242.132| 10.208.242.131 | 10.208.242.131 |
 | Protocol | TCP | TCP | TCP | TCP |
@@ -181,26 +181,26 @@ Use the following table to document the parameters you need for your deployment.
 | vCenter Server password | | |
 | AD DNS server IP address | 10.187.214.66 | |
 | Transit Logical Switch| OpenShift-Transit | |
-| OpenShift network | 192.168.133.0/24 | |
-| Transit network | 192.168.100.0/24 |
-| ESG transit | 192.168.100.1 | |
-| DLR transit | 192.168.100.2 | |
+| OpenShift network | `192.168.133.0/24` | |
+| Transit network | `192.168.100.0/24` |
+| ESG transit | `192.168.100.1` | |
+| DLR transit | `192.168.100.2` | |
 | ESG name | OpenShift-ESG | |
 | vCenter Server instance cluster | cluster1 | |
 | vCenter Server instance datastore | vsanDatastore | |
-| Private portable subnet | 10.208.242.128/26| |
+| Private portable subnet | `10.208.242.128/26` | |
 | BCR IP address | 10.208.242.129 | |
 | ESG private primary | 10.208.242.130 | |
 | ESG private secondary 1 | 10.208.242.131 | |
 | ESG private secondary 2 | 10.208.242.132 | |
 | ESG private secondary 3 | 10.208.242.133 | |
-| Public portable subnet | 169.48.73.40/29 | |
+| Public portable subnet | `169.48.73.40/29` | |
 | FCR IP address | 169.48.73.41| |
 | ESG public primary | 169.48.73.42 | |
 | ESG public secondary 1 | 169.48.73.43 | |
 | ESG public secondary 2 | 169.48.73.44 | |
-| ESG username | admin | |
-| ESG password | VMware12345! | |
+| ESG username | `admin` | |
+| ESG password | `VMware12345!` | |
 {: caption="Table 12. PowerNSX DLR parameters" caption-side="bottom"}
 
 ```powernsx

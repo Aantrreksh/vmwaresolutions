@@ -4,7 +4,7 @@ copyright:
 
   years: 2016, 2024
 
-lastupdated: "2024-04-26"
+lastupdated: "2024-05-30"
 
 keywords: activity tracker, event, security, vmware solutions events, vmware solutions shared events, instance events, view events
 
@@ -17,6 +17,8 @@ subcollection: vmwaresolutions
 
 # Auditing events for VMware Solutions
 {: #at-events}
+
+{{site.data.content.impnote-at-deprecation}}
 
 Use the {{site.data.keyword.at_full}} service to track how users and applications interact with {{site.data.keyword.cloud_notm}} for VMware® Solutions in {{site.data.keyword.cloud_notm}}.
 
@@ -43,7 +45,7 @@ The following table lists the actions that generate and send an event to {{site.
 
 When you manage user accounts, instances, clusters, and services in {{site.data.keyword.vmwaresolutions_short}}, an event is generated.
 
-The following table provides the actions that generate and send management events to Activity Tracker.
+The following table provides the actions that generate and send management events to {{site.data.keyword.at_short}}.
 
 | Action | Description |
 |:------ |:------------|
@@ -91,9 +93,9 @@ The initiator ID is derived from the TLS (Transport Layer Security) certificate
 ## Viewing events
 {: #at-events-viewing}
 
-{{site.data.keyword.vcf-classic-short}} and {{site.data.keyword.vm-shared}} events are global events. The KMIP for VMware events are location-based events that are automatically forwarded to the {{site.data.keyword.at_full_notm}} service instance that is available in the same location as the KMIP for VMware instance. For more information, see [Monitoring global and location-based events](/docs/activity-tracker?topic=activity-tracker-monitor_events#mon_def_event_type).
+{{site.data.keyword.vcf-classic-short}} and {{site.data.keyword.vm-shared}} events are global events. The KMIP for VMware events are location-based events that are automatically forwarded to the {{site.data.keyword.at_short}} service instance that is available in the same location as the KMIP for VMware instance. For more information, see [Monitoring global and location-based events](/docs/activity-tracker?topic=activity-tracker-monitor_events#mon_def_event_type).
 
-{{site.data.keyword.at_full_notm}} can have only one instance per location. To view events, you must access the web UI of the {{site.data.keyword.at_full_notm}} service in the same location where your service instance is available. For more information, see [Navigating to the UI](/docs/activity-tracker?topic=activity-tracker-launch#launch).
+{{site.data.keyword.at_short}} can have only one instance per location. To view events, you must access the web UI of the {{site.data.keyword.at_short}} service in the same location where your service instance is available. For more information, see [Navigating to the UI](/docs/activity-tracker?topic=activity-tracker-launch#launch).
 
 ## Related links
 {: #at-events-related}

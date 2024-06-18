@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2024
 
-lastupdated: "2024-04-29"
+lastupdated: "2024-06-03"
 
 keywords: automated add clusters, add cluster, automated cluster
 
@@ -19,7 +19,7 @@ subcollection: vmwaresolutions
 
 You can add clusters to {{site.data.keyword.vcf-auto}} instances to expand the compute and storage capacity. Within a cluster, you can manage VMware ESXi™ servers for better resource allocation and high availability.
 
-Adding clusters to Automated instances with VMware vSphere® 6.5 or 6.7 is not supported.
+Adding clusters to instances with VMware vSphere® 6.5 or 6.7 is not supported.
 {: deprecated}
 
 ## Before you add clusters to Automated instances
@@ -30,6 +30,7 @@ Adding clusters to Automated instances with VMware vSphere® 6.5 or 6.7 is not s
 * New clusters are provisioned with mirrored M.2 boot drives.
 * The number of clusters, hosts, and virtual machines (VMs) determines the maximum number of clusters that you can add. Remain within the VMware® sizing guidelines and limits for your deployment. For more information, see [VMware configuration maximums](https://configmax.esp.vmware.com/home){: external}.
 * You can add a cluster while another cluster is being created or deleted.
+* You can select a vSphere version to clusters with vCenter Server 8 instances.
 
 ## Cluster type
 {: #vc_addingclusters-cluster-type}
@@ -40,6 +41,11 @@ Select the cluster type: **Workload cluster** or **Gateway cluster**.
 {: #vc_addingclusters-sys-settings-workload}
 
 When you add a workload cluster to an Automated instance, you must specify the following settings.
+
+### VMware vSphere version (vCenter 8 instances only)
+{: #vc_addingclusters-vpshere-version}
+
+Select the vSphere version for the cluster.
 
 ### Cluster name
 {: #vc_addingclusters-cluster-name}
@@ -105,6 +111,9 @@ You can add NFS storage shares to an existing vSAN or NFS cluster. For more info
 
 When you select **NFS storage**, you can add file-level shared storage for your instance where all shares use the same settings or you can specify different configuration settings for each file share. The number of file shares must be in the range of 1 to 100.
 
+NFS storage is available for instances with vSphere 7 and 8 version.
+{: important}
+
 Specify the following NFS options.
 * **Configure shares individually** - Toggle this switch on to specify different configuration settings for each file share.
 * **Number of shares** - If you want to use the same configuration setting for each file share, specify the number of file shares for the NFS shared storage that you want to add.
@@ -166,7 +175,7 @@ The amount of storage reduction from deduplication and compression depends on ma
 Bring Your Own License (BYOL) is no longer supported except for migrations or upgrades of existing BYOL clusters. Use this feature only if you are upgrading or migrating an existing BYOL cluster.
 {: attention}
 
-If you are a BYOL user, provide your own vSAN license key. Select **I will provide** or **Use existing license** and enter your license key. 
+If you are a BYOL user, provide your own vSAN license key. Select **I will provide** or **Use existing license** and enter your license key.
 
 The **Use existing license** option is available only if you are using a BYOL vSAN license for your instance. When the option is enabled, you can select the existing license only if the instance has enough capacity for the additional hosts.
 
@@ -189,7 +198,7 @@ You can use the default hostname prefix or specify a new one. When you specify a
 #### Configure hostnames individually
 {: #vc_addingclusters-network-diagram}
 
-You can customize the hostnames prefix individually by toggling the switch on. 
+You can customize the hostnames prefix individually by toggling the switch on.
 
 The hostnames prefix must meet the following requirements:
 * Only lowercase alphabetic, numeric, and hyphen (-) characters are allowed.
@@ -262,6 +271,11 @@ Use the **Public VLAN**, **Private VLAN**, or **Secondary private VLAN** tabs to
 
 When you add a gateway cluster to an Automated instance, you must specify the following settings.
 
+### VMware vSphere version (vCenter 8 instances only)
+{: #vc_addingclusters-vpshere-version-gateway}
+
+Select the vSphere version for the cluster.
+
 ### Data center location
 {: #vc_orderinginstance-dc-edge}
 
@@ -318,7 +332,7 @@ The hostname prefix applies to all clusters in the instance. It must meet the fo
 ### Configure hostnames individually
 {: #vc_addingclusters-edge-network-diagram}
 
-You can customize the hostnames prefix individually by toggling the switch on. 
+You can customize the hostnames prefix individually by toggling the switch on.
 
 The hostnames prefix must meet the following requirements:
 * Only lowercase alphabetic, numeric, and hyphen (-) characters are allowed.
@@ -349,20 +363,20 @@ You can also add the provisioned resources to the {{site.data.keyword.cloud_notm
    {: important}
 
 3. Click the **Infrastructure** tab and click **Create** on the upper right of the **Clusters** table.
-4. On the **Create cluster** page, select the cluster type.
+4. On the **Create cluster** page, select the cluster type and the VMware vSphere® version (vSphere 8 instances only).
 5. For workload clusters, enter the cluster name and complete the following configuration.
    1. Complete the licensing settings if you are a BYOL user. You must provide your own license key for the VMware vSphere component.
       * Bring Your Own License (BYOL) is no longer supported except for migrations or upgrades of existing BYOL clusters. Select **I will provide** or **Use existing license** and enter your own license key only if you are performing an upgrade or migration of an existing BYOL cluster.
       * The **Use existing license** option is available only if you are using a BYOL vSphere or vSAN license for your instance. When the option is enabled, you can select the existing license only if the instance has enough capacity for the additional hosts.
 
-   2. Complete the bare metal server configuration. 
+   2. Complete the bare metal server configuration.
       * If you want to host the cluster in a different {{site.data.keyword.cloud_notm}} data center than the one that the instance is hosted in, toggle the **Select a different location** switch on and choose the {{site.data.keyword.cloud_notm}} data center to host the cluster.
       * For **Cascade Lake**, select the **CPU model**, **RAM size**, and the **Number of bare metal servers**.
       * For **SAP-certified Cascade Lake**, select one of the preset configurations.
 
    3. Complete the storage configuration.
       * If you select **NFS storage** and want to add and configure the same settings to all file shares, specify the **Number of shares**, **Size (GB)**, and **Performance**.
-      * If you select **NFS storage** and want to add and configure file shares individually, toggle the **Configure shares individually** switch on, then click **Add shared storage** and select the **Size (GB)** and **Performance** for each individual file share. Select at least one file share. 
+      * If you select **NFS storage** and want to add and configure file shares individually, toggle the **Configure shares individually** switch on, then click **Add shared storage** and select the **Size (GB)** and **Performance** for each individual file share. Select at least one file share.
       * If you select **vSAN storage**, specify the following values:
          * Size for the vSAN capacity disks
          * Number of vSAN capacity disks
@@ -378,8 +392,8 @@ You can also add the provisioned resources to the {{site.data.keyword.cloud_notm
    1. For data center location, click the **Edit** icon ![Edit icon](../../icons/edit-tagging.svg "Edit") and select the geography, data center, and pod to host the cluster.
    2. Specify the cluster name.
    3. Select the CPU model, RAM size, and the number of bare metal servers.
-   4. For network interface settings, enter the hostname prefix. 
-   5. If you want to customize the hostnames prefix individually, toggle the **Configure hostnames individually** switch on. 
+   4. For network interface settings, enter the hostname prefix.
+   5. If you want to customize the hostnames prefix individually, toggle the **Configure hostnames individually** switch on.
    6. Select the **Networking type**, either **Public and private network** or **Private network only**.
 
 8. On the **Summary** pane, verify the cluster configuration before you add the cluster.

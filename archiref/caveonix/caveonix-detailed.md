@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-04-26"
+lastupdated: "2024-06-11"
 
 subcollection: vmwaresolutions
 
@@ -20,7 +20,7 @@ The following diagram and descriptions provide information about the RiskForesig
 
 ![Application components](../../images/caveonix-app-components.svg "Application components"){: caption="Figure 1. Application components" caption-side="bottom"}
 
-- Graphical user interface - The web interface that you can use to access RiskForesight application.
+- Graphical user interface - The web interface that you can use to access the RiskForesight application.
 - Central Collector - Collects different types of data payload that come from the plug-ins and make it available in the messaging store. RiskForesight supports the following types of payloads:
     - Scan
     - Logs
@@ -77,8 +77,8 @@ The IP Subnet, VLAN assignments are described in the following table.
 | Private A | Portable | Assigned to HCX for internal usage. |
 | Private A | Portable | Assigned for uplink usage on the customer-nsx-esg. |
 | Private A | Portable | Assigned to HCX. |
-| Private A | Portable | Assigned to Zerto VRAs, if Zerto option selected. |
-| Private A | Portable | Assigned for Caveonix RiskForesight, if Caveonix option selected. |
+| Private A | Portable | Assigned to Zerto VRAs, if the Zerto option is selected. |
+| Private A | Portable | Assigned for Caveonix RiskForesight, if the Caveonix option is selected. |
 | Private B | Primary | Not used upon initial deployment. |
 |  Private B | Portable |Assigned for vSAN, if in use. |
 | Private B | Portable | Assigned for NAS, if in use. |

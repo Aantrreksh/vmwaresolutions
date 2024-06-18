@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-04-26"
+lastupdated: "2024-05-22"
 
 keywords: IAM user, user role, user permission, IAM VMware Cloud Director
 
@@ -23,7 +23,7 @@ subcollection: vmwaresolutions
 The following table provides information about the platform management roles and permissions for {{site.data.keyword.vm-shared}}.
 
 * **Minimum** - roles with the bare minimum permissions in VMware Cloud Director.
-* **VMware Cloud Director** - roles that are provided by VMware Cloud Director. For more information, see [Rights in predefined global tenant roles](https://docs.vmware.com/en/VMware-Cloud-Director/10.4/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-AE42A8F6-868C-4FC0-B224-87CA0F3D6350.html#GUID-AE42A8F6-868C-4FC0-B224-87CA0F3D6350){: external}.
+* **VMware Cloud Director** - roles that are provided by VMware Cloud Director. For more information, see [Rights in predefined global tenant roles](https://docs.vmware.com/en/VMware-Cloud-Director/10.5/VMware-Cloud-Director-Tenant-Guide/GUID-AE42A8F6-868C-4FC0-B224-87CA0F3D6350.html#GUID-AE42A8F6-868C-4FC0-B224-87CA0F3D6350){: external}.
 * **Custom** - roles that are custom-defined by IBM.
 
 | Platform management role | Actions | Level of permission |
@@ -42,7 +42,6 @@ The following table provides information about the platform management roles and
 | Director Network Admin | Create, view, edit, delete the subnet, the static route, and troubleshoot routing in VMware Cloud Director. | Custom |
 | Director Console User | View a virtual machine state, properties, and use the guest operating system in VMware Cloud Director. | VMware Cloud Director |
 | Director Backup User | Manage Veeam® backup jobs in VMware Cloud Director. | Custom |
-| Director Security Admin | View and edit the edge firewall and the distributed firewall in VMware Cloud Director. | Custom |
 {: caption="Table 1. Roles and actions for {{site.data.keyword.vm-shared}}" caption-side="bottom"}
 
 ## Custom defined roles and permissions
@@ -104,8 +103,6 @@ The following table provides information about roles that are custom-defined by 
 | Organization Network: View | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | |
 | Organization vDC Compute Policy: View | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) |
 | Organization vDC Disk: View IOPS| ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) |  |  | ![Available](../../../icons/checkmark-icon.svg) |
-| Organization vDC Distributed Firewall: Configure Rules | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | | | ![Available](../../../icons/checkmark-icon.svg) | |
-| Organization vDC Distributed Firewall: View Rules | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | |
 | Organization vDC Gateway: Configure BGP Routing | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | | ![Available](../../../icons/checkmark-icon.svg) | | |
 | Organization vDC Gateway: Configure DHCP | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | | ![Available](../../../icons/checkmark-icon.svg) | | |
 | Organization vDC Gateway: Configure DNS | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | | ![Available](../../../icons/checkmark-icon.svg) | | |
@@ -123,7 +120,6 @@ The following table provides information about roles that are custom-defined by 
 | Organization vDC Gateway: Configure Static Routing | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | | ![Available](../../../icons/checkmark-icon.svg) | | |
 | Organization vDC Gateway: Configure Syslog | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | | ![Available](../../../icons/checkmark-icon.svg) | | |
 | Organization vDC Gateway: Convert to Advanced Networking | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | | ![Available](../../../icons/checkmark-icon.svg) | | |
-| Organization vDC Gateway: Distributed Routing | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | | ![Available](../../../icons/checkmark-icon.svg) | | |
 | Organization vDC Gateway: View | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | |
 | Organization vDC Gateway: View BGP Routing | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | | |
 | Organization vDC Gateway: View DHCP | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | |

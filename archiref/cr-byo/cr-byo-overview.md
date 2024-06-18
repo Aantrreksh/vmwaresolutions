@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2024
 
-lastupdated: "2024-06-05"
+lastupdated: "2024-06-11"
 
 subcollection: vmwaresolutions
 
@@ -15,11 +15,11 @@ subcollection: vmwaresolutions
 # Cyber recovery with Bring Your Own appliances
 {: #cr-byo-overview}
 
-Cyber recovery is one of five functions that are described in the [NIST Cybersecurity framework](https://www.nist.gov/cyberframework){: external}. It is defined as the development and implementation of appropriate activities to maintain plans for resilience and to restore any capabilities or services that are impaired due to a cyber-security incident. The other four functions are identify, protect, detect, and respond.
+Cyber recovery is one of five functions that are described in the [NIST Cybersecurity framework](https://www.nist.gov/cyberframework){: external}. It is defined as the development and implementation of appropriate activities to maintain plans for resilience and to restore any capabilities or services that are impaired due to a cybersecurity incident. The other four functions are identify, protect, detect, and respond.
 
 This documentation describes a high-level architecture that can be used to assist with your custom cyber-recovery requirements. The solution architecture uses a {{site.data.keyword.vmwaresolutions_full}} vCenter Server®, and your choice of bring your own data mover with immutable data storage.
 
-This solution is suitable for clients who want to extend their own existing backup solution with an isolated recovery environment while minimizing costs. 
+This solution is suitable if you want to extend your own backup solution with an isolated recovery environment while you minimize costs. 
 
 ![Architecture diagram](../../images/cr-byo-ire.svg "Architecture diagram"){: caption="Figure 1. Architecture for cyber-recovery isolated environment with bring your own data mover and immutable repository" caption-side="bottom"}
 
@@ -45,7 +45,7 @@ Key elements of the solution architecture include:
    * Creating sandboxes
 
 * Sandboxes can be provisioned by using VMware NSX-T™ overlay segments, logical routing, distributed firewall, and network address translation to provide network-isolated zones to mount cyber-recovery backups for inspection by your cybertoolsets.
-* Cybertoolsets are customer-supplied tools that run as virtual machines in the isolated recovery environment and access your cyber-backups for verification and analysis.
+* Cybertoolsets are customer-supplied tools that run as virtual machines in the isolated recovery environment and access your cyberbackups for verification and analysis.
 * Cyberadmins are customer personnel who are authorized to access the isolated recovery environment and should be different than admins that manage the production and disaster recovery environments to promote separation of duties.
 * Jump servers are used by your cyberadmins to access the isolated recovery environment.
 * The air gap enables network connectivity between the production environment and the isolated recovery environment only when required.

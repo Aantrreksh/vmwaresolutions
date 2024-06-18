@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-05-31"
+lastupdated: "2024-06-13"
 
 subcollection: vmwaresolutions
 
@@ -133,7 +133,7 @@ In addition to Private VLAN A, a second private VLAN (here designated Private VL
    * If you use vSAN, a subnet is assigned to kernel port groups that are used for vSAN traffic.
    * If you use NFS attached NAS, a subnet is assigned to a port group that is dedicated to NFS traffic.
 
-All subnets that are configured as part of a {{site.data.keyword.vcf-auto}} deployment use {{site.data.keyword.cloud_notm}} managed ranges, which ensure that any IP address can be routed to any data center within the {{site.data.keyword.cloud_notm}} account when you need the connection.
+All subnets that are configured as part of a {{site.data.keyword.vcf-auto}} deployment use {{site.data.keyword.cloud_notm}}-managed ranges, which ensure that any IP address can be routed to any data center within the {{site.data.keyword.cloud_notm}} account when you need the connection.
 
 Review the following table for a summary.
 
@@ -151,7 +151,7 @@ Review the following table for a summary.
 
 In this design, all VLAN-backed hosts and VMs are configured to point to the {{site.data.keyword.cloud_notm}} back-end “private network” customer router (BCR) as the default route. While the Automated instances enable the use of Software-Defined Networking (SDN), network overlays created within a VMware instance that include routing to internal subnets are not known by the {{site.data.keyword.cloud_notm}} managed routers.
 
-If you want to route between the overlay and underlay, you must deploy an IBM firewall device for the particular default private VLAN when the Automated instance is deployed. This device allows the insertion of static routes and dynamic routing protocol peering with the overlay networking devices to allow routing between the underlay and overlay.
+If you want to route between the overlay and underlay, you must deploy an IBM firewall device for the particular default private VLAN when the Automated instance is deployed. This device allows the insertion of static routes and dynamic routing protocol peering with the overlay networking devices to allow routing between the underlay and the overlay.
 
 The private network connections are configured to use a jumbo frame MTU size of 9000 to improve performance for large data transfers, such as storage and vMotion. This value is the maximum MTU that is allowed within VMware and by {{site.data.keyword.cloud_notm}}. The public network connections use a standard Ethernet MTU of 1500. This value must be maintained as any changes might cause packet fragmentation over the internet.
 
@@ -163,7 +163,7 @@ Physical storage design consists of the configuration of the physical disks that
 ### Operating system disks
 {: #design_physicalinfrastructure-os-disks}
 
-The vSphere ESXi hypervisor is installed in a persistent location. As a result, the physical hosts are consist of two disks in a RAID 1 configuration to support redundancy for the vSphere ESXi hypervisor.
+The vSphere ESXi hypervisor is installed in a persistent location. As a result, the physical hosts consist of two disks in a RAID 1 configuration to support redundancy for the vSphere ESXi hypervisor.
 
 ### vSAN disks
 {: #design_physicalinfrastructure-vsan-disks}

@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2024
 
-lastupdated: "2024-04-15"
+lastupdated: "2024-06-12"
 
 subcollection: vmwaresolutions
 
@@ -34,7 +34,7 @@ Provision a {{site.data.keyword.redhat_notm}} VM based on the following specific
 
 | VM | IP address | Gateway | Disk (GB) | Memory (GB) | vCPU | NAT address |
 | --- | --- | --- | --- | --- | --- | --- |
-| bastion | 192.168.133.8 | 192.168.133.1 | 50 | 2 | 1 | 10.208.59.197 |
+| `bastion` | 192.168.133.8 | 192.168.133.1 | 50 | 2 | 1 | 10.208.59.197 |
 {: caption="Table 1. Red Hat VM - provision" caption-side="bottom"}
 
 Use the following table to record your deployment details:
@@ -91,7 +91,7 @@ For this step, you require your {{site.data.keyword.redhat_notm}} subscription d
 * Password
 * Subscription Pool
 
-After the bastion node is deployed, you are required to register and subscribe it with the {{site.data.keyword.redhat_notm}} public repositories. From the jump-host or remote device, SSH to connect to the bastion node. Use the `su`  command to get root privileges and run the following commands after you replace the username, password, and pool with your variables.
+After the bastion node is deployed, you are required to register and subscribe it with the {{site.data.keyword.redhat_notm}} public repositories. From the jump-host or remote device, SSH to connect to the bastion node. Use the `su` command to get root privileges and run the following commands after you replace the username, password, and pool with your variables.
 
 ```bash
 export rhel_subscription_username=<email address>
@@ -180,7 +180,7 @@ You must use a local key.
 ### Creating the SSH key
 {: #openshift-runbook-runbook-sshkey-create}
 
-1. In the SSH session on the bastion node, run the following command, which generates a public or private `rsa` key pair in the directory `/root/.ssh`.
+1. In the SSH session on the bastion node, run the following command, which generates a public or private `rsa` key pair in the directory `/root/.ssh`:
 
    ```bash
    ssh-keygen -f ~/.ssh/id_rsa -t rsa -b 4096 -N ''

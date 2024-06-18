@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-04-23"
+lastupdated: "2024-05-29"
 
 keywords: automated instance, order automated, order automated instance
 
@@ -17,11 +17,11 @@ subcollection: vmwaresolutions
 # Procedure to order Automated instances
 {: #vc_orderinginstance-procedure}
 
-<!-- The {: #step-1} tag and the ordered list that has only 1s are intentional. Do not delete. This coding is necessary for proper indentation when the procedure is translated. -->
+
 
 1. In the VMware Solutions console, click the **VMware Cloud Foundation (VCF) for Classic** card in the **Create a resource** section. {: #step-1}
 1. On the **Create** tab, click the **Automated** card in the **Resource type** section.
-1. Select the VMware vCenter Server® version. Then, enter the instance name and select a resource group.
+1. Select the VMware vCenter Server® and the VMware vSphere® version. Then, enter the instance name and select a resource group.
 1. To specify the instance configuration name, click **Browse configurations** and choose a configuration in the **VMware instance configuration manager**.
    * If you do not see any configurations in the list and you want to create one, you must first save the instance settings as a new configuration without placing an order.
    * If you want to update a saved configuration or create a new configuration based on a saved one, select the configuration from the side panel, make your changes, and then save.

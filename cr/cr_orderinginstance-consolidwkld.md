@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-04-23"
+lastupdated: "2024-06-04"
 
 keywords: cyber recovery, cyber recovery consolidated cluster, cyber recovery consolidated settings, cyber recovery instances
 
@@ -93,12 +93,10 @@ For deployed instances, you can add NFS storage shares to an existing NFS or vSA
 ### NFS storage
 {: #cr_orderinginstance-consolidwkld-nfs-storage}
 
-When you select **NFS storage**, you can decide on one of the following options:
+When you select **NFS storage**, you can add file-level shared storage for your instance where all shares use the same settings or you can specify different configuration settings for each file share. The number of file shares must be in the range 1 - 100.
 
-* Add file-level shared storage for your instance, where all shares use the same settings
-* Specify different configuration settings for each file share.
-
-The number of file shares must be in the range 1 - 100.
+For new instances, NFS storage is available with vSphere 7 and 8 version.
+{: important}
 
 Specify the following NFS options:
 * **Configure shares individually** - Toggle this switch on to specify different configuration settings for each file share.
@@ -121,6 +119,9 @@ Choose performance level options according to your needs.
 {: #cr_orderinginstance-consolidwkld-vsan-storage}
 
 vSAN is available for the **Cascade Lake** bare metal configuration only.
+
+For new instances, vSAN storage is not available with vSphere 8. To use vSAN storage, select vSphere 7.
+{: important}
 
 #### Size for vSAN capacity disks
 {: #cr_orderinginstance-consolidwkld-vsan-storage-typesize-capdisks}

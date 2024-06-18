@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2024
 
-lastupdated: "2024-01-26"
+lastupdated: "2024-06-14"
 
 subcollection: vmwaresolutions
 
@@ -68,7 +68,7 @@ The script completes the following tasks:
 2. Open a PowerShell console with Administrator privileges.
 3. Define the following variables for the script:
    * The `<vcsa_fqdn>` is the FQDN or IP address of the vCenter appliance in the production environment.
-   * The `<vcsa_user>` is the username of the account in vCenter appliance that has necessary privileges to add roles.
+   * The `<vcsa_user>` is the username of the account in the vCenter appliance that has the necessary privileges to add roles.
    * The `<vcsa_user_password>` is the password for the `<vcsa_user>`.
    * The `<sub_domain>` is the subdomain of the root domain, that is, for `example.test.local`, `<sub_domain>` is `example` and `<root_domain>` is `test.local`.
 4. Use the following commands to create the role and assign permissions:
@@ -180,7 +180,7 @@ Disconnect-VIServer -Confirm:$false
 ```
 {: codeblock}
 
-The steps are completed for creating the cyber-recovery isolated environment solution architecture.
+The steps are completed for creating the solution architecture for the cyber recovery isolated environment.
 
 For a use case where a cyberadmin uses a PowerShell script that uses Veeam to do an instant restore of a production VM from the cyberbackup, see [Instant restore](/docs/vmwaresolutions?topic=vmwaresolutions-veeam-cr-sag-instantrestore).
 

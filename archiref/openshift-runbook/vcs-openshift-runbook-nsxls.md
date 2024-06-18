@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2019, 2023
+  years:  2019, 2024
 
-lastupdated: "2023-05-01"
+lastupdated: "2024-06-12"
 
 subcollection: vmwaresolutions
 
@@ -13,7 +13,7 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# OpenShift NSX logical switches configuration
+# {{site.data.keyword.redhat_openshift_notm}} NSX logical switches configuration
 {: #openshift-runbook-runbook-nsxls-intro}
 
 Review the NSX logical switches that are used to support the {{site.data.keyword.redhat_openshift_full}} 4.7 environment. To use this information, you must understand how to create these components and add the configuration.
@@ -27,7 +27,7 @@ The design requires two NSX Logical Switches:
 
 * Transit - This logical switch is used to connect the DLR and the ESGs. The DLR Control VMs have an interface on this network.
 * OpenShift - This logical switch is used for the {{site.data.keyword.redhat_openshift_notm}} VM network. The DLR has a connection to this logical switch.
-* HA - This logical switch is used for the DLR Control VMs. You do not need to assign an IP range to this network as NSX assigns internal IP range to it.
+* HA - This logical switch is used for the DLR Control VMs. You do not need to assign an IP range to this network as NSX assigns an internal IP range to it.
 
 ## PowerNSX commands
 {: #openshift-runbook-runbook-nsxls-powernsx}

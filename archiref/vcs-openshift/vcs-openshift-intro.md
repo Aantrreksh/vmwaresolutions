@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2024
 
-lastupdated: "2024-05-21"
+lastupdated: "2024-06-13"
 
 subcollection: vmwaresolutions
 
@@ -17,9 +17,9 @@ subcollection: vmwaresolutions
 
 The {{site.data.keyword.vmwaresolutions_full}} offering includes fully automated, rapid deployments of {{site.data.keyword.vcf-classic}}. This offering complements the on-premises infrastructure and allows existing and future workloads to run on {{site.data.keyword.cloud_notm}} without conversion by using the same tools, skills, and processes that are used on-premises. For more information, see [What is virtualization?](https://www.ibm.com/topics/virtualization){: external}.
 
-{{site.data.keyword.redhat_openshift_full}} on {{site.data.keyword.vmwaresolutions_short}} provides the capability to deploy a {{site.data.keyword.redhat_openshift_notm}} Cluster by using an automated deployment of the VMware Software Defined Data Center (SDDC) architecture. The {{site.data.keyword.redhat_openshift_notm}} Cluster on {{site.data.keyword.cloud_notm}} components are deployed as virtual machines (VM) or appliances by using VMware NSX® software-defined networking.
+{{site.data.keyword.redhat_openshift_full}} on {{site.data.keyword.vmwaresolutions_short}} provides the capability to deploy a {{site.data.keyword.redhat_openshift_notm}} cluster by using an automated deployment of the VMware Software Defined Data Center (SDDC) architecture. The {{site.data.keyword.redhat_openshift_notm}} cluster is deployed as virtual machines (VM) or appliances on {{site.data.keyword.cloud_notm}} components by using VMware NSX® software-defined networking.
 
-This reference architecture is for {{site.data.keyword.redhat_openshift_notm}} clusters deployed on a {{site.data.keyword.vcf-classic-short}} instance. It provides the foundation for customers who are starting their application modernization journey to the {{site.data.keyword.cloud_notm}}.
+This reference architecture is for {{site.data.keyword.redhat_openshift_notm}} clusters that are deployed on a {{site.data.keyword.vcf-classic-short}} instance. It provides the foundation for customers who are starting their application modernization journey to the {{site.data.keyword.cloud_notm}}.
 - **{{site.data.keyword.vcf-classic-short}}** is an offering from {{site.data.keyword.vmwaresolutions_short}} and is a VMware-based platform that is automatically provisioned on {{site.data.keyword.cloud_notm}}.
 - **{{site.data.keyword.redhat_openshift_notm}}** is an application platform for developing and managing containerized applications, which are deployed onto virtualized infrastructure platforms, such as VMware.
 
@@ -30,7 +30,7 @@ This reference architecture is for {{site.data.keyword.redhat_openshift_notm}} c
 
 Application modernization is a term that describes the process of moving existing applications to use new approaches on the cloud. Customers today are seeking innovative, efficient approaches that help them make this transition based on business and application complexity.
 
-Business pressures demand faster time to market. Your existing estate includes not only applications, but data, processes, business logic, and user interfaces, all of which need to adapt to keep up with new business demands.
+Business pressures demand a faster time to market. Your existing estate includes not only applications, but data, processes, business logic, and user interfaces, all of which need to adapt to keep up with new business demands.
 
 Application modernization has the following benefits:
 * Improved developer productivity
@@ -38,7 +38,7 @@ Application modernization has the following benefits:
 * Reduced cost to build new capabilities
 * Expanded capacity delivered in a short time
 
-{{site.data.keyword.IBM_notm}} understands that 70% of private cloud adoption is driven by the need to modernize application environments. However, most organizations are approaching application modernization in a staged approach, which requires a hybrid and multi cloud landscape, where:
+{{site.data.keyword.IBM_notm}} understands that 70% of private cloud adoption is driven by the need to modernize application environments. However, most organizations are approaching application modernization in a staged approach, which requires a hybrid and multicloud landscape, where:
 * Complex and monolithic legacy applications that typically run on mainframes or UNIX systems remain on-premises.
 * x86 environments used for Systems of Record (SoR), applications that are security sensitive, and regulated workloads are placed on a virtualized infrastructure or a private cloud.
 * Applications such as SAP® or high-performance computing use bare metal resources.

@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-06-05"
+lastupdated: "2024-06-14"
 
 subcollection: vmwaresolutions
 
@@ -20,20 +20,20 @@ VMware® Update Manager (VUM) uses a multistage process to upgrade vSphere® obj
 * **Baseline** - baselines contain a collection of one or more patches, extensions, service packs, bug fixes, or upgrades. Baselines can be classified as patch, extension, or upgrade baselines. There are two types of baselines: Host and VM/VA. Host and VM/VA have predefined baselines by VMware and custom baselines that can be added as required:
 - Pre-defined Hosts baselines:
    - Critical host patches
-   - Non-critical host patches
+   - Noncritical host patches
 
-- Pre-defined VMs/VAs baselines:
+- Pre-defined VMs and VAs baselines:
    - VA upgrade to latest
    - VM hardware upgrade to match host
    - VMware tools upgrade to match host
 
-* **Baseline Group** - a set of non-conflicting baselines, which combines different types of baselines, and scans and remediates an inventory object against all of them as a whole. If a baseline group contains both upgrade and patch or extension baselines, the upgrade runs first.
+* **Baseline Group** - a set of nonconflicting baselines, which combines different types of baselines, and scans and remediates an inventory object against all of them as a whole. If a baseline group contains both upgrade and patch or extension baselines, the upgrade runs first.
 * **Scanning** - Scanning is the process in which the Inventory object or objects are evaluated against the baseline or baseline group.
 * **Staging** - Staging ensures that the patches and extensions are downloaded to the vSphere ESXi hosts before the remediation and is an optional step to minimize the time hosts are in maintenance mode.
 * **Remediation** - Remediation is the process in which VUM applies patches, extensions, and upgrades to the inventory object or objects.
 
 Therefore, the VUM process is as follows:
-* An inventory object, or a group of objects, are scanned for compliance against a baseline or a baseline group.
+* An inventory object or a group of objects are scanned for compliance against a baseline or a baseline group.
 * After a review, patches and extensions can be optionally staged, before remediated.
 
 The downloading of upgrades, host patches, extensions, and related metadata is a predefined automatic process that can be modified. By default, at regular configurable intervals, VUM contacts VMware or third-party sources to gather the following information about available upgrades, patches, or extensions:

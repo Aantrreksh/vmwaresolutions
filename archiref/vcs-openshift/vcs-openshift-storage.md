@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2024
 
-lastupdated: "2024-05-21"
+lastupdated: "2024-06-13"
 
 subcollection: vmwaresolutions
 
@@ -104,7 +104,7 @@ Complete the following steps to create a new volume:
    ```
    {: pre}
 
-Now you have a persistent volume claim that can be mapped to container application.
+Now you have a persistent volume claim that can be mapped to the container application.
 
 ## Related links
 {: #vcs-openshift-storage-related}

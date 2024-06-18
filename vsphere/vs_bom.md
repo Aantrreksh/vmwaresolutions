@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-04-09"
+lastupdated: "2024-04-17"
 
 keywords: vsphere BOM, bill of materials vsphere, BOM, flexible
 
@@ -32,6 +32,6 @@ The following table details the Bill of Materials (BOM) information for VMware v
 ## Related links
 {: #vs_bom-related}
 
-* [Build numbers and versions of VMware ESXi/ESX (2143832)](https://kb.vmware.com/s/article/2143832){: external}
+* [Build numbers and versions of VMware ESXi and ESX (2143832)](https://knowledge.broadcom.com/external/article?legacyId=2143832){: external}
 * [{{site.data.keyword.vcf-flex-short}} overview](/docs/vmwaresolutions?topic=vmwaresolutions-vs_vsphereoverview)
 * [Planning for Flexible instances](/docs/vmwaresolutions?topic=vmwaresolutions-vs_planning)

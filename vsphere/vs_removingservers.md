@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2024
 
-lastupdated: "2024-04-20"
+lastupdated: "2024-05-16"
 
 keywords: flexible remove hosts, flexible remove ESXi servers, delete server
 
@@ -51,4 +51,4 @@ Before you delete ESXi servers, ensure that you remove your workloads from these
 * [Planning for Flexible instances](/docs/vmwaresolutions?topic=vmwaresolutions-vs_planning)
 * [Procedure to order Flexible instances](/docs/vmwaresolutions?topic=vmwaresolutions-vs_orderinginstances-procedure)
 * [Place a host in maintenance mode](https://docs.vmware.com/en/VMware-vSphere/8.0/vsphere-resource-management/GUID-8F705E83-6788-42D4-93DF-63A2B892367F.html?hWord=N4IghgNiBcIAoTAYwKYAIxoBYHsDOALmgJYB2aAtmGQSqWKapTgCYogC+QA){: external}
-* [Enhanced vMotion Compatibility (EVC) processor support](https://kb.vmware.com/s/article/1003212){: external}
+* [Enhanced vMotion Compatibility (EVC) processor support](https://knowledge.broadcom.com/external/article?legacyId=1003212){: external}

@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2024
 
-lastupdated: "2024-01-26"
+lastupdated: "2024-06-14"
 
 subcollection: vmwaresolutions
 
@@ -46,7 +46,7 @@ The playbook `create_lhbr.yml` starts with the following code:
 Replace `<lhbr_vbr_name>`, `<lhbr_fqdn>`, and `<immutability_period>` in the previous code snippet with the values that you captured in the earlier steps. The previous code does the following actions:
 
 * Defines that the playbook is run on the hosts that are defined as `vbr` in the inventory file.
-* Defines a file that contains other variables, called `vault`. The `vault` file that was created in the previous step, is encrypted, and contains sensitive variables, such as passwords.
+* Defines a file that contains other variables, called `vault`. The `vault` file that was created in the previous step is encrypted, and contains sensitive variables, such as passwords.
 * Defines the shortname that is used in designating the Linux hardened repository `<lhbr_vbr_name>`, and the FQDN of the server.
 
 

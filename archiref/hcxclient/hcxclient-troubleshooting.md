@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-06-05"
+lastupdated: "2024-06-12"
 
 subcollection: vmwaresolutions
 
@@ -29,7 +29,7 @@ Typically, if the {{site.data.keyword.vcf-auto}} user interface has been opened 
 ### HCX Client user interface displaying “NaN” for all metrics on the dashboard screen
 {: #hcxclient-troubleshooting-nan-display}
 
-This issue is related to the permissions of the currently logged in vCenter account. Ensure that the Enterprise Administrator group is set in the HCX cloud side appliance manager user interface.
+This issue is related to the permissions of the currently logged in vCenter account. Ensure that the Enterprise Administrator group is set in the HCX cloud-side appliance manager user interface.
 
 ## Migration issues
 {: #hcxclient-troubleshooting-mig-issues}
@@ -44,25 +44,25 @@ If a migration fails because of a licensing issue, current versions of HCX clear
 ### Network (WAN) connectivity
 {: #hcxclient-troubleshooting-wan-connect}
 
-If you have any WAN connectivity issues, always check the **Interconnect -> HCX Components** screen within the HCX user interface for tunnel status. The fleet components typically do not need to be reset or rebooted. If WAN connectivity is restored, they reconnect automatically.
+If you have any WAN connectivity issues, always check the **Interconnect -> HCX Components** screen within the HCX user interface for tunnel status. The fleet components typically do not need to be reset or restarted. If WAN connectivity is restored, they reconnect automatically.
 
-If any fixes and updates were applied to the HCX managers (Client and Cloud) and those updates also patch issues with the fleet components, you must redeploy the Cloud Gateway and any L2Cs deployed. It is possible to do further tunnel status debugging, by connecting to HCX Manager through an SSH client such as `ccli`.
+If any fixes and updates were applied to the HCX managers (Client and Cloud) and those updates also patch issues with the fleet components, you must redeploy the Cloud Gateway and any L2Cs deployed. You can debug tunnel status further by connecting to HCX Manager through an SSH client such as `ccli`.
 
-1. SSH to HCX Manager by using the admin account and the supplied password.
-2. Run the `su –` command and enter the password of the `root` user (same as admin password) to change to root.
+1. Connect through SSH to HCX Manager by using the admin account and the supplied password.
+2. Run the `su –` command and enter the `root` password (same as the admin password) to change to `root`.
 3. Change the directory to `/opt/vmware/bin` and run the `./ccli` command. If this attempt is not successful because the environment is not set up for root, run the `./ccliSetup.pl` command.
 4. Run the `list` command within the `ccli` shell to list the fleet components registered with HCX Manager.
-5. Specify the fleet ID for the `ccli` by typing the ID listed for the fleet component. For example, `go 8`.
+5. Specify the fleet ID for `ccli` by typing the ID listed for the fleet component. For example, `go 8`.
 6. Run the `debug remoteaccess enable` command to connect by using SSH to the wanted fleet component.
 7. Exit `ccli` and connect by using SSH to the IP address of the SSH-enabled fleet component.
 8. Continue to troubleshoot.
-9. Return to the `ccli` and disable the `ssh` service for the component.
-10. If necessary, use the `hc` ccli command to run a health check on the components.
+9. Return to `ccli` and disable the `ssh` service for the component.
+10. If necessary, use the `hc ccli` command to run a health check on the components.
 
 ## Destination hardware compatibility issues
 {: #hcxclient-troubleshooting-hw-compatibility}
 
-vMotion migration can be an issue when the client source side is of newer hardware version and vSphere release than the cloud. Since replication-based migration copies data to a newly built virtual machine (VM) on the destination side, changing the migration type to “Bulk Migration” allows the migration to succeed in most cases.
+vMotion migration can be an issue when the client source side is of a newer hardware version and vSphere release than the cloud. Since replication-based migration copies data to a newly built virtual machine (VM) on the destination side, changing the migration type to “Bulk Migration” allows the migration to succeed in most cases.
 
 ## Stretched L2 Concentrator issues
 {: #hcxclient-troubleshooting-stretched-l2}

@@ -4,7 +4,7 @@ copyright:
 
   years:  2024
 
-lastupdated: "2024-06-05"
+lastupdated: "2024-06-11"
 
 subcollection: vmwaresolutions
 
@@ -23,7 +23,7 @@ This pattern assumes that Veeam is deployed by following the guidance for [conso
 ## Replication connectivity over private network
 {: #arch-pattern-vcf-veeam-xconnectivity-private}
 
-When replicating over a private network, the {{site.data.keyword.vcf-vpc}} instance needs to connect to on-premises or Classic VMware® and Veeam deployments. The connectivity can be established by using Transit Gateways or Direct Link.  
+When you replicate over a private network, the {{site.data.keyword.vcf-vpc}} instance needs to connect to on-premises or Classic VMware® and Veeam deployments. The connectivity can be established by using Transit Gateways or Direct Link.  
 
 The following diagram introduces the high-level steps to configure and deploy this connectivity type.
 
@@ -39,7 +39,7 @@ This architecture pattern deployment is summarized as follows:
 ## Replication connectivity over the internet
 {: #arch-pattern-vcf-veeam-xconnectivity-public-internet}
 
-When replicating over a public network, the {{site.data.keyword.vcf-vpc}} instance needs to connect to on-premises VMware and Veeam deployments. 
+When you replicate over a public network, the {{site.data.keyword.vcf-vpc}} instance needs to connect to on-premises VMware and Veeam deployments. 
 
 Two alternative patterns are introduced for this connectivity.
 
@@ -62,7 +62,7 @@ This architecture pattern deployment is summarized as follows:
 
 1. Create a VPN endpoint in the Tier 0 gateway by using one of the floating IP addresses provisioned for the Tier 0 HA public VIP.
 1. Establish an IPsec VPN between {{site.data.keyword.vpc_short}} and your on-premises networks. You can use either policy-based or route-based tunnels.
-1. With policy-based VPN tunnels, ensure that at least the management and the management subnets of VI workload domains are included in the local networks. With route-based tunnels, use BGP or create static routes in Tier 0 gateway to the on-premises networks and ensure that the on-premises networks have a route to at least to tthe management and the management subnets of VI workload domains.
+1. With policy-based VPN tunnels, ensure that at least the management and the management subnets of VI workload domains are included in the local networks. With route-based tunnels, use BGP or create static routes in Tier 0 gateway to the on-premises networks and ensure that the on-premises networks have a route to at least to the management and the management subnets of VI workload domains.
 1. Create a VPC route to the on-premises networks by using Tier 0's private HA VIP as the next-hop. This route is required for the Veeam components in the management subnet to reach the on-premises network.
 1. Configure Veeam replication between {{site.data.keyword.cloud_notm}} and on-premises proxies by following the Veeam documentation and best practices.
 

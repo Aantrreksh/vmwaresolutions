@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2024
 
-lastupdated: "2024-04-26"
+lastupdated: "2024-05-22"
 
 keywords: vmware solutions shared, get started shared, tech specs shared
 
@@ -56,7 +56,7 @@ The following graphic depicts the high-level architecture and components of {{si
 
 This layer represents the management interface. VMware Cloud Director provides role-based access to a web-based tenant portal. The portal allows the members of an organization to interact with the organization's resources to create and work with vApps and virtual machines (VMs).
 
-The supported version of VMware Cloud Director is v10.4.1 and it supports up to virtual hardware version 19.
+The supported version of VMware Cloud Director is v10.5.1 and it supports up to virtual hardware version 19.
 
 ### Organization
 {: #shared_overview-org}
@@ -196,7 +196,7 @@ Encryption-enabled storage policies are available to all Organization virtual da
 * 0.25 IOPS/GB - Encrypted. Storage tier with a maximum throughput of 0.25 IOPS/GB.
 * vSAN - Encrypted. No IOPS limitation.
 
-For more information about the VM encryption limitations for VMware Cloud Director 10.4, see [Enabling VM encryption on storage policies of an Organization virtual data center](https://docs.vmware.com/en/VMware-Cloud-Director/10.4/VMware-Cloud-Director-Service-Provider-Admin-Portal-Guide/GUID-80F58C1D-A97E-43FE-8E41-E9242A1D2332.html){: external}.
+For more information about the VM encryption limitations for VMware Cloud Director 10.5, see [Enabling VM encryption on storage policies of an Organization virtual data center](https://docs.vmware.com/en/VMware-Cloud-Director/10.5/VMware-Cloud-Director-Service-Provider-Admin-Guide/GUID-80F58C1D-A97E-43FE-8E41-E9242A1D2332.html){: external}.
 
 The encryption storage policies do not currently work with VM customizations. To resolve this issue, you can use encryption storage policies after a VM is deployed and customized by using the unencrypted storage policies. For more information, see [Changing the general properties of a virtual machine](/docs/vmwaresolutions?topic=vmwaresolutions-shared_vcd-ops-guide#shared_vcd-ops-guide-change-properties).
 {: important}
@@ -235,5 +235,5 @@ to {{site.data.keyword.vmwaresolutions_short}} service instances. For more infor
 * [Requirements for {{site.data.keyword.vm-shared}}](/docs/vmwaresolutions?topic=vmwaresolutions-shared_planning)
 * [Ordering virtual data centers](/docs/vmwaresolutions?topic=vmwaresolutions-shared_ordering)
 * [Operating {{site.data.keyword.vm-shared}}](/docs/vmwaresolutions?topic=vmwaresolutions-shared_vcd-ops-guide)
-* [VMware Cloud Director](https://docs.vmware.com/en/VMware-Cloud-Director/10.4/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-74C9E10D-9197-43B0-B469-126FFBCB5121.html){: external}
+* [VMware Cloud Director](https://docs.vmware.com/en/VMware-Cloud-Director/10.5/VMware-Cloud-Director-Tenant-Guide/GUID-74C9E10D-9197-43B0-B469-126FFBCB5121.html){: external}
 * [Troubleshooting NSX Edge](https://docs.vmware.com/en/VMware-NSX-Data-Center-for-vSphere/6.4/com.vmware.nsx.troubleshooting.doc/GUID-E6CD6FAA-3DA7-4AD7-9577-EE121AA7E1E6.html){: external}

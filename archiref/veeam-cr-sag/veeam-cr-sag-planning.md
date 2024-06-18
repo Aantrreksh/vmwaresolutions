@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2024
 
-lastupdated: "2024-06-05"
+lastupdated: "2024-06-14"
 
 subcollection: vmwaresolutions
 
@@ -55,7 +55,7 @@ Define the following parameters:
 | `as_hostname` | The required automation server hostname. |
 | `ansible_ip` | The IP address of the automation server. |
 | `lhbr_hostname` | The required Linux® hardened repository server hostname. |
-| `sa_veeam_cyber_admin_password` | A complex password used for the Veeam service account `sa-veeam-cyber-admin` account. |
+| `sa_veeam_cyber_admin_password` | A complex password is used for the Veeam service account `sa-veeam-cyber-admin` account. |
 | `your_username` | A username for the account on the automation server so that you can SSH to the server. |
 | `timezone` | The time zone to be configured in the Linux hardened repository. For more information, see the [time zone catalog](http://manpages.ubuntu.com/manpages/focal/man3/DateTime::TimeZone::Catalog.3pm.html){: external}. |
 | `lhbr_root_password` | This password is the {{site.data.keyword.cloud_notm}} supplied initial root password that is provided after provisioning of the Linux bare metal server. It is used to initially connect to the server for configuration and stored in the Ansible® vault file. |
@@ -73,7 +73,7 @@ The following information is needed for the isolated recovery environment planni
 |-----------|-------------|
 | `<public_key>` | A public key for vSRX user. |
 | `<vSRX_private_ip>` | The private IP of the vSRX that is reachable from the automation server. |
-| `<proxy_1_ip>` | The IP address of the Veeam cyber-proxies in the production environment. Multiple proxies are possible. |
+| `<proxy_1_ip>` | The IP address of the Veeam cyberproxies in the production environment. Multiple proxies are possible. |
 | `<lhbr_ip>` | The IP address of the Linux hardened repository server. |
 | `<vcsa_fqdn>` | The FQDN or IP address of the vCenter appliance in the production environment. |
 | `<vcsa_user>` | The username of the account in vCenter appliance in the production environment. |

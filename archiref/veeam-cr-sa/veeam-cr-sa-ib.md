@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2024
 
-lastupdated: "2024-06-05"
+lastupdated: "2024-06-13"
 
 subcollection: vmwaresolutions
 
@@ -24,9 +24,9 @@ The solution architecture is enabled by the following key technologies:
    * Veeam vPower NFS service enables a virtual machine (VM) to be started and run directly from the backup file that is hosted in the backup repository.
    * Veeam Instant Restore enables a VM to be started directly from the backup files. Veeam vPower NFS service is used to access the backup files.
    * The Veeam VM Recovery with the restore to new location option, enables a copy of the VM to be started and connected to an isolated network. The backup file is converted to VMDK files and placed in the designated data store.
-   * Veeam Secure Restore is only available for Microsoft® Windows® VMs. It is an extra option in the VM Recovery workflow that enables the VM to be scanned by antivirus software before you restore the VM. The VMs disks are connected to a mount server and then the antivirus software on the mount server that is used to scan files from the mounted disks.
+   * Veeam Secure Restore is only available for Microsoft® Windows® VMs. It is an extra option in the VM Recovery workflow that enables the VM to be scanned by antivirus software before you restore the VM. The VM disks are connected to a mount server and then the antivirus software on the mount server that is used to scan files from the mounted disks.
    * VMware NSX-T™ overlay segments allow the creation of isolated segments onto which copies of the VMs can be attached and isolated from the production VMs.
-   * NSX-T distributed firewall provides the required isolation so that only required cybertoolsets can access the copies of the VMs.
+   * The NSX-T distributed firewall provides the required isolation so that only the required cybertoolsets can access the copies of the VMs.
    * Source Network Address Translation (SNAT) and Destination Network Address Translation (DNAT) are used to allow IP access between the cybertoolsets and the copies of the VMs.
 
    For more information, see [Veeam technologies used in the sandbox](/docs/vmwaresolutions?topic=vmwaresolutions-veeam-cr-sandboxveeam).
@@ -48,13 +48,13 @@ The following components are prerequisites for the immutable backup solution arc
 * Backup Admins are your existing team responsible for the production backup.
 * IaaS Admins are your existing team responsible for the maintenance of the infrastructure.
 
-Your existing {{site.data.keyword.vcf-auto-short}} instance might differ from the previous due to a number of reasons, including:
+Your existing {{site.data.keyword.vcf-auto-short}} instance might differ from the previous list due to a number of reasons, including:
 
 * You have a {{site.data.keyword.vcf-auto-short}} instance with vSAN. This solution architecture does not dictate the type of vSphere data store.
 * You have extra optional services, such as Caveonix, VMware Aria Operations Manager, and VMware Aria Operations™ for Logs.
-* You select a different option for the Veeam service as three options are available. This solution architecture does not dictate the VM option for the Veeam service. VSI or bare metal options are also available. For more information, see [Veeam Backup and Replication 12 overview](/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview).
-* You expand your Veeam service from a simple deployment "all-in-one" to an advanced deployment by deploying extra Veeam components on different servers.
-* You select a different ADDNS option. This solution architecture does not dictate the type of option, either two VMs or a single VSI options are available. For more information, see [Domain Name System Configuration](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-network-interface-settings#vc_orderinginstance-dns-config).
+* You selected a different option for the Veeam service as three options are available. This solution architecture does not dictate the VM option for the Veeam service. VSI or bare metal options are also available. For more information, see [Veeam Backup and Replication 12 overview](/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview).
+* You expand your Veeam service from a simple all-in-one deployment to an advanced deployment by deploying extra Veeam components on different servers.
+* You select a different ADDNS option. This solution architecture does not dictate the type of option: two VMs or a single VSI options are available. For more information, see [Domain Name System Configuration](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-network-interface-settings#vc_orderinginstance-dns-config).
 
 If you have a {{site.data.keyword.vcf-auto-short}} instance that is deployed with the Veeam service added and Veeam is version 12, then this is a suitable base topology for the immutable backup solution architecture. The immutable backup solution architecture consists of:
 

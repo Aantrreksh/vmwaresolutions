@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-06-05"
+lastupdated: "2024-06-14"
 
 subcollection: vmwaresolutions
 
@@ -34,7 +34,7 @@ Review the following best practice information:
 * If you installed any additional software from VMware Business Partners, consult the Business Partner documentation for compatibility and upgrade details.
 * Back up the NSX Manager before you start the upgrade process. See [Configure Backups](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.2/administration/GUID-E6181BF1-2CB7-4870-B508-BFAF5B47D702.html){: external}.
 * Disable automatic backups before you start the upgrade process.
-* Ensure that your host OS is supported for NSX Manager. If your ESXi host is unsupported, manually upgrade your ESXi host to the supported version. Review [Software BOM for {{site.data.keyword.vcf-auto-short}} instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_bom#vc_bom-software) for currently supported software levels on {{site.data.keyword.vcf-auto}}  instances.
+* Ensure that your host OS is supported for NSX Manager. If your ESXi host is unsupported, manually upgrade your ESXi host to the supported version. Review [Software BOM for {{site.data.keyword.vcf-auto-short}} instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_bom#vc_bom-software) for currently supported software levels on {{site.data.keyword.vcf-auto}} instances.
 * Stop any active SSH sessions or local shell scripts that might be running on the NSX Manager or the NSX Edge nodes.
 * Updating the vSphere hypervisor can be done from the ESXi CLI, vSphere Update Manager, or starting with NSX-T Data Center 3.1.1 and vSphere 7.0 U1, for vSphere Lifecycle Manager-enabled clusters, you can upgrade your ESXi host along with NSX-T Data Center, by using vSphere Lifecycle Manager, see [Upgrade a vSphere Lifecycle Manager-enabled Cluster](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.2/upgrade/GUID-1465BFDD-3611-49C9-962D-714F640319E5.html){: external}.
 * Verify that the vSAN environment is in good health. See [Monitoring vSAN Health](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.vsan-monitoring.doc/GUID-68CDE86F-C5A7-4B3E-9DA8-BD8165D3A9AF.html){: external}.

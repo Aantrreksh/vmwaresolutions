@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-04-12"
+lastupdated: "2024-06-03"
 
 keywords: additional cluster, optional cluster, workload cluster, separate cluster, gateway cluster
 
@@ -34,6 +34,9 @@ You can also specify a new cluster name that meets the requirements listed in [C
 The configuration options for the separate workload cluster are similar to the consolidated cluster, with the exception of the number of bare metal servers that you can order:
 
 {{site.data.content.number-of-baremetal-servers-wkld}}
+
+For additional workload clusters, vSAN is available only with vSphere 7 and NFS is available with vSphere 7 and 8 version.
+{: important}
 
 ### Reuse VLANs from the consolidated cluster
 {: #vc_orderinginstance-addl-clusters-wkld-reuse-vlans}

@@ -4,7 +4,7 @@ copyright:
 
   years: 2023, 2024
 
-lastupdated: "2024-01-04"
+lastupdated: "2024-06-13"
 
 keywords: gateway servers
 
@@ -26,7 +26,7 @@ A gateway server is required when a backup repository cannot host Veeam® Data M
 
 During service deployment, the automation deploys a gateway server onto the Veeam Backup and Replication server. If required more gateway servers can be added.
 
-1. To configure a gateway server, add a virtual machine (VM), virtual server instance or bare metal server to the backup infrastructure. This process can be done with the help of the **New Windows Server** or **New Linux Server wizard**.
+1. To configure a gateway server, add a virtual machine (VM), virtual server instance, or bare metal server to the backup infrastructure. This process can be done with the help of the **New Windows Server** or **New Linux Server wizard**.
 2. Use the **New** or **Edit** option in the backup repository wizard and define the gateway server settings.
 3. Select the **gateway server** or instruct Veeam Backup and Replication to select it automatically.
 

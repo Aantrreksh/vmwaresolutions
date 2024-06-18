@@ -4,7 +4,7 @@ copyright:
 
   years:  2023
 
-lastupdated: "2023-04-18"
+lastupdated: "2023-06-13"
 
 subcollection: vmwaresolutions
 
@@ -23,7 +23,7 @@ The following Veeam® technologies are discussed as:
 ## Veeam vPower NFS service
 {: #veeam-cr-sandboxveeam-vpower}
 
-The virtual machines (VMs) that start with Instant VM Recovery, the vPower NFS service is used as a conduit to the backup files. The ESXi host uses NFS to connect to the service. vPower NFS service runs as a Windows® based service and runs on the Veeam backup server by default. However, it can be added to any Veeam managed Windows server. It cannot run on a Linux® server. For Linux-based repositories, it is recommended to configure vPower NFS on a managed Windows system as close as possible to the Linux repository.
+The virtual machines (VMs) that start with Instant VM Recovery, the vPower NFS service is used as a conduit to the backup files. The ESXi host uses NFS to connect to the service. vPower NFS service runs as a Windows®-based service and runs on the Veeam backup server by default. However, it can be added to any Veeam managed Windows server. It cannot run on a Linux® server. For Linux-based repositories, it is recommended to configure vPower NFS on a managed Windows system as close as possible to the Linux repository.
 
 The vPower NFS server is bound to a backup repository and the folder location is defined per server and can be changed through the mount server settings.
 
@@ -44,13 +44,13 @@ The following diagram shows the communication flow for the vPower NFS service.
 
 The Veeam data integration API allows access to the backup files by mounting the backup files to a target server. Use cases include malware scans and data mining. 
 
-The Veeam Data Integration API is a set of Veeam PowerShell cmdlets that allows access backup files as a mounted folder on a target server. This action enables an application to access backup files in a read-only manner.
+The Veeam Data Integration API is a set of Veeam PowerShell cmdlets that allows access to backup files as a mounted folder on a target server. This action enables an application to access backup files in a read-only manner.
 
 The following diagram shows the communication flow for when backup files are published to a Linux target server. 
 
 ![Publishing backup files ](../../images/veeam-cr-sa-lhbr-pub.svg){: caption="Figure 2. Publishing backup files" caption-side="bottom"}
 
-By publishing the backup files, the backup files are displayed in the target server file system. The following example shows the backup of the VM named `centos01` mounted on `/temp`:
+By publishing the backup files, the backup files are displayed in the target server file system. The following example shows the backup of the VM named `centos01` that is mounted on `/temp`:
 
 ```text
 lsblk

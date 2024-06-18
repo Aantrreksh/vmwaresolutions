@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2024
 
-lastupdated: "2024-01-12"
+lastupdated: "2024-06-12"
 
 subcollection: vmwaresolutions
 
@@ -20,7 +20,7 @@ subcollection: vmwaresolutions
 {: #openshift-runbook-runbook-dns-creds}
 
 1. Log in to [{{site.data.keyword.cloud}}](https://cloud.ibm.com/login){: external}.
-2. From left menu, select **VMware**.
+2. From the left menu, select **VMware**.
 3. From the {{site.data.keyword.vmwaresolutions_short}} console, click **Resources** > **vCenter Server** from the left navigation pane.
 4. Select your deployed instance.
 5. Click the **Access information** tab and collect the AD/DNS IP and remote desktop credentials.
@@ -34,14 +34,14 @@ subcollection: vmwaresolutions
 3. From the Windows® RDP Session, open a PowerShell command window.
 4. Run commands to create the DNS artifacts.
    - Reverse Lookup Zones
-   - Create DNS A Records, with PTR
+   - Create DNS A Records with PTR
    - Create DNS Service record for `etcd`
    - Create DNS SRV record for `etcd`
 
 ### Notes about DNS records
 {: #openshift-runbook-runbook-dns-records-notes}
 
-* The `Add-DnsServerPrimaryZone-networkid` cmdlet creates only classful reverse lookup zones. Therefore, if you specify a prefix longer than `/24`, then the cmdlet creates a `/32` reverse lookup zone. Therefore, as a workaround in the script use `/24` instead of a `/26`. You also need to modify the private portable subnet to match classful `/24` network in the commands.
+* The `Add-DnsServerPrimaryZone-networkid` cmdlet creates only classful reverse lookup zones. Therefore, if you specify a prefix longer than `/24`, then the cmdlet creates a `/32` reverse lookup zone. Therefore, as a workaround in the script use `/24` instead of a `/26`. You also need to modify the private portable subnet to match the classful `/24` network in the commands.
 * Do not create CNAME entries because the {{site.data.keyword.redhat_openshift_full}} certificates are keyed to the DNS returning the IP address only and not a referral to the base hostname.
    Use the following format for DNS naming standards:
    `HostName.ClusterName.SubDomain.DomainName`
@@ -68,13 +68,13 @@ The following table is for an example deployment. Use your own values.
 | compute-2 Host | compute-2.ocp.dallas.ibm.local | 192.168.133.15 |
 | Application wildcard DNS (Load Balancer) | *.apps.ocp.dallas.ibm.local | 10.208.242.131 |
 | Kubernetes API URL (Load Balancer) | api.ocp.dallas.ibm.local | 10.208.242.132 |
-| Kubernetes API-INT (Internal) URL (Load Balancer) | api-int.ocp.dallas.ibm.local | 10.208.242.132 |
-| etcd Node0 | etcd-0.ocp.dallas.ibm.local | 192.168.133.10 |
-| etcd Node1 | etcd-1.ocp.dallas.ibm.local | 192.168.133.11 |
-| etcd Node2 | etcd-2.ocp.dallas.ibm.local | 192.168.133.12 |
-| etcd Service Record Node 0 | _etcd-server-ssl._tcp.ocp.dallas.ibm.local | 192.168.133.10 |
-| etcd Service Record Node 1 | _etcd-server-ssl._tcp.ocp.dallas.ibm.local | 192.168.133.11 |
-| etcd Service Record Node 2 | _etcd-server-ssl._tcp.ocp.dallas.ibm.local | 192.168.133.12 |
+| Kubernetes API-INT (Internal) URL (Load Balancer) | `api-int.ocp.dallas.ibm.local` | 10.208.242.132 |
+| `etcd Node0` | etcd-0.ocp.dallas.ibm.local | 192.168.133.10 |
+| `etcd Node1` | etcd-1.ocp.dallas.ibm.local | 192.168.133.11 |
+| `etcd Node2` | etcd-2.ocp.dallas.ibm.local | 192.168.133.12 |
+| `etcd Service Record Node 0` | _etcd-server-ssl._tcp.ocp.dallas.ibm.local | 192.168.133.10 |
+| `etcd Service Record Node 1` | _etcd-server-ssl._tcp.ocp.dallas.ibm.local | 192.168.133.11 |
+| `etcd Service Record Node 2` | _etcd-server-ssl._tcp.ocp.dallas.ibm.local | 192.168.133.12 |
 {: caption="Table 1. DNS records for OpenShift implementation" caption-side="bottom"}
 
 ## DNS commands

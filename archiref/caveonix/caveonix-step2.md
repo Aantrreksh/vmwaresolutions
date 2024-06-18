@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-04-26"
+lastupdated: "2024-06-11"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # Step 2 - Virtual machine deployment
 {: #caveonix-step2}
 
-The {{site.data.keyword.vmwaresolutions_full}} automation requests an additional portable private IP subnet and the all-in-one virtual machine to be configured with an IP address from this subnet.
+The {{site.data.keyword.vmwaresolutions_full}} automation requests an extra portable private IP subnet and the all-in-one virtual machine to be configured with an IP address from this subnet.
 
 Therefore, the Caveonix RiskForesight™ components can complete the following operations:
 * Connect to vCenter and NSX Manager through the BCR.

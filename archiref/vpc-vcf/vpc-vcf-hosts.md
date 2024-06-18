@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-06-04"
+lastupdated: "2024-06-14"
 
 subcollection: vmwaresolutions
 
@@ -32,17 +32,17 @@ In {{site.data.keyword.vpc_short}}, you can create two types of network interfac
 * **PCI (Peripheral Component Interconnect) interface** represents a physical network interface. It is possible to include up to 8 PCI interfaces on a bare metal server.
 * **VLAN (Virtual LAN) interface** represents an interface that is associated with a PCI interface through the VLAN ID. The VLAN interface automatically tags traffic that is routed through it with the VLAN ID. Inbound traffic that is tagged with a VLAN ID is directed to the appropriate VLAN interface.
 
-PCI interface in a {{site.data.keyword.cloud_notm}} bare metal server is a physical PCI device that can be created or deleted only when the {{site.data.keyword.cloud_notm}} bare metal server is stopped or during initial bare metal server provisioning. PCI interface has an `allowed_VLANs` property, which controls the VLANs that use the PCI interface. VLAN interface is a virtual device, which is used through a PCI device that has the VLAN in its array of `allowed_VLANs`.
+The PCI interface in a {{site.data.keyword.cloud_notm}} bare metal server is a physical PCI device that can be created or deleted only when the {{site.data.keyword.cloud_notm}} bare metal server is stopped or during initial bare metal server provisioning. The PCI interface has an `allowed_VLANs` property, which controls the VLANs that use the PCI interface. VLAN interface is a virtual device, which is used through a PCI device that has the VLAN in its array of `allowed_VLANs`.
 
-In VMware Cloud Foundation deployments, the bare metal servers in {{site.data.keyword.vpc_short}} use two PCI interfaces. It is important to note, that this does not increase the high availability with SmartNICs but this is a VMware Cloud Foundation prerequisite and the capability that is used by Cloud Builder and SDDC manager to handle deployment automation.
+In VMware Cloud Foundation deployments, the bare metal servers in {{site.data.keyword.vpc_short}} use two PCI interfaces. This does not increase the high availability with SmartNICs but is a VMware Cloud Foundation prerequisite and the capability that is used by Cloud Builder and SDDC manager to handle deployment automation.
 {: note}
 
 The allowed VLANs list must be updated separately for all PCI interfaces and all hosts if you use new VLAN IDs in your solution.
 {: note}
 
-VLAN interfaces are created for every virtual machine (VM) or VMware Cloud Foundation appliance, which needs to be attached to a VPC subnet. For example, VLAN interface that is created for Cloud Builder or VMware vCenter Server® can use VLAN tag `1611` and this VLAN interface can be provisioned to a management subnet in VPC. When you deploy a vCenter virtual appliance VM, it is attached to vSphere vSwitch and uses a port group that is defined with VLAN tag `1611`. When the vCenter uses the IP of the vLAN interface as provided by VPC, it is logically attached to a management subnet in VPC just like any other VPC Virtual Server.
+VLAN interfaces are created for every virtual machine (VM) or VMware Cloud Foundation appliance, which needs to be attached to a VPC subnet. For example, a VLAN interface that is created for Cloud Builder or VMware vCenter Server® can use VLAN tag `1611` and this VLAN interface can be provisioned to a management subnet in VPC. When you deploy a vCenter virtual appliance VM, it is attached to vSphere vSwitch and uses a port group that is defined with VLAN tag `1611`. When the vCenter uses the IP of the vLAN interface as provided by VPC, it is logically attached to a management subnet in VPC just like any other VPC Virtual Server.
 
-Every VLAN interface must use an IEEE 802.1q tag in the range 1-4094. It is important to understand that these VLAN tags have only local significance to the bare metal server, VPC subnet does not understand VLANs. You can see SmartNIC as a switch that handles this mapping between VLAN IDs and VPC subnets. VLAN tags are used internally inside the bare metal server to isolate and separate the traffic at layer 2 and it is used as the mechanism to isolate VPC subnet traffic inside the host. For example, in Distributed Virtual Switches different port groups are created to match used VLAN IDs. Each VLAN interface can attach to only one subnet, but you can create multiple VLAN interfaces attached to different subnets and use different VLAN IDs for each. In this design, the VLAN analogy is used and only a single VLAN ID is used for a single VPC subnet.
+Every VLAN interface must use an IEEE 802.1q tag in the range 1-4094. It is important to understand that these VLAN tags have only local significance to the bare metal server, VPC subnet does not understand VLANs. You can see SmartNIC as a switch that handles this mapping between VLAN IDs and VPC subnets. VLAN tags are used internally inside the bare metal server to isolate and separate the traffic at layer 2 and it is used as the mechanism to isolate VPC subnet traffic inside the host. For example, in Distributed Virtual Switches different port groups are created to match used VLAN IDs. Each VLAN interface can attach to only one subnet, but you can create multiple VLAN interfaces that are attached to different subnets and use different VLAN IDs for each. In this design, the VLAN analogy is used and only a single VLAN ID is used for a single VPC subnet.
 
 VLAN interfaces can be set to be `floatable`. This action is important with VMware workloads that require vMotion between the {{site.data.keyword.cloud_notm}} bare metal server. This capability is used with VMware management workloads, such as vCenter or NSX managers to allow them to be moved between hosts for High Availability (HA) or Distributed Resource Scheduler (DRS).
 

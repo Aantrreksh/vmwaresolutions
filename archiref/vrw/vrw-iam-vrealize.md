@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2020, 2023
+  years:  2020, 2024
 
-lastupdated: "2023-09-11"
+lastupdated: "2024-06-14"
 
 subcollection: vmwaresolutions
 
@@ -25,9 +25,9 @@ The operational tooling consists of the following components:
 * VMware Aria Operations™ for Logs (formerly known as VMware vRealize® Log Insight™) - Objects in the VMware platform have been configured to send their logging events to VMware Aria Operations for Logs to enable a centralized log management function.
 
 The following main principles or requirements for identity and access management to the operational tooling apply:
-* The principle of least privilege to be used so that a user account has assigned only the privileges that are essential to perform the intended function.
+* The principle of least privilege to be used so that a user account is assigned only the privileges that are essential to perform the intended function.
 * SaaS provider operations have full access to the operational tooling.
-* Auditor has read-only access to the operational tooling.
+* `Auditor` has read-only access to the operational tooling.
 * IC4V Active Directory (AD) is used to host accounts and define roles.
 
 ## Accounts
