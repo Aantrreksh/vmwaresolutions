@@ -55,7 +55,7 @@ The following components are in the Veeam 9.5u4b service:
 As part of the Veeam service installation and configuration, the following repositories are created:
 * For the Veeam configuration backup files - a repository named `IC4V Default Config Backup Repository`. The path to the folder where the Veeam backups are stored is `<Drive>:\ConfigBackup\`.
 * For scale-out, a repository named `IC4V Scale-Out Repository`. For more information, see [Adding a scale-out repository](/docs/vmwaresolutions?topic=vmwaresolutions-icos_ordering#icos_ordering-scale-repo).
-* For the virtual machine (VM) backups - a repository named `IC4V Default VM Backup Repository`. The path to the folder where the VM backups are stored is `<Drive>:\VMBackup\`. This repository is added as an extent to `IC4V Scale-Out repository.
+* For the virtual machine (VM) backups - a repository named `IC4V Default VM Backup Repository`. The path to the folder where the VM backups are stored is `<Drive>:\VMBackup\`. This repository is added as an extent to `IC4V Scale-Out` repository.
 
 ### Networking for Veeam 9.5u4b
 {: #veeam_considerations-specs-networking}

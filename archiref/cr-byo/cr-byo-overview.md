@@ -17,7 +17,7 @@ subcollection: vmwaresolutions
 
 Cyber recovery is one of five functions that are described in the [NIST Cybersecurity framework](https://www.nist.gov/cyberframework){: external}. It is defined as the development and implementation of appropriate activities to maintain plans for resilience and to restore any capabilities or services that are impaired due to a cybersecurity incident. The other four functions are identify, protect, detect, and respond.
 
-This documentation describes a high-level architecture that can be used to assist with your custom cyber-recovery requirements. The solution architecture uses a {{site.data.keyword.vmwaresolutions_full}} vCenter Server®, and your choice of bring your own data mover with immutable data storage.
+This documentation describes a high-level architecture that can be used to assist with your custom cyber-recovery requirements. The solution architecture uses a {{site.data.keyword.vcf-auto}} instance, and your choice of bring your own data mover with immutable data storage.
 
 This solution is suitable if you want to extend your own backup solution with an isolated recovery environment while you minimize costs. 
 
@@ -25,10 +25,10 @@ This solution is suitable if you want to extend your own backup solution with an
 
 Key elements of the solution architecture include:
 
-* A vCenter Server instance used for cyber-recovery tasks only, deployed in an {{site.data.keyword.cloud_notm}} account restricted to cyber-recovery activities. For more information about vCenter Server instances, see [Overview of VMware Solutions](/docs/vmwaresolutions?topic=vmwaresolutions-solution_overview).
-* The vCenter Server instance can use VMware vSAN or use NFS datastores, see [Physical storage design](/docs/vmwaresolutions?topic=vmwaresolutions-design_physicalinfrastructure#design_physicalinfrastructure-storage-design).
-* The vCenter Server instance does not host production or disaster recovery workloads.
-* The vCenter Server instance includes a gateway cluster to host your choice of one of the following to protect vCenter Server instance networks. It also provides a network air gap between the production environment and the isolated recovery environment:
+* A {{site.data.keyword.vcf-auto-short}} instance used for cyber-recovery tasks only, deployed in an {{site.data.keyword.cloud_notm}} account restricted to cyber-recovery activities. For more information, see [Overview of VMware Solutions](/docs/vmwaresolutions?topic=vmwaresolutions-solution_overview).
+* The {{site.data.keyword.vcf-auto-short}} instance can use VMware vSAN or use NFS datastores, see [Physical storage design](/docs/vmwaresolutions?topic=vmwaresolutions-design_physicalinfrastructure#design_physicalinfrastructure-storage-design).
+* The {{site.data.keyword.vcf-auto-short}} instance does not host production or disaster recovery workloads.
+* The {{site.data.keyword.vcf-auto-short}} instance includes a gateway cluster to host your choice of one of the following appliances to protect the {{site.data.keyword.vcf-auto-short}} instance networks. It also provides a network air gap between the production environment and the isolated recovery environment:
   
    * Juniper® vSRX appliances
    * FortiGate® Security Appliance
@@ -58,7 +58,7 @@ Key elements of the solution architecture include:
 
 Consider using a separate {{site.data.keyword.cloud}} account to deploy your cyber-recovery instance into. This process promotes separation of duties between ownership of any other production or disaster recovery solution that you might host in {{site.data.keyword.cloud_notm}}.
 
-To create your custom cyber-recovery solution based on a {{site.data.keyword.vcf-auto}} instance, follow the [procedure to order vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-procedure):
+To create your custom cyber-recovery solution based on a {{site.data.keyword.vcf-auto}} instance, follow the [procedure to order {{site.data.keyword.vcf-auto-short}} instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-procedure):
 
 1. In Step 4, select **Primary**.
 2. In Step 7, order a gateway cluster with your preferred firewall option:
@@ -67,7 +67,7 @@ To create your custom cyber-recovery solution based on a {{site.data.keyword.vcf
     * If you select Bring Your Own gateway appliance, see the installation instructions that are provided by your firewall vendor.
     * If you select FortiGate Security Appliance, see [Create FortiGate Security Appliance 10 Gbps](https://cloud.ibm.com/netsec/firewalls/multi-vlan/provision#create).
 
-After your vCenter Server instance is provisioned:
+After your {{site.data.keyword.vcf-auto-short}} instance is provisioned:
 
 1. Configure your firewalls by using the vendor’s documentation as a guide and the following information:
    * [{{site.data.keyword.cloud_notm}} IP ranges](/docs/cloud-infrastructure?topic=cloud-infrastructure-ibm-cloud-ip-ranges)
@@ -83,8 +83,8 @@ After your vCenter Server instance is provisioned:
 
 Review the following information about network connectivity for your cyber-recover instance:
 
-* [Architecture pattern for using Transit Gateway with a vCenter Server with NSX-T instance](/docs/vmwaresolutions?topic=vmwaresolutions-arch-pattern-nsx-t-transit-gw)
-* [Architecture pattern for using IPsec over Direct Link with a vCenter Server with NSX-T instance](/docs/vmwaresolutions?topic=vmwaresolutions-arch-pattern-nsx-t-direct-link-ipsec)
+* [Architecture pattern for using Transit Gateway with a {{site.data.keyword.vcf-auto-short}} instance](/docs/vmwaresolutions?topic=vmwaresolutions-arch-pattern-nsx-t-transit-gw)
+* [Architecture pattern for using IPsec over Direct Link with a {{site.data.keyword.vcf-auto-short}} instance](/docs/vmwaresolutions?topic=vmwaresolutions-arch-pattern-nsx-t-direct-link-ipsec)
 * [Architecture pattern for using Direct Link with NSX-T edge cluster in colocation](/docs/vmwaresolutions?topic=vmwaresolutions-arch-pattern-direct-link-edge)
 * [Architecture pattern for using Direct Link with NSX-T and EVPN](/docs/vmwaresolutions?topic=vmwaresolutions-arch-pattern-direct-link-evpn)
 * [Virtual Private Network (VPN)](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.2/administration/GUID-A8B113EC-3D53-41A5-919E-78F1A3705F58.html){: external}

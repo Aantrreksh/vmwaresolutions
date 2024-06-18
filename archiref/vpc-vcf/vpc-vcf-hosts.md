@@ -23,7 +23,7 @@ The following information provides an overview of how {{site.data.keyword.cloud_
 
 The {{site.data.keyword.cloud_notm}} bare metal server in {{site.data.keyword.vpc_short}} uses SmartNICs for VPC network capabilities. Each physical host has a redundant 100 Gb network connection for network access to {{site.data.keyword.vpc_short}}. The high availability for physical network connectivity is handled by {{site.data.keyword.cloud_notm}}, and you do not have to configure anything special. All network interfaces are backed by two redundant physical ports that are on the top-of-rack (TORs) switch. {{site.data.keyword.cloud_notm}} manages the aggregation, and you do not have to create multiple PCI interfaces for redundancy, for example. The 100 Gb bandwidth is shared by the network interfaces that are configured and currently active on the bare metal server.
 
-A network interface in a {{site.data.keyword.cloud_notm}} bare metal server is an abstract representation of a network interface card, and a network interface connects a {{site.data.keyword.cloud_notm}} bare metal server to a VPC subnet.
+A network interface in an {{site.data.keyword.cloud_notm}} bare metal server is an abstract representation of a network interface card, and a network interface connects an {{site.data.keyword.cloud_notm}} bare metal server to a VPC subnet.
 
 ![{{site.data.keyword.cloud_notm}} bare metal server network interfaces](../../images/vcf-vpc-v2-bms-network-interfaces.svg "{{site.data.keyword.cloud_notm}} bare metal server network interfaces"){: caption="Figure 1. {{site.data.keyword.cloud_notm}} bare metal server network interfaces " caption-side="bottom"}
 
@@ -32,7 +32,7 @@ In {{site.data.keyword.vpc_short}}, you can create two types of network interfac
 * **PCI (Peripheral Component Interconnect) interface** represents a physical network interface. It is possible to include up to 8 PCI interfaces on a bare metal server.
 * **VLAN (Virtual LAN) interface** represents an interface that is associated with a PCI interface through the VLAN ID. The VLAN interface automatically tags traffic that is routed through it with the VLAN ID. Inbound traffic that is tagged with a VLAN ID is directed to the appropriate VLAN interface.
 
-The PCI interface in a {{site.data.keyword.cloud_notm}} bare metal server is a physical PCI device that can be created or deleted only when the {{site.data.keyword.cloud_notm}} bare metal server is stopped or during initial bare metal server provisioning. The PCI interface has an `allowed_VLANs` property, which controls the VLANs that use the PCI interface. VLAN interface is a virtual device, which is used through a PCI device that has the VLAN in its array of `allowed_VLANs`.
+The PCI interface in an {{site.data.keyword.cloud_notm}} bare metal server is a physical PCI device that can be created or deleted only when the {{site.data.keyword.cloud_notm}} bare metal server is stopped or during initial bare metal server provisioning. The PCI interface has an `allowed_VLANs` property, which controls the VLANs that use the PCI interface. VLAN interface is a virtual device, which is used through a PCI device that has the VLAN in its array of `allowed_VLANs`.
 
 In VMware Cloud Foundation deployments, the bare metal servers in {{site.data.keyword.vpc_short}} use two PCI interfaces. This does not increase the high availability with SmartNICs but is a VMware Cloud Foundation prerequisite and the capability that is used by Cloud Builder and SDDC manager to handle deployment automation.
 {: note}

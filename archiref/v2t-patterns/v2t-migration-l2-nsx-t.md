@@ -65,7 +65,7 @@ For more information, see [Ordering services for {{site.data.keyword.vcf-auto-sh
 ## Considerations for using NSX-T L2 bridge in migration
 {: #v2t-l2-nsx-t-considerations}
 
-A recommended practice is to use one NSX-T Edge node to extend one NSX-V Logical Switch. This Edge node must be a virtual appliance because the NSX-T Edge must be deployed on a {{site.data.keyword.cloud_notm}} bare metal server that is prepared for NSX-V.
+A recommended practice is to use one NSX-T Edge node to extend one NSX-V Logical Switch. This Edge node must be a virtual appliance because the NSX-T Edge must be deployed on an {{site.data.keyword.cloud_notm}} bare metal server that is prepared for NSX-V.
 
 The Edge node extends the VXLAN Logical Switch to the NSX-T GENEVE overlay segment. The Edge Services Gateways in the NSX-V environment serve as the default gateway for all north-south traffic from the workload VMs on the Logical Switch until disconnect the NSX-V Logical Switch from the Distributed Logical Router (DLR), and connect the NSX-T overlay segment to the Tier-0 or Tier-1 gateway. This switches the default gateway to the NSX-T Tier-0 or Tier-1 gateway, depending on the chosen NSX-T topology.
 

@@ -126,14 +126,14 @@ Complete the following steps to register the Red Hat VM with your RHEL activatio
 1. From the {{site.data.keyword.vmwaresolutions_short}} console, click the virtual data center name in the **{{site.data.keyword.vm-shared}}** virtual data center table.
 2. On the virtual data center details page, locate and make note of the **Red Hat activation key**.
 3. Run the following commands from the Red Hat VM.
-     1. ``rpm -ivh http://52.117.132.7/pub/katello-ca-consumer-latest.noarch.rpm``
-     2. ``uuid= `uuidgen` ``
-       Where the character `` ` `` used around uuidgen is the grave accent or backtick.
-     3. ``echo '{"dmi.system.uuid": "'$uuid'"}' > /etc/rhsm/facts/uuid_override.facts``
-     4. ``cat /etc/rhsm/facts/uuid_override.facts``
-       Ensure the contents of the uuid_override.facts contains a generated UUID.
-     5. ``subscription-manager register --org="customer" --activationkey="ACTIVATION_KEY" --force``
-       Where ``ACTIVATION_KEY`` is the Red Hat activation key that is on the virtual data center details page.
+     1. `rpm -ivh http://52.117.132.7/pub/katello-ca-consumer-latest.noarch.rpm`
+     2. `uuid = uuidgen`
+       Where the character ` used around uuidgen is the grave accent or backtick.
+     3. `echo '{"dmi.system.uuid": "'$uuid'"}' > /etc/rhsm/facts/uuid_override.facts`
+     4. `cat /etc/rhsm/facts/uuid_override.facts`
+       Ensure the contents of the `uuid_override.facts` contains a generated UUID.
+     5. `subscription-manager register --org="customer" --activationkey="ACTIVATION_KEY" --force`
+       Where `ACTIVATION_KEY` is the Red Hat activation key that is on the virtual data center details page.
 
 You can still use another RHEL Capsule Server or a satellite server if you already have an RHEL subscription outside of IBM. Charges for the RHEL license are incurred against RHEL VMs that are running in a virtual data center.
 {: note}

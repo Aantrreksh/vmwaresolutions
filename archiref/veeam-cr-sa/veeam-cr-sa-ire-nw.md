@@ -94,7 +94,7 @@ To enable cyberbackup of the production environment, the customer:
 To enable cyber-related tasks on the cyberbackups, such as scanning backup files for malware and recovering VMs from backups on isolated networks, the customer:
 
 * Creates a segment for their cybertoolsets, which include the malware scanners.
-* Creates a T1 named `Isolated-NW-T1` and links it to the workload T0. The `I`solated-NW-T1` is configured to advertise all NAT IPs only. This action stops the advertisement of connected segments and advertises only the NAT IP addresses of the segments.
+* Creates a T1 named `Isolated-NW-T1` and links it to the workload T0. `Isolated-NW-T1` is configured to advertise all NAT IP addresses only. This action stops the advertisement of connected segments and advertises only the NAT IP addresses of the segments.
 * Creates the following two distributed firewall groups:
    * Name: Cyber-Tools-Segments, Category: Segments, Members: cybertools
    * Name: Cyber-Isolated-Segments, Criteria: Segment Tag Equals Isolated-Segments, Scope: Cyber
