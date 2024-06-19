@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2024
 
-lastupdated: "2024-06-19"
+lastupdated: "2024-04-04"
 
 subcollection: vmwaresolutions
 
@@ -19,8 +19,6 @@ New deployments of Security and Compliance Readiness Bundle instances are no lon
 {: deprecated}
 
 Expand or contract the capacity of your Security and Compliance Readiness Bundle instance according to your business needs, by adding or deleting VMware ESXi servers or Network File System (NFS) storage.
-
-Testing publish content.
 
 The procedures to add or delete servers and storage for Security and Compliance Readiness Bundle instances are similar to procedures for {{site.data.keyword.vcf-auto}} instances. For more information, see the following topics:
 * [Adding ESXi servers to Automated instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservers)
