@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2024
-lastupdated: "2024-06-11"
+lastupdated: "2024-06-20"
 
 keywords: release notes, what's new in VMware Solutions, what is new, new features, VMware Solutions release notes, VMware Solutions
 
@@ -61,7 +61,7 @@ VMware Cloud Director upgrade for VMware Shared
 {: #vmwaresolutions-jun1424}
 {: release-note}
 
-VMware Cloud Foundation enhancements
+VMware Cloud Foundation for VPC enhancements
 :   The following features are now available:
 
    * **Server backup**: You can do regular backups of management components, such as SDDC Manager, VMware vCenter Server®, and NSX Manager. For more information, see [Management domain backup](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-ordering#vpc-vcf-ordering-mgmt-domain-backup).
@@ -157,7 +157,7 @@ End of Support for VMware Shared deployments
 {: #vmwaresolutions-mar1524}
 {: release-note}
 
-VMware Cloud Foundation enhancements
+VMware Cloud Foundation for VPC enhancements
 :   The following features are now available:
 
    * **Async Patch tool**: You can apply critical patches for VMware Cloud Foundation components, such as VMware NSX Manager, VMware vCenter Server®, and VMware ESXi by using the Async Patch tool. For more information, see [Viewing VMware Cloud Foundation instances](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-viewing#vpc-vcf-viewing-details).
