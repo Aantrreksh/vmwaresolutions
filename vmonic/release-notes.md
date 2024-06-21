@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2024
-lastupdated: "2024-06-20"
+lastupdated: "2024-06-22"
 
 keywords: release notes, what's new in VMware Solutions, what is new, new features, VMware Solutions release notes, VMware Solutions
 
@@ -33,7 +33,9 @@ vSphere 8 support
 BOM updates for {{site.data.keyword.vcf-classic}}
 :   The following updates are applied to newly deployed instances, clusters, and hosts:
 
-   * TBD
+   * VMware vCenter Server® Appliance 8.0 Update 2b (build 23504390)
+   * VMware vSphere® ESXi™ 8.0 Update 2b (build 23305546)
+   * VMware NSX 4.1.2.4 (build 23786733)
 
 Add-on services upgrades
 :   The following service versions are available for deployment:
@@ -65,14 +67,14 @@ VMware Cloud Foundation for VPC enhancements
 :   The following features are now available:
 
    * **Server backup**: You can do regular backups of management components, such as SDDC Manager, VMware vCenter Server®, and NSX Manager. For more information, see [Management domain backup](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-ordering#vpc-vcf-ordering-mgmt-domain-backup).
-   * **Contact form**: You can now use a form to contact an IBM representative through the 1-year and 3-year subscription options. 
+   * **Contact form**: You can now use a form to contact an IBM representative through the 1-year and 3-year subscription options.
    * The following **BOM updates** are applied to newly deployed instances:
       * Cloud Builder VM 5.1.1 (build 23480823)
       * SDDC Manager 5.1.1 (build 23480823)
       * VMware vCenter Server Appliance 8.0 Update 2b (build 23319993)
       * VMware ESXi™ 8.0 Update 2b (build 23305546)
       * VMware Virtual SAN Witness Appliance 8.0 Update 2 (build 22443122)
-      * VMware NSX-T™ 4.1.2.3 (build 23382408)
+      * VMware NSX-T™ 4.1.2.4 (build 23786733)
       * VMware Aria® Suite Lifecycle Manager 8.16 (build 23377566)
 
 ### 1 May 2024
