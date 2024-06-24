@@ -23,7 +23,6 @@ Use these release notes to learn about updates to {{site.data.keyword.vmwaresolu
 ## 2024
 {: #year-2024}
 
-<staging>
 ### 10 July 2024
 {: #vmwaresolutions-jul1024}
 {: release-note}
@@ -52,7 +51,6 @@ REST API updates
 :   The following updates are available for the [VMware Solutions API](/apidocs/vmware-solutions):
 
    * TBD
-</staging>
 
 ### 24 June 2024
 {: #vmwaresolutions-jun2424}
