@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2024
-lastupdated: "2024-06-22"
+lastupdated: "2024-06-24"
 
 keywords: release notes, what's new in VMware Solutions, what is new, new features, VMware Solutions release notes, VMware Solutions
 
@@ -23,34 +23,7 @@ Use these release notes to learn about updates to {{site.data.keyword.vmwaresolu
 ## 2024
 {: #year-2024}
 
-### 10 July 2024
-{: #vmwaresolutions-jul1024}
-{: release-note}
 
-vSphere 8 support
-:   VMware vSphere® 8.0 is available for new clusters and hosts with NFS storage and Cascade Lake bare metal servers. However, you can select only a vSphere version to clusters with instances that use VMware vCenter Server® 8. For more information about upgrading vCenter Server software, see [Upgrading to vCenter Server 8.0](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcs_80_upgrade).
-
-BOM updates for {{site.data.keyword.vcf-classic}}
-:   The following updates are applied to newly deployed instances, clusters, and hosts:
-
-   * VMware vCenter Server® Appliance 8.0 Update 2b (build 23504390)
-   * VMware vSphere® ESXi™ 8.0 Update 2b (build 23305546)
-   * VMware NSX 4.1.2.4 (build 23786733)
-
-Add-on services upgrades
-:   The following service versions are available for deployment:
-
-   * TBD
-
-User interface updates and enhancements
-:   The following enhancements are available on the UI (user interface):
-
-   * TBD
-
-REST API updates
-:   The following updates are available for the [VMware Solutions API](/apidocs/vmware-solutions):
-
-   * TBD
 
 ### 24 June 2024
 {: #vmwaresolutions-jun2424}
