@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-06-14"
+lastupdated: "2024-06-05"
 
 subcollection: vmwaresolutions
 
@@ -20,7 +20,7 @@ Patches and extensions can be optionally staged before remediation to ensure tha
 In the remediation process, if any host fails to enter maintenance mode, VUM reports an error and the remediation process stops and fails. The vSphere ESXi hosts that are already remediated remain at the updated level.
 
 For the remediation process to work smoothly, it's advisable to disable some of the cluster features such as DPM, HA Admission Control, Fault Tolerance, and to disconnect any removable devices from the virtual machines (VMs) to avoid DRS issues when you migrate VMs to other hosts.
-Also, while you run the remediation wizard, you can Generate Reports to verify that there are no inconsistent settings present at host or VM level that can cause the remediation process to fail.
+Also, while you run the remediation wizard, you can Generate Reports to verify that there are no inconsistent settings present at host/VM level that can cause the remediation process to fail.
 
 1. In the vSphere Web Client, go to **Home > Hosts and Clusters**.
 2. Right-click a datacenter, cluster, or a host, and then click **Stage Patches**.
@@ -44,8 +44,8 @@ Be aware of the following behavior for hosts that are part of a vSAN™ cluster:
 * The host remediation process might take an extensive amount of time to complete.
 * By design, only one host from a vSAN cluster can be in a maintenance mode at any time.
 * VUM remediates hosts that are part of a vSAN cluster sequentially even if you set the option to remediate the hosts in parallel.
-* Any VM on the host that uses a VM storage policy with a setting of 0 for **Number of failures to tolerate**, the host might experience unusual delays when it enters maintenance mode. The delay occurs because vSAN must migrate the VM data from one disk to another in the vSAN datastore cluster and this can take many hours. You can work around this by setting the value for **Number of failures to tolerate** to 1 for the VM storage policy, which results in creating two copies of the VM files in the vSAN datastore.
-* Any VM on the host that uses a VM storage policy with a setting of 1 for **Number of failures to tolerate**, then the VM becomes nonredundant when the host enters maintenance mode. If this is not acceptable, see [Virtual machine vSAN redundancy](/docs/vmwaresolutions?topic=vmwaresolutions-vum-vsan-redundancy).
+* Any VM on the host that uses a VM storage policy with a setting of 0 for **Number of failures to tolerate**, the host might experience unusual delays when it enters maintenance mode. The delay occurs because vSAN must migrate the VM data from one disk to another in the vSAN datastore cluster and this can take many hours. You can work around this by setting **Number of failures to tolerate** to 1 for the VM storage policy, which results in creating two copies of the VM files in the vSAN datastore.
+* Any VM on the host that uses a VM storage policy with a setting of 1 for **Number of failures to tolerate**, then the VM becomes non-redundant when the host enters maintenance mode. If this is not acceptable, see [Virtual machine vSAN redundancy](/docs/vmwaresolutions?topic=vmwaresolutions-vum-vsan-redundancy).
 
 To remediate hosts and clusters, follow these steps:
 1. Use the vSphere Web Client, select **Home** > **Hosts and Clusters**.
@@ -62,7 +62,7 @@ To remediate hosts and clusters, follow these steps:
    * **Do Not Change VM Power State** - Leave VMs and virtual appliances in their current power state.
 
 8. Optionally, select **Disable any removable media devices connected to the virtual machine on the host**. VUM does not remediate hosts on which VMs have connected CD, DVD, or diskette drives. In cluster environments, connected media devices might prevent vMotion if the destination host does not have an identical device or mounted ISO image, which in turn prevents the source host from entering maintenance mode. After remediation, VUM reconnects the removable media devices if they are still available.
-9. Optionally, select **Retry entering maintenance mode in case of failure**, specify the number of retries, and specify the time to wait between retries. VUM waits for the retry delay period and retries putting the host into maintenance mode as many times as you indicate in the **Number of retries** field. There is no requirement in a {{site.data.keyword.vcf-auto-short}} instance to select the checkbox under ESXi Patch Settings to enable Update Manager to patch powered on PXE booted ESXi hosts.
+9. Optionally, select **Retry entering maintenance mode in case of failure**, specify the number of retries, and specify the time to wait between retries. VUM waits for the retry delay period and retries putting the host into maintenance mode as many times as you indicate in Number of retries field. There is no requirement in a {{site.data.keyword.vcf-auto-short}} instance to select the checkbox under ESXi Patch Settings to enable Update Manager to patch powered on PXE booted ESXi hosts.
 10. Click **Next**.
 11. If you remediate hosts in a cluster, edit the cluster remediation options. The **Cluster remediation options** page is available only when you remediate clusters. The following options can be selected:
     * **Disable Distributed Power Management (DPM)** if it is enabled for any of the selected clusters - VUM does not remediate clusters with active DPM. DPM monitors the resource use of the running VMs in the cluster. If sufficient excess capacity exists, DPM recommends moving VMs to other hosts in the cluster and placing the original host into standby mode to conserve power. Putting hosts into standby mode might interrupt remediation.
@@ -70,7 +70,7 @@ To remediate hosts and clusters, follow these steps:
     * **Disable Fault Tolerance (FT)** if it is enabled - This setting affects all fault tolerant VMs in the selected clusters. If FT is turned on for any of the VMs on a host, VUM does not remediate that host. For FT to be enabled, the hosts on which the primary and secondary VMs run must be of the same version and must have the same patches installed. If you apply different patches to these hosts, FT cannot be reenabled.
     * **Enable parallel remediation for the hosts in the selected clusters** - Remediate hosts in clusters in a parallel manner. If the setting is not selected, VUM remediates the hosts in a cluster sequentially. You can select one of the following options for parallel remediation:
       - You can let VUM continuously evaluate the maximum number of hosts it can remediate concurrently without disrupting DRS settings.
-      - You can specify a limit of the number of concurrently remediated hosts in each cluster you remediate. VUM remediates concurrently only the hosts on which VMs are powered off or suspended. You can choose to power off or suspend VMs from the VM Power State menu in the Maintenance Mode Options pane on the Host Remediation Options page. By design only one host from a vSAN cluster can be in a maintenance mode at any time. VUM remediates hosts that are part of a vSAN cluster sequentially even if you select the option to remediate them in parallel.
+      - You can specify a limit of the number of concurrently remediated hosts in each cluster you remediate. Note, VUM remediates concurrently only the hosts on which VMs are powered off or suspended. You can choose to power off or suspend VMs from the VM Power State menu in the Maintenance Mode Options pane on the Host Remediation Options page. By design only one host from a vSAN cluster can be in a maintenance mode at any time. VUM remediates hosts that are part of a vSAN cluster sequentially even if you select the option to remediate them in parallel.
     * **Migrate powered off and suspended virtual machines to other hosts in the cluster**, if a host must enter maintenance mode. Update Manager migrates the suspended and powered off VMs from hosts that must enter maintenance mode to other hosts in the cluster. You can choose to power off or suspend VMs before remediation in the **Maintenance Mode Settings** pane.
 12. On the Ready to complete page, you can optionally click **Pre-check Remediation** to generate a cluster remediation options report and click **OK**. A Cluster Remediation Options Report window opens. You can export this report or copy the entries for your own record and click **Next**.
 13. Review the **Ready to Complete** page and then click **Finish**.

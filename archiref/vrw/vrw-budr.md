@@ -37,7 +37,7 @@ The management cluster relies upon native vSphere® DRS capabilities to keep man
 ### Veeam backup server
 {: #vrw-budr-management-veeam}
 
-Veeam on {{site.data.keyword.cloud_notm}} delivers reliable backup for virtual machines (VMs) within the {{site.data.keyword.rw}} environment.
+Veeam on {{site.data.keyword.cloud_notm}} delivers reliable backup for virtual machines (VMs) within the {{site.data.keyword.cloud_notm}} for VMware Regulated Workloads environment.
 
 Veeam provides continuous backup of the management stack for protection against disasters. If corruption of any management stack component occurs, Veeam also provides rapid restoration to known good states. Veeam can also provide backup services for the workload cluster. The single site deployment must use the Veeam bare metal option to provide an acceptable backup repository.
 

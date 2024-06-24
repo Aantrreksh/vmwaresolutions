@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-06-13"
+lastupdated: "2024-05-31"
 
 subcollection: vmwaresolutions
 
@@ -66,10 +66,9 @@ In this design, VMware vSAN storage is employed in {{site.data.keyword.vcf-auto}
 As shown in the following figure, vSAN aggregates the local storage across multiple ESXi hosts within a vSphere cluster and manages the aggregated storage as a single VM datastore. Within this design, the compute nodes contain local disk drives for the ESXi operating system (OS) and the vSAN datastore. 
 
 Different host configurations might be deployed with:
-
-* Local disks configured with RAID-1
-* A pair of M.2 boot drives in a mirrored configuration
-* A single M.2 boot drive
+* local disks configured with RAID-1
+* a pair of M.2 boot drives in a mirrored configuration
+* a single M.2 boot drive
 
 ![vSAN concept](../../images/vcsv4radiagrams-ra-vsan.svg "vSAN aggregates the local storage across multiple ESXi hosts within a vSphere cluster and manages the aggregated storage as a single VM datastore"){: caption="Figure 2. vSAN concept" caption-side="bottom"}
 
@@ -103,7 +102,7 @@ Storage policies must be reapplied after addition of new ESXi hosts or patching 
 ### vSAN settings
 {: #design_virtualinfrastructure-vsan-sett}
 
-vSAN settings are configured based on best practices for deploying VMware Solutions within {{site.data.keyword.cloud_notm}}. The vSAN settings include SIOC settings, explicit failover settings port group, and disk cache settings.
+vSAN settings are configured based on best practices for deploying VMware solutions within {{site.data.keyword.cloud_notm}}. The vSAN settings include SIOC settings, explicit failover settings port group, and disk cache settings.
 
 * SSD cache policy settings - No **Read Ahead**, **Write Through**, **Direct** (NRWTD)
 * Network I/O control settings
@@ -122,7 +121,7 @@ One 2-TB NFS data store is attached to a cluster for use by management component
 
 Additionally, this architecture requires that all hosts have a subnet route that is created for the subnet where the NFS storage resides. The purpose of this subnet route is to direct all NFS traffic to use the port group, subnet, and VLAN designated for NFS traffic by this design. If multiple NFS data stores are attached, multiple routes might be required to be configured since those data stores might be located in different remote subnets.
 
-The management VMs can be located on an NFS data store. This approach creates a bootstrapping problem since some of the management machines might be responsible for DNS services, which are used to resolve the NFS hostname. Therefore, this architecture specifies that at least one of the IP addresses for the management data store to be hardcoded in `/etc/hosts` on each of the hosts.
+Management virtual machines can be located on an NFS data store. This approach creates a bootstrapping problem since some of the management machines might be responsible for DNS services, which are used to resolve the NFS hostname. Therefore, this architecture specifies that at least one of the IP addresses for the management data store to be hardcoded in `/etc/hosts` on each of the hosts.
 
 ## Related links
 {: #design_virtualinfrastructure-related}

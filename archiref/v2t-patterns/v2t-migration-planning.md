@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-06-13"
+lastupdated: "2024-06-04"
 
 subcollection: vmwaresolutions
 
@@ -16,9 +16,7 @@ subcollection: vmwaresolutions
 # Migration planning
 {: #v2t-planning}
 
-Migration planning and preparation are the key to a successful migration project. It is imperative that the migration complexity is fully understood so that timescales, required tools, skills, and knowledge are available. 
-
-The following diagram shows an overview of the migration flow:
+Migration planning and preparation are the key to a successful migration project. It is imperative that the migration complexity is fully understood so that timescales, required tools, skills, and knowledge are available. An overview migration flow is shown in the following diagram.
 
 ![Migration flow](../../images/v2t-diagrams-tree.svg "Make sure that the migration complexity is fully understood so that timescales, required tools, skills, and knowledge are available."){: caption="Figure 1. Migration flow" caption-side="bottom"}
 
@@ -42,7 +40,7 @@ The following factors govern the complexity of migration:
 
 For more information, see [Assess migration complexity](/docs/vmwaresolutions?topic=vmwaresolutions-v2t-complexity).
 
-Classifying or assessing the migration complexity provides guidance so that you can estimate the migration time frame, required tools, skills and knowledge, and to help you prepare in the best possible way.
+Classifying or assessing migration complexity is just an informative step to provide you guidance. So that you can estimate the migration timescales, required tools, skills and knowledge, and you can prepare in the best possible way.
 {: important}
 
 ## Required skills
@@ -60,9 +58,9 @@ In addition, to ensure successful Day 2 operations, improve the core VMware NSX-
 ## Engage a migration services provider
 {: #v2t-planning-serviceprovider}
 
-You can engage PrimaryIO’s experienced Professional Services team through the IBM catalog. For more information, see [VMware Cloud Migration Services (VMwaaS VPC NSX-T)](https://cloud.ibm.com/catalog/services/primaryio-hdm-cloud-connect-nsx-v-to-nsx-t).
+You can engage PrimaryIO’s experienced Professional Services team through the IBM Catalog. For more information, see [VMware Cloud Migration Services (VMwaaS VPC NSX-T)](https://cloud.ibm.com/catalog/services/primaryio-hdm-cloud-connect-nsx-v-to-nsx-t).
 
-PrimaryIO’s Fasttrack Migration Service is optimized to move customers away from NSX-V and onto NSX-T through short-form engagements that continually drive progress by focusing on critical path objectives.
+PrimaryIO’s Fasttrack Migration Service is optimized to move customers away from NSX-V and onto NSX-T through short form engagements that continually drive progress by focusing on critical path objectives.
 
 ## Source environment complexity patterns
 {: #v2t-planning-complexitypatterns}
@@ -83,7 +81,7 @@ You are not able to neatly classify every source environment due to the multiple
 
 Based on the source environment complexity, you must consider the following target platform:
 
-* Single site VMware {{site.data.keyword.vcf-auto-short}}® instance - An automated provisioning offering that deploys hardware and software in a defined pattern. After initial deployment, you must add capacity and extra services to a number of automated workflows as needed. For more information, see [{{site.data.keyword.vcf-auto-short}} overview](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview). The types of {{site.data.keyword.vcf-auto-short}} instances include:
+* Single site VMware {{site.data.keyword.vcf-auto-short}}® instance - An automated provisioning offering that deploys hardware and software in a defined pattern. After initial deployment, you must add capacity and additional services to a number of automated workflows as needed. For more information, see [{{site.data.keyword.vcf-auto-short}} overview](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview). The types of {{site.data.keyword.vcf-auto-short}} instances include:
    * Regulated Workloads. For more information, see [VMware Regulated Workloads overview](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-overview).
    * Security and Compliance Readiness Bundle. For more information, see [Security and Compliance Readiness Bundle overview](/docs/vmwaresolutions?topic=vmwaresolutions-scb-overview).
 * Multisite or location {{site.data.keyword.vcf-auto-short}} instance - The {{site.data.keyword.vcf-auto-short}} offering can be deployed in multiple locations to create a multisite or location {{site.data.keyword.vcf-auto-short}} instance. The {{site.data.keyword.vcf-auto-short}} multisite deployment pattern is two or more instances that are deployed into a common root domain and single sign-on domain with vCenters in Enhanced Link Mode. Each site or location has its own NSX-T instance. For more information, see [Multisite configuration for {{site.data.keyword.vcf-auto-short}} instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_multisite).
@@ -102,7 +100,7 @@ Configuration migration covers all the NSX-V settings and parameters that must b
 * VMware Migration Coordinator
 * Third-party tool
 
-If the configurations are simple, or don't have too many rules or definitions, manual, or scripted is typically the simplest way to migrate the configuration. A benefit of following this approach is also that you have a better understanding of how the target is configured. If the configurations are complex or have many firewall rules, consider the use of a third-party tool to ease up duplicate manual work.
+If the configurations are simple, or don't have too many rules or definitions, manual, or scripted is typically the simplest way to migrate the configuration. A benefit of following this approach is also that you have a better understanding of how the target is configured. If the configurations are complex or have many firewall rules, consider the use of third-party tool to ease up duplicate manual work.
 {: note}
 
 ## Workload migration
@@ -131,15 +129,15 @@ The following migration patterns for workload migration must be considered:
 ## Network L2 extension
 {: #v2t-planning-nwl2ext}
 
-From a network perspective, the requirement for Layer 3 and Layer 2 connectivity during the migration must be understood. The L2 extension allows bridging the NSX-T logical switches to NSX-T segments. You can move the workloads between the NSX-V and NSX-T environments, while you keep the default gateway either on the NSX-V or move it to the new NSX-T. This action allows a smoother network migration. However, it is not mandatory if your environment can tolerate downtime.
+From a network perspective, the requirement for Layer 3 and Layer 2 connectivity during the migration must be understood. L2 extension allows bridging the NSX-T logical switches to NSX-T segments. You can move the workloads between the NSX-V and NSX-T environments, while you keep the default gateway either on the NSX-V or move it to the new NSX-T. This action allows a smoother network migration. However, it is not mandatory if your environment can tolerate downtime.
 
 Consider the following details for Layer 3 network migration:
-* VM by VM migration – This approach moves one VM at a time and the `/32` route for that host is injected into the NSX-T environment. Therefore, a specific route is defined to this IP address to the NSX-T environment while all other IP addresses in the subnet are still routed to the NSX-V environment.
+* VM by VM migration – This approach moves a VM at a time and /32 route for that host is injected into the NSX-T environment. Therefore, a specific route is defined to this IP address to the NSX-T environment while all other IP addresses in the subnet are still routed to the NSX-V environment.
 * Subnet by subnet migration – This approach moves all the VMs on a subnet at a time. The subnet is advertised out of the NSX-T environment and not advertised from the NSX-V environment.
 * Big-bang - All subnets and their connected VMs are moved and then all subnets advertised from the NSX-T environment.
 
 Consider the following details for Layer 2 network extension during migration:
-* NSX-T L2 bridge - In this approach an NSX-T Edge VM or preferably a pair of NSX-T Edge VMs, are deployed on the NSX-V prepared hosts. These Edge VMs are registered with NSX-T Manager and an L2 Bridge is configured to connect the required NSX-V VXLAN (virtual wire) to an NSX-T segment. For more information, see [Migration that uses vMotion or third-party tools and NSX-T L2 bridge](/docs/vmwaresolutions?topic=vmwaresolutions-v2t-l2-nsx-t).
+* NSX-T L2 bridge - In this approach an NSX-T Edge VM or preferably a pair of NSX-T Edge VMs, are deployed on the NSX-V prepared hosts. These Edge VMs are registered with NSX-T Manager and a L2Bridge configured to connect the required NSX-V VXLAN (virtual wire) to an NSX-T segment. For more information, see [Migration that uses vMotion or third-party tools and NSX-T L2 bridge](/docs/vmwaresolutions?topic=vmwaresolutions-v2t-l2-nsx-t).
 * VMware HCX - VMware HCX is a solution that is primarily used for migrating workloads between environments, and consists of a number of services to achieve workload mobility. HCX integrates into both NSX-V and NSX-T. HCX Network Extension (NCX-NE) allows simultaneous bridging of multiple networks. The solution is useful in cases where the applications are spread across multiple segments and need inter-app connectivity for extended periods of time during the migration. Using HCX allows bridging of eight segments at a time per HCX-NE pair. This action is especially useful if a workload spans multiple segments. For more information, see [Workload migration with HCX](/docs/vmwaresolutions?topic=vmwaresolutions-v2t-hcx).
 
 A third possible Layer 2 approach is to use NSX-T L2VPN. In this approach, the NSX-V environment acts as the L2VPN client and the NSX-T environment acts as the L2VPN server. The L2 VPN connection is secured with a route-based IPsec tunnel between the L2 VPN server and the L2 VPN client. This approach is not recommended in {{site.data.keyword.cloud_notm}} between two {{site.data.keyword.vcf-auto-short}} instances for V2T migration as NSX-T L2 Bridge offers better performance. And also because {{site.data.keyword.cloud_notm}} private network supports large MTU (jumbo frames).

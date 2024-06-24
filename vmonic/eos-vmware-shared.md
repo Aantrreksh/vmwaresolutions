@@ -4,7 +4,7 @@ copyright:
 
   years:  2024
 
-lastupdated: "2024-05-23"
+lastupdated: "2024-04-26"
 
 keywords: end of support notice, vmware shared, end of support vmware shared, vmware shared deprecated, vmware shared support
 
@@ -18,7 +18,7 @@ subcollection: vmwaresolutions
 # End of Support for {{site.data.keyword.vm-shared}} deployments
 {: #eos-vmware-shared}
 
-{{site.data.keyword.vm-shared}} is not available for new deployments after 28 March 2024. Existing instances are supported until 15 January 2025. Ensure that you migrate all your {{site.data.keyword.vm-shared}} resources to [{{site.data.keyword.vmware-service_full}}](/docs/vmware-service) by 15 January 2025.
+{{site.data.keyword.vm-shared}} is not available for new deployments after 28 March 2024. Existing instances will continue to be supported until 15 January 2025. Ensure that you migrate all your {{site.data.keyword.vm-shared}} resources to [{{site.data.keyword.vmware-service-full}}](/docs/vmware-service) by 15 January 2025.
 {: deprecated}
 
 {{site.data.keyword.cloud_notm}} support for {{site.data.keyword.cloud_notm}} for {{site.data.keyword.vm-shared}} will end on 15 January 2025. As stated in [End of Support for NSX-V instance deployments](/docs/vmwaresolutions?topic=vmwaresolutions-eos-nsx-v), IBM’s exclusive support extension for VMware® NSX-V will end on 15 January 2025.
@@ -63,6 +63,6 @@ Depending on the size and complexity of your workloads, you can migrate them by 
 * [Migrating from {{site.data.keyword.vm-shared}} to {{site.data.keyword.vcf-aas}}](/docs/vmwaresolutions?topic=vmwaresolutions-shared_migration)
 * [Technical considerations about migrating from {{site.data.keyword.vm-shared}} to {{site.data.keyword.vcf-aas}}](/docs/vmwaresolutions?topic=vmwaresolutions-shared-vmwaas-migration)
 * [Migrating {{site.data.keyword.vm-shared}} workloads to {{site.data.keyword.vcf-aas}} with cloud-to-cloud connections](/docs/vmwaresolutions?topic=vmwaresolutions-vcda-migrating-cloudtocloud-shared) (tutorial and video)
-* [What is {{site.data.keyword.vmware-service_short}}?](https://www.ibm.com/products/vmware/managed-services)
-* [{{site.data.keyword.vmware-service_short}} About page](/vmware/vmware_as_a_service/provision/vdc_mt#about)
-* [{{site.data.keyword.vmware-service_short}} Provisioning page](/vmware/vmware_as_a_service/provision/vdc_mt)
+* [What is {{site.data.keyword.vmware-service-short}}?](https://www.ibm.com/products/vmware/managed-services)
+* [{{site.data.keyword.vmware-service-short}} About page](/vmware/vmware_as_a_service/provision/vdc_mt#about)
+* [{{site.data.keyword.vmware-service-short}} Provisioning page](/vmware/vmware_as_a_service/provision/vdc_mt)

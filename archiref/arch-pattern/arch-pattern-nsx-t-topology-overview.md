@@ -18,7 +18,7 @@ subcollection: vmwaresolutions
 
 When you deploy a [{{site.data.keyword.vcf-auto-short}}](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview) instance in your {{site.data.keyword.cloud}} classic infrastructure, the deployment consists of a number of network constructs and VMware® management components.
 
-This architecture pattern gives an overview for standard private and public connectivity options for a standard deployment. This pattern also includes an overview for the standard {{site.data.keyword.vcf-auto}} components, basic cluster types, and customer topologies deployed as part of the {{site.data.keyword.cloud_notm}} automation. 
+This architecture pattern gives an overview for standard private and public connectivity options for a standard deployment. This pattern also includes an overview for the standard {{site.data.keyword.vcf-auto}}  components, basic cluster types, and customer topologies deployed as part of the {{site.data.keyword.cloud_notm}} automation. 
 
 ## VMware vCenter Server components overview
 {: #arch-pattern-nsx-t-topology-overview-vcs-comp}

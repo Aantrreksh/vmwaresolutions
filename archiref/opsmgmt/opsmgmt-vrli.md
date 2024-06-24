@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-06-12"
+lastupdated: "2024-01-31"
 
 subcollection: vmwaresolutions
 
@@ -20,7 +20,7 @@ The VMware Aria Operations™ for Logs (formerly known as VMware vRealize® Log 
 
 This pattern supports:
 * 30,000 VMs
-* 75 Gbps log ingestion per day
+* 75 Gbs log ingestion per day
 * 5,000 events per second
 
 VMware Aria Operations for Logs enables real-time logging for components in the {{site.data.keyword.vmwaresolutions_full}} environment. The design deploys a VMware Aria Operations for Logs cluster that consists of four nodes in each instance. This configuration provides continued availability and increased log ingestion rates.
@@ -93,7 +93,7 @@ Deployment of the VMware Aria Operations for Logs appliance requires three IP ad
 * Tooling Expansion VXLAN
 * Customer Networks
 * NTP server (`time.services.softlayer.com`)
-* {{site.data.keyword.vmwaresolutions_short}} Active Directory DNS
+* {{site.data.keyword.vmwaresolutions_short}} Active Directory/DNS
 * The Remote Collectors require NAT rules on the NSX ESG to enable connectivity to the primary node, primary node replica, and data nodes
 
 ## Ports

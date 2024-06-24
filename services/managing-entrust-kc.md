@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-05-09"
+lastupdated: "2024-04-12"
 
 keywords: Entrust KeyControl WebGUI, Entrust KeyControl console, enable internet Entrust KeyControl
 
@@ -18,7 +18,7 @@ subcollection: vmwaresolutions
 # Managing Entrust KeyControl
 {: #managing-entrust-kc}
 
-New installations of Entrust KeyControl™ (formerly HyTrust KeyControl) are not supported for new or existing deployments of {{site.data.keyword.vcf-auto}} instances. You can still use or delete existing Entrust KeyControl installations on your existing instances.
+New installations of Entrust KeyControl™ (formerly known as HyTrust KeyControl) are not supported for new or existing deployments of {{site.data.keyword.vcf-auto}} instances. You can still use or delete existing Entrust KeyControl installations on your existing instances.
 {: deprecated}
 
 To manage Entrust KeyControl, access the Entrust KeyControl web GUI from the {{site.data.keyword.vmwaresolutions_full}} console, or access the Entrust KeyControl console from the vSphere® Web Client.

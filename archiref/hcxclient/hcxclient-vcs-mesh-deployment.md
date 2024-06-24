@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2024
 
-lastupdated: "2024-06-12"
+lastupdated: "2024-06-05"
 
 subcollection: vmwaresolutions
 
@@ -24,7 +24,7 @@ Review the following steps to configure the VMware HCX™ Client instance.
 1. Log in to the VMware vSphere® Web Client.
 2. From the **Home** menu, select the **HCX** option.
 3. Under **Infrastructure**, **InterConnect**, click **Add Site Pairing**.
-   1. Set the Site URL to the HCX Cloud Manager URL. For example, `https://x.x.x.x.x`.
+   1. Set the Site URL to the HCX Cloud Manager URL, for example, `https://x.x.x.x.x`.
    2. Set the username and password to the HCX Manager Admin Details: `admin / password`.
 
       The previous details can be obtained from the {{site.data.keyword.vmwaresolutions_full}} console, under **Services**, **HCX** for the {{site.data.keyword.vcf-auto}} instance.
@@ -71,7 +71,7 @@ The Site Pairing is registered and displayed on the user interface.
 3. Under **Infrastructure**, click **InterConnect**.
 4. Under **Multi-Site Service Mesh**, click **Compute Profiles**.
 5. From **Create Compute Profile**:
-   1. Provide a compute profile name.
+   1. Provide Compute Profile Name.
    2. Select All Services to be enabled, click **Continue**.
    3. Select the Cluster, click **Continue**.
    4. Select the Datastore, click **Continue**.
@@ -110,7 +110,7 @@ A compute profile for the cluster and storage combination is created and is avai
 ### Results
 {: #hcxclient-vcs-mesh-deployment-servicemesh-results}
 
-An HCX Service Mesh is the effective HCX service configuration for a source and destination site. A Service Mesh can be added to a connected Site Pair with a valid Compute Profile created on both sites.
+An HCX Service Mesh is the effective HCX services configuration for a source and destination site. A Service Mesh can be added to a connected Site Pair with a valid Compute Profile created on both sites.
 
 Adding a Service Mesh initiates the deployment of HCX Interconnect virtual appliances on both of the sites. An interconnect Service Mesh is always created at the source site.
 
@@ -131,7 +131,7 @@ Network progress is monitored in the vCenter client tasks pane.
 ## Concepts and best practices for network stretching
 {: #hcxclient-vcs-mesh-deployment-stretching-best-practices-network}
 
-The glue that bridges the client-side network to the cloud-side VXLAN is a sophisticated multitunnel VPN that consists of proprietary HCX technology. It is not based on NSX, but does work with NSX and extend its capability. This process is controlled by the client-side vCenter web user interface and automates the deployment and starting of both endpoints on the client and cloud side. Setting the network to stretched configuration is done individually or in batch.
+The glue that bridges the client-side network to the cloud side VXLAN is a sophisticated multitunnel VPN that consists of proprietary HCX technology. It is not based on NSX, but does work with NSX and extend its capability. This process is controlled by the client-side vCenter web user interface and automates the deployment and starting of both endpoints on the client and cloud side. Selecting the network to stretched is done individually or in batch.
 
 Additionally, as part of the network stretching workflow, NSX on the cloud side is authorized to build a VXLAN. The VXLAN is then connected to an interface created on the specified cloud side L3 device (DLR or ESG left in an unconnected state) and the cloud side Network Extension appliance.
 
@@ -139,9 +139,9 @@ Typically, when you migrate a particular application, all the networks in use by
 
 Why typically and not always? It can be advantageous to disconnect certain traffic from the client side after the VM is migrated. For example, VM guest backup clients, which might cause high-bandwidth use when moved to the cloud. The in-guest backup client is not required when the VM is migrated as it is automatically picked up by a more modern block level backup on the cloud side.
 
-The client’s backup network adapter is not being accessed because it would mean to access each VM to shut off the in-guest client backup schedule. Therefore, if a backup network is used, the backup might fail. This situation is temporary until all the VMs can be reached post migration to disable the in-guest backup client.
+The client’s backup network adapter is not being accessed because it would mean accessing each VM to shut off the in-guest client backup schedule. Therefore, if a backup network is used, the backup might fail. This situation is temporary until all the VMs can be reached post migration to disable the in-guest backup client.
 
-The bandwidth of a single network extension is theoretically 4 Gbps. However, this value can be the limit for all stretched networks within a single network extension pair and is not achievable by a single stretched network. A single stretched network can achieve ~1 Gbps if enough underlay bandwidth is allotted and the latency is low (<~10 ms).
+Bandwidth of a single network extension is theoretically 4 Gbps. However, this value can be the limit for all stretched networks within a single network extension pair and is not achievable by a single stretched network. A single stretched network can achieve ~1 Gbps if enough underlay bandwidth is allotted and the latency is low (<~10 ms).
 
 ### Proximity Routing option
 {: #hcxclient-vcs-mesh-deployment-stretching-prox-routing}

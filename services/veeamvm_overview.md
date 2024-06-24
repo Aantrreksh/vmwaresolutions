@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2024
 
-lastupdated: "2024-05-02"
+lastupdated: "2024-05-01"
 
 keywords: Veeam, Veeam Backup and Replication 12.1, Veeam install, tech specs Veeam, Veeam overview
 
@@ -25,7 +25,7 @@ By using this service, you control both the backup and restore of all virtual ma
 
 {{site.data.content.para-promotion-services}}
 
-The Veeam service that is installed is Veeam Availability Suite™ 12.1 (known as Veeam 12.1).
+The Veeam service that is installed is Veeam Availability Suite™ 12.1 (Veeam 12.1).
 {: note}
 
 If you have Veeam 9.5u4b, you can continue to use it. However, you cannot install Veeam 9.5u4b on a new or existing instance.

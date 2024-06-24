@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2024
 
-lastupdated: "2024-05-21"
+lastupdated: "2024-04-26"
 
 keywords: planning VMware Solutions Shared, data center, VMware Solutions Shared data centers
 
@@ -73,7 +73,7 @@ Service charges are incurred only if you choose to use the service.
 ## Configuration limits for VMware Cloud Director
 {: #shared_ordering-cloud-dir-limits}
 
-Review [VMware Cloud Director 10.5 Configuration Limits](https://configmax.esp.vmware.com/guest?vmwareproduct=%20VMware%20Cloud%20Director&release=VMware%20Cloud%20Director%2010.5&categories=35-0){: external} to ensure that you understand configuration limits in VMware Cloud Director.
+Review [VMware Cloud Director 10.4 Configuration Limits](https://configmax.esp.vmware.com/guest?vmwareproduct=%20VMware%20Cloud%20Director&release=VMware%20Cloud%20Director%2010.4&categories=35-0){: external} to ensure that you understand configuration limits in VMware Cloud Director.
 
 ### 10,000 vApps per Cloud Director organization
 {: #shared_ordering-cloud-dir-limits-vapp}

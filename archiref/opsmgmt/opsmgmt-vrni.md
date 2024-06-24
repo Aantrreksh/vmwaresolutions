@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2024
+  years:  2016, 2023
 
-lastupdated: "2024-06-12"
+lastupdated: "2023-11-07"
 
 subcollection: vmwaresolutions
 
@@ -61,7 +61,7 @@ Deployment of the VMware Aria Operations for Networks appliance requires two IP 
 * Tooling Expansion VXLAN
 * Customer Networks
 * NTP server (`time.services.softlayer.com`)
-* {{site.data.keyword.vmwaresolutions_short}} Active Directory DNS
+* {{site.data.keyword.vmwaresolutions_short}} Active Directory/DNS
 
 ## Ports
 {: #opsmgmt-vrni-ports}

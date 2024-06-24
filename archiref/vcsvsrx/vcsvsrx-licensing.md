@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2024
 
-lastupdated: "2024-06-13"
+lastupdated: "2024-02-02"
 
 subcollection: vmwaresolutions
 
@@ -13,10 +13,10 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# vSRX Base and Advanced licensing
+# vSRX base and advanced licensing
 {: #vcsvsrx-licensing}
 
-The vSRX is ordered and deployed with the necessary license keys to operate. Advanced licensing is only available directly from Juniper Networks®. Licenses can be procured from the Juniper LMS (Networks License Management System).
+The vSRX is ordered and deployed with the necessary license keys to operate. Advanced licensing is only available directly from Juniper Networks®. Licenses can be procured from the Juniper Networks License Management System (LMS).
 
 For more information, see [Licensing guide](https://www.juniper.net/documentation/us/en/software/license/juniper-licensing-user-guide/index.html){: external}.
 

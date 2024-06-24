@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-06-14"
+lastupdated: "2024-04-18"
 
 subcollection: vmwaresolutions
 
@@ -20,22 +20,22 @@ subcollection: vmwaresolutions
 Before you start this task, retrieve all the physical hosts IPMI IP addresses, login IDs, and passwords from the [{{site.data.keyword.cloud}} infrastructure customer portal](https://control.softlayer.com/devices). This is required in a back out or to check on the progress of an upgrade, where no direct network access to the host exists.
 
 For each host, successively:
-1. Use the vSphere Web Client to place the vSphere ESXi host into maintenance mode by selecting **Home** > **Hosts and Clusters**. In the Navigator pane, select the vSphere ESXi host and right-click the host and select **Maintenance Mode** > **Enter Maintenance Mode**. As the host is part of an automated DRS cluster, virtual machines are migrated to different hosts when the host enters maintenance mode.
+1. Use the vSphere Web Client to place the vSphere ESXi host into maintenance mode by, selecting **Home** > **Hosts and Clusters**. In the Navigator pane, select the vSphere ESXi host and right-click the host and select **Maintenance Mode** > **Enter Maintenance Mode**. As the host is part of an automated DRS cluster, virtual machines are migrated to different hosts when the host enters maintenance mode.
 2. SSH into the vSphere ESXi host, by using the details from the {{site.data.keyword.vmwaresolutions_short}} console.
 3. Run the following vCLI command to enable the ixgben native drivers:
    `esxcli system module set --enabled=true --module=ixgben`
 4. Run the following vCLI command to restart the vSphere ESXi host:
    `system shutdown reboot --reason “Install ixgben driver”`
-5. After the vSphere ESXi host restarts by using SSH log back into the host, issue the following vCLI command and check that the ixgben driver is “loaded” (first column) and “enabled” (second column):
+5. After the vSphere ESXI host reboots using SSH log back into the host, issue the following vCLI command and check that the ixgben driver is “loaded” (first column) and “enabled” (second column):
    `esxcli system module list |grep ixg`
 6. If the drivers are enabled, then by using the vSphere Web Client select the host in the Navigator pane, right-click, and select **Maintenance Mode** > **Exit Maintenance Mode**. Select the next host and enable the drivers until all the hosts are done.
 7. If the change does not work, then to revert, run the following command:
    `esxcli system module set --enabled=false --module=ixgben`
 
 8. If you can't connect to the host over the network, run the previous command from the IPMI console by using the {{site.data.keyword.cloud_notm}} control window.
-9. After you restart the vSphere ESXi host, you can observe the default `ixgbe` driver that is loaded and enabled.
+9. After you reboot the vSphere ESXi host, you now observe the default ixgbe driver that is loaded and enabled.
 
-If you need to revert, and you can't SSH to the vSphere ESXi host, then you need to log in to the KVM console for the host that needs the revert through the {{site.data.keyword.cloud_notm}} control window.
+If you need to revert, and you can't SSH to the vSphere ESXi host, then you need to log in to the KVM console for the host that needs the revert via the {{site.data.keyword.cloud_notm}} control window.
 
 Use the ID and password that are listed in the {{site.data.keyword.cloud_notm}} control window with the IPMI IP address to log in to the IPMI web interface. You need to be connected to the data center where the host is located through VPN. For more information, see [Getting started with {{site.data.keyword.cloud_notm}} SSL Virtual Private Networking](/docs/iaas-vpn?topic=iaas-vpn-getting-started).
 

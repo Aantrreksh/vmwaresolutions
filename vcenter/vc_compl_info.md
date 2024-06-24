@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-05-02"
+lastupdated: "2024-04-25"
 
 keywords: vcf automated compliance, compliance info, vcf automated policy
 
@@ -51,7 +51,7 @@ This Cloud Service is not designed to any specific security requirements for reg
 ## Policy configurations
 {: #vc_compl_info-default-policy-config}
 
-For V3.1 or later, the generated password for {{site.data.keyword.vcf-auto-short}} primary instances is 15 characters in length. Previously, the generated password was the vCenter Server default value of 8 characters in length.
+The generated password for {{site.data.keyword.vcf-auto-short}} primary instances is now 15 characters in length. Previously, the generated password was the vCenter Server default value of 8 characters in length.
 
 The following table details vCenter Server policy configurations for a new primary instance.
 
@@ -62,7 +62,7 @@ The following table details vCenter Server policy configurations for a new prima
 | vCenter lockout policy | 900 seconds between login failures | 180 seconds between login failures (vCenter default) |
 {: caption="Table 1. vCenter policy configurations" caption-side="bottom"}
 
-The generated NSX Manager password for {{site.data.keyword.vcf-auto-short}} primary instances is 15 characters in length. Previously, the generated password was 8 characters in length.
+The generated NSX Manager password for {{site.data.keyword.vcf-auto-short}} primary instances is now 15 characters in length. Previously, the generated password was 8 characters in length.
 
 ## Policy for accessing clients instances
 {: #vc_compl_info-policy-for-access-client-inst}

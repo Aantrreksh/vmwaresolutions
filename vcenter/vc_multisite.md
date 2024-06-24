@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-05-16"
+lastupdated: "2024-04-25"
 
 keywords: vcf automated multisite, multisite configuration, multisite deployment vcf for classic
 
@@ -64,4 +64,4 @@ Deleting Automated instances that are part of a multisite configuration requires
 ## Related links
 {: #vc_multisite-related}
 
-* [Microsoft Active Directory Trusts supported with VMware vCenter single sign-on](https://knowledge.broadcom.com/external/article?legacyId=2064250){: external}
+* [Microsoft Active Directory Trusts supported with VMware vCenter single sign-on](https://kb.vmware.com/s/article/2064250){: external}

@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2024
 
-lastupdated: "2024-06-14"
+lastupdated: "2024-01-26"
 
 subcollection: vmwaresolutions
 
@@ -114,9 +114,9 @@ gateway01 ansible_host=10.5.37.138 ansible_user=sa-ansible
 
 Ansible vault allows the encryption of values and data structures to secure sensitive data that is necessary to successfully run Ansible plays, but are not publicly visible, like passwords or private keys. Ansible automatically decrypts vault-encrypted content at run time when the key is provided.
 
-Vault is implemented with file-level granularity, which means the files are either entirely encrypted or unencrypted. It uses the AES256 algorithm to provide symmetric encryption that is keyed to a user-supplied password. The same password is used to encrypt and decrypt content. The `ansible-vault` command is used to initially encrypt files, and then is used to view, edit, or decrypt the data.
+Vault is implemented with file-level granularity, which means the files are either entirely encrypted or unencrypted. It uses the AES256 algorithm to provide symmetric encryption that is keyed to a user-supplied password. The same password is used to encrypt and decrypt content. The `ansible-vault` command is used to initially encrypt files, and then, is used to view, edit, or decrypt the data.
 
-* Create an Ansible configuration file that details the location of the `hosts` file and vault password file.
+* Create an Ansible configuration file that details the location of the hosts file and vault password file.
 * Create and encrypt a file, called `group_vars/vbr.yml`, that holds the password for the `sa-ansible` user we use to access the Veeam backup server. The reason that the password for the Veeam backup server is placed here is so that the `ansible vbr -m win_ping` commands works.
 * Create and encrypt a file that is called `vault` that holds the passwords for the hardened backup repository and optionally the vSRX appliance.
 
@@ -203,7 +203,7 @@ If successful, the output shows `SUCCESS` for each command.
 This step is optional, and is required only if Ansible is used for configuring sandboxes.
 
 1. Connect to the Ansible control node as the ansible user.
-2. Install Python: `sudo pip3 install --upgrade pyvmomi pyvim requests`.
+2. Install python: `sudo pip3 install --upgrade pyvmomi pyvim requests`.
 3. Run the following commands to complete the following tasks:
    * Create a folder for the download.
    * Clone the Git repo.

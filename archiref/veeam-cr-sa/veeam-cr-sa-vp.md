@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2024
 
-lastupdated: "2024-06-13"
+lastupdated: "2024-06-05"
 
 subcollection: vmwaresolutions
 
@@ -31,7 +31,7 @@ A backup proxy is a Veeam® component that sits between the backup server and ot
 * The traffic from the source to the backup proxy is not optimized, for example, compressed or de-duped. Therefore, 100% of the backup data is transferred over this connection.
 * Between the backup proxy and backup repository, optimized data typically about 50% of the source data size is transferred over this connection.
 * In the virtual appliance mode, Veeam uses the VMware SCSI HotAdd capability that allows attaching devices to a VM while the VM runs. During backup, replication or restore disks of the processed VM are attached to the backup proxy. VM data is retrieved or written directly from or to the data store, instead of going through the network.
-* The virtual appliance or HotAdd mode is not as efficient as the direct storage access mode. However, it provides better performance than the network mode.
+* The virtual appliance or HotAdd mode is not efficient as the direct storage access mode. However, it provides better performance than the network mode.
 
 The backup proxy can use different transport modes that enable traffic flow between the source and the backup proxy. The end-to-end traffic flow can be considered as:
 
@@ -41,19 +41,19 @@ The backup proxy can use different transport modes that enable traffic flow betw
 In order of the most efficient data transfer, the following backup proxy transport modes are preferred:
 
 * Direct storage access allows the backup proxy to retrieve data directly from the storage by avoiding the vSphere® ESXi hosts and the network. The backup proxy can be physical or virtual if iSCSI or NFS connect storage. However, it must be physical for Fibre Channel SANs. This transport mode cannot be used for vSAN, VVols, or vSphere ESXi host local storage. Direct storage access has two modes:
-   * Direct SAN access is recommended for VMs whose disks are on shared VMFS SAN LUNs that are connected to vSphere ESXi hosts over FC, FCoE, iSCSI, and on shared SAS storage. Direct SAN access uses VMware VADP to transport VM data directly to and from the storage. As VM data travels over the SAN, by avoiding vSphere ESXi hosts and the network, the Direct SAN access mode provides the fastest data transfer speed. It doesn't produce load on the production network either.
+   * Direct SAN access is recommended for VMs whose disks are on shared VMFS SAN LUNs that are connected to vSphere ESXi hosts over FC, FCoE, iSCSI, and on shared SAS storage. Direct SAN access uses VMware VADP to transport VM data directly to and from the storage. As VM data travels over the SAN, by avoiding vSphere ESXi hosts and the network, the Direct SAN access mode provides the fastest data transfer speed. It doesn't produces load on the production network either.
    * In the Direct NFS access mode, the backup proxy bypasses the vSphere ESXi host and directly accesses the NFS data stores through its local NFS client. VM data travels over the network. However, load doesn't exist on the vSphere ESXi host.
 * Virtual appliance (HotAdd) allows the backup proxy to access VM disks on the data store by enabling network-free data transfer between the vSphere ESXi host and the backup proxy. For this transport mode:
-   * The backup proxy must be a VM and it is the recommended mode for a VM-based proxy.
+   * The backup proxy must be a VM and it is the recommended mode for a VM based proxy.
    * It is not recommended for NFS data stores. Direct NFS Access must be used.
-   * The backup server and backup proxy must have the most recent version of VMware Tools installed.
+   * The backup server and backup proxy must have the latest version of VMware Tools installed.
    * SCSI 0:X controller must be present on a backup proxy.
 * Network mode allows the backup proxy access to VM data over the network from the vSphere ESXi hosts by using the NBD/NDBSSL protocol. For this transport mode, the backup proxy can be either physical or virtual. In network mode, the backup proxy uses VMware Virtual Disk Development Kit (VDDK) to communicate with the ESXi host, which produces extra load on the vSphere ESXi host.
 * Backup from storage snapshots mode allows the backup proxy to access VM disks when they are on a supported storage system and the storage system is managed by Veeam Backup and Replication. This method is not available if the production environment is in {{site.data.keyword.cloud}}.
 
 For more information, see [Transport modes](https://helpcenter.veeam.com/docs/backup/vsphere/transport_modes.html?ver=120).
 
-When you use a VM-based backup proxy:
+When you use a VM based backup proxy:
 
 * If the production environment is not on {{site.data.keyword.cloud_notm}}, then the most efficient transport mode depends on the storage architecture.
 * If the production environment is on {{site.data.keyword.cloud_notm}} and the {{site.data.keyword.vcf-auto}} instance is using NFS, then Direct NFS access mode is the most efficient.

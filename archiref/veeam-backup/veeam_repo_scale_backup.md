@@ -4,7 +4,7 @@ copyright:
 
   years: 2023, 2024
 
-lastupdated: "2024-06-13"
+lastupdated: "2024-01-05"
 
 keywords: scale-out backup repositories
 
@@ -22,7 +22,7 @@ A scale-out backup repository is a repository system with horizontal scaling sup
 * **Capacity tier** - Additional level for storing data that needs to be accessed less frequently. However, you can still restore your data directly from it. The capacity tier consists of cloud-based or on-premises object storage repositories called capacity extent.
 * **Archive tier** - Additional level for archive storage of infrequently accessed data. Applicable data can be transported ether from the capacity or archive tier. For restorability from the archive tier, data must undergo a preparation process. {{site.data.keyword.cloud}} object storage cannot be used for the Veeam archive tier. Only Amazon S3 Glacier or Microsoft® Azure Archive Storage can be used.
 
-During service deployment, the automation deploys a scale out backup repository, which is created by using either the local repository or the Linux® hardened repository.
+During service deployment, the automation deploys a scale-out backup repository, which is created by using either the local repository or the Linux® hardened repository.
 
 ## Related links
 {: #veeam_repo_scale_backup-links}

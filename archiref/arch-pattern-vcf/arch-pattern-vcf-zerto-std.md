@@ -4,7 +4,7 @@ copyright:
 
   years:  2024
 
-lastupdated: "2024-06-11"
+lastupdated: "2024-06-05"
 
 subcollection: vmwaresolutions
 
@@ -20,7 +20,7 @@ This architecture pattern explains how to deploy Zerto on {{site.data.keyword.vc
 
 ![Zerto on VMware Cloud Foundation standard architecture](../../images/vcf-arch-zerto-std.svg "Zerto on VMware Cloud Foundation standard architecture."){: caption="Figure 1. Zerto on VMware Cloud Foundation standard architecture" caption-side="bottom"}
 
-To obtain the image to install the required software in this architecture pattern, raise an {{site.data.keyword.cloud_notm}} Support ticket to {{site.data.keyword.vmwaresolutions_full}}.
+To obtain image to install the required software in this architecture pattern, raise an {{site.data.keyword.cloud_notm}} Support ticket to {{site.data.keyword.vmwaresolutions_full}}.
 {: important}
 
 ## Deploying Zerto on VMware Cloud Foundation standard architecture deployment

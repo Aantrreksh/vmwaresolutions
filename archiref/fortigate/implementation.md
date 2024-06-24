@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-06-11"
+lastupdated: "2024-06-03"
 
 subcollection: vmwaresolutions
 
@@ -36,7 +36,7 @@ FortiGate VM appliances are deployed according to the following specifications.
 |:--------- |:------------- |
 | vCPU      | Determined by the selected license tier |
 | vRAM      | For 2–CPU deployments, the initial allocation is 4 GB; for 4–CPU deployments, it is 6 GB; for all other deployments, it is 12 GB |
-| High availability | Two appliances are deployed to ensure high availability |
+| High availability | Two appliances deployed to ensure high availability |
 | Disk usage | One 2 GB and one 30 GB disk |
 | Disk backing | When deployed to a gateway cluster, local SSD storage; when deployed to any other cluster, by using vSAN or {{site.data.keyword.cloud}} Endurance, as applicable |
 {: caption="Table 1. Appliance specifications" caption-side="bottom"}
@@ -79,7 +79,7 @@ When deployed ot a gateway cluster, the FortiGate VM appliances are connected to
 ## VMware DRS and reservations
 {: #fortigate-implementation-drs}
 
-Because it provides time–sensitive networking services, FortiGate VM must be configured to ensure that it has adequate resources. The {{site.data.keyword.cloud_notm}} automation configures a reservation to ensure that the virtual appliances receive their full allotment of CPU and memory. To ensure high availability, the {{site.data.keyword.cloud_notm}} automation also creates a DRS anti–affinity rule to restrict the two FortiGate VM virtual appliances from running on the same host.
+Because it provides time–sensitive networking services, FortiGate VM must be configured to ensure that it has adequate resources. The {{site.data.keyword.cloud_notm}} automation configures a reservation to ensure that the virtual appliances receive their full allotment of CPU and memory. To assure high availability, the {{site.data.keyword.cloud_notm}} automation also creates a DRS anti–affinity rule to restrict the two FortiGate VM virtual appliances from running on the same host.
 
 ## License requirements
 {: #fortigate-implementation-license}

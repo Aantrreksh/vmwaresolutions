@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-06-14"
+lastupdated: "2024-06-04"
 
 subcollection: vmwaresolutions
 
@@ -21,7 +21,7 @@ The following information provides an overview of networking deployment for VMwa
 ## VLAN interfaces for Cloud Builder, SDDC manager, and VMware vCenter Server on VPC subnet
 {: #vpc-vcf-mgmt-appliances-vlan-nics}
 
-The VMware® Cloud Builder appliance automates the deployment of the entire software-defined stack. VMware Cloud Builder is a virtual appliance that is used to deploy and configure the first cluster of the management domain and transfer inventory and control to the SDDC manager. During the deployment process, the VMware Cloud Builder appliance validates network information that you provide in the deployment parameter workbook, such as DNS, network (VLANS, IP addresses, MTUs), and credentials. The VMware Cloud Builder appliance must have network access to all hosts on the management network.
+The VMware® Cloud Builder appliance automates the deployment of the entire software-defined stack. VMware Cloud Builder is a virtual appliance that is used to deploy and configure the first cluster of the management domain and transfer inventory and control to SDDC manager. During the deployment process, the VMware Cloud Builder appliance validates network information that you provide in the deployment parameter workbook, such as DNS, network (VLANS, IP addresses, MTUs), and credentials. The VMware Cloud Builder appliance must have network access to all hosts on the management network.
 
 VMware vSphere uses virtualization to transform individual data centers into aggregated computing infrastructures that include CPU, storage, and networking resources. VMware vCenter Server® manages these infrastructures as a unified operating environment and provides you with the tools to administer the data centers that participate in that environment.
 
@@ -39,7 +39,7 @@ The following table summarizes the required VLAN interfaces in {{site.data.keywo
 ## Overlay subnets for Aria Lifecycle
 {: #vpc-vcf-mgmt-appliances-overlay}
 
-Aria Suite Lifecycle (vRealize Suite Lifecycle Manager) is deployed at the NSX overlay. Two segments (`avn-local-network` and `avn-x-region-network`) are created in the management domain behind the management Tier-0 gateway on AVN segment. The automation configures and provisions the required routing so that the Aria Suite Lifecycle appliance can communicate with other VMware Cloud Foundation assets in VPC subnets and access Internet (egress only) to download the required deployment and update files for other Aria products from VMware public repositories. Internet access is provided through SNAT configured on the Tier-0 gateway. A VPC floating IP address is provisioned and configured in the Tier-0 gateway for this purpose.
+Aria Suite Lifecycle (vRealize Suite Lifecycle Manager) is deployed at the NSX overlay. Two segments (`avn-local-network` and `avn-x-region-network`) are created in the management domain behind the management Tier-0 gateway on AVN segment. The automation configures and provisions the required routing so that the Aria Suite Lifecycle appliance can communicate with other VMware Cloud Foundation assets in VPC subnets and access Internet (egress only) to download the required deployment and update files for other Aria products from VMware public repositories. Internet access is provided through SNAT configured on the Tier-0 gateway. A VPC floating IP address is provisioned and configured in Tier-0 gateway for this purpose.
 
 ## Related links
 {: #vpc-vcf-mgmt-appliances-links}

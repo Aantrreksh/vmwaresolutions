@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-06-14"
+lastupdated: "2024-06-05"
 
 subcollection: vmwaresolutions
 
@@ -25,7 +25,7 @@ The Linux® hardened repository server is an {{site.data.keyword.cloud}} bare me
 * Configuration is done through a laptop that has internet connectivity.
 * The user has the required privileges in the {{site.data.keyword.cloud_notm}} account to order the required components.
 
-The specification for the {{site.data.keyword.cloud_notm}} bare metal server that is deployed in this solution architecture guide is described as follows. Other bare metal specification options are also available. The size and number of servers depend on your requirements. For more information, see [Scale-out backup repository](/docs/vmwaresolutions?topic=vmwaresolutions-veeam-cr-sa-components#veeam-cr-sa-components-sobr).
+The specification for the {{site.data.keyword.cloud_notm}} bare metal server that is deployed in this solution architecture guide is described as follows. Other bare metal specifications options are also available. The size and number of servers depend on your requirements. For more information, see [Scale-out backup repository](/docs/vmwaresolutions?topic=vmwaresolutions-veeam-cr-sa-components#veeam-cr-sa-components-sobr).
 
 * Dual Intel® Xeon® Gold 5120 (28 Cores, 2.20 GHz)
 * 64 GB RAM
@@ -52,7 +52,7 @@ The following example uses the {{site.data.keyword.cloud_notm}} CLI to order the
 | Key Name | Description | Command |
 |----------|-------------|---------|
 | INTEL_INTEL_XEON_5120_2_20 | Dual Intel Xeon Gold 5120 (28 Cores, 2.20 GHz) | `ibmcloud sl order item-list 2U_DUAL_INTEL_XEON_PROCESSOR_SCALABLE_FAMILY_12_DRIVES --category server` |
-| OS_RHEL_8_X_64_BIT_PER_PROCESSOR_LICENSING | Red Hat Enterprise Linux 8.x (64-bit per processor licensing) | `ibmcloud sl order item-list 2U_DUAL_INTEL_XEON_PROCESSOR_SCALABLE_FAMILY_12_DRIVES --category os \| grep RHEL` |
+| OS_RHEL_8_X_64_BIT_PER_PROCESSOR_LICENSING | Red Hat Enterprise Linux 8.x (64-bit per-processor licensing) | `ibmcloud sl order item-list 2U_DUAL_INTEL_XEON_PROCESSOR_SCALABLE_FAMILY_12_DRIVES --category os \| grep RHEL` |
 | RAM_64_GB_DDR4_2133_ECC_NON_REG | 64 GB RAM | `ibmcloud sl order item-list 2U_DUAL_INTEL_XEON_PROCESSOR_SCALABLE_FAMILY_12_DRIVES --category ram` |
 | DISK_CONTROLLER_RAID | RAID | `ibmcloud sl order item-list 2U_DUAL_INTEL_XEON_PROCESSOR_SCALABLE_FAMILY_12_DRIVES --category disk_controller` |
 | HARD_DRIVE_1_00_TB_SATA_2 | 1.00 TB SATA | `ibmcloud sl order item-list 2U_DUAL_INTEL_XEON_PROCESSOR_SCALABLE_FAMILY_12_DRIVES --category disk0` |

@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-06-11"
+lastupdated: "2024-06-05"
 
 subcollection: vmwaresolutions
 
@@ -18,7 +18,7 @@ subcollection: vmwaresolutions
 
 Review the source architecture for the VMware® HCX™ components that are typically deployed in the customer data center. The tasks that can be accomplished and the features that support and enhance migration and network extension are also presented.
 
-* HCX owns the source and destination encryption and decryption processes. It ensures consistent security and providing admission for hybrid workflows such as virtual machine (VM) migration and network extension.
+* HCX owns the source and destination encryption and decryption processes, ensuring consistent security and providing admission for hybrid workflows such as virtual machine (VM) migration and network extension.
 * HCX creates an optimized, software-defined WAN to increase stretched network performance, enabling performance that approaches LAN speed.
 * HCX also enables bidirectional workload migration to {{site.data.keyword.cloud}} Networking services.
 * HCX integrates with vSphere vCenter and is managed from the vSphere Web Client.
@@ -41,9 +41,9 @@ The HCX Manager VM is installed first, and it manages the installation of any ot
 
 The following steps are basic installation tasks:
 1. Obtain HCX Connector virtual appliance OVA file.
-2. From the vSphere Web Client, install the HCX Manager virtual appliance in the on-premises vCenter that connects to {{site.data.keyword.cloud_notm}}.
+2. From the vSphere Web Client, install the HCX Manager service virtual appliance in the on-premises vCenter that connects to {{site.data.keyword.cloud_notm}}.
 3. From the vSphere Web Client, register an {{site.data.keyword.cloud_notm}} endpoint with the HCX plug-in. Registration establishes the one-to-one relationship between the on-premises HCX and the HCX instance on {{site.data.keyword.cloud_notm}}.
-4. Install and configure the service's virtual appliances.
+4. Install and configure the service virtual appliances.
 5. For each appliance installed on premises, the installer provisions a corresponding service virtual appliance in the target {{site.data.keyword.cloud_notm}}.
 6. After the installation, HCX Manager controls both local and remote service virtual appliances. In the {{site.data.keyword.cloud_notm}}, HCX manages the provisioned Software-Defined WAN components as a service.
 
@@ -68,9 +68,9 @@ The installation package is an OVA file that contains the Hybrid Cloud Services 
 ### HCX Connector
 {: #hcx-archi-source-hcxm}
 
-The HCX Connector plug-in is deployed on-premises only. It manages the service virtual appliances for the SD-WAN. The HCX Connector virtual appliance is an extension to the source vCenter and is deployed as a VM. This appliance’s file structure contains all the hybrid service virtual appliances. The HCX Connector oversees the deployment and configuration of the HCX-IX, the HCX-NE, and HCX-WO virtual appliances both on-premises and in the cloud.
+The HCX Connector plug-in is deployed on-premises only. It manages the service virtual appliances for the SD-WAN. The HCX Connector virtual appliance is an extension to the source vCenter and is deployed as a VM. This appliance’s file structure contains all the hybrid service virtual appliances. The HCX Connector oversees the deployment and configuration of the HCX-IX, the HCX-NE, and HCX-WO virtual appliance both on-premises and in the cloud.
 
-The virtual appliance can be installed with either thin provisioning or thick provisioning for the hard disk drive. By default, hard disk drives for the service virtual appliances are thinly provisioned.
+The virtual appliance can be installed with either thin or thick provisioning for the hard disk drive. By default, hard disk drives for the service virtual appliances are thinly provisioned.
 
 After the service, virtual appliance configuration, and deployment are done, log in to this VM to use the Hybrid Cloud Services management portal.
 

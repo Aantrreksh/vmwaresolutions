@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-06-14"
+lastupdated: "2024-06-05"
 
 subcollection: vmwaresolutions
 
@@ -53,7 +53,7 @@ cd C:\Users\Administrator\Downloads
 PowerShell is installed by default with Windows® Server. However, PowerCLI needs to be installed from the PowerShell gallery.
 
 1. Install VMware PowerCLI by entering `Install-Module -Name VMware.PowerCLI`.
-2. At the prompt, enter `Y`.
+2. At the prompts, enter `Y`.
 
 ## Related links
 {: #veeam-cr-sag-jmpcfg-related}

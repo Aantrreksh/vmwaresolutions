@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-06-10"
+lastupdated: "2024-06-03"
 
 subcollection: vmwaresolutions
 
@@ -18,7 +18,7 @@ subcollection: vmwaresolutions
 
 When you deploy a [{{site.data.keyword.vcf-auto-short}}](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview) instance in your {{site.data.keyword.cloud}} classic infrastructure, the deployment consists of a number of network constructs and VMware® management components.
 
-These architecture patterns give an overview for a few private connectivity options for {{site.data.keyword.vcf-auto}} deployments.
+These architecture patterns give an overview for a few private connectivity options for {{site.data.keyword.vcf-auto}}  deployments.
 
 ## Private connectivity deployed by automation
 {: #arch-pattern-nsx-t-private-connectivity-depl-auto}
@@ -54,7 +54,7 @@ The following steps summarize this architecture pattern deployment.
    {: note}
 
 4. You can configure DNAT rules on T0 or T1 for ingress access, or SNAT for egress access from NSX overlay by using the IP addresses from the private portable subnet configured in the T0 uplinks. You can also configure load balancer VIPs, IPsec, or L2 VPN. Each of these are advertised as `/32` host IP addresses. You need to enable route advertisements on T1 Gateways so that T0 is aware of these IP addresses, and they must appear on T0s routing table.
-5. T0 Gateway uses proxy ARP on the uplink subnet for each `/32` IP address that is aware of (that is, which exists in its routing table). BCR can route ingress traffic only to these IP addresses. To check the routing table of T0, use the NSX GUI or log in to the NSX edge node and its T0 Service Router (SR) VRF. With [{{site.data.keyword.cloud_notm}} Private static subnets](/docs/subnets?topic=subnets-getting-started), the whole subnet is routed to the overlay.
+5. T0 Gateway uses proxy ARP on the uplink subnet for each `/32` IP address that is aware of (that is, which exists in its routing table). BCR can route ingress traffic only to these IP addresses. To check the routing table of T0, use the NSX GUI or login to NSX edge node and its T0 Service Router (SR) VRF. With [{{site.data.keyword.cloud_notm}} Private static subnets](/docs/subnets?topic=subnets-getting-started), the whole subnet is routed to the overlay.
 
 ## Ingress private connectivity with gateway cluster
 {: #arch-pattern-nsx-t-private-connectivity-edge-gateway-cluster}
@@ -79,16 +79,16 @@ The following list summarizes this architecture pattern deployment.
 ## Private connectivity through direct link
 {: #arch-pattern-nsx-t-private-connectivity-direct-link}
 
-Private connectivity for vCenter Server can use [{{site.data.keyword.dl_full_notm}}](/docs/dl?topic=dl-dl-about) and tunneling. This solution is applicable for [NSX-based {{site.data.keyword.vcf-auto-short}} instance](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview), which is provisioned in {{site.data.keyword.cloud_notm}} classic infrastructure. You can use Gateway Appliance or vCenter Server gateway cluster with Juniper vSRX or other device as part of the solution as an option.
+Private connectivity for vCenter Server can use [{{site.data.keyword.dl_full_notm}}](/docs/dl?topic=dl-dl-about) and tunneling. This solution is applicable for [NSX based {{site.data.keyword.vcf-auto-short}} instance](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview), which is provisioned in {{site.data.keyword.cloud_notm}} classic infrastructure. You can use Gateway Appliance or vCenter Server gateway cluster with Juniper vSRX or other device as part of the solution as an option.
 
-The tunnel is established between NSX T0 and a customer router routable through {{site.data.keyword.dl_short}}. If vSRX or other third-party device is used in a gateway cluster, you can terminate the tunnel in these devices as well. In this case, NSX T0 advertises routes in the vSRX (or other third-party device) through BGP or Static Routes.
+The tunnel is established between NSX T0 and a customer router routable through {{site.data.keyword.dl_short}}. If vSRX or other third-party device is used in gateway cluster, you can terminate the tunnel in these devices as well. In this case, NSX T0 advertises routes in the vSRX (or other third-party device) through BGP or Static Routes.
 
 For more information about this architecture pattern, see [Architecture pattern for using IPsec over {{site.data.keyword.dl_short}} with a vCenter Server with NSX instance](/docs/vmwaresolutions?topic=vmwaresolutions-arch-pattern-nsx-t-direct-link-ipsec).
 
 ## Private connectivity through transit gateway
 {: #arch-pattern-nsx-t-private-connectivity-transit-gateway}
 
-Hybrid cloud connectivity can be established by using [{{site.data.keyword.tg_full}}](/docs/transit-gateway?topic=transit-gateway-about). This solution is applicable for NSX-based {{site.data.keyword.vcf-auto-short}} instance, which is provisioned in {{site.data.keyword.cloud_notm}} classic infrastructure. This pattern requires a [gateway appliance](/docs/gateway-appliance?topic=gateway-appliance-about#firewall) or [gateway cluster](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-addl-clusters) with Juniper vSRX or other third-party device, which supports GRE. In this solution, a GRE tunnel is established between this device and Transit GW Router in a specific Zone. NSX T0 advertises routes through vSRX (or other device) to Transit Gateway.
+Hybrid cloud connectivity can be established by using [{{site.data.keyword.tg_full}}](/docs/transit-gateway?topic=transit-gateway-about). This solution is applicable for NSX based {{site.data.keyword.vcf-auto-short}} instance, which is provisioned in {{site.data.keyword.cloud_notm}} classic infrastructure. This pattern requires a [gateway appliance](/docs/gateway-appliance?topic=gateway-appliance-about#firewall) or [gateway cluster](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-addl-clusters) with Juniper vSRX or other third-party device, which supports GRE. In this solution, GRE tunnel is established between this device and Transit GW Router in a specific Zone. NSX T0 advertises routes through vSRX (or other device) to Transit Gateway.
 
 For more information about this architecture pattern, see [Architecture pattern for using Transit Gateway with a vCenter Server with NSX instance](/docs/vmwaresolutions?topic=vmwaresolutions-arch-pattern-nsx-t-transit-gw).
 

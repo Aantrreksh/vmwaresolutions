@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2024
 
-lastupdated: "2024-06-14"
+lastupdated: "2024-06-13"
 
 subcollection: vmwaresolutions
 
@@ -39,7 +39,7 @@ vSAN can be employed as follows:
 * One NVMe drive in the group serves as the cache tier and the remaining SSDs serve as the capacity tier.
 * A single vSAN data store is created from all storage.
 
-VMware Cloud Foundation deploys the vSAN component automatically. You do not need to apply any specific settings when you deploy.
+VMware Cloud Foundation deploys the vSAN automatically for you and you do not need to apply any specific configurations when deploying.
 
 ## Virtual network setup for vSAN
 {: #vpc-vcf-storage-virtual-net-setup}

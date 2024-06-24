@@ -4,7 +4,7 @@ copyright:
 
   years:  2024
 
-lastupdated: "2024-06-11"
+lastupdated: "2024-06-03"
 
 subcollection: vmwaresolutions
 
@@ -34,7 +34,7 @@ The following diagram introduces the high-level steps to deploy Veeam on a VMwar
 
 This architecture pattern deployment is summarized as follows:
 
-1. Deploy an {{site.data.keyword.vpc_short}} virtual server instance into the management subnet and attach its vNIC to the management security group. Add required DNS A and PTR records to the DNS service according to the Veeam documentation and your solution requirements.
+1. Deploy an {{site.data.keyword.vpc_short}} virtual server instance into the management subnet and attach its vNIC to the management security group. Add required DNS A and PTR records to the DNS service according to the  Veeam documentation and your solution requirements.
 1. Plan and size your deployment. Install and configure Veeam VBR into the Virtual Server instance. Obtain a license through the [VMware Solutions console](/infrastructure/vmware-solutions/console/instances/licenses).
 1. Provision the required number of VPC (Virtual Private Cloud) file shares to the primary backup storage and attach it to the virtual server instance. Attach and configure storage to Veeam VBR.
 1. Provision {{site.data.keyword.cloud_notm}} Object Storage and create buckets for the secondary backup storage. Attach and configure storage to Veeam VBR.
@@ -46,9 +46,9 @@ This architecture pattern deployment is summarized as follows:
 
 When you design or deploy this architecture pattern, consider the following information:
 
-* Follow the Veeam best practices when you design your solution.
-* When you are using Veeam as a backup solution, design the wanted resiliency with storage selection, for use {{site.data.keyword.vpc_short}} file shares or block storage in combination with {{site.data.keyword.cloud_notm}} Object Storage.
-* When you replicate with Veeam to on-premises or other VMware cloud, you must establish connectivity to the replication source or target, depending on the wanted target.
+* Follow Veeam best practices when designing your solution.
+* When using Veeam as a backup solution, design the wanted resiliency with storage selection, for use {{site.data.keyword.vpc_short}} file shares or block storage in combination with {{site.data.keyword.cloud_notm}} Object Storage.
+* When replicating with Veeam to on-premises or other VMware cloud, you need to establish connectivity to the replication source or target, depending on the wanted target.
 * Design your connectivity by using the available connectivity pattern for Veeam replication.
 
 ## Related links

@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-06-11"
+lastupdated: "2024-01-30"
 
 subcollection: vmwaresolutions
 
@@ -28,26 +28,26 @@ Caveonix RiskForesight enables the enterprise to meet industry standards and gov
 
 Caveonix RiskForesight is a multitenant cyberrisk and Compliance Management platform for the hybrid cloud, enabling an enterprise, and its business units, continuous cybersecurity, and compliance visibility into their workloads. The Detect, Predict, and Act modules extend the National Institute of Standards and Technology (NIST) Risk Management Framework (RMF). The extensions allow continuous monitoring, quantitative risk analytics, and protective actions in the Risk Management Continuum of Detect, Predict, and Act.
 
-With machine learning and CaveoIQ Risk Analytics Engine, the solution provides proactive workload protection from risks due to cyberthreats. It provides a consistent security and policy framework across a hybrid cloud environment and is fully integrated into the cloud technology stack from VMware and public cloud providers such as AWS.
+With machine learning and CaveoIQ Risk Analytics Engine, the solution provides proactive workload protection from risks due to cyberthreats. It provides a consistent security and policy framework across a hybrid cloud environment and is fully integrated into cloud technology stack from VMware and public cloud providers such as AWS.
 
 The three key services available through the RiskForesight GUI are Risk Management, Compliance Risk, and Forensic Management.
 
 ## Risk management
 {: #caveonix-intro-risk-mgmt}
 
-- Continuous cyberrisk
-- Cyberrisk scoring
+- Continuous cyber-risk
+- Cyber-risk scoring
 - Vulnerability scoring and prioritization
 - Supports industry-leading vulnerability and configuration scanning tools
 - Global benchmarking standards
-- Cyberrisk reporting
+- Cyber-risk reporting
 
 ## Compliance risk
 {: #caveonix-intro-compl-risk}
 
 - Automated compliance monitoring
 - Compliance risk score dashboard
-- Automated IA control assessment
+- Automated IA controls assessment
 - It supports the following global configuration benchmarking standards: PCI, FISMA, FEDRAMP, HIPAA, GLBA, GDPR, NERC CIP Reports Against SCAP, OVAL, and XCCDF.
 - Continuously updated and mapped IA controls and standards libraries
 

@@ -4,7 +4,7 @@ copyright:
 
   years: 2016, 2024
 
-lastupdated: "2024-06-13"
+lastupdated: "2024-06-05"
 
 subcollection: vmwaresolutions
 
@@ -86,14 +86,14 @@ The following tables show the specifications of the management node, control pla
 
 | Host description | vCPU  | Memory (GB) | Disk (GB) | OS |
 |:---------------- |:----- |:----------- |:--------- |:-- |
-| `Management0` | 2 | 8 | 50 | {{site.data.keyword.redhat_notm}} Enterprise Linux® 8.0 |
+| Management0 | 2 | 8 | 50 | {{site.data.keyword.redhat_notm}} Enterprise Linux® 8.0 |
 {: class="simple-tab-table"}
 {: caption="Table 5. Management node specifications" caption-side="bottom"}
 {: #table1}
 {: tab-title="Management node"}
 {: tab-group="rhos-specs"}
 
-| Host description | vCPU  | Memory (GB) | Disk (GB) | OS | Hostname |
+| Host description | vCPU  | Memory (GB) | Disk (GB) | OS | Host name |
 |:---------------- |:----- |:----------- |:--------- |:-- |:--------- |
 | Control-plane0 | 4 | 8 | 60 | {{site.data.keyword.redhat_notm}} Enterprise Linux CoreOS |
 | Control-plane1 | 4 | 8 | 60 | {{site.data.keyword.redhat_notm}} Enterprise Linux CoreOS |
@@ -104,7 +104,7 @@ The following tables show the specifications of the management node, control pla
 {: tab-title="Control plane node"}
 {: tab-group="rhos-specs"}
 
-| Host description | vCPU  | Memory (GB) | Disk (GB) | OS | Hostname |
+| Host description | vCPU  | Memory (GB) | Disk (GB) | OS | Host name |
 |:---------------- |:----- |:----------- |:--------- |:-- |:--------- |
 | Worker0 | 16 | 32 | 200 | {{site.data.keyword.redhat_notm}} Enterprise Linux CoreOS |
 | Worker1 | 16 | 32 | 200 | {{site.data.keyword.redhat_notm}} Enterprise Linux CoreOS |

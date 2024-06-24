@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-06-13"
+lastupdated: "2024-06-05"
 
 subcollection: vmwaresolutions
 
@@ -15,7 +15,7 @@ subcollection: vmwaresolutions
 # Isolated recovery environment solution architecture
 {: #veeam-cr-sa-ire}
 
-The isolated recovery environment solution architecture uses a {{site.data.keyword.vcf-auto}} instance with the Veeam® service, gateway cluster, and Juniper® vSRX options. They create an air-gapped cyber-recovery environment separate from the production environment. This isolated recovery environment is managed and accessed by using a separate cyber-recovery team. The Veeam service is enhanced with a Veeam Linux® hardened repository for immutable storage.
+The isolated recovery environment solution architecture uses a {{site.data.keyword.vcf-auto}} instance with the Veeam® service, gateway cluster, and Juniper® vSRX options. They create an air gapped cyber-recovery environment separate from the production environment. This isolated recovery environment is managed and accessed by using a separate cyber-recovery team. The Veeam service is enhanced with a Veeam Linux® hardened repository for immutable storage.
 
 The solution architecture is suitable for clients who want to move a copy of critical data away from the production environment, backup systems, and personnel to an environment that requires separate security credentials. The solution architecture does not preclude any of the {{site.data.keyword.vcf-auto-short}} options, such as Caveonix, Entrust, and VMware Aria® Operations™.
 
@@ -28,14 +28,14 @@ Key elements of the isolated recovery environment solution architecture include:
 * The solution architecture supports only production data that is hosted in a VMware vSphere® environment. It does not support physical servers or other hypervisors.
 * The Veeam service in the isolated recovery environment provides a cyber-recovery backup of the specified production virtual machines (VMs). It writes the backup data to the Linux hardened backup repository in the isolated recovery environment.
 * Cyber-recovery backup proxies, managed by the Veeam service in the isolated recovery environment, are required to be hosted in the production site. These proxies can be Windows® or Linux based and virtual or physical.
-* The solution architecture is independent of the existing production backup environment and does not integrate to any production systems except for the production vCenter and vSphere hosts.
+* The solution architecture is independent of existing production backup environment and does not integrate to any production systems except for the production vCenter and vSphere hosts.
 * For cyber-recovery tasks, the Veeam service enables the mounting of the cyber-recovery backup files from the Linux hardened repository in read-only mode into a sandbox. The sandbox is hosted on the vSphere Server instance.
 * There can be many sandboxes, for example:
    * One can be used daily to scan cyber-recovery backup files.
    * One or more can be used as required for cyber-recovery tasks.
 * The sandboxes are for forensic scanning, analytics, or for other cyber-recovery tasks, such as investigations. The sandboxes are not meant to run production workloads. For recovery, the customer VMs must be moved back to either the production environment or to other customer-specified environment by using Veeam recovery methods.
 * All devices are reconfigured to use the ADDNS servers for DNS and NTP requests.
-* The sizing of the isolated recovery environment depends on the maximum size of the backup footprint. Also, on the number of sandboxes that are needed, and the number of recovered VMs to be instantiated at any time.
+* Sizing of the isolated recovery environment depends on the maximum size of the backup footprint. Also, on the number of sandboxes that are needed, and the number of recovered VMs to be instantiated at any time.
 
 ## Production environment
 {: #veeam-cr-sa-ire-prod}
@@ -49,13 +49,13 @@ The production environment is the vSphere environment that hosts the production 
 * Production vCenter manages the production vSphere hosts. The Veeam BUR server requires access to the production vCenter.
 * Production ESXi hosts the production data and is managed by the production vCenter. The Veeam BUR server requires access to the production vSphere hosts.
 * Cyber-recovery backup is the backup of production data to the isolated recovery environment. A cyber-recovery backup is different from a production backup.
-* Control traffic is the access that is required by the Veeam backup server to the production vCenter and ESXi hosts to enable cyberbackup operations.
+* Control traffic is the access that is required by the Veeam backup server to the production vCenter and ESXi hosts to enable cyber-backup operations.
 * Cyber-recovery backup proxy is a Veeam VMware backup proxy that is used to transport data from the production environment to the cyber-recovery site. It is an architecture component that sits between the cyber-backup server and other components of the cyber-backup infrastructure. While the cyber-backup server administers tasks, the cyber-recovery backup proxy processes jobs and delivers backup traffic. Basic backup proxy tasks include retrieving VM data, compression, de-duplicating, encrypting, and forwarding to the cyber-recovery backup repository. For more information, see [Veeam backup proxy](/docs/vmwaresolutions?topic=vmwaresolutions-veeam-cr-sa-vp).
 
 ## {{site.data.keyword.vcf-auto-short}} instance
 {: #veeam-cr-sa-ire-vcs}
 
-The {{site.data.keyword.vcf-auto-short}} instance provides the compute and network resources to host VMs and sandboxes. If the vSAN option in the {{site.data.keyword.vcf-auto-short}} instance order is used, then the {{site.data.keyword.vcf-auto-short}} instance also provides the storage resources.
+The {{site.data.keyword.vcf-auto-short}} instance provides the compute and network resources to host VMs and sandboxes. If the vSAN option in the {{site.data.keyword.vcf-auto-short}} instance ordering is used, then the {{site.data.keyword.vcf-auto-short}} instance also provides the storage resources.
 
 The {{site.data.keyword.vcf-auto-short}} instance consists of a consolidated cluster with a minimum of three vSphere ESXi hosts. This cluster hosts the following VMs:
 
@@ -63,7 +63,7 @@ The {{site.data.keyword.vcf-auto-short}} instance consists of a consolidated clu
 * NSX-T™ manager cluster - The NSX-T manager cluster consists of three manager appliances that provide the management and control plane for the virtualized network, also known as the overlay network.
 * Active Directory™ and domain name service - The ADDNS VMs are two Microsoft® Windows 2019 VMs configured for Active Directory and DNS. This option is selected in the order process by selecting the **Two highly available dedicated Windows Server VMs on the management cluster** option. By selecting this option, you must provide your own licenses.
 * Veeam service instance - For more information, see [Veeam components](/docs/vmwaresolutions?topic=vmwaresolutions-veeam-cr-sa-components).
-* Gateway cluster - A gateway cluster consists of two vSphere ESXi hosts provisioned on {{site.data.keyword.cloud_notm}} gateways. It provides the resources to run the network edge gateway. These resources include firewalls and the ability to become the default gateways for {{site.data.keyword.cloud_notm}} subnets that are associated with them. In this solution architecture, the cluster hosts the Juniper vSRX firewalls that run as virtual appliances. While Juniper vSRX appliances can be run directly on the consolidated cluster, they cannot act as the default gateways to the {{site.data.keyword.cloud_notm}} subnets, as this requires the {{site.data.keyword.cloud_notm}} gateway appliance.
+* Gateway cluster - A gateway cluster consists of two vSphere ESXi hosts provisioned on {{site.data.keyword.cloud_notm}} gateways. It provides the resources to run the network edge gateway. These resources include firewalls and the ability to become the default gateways for {{site.data.keyword.cloud_notm}} subnets that are associated with them. In this solution architecture, the cluster hosts the Juniper vSRX firewalls that run as virtual appliances. While Juniper vSRX appliances can be run directly on the consolidated cluster, it cannot act as the default gateways to the {{site.data.keyword.cloud_notm}} subnets, as this requires the {{site.data.keyword.cloud_notm}} gateway appliance.
 
 The solution architecture adds the following components to the {{site.data.keyword.vcf-auto-short}} instance:
 

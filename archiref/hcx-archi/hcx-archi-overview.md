@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-06-11"
+lastupdated: "2024-06-05"
 
 subcollection: vmwaresolutions
 
@@ -18,7 +18,7 @@ subcollection: vmwaresolutions
 
 VMware® HCX™ seamlessly integrates on-premises vSphere® vCenter™ networks into {{site.data.keyword.vmwaresolutions_full}} deployments. Hybrid networking extends on-premises vSphere vCenter networks into the {{site.data.keyword.cloud_notm}}, supporting bidirectional virtual machine (VM) mobility.
 
-HCX owns the source and destination encryption and decryption processes. It ensures consistent security and providing admission for hybrid workflows such as VM migration and network extension.
+HCX owns the source and destination encryption and decryption processes, ensuring consistent security and providing admission for hybrid workflows such as VM migration and network extension.
 
 This offering creates an optimized, software-defined WAN to increase stretched network performance, enabling performance that approaches LAN speed. HCX also enables bidirectional workload migration to {{site.data.keyword.cloud_notm}} Networking services. HCX integrates with vSphere vCenter and is managed from the vSphere Web Client.
 
@@ -104,7 +104,7 @@ The deployment architecture consists of the HCX components within the {{site.dat
 
 ![HCX with single source over Public Network](../../images/hcx-public.svg "HCX with single source over Public Network"){: caption="Figure 1. HCX with single source over Public Network" caption-side="bottom"}
 
-Alternatively, the architecture also allows site peering over the Private Internet.
+Alternatively, the architecture also allows site peering over Private Internet.
 
 ![HCX with single source over Private Network](../../images/hcx-private.svg "HCX with single source over Private Network"){: caption="Figure 2. HCX with single source over Private Network" caption-side="bottom"}
 

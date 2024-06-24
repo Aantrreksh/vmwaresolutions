@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-06-14"
+lastupdated: "2024-02-02"
 
 subcollection: vmwaresolutions
 
@@ -25,7 +25,7 @@ When you scan hosts, virtual machines (VMs), and virtual appliances (VAs), you e
 {: #vum-scanning-scan-hosts}
 
 1. Click **Scan for Updates**, select **Patches and Extensions and Upgrades**, then click **OK**.
-2. When the scan completes, select **Critical Host Patches**. Review the patch details for each host by clicking the number in **Number of Patches**. A window shows the patch information.
+2. When the scan completes, select **Critical Host Patches**. In the lower pane, review the patch details for each host by clicking the number in **Number of Patches**. A window shows the patch information.
 3. Review and repeat for **Non-Critical Patches**.
 
    The VMware Update Manager (VUM) log files are at _/var/log/vmware/vmware-updatemgr/vum-server/vmware-vum-server-log4cpp.log_.

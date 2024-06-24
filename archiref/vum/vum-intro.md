@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-06-14"
+lastupdated: "2024-06-07"
 
 subcollection: vmwaresolutions
 
@@ -25,7 +25,7 @@ After 21 June 2022, you can no longer order new {{site.data.keyword.vcf-auto-sho
 
 If you have a {{site.data.keyword.vcf-auto-short}} instance that is deployed with vSphere 7, then VMware® added new functions and rebranded it as vSphere Lifecycle Manager (vLCM). For more information, read this blog entry [vSphere 7 – lifecycle management](https://blogs.vmware.com/vsphere/2020/04/vsphere-7-patching-lifecycle-management.html){: external}
 
-VUM enables centralized, automated patch and version management for VMware vSphere®. With VUM, you can complete the following tasks in your {{site.data.keyword.vcf-auto-short}} environment:
+VUM enables centralized, automated patch and version management for VMware vSphere® and it allows you to complete the following tasks in your {{site.data.keyword.vcf-auto-short}} environment:
 * Upgrade and patch the vSphere ESXi hosts.
 * Install and update third-party software on the hosts.
 * Upgrade virtual machine hardware, VMware Tools, and virtual appliances.
@@ -57,7 +57,7 @@ This information is organized into the following sections:
       * Install and configure a proxy server to provide internet access for VUM.
       * The initial setup of VUM to use the proxy server.
    * [Collecting the metadata](/docs/vmwaresolutions?topic=vmwaresolutions-vum-metadata) - VUM downloads metadata about the upgrades, patches, or extensions through a predefined automatic process that you can modify. At regular configurable intervals, VUM contacts VMware, or third-party sources, to gather the most recent metadata about available upgrades, patches, or extensions.
-   * [Creating baselines](/docs/vmwaresolutions?topic=vmwaresolutions-vum-baselines) - Use the predefined baselines and baseline groups or create custom ones. Baselines and baseline groups are then attached to inventory objects.
+   * [Creating baselines](/docs/vmwaresolutions?topic=vmwaresolutions-vum-baselines) - Use the pre-defined baselines and baseline groups or create custom ones. Baselines and baseline groups are then attached to inventory objects.
    * [Scanning and review](/docs/vmwaresolutions?topic=vmwaresolutions-vum-scanning) - Inventory objects are scanned, and the results are reviewed to determine how they comply with the baselines and baseline groups. Scan results can be filtered by text search, group selection, baseline selection, and compliance status selection.
    * [Staging and remediation](/docs/vmwaresolutions?topic=vmwaresolutions-vum-staging) - Patches and extensions can be optionally staged before remediation to ensure that they are downloaded to the host. During remediation, VUM applies the patches, extensions, and upgrades to the inventory objects.
 

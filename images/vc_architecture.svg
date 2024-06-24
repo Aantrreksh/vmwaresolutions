@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 679.3 273.3" style="enable-background:new 0 0 679.3 273.3;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#4C84C5;}
+	.st1{fill:#959595;}
+	.st2{fill:#1DA78D;}
+	.st3{fill:#FFFFFF;}
+	.st4{font-family:'IBMPlexSans';}
+	.st5{font-size:14px;}
+	.st6{font-size:12px;}
+</style>
+<rect x="126" y="4" class="st0" width="415" height="85"/>
+<rect x="127.3" y="184.7" class="st1" width="413.7" height="85"/>
+<rect x="126.7" y="96" class="st2" width="205.7" height="81.7"/>
+<rect x="339" y="95.7" class="st2" width="202.7" height="81.7"/>
+<text transform="matrix(1 0 0 1 250.4572 34.0377)"><tspan x="0" y="0" class="st3 st4 st5">Virtualization Management</tspan><tspan x="21.1" y="34" class="st3 st4 st6">VMware vCenter Server</tspan></text>
+<text transform="matrix(1 0 0 1 156.6975 132.6687)"><tspan x="0" y="0" class="st3 st4 st5">Compute Virtualization</tspan><tspan x="26.5" y="23.9" class="st3 st4 st6">VMware vSphere</tspan></text>
+<text transform="matrix(1 0 0 1 372.1624 132.1194)"><tspan x="0" y="0" class="st3 st4 st5">Network Virtualization</tspan><tspan x="35.3" y="23.9" class="st3 st4 st6">VMware NSX</tspan></text>
+<text transform="matrix(1 0 0 1 215.4223 219.2038)" class="st3 st4 st5">Physical Infrastructure on IBM Cloud </text>
+<text transform="matrix(1 0 0 1 432.1519 253.6171)" class="st3 st4 st6">Network</text>
+<text transform="matrix(1 0 0 1 322.4063 253.5091)" class="st3 st4 st6">Storage</text>
+<text transform="matrix(1 0 0 1 197.9439 254.4141)" class="st3 st4 st6">Compute</text>
+</svg>

@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2024
 
-lastupdated: "2024-05-16"
+lastupdated: "2024-04-25"
 
 keywords: vcf classic remove hosts, vcf automated remove ESXi servers
 
@@ -22,7 +22,7 @@ You can contract the capacity of your {{site.data.keyword.vcf-auto}} instance ac
 ## Before you delete ESXi servers from Automated instances
 {: #vc_removingservers-prereq}
 
-* Deleting ESXi servers from instances with VMware vSphere® 6 is not supported.
+* Deleting ESXi servers from Automated instances with VMware vSphere® 6 is not supported.
 * For the gateway cluster, you cannot add or delete ESXi servers.
 
 {{site.data.content.para-vcenterremoveESXiservers}}
@@ -61,4 +61,4 @@ You can contract the capacity of your {{site.data.keyword.vcf-auto}} instance ac
 * [Ordering Automated instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-req)
 * [Deleting clusters from Automated instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_deletingclusters)
 * [Place a host in maintenance mode](https://docs.vmware.com/en/VMware-vSphere/8.0/vsphere-resource-management/GUID-8F705E83-6788-42D4-93DF-63A2B892367F.html?hWord=N4IghgNiBcIAoTAYwKYAIxoBYHsDOALmgJYB2aAtmGQSqWKapTgCYogC+QA){: external}
-* [Enhanced vMotion Compatibility (EVC) processor support](https://knowledge.broadcom.com/external/article?legacyId=1003212){: external}
+* [Enhanced vMotion Compatibility (EVC) processor support](https://kb.vmware.com/s/article/1003212){: external}

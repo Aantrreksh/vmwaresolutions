@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-06-14"
+lastupdated: "2024-06-04"
 
 subcollection: vmwaresolutions
 
@@ -20,7 +20,7 @@ When logical network topologies are deployed on {{site.data.keyword.vpc_full}} h
 
 ![VPC routing with NSX gateways](../../images/vcf-vpc-v2-overlay-routing.svg "VPC routing with NSX gateways"){: caption="Figure 1. VPC routing with NSX gateways" caption-side="bottom"}
 
-The {{site.data.keyword.vcf-vpc}} automation deploys these routes based on customer-given variables. The following information explains the core principles for these routing configurations done both in VPC and in NSX Tier-0 and Tier-1 gateways.
+The {{site.data.keyword.vcf-vpc}} automation deploys these routes based on customer-given variables. This topic explains the core principles for these routing configurations done both in VPC and in NSX Tier-0 and Tier-1 gateways.
 
 In the consolidated deployment, you have only one edge cluster and one Tier-0 gateway. In the standard deployment, you have two edge clusters and two Tier-0 gateways. The Tier-0 gateways follow the same principles presented.
 {: note}
@@ -31,7 +31,7 @@ If your design does not need direct inbound public access, you can customize the
 ## Public traffic between Tier-0 and VPC
 {: #vpc-vcf-nsx-t-vpc-routing-edge-tier-0-routing-public}
 
-If your workloads need direct public traffic and have inbound public traffic without using any network translation, you must provision the public uplink subnet and public T0 uplink VLAN interfaces. Also, you must configure your T0 with public uplinks as described in the topic [Tier-0 gateway](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-nsx-t-logical-routers#vpc-vcf-nsx-t-logical-routers-edge-tier-0) previously. As the NSX T0 uses Active-Standby, the HA VIP provides high availability for the routing of public traffic between VPC, T0, and your NSX workloads. When you need public IP addresses, you can order a floating IP address to the HA VIP VLAN interface. Each floating IP address is a single `/32` IP address, and you can order as many as you need within [VPC Quotas](/docs/vpc?topic=vpc-quotas).
+If your workloads need direct public traffic and have inbound public traffic without using any network translation, you must provision the public uplink subnet and public T0 uplink VLAN interfaces. Also, you must configure your T0 with public uplinks as described in the topic [Tier-0 gateway](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-nsx-t-logical-routers#vpc-vcf-nsx-t-logical-routers-edge-tier-0) previously. As the NSX T0 uses Active-Standby, the HA VIP provides high availability for the routing of public traffic between VPC, T0, and your NSX workloads. When you need public IP addresses, you can order floating IP address to the HA VIP VLAN interface. Each floating IP address is a single `/32` IP address, and you can order as many as you need within [VPC Quotas](/docs/vpc?topic=vpc-quotas).
 
 | Interface name | Interface type | VLAN ID | Subnet | Allow float | Allow IP spoofing | Enable infra NAT | NSX interface | Segment name |
 | ---------------|----------------|---------|--------|-------------|-------------------|-------------------|--------------|------------ |
@@ -43,8 +43,8 @@ VLAN interfaces with `Allow IP spoofing` and `Enable Infrastructure NAT` set to 
 
 You can use the public IP addresses for the following purposes:
 
-* To perform destination NAT in either Tier-0 or Tier-1 gateways for inbound public traffic to NSX overlay.
-* To perform source NAT in either Tier-0 or Tier-1 gateways for outbound public traffic from NSX overlay.
+* To perform destination NAT done in either Tier-0 or Tier-1 gateways for inbound public traffic to NSX overlay.
+* To perform source NAT done in either Tier-0 or Tier-1 gateways for outbound public traffic from NSX overlay.
 * To establish VPNs in either Tier-0 or Tier-1.
 
 For public IP addresses, you can currently use one or more `/32` IP address, but you cannot have subnets, such as `/29` or `/26`.
@@ -74,7 +74,7 @@ If you have both Public and Private Uplinks, first you must create a route in NS
 | Private networks | T0 gateway | `172.16.0.0/16` | Default GW of `vpc-t0-private-uplink-subnet` |
 {: caption="Table 4. Private routes in T0 gateway with public uplinks" caption-side="bottom"}
 
-If you use only a private route, then your default route `0.0.0.0/0` in NSX T0 gateway routes all traffic to the VPC.
+If you use only private route, then your default route `0.0.0.0/0` in NSX T0 gateway routes all traffic to the VPC.
 {: note}
 
 You must define inbound traffic from VPC. Then, you must create a VPC route in the Zone to the IP subnet or prefix that you are using in the NSX overlay. As the NSX T0 uses Active-Standby, the HA VIP provides high availability for the routing of private traffic between VPC and your NSX overlay. Therefore, the next-hop for the VPC route must be the HA VIP, as specified on the following table.
@@ -84,7 +84,7 @@ You must define inbound traffic from VPC. Then, you must create a VPC route in t
 | `vlan-nic-t0-priv-uplink-vip` | `vlan` | 2712 | `vpc-t0-private-uplink-subnet` | `true` | `true` | `true` | T0 Private Uplink VIP | `vpc-zone-t0-private-vlanid` |
 {: caption="Table 5. VLAN interfaces for T0 uplinks" caption-side="bottom"}
 
-VLAN interfaces with `Allow IP spoofing` and `Enable Infrastructure NAT` set to `true` allow VMware workloads on NSX overlay with private IP addresses to be routed to {{site.data.keyword.vpc_short}}. To enable this action, a VPC route is created with IP address of private uplink HA VIP `vlan-nic-t0-priv-uplink-vip` as the next-hop configured in the {{site.data.keyword.vpc_short}} Zone.
+VLAN interfaces with `Allow IP spoofing` and `Enable Infrastructure NAT` set to `true` allow VMware workloads on NSX overlay with private IP addresses to be routed to {{site.data.keyword.vpc_short}}. To enable this action, a VPC route is created with IP address of private uplink HA VIP/vlan-nic-t0-priv-uplink-vip as the next-hop configured in the {{site.data.keyword.vpc_short}} Zone.
 {: note}
 
 When you plan the routing, summarize the NSX overlay subnets or prefixes to keep the number of required routes to a minimum. When you create a route that points to the NSX overlay, the following table provides an example for the required parameters for an NSX overlay subnets `192.168.4.0/24`, `192.168.5.0/24`, `192.168.6.0/24`, and `192.168.7.0/24` attached to T1. Further summarized to a prefix `192.168.4.0/22` and by using NSX HA VIP `192.168.0.10` in Zone `us-south-2` as the next-hop. For more information about VPC routes, see [VPC routing tables and routes](/docs/vpc?topic=vpc-about-custom-routes).
@@ -115,7 +115,7 @@ Ingress routes are also created in the zone where VMware Cloud Foundation is dep
 | NSX overlay networks | `us-south-1` | Ingress | `192.168.4.0/22` | Deliver | IP | `192.168.0.10` |
 {: caption="Table 8. VPC ingress routes" caption-side="bottom"}
 
-If you use any of the interconnectivity options, such as {{site.data.keyword.dl_short}} or {{site.data.keyword.tg_short}}, and you need connectivity from another VPC attached to a TGW, in addition to the VPC route, you can create a VPC (ingress) route with advertise flags. This action allows both DL and TGW to advertise your NSX overlay subnet or prefix to the attached TGW connections or DL.
+If you use any of the interconnectivity options, such as {{site.data.keyword.dl_short}} or {{site.data.keyword.tg_short}}, and you need connectivity from another VPC attached to a TGW, in addition to the VPC route, you can create a VPC (ingress) routes with advertise flags. This action allows both DL and TGW to advertise your NSX overlay subnet or prefix to the attached TGW connections or DL.
 
 For more information about VPC routes, see [VPC routing tables and routes](/docs/vpc?topic=vpc-about-custom-routes).
 
@@ -128,7 +128,7 @@ If you want to route natively with {{site.data.keyword.vpc_short}} subnets and o
 
 For example, if you have a public floating IP configured and provisioned on your T0's HA VIP, you might decide whether you want to create a NAT rule in T1 or T1. Or create a VPN server endpoint on either of these.
 
-For private traffic, you can configure a subnet that is carved out of the private VPC prefix, for example with prefix `192.168.4.0/22` and configure the subnets `192.168.4.0/26` and `192.168.4.64/26` on two segments that are attached to T1. Then, VPC directs traffic that is destined toward `192.168.4.0/22` to T0's private uplink, and T0 will forward that to the T1. The return path follows the reverse path: T1 sends to T0, which then has the private traffic routes toward the default gateway of the VPC private uplink subnet.
+For private traffic, you can configure a subnet that is carved out of the private VPC prefix, for example with prefix `192.168.4.0/22` and configure a subnets `192.168.4.0/26` and `192.168.4.64/26` on two segments that are attached to T1. Then, VPC will direct traffic that is destined toward `192.168.4.0/22` to T0's private uplink, and T0 will further forward that to the T1. The return path follows reverse path, T1 sends to T0, which then has the private traffic routes toward the default gateway of the VPC private uplink subnet.
 
 ## Interconnectivity
 {: #vpc-vcf-nsx-t-vpc-interconnectivity}

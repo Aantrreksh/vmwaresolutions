@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-06-14"
+lastupdated: "2024-06-05"
 
 subcollection: vmwaresolutions
 
@@ -47,7 +47,7 @@ To find your customer private portable subnet details, complete the following st
 | Proxy CPU | 1 vCPU | Squid has no minimum requirements. |
 | Proxy RAM | 2 GB | Squid has no minimum requirements. |
 | Proxy Disk | 25 GB | Squid has no minimum requirements. |
-| Hostname | `Proxy01` | |
+| Hostname | Proxy01 | |
 | Address | Proxy IP | A spare IP address must be used from the Customer, private portable subnet assigned during the provisioning process. |
 | Netmask | 255.255.255.192 | None |
 | Gateway| Customer T0 uplink1 virtual IP address | This parameter is the default gateway setting for the proxy server, which is the private uplink IP address of customer T0. The IP address can be found by reviewing details in the {{site.data.keyword.vmwaresolutions_short}} console by browsing to the Portable private subnet for customer workload edge. |
@@ -69,7 +69,7 @@ Add a gateway firewall policy and rule by using the parameters in the following 
 
 | Parameter | Suggested values |
 |:--------- |:---------------- |
-| Name | `Outbound Proxy01` |
+| Name | Outbound Proxy01 |
 | Source | Proxy server IP |
 | Destination | Any |
 | Service | HTTP/HTTPS/ICMP Echo |
@@ -83,11 +83,11 @@ Add a NAT rule by using the parameters in the following table. For more informat
 
 | Parameter | Suggested values |
 |:--------- |:---------------- |
-| Name | `Proxy01 SNAT` |
+| Name | Proxy01 SNAT |
 | Action | SNAT |
 | Source IP | Proxy server IP |
 | Destination IP | Any |
-| Translated IP address | NAT IP |
+| Translated IP Address | NAT IP |
 | Enabled | Yes |
 {: caption="Table 3. NAT rule" caption-side="bottom"}
 

@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-06-10"
+lastupdated: "2024-06-03"
 
 subcollection: vmwaresolutions
 
@@ -30,7 +30,7 @@ The following diagram presents an overview for an architecture pattern for using
 The following list is a summary of the architecture pattern deployment:
 
 1. An L2 bridge requires an Edge cluster and an Edge Bridge profile to be deployed. An Edge Bridge profile specifies which Edge cluster to use for bridging and which Edge transport node acts as the primary and backup bridge.
-2. You need to have a new VLAN for the bridged devices. After the VLAN is provisioned, you can request to trunk the hosts. VLAN must be trunked to all hosts in your cluster through {{site.data.keyword.cloud_notm}} Classic portal (Classic Infrastructure > Network > Gateway appliances). Then, add the hosts to a wanted NSX VLAN transport zone, for example `tz-bridge`.
+2. You need to have a new VLAN for the bridged devices. After the VLAN is provisioned, you can request to trunk the hosts. VLAN must be trunked to all hosts in your cluster through {{site.data.keyword.cloud_notm}} Classic portal (Classic Infrastructure > Network > Gateway appliances). Then, add the ESX hosts to a wanted NSX VLAN transport zone, for example `tz-bridge`.
 3. On the edge cluster uplink distributed port group, enable Promiscuous mode and Forged transmits for bridging. Add these settings to the wanted NSX VLAN transport zone, for example `tz-bridge`.
 4. When you configure an NSX overlay segment, you can specify an Edge bridge profile to enable layer 2 bridging. Use the VLAN ID of the additional bridged VLAN on your configuration.
 5. Provision your servers (for example Bare Metal Servers) normally to the VLAN, and after the provisioning you can change the IP configuration to match your NSX overlay design. Logically, you can attach the server to the same subnet as configured on your NSX overlay segment.

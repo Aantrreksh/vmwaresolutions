@@ -4,7 +4,7 @@ copyright:
 
   years:  2024
 
-lastupdated: "2024-05-15"
+lastupdated: "2024-05-13"
 
 keywords: vmware solutions packaging, vmware solutions pricing, vmware solutions naming
 
@@ -19,7 +19,7 @@ subcollection: vmwaresolutions
 
 Broadcom announced several changes to the packaging and pricing of the VMware® portfolio that are effective on 1 May 2024. Cloud service providers, including {{site.data.keyword.cloud}}, can no longer sell individual VMware software solutions. These solutions are available only as part of VMware Cloud Foundation™, for which Broadcom announced a new pricing structure.
 
-On 1 May 2024, {{site.data.keyword.cloud_notm}} changed its {{site.data.keyword.vmwaresolutions_short}} portfolio and pricing in response to the VMware portfolio changes.
+Starting on 1 May 2024, {{site.data.keyword.cloud_notm}} is changing its {{site.data.keyword.vmwaresolutions_short}} portfolio and pricing in response to the VMware portfolio changes.
 
 ## Packaging and naming for offerings
 {: #vmwaresol_packaging-naming}
@@ -48,7 +48,7 @@ For the most up-to-date pricing information, you can create a cost estimate by c
 * For {{site.data.keyword.vmware-service_short}} customers, discounts are available for longer-term commitments. For more information, contact your IBM Sales representative.
 * VMware Cloud Foundation (for Classic and for VPC Bare Metal Servers) is charged at a flexible, on-demand rate of $38 per core and per month with a minimum of 16 cores per CPU. Discounts are available for longer-term commitments.
 * For existing {{site.data.keyword.vcf-vpc}} customers, this change represents a price reduction.
-* On 1 May 2024, the VMware Solutions Support and Services fee was removed.
+* Starting on 1 May 2024, the VMware Solutions Support and Services fee is removed.
 
 ## Licensing impact to existing users
 {: #vmwaresol_packaging-pricing-impact}
