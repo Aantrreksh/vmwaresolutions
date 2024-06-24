@@ -62,10 +62,10 @@ toc:
           - topicgroup:
               label: Ports used by VMware Solutions
               topics:
-              - vmonic/vmwaresol_ports-vlans-subnets.md
-              - vmonic/vmwaresol_ports-deploy-day2ops.md
-              - vmonic/vmwaresol_ports-vmwareuses.md
-              - vmonic/vmwaresol_ports-services.md
+              - vmonic/vmwaresol_ports-vlans-subnets.md<staging>
+              - vmonic/vmwaresol_ports-deploy-day2ops.md</staging>
+              - vmonic/vmwaresol_ports-vmwareuses.md<staging>
+              - vmonic/vmwaresol_ports-services.md</staging>
       - topicgroup:
           label: VCF as a Service
           topics:
@@ -133,8 +133,8 @@ toc:
           - topicgroup:
               label: Overview
               topics:
-              - vcenter/vc_vcenterserveroverview.md
-              - vcenter/vc_bom.md
+              - vcenter/vc_vcenterserveroverview.md<staging>
+              - vcenter/vc_bom.md</staging>
           - topicgroup:
               label: Planning new deployments
               topics:
@@ -152,19 +152,19 @@ toc:
               label: Ordering Automated instances
               topics:
               - vcenter/vc_orderinginstance-req.md
-              - vcenter/vc_orderinginstance-resource.md
-              - vcenter/vc_orderinginstance-sys.md
-              - vcenter/vc_orderinginstance-licensing.md
+              - vcenter/vc_orderinginstance-resource.md<staging>
+              - vcenter/vc_orderinginstance-sys.md</staging>
+              - vcenter/vc_orderinginstance-licensing.md<staging>
               - vcenter/vc_orderinginstance-consold-cluster.md
-              - vcenter/vc_orderinginstance-addl-clusters.md
+              - vcenter/vc_orderinginstance-addl-clusters.md</staging>
               - vcenter/vc_orderinginstance-network.md
               - vcenter/vc_orderinginstance-services.md
-              - vcenter/vc_orderinginstance-summary.md
-              - vcenter/vc_orderinginstance-procedure.md
+              - vcenter/vc_orderinginstance-summary.md<staging>
+              - vcenter/vc_orderinginstance-procedure.md</staging>
           - topicgroup:
               label: Adding, viewing, and deleting clusters
-              topics:
-              - vcenter/vc_addingclusters.md
+              topics:<staging>
+              - vcenter/vc_addingclusters.md</staging>
               - vcenter/vc_viewingclusters.md
               - vcenter/vc_deletingclusters.md
           - topicgroup:
@@ -176,14 +176,14 @@ toc:
               - vcenter/vc_removingnfs.md
           - topicgroup:
               label: Ordering, viewing, and deleting services
-              topics:
-              - vcenter/vc_addingservices.md
+              topics:<staging>
+              - vcenter/vc_addingservices.md</staging>
               - vcenter/vc_viewingservices.md
               - vcenter/vc_deletingservices.md
           - topicgroup:
               label: Viewing and deleting instances
-              topics:
-              - vcenter/vc_viewinginstances.md
+              topics:<staging>
+              - vcenter/vc_viewinginstances.md</staging>
               - vcenter/vc_deletinginstance.md
               - vcenter/vc_deletinginstance_multi.md
       - topicgroup:
@@ -192,8 +192,8 @@ toc:
           - topicgroup:
               label: Overview
               topics:
-              - vsphere/vs_vsphereoverview.md
-              - vsphere/vs_bom.md
+              - vsphere/vs_vsphereoverview.md<staging>
+              - vsphere/vs_bom.md</staging>
           - vsphere/vs_planning.md
           - vsphere/vs_vsphere_70_upgrade.md
           - topicgroup:
@@ -201,13 +201,13 @@ toc:
               topics:
               - vsphere/vs_orderinginstances-req.md
               - vsphere/vs_orderinginstance-resource.md
-              - vsphere/vs_orderinginstances-sys.md
-              - vsphere/vs_orderinginstances-licensing.md
-              - vsphere/vs_orderinginstances-bare-metal.md
-              - vsphere/vs_orderinginstances-storage.md
+              - vsphere/vs_orderinginstances-sys.md<staging>
+              - vsphere/vs_orderinginstances-licensing.md</staging>
+              - vsphere/vs_orderinginstances-bare-metal.md<staging>
+              - vsphere/vs_orderinginstances-storage.md</staging>
               - vsphere/vs_orderinginstances-network.md
-              - vsphere/vs_orderinginstances-summary.md
-              - vsphere/vs_orderinginstances-procedure.md
+              - vsphere/vs_orderinginstances-summary.md<staging>
+              - vsphere/vs_orderinginstances-procedure.md</staging>
           - vsphere/vs_orderingbasedonexistingconfig.md
           - topicgroup:
               label: Expanding and contracting capacity
@@ -217,8 +217,8 @@ toc:
           - vsphere/vs_manage_licenses.md
           - topicgroup:
               label: Viewing and deleting instances
-              topics:
-              - vsphere/vs_viewinginstances.md
+              topics:<staging>
+              - vsphere/vs_viewinginstances.md</staging>
               - vsphere/vs_deletinginstances.md
       - topicgroup:
           label: Cyber Recovery
@@ -229,9 +229,9 @@ toc:
               label: Ordering Cyber Recovery
               topics:
               - cr/cr_orderinginstance-reqs.md
-              - cr/cr_orderinginstance-resource.md
+              - cr/cr_orderinginstance-resource.md<staging>
               - cr/cr_orderinginstance-gen-info.md
-              - cr/cr_orderinginstance-consolidwkld.md
+              - cr/cr_orderinginstance-consolidwkld.md</staging>
               - cr/cr_orderinginstance-edge.md
               - cr/cr_orderinginstance-firewall-appl.md
               - cr/cr_orderinginstance-network-interface.md
@@ -251,8 +251,8 @@ toc:
               topics:
               - vrw/vrw-orderinginstance-reqs.md
               - vrw/vrw-orderinginstance-resource-type.md
-              - vrw/vrw-orderinginstance-serv-prereq.md
-              - vrw/vrw-orderinginstance-config.md
+              - vrw/vrw-orderinginstance-serv-prereq.md<staging>
+              - vrw/vrw-orderinginstance-config.md</staging>
               - vrw/vrw-orderinginstance-licensing.md
               - vrw/vrw-orderinginstance-location.md
               - vrw/vrw-orderinginstance-primary.md
@@ -275,13 +275,13 @@ toc:
               label: Overview
               topics:
               - vpc-vcf/vpc-vcf-ovw.md
-              - vpc-vcf/vpc-vcf-ovw-bom.md
-          - vpc-vcf/vpc-vcf-plan.md
+              - vpc-vcf/vpc-vcf-ovw-bom.md<staging>
+          - vpc-vcf/vpc-vcf-plan.md</staging>
           - topicgroup:
               label: Ordering VCF for VPC instances
               topics:
-              - vpc-vcf/vpc-vcf-order-req.md
-              - vpc-vcf/vpc-vcf-ordering.md
+              - vpc-vcf/vpc-vcf-order-req.md<staging>
+              - vpc-vcf/vpc-vcf-ordering.md</staging>
               - vpc-vcf/vpc-vcf-firewall.md
           - topicgroup:
               label: Expanding and contracting capacity
@@ -320,8 +320,8 @@ toc:
           - topicgroup:
               label: VMware HCX
               topics:
-              - services/hcx_considerations.md
-              - services/hcx_ordering.md
+              - services/hcx_considerations.md<staging>
+              - services/hcx_ordering.md</staging>
               - services/managinghcx.md
               - services/standalone_considerations.md
               - services/standalone_orderingserviceinstances.md
@@ -330,16 +330,16 @@ toc:
               - services/hcx_glossary.md
           - topicgroup:
               label: Juniper vSRX
-              topics:
-              - services/juniper_overview.md
+              topics:<staging>
+              - services/juniper_overview.md</staging>
               - services/juniper_ordering.md
               - services/juniper_managing.md
           - topicgroup:
               label: Red Hat OpenShift for VMware
-              topics:
-              - services/ocp_overview.md
-              - services/ocp_ordering.md
-              - services/ocp_managing.md
+              topics:<staging>
+              - services/ocp_overview.md</staging>
+              - services/ocp_ordering.md<staging>
+              - services/ocp_managing.md</staging>
           - topicgroup:
               label: Veeam
               topics:
@@ -351,8 +351,8 @@ toc:
               - services/icos_ordering.md
           - topicgroup:
               label: VMware Aria Operations and VMware Aria Operations for Logs
-              topics:
-              - services/vrops_overview.md
+              topics:<staging>
+              - services/vrops_overview.md</staging>
               - services/vrops_ordering.md
               - services/managing_vrops.md
           - topicgroup:
@@ -396,8 +396,8 @@ toc:
           - topicgroup:
               label: Activity Tracker events
               topics:
-              - include: ../vmware-service/common/vmaas-at-events.md
-              - vmonic/at-events.md
+              - include: ../vmware-service/common/vmaas-at-events.md<staging>
+              - vmonic/at-events.md</staging>
           - topicgroup:
               label: Platform metrics
               topics:
@@ -655,8 +655,8 @@ toc:
           - topicgroup:
               label: KMIP for VMware Solutions architecture
               topics:
-              - archiref/kmip/overview.md
-              - archiref/kmip/design.md
+              - archiref/kmip/overview.md<staging>
+              - archiref/kmip/design.md</staging>
               - archiref/kmip/implementation.md
               - archiref/kmip/hadr.md
       - topicgroup:
@@ -793,7 +793,7 @@ toc:
               - archiref/adds/adds-infra-domain.md
               - archiref/adds/adds-sso.md
               - archiref/adds/adds-wkld-domain.md
-              - archiref/adds/adds-integration.md
+              - archiref/adds/adds-integration.md<staging>
           - topicgroup:
               label: VCF for Classic and Red Hat OpenShift guide
               topics:
@@ -806,7 +806,7 @@ toc:
               - archiref/openshift-runbook/vcs-openshift-runbook-bastion.md
               - archiref/openshift-runbook/vcs-openshift-runbook-install.md
               - archiref/openshift-runbook/vcs-openshift-runbook-config.md
-              - archiref/openshift-runbook/vcs-openshift-runbook-trbl.md
+              - archiref/openshift-runbook/vcs-openshift-runbook-trbl.md</staging>
           - topicgroup:
               label: vCenter Server and vSRX guide
               topics:
