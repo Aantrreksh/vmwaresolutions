@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-05-31"
+lastupdated: "2024-06-11"
 
 subcollection: vmwaresolutions
 
@@ -22,7 +22,7 @@ FortiGate VM does not replace NSX–T™ but rather complements and enhances the
 ## Topologies
 {: #fortigate-design-topologies}
 
-You can deploy FortiGate VM according to several different strategies as Figure 1 illustrates.
+You can deploy a FortiGate VM according to several different strategies as Figure 1 illustrates.
 
 ![FortiGate VM deployment topologies](../../images/fortigate-vm.svg "FortiGate VM deployment topologies"){: caption="Figure 1. FortiGate VM deployment topologies" caption-side="bottom"}
 

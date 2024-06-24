@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2024
 
-lastupdated: "2024-04-12"
+lastupdated: "2024-06-24"
 
 keywords: openshift for vmware, request openshift for vmware, tech specs openshift vmware
 
@@ -22,6 +22,8 @@ The {{site.data.keyword.redhat_openshift_full}} for VMware® service deploys an 
 
 The {{site.data.keyword.redhat_openshift_notm}} version available for deployment is 4.14.
 {: note}
+
+
 
 Review the following information before you install the {{site.data.keyword.redhat_openshift_notm}} for VMware service:
 * {{site.data.keyword.redhat_openshift_notm}} for VMware cannot be installed on multiple {{site.data.keyword.vcf-auto}} instances in a multisite configuration. Before you install {{site.data.keyword.redhat_openshift_notm}} for VMware on an instance, verify that the service is not installed on any other instances in the multisite configuration.

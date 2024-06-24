@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2020, 2022
+  years:  2020, 2024
 
-lastupdated: "2022-08-26"
+lastupdated: "2024-06-11"
 
 subcollection: vmwaresolutions
 
@@ -23,7 +23,7 @@ Review the architecture of each VMware® HCX™ component that is deployed withi
 
 The components that are configured first within the {{site.data.keyword.cloud_notm}} are the existing NSX-T virtual machines (VMs). These VMs provide public connectivity for the HCX Cloud Virtual appliance.
 
-The services edge is configure with Destination NAT (DNAT) rule and related firewall rules to allow connectivity to HCX Cloud through the Internet. Also, Source NAT (SNAT) is used for lisence registration and services update.
+The services edge is configured with Destination NAT (DNAT) rule and related firewall rules to allow connectivity to HCX Cloud through the Internet. Also, Source NAT (SNAT) is used for license registration and services update.
 
 
 ## HCX Manager
@@ -58,14 +58,14 @@ This HCX-IX Interconnect Appliance is deployed and configured to be on the manag
 
 Additionally, another interface is configured on the Public VLAN (Public Portable) for connections that are made over the public internet. Public access is not required if a direct private connection is in place. The last connection that is associated with the HCX-IX Interconnect Appliance is a logical switch that is created and configured upon site pairing.
 
-This logical switch is a private, non-routable network that is used as a communication channel between the HCX-IX Interconnect Appliance and HCX WAN Optimizer.
+This logical switch is a private, nonroutable network that is used as a communication channel between the HCX-IX Interconnect Appliance and HCX WAN Optimizer.
 
 ## WAN Optimizer
 {: #hcx-archi-target-t-hcx-wo}
 
-The second component that is deployed is the WAN Optimization appliance. While the WAN Optimization appliance is optional, it performs WAN conditioning to reduce effects of latency. It also incorporates Forward Error Correction to negate packet loss scenarios, and deduplication of redundant traffic patterns.
+The second component that is deployed is the WAN Optimization appliance. While the WAN Optimization appliance is optional, it performs WAN conditioning to reduce the effects of latency. It also incorporates Forward Error Correction to negate packet loss scenarios, and deduplication of redundant traffic patterns.
 
-Altogether, these reduce bandwidth use and ensure the best use of available network capacity to expedite data transfer to and from the {{site.data.keyword.cloud_notm}}. The WAN Optimizer is disk intensive and requires sufficient amount of IOPS to function properly. As a result, the WAN optimizer is located on the vSAN storage, if present, or on the endurance storage with 2,000 IOPS.
+Altogether, these reduce bandwidth use and ensure the best use of available network capacity to expedite data transfer to and from the {{site.data.keyword.cloud_notm}}. The WAN Optimizer is disk intensive and requires a sufficient amount of IOPS to function properly. As a result, the WAN optimizer is on the vSAN storage, if present, or on the endurance storage with 2,000 IOPS.
 
 The following table shows the sizing specification for the HCX WAN Optimization appliance.
 

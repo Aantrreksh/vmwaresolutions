@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2024
 
-lastupdated: "2024-04-29"
+lastupdated: "2024-05-16"
 
 keywords: vmware cloud foundation, IBM Cloud, vpc
 
@@ -33,7 +33,7 @@ Solution-added products for this VMware validated solution include VMware Worksp
 
 To deploy the Identity and Access Management for {{site.data.keyword.vcf-vpc-short}} validated solution in {{site.data.keyword.cloud_notm}}, follow the process in [Identity and Access Management for {{site.data.keyword.vcf-vpc-short}}](https://docs.vmware.com/en/VMware-Cloud-Foundation/services/vcf-identity-and-access-management-v1/GUID-FF35966D-2225-4825-9E38-C7287B069D4D.html){: external}.
 
-Use VMware Aria® Suite Lifecycle Manager (formerly known as VMware vRealize® Suite Lifecycle Manager) to deploy this VMware validated solution. Aria Suite Lifecycle Manager is deployed as part of the automation.
+Use VMware Aria® Suite Lifecycle Manager (formerly VMware vRealize® Suite Lifecycle Manager) to deploy this VMware validated solution. Aria Suite Lifecycle Manager is deployed as part of the automation.
 {: important}
 
 ## Developer Ready Infrastructure for {{site.data.keyword.vcf-vpc-short}}
@@ -50,20 +50,20 @@ To deploy the Developer Ready Infrastructure for {{site.data.keyword.vcf-vpc-sho
 ### Important notes
 {: #vpc-vcf-deploy-vvs-tanzu-notes}
 
-* Use Aria Suite Lifecycle Manager (formerly known as vRealize Suite Lifecycle Manager) to deploy this VMware validated solution. Aria Suite Lifecycle Manager is deployed as part of the automation.
+* Use Aria Suite Lifecycle Manager (formerly vRealize Suite Lifecycle Manager) to deploy this VMware validated solution. Aria Suite Lifecycle Manager is deployed as part of the automation.
 * When you are deploying TKG Runtime in a {{site.data.keyword.vcf-vpc-short}} instance with {{site.data.keyword.cloud_notm}}, ensure that your edge cluster nodes appliance size is either **Large** or **Extra Large**. Currently, only the Active Standby edge cluster is supported in {{site.data.keyword.cloud_notm}}.
-* To get the NSX edge cluster visible in compatible list under the SDDC Kubernetes deployment, before you deploy the TKG runtime, follow the steps in [Unable to get the NSX edge cluster visible in compatible list under the SDDC Kubernetes deployment](https://kb.vmware.com/s/article/83991){: external}.
+* To get the NSX edge cluster visible in compatible list under the SDDC Kubernetes deployment, before you deploy the TKG runtime, follow the steps in [Unable to get the NSX edge cluster visible in compatible list under the SDDC Kubernetes deployment](https://knowledge.broadcom.com/external/article?legacyId=83991){: external}.
 
 ## Intelligent Logging and Analytics for {{site.data.keyword.vcf-vpc-short}}
 {: #vpc-vcf-deploy-vvs-aria-operations-for-logs}
 
 [The Intelligent Logging and Analytics for {{site.data.keyword.vcf-vpc-short}} validated solution](https://docs.vmware.com/en/VMware-Cloud-Foundation/services/vcf-intelligent-logging-and-analytics-v1/GUID-42022E8E-7C84-4864-AE49-69D016EF5600.html){: external} provides information on the use of a log analysis tool that delivers highly scalable log management with intuitive and actionable dashboards, sophisticated analytics, and broad third-party extensibility. The solution provides deep operational visibility and fast troubleshooting for your {{site.data.keyword.vcf-vpc-short}} instance and workloads that are running on it.
 
-Solution-added products for this VMware validated solutions include Aria Operations™ for Logs (formerly known as vRealize Log Insight). Aria Suite Lifecycle Manager (formerly known as vRealize Suite Lifecycle Manager) is deployed as part of the initial provisioning for your {{site.data.keyword.vcf-vpc-short}} instance, and you use this deployment method to deploy Intelligent Logging and Analytics for {{site.data.keyword.vcf-vpc-short}}.
+Solution-added products for this VMware validated solutions include Aria Operations™ for Logs (formerly vRealize Log Insight). Aria Suite Lifecycle Manager (formerly vRealize Suite Lifecycle Manager) is deployed as part of the initial provisioning for your {{site.data.keyword.vcf-vpc-short}} instance, and you use this deployment method to deploy Intelligent Logging and Analytics for {{site.data.keyword.vcf-vpc-short}}.
 
 To deploy the Intelligent Logging and Analytics for {{site.data.keyword.vcf-vpc-short}} validated solution in {{site.data.keyword.cloud_notm}}, follow the process in [Intelligent Logging and Analytics for {{site.data.keyword.vcf-vpc-short}}](https://docs.vmware.com/en/VMware-Cloud-Foundation/services/vcf-intelligent-logging-and-analytics-v1/GUID-42022E8E-7C84-4864-AE49-69D016EF5600.html){: external}.
 
-Use Aria Suite Lifecycle Manager (formerly known as vRealize Suite Lifecycle Manager) to deploy this VMware validated solution. Aria Suite Lifecycle Manager is deployed as part of the automation.
+Use Aria Suite Lifecycle Manager (formerly vRealize Suite Lifecycle Manager) to deploy this VMware validated solution. Aria Suite Lifecycle Manager is deployed as part of the automation.
 {: important}
 
 ## Intelligent Operations Management for {{site.data.keyword.vcf-vpc-short}}
@@ -73,29 +73,29 @@ Use Aria Suite Lifecycle Manager (formerly known as vRealize Suite Lifecycle Man
 
 This solution is intended for cloud architects and administrators who are familiar with and want to use VMware software and to provide a centralized monitoring and alerting platform to deliver proactive management of system failures.
 
-Solution-added products for this VMware validated solutions include Aria Operations Manager (formerly known as vRealize Operations Manager). Aria Suite Lifecycle Manager (formerly known as vRealize Suite Lifecycle Manager) is deployed as part of the initial provisioning of your {{site.data.keyword.vcf-vpc-short}} instance. You can use this method to deploy Intelligent Operations Management for {{site.data.keyword.vcf-vpc-short}}.
+Solution-added products for this VMware validated solutions include Aria Operations Manager (formerly vRealize Operations Manager). Aria Suite Lifecycle Manager (formerly vRealize Suite Lifecycle Manager) is deployed as part of the initial provisioning of your {{site.data.keyword.vcf-vpc-short}} instance. You can use this method to deploy Intelligent Operations Management for {{site.data.keyword.vcf-vpc-short}}.
 
 To deploy the Intelligent Operations Management for {{site.data.keyword.vcf-vpc-short}} validated solution in {{site.data.keyword.cloud_notm}}, follow the process in [Intelligent Logging and Analytics for {{site.data.keyword.vcf-vpc-short}}](https://docs.vmware.com/en/VMware-Cloud-Foundation/services/vcf-intelligent-operations-management-v1/GUID-31B18AB1-9E88-4355-BECF-A90F1E1F7C19.html){: external}.
 
-Use Aria Suite Lifecycle Manager (formerly known as vRealize Suite Lifecycle Manager) to deploy this VMware validated solution. Aria Suite Lifecycle Manager is deployed as part of the automation.
+Use Aria Suite Lifecycle Manager (formerly vRealize Suite Lifecycle Manager) to deploy this VMware validated solution. Aria Suite Lifecycle Manager is deployed as part of the automation.
 {: important}
 
 ## Private Cloud Automation for {{site.data.keyword.vcf-vpc-short}}
 {: #vpc-vcf-deploy-vvs-aria-automation}
 
-[The Private Cloud Automation for {{site.data.keyword.vcf-vpc-short}} validated solution](https://docs.vmware.com/en/VMware-Cloud-Foundation/services/vcf-private-cloud-automation-v1/GUID-33896484-4331-46F1-8875-B487BBEDCE05.html){: external} provides information about the use of Aria Automation (formerly known as vRealize Automation) for cloud automation services with the {{site.data.keyword.vcf-vpc-short}} platform.
+[The Private Cloud Automation for {{site.data.keyword.vcf-vpc-short}} validated solution](https://docs.vmware.com/en/VMware-Cloud-Foundation/services/vcf-private-cloud-automation-v1/GUID-33896484-4331-46F1-8875-B487BBEDCE05.html){: external} provides information about the use of Aria Automation (formerly vRealize Automation) for cloud automation services with the {{site.data.keyword.vcf-vpc-short}} platform.
 
 This solution is intended for cloud architects and administrators who are familiar with implementation of cloud automation services that can use {{site.data.keyword.vcf-vpc-short}}.
 
-Solution-added products for this VMware validated solution include Aria Automation (formerly known as vRealize Automation).
+Solution-added products for this VMware validated solution include Aria Automation (formerly vRealize Automation).
 
 To deploy the Private Cloud Automation for {{site.data.keyword.vcf-vpc-short}} validated solution in {{site.data.keyword.cloud_notm}}, see [Private Cloud Automation for {{site.data.keyword.vcf-vpc-short}}](https://docs.vmware.com/en/VMware-Cloud-Foundation/services/vcf-private-cloud-automation-v1/GUID-33896484-4331-46F1-8875-B487BBEDCE05.html){: external}.
 
 ### Important notes
 {: #vpc-vcf-deploy-vvs-aria-automation-notes}
 
-* Use Aria Suite Lifecycle Manager (formerly known as vRealize Suite Lifecycle Manager) to deploy this VMware validated solution. Aria Suite Lifecycle Manager is deployed as part of the automation.
-* Before deployment, upgrade vRealize Operations Manager (also known as Aria Operations Manager) 8.10.0 to the most recent version and follow the procedure in [Deployment of vRealize Suite Lifecycle Manager and Workspace ONE Access for Private Cloud Automation for {{site.data.keyword.vcf-vpc-short}}](https://docs.vmware.com/en/VMware-Cloud-Foundation/services/vcf-private-cloud-automation-v1/GUID-F9232A8B-69C8-4358-BC64-F9F186C04968.html){: external}.
+* Use Aria Suite Lifecycle Manager (formerly vRealize Suite Lifecycle Manager) to deploy this VMware validated solution. Aria Suite Lifecycle Manager is deployed as part of the automation.
+* Before deployment, upgrade vRealize Operations Manager (now Aria Operations Manager) 8.10.0 to the most recent version and follow the procedure in [Deployment of vRealize Suite Lifecycle Manager and Workspace ONE Access for Private Cloud Automation for {{site.data.keyword.vcf-vpc-short}}](https://docs.vmware.com/en/VMware-Cloud-Foundation/services/vcf-private-cloud-automation-v1/GUID-F9232A8B-69C8-4358-BC64-F9F186C04968.html){: external}.
 
 ## Advanced Load Balancing for {{site.data.keyword.vcf-vpc-short}}
 {: #vpc-vcf-deploy-vvs-nsx-advanced-load-balancing}

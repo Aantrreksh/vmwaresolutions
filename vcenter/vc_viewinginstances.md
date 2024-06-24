@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-04-25"
+lastupdated: "2024-06-14"
 
 keywords: view vcf classic, view instance, view instance details, vmware cloud foundation view
 
@@ -61,14 +61,14 @@ To view the property details of an instance, complete the following steps.
 
 | Property | Description |
 |:-------- |:----------- |
-| Name | The name of the instance. |
 | Resource type | The resource type of the instance. |
+| Current version | The current version of {{site.data.keyword.vmwaresolutions_short}}. |
+| VMware vSphere version[^vsphere] | The version of VMware vSphere. |
+| vCenter version | The vCenter Server version. \n \n **Note:** The vCenter Server versions that are displayed on the {{site.data.keyword.vmwaresolutions_short}} console and the VMware vSphere® Web Client are slightly different. Both are correct. |
+| Name | The name of the instance. |
 | ID | The ID of the instance. |
 | Multizone region[^multizone] | The {{site.data.keyword.cloud_notm}} data center region where the instance is hosted. |
 | Location | The {{site.data.keyword.cloud_notm}} data center where the instance is hosted. \n \n **Note:** For multizone instances, locations are listed for each cluster type. |
-| Current version | The current version of {{site.data.keyword.vmwaresolutions_short}}. |
-| vCenter version | The vCenter Server version. \n \n **Note:** The vCenter Server versions that are displayed on the {{site.data.keyword.vmwaresolutions_short}} console and the VMware vSphere® Web Client are slightly different. Both are correct. |
-| VMware vSphere version[^vsphere] | The version of VMware vSphere. |
 | VMware NSX® networking solution[^NSX] | * NSX for instances provisioned with NSX version 4.0 or later. \n * NSX-T or NSX-V for instances provisioned with previous versions of NSX, earlier than version 4.0. |
 | NSX for vSphere | The VMware NSX for vSphere product version. |
 | NSX license edition | The edition of the VMware NSX license. |

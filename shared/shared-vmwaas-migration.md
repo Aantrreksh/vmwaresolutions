@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2024
 
-lastupdated: "2024-05-16"
+lastupdated: "2024-05-22"
 
 keywords: migrating to VMware Cloud Foundation as a Service
 
@@ -86,8 +86,8 @@ The VDC network concepts are the same, with no conceptual changes to routed or i
 NSX firewall rules must be migrated to the new model. To allow or deny traffic from a specific source or destination, you must use firewall groups. Using IP addresses directly in the rules is not possible.
 
 For more information, see:
-* [Add an IP Set to an NSX Edge Gateway](https://docs.vmware.com/en/VMware-Cloud-Director/10.4/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-6A0E39F5-123C-4429-ACAC-31025A364411.html){: external}
-* [Create a Static Security Group in a Data Center Group with an NSX Network Provider Type](https://docs.vmware.com/en/VMware-Cloud-Director/10.4/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-7EE6D6DE-5C09-4B88-AD13-0ACD6E7126DD.html){: external}.
+* [Add an IP Set to an NSX Edge Gateway](https://docs.vmware.com/en/VMware-Cloud-Director/10.5/VMware-Cloud-Director-Tenant-Guide/GUID-6A0E39F5-123C-4429-ACAC-31025A364411.html){: external}
+* [Create a Static Security Group in a Data Center Group with an NSX Network Provider Type](https://docs.vmware.com/en/VMware-Cloud-Director/10.5/VMware-Cloud-Director-Tenant-Guide/GUID-7EE6D6DE-5C09-4B88-AD13-0ACD6E7126DD.html){: external}.
 
 ## Virtual private networks
 {: #shared-vmwaas-migration-network-vpn}
@@ -96,7 +96,7 @@ IPSec VPN offers site-to-site connectivity between an edge gateway and remote si
 
 Policy-based IPSec VPN requires a VPN policy to be applied to packets to determine which traffic is to be protected by IPsec before the traffic is passed through a VPN tunnel. This type of VPN is considered static because when a local network topology and configuration change, the VPN policy settings must also be updated to accommodate the changes.
 
-{{site.data.keyword.vcf-aas}} virtual data centers support only policy-based IPsec VPNs. Route-based IPsec VPNs are not supported. For more information, see [IPsec Policy-Based VPN for NSX Edge Gateways](https://docs.vmware.com/en/VMware-Cloud-Director/10.4/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-019E8BF7-8669-4A15-B1AE-CDFD04EA77CB.html){: external}.
+{{site.data.keyword.vcf-aas}} virtual data centers support only policy-based IPsec VPNs. Route-based IPsec VPNs are not supported. For more information, see [IPsec Policy-Based VPN for NSX Edge Gateways](https://docs.vmware.com/en/VMware-Cloud-Director/10.5/VMware-Cloud-Director-Tenant-Guide/GUID-019E8BF7-8669-4A15-B1AE-CDFD04EA77CB.html){: external}.
 
 ## NAT rules
 {: #shared-vmwaas-migration-network-nat}
@@ -111,7 +111,7 @@ The following information lists the possible NAT options in the {{site.data.keyw
 * A `DNAT` rule translates the IP address and optionally, the port of packets that are received by an organization VDC network that are coming from an external network or from another organization VDC network.
 * A `NO DNAT` rule prevents the translation of the external IP address of packets that are received by an organization VDC from an external network or from another organization VDC network.
 
-For more information, see [Add an SNAT or a DNAT Rule to an NSX Edge Gateway](https://docs.vmware.com/en/VMware-Cloud-Director/10.4/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-9E43E3DC-C028-47B3-B7CA-59F0ED40E0A6.html){: external}.
+For more information, see [Add an SNAT or a DNAT Rule to an NSX Edge Gateway](https://docs.vmware.com/en/VMware-Cloud-Director/10.5/VMware-Cloud-Director-Tenant-Guide/GUID-9E43E3DC-C028-47B3-B7CA-59F0ED40E0A6.html){: external}.
 
 When you access the {{site.data.keyword.cloud_notm}} service networks or you are using private network connectivity with {{site.data.keyword.tg_full}}, consider the following information:
 
@@ -154,7 +154,7 @@ For more information, see [Managing Veeam for {{site.data.keyword.vcf-aas}}](/do
 {: #shared-vmwaas-migration-related}
 
 * [Planning the {{site.data.keyword.vcf-aas}} deployment](/docs/vmware-service?topic=vmware-service-tenant-plan-deploy)
-* [Managing Organization Virtual Data Center Networks](https://docs.vmware.com/en/VMware-Cloud-Director/10.4/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-B208CDD2-5D46-4841-8F3C-BED9E4F27F07.html){: external}
+* [Managing Organization Virtual Data Center Networks](https://docs.vmware.com/en/VMware-Cloud-Director/10.5/VMware-Cloud-Director-Tenant-Guide/GUID-B208CDD2-5D46-4841-8F3C-BED9E4F27F07.html){: external}
 * [Using {{site.data.keyword.tg_short}} to interconnect {{site.data.keyword.vcf-aas}} with {{site.data.keyword.cloud_notm}} services](/docs/vmware-service?topic=vmware-service-tgw-adding-connections)
 * [Using VMware Cloud Director Availability with {{site.data.keyword.vcf-aas}}](/docs/vmwaresolutions?topic=vmwaresolutions-tenant-vcda).
 * [VMware Cloud Director](https://www.vmware.com/products/cloud-director.html){: external}

@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-06-04"
+lastupdated: "2024-06-14"
 
 subcollection: vmwaresolutions
 
@@ -70,9 +70,9 @@ An overview of the standard architecture and deployed assets is shown in the fol
 
 ![Architecture overview - consolidated deployment](../../images/vcf-vpc-v2-arch-net-std.svg "The solution uses Virtual Private Cloud compute, network, storage resources, and VMware NSX for hosting VMware workloads."){: caption="Figure 3. Architecture overview - standard deployment" caption-side="bottom"}
 
-For the connectivity needs and as the NSX deployment is integrated with VPC, you can use {{site.data.keyword.vpc_short}} connectivity services and {{site.data.keyword.cloud_notm}} interconnectivity solutions with your deployment. Public internet network access capabilities to the workloads are provided through floating IP addresses or Public Gateway configurations within your VPC. On-premises connectivity over public internet can be arranged by using {{site.data.keyword.vpc_short}} VPN services (site-to-site and client-to-site), or alternatively by using NSX built-in capabilities. For private networking, you can use {{site.data.keyword.cloud_notm}} interconnectivity services to connect your VMware workloads with {{site.data.keyword.cloud_notm}} classic infrastructure, other VPCs, and on-premises networks.
+For the connectivity needs and as the NSX deployment is integrated with VPC, you can use {{site.data.keyword.vpc_short}} connectivity services and {{site.data.keyword.cloud_notm}} interconnectivity solutions with your deployment. Public internet network access capabilities to the workloads are provided through floating IP addresses or Public Gateway configurations within your VPC. On-premises connectivity over the public internet can be arranged by using {{site.data.keyword.vpc_short}} VPN services (site-to-site and client-to-site), or alternatively by using NSX built-in capabilities. For private networking, you can use {{site.data.keyword.cloud_notm}} interconnectivity services to connect your VMware workloads with {{site.data.keyword.cloud_notm}} classic infrastructure, other VPCs, and on-premises networks.
 
-With VMware Cloud Foundation, you use VMware vSAN™ for storage and VMware NSX™ networking with your VMware workloads. You can easily and quickly add and remove ESXi hosts on to your deployment, or add new workload domains.
+With VMware Cloud Foundation, you can use VMware vSAN™ for storage and VMware NSX™ networking with your VMware workloads. You can easily and quickly add and remove ESXi hosts on to your deployment, or add new workload domains.
 
 For post initial deployment integrations, for example with your own Active Directory™, you can use {{site.data.keyword.vpc_short}} compute resources to build your Active Directory in {{site.data.keyword.vpc_short}}, or interconnect with your existing Active Directory infrastructure.
 

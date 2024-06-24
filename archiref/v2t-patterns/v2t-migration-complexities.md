@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-06-04"
+lastupdated: "2024-06-13"
 
 subcollection: vmwaresolutions
 
@@ -47,7 +47,7 @@ Your source {{site.data.keyword.vcf-auto}} instance with NSX-V environment is in
 * High - two or more single zones in a multisite deployment with cross vCenter NSX-V.
 * High - multizone, with ESXi hosts deployed in multiple data centers.
 
-{{site.data.keyword.vmwaresolutions_full}} offers standard deployment models, and multisite deployments require manual customization to build the want network topology. 
+{{site.data.keyword.vmwaresolutions_full}} offers standard deployment models, and multisite deployments require manual customization to build the wanted network topology. 
 
 This is a key parameter and defines the classification of the migration project and the required VMware NSX-T™ skills.
 
@@ -70,7 +70,7 @@ This is not a key parameter. However, it is related to the zone deployment categ
 
 The primary use of {{site.data.keyword.vcf-auto}} instance ADDNS is to provide Active Directory™ and Domain Name Services to the infrastructure only. If you don't customize ADDNS, then the classification is Simple.
 
-If you customize the service, such as by integrating it with your own AD or by using it for AD or DNS of workloads, you must do additional work. This action is done to migrate the customization to the target instance's new ADDNS.
+If you customize the service, such as by integrating it with your own AD or by using it for AD or DNS of workloads, you must complete extra tasks. This action is done to migrate the customization to the target instance's new ADDNS.
 
 This is not a key parameter. However, it gives guidance on where more project tasks and skills are required.
 
@@ -123,10 +123,11 @@ This is not a key parameter. However, it gives guidance on where more project ta
 ## Additional services
 {: #v2t-complexity-services}
 
-The optional vCenter server instance services, such as Veeam or Zerto are linked to your vCenter server instance. By deleting the source {{site.data.keyword.vcf-auto}} instance, these services are deleted, and so are your historical backups. Additional work effort is required to reconfigure the services or migrate configurations post the automated deployment. This action is done to match your needs and requirements in the new target NSX-T based {{site.data.keyword.vcf-auto}} instance.
+The optional vCenter server instance services, such as Veeam or Zerto are linked to your vCenter server instance. By deleting the source {{site.data.keyword.vcf-auto}} instance, these services are deleted, and so are your historical backups. 
 
-This is not a key parameter. However, it gives guidance on where additional project tasks and skills are required. Or also you must take a different approach to these additional services.
+You must reconfigure the services or migrate configurations post-deployment. This action is done to match your needs and requirements in the new target NSX-T based {{site.data.keyword.vcf-auto}} instance.
 
+This is not a key parameter. However, it gives you guidance on where additional project tasks and skills are required or if you must take a different approach for the additional services.
 
 ## Related links
 {: #v2t-complexity-links}

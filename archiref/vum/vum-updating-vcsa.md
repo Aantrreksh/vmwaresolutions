@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-06-05"
+lastupdated: "2024-06-14"
 
 subcollection: vmwaresolutions
 
@@ -26,7 +26,7 @@ Both the VMware vCenter® Server Appliance (VCSA) and the Platform Services Cont
 
 VMware Update Manager (VUM) does not update the PSC or the VCSA. The following information describes the process of updating these appliances. The PSC or VCSA deployed in a {{site.data.keyword.vcf-auto}} instance has no internet access, so the update bundle must be downloaded to a jump server first.
 
-The PSC or VCSA is updated via appliance management console, not the vSphere Web Client. The PSC or VCSA appliance management console is accessed by using a browser, the PSC or VCSA IP address, and port 5480.
+The PSC or VCSA is updated through the appliance management console, not the vSphere Web Client. The PSC or VCSA appliance management console is accessed by using a browser, the PSC or VCSA IP address, and port 5480.
 
 You must initiate a snapshot of the appliance or a backup of the PSC or VCSA before you update. Ensure that everything works as expected, and then remove the snapshot within a few days, to avoid performance degradation. Additionally, review the VMware release notes before you attempt any upgrade to understand any specific instructions for the specified release.
 

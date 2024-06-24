@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-06-04"
+lastupdated: "2024-06-13"
 
 subcollection: vmwaresolutions
 
@@ -18,9 +18,9 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.vmwaresolutions_full}} has a number of offerings, deployment patterns, and options that can be used to create your target VMware NSX-T™ environment:
 
-* Automated offerings - These offerings are available from the [VMware Solutions](https://cloud.ibm.com/vmware) console.
-* Regulated workload offerings - These offerings are available from the [VMware Solutions](https://cloud.ibm.com/vmware) console, the **VMware Regulated Workloads** card. They are suitable for clients that require a prescriptive reference architecture that matches the {{site.data.keyword.framework-fs_full}}.
-* Automated offerings with manual customization tasks - These offerings are based on the offering available from the [VMware Solutions](https://cloud.ibm.com/vmware) console. They require a number of post-deployment manual tasks to achieve the architectural pattern needed.
+* Automated offerings - available from the [VMware Solutions](https://cloud.ibm.com/vmware) console.
+* Regulated Workloads - available from the [VMware Solutions](https://cloud.ibm.com/vmware) console, the **Regulated Workloads** card. They are suitable for clients that require a prescriptive reference architecture that matches the {{site.data.keyword.framework-fs_full}}.
+* Automated offerings with manual customization tasks - based on the offerings available from the [VMware Solutions](https://cloud.ibm.com/vmware) console. They require a number of post-deployment manual tasks to achieve the architectural pattern needed.
 
 Based on the assessment of your source NSX-V environment, you can identify the requirements for your target platform. After the analysis, do the following steps:
 
@@ -50,7 +50,7 @@ In the previous diagram, the following terms require some additional comments:
 * Single SSO and root domain - A single instance of Active Directory™ and Domain Name Services is automatically deployed with replication if more than one domain controller is selected for automatic deployment. For more information, see [Multisite deployment components](/docs/vmwaresolutions?topic=vmwaresolutions-vc_multisite#vc_multisite-deployment-components).
 * Two SSO and root domains - A single instance of Active Directory and Domain Name Services is deployed, one for each instance. No replication occurs between the two sites.
 * Single vCenter - The automation deploys a single vCenter appliance.
-* Dual vCenters with ELM - Enhanced Link Mode (ELM) offers a single window of glass across multiple {{site.data.keyword.vcf-auto-short}}s that are in the same vSphere Single-Sing-On (SSO) domain. This allows the management of multiple sites from one vCenter. For more information, see [vCenter Enhanced Linked Mode](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vcenter.install.doc/GUID-4394EA1C-0800-4A6A-ADBF-D35C41868C53.html){: external}. The automation deploys and configures the vCenter appliances.
+* Dual vCenters with ELM - Enhanced Link Mode (ELM) offers a single window of glass across multiple {{site.data.keyword.vcf-auto-short}} instances that are in the same vSphere Single-Sing-On (SSO) domain. This allows the management of multiple sites from one vCenter. For more information, see [vCenter Enhanced Linked Mode](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vcenter.install.doc/GUID-4394EA1C-0800-4A6A-ADBF-D35C41868C53.html){: external}. The automation deploys and configures the vCenter appliances.
 * Dual vCenters - Each site has a vCenter deployed automatically. However, they are not linked.
 * Single NSX-T Manager cluster - The automation deploys three NSX-T Manager appliances in a cluster with a Virtual IP address.
 * Dual NSX-T Manager clusters - Each site has its own NSX-T Manager cluster that is deployed automatically, which is independent of each other. In NSX-T, it doesn't exist a concept equivalent to Cross-vCenter NSX-V.
@@ -64,10 +64,10 @@ In the previous diagram, the following terms require some additional comments:
 The vCenter dual site topology is a candidate for [NSX-T Federation](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.2/administration/GUID-D5B6DC79-6733-44A7-8072-50221CF2122A.html){: external}. NSX-T Federation is a relatively new NSX-T feature and architecture. Before you plan to use it, you must know what [features are supported](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.2/administration/GUID-29998FC5-C1AB-40BC-B669-6E8E9937F345.html){: external}, and how NSX Federation works for your use case. NSX-T Federation is not validated by {{site.data.keyword.cloud_notm}} fully, but it is a solution and architecture that is supported by VMware.
 {: note}
 
-## Regulated workloads offerings
+## Regulated Workloads offering
 {: #v2t-targets-automated-rw}
 
-The regulated workloads offerings are suitable for clients that require a prescriptive reference architecture that matches the {{site.data.keyword.framework-fs_notm}}. For more information, see [VMware Regulated Workloads as a single site deployment](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-overview).
+The Regulated Workloads offering is suitable for clients that require a prescriptive reference architecture that matches the {{site.data.keyword.framework-fs_notm}}. For more information, see [VMware Regulated Workloads as a single site deployment](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-overview).
 
 The following diagram can be used to compare and contrast the features that are offered by these offerings.
 
@@ -97,7 +97,7 @@ These automated offerings use a [{{site.data.keyword.vcf-auto-short}} single sit
 * NSX-T multisite centralized - Management plane components centralized in one data center.
 * NSX-T multisite distributed - Management plane components distributed across multiple data centers.
 
-The automated offerings with manual tasks patterns are not validated by {{site.data.keyword.cloud_notm}}. After the initial deployment, the Day 2 automation can be used to deploy vSphere clusters in different data centers by following the {{site.data.keyword.cloud_notm}} documentation. A number of manual tasks can be initiated to create the required configuration. These VMware related tasks, such as redeploying NSX Managers are documented by VMware in their user guides, but are not specific to {{site.data.keyword.cloud_notm}}. Therefore, additional considerations might apply when following these guides.
+The automated offerings with manual tasks patterns are not validated by {{site.data.keyword.cloud_notm}}. After the initial deployment, the Day 2 automation can be used to deploy vSphere clusters in different data centers by following the {{site.data.keyword.cloud_notm}} documentation. A number of manual tasks can be initiated to create the required configuration. These VMware related tasks, such as redeploying NSX Managers are documented by VMware in their user guides, but are not specific to {{site.data.keyword.cloud_notm}}. Therefore, extra considerations might apply when following these guides.
 {: note}
 
 The following diagram can be used to compare and contrast the features that are offered by these offerings.
@@ -111,8 +111,8 @@ In the previous diagram, the following terms require some additional comments:
 * vCenter HA - vCenter High Availability (HA) protects vCenter against failures by using an active-passive architecture that uses a three-node cluster with active, passive, and witness nodes. For more information about the VMware architecture pattern that must be manually deployed, see [vCenter High Availability](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.avail.doc/GUID-4A626993-A829-495C-9659-F64BA8B560BD.html){: external}.
 * Single NSX-T Manager cluster - The automation deploys three NSX-T Manager appliances in a cluster with a Virtual IP address.
 * Distributed NSX-T Manager cluster - The initial single NSX-T Manager cluster that is deployed automatically must be modified.
-* Active-DR NSX-T data plane - This pattern is suitable for where the network latency between data centers is more than 10 ms but less than 150 ms, such as across regions. For more information, see [NSX-T Data Center Multisite](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.1/administration/GUID-5D7E3D43-6497-4273-99C1-77613C36AD75.html){: external} and also [NSX-T Multi Location Design Guide](https://communities.vmware.com/t5/VMware-NSX-Documents/NSX-T-Multi-Location-Design-Guide-Federation-Multisite/ta-p/2810327?attachment-id=107432){: external}.
-* Active-Active NSX-T data plane - This pattern is suitable for where the network latency between data centers is less than 10 ms, such as between availability zones in the same region. For more information, see [NSX-T Data Center Multisite](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.1/administration/GUID-5D7E3D43-6497-4273-99C1-77613C36AD75.html){: external} and also [NSX-T Multi Location Design Guide](https://communities.vmware.com/t5/VMware-NSX-Documents/NSX-T-Multi-Location-Design-Guide-Federation-Multisite/ta-p/2810327?attachment-id=107432){: external}.
+* Active-DR NSX-T data plane - This pattern is suitable for where the network latency between data centers is more than 10 ms but less than 150 ms, such as across regions. For more information, see [NSX-T Data Center Multisite](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.1/administration/GUID-5D7E3D43-6497-4273-99C1-77613C36AD75.html){: external} and also [NSX-T Multi Location Design Guide](https://community.broadcom.com/blogs/dimitri-desmidt/2024/05/20/nsx-t-multi-location-design-guide){: external}.
+* Active-Active NSX-T data plane - This pattern is suitable for where the network latency between data centers is less than 10 ms, such as between availability zones in the same region. For more information, see [NSX-T Data Center Multisite](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.1/administration/GUID-5D7E3D43-6497-4273-99C1-77613C36AD75.html){: external} and also [NSX-T Multi Location Design Guide](https://community.broadcom.com/blogs/dimitri-desmidt/2024/05/20/nsx-t-multi-location-design-guide){: external}.
 * Stretched L2 capable - It is possible to do the stretching of layer 2 NSX-T overlay segments across virtual data centers.
 * Single edge cluster Tier-0 gateway for workloads - The automation deploys a single NSX-T edge cluster, consisting of a pair of edge appliances, hosting an active standby Tier-0 gateway for use by the workload VMs. These VMs provide connection between the overlay and underlay networks. For more information, see [Single-site - single-tenant](/docs/vmwaresolutions?topic=vmwaresolutions-v2t-example-overlays#v2t-example-overlays-single-site-st) and [Single-site - multitenant](/docs/vmwaresolutions?topic=vmwaresolutions-v2t-example-overlays#v2t-example-overlays-single-site-mt).
 * Stretched edge cluster Tier-0 gateways for workloads per site - To enable an active-active data plane, a stretched edge NSX-T cluster is created manually by deploying an edge appliance in each site. This action enables access to the stretched L2 NSX-T overlay segments, which host the workload VMs if a failure occurs in one of the sites. For more information, see [Multisite - single-tenant](/docs/vmwaresolutions?topic=vmwaresolutions-v2t-example-overlays#v2t-example-overlays-multi-site-st) and [Multisite - multitenant](/docs/vmwaresolutions?topic=vmwaresolutions-v2t-example-overlays#v2t-example-overlays-multi-site-mt).

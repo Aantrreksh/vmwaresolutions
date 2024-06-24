@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2024
 
-lastupdated: "2024-06-05"
+lastupdated: "2024-06-14"
 
 subcollection: vmwaresolutions
 
@@ -55,7 +55,7 @@ The playbook `create_lhbr.yml` starts with the following code.
 Replace `timezone`, `vbr_ip`, `ansible_ip`, `addns1`, and `addns2` in the previous code snippet with your values captured in the earlier steps. The previous code does the following actions:
 
 * Defines that the playbook is run on the hosts that are defined as `lhbr` in the inventory file.
-* Defines a file that contains other variables, called `vault`. The `vault` file that was created in the previous step, is encrypted, and contains sensitive variables, such as passwords.
+* Defines a file that contains other variables, called `vault`. The `vault` file that was created in the previous step is encrypted, and contains sensitive variables, such as passwords.
 * Defines the time zone, the IP addresses of the VBR server and automation server to configure the firewall, and DNS IP addresses for the DNS change.
 
 ## Upgrading the OS packages
@@ -94,7 +94,7 @@ In the Red Hat distribution, the NTP server is configured and points to `servert
 The code snippet does the following actions:
 
 * Unmounts the `/disk1` file system.
-* Captures the UUID of the partition so that fstab can be configured.
+* Captures the UUID of the partition so that `fstab` can be configured.
 * Mounts the `xfs` partition by using the UUID as `/mnt/veeamrepo01`.
 
 ```text
@@ -188,13 +188,13 @@ Change file permissions for authentication certificates on the Linux server to m
 ```
 {: codeblock}
 
-## Configuring Linux firewall
+## Configuring a Linux firewall
 {: #veeam-cr-sag-lhbrcfg-fw}
 
 The code snippet does the following actions:
 
 * Allows SSH from the Veeam backup server on TCP port `22`. This rule is removed after the Veeam backup server is initially connected and the required Veeam services are installed.
-* Allows SSH access from the automation server. This rule can be removed after the configurations task is complete. However, the future maintenance tasks might become more difficult.
+* Allows SSH access from the automation server. This rule can be removed after the configuration task is complete. However, the future maintenance tasks might become more difficult.
 * Allows the Veeam backup server access on TCP port `6162`. This port is the Veeam control channel that is used to communicate with the repository server.
 * The firewall is started, enabled on startup, and enabled for logging.
 

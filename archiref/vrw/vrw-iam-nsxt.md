@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2024
 
-lastupdated: "2024-06-04"
+lastupdated: "2024-06-14"
 
 subcollection: vmwaresolutions
 
@@ -17,8 +17,8 @@ subcollection: vmwaresolutions
 {: #vrw-iam-nsxt}
 
 The following main principles or requirements apply:
-* Infrastructure Admin has `execute` and `full access` to all components.
-* Auditor has read-only access to all components.
+* `Infrastructure Admin` has `execute` and `full access` to all components.
+* `Auditor` has read-only access to all components.
 
 ## NSX role mapping
 {: #vrw-iam-nsxt-rolemapping}
@@ -61,11 +61,11 @@ NSX Data Center has the following built-in roles. You cannot add any new roles.
 
 | User     | User ID      | Description |
 |:---------|:-------------|:------------|
-| Privileged user | `admin` | Used post-deployment to manage NSX VTEP IP addresses and to manage host and cluster configuration when hosts and clusters are added and removed. Also used to manage ESG configuration for services that require public network access for licensing, activation, or usage reporting. |
+| Privileged user | `admin` | Used post-deployment to manage NSX VTEP IP addresses and to manage host and cluster configuration when hosts and clusters are added and removed. Also, used to manage ESG configuration for services that require public network access for licensing, activation, or usage reporting. |
 | IBM automation | `automation_admin` | Automation account used by IBM. It uses the principle identity functions to create configuration and protect it with a certificate. |
 {: caption="Table 2. NSX user IDs" caption-side="bottom"}
 
-For more information, see the [VMware documentation - RBAC for NSX](https://docs.vmware.com/en/VMware-NSX-Data-Center/2.5/VMware-NSX-Data-Center-25.zip){: external}.
+For more information, see the [VMware documentation - RBAC for NSX](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/2.5/VMware-NSX-Data-Center-25.zip){: external}.
 
 ## Related links
 {: #vrw-iam-nsxt-related}

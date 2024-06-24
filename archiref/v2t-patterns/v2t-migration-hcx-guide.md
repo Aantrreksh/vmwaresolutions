@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-06-04"
+lastupdated: "2024-06-13"
 
 subcollection: vmwaresolutions
 
@@ -21,7 +21,7 @@ You can provision an optional HCX service in the new {{site.data.keyword.vcf-aut
 ## HCX site peering over private network
 {: #v2t-hcx-guide-site-peering}
 
-![HCX site peering over private network](../../images/v2t-hcx-site-peering.svg "HCX site peering happens over private network"){: caption="Figure 1. HCX site peering over private network" caption-side="bottom"}
+![HCX site peering over private network](../../images/v2t-hcx-site-peering.svg "HCX site peering happens over a private network"){: caption="Figure 1. HCX site peering over private network" caption-side="bottom"}
 
 1. Order the HCX service on the new {{site.data.keyword.vcf-auto-short}} with NSX-T environment. For more information, see [Ordering VMware HCX](/docs/vmwaresolutions?topic=vmwaresolutions-hcx_ordering). This use case assumes that you specify the HCX network connection type of Public, which allows license registration and metering to be completed over the public network.
 
@@ -43,12 +43,12 @@ You can provision an optional HCX service in the new {{site.data.keyword.vcf-aut
 1. In the {{site.data.keyword.vcf-auto-short}} with NSX-T environment, HCX uses the HCX Private subnet for management for interfaces of the HCX fleet appliances, and the vMotion subnet on the secondary VLAN.
 2. In the {{site.data.keyword.vcf-auto-short}} with NSX-V environment, order a new portable subnet on the primary VLAN for use as the HCX private subnet.
 3. Order a new portable subnet manually on the Secondary VLAN for use as the HCX private uplink subnet.
-4. The network profiles in the {{site.data.keyword.vcf-auto-short}} with NSX-T environment are created initially by the VMware Solutions automation. No changes are required for the Management and vMotion profiles. A new profile for the HCX private uplink network profile is created in the {{site.data.keyword.vcf-auto-short}} with NSX-T environment. THe profile is created by using the subnet, IP range, and gateway from the manually provisioned HCX uplink portable subnet on the Secondary VLAN. This subnet is also used by the HCX private uplink network profile in the {{site.data.keyword.vcf-auto-short}} with NSX-V environment. Therefore, ensure that the IP range in each environment do not overlap with each other.
+4. The network profiles in the {{site.data.keyword.vcf-auto-short}} with NSX-T environment are created initially by the VMware Solutions automation. No changes are required for the Management and vMotion profiles. A new profile for the HCX private uplink network profile is created in the {{site.data.keyword.vcf-auto-short}} with NSX-T environment. THe profile is created by using the subnet, IP range, and gateway from the manually provisioned HCX uplink portable subnet on the Secondary VLAN. This subnet is also used by the HCX private uplink network profile in the {{site.data.keyword.vcf-auto-short}} with NSX-V environment. Therefore, ensure that the IP ranges in each environment do not overlap with each other.
 5. The network profiles in the {{site.data.keyword.vcf-auto-short}} with NSX-V environment must be created:
    * The management network profile is configured by using the subnet, IP range, and gateway from the manually provisioned HCX Management portable subnet on the primary VLAN.
    * The vMotion network profile uses the subnet, IP range, and gateway from the existing vMotion subnet on the secondary VLAN. Ensure that the IP range that you define is not used by the ESXi hosts.
-   * The private uplink network profile is created by using the subnet, IP range, and gateway from the manually provisioned HCX uplink portable subnet on the secondary private VLAN. This subnet is also used by the HCX private uplink network profile in the {{site.data.keyword.vcf-auto-short}} with NSX-T environment. Therefore, ensure that the IP range in each environment do not overlap with each other.
-6. On the {{site.data.keyword.vcf-auto-short}} with NSX-V HCX Manager, create a Site Pairing and then a Service Mesh. Complete performance testing to understand bandwidth and throughput between the environments so you can calculate migration durations. For more information, see [{{site.data.keyword.vcf-auto-short}} with NSX-T environment](https://communities.vmware.com/t5/HCX-Documents/HCX-Network-Underlay-Characterization-and-Performance-Outcomes-1/ta-p/2873360?attachment-id=107733){: external}.
+   * The private uplink network profile is created by using the subnet, IP range, and gateway from the manually provisioned HCX uplink portable subnet on the secondary private VLAN. This subnet is also used by the HCX private uplink network profile in the {{site.data.keyword.vcf-auto-short}} with NSX-T environment. Therefore, ensure that the IP ranges in each environment do not overlap with each other.
+6. On the {{site.data.keyword.vcf-auto-short}} with NSX-V HCX Manager, create a Site Pairing and then a Service Mesh. Complete performance testing to understand bandwidth and throughput between the environments so you can calculate migration durations. For more information, see [Network Underlay Characterization and HCX Performance Outcomes](https://community.broadcom.com/HigherLogic/System/DownloadDocumentFile.ashx?DocumentFileKey=eb003993-2dd5-4c04-83d8-39d8aae6e379&forceDialog=0){: external}.
 
 ## Deploying HCX fleet for migration
 {: #v2t-hcx-guide-deploy-hcx-fleet}

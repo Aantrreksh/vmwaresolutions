@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2024
 
-lastupdated: "2024-04-02"
+lastupdated: "2024-06-08"
 
 keywords: VLAN ports, vmware solutions ports, ports usage vmware solutions
 
@@ -99,9 +99,9 @@ The following table provides information about the {{site.data.keyword.redhat_op
 | IBM CloudDriver | Private primary subnet \n Infrastructure VMs | OCP | New subnet ordered in private VLAN | 22 | TCP | Set up and configure OCP | SSH |
 {: caption="Table 6. Red Hat OpenShift for VMware ports" caption-side="bottom"}
 
-[^osinst]: For more information, see [Configuring your firewall](https://docs.openshift.com/container-platform/4.14/installing/install_config/configuring-firewall.html){: external}.
+[^osinst]: For more information, see [Configuring your firewall](https://docs.openshift.com/container-platform/4.15/installing/install_config/configuring-firewall.html){: external}.
 
-For more information about OCP networking, see [About the {{site.data.keyword.redhat_openshift_notm}} SDN network provider](https://docs.openshift.com/container-platform/4.14/networking/openshift_sdn/about-openshift-sdn.html){: external}.
+For more information about OCP networking, see [About the {{site.data.keyword.redhat_openshift_notm}} SDN network provider](https://docs.openshift.com/container-platform/4.15/networking/openshift_sdn/about-openshift-sdn.html){: external}.
 
 ## Ports for Veeam
 {: #vmwaresol_ports-vmware-optional-services-veeam}
@@ -110,7 +110,7 @@ The following table provides information about the Veeam® ports.
 
 | Source | Subnet, IP range | Target | Subnet, IP range | Port | Protocol | Purpose | Service |
 |:------ |:---------------- |:------ |:---------------- |:---- |:-------- |:------- |:------- |
-| Veeam | Private primary subnet | {{site.data.keyword.cloud_notm}} infrastructure DNS service \n `10.0.80.11` \n `10.0.80.12` | {{site.data.keyword.cloud_notm}} infrastructure services network. \n For more information, see [DNS FAQs](/docs/dns?topic=dns-dns-faq) | 53 | UDP | Use {{site.data.keyword.cloud_notm}} infrastructure DNS service | UDP |
+| Veeam | Private primary subnet | {{site.data.keyword.cloud_notm}} infrastructure DNS service \n `10.0.80.11` \n `10.0.80.12` | {{site.data.keyword.cloud_notm}} infrastructure services network. | 53 | UDP | Use {{site.data.keyword.cloud_notm}} infrastructure DNS service | UDP |
 | Veeam | Private primary subnet | {{site.data.keyword.cloud_notm}} infrastructure NTP service | {{site.data.keyword.cloud_notm}} infrastructure services network. For more information, see [NTP overview](/docs-draft/cloud-infrastructure?topic=cloud-infrastructure-ntp-service-overview)| 123 | UDP | Use {{site.data.keyword.cloud_notm}} infrastructure NTP service | NTP |
 | Veeam | Private primary subnet | {{site.data.keyword.cloud_notm}} infrastructure service - Provision Windows VSI | {{site.data.keyword.cloud_notm}} infrastructure services network | | ICMP | Use infrastructure services to provision Windows VSI for Veeam | Ping |
 | Veeam | Private primary subnet | {{site.data.keyword.cloud_notm}} infrastructure service - Provision Windows VSI | {{site.data.keyword.cloud_notm}} infrastructure services network | 10000 | TCP | Use infrastructure services to provision Windows VSI for Veeam | |
@@ -149,11 +149,11 @@ The following table provides information about the VMware Aria Operations ports 
 | IBM CloudDriver | Private primary subnet \n Infrastructure VMs | VMware Aria Operations | New subnet ordered in private VLAN | 9543 | TCP | Set up and configure VMware Aria Operations | HTTPS |
 | Windows Active Directory | Private primary subnet \n Infrastructure VMs | VMware Aria Operations | New subnet ordered in private VLAN | 9543 | TCP | Set up and configure VMware Aria Operations | |
 | Service edge | Infrastructure VMs | Windows Active Directory | Private primary subnet \n Infrastructure VMs | 53 | TCP and UDP | Use Windows DNS service | DNS |
-| Service edge | Infrastructure VMs | {{site.data.keyword.cloud_notm}} infrastructure DNS service \n `10.0.80.11` \n `10.0.80.12` | {{site.data.keyword.cloud_notm}} infrastructure services network. For more information, see [DNS FAQs](/docs/dns?topic=dns-dns-faq) | 53 | UDP | Use {{site.data.keyword.cloud_notm}} infrastructure NTP | DNS |
+| Service edge | Infrastructure VMs | {{site.data.keyword.cloud_notm}} infrastructure DNS service \n `10.0.80.11` \n `10.0.80.12` | {{site.data.keyword.cloud_notm}} infrastructure services network. | 53 | UDP | Use {{site.data.keyword.cloud_notm}} infrastructure NTP | DNS |
 | Service edge | Infrastructure VMs | {{site.data.keyword.cloud_notm}} infrastructure NTP service | {{site.data.keyword.cloud_notm}} infrastructure services network. For more information, see [NTP overview](/docs-draft/cloud-infrastructure?topic=cloud-infrastructure-ntp-service-overview) | 123 | UDP | Use {{site.data.keyword.cloud_notm}} infrastructure NTP | NTP |
 {: caption="Table 8. VMware Aria Operations ports for Automated instances" caption-side="bottom"}
 
-For more information about port requirements for VMware Aria Operations, see [TCP and UDP ports required to access VMware Aria Operations Manager](https://kb.vmware.com/s/article/52964){: external}.
+For more information about port requirements for VMware Aria Operations, see [TCP and UDP ports required to access VMware Aria Operations Manager](https://knowledge.broadcom.com/external/article?legacyId=52964){: external}.
 
 ## Ports for Zerto
 {: #vmwaresol_ports-vmware-optional-services-zerto}

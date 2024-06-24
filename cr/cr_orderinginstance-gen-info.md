@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-04-23"
+lastupdated: "2024-06-24"
 
 keywords: cyber recovery, cyber recovery settings, cyber recovery license settings, cyber recovery versions, cyber recovery instances
 
@@ -21,14 +21,19 @@ The following VMware® components are part of the {{site.data.keyword.cr}} insta
 * VMware vSphere® 7.0u3
 * VMware NSX® 4.1
 
+## VMware vSphere version
+{: #cr_orderinginstance-vsphere-license}
+
+VMware vSphere® Enterprise Plus 7 is ordered by default.
+
+
+
 ## VMware vCenter Server version
 {: #cr_orderinginstance-vcenter-license}
 
 {{site.data.content.para-vcsversion80-vcsline1}}
 
 {{site.data.content.para-vcsversion80-vcsline2}}
-
-{{site.data.content.note-vcsversion80-vsphere8}}
 
 ## Instance name
 {: #cr_orderinginstance-inst-name}

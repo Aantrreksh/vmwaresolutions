@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-05-31"
+lastupdated: "2024-06-13"
 
 subcollection: vmwaresolutions
 
@@ -23,7 +23,7 @@ Review the following considerations to understand your responsibilities for mana
 ## {{site.data.keyword.cloud_notm}} account access
 {: #solution_considerations-acct-access}
 
-To manage access to your {{site.data.keyword.cloud_notm}} account, permit other members of your team to access your instance in the {{site.data.keyword.vmwaresolutions_short}} console. For more information, see [Inviting users to access services and resources](/docs/vmwaresolutions?topic=vmwaresolutions-useraccount#useraccount-iamuserinv).
+To manage your {{site.data.keyword.cloud_notm}} account, give access to other members of your team to access your instance in the {{site.data.keyword.vmwaresolutions_short}} console. For more information, see [Inviting users to access services and resources](/docs/vmwaresolutions?topic=vmwaresolutions-useraccount#useraccount-iamuserinv).
 
 ## Limitations
 {: #solution_considerations-limitations}
@@ -41,16 +41,16 @@ Complete the following steps to manage access to your {{site.data.keyword.cloud_
 
 - Access instance management endpoints by using the [{{site.data.keyword.cloud_notm}} VPN](/docs/iaas-vpn?topic=iaas-vpn-getting-started) or your [{{site.data.keyword.cloud_notm}} Direct Link](https://www.ibm.com/products/direct-link){: external}.
 - Devise a strategy for public network connectivity from within your instance. Your options include the sample customer VMware NSX Edge™ Services Gateway (ESG), gateway appliances such as Vyatta and FortiGate, and proxy servers deployed in the {{site.data.keyword.cloud_notm}} network or on your own network accessed through Direct Link.
-- Plan whether to deploy your workload on {{site.data.keyword.cloud_notm}} VLANs with [{{site.data.keyword.cloud_notm}} portable IP addresses](/docs/subnets?topic=subnets-getting-started) or [on NSX-T logical switches using your own IP addresses](/docs/vmwaresolutions?topic=vmwaresolutions-nsx-t-design). When you use NSX software-defined networking (SDN), it gives you the greatest flexibility to manage and secure your workload network in the {{site.data.keyword.cloud_notm}}.
+- Plan whether to deploy your workload on {{site.data.keyword.cloud_notm}} VLANs with [{{site.data.keyword.cloud_notm}} portable IP addresses](/docs/subnets?topic=subnets-getting-started) or [on NSX-T logical switches by using your own IP addresses](/docs/vmwaresolutions?topic=vmwaresolutions-nsx-t-design). When you use NSX software-defined networking (SDN), it gives you the greatest flexibility to manage and secure your workload network in the {{site.data.keyword.cloud_notm}}.
 - Use NSX ESGs, [{{site.data.keyword.cloud_notm}} Vyatta](https://cloud.ibm.com/catalog/infrastructure/virtual-router-appliance), and Direct Link peering to plan for connectivity to workloads (Network Address Translation, Virtual Private Network, routing).
 - If you implement Cross-vCenter NSX, ensure that your local segment ID ranges are not overlapping before you deploy any local workloads.
 
 ## Security planning and hardening
 {: #solution_considerations-sec-planning}
 
-You are responsible for securing, encrypting, and monitoring your VMware instance and workloads to meet your corporate, industry, and regulatory standards. Complete the following steps to ensure proper security.
+You are responsible for securing, encrypting, and monitoring your VMware instances and workloads to meet your corporate, industry, and regulatory standards. Complete the following steps to ensure proper security.
 
-- Change all passwords displayed in the {{site.data.keyword.vmwaresolutions_short}} console and use your own password management system. IBM retains distinct user IDs needed for ongoing automation and support.
+- Change all passwords that are displayed in the {{site.data.keyword.vmwaresolutions_short}} console and use your own password management system. IBM retains distinct user IDs needed for ongoing automation and support.
 - Review password policies, such as complexity and expiration period, across all components.
 - Review encryption settings across all components.
 - Plan and implement appropriate physical or virtual firewall solutions, such as NSX Distributed Firewall (DFW), NSX ESGs, [FortiGate Virtual Appliance](/docs/vmwaresolutions?topic=vmwaresolutions-fortinetvm_considerations), and [{{site.data.keyword.cloud_notm}} Vyatta](https://cloud.ibm.com/catalog/infrastructure/virtual-router-appliance).
@@ -65,7 +65,7 @@ Complete the following steps to customize the base VMware instance installation 
 - Use your own certificate authority (CA) to generate certificates for components such as vCenter and NSX Manager.
 - Configure deployed services. For example,
    - For Zerto, plan for IP addressing and routing of Zerto Virtual Replication Appliance (VRA) communications since network address translator (NAT) traversal is not supported. Consider either tunneling or redeployment of your VRAs for appropriate addressing and routing.
-   - For backup services such as Veeam® and IBM Spectrum® Protect Plus, configure your backup job, optionally configure additional storage, and configure monitoring alerts.
+   - For backup services such as Veeam® and IBM Spectrum® Protect Plus, configure your backup job, optionally configure extra storage, and configure monitoring alerts.
    - For networking and security services such as F5® BIG-IP and FortiGate Virtual Appliance, configure network interfaces, certificates, high availability (HA) configuration, and rules according to your network topology and other requirements.
 
 ## Active Directory
@@ -118,12 +118,12 @@ Complete the following steps to ensure that you make adequate plans for high ava
 
 In addition to capacity planning, complete the following to ensure that your storage configuration meets your performance and availability requirements.
 
-- Storage performance depends on various factors, including RAID configuration and disk striping, network configuration, block size, configured IOPS (input/output operations per second) for network-attached storage, VM hardware configuration and method of storage attachment, clustering and replication methods, and use of storage policies such as encryption, deduplication, and compression. Plan time to test and tune your configuration to meet your storage performance needs.
+- Storage performance depends on various factors, including RAID configuration and disk striping, network configuration, block size, IOPS (input/output operations per second) that are configured for network-attached storage, VM hardware configuration and method of storage attachment, clustering and replication methods, and use of storage policies such as encryption, deduplication, and compression. Plan time to test and tune your configuration to meet your storage performance needs.
 - Review your vSAN storage policy
    - RAID 1 provides better performance and smaller windows of susceptibility to sequential failure, such as shorter rebuild time, than RAID 5. However, RAID 5 has less storage overhead.
    - RAID 6 provides protection against dual failures, but requires a minimum of six hosts compared to four hosts for RAID 5.
 - To add more storage to your vSAN cluster, you must add new hosts to the cluster or add {{site.data.keyword.cloud_notm}} Endurance NFS storage instead. Adding disks to the existing hosts is not currently supported.
-- If you mount additional {{site.data.keyword.cloud_notm}} Endurance NFS storage to your cluster, ensure that you follow the architecture guidance and configure host routes to the storage that uses the cluster's NFS port group addresses. You must authorize these addresses, rather than the hosts themselves, to the storage. For more information, see [Attached storage infrastructure management](/docs/vmwaresolutions?topic=vmwaresolutions-storage-infra-mgmt#storage-infra-mgmt-vsphere-routing).
+- If you mount extra {{site.data.keyword.cloud_notm}} Endurance NFS storage to your cluster, ensure that you follow the architecture guidance and configure host routes to the storage that uses the cluster's NFS port group addresses. You must authorize these addresses, rather than the hosts themselves, to the storage. For more information, see [Attached storage infrastructure management](/docs/vmwaresolutions?topic=vmwaresolutions-storage-infra-mgmt#storage-infra-mgmt-vsphere-routing).
 
 ## Related links
 {: #solution_considerations-related}

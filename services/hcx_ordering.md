@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-05-06"
+lastupdated: "2024-06-22"
 
 keywords: VMware HCX deployment, HCX configuration, order HCX
 
@@ -72,8 +72,14 @@ To install HCX, complete the following settings:
 2. Specify the **HCX network connection** by selecting one of the following options. If any of the management or service mesh target clusters are deployed with private network only, the only networking option that you can choose is private.
    * **Public network** - HCX creates an encrypted connection between sites over the public network. License registration and metering are completed over the public network.
    * **Private network** - HCX creates an encrypted connection between sites over the private network. License registration and metering are completed over a private network through HTTP proxy.
-3. If private network connection is selected, proxy information is displayed. Otherwise, a proxy option is not available.
-   Complete the following fields:
+3. If private network connection is selected, proxy information is displayed. Otherwise, a proxy option is not available. The proxy fields must reflect a working proxy server that accepts traffic from the {{site.data.keyword.cloud_notm}} private network and forwards the traffic to the HCX activation service at `connect.hcx.vmware.com`. After the HCX service is installed, the license is activated through the following ways:
+   * By sending a request from the HCX manager, which is installed on the same portable subnet as the vCenter virtual machine.
+   * By sending a request through the proxy.
+   * By sending a request to `connect.hcx.vmware.com`. For more information, see the [HCX User Guide: Configure a Proxy Server](https://docs.vmware.com/en/VMware-HCX/4.8/hcx-user-guide/GUID-387A91E6-E0DA-41B4-8EFA-9BF2D5F90AB3.html).
+
+ If the proxy is unreachable or does not handle the license activation request, the HCX automated installation fails. A proxy is not required if a firewall that manages the VLAN, where vCenter is installed, is configured to route traffic from the new HCX manager to `connect.hcx.vmware.com`.
+
+   Complete the following proxy fields:
    * **Proxy IP address** - The IPv4 address of the proxy server.
    * **Proxy port number** - The proxy server port. The port number is typically 8080 or 3128.
    * **Proxy user name** (Optional) - The username if proxy authentication is required.

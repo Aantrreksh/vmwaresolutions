@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-05-31"
+lastupdated: "2024-06-12"
 
 subcollection: vmwaresolutions
 
@@ -25,8 +25,8 @@ This solution is considered to be an extra component and extension of the {{site
 
 While many storage encryption solutions are available for your VMware workload, KMIP for VMware offers the following benefits:
 
-* Integration with VMware vSAN encryption and vSphere encryption, both of which are implemented in the hypervisor layer rather than the storage or virtual machine layer. This approach allows easy management and transparency to your storage solution and application.
-* Fully managed key management server available in many {{site.data.keyword.cloud_notm}} multizone regions (MZRs).
+* Integration with VMware vSAN encryption and vSphere encryption, both of which are implemented in the hypervisor layer rather than the storage or virtual machine layer. This approach allows easier management and transparency to your storage solution and application.
+* Fully managed key management server is available in many {{site.data.keyword.cloud_notm}} multizone regions (MZRs).
 * Integrating your VMware cluster with {{site.data.keyword.cloud_notm}} Key Protect or {{site.data.keyword.cloud_notm}} Hyper Protect Crypto Services provides you with fully customer-managed keys that you can revoke at any time.
 
 ## Related links

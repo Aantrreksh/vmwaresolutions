@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2019, 2023
+  years:  2019, 2024
 
-lastupdated: "2023-09-11"
+lastupdated: "2024-06-13"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 #  The {{site.data.keyword.cloud_notm}} IaaS vSRX default configuration
 {: #vcsvsrx-iaas-def-config}
 
-The following configuration is provided as a reference and not intended for use in your vSRX cluster.
+The following configuration is provided as a reference and is not intended for use in your vSRX cluster.
 
 ```JUNOS
 set version 18.4R1.8
