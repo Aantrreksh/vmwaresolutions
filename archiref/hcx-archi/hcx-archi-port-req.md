@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-01-30"
+lastupdated: "2024-06-11"
 
 subcollection: vmwaresolutions
 
@@ -32,7 +32,7 @@ The following table lists ports that must be opened so that Hybrid Cloud Service
 | HCX | ESXi Hosts | 902 | TCP | Send management and provisioning instructions from HCX to ESXi Hosts in {{site.data.keyword.cloud_notm}}. | Internal |
 | HCX | vCenter SSO Server | 7444 | TCP | vSphere Lookup Service |  |
 | HCX | NTP Servers | 123 | UDP | Time synchronization | |
-| HCX | Syslog |   | User configured | Connection between HCX (the client) and the Syslog server. Values for the Syslog port and protocol are specified in the vSphere Web Client. For example, port 514 for UDP protocol. | |
+| HCX | Syslog |   | User-configured | Connection between HCX (the client) and the Syslog server. Values for the Syslog port and protocol are specified in the vSphere Web Client. For example, port 514 for UDP protocol. | |
 | HCX | HCX-IX | 8123 | TCP | Send host-based replication service instructions to the HCX-IX. | HTTP |
 | HCX | HCX-IX | 9443 | TCP | Send management instructions to the local HCX-IX by using the REST API. | HTTP</br>HTTPS |
 | HCX-IX | HCX-NE | 443 | TCP | Send management instructions from HCX-IX to HCX-NE when HCX-NE uses the same path as the HCX-IX. | HTTP</br>HTTPS |

@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2024
 
-lastupdated: "2024-06-04"
+lastupdated: "2024-06-14"
 
 subcollection: vmwaresolutions
 
@@ -34,18 +34,18 @@ The optional gateway cluster adds two transit network VLANs to the solution. The
 
 The network design is done in this manner to enable the vSRX to control traffic flows within the management zone and between the management zone and the {{site.data.keyword.cloud}} private and public networks. The FortiGate appliance transit and VLAN network design are the same as the ones used with the gateway cluster.
 
-The vSRX running on the gateway cluster connects the management network to the private and public transit networks. The vSRX is configured to allow only traffic in or out of the management region that is necessary for proper operation and monitoring of the environment. The vSRX also isolates all traffic between the ESXi hosts in the clusters and vCenter Server. ESXi hosts within a cluster can communicate with each other and vCenter Server. ESXi hosts in one cluster (workload or management for example) are unable to communicate with the hosts of any other clusters. The limitation of cross-cluster traffic is enforced by vSRX and the configuration of the firewalls of the ESXi hosts.
+The vSRX running on the gateway cluster connects the management network to the private and public transit networks. The vSRX is configured to allow only traffic in or out of the management region that is necessary for proper operation and monitoring of the environment. The vSRX also isolates all traffic between the ESXi hosts and vCenter Server. ESXi hosts within a cluster can communicate with each other and vCenter Server. ESXi hosts in one cluster (workload or management for example) are unable to communicate with the hosts of any other clusters. The limitation of cross-cluster traffic is enforced by vSRX and the configuration of the firewalls of the ESXi hosts.
 
-The gateway cluster is the peering point for traffic between the SaaS provider on-premises and the {{site.data.keyword.cloud_notm}} for VMware Regulated Workloads. It also serves as the demarcation for traffic from the SaaS consumer. The SaaS provider uses the vSRX as the secure tunnel endpoint for its VPN.
+The gateway cluster is the peering point for traffic between the SaaS provider on-premises and the {{site.data.keyword.rw}}. It also serves as the demarcation for traffic from the SaaS consumer. The SaaS provider uses the vSRX as the secure tunnel endpoint for its VPN.
 
 Traffic from the SaaS consumer passes through the vSRX in an encrypted tunnel, which lands on the overlay network virtual edge device.
 
 ## Workload cluster
 {: #vrw-underlay-network-workload}
 
-The workload cluster network design is closely aligned to that of a traditional vCenter Server deployment. VLANs and subnets are provisioned to support vMotion, vSAN, TEPS for the Software-Defined Networking (SDN) network, and workload cluster host management functions.
+The workload cluster network design is closely aligned to that of a traditional vCenter Server deployment. VLANs and subnets are provisioned to support vMotion, vSAN, TEPs for the Software-Defined Networking (SDN) network, and workload cluster host management functions.
 
-Within the workload clusters, NSX™ provides a highly secure and flexible software defined network to support the application requirements. NSX management is external to the workload cluster thus ensuring that network and security changes are not possible by anyone other than the designated administrators. All north-south network access in the workload cluster is done through private and secure connections by using IPsec or IBM Direct Link. The workload clusters are protected by the same gateway cluster with the vSRX or the physical FortiGate that protects the management plane.
+Within the workload clusters, NSX™ provides a highly secure and flexible software-defined network to support the application requirements. NSX management is external to the workload cluster thus ensuring that network and security changes are not possible by anyone other than the designated administrators. All north-south network access in the workload cluster is done through private and secure connections by using IPsec or IBM Direct Link. The workload clusters are protected by the same gateway cluster with the vSRX or the physical FortiGate that protects the management plane.
 
 ## {{site.data.keyword.cloud_notm}} networking
 {: #vrw-underlay-network-cloud}
@@ -89,7 +89,7 @@ Primary or portable IP addresses can be made routable to any VLAN within your ac
 
 The {{site.data.keyword.cloud_notm}} infrastructure account must be configured as a Virtual Routing and Forwarding (VRF) account, which enables automatic global routing between subnet IP blocks. All accounts with Direct-Link connections must be converted to, or created as, a VRF account.
 
-As various connectivity options and network routing options require that the {{site.data.keyword.cloud_notm}} account is in VRF mode, it is recommended that the account is in VRF mode before you provision the {{site.data.keyword.cloud_notm}} for VMware Regulated Workloads.
+As various connectivity options and network routing options require that the {{site.data.keyword.cloud_notm}} account is in VRF mode, it is recommended that the account is in VRF mode before you provision the {{site.data.keyword.rw}}.
 
 ### Physical host connections
 {: #vrw-underlay-network-cloud-hosts}
@@ -98,14 +98,14 @@ Each physical host in this design has two redundant pairs of 10 Gbps Ethernet co
 
 Removing physical network connectivity to the public or private network for the bare metal servers that are used within the vCenter Server offering is not possible. Physical ports on the internal NIC of the bare metal can be disabled, but no support to unplug the cables exist. This configuration is sometimes referred to as "air-gapped", which is short hand for those actions necessary to ensure that the public side network ports of the ESXi hosts are disabled, that the ToR ports for those connections are disabled, and that {{site.data.keyword.cloud_notm}} IAM is configured to prevent anyone without sufficient privileges to enable the connections. Additionally, the public client-side VLAN is assigned to the perimeter gateway device and secured to prevent any traffic to and from the public VLAN. The gateway and the gateway connections to the public transit VLAN (if present) are also administratively down (as opposed to disconnected), which enables monitoring for any attempt of traffic egressing or ingressing across the public transit VLAN to and from the FCR.
 
-While {{site.data.keyword.cloud_notm}} does offer an SSL VPN option, this option is discouraged and should be strictly limited to situations where out of band access to the {{site.data.keyword.cloud_notm}} for VMware Regulated Workloads is essential.
+While {{site.data.keyword.cloud_notm}} does offer an SSL VPN option, this option is discouraged and strictly limited to situations where out of band access to the Regulated Workloads is essential.
 
 ![Physical host connections](../../images/vrw-v2-net-physical.svg "Physical host connections"){: caption="Figure 2. Physical host connections" caption-side="bottom"}
 
 ### VLANs and underlay to overlay routing
 {: #vrw-underlay-network-cloud-vlans}
 
-The {{site.data.keyword.cloud_notm}} for VMware Solutions offerings are designed with three VLANs, one public and two private, assigned upon deployment. As shown in the previous figure, the public VLAN is assigned to `eth1` and `eth3`, and the private VLANs are assigned to `eth0` and `eth2`.
+The VMware Solutions offerings are designed with three VLANs, one public and two private, assigned upon deployment. As shown in the previous figure, the public VLAN is assigned to `eth1` and `eth3`, and the private VLANs are assigned to `eth0` and `eth2`.
 
 The public and the first private VLAN created and assigned in this design are untagged by default within the {{site.data.keyword.cloud_notm}}. Then, the additional private VLAN is trunked on the physical switch ports and tagged within the VMware port groups that are using these subnets.
 
@@ -114,22 +114,22 @@ The public and the first private VLAN created and assigned in this design are un
 The private network consists of two VLANs within this design. Three subnets are allocated to the first of these VLANs (here designated Private VLAN A):
 
 * The first subnet is a primary private IP subnet range that {{site.data.keyword.cloud_notm}} assigns to the physical hosts.
-* The second subnet is used for management virtual machines (VMs) such as vCenter Server Appliance and Platform Services Controller.
+* The second subnet is used for management virtual machines (VMs) such as vCenter Server Appliance and Platform Services Controller (PSC).
 * The third subnet is used for the encapsulated overlay network Tunnel Endpoints (TEPs) assigned to each host through the NSX Manager.
 
 In addition to Private VLAN A, a second private VLAN (here designated Private VLAN B) exists to support VMware features such as vSAN and vMotion. As such, the VLAN is divided into two or more portable subnets:
 
 * The first subnet is assigned to a kernel port group for vMotion traffic.
-* The remaining subnet or subnets are used for storage traffic. When using vSAN, a subnet is assigned to kernel port groups that are used for vSAN traffic.
+* The remaining subnet or subnets are used for storage traffic. When you use vSAN, a subnet is assigned to kernel port groups that are used for vSAN traffic.
 
 The public network consists of one VLAN within this design. The following subnets are allocated to the VLAN:
 
-* The first subnet is a Primary Public IP subnet range that {{site.data.keyword.cloud_notm}} assigns to the physical hosts.
+* The first subnet is a primary public IP subnet range that {{site.data.keyword.cloud_notm}} assigns to the physical hosts.
 * The hosts are assigned a public IP address but this IP address is not configured on the hosts, so they are not directly accessible on the public network.
 * The second subnet is used for public access of components like a virtual gateway appliance.
 * The public VLAN is intended to provide public internet access.
 
-All subnets that are configured as part of an {{site.data.keyword.cloud_notm}} for VMware Regulated Workloads automated deployment use {{site.data.keyword.cloud_notm}}-managed ranges to ensure that any IP address can be routed to any data center within {{site.data.keyword.cloud_notm}}.
+All subnets that are configured as part of the Regulated Workloads automated deployment use {{site.data.keyword.cloud_notm}}-managed ranges to ensure that any IP address can be routed to any data center within {{site.data.keyword.cloud_notm}}.
 
 Review the following table for a summary.
 
@@ -144,9 +144,9 @@ Review the following table for a summary.
 | Private B | Portable | Single subnet assigned for vMotion |
 {: caption="Table 1. VLAN and subnet summary" caption-side="bottom"}
 
-In this design, all VLAN-backed hosts and VMs are configured to point to the perimeter gateway as the default route. While the {{site.data.keyword.cloud_notm}} for VMware Regulated Workloads instances enable the use of SDN, network overlays created within a VMware instance that include routing to internal subnets are not known by the perimeter gateway unless dynamic routing protocols or static routes are configured.
+In this design, all VLAN-backed hosts and VMs are configured to point to the perimeter gateway as the default route. While the {{site.data.keyword.rw}} instances enable the use of SDN, network overlays created within a VMware instance that include routing to internal subnets are not known by the perimeter gateway unless dynamic routing protocols or static routes are configured.
 
-The private network connections are configured to use a jumbo frame MTU size of 9000 to improve performance for large data transfers, such as storage and vMotion. This value is the maximum MTU that is allowed within VMware and by {{site.data.keyword.cloud_notm}}. The public network connections use a standard ethernet MTU of 1500, which must be maintained as any changes might cause packet fragmentation over the internet.
+The private network connections are configured to use a jumbo frame MTU size of 9000 to improve performance for large data transfers, such as storage and vMotion. This value is the maximum MTU that is allowed within VMware and by {{site.data.keyword.cloud_notm}}. The public network connections use a standard Ethernet MTU of 1500, which must be maintained as any changes might cause packet fragmentation over the internet.
 
 ## Related links
 {: #vrw-underlay-network-related}

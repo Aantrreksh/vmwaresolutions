@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-06-04"
+lastupdated: "2024-06-13"
 
 subcollection: vmwaresolutions
 
@@ -57,7 +57,7 @@ You must open a ticket to ask IBM Support to decouple the Veeam server, manageme
 
 If you deploy a new Veeam instance, you must consider backup data and backup configuration to migrate Veeam to the new NSX-T instance.
 
-* Backup data - Backup files will be hosted in the Veeam repository server. For more information, see [Importing Veeam Agent backups](https://helpcenter.veeam.com/archive/agentforwindows/50/userguide/integration_import.html){: external}.
+* Backup data - Backup files are hosted in the Veeam repository server. For more information, see [Importing Veeam Agent backups](https://helpcenter.veeam.com/archive/agentforwindows/50/userguide/integration_import.html){: external}.
 * Backup configuration - The backup configuration can be saved to a file. For more information, see [Configuration backup and restore](https://helpcenter.veeam.com/docs/backup/vsphere/vbr_config.html?ver=120){: external}.
 
 If you want to migrate your Veeam service from VMware NSX-V to VMware NSX-T, open an IBM Support ticket by following the steps in [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support).
@@ -91,7 +91,7 @@ IBM Spectrum® Protect Plus is not currently available for {{site.data.keyword.v
 FortiGate® Virtual Appliance is available for {{site.data.keyword.vcf-auto-short}} with NSX-T instances.
 
 * No migration is required for FortiGate Virtual Appliance.
-* Capture existing NSX-V FortiGate Virtual Appliance configuration.
+* Capture the existing NSX-V FortiGate Virtual Appliance configuration.
 * Provision NSX-T {{site.data.keyword.vcf-auto-short}} with FortiGate Virtual Appliance service.
 * Configure NSX-T FortiGate Virtual Appliance.
 * Cut-over to the NSX-T FortiGate Virtual Appliance at the required point in the migration.
@@ -127,12 +127,12 @@ The migration approach would be to:
 * Provision the {{site.data.keyword.vcf-auto-short}} with NSX-T instance with {{site.data.keyword.redhat_openshift_notm}} for VMware.
 * Configure the new {{site.data.keyword.redhat_openshift_notm}} for VMware cluster as required.
 * Create a migration plan, which includes how to handle data from the applications that are being migrated.
-* Consider the use of Migration Toolkit for Containers. 
+* Consider using the Migration Toolkit for Containers. 
 
 ## VMware Aria Operations and VMware Aria Operations for Logs
 {: #v2t-optionalservices-vropsvli}
 
-VMware Aria® Operations™ and VMware Aria Operations™ for Logs is available for {{site.data.keyword.vcf-auto-short}} with NSX-T instances.
+The VMware Aria® Operations™ and VMware Aria Operations™ for Logs service is available for {{site.data.keyword.vcf-auto-short}} with NSX-T instances.
 
 The primary use case for VMware Aria Operations and VMware Aria Operations for Logs is to capture performance, capacity, and logging messages for the {{site.data.keyword.vcf-auto-short}} instance. A secondary use case is to capture performance, capacity, and logging messages for the workload VMs hosted on the {{site.data.keyword.vcf-auto-short}} instance.
 

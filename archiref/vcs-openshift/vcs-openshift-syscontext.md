@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2024
 
-lastupdated: "2024-05-21"
+lastupdated: "2024-06-13"
 
 subcollection: vmwaresolutions
 
@@ -39,8 +39,8 @@ The system context diagram identifies the following systems:
 * **{{site.data.keyword.vmwaresolutions_short}} DNS** - Used by the VMware and {{site.data.keyword.redhat_openshift_notm}} environment to provide FQDN registration and resolution. DNS is configured to forward lookups to shared IBM DNS servers, allowing the resolution of public endpoints.
 * **{{site.data.keyword.cloud_notm}} shared NTP** - Used to maintain time synchronization within the environment.
 * Persistent volumes:
-   * **vSAN** - vSphere® provider and storage class configured in {{site.data.keyword.redhat_openshift_notm}} environment that allows ReadWriteOnce persistent volumes to be stored as virtual machine disks. The {{site.data.keyword.cloud_notm}} {{site.data.keyword.redhat_openshift_notm}} environment allows ReadWriteMany persistent volumes.
-   * **Block** - {{site.data.keyword.cloud_notm}} provider and storage class configured in {{site.data.keyword.redhat_openshift_notm}} environment that allows ReadWriteOnce persistent volumes.
+   * **vSAN** - vSphere® provider and storage class that is configured in {{site.data.keyword.redhat_openshift_notm}} environment that allows ReadWriteOnce persistent volumes to be stored as virtual machine disks. The {{site.data.keyword.cloud_notm}} {{site.data.keyword.redhat_openshift_notm}} environment allows ReadWriteMany persistent volumes.
+   * **Block** - {{site.data.keyword.cloud_notm}} provider and storage class that is configured in {{site.data.keyword.redhat_openshift_notm}} environment that allows ReadWriteOnce persistent volumes.
 * **Public internet** - Provide access to the {{site.data.keyword.vcf-classic-short}} and {{site.data.keyword.redhat_openshift_notm}} environment to communicate with the public internet.
 * **{{site.data.keyword.cloud_notm}} private network** - Provide access to the {{site.data.keyword.vcf-classic-short}} and {{site.data.keyword.redhat_openshift_notm}} environment to communicate with the {{site.data.keyword.cloud_notm}} private network and services.
 

@@ -4,7 +4,7 @@ copyright:
 
   years: 2019, 2024
 
-lastupdated: "2024-04-26"
+lastupdated: "2024-05-23"
 
 subcollection: vmwaresolutions
 
@@ -30,7 +30,7 @@ Incident and operations management includes tasks such as monitoring, event mana
 ### Incident and operations management for {{site.data.keyword.vm-shared}}
 {: #understand-responsib-incident-and-ops-shared}
 
-{{site.data.keyword.vm-shared}} is no longer available for new deployments. Existing instances will continue to be supported until 15 January 2025. Ensure that you migrate all your {{site.data.keyword.vm-shared}} resources to [{{site.data.keyword.vcf-aas}}](/docs/vmware-service) by 15 January 2025. For more information, see [End of Support for {{site.data.keyword.vm-shared}} deployments](/docs/vmwaresolutions?topic=vmwaresolutions-eos-vmware-shared).
+{{site.data.keyword.vm-shared}} is no longer available for new deployments. Existing instances are supported until 15 January 2025. Ensure that you migrate all your {{site.data.keyword.vm-shared}} resources to [{{site.data.keyword.vcf-aas}}](/docs/vmware-service) by 15 January 2025. For more information, see [End of Support for {{site.data.keyword.vm-shared}} deployments](/docs/vmwaresolutions?topic=vmwaresolutions-eos-vmware-shared).
 {: deprecated}
 
 The following table describes the responsibilities that are related to incident and operations management for {{site.data.keyword.vm-shared}}.
@@ -76,7 +76,7 @@ Change management includes tasks such as deployment, configuration, upgrades, pa
 ### Change management for {{site.data.keyword.vm-shared}}
 {: #understand-responsib-change-management-shared}
 
-{{site.data.keyword.vm-shared}} is no longer available for new deployments. Existing instances will continue to be supported until 15 January 2025. Ensure that you migrate all your {{site.data.keyword.vm-shared}} resources to [{{site.data.keyword.vcf-aas}}](/docs/vmware-service) by 15 January 2025. For more information, see [End of Support for {{site.data.keyword.vm-shared}} deployments](/docs/vmwaresolutions?topic=vmwaresolutions-eos-vmware-shared).
+{{site.data.keyword.vm-shared}} is no longer available for new deployments. Existing instances are supported until 15 January 2025. Ensure that you migrate all your {{site.data.keyword.vm-shared}} resources to [{{site.data.keyword.vcf-aas}}](/docs/vmware-service) by 15 January 2025. For more information, see [End of Support for {{site.data.keyword.vm-shared}} deployments](/docs/vmwaresolutions?topic=vmwaresolutions-eos-vmware-shared).
 {: deprecated}
 
 The following table describes the responsibilities that are related to change management for {{site.data.keyword.vm-shared}}.
@@ -127,7 +127,7 @@ Security and regulation compliance includes tasks such as security controls impl
 ### Security and regulation compliance for {{site.data.keyword.vm-shared}}
 {: #understand-responsib-security-compliance-shared}
 
-{{site.data.keyword.vm-shared}} is no longer available for new deployments. Existing instances will continue to be supported until 15 January 2025. Ensure that you migrate all your {{site.data.keyword.vm-shared}} resources to [{{site.data.keyword.vcf-aas}}](/docs/vmware-service) by 15 January 2025. For more information, see [End of Support for {{site.data.keyword.vm-shared}} deployments](/docs/vmwaresolutions?topic=vmwaresolutions-eos-vmware-shared).
+{{site.data.keyword.vm-shared}} is no longer available for new deployments. Existing instances are supported until 15 January 2025. Ensure that you migrate all your {{site.data.keyword.vm-shared}} resources to [{{site.data.keyword.vcf-aas}}](/docs/vmware-service) by 15 January 2025. For more information, see [End of Support for {{site.data.keyword.vm-shared}} deployments](/docs/vmwaresolutions?topic=vmwaresolutions-eos-vmware-shared).
 {: deprecated}
 
 The following table describes the responsibilities that are related to security and regulation compliance for {{site.data.keyword.vm-shared}}.
@@ -166,7 +166,7 @@ Disaster recovery includes tasks such as:
 ### Disaster recovery for {{site.data.keyword.vm-shared}}
 {: #understand-responsib-disaster-recovery-shared}
 
-{{site.data.keyword.vm-shared}} is no longer available for new deployments. Existing instances will continue to be supported until 15 January 2025. Ensure that you migrate all your {{site.data.keyword.vm-shared}} resources to [{{site.data.keyword.vcf-aas}}](/docs/vmware-service) by 15 January 2025. For more information, see [End of Support for {{site.data.keyword.vm-shared}} deployments](/docs/vmwaresolutions?topic=vmwaresolutions-eos-vmware-shared).
+{{site.data.keyword.vm-shared}} is no longer available for new deployments. Existing instances are supported until 15 January 2025. Ensure that you migrate all your {{site.data.keyword.vm-shared}} resources to [{{site.data.keyword.vcf-aas}}](/docs/vmware-service) by 15 January 2025. For more information, see [End of Support for {{site.data.keyword.vm-shared}} deployments](/docs/vmwaresolutions?topic=vmwaresolutions-eos-vmware-shared).
 {: deprecated}
 
 The following table describes the responsibilities that are related to disaster recovery for {{site.data.keyword.vm-shared}}.

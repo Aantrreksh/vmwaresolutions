@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2024
 
-lastupdated: "2024-05-16"
+lastupdated: "2024-05-14"
 
 keywords: VLAN ports, vmware solutions ports, ports usage vmware solutions
 

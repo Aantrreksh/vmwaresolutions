@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-06-04"
+lastupdated: "2024-06-14"
 
 subcollection: vmwaresolutions
 
@@ -27,7 +27,7 @@ In {{site.data.keyword.vpc_short}}, you can do logical segmentation or isolation
 
 For this architecture, a new VPC is created for each VMware Cloud Foundation instance. This action is for simplicity and to avoid issues with scalability and architectural requirements and principles of VMware Cloud Foundation. To connect to other workloads and other VPCs, you can use {{site.data.keyword.cloud_notm}} interconnectivity solutions, such as Transit Gateway.
 
-The following table lists the created subnets in VPC. Subnet design is based on the VMware Cloud Foundation requirement to separate System Traffic Types logically and a dedicated VPC subnet for each user used. Bare metal server PCI interfaces are hosted on their own subnet. Management interfaces and appliances, such as VMware vCenter®, VMware NSX™ managers, SDDC manager, and NSX Edge™ management interfaces are provisioned on their own management subnet.
+The following table lists the subnets that are created in VPC. Subnet design is based on the VMware Cloud Foundation requirement to separate System Traffic Types logically and a dedicated VPC subnet for each user used. Bare metal server PCI interfaces are hosted on their own subnet. Management interfaces and appliances, such as VMware vCenter®, VMware NSX™ managers, SDDC manager, and NSX Edge™ management interfaces are provisioned on their own management subnet.
 
 | Subnet name | System traffic type | Subnet sizing guidance |
 | ------------|---------------------|----------------------- |
@@ -114,7 +114,7 @@ In this design, your security groups are used to create a logical grouping of ma
 | `sg-bastion`        | VMkernel adapters for bastion hosts (automation VSI) |
 {: caption="Table 3. VPC security groups" caption-side="bottom"}
 
-The basic principle for the default rules is to allow practical minimum, for example `sg-vmot` allows traffic between the security group members and inbound `icmp` from security group `sg-mgmt`. The same principle is applied to all security groups used for VMkernel adapters. `sg-mgmt` allows connectivity from private RFC 1918 networks. These rules can be customized post initial provisioning and the following information provides simplified guidance and principles.
+The basic principle for the default rules is to allow practical minimum. For example, `sg-vmot` allows traffic between the security group members and inbound `icmp` from the security group `sg-mgmt`. The same principle is applied to all security groups used for VMkernel adapters. `sg-mgmt` allows connectivity from private RFC 1918 networks. These rules can be customized post initial provisioning and the following information provides simplified guidance and principles.
 
 When security groups are used with VLAN interfaces in VMware virtual machines (VMs), to avoid misconfigurations and misunderstandings, it is important to understand how traffic flows to and from the standard and distributed vSwitches, and when traffic traverses inside the hosts inside these vSwitches.
 
@@ -122,9 +122,9 @@ In a VMware environment, traffic between VLAN network interfaces with the same V
 
 For example, on a VMware vSphere® cluster that consists of multiple bare metal server hosts, you configure a distributed vSwitch. In this case, you can create a port group with VLAN ID `1611` and add it to the specific vSwitch. The traffic between vNICs of two VMs that are attached to Port Group `1611` is controlled by the vSwitch.
 
-In this example, this has following consequences in VMware Cloud Foundation deployments:
+In this example, this has the following consequences in VMware Cloud Foundation deployments:
 
-- Security Group rules that control traffic between the network interfaces in Port Group VLAN ID `1611` are not applied if the traffic does not leave the vSwitch.
+- Security Group rules that control traffic between the network interfaces in Port Group VLAN ID `1611` are not applied if the traffic does not leave the vSwitch. 
 
 In addition, when you work with security groups that are applied to NSX Tier 0 gateway uplinks and NSX overlay traffic, you must define rules based on IP addresses, for example:
 
@@ -136,13 +136,13 @@ For more information about security groups, see [Security in your VPC](/docs/vpc
 ## Public connectivity with VMware VMs on VPC subnet
 {: #vpc-vcf-vpc-deployment-public-connectivity}
 
-Bare metal server for VPC provides full support for VPC public networking features. External connectivity can be achieved either by using a Public Gateway that is attached to a VPC subnet, or by using a floating IP address that is attached to a PCI or VLAN interface of bare metal server. Public gateway uses source network address translation (SNAT) and a floating IP uses destination network address translation (DNAT). These functions are identical to VPC virtual servers.
+Bare metal server for VPC provides full support for VPC public networking features. External connectivity can be achieved either by using a Public Gateway that is attached to a VPC subnet, or by using a floating IP address that is attached to a PCI or VLAN interface of a bare metal server. The public gateway uses source network address translation (SNAT) and a floating IP uses destination network address translation (DNAT). These functions are identical to VPC virtual servers.
 
 VLAN interfaces that are attached to a VPC subnet with a Public Gateway can initiate connections to the internet, but they cannot receive connections from the internet. Public Gateway provides connectivity for an entire subnet, and public traffic that originates from the VMs on this subnet considers the Public Gateway IP address as the source. If the subnet is not attached to a Public Gateway, the traffic is fully private. In this design, vSAN, vMotion, or TEP subnets can be examples.
 
-A VLAN interface with a floating IP can initiate or receive connections to or from the internet. Floating IP provides connectivity for a single instance. This action overrides the Public Gateway of that specific VLAN interface in VPC subnet, if that is provisioned to a subnet with attached Public Gateway.
+A VLAN interface with a floating IP can initiate or receive connections to or from the internet. Floating IP provides connectivity for a single instance. This action overrides the Public Gateway of that specific VLAN interface in the VPC subnet, if that is provisioned to a subnet with attached Public Gateway.
 
-In VMware Cloud Foundation deployments, you must add management subnet to a Public Gateway, which allows, for example, SDDC manager to get updated directly from VMware public software repositories.
+In VMware Cloud Foundation deployments, you must add a management subnet to a Public Gateway, which allows, for example, the SDDC manager to get updated directly from VMware public software repositories.
 
 For more information about overlay and NSX public connectivity, see [VMware NSX logical routers on VPC deployments](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-nsx-t-logical-routers) and [VMware NSX logical routing on VPC](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-nsx-t-vpc-routing).
 

@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2024
 
-lastupdated: "2024-06-04"
+lastupdated: "2024-06-14"
 
 subcollection: vmwaresolutions
 
@@ -32,7 +32,7 @@ The design uses the following structure:
 ## Network design
 {: #vrw-dualregion-design-network}
 
-As the design uses two VMware Regulated Workloads instances, the network design is at each region and is documented at [Underlay networking](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-underlay-network) and [Overlay networking](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-overlay-network).
+As the design uses two an {{site.data.keyword.rw}} instances, the network design is at each region and is documented at [Underlay networking](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-underlay-network) and [Overlay networking](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-overlay-network).
 
 The key design element at the network level is the adoption of cross-region network for the use of the VMware Aria Operations Manager analytic cluster. The cross-region network is a layer 3 construct that allows the use of the same IP subnet space at either the protected region or the recovery region. In normal operations, the cross-region network is tethered to the vSRX or FortiGate in the protected region that is, the default gateway for this network is the vSRX or FortiGate. The protected region vSRX or FortiGate then advertises this network so that it is reachable from other networks. In recovery operations, the cross-region network is tethered to the vSRX or FortiGate in the recovery region. The recovery region vSRX or FortiGate then advertises this network so that it is reachable from other networks. The use of the cross-region network allows the VMware Aria Operations Manager Analytic cluster to retain the same IP addresses when they are recovered to the recovery region.
 
@@ -88,12 +88,12 @@ The {{site.data.keyword.cloud_notm}} for VMware® Regulated Workloads automation
 
 vSphere HA provides availability of the RiskForesight instance and for business resiliency. For image-level backups of the VM, configure and store them in the recovery region of the Veeam Repository server. Configure a Veeam backup copy job to copy the backup to the protected site so you can provide an off-site copy of the backup.
 
-If you are using Caveonix RiskForesight to manage compliance and cyberrisk of the workload VMs, review the scaling of the RiskForesight instance. Replace the all-in-one deployment with the appropriate deployment to match the availability and retention requirements. For more information, see [Deployment models for Caveonix RiskForesight](/docs/vmwaresolutions?topic=vmwaresolutions-caveonix-deploy).
+If you are using Caveonix RiskForesight to manage the compliance and cyberrisk of the workload VMs, review the scaling of the RiskForesight instance. Replace the all-in-one deployment with the appropriate deployment to match the availability and retention requirements. For more information, see [Deployment models for Caveonix RiskForesight](/docs/vmwaresolutions?topic=vmwaresolutions-caveonix-deploy).
 
 ## VMware Aria Operations for Logs
 {: #vrw-dualregion-design-vrli}
 
-The {{site.data.keyword.cloud_notm}} for VMware® Regulated Workloads automation deploys a VMware Aria Operations for Logs environment that consists of four appliances with an integrated load balancer in each of the two regions. For more information, see [VMware Aria Operations for Logs](/docs/vmwaresolutions?topic=vmwaresolutions-opsmgmt-vrli).
+The {{site.data.keyword.rw}} automation deploys a VMware Aria Operations for Logs environment that consists of four appliances with an integrated load balancer in each of the two regions. For more information, see [VMware Aria Operations for Logs](/docs/vmwaresolutions?topic=vmwaresolutions-opsmgmt-vrli).
 
 In the dual region design, each region is configured to forward log information to the VMware Aria Operations for Logs instance in the other region. Due to this forwarding configuration, either of the VMware Aria Operations for Logs clusters can be used to query the available logs from either of the regions. As a result, failover configuration is not required for the VMware Aria Operations for Logs clusters, and each cluster remains associated with the region in which it was deployed. This approach minimizes failover configuration in a DR invocation.
 
@@ -102,16 +102,16 @@ The use of a VMware Aria Operations for Logs cluster plus the use of vSphere HA 
 ## VMware Aria Operations for Networks
 {: #vrw-dualregion-design-vrni}
 
-The VMware Aria Operations for Networks service is an optional manual installation for {{site.data.keyword.cloud_notm}} for VMware® Regulated Workloads. For more information, see [VMware Aria Operations for Networks](/docs/vmwaresolutions?topic=vmwaresolutions-opsmgmt-vrni).
+The VMware Aria Operations for Networks service is an optional manual installation for {{site.data.keyword.rw}}. For more information, see [VMware Aria Operations for Networks](/docs/vmwaresolutions?topic=vmwaresolutions-opsmgmt-vrni).
 
 In the dual region design, install a VMware Aria Operations for Networks instance manually in each region for the monitoring and management of that region. Recovery of the instance in the protected region to the recovery region is not required. VMware Aria Operations for Networks instances are deployed per region to enable service isolation so that each region is considered to be independent.
 
-The use of a VMware Aria Operations for Networks cluster and the use of vSphere HA provides high availability within a region. For business continuity, configure a file level backup. While VMware support image level backups, they recommend that the VMware Aria Operations for Networks appliances are shut down. This process is practical during an upgrade, but not for regular backups. Therefore, it is recommended to configure file level backup, which supports SSH backups. Configure VMware Aria Operations for Networks for scheduled backups with the Veeam Repository server as the target. Configure a Veeam file copy job to copy the backup to the protected site so you can provide an off-site copy of the backup.
+The use of a VMware Aria Operations for Networks cluster and the use of vSphere HA provides high availability within a region. For business continuity, configure a file level backup. While VMware supports image level backups, they recommend that the VMware Aria Operations for Networks appliances are shut down. This process is practical during an upgrade, but not for regular backups. Therefore, it is recommended to configure file level backup, which supports SSH backups. Configure VMware Aria Operations for Networks for scheduled backups with the Veeam Repository server as the target. Configure a Veeam file copy job to copy the backup to the protected site so you can provide an off-site copy of the backup.
 
 ## VMware Aria Operations Manager
 {: #vrw-dualregion-design-vrops}
 
-The {{site.data.keyword.cloud_notm}} for VMware® Regulated Workloads automation deploys a consolidated VMware Aria Operations Manager analytics cluster of four nodes: one primary node, one primary replica node, and two data nodes in each of the regions. For more information, see [VMware Aria Operations Manager design](/docs/vmwaresolutions?topic=vmwaresolutions-opsmgmt-vrops).
+The {{site.data.keyword.rw}} automation deploys a consolidated VMware Aria Operations Manager analytics cluster of four nodes: one primary node, one primary replica node, and two data nodes in each of the regions. For more information, see [VMware Aria Operations Manager design](/docs/vmwaresolutions?topic=vmwaresolutions-opsmgmt-vrops).
 
 The dual region design uses this deployed architecture and requires some post-provisioning tasks to create the required design:
 
@@ -134,23 +134,23 @@ Review the following design decisions:
 ## AD, DNS, and NTP
 {: #vrw-dualregion-design-ad}
 
-The VMware Regulated Workloads automation deploys a pair of Microsoft® Windows VMs in each instance. These VMs are configured as AD, DNS, and NTP servers. These services are independent in each region, a separate AD forest for each region, and recovery of the protected region services to the recovery region is not required.
+The {{site.data.keyword.rw}} automation deploys a pair of Microsoft® Windows VMs in each instance. These VMs are configured as AD, DNS, and NTP servers. These services are independent in each region, a separate AD forest for each region, and recovery of the protected region services to the recovery region is not required.
 
-vSphere HA provides availability of the VMs themselves and the Microsoft domain concept provides the availability of the Microsoft Windows services that runs on them. For business resiliency, configure image-level backups of the VMs and store them in the region's Veeam repository server. Configure a Veeam backup copy job to copy the backup to the other site so you can provide an off-site copy of the backup.
+vSphere HA provides the availability of the VMs themselves and the Microsoft domain concept provides the availability of the Microsoft Windows services that runs on them. For business resiliency, configure image-level backups of the VMs and store them in the region's Veeam repository server. Configure a Veeam backup copy job to copy the backup to the other site so you can provide an off-site copy of the backup.
 
 ## Veeam
 {: #vrw-dualregion-design-veeam}
 
-The following use cases are expected for Veeam Backup and Replication in {{site.data.keyword.cloud_notm}} for VMware® Regulated Workloads dual region:
+The following use cases are expected for Veeam Backup and Replication in the {{site.data.keyword.rw}} dual region:
 * Case 1. Backup and replication of management components only.
 * Case 2. Backup and replication of management components and backup of workloads.
 * Case 3. Backup and replication of management components and backup and replication of workloads.
 
-The {{site.data.keyword.cloud_notm}} for VMware® Regulated Workloads dual region design focuses on use case 1. However, guidelines are provided so that use cases 2 and 3 can be solved for the individual needs of workload backup and replication.
+The {{site.data.keyword.rw}} dual region design focuses on use case 1. However, guidelines are provided so that use cases 2 and 3 can be solved for the individual needs of workload backup and replication.
 
 Configure Veeam encryption for data at rest and data in transit so that VM data is not stored or transmitted unencrypted (which is the default setting). Veeam encryption requires the use of a password or passphrase and does not use the HPCS instance for the management of keys. When the VM is restored, select the encrypted storage policy to ensure that the VM is encrypted in the vSphere datastore.
 
-The use of Veeam Backup and Replication in the regulated Workloads dual region design means that protected region encryption keys are not required in the recovery region. Therefore, separate HPCS, and KMIP for VMware services can be used.
+The use of Veeam Backup and Replication in the regulated Workloads dual region design means that protected region encryption keys are not required in the recovery region. Therefore, separate HPCS and KMIP for VMware services can be used.
 
 The following post deployment activities are required to create the deployment scenario used in the dual region pattern:
 * Remove the Veeam VMs at each region.
@@ -159,13 +159,13 @@ The following post deployment activities are required to create the deployment s
 For use cases 2 and 3, the number and sizing of the bare metal servers needs to be calculated. For more information, see [Repository storage](https://bp.veeam.com/vbr/2_Design_Structures/D_Veeam_Components/D_backup_repositories/repositories%20storage.html){: external}.
 
 The protected region bare metal Windows server hosts the following components:
-* Proxy - A proxy is a “data mover” component that is used to retrieve VM data from the source datastore, process it and deliver to the target. As a rule, have the proxy as close as possible to the source data. This proxy is used for management components that are located in the protected region.
+* Proxy - A proxy is a “data mover” component that is used to retrieve VM data from the source datastore, process it, and deliver to the target. As a rule, have the proxy as close as possible to the source data. This proxy is used for management components that are located in the protected region.
 * Repository - A location used to store backup files for the management components in the protected region and also the target for backup copy jobs from the recovery region.
 * SFTP/SMB server - These servers are not Veeam services but native Windows services that are used for file-level backups of some of the management components. A Veeam file copy job copies files to the recovery region for extra protection.
 
 The recovery region bare metal Windows server hosts the following components:
-* Backup server - In a two-site environment where replication is used, best practice is to install the Veeam Backup server component in the DR site. In a disaster situation, the backup server is available to start the recovery.
-* Veeam Backup and Replication Database - Veeam Backup and Replication stores information about backup infrastructure, jobs settings, job history, sessions, and other configuration data in a Microsoft SQL Server database.
+* Backup server - In a two-site environment where replication is used, the best practice is to install the Veeam Backup server component in the DR site. In a disaster situation, the backup server is available to start the recovery.
+* Veeam Backup and Replication Database - Veeam Backup and Replication stores information about backup infrastructure, job settings, job history, sessions, and other configuration data in a Microsoft SQL Server database.
 * Enterprise Manager - Enterprise Manager provides centralized management and reporting for one or multiple backup servers through a web interface. While this design has only one backup server instance, it is recommended to deploy Enterprise Manager when encryption is used for backup or backup copy jobs. It is advised to install the Enterprise Manager server on the recovery site so it is available for disaster recovery.
 * Proxy server - This proxy is used for management components that are located in the recovery region.
 * Repository - A location used to store backup files for the management components in the recovery region and also the target for backup copy jobs from the protected region.
@@ -175,13 +175,13 @@ Review the following Veeam design decisions:
 * For optimal performance and availability, placing the Veeam components on separate virtual and physical servers is considered best practice. However, this practice increases complexity in smaller environments. Therefore, the all-in-one deployment scenario for use case 1 is selected.
 * As the total number of protected VMs is low, the embedded database option for the database for use case 1 is selected.
 * The bare metal servers with direct attached storage option are used as it provides a backup infrastructure that is separated from the virtualized infrastructure compute and storage.
-* In a two-site environment, it is best practice to install the Veeam Backup server component in the DR site. In a disaster situation, Veeam Backup server is available to start the recovery.
+* In a two-site environment, it is best practice to install the Veeam Backup server component in the DR site. In a disaster situation, the Veeam Backup server is available to start the recovery.
 * Deploy Enterprise Manager to use password loss protection. Enterprise Manager administrators can unlock backup files by using a challenge-response mechanism.
 * It is recommended that the proxy is as close as possible to the source data with a high-bandwidth connection. The traffic from the source to the proxy is not yet optimized, meaning that 100% of the backup data is transferred over this link. A good connection is required between proxy and repository as optimized data (normally ~50% of the source data size) is transferred across this link. Therefore, place proxies in both the protected and recovery regions.
 * Proxies can be hosted on Windows Server or Linux OS with almost no performance differences. For the all-in-one deployment scenario, a Windows OS is used.
 * For the repository server, a bare metal server is recommended to maximize performance and to separate the production environment that needs to be protected from the backup storage. It is also recommended to combine this practice with the proxy role to keep overheads on the virtual environment and on the network to a minimum. Best practice is to avoid the usage of the same storage for backups and for the virtualized infrastructure because the loss of this single system might lead to the loss of both copies of the data, the production and the backups.
 * Repository servers can be either Windows or Linux. For the all-in-one deployment scenario, a Windows OS is used. Additionally, for Microsoft Windows-based repositories, Veeam uses the Windows Crypto API complying with the Federal Information Processing Standards (FIPS 140). For Linux-based repositories, Veeam uses a statically linked OpenSSL encryption library, without the FIPS 140 support.
-* For bare metal servers, the block storage device can be a local disk or a LUN provided through a SAN by using iSCSI. For the VMware Regulated Workloads design, SAN that uses iSCSI is not supported. Therefore, local disk is used.
+* For bare metal servers, the block storage device can be a local disk or a LUN provided through a SAN by using iSCSI. For the VMware Regulated Workloads design, SAN that uses iSCSI is not supported. Therefore, a local disk is used.
 * Configure a scheduled, encrypted backup of the Veeam Backup and Replication configuration and use a Veeam file copy job to copy the file to the protected region. This way, if a failure occurs, the Veeam Backup server can be rebuilt and the configuration can be restored from an off-site copy.
 * A capacity tier that uses {{site.data.keyword.cloud_notm}} Object Storage is not configured as the storage requirements for use case 1 are low.
 
@@ -195,30 +195,30 @@ The following guidance applies to use cases 2 and 3:
 ## KMIP for VMware
 {: #vrw-dualregion-design-kmip}
 
-The Key Management Interoperability Protocol (KMIP) for VMware service provides a 24x7 highly available service to allow the interconnection of vCenter to the Hyper Protect Crypto Service. For more information about the encryption design in for VMware® Regulated Workloads, see [Encryption](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-encryption).
+The Key Management Interoperability Protocol (KMIP) for VMware service provides a 24x7 highly available service to allow the interconnection of vCenter to the Hyper Protect Crypto Service. For more information about the encryption design in for {{site.data.keyword.rw}}, see [Encryption](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-encryption).
 
-KMIP is a region-based service. Therefore, in the {{site.data.keyword.cloud_notm}} for VMware® Regulated Workloads dual region design a separate KMIP instance is used and interfaced into vCenter and Hyper Protect Crypto Service. The available regions are Dallas, Washington DC, Sydney, London, Frankfurt, and Tokyo. When you order the KMIP service, select the KMIP instance in the region where the {{site.data.keyword.cloud_notm}} for VMware® Regulated Workloads instance is deployed.
+KMIP is a region-based service. Therefore, in the {{site.data.keyword.rw}} dual region design a separate KMIP instance is used and interfaced into vCenter and Hyper Protect Crypto Service. The available regions are Dallas, Washington DC, Sydney, London, Frankfurt, and Tokyo. When you order the KMIP service, select the KMIP instance in the region where the {{site.data.keyword.rw}} instance is deployed.
 
 ## Hyper Protect Crypto Service
 {: #vrw-dualregion-design-hpcs}
 
-The IBM Hyper Protect Crypto Service (HPCS) is backed by a FIPS 140-2 level 4 certified hardware security module. It allows the {{site.data.keyword.cloud_notm}} for VMware® Regulated Workloads SaaS provider and SaaS consumer to manage their encryption keys.
+The IBM Hyper Protect Crypto Service (HPCS) is backed by a FIPS 140-2 level 4 certified hardware security module. It allows the {{site.data.keyword.cloud_notm}} for VMware® Regulated Workloads SaaS provider and the SaaS consumer to manage their encryption keys.
 
 For more information, see:
 * [Getting started with {{site.data.keyword.cloud_notm}} Hyper Protect Crypto Services](/docs/hs-crypto?topic=hs-crypto-get-started)
 * [Encryption](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-encryption)
 
-Currently, HPCS is available in the following regions: Dallas, Washington DC, Sydney, and Frankfurt. It is possible, but not ideal, to use an HPCS instance in a different region for {{site.data.keyword.cloud_notm}} for VMware® Regulated Workloads instances in London and Tokyo.
+Currently, HPCS is available in the following regions: Dallas, Washington DC, Sydney, and Frankfurt. It is possible, but not ideal, to use an HPCS instance in a different region for {{site.data.keyword.rw}} instances in London and Tokyo.
 
-The VMware Regulated Workloads design has two use cases for encryption:
+The {{site.data.keyword.rw}} design has two use cases for encryption:
 * SaaS Provider - VMware vSphere encryption used to encrypt the management and workload VMs. These keys are managed by the SaaS Provider.
-* SaaS Consumer - An optional, application level encryption that is used to encrypt application data in addition to the VM encryption. These keys are managed by the SaaS Consumer.
+* SaaS Consumer - An optional, application-level encryption that is used to encrypt application data in addition to the VM encryption. These keys are managed by the SaaS Consumer.
 
-In the {{site.data.keyword.cloud_notm}} for VMware® Regulated Workloads dual region design for SaaS Provider key management, two separate HCPS instances are used along with the region-specific KMIP for VMware Service. The keys are not shared between HCPS instances.
+In the {{site.data.keyword.rw}} dual region design for SaaS Provider key management, two separate HCPS instances are used along with the region-specific KMIP for VMware Service. The keys are not shared between HCPS instances.
 
 Veeam Backup and Replication has access to the unencrypted data, and backup or replication data does not need the source encryption keys. When the backup is restored or the replica is configured, specify the target encrypted storage policy.
 
-In the VMware Regulated Workloads dual-zone design, the following steps describe the backup and restore process between regions:
+In the {{site.data.keyword.rw}} dual-zone design, the following steps describe the backup and restore process between regions:
 1. The protected VM is encrypted with VMware vSphere encryption in the VMware datastore.
 2. A backup of the protected VM is taken.
 3. VM backup files are encrypted on disk in the Protected Region Veeam Repository with Veeam encryption that is protected by a password that is stored in the Veeam database.
@@ -229,7 +229,7 @@ In the VMware Regulated Workloads dual-zone design, the following steps describe
 
 For more information about Veeam encryption, see [Encryption standards](https://helpcenter.veeam.com/archive/backup/100/vsphere/encryption_standards.html){: external}.
 
-In the {{site.data.keyword.cloud_notm}} for VMware® Regulated Workloads dual region design for SaaS Consumer key management, then the same encryption keys are required in the recovery region as used in the protected region. Currently, HPCS does not support the same encryption keys in two regions. If a failure of the first HPCS instance occurs, keys can be restored to another HPCS instance in another region.
+In the {{site.data.keyword.rw}} dual region design for SaaS Consumer key management, then the same encryption keys are required in the recovery region as used in the protected region. Currently, HPCS does not support the same encryption keys in two regions. If a failure of the first HPCS instance occurs, keys can be restored to another HPCS instance in another region.
 
 For more information, see:
 * [HPCS cross-region disaster recovery](/docs/hs-crypto?topic=hs-crypto-ha-dr#cross-region-disaster-recovery)

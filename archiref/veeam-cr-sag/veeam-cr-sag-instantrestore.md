@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-01-26"
+lastupdated: "2024-06-14"
 
 subcollection: vmwaresolutions
 
@@ -35,7 +35,7 @@ The script completes the following tasks:
 * Defines a description of the restore in the variable `$Reason`.
 * Restores the VM:
    * The restored VM is powered on.
-   * The PowerShell command is run asynchronously as the restore is a long running process.
+   * The PowerShell command is run asynchronously as the restore is a long-running process.
    * An anti-virus scan is initiated for Windows® OS and continues to scan after the first virus threat is found. If a virus is detected, the network on the VM is disabled.
 * At the end of the instant restore, the VM is left powered on.
 
@@ -156,4 +156,3 @@ For a use case where a cyberadmin uses the Veeam data integration API to access 
 {: #veeam-cr-sag-instantrestore-related}
 
 * [Cyber recovery with Veeam architecture overview](/docs/vmwaresolutions?topic=vmwaresolutions-veeam-cr-sa-overview)
-

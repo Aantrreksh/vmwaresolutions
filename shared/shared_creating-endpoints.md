@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2024
 
-lastupdated: "2024-05-01"
+lastupdated: "2024-05-29"
 
 keywords: VMware Solutions Shared create private network endpoint
 
@@ -76,7 +76,7 @@ You can also add the provisioned resources to the {{site.data.keyword.cloud_notm
    2. Provide the IP addresses or subnets to allowlist.
    3. Click **Order**.
 
-For more information about creating a private network endpoint and to review an example of a successful configuration, see [vCD - Order a Private Network Endpoint (PNE) to connect your IBM account to your {{site.data.keyword.vm-shared}} virtual datacenter (vDC)](https://mlwiles.github.io/vmwaresolutions/vcd/order-pne/){: external}.
+For more information about creating a private network endpoint and to review an example of a successful configuration, see [Order a Private Network Endpoint (PNE) to connect your IBM account to your {{site.data.keyword.vm-shared}} virtual datacenter](https://mlwiles.github.io/vmwaresolutions/vcd/order-pne/){: external}.
 
 ## Results after you create a private network endpoint for a virtual data center
 {: #shared_creating-endpoints-add-procedure-results}

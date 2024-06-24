@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-04-29"
+lastupdated: "2024-05-17"
 
 subcollection: vmwaresolutions
 
@@ -63,7 +63,7 @@ If you added deployed assets to the instance manually, after initial deployment,
 ## I have VMware workloads on {{site.data.keyword.cloud_notm}} bare metal servers with vSphere 6.5 and 6.7 and the support is ending. I am not using NSX for my workloads. What do I need to do keep the environment supported, and what options do I have?
 {: #faq-v2t-migration-6x-classic}
 
-General support for vSphere® 6.x ended on 15 October 2022. For more information, see [End of general support for vSphere 6.5 and vSAN 6.5 or 6.6](https://kb.vmware.com/s/article/83223){: external} and [VMware product lifecycle matrix](https://www.vmware.com/#/){: external}.
+General support for vSphere® 6.x ended on 15 October 2022. For more information, see [End of general support for vSphere 6.5 and vSAN 6.5 or 6.6](https://knowledge.broadcom.com/external/article?legacyId=83223){: external} and [VMware product lifecycle matrix](https://www.vmware.com/#/){: external}.
 
 Instances with {{site.data.keyword.cloud_notm}} bare metal servers with vSphere 6.7 cannot be ordered post 21 June 2022. {{site.data.keyword.cloud_notm}} support for ordering all update levels of vSphere 6.5 ended on 10 October 2021, and vSphere 6.5 cannot be ordered post 21 June 2022. 
 
@@ -75,7 +75,7 @@ Instances with {{site.data.keyword.cloud_notm}} bare metal servers with vSphere 
 ## I have an old VMware vSphere instance, {{site.data.keyword.cloud_notm}} bare metal servers with vSphere 6.5 or 6.7, and the support is ending. I am not using NSX for my workloads. What do I need to do to keep the environment supported, and what options do I have?
 {: #faq-v2t-migration-6x-vss}
 
-General support for vSphere 6.x ended on 15 October 2022. For more information, see [End of general support for vSphere 6.5 and vSAN 6.5 or 6.6](https://kb.vmware.com/s/article/83223){: external} and [VMware product lifecycle matrix](https://www.vmware.com/#/){: external}.
+General support for vSphere 6.x ended on 15 October 2022. For more information, see [End of general support for vSphere 6.5 and vSAN 6.5 or 6.6](https://knowledge.broadcom.com/external/article?legacyId=83223){: external} and [VMware product lifecycle matrix](https://www.vmware.com/#/){: external}.
 
 Instances with {{site.data.keyword.cloud_notm}} bare metal servers with vSphere 6.7 cannot be ordered post 21 June 2022. {{site.data.keyword.cloud_notm}} support for ordering all update levels of VMware vSphere 6.5 ended on 10 October 2021, and VMware vSphere 6.5 cannot be ordered post 21 June 2022. 
 
@@ -87,7 +87,7 @@ Instances with {{site.data.keyword.cloud_notm}} bare metal servers with vSphere 
 ## I have an old vCenter Server with NSX-V instance, {{site.data.keyword.cloud_notm}} Bare Metal Servers with vSphere 6.5 or 6.7, and the support is ending. What do I need to do to keep the environment supported, and what options do I have?
 {: #faq-v2t-migration-6x-vcs}
 
-General support for vSphere 6.x ended on 15 October 2022. For more information, see [End of general support for vSphere 6.5 and vSAN 6.5 or 6.6](https://kb.vmware.com/s/article/83223){: external} and [VMware product lifecycle matrix](https://www.vmware.com/#/){: external}.
+General support for vSphere 6.x ended on 15 October 2022. For more information, see [End of general support for vSphere 6.5 and vSAN 6.5 or 6.6](https://knowledge.broadcom.com/external/article?legacyId=83223){: external} and [VMware product lifecycle matrix](https://www.vmware.com/#/){: external}.
 
 In addition, the old vCenter Server instances with vSphere 6.5 or 6.7 typically run NSX-V 6.4. NSX-V 6.4 was End of General Support on 16 January 2022 and End of Technical Guidance on 16 January 2023. VMware® by Broadcom and IBM have an exclusive agreement to support NSX-V until 15 January 2025.
 

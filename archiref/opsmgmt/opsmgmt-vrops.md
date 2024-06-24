@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-06-05"
+lastupdated: "2024-06-12"
 
 subcollection: vmwaresolutions
 
@@ -78,14 +78,14 @@ When the compute VM monitoring is required, the client installs two remote colle
 
 | Setting | Load balancer 1 | Load balancer 2|
 |:------- |:--------------- |:-------------- |
-| Name | vrops-ui | vrops-data |
+| Name | `vrops-ui` | `vrops-data` |
 | Interval | 30 | 5 |
 | Timeout | 5 | 15 |
 | Max Retries | 3 | |
 | Type | HTTPS | TCP |
 | Method | Get |  |
 | URL | /suite-api/api/deployment/node/status |   |
-| Receive | Online |   |
+| Receive | online |   |
 | Algorithm | ROUND-ROBIN | LEASTCONN |
 | Pool | Four nodes of VMware Aria Operations | Four nodes of VMware Aria Operations |
 {: caption="Table 2. Operations Manager Load Balancer settings" caption-side="bottom"}
@@ -129,7 +129,7 @@ User Management for VMware Aria Operations requires VMware Identity Manager (vID
 ## Management Packs
 {: #opsmgmt-vrops-management}
 
-Management Packs for VMware Aria Operations extend operational management capabilities of the VMware Aria Operations platform to provide product-specific alerts and dashboards.
+Management Packs for VMware Aria Operations extend the operational management capabilities of the VMware Aria Operations platform to provide product-specific alerts and dashboards.
 
 The following Management Packs are installed in VMware Aria Operations by default:
 * Management Pack for VMware vCenter Server®
@@ -154,7 +154,7 @@ This default Management Pack extends the functions of VMware Aria Operations to 
 ### Management Pack for VMware Aria Operations for Logs
 {: #opsmgmt-vrops-management-vrli}
 
-This default Management Pack extends the functions of VMware Aria Operations to VMware Aria Operations for Logs to enable the monitoring of the VMware Aria Operations for Logs environment and the integration of events and alerts from VMware Aria Operations for Logs into VMware Aria Operations.
+This default Management Pack extends the functions of VMware Aria Operations to VMware Aria Operations for Logs to enable the monitoring of the VMware Aria Operations for Logs environment and the integration of events and alerts from VMware Aria Operations for logs in to VMware Aria Operations.
 
 ### Management Pack for vSAN
 {: #opsmgmt-vrops-management-vsan}
@@ -179,8 +179,8 @@ If the client installed the following, you can monitor them.
 
 The VMware SDDC Health Management Pack provides the following dashboards:
 * SDDC Management Health Overview Dashboard - You can use SDDC Management Health overview dashboard to view and analyze the application-specific problems in the SDDC components.
-* SDDC Health Historic Trend Dashboard - The VMware SDDC Health Management Pack consists of SDDC health historic trend dashboard, which displays the health trend for each component in the SDDC stack.
-* SDDC VMware Aria Operations Manager Sizing Dashboard - The SDDC VMware Aria Operations Manager Sizing Dashboard provides VMware Aria Operations Manager cluster capacity to process object and metrics.
+* SDDC Health Historic Trend Dashboard - The VMware SDDC Health Management Pack consists of SDDC health historic trend dashboard, which displays the health trends for each component in the SDDC stack.
+* SDDC VMware Aria Operations Manager Sizing Dashboard - The SDDC VMware Aria Operations Manager Sizing Dashboard provides VMware Aria Operations Manager cluster capacity to process objects and metrics.
 
 The plug-ins in the VMware SDDC Health Management Pack collect metrics for object types that are contained in the plug-ins. The Management Pack collects health metrics for the following components:
 * vCenter

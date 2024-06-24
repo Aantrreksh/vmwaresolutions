@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-06-05"
+lastupdated: "2024-06-12"
 
 subcollection: vmwaresolutions
 
@@ -34,14 +34,15 @@ The HCX client side can install on any version of vSphere supported by HCX on th
 ## Client licensing
 {: #hcxclient-vcs-client-deployment-licensing}
 
-HCX is a service. HCX is licensed per site and per virtual machine (VM) managed through licensing servers that are maintained by VMware®. The HCX cloud and client-side instances require communication with the VMware registration site throughout their lifecycle.
+HCX is a service. HCX is licensed per site and per virtual machine (VM) managed through licensing servers that are maintained by VMware® by Broadcom. The HCX cloud and client-side instances require communication with the VMware registration site throughout their lifecycle.
+
 * Traffic on 80 and 443 must be allowed to `https://connect.hybridity.vmware.com`
 * A one-time use registration key is provided by the {{site.data.keyword.vmwaresolutions_full}} console for the client-side installation. A key is required for each client-side HCX installation.
 
 ### Procedure to order on-premises HCX licenses
 {: #hcxclient-vcs-client-deployment-license-ordering-procedure}
 
-1. From the {{site.data.keyword.vmwaresolutions_short}} console, click **Licences** from the left navigation pane.
+1. From the {{site.data.keyword.vmwaresolutions_short}} console, click **Licenses** from the left navigation pane.
 2. Scroll to the **On-premises HCX licenses** table and click **Create new**.
 3. Specify the license name.
 4. Click the link or links of the terms that apply to your order, and ensure that you agree with these terms before you order the license.
@@ -58,7 +59,7 @@ target {{site.data.keyword.cloud_notm}}.
 
 * On-premises
    * One IP address for the HCX Manager appliance.
-   * One for each InterConnect Appliance, and an additional one for a separate vMotion network connection, if it exists.
+   * One for each InterConnect Appliance, and an extra one for a separate vMotion network connection, if it exists.
    * One for each standard Network Extension.
 
 * {{site.data.keyword.cloud_notm}}
@@ -68,12 +69,12 @@ target {{site.data.keyword.cloud_notm}}.
 ## Client-side OVA download
 {: #hcxclient-vcs-client-deployment-client-ova}
 
-The client-side HCX is user-deployed and it requires administrator level permissions to the source vCenter. As of this writing, the HCX client-side manager ova is approximately 1.7 GB. When use the {{site.data.keyword.vmwaresolutions_short}} console to order HCX, a URL is provided with a link to download the version of HCX for the client-side that matches the version of HCX deployed on the cloud side. This link is provided in the cloud side HCX Manager user interface (UI).
+The client-side HCX is user-deployed and it requires administrator-level permissions to the source vCenter. As of this writing, the HCX client-side manager OVA is approximately 1.7 GB. When use the {{site.data.keyword.vmwaresolutions_short}} console to order HCX, a URL is provided with a link to download the version of HCX for the client-side that matches the version of HCX deployed on the cloud side. This link is provided in the cloud-side HCX Manager user interface (UI).
 
 A one-time use registration key is also provided. Use the following steps to configure the use registration.
 
 Download HCX client (enterprise) OVA from the link provided in the cloud side HCX UI.
-1. Log in to the cloud side HCX UI by using the HCX registration UI provided by IBM.
+1. Log in to the cloud-side HCX UI by using the HCX registration UI provided by IBM.
 2. Use the cloud vCenter ID and password to log in to the UI.
 3. On the **Administration** tab, select **request download link** to download the client-side OVA. Use a jump server that is local to the source vCenter where the OVA is deployed to complete this step.
 
@@ -92,7 +93,7 @@ Install the HCX Manager appliance in the on-premises vCenter.
 4. Expand the hierarchy to show the data centers.
 5. Right-click the target data center and select **Deploy OVF Template** from the menu. It might take a few seconds for the **Deploy OVF template** menu item to appear.
 6. Choose **Deploy OVF template**.
-   1. Select **Local file** and click **Browse** to find the OVA file downloaded to the computer. Click **Next**.
+   1. Select **Local file** and click **Browse** to locate the downloaded OVA file. Click **Next**.
    2. On the **Review details** page, check the **Accept extra configuration options** box and click **Next**.
    3. On the **Accept EULAs** page, scroll down to review the VMware user license agreement. Click **Accept** and **Next**.
    4. On the **Select name and folder** page, edit the name if necessary and select the location for the Hybrid Cloud Services. Click **Next**.
@@ -137,7 +138,7 @@ Install the HCX Manager appliance in the on-premises vCenter.
 
 1. Log in to HCX Manager Admin Interface `https://<IP>:9443`.
 2. Select the **Administration** tab, under **Certificate** -> **Trusted CA Certificate**.
-3. Import vSphere Server website.
+3. Import the vSphere Server website.
 
 ## Procedure to register HCX Manager with vCenter/SSO/NSX
 {: #hcxclient-vcs-client-deployment-reg-vcenter}
@@ -156,7 +157,7 @@ Install the HCX Manager appliance in the on-premises vCenter.
    4. Provide NSX details if required.
    5. Click **OK**. Do not restart when a message to restart the web engine is displayed.
 4. Click the **Summary** tab and find the **Hybridity Management Components** section. Stop and start both the application engine and the web engine.
-5. To finalize the registration, log out of the vSphere Web Client. Log back in to vSphere Web Client verify that HCX Tab is present.
+5. To finalize the registration, log out of the vSphere Web Client. Log back in to the vSphere Web Client and verify that the HCX tab is present.
 
 ## Results
 {: #hcxclient-vcs-client-deployment-reg-vcenter-results}

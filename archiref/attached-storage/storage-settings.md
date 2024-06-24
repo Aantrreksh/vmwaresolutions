@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-01-30"
+lastupdated: "2024-06-11"
 
 subcollection: vmwaresolutions
 
@@ -39,7 +39,7 @@ In this design, Storage DRS is enabled with the automation level set to **Fully 
 
 The aggressiveness of Storage DRS is determined by specifying thresholds for space that is used and I/O latency. Storage DRS collects resource usage information for the datastores in a datastore cluster. vCenter Server uses this information to generate recommendations for placement of virtual disks on datastores.
 
-When low aggressiveness level is set for a datastore cluster, Storage DRS recommends Storage vMotion migrations only when necessary. For example, if I/O load, space usage, or their imbalance is high, Storage DRS recommends a migration. If high aggressiveness level is set for a datastore cluster, Storage DRS recommends migrations whenever the datastore cluster can benefit from space or I/O load balancing.
+When a low aggressiveness level is set for a datastore cluster, Storage DRS recommends Storage vMotion migrations only when necessary. For example, if I/O load, space usage, or their imbalance is high, Storage DRS recommends a migration. If high aggressiveness level is set for a datastore cluster, Storage DRS recommends migrations whenever the datastore cluster can benefit from space or I/O load balancing.
 
 The following threshold categories are available in the datastore cluster.
 
@@ -50,8 +50,8 @@ In this design, the Storage DRS Runtime Settings are enabled and thresholds are 
 
 The following table shows the settings in the VMware vSphere® Web Client.
 
-| Setting       | Value  |
-|:--------------- |:------ |
+| Setting | Value  |
+|:------- |:------ |
 | Enable I/O metric for SDRS recommendations | Selected |
 | Utilized space | Selected, set to 80% |
 | I/O latency threshold | 15 ms |
@@ -68,7 +68,7 @@ In order for SIOC to determine when a storage device is congested or constrained
 
 You can limit individual virtual disks for individual VMs or grant them different shares with SIOC. By limiting disks and granting different shares, you can match and align the environment to the workload with the acquired {{site.data.keyword.filestorage_full}} volume IOPS number. The limit is set by IOPS and it is possible to set a different weight or shares.
 
-Virtual disks shares set to **High** (2000 shares) receive twice as much I/O as a disk set to **Normal** (1000 shares) and four times as much as one set to **Low** (500 shares). **Normal** is the default value for all the VMs, so you need to adjust the **Normal** settings for the VMs that require it.
+For virtual disks shares that are set to **High** (2,000 shares), they receive twice as much I/O as a disk set to **Normal** (1,000 shares) and four times as much as one set to **Low** (500 shares). **Normal** is the default value for all the VMs, so you need to adjust the **Normal** settings for the VMs that require it.
 
 ## Additional storage for NFS v3
 {: #storage-settings-additional-storage-nfs-v3}

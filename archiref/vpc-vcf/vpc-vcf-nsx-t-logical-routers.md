@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-06-04"
+lastupdated: "2024-06-18"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # NSX Tier-0 and Tier-1 gateways on {{site.data.keyword.vpc_short}}
 {: #vpc-vcf-nsx-t-logical-routers}
 
-A single VMware NSX™ edge cluster with two virtual edge nodes is used in consolidated architecture and standard architecture has its own edge cluster for workloads. Automation creates Tier-0 (T0) gateways and Tier-1 (T1) routers with uplinks that are connected to VPC subnets. In this architecture, the edge clusters host both T0 and T1 gateways. This topic discusses how these gateways interact with {{site.data.keyword.vpc_short}}.
+A single VMware NSX™ edge cluster with two virtual edge nodes is used in consolidated architecture and standard architecture has its own edge cluster for workloads. Automation creates Tier-0 (T0) gateways and Tier-1 (T1) routers with uplinks that are connected to VPC subnets. In this architecture, the edge clusters host both T0 and T1 gateways. The following information discusses how these gateways interact with {{site.data.keyword.vpc_short}}.
 
 For more information about edge cluster deployment, see [CF NSX design on {{site.data.keyword.vpc_short}}](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-nsx-t).
 
@@ -41,7 +41,7 @@ The T0 is configured with **two uplink types**: two uplinks for **private** use 
 | `vpc-t0-private-uplink-subnet` | T0 private uplink subnet | `/29` or larger |
 {: caption="Table 1. VPC subnets for NSX T0 uplinks" caption-side="bottom"}
 
-If you do not need inbound traffic from the internet, you do not need public uplink subnet.
+If you do not need inbound traffic from the internet, you do not need a public uplink subnet.
 {: note}
 
 The following VLAN interfaces are required in VPC for each T0 uplink. You must separate the public and private uplinks as specified previously. VLAN interfaces with `Allow IP spoofing` and `Enable Infrastructure NAT` set to `false` allow public floating IP addresses to traverse non-NATted to the public uplinks of the T0 gateway. VLAN interfaces with `Allow IP spoofing` and `Enable Infrastructure NAT` set to `true` allow VMware workloads on NSX overlay with private IP addresses to be routed to {{site.data.keyword.vpc_short}}. These functions cannot be combined into one.
@@ -89,9 +89,9 @@ VI workload domain edge nodes are hosted on the VI workload domain hosts, and th
 ## Tier-1 gateway
 {: #vpc-vcf-nsx-t-logical-routers-edge-tier-1}
 
-An NSX T1 gateway has downlink connections to the attached NSX segments and uplink connections to a single T0 gateway. The NSX Edge Nodes provide the compute capacity for the T1 gateways. Each T1 gateway contains a service router (SR) and a distributed router (DR), same as with T0s. A DR runs as a kernel module distributed in hypervisors and SR is instantiated as a VRF on an edge cluster when a service is enabled and cannot be distributed.
+An NSX T1 gateway has downlink connections to the attached NSX segments and uplink connections to a single T0 gateway. The NSX Edge Nodes provide the compute capacity for the T1 gateways. Each T1 gateway contains a service router (SR) and a distributed router (DR), the same as with T0s. A DR runs as a kernel module distributed in hypervisors and SR is instantiated as a VRF on an edge cluster when a service is enabled and cannot be distributed.
 
-In this design, one or more T1 gateways can be created for the needs of your chosen topologies.
+In this design, one or more T1 gateways can be created for the needs of your chosen topology.
 
 You can deploy multiple T1s in the same edge cluster.
 {: note}
@@ -110,9 +110,9 @@ The topic gives a brief introduction to these capabilities and how they can be u
 
 IPsec Virtual Private Network (IPSec VPN) and Layer 2 VPN (L2 VPN) run on an NSX Edge node. IPSec VPN offers site-to-site connectivity between an NSX Edge node and remote sites. With L2 VPN, you can extend your data center by enabling virtual machines (VMs) to keep their network connectivity across geographical boundaries while you use the same IP address.
 
-When you configure NSX VPN service in {{site.data.keyword.vpc_short}}, you can use the public `/32` floating IP addresses as the VPN Endpoints both Tier-0 and Tier-1 gateways. You can have multiple VPN endpoints, if needed. When VPN service is configured on Tier-1 gateway, ensure that the floating IP is correctly advertised between Tier-0 and Tier-1 gateways.
+When you configure NSX VPN service in {{site.data.keyword.vpc_short}}, you can use the public `/32` floating IP addresses as the VPN Endpoints both Tier-0 and Tier-1 gateways. You can have multiple VPN endpoints, if needed. When a VPN service is configured on a Tier-1 gateway, ensure that the floating IP is correctly advertised between Tier-0 and Tier-1 gateways.
 
-For more information about VPN service, see [VMware Documentation](https://docs.vmware.com/en/VMware-NSX-Data-Center/3.1/administration/GUID-3615EAF3-E0B7-45B7-8D8C-637167C6B07B.html?hWord=N4IghgNiBcIG4AcB2ACAzgUwE5wJYGMMQBfIA){: external}.
+For more information about the VPN service, see [VMware Documentation](https://docs.vmware.com/en/VMware-NSX/4.1/administration/GUID-A8B113EC-3D53-41A5-919E-78F1A3705F58.html){: external}.
 
 ### Network Address Translation
 {: #vpc-vcf-nsx-t-logical-routers-edge-gateway-nat}
@@ -126,9 +126,9 @@ As example, the following types of NAT are supported.
 
 You can also disable SNAT or DNAT for an IP address or a range of addresses. If an address has multiple NAT rules, the rule with the highest priority is applied.
 
-When you configure NSX NAT in {{site.data.keyword.vpc_short}}, you can use the public `/32` floating IP addresses as the public NAT IP addresses in both Tier-0 and Tier-1 gateways. You can have multiple NAT IP addresses, if needed. When NAT is configured on Tier-1 gateway, ensure that the floating IP is correctly advertised between Tier-0 and Tier-1 gateways.
+When you configure NSX NAT in {{site.data.keyword.vpc_short}}, you can use the public `/32` floating IP addresses as the public NAT IP addresses in both Tier-0 and Tier-1 gateways. You can have multiple NAT IP addresses, if needed. When NAT is configured on a Tier-1 gateway, ensure that the floating IP is correctly advertised between Tier-0 and Tier-1 gateways.
 
-For more information about NAT in NSX, see [VMware Documentation](https://docs.vmware.com/en/VMware-NSX-Data-Center/3.1/administration/GUID-E9B40B40-D0C4-4CC9-9706-E9C153FF1A6C.html?hWord=N4IghgNiBcIHZgC4AICWdlwM4A8QF8g){: external}.
+For more information about NAT in NSX, see [VMware Documentation](https://docs.vmware.com/en/VMware-NSX/4.1/administration/GUID-7AD2C384-4303-4D6C-A44A-DEF45AA18A92.html){: external}.
 
 ### Firewall
 {: #vpc-vcf-nsx-t-logical-routers-edge-gateway-fw}
@@ -137,9 +137,9 @@ You can configure East-West and North-South firewall policies in your NSX platfo
 
 A gateway firewall represents rules that are applied to the perimeter firewall for North-South traffic that is connected to {{site.data.keyword.vpc_short}}. A gateway firewall can be applied to both Tier-0 and Tier-1 gateways.
 
-Distributed firewall monitors all the East-West traffic on your VMs. When you group objects, it simplifies the rule management. Groups include different objects that are added both statically and dynamically, and they can be used as the source and destination of a firewall rule. They can be configured to contain a combination of VMs, IP sets, MAC sets, segment ports, segments, AD user groups, and other groups. Dynamic inclusion of groups can be based on tag, machine name, OS name, or computer name.
+A distributed firewall monitors all the East-West traffic on your VMs. When you group objects, it simplifies the rule management. Groups include different objects that are added both statically and dynamically, and they can be used as the source and destination of a firewall rule. They can be configured to contain a combination of VMs, IP sets, MAC sets, segment ports, segments, AD user groups, and other groups. Dynamic inclusion of groups can be based on tag, machine name, OS name, or computer name.
 
-For more information about firewalls in NSX, see the [VMware documentation](https://docs.vmware.com/en/VMware-NSX-Data-Center/3.1/administration/GUID-7C4C2848-E56D-490E-98BF-7D506DB8AA60.html?hWord=N4IghgNiBcIGYEsBOBTA7pCBnABAgdjgHIDKAGiAL5A){: external}.
+For more information about firewalls in NSX, see the [VMware documentation](https://docs.vmware.com/en/VMware-NSX/4.1/administration/GUID-A52E1A6F-F27D-41D9-9493-E3A75EC35481.html){: external}.
 
 ## Related links
 {: #vpc-vcf-nsx-t-logical-routers-links}

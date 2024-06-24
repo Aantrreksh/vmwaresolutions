@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2024
 
-lastupdated: "2024-06-05"
+lastupdated: "2024-06-13"
 
 subcollection: vmwaresolutions
 
@@ -40,7 +40,7 @@ The isolated recovery solution architecture uses a {{site.data.keyword.vcf-auto-
 * A Veeam instance under separate management used for cyber recovery only.
 * An immutable repository based on the Veeam Linux hardened repository hosted on an {{site.data.keyword.cloud_notm}} bare metal server.
 * The solution architecture does not preclude any of the {{site.data.keyword.vcf-auto-short}} options such as Caveonix, Entrust, and VMware Aria Operations.
-* Sandboxes can be provisioned by using VMware NSX-T™ overlay segments to provide network-isolated zones to mount cyber-recovery backups for inspection by your cyber toolsets.
+* Sandboxes can be provisioned by using VMware NSX-T™ overlay segments to provide network-isolated zones to mount cyber-recovery backups for inspection by your cybertoolsets.
 * Cyber toolsets are customer-supplied tools that run as virtual machines (VMs) in the isolated recovery environment.
 * Cyber admins are customer personnel who are authorized to access the isolated recovery environment.
 * The air gap enables network connectivity between the production environment and the isolated recovery environment only when required.
@@ -48,7 +48,7 @@ The isolated recovery solution architecture uses a {{site.data.keyword.vcf-auto-
    * Is independent of the location of the production environment. However, it is required network connectivity between the production environment and the cyber-recovery site.
    * Is independent of the production backup solution.
    * Requires that the production environment is vSphere based.
-   * Requires that cyber-recovery backup proxies that are registered with the cyber-recovery environment be installed on the ESXi hosts in the production environment.
+   * Requires that cyber-recovery backup proxies that are registered with the cyber-recovery environment are installed on the ESXi hosts in the production environment.
    * Requires that the cyber-recovery backup infrastructure has access with sufficient privileges to the production vCenter and ESXi hosts.
 * This solution is suitable for clients who want to copy critical data away from the production environment. Also, that cyber-recovery backup systems and personnel are separate from production and disaster recovery processes.
 
@@ -71,7 +71,7 @@ This documentation uses the following terms and definitions:
 | Air-gap | An air gap is a term that is used to denote network isolation where the Linux backup repository is not accessible directly from the production networks. For backup transfer, the air gap is selectively unlocked and then locked when the transfer is complete.
 | Production environment | The vSphere environment that hosts the production data. For the isolated recovery environment, the production environment can be in {{site.data.keyword.cloud_notm}} or elsewhere. 
 | Cyber-recovery site | The location of the isolated recovery environment.
-| Production data | Production data refers specifically to the VM images (VMDKs) of the VMs running in production environment.
+| Production data | Production data refers specifically to the VM images (VMDKs) of the VMs running in the production environment.
 | Cyber-recovery data | Copies of the production VM images (VMDKs) in the isolated recovery environment.
 | Cyber-recovery backup | The backup of production data to the isolated recovery environment. A cyber-recovery backup is different from a production backup.
 | Cyber-recovery toolsets | Cyber-recovery toolsets are applications that are provided by the client for use within the cyber-recovery site to scan, analyze, or clean cyber-recovery data.

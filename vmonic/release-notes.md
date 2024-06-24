@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2024
-lastupdated: "2024-06-14"
+lastupdated: "2024-06-24"
 
 keywords: release notes, what's new in VMware Solutions, what is new, new features, VMware Solutions release notes, VMware Solutions
 
@@ -23,22 +23,31 @@ Use these release notes to learn about updates to {{site.data.keyword.vmwaresolu
 ## 2024
 {: #year-2024}
 
+
+
+### 24 June 2024
+{: #vmwaresolutions-jun2424}
+{: release-note}
+
+VMware Cloud Director upgrade for VMware Shared
+:   The VMware Shared infrastructure is upgraded to VMware Cloud Director v10.5.1.1, which resolves various issues and includes bug fixes. For more information, see [VMware Cloud Director 10.5.1.1 release notes](https://docs.vmware.com/en/VMware-Cloud-Director/10.5.1.1/rn/vmware-cloud-director-10511-release-notes/index.html){: external}.
+
 ### 14 June 2024
 {: #vmwaresolutions-jun1424}
 {: release-note}
 
-VMware Cloud Foundation enhancements
+VMware Cloud Foundation for VPC enhancements
 :   The following features are now available:
 
    * **Server backup**: You can do regular backups of management components, such as SDDC Manager, VMware vCenter Server®, and NSX Manager. For more information, see [Management domain backup](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-ordering#vpc-vcf-ordering-mgmt-domain-backup).
-   * **Contact form**: You can now use a form to contact an IBM representative through the 1-year and 3-year subscription options. 
+   * **Contact form**: You can now use a form to contact an IBM representative through the 1-year and 3-year subscription options.
    * The following **BOM updates** are applied to newly deployed instances:
       * Cloud Builder VM 5.1.1 (build 23480823)
       * SDDC Manager 5.1.1 (build 23480823)
       * VMware vCenter Server Appliance 8.0 Update 2b (build 23319993)
       * VMware ESXi™ 8.0 Update 2b (build 23305546)
       * VMware Virtual SAN Witness Appliance 8.0 Update 2 (build 22443122)
-      * VMware NSX-T™ 4.1.2.3 (build 23382408)
+      * VMware NSX-T™ 4.1.2.4 (build 23786733)
       * VMware Aria® Suite Lifecycle Manager 8.16 (build 23377566)
 
 ### 1 May 2024
@@ -49,7 +58,7 @@ Updated offerings for VMware Solutions
 
 :   Existing {{site.data.keyword.vmwaresolutions_short}} offerings are no longer available as separate components and are replaced by VMware Cloud Foundation. The following offering name changes are available across the portfolio, including the documentation and REST API.
 
-   * VMware as a Service is now called **{{site.data.keyword.vmware-service-short}}** or **{{site.data.keyword.vcf-aas}}**.
+   * VMware as a Service is now called **{{site.data.keyword.vmware-service_short}}** or **{{site.data.keyword.vcf-aas}}**.
    * VMware vCenter Server, VMware vSphere, {{site.data.keyword.cr}}, and {{site.data.keyword.rw}} are merged into **{{site.data.keyword.vcf-classic}}** or **{{site.data.keyword.vcf-classic-short}}**.
    * VMware Cloud Foundation is now called **{{site.data.keyword.vcf-vpc}}** or **{{site.data.keyword.vcf-vpc-short}}**.
 
@@ -67,7 +76,7 @@ VMware add-ons
 BOM updates for {{site.data.keyword.vcf-classic}}
 :   The following updates are applied to newly deployed instances, clusters, and hosts:
 
-   * VMware vCenter Server Appliance 8.0 Update 2b (build 23319993)
+   * VMware vCenter Server® Appliance 8.0 Update 2b (build 23319993)
    * VMware vSphere® ESXi™ 7.0 Update 3p (build 23307199)
    * VMware NSX 4.1.2.3 (build 23382408)
 
@@ -123,7 +132,7 @@ End of Support for VMware Shared deployments
 {: #vmwaresolutions-mar1524}
 {: release-note}
 
-VMware Cloud Foundation enhancements
+VMware Cloud Foundation for VPC enhancements
 :   The following features are now available:
 
    * **Async Patch tool**: You can apply critical patches for VMware Cloud Foundation components, such as VMware NSX Manager, VMware vCenter Server®, and VMware ESXi by using the Async Patch tool. For more information, see [Viewing VMware Cloud Foundation instances](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-viewing#vpc-vcf-viewing-details).
@@ -135,7 +144,7 @@ VMware Cloud Foundation enhancements
 {: release-note}
 
 VMware Cloud Director upgrade for VMware Shared
-:   VMware Solutions 5.8 provides an upgrade to the VMware Shared infrastructure to an updated version of VMware Cloud Director v10.4.2.2. This release resolves various issues, includes security fixes, and introduces new features, such as an improved tenant login experience. For more information, see [VMware Cloud Director 10.4.2.2 release notes](https://docs.vmware.com/en/VMware-Cloud-Director/10.4.2.2/rn/vmware-cloud-director-10422-release-notes/index.html){: external}.
+:   The VMware Shared infrastructure is upgraded to VMware Cloud Director v10.4.2.2, which resolves various issues, includes security fixes, and introduces new features, such as an improved tenant login experience. For more information, see [VMware Cloud Director 10.4.2.2 release notes](https://docs.vmware.com/en/VMware-Cloud-Director/10.4.2.2/rn/vmware-cloud-director-10422-release-notes/index.html){: external}.
 
 ### 7 February 2024
 {: #vmwaresolutions-feb0724}
@@ -227,7 +236,7 @@ New documentation
 {: release-note}
 
 VMware Cloud Foundation
-:   (Updated on 3 November 2023) The {{site.data.keyword.cloud}} for VMware Cloud Foundation offering is a full-stack Software Defined Data Center (SDDC) solution that is built on VMware Cloud Advanced and Enterprise Editions. It delivers compute, storage, networking, management automation, and security in a single platform on {{site.data.keyword.bm_is_full_notm}} (VPC). For more information, see [Cloud Foundation overview](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-ovw).
+:   (Updated on 3 November 2023) The {{site.data.keyword.cloud}} for VMware Cloud Foundation offering is a full-stack Software Defined Data Center (SDDC) solution that is built on VMware Cloud Edition. It delivers compute, storage, networking, management automation, and security in a single platform on {{site.data.keyword.bm_is_full_notm}} (VPC). For more information, see [Cloud Foundation overview](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-ovw).
 
 VMware Cloud Foundation BOM updates
 :   (Updated on 17 November 2023) The following updates are applied to newly deployed instances:
@@ -405,7 +414,7 @@ User interface updates and enhancements
 {: release-note}
 
 VMware Cloud Director upgrade for VMware Shared
-:   VMware Solutions 5.2 provides an upgrade to the VMware Shared infrastructure to an updated version of VMware Cloud Director v10.4.1. This release resolves various issues, includes several deprecations, and introduces new features, such as API tokens and edge static routes.
+:   The VMware Shared infrastructure is upgraded to VMware Cloud Director v10.4.1. This release resolves various issues, includes several deprecations, and introduces new features, such as API tokens and edge static routes.
 
 End of Marketing for {{site.data.keyword.cloud_notm}} Secure Virtualization
 :   The {{site.data.keyword.cloud_notm}} Secure Virtualization offering is no longer available for new deployments. Support for existing customers who are using the offering is still provided.
@@ -445,7 +454,7 @@ User interface updates and enhancements
 {: release-note}
 
 VMware Cloud Director upgrade for VMware Shared
-:   VMware Solutions 5.1 provides an upgrade to the VMware Shared infrastructure to an updated version of VMware Cloud Director v10.4, which supports up to virtual hardware version 19. If you use the VMware Cloud Director API, consider the following updated product support notices:
+:   The VMware Shared infrastructure is upgraded to VMware Cloud Director v10.4, which supports up to virtual hardware version 19. If you use the VMware Cloud Director API, consider the following updated product support notices:
    * VMware Cloud Director API versions 31.0 and 32.0 are not supported.
    * VMware Cloud Director API versions 33.0, 34.0, 35.0, and 35.2 are deprecated and are not supported starting with the next major release of VMware Cloud Director.
 
@@ -644,7 +653,7 @@ Security and Compliance Readiness Bundle - deprecated
 
 Add-on services upgrades
 :   The following service versions are now available to install on deployed instances.
-   * Entrust CloudControl v6.5 (formerly known as HyTrust® CloudControl)
+   * Entrust CloudControl v6.5 (formerly HyTrust® CloudControl)
    * FortiGate Virtual Appliance v7.0.5
    * Red Hat OpenShift v4.10
    * Zerto v9.0u4
@@ -676,8 +685,8 @@ User interface updates and enhancements
 {: #vmwaresolutions-apr2522}
 {: release-note}
 
-VMware Cloud Director upgrade for VMware Solutions Shared
-:   (Updated on 8 May 2022) VMware Solutions provides an upgrade to the VMware Shared infrastructure to VMware Cloud Director (vCD) v10.3.3.
+VMware Cloud Director upgrade for VMware Shared
+:   (Updated on 8 May 2022) The VMware Shared infrastructure is upgraded to VMware Cloud Director v10.3.3.
 
 Compute policy support for VMware Solutions Shared virtual data centers
 :   You can now choose to enable a compute policy for a VMware Solutions Shared virtual data center. This feature provides a convenient option to choose a compute policy for your virtual machine (VM) from the list of policies that are available for that virtual data center.
@@ -715,7 +724,7 @@ Add-on services upgrades
 :   The following service versions are now available to install on deployed instances.
 
    * FortiGate Virtual Appliance v7.0.4
-   * Entrust DataControl® v5.5 (formerly known as HyTrust® DataControl)
+   * Entrust DataControl® v5.5 (formerly HyTrust® DataControl)
    * Red Hat OpenShift v4.9.27
    * Zerto v9.0u3
 
@@ -744,11 +753,11 @@ User interface updates and enhancements
 {: #vmwaresolutions-feb2122}
 {: release-note}
 
-VMware Cloud Director upgrade for VMware Solutions Shared
-:   (Updated on 15 March 2022) VMware Solutions provides an upgrade to the VMware Shared infrastructure to VMware Cloud Director (vCD) v10.3.2.
+VMware Cloud Director upgrade for VMware Shared
+:   (Updated on 15 March 2022) The VMware Shared infrastructure is upgraded to VMware Cloud Director v10.3.2.
 
 VMware vCenter Server instances
-:   The 4.6 release applies the following upgrades and improvements for newly deployed instances, clusters, and hosts.
+:   The following upgrades and improvements are available for newly deployed instances, clusters, and hosts.
    * VMware vCenter Server Appliance 7.0 Update 3c (build 19234570)
    * VMware NSX-T 3.1.3.5.0 (build 19068434)
    * VMware NSX-V 6.4.12 (build 19066632)
