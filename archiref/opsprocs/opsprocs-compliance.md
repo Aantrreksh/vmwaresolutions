@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-06-12"
+lastupdated: "2024-06-05"
 
 subcollection: vmwaresolutions
 
@@ -18,7 +18,7 @@ subcollection: vmwaresolutions
 
 Compliance is a set of requirements necessary to meet the minimum controls established by either a regulatory agency or industry best practices. Regularity compliance frameworks are usually broad frameworks that provide guidance on a broad range of technology, whereas industry best practices from vendors are typically technology specific to address technological risks.
 
-The VMware Security Hardening Guides provide prescriptive guidance on how to deploy and operate VMware products in a secure manner. Guides for vSphere are provided in spreadsheet format, with rich metadata to allow for guideline classification and risk assessment. They also include script examples for enabling security automation. Comparison documents are provided if the list changes in guidance in successive versions of the guide.
+The VMware Security Hardening Guides provide prescriptive guidance on how to deploy and operate VMware products in a secure manner. Guides for vSphere are provided in an easy to use spreadsheet format, with rich metadata to allow for guideline classification and risk assessment. They also include script examples for enabling security automation. Comparison documents are provided if the list changes in guidance in successive versions of the guide.
 
 Many of the controls that are documented in the VMware® Security Hardening Guides are incorporated in the {{site.data.keyword.vmwaresolutions_full}} reference architecture and therefore, automatically deployed, ensure that you tailor the security posture of the platform to your own needs and enterprise policy. The VMware Security Hardening Guides provide the technology-specific controls that are required for you to complete this review. Caveonix RiskForesight automates this compliance task and provides additional regulatory agency guidance.
 

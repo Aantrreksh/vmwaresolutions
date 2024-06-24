@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2024
 
-lastupdated: "2024-06-11"
+lastupdated: "2024-06-05"
 
 subcollection: vmwaresolutions
 
@@ -48,7 +48,7 @@ The following diagram shows the high-level architecture:
 3. Metadata is collected from the source backup servers and the tertiary backup servers by the Predatar Agents and sent to the Predatar Cloud.
 4. Predatar Cyber Recovery Orchestration is used to automate the recovery and testing of the VMs and provides reports and notifications.
 5. In the CleanRoom, recovery tests use the instant mount restore type from the vSnap server to stream the backup files to the ESXi hosts to quickly restore the VM. Recovery tests can be performed with or without orchestrating a malware scan. If you are using IBM Spectrum Protect with IBM Spectrum Protect for Virtual Environments, recoveries are from the VMware datastore.
-6. If a recovery test includes a malware scan, agentless End-point Detection Response (EDR) tools are used to scan and cleanse recovered workloads. The EDR tools are selected from the Gartner leading EDR platforms and use a combination of file signature scanning, machine learning, in-memory analysis (for the identification of fileless malware), variant protection, behavioral analysis and monitoring for scripts, injection, and ransomware to check for any active or dormant threats in the recovered workload.
+6. If a recovery test includes a malware scan, agentless End-point Detection Response (EDR) tools are used to scan and cleanse recovered workloads. The EDR tools are selected from the Gartner top right EDR platforms and use a combination of file signature scanning, machine learning, in-memory analysis (for the identification of fileless malware), variant protection, behavioral analysis and monitoring for scripts, injection, and ransomware to check for any active or dormant threats in recovered workload.
 7. The EDR components are continuously updated and correlated for automatic protection.
 8. At the completion of the recovery test, metrics for that VM are saved and become available for reporting.
  
@@ -61,7 +61,7 @@ The following diagram shows more details of the vCenter Server instance architec
 
 Primary or secondary data center:
 
-* Source VMs – The client VMs that need to be protected by the Predatar service. The VMs require VMware Tools thin agents that are part of VMware Endpoint Protection, also known as Guest Introspection, which are installed on them so that when they are recovered into the CleanRoom they can be scanned. For more information, see [Endpoint Protection](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.2/administration/GUID-CDFE1F13-7D9A-4C3E-B567-C4A34A98AD8C.html){: external}.
+* Source VMs – The client VMs that need to be protected by the Predatar service. The VMs require VMware Tools thin agents that are part of VMware Endpoint Protection, also known as Guest Introspection, which are installed on them so that when they are recovered into the CleanRoom they can be scanned. VMware Guest Introspection is a free for any existing VMware estate. For more information, see [Endpoint Protection](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.2/administration/GUID-CDFE1F13-7D9A-4C3E-B567-C4A34A98AD8C.html){: external}.
 * Thin agent – The Thin agent, also known as File Introspection driver, is the file introspection agent that is running inside the VM, which is part of VMware Tools. It is a generic and lightweight agent that facilitates offloading files and processes for scanning.
 * Source backup servers – These servers are part of the client’s IBM Spectrum Protect with IBM Spectrum Protect for Virtual Environments or IBM Spectrum Protect Plus environment and are configured to replicate backups to the tertiary backup server.
 * Predatar Virtual Appliance – Consists of:
@@ -79,9 +79,8 @@ Predatar Cloud:
 * vCenter Server instance - used for cyber-recovery tasks only, deployed in an {{site.data.keyword.cloud_notm}} account restricted to cyber-recovery activities. For more information about vCenter Server instances, see [Overview of VMware Solutions](/docs/vmwaresolutions?topic=vmwaresolutions-solution_overview). 
 
 The vCenter Server instance:
-
 * Can use VMware vSAN or NFS data stores. For more information, see [Physical storage design](/docs/vmwaresolutions?topic=vmwaresolutions-design_physicalinfrastructure#design_physicalinfrastructure-storage-design).
-* Does not host production or disaster recovery workloads, but would temporarily be used to recover an infected machine and then clean it in the CleanRoom.
+* Does not host production or disaster recovery workloads but would temporarily be used to recovering an infected machine and then cleaning it in the CleanRoom.
 * Includes an edge cluster to host your choice of one of the following to protect vCenter Server instance networks: 
    * Juniper vSRX appliances.
    * FortiGate Security Appliance.
@@ -110,7 +109,7 @@ The minimum number of hosts in a consolidated cluster is three, and the minimum 
 * For vSAN Storage, see [vSAN Storage](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-consold-cluster#vc_orderinginstance-vsan-storage). 
 * For NFS storage, see [NFS Storage](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-consold-cluster#vc_orderinginstance-nfs-storage).
 
-The smallest {{site.data.keyword.cloud_notm}} Classic Bare metal server for the IBM Spectrum Protect Plus vSnap server is 4 x 1 TB disks, which gives 2 TB in RAID 6. The largest single server is 34 x 12 TB disks, which gives 384 TB in RAID 6.
+The smallest {{site.data.keyword.cloud_notm}} Classic Bare metal server for the IBM Spectrum Protect Plus vSnap server would be 4 x 1 TB disks, which give 2 TB in RAID 6. The largest single server would be 34 x 12 TB disks, which give 384 TB in RAID 6.
 
 For more information about small, medium, and large configurations with direct-to-cloud or disk-to-cloud tiering models, see [IBM Spectrum Protect Cloud Blueprints](https://www.ibm.com/support/pages/ibm-spectrum-protect-cloud-blueprints){: external}.
 

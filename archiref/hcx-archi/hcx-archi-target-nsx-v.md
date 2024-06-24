@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2024
+  years:  2016, 2023
 
-lastupdated: "2024-06-11"
+lastupdated: "2023-05-01"
 
 subcollection: vmwaresolutions
 
@@ -23,7 +23,7 @@ Review the architecture of each VMware HCX™ component that is deployed within 
 
 The first component that is configured within the {{site.data.keyword.cloud_notm}} is a pair of NSX Edge virtual machines (VMs). It is important to note that all {{site.data.keyword.vmwaresolutions_short}} deployments install and configure an edge device for IBM CloudDriver outbound communication. However, while this ESG can be reused for Hybrid Cloud Services communications, it is advised that a new pair is deployed.
 
-The NSX Edge VMs are configured as an active - passive pair of X-Large NSX Edge devices. These devices are used to connect into the {{site.data.keyword.cloud_notm}} VMware® environment by using a public internet connection. The X-Large NSX Edge was chosen for the internal environment since it is suited for environments that have a load balancer with millions of concurrent sessions that do not necessarily require high-throughput. As part of the configuration process, the NSX Edge is connected to the {{site.data.keyword.cloud_notm}} public VLAN and the {{site.data.keyword.cloud_notm}} Private VLAN designated for management infrastructure.
+The NSX Edge VMs are configured as an active - passive pair of X-Large NSX Edge devices. These devices are used to connect into the {{site.data.keyword.cloud_notm}} VMware® environment by using a public internet connection. The X-Large NSX Edge was chosen for the internal environment since it is suited for environments that have load balancer with millions of concurrent sessions that do not necessarily require high-throughput. As part of the configuration process, the NSX Edge is connected to the {{site.data.keyword.cloud_notm}} public VLAN and the {{site.data.keyword.cloud_notm}} Private VLAN designated for management infrastructure.
 
 | Component | Configuration |
 |-----------|---------------|
@@ -46,12 +46,12 @@ In addition to the NSX Edge appliances deployed within the {{site.data.keyword.c
 
 | Field     | Value         |
 |-----------|---------------|
-| Virtual Server ID | `virtualServer-1` |
-| Name | `HCX-VIP` |
-| Description | `LB-VIP` |
-| Default Pool | `pool-1` |
-| IP address | 254 |
-| Protocol | `https` |
+| Virtual Server ID | virtualServer-1 |
+| Name | HCX-VIP |
+| Description | LB-VIP |
+| Default Pool | pool-1 |
+| IP Address | 254 |
+| Protocol | https |
 | Port | 443 |
 {: caption="Table 3. VIP configuration for NSX Edge - virtual servers" caption-side="bottom"}
 {: class="simple-tab-table"}
@@ -146,9 +146,9 @@ This HCX-IX Interconnect Appliance is deployed and configured to be on the manag
 ## HCX WAN Optimizer
 {: #hcx-archi-targetv-hcx-wo}
 
-The second component that is deployed is the WAN Optimization appliance. While the WAN Optimization appliance is optional, it uses WAN conditioning to reduce the effects of latency. It also incorporates Forward Error Correction to negate packet loss scenarios, and deduplication of redundant traffic patterns.
+The second component that is deployed is the WAN Optimization appliance. While the WAN Optimization appliance is optional, it uses WAN conditioning to reduce effects of latency. It also incorporates Forward Error Correction to negate packet loss scenarios, and deduplication of redundant traffic patterns.
 
-Altogether, these reduce bandwidth use and ensure the best use of available network capacity to expedite data transfer to and from the {{site.data.keyword.cloud_notm}}. The HCX WAN Optimizer is disk intensive and requires a sufficient amount of IOPS to function properly. As a result, the HCX WAN Optimizer is on vSAN storage (if present), or on the Endurance storage with 2,000 IOPS.
+Altogether, these reduce bandwidth use and ensure the best use of available network capacity to expedite data transfer to and from the {{site.data.keyword.cloud_notm}}. The HCX WAN Optimizer is disk intensive and requires sufficient amount of IOPS to function properly. As a result, the HCX WAN Optimizer is on vSAN storage (if present), or on the Endurance storage with 2,000 IOPS.
 
 The following table shows the sizing specification for the WAN Optimization appliance.
 

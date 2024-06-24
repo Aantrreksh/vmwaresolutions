@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2024
 
-lastupdated: "2024-06-14"
+lastupdated: "2024-01-26"
 
 subcollection: vmwaresolutions
 
@@ -18,7 +18,7 @@ subcollection: vmwaresolutions
 
 This step describes the Ansible® playbook that secures the Linux® hardened backup repository server after it is added to the Veeam® backup infrastructure. The playbook does the following tasks:
 
-* (Optional) [Adds a user](#veeam-cr-sag-lhbrsecure-user) with the name `ansible`.
+* (Optional) [Adds a user](#veeam-cr-sag-lhbrsecure-user) named `ansible`.
 * [Secures the SSH access](#veeam-cr-sag-lhbrsecure-ssh).
 
 The playbook can be written locally on your laptop by using an editor, such as Visual Studio Code, and transferred to the automation server `\swlib\ansible` directory, or edited locally on the automation server in a text editor, such as `vi` or `nano`.
@@ -50,7 +50,7 @@ If you choose this optional task, then you need to change the Ansible inventory 
 
 The following code snippet does these actions:
 
-* Adds a user with the name `ansible`.
+* Adds a user named `ansible`.
 * Copies the ansible user's public key to the `authorized_hosts` file.
 * Allows the ansible user to run a `sudo` command without a password.
 

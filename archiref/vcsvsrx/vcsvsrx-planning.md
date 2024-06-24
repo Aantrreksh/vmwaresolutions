@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2024
 
-lastupdated: "2024-06-13"
+lastupdated: "2024-06-05"
 
 subcollection: vmwaresolutions
 
@@ -31,8 +31,8 @@ The two vSRX nodes are tied together in a highly available chassis cluster and d
 The following features are common to both deployment types:
 
 * Provides a high availability pair within a single data center:
-   * A pair of vSRX gateway appliance hosts
-   * NFS storage that is shared between the hosts
+   * Pair of vSRX gateway appliance hosts.
+   * NFS storage shared between the hosts.
 * Full vSRX firewall and routing capability implemented.
 
 The following features are unique to a deployment with the ESXi as the host OS:
@@ -67,7 +67,7 @@ The tight integration of the vSRX HA Chassis Cluster into a {{site.data.keyword.
 ### {{site.data.keyword.vcf-auto-short}} cluster design
 {: #vcsvsrx-planning-vcs-design}
 
-When a {{site.data.keyword.vcf-auto-short}} instance is deployed to a customer account, it is typically a single hyper-converged cluster in which compute, management, and edge functions are delivered by a single three ESXi host (NFS shared storage) or four node (vSAN shared storage) cluster configuration.
+When a {{site.data.keyword.vcf-auto-short}}instance is deployed to a customer account it is typically a single hyper-converged cluster in which compute, management, and edge functions are delivered by a single three ESXi host (NFS shared storage) or four node (vSAN shared storage) cluster configuration.
 
 The addition of the vSRX offering on ESXi impacts the basic {{site.data.keyword.vcf-auto-short}} design by moving the edge gateway out of the hyper-converged cluster onto a dedicated two ESXi host cluster. The gateway cluster is managed by the existing VMware vCenter® that is deployed with the initial {{site.data.keyword.vcf-auto-short}} instance.
 
@@ -83,11 +83,11 @@ The {{site.data.keyword.vcf-auto-short}} offering is designed to manage east-wes
 
 The required network design changes are modest and include all customer VM traffic no matter the destination, platform management traffic, direct-link traffic, where applicable, and internet bound traffic. Traffic that is explicitly excluded includes VTEP traffic, storage traffic, and vMotion traffic.
 
-You can extend NSX from the compute cluster to the gateway cluster or you can use BGP over an IPsec VPN to enable connectivity between the edge and compute clusters. When the traffic that flows between the {{site.data.keyword.vcf-auto-short}} compute cluster and the gateway cluster is not in conflict with the subnets that are assigned by the {{site.data.keyword.cloud_notm}} infrastructure, you can use a local VLAN and subnet as a transit link.
+NSX can be extended from the compute cluster to the gateway cluster. Or BGP over an IPsec VPN can be used to enable connectivity between the edge and compute clusters. When the traffic that flows between the {{site.data.keyword.vcf-auto-short}} compute cluster and the gateway cluster is not in conflict with the {{site.data.keyword.cloud_notm}} infrastructure assigned subnets, the use of a local VLAN and subnet is suitable as a transit link.
 
 BGP over IPsec VPN is the preferred method of connecting to a customer on-premises data center whether the connection traverses the internet or passes between the customer and {{site.data.keyword.cloud_notm}} through one of the {{site.data.keyword.cloud_notm}} infrastructure direct-link offerings.
 
-It is recommended that you review the architecture patterns in the [Architecture pattern for using gateway cluster with NSX-T](/docs/vmwaresolutions?topic=vmwaresolutions-arch-pattern-edge-gateway-cluster).
+It is recommened that you review the architecture patterns in the [Architecture pattern for using gateway cluster with NSX-T](/docs/vmwaresolutions?topic=vmwaresolutions-arch-pattern-edge-gateway-cluster).
 
 #### Interface mapping for vSRX on VMware
 {: #vcsvsrx-planning-interface-map}
@@ -164,7 +164,7 @@ If the client is using Direct Link, BGP by using private ASNs is possible.
 
 The diagram illustrates one of many potential implementations of BGP from the on-premises data center to the {{site.data.keyword.cloud_notm}}.
 
-The traffic that originates from the client facility flows through AT&T NetBond or other provider into the GNPP router. The GNPP router is peered through BGP to the vSRX gateway deployed into the client's {{site.data.keyword.cloud_notm}} account and all traffic is encapsulated in a GRE tunnel over BGP. The packets that exit the tunnel into the vSRX are then routed to the NSX overlay network through an edge gateway.
+The traffic that originates from the client facility flows through AT&T NetBond or other provider into the GNPP router. The GNPP router is peered through BGP to the vSRX gateway deployed into the client's {{site.data.keyword.cloud_notm}} account and all traffic is encapsulated in a GRE tunnel over BGP. The packets that exit the tunnel into the vSRX are then routed to the NSX overlay network through an edge gateway gateway.
 
 ## Related links
 {: #vcsvsrx-planning-related}

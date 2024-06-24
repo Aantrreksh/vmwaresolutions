@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-06-14"
+lastupdated: "2024-06-05"
 
 subcollection: vmwaresolutions
 
@@ -17,7 +17,7 @@ subcollection: vmwaresolutions
 
 vCenter has a feature that is called Host Profiles. This feature creates a profile that captures a pre-configured and validated reference host configuration and helps a system administrator manage the host configurations in a cluster. Host Profiles provide an automated and centrally managed mechanism for host configuration and configuration compliance. Host Profiles enable the configuration to be treated as a managed object, which has a catalog of parameters to configure; networking, storage, security, and other host-level parameters. These Host Profiles can be applied to individual hosts, a cluster, or all the hosts and clusters associated to a host profile.
 
-As more {{site.data.keyword.vcf-auto}} hosts are deployed by the {{site.data.keyword.vmwaresolutions_full}} automation that deployed the original cluster, there are less configuration drift than with manual methods of adding hosts. However, system administrator actions can make the hosts configuration different. For example, more NFS storage is added or extra VLANs are added. The use of host profiles to validate the configuration of a new host by checking compliance of this host against an existing host is a valid use case of this tool within {{site.data.keyword.cloud_notm}}.
+As more {{site.data.keyword.vcf-auto}} hosts are deployed by the {{site.data.keyword.vmwaresolutions_full}} automation that deployed the original cluster, there are less configuration drift than with manual methods of adding hosts. However, system administrator actions, besides the automation can make the hosts configuration different. For example, more NFS storage is added or extra VLANs are added. The use of Host Profiles to validate the configuration of a new host by checking compliance of this host against an existing host is a valid use case of this tool within {{site.data.keyword.cloud_notm}}.
 
 To add more hosts to a cluster in your {{site.data.keyword.vcf-auto-short}} instances, see [Adding ESXi servers to {{site.data.keyword.vcf-auto-short}} instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservers).
 
@@ -30,7 +30,7 @@ The following sequence is required to check compliance:
 1. Create a Host Profile from an existing host.
 2. Attach the new host to the Host Profile.
 3. Check the compliance of the new host with the Host Profile.
-4. Review compliance failures and remediate, if needed.
+4. Review compliance failures and remediate.
 
 ## Creating a host profile from an existing host
 {: #vum-host-profiles-create-host-profile}
@@ -57,18 +57,18 @@ The new profile appears in the profile list.
 {: #vum-host-profiles-check-compliance}
 
 1. Go to the host profile that was previously completed.
-2. Click **Check Host Profile Compliance**.
+2. Click the Check **Host Profile Compliance icon**.
 
-   On the **Objects** tab, the compliance status is updated as `Compliant, Unknown` or `Non-compliant`. A noncompliant status indicates a discovered and specific inconsistency between the profile and the new host.
+   On the **Objects** tab, the compliance status is updated as `Compliant, Unknown` or `Non-compliant`. A non-compliant status indicates a discovered and specific inconsistency between the profile and the new host.
 
 ## Reviewing compliance failures and remediation
 {: #vum-host-profiles-review-compliance}
 
 1. To see more detail on compliance failures, select the **Host Profile** from the **Objects** tab that is used in the compliance check.
-2. To see specific details on which parameters differ between the host that failed compliance and the Host Profile, click the **Monitor** tab and select the **Compliance** view.
+2. In order to see specific detail on which parameters differ between the host that failed compliance and the Host Profile, click the **Monitor** tab and select the **Compliance** view.
 3. Expand the object hierarchy and select the failing host.
 4. The differing parameters are displayed in the Compliance window, under the hierarchy.
-5. Review the parameters and understand why the new host can vary from the reference host. For parameters where the compliance isn't acceptable, remediate before you move the new host from maintenance mode. For example, where configuration drift is caused by system administrator action.
+5. Review the parameters and understand why the new host can vary from the reference host. For parameters where the compliance isn't acceptable, remediate before moving the new host from maintenance mode. For example, where configuration drift is caused by system administrator action.
 
 ## Related links
 {: #vum-host-profiles-related}

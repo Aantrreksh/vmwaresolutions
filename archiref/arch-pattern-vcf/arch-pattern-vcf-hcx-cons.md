@@ -4,7 +4,7 @@ copyright:
 
   years:  2024
 
-lastupdated: "2024-06-18"
+lastupdated: "2024-06-05"
 
 subcollection: vmwaresolutions
 
@@ -45,7 +45,7 @@ This architecture pattern deployment is summarized as follows:
 
 When you design or deploy this architecture pattern, consider the following information:
 
-* Currently, {{site.data.keyword.vcf-vpc}} supports to be a source only when you create site peering and service mesh **over a public network**. Therefore, HCX shows as a source, but migration is still possible both ways. HCX appliances use {{site.data.keyword.vpc_short}} public gateway for the egress traffic. For more information, see [Architecture pattern for HCX site peering and service mesh in {{site.data.keyword.cloud_notm}}](/docs/vmwaresolutions?topic=vmwaresolutions-arch-pattern-vcf-hcx-xconnectivity).
+* {{site.data.keyword.vcf-vpc}} currently supports to be a source *only* when creating site peering and service mesh **over a public network**. Therefore, HCX shows as a source, but migration is still possible both ways. HCX appliances use {{site.data.keyword.vpc_short}} public gateway for the egress traffic. For more information, see [Architecture pattern for HCX site peering and service mesh in {{site.data.keyword.cloud_notm}}](/docs/vmwaresolutions?topic=vmwaresolutions-arch-pattern-vcf-hcx-xconnectivity).
 * **Private networking** supports both **source and destination** HCX site peering deployments.
 
 ## Related links

@@ -4,7 +4,7 @@ copyright:
 
   years:  2024
 
-lastupdated: "2024-06-18"
+lastupdated: "2024-06-05"
 
 subcollection: vmwaresolutions
 
@@ -41,7 +41,7 @@ This architecture pattern deployment is summarized as follows:
 ## Connectivity over the internet
 {: #arch-pattern-vcf-hcx-xconnectivity-public-internet}
 
-Currently, {{site.data.keyword.vcf-vpc}} supports to be a source only when you create site peering and service mesh over a public network. Though HCX is used as a source, migration is possible both ways. In this model, HCX appliances use {{site.data.keyword.vpc_short}} public gateway for the egress traffic. 
+{{site.data.keyword.vcf-vpc}} currently supports to be a source *only* when creating site peering and service mesh over a public network. Though HCX is used as a source, migration is possible both ways. In this model, HCX appliances use {{site.data.keyword.vpc_short}} public gateway for the egress traffic. 
 
 The following diagram introduces the high-level steps to configure and deploy this connectivity type.
 

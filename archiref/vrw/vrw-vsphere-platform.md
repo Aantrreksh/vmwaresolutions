@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2024
 
-lastupdated: "2024-06-14"
+lastupdated: "2024-06-04"
 
 subcollection: vmwaresolutions
 
@@ -23,14 +23,14 @@ The {{site.data.keyword.cloud}} for VMware® Regulated Workloads is built with v
 
 The management software stack consists of vCenter Server, AD/DNS, and VMware Aria® Operations™ tooling. vCenter Server manages all hosts in the vCenter Server instance. AD/DNS provide Domain Name Services (DNS) and management authentication services, a local NTP source, and role-based access control (RBAC) for access to the vCenter, VMware Aria operations tooling, and NSX™ administration portal. The VMware Aria operations tooling includes VMware Aria Operations Manager, and VMware Aria Operations™ for Logs. These components collectively provide a native console for vSphere operations, ability to automate management of the cloud platform, centralized log collection and analysis, and network visibility and optimization up to the hypervisor. SaaS consumer workloads are not monitored by default.
 
-Within the Management cluster, shared storage is used to provide enhanced resiliency to the management stack. The use of shared storage provides rapid restoration of management components if an ESXi host is lost. vSAN-based storage is used to keep all management stack data in the account boundary. vSAN requires a minimum cluster size of four ESXi hosts.
+Within the Management cluster, shared storage is used to provide enhanced resiliency to the management stack. The use of shared storage provides rapid restoration of management components if an ESXi host is lost. vSAN based storage is used to keep all management stack data in the account boundary. vSAN requires a minimum cluster size of four ESXi hosts.
 
 The vCenter appliance provides the necessary interfaces to the virtualization administrators, which include a robust RESTful API. Resilience of the vCenter appliance is delivered by using vSphere native DRS functions such as vMotion. More management components are deployed to the management cluster but only the vCenter appliance is responsible for direct operation of the platform.
 
 ### Active Directory and DNS
 {: #vrw-vsphere-platform-management-ad}
 
-Active Directory serves to authenticate access to manage the VMware® instances only and not to house users of the workloads in the deployed instances. The forest root domain name of the Active Directory server equals to the Domain Name Services (DNS) domain name that you specify during initial deployment.
+Active Directory serves to authenticate accesses to manage the VMware® instance only and not to house users of the workloads in the deployed instances. The forest root domain name of the Active Directory server equals to the Domain Name Services (DNS) domain name that you specify during initial deployment.
 
 Domain name services (DNS) in this design support cloud management and infrastructure components only. The DNS zone files are also replicated on the Active Directory servers.
 
@@ -72,7 +72,7 @@ For more information, see [VMware Aria Operations Manager design](/docs/vmwareso
 
 The VMware Aria Operations for Logs environment consists of four virtual machines (VMs) with an integrated load balancer.
 
-VMware Aria Operations for Logs enables real-time logging for components in the {{site.data.keyword.rw}} environment. The design deploys a VMware Aria Operations for Logs cluster that consists of four nodes in each instance. This configuration provides continued availability and increased log ingestion rates.
+VMware Aria Operations for Logs enables real-time logging for components in the {{site.data.keyword.cloud_notm}} for VMware Regulated Workloads environment. The design deploys a VMware Aria Operations for Logs cluster that consists of four nodes in each instance. This configuration provides continued availability and increased log ingestion rates.
 
 VMware Aria Operations for Logs collects log events from the following virtual infrastructure and cloud management components (logging clients):
 

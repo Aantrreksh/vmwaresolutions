@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-06-14"
+lastupdated: "2024-06-05"
 
 subcollection: vmwaresolutions
 
@@ -15,10 +15,10 @@ subcollection: vmwaresolutions
 # Updating vSAN clusters
 {: #vum-updating-vsan}
 
-vSAN™ generates system baselines and baseline groups for use with VMware® Update Manager (VUM) and you can use these recommended baselines to update software, patches, and extensions for the vSphere® ESXi™ hosts in your {{site.data.keyword.vcf-auto}} instance that uses vSAN. vSAN 6.6.1 and later generates automated build recommendations for vSAN clusters. vSAN combines information in the VMware Compatibility Guide and vSAN Release catalog with information about the installed vSphere ESXi releases.
+vSAN™ generates system baselines and baseline groups for use with VMware® Update Manager (VUM) and you can use these recommended baselines to update software, patches, and extensions for the vSphere® ESXi™ hosts in your {{site.data.keyword.vcf-auto}} instance using vSAN. vSAN 6.6.1 and later generates automated build recommendations for vSAN clusters. vSAN combines information in the VMware Compatibility Guide and vSAN Release catalog with information about the installed vSphere ESXi releases.
 
 These recommended updates provide the best available release to keep your hardware in a supported state.
-* **vSAN System Baselines** - vSAN build recommendations are provided through vSAN system baselines for VUM. vSAN generates one baseline group for each vSAN cluster. The baselines are listed in the **Baselines** pane of the **Baselines and Groups** tab. VUM automatically scans each vSAN cluster to check compliance against the baseline group. However, to upgrade your vSAN cluster, you must manually remediate the system baseline through VUM you can remediate vSAN system baseline on a single host or on the entire cluster.
+* **vSAN System Baselines** - vSAN build recommendations are provided through vSAN system baselines for VUM. vSAN generates one baseline group for each vSAN cluster and are listed in the Baselines pane of the Baselines and Groups tab. VUM automatically scans each vSAN cluster to check compliance against the baseline group. However, to upgrade your vSAN cluster, you must manually remediate the system baseline through VUM you can remediate vSAN system baseline on a single host or on the entire cluster.
 * **vSAN Release catalog** - The vSAN release catalog maintains information about available releases, preference order for releases, and critical patches needed for each release. vSAN requires internet connectivity to access the release catalog. You don't need to be enrolled in the Customer Experience Improvement Program (CEIP) for vSAN to access the release catalog.
 * Working with **vSAN Build Recommendations** - VUM checks the installed vSphere ESXi releases against information in the Hardware Compatibility List (HCL) in the VMware Compatibility Guide. It determines the correct upgrade path for each vSAN cluster, based on the current vSAN Release catalog. vSAN also includes the necessary drivers and patch updates for the recommended release in its system baseline. vSAN build recommendations ensure sure that each vSAN cluster remains at the current hardware compatibility status or better. If hardware in the vSAN cluster is not included on the HCL, vSAN recommends an upgrade to the latest release.
 
@@ -39,10 +39,10 @@ Use the tasks in the following section to make the vSAN baselines available in V
 To see that vSAN updates in VUM the vSAN online Health workflow is followed. Therefore, vSAN Online Health needs to connect to the sites `vcsa.vmware.com` and `vmware.com` to perform these online health checks to enable the vSAN Online Health Workflow we need to:
 * Configure the VCSA to use the proxy.
 * Configure vSAN to use the proxy.
-* Enable the Customer Experience Improvement Program (CEIP).
+* Enable Customer Experience Improvement Program (CEIP).
 * Perform a test upload and validate that the upload worked.
 
-The first step is to add your my.vmware.com credentials to the vSAN Build Recommendation Engine. After successful login, vSAN generates a baseline group of recommended updates for each vSAN cluster. vSAN system baselines are listed in the Baselines pane of the Baselines and Groups tab.
+The first step is to add your my.vmware.com credentials to the vSAN Build Recommendation Engine. After successful login vSAN generates a baseline group of recommended updates for each vSAN cluster. vSAN system baselines are listed in the Baselines pane of the Baselines and Groups tab.
 
 ### Configure the VCSA to use the proxy
 {: #vum-updating-vsan-config-vcsa-proxy}
@@ -62,7 +62,7 @@ If the HTTPS parameters are not set, then use the following command:
 {: #vum-updating-vsan-config-vsan-proxy}
 
 1. Navigate to **Home** > **Hosts and Clusters**, select the **vSAN cluster** in the Navigation pane and then select the **Configure** tab and navigate to **vSAN** and then **General**. Scroll to the **Internet Connectivity** section and click **Edit**.
-2. Enter the IP address and port number of the proxy, and click **OK**.
+2. Enter the IP address and port number of the proxy, click **OK**.
 
 ### Enable Customer Experience Improvement Program (CEIP)
 {: #vum-updating-vsan-enable-ceip}
@@ -75,7 +75,7 @@ This is an optional step. By using the vSphere Web Client, go to **Home > Admini
 1. Using the vSphere Web Client navigate to **Home** > **Hosts and Clusters**. Select the required cluster and then select the **Monitor** tab and the **vSAN** page, then click **Health**. Click **Enable Online Health**.
 2. Click **Retest** and wait for the process to complete.
 3. A new check appears in Health that is called _Online health connectivity_, and **Enable Online Health** changes to **Retest with Online Health**.
-4. Click **Retest with Online Health** to start the first upload and wait for the process to complete, by reviewing the status in the **Recent Tasks** pane. The **Test Name** changes to **Online health (Last check: just now)**.
+4. Click **Retest with Online Health** to start the first upload and wait for the process to complete, by reviewing the status in the Recent Tasks pane. The Test Name changes to Online health (Last check: just now).
 5. When completed, in the Health window, scroll to and expand the vSAN Build Recommendation, and click **vSAN Build Recommendation Engine Health**.
 6. Click **Login to my.vmware.com** and enter your credentials. When the process completes, the **Test Result** changes to a **Passed** state.
 7. Click the **Update Manager** tab, and the vSAN Cluster is added to the Baselines.
@@ -94,14 +94,14 @@ Before you start the vSAN upgrade process, ensure that the following requirement
    * No active resync at the start of the upgrade process by clicking **Home** > **Hosts and Clusters**, then select the **vSAN Cluster** and click the **vSAN** tab and then click **Resync Components**. _The Resync components count should be 0_. Some resync activity is expected during the upgrade process, as data needs to be synchronized following host restarts.
 * **vSphere ESXi host preparation** - When you move a host into maintenance mode in a vSAN cluster, you have three options to choose:
    * **No data migration** - If you select this option, vSAN does not evacuate any data from this host. If you power off or remove the host from the cluster, some virtual machines (VMs) might become inaccessible.
-   * **Ensure availability** - If you select this option, you can move the host into maintenance mode faster than **Full data migration** and allows access to the VMs in the environment.
+   * **Ensure availability** - If you select this option, vSAN allows you to move the host into maintenance mode faster than Full data migration and allows access to the VMs in the environment.
    * **Full data migration**
 * **Exit maintenance mode and resync** - When the vSphere ESXi host is upgraded and moved out of maintenance mode, a resync occurs. You can see this through the VMware vSphere Web Client. Ensure this is complete before you move onto the next host. A resync is occurring as the host that is updated can now contribute to the vSAN datastore again. It is vital to wait until this resync is complete to ensure that there is no data loss.
 * **After starting a vSAN Cluster upgrade**:
    * Do not attempt to upgrade a cluster by introducing new versions to the cluster and migrating workloads.
    * If introducing new hosts, ensure that they are of the same initial version and upgrade them along with the rest of the cluster.
    * If you are adding or replacing disks during an upgrade, ensure that they are formatted with the appropriate legacy on-disk format version, if applicable.
-   * Therefore, certain vSAN behavior changes are controlled by the on-disk format. It is important that newer on-disk format versions are not introduced into a mixed-version cluster.
+   * Therefore, certain vSAN behavior changes are controlled by the on-disk format it is important that newer on-disk format versions are not introduced into a mixed-version cluster.
 
 ## Upgrade the VCSA Appliance
 {: #vum-updating-vsan-upgrade-vcsa}
@@ -116,7 +116,7 @@ For more information, see [Creating baselines and attaching to inventory objects
 ## Upgrade the vSAN disk format
 {: #vum-updating-vsan-upgrade-vsan}
 
-Ruby vSphere Console (RVC) is a Ruby-based command-line interface for vSphere and can be used to manage VMware vSphere ESXi and vCenter. The vSphere inventory is presented in a tree structure to navigate and run commands against vCenter objects.
+Ruby vSphere Console (RVC) is a Ruby-based command-line interface for vSphere and can be used to manage VMware vSphere ESXi and vCenter. The vSphere inventory is presented in a tree structure, that allows you to navigate and run commands against vCenter objects.
 
 Many basic administrative tasks can be done much more efficiently than clicking through the vSphere Client. RVC is fully implemented in the VCSA and is accused by an SSH connection to the appliance.
 1. SSH to the VCSA and login by using root and the password that is provided on the ICVS Console.
@@ -136,14 +136,14 @@ Many basic administrative tasks can be done much more efficiently than clicking 
    3 datastores [datastore]/
    4 vms [vm]/`
 
-6. Type `cd 1` and press **Enter**. Then, type `ls` and press **Enter**. The output is your cluster:
+6. Type `cd 1`, press **Enter** and then `ls` and press **Enter**. The output is your cluster:
    `0 cluster1 (cluster)`
 
 7. Use the vSAN commands against this cluster. To check the disk status type `vsan.disks_stats 0` and press **Enter**.
 
 8. Make sure that the Health Status for all disks is OK. And then start the upgrade by typing `vsan.ondisk_upgrade 0` and then pressing **Enter**.
 
-9. Depending on your vSAN size, this task might take some time. When completed, type `vsan.objstatusreport 0` and then press **Enter** to verify that the object versions are upgraded to the new on-disk format.
+9. Depending on your vSAN size, this task might take a lot of time. When completed, type `vsan.objstatusreport 0` and then press **Enter** to verify that the object versions are upgraded to the new on-disk format.
 
 10. The vSAN cluster upgrade is now completed. Type `exit` and press **Enter** to leave RVC.
 

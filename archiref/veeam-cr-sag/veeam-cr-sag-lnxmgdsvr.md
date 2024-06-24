@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2024
 
-lastupdated: "2024-06-14"
+lastupdated: "2024-01-26"
 
 subcollection: vmwaresolutions
 
@@ -67,7 +67,7 @@ Foreach ($Session in $SessionArray) { $ContentInfo = Get-VBRPublishedBackupConte
 ```
 {: codeblock}
 
-For understanding the examples of the mounted file systems and the underlying network connections, see [Examples](/docs/vmwaresolutions?topic=vmwaresolutions-veeam-cr-sag-lnxmgdsvr#veeam-cr-sag-lnxmgdsvr-examples).
+For understanding the examples of the mounted files systems and the underlying network connections, see [Examples](/docs/vmwaresolutions?topic=vmwaresolutions-veeam-cr-sag-lnxmgdsvr#veeam-cr-sag-lnxmgdsvr-examples).
 
 ## Unpublishing
 {: #veeam-cr-sag-lnxmgdsvr-unpublish}

@@ -17,7 +17,7 @@ subcollection: vmwaresolutions
 # Procedure to order {{site.data.keyword.rw}}
 {: #vrw-orderinginstance-procedure}
 
-
+<!-- The {: #step-1} tag and the ordered list that has only 1s are intentional. Do not delete. This coding is necessary for proper indentation when the procedure is translated. -->
 
 1. In the VMware Solutions console, click the **VMware Cloud Foundation (VCF) for Classic** card in the **Create a resource** section. {: #step-1}
 1. On the **Create** tab, click the **{{site.data.keyword.rw}}** card in the **Resource type** section.

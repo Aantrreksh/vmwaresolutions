@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2024
 
-lastupdated: "2024-06-13"
+lastupdated: "2024-06-05"
 
 subcollection: vmwaresolutions
 
@@ -44,7 +44,7 @@ The "all-in-one" server is installed automatically when the Veeam service instan
 
 The simple deployment scenario is suitable for small virtual environments. 
 
-For larger scale-virtual environments, the [Advanced deployment](https://helpcenter.veeam.com/docs/backup/vsphere/advanced.html?ver=120){: external} scenario is recommended. This deployment scenario moves the backup workload to dedicated backup infrastructure components. In this scenario, the backup server functions as a manager for backup jobs and for deploying and maintaining backup infrastructure components. The move from a simple to an advanced deployment scenario is a manual process.
+For larger scale-virtual environments, the [Advanced deployment](https://helpcenter.veeam.com/docs/backup/vsphere/advanced.html?ver=120){: external} scenario is recommended. This deployment scenario moves backup workload to dedicated backup infrastructure components. In this scenario, the backup server functions as a manager for backup jobs and for deploying and maintaining backup infrastructure components. The move from a simple to an advanced deployment scenario is a manual process.
 
 The Veeam [distributed deployment](https://helpcenter.veeam.com/docs/backup/vsphere/distributed.html?ver=120){: external} scenario federates multiple Veeam instances and uses Veeam Backup Enterprise Manager for centralized management and reporting for multiple backup servers. This deployment scenario is not used in these solution architectures.
 
@@ -56,18 +56,18 @@ The backup server is a Windows-based component and is the core component in the 
 ## Configuration database
 {: #veeam-cr-sa-components-configdb}
 
-The Veeam Backup and Replication configuration database stores data about the backup infrastructure, jobs, sessions, and other configuration data. In the deployment pattern, the database instance uses the default Microsoft® SQL Server Express Edition on the same virtual server that hosts the backup server. 
+The Veeam Backup and Replication configuration database stores data about the backup infrastructure, jobs, sessions, and other configuration data. In the deployment patterns, the database instance uses the default Microsoft® SQL Server Express Edition on the same virtual server that hosts the backup server. 
 
 If you are protecting more than 500 VMs, it is recommended to move to either a Standard or Enterprise Edition. It is still recommended to run the SQL Server locally on the backup server for lowest latency and highest performance. In large deployments, for high availability and fast recovery, you can use a Microsoft SQL cluster with AlwaysOn Availability Group. Fail over to a standby backup server can be simplified by connecting to the configuration database directly without the need to restore from a configuration backup. 
 
 ## Backup and replication console
 {: #veeam-cr-sa-components-console}
 
-The Veeam Backup and Replication console provides access to the backup server to perform numerous tasks. The console can be installed only on a Microsoft Windows OS. To log in to the Veeam console, you must be in the Local Users group on the backup server or in a domain group that has access to the backup server. The user can perform the scope of operations that are permitted by their defined role in Veeam.
+The Veeam Backup and Replication console provides access to the backup server to perform numerous tasks. The console can be only installed on a Microsoft Windows OS. To log in to the Veeam console, you must be in the Local Users group on the backup server or in a domain group that has access to the backup server. The user can perform the scope of operations that are permitted by their defined role in Veeam.
 
 As part of the standard installation, the console is installed on the backup server. To harden the backup server, uninstall the console and install it on a jump server.
 
-## Enterprise Manager
+## Enterprise manager
 {: #veeam-cr-sa-components-em}
 
 Veeam Backup Enterprise Manager is an optional component that is intended for distributed environments. Veeam Enterprise Manager is typically installed to enable one or more of the following features:
@@ -83,7 +83,7 @@ Veeam Backup Enterprise Manager is an optional component that is intended for di
 
 A VMware backup proxy is an architecture component that sits between the backup server and other components of the backup infrastructure. While the backup server administers tasks, the proxy processes jobs and delivers backup traffic. Basic backup proxy tasks include retrieving VM data, compression, de-duplicating, encrypting, and forwarding to the backup repository.
 
-The backup proxy is a key component to scale a Veeam service instance. Backup proxies can be Windows or Linux®-based. They can be hosted on VMs, VSI's or bare metal servers. For more information, see [Veeam backup proxy](/docs/vmwaresolutions?topic=vmwaresolutions-veeam-cr-sa-vp).
+The backup proxy is a key component to scale a Veeam service instance. Backup proxies can be Windows or Linux® based. They can be hosted on VMs, VSI's or bare metal servers. For more information, see [Veeam backup proxy](/docs/vmwaresolutions?topic=vmwaresolutions-veeam-cr-sa-vp).
 
 ## Veeam vPower NFS service
 {: #veeam-cr-sa-components-vpower}
@@ -116,12 +116,12 @@ The creation of a scale-out backup repository by using the Linux hardened reposi
 ## Mount server
 {: #veeam-cr-sa-components-mnt}
 
-A mount server is a component on a Windows-based managed server, which is required for restores of guest OS files, application items, or secure restore. The Veeam backup file is mounted by the mount server so that the files can be copied to the restore destination. The mount server must be in the same location as the backup repository where backup files are stored to enable the best performance.
+A mount server is a component on a Windows based managed server, which is required for restores of guest OS files, application items, or secure restore. The Veeam backup file is mounted by the mount server so that the files can be copied to the restore destination. The mount server must be in the same location as the backup repository where backup files are stored to enable the best performance.
 
 ## Helper host or appliance
 {: #veeam-cr-sa-components-helperhost}
 
-To restore files from VM guest OS other than Microsoft Windows, the Veeam backup file is mounted by a helper host so that the files can be copied to the restore destination. The helper host must be in the same location as the backup repository where backup files are stored to enable the best performance. Alternatively, a helper appliance can be used. The helper appliance is a VM provisioned by the Veeam backup server and runs a stripped-down Linux kernel that has a minimal set of components. It takes around 10 seconds to start.
+To restore files from VM guest OS other than Microsoft Windows, the Veeam backup file is mounted by a helper host so that the files can be copied to the restore destination. The helper host must be in the same location as the backup repository where backup files are stored to enable the best performance. Alternatively, a helper appliance can be used. The helper appliance is a VM provisioned by the Veeam backup server and runs a stripped-down Linux kernel that has minimal set of components. It takes around 10 seconds to start.
 
 ## Managed servers
 {: #veeam-cr-sa-components-mngd}
@@ -134,7 +134,7 @@ Managed servers can be added to the backup infrastructure so that Veeam can use 
 More managed servers are added in the advanced deployment scenario, such as:
 
 * VMware vSphere servers - VMware vCenter® appliances and the associated ESXi hosts to be used as a source or target for backup/restore of VMs.
-* Microsoft Windows servers - For hosting Veeam components, such as backup proxy, backup repository, mount server, and vPower NFS server.
+* Microsoft Windows servers - For hosting Veeam components, such as backup proxy, backup repository, mount server and vPower NFS server.
 * Linux servers - For hosting Veeam components, such as helper host, backup proxy, and backup repository components.
 
 ## Related links

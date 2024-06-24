@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2024
 
-lastupdated: "2024-06-13"
+lastupdated: "2024-06-05"
 
 subcollection: vmwaresolutions
 
@@ -26,20 +26,20 @@ The following procedure assumes that you are deploying the IaaS KVM-based Junipe
 Open the [{{site.data.keyword.cloud_notm}} infrastructure customer portal](https://control.softlayer.com), then select **Infrastructure > Network > Gateway Appliances > Create Gateway**.
 * Gateway vendor - Juniper
 * Gateway Appliance
-   * Hostname - Provide the hostname for node 1 in the gateway cluster. For example, `gateway01`. Select a hostname consistent with the existing {{site.data.keyword.vcf-auto-short}} naming convention since the vSRX nodes are manually added to the {{site.data.keyword.vcf-auto-short}} AD/DNS server for hostname resolution.
+   * Hostname - Provide hostname for node 1 in the gateway cluster. For example, `gateway01`. Select a hostname consistent with the existing {{site.data.keyword.vcf-auto-short}} naming convention since the vSRX nodes are manually added to the {{site.data.keyword.vcf-auto-short}} AD/DNS server for hostname resolution.
    * Domain - Enter the applicable domain name for the gateway cluster. For example, `myvcsdomain.local`, where `myvcsdomain.local` is the domain that is assigned to the previously deployed {{site.data.keyword.vcf-auto-short}} instance.
    * Select High availability.
-      * HA hostname - Provide the hostname for node 2 in the gateway cluster. For example, `gateway02`. Select a hostname consistent with the existing {{site.data.keyword.vcf-auto-short}} naming convention since the vSRX nodes are manually added to the {{site.data.keyword.vcf-auto-short}} AD/DNS server for hostname resolution.
+      * HA hostname - Provide hostname for node 2 in the gateway cluster. For example, `gateway02`. Select a hostname consistent with the existing {{site.data.keyword.vcf-auto-short}} naming convention since the vSRX nodes are manually added to the {{site.data.keyword.vcf-auto-short}} AD/DNS server for hostname resolution.
       * HA Domain - Verify that this value is the same domain name that is provided for node1. For example, `myvcsdomain.local`
 * Location
    * Select geography, for example, `NA South`
    * Select dataCenter, for example, `Dallas 10`
 * POD
-   * Select POD where the existing {{site.data.keyword.vcf-auto-short}} instance is deployed to. For example, `dal10.pod01`
+   * Select POD where existing {{site.data.keyword.vcf-auto-short}} instance is deployed to. For example, `dal10.pod01`
    * Ensure that you order the vSRX in the same POD as your {{site.data.keyword.vcf-auto-short}} instance. VLANs don't span PODs so you must deploy to the correct POD.
    * Determining `SoftLayer_Network_Pod`
 
-   The setting `SoftLayer_Network_Pod` refers to a portion of a data center that share a Backend Customer Router (BCR) and usually a front-end counterpart that is known as a Frontend Customer Router (FCR). A Pod primarily denotes a logical location within the network and the physical aspects that support the networks, in contrast to representing a specific physical location.
+   The setting `SoftLayer_Network_Pod` refers to a portion of a data center that share a Backend Customer Router (BCR) and usually a front-end counterpart that is known as a Frontend Customer Router (FCR). A Pod primarily denotes a logical location within the network and the physical aspects that support networks, in contrast to representing a specific physical location.
 
    A pod is identified by a name, which is unique. A Pod name follows the format `dddnn.podii`, where `ddd` is a data center code, `nn` is the data center number, and `pod` is a literal string. The value `ii` is a two-digit number, zero-padded to the left, which corresponds to a Backend Customer Router (BCR) of the data center. For example,
 
@@ -58,9 +58,9 @@ Open the [{{site.data.keyword.cloud_notm}} infrastructure customer portal](https
 * Network interface
    * Uplink Port Speeds - 10 Gbps Public and Private Network Uplinks.
    * Ensure that you enable both public and private NICs (four ports total).
-   * Add-ons - accept default values. Optionally select an IPv6 address.
+   * Add-ons - accept default values. Optionally select IPv6 address.
 
-Review the order and click **Create**. Provisioning takes three to four hours.
+Review order and click **Create**. Provisioning takes three to four hours.
 
 ## Post deployment
 {: #vcsvsrx-deployment-post}

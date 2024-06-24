@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-06-11"
+lastupdated: "2024-04-26"
 
 subcollection: vmwaresolutions
 
@@ -51,7 +51,7 @@ Along with the automation level and migration threshold of the cluster, this des
 
 When the VMware Distributed Power Management feature is enabled, DRS compares cluster- and host-level capacity to the demands of the cluster’s VMs, including recent historical demand. The power management feature places or recommends placing hosts in standby power mode if sufficient excess capacity is found or powering on hosts if capacity is needed. Depending on the resulting host power state recommendations, VMs might need to be migrated to and from the hosts as well.
 
-In this design, power management is not enabled as no operational or financial benefit exists to powering on and off hosts in the cluster.
+In this design, power management is not enabled since there's no operational or financial benefit to powering on and off hosts in the cluster.
 
 ## vSphere High Availability
 {: #cluster-settings-vsphere-ha}
@@ -85,10 +85,10 @@ The following table shows the settings for the vSphere HA cluster in the VMware 
 | Response for Datastore with All Paths Down (APD) | Disabled |
 | Response for APD recovery after APD timeout | Disabled |
 | VM monitoring sensitivity | Custom |
-| Failure interval | 50s |
-| Minimum uptime | 90s |
+| Failure interval | 50 s |
+| Minimum uptime | 90 s |
 | Maximum per-VM resets | 10 |
-| Maximum resets time window | Within 1h |
+| Maximum resets time window | Within 1 h |
 {: caption="Table 2. Failure Conditions and VM Response settings for the vSphere HA cluster" caption-side="bottom"}
 
 For more information about configuring these settings in the vSphere Web Client, see the VMware vSphere documentation.

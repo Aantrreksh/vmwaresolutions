@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-06-13"
+lastupdated: "2024-05-31"
 
 subcollection: vmwaresolutions
 
@@ -94,7 +94,7 @@ Review the following special considerations when you restore your management bac
 ## Summary
 {: #solution_backingup-summary}
 
-With proper planning, you can ensure that your VMware instance can suffer the loss of its management components and recover successfully. Ensure to regularly monitor the success of your backup jobs and the availability of your backup data. Ensure to test your backup and restore plan regularly, for both your management infrastructure and your workloads.
+With proper planning, you can ensure that your VMware instance can suffer the loss of its management components and recover successfully. Ensure to regularly monitor the success of your backup jobs and availability of your backup data. Ensure to test your backup and restore plan regularly, for both your management infrastructure and your workloads.
 
 ## Related links
 {: #solution_backingup-related}

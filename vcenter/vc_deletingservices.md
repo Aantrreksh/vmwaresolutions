@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2024
 
-lastupdated: "2024-05-02"
+lastupdated: "2024-05-01"
 
 keywords: remove services vcf classic, delete services vcf automated
 

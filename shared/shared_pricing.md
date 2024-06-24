@@ -4,7 +4,7 @@ copyright:
 
   years: 2020, 2024
 
-lastupdated: "2024-05-22"
+lastupdated: "2024-05-01"
 
 keywords: vmware solutions shared, price for shared, pricing plan
 
@@ -110,10 +110,10 @@ Storage policy availability can vary by region and deployment topology. On the {
 {: tab-group="on-demand-metrics"}
 {: class="simple-tab-table"}
 
-## {{site.data.keyword.vm-shared}} Reserved billing plan
+## {{site.data.keyword.vm-shared}} reserved billing plan
 {: #shared_pricing-cost-reserved}
 
-{{site.data.keyword.vm-shared}} Reserved virtual data center resources are preallocated and guaranteed. Pricing is monthly based on the allocation size of the virtual data center.
+{{site.data.keyword.vm-shared}} reserved virtual data center resources are preallocated and guaranteed. Pricing is monthly based on the allocation size of the virtual data center.
 
 The standard storage policy pricing is the same as the 4-IOPS/GB storage policy. The number of IOPS/GB for the standard storage policy is not guaranteed.
 
@@ -213,5 +213,5 @@ You can change how fast the inactive backup chains are moved to Cloud Object Sto
 * [Operating {{site.data.keyword.vm-shared}}](/docs/vmwaresolutions?topic=vmwaresolutions-shared_vcd-ops-guide)
 * [Managing Veeam for {{site.data.keyword.vm-shared}}](/docs/vmwaresolutions?topic=vmwaresolutions-shared_veeam)
 * [Managing Zerto for {{site.data.keyword.vm-shared}}](/docs/vmwaresolutions?topic=vmwaresolutions-shared_zerto-portal)
-* [VMware Cloud Director](https://docs.vmware.com/en/VMware-Cloud-Director/10.5/VMware-Cloud-Director-Tenant-Guide/GUID-74C9E10D-9197-43B0-B469-126FFBCB5121.html){: external}
+* [VMware Cloud Director](https://docs.vmware.com/en/VMware-Cloud-Director/10.4/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-74C9E10D-9197-43B0-B469-126FFBCB5121.html){: external}
 * [Troubleshooting NSX Edge](https://docs.vmware.com/en/VMware-NSX-Data-Center-for-vSphere/6.4/com.vmware.nsx.troubleshooting.doc/GUID-E6CD6FAA-3DA7-4AD7-9577-EE121AA7E1E6.html){: external}

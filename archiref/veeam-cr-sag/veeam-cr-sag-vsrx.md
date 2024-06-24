@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2024
 
-lastupdated: "2024-06-14"
+lastupdated: "2024-06-05"
 
 subcollection: vmwaresolutions
 
@@ -36,7 +36,7 @@ Another option is to use the Posh-Junos® PowerShell module to interface with th
 
 The document does not describe the configuration of the Juniper vSRX. You must create the required configuration. The playbook assumes that the vSRX configuration includes the following items:
 
-* A user named `sa-ansible`, with an SSH key.
+* A user, called `sa-ansible`, with an SSH key.
    * Set system login user sa-ansible `uid 2002`
    * Set system login user sa-ansible `class super-user`
    * Set system login user sa-ansible `authentication ssh-rsa <public_key>`
@@ -74,7 +74,7 @@ The document does not describe the configuration of the Juniper vSRX. You must c
 
 The Ansible playbook uses the `junipernetworks.junos.junos_config` module, which enables the management of the configuration on devices that run Juniper JUNOS. This module requires the NETCONF system service to be enabled on the remote device that is being managed. The module can be installed on the Ansible server by using the command `ansible-galaxy collection install junipernetworks.junos`.
 
-The Ansible `hosts` file contains the following lines:
+The Ansible hosts file contains the following lines:
 
 ```text
 [vsrx]

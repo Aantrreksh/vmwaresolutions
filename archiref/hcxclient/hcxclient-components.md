@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-06-11"
+lastupdated: "2024-06-05"
 
 subcollection: vmwaresolutions
 
@@ -36,19 +36,19 @@ HCX has the concept of cloud side (target or virtual data center environment) an
 
 HCX Service Mesh components are responsible for creating the data and control planes between client and cloud side. Deployed as virtual machines (VMs) in mirrored pairs, the service mesh consists of the following components:
 * Interconnect Appliance (HCX-IX) - The interconnect appliance creates encrypted tunnels that support vMotion and replication (bulk migration) traffic.
-* WAN Optimizer Appliance (HCX-WAN) - HCX includes an optionally deployed Silver Peak™ WAN optimization appliance. It is deployed as a VM appliance. When deployed, the CGW tunnel traffic is redirected to traverse the WAN Optimizer. Since the WAN optimizer significantly decreases traffic across the WAN (typically 3:1 to 6:1 observed) while it increases connection reliability, it is recommended to deploy the WAN optimizer with the CGW. The added benefit of deploying the WAN optimizer is extended to limit the WAN bandwidth used by VM migration traffic. The WAN optimizer management interface is not configured by default.
+* WAN Optimizer Appliance (HCX-WAN) - HCX includes an optionally deployed Silver Peak™ WAN optimization appliance. It is deployed as a VM appliance. When deployed, the CGW tunnel traffic is redirected to traverse the WAN Optimizer. Since the WAN optimizer significantly decreases traffic across the WAN (typically 3:1 to 6:1 observed) while it increases connection reliability, it is recommended to deploy the WAN optimizer with the CGW. The added benefit of deploying the WAN optimizer is extended to limiting the WAN bandwidth used by VM migration traffic. The WAN optimizer management interface is not configured by default.
 * Network Extension (HCX-NE) - Provides the Layer 2 network extension capabilities, enabling migrations between the on-premises location and the vSphere environment with the need to reassign IP addresses to the VMs.
-* Proxy ESXi host - Whenever the HCX-IX is configured to connect to the cloud-side HCX site, a proxy ESXi host appears in the VMware vCenter® outside of any cluster. This ESXi host has the same management and vMotion IP address as the corresponding HCX-IX appliance. As a result, the vSphere environment at both the client and the cloud side work as if it performs a local vMotion.
+* Proxy ESXi host - Whenever the HCX-IX is configured to connect to the cloud side HCX site, a proxy ESXi host appears in the VMware vCenter® outside of any cluster. This ESXi host has the same management and vMotion IP address as the corresponding HCX-IX appliance. As a result, the vSphere environment at both the client and the cloud side work as if it performs a local vMotion.
 
 This method has the following benefits:
-* The management IP ranges on either side might be overlapping with no loss in functions.
+* The management IP ranges on either side might be overlapping with no loss in functionality.
 * The cloud side has no vSphere visibility into the client side, which makes it more secure.
 
 ## HCX user portals
 {: #hcxclient-components-hcx-user-portals}
 
 * Client web user interface – The HCX client web portal is the main user interface for HCX. After the client-side HCX Manager is installed, it shows up as a snap-in to the vCenter web user interface. It controls remote cloud HCX registration (site pairing), fleet component deployment, network stretching, and VM migration into and out of the Cloud.
-* Cloud-side user interface – The cloud-side HCX user interface is accessible through the public registration URL given for HCX client registration. By default, it uses the cloud-side vCenter Admin credentials `administrator@vsphere.local`. It is typically used for upgrading the installation and modifying some network configuration.
+* Cloud side user interface – The cloud side HCX user interface is accessible through the public registration URL given for HCX client registration. By default, it uses the cloud side vCenter Admin credentials `administrator@vsphere.local`. It is typically used for upgrading the installation and modifying some network configuration.
 
 ## Related links
 {: #hcxclient-components-related}

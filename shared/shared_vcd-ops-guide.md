@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2024
 
-lastupdated: "2024-05-22"
+lastupdated: "2024-04-26"
 
 keywords: vmware solutions shared, get started shared, tech specs shared
 
@@ -37,21 +37,24 @@ The tenant portal includes a preconfigured set of user roles and their privilege
 * vApp User
 * Console Access Only
 
-For more information about roles and permissions, see [VMware Cloud Director tenant portal roles and rights](https://docs.vmware.com/en/VMware-Cloud-Director/10.5/VMware-Cloud-Director-Tenant-Guide/GUID-754BD24F-63C7-422F-83BC-BFA275CEDA8E.html){: external}.
+For more information about roles and permissions, see [VMware Cloud Director tenant portal roles and rights](https://docs.vmware.com/en/VMware-Cloud-Director/10.4/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-754BD24F-63C7-422F-83BC-BFA275CEDA8E.html){: external}.
 
 #### Managing users
 {: #shared_vcd-ops-guide-roles-procedures}
 
-Use the tenant portal to create a user or change passwords or roles for an existing user. For more information about accessing the tenant portal, see [Log in to the VMware Cloud Director tenant portal](https://docs.vmware.com/en/VMware-Cloud-Director/10.5/VMware-Cloud-Director-Tenant-Guide/GUID-28972197-D45B-4156-A733-5966730B5E03.html){: external}.
+Use the tenant portal to create a user or change passwords or roles for an existing user. For more information about accessing the tenant portal, see [Log in to the VMware Cloud Director tenant portal](https://docs.vmware.com/en/VMware-Cloud-Director/10.4/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-28972197-D45B-4156-A733-5966730B5E03.html){: external}.
 
-For more information about creating and modifying tenant portal users, see [Managing users](https://docs.vmware.com/en/VMware-Cloud-Director/10.5/VMware-Cloud-Director-Tenant-Guide/GUID-FE38C285-7605-4473-870C-6AD44D8BF42E.html){: external}.
+If you log in with your username and password to access the VMware Cloud Director tenant portal, then use the following URL: ``https://[vcd FQDN]/tenant/[uuid]/login``. No change for the **SIGN IN WITH SINGLE SIGN-ON** option.
+{: important}
+
+For more information about creating and modifying tenant portal users, see [Managing users](https://docs.vmware.com/en/VMware-Cloud-Director/10.4/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-FE38C285-7605-4473-870C-6AD44D8BF42E.html){: external}.
 
 #### Modifying your email settings
 {: #shared_vcd-ops-guide-roles-email}
 
 The Organization Administrator must modify email notification settings to the organization SMTP server.
 
-For more information about modifying SMTP server settings, see [Modify your email settings](https://docs.vmware.com/en/VMware-Cloud-Director/10.5/VMware-Cloud-Director-Tenant-Guide/GUID-726D40D7-4251-47AD-B945-2030E489165F.html){: external}.
+For more information about modifying SMTP server settings, see [Modify your email settings](https://docs.vmware.com/en/VMware-Cloud-Director/10.4/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-726D40D7-4251-47AD-B945-2030E489165F.html){: external}.
 
 ## Catalogs
 {: #shared_vcd-ops-guide-catalogs}
@@ -126,14 +129,14 @@ Complete the following steps to register the Red Hat VM with your RHEL activatio
 1. From the {{site.data.keyword.vmwaresolutions_short}} console, click the virtual data center name in the **{{site.data.keyword.vm-shared}}** virtual data center table.
 2. On the virtual data center details page, locate and make note of the **Red Hat activation key**.
 3. Run the following commands from the Red Hat VM.
-     1. `rpm -ivh http://52.117.132.7/pub/katello-ca-consumer-latest.noarch.rpm`
-     2. `uuid = uuidgen`
-       Where the character that is used around `uuidgen` is the grave accent or backtick.
-     3. `echo '{"dmi.system.uuid": "'$uuid'"}' > /etc/rhsm/facts/uuid_override.facts`
-     4. `cat /etc/rhsm/facts/uuid_override.facts`
-       Ensure the contents of the `uuid_override.facts` contains a generated UUID.
-     5. `subscription-manager register --org="customer" --activationkey="ACTIVATION_KEY" --force`
-       Where `ACTIVATION_KEY` is the Red Hat activation key that is on the virtual data center details page.
+     1. ``rpm -ivh http://52.117.132.7/pub/katello-ca-consumer-latest.noarch.rpm``
+     2. ``uuid= `uuidgen` ``
+       Where the character `` ` `` used around uuidgen is the grave accent or backtick.
+     3. ``echo '{"dmi.system.uuid": "'$uuid'"}' > /etc/rhsm/facts/uuid_override.facts``
+     4. ``cat /etc/rhsm/facts/uuid_override.facts``
+       Ensure the contents of the uuid_override.facts contains a generated UUID.
+     5. ``subscription-manager register --org="customer" --activationkey="ACTIVATION_KEY" --force``
+       Where ``ACTIVATION_KEY`` is the Red Hat activation key that is on the virtual data center details page.
 
 You can still use another RHEL Capsule Server or a satellite server if you already have an RHEL subscription outside of IBM. Charges for the RHEL license are incurred against RHEL VMs that are running in a virtual data center.
 {: note}
@@ -143,14 +146,14 @@ You can still use another RHEL Capsule Server or a satellite server if you alrea
 
 To create a catalog, you must have either the **Organizational Administrator** or **Catalog Author** tenant portal role.
 
-For more information about defining catalogs and policies, see [Working with catalogs](https://docs.vmware.com/en/VMware-Cloud-Director/10.5/VMware-Cloud-Director-Tenant-Guide/GUID-6424C4A7-EA95-49A0-B673-9DDB971AB566.html){: external}.
+For more information about defining catalogs and policies, see [Working with catalogs](https://docs.vmware.com/en/VMware-Cloud-Director/10.4/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-6424C4A7-EA95-49A0-B673-9DDB971AB566.html){: external}.
 
 ### Uploading your media or templates
 {: #shared_vcd-ops-guide-customer}
 
-OVF packages can be uploaded to a catalog as a vApp template to make the template available to users. For more information, see [Create a vApp template from an OVF file](https://docs.vmware.com/en/VMware-Cloud-Director/10.5/VMware-Cloud-Director-Tenant-Guide/GUID-5EA412C4-179A-42CF-9B30-1B81C23551E6.html){: external}.
+OVF packages can be uploaded to a catalog as a vApp template to make the template available to users. For more information, see [Create a vApp template from an OVF file](https://docs.vmware.com/en/VMware-Cloud-Director/10.4/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-5EA412C4-179A-42CF-9B30-1B81C23551E6.html){: external}.
 
-Media files, such as ISO disk images and FLP diskette drive images, can be uploaded to a catalog as a media file. For more information, see [Working with media files](https://docs.vmware.com/en/VMware-Cloud-Director/10.5/VMware-Cloud-Director-Tenant-Guide/GUID-A7530A4B-F782-4848-90FC-BBDE41E3AE85.html){: external}.
+Media files, such as ISO disk images and FLP diskette drive images, can be uploaded to a catalog as a media file. For more information, see [Working with media files](https://docs.vmware.com/en/VMware-Cloud-Director/10.4/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-A7530A4B-F782-4848-90FC-BBDE41E3AE85.html){: external}.
 
 The maximum import size is 750 GB. Large image files or templates might take a long time to upload. For assistance with files larger than 750 GB, open an IBM Support ticket by following the steps in [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support).
 {: note}
@@ -160,14 +163,14 @@ The maximum import size is 750 GB. Large image files or templates might take a l
 
 When you use the tenant portal, you can create a virtual machine (VM) or provision a VM from a template.
 
-For more information, see [Create a standalone virtual machine](https://docs.vmware.com/en/VMware-Cloud-Director/10.5/VMware-Cloud-Director-Tenant-Guide/GUID-64CFBEFC-8E3D-49FC-B1BD-16CCE7493544.html){: external}.
+For more information, see [Create a standalone virtual machine](https://docs.vmware.com/en/VMware-Cloud-Director/10.4/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-64CFBEFC-8E3D-49FC-B1BD-16CCE7493544.html){: external}.
 
 ### Customizing virtual machine properties
 {: #shared_vcd-ops-guide-cust-properties}
 
 You can edit the properties of a VM, including the VM name and description, hardware and network settings, and operating system settings for a guest.
 
-For more information about working with VMs, see [Working with virtual machines](https://docs.vmware.com/en/VMware-Cloud-Director/10.5/VMware-Cloud-Director-Tenant-Guide/GUID-DF0C111D-B638-4EC3-B805-CC33994F8D53.html){: external}.
+For more information about working with VMs, see [Working with virtual machines](https://docs.vmware.com/en/VMware-Cloud-Director/10.4/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-DF0C111D-B638-4EC3-B805-CC33994F8D53.html){: external}.
 
 If you use the tenant portal **Password Reset** field to change your Windows Administrator password, ensure that you adhere to Windows complexity requirements. If you change the password in the tenant portal without doing so, the password does not work in the Windows VM template.
 {: important}
@@ -180,11 +183,11 @@ You can change the name, description, storage policy, and other general properti
 ##### Switching between storage properties
 {: #shared_vcd-ops-guide-change-properties-storage}
 
-Some disk settings cannot be changed while the VM is powered on. For example, you can increase the disk size while the VM is powered on, but you cannot decrease the disk size unless the VM is powered off. A message displays if you must power off the VM before you modify a disk setting. For more information, see [Power off a virtual machine](https://docs.vmware.com/en/VMware-Cloud-Director/10.5/VMware-Cloud-Director-Tenant-Guide/GUID-2323B049-4E36-4510-999E-F2D4A77AC0F9.html){: external}.
+Some disk settings cannot be changed while the VM is powered on. For example, you can increase the disk size while the VM is powered on, but you cannot decrease the disk size unless the VM is powered off. A message displays if you must power off the VM before you modify a disk setting. For more information, see [Power off a virtual machine](https://docs.vmware.com/en/VMware-Cloud-Director/10.4/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-2323B049-4E36-4510-999E-F2D4A77AC0F9.html){: external}.
 
-For more information about changing a storage policy, see [Change the general properties of a virtual machine](https://docs.vmware.com/en/VMware-Cloud-Director/10.5/VMware-Cloud-Director-Tenant-Guide/GUID-FA8C101E-241E-41A5-A3C3-83BDBB4467F1.html#GUID-8301D672-8333-4FD2-B132-2D4A42E11216__GUID-BE9430B7-40F8-43F7-AED4-1080F9E04E34){: external}.
+For more information about changing a storage policy, see [Change the general properties of a virtual machine](https://docs.vmware.com/en/VMware-Cloud-Director/10.4/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-FA8C101E-241E-41A5-A3C3-83BDBB4467F1.html#GUID-8301D672-8333-4FD2-B132-2D4A42E11216__GUID-BE9430B7-40F8-43F7-AED4-1080F9E04E34){: external}.
 
-If you must power off the VM before you change a storage policy, power the VM back on after the VM is moved to the new storage policy. For more information, see [Power on a virtual machine](https://docs.vmware.com/en/VMware-Cloud-Director/10.5/VMware-Cloud-Director-Tenant-Guide/GUID-33C22124-A610-4C3E-8F40-26CAC570F958.html){: external}.
+If you must power off the VM before you change a storage policy, power the VM back on after the VM is moved to the new storage policy. For more information, see [Power on a virtual machine](https://docs.vmware.com/en/VMware-Cloud-Director/10.4/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-33C22124-A610-4C3E-8F40-26CAC570F958.html){: external}.
 
 #### Enabling a compute policy
 {: #shared_vcd-ops-guide-compute-policy}
@@ -212,14 +215,14 @@ Guest OS customization is optional for all platforms. It is required for VMs tha
 
 When you use an IBM template to create the VM, use the **Guest OS Customization** pane to acquire or set the unique password for the OS instance. Ensure that the option **Enable guest customization** is selected and then use one of the **Password Reset** options to establish the initial administrator credential.
 
-For more information, see [Change the guest OS customization properties of a virtual machine](https://docs.vmware.com/en/VMware-Cloud-Director/10.5/VMware-Cloud-Director-Tenant-Guide/GUID-FA8C101E-241E-41A5-A3C3-83BDBB4467F1.html#GUID-2B7A04E8-7479-4EE9-99B0-1A46751BE46F__GUID-658C5607-04BA-4BE1-87D3-8553DD2601EE){: external}.
+For more information, see [Change the guest OS customization properties of a virtual machine](https://docs.vmware.com/en/VMware-Cloud-Director/10.4/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-FA8C101E-241E-41A5-A3C3-83BDBB4467F1.html#GUID-2B7A04E8-7479-4EE9-99B0-1A46751BE46F__GUID-658C5607-04BA-4BE1-87D3-8553DD2601EE){: external}.
 
 #### Changing the advanced properties of a virtual machine
 {: #shared_vcd-ops-guide-advanced}
 
 In the Advanced settings, you can configure the resource allocation settings (shares, reservation, and limit) to determine the amount of virtual CPU (vCPU), memory, and storage resources provided for a VM.
 
-For more information, see [Edit virtual machine properties](https://docs.vmware.com/en/VMware-Cloud-Director/10.5/VMware-Cloud-Director-Tenant-Guide/GUID-FA8C101E-241E-41A5-A3C3-83BDBB4467F1.html){: external}.
+For more information, see [Edit virtual machine properties](https://docs.vmware.com/en/VMware-Cloud-Director/10.4/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-FA8C101E-241E-41A5-A3C3-83BDBB4467F1.html){: external}.
 
 ### Using IBM templates
 {: #shared_vcd-ops-guide-ibm-templates}
@@ -238,7 +241,9 @@ If you use the tenant portal **Password Reset** field to change your Windows Adm
 
 A vApp consists of one or more VMs that communicate over a network and use resources and services in a virtual data center. Create the vApp and then add VMs and networks.
 
-For more information about vApps, see [Working with vApps](https://docs.vmware.com/en/VMware-Cloud-Director/10.5/VMware-Cloud-Director-Tenant-Guide/GUID-AC48FB5E-4ADC-4835-AACE-B949B297A147.html){: external}.
+You can now add VMs and networks to the vApp.
+
+For more information about vApps, see [Working with vApps](https://docs.vmware.com/en/VMware-Cloud-Director/10.4/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-AC48FB5E-4ADC-4835-AACE-B949B297A147.html){: external}.
 
 ## Networking
 {: #shared_vcd-ops-guide-networking}
@@ -285,7 +290,7 @@ From the tenant portal, use the following procedures to create a sample network 
 #### Creating a routed Organization virtual data center network
 {: #shared_vcd-ops-guide-routed-organization}
 
-For more information about how to create a routed organization, see [Add a routed organization virtual data center network](https://docs.vmware.com/en/VMware-Cloud-Director/10.5/VMware-Cloud-Director-Tenant-Guide/GUID-74C4D27F-9E2A-4EB2-BBE1-CDD45C80E270.html){: external}.
+For more information about how to create a routed organization, see [Add a routed organization virtual data center network](https://docs.vmware.com/en/VMware-Cloud-Director/10.4/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-74C4D27F-9E2A-4EB2-BBE1-CDD45C80E270.html){: external}.
 
 Review the following notes for creating a routed Organization virtual data center network.
 
@@ -299,14 +304,14 @@ Review the following notes for creating a routed Organization virtual data cente
 
 Use the steps to add a static route to validate that the Organization virtual data center networks that you defined earlier are listed as static routes. When you click **Create (+)**, locate the **Next Hop** field, and confirm that `52.117.132.2` is displayed. This value is the internal interface of the edge gateway.
 
- For more information, see [Add a static route](https://docs.vmware.com/en/VMware-Cloud-Director/10.5/VMware-Cloud-Director-Tenant-Guide/GUID-1C8D8FF7-7C24-4A44-875B-04DB961FB780.html){: external}.
+ For more information, see [Add a static route](https://docs.vmware.com/en/VMware-Cloud-Director/10.4/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-1C8D8FF7-7C24-4A44-875B-04DB961FB780.html){: external}.
 
 #### Configuring DHCP on the edge gateway
 {: #shared_vcd-ops-guide-configure-dhcp}
 
 Optionally, you can configure DHCP on the edge gateway to assign IP addresses automatically to the VMs connected to the Organization virtual data center networks. This step is not necessary if you are using static IP addresses.
 
-From the virtual data center for that edge gateway, configure the DHCP. Repeat the procedure for extra Organization virtual data center networks that are attached to the edge that requires DHCP services. For more information, see [Add a DHCP IP pool](https://docs.vmware.com/en/VMware-Cloud-Director/10.5/VMware-Cloud-Director-Tenant-Guide/GUID-EF0B4C79-F6F7-4C75-825C-0B76B888856D.html){: external}.
+From the virtual data center for that edge gateway, configure the DHCP. Repeat the procedure for extra Organization virtual data center networks that are attached to the edge that requires DHCP services. For more information, see [Add a DHCP IP pool](https://docs.vmware.com/en/VMware-Cloud-Director/10.4/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-EF0B4C79-F6F7-4C75-825C-0B76B888856D.html){: external}.
 
 Review the following notes for configuring DHCP on the edge gateway.
 
@@ -321,7 +326,7 @@ Review the following notes for configuring DHCP on the edge gateway.
 
 Stand-alone VMs, or VMs in a vApp, can connect to an Organization virtual data center network.
 
-From the tenant portal, access the hardware properties of the VMs and add the new network interface to the **NICs** field. Repeat the procedure for extra VMs. For more information, see [Change the hardware properties of a virtual machine](https://docs.vmware.com/en/VMware-Cloud-Director/10.5/VMware-Cloud-Director-Tenant-Guide/GUID-FA8C101E-241E-41A5-A3C3-83BDBB4467F1.html#GUID-BB95EAB5-13D7-4C4A-BDA3-AA1338BC01CA__GUID-A3963005-8914-4F8E-A4AC-007C88E52EE8){: external}.
+From the tenant portal, access the hardware properties of the VMs and add the new network interface to the **NICs** field. Repeat the procedure for extra VMs. For more information, see [Change the hardware properties of a virtual machine](https://docs.vmware.com/en/VMware-Cloud-Director/10.4/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-FA8C101E-241E-41A5-A3C3-83BDBB4467F1.html#GUID-BB95EAB5-13D7-4C4A-BDA3-AA1338BC01CA__GUID-A3963005-8914-4F8E-A4AC-007C88E52EE8){: external}.
 
 After the VMs are connected to the Organization virtual data center network, they are able to communicate with each other. You can ping from one of the VMs to another to test. If the ping command does not respond, check the OS firewalls to see whether ICMP is allowed.
 
@@ -341,7 +346,7 @@ Before you create the firewall and NAT rules, capture the information that is ne
 ##### Create the Organization virtual data center network firewall rule to allow access to the external network
 {: #shared_vcd-ops-guide-create-vdc-network-rule-extnetwork}
 
-From the virtual data center for that edge gateway, create the network firewall rule. For more information, see [Add an NSX data center for vSphere Edge Gateway firewall rule](https://docs.vmware.com/en/VMware-Cloud-Director/10.5/VMware-Cloud-Director-Tenant-Guide/GUID-97ADAF42-598B-44B2-80EF-8B215B743C78.html){: external}.
+From the virtual data center for that edge gateway, create the network firewall rule. For more information, see [Add an NSX data center for vSphere Edge Gateway firewall rule](https://docs.vmware.com/en/VMware-Cloud-Director/10.4/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-97ADAF42-598B-44B2-80EF-8B215B743C78.html){: external}.
 
 Review the following notes for creating the Organization virtual data center network firewall rule to allow access to the external network.
 
@@ -354,7 +359,7 @@ Review the following notes for creating the Organization virtual data center net
 ##### Source NAT definitions to the external network
 {: #shared_vcd-ops-guide-source-nat-ext}
 
-A source NAT rule is necessary to allow traffic from the Organization virtual data center network outbound to the internet. From the virtual data center for that edge gateway, create NAT44 Rules. For more information, see [Add a SNAT or a DNAT rule](https://docs.vmware.com/en/VMware-Cloud-Director/10.5/VMware-Cloud-Director-Tenant-Guide/GUID-1DE460AE-DCCC-4BC8-96AC-52D06A4AFDE3.html){: external}.
+A source NAT rule is necessary to allow traffic from the Organization virtual data center network outbound to the internet. From the virtual data center for that edge gateway, create NAT44 Rules. For more information, see [Add a SNAT or a DNAT rule](https://docs.vmware.com/en/VMware-Cloud-Director/10.4/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-1DE460AE-DCCC-4BC8-96AC-52D06A4AFDE3.html){: external}.
 
 Review the following notes for source NAT definitions.
 
@@ -370,7 +375,7 @@ Under the **NAT44 Rules**, click **SNAT Rule** and create the configuration by u
 ##### Create the Organization virtual data center network firewall rule to allow access to the {{site.data.keyword.cloud_notm}} Services Network
 {: #shared_vcd-ops-guide-create-vdc-network-rule-ibm-services-network}
 
-From the virtual data center for that edge gateway, create the network firewall rule. For more information, see [Add an NSX data center for vSphere Edge Gateway firewall rule](https://docs.vmware.com/en/VMware-Cloud-Director/10.5/VMware-Cloud-Director-Tenant-Guide/GUID-97ADAF42-598B-44B2-80EF-8B215B743C78.html){: external}.
+From the virtual data center for that edge gateway, create the network firewall rule. For more information, see [Add an NSX data center for vSphere Edge Gateway firewall rule](https://docs.vmware.com/en/VMware-Cloud-Director/10.4/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-97ADAF42-598B-44B2-80EF-8B215B743C78.html){: external}.
 
 Review the following notes for creating the Organization virtual data center network firewall rule to allow access to the {{site.data.keyword.cloud_notm}} Services Network.
 
@@ -385,7 +390,7 @@ Review the following notes for creating the Organization virtual data center net
 
 A source NAT rule is necessary to allow traffic from the Organization virtual data center network into the {{site.data.keyword.cloud_notm}} Service Network. This rule is used to enable VM access to {{site.data.keyword.cloud_notm}} Services such as update servers, DNS servers, NTP servers, or to get to the {{site.data.keyword.cloud_notm}} Object Storage.
 
-From the virtual data center for that edge gateway, create the source NAT definitions to the IBM Service Network (Private). For more information, see [Add a SNAT or a DNAT rule](https://docs.vmware.com/en/VMware-Cloud-Director/10.5/VMware-Cloud-Director-Tenant-Guide/GUID-1DE460AE-DCCC-4BC8-96AC-52D06A4AFDE3.html){: external}.
+From the virtual data center for that edge gateway, create the source NAT definitions to the IBM Service Network (Private). For more information, see [Add a SNAT or a DNAT rule](https://docs.vmware.com/en/VMware-Cloud-Director/10.4/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-1DE460AE-DCCC-4BC8-96AC-52D06A4AFDE3.html){: external}.
 
 Under the **NAT44 Rules**, click **SNAT Rule** and create the configuration by using the following selection.
 * For **Applied On**, select the service network.
@@ -408,7 +413,7 @@ The steps differ depending on the VM operating system and network configuration:
 
 A destination NAT allows an outside host, in this case on the internet, to connect to an inside host on the Organization virtual data center network. The destination NAT maps one IP address or port to another IP address or port. The following instructions are an example of configuring DNAT and port forwarding to allow a Windows remote desktop connection to a Windows VM in the Organization virtual data center. Port forwarding is optional.
 
-From the virtual data center for that edge gateway, create the destination NAT definition. For more information, see [Add a SNAT or a DNAT rule](https://docs.vmware.com/en/VMware-Cloud-Director/10.5/VMware-Cloud-Director-Tenant-Guide/GUID-1DE460AE-DCCC-4BC8-96AC-52D06A4AFDE3.html){: external}.
+From the virtual data center for that edge gateway, create the destination NAT definition. For more information, see [Add a SNAT or a DNAT rule](https://docs.vmware.com/en/VMware-Cloud-Director/10.4/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-1DE460AE-DCCC-4BC8-96AC-52D06A4AFDE3.html){: external}.
 
 Under the **NAT44 Rules**, click **DNAT Rule** and create the configuration by using the following selection.
 * For **Applied On**, select the ``<datacenter>-w<idx>-tenant-external`` interface, for example, ``dal13-w02-tenant-external``.
@@ -420,7 +425,7 @@ Under the **NAT44 Rules**, click **DNAT Rule** and create the configuration by u
 * For **Translated Port**, select the port on the previous VM that the servicer is listening on. In the Windows RDP example, port 3389 is the default remote desktop port.
 * Optionally, provide a description.
 
-From the virtual data center for that edge gateway, add a firewall rule to enable port forwarding. For more information, see [Add an NSX data center for vSphere Edge Gateway firewall rule](https://docs.vmware.com/en/VMware-Cloud-Director/10.5/VMware-Cloud-Director-Tenant-Guide/GUID-97ADAF42-598B-44B2-80EF-8B215B743C78.html){: external}.
+From the virtual data center for that edge gateway, add a firewall rule to enable port forwarding. For more information, see [Add an NSX data center for vSphere Edge Gateway firewall rule](https://docs.vmware.com/en/VMware-Cloud-Director/10.4/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-97ADAF42-598B-44B2-80EF-8B215B743C78.html){: external}.
 
 Review the following notes for destination NAT definition and port forwarding.
 
@@ -520,7 +525,7 @@ If your vApp or VM is deployed from the IBM templates that are provided in the p
 #### Creating a vApp Network for VMware Solutions Shared
 {: #shared_vcd-ops-guide-vapp-network}
 
-If not already completed, create a vApp containing at least two VMs. For more information, see [Working with vApps](https://docs.vmware.com/en/VMware-Cloud-Director/10.5/VMware-Cloud-Director-Tenant-Guide/GUID-AC48FB5E-4ADC-4835-AACE-B949B297A147.html){: external}.
+If not already completed, create a vApp containing at least two VMs. For more information, see [Working with vApps](https://docs.vmware.com/en/VMware-Cloud-Director/10.4/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-AC48FB5E-4ADC-4835-AACE-B949B297A147.html){: external}.
 
 1. From the tenant portal, click the **Menu** icon at the upper left of the page and select **Data Centers**.
 2. From the main page under **Virtual Data Center**, click the virtual data center where you want to create the vApp network.
@@ -534,12 +539,12 @@ If not already completed, create a vApp containing at least two VMs. For more in
 10. Set the slider to **Connect to an organization VDC network**.
 11. Click **Add**.
 
-For more information, see [Working with networks in a vApp](https://docs.vmware.com/en/VMware-Cloud-Director/10.5/VMware-Cloud-Director-Tenant-Guide/GUID-FCBC791B-3183-4CD9-A194-856E98CC32D3.html).
+For more information, see [Working with networks in a vApp](https://docs.vmware.com/en/VMware-Cloud-Director/10.4/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-FCBC791B-3183-4CD9-A194-856E98CC32D3.html).
 
 #### Creating a vApp Network for {{site.data.keyword.vcf-aas}}
 {: #shared_vcd-ops-guide-vapp-network-vmaas}
 
-If not already completed, create a vApp containing at least two VMs. For more information, see [Working with vApps](https://docs.vmware.com/en/VMware-Cloud-Director/10.5/VMware-Cloud-Director-Tenant-Guide/GUID-AC48FB5E-4ADC-4835-AACE-B949B297A147.html){: external}.
+If not already completed, create a vApp containing at least two VMs. For more information, see [Working with vApps](https://docs.vmware.com/en/VMware-Cloud-Director/10.4/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-AC48FB5E-4ADC-4835-AACE-B949B297A147.html){: external}.
 
 1. From the tenant portal, click the **Menu** icon at the upper left of the page and select **Data Centers**.
 2. From the main page under **Virtual Data Center**, click the virtual data center where you want to create the vApp network.
@@ -549,7 +554,7 @@ If not already completed, create a vApp containing at least two VMs. For more in
 6. On the **Add Network to** window, select **OrgVDC Network** and select the network name.
 7. Click **Add**.
 
-For more information, see [Working with networks in a vApp](https://docs.vmware.com/en/VMware-Cloud-Director/10.5/VMware-Cloud-Director-Tenant-Guide/GUID-FCBC791B-3183-4CD9-A194-856E98CC32D3.html).
+For more information, see [Working with networks in a vApp](https://docs.vmware.com/en/VMware-Cloud-Director/10.4/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-FCBC791B-3183-4CD9-A194-856E98CC32D3.html).
 
 ## Configuring a private network endpoint
 {: #shared_vcd-ops-guide-pne}
@@ -589,7 +594,7 @@ The firewall rule allows traffic from the private network IP to go through your 
 9. Select **Accept** for the **Action** field.
 10. Click **Save changes**.
 
-For more information, see [Add an NSX data center for vSphere Edge Gateway firewall rule](https://docs.vmware.com/en/VMware-Cloud-Director/10.5/VMware-Cloud-Director-Tenant-Guide/GUID-97ADAF42-598B-44B2-80EF-8B215B743C78.html){: external}.
+For more information, see [Add an NSX data center for vSphere Edge Gateway firewall rule](https://docs.vmware.com/en/VMware-Cloud-Director/10.4/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-97ADAF42-598B-44B2-80EF-8B215B743C78.html){: external}.
 
 ### Configuring DNAT rules for the NSX Edge Services Gateway
 {: #shared_vcd-ops-guide-pne-dnat-rules}
@@ -628,7 +633,7 @@ You must access data center groups to use the Network High Availability feature.
 * Configuration for multiple Egress points in multiple virtual data centers
 * East-west traffic between all networks within the group
 
-For more information, see [Managing organization virtual data center networks](https://docs.vmware.com/en/VMware-Cloud-Director/10.5/VMware-Cloud-Director-Tenant-Guide/GUID-B208CDD2-5D46-4841-8F3C-BED9E4F27F07.html){: external}.
+For more information, see [Managing organization virtual data center networks](https://docs.vmware.com/en/VMware-Cloud-Director/10.4/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-B208CDD2-5D46-4841-8F3C-BED9E4F27F07.html){: external}.
 
 The data center groups do not require physical separation. However, for optimal redundancy, the recommended implementation of a data center group has the Egress points in two different physical data centers, for example, **Dallas 10** and **Dallas 12**.
 
@@ -675,7 +680,7 @@ You are now ready to put VMs on the cross-virtual data center network and build 
 ## Enabling VMware Chargeback
 {: #shared_vcd-ops-guide-vrops-app}
 
-The VMware Chargeback (formerly VMware Aria® Operations™ Tenant App for VMware Cloud Director) feature is enabled by default when your organization is provisioned. From the Cloud Director tenant portal, click **More > Operations Manager** to access VMware Chargeback.
+The VMware Chargeback (formerly known as VMware Aria® Operations™ Tenant App for VMware Cloud Director) feature is enabled by default when your organization is provisioned. From the Cloud Director tenant portal, click **More > Operations Manager** to access VMware Chargeback.
 
 If the **Operations Manager** option is not available in the **More** menu, open an IBM ServiceNow ticket, and submit a request to enable the VMware Chargeback feature in your organization.
 
@@ -708,4 +713,4 @@ Single sign-on is available only when your site VMware Cloud Director Organizati
 
 * [{{site.data.keyword.vm-shared}} overview](/docs/vmwaresolutions?topic=vmwaresolutions-shared_overview)
 * [Ordering virtual data centers](/docs/vmwaresolutions?topic=vmwaresolutions-shared_ordering)
-* [VMware Cloud Director](https://docs.vmware.com/en/VMware-Cloud-Director/10.5/VMware-Cloud-Director-Tenant-Guide/GUID-74C9E10D-9197-43B0-B469-126FFBCB5121.html){: external}
+* [VMware Cloud Director](https://docs.vmware.com/en/VMware-Cloud-Director/10.4/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-74C9E10D-9197-43B0-B469-126FFBCB5121.html){: external}

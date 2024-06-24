@@ -4,7 +4,7 @@ copyright:
 
   years:  2024
 
-lastupdated: "2024-06-10"
+lastupdated: "2024-06-05"
 
 subcollection: vmwaresolutions
 
@@ -71,7 +71,7 @@ Agents can be installed as a docker container or as a package installed on the o
 When you design or deploy this architecture pattern, consider the following information: 
 
 * For Linux VMs, the agents log file is `/opt/draios/logs/draios.log`.
-* You require only a single SNAT IP address for all your VMs hosted in your virtual data center to communicate with the Security and Compliance Center Workload Protection instance.
+* You only require a single SNAT IP address for all your VMs hosted in your virtual data center to communicate with the Security and Compliance Center Workload Protection instance.
 * This pattern describes firewall policies and SNAT configured on the T0. Use of the T1 is also possible.
 * This pattern does not use the distributed firewall. For more information about configuring the distributed firewall, see [FQDN Filtering](https://docs.vmware.com/en/VMware-NSX/4.1/administration/GUID-63262728-CA72-47D2-8E4F-16617B63A9A4.html){: external}.
 

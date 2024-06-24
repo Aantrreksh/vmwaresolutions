@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-06-13"
+lastupdated: "2024-05-31"
 
 subcollection: vmwaresolutions
 
@@ -61,7 +61,7 @@ Power management through the **Distributed Power Management** feature is not use
 
 This design uses vSphere High Availability (HA) in the initial cluster and in the additional clusters to detect compute failures and recover VMs that run in a cluster. The vSphere HA feature in this design is configured with both the **Host Monitoring** and **Admission Control** options that are enabled in the cluster. Additionally, the initial cluster reserves one node’s resources as spare capacity for the admission control policy.
 
-You are responsible for adjusting the admission control policy when the cluster is later expanded or contracted.
+You are responsible to adjust the admission control policy when the cluster is later expanded or contracted.
 {: note}
 
 By default, the **VM restart priority** option is set to medium and the **Host isolation response** option is disabled. Additionally, **VM monitoring** is disabled and the **Datastore Heartbeating** feature is configured to include any of the cluster data stores. This approach uses the NAS data stores if they are present.
@@ -74,15 +74,15 @@ To simplify vMotion compatibility across cluster nodes with potentially differin
 ## IBM CloudDriver
 {: #design_infrastructuremgmt-cloud-driver}
 
-The cornerstone to these solutions is automation. Automation reduces the complexity of deployment, drastically reduces deployment time, and ensures the VMware instance is deployed in a consistent manner.
+Cornerstone to these solutions is automation. Automation reduces the complexity of deployment, drastically reduces deployment time, and ensures the VMware instance is deployed in a consistent manner.
 
 IBM CloudDriver is an ephemeral {{site.data.keyword.cloud_notm}} VM virtual server instance (VSI), which is deployed as needed for initial deployment and for Day 2 operations such as adding hosts, clusters, or add-on services to your VMware instance. CloudDriver is deleted when the all current processes are completed.
 
-CloudDriver is deployed only on the private network that connects to the IBM management plane over a private message queue. They are IBM-developed components, are not user accessible, and have the following attributes and functions:
+CloudDriver is deployed only on the private network that connects to the IBM management plane over a private message queue. They are IBM developed components, are not user accessible, and have the following attributes and functions:
 * Deployment and configuration of the {{site.data.keyword.vcf-auto}} instance within the user account.
 * Add and remove hosts from the Automated clusters.
 * Add and remove clusters from Automated instances.
-* Add and remove add-on services or functions to Automated instances.
+* Add and remove add on services or function to Automated instances.
 
 ### Automation flow
 {: #design_infrastructuremgmt-auto-flow}

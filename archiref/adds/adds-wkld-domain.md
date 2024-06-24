@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2024
 
-lastupdated: "2024-06-11"
+lastupdated: "2024-02-02"
 
 subcollection: vmwaresolutions
 
@@ -16,28 +16,28 @@ subcollection: vmwaresolutions
 # VMware Solutions workload domain
 {: #adds-wkld-domain}
 
-Your customer workload virtual machines (VMs) are using the overlay virtualized network with customer Bring Your Own IP (BYOIP) address space. Associate these IP ranges with the customer workload AD domain and not the {{site.data.keyword.vmwaresolutions_full}} infrastructure Active Directory™ (AD) domain. We recommend that the VMware Solutions infrastructure AD domain holds resources and user accounts for administration of the vCenter Server instance only. Resources and user accounts for your workload VMs are held in a separate forest or domain.
+Your customer workload virtual machines (VMs) are using the network overlay virtualized network with customer Bring Your Own IP (BYOIP) address space. Associate these IP ranges with the customer workload AD domain and not the {{site.data.keyword.vmwaresolutions_full}} infrastructure Active Directory™ (AD) domain. We recommend that the VMware Solutions infrastructure AD domain holds resources and user accounts for administration of the vCenter Server instance only. Resources and user accounts for your workload VMs are held in a separate forest or domain.
 
 The infrastructure appliances and VMs, such as vCenter and NSX Manager, are deployed on the underlay network with an IP address space that is assigned by {{site.data.keyword.cloud_notm}}. Unless configured, the customer workload VMs on the overlay networks are not able to reach the AD domain controllers on the underlay network. Also, the infrastructure appliances on the underlay network are not able to reach the customer workload AD domain controllers on the overlay networks.
 
 VMware Solutions customers typically use one of the following models for their VMware Solutions workload domain.
 * New stand-alone AD forest-domain.
 * New AD forest with trusts to existing forest.
-* Extend the forest and create a new domain.
+* Extend forest and create a new domain.
 * Extended domain with AD sites model.
 * Extend domain.
 
 ## New stand-alone AD forest-domain model
 {: #adds-wkld-domain-new-standalone}
 
-This model deploys a stand-alone forest domain with no trust. In this deployment model, a new forest and VMware Solutions workload domain for your workloads that are hosted in your vCenter Server instance is configured. This domain is different and separate from an existing AD that is running on-premises. The main reason for selecting this model is to keep accounts and resources separate between the two forests or domains. In this model, the customer provisions a minimum of two domain controllers as VMs hosted in each vCenter Server instance. These VMs would be connected to an overlay network and the new domain controllers would have the primary domain controller role. All user credentials, service accounts, and computer objects are on in this {{site.data.keyword.vmwaresolutions_short}} workload domain that is hosted on these domain controllers. No AD network connectivity is required between on-premises and {{site.data.keyword.cloud_notm}} as nothing is shared between the two AD forests. The {{site.data.keyword.vmwaresolutions_short}} infrastructure domain is used for the user credentials and service accounts of your system administrators and the resource objects for the underlay-connected infrastructure components only. The following diagram shows the Active Directory Domain Services topology for this stand-alone AD forest model.
+This model deploys a stand-alone forest domain with no trust. In this deployment model, a new forest and VMware Solutions workload domain for your workloads that are hosted in your vCenter Server instance is configured. This domain is different and separate from an existing AD that is running on-premises. The main reason for selecting this model is to keep accounts and resources separate between the two forests or domains. In this model, the customer provisions a minimum of two domain controllers as VMs hosted in each vCenter Server instance. These VMs would be connected to an overlay network and the new domain controllers would have the primary domain controller role. All user credentials, service accounts, and computer objects are on in this {{site.data.keyword.vmwaresolutions_short}} workload domain that is hosted on these domain controllers. No AD network connectivity requirement between on-premises and {{site.data.keyword.cloud_notm}} as nothing is shared between the two AD forests. The {{site.data.keyword.vmwaresolutions_short}} infrastructure domain is used for the user credentials and service accounts of your system administrators and the resource objects for the underlay-connected infrastructure components only. The following diagram shows the Active Directory Domain Services topology for this stand-alone AD forest model.
 
 ![New stand-alone AD forest-domain diagram](../../images/adds-standalone.svg "New stand-alone AD forest-domain diagram"){: caption="Figure 1. New stand-alone AD forest-domain diagram" caption-side="bottom"}
 
 ## New AD forest with trusts to existing forest model
 {: #adds-wkld-domain-new-adf}
 
-This model deploys a new forest domain in {{site.data.keyword.cloud_notm}} with a trust to an existing forest on-premises. If you're planning to use user accounts from your on-premises AD forest to resources that are running as VMs hosted on your vCenter Server instance in the VMware Solutions workload forest-domain, you must establish at least a one-way trust to your AD forest-domain running in {{site.data.keyword.cloud_notm}}. In this deployment model, your {{site.data.keyword.vmwaresolutions_short}} workload forest-domain becomes the resource domain where resource objects are located, and the on-premises domain becomes the user account domain. You must have AD connectivity between on-premises and {{site.data.keyword.cloud_notm}}. Typically, a two-way trust is not commonly deployed in this model as an alternative deployment pattern is used to extend Active Directory. The {{site.data.keyword.vmwaresolutions_short}} infrastructure domain is used for the user credentials and service accounts of your system administrators and the resource objects for the underlay-connected infrastructure components only. The following diagram shows the Active Directory Domain Services topology for this new forest with trusts model.
+This model deploys a new forest domain in {{site.data.keyword.cloud_notm}} with a trust to an existing forest on-premises. If you're planning to use user accounts from your on-premises AD forest to resources that are running as VMs hosted on your vCenter Server instance in the VMware Solutions workload forest-domain, you must establish at least a one-way trust to your AD forest-domain running in {{site.data.keyword.cloud_notm}}. In this deployment model, your {{site.data.keyword.vmwaresolutions_short}} workload forest-domain becomes the resource domain where resource objects are located, and on-premises domain becomes the user account domain. You must have AD connectivity between on-premises and {{site.data.keyword.cloud_notm}}. Typically, a two-way trust is not commonly deployed in this model as an alternative deployment pattern is used to extend Active Directory. The {{site.data.keyword.vmwaresolutions_short}} infrastructure domain is used for the user credentials and service accounts of your system administrators and the resource objects for the underlay-connected infrastructure components only. The following diagram shows the Active Directory Domain Services topology for this new forest with trusts model.
 
 ![New AD forest with trusts to existing forest diagram](../../images/adds-newforest.svg "New AD forest with trusts to existing forest diagram"){: caption="Figure 2. New AD forest with trusts to existing forest diagram" caption-side="bottom"}
 
@@ -75,7 +75,7 @@ Depending on the complexity of the Active Directory Domain Services, when the la
 ## Restructuring AD domains
 {: #adds-wkld-domain-restructure}
 
-It is possible to restructure AD domains, but the details are out of the scope of this document. Review the following two types of restructuring:
+However, it is possible to restructure AD domains the details are out of scope of this document. Review the following two types of restructure.
 
 * Inter-forest restructure - When you migrate objects between forests, both the source domain and the target domain environments exist, and you can roll back to the source environment during the migration, if necessary.
 * Intra-forest restructure - When you restructure domains within a forest, the migrated accounts no longer exist in the source domain.
@@ -93,7 +93,7 @@ Review the following guidance for AD in a vCenter Server instance.
 * Do not change the existing domain name.
 * Do not change the existing `ic4V-vCenter` AD security group.
 * Do not change the existing user automation or its group membership is altered.
-* Do not change the existing add-on service accounts, or their group membership is altered.
+* Do not change the existing add-on service accounts, or their groups membership is altered.
 * When you deploy the {{site.data.keyword.vmwaresolutions_short}} workload domain controllers, deploy them in subnets that don’t have a route to a NAT gateway or other device that would provide outbound internet access.
 * Keep OS security patches up to date on all the domain controllers.
 * Restrict ports and protocols that are allowed into the domain controllers by using NSX distributed firewall.
@@ -106,10 +106,10 @@ Review the following guidance for AD in a vCenter Server instance.
 
 | AD security group name | Description | SSO role mapping |
 |:-----------------------|:------------|:-----------------|
-| NSX Enterprise Admins | The largest set of privileges. Contain a small group of users responsible for administering all components of NSX, including all NSX operations (Deploy, Configure, Upgrade), and managing Security Policy. | Assign to “NSX Enterprise Administrator” role in NSX Manager |
+| NSX Enterprise Admins | Largest set of privileges. Contain a small group of users responsible for administering all components of NSX, including all NSX operations (Deploy, Configure, Upgrade), and managing Security Policy. | Assign to “NSX Enterprise Administrator” role in NSX Manager |
 | NSX Admins | Subset of “NSX Enterprise Administrator” group. For users that require permissions for NSX operations only, for example, install virtual appliances or configure port groups. | Assign to “NSX Administrator” role in NSX Manager |
-| NSX Security Admins | Subset of “NSX Enterprise Administrator” group. For users that require permissions for NSX security only, for example, define data security policies, create port groups, and create reports for NSX modules. | Assign to the “Security Administrator” role in NSX Manager. Initially use Global scope. |
-| NSX Auditors | Subset of “NSX Enterprise Administrator” group. For users that require NSX READ-ONLY permissions. | Assign to the “Auditor” role in NSX Manager. Initially use Global scope. |
+| NSX Security Admins | Subset of “NSX Enterprise Administrator” group. For users that require permissions for NSX security only, for example, define data security policies, create port groups, and create reports for NSX modules. | Assign to “Security Administrator” role in NSX Manager. Initially use Global scope. |
+| NSX Auditors | Subset of “NSX Enterprise Administrator” group. For users that require NSX READ-ONLY permissions. | Assign to “Auditor” role in NSX Manager. Initially use Global scope. |
 | ESX Admins | This group is used when the ESXi hosts are added to Active Directory. It allows for system administrators to connect to ESXi directly that use the vSphere client and uses SSH to the ESXi console that uses named accounts instead of ‘root’. In the advanced settings of an ESXi host, the default group is named “ESX Admins”. This group name can be changed. If you change its name, ensure that an identically named AD security group is also created. | This group must be defined in each ESXi host’s advanced settings (ConfigurationSoftwareAdvanced SettingsConfig.HostAgent.plugins.hostsvc.esxAdministratorGroup), but does not require special vCenter application level role or permissions. |
 {: caption="Table 1. Active Directory security groups" caption-side="bottom"}
 

@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2024
 
-lastupdated: "2024-06-13"
+lastupdated: "2024-05-21"
 
 subcollection: vmwaresolutions
 
@@ -41,7 +41,7 @@ The Veeam bare metal servers are deployed to have connectivity to the following 
 | VLAN 2 | Private B   | vSAN, NFS, vMotion, and Edge Geneve (TEP) |
 {: caption="Table 1. VLAN designations" caption-side="bottom"}
 
-The Veeam bare metal servers are natively provisioned to VLAN 1, and they need the following IP address from the private primary subnet of VLAN 1: One IP address for the all-in-one server, which is deployed and configured during server provisioning of the nontagged VLAN 1.
+The Veeam bare metal servers are natively provisioned to VLAN 1, and they need the following IP address from the private primary subnet of VLAN 1: One IP address for the all-in-one server, which is deployed and configured during server provisioning of the non-tagged VLAN 1.
 
 Each Veeam bare metal server needs to be VLAN trunked to VLAN 2. They need the following IP address from the private portable subnet of the VLAN 2: One IP address for the all-in-one server from the NFS or vSAN subnet, which is configured through the automation on the tagged VLAN 2.
 

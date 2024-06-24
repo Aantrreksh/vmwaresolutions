@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-06-13"
+lastupdated: "2024-04-29"
 
 subcollection: vmwaresolutions
 
@@ -17,7 +17,7 @@ subcollection: vmwaresolutions
 
 The key solution component in both the immutable backup and isolated recovery environment solution architectures is the Linux® hardened repository. 
 
-To prevent attacks on backups, Veeam® Backup and Replication offers the Linux hardened repository feature, which makes backups immutable for the required number of days. This action enables protection against threats, such as ransomware and hackers.
+To prevent attacks on backups, Veeam® Backup and Replication 11 introduces the Linux hardened repository feature, which makes backups immutable for the required number of days. This action enables protection against threats, such as ransomware and hackers.
 
 ![Linux hardened repository](../../images/veeam-cr-sa-lhbr.svg){: caption="Figure 1. Linux hardened repository" caption-side="bottom"}
 
@@ -32,7 +32,7 @@ A single-use credential is used by the Veeam backup server to initially configur
 
 After the initial configuration, Secure Shell (SSH) access is not required for Veeam operations. However, it is required for server updates and other maintenance tasks, unless all console access is done through the server IPMI port.
 
-During initial configuration, when the **Make recent backup immutable for x days** is set, all compatible new backups to this repository become immutable for at least the number of _x days_. The immutable time can be longer. For example, earlier incremental backups in a backup chain are immutable for longer. This action ensures that the entire backup chain has the same immutable time as incremental backup files depend on each other in a backup chain.
+During initial configuration, when the **Make recent backup immutable for x days** is set, all compatible new backups to this repository become immutable for at least the number of _x days_. The immutable time can be longer. For example, earlier incremental backups in a backup chain are immutable for longer. This action ensures that entire backup chain has the same immutable time as incremental backup files depend on each other in a backup chain.
 
 When no backups or restores run, only the TCP 6162 inbound port is opened on the Linux hardened repository to allow the Veeam Transport Service to communicate with other Veeam components. 
 
@@ -73,11 +73,11 @@ The [Compliance assessment report (by Cohasset)](https://www.veeam.com/wp-compli
 
 The previous assessment report considers the following details as best practice for a Linux hardened repository:
 
-* The Linux hardened repository can be an independent or a scale-out backup repository. A repository that retains immutable backup files for compliance with SEC 17a-4(f) must be configured as a stand-alone backup repository as a Veeam Scale-Out backup Repository is not compliant with this rule.
+* The Linux hardened repository can be independent or Scale-out backup repository. A repository that retains immutable backup files for compliance with SEC 17a-4(f) must be configured as a stand-alone backup repository as a Veeam Scale-Out backup Repository is not compliant with this rule.
 * It is recommended that the name and description attributes for the repository include the word “immutable" when the Linux hardened repository feature is enabled.
 * To protect against the possibility of premature deletion of backup files that can result from accelerating the system time clock, Linux OS must be configured to synchronize with a secure time source. For example, with a network time protocol (NTP) clock.
 * Ensure separation of duties by assigning management of Linux hardened repositories to a team other than backup administrators.
-* Veeam recommends XFS for performance and space efficiency reasons (block cloning support).
+* Veeam recommends XFS for performance and space efficiency reasons (block cloning support). Due to the requirement for periodic full backups, means that due to fast cloning, synthetic full backups take no physical disk space, except for metadata.
 * Only backup job configurations with forward incremental with synthetic or active full are supported. Forward incremental with synthetic full is the default backup job setting.
 * For backup copy jobs, GFS must be enabled.
 * Encryption of backup files is available as follows: 

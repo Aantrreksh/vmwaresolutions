@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-06-13"
+lastupdated: "2024-06-04"
 
 subcollection: vmwaresolutions
 
@@ -33,7 +33,7 @@ Configurations can be applied by one of the following approaches:
 
 * Manual or scripted - By using the NSX-T UI or scripting tools like Terraform, the NSX-T configuration can be applied to the required overlay pattern.
 * Migration Coordinator - Migration Coordinator is a built-in and automated migration tool, which is designed to help migrate from NSX-V to NSX-T. This tool is fully supported by VMware® and is built into NSX-T Manager Appliance. Migration Coordinator might also be used as an assessment tool to check whether the existing NSX-V environment is suitable for migration with Migration Coordinator. This is nondisruptive and doesn't change the NSX-V infrastructure.
-* Third-party tool - It provides UI-based scripts to enable the assessment, migration, and the rollback of the configurations. For more information, see [NSX-V to NSX-T migration tools](/docs/vmwaresolutions?topic=vmwaresolutions-v2t-l2-nsx-t).
+* Third-party tool - It provides UI based scripts to enable the assessment, migration, and rollback of configurations. For more information, see [NSX-V to NSX-T migration tools](/docs/vmwaresolutions?topic=vmwaresolutions-v2t-l2-nsx-t).
 
 If the configurations are simple, or there are not too many rules or definitions, manual, or scripted is typically the simplest way to migrate the configuration. If the configurations are complex, consider the use of a third-party tool.
 {: note}
@@ -67,7 +67,7 @@ It is important to note that:
 * A VM moved without tags can create a gap in security.
 * Temporary IP Sets are used to allow for a gradual migration while micro-segmentation is enforced for flows between the two NSX environments.
 * If workload VMs must be migrated by using vMotion, then the vMotion must be initiated through the API. So that, the VMs are connected to the pre-created logical ports.
-* When workload VMs are migrated, there is a post-migration step to remove the temporary IPsec group and tag the VMs that migrate.
+* When workload VMs are migrated, there is a post-migration step to remove temporary IP Set group and tag the VMs that migrate.
 
 ## Load balancer migration guidance
 {: #v2t-config-migration-migratinglb}
@@ -93,7 +93,7 @@ When you plan and design configuration migration, consider the following aspects
 * Are you using firewall rules based on security groups that dynamically include VMs based on security tags? In NSX-T, security tags are entirely managed by NSX-T. The firewall rules based on security groups that dynamically include VMs based on security tags are not effective until the security tags are applied to the VMs.
 * What types of NSX Edge services, such as firewall, L2VPN, load balancing, are in use? These services must be re-created in the NSX-T environment.
 * Are you using the NSX-V IPFIX feature to capture traffic flows that are sourced from and destined to the VMs running on NSX-V logical switches? You must analyze the ability of NSX-T to replace the packet flow forwarding feature.
-* Are you using OSPF as a dynamic routing protocol? You must assess the use of BGP to replace OSPF.
+* Are you using OSPF as dynamic routing protocol? You must assess the use of BGP to replace OSPF.
 * Are you using DLR native L2 bridging to bridge L2 traffic between VMs and bare metal servers through a distributed virtual switch? Search for alternative solutions of bridging in NSX-T.
 * Do you need gradual migration of VMs from NSX-V to NSX-T, and not a full subnet migration? By using an NSX-V to NSX-T bridge, allows VMs in the same L2 domain to be migrated from an NSX-V logical switch to NSX-T segment. Alternatively, L2VPN or VMware HCX™ can be used to provide L2 connectivity.
 
@@ -102,5 +102,5 @@ When you plan and design configuration migration, consider the following aspects
 
 * [cITopus for NSX](https://spjsolutions.com){: external}
 * [ReSTNSX's Migration Assistance Tool (M.A.T.)](https://www.restnsx.com/post/migration-assistance-tool-mat){: external}
-* [PrimaryIO NSX-V to NSX-T Fast Track Migration Service](https://hdm.primaryio.com/lp/nsxvtot){: external}
+* [PrimaryIO NSX-V to NSX-T Fasttrack Migration Service](https://hdm.primaryio.com/lp/nsxvtot){: external}
 * [VMware Cloud Migration Services (VMwaaS VPC NSX-T)](https://cloud.ibm.com/catalog/services/vmware-cloud-migration-services-vmwaas-vpc-nsx-t)

@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-06-13"
+lastupdated: "2024-06-03"
 
 subcollection: vmwaresolutions
 
@@ -48,12 +48,12 @@ The vSphere Single Sign On (SSO) domain is used as the initial authentication me
 ### Integration with existing forest
 {: #design_commonservice-integrate-forest}
 
-Merging of Active Directory forests is a complex process. If you want to integrate your instance with an existing Active Directory forest, {{site.data.keyword.cloud_notm}} recommends that you add your existing Active Directory infrastructure as an extra identity source to VMware vCenter Server® rather than attempting to merge forests. {{site.data.keyword.cloud_notm}} automation requires that you choose a root domain for your instance with at least three qualifiers to reduce the likelihood of conflict with your existing domain.
+Merging of Active Directory forests is a complex process. If you want to integrate your instance with an existing Active Directory forest, {{site.data.keyword.cloud_notm}} recommends that you add your existing Active Directory infrastructure as an additional identity source to VMware vCenter Server® rather than attempting to merge forests. {{site.data.keyword.cloud_notm}} automation requires that you choose a root domain for your instance with at least three qualifiers to reduce the likelihood of conflict with your existing domain.
 
 You have several options for reference to your existing domain as an identity source:
 * If you have connectivity to your domain controllers in or from {{site.data.keyword.cloud_notm}}, you can reference them directly.
 * You can deploy read-only replica controllers in {{site.data.keyword.cloud_notm}}.
-* You can add one-way trust from the domain controllers that are deployed by {{site.data.keyword.cloud_notm}} to your domain controllers.
+* You can add one-way trust from the domain controllers deployed by {{site.data.keyword.cloud_notm}} to your domain controllers.
 
 ## Domain name services
 {: #design_commonservice-dns}
@@ -71,16 +71,16 @@ This design integrates DNS services on the AD VMs in the following configuration
 * The domain name must be at least three levels. This guideline enforces the best practice that the top-level domain delegates responsibility to the instance for the instance domain.
 * The AD/DNS servers are configured to be authoritative for the DNS domain.
 * The AD/DNS servers are configured to point to the {{site.data.keyword.cloud_notm}} DNS servers for all other zones.
-* Any secondary cloud regions that are integrated to the first cloud region or target-deployed cloud region must use the same DNS name structure with unique host prefixes.
+* Any secondary cloud regions that are integrated to the first cloud region or target deployed cloud region must use the same DNS name structure with unique host prefixes.
 * Optionally, you can deploy redundant DNS servers within the vSphere cluster. Two AD/DNS servers are configured unlicensed. It is your responsibility to provide licenses for the Windows operating systems for these servers.
 * If a single site is provisioned with only one AD/DNS server, then all configured {{site.data.keyword.vcf-auto}} components must have only that single IP address as a DNS entry.
 
 ### Secondary {{site.data.keyword.vcf-auto}} instances
 {: #design_commonservice-secondary-vcs}
 
-For cross-instance redundancy, when the first secondary {{site.data.keyword.vcf-auto}} instance is added to an existing primary or stand-alone {{site.data.keyword.vcf-auto}} instance, that primary instance AD DNS server IP address is used in the secondary {{site.data.keyword.vcf-auto}} instance and in any subsequent secondary instance “secondary DNS” entry for all components that require a DNS server entry.
+For cross instance redundancy, when the first secondary {{site.data.keyword.vcf-auto}} instance is added to an existing primary or stand-alone {{site.data.keyword.vcf-auto}} instance, that primary instance AD DNS server IP address is used in the secondary {{site.data.keyword.vcf-auto}} instance and in any subsequent secondary instance “secondary DNS” entry for all components that require a DNS server entry.
 
-For example, ESXi, vCenter, and NSX Manager, and also add-on components, such as, HCX, Zerto, and Veeam. The primary site secondary DNS entry is then changed to the AD/DNS IP address of the first secondary {{site.data.keyword.vcf-auto}} instance.
+For example, ESXi, vCenter, and NSX Manager, and also add-on components, such as, HCX, Zerto, and Veeam. The primary site secondary DNS entry is then changed to the first secondary {{site.data.keyword.vcf-auto}} instances AD/DNS IP address.
 
 ## NTP services
 {: #design_commonservice-ntp}

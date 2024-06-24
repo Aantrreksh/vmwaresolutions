@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2019, 2024
+  years:  2019, 2022
 
-lastupdated: "2024-06-11"
+lastupdated: "2022-11-23"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # vCenter Single Sign On
 {: #adds-sso}
 
-VMware vCenter Single Sign-On (SSO) is an authentication broker and security token exchange infrastructure, which allows VMware vSphere components to communicate with each other through a secure token mechanism and uses the following services:
+VMware vCenter Single Sign-On (SSO) is an authentication broker and security token exchange infrastructure, which allows vSphere components to communicate with each other through a secure token mechanism and uses the following services.
 
 * Security Token Service (STS)
 * SSL for secure traffic
@@ -33,11 +33,11 @@ Review the following vSphere SSO flow.
 5. vCenter checks with SSO that the token is valid and is not expired.
 6. The user can view and modify any objects that the user's role has privileges for.
 
-The vSphere SSO domain is used as the initial authentication mechanism and it serves to connect an instance or multiple linked instances to the AD servers in the {{site.data.keyword.vmwaresolutions_full}} infrastructure domain. In the {{site.data.keyword.vmwaresolutions_short}} vCenter Server design, the following SSO configuration is applied:
+The vSphere SSO domain is used as the initial authentication mechanism it is also serves to connect an instance or multiple linked instances to the AD servers in the {{site.data.keyword.vmwaresolutions_full}} infrastructure domain. In the {{site.data.keyword.vmwaresolutions_short}} vCenter Server design, the following SSO configuration is applied:
 
 * The SSO domain of `vsphere.local` is always used.
 * The SSO site name equals the `<root_domain>` captured during the ordering process.
-* An identity source, the {{site.data.keyword.vmwaresolutions_short}} infrastructure domain `<root_domain>`, is configured.
+* An identity source, the {{site.data.keyword.vmwaresolutions_short}} infrastructure domain, `<root_domain>`, is configured.
 * The `VSPHERE.LOCAL\Administrator` user is configured as an Administrator role.
 * The following groups are configured with Administrator roles:
    * `<root_domain>\ic4v-vCenter`
@@ -52,11 +52,11 @@ As the customer, you have full access to manage the vSphere SSO users and groups
 
 Identity sources are used to attach one or more domains to vCenter SSO. A domain is a repository for users and groups that the vCenter SSO can use for user authentication. vCenter SSO has the following domains that are configured after the vCenter Server instance deployment.
 
-* Local OS - Local operating system users are local to the operating system where the vCenter Single Sign-On server is running. The local operating system identity source exists only in basic vCenter SSO deployments and is not available in deployments with multiple vCenter SSO instances. Only one local operating system identity source is allowed. Shown as local in the vSphere Client.
+* Local OS - Local operating system users are local to the operating system where the vCenter Single Sign-On server is running. The local operating system identity source exists only in basic vCenter SSO deployments and is not available in deployments with multiple vCenter SSO instances. Only one local operating system identity source is allowed. Shown as locals in the vSphere Client.
 * vsphere.local – Enables `administrator@vsphere.local` to be authenticated.
 * {{site.data.keyword.vmwaresolutions_short}} infrastructure domain – This domain is the <root_domain> configured on the AD DNS server based on the parameters that are collected during the ordering process. This process allows the user `automation@<root_domain>` to be authenticated.
 
-Users can log in to vCenter Server only if they are in a domain that is added as a vCenter SSO identity source. You can add more identity sources to give your AD or LDAP users access if required.
+Users can log in to vCenter Server only if they are in a domain that is added as a vCenter SSO identity source. You add more identity sources to give your AD or LDAP users access if required.
 
 ## vSphere SSO configuration
 {: #adds-sso-config}

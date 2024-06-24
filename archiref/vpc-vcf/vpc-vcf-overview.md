@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-06-18"
+lastupdated: "2024-06-05"
 
 subcollection: vmwaresolutions
 
@@ -29,7 +29,7 @@ The VMware Cloud Foundation provisioning is done in a similar way that you would
 ## Key responsibilities
 {: #vpc-vcf-overview-responsibilities}
 
-{{site.data.keyword.vcf-vpc}} is a self-managed solution. This means that the {{site.data.keyword.vcf-vpc}} automation provisions a new VPC, prefixes, subnets, several security groups, a public gateway, and the required bare metal servers for your VMware Cloud Foundation deployment, and an {{site.data.keyword.cloud_notm}} DNS service instance. For day two of operation, you are responsible for monitoring and managing the VMware vCenter and NSX, including backups, patching, configuration, and monitoring of the VMware software and the underlying vSphere hypervisor. You can use SDDC manager to update your VMware Cloud Foundation environment, or add extra functions and capabilities, such as other Aria Suite components by using the deployed Aria Lifecycle.
+{{site.data.keyword.vcf-vpc}} is a self-managed solution. This means that the {{site.data.keyword.vcf-vpc}} automation provisions a new VPC, prefixes, subnets, several security groups, a public gateway, and the required bare metal servers for your VMware Cloud Foundation deployment, and an {{site.data.keyword.cloud_notm}} DNS service instance. For day two of operation, you are responsible to monitor and manage the VMware vCenter and NSX, including backups, patching, configuration, and monitoring of the VMware software and the underlying vSphere hypervisor. You can use SDDC manager to update your VMware Cloud Foundation environment, or add extra functions and capabilities, such as other Aria Suite components by using the deployed Aria Lifecycle.
 
 ## Key benefits
 {: #vpc-vcf-overview-benefits}
@@ -38,7 +38,7 @@ The VMware Cloud Foundation architecture provides you with the fundamental build
 
 {{site.data.keyword.cloud_notm}} provides VMware Cloud Foundation licensing and gives you access to a unique set of VMware Cloud Foundation capabilities in a bundle.
 
-Review the following VMware Solutions for {{site.data.keyword.vpc_short}} key benefits:
+VMware Solutions in {{site.data.keyword.vpc_short}} has the following key benefits:
 
 - {{site.data.keyword.vpc_short}} gives you the ability to easily and rapidly define and control a virtual network, which is logically isolated from all other tenants. The logical isolation is implemented by using virtual network functions and security that is built into the platform. You can freely select the private IP address space that is used in your VPC. 
 - Provisioning the {{site.data.keyword.cloud_notm}} bare metal server on {{site.data.keyword.vpc_short}} takes minutes instead of hours when compared to the {{site.data.keyword.cloud_notm}} bare metal server on {{site.data.keyword.cloud_notm}} classic.

@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-06-12"
+lastupdated: "2024-06-05"
 
 subcollection: vmwaresolutions
 
@@ -77,7 +77,7 @@ VMware Aria Operations collects data from objects in the environment. Each piece
 
 The monitoring of vCenter is accomplished with VMware Aria Operations and the VMware SDDC Health Management Pack. VMware Aria Operations for Logs collects the log data from vCenter and the Content Pack for vSphere adds specific understanding to the logs and in turn sends alerts to VMware Aria Operations.
 
-The VMware SDDC Health Management Pack monitors the SDDC Management stack and provides badges for health and alerts that are related to configuration and compliance of SDDC product components that include vCenter.
+The VMware SDDC Health Management Pack monitors the SDDC Management stack and provides badges for health and alerts related to configuration and compliance of SDDC product components that include vCenter.
 
 ### Monitoring of vSphere hosts
 {: #opsmgmt-arch-components-hosts}
@@ -123,7 +123,7 @@ To monitor NSX-T™, the following tools are implemented:
 * VMware Aria Operations for Logs
 
 The VMware SDDC Health Management Pack monitors the following components:
-* Logical Switches - Monitors the state of the logical switches.
+* Logical Switches - Monitors admin state of the logical switches.
 * Controller Cluster - Monitors the deployed cluster node count for HA and maintains quorum.
 * Controller Nodes - Monitors node connectivity with controller cluster and manager node.
 * Edge Nodes - Monitors edge node running state and its connectivity with controller cluster and manager nodes.
@@ -135,7 +135,7 @@ The VMware SDDC Health Management Pack monitors the following components:
 {: #opsmgmt-arch-components-vrops}
 
 The VMware SDDC Health Management Pack has Alert definitions for the following events:
-* Current sizings of the VMware Aria Operations Manager nodes are not sufficient for given load.
+* Current sizing of the VMware Aria Operations Manager nodes are not sufficient for given load.
 * Cluster node configuration does not follow the VMware Aria Operations Manager sizing guideline.
 * Current sizing of the Remote Collector is not sufficient for given load.
 * Remote Collector configuration does not follow the VMware Aria Operations Manager sizing guideline.

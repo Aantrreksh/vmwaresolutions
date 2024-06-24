@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-05-09"
+lastupdated: "2024-04-12"
 
 keywords: Entrust CloudControl WebGUI, Entrust CloudControl console, enable internet Entrust CloudControl
 
@@ -18,7 +18,7 @@ subcollection: vmwaresolutions
 # Managing Entrust CloudControl
 {: #managing-entrust-cc}
 
-New installations of Entrust CloudControl™ (formerly HyTrust CloudControl) are not supported for new or existing deployments of {{site.data.keyword.vcf-auto}} instances. You can still use or delete existing Entrust CloudControl installations on your existing instances.
+New installations of Entrust CloudControl™ (formerly known as HyTrust CloudControl) are not supported for new or existing deployments of {{site.data.keyword.vcf-auto}} instances. You can still use or delete existing Entrust CloudControl installations on your existing instances.
 {: deprecated}
 
 To manage Entrust CloudControl, access the Entrust CloudControl WebGUI from the {{site.data.keyword.vmwaresolutions_full}} console, or access the Entrust CloudControl console from the VMware vSphere® Web Client.
@@ -100,7 +100,7 @@ The following steps apply for updating the Entrust CloudControl network settings
    Ensure that you set the static route before you change the default gateway, otherwise the web console might become unreachable.
    {: important}
 
-   The primary VM has access to the Internet now.
+   The primary VM now has access to the internet.
 
 7. To confirm that the primary VM has internet access, run a `wget` command to a public IP address or website. To do so, go back to vCenter Server and right-click **CC1 > Open Console**. Log in to the console by using the console credentials from the Entrust CloudControl service details page. Run a `wget` command such as `wget www.ibm.com` to receive an immediate response. Confirm that the request was sent and a `200` response was received.
 

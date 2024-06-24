@@ -16,20 +16,20 @@ subcollection: vmwaresolutions
 # Operations management
 {: #vrw-operations}
 
-{{site.data.keyword.cloud}} for VMware® Regulated Workloads is delivered as a clean environment. Extensive work was done to identify and remediate common errors and warnings that are often found in a typical vSphere deployment. IBM and VMware® best practices, which are combined with standard and customized templates for VMware Aria® Operations™, ensure that all {{site.data.keyword.rw}} configurations are deployed as clean as possible, ready for onboarding. Caveonix RiskForesight is used to scan the environment for compliance with industry and government standards such as NIST, PCI, and more. RiskForesight is continually monitoring the {{site.data.keyword.rw}} for adherence to compliance standards. RiskForesight provides on-demand compliance posture reporting and at-a-glance compliance status.
+{{site.data.keyword.cloud}} for VMware® Regulated Workloads is delivered as a clean environment. Extensive work was done to identify and remediate common errors and warnings that are often found in a typical vSphere deployment. IBM and VMware® best practices, which are combined with standard and customized templates for VMware Aria® Operations™, ensure that all {{site.data.keyword.cloud_notm}} for VMware Regulated Workloads configurations are deployed as clean as possible, ready for onboarding. Caveonix RiskForesight is used to scan the environment for compliance with industry and government standards such as NIST, PCI, and more. RiskForesight is continually monitoring the{{site.data.keyword.cloud_notm}} for VMware Regulated Workloads for adherence to compliance standards. RiskForesight provides on-demand compliance posture reporting and at-a-glance compliance status.
 The operational tools support the customer in compliance with current standards and assist them in rapidly responding to a changing compliance landscape.
 
-![{{site.data.keyword.rw}} operational tools overview](../../images/vrw-v2-opstools.svg "{{site.data.keyword.rw}} operational tools overview"){: caption="Figure 1. {{site.data.keyword.rw}} operational tools overview" caption-side="bottom"}
+![{{site.data.keyword.cloud_notm}} for VMware Regulated Workloads operational tools overview](../../images/vrw-v2-opstools.svg "VMware Regulated Workloads operational tools overview"){: caption="Figure 1. VMware Regulated Workloads operational tools overview" caption-side="bottom"}
 
 ## Management cluster
 {: #vrw-operations-management}
 
-All operational tools are deployed into the management cluster. The {{site.data.keyword.rw}} depends upon multiple layers of tools to deliver comprehensive insight into the operation, security, and compliance of all layers of the platform. Customers that use {{site.data.keyword.rw}} can extend the use of the operational tools to monitor the VMs supporting their applications.
+All operational tools are deployed into the management cluster. The {{site.data.keyword.cloud_notm}} for VMware Regulated Workloads depends upon multiple layers of tools to deliver comprehensive insight into the operation, security, and compliance of all layers of the platform. Customers that use {{site.data.keyword.cloud_notm}} for VMware Regulated Workloads can extend the use of the operational tools to monitor the VMs supporting their applications.
 
 ### Caveonix RiskForesight
 {: #vrw-operations-management-riskforesight}
 
-[Caveonix RiskForesight](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-caveonix) provides a comprehensive cloud workload protection platform for {{site.data.keyword.rw}}. This platform delivers a common Risk Management Control Plane (RMCP) for continuous and proactive protection of management and edge workloads.
+[Caveonix RiskForesight](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-caveonix) provides a comprehensive cloud workload protection platform for {{site.data.keyword.cloud_notm}} for VMware Regulated Workloads. This platform delivers a common Risk Management Control Plane (RMCP) for continuous and proactive protection of management and edge workloads.
 
 ### VMware Aria Operations
 {: #vrw-operations-management-vrops}
@@ -41,7 +41,7 @@ All operational tools are deployed into the management cluster. The {{site.data.
 
 [VMware Aria Operations for Logs](https://www.vmware.com/products/aria-operations-for-logs.html){: external} delivers heterogeneous and highly scalable log management with intuitive, actionable dashboards, sophisticated analytics, and broad third-party extensibility. It provides deep operational visibility and faster troubleshooting across physical, virtual, and cloud environments.
 
-All systems that generate logs are configured to send their logs to VMware Aria Operations™ for Logs. Centralized collection of all logging enables a comprehensive view of all aspects of the {{site.data.keyword.rw}} operation.VMware Aria Operations for Logs is also capable of forwarding logs to security scanning services such as IBM QRadar.
+All systems that generate logs are configured to send their logs to VMware Aria Operations™ for Logs. Centralized collection of all logging enables a comprehensive view of all aspects of the {{site.data.keyword.cloud_notm}} for VMware Regulated Workloads operation.VMware Aria Operations for Logs is also capable of forwarding logs to security scanning services such as IBM QRadar.
 
 ![VMware Aria Operations for Logs integration](../../images/vrw-v2-operations-logs-flow.svg "VMware Aria Operations for Logs integration"){: caption="Figure 2. VMware Aria Operations for Logs integration" caption-side="bottom"}
 

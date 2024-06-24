@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-06-11"
+lastupdated: "2024-04-26"
 
 subcollection: vmwaresolutions
 
@@ -23,14 +23,14 @@ Select the next available IP addresses from the {{site.data.keyword.cloud}} priv
 
 Find the details of the base VM, scale-out VM, and Remote collector VM in the following table:
 |Parameter | Value |
-|--------- |------ |
+|----------|-------|
 | Type | Base |
 | VM qty | 1 |
 | vCPU | 16 |
 | RAM | 64 GB |
 | Disk | 1,000 GB |
 | OS | CentOS 7 |
-| Installed application components | UI, App, Plug-ins, Central collector, Index datastore, Messaging datastore, Relational datastore, Remote collector |
+| Installed application components | UI, App, Plugins, Central collector, Index datastore, Messaging datastore, Relational datastore, Remote collector |
 {: class="simple-tab-table"}
 {: caption="Table 1. Base VM parameters" caption-side="bottom"}
 {: #table1}

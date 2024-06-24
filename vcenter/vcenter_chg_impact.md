@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-05-02"
+lastupdated: "2024-05-01"
 
 keywords: change vCenter Server artifacts, automation ID, VMware resource
 

@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-06-12"
+lastupdated: "2024-04-26"
 
 subcollection: vmwaresolutions
 
@@ -42,7 +42,7 @@ To enable vSphere encryption or vSAN encryption by using KMIP for VMware, you ne
 8. Within vCenter Server, create a key provider cluster.
    * If you are using Key Protect, configure this cluster with two servers, one for each KMIP for VMware endpoint in your chosen region.
    * If you are using HPCS, configure this cluster to connect to the hostname and port that is uniquely assigned to your KMIP for VMware instance.
-9. Select one of the VMware methods to generate or install a KMS client certificate in vCenter Server.
+9. Select one of VMware methods to generate or install a KMS client certificate in vCenter Server.
 10. Export the public version of the certificate and configure it as an allowed client certificate in your KMIP for VMware instance. The key manager instance has a maximum interval of 5 minutes to get the configured client certificates. Therefore, if you are unable to build KMS trust to vCenter Server, wait for 5 minutes and try again.
 
 ## Enabling encryption
@@ -50,7 +50,7 @@ To enable vSphere encryption or vSAN encryption by using KMIP for VMware, you ne
 
 To use vSAN encryption, edit the vSAN general settings in your vCenter Server cluster and select the encryption checkbox.
 
-The vSAN health check might send periodic warnings that it is unable to connect to the KMS cluster from one or more of your vSphere hosts. These warnings occur because the vSAN health check connection times out too quickly. You can ignore these warnings. For more information, see [vSAN KMS health check intermittently fails with SSL handshake timeout error](https://knowledge.broadcom.com/external/article?legacyId=67115){: external}.
+The vSAN health check might send periodic warnings that it is unable to connect to the KMS cluster from one or more of your vSphere hosts. These warnings occur because the vSAN health check connection times out too quickly. You can ignore these warnings. For more information, see [vSAN KMS Health Check intermittently fails with SSL handshake timeout error](https://kb.vmware.com/s/article/67115){: external}.
 {: note}
 
 To use vSphere encryption, edit your VM storage policies to require disk encryption.
@@ -60,8 +60,8 @@ To use vSphere encryption, edit your VM storage policies to require disk encrypt
 
 Some VMs require special planning for encryption, especially if they are involved in a possible circular dependency to obtain the key material to operate themselves. Consider the following information:
 
-- vCenter Server is involved in retrieving encryption keys. This VM must not be encrypted by using vSphere encryption and must not be on an encrypted vSAN datastore.
-- The Microsoft Windows® Active Directory controllers in your environment are used for hostname resolution to connect to key management. Do not encrypt them by using vSphere encryption or place them on an encrypted vSAN datastore unless you are prepared to provide an alternate hostname resolution if you need to restart your environment.
+- vCenter Server is involved in retrieving encryption keys. This VM should not be encrypted using vSphere encryption or located on an encrypted vSAN datastore.
+- The Microsoft Windows® Active Directory controllers in your environment are used for hostname resolution to connect to key management. You should not encrypt them using vSphere encryption or locate them on an encrypted vSAN datastore unless you are prepared to provide alternate hostname resolution if you need to restart your environment.
 - VMware does not recommend encrypting VMware NSX® VMs by using vSphere encryption.
 
 ## Key rotation
@@ -69,8 +69,8 @@ Some VMs require special planning for encryption, especially if they are involve
 
 Rotate your [Key Protect](/docs/key-protect?topic=key-protect-rotate-keys#rotate-keys) or [Hyper Protect Crypto Services](/docs/hs-crypto?topic=hs-crypto-rotate-keys) customer root key (CRK) by using the {{site.data.keyword.cloud_notm}} console or API.
 
-* For vSAN encryption, rotate your VMware key encryption keys and data encryption keys (optionally) from the vSAN general settings in your vCenter Server cluster.
-* For vSphere encryption, rotate your VMware key encryption keys and data encryption keys (optionally) by using the **Set-VMEncryptionKey** PowerShell command.
+* For vSAN encryption, rotate your VMware key encryption keys (KEKs) and optionally data encryption keys (DEKs) from the vSAN general settings in your vCenter Server cluster.
+* For vSphere encryption, rotate your VMware KEKs and DEKs (optionally) by using the **Set-VMEncryptionKey** PowerShell command.
 
 ## Key revocation
 {: #kmip-implementation-key-revocation}

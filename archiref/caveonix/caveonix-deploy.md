@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-06-11"
+lastupdated: "2024-06-05"
 
 subcollection: vmwaresolutions
 
@@ -24,7 +24,7 @@ The RiskForesight installation consists of the following high-level steps:
 
 1. [Initial planning and prerequisites](/docs/vmwaresolutions?topic=vmwaresolutions-caveonix-step1) – Understanding and selecting a deployment option, configuring DNS to provide FQDN/IP resolution for the application components.
 2. [Virtual machine deployment](/docs/vmwaresolutions?topic=vmwaresolutions-caveonix-step2) – Deploying the VMs from an OVF template. All application components are installed on the VM.
-3. [Application configuration](/docs/vmwaresolutions?topic=vmwaresolutions-caveonix-step3) – Running the Caveonix configuration script that configures the application components on each of the VMs.
+3. [Application configuration](/docs/vmwaresolutions?topic=vmwaresolutions-caveonix-step3) – Running the Caveonix configuration script that configures the application component on each of the VMs.
 4. [Application setup](/docs/vmwaresolutions?topic=vmwaresolutions-caveonix-step4) – Setting up the Service Provider and a Tenant or Organization so that the application becomes accessible for the users.
 
 The automated installation provisions one VM and configures all the application components on that VM.
@@ -75,7 +75,7 @@ The following table shows how the amount of storage that is required is calculat
 From a data perspective, data is used as follows:
 - Scan data is used in compliance management.
 - Log data is used in forensic management.
-- Policy and flow data are used in risk management. Flow data is available from NSX Manager only.
+- Policy and flow data is used in risk management. Flow data is available from NSX Manager only.
 
 Data storage has three tiers:
 - Replicated
@@ -84,7 +84,7 @@ Data storage has three tiers:
 
 The following table provides a summary of the deployments.
 
-|Deployment model | All-in-one | Partially distributed | Fully distributed |
+|Deployment model | All-in-one | Partially-distributed | Fully-distributed |
 |---|---|---|---|
 | Number of assets | 100 | 500 | 5,000 |
 | Online data generated in 30 days (TB) | 4 | 22 | 219 |

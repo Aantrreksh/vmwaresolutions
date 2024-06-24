@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2024
+  years:  2016, 2023
 
-lastupdated: "2024-06-12"
+lastupdated: "2023-06-12"
 
 subcollection: vmwaresolutions
 
@@ -41,7 +41,7 @@ To configure the WAN Opt web UI:
 8. Select **Connected at Power On** and **Connected for Network Adapter 1**.
 9. Click **OK** to save.
 10. Find the CGW-`<xxx>`-WANOPT in vCenter.
-11. Edit the settings on the VM.
+11. Edit settings on the VM.
 12. Select the checkbox to connect Network adapter 1.
 13. Click **OK**.
 14. Go to `https://<configured_WAN_OPT_IP>`.
@@ -52,11 +52,12 @@ You can now use the WAN Opt web UI to monitor throughput rates, compression rati
 ### Migration bandwidth throttling
 {: #hcxclient-monitoring-mig-bandwidth}
 
-Before you migrate VMs, assess the network link that is used. Work with the networking specialists for the network that contains the source instance of vSphere or review weekly and monthly traffic use. Limit available bandwidth for migrations if that traffic traverses over a link that is critical to your business, especially if that link is less than 1 Gbps. Use the side with the most constrained bandwidth, which is typically the client side.
+Before you migrate VMs, do an assessment of the network link that is used. Work with the networking specialists for the network that contains the source instance of vSphere or review weekly and monthly traffic use. Limit available bandwidth for migrations if that traffic traverses over a link that is critical to your business, especially if that link is less than 1 Gbps. Use the side with the most constrained bandwidth, which is typically the client side.
 
-Complete the previous tasks when you deploy the fleet components in the HCX Client UI. To complete the tasks post-deployment, you need to access the WAN opt UI.
+Do so when you deploy the fleet components in the HCX Client UI, but post deployment requires you go into the WAN opt UI.
 
-Changes are lost if you redeploy the HCX CGW from the HCX web UI. This sets bandwidth limits for the migration traffic only. Stretched L2 traffic is not affected by this setting.
+Changes are lost if you redeploy the HCX CGW from the HCX web UI. This sets bandwidth limits for the migration traffic only. Stretched L2
+traffic is not affected by this setting.
 {: note}
 
 1. Log in to the WAN Opt Web UI.
@@ -80,25 +81,25 @@ Monitor HCX components such as HCX Manager, Cloud Gateway, WAN opt, and the Laye
 {: #hcxclient-monitoring-band-use}
 
 Use the following methods to monitor bandwidth use and latency.
-- vMotion traffic is best accomplished by using the WAN Opt web UI. The WAN Opt reduces the traffic that is going over the WAN and reduces packet loss by sending redundant packets. The typical ratio of LAN to WAN bandwidth usage is approximately 3:1 (350 Mbps LAN = 90-120Mbps WAN).
-- Replication-based (bulk) migration of VMs within HCX results in VMs being moved with thick provisioning. While this method is not desirable, the WAN opt UI reveals a high ratio between LAN and WAN use when you move unused disk data. Conversely, it is observed that when noncompressible data is migrated, such as DB data and digital media, WAN use is at its highest and it comes closer to LAN use.
+- vMotion traffic is best accomplished by using the WAN Opt web UI. The WAN Opt reduces the traffic that is going over the WAN and reduces packet loss by sending redundant packets. IThe typical ratio LAN to WAN bandwidth usage is approximately 3:1 (350 Mbps LAN = 90-120Mbps WAN).
+- Replication-based (bulk) migration of VMs within HCX results in VMs being moved with thick provisioning. While this method is not desirable, the WAN opt UI reveals a high ratio between LAN and WAN use when you move unused disk data. Conversely, it is observed that when non-compressible data is migrated, such as DB data and digital media, WAN use is at its highest and it comes closer to LAN use.
 
 ### Observations
 {: #hcxclient-monitoring-band-use-obs}
 
 - The vMotion migration of a VM within HCX does not generate more throughput than the vMotion networking for a single ESXi host.
 - As bulk migration can have multiple migrations in flight simultaneously, it achieves higher bandwidth use than a vMotion migration. The ratio observed at a customer side with 1 Gbps vMotion links to the ESX hosts was of 8 replications = bandwidth use of 1 vMotion.
-- As a result of moving empty space on disk, a high LAN use with a high ratio is displayed. Therefore, low WAN use is recommended; 1 Gbps seems to be the limit. In this case, the vMotion network is capable only of 1 Gbps, which is the bottleneck.
+- As a result of moving empty space on disk, a high LAN use with a high ratio is displayed, therefore, low WAN use. 1 Gbps seems to be the limit. Indeed, in this particular case the vMotion network is only capable of 1 Gbps, which is the bottleneck.
 - For the vMotion migration of a multi TB Oracle database with a WAN link of 1 Gbps, the limitation is the vMotion network of 1 Gbps.
 
 ## Stretched Layer 2 traffic
 {: #hcxclient-monitoring-stretched-layer-2-traffic}
 
-The HCX fleet component Layer 2 Concentrator has a bandwidth limitation of approximately 4 Gbps for all L2 network traffic that traverses it. Individually stretched networks have a bandwidth limit of approximately 1 Gbps or less depending on the traffic type. It is possible to have many stretched L2 networks across a single L2C pair (a theoretical allowable maximum of 4,096 networks per L2C pair). The L2C is engineered to detect and protect small traffic flows so that they are not overcome by large flows within the same L2C pair. It can be advantageous to identify if this situation is occurring and start more L2Cs to increase overall bandwidth capability.
+The HCX fleet component Layer 2 Concentrator has a bandwidth limitation of approximately 4 Gbps for all L2 network traffic that traverses it. Individually stretched networks have a bandwidth limit of approximately 1 Gbps or less depending on the traffic type. It is possible to have many stretched L2 networks across a single L2C pair (theoretical allowable max of 4096 networks per L2C pair). The L2C is engineered to detect and protect small traffic flows so that they are not overcome by large flows within the same L2C pair. It can be advantageous to identify if this situation is occurring and start more L2Cs to increase overall bandwidth capability.
 
 Deploying multiple L2Cs can also be advantageous where multiple paths exist between the customer site and {{site.data.keyword.cloud}}, such as direct link and internet. A single network cannot be made redundant or given increased bandwidth across multiple L2C pairs.
 
-Monitor the traffic across all interfaces that use the Monitoring tab of the L2C VM. If the total data rate is approaching 8 Gbps (4 Gbps in/out) consider adding another L2 pair and redistribute stretched networks to rebalance.
+Monitor the traffic across all interfaces that use the Monitoring tab of the L2C VM. If the total data rate is approaching 8 Gbps (4 Gbps in / out) consider adding another L2 pair and redistribute stretched networks to rebalance.
 
 ## Related links
 {: #hcxclient-monitoring-related}

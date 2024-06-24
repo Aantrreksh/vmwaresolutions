@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-06-14"
+lastupdated: "2024-04-29"
 
 subcollection: vmwaresolutions
 
@@ -37,7 +37,7 @@ In the VMware Cloud Foundation architecture for {{site.data.keyword.vpc_short}},
 When you create {{site.data.keyword.cloud_notm}} bare metal server VLAN interfaces for NSX components that are attached to a VPC subnet, your Distributed Switch must contain a port group that matches the used VLAN IDs.
 {: note}
 
-Each physical host has a redundant 100 Gb network connection for network access to {{site.data.keyword.vpc_short}}. The 100 Gb bandwidth is shared by the network interfaces that are on the bare metal server.
+Each physical host has redundant 100 Gb network connection for network access to {{site.data.keyword.vpc_short}}. The 100 Gb bandwidth is shared by the network interfaces that are on the bare metal server.
 {: note}
 
 The high availability for physical network connectivity is handled by {{site.data.keyword.cloud_notm}}, which manages the aggregation. The multiple PCI interfaces, as seen in VMware Cloud Foundation deployment, do not add redundancy, but are required in VMware Cloud Foundation deployments and they are up the uplink migrations from vSphere Standard Switch to vSphere Distributed Switch.
@@ -98,7 +98,7 @@ The previous table shows the naming and numbering principles. The actual deploym
 ## Edge transport nodes and gateway cluster
 {: #vpc-vcf-nsx-t-edges}
 
-In addition to NSX Managers, the NSX gateway cluster and NSX Edge nodes are required in an NSX deployment. The Edge Nodes are specific service appliances that are dedicated to running centralized network services. They cannot be distributed to the ESXi hypervisors, such as Network Address Translation or north-south traffic between NSX Geneve Segments and VPC subnets. NSX Edge Nodes are transport nodes that run local control plane daemons and forwarding engines that implement the NSX data plane.
+In addition to NSX Managers, NSX gateway cluster and NSX Edge Nodes are required in an NSX deployment. The Edge Nodes are specific service appliances that are dedicated to running centralized network services. They cannot be distributed to the ESXi hypervisors, such as Network Address Translation or north-south traffic between NSX Geneve Segments and VPC subnets. NSX Edge Nodes are transport nodes that run local control plane daemons and forwarding engines that implement the NSX data plane.
 
 VM form factor Edge Nodes are used in this architecture. Edge Nodes can be grouped in one or several clusters, representing a pool of capacity. NSX gateways, Tier-0 (also referred as T0) and Tier-1 (also referred as T1) can be hosted in the same or different gateway clusters. Also, in this architecture, a single gateway cluster is created for all T0 and T1 gateways. A T0 gateway provides north-south connectivity and connects to a VPC subnet. A T1 gateway connects to one T0 gateway, and it provides northbound connectivity to the NSX segments attached to it.
 

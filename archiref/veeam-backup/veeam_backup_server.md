@@ -4,7 +4,7 @@ copyright:
 
   years: 2023, 2024
 
-lastupdated: "2024-06-13"
+lastupdated: "2024-01-04"
 
 keywords: requirements for vmware backup proxies, limitations for vmware backup proxies, backup proxies
 
@@ -21,11 +21,11 @@ The backup server is a Windows-based machine on which Veeam Backup and Replicati
 
 * Coordinates backup, replication, recovery verification, and restore tasks.
 * Controls job scheduling and resource allocation.
-* It is used to set up and manage backup infrastructure components and to specify global settings for the backup infrastructure.
+* It is used to set up and manage backup infrastructure components as well as specify global settings for the backup infrastructure.
 
 During service deployment, the Veeam Backup and Replication software is deployed on the virtual machine (VM), VSI, or bare metal server. The distributed deployment scenario is recommended for large geographically dispersed virtual environments with multiple Veeam Backup and Replication servers that are installed across different sites. These backup servers are federated under **Veeam Backup Enterprise Manager**, which provides centralized management and reporting for the backup servers through a web interface. 
 
-More backup servers can be added manually for a Veeam® distributed deployment scenario.
+Additional backup servers can be added manually to create a Veeam® distributed scenario deployment.
 {: note}
 
 ## Console

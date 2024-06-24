@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 849 320" style="enable-background:new 0 0 849 320;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#4C84C5;}
+	.st1{fill:#F49C58;}
+	.st2{fill:#959595;}
+	.st3{fill:#1DA78D;}
+	.st4{fill:#FFFFFF;}
+	.st5{font-family:'IBMPlexSans';}
+	.st6{font-size:18px;}
+	.st7{font-size:14px;}
+</style>
+<rect x="120.5" y="81.7" class="st0" width="600" height="75.3"/>
+<rect x="121.1" y="0.6" class="st1" width="600" height="74.3"/>
+<rect x="120.5" y="239.7" class="st2" width="600" height="80.3"/>
+<rect x="120.5" y="164" class="st3" width="192.5" height="68"/>
+<rect x="320.5" y="163.4" class="st3" width="197.5" height="68.6"/>
+<rect x="526.5" y="164" class="st3" width="194" height="68"/>
+<text transform="matrix(1 0 0 1 315.2242 115.3711)" class="st4 st5 st6">Virtualization Management</text>
+<text transform="matrix(1 0 0 1 345.2242 142.3711)" class="st4 st5 st7">VMware vCenter Server</text>
+<text transform="matrix(1 0 0 1 124.0747 192.8755)" class="st4 st5 st6">Compute Virtualization</text>
+<text transform="matrix(1 0 0 1 161.6747 216.7755)" class="st4 st5 st7">VMware vSphere</text>
+<text transform="matrix(1 0 0 1 336.5037 192.8755)" class="st4 st5 st6">Storage Virtualization</text>
+<text transform="matrix(1 0 0 1 376.3037 216.7755)" class="st4 st5 st7">VMware vSAN</text>
+<text transform="matrix(1 0 0 1 533.166 193.8755)" class="st4 st5 st6">Network Virtualization</text>
+<text transform="matrix(1 0 0 1 579.166 216.7755)" class="st4 st5 st7">VMware NSX </text>
+<text transform="matrix(1 0 0 1 261.574 272.5371)" class="st4 st5 st6">Physical Infrastructure on IBM Cloud</text>
+<text transform="matrix(1 0 0 1 324.2869 32.4924)" class="st4 st5 st6">Infrastructure Hybridity</text>
+<text transform="matrix(1 0 0 1 299.3869 61.4924)" class="st4 st5 st7">VMware Hybrid Cloud Extension (HCX)</text>
+<text transform="matrix(1 0 0 1 382.8247 297.3732)" class="st4 st5 st7">Storage</text>
+<text transform="matrix(1 0 0 1 593.4552 297.3732)" class="st4 st5 st7">Network</text>
+<text transform="matrix(1 0 0 1 183.0858 296.373)" class="st4 st5 st7">Compute</text>
+</svg>
