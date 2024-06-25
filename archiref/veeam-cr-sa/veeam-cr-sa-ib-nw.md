@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-06-05"
+lastupdated: "2024-06-13"
 
 subcollection: vmwaresolutions
 
@@ -20,7 +20,7 @@ In the immutable backup solution architecture, the use of a sandbox is optional.
 While Veeam® DataLabs enables the sandbox concept, it is not yet enabled for VMware NSX-T™ environments as it does not enable the mapping of NSX-T segments to isolated segments. Therefore, these solution architectures enable a sandbox with the use of both Veeam and NSX-T technologies:
 
 * Veeam vPower NFS service - Allows starting of VMs directly from the backup files.
-* Veeam data integration API - Enables the mounting of the backup files in a files system.
+* Veeam data integration API - Enables the mounting of the backup files in a file system.
 * NSX-T overlay segments - Enables VMs to be connected to virtual networks abstracted from physical networks.
 * NSX-T T1 - Provides routing and gateway firewall capabilities.
 * NSX-T distributed firewall - Distributed firewall enables firewall capability on east-west traffic on VMs.
@@ -52,7 +52,7 @@ The customer completes cyber-related tasks on the backups that include the follo
 * Scan backup files for malware.
 * Recover VMs from backups on isolated networks.
 
-The customer creates the following items.
+The customer creates the following items:
 
 * A new T1 named `Cyber-Tools-T1` and links it to the workload T0. `Cyber-T1` is configured to advertise connected segments. It enables the routing of traffic to and from the cybertoolset VMs.
 * A segment for their cybertoolsets, which include the malware scanners.
@@ -90,7 +90,7 @@ The Destination Network Address Translation (DNAT) rules have been configured as
 | `172.16.67.0/24` | `172.16.69.0/24` | `172.16.254.0/24` |
 {: caption="Table 2. NSX-T DNAT rules" caption-side="bottom"}
 
-The distributed firewall groups configuration is defined as:
+The distributed firewall group configuration is defined as:
 
 | Name | Category | Members | Criteria |
 |:---- |:-------- |:------- |:-------- |
@@ -102,10 +102,10 @@ The distributed firewall policy configuration in a policy named `Cyber-Isolated`
 
 | Rule name | Sources | Destinations | Services | Action |
 |:--------- |:------- |:------------ |:-------- |:------ |
-| Allow access to Isolated | Cyber-Tools-Segments | Cyber-Isolated-Segments | All | Allow |
+| Allow access to isolated | Cyber-Tools-Segments | Cyber-Isolated-Segments | All | Allow |
 | Allow access between isolated | Cyber-Isolated-Segments | Cyber-Isolated-Segments | All | Allow |
-| Deny access to Isolated | Any | Cyber-Isolated-Segments | All | Deny |
-| Deny access from Isolated | Any | Cyber-Isolated-Segments | All | Deny |
+| Deny access to isolated | Any | Cyber-Isolated-Segments | All | Deny |
+| Deny access from isolated | Any | Cyber-Isolated-Segments | All | Deny |
 {: caption="Table 4. NSX-T distributed firewall policy" caption-side="bottom"}
 
 ## Related links

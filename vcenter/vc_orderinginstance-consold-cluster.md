@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-04-23"
+lastupdated: "2024-06-25"
 
 keywords: automated consolidated cluster, order consolidated cluster, order automated instance
 
@@ -96,6 +96,7 @@ For deployed instances, you can add NFS storage shares to an existing NFS or vSA
 
 When you select **NFS storage**, you can add file-level shared storage for your instance where all shares use the same settings or you can specify different configuration settings for each file share. The number of file shares must be in the range 1 - 100.
 
+
 Specify the following NFS options:
 * **Configure shares individually** - Toggle this switch on to specify different configuration settings for each file share.
 * **Number of shares** - When you use the same configuration setting for each file share, specify the number of file shares for the NFS shared storage that you want to add.
@@ -117,6 +118,7 @@ Choose performance level options according to your needs.
 {: #vc_orderinginstance-vsan-storage}
 
 Specify the following settings for vSAN storage.
+
 
 #### Size for vSAN capacity disks
 {: #vc_orderinginstance-vsan-storage-typesize-capdisks}
@@ -202,7 +204,7 @@ When you select to reuse existing public and private VLANs, specify the VLANs an
 * **Secondary private VLAN** is for VMware features such as vSAN. You can select an existing secondary private VLAN or select to allocate a new one.
 
 Ensure that the firewall configuration on the selected VLANs does not block the management data traffic. Also, ensure that all the VLANs that you select are in the same pod. ESXi servers cannot be provisioned on mixed-pod VLANs.
-{: important}  
+{: important}
 
 Optionally, use **Advanced settings** to configure portable subnets for VLANs.
 

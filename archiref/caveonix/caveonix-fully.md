@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2022
+  years:  2016, 2024
 
-lastupdated: "2022-12-28"
+lastupdated: "2024-06-11"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # Fully distributed
 {: #caveonix-fully}
 
-Additional base virtual machines (VMs) and scale-out VMs are added according to the number of assets and data retention requirements.
+More base virtual machines (VMs) and scale-out VMs are added according to the number of assets and data retention requirements.
 
 The following table shows the user interface parameters.
 
@@ -41,7 +41,7 @@ The following table shows the applications and plug-ins parameters.
 | RAM | 16 GB |
 | Disk | 500 GB |
 | OS | CentOS 7 |
-| Installed application components | App, Plugins|
+| Installed application components | App, plug-ins |
 {: caption="Table 2. Base - applications and plug-ins" caption-side="bottom"}
 
 The following table shows the central collector parameters.

@@ -27,14 +27,14 @@ Review the following information to manage your {{site.data.keyword.redhat_opens
 
 The initial certificates that are created during installation expire 24 hours after they are created. IBM's automation process, which installs {{site.data.keyword.redhat_openshift_notm}}, handles the approval of the CSRs for this initial rotation, which is done by running a script on the bastion for the first 30 hours. The script is named `/root/approve-csr.sh` and its log file is named `/root/approve-csr.log`. 
 
-For the script to run successfully, the initial `kubeadmin` credentials must be the same until the initial certificate rotation is complete. Do not change the kubeadmin credentials for the first 24 hours. If the credentials are changed, you must monitor and approve the CSRs for the initial certificate rotation. For more information, see [Approving the CSRs for your machines](https://docs.openshift.com/container-platform/4.14/installing/installing_vsphere/upi/installing-vsphere.html#installation-approve-csrs_installing-vsphere){: external}.
+For the script to run successfully, the initial `kubeadmin` credentials must be the same until the initial certificate rotation is complete. Do not change the kubeadmin credentials for the first 24 hours. If the credentials are changed, you must monitor and approve the CSRs for the initial certificate rotation. For more information, see [Approving the CSRs for your machines](https://docs.openshift.com/container-platform/4.15/installing/installing_vsphere/upi/installing-vsphere.html#installation-approve-csrs_installing-vsphere){: external}.
 
 Do not restart any of the {{site.data.keyword.redhat_openshift_notm}} cluster virtual machines (VMs) or the bastion VM until the first certificate rotation is done.
 {: attention}
 
 After the initial certificate rotation, certificates are renewed every 30 days. You must establish a process to approve the CSRs for every certificate rotation. According to {{site.data.keyword.redhat_full}}, you can approve CSRs when they reach 80% of their expiration period, which is approximately 25 days into the lifespan of the CSRs.
 
-If you do not approve CSRs in time and the certificates expire, you can recover from expired control plane certificates and get the {{site.data.keyword.redhat_openshift_notm}} cluster operational again. For more information, see [Recovering from expired control plane certificates](https://docs.openshift.com/container-platform/4.14//backup_and_restore/control_plane_backup_and_restore/disaster_recovery/scenario-3-expired-certs.html){: external}.
+If you do not approve CSRs in time and the certificates expire, you can recover from expired control plane certificates and get the {{site.data.keyword.redhat_openshift_notm}} cluster operational again. For more information, see [Recovering from expired control plane certificates](https://docs.openshift.com/container-platform/4.15//backup_and_restore/control_plane_backup_and_restore/disaster_recovery/scenario-3-expired-certs.html){: external}.
 
 ## Resizing your Red Hat OpenShift VMs post-deployment
 {: #ocp_managing-resize}
@@ -100,7 +100,7 @@ To expand your {{site.data.keyword.redhat_openshift_notm}} cluster by adding mor
    1. Log in to the AD NS server for your {{site.data.keyword.vcf-auto-short}} instance.
    2. Using the DNS Manager, add a new A record to the corresponding `ocp` zone. When you create the A record, ensure that the option to create associated PTR record is selected.
 
-7. Approve any certificate signing requests (CSRs) from the bastion. During the provisioning of the new worker, you might have to [approve CSRs](https://docs.openshift.com/container-platform/4.14/installing/installing_vsphere/upi/installing-vsphere.html#installation-approve-csrs_installing-vsphere){: external} from the bastion:
+7. Approve any certificate signing requests (CSRs) from the bastion. During the provisioning of the new worker, you might have to [approve CSRs](https://docs.openshift.com/container-platform/4.15/installing/installing_vsphere/upi/installing-vsphere.html#installation-approve-csrs_installing-vsphere){: external} from the bastion:
    1. Log in to the bastion as the `root` user and change to the bastion installation directory. For more information, see [Bastion details](/docs/vmwaresolutions?topic=vmwaresolutions-ocp_overview#ocp_overview-bastion).
    2. Before you can run any commands, you must authenticate to {{site.data.keyword.redhat_openshift_notm}}:
       * If authentication is not configured and you are using the default `kubeadmin` account and password, run the command `export KUBECONFIG=auth/kubeconfig` and verify that you are authenticated by running the command `./oc whoami`.

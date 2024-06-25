@@ -1,6 +1,6 @@
 {
     "title": "VMware Solutions docs",
-    "lastupdated": "2024-04-30",
+    "lastupdated": "2024-06-24",
     "introduction": "VMware Solutions is a group of IBM Cloud offerings that provide deployment and management of VMware® by Broadcom virtualized environments. Learn how to make the most of your VMware Solutions experience by using the user documentation, REST API documentation reference, solution architectures, and solution guides.",
     "section_devtools": {
       "api": "/docs?tab=api-docs&category=compute&subCategory=vmwaresolutions"
@@ -54,6 +54,11 @@
       "view_more": "/docs/vmwaresolutions?topic=vmwaresolutions-vmwaresolutions-relnotes",
       "tiles": [
         {
+          "date": "24 June 2024",
+          "title": "VMware Cloud Director upgrade for VMware Shared",
+          "description": "The VMware Shared infrastructure is upgraded to VMware Cloud Director v10.5.1.1, which resolves various issues and includes bug fixes."
+        },
+        {
           "date": "1 May 2024",
           "title": "Updated offerings for VMware Solutions",
           "description": "Existing IBM Cloud® for VMware Solutions offerings are no longer available as separate components and are replaced by VMware Cloud Foundation™. The offering name changes are available across the portfolio, including the documentation and REST API."
@@ -62,11 +67,6 @@
           "date": "4 April 2024",
           "title": "Veeam 12.1.1 for VMware Shared",
           "description": "Veeam® Backup and Replication 12.1.1 (Veeam 12.1.1) is now available for deployment with the VMware Shared offering."
-        },
-        {
-          "date": "1 April 2024",
-          "title": "Updated packaging and pricing for VMware Solutions offerings",
-          "description": "IBM Cloud is changing its VMware Solutions portfolio and pricing, in response to the changes to the packaging and pricing of the VMware® portfolio, announced by Broadcom."
         }
       ]
     }

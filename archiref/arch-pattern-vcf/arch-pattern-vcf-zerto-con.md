@@ -4,7 +4,7 @@ copyright:
 
   years:  2024
 
-lastupdated: "2024-06-05"
+lastupdated: "2024-06-11"
 
 subcollection: vmwaresolutions
 
@@ -22,7 +22,7 @@ An overview of this architecture pattern is shown in the following diagram.
 
 ![Zerto on VMware Cloud Foundation consolidated architecture](../../images/vcf-arch-zerto-cons.svg "Zerto on VMware Cloud Foundation consolidated architecture."){: caption="Figure 1. Zerto on VMware Cloud Foundation consolidated architecture" caption-side="bottom"}
 
-To obtain image to install the required software in this architecture pattern, raise an {{site.data.keyword.cloud_notm}} Support ticket to {{site.data.keyword.vmwaresolutions_full}}.
+To obtain the image to install the required software in this architecture pattern, raise an {{site.data.keyword.cloud_notm}} Support ticket to {{site.data.keyword.vmwaresolutions_full}}.
 {: important}
 
 ## Deploying Zerto on VMware Cloud Foundation consolidated architecture deployment

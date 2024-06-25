@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2023
+  years:  2016, 2024
 
-lastupdated: "2023-08-03"
+lastupdated: "2024-06-11"
 
 subcollection: vmwaresolutions
 
@@ -27,8 +27,8 @@ Caveonix RiskForesight architecture has four layers:
    * RMCP – The Risk Management Control Plane (RMCP) provides continuous and proactive protection of the workloads, by monitoring the full-stack within private, public, and managed cloud data centers.
    * Policy Manager - Currently supports three types of machine learning jobs per organization; Caveo Logs, Caveo Networks, Caveo Scan. Based on the anomalies found in the data, you can configure the policies and actions for user-defined conditions. These actions might include selecting the job type, configuring Boolean conditions for the Anomaly score, and defining the action when the condition is true. For example,
       * Job: "Caveo Logs" Anomaly score is > 90 then Mark asset for quarantine and send notification to slack Channel.
-      * Job: "Caveo Network" Anomaly score is > 95 then quarantine the asset and send email notification and also send UI notification.
-* Dashboards - The dashboards, through role-based access, provide the ability for a service provider, such as an IT department, to allocate IT assets to tenants or business units. Business units then assign these IT assets to applications. These applications match business and IT services, are subject to a Business Impact Assessment, and subject to a compliance regime such as: NIST, NESA, PCI, ISO, and HIPAA. These applications are then subject to a number of scans such as vulnerability, NSX flows, software, and log data. These scans allow visibility into what is running, and the cyberrisk and compliance risk associated with the applications. Drilling down through these dashboards, compliance and security users, can see a prioritized list of actions to mitigate and enable automatable enforcement actions in the Predict and Act modules. RiskForesight provides both a unified dashboard to identify assets in the hybrid cloud and a heat map analysis for cyberrisks, compliance configuration risks, key trends, and metrics of security operation. It enables users to quickly determine the nature and location of risks and what actions to take that use an intuitive and powerful visualization tool.
+      * Job: "Caveo Network" Anomaly score is > 95 then quarantine the asset and send an email notification and also send a UI notification.
+* Dashboards - The dashboards, through role-based access, provide the ability for a service provider, such as an IT department, to allocate IT assets to tenants or business units. Business units then assign these IT assets to applications. These applications match business and IT services, are subject to a Business Impact Assessment, and subject to a compliance regime such as: NIST, NESA, PCI, ISO, and HIPAA. These applications are then subject to a number of scans such as vulnerability, NSX flows, software, and log data. These scans allow visibility into what is running, and the cyberrisk and compliance risk associated with the applications. Drilling down through these dashboards, the compliance and security users can see a prioritized list of actions to mitigate and enable automatable enforcement actions in the Predict and Act modules. RiskForesight provides both a unified dashboard to identify assets in the hybrid cloud and a heat map analysis for cyberrisks, compliance configuration risks, key trends, and metrics of security operation. It enables users to quickly determine the nature and location of risks and what actions to take that use an intuitive and powerful visualization tool.
 
 These dashboards provide the following functions.
 * A prioritized view of cyberrisk and compliance risks across hybrid cloud with Detect, Predict, Act dashboard views.
@@ -52,4 +52,4 @@ Caveonix RiskForesight has the concept of zones.
    * Private – VMware on {{site.data.keyword.cloud}}, and on-premises, VMware infrastructure platforms. These platforms are integrated into RiskForesight through: vCenter, NSX Manager, VMware Cloud Director (vCD), or VMware Aria® Automation™.
    * Public – Currently the only public cloud provider that is supported is AWS. {{site.data.keyword.cloud_notm}} is available soon.
    * Containers - Currently only AWS Elastic Kubernetes Service (EKS) is supported. {{site.data.keyword.cloud_notm}} Private and {{site.data.keyword.cloud_notm}} Kubernetes Services coming later.
-* Tenant or Customer Environment Zone – Used to separate tenants, customer, or business units. A remote collector is required because workloads exist in these zones. For a minimum deployment, you need one remote collector, but for a general deployment, you need one Remote Collector per tenant or customer or business unit.
+* Tenant or Customer Environment Zone – Used to separate tenants, customers, or business units. A remote collector is required because workloads exist in these zones. For a minimum deployment, you need one remote collector, but for a general deployment, you need one Remote Collector per tenant or customer or business unit.

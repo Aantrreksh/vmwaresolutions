@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2024
 
-lastupdated: "2024-06-05"
+lastupdated: "2024-06-11"
 
 subcollection: vmwaresolutions
 
@@ -57,7 +57,7 @@ The diagram also shows:
 3. The Cyber Recovery software controls the virtual air gap between the production DD system and the Cyber Recovery vault, by disabling the replication ports on the DDVE system in the Cyber Recovery vault when Cyber Recovery policies are idle.
 4. A policy, which can be scheduled, orchestrates the workflow between the production DD system and the Cyber Recovery vault DDVE. A policy is a combination of objects, such as PowerProtect DD storage and applications, and jobs, such as synchronization, copy, and lock. Data from the production DD system enters the Cyber Recovery vault DDVE through DD series MTree replication.
 5. Within the Cyber Recovery vault, the Cyber Recovery software creates point-in-time (PIT) retention-locked copies that can be validated and then used for recovery of the production system.
-6. PowerProtect DD Retention Lock provides data immutability for a specified time and is enabled on a per-MTree basis, while the retention time is set on a per-file basis. Retention Lock is recommended as an additional cyber-resiliency measure.
+6. PowerProtect DD Retention Lock provides data immutability for a specified time and is enabled on a per-MTree basis, while the retention time is set on a per-file basis. Retention Lock is recommended as an extra cyber-resiliency measure.
 7. If Index Engines™ CyberSense® software is installed, then this software is used by the Cyber Recovery software to validate and analyze your data in the DDVE.
 8. Your Cyber Admins manage the Cyber Recovery vault by using the jump hosts.
  
@@ -138,7 +138,7 @@ Consider using a separate {{site.data.keyword.cloud_notm}} account to deploy you
 
 The minimum number of hosts in a consolidated cluster is three, and the minimum host configuration is 128 GB RAM and 20 cores at 2.2 GHz giving a total of 384 GB RAM and 132 GHz in the cluster for both management and customer workloads. The number of clusters, the number of hosts in the cluster and the cores and RAM in the hosts can be scaled. For more information, see [CPU Model and RAM](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-consold-cluster#vc_orderinginstance-cpumodel).
 
-If you plan to use CyberSense, then you need to size the ESXi hosts considering that the appliance requires 20 vCPU and 196 GB RAM. 
+If you plan to use CyberSense, you must size the hosts considering that the appliance requires 20 vCPU and 196 GB RAM. 
 
 * For vSAN storage, see [vSAN Storage](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-consold-cluster#vc_orderinginstance-vsan-storage). 
 * For NFS storage, see [NFS Storage](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-consold-cluster#vc_orderinginstance-nfs-storage).

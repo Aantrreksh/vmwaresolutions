@@ -4,7 +4,7 @@ copyright:
 
   years: 2023, 2024
 
-lastupdated: "2024-01-04"
+lastupdated: "2024-06-13"
 
 keywords: mount servers
 
@@ -27,7 +27,7 @@ The mount server is required for restoring of guest OS files and application ite
 
 To reduce the load on the network and speed up the restore process, the mount server must be located in the same site as the backup repository, where backup files are stored. If you have several sites, it is recommended you configure at least one mount server in each site. During service deployment, the automation deploys a mount server onto the Veeam Backup and Replication server. 
 
-If required, additional mount servers can be added. The mount server is defined for each backup repository, when you configure a backup repository, you specify which server you want to assign the role of the mount server. You can assign the mount server role to any 64-bit Microsoft Windows® machine added to the backup infrastructure. This machine and the backup repository must be located as close as possible. For cloud repositories, the mount server role is assigned to the backup server, but you cannot assign the mount server role to a different machine.
+If required, you can add more mount servers. The mount server is defined for each backup repository, when you configure a backup repository, you specify which server you want to assign the role of the mount server. You can assign the mount server role to any 64-bit Microsoft Windows® machine added to the backup infrastructure. This machine and the backup repository must be located as close as possible. For cloud repositories, the mount server role is assigned to the backup server, but you cannot assign the mount server role to a different machine.
 
 The mount server must have access to the backup repository and the virtual machine (VM) to where you restore files or application items to.
 {: note}

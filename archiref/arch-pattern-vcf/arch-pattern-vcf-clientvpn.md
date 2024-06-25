@@ -4,7 +4,7 @@ copyright:
 
   years:  2024
 
-lastupdated: "2024-06-03"
+lastupdated: "2024-06-11"
 
 subcollection: vmwaresolutions
 
@@ -20,7 +20,7 @@ This architecture pattern explains how to deploy Client VPN for VPC (Virtual Pri
 
 An overview of this architecture pattern is shown in the following diagram.
 
-![Using client VPN with an {{site.data.keyword.vcf-vpc}} deployment](../../images/vcf-arch-clientvpn.svg "Using client VPN with an {{site.data.keyword.vcf-vpc}} deployment."){: caption="Figure 1. Using client VPN with an {{site.data.keyword.vcf-vpc}} deployment" caption-side="bottom"}
+![Using a client VPN with an {{site.data.keyword.vcf-vpc}} deployment](../../images/vcf-arch-clientvpn.svg "Using a client VPN with an {{site.data.keyword.vcf-vpc}} deployment."){: caption="Figure 1. Using a client VPN with an {{site.data.keyword.vcf-vpc}} deployment" caption-side="bottom"}
 
 ## Deploying Client VPN into {{site.data.keyword.vcf-vpc-short}}
 {: #arch-pattern-vcf-clientvpn-deploy}
@@ -44,7 +44,7 @@ This architecture pattern deployment is summarized as follows:
 {: #arch-pattern-vcf-clientvpn-deploy-tips}
 
 * When you create VPN routes, you can use `translate` option to translate the source IP to the VPN server's private IP address before it is sent out from the VPN server, making your VPN client IP address from Client IPv4 address pool invisible to the destination devices. This process eases VPC up routing configurations.
-* Split tunnel is typically the mode what you would use if you need simultaneous access to corporate network and {{site.data.keyword.vcf-vpc-short}}. Then, private traffic flows through the VPN interface to the VPN tunnel, and public traffic flows through the existing LAN interface. You can manage this process with VPN routes.
+* Split tunnel is typically the mode what you would use if you need simultaneous access to the corporate network and {{site.data.keyword.vcf-vpc-short}}. Then, private traffic flows through the VPN interface to the VPN tunnel, and public traffic flows through the existing LAN interface. You can manage this process with VPN routes.
 * The VMware Cloud Foundation instance uses {{site.data.keyword.cloud_notm}} DNS Server default IP addresses `161.26.0.7` and `161.26.0.8`. When you manage the VMware Cloud Foundation instance, you need to ensure that you can use the DNS server and resolve the VMware Cloud Foundation entries. So ensure that your VPN routes cover this range.
 
 ## Considerations

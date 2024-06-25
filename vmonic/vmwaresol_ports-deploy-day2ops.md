@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2024
 
-lastupdated: "2024-04-30"
+lastupdated: "2024-06-08"
 
 keywords: VLAN ports, vmware solutions ports, ports usage vmware solutions
 
@@ -29,12 +29,12 @@ Review the following information about the ports described in the [table](#vmwar
 * Infrastructure VMs refer to the private portable subnet allocated for use by vCenter, NSX manager, the cloud driver
 * Depending on your mode of deployment, your Windows Active Directory domain controllers can be VSIs on a primary subnet, or VMs on a portable subnet.
 
-For more information about {{site.data.keyword.redhat_openshift_full}} (OCP) networking, see [About the OpenShift SDN network plugin](https://docs.openshift.com/container-platform/4.14/networking/openshift_sdn/about-openshift-sdn.html){: external}.
+For more information about {{site.data.keyword.redhat_openshift_full}} (OCP) networking, see [About the OpenShift SDN network plugin](https://docs.openshift.com/container-platform/4.15/networking/openshift_sdn/about-openshift-sdn.html){: external}.
 
 | Source | Subnet, IP range | Target | Subnet, IP range | Port | Protocol | Purpose | Service |
 |:------ |:---------------- |:------ |:---------------- |:---- |:-------- |:------- |:------- |
 | IBM CloudDriver | Private primary subnet \n Infrastructure VMs | {{site.data.keyword.cloud_notm}} Service - Cloud Object Storage \n `10.1.129.0/24`[^vssreqa] | {{site.data.keyword.cloud_notm}} infrastructure services network | 443 | TCP | Use {{site.data.keyword.cloud_notm}} Object Storage service | HTTPS |
-| IBM CloudDriver | Private primary subnet \n Infrastructure VMs | {{site.data.keyword.cloud_notm}} Service - RabbitMQ `166.9.59.6` \n `166.9.90.7` \n `166.9.58.162` \n {{site.data.keyword.cloud_notm}} Service - Log Analysis[^vssreqb] | {{site.data.keyword.cloud_notm}} endpoint service network | 443, 30560 | TCP | Use {{site.data.keyword.cloud_notm}} RabbitMQ and Log Analysis services | |
+| IBM CloudDriver | Private primary subnet \n Infrastructure VMs | {{site.data.keyword.cloud_notm}} Service - RabbitMQ `166.9.59.6` \n `166.9.90.7` \n `166.9.58.162` \n {{site.data.keyword.cloud_notm}} Service - {{site.data.keyword.la_short}}[^vssreqb] | {{site.data.keyword.cloud_notm}} endpoint service network | 443, 30560 | TCP | Use {{site.data.keyword.cloud_notm}} RabbitMQ and {{site.data.keyword.la_short}} services | |
 | IBM CloudDriver | Private primary subnet | vCenter Server | Infrastructure VMs | | ICMP | Install and configure vCenter Server | |
 | IBM CloudDriver | Private primary subnet \n Infrastructure VMs | vCenter Server | Infrastructure VMs | 22 | TCP | Set up and configure vCenter Server | SSH |
 | IBM CloudDriver | Private primary subnet \n Infrastructure VMs | vCenter Server | Infrastructure VMs | 443 | TCP | Install and configure vCenter Server and cluster | SSH |
@@ -50,10 +50,10 @@ For more information about {{site.data.keyword.redhat_openshift_full}} (OCP) net
 | IBM CloudDriver | Private primary subnet | NSX Manager | Infrastructure VMs | 443 | TCP | Set up and configure NSX Manager | HTTPS |
 | IBM CloudDriver | Private primary subnet | NSX Manager | Infrastructure VMs | 80 | TCP | Set up and configure NSX Manager | HTTP |
 | IBM CloudDriver | Private primary subnet \n Infrastructure VMs | {{site.data.keyword.cloud_notm}} infrastructure provisioning API \n `10.0.80.0/25` | {{site.data.keyword.cloud_notm}} infrastructure services network | 443 | TCP | Order and provision {{site.data.keyword.cloud_notm}} infrastructure resources | HTTPS |
-| IBM CloudDriver | Private primary subnet \n Infrastructure VMs | {{site.data.keyword.cloud_notm}} infrastructure DNS service \n `10.0.80.11` \n `10.0.80.12` | {{site.data.keyword.cloud_notm}} infrastructure services network \n For more information, see [DNS FAQs](/docs/dns?topic=dns-dns-faq). | 53 | UDP | Use {{site.data.keyword.cloud_notm}} infrastructure DNS service | |
+| IBM CloudDriver | Private primary subnet \n Infrastructure VMs | {{site.data.keyword.cloud_notm}} infrastructure DNS service \n `10.0.80.11` \n `10.0.80.12` | {{site.data.keyword.cloud_notm}} infrastructure services network | 53 | UDP | Use {{site.data.keyword.cloud_notm}} infrastructure DNS service | |
 | IBM CloudDriver | Private primary subnet \n Infrastructure VMs | {{site.data.keyword.cloud_notm}} infrastructure NTP service. | {{site.data.keyword.cloud_notm}} infrastructure services network. For more information, see [NTP overview](/docs/cloud-infrastructure?topic=cloud-infrastructure-ntp-service-overview). | 123 | UDP | Use {{site.data.keyword.cloud_notm}} infrastructure NTP service | |
 | IBM CloudDriver | Private primary subnet \n Infrastructure VMs | {{site.data.keyword.cloud_notm}} infrastructure endurance storage | {{site.data.keyword.cloud_notm}} infrastructure services network | Any | ICMP and TCP | Set up endurance storage for ESXi host | |
-| Windows Active Directory | Private primary subnet \n Infrastructure VMs | {{site.data.keyword.cloud_notm}} infrastructure DNS service \n `10.0.80.11` \n `10.0.80.12` | {{site.data.keyword.cloud_notm}} infrastructure services network \n For more information, see [DNS FAQs](/docs/dns?topic=dns-dns-faq). | 53 | UDP | Use {{site.data.keyword.cloud_notm}} infrastructure DNS service | |
+| Windows Active Directory | Private primary subnet \n Infrastructure VMs | {{site.data.keyword.cloud_notm}} infrastructure DNS service \n `10.0.80.11` \n `10.0.80.12` | {{site.data.keyword.cloud_notm}} infrastructure services network | 53 | UDP | Use {{site.data.keyword.cloud_notm}} infrastructure DNS service | |
 | Windows Active Directory | Private primary subnet \n Infrastructure VMs | {{site.data.keyword.cloud_notm}} infrastructure NTP service | {{site.data.keyword.cloud_notm}} infrastructure services network | 123 | UDP | Use {{site.data.keyword.cloud_notm}} infrastructure NTP service | |
 | Windows Active Directory | Private primary subnet \n Infrastructure VMs | {{site.data.keyword.cloud_notm}} infrastructure WSUS service | {{site.data.keyword.cloud_notm}} infrastructure services network | 80 | TCP | Use {{site.data.keyword.cloud_notm}} infrastructure WSUS service | HTTP |
 | Windows Active Directory | Private primary subnet \n Infrastructure VMs | {{site.data.keyword.cloud_notm}} infrastructure Windows KMS service | {{site.data.keyword.cloud_notm}} infrastructure services network | 1688 | TCP | Use {{site.data.keyword.cloud_notm}} infrastructure Windows KMS service | |
@@ -71,8 +71,8 @@ For more information about {{site.data.keyword.redhat_openshift_full}} (OCP) net
 {: caption="Table 1. Ports for deployment and Day 2 operations" caption-side="bottom"}
 {: #vmwaresol_ports-deploy-day2ops-table}
 
-[^vssreqa]: Flexible instances require access to Cloud Object Storage, RabbitMQ, and Log Analysis.
-[^vssreqb]: Flexible instances require access to Cloud Object Storage, RabbitMQ, and Log Analysis.
+[^vssreqa]: Flexible instances require access to Cloud Object Storage, RabbitMQ, and {{site.data.keyword.la_short}}.
+[^vssreqb]: Flexible instances require access to Cloud Object Storage, RabbitMQ, and {{site.data.keyword.la_short}}.
 
 ## Related links
 {: #vmwaresol_ports-deploy-day2ops-related}

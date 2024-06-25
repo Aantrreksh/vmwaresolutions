@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2024
 
-lastupdated: "2024-04-12"
+lastupdated: "2024-06-25"
 
 keywords: openshift for vmware, request openshift for vmware, tech specs openshift vmware
 

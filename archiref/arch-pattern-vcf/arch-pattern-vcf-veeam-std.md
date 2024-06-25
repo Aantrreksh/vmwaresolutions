@@ -4,7 +4,7 @@ copyright:
 
   years:  2024
 
-lastupdated: "2024-06-05"
+lastupdated: "2024-06-11"
 
 subcollection: vmwaresolutions
 
@@ -46,9 +46,9 @@ This architecture pattern deployment is summarized as follows:
 
 When you design or deploy this architecture pattern, consider the following information:
 
-* Follow Veeam best practices when designing your solution.
-* When using Veeam as a backup solution, design the wanted resiliency with storage selection, for use {{site.data.keyword.vpc_short}} file shares or block storage in combination with {{site.data.keyword.cloud_notm}} Object Storage.
-* When replicating with Veeam to on-premises or other VMware® cloud, you need to establish connectivity to the replication source or target, depending on the wanted target.
+* Follow the Veeam best practices when you design your solution.
+* When you are using Veeam as a backup solution, design the wanted resiliency with storage selection, for use {{site.data.keyword.vpc_short}} file shares or block storage in combination with {{site.data.keyword.cloud_notm}} Object Storage.
+* When you replicate with Veeam to on-premises or other VMware® cloud, you need to establish connectivity to the replication source or target, depending on the wanted target.
 * Design your connectivity by using the available connectivity pattern for Veeam replication.
 
 ## Related links

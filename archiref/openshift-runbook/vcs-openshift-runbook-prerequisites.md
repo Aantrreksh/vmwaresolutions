@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2024
 
-lastupdated: "2024-06-05"
+lastupdated: "2024-06-12"
 
 subcollection: vmwaresolutions
 
@@ -21,7 +21,7 @@ Before you can start the build process to install the {{site.data.keyword.redhat
 * Order new subnets for the {{site.data.keyword.redhat_openshift_notm}} environment.
    * A private portable subnet for the {{site.data.keyword.redhat_openshift_notm}} cluster NSX ESG.
    * A public portable subnet for the {{site.data.keyword.redhat_openshift_notm}} cluster NSX ESG.
-* Download {{site.data.keyword.redhat_openshift_notm}} 4.7 - Access to a {{site.data.keyword.redhat_full}} subscription to download the installer, pull secret and {{site.data.keyword.redhat_notm}} Enterprise CoreOS OVA.
+* Download {{site.data.keyword.redhat_openshift_notm}} 4.7 - Access to a {{site.data.keyword.redhat_full}} subscription to download the installer, pull secret, and {{site.data.keyword.redhat_notm}} Enterprise CoreOS OVA.
 * Download RHEL 8.0 ISO - Access to a {{site.data.keyword.redhat_notm}} subscription to download the {{site.data.keyword.redhat_notm}} Enterprise Linux® 8.x ISO for the bastion host.
 * {{site.data.keyword.cloud}} environment details - Collect the following details for {{site.data.keyword.cloud_notm}} for VMware® Solutions environment.
    * {{site.data.keyword.vcf-auto}} instance details and passwords

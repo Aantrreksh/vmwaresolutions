@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-04-12"
+lastupdated: "2024-05-09"
 
 keywords: Entrust DataControl WebGUI, Entrust DataControl console, enable internet Entrust DataControl
 
@@ -18,7 +18,7 @@ subcollection: vmwaresolutions
 # Managing Entrust DataControl
 {: #managing-entrust-dc}
 
-New installations of Entrust DataControl® (formerly known as HyTrust DataControl) are not supported for new or existing deployments of {{site.data.keyword.vcf-auto}} instances. You can still use or delete existing Entrust DataControl installations on your existing instances.
+New installations of Entrust DataControl® (formerly HyTrust DataControl) are not supported for new or existing deployments of {{site.data.keyword.vcf-auto}} instances. You can still use or delete existing Entrust DataControl installations on your existing instances.
 {: deprecated}
 
 To manage Entrust DataControl, access the Entrust DataControl WebGUI from the {{site.data.keyword.vmwaresolutions_full}} console, or access the Entrust DataControl console from the vSphere® Web Client.

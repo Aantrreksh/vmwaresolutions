@@ -3,7 +3,7 @@
 copyright:
   years: 2022, 2024
 
-lastupdated: "2024-04-29"
+lastupdated: "2024-06-24"
 
 keywords: IBM Cloud for VMware Solutions, getting started, vmware solutions offerings, services for vmwaresolutions, vmwaresolutions use cases
 
@@ -18,14 +18,7 @@ content-type: conref
 # Content references for VMware Solutions subcollection
 {: #conref-vmwaresolutions}
 
-<!-- Conref section START.
 
-INFORMATION:
-The section is referenced by the following files:
-- cr/cr_orderinginstance-consolidwkld.md
-- vcenter/vc_orderinginstance-consold-cluster.md
-- vcenter/vc_addingclusters.md
-- vsphere/vs_orderinginstances-bare-metal.md -->
 
 CONTENT:
 
@@ -77,22 +70,9 @@ For **SAP-certified Cascade Lake** servers, choose from the following configurat
 {: class="simple-tab-table"}
 {: #simpletabtable-sap-hana}
 
-<!-- Conref section END. -->
 
-<!--Conref section START.
 
-INFORMATION:
-The section is referenced by the following files:
 
-- cr/cr_orderinginstance-consolidwkld.md
-- vcenter/scb-orderinginstance-cons-work-cluster.md
-- vcenter/vc_addingclusters.md
-- vcenter/vc_orderinginstance-consold-cluster.md
-- vrw/vrw-orderinginstance-mgmt.md
-- vrw/vrw-orderinginstance-primary.md
-- vrw/vrw-orderinginstance-witness.md
-- vrw/vrw-orderinginstance-wkld.md
-- vsphere/vs_orderinginstances-network.md -->
 
 CONTENT:
 
@@ -103,6 +83,8 @@ The uplink speed provides two options:
 
 | Data center | Pod |
 |:----------- |:--- |
+| SYD04 | 01 |
+| SYD05 | 01 |
 | TOK02 | 02 |
 | TOK04 | 01 |
 | TOK05 | 01 |
@@ -134,7 +116,8 @@ The uplink speed provides two options:
 | Data center | Pod |
 |:----------- |:--- |
 | TOR04 | 01 |
-| WDC04 | 04 |
+| TOR05 | 01 |
+| WDC04 | 05 |
 | WDC06 | 01 |
 {: caption="Table. Available locations for 25 Gb uplink speed - NA East" caption-side="bottom"}
 {: tab-title="NA East"}
@@ -153,14 +136,9 @@ The uplink speed provides two options:
 {: class="simple-tab-table"}
 {: #simpletable-uplink-speed-locations-nasouth}
 
-<!-- Conref section END. -->
 
-<!--Conref section START.
 
-INFORMATION:
-The section is referenced by the following files:
-- vcenter/vc_orderinginstance-procedure.md
-- vcenter/vrw-orderinginstance-procedure.md -->
+
 
 CONTENT:
 
@@ -171,36 +149,18 @@ CONTENT:
 *  Restarting services
 {: #caution-component-management}
 
-<!-- Conref section END. -->
 
-<!--Conref section START.
 
-INFORMATION:
-The section is referenced by the following files:
-- services/addingzertodr.md
-- services/caveonix_considerations.md
-- services/f5_considerations.md
-- services/hcx_considerations.md
-- services/juniper_overview.md
-- services/ocp_overview.md
-- services/veeamvm_overview.md
-- services/vrops_overview.md -->
+
 
 CONTENT:
 
 {{site.data.keyword.vmwaresolutions_full}} offers promotions for some add-on services. Promotional pricing offers a number of months at no cost for a service license, if the service has license charges. For more information, see [Promotions for services](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices#vc_addingservices-service-promotions).
 {: #para-promotion-services}
 
-<!--Conref section END. -->
 
-<!-- Conref section START.
 
-INFORMATION:
-The section is referenced by the following files:
-- vcenter/vc_deletinginstance.md
-- vcenter/vc_deletinginstance_multi.md
-- vcenter/vc_hybrid_deletinginstance.md
-- vcenter/vc_hybrid_deletinginstance_multi.md -->
+
 
 CONTENT:
 
@@ -228,15 +188,9 @@ You are billed until the end of the {{site.data.keyword.cloud_notm}} infrastruct
 {: #deletinginstance-important-note}
 
 
-<!-- Conref section END. -->
 
-<!-- Conref section START.
 
-INFORMATION:
-The section is referenced by the following files:
-- vcenter/vc_addingservers.md
-- vcenter/vc_hybrid_addingremovingservers.md
-- vcenter/vc_removingservers.md -->
+
 
 CONTENT:
 
@@ -248,15 +202,9 @@ Whenever possible, remove ESXi servers by using the {{site.data.keyword.vmwareso
 {: important}
 {: #para-vcenterremoveESXiservers}
 
-<!-- Conref section END. -->
 
-<!-- Conref section START.
 
-INFORMATION:
-The section is referenced by the following files:
-- vcenter/vc_addingclusters.md
-- vcenter/vc_hybrid_addingviewingclusters.md
-- vcenter/vc_deletingclusters.md -->
+
 
 CONTENT:
 
@@ -268,14 +216,9 @@ Whenever possible, delete clusters by using the {{site.data.keyword.vmwaresoluti
 {: important}
 {: #para-vcenterremoveclusters}
 
-<!-- Conref section END. -->
 
-<!--Conref section START.
 
-INFORMATION:
-The section is referenced by the following files:
-- vcenter/vc_orderinginstance-sys.md
-- vcenter/vrw-orderinginstance-resource.md -->
+
 
 CONTENT:
 
@@ -289,15 +232,9 @@ You can also specify an instance name that meets the following requirements:
 {: #orderinginstance-inst-name-list}
 
 
-<!-- Conref section END. -->
 
-<!-- Conref section START.
 
-INFORMATION:
-The section is referenced by the following files:
-- vcenter/vrw-orderinginstance-wkld.md
-- vcenter/vrw-orderinginstance-primary.md
-- vcenter/vrw-orderinginstance-edge.md -->
+
 
 CONTENT:
 
@@ -310,14 +247,9 @@ You can also specify a cluster name that meets the following requirements:
 {: #orderinginstance-cluster-name-list}
 
 
-<!-- Conref section END. -->
 
-<!-- Conref section START.
 
-INFORMATION:
-The section is referenced by the following files:
-- vcenter/vc_addingclusters.md
-- vcenter/vc_orderinginstance-consold-cluster.md -->
+
 
 CONTENT:
 
@@ -330,16 +262,9 @@ You can also specify a new cluster name that meets the following requirements:
 {: #cluster-name-requirements-list}
 
 
-<!-- Conref section END. -->
 
-<!--Conref section START.
 
-INFORMATION:
-The section is referenced by the following files:
-- cr/cr_orderinginstance-gen-info.md
-- vcenter/vc_orderinginstance-sys.md
-- vsphere/vs_orderinginstances-sys.md
-- vrw/vrw-orderinginstance-config.md -->
+
 
 CONTENT:
 
@@ -359,17 +284,9 @@ If you do not see any configurations in the list, then you do not have any saved
 Select whether to order a new primary instance or a secondary instance for an existing primary instance.
 {: #para-orderinginstance-primary-secondary}
 
-<!-- Conref section END. -->
 
-<!-- Conref section START.
 
-INFORMATION:
-The section is referenced by the following files:
-- cr_orderinginstance-consolidwkld.md
-- scb-orderinginstance-cons-work-cluster.md
-- vc_addingclusters.md
-- vc_orderinginstance-addl-clusters.md
-- vc_orderinginstance-consold-cluster.md -->
+
 
 CONTENT:
 
@@ -383,28 +300,18 @@ CONTENT:
 * All servers that you order have the same configuration.
 {: #number-of-baremetal-servers-wkld}
 
-<!--Conref section END. -->
 
-<!-- Conref section START.
 
-INFORMATION:
-The section is referenced by the following files:
-- vcenter/vc_vcs_80_upgrade.md
-- vcenter/vc_vsphere_70_upgrade.md -->
+
 
 CONTENT:
 
 The time to complete the upgrade is unknown. It is possible that it might take several maintenance windows to completely upgrade an environment. Running up-leveled and down-leveled versions of the SDDC software is supported by VMware® during the upgrade process. However, some functions such as vMotion, might be limited during this process.
 {: #para-vcs80upgrade-prereq}
 
-<!-- Conref section END. -->
 
-<!-- Conref section START.
 
-INFORMATION:
-The section is referenced by the following files:
-- vcenter/vc_orderinginstance-sys.md
-- vrw/vrw-orderinginstance-config.md -->
+
 
 CONTENT:
 
@@ -414,89 +321,28 @@ vCenter Server 7 is selected by default.
 For new instances, vCenter Server 8 is available to order. However, for existing instances or clusters with vCenter Server 7, you can add only vCenter Server 7 clusters or hosts.
 {: #para-vcsversion80-vcsline2}
 
-vSphere 8 is not yet available to order from the VMware Solutions console.
-{: note}
-{: #note-vcsversion80-vsphere8}
 
-<!-- Conref section END. -->
 
-<!-- Conref section START.
 
-INFORMATION:
-The section is referenced by the following files:
-- shared/iam_vcd.md
-- shared/shared-monitor.md
-- shared/shared-vmwaas-migration.md
-- shared/shared_accessing-vcd-console.md
-- shared/shared_creating-endpoints.md
-- shared/shared_data_security.md
-- shared/shared_deleting-endpoints.md
-- shared/shared_deletinginstance.md
-- shared/shared_iam-integration.md
-- shared/shared_migration.md
-- shared/shared_modifying-endpoints.md
-- shared/shared_ordering.md
-- shared/shared_overview.md
-- shared/shared_planning.md
-- shared/shared_pricing.md
-- shared/shared_resizeinstance.md
-- shared/shared_vcd-ops-guide.md
-- shared/shared_veeam.md
-- shared/shared_viewing-endpoints.md
-- shared/shared_viewing-vdc-details.md
-- shared/shared_viewing-vdc-summary.md
-- shared/shared_zerto-cloud-connector-delete.md
-- shared/shared_zerto-cloud-connector-order.md
-- shared/shared_zerto-cloud-connector-view.md
-- shared/shared_zerto-portal.md
-- vmonic/eos-vmware-shared.md
-- vmonic/faq_shared-eos.md
-- vmonic/faq_shared.md  -->
 
 CONTENT:
 
-{{site.data.keyword.vm-shared}} is no longer available for new deployments. Existing instances will continue to be supported until 15 January 2025. Ensure that you migrate all your {{site.data.keyword.vm-shared}} resources to [{{site.data.keyword.vmware-service-full}}](/docs/vmware-service) by 15 January 2025. For more information, see [End of Support for {{site.data.keyword.vm-shared}} deployments](/docs/vmwaresolutions?topic=vmwaresolutions-eos-vmware-shared).
+{{site.data.keyword.vm-shared}} is no longer available for new deployments. Existing instances are supported until 15 January 2025. Ensure that you migrate all your {{site.data.keyword.vm-shared}} resources to [{{site.data.keyword.vmware-service_full}}](/docs/vmware-service) by 15 January 2025. For more information, see [End of Support for {{site.data.keyword.vm-shared}} deployments](/docs/vmwaresolutions?topic=vmwaresolutions-eos-vmware-shared).
 {: deprecated}
 {: #shared-deprecated-note}
 
-<!-- Conref section END. -->
 
-<!-- Conref section START.
 
-INFORMATION:
-The section is referenced by the following files:
-- cr/cr_planning.md
-- vcenter/vc_planning.md
-- vrw/vrw-planning.md
-- vsphere/vs_planning.md -->
+
 
 CONTENT:
 
 The VMware® licensing model is changed. You are entitled to the [VMware software products](/docs/vmwaresolutions?topic=vmwaresolutions-vmwaresol_packaging-pricing#vmwaresol_packaging-pricing-impact) that are included in the VMware Cloud Foundation™ bundle. To request VMware NSX® license upgrades and other licensing changes, open an IBM Support ticket by following the steps in [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support).
 {: #vmware-licensing}
 
-<!-- Conref section END. -->
 
-<!-- Conref section START.
 
-INFORMATION:
-The section is referenced by the following files:
-cr/cr_orderinginstance-consolidwkld.md
-cr/cr_orderinginstance-gen-info.md
-cr/cr_orderinginstance-order-procedure.md
-vcenter/scb-orderinginstance-cons-work-cluster.md
-vcenter/vc_addingclusters.md
-vcenter/vc_orderinginstance-consold-cluster.md
-vcenter/vc_orderinginstance-licensing.md
-vcenter/vc_orderinginstance-procedure.md
-vrw/vrw-orderinginstance-licensing.md
-vrw/vrw-orderinginstance-primary.md
-vrw/vrw-orderinginstance-procedure.md
-vrw/vrw-orderinginstance-wkld.md
-vsphere/vs_orderingbasedonexistingconfig.md
-vsphere/vs_orderinginstances-licensing.md
-vsphere/vs_orderinginstances-procedure.md
-vsphere/vs_vsphereoverview.md -->
+
 
 Bring Your Own License (BYOL) is no longer supported except for migrations or upgrades of existing BYOL clusters. Use this feature only if you are upgrading or migrating an existing BYOL cluster.
 {: attention}
@@ -506,17 +352,28 @@ Bring Your Own License (BYOL) is no longer supported except for migrations or up
 {: attention}
 {: #attnnote-addhost-byol}
 
-<!-- Conref section END. -->
 
-<!-- Conref section START.
 
-INFORMATION:
-The section is referenced by the following files:
-- services/hcx_considerations.md
-- services/hcx_ordering.md -->
+
 
 The automated deployment process is not supported for BYOL (Bring Your Own License). You must complete the HCX deployment process manually.
 {: important}
 {: #impnote-deploymanual-hcx}
 
-<!-- Conref section END. -->
+
+
+
+
+As of 28 March 2024, the {{site.data.keyword.at_full_notm}} service is deprecated and will no longer be supported as of 30 March 2025. Customers will need to migrate to {{site.data.keyword.logs_full_notm}} before 30 March 2025. During the migration period, customers can use {{site.data.keyword.at_full_notm}} along with {{site.data.keyword.logs_full_notm}}. Activity tracking events are the same for both services. For information about migrating from {{site.data.keyword.at_full_notm}} to {{site.data.keyword.logs_full_notm}} and running the services in parallel, see [migration planning](/docs/cloud-logs?topic=cloud-logs-migration-intro).
+{: important}
+{: #impnote-at-deprecation}
+
+
+
+
+
+As of 28 March 2024, the {{site.data.keyword.la_full_notm}} service is deprecated and will no longer be supported as of 30 March 2025. Customers will need to migrate to {{site.data.keyword.logs_full_notm}} before 30 March 2025. During the migration period, customers can use {{site.data.keyword.la_full_notm}} along with {{site.data.keyword.logs_full_notm}}. Logging is the same for both services. For information about migrating from {{site.data.keyword.la_full_notm}} to {{site.data.keyword.logs_full_notm}} and running the services in parallel, see [migration planning](/docs/cloud-logs?topic=cloud-logs-migration-intro).
+{: important}
+{: #impnote-la-deprecation}
+
+

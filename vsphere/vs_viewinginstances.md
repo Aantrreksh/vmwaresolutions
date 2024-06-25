@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2024
 
-lastupdated: "2024-04-20"
+lastupdated: "2024-06-14"
 
 keywords: view flexible, view instance, view instance details, instance view flexible
 
@@ -61,11 +61,11 @@ To view the property details of an instance, complete the following steps.
 
    | Property | Description |
    |:-------- |:----------- |
-   | Name | The name of the instance. |
    | Resource type | The resource type of the instance. |
+   | VMware vSphere version | The vSphere version. \n \n **Note:** The vSphere versions that are displayed on the {{site.data.keyword.vmwaresolutions_short}} console and the VMware vSphere® Web Client are slightly different. Both are correct. |
+   | Name | The name of the instance. |
    | ID | The ID of the instance. |
    | Location | The {{site.data.keyword.cloud_notm}} data center where the instance is hosted. |
-   | VMware vSphere version | The vSphere version. \n \n **Note:** The vSphere versions that are displayed on the {{site.data.keyword.vmwaresolutions_short}} console and the VMware vSphere® Web Client are slightly different. Both are correct. |
    | Root domain | The root domain name is the DNS domain name and the Microsoft® Active Directory™ (AD) forest root name. |
    | Subdomain[^subdomain] | The subdomain is the DNS subdomain name of the root domain name where the local {{site.data.keyword.vcf-flex-short}} instance hostnames are located. The subdomain name is in the format `vsphere_instance_name.root.domain_name`. |
    {: caption="Table 3. Flexible instance properties" caption-side="bottom"}

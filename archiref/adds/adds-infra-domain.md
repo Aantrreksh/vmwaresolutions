@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2024
 
-lastupdated: "2024-06-05"
+lastupdated: "2024-06-11"
 
 subcollection: vmwaresolutions
 
@@ -36,7 +36,7 @@ All AD domain controllers that are used in the {{site.data.keyword.vmwaresolutio
 
 These domain controllers are authoritative for the domain name that you selected for your instance. Ensure that you select a domain name that is unique within your domain space so that the DNS responsibility can be delegated completely to these controllers.
 
-You must administer users, groups, computer and group policies, in the same manner as you do with your on-premises AD by using standard AD tools. You have full administrative control of the operating system and the AD environment that gets deployed as part of the vCenter Server instance provisioning. You can set up custom configurations and create simple or complex topology as needed.
+You must administer users, groups, computer and group policies, in the same manner as you do with your on-premises AD by using standard AD tools. You have full administrative control of the operating system and the AD environment that is deployed as part of the vCenter Server instance provisioning. You can set up custom configurations and create simple or complex topology as needed.
 
 During the ordering process, you can deploy:
 
@@ -119,7 +119,7 @@ You can have a maximum of 15 instances (one primary and 14 secondary) in a multi
 * Primary instance - To deploy the first instance, you define that instance as primary during the instance order process.
 * Secondary instances - The instances that are attached to the primary instance are defined as secondary instances during the order process.
 
-AD and DNS replication is automatically set up between the domain controllers on the primary and secondary instances. If you are using a single AD domain controller at each site, configure the DNS settings manually, as follows:
+AD and DNS replication are automatically set up between the domain controllers on the primary and secondary instances. If you are using a single AD domain controller at each site, configure the DNS settings manually, as follows:
 
 * Primary instance components - use the secondary instance DNS as the secondary DNS server.
 * Secondary instance components - use the primary instance DNS as the secondary DNS server.
@@ -170,15 +170,15 @@ AD, DNS, and SSO are configured slightly differently in a primary and secondary 
 The primary instance has the following configuration:
 
 * AD and DNS root domain and SSO domain
-* vCenter Server belonging to root domain with instance-specific name
-* Hosts belonging to root domain with instance-specific prefix
+* vCenter Server belonging to the `root` domain with instance-specific name
+* Hosts belonging to the `root` domain with instance-specific prefix
 
 The secondary instances have the following configuration:
 
 * Same root domain and SSO domain as primary instance
 * DNS and AD replication setup between the domain controllers on the primary and secondary instances
 * vCenter Server belonging to root domain and SSO domain with instance-specific name
-* Hosts belonging to root domain with instance-specific prefix
+* Hosts belonging to the `root` domain with instance-specific prefix
 * Enhanced Linked Mode (ELM) setup between the secondary instance vCenter to the vCenter in the primary instance
 
 ## Customer user IDs
@@ -198,8 +198,8 @@ The vCenter Server instance design integrates DNS services on the AD domain cont
 
 When a secondary vCenter Server instance is linked to the primary instance, the vCenter Server instance appliances are configured:
 
-* DNS is configured with the primary instances AD DNS server IP address.
-* Secondary DNS is configured with the secondary instances AD DNS server IP address.
+* DNS is configured with the AD DNS server IP address of the primary instance.
+* Secondary DNS is configured with the AD DNS server IP address of the secondary instance.
 
 AD DS DNS is configured with a forward lookup zone with the name of <root_domain>, and populated with the following host (A) records:
 
@@ -212,16 +212,16 @@ Reverse lookup zones with the start of authority (SOA), name server (NS), and th
 
 * Management subnet
 * `Internal-mgmt` subnet
-* Add-on services subnets. For example, HCX subnet, risk foresight subnet.
+* Add-on services subnets. For example, the HCX subnet or the Caveonix RiskForesight subnet.
 
 The forwarder section is configured with:
 
 * 10.0.80.12
 * 10.0.80.11
 
-Forwarders are DNS servers that the AD DNS server can use to resolve DNS queries for records that the AD server cannot resolve. 10.0.80.12 and 10.0.80.11 are the two addresses for {{site.data.keyword.cloud_notm}} Resolving Name Servers. Resolving name servers are located on the private network and act as DNS resolvers. The private resolvers query the Internet root name servers for domain lookups and resolve this information over the private network to keep your bandwidth usage down, reduce the load on the authoritative servers, and offer quick resolution. Private network resolvers are a convenience service for our customers.
+Forwarders are DNS servers that the AD DNS server can use to resolve DNS queries for records that the AD server cannot resolve. 10.0.80.12 and 10.0.80.11 are the two addresses for {{site.data.keyword.cloud_notm}} resolving name servers. Resolving name servers are on the private network and act as DNS resolvers. The private resolvers query the Internet root name servers for domain lookups and resolve this information over the private network to keep your bandwidth usage down, reduce the load on the authoritative servers, and offer quick resolution. Private network resolvers are a convenience service for our customers.
 
-All deployed appliances (vCenter Server Appliance, NSX Manager and Controllers, and vSphere ESXi hosts) have their DNS settings configured to point to the AD DNS server as their default DNS. You can customize the DNS zone configuration if it does not interfere with the configuration of the deployed components.
+All deployed appliances (vCenter Server Appliance, NSX Manager and Controllers, and vSphere ESXi hosts) have their DNS settings that are configured to point to the AD DNS server as their default DNS. You can customize the DNS zone configuration if it does not interfere with the configuration of the deployed components.
 
 ## Related links
 {: #adds-infra-domain-related}

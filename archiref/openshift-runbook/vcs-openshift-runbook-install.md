@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2024
 
-lastupdated: "2024-04-29"
+lastupdated: "2024-06-12"
 
 subcollection: vmwaresolutions
 
@@ -270,13 +270,13 @@ You can copy the ignition files after you use the following commands to display 
 | bootstrap_ip | 192.168.133.9| |
 | control_plane_ips | 192.168.133.10 \n 192.168.133.11 \n 192.168.133.12| |
 | compute_ips | 192.168.133.13 \n 192.168.133.14 \n 192.168.133.15| |
-| machine_cidr | 192.168.133.0/24| |
+| machine_cidr | `192.168.133.0/24` | |
 | cluster_id | `ocp`| |
 | cluster_domain | ocp.dallas.ibm.local | |
 | base_domain | dallas.ibm.local | |
 | vsphere_server| 10.208.17.2 | |
 | vsphere_user | administrator@vsphere.local |
-| vsphere_password | s3cretPassw0rd | |
+| vsphere_password | `s3cretPassw0rd` | |
 | vsphere_cluster | cluster1 | |
 | vsphere_datacenter | datacenter1 | |
 | vsphere_datastore | vsanDatastore | |

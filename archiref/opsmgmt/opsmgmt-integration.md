@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-06-05"
+lastupdated: "2024-06-12"
 
 subcollection: vmwaresolutions
 
@@ -32,7 +32,7 @@ VMware Aria Operations provides the following outbound alert plug-ins:
 * Standard email – uses Simple Mail Transfer Protocol (SMTP) to email VMware Aria Operations Manager alert notifications to your interested individuals.
 * SNMP Trap– logs alerts on your SNMP Trap server.
 * REST Notification – sends VMware Aria Operations alerts to another REST-enabled application where you built a REST web service to accept these messages.
-* Log file – enables VMware Aria Operations to log alerts to a file on each of your VMware Aria Operations Manager nodes. If you installed VMware Aria Operations Manager as a multiple node cluster, each node processes and logs the alerts for the objects that it monitors. Each node logs the alerts for the objects it processes.
+* Log file – enables VMware Aria Operations to log alerts to a file on each of your VMware Aria Operations Manager nodes. If you installed VMware Aria Operations Manager as a multiple-node cluster, each node processes and logs the alerts for the objects that it monitors. Each node logs the alerts for the objects that it processes.
 * Smarts SAM Notification – sends alert notifications to EMC Smarts Server Assurance Manager.
 * Network Share – sends reports to a shared location, supports SMB version 2.0.
 
@@ -56,7 +56,7 @@ Their service management layer also consists of:
 * A ticketing tool used to manage tickets for, incidents, problems, and changes. This tool is also the enterprise’s Configuration Management Database (CMDB). The tool is able to send emails to the operations teams and SMS messages.
 * An enterprise logging system that captures logs from all systems and managed by the security team.
 
-Now that they have VMware Aria Operations they can integrate this tool by using northbound notification that uses the SNMP Trap plug in. To integrate VMware Aria Operations, the traps that are sent by VMware Aria Operations must be parsed in a way that the client’s event management environment can create alerts and enrich it. The management tool team downloaded the VMware MIBs from VMware and installed them in their event management environment.
+Now that they have VMware Aria Operations they can integrate this tool by using northbound notification that uses the SNMP Trap plug-in. To integrate VMware Aria Operations, the traps that are sent by VMware Aria Operations must be parsed in a way that the client’s event management environment can create alerts and enrich it. The management tool team downloaded the VMware MIBs from VMware and installed them in their event management environment.
 
 VMware Aria Operations™ for Logs is configured to forward all events to the enterprise logging system in accordance with the client’s policies.
 

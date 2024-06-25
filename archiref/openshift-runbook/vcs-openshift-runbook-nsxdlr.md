@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2024
 
-lastupdated: "2024-04-29"
+lastupdated: "2024-06-12"
 
 subcollection: vmwaresolutions
 
@@ -13,7 +13,7 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# OpenShift NSX DLR configuration
+# {{site.data.keyword.redhat_openshift_notm}} NSX DLR configuration
 {: #openshift-runbook-runbook-nsxdlr-intro}
 
 The NSX distributed logical router is used to support the {{site.data.keyword.redhat_openshift_full}} 4.7 environment. To use this information, you must understand how to create these components and add the configuration.
@@ -34,13 +34,13 @@ The NSX DLR Control VMs are configured as an active and passive pair of applianc
 | Disk      | 4.5 GB VMDK resident on shared storage with 4 GB swap |
 {: caption="Table 1. NSX DLR deployment" caption-side="bottom"}
 
-Since the NSX DLR Control VMs are configured as active/passive, you must create vSphere Distributed Resource Scheduler (DRS) anti-affinity rules. The rules ensure that NSX Edges do not run on the same host as their respective peer appliance.
+Since the NSX DLR Control VMs are configured as active-passive, you must create vSphere Distributed Resource Scheduler (DRS) anti-affinity rules. The rules ensure that NSX Edges do not run on the same host as their respective peer appliance.
 
 | Field     | Value         |
 |-----------|---------------|
-| Name      | OpenShift-DLR |
+| Name      | `OpenShift-DLR` |
 | Type      | Separate virtual machines |
-| Members   | OpenShift-DLR-0   \n  OpenShift-DLR-1 |
+| Members   | `OpenShift-DLR-0` \n `OpenShift-DLR-1` |
 {: caption="Table 2. NSX DLR anti-affinity rules" caption-side="bottom"}
 
 ## NSX DLR interfaces
@@ -48,10 +48,10 @@ Since the NSX DLR Control VMs are configured as active/passive, you must create 
 
 The NSX DLR is deployed with a transit network between the {{site.data.keyword.redhat_openshift_notm}} NSX Edge and the {{site.data.keyword.redhat_openshift_notm}} Logical switch. The Edge is defined as an uplink interface and the Logical switch is defined as an internal interface.
 
-| Interface name| Interface type | IP addresses | Port group/Logical switch |
+| Interface name| Interface type | IP addresses | Port group or logical switch |
 | --- | ---| --- | --- |
-| OpenShift-LS | Internal | 192.168.133.1 | OpenShift-LS |
-| OpenShift-Transit | Uplink | 192.168.100.2/24 | OpenShift-Transit  |
+| OpenShift-LS | Internal | `192.168.133.1` | OpenShift-LS |
+| OpenShift-Transit | Uplink | `192.168.100.2/24` | OpenShift-Transit  |
 {: caption="Table 3. Configuration for NSX DLR - interfaces" caption-side="bottom"}
 
 ## NSX DLR firewall

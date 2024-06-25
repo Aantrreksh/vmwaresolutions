@@ -1,7 +1,6 @@
 #  Name your file `toc.yaml`
 #  Make sure you include all nav file coding requirements
 #  Anything with a fully qualified URL with `http` or `https` will get an external link icon added to the nav entry
-
 toc:
   properties:
     subcollection: vmwaresolutions
@@ -13,7 +12,6 @@ toc:
     product-page: https://www.ibm.com/products/vmware
     path: vmwaresolutions
     label: VMware Solutions
-
 #  List your getting started tutorial (getting-started.md) as the first item in the Get started nav group
   entries:
   - navgroup:
@@ -29,7 +27,6 @@ toc:
           - link:
               label: Release notes for VCF as a Service
               href: https://{DomainName}/docs/vmware-service?topic=vmware-service-vmware-service-relnotes
-
   - navgroup:
       id: tutorial
       topics:
@@ -49,7 +46,6 @@ toc:
             - include: ../vmware-service/tutorials/vcda-migrating-onprem.md
             - include: ../vmware-service/tutorials/vcda-migrating-cloudtocloud-shared.md
             - include: ../vmware-service/tutorials/vcda-migrating-cloudtocloud-vmaas.md
-
   - navgroup:
       id: howto
       topics:
@@ -223,7 +219,6 @@ toc:
               label: Viewing and deleting instances
               topics:
               - vsphere/vs_viewinginstances.md
-              - vsphere/vs_deletinginstances.md
       - topicgroup:
           label: Cyber Recovery
           topics:
@@ -486,7 +481,6 @@ toc:
               - services/spp_considerations.md
               - services/managingspp.md
           - services/veeam_considerations.md
-
 # links to your REST API docs should be included in the Reference navigation group
 # links to your command line reference docs should be included in the Reference navigation group
   - navgroup:
@@ -667,7 +661,6 @@ toc:
       - topicgroup:
           label: Solution architectures on VPC
           topics:
-
           - topicgroup:
               label: VMware Cloud Foundation for VPC
               topics:
@@ -681,7 +674,6 @@ toc:
               - archiref/vpc-vcf/vpc-vcf-nsx-t.md
               - archiref/vpc-vcf/vpc-vcf-nsx-t-logical-routers.md
               - archiref/vpc-vcf/vpc-vcf-nsx-t-vpc-routing.md
-
           - topicgroup:
               label: VMware Cloud Foundation architecture patterns
               topics:
@@ -697,7 +689,6 @@ toc:
               - archiref/arch-pattern-vcf/arch-pattern-vcf-zerto-std.md
               - archiref/arch-pattern-vcf/arch-pattern-vcf-zerto-xconnectivity.md
               - archiref/arch-pattern-vcf/arch-pattern-vcf-sccwpp.md
-
           - topicgroup:
               label: Interconnectivity for VMware workloads on VPC
               topics:
@@ -706,7 +697,6 @@ toc:
               - archiref/vpc-interconnectivity/transit-gateway.md
               - archiref/vpc-interconnectivity/direct-link.md
               - archiref/vpc-interconnectivity/vpn.md
-
       - topicgroup:
           label: Solution architectures on VCF as a Service
           topics:
@@ -714,7 +704,6 @@ toc:
               label: VCF as a Service architecture patterns
               topics:
               - include: ../vmware-service/archiref/arch-pattern-vmwaas/arch-pattern-vmwaas-sccwpp.md
-
       - topicgroup:
           label: Solution guides
           topics:
@@ -805,7 +794,7 @@ toc:
               - archiref/adds/adds-wkld-domain.md
               - archiref/adds/adds-integration.md
           - topicgroup:
-              label: vCenter Server and Red Hat OpenShift guide
+              label: VCF for Classic and Red Hat OpenShift guide
               topics:
               - archiref/openshift-runbook/vcs-openshift-runbook-intro.md
               - archiref/openshift-runbook/vcs-openshift-runbook-prerequisites.md
@@ -839,7 +828,6 @@ toc:
               - archiref/hcxclient/hcxclient-troubleshooting.md
               - archiref/hcxclient/hcxclient-removal.md
               - archiref/hcxclient/hcxclient-components.md
-
   - navgroup:
       id: help
       topics:

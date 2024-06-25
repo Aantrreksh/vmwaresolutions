@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-05-01"
+lastupdated: "2024-06-25"
 
 keywords: automated instances bom, bill materials vcf classic, vcf bom
 
@@ -39,7 +39,7 @@ The following table details the BOM information for {{site.data.keyword.vcf-auto
 | Manufacturer | Component | Version |
 |:------------ |:--------- |:------- |
 | VMware® by Broadcom | vSphere ESXi | ESXi 7.0 Update 3p (build 23307199)[^esxi70] or \n ESXi 6.7 (202403001)[^esxi67] |
-| VMware by Broadcom | Distributed vSwitch | 8.0.0 or 7.0.0[^vcs-vsphere700] or 6.6.0[^vcs-vsphere660]
+| VMware by Broadcom | Distributed vSwitch | 8.0.0 or 7.0.0[^vcs-vsphere700] or 6.6.0[^vcs-vsphere660] |
 | VMware by Broadcom | vCenter Server Appliance | 8.0 Update 2b (23319993) or \n 7.0 Update 3p (22837322) |
 | VMware by Broadcom | vSAN[^vsan] | 7.0 Update 3l (21424296) |
 | VMware by Broadcom | NSX for vSphere[^nsxt] | 4.1.2.3 (23382408) |
@@ -171,9 +171,9 @@ Review the following table for an overview of the EVC (Enhanced VMware vMotion C
 ## Related links
 {: #vc_bom-related}
 
-* [Build numbers and versions of VMware ESXi and ESX (2143832)](https://kb.vmware.com/s/article/2143832){: external}
-* [Build numbers and versions of VMware vCenter Server (2143838)](https://kb.vmware.com/s/article/2143838){: external}
-* [Enabling Jumbo Frames on virtual switches](https://kb.vmware.com/s/article/1038827){: external}
+* [Build numbers and versions of VMware ESXi and ESX (2143832)](https://knowledge.broadcom.com/external/article?legacyId=2143832){: external}
+* [Build numbers and versions of VMware vCenter Server (2143838)](https://knowledge.broadcom.com/external/article?legacyId=2143838){: external}
+* [Enabling Jumbo Frames on virtual switches](https://knowledge.broadcom.com/external/article?legacyId=1038827){: external}
 * [{{site.data.keyword.vmwaresolutions_short}} Protection data sheet](https://www.ibm.com/software/reports/compatibility/clarity-reports/report/html/softwareReqsForProduct?deliverableId=236C87407E7411E6BA51E79BE9476040){: external}
 * [{{site.data.keyword.vcf-auto-short}} overview](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview)
 * [Planning for Automated instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_planning)

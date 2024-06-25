@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-04-23"
+lastupdated: "2024-06-25"
 
 keywords: cyber recovery order procedure, order procedure cyber recovery, cyber recovery order instance, order cyber recovery, order cyber recovery instance
 
@@ -17,7 +17,7 @@ subcollection: vmwaresolutions
 # Procedure to order {{site.data.keyword.cr}}
 {: #cr_orderinginstance-order-procedure}
 
-<!-- The {: #step-1} tag and the ordered list that has only 1s are intentional. Do not delete. This coding is necessary for proper indentation when the procedure is translated. -->
+
 
 1. In the VMware Solutions console, click the **VMware Cloud Foundation (VCF) for Classic** card in the **Create a resource** section. {: #step-1}
 1. On the **Create** tab, click the **{{site.data.keyword.cr}}** card in the **Resource type** section.

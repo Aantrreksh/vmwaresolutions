@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2022
+  years:  2016, 2024
 
-lastupdated: "2022-04-28"
+lastupdated: "2024-06-11"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # Attached storage infrastructure management
 {: #storage-infra-mgmt}
 
-Infrastructure management refers to the VMware® components that are managing the vSphere ESXi infrastructure.
+Infrastructure management refers to the VMware® components that manage the VMware vSphere ESXi infrastructure.
 
 For more information about the components, see [Virtual infrastructure design](/docs/vmwaresolutions?topic=vmwaresolutions-design_virtualinfrastructure).
 
@@ -43,7 +43,7 @@ Don't change these default settings.
 | Active Uplinks | `uplink1` `uplink2` |
 {: caption="Table 1. NFS port group summary" caption-side="bottom"}
 
-In addition to the vDS port group that is created for NFS storage traffic, a VMkernel port is created on each vSphere ESXi host during the deployment. The VMkernel port is assigned to the `SDDC-DPG-NFS` port group. The VMkernel port is also assigned an IP address from the private portable subnet that is associated with the attached storage VLAN (private VLAN B). The port MTU is set to 9000 to support jumbo frames.
+In addition to the vDS port group that is created for NFS storage traffic, a VMkernel port is created on each vSphere ESXi host during the deployment. The VMkernel port is assigned to the `SDDC-DPG-NFS` port group. The VMkernel port is also assigned to an IP address from the private portable subnet that is associated with the attached storage VLAN (private VLAN B). The port MTU is set to 9000 to support jumbo frames.
 
 ![Private vDS Port groups and uplinks](../../images/private_vds_portgroups_and_uplinks.svg "Private vDS Port groups and uplinks"){: caption="Figure 1. Private vDS Port groups and uplinks" caption-side="bottom"}
 
