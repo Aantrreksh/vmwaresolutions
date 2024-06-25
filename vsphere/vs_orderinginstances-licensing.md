@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-06-24"
+lastupdated: "2024-06-25"
 
 keywords: flexible order instance, order vSphere, order flexible instance
 
@@ -23,7 +23,6 @@ Select the VMware® components for your instance and specify the licensing optio
 
 ## Licensing options
 {: #vs_orderinginstances-licensing-options}
-
 
 
 You have the following options for licensing the selected VMware components:

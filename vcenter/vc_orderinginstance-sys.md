@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-06-24"
+lastupdated: "2024-06-25"
 
 keywords: vcf classic order instance, order vcf automated, order vmware cloud foundation instance
 
@@ -23,7 +23,6 @@ Specify or accept the following settings when you order a {{site.data.keyword.vc
 {: #vc_orderinginstance-vsphere-license}
 
 VMware vSphere® Enterprise Plus 7 is ordered by default.
-
 
 
 ### Notes on upgrading to vSphere 7

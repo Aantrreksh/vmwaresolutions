@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2024
 
-lastupdated: "2024-06-24"
+lastupdated: "2024-06-25"
 
 keywords: Juniper vSRX, manage Juniper vSRX, Juniper vSRX virtual security appliance, Juniper virtual security appliance, Juniper vSRX console
 
@@ -24,8 +24,6 @@ Juniper® vSRX on {{site.data.keyword.cloud}} is a virtual security appliance th
 
 The Juniper vSRX version available for deployment is 3.0 (23.2R1).
 {: note}
-
-
 
 For more information about vSRX and the vSRX 3.0 architecture, see [vSRX Virtual Firewall Deployment Guide for Private and Public Cloud Platforms](https://www.juniper.net/documentation/us/en/software/vsrx/vsrx-consolidated-deployment-guide/index.html){: external}.
 

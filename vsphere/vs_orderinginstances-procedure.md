@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-06-24"
+lastupdated: "2024-06-25"
 
 keywords: flexible order instances, order flexible, order vmaware vSphere instance
 
@@ -25,7 +25,6 @@ subcollection: vmwaresolutions
    * If you do not see any configurations in the list and you want to create one, you must first save the instance settings as a new configuration without placing an order.
    * If you want to update a saved configuration or create a new configuration based on a saved one, select the configuration from the side panel, make your changes, and then save.
 1. Enter the instance name and select a resource group.
-
 1. Select the VMware® components for licensing:
 
    {{site.data.content.attnnote-byol}}
