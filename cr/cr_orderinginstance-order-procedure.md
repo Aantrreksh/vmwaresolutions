@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-06-04"
+lastupdated: "2024-06-25"
 
 keywords: cyber recovery order procedure, order procedure cyber recovery, cyber recovery order instance, order cyber recovery, order cyber recovery instance
 
@@ -21,7 +21,7 @@ subcollection: vmwaresolutions
 
 1. In the VMware Solutions console, click the **VMware Cloud Foundation (VCF) for Classic** card in the **Create a resource** section. {: #step-1}
 1. On the **Create** tab, click the **{{site.data.keyword.cr}}** card in the **Resource type** section.
-1. Select the VMware vCenter Server® and the VMware vSphere® version. Then, enter the instance name and select a resource group.
+1. Select the VMware vCenter Server® version. Then, enter the instance name and select a resource group.
 1. To specify the instance configuration name, click **Browse configurations** and choose a configuration in the **VMware instance configuration manager**.
    * If you do not see any configurations in the list and you want to create one, you must first save the instance settings as a new configuration without placing an order.
    * If you want to update a saved configuration or create a new configuration based on a saved one, select the configuration from the side panel, make your changes, and then save.
