@@ -219,6 +219,7 @@ toc:
               label: Viewing and deleting instances
               topics:
               - vsphere/vs_viewinginstances.md
+              - vsphere/vs_deletinginstances.md
       - topicgroup:
           label: Cyber Recovery
           topics:
