@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-04-29"
+lastupdated: "2024-07-09"
 
 keywords: vmware offering, vmware solutions functions, function support
 
@@ -24,7 +24,7 @@ Review the following information to understand the differences in feature suppor
 
 Review the following table to understand the differences in feature support for {{site.data.keyword.vcf-auto}} and {{site.data.keyword.vcf-flex}} instances.
 
-| Feature | Automated | Flexible |
+| Feature | {{site.data.keyword.vcf-auto-short}} | {{site.data.keyword.vcf-flex-short}} |
 |:------- |:--------- |:-------- |
 | Powered by {{site.data.keyword.IBM}} advanced automation[^automation] | Yes | No. Self-built and configured. |
 | Storage options | * NFS or vSAN™ - available with automation \n * iSCSI - available with manual configuration | NFS, vSAN, or iSCSI - available with manual configuration |
@@ -36,7 +36,7 @@ Review the following table to understand the differences in feature support for 
 | Client-managed updating and patching of VMware stack | Client-managed updates - Native VMware tools (VMware Update Manager™)[^nsxv1] | Client-managed updates - Native VMware tools (VMware Update Manager) |
 | Backup and restore | Manually, by using Veeam® | Backup and restore solution - not included |
 | Add-on services | Supported[^services] | Not supported by the automation of this solution. You can bring and install your own software. |
-| VMware components licensing[^licensing1] | Not automated | Not automated |
+| VMware components licensing[^licensing1] | Not automated  | Not automated |
 {: caption="Table 1. Supported functions for Automated and Flexible instances" caption-side="bottom"}
 
 [^automation]: According to a validated design and with verification during deployment
@@ -52,8 +52,8 @@ Review the following table to understand the differences in feature support for 
 
 Review the following table to understand the differences in feature support for {{site.data.keyword.vcf-auto}} and {{site.data.keyword.rw}}.
 
-| Feature | Automated | {{site.data.keyword.rw}} |
-|:------- |:--------- |:------------------------ |
+| Feature | {{site.data.keyword.vcf-auto-short}} | {{site.data.keyword.rw}} |
+|:------- |:--------- |:-------- |
 | NFS | Optional | Not allowed |
 | Consolidated cluster | Optional | Optional |
 | Separate management cluster | Supported | Supported |
@@ -69,7 +69,7 @@ Review the following table to understand the differences in feature support for 
 | Disaster recovery | Veeam or Zerto | Veeam |
 | Migration | HCX, Zerto, or PrimaryIO Migrations | HCX (optional) |
 | Financial Services Cloud with policy framework | No | Yes |
-| VMware components licensing[^licensing2] | Not automated | Not automated |
+| VMware components licensing[^licensing2] | Not automated  | Not automated |
 {: caption="Table 2. Supported features for Automated instances and {{site.data.keyword.rw}}" caption-side="bottom"}
 
 [^licensing2]: To request NSX license upgrades and other licensing changes, open an IBM Support ticket.

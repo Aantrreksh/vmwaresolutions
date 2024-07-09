@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-06-12"
+lastupdated: "2024-07-05"
 
 subcollection: vmwaresolutions
 
@@ -226,8 +226,8 @@ VMware Aria Operations Management Pack for HCX extends the Operations Management
 ## Related links
 {: #opsmgmt-vrops-links}
 
-* [VMware Aria Operations 8.14.x Sizing Guidelines](https://kb.vmware.com/s/article/94645){: external}
+* [VMware Aria Operations Sizing Guidelines](https://knowledge.broadcom.com/external/article?legacyId=2093783){: external}
 * [VMware Aria Operations Documentation](https://docs.vmware.com/en/VMware-Aria-Operations/index.html){: external}
 * [Updating vSAN clusters](/docs/vmwaresolutions?topic=vmwaresolutions-vum-updating-vsan)
-* [vSAN Health Check Information](https://kb.vmware.com/s/article/2114803){: external}
+* [vSAN Health Check Information](https://knowledge.broadcom.com/external/article?legacyId=2114803){: external}
 * [Operationalizing VMware NSX](https://www.vmware.com/content/dam/digitalmarketing/vmware/en/pdf/products/nsx/vmware-operationalizing-nsx.pdf){: external}

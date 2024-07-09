@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2024
 
-lastupdated: "2024-06-13"
+lastupdated: "2024-07-02"
 
 subcollection: vmwaresolutions
 
@@ -42,7 +42,7 @@ The "all-in-one" server is installed automatically when the Veeam service instan
 * VSI - Veeam components installed on a Windows-based VSI.
 * Bare metal - Veeam components installed on a Windows-based bare metal server.
 
-The simple deployment scenario is suitable for small virtual environments. 
+The simple deployment scenario is suitable for small virtual environments.
 
 For larger scale-virtual environments, the [Advanced deployment](https://helpcenter.veeam.com/docs/backup/vsphere/advanced.html?ver=120){: external} scenario is recommended. This deployment scenario moves the backup workload to dedicated backup infrastructure components. In this scenario, the backup server functions as a manager for backup jobs and for deploying and maintaining backup infrastructure components. The move from a simple to an advanced deployment scenario is a manual process.
 
@@ -56,9 +56,9 @@ The backup server is a Windows-based component and is the core component in the 
 ## Configuration database
 {: #veeam-cr-sa-components-configdb}
 
-The Veeam Backup and Replication configuration database stores data about the backup infrastructure, jobs, sessions, and other configuration data. In the deployment pattern, the database instance uses the default Microsoft® SQL Server Express Edition on the same virtual server that hosts the backup server. 
+The Veeam Backup and Replication configuration database stores data about the backup infrastructure, jobs, sessions, and other configuration data. In the deployment pattern, the database instance uses the default Microsoft® SQL Server Express Edition on the same virtual server that hosts the backup server.
 
-If you are protecting more than 500 VMs, it is recommended to move to either a Standard or Enterprise Edition. It is still recommended to run the SQL Server locally on the backup server for lowest latency and highest performance. In large deployments, for high availability and fast recovery, you can use a Microsoft SQL cluster with AlwaysOn Availability Group. Fail over to a standby backup server can be simplified by connecting to the configuration database directly without the need to restore from a configuration backup. 
+If you are protecting more than 500 VMs, it is recommended to move to either a Standard or Enterprise Edition. It is still recommended to run the SQL Server locally on the backup server for lowest latency and highest performance. In large deployments, for high availability and fast recovery, you can use a Microsoft SQL cluster with AlwaysOn Availability Group. Fail over to a standby backup server can be simplified by connecting to the configuration database directly without the need to restore from a configuration backup.
 
 ## Backup and replication console
 {: #veeam-cr-sa-components-console}
@@ -93,7 +93,7 @@ The vPower NFS Service is a Microsoft Windows service that acts as an NFS server
 ## Backup repository
 {: #veeam-cr-sa-components-repo}
 
-A backup repository is a storage location where Veeam keeps backup files, and it can be one of the following storage components: 
+A backup repository is a storage location where Veeam keeps backup files, and it can be one of the following storage components:
 
 * Direct attached storage - Microsoft Windows or Linux servers with volumes attached.
 * Object storage - It can be manually configured as a capacity tier in a scale-out backup repository. However, the immutability option in {{site.data.keyword.cloud}} Object Storage cannot be used with Veeam.
@@ -143,4 +143,4 @@ More managed servers are added in the advanced deployment scenario, such as:
 * [About Veeam Backup and Replication](https://helpcenter.veeam.com/docs/backup/vsphere/overview.html?ver=120){: external}
 * [Veeam architects site](https://www.veeambp.com/){: external}
 * [Veeam Size Estimator (VSE)](https://bp.veeam.com/vbr/2_Design_Structures/D_VSE_guide/){: external}
-* [Using Veeam ports mapper tool](https://bp.veeam.com/vbr/2_Design_Structures/D_Tools/PortsTool.html){: external}
+* [Using Veeam ports finder](https://bp.veeam.com/vbr/2_Design_Structures/D_Tools/Ports_finder.html){: external}

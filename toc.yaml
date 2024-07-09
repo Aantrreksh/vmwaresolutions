@@ -162,7 +162,7 @@ toc:
               - vcenter/vc_orderinginstance-summary.md
               - vcenter/vc_orderinginstance-procedure.md
           - topicgroup:
-              label: Adding, viewing, and deleting clusters
+              label: Managing clusters
               topics:
               - vcenter/vc_addingclusters.md
               - vcenter/vc_viewingclusters.md

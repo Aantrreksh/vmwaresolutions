@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2024
-lastupdated: "2024-06-24"
+lastupdated: "2024-07-09"
 
 keywords: release notes, what's new in VMware Solutions, what is new, new features, VMware Solutions release notes, VMware Solutions
 
@@ -76,15 +76,15 @@ VMware add-ons
 BOM updates for {{site.data.keyword.vcf-classic}}
 :   The following updates are applied to newly deployed instances, clusters, and hosts:
 
-   * VMware vCenter Server® Appliance 8.0 Update 2b (build 23319993)
-   * VMware vSphere® ESXi™ 7.0 Update 3p (build 23307199)
+   * VMware vCenter Server Appliance 8.0 Update 2b (build 23319993)
+   * VMware vSphere ESXi 7.0 Update 3p (build 23307199)
    * VMware NSX 4.1.2.3 (build 23382408)
 
 Add-on services upgrades
 :   The following service versions are available for deployment:
 
    * FortiGate® Virtual Appliance v7.4.3
-   * F5® BIG-IP® v17.1.1
+   * F5 BIG-IP v17.1.1
 
 vCenter Server with Hybridity Bundle no longer available
 :   vCenter Server with Hybridity Bundle is no longer available. This offering is now integrated into {{site.data.keyword.vcf-auto}}.
@@ -165,7 +165,7 @@ vCenter Server and VMware vSphere BOM updates
 Add-on services upgrades
 :   The following service versions are now available for deployment:
 
-   * VMware Aria® Operations™ v8.14.1 and VMware Aria Operations™ for Logs v8.14
+   * VMware Aria Operations v8.14.1 and VMware Aria Operations for Logs v8.14
    * {{site.data.keyword.redhat_openshift_full}} v4.14
    * Zerto v9.7u4
 
@@ -261,7 +261,7 @@ Mirrored M.2 boot drives - NFS storage
 Add-on services upgrades
 :   The following service versions are now available for deployment:
 
-   * Juniper® vSRX v3.0 (23.2R1)
+   * Juniper vSRX v3.0 (23.2R1)
    * {{site.data.keyword.redhat_openshift_notm}} v4.13.10
    * VMware Aria Operations v8.12.1
 
@@ -363,7 +363,7 @@ Name change for VMware vRealize products
 REST API updates
 :   The following updates are available:
 
-   * The [VMware Solutions API](/apidocs/vmware-solutions) provides support for viewing and deleting VMware vSphere instances. You can also add or delete ESXi servers, and add or delete licenses for vSphere instances.
+   * The VMware Solutions API provides support for viewing and deleting VMware vSphere instances. You can also add or delete ESXi servers, and add or delete licenses for vSphere instances.
    * Also for the VMware Solutions API, you can specify either `quantity` or `host_names` for the number of new hosts to be added in the `hosts_order_data` object.
 
 User interface updates and enhancements
@@ -372,7 +372,7 @@ User interface updates and enhancements
    * For VMware vSphere, vCenter Server, Cyber Recovery, and Regulated Workloads instances, the **Instance configuration name** field is changed to a side panel. You can manage your configuration templates from a list of saved configurations in the side panel.
    * The checkbox **Select a different cluster location** is changed to a switch, for consistency with other similar UI options.
    * The **SAP-certified** Cascade Lake selections (**NetWeaver** and **HANA**) are merged into a single option for a more streamlined user experience when you choose the **CPU model** for your servers.
-   * The process to [set up your environment for your first order](/docs/vmwaresolutions?topic=vmwaresolutions-completing_checklist#completing_checklist-procedure) is simplified on the UI.
+   * The process to set up your environment for your first order is simplified on the UI.
 
 ### 3 May 2023
 {: #vmwaresolutions-may0323}
@@ -393,7 +393,7 @@ Updates to VMware vCenter Server instances and VMware vSphere clusters
    * VMware vSAN Witness 7.0 Update 3c (build 19193900)
 
 Veeam 12 availability
-:   Veeam Backup and Replication 12 (Veeam 12) is now available for deployment with VMware vCenter Server, Cyber Recovery, and VMware Regulated Workloads offerings. Veeam 12 allows you to write directly to {{site.data.keyword.cloud}} Object Storage and it provides other features, such as data protection, improved Recovery Point Objective using Continuous Data Protection for disaster recovery purposes, and general operational efficiency. For more information, see the [Veeam Backup and Replication 12 release notes](https://www.veeam.com/veeam_backup_12_release_notes_rn.pdf){: external}.
+:   Veeam Backup and Replication 12 (Veeam 12) is now available for deployment with VMware vCenter Server, Cyber Recovery, and VMware Regulated Workloads offerings. Veeam 12 allows you to write directly to {{site.data.keyword.cloud}} Object Storage and it provides other features, such as data protection, improved Recovery Point Objective using Continuous Data Protection for disaster recovery purposes, and general operational efficiency.
 
 New and updated documentation
 :   The table of contents is updated for topic rearrangement and removal of outdated content.
@@ -958,102 +958,3 @@ Juniper vSRX
 
 REST API updates
 :   REST API support for vCenter Server multizone instances is no longer provided as a result of feature deprecation.
-
-### 21 June 2021
-{: #vmwaresolutions-jun2121}
-{: release-note}
-
-VMware Solutions Shared - Veeam Backup and Replication V11
-:   The 4.2 release provides VMware Solutions Shared instances with Veeam Backup and Replication V11 for the Veeam Cloud Connect Replication ready-to-use service.
-
-VMware Solutions Shared - Network High Availability through data center groups
-:   VMware Solutions Shared now provides Network High Availability, a VMware Cloud Director feature that allows a VMware Cloud Director network to be anchored in two data centers. This feature enables the network to be resilient and to withstand an outage in any of the two data centers.
-
-VMware vCenter Server instances
-:   The 4.2 release applies the following upgrades and improvements for newly deployed instances, clusters, and hosts.
-
-   * VMware vSphere ESXi
-      * 7.0 Update 1d (build 17551050)
-      * 6.7 P05 (build 17700523)
-      * 6.5 P06 (build 17477841)
-   * VMware vCenter Server Appliance
-      * 7.0 Update 2b (build 17958471)
-      * 6.7 Update 3n (build 18010531)
-   * VMware NSX-T 3.1.0.0.0 (build 17107167)
-   * VMware NSX-V 6.4.10 (build 17626462)
-   * VMware vSAN 7.0 Update 1d (build 17551050) or 6.7 P05
-   * VMware vSAN Witness 7.0 Update 1d (build 17551050)[^vsanwitness]
-
-[^vsanwitness]: vCenter Server multizone instances only
-
-NSX-T for vCenter Server instances with vSphere 6.7 - deprecated
-:   NSX-T is no longer supported for new deployments of vCenter Server instances with vSphere 6.7. NSX-T is available only for vSphere 7. You can still view and manage your existing instances with vSphere 6.7 and NSX-T.
-   {: deprecated}
-
-VMware vCenter Server - 25 Gb uplink speed updates
-:   Enhanced support is now provided for 25 Gb uplink speed for vCenter Server multizone instances.
-
-   * When you order new vCenter Server multizone instances, 25 Gb is supported for the witness cluster, the consolidated or management cluster, and the workload cluster.
-   * When you add clusters to vCenter Server multizone instances, 25 Gb is supported for the workload cluster.
-
-VMware vCenter Server - NFS storage limitation for VMware multizone instances
-:   The initial NFS storage that you order is used mainly for management. Its size must be at least 1,000 GB and the performance at least 2 IOPS/GB. Do not delete this storage. If you require extra storage, you can add it post-deployment. The size and performance of the NFS storage added post-deployment can have any of the available values.
-
-VMware vCenter Server - NFS host orders
-:   For clusters with NFS storage, where locations with appropriate 1U servers are available, 1U servers (up to 4 drives of storage) are ordered silently rather than 2U servers. For gateway clusters and clusters with vSAN storage, 2U servers are ordered.
-
-Regulated Workloads - 25 Gb Uplink speed
-:   Enhanced support is now provided for 25 Gb uplink speed for VMware Regulated Workloads instances, both single-zone and multizone.
-
-   * When you order new VMware Regulated Workloads instances, 25 Gb is supported for the management cluster and the workload cluster.
-   * When you add clusters to VMware Regulated Workloads instances, 25 Gb is supported for the workload cluster.
-
-Add-on services
-:   The following service versions are now available to install on deployed instances.
-
-   * Caveonix RiskForesight 3.0
-   * F5 BIG-IP 15.1.3.1
-   * HyTrust CloudControl 6.3.1
-   * HyTrust DataControl 5.3[^htdc]
-   * Juniper vSRX 3.0 (20.4R1.12)
-
-[^htdc]: vSphere 6.7 for NSX-T and vSphere 6.7 and 6.5 for NSX-V
-
-F5 BIG-IP
-:   F5 BIG-IP is supported on vSphere 7 and NSX-T. This support is available on a management cluster.
-
-FortiGate Virtual Appliance
-:   Review the following information about FortiGate Virtual Appliance for the 4.2 release.
-
-   * FortiGate Virtual Appliance is supported on VMware vSphere 7 and VMware NSX-T. This support is available on a management cluster and edge services cluster for single-zone instances only. Multizone support is not available.
-   * For VMware Regulated Workloads instances and Security and Compliance Readiness Bundle instances, you can install FortiGate Virtual Appliance only on the edge services cluster.
-   * The VM16 edition of FortiGate Virtual Appliance is available for all types of clusters. However, it is recommended that the 16 CPU license is used for high-bandwidth edge deployments only.
-   * You can order multiple FortiGate Virtual Appliances on the management cluster. However, you can have only one pair on each edge services cluster.
-   * You cannot install FortiGate Virtual Appliance and Juniper vSRX on the same edge services cluster.
-   * After FortiGate Virtual Appliance v6.2.1, you can resize the RAM of FortiGate Virtual Appliance regardless of the licensing and pricing you currently have. You can make this change only if the CPU does not change.
-
-HyTrust KeyControl - deprecated
-:   New installations of HyTrust KeyControl are no longer supported for new or existing deployments of vCenter Server instances. You can still use or delete existing HyTrust KeyControl installations on your existing instances.
-{: deprecated}
-
-Juniper vSRX
-:   Review the following information about Juniper vSRX for the 4.2 release:
-
-   * Juniper vSRX is supported on vCenter Server multizone instances.
-   * You cannot install Juniper vSRX and FortiGate Virtual Appliance on the same edge services cluster.
-
-KMIP for VMware on {{site.data.keyword.cloud_notm}}
-:   Two new endpoints are now available in the **Toronto** location for the KMIP for VMware service.
-
-Veeam on vSphere 6.5 - deprecated
-:   New installations of Veeam are no longer supported for new or existing deployments of vCenter Server instances with VMware vSphere 6.5. You can still use or delete existing Veeam installations on your existing vSphere 6.5 instances.
-{: deprecated}
-
-REST API updates
-:   REST API support is now available for the F5 BIG-IP and FortiGate Virtual Appliance services and for adding edge services clusters to vCenter Server instances.
-
-New and updated documentation
-:   The following documentation updates are available.
-
-   * Upgrading vCenter Server vSphere software from VMware vSphere 6.5 or 6.7 to 7.0 now includes important considerations and a section for updating licenses.
-   * FAQ is updated to clarify how service license charges are being calculated.

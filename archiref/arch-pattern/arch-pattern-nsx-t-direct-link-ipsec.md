@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-06-10"
+lastupdated: "2024-07-02"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # Architecture pattern for using IPsec over {{site.data.keyword.dl_short}} with a vCenter Server with NSX instance
 {: #arch-pattern-nsx-t-direct-link-ipsec}
 
-On [{{site.data.keyword.vcf-auto}}](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview) instance in {{site.data.keyword.cloud}} classic infrastructure, your workloads are deployed and run on VMware NSX™ overlay networks. As part of the deployment, the automation deploys an example NSX topology. You can use the provisioned examples as your base or build your own topologies on overlay. These overlay networks are not automatically advertised to {{site.data.keyword.cloud_notm}} classic infrastructure network. 
+On [{{site.data.keyword.vcf-auto}}](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview) instance in {{site.data.keyword.cloud}} classic infrastructure, your workloads are deployed and run on VMware NSX™ overlay networks. As part of the deployment, the automation deploys an example NSX topology. You can use the provisioned examples as your base or build your own topologies on overlay. These overlay networks are not automatically advertised to {{site.data.keyword.cloud_notm}} classic infrastructure network.
 
 This architecture pattern presents private connectivity for {{site.data.keyword.vcf-auto}} that uses [{{site.data.keyword.dl_full_notm}}](/docs/dl?topic=dl-dl-about) and tunneling. This solution is applicable for [NSX-based {{site.data.keyword.vcf-auto-short}} instance](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview), which is provisioned in {{site.data.keyword.cloud_notm}} classic infrastructure. You can use Gateway Appliance or vCenter Server gateway cluster with Juniper® vSRX or other device as part of the solution as an option.
 
@@ -45,7 +45,7 @@ This architecture pattern deployment is summarized as follows:
 ## Considerations
 {: #arch-pattern-nsx-t-direct-link-ipsec-considerations}
 
-When you design or deploy this architecture pattern, consider the following steps: 
+When you design or deploy this architecture pattern, consider the following steps:
 
 * Route-based IPsec VPN is recommended for dynamic routing.
 * IPsec tunnels can also be terminated to Tier-1 gateways. In this case, only policy-based VPNs are supported. Also, ensure that the VPN endpoint is known and routed in {{site.data.keyword.cloud_notm}} classic network (for example, use a `/32` from the private portable subnet for the T1 VPN endpoint).
@@ -55,4 +55,4 @@ When you design or deploy this architecture pattern, consider the following step
 
 * [VMware vSphere overview](/docs/vmwaresolutions?topic=vmwaresolutions-vs_vsphereoverview)
 * [Getting started with {{site.data.keyword.dl_full_notm}} (2.0)](/docs/dl?topic=dl-get-started-with-ibm-cloud-dl)
-* [Virtual Private Network (VPN)](https://docs.vmware.com/en/VMware-NSX-Data-Center/3.1/administration/GUID-A8B113EC-3D53-41A5-919E-78F1A3705F58.html){: external}
+* [Virtual Private Network (VPN)](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.1/administration/GUID-A8B113EC-3D53-41A5-919E-78F1A3705F58.html){: external}

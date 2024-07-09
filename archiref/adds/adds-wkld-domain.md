@@ -86,7 +86,7 @@ For more information, see [ADMT guide - Migrating and restructuring Active Direc
 {: #adds-wkld-domain-bestpractice}
 
 Review the following guidance for AD in a vCenter Server instance.
-* For more information about supported AD trusts, see [Microsoft Active Directory trusts supported by VMware vCenter Single Sign-on](https://kb.vmware.com/s/article/2064250){: external}.
+* For more information about supported AD trusts, see [Microsoft Active Directory trusts supported by VMware vCenter Single Sign-on](https://knowledge.broadcom.com/external/article?legacyId=2064250){: external}.
 * Enable vCenter with an identity source for authentication of all vCenter services and system administrators. This configuration is made by the VMware Solutions automation ready for the customer to add their system administrator users. All systems administrators who are managing the VMware Server instance have user accounts that are members of this domain.
 * Create a domain to serve as a single point of access control for systems administrators who support the VMware vSphere® and NSX infrastructure components. This configuration is made by the VMware Solutions automation.
 * Deploy two domain controllers for resiliency. If you select the single VSI AD/DNS option, provision a second Microsoft® Windows® VSI and configure as a domain controller.

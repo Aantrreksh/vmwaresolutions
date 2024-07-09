@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-06-25"
+lastupdated: "2024-06-27"
 
 keywords: cyber recovery, cyber recovery consolidated cluster, cyber recovery consolidated settings, cyber recovery instances
 
@@ -69,6 +69,13 @@ Select either **Cascade Lake** or **SAP-certified Cascade Lake**.
 {{site.data.content.simpletabtable-sap-netweaver}}
 
 {{site.data.content.simpletabtable-sap-hana}}
+
+
+
+## RAM
+{: #cr_orderinginstance-consold-cluster-ram}
+
+Various RAM sizes are available depending on the CPU model.
 
 ## Number of bare metal servers
 {: #cr_orderinginstance-consolidwkld-bare-metal-number}

@@ -17,7 +17,7 @@ subcollection: vmwaresolutions
 # VMware backup proxies
 {: #vmware_backup_proxies}
 
-A VMware® backup proxy sits between the backup server and other components of the backup infrastructure. While the backup server administers tasks, the proxy processes jobs and delivers backup traffic. 
+A VMware® backup proxy sits between the backup server and other components of the backup infrastructure. While the backup server administers tasks, the proxy processes jobs and delivers backup traffic.
 
 VMware backup proxy tasks include the following procedures:
 
@@ -34,7 +34,7 @@ During service deployment, the automation configures a VMware backup proxy on th
 
 A VMware backup proxy can use one of the following data transport modes:
 
-* **Direct storage access** – In {{site.data.keyword.cloud}} only direct NFS storage mode is suitable. 
+* **Direct storage access** – In {{site.data.keyword.cloud}} only direct NFS storage mode is suitable.
     * For direct storage access consider:
       * As the NFS share is presented to the VMware backup, a local admin or root account can delete all files in the share.
       * A bare metal server with 10 Gbps NICs provides high throughput.
@@ -45,7 +45,7 @@ A VMware backup proxy can use one of the following data transport modes:
       * One VMware backup proxy for each ESXi host in the vSAN cluster to reduce the workload on the ESXi I/O stack during backup.
       * A VM-Host Affinity rule to prevent the VMware backup proxy from being moved from its assigned ESXi host.
 
-For NFS 3 clusters, see [VMs residing on NFS storage become unresponsive during a snapshot removal](https://kb.vmware.com/s/article/2010953){: external} operation, which advises placing backup appliances on the same host where the VM being backed up is located.
+For NFS 3 clusters, see [VMs residing on NFS storage become unresponsive during a snapshot removal](https://knowledge.broadcom.com/external/article?legacyId=2010953){: external} operation, which advises placing backup appliances on the same host where the VM being backed up is located.
 
 * **Network** – This mode is the default mode of VMware backup proxies and they fall back to this mode if other modes fail. The proxy connects to the vSphere host’s vmdk0 port and uses NBD transport. In terms of bandwidth, NBD is the slowest mode. This mode works best for VMware backup proxies that are hosted on virtual server instances and bare metal servers as they get deployed onto the same subnet as the vSphere hosts.
 

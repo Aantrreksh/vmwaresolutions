@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2024
 
-lastupdated: "2024-06-25"
+lastupdated: "2024-07-09"
 
 keywords: automated add clusters, add cluster, automated cluster
 
@@ -88,6 +88,8 @@ If you deploy the cluster to a different {{site.data.keyword.cloud_notm}} data c
 {{site.data.content.simpletabtable-sap-netweaver}}
 
 {{site.data.content.simpletabtable-sap-hana}}
+
+
 
 #### Number of bare metal servers
 {: #vc_addingclusters-bare-metal-number}

@@ -4,7 +4,7 @@ copyright:
 
   years:  2024
 
-lastupdated: "2024-06-10"
+lastupdated: "2024-07-05"
 
 subcollection: vmwaresolutions
 
@@ -48,12 +48,12 @@ The following diagram shows an example of integrating a vCenter Server with NSX-
 
 ![Pattern for integrating Security and Compliance Center Workload Protection ](../../images/arch-pattern-scwpp-vcs.svg "Security and Compliance Center Workload Protection."){: caption="Figure 1. Security and Compliance Center Workload Protection" caption-side="bottom"}
 
-This architecture pattern is summarized as follows: 
+This architecture pattern is summarized as follows:
 
-1. The agents, which are installed on your Windows or Linux VMs, collect data that is used for threat detection, posture management, and vulnerability scanning. For more information, see [Sysdig Agents](https://docs.sysdig.com/en/docs/sysdig-secure/integrations-for-sysdig-secure/data-sources/sysdig-agents/){: external}. The Sysdig Secure Windows Agent provides runtime detection and policy enforcement for host processes on Windows. For more information, see [Windows](https://sysdig-docs-pr-1796.onrender.com/en/docs/installation/sysdig-secure/install-agent-components/windows/){: external}. For Linux VMs, the agent has two parts:
+1. The agents, which are installed on your Windows or Linux VMs, collect data that is used for threat detection, posture management, and vulnerability scanning. For more information, see [Sysdig Agents](https://docs.sysdig.com/en/docs/sysdig-secure/integrations-for-sysdig-secure/data-sources/sysdig-agents/){: external}. The Sysdig Secure Windows Agent provides runtime detection and policy enforcement for host processes on Windows. For more information, see [Windows Hosts](https://docs.sysdig.com/en/docs/installation/sysdig-secure/install-agent-components/windows-host/){: external}. For Linux VMs, the agent has two parts:
    * Agent - Runtime threat detection is provided by the agent, which processes syscall events and metrics, creates capture files, and performs auditing and compliance tasks. For more information about deploying the agent, see [Sysdig Agent](https://docs.sysdig.com/en/docs/installation/sysdig-secure/install-agent-components/hosts/packages/sysdig-agent/){: external}.
    * Vulnerability Host Scanner - The host scanner is used to scan for vulnerabilities on the Linux VM. For more information about deploying the host scanner, see [Vulnerability Host Scanner](https://docs.sysdig.com/en/docs/installation/sysdig-secure/install-agent-components/hosts/packages/vulnerability-host-scanner/){: external}.
-2. Your DNS servers need to be able to resolve the Security and Compliance Center Workload Protection endpoint URLs. Configure your DNS servers to use {{site.data.keyword.cloud_notm}} DNS resolvers, if needed. 
+2. Your DNS servers need to be able to resolve the Security and Compliance Center Workload Protection endpoint URLs. Configure your DNS servers to use {{site.data.keyword.cloud_notm}} DNS resolvers, if needed.
 3. Firewall rules enable the downloading of the agents from the Internet and HTTPS connectivity to the Security and Compliance Center Workload Protection private endpoints. For more information about configuring firewall rules, see [Add a Gateway Firewall Policy and Rule](https://docs.vmware.com/en/VMware-NSX/4.1/administration/GUID-DE6FE8CB-017E-41C8-85FC-D71CF27F85C2.html){: external}.
 4. Source Network Address Translation (SNAT) rules allow your VMs overlay IP addresses to be translated to {{site.data.keyword.cloud_notm}} supplied IP addresses that can be used on the Internet. For more information about configuring SNAT rules, see [Configure NAT/DNAT/No SNAT/No DNAT/Reflexive NAT](https://docs.vmware.com/en/VMware-NSX/4.1/administration/GUID-DDB35A76-BD12-4F09-8D88-2490E4DAA8F6.html){: external}.
 5. The {{site.data.keyword.cloud_notm}} Security and Compliance Center Workload Protection instance. For more information, see:
@@ -68,7 +68,7 @@ Agents can be installed as a docker container or as a package installed on the o
 ## Considerations
 {: #arch-pattern-sccwpp-considerations}
 
-When you design or deploy this architecture pattern, consider the following information: 
+When you design or deploy this architecture pattern, consider the following information:
 
 * For Linux VMs, the agents log file is `/opt/draios/logs/draios.log`.
 * You require only a single SNAT IP address for all your VMs hosted in your virtual data center to communicate with the Security and Compliance Center Workload Protection instance.

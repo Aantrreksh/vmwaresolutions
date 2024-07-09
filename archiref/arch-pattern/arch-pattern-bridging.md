@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-06-10"
+lastupdated: "2024-07-02"
 
 subcollection: vmwaresolutions
 
@@ -50,7 +50,7 @@ Make sure you have the bridged VLANs transport zone (for example `tz-bridge`) co
 ## Considerations
 {: #arch-pattern-bridging-considerations}
 
-When you design or deploy this architecture pattern, consider the following steps: 
+When you design or deploy this architecture pattern, consider the following steps:
 
 * Using the existing workload edge cluster is good for testing the layer 2 capability and for small deployments.
 * If you have a larger deployment, deploying a dedicated edge cluster or several edge clusters offers better performance and generally scales better.
@@ -61,5 +61,5 @@ When you design or deploy this architecture pattern, consider the following step
 
 * [VMware vSphere overview](/docs/vmwaresolutions?topic=vmwaresolutions-vs_vsphereoverview)
 * [Getting started with {{site.data.keyword.cloud_notm}} Gateway Appliance](/docs/gateway-appliance?topic=gateway-appliance-getting-started)
-* [Installing NSX edge transport nodes](https://docs.vmware.com/en/VMware-NSX-Data-Center/3.2/installation/GUID-5EF2998C-4867-4DA6-B1C6-8A6F8EBCC411.html){: external}
-* [Administering NSX Layer 2 bridging](https://docs.vmware.com/en/VMware-NSX-Data-Center/3.2/administration/GUID-B4ABDE64-52BC-40F0-A560-670D3B7EAF7A.html){: external}
+* [Create an NSX Edge Transport Node](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.2/installation/GUID-53295329-F02F-44D7-A6E0-2E3A9FAE6CF9.html){: external}
+* [Edge Bridging: Extending Overlay Segments to VLAN](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.2/administration/GUID-B4ABDE64-52BC-40F0-A560-670D3B7EAF7A.html){: external}

@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-06-25"
+lastupdated: "2024-07-09"
 
 keywords: flexible order instances, order flexible, order vmaware vSphere instance
 

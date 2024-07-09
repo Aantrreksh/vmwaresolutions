@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-06-25"
+lastupdated: "2024-06-27"
 
 keywords: automated consolidated cluster, order consolidated cluster, order automated instance
 
@@ -70,6 +70,8 @@ You can choose between **Cascade Lake** and **SAP-certified Cascade Lake** serve
 {{site.data.content.simpletabtable-sap-netweaver}}
 
 {{site.data.content.simpletabtable-sap-hana}}
+
+
 
 ## RAM
 {: #vc_orderinginstance-consold-cluster-ram}

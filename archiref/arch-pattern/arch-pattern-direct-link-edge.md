@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-06-10"
+lastupdated: "2024-07-02"
 
 subcollection: vmwaresolutions
 
@@ -16,9 +16,9 @@ subcollection: vmwaresolutions
 # Architecture pattern for using {{site.data.keyword.dl_short}} with NSX edge cluster in colocation
 {: #arch-pattern-direct-link-edge}
 
-On [{{site.data.keyword.vcf-auto}}](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview) instance in {{site.data.keyword.cloud}} classic infrastructure, your workloads are deployed and run on VMware NSX™ overlay networks. As part of the deployment, the automation deploys an example NSX topology. You can use the provisioned examples as your base or build your own topologies on overlay. These overlay networks are not automatically advertised to {{site.data.keyword.cloud_notm}} classic infrastructure network. 
+On [{{site.data.keyword.vcf-auto}}](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview) instance in {{site.data.keyword.cloud}} classic infrastructure, your workloads are deployed and run on VMware NSX™ overlay networks. As part of the deployment, the automation deploys an example NSX topology. You can use the provisioned examples as your base or build your own topologies on overlay. These overlay networks are not automatically advertised to {{site.data.keyword.cloud_notm}} classic infrastructure network.
 
-This architecture pattern presents private connectivity for {{site.data.keyword.vcf-auto}} that uses [{{site.data.keyword.dl_full_notm}}](/docs/dl?topic=dl-dl-about) and deploying an NSX edge transport node at the colocation. This solution is applicable for [NSX-based {{site.data.keyword.vcf-auto-short}} instance](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview), which is provisioned in {{site.data.keyword.cloud_notm}} classic infrastructure. 
+This architecture pattern presents private connectivity for {{site.data.keyword.vcf-auto}} that uses [{{site.data.keyword.dl_full_notm}}](/docs/dl?topic=dl-dl-about) and deploying an NSX edge transport node at the colocation. This solution is applicable for [NSX-based {{site.data.keyword.vcf-auto-short}} instance](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview), which is provisioned in {{site.data.keyword.cloud_notm}} classic infrastructure.
 
 This solution relies on the principle that you can advertise NSX TEP traffic through {{site.data.keyword.dl_short}} to the colocation. Therefore, you can extend your NSX overlays over {{site.data.keyword.dl_short}}. You are responsible for deploying the edge transport nodes in colocation on your own x86 hardware and for creating the NSX edge cluster and configuring Tier-0 (T0) Gateway on the edge cluster.
 
@@ -31,7 +31,7 @@ The following diagram presents an overview of an architecture pattern for deploy
 
 ![{{site.data.keyword.dl_short}} with NSX edge cluster in colocation](../../images/arch-pattern-vcs-nsx-t-direct-link-edge.svg "{{site.data.keyword.dl_short}} with NSX edge cluster in colocation."){: caption="Figure 1. {{site.data.keyword.dl_short}} with NSX edge cluster in colocation" caption-side="bottom"}
 
-This architecture pattern deployment is summarized as follows: 
+This architecture pattern deployment is summarized as follows:
 
 1. {{site.data.keyword.vcf-auto-short}} instance is deployed at {{site.data.keyword.cloud_notm}} classic infrastructure. Two {{site.data.keyword.cloud_notm}} private VLANs and one {{site.data.keyword.cloud_notm}} public VLAN (optional) are deployed. Each of these VLANs host multiple subnets. You can see the details through {{site.data.keyword.vmwaresolutions_short}} portal.
 2. NSX T0 is deployed with two interfaces - private and public (optional). If you opt for a public one, this interface is attached to your Public VLAN and has direct internet access. Your T0's private interface is attached to the Private VLAN and it uses {{site.data.keyword.cloud_notm}} portable private IP.
@@ -54,4 +54,4 @@ When you design or deploy this architecture pattern, consider the following step
 
 * [Getting started with {{site.data.keyword.dl_full_notm}} (2.0)](/docs/dl?topic=dl-get-started-with-ibm-cloud-dl)
 * [VMware vSphere overview](/docs/vmwaresolutions?topic=vmwaresolutions-vs_vsphereoverview)
-* [Installing NSX Edge](https://docs.vmware.com/en/VMware-NSX-Data-Center/3.1/installation/GUID-5EF2998C-4867-4DA6-B1C6-8A6F8EBCC411.html){: external}
+* [Installing NSX Edge](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.1/installation/GUID-5EF2998C-4867-4DA6-B1C6-8A6F8EBCC411.html){: external}

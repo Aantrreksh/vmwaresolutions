@@ -23,7 +23,7 @@ This pattern assumes that Veeam is deployed by following the guidance for [conso
 ## Replication connectivity over private network
 {: #arch-pattern-vcf-veeam-xconnectivity-private}
 
-When you replicate over a private network, the {{site.data.keyword.vcf-vpc}} instance needs to connect to on-premises or Classic VMware® and Veeam deployments. The connectivity can be established by using Transit Gateways or Direct Link.  
+When you replicate over a private network, the {{site.data.keyword.vcf-vpc}} instance needs to connect to on-premises or Classic VMware® and Veeam deployments. The connectivity can be established by using Transit Gateways or Direct Link.
 
 The following diagram introduces the high-level steps to configure and deploy this connectivity type.
 
@@ -32,14 +32,14 @@ The following diagram introduces the high-level steps to configure and deploy th
 This architecture pattern deployment is summarized as follows:
 
 1. Provision new or use an existing Transit Gateway or Direct Link to connect to the Veeam replication partner network.
-1. Validate that the management subnet and on-premises VMware and Veeam networks can communicate. 
+1. Validate that the management subnet and on-premises VMware and Veeam networks can communicate.
 1. With Classic VMware and Veeam deployments, ensure that you configured static routes for the {{site.data.keyword.vpc_short}} prefixes or subnets with the backend customer router (BCR) as the next hop.
 1. Configure Veeam replication between {{site.data.keyword.cloud_notm}} and on-premises proxies by following the Veeam documentation and best practices.
 
 ## Replication connectivity over the internet
 {: #arch-pattern-vcf-veeam-xconnectivity-public-internet}
 
-When you replicate over a public network, the {{site.data.keyword.vcf-vpc}} instance needs to connect to on-premises VMware and Veeam deployments. 
+When you replicate over a public network, the {{site.data.keyword.vcf-vpc}} instance needs to connect to on-premises VMware and Veeam deployments.
 
 Two alternative patterns are introduced for this connectivity.
 
@@ -84,4 +84,4 @@ When you design or deploy this architecture pattern, consider the following info
 * [Ordering Veeam stand-alone licenses](/docs/vmwaresolutions?topic=vmwaresolutions-veeam_ordering_licenses)
 * [VPC network design](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-vpc-deployment)
 * [Veeam Backup & Replication ports and protocols](https://helpcenter.veeam.com/docs/backup/vsphere/used_ports.html?ver=120){: external}
-* [Veeam Help Center](https://www.veeam.com/documentation-guides-datasheets.html?productId=8&version=product%3A8%2F221){: external}
+* [Veeam Help Center](https://www.veeam.com/support/help-center-technical-documentation.html?productId=8&version=product:8/221){: external}

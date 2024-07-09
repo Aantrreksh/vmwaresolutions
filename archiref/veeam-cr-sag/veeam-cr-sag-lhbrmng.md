@@ -141,7 +141,7 @@ The following code snippet adds the Linux hardened repository as a Veeam managed
 ## Creating a scale-out backup repository
 {: #veeam-cr-sag-lhbrmng-scale-out-repo}
 
-The following code snippet adds the Linux hardened repository as an extant to a scale-out backup repository. This step is optional. The code is extracted from [Protect against ransomware with Immutable Backups: a Veeam Guide](https://www.veeam.com/wp-guide-protect-ransomware-immutable-backups.html){: external}. The repository configuration must be a stand-alone repository (Scale-Out-Backup-Repository is technically compliant only if the “copy” policy is used for capacity tier).
+The following code snippet adds the Linux hardened repository as an extant to a scale-out backup repository. This step is optional. The code is extracted from [Protect against ransomware with Immutable Backups: a Veeam Guide](https://www.veeam.com/resources/wp-guide-protect-ransomware-immutable-backups.html){: external}. The repository configuration must be a stand-alone repository (Scale-Out-Backup-Repository is technically compliant only if the “copy” policy is used for capacity tier).
 
 ```text
     - name: Create a Scale-Out Backup Repository
@@ -157,4 +157,3 @@ The following code snippet adds the Linux hardened repository as an extant to a 
 * [Add-VBRBackupRepository](https://helpcenter.veeam.com/docs/backup/powershell/add-vbrbackuprepository.html?ver=120){: external}
 * [Per-Machine Backup Files](https://helpcenter.veeam.com/docs/backup/vsphere/per_vm_backup_files.html?ver=120){: external}
 * [Task Limitation for Backup Repositories](https://helpcenter.veeam.com/docs/backup/vsphere/limiting_tasks.html?ver=120){: external}
-

@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-04-16"
+lastupdated: "2024-06-27"
 
 keywords: flexible order instance, order vSphere, order flexible instance
 
@@ -72,6 +72,8 @@ The **SAP-certified Cascade Lake** servers are not available if you selected VMw
 {{site.data.content.simpletabtable-sap-netweaver}}
 
 {{site.data.content.simpletabtable-sap-hana}}
+
+
 
 ## Number of bare metal servers
 {: #vs_orderinginstances-bare-metal-number}
