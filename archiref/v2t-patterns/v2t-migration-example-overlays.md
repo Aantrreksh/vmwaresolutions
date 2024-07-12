@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-06-13"
+lastupdated: "2024-07-11"
 
 subcollection: vmwaresolutions
 
@@ -13,14 +13,14 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Target NSX-T environment example topologies 
+# Target NSX-T environment example topologies
 {: #v2t-example-overlays}
 
-VMware {{site.data.keyword.vcf-auto}} instances offer a standard VMware NSX-T™ topology with a single NSX-T edge cluster, which includes a single Tier-0 (T0) and Tier-1 (T1) gateways. You have several options to build and customize the overlay topology. Also, you can provision new NSX-T edge clusters and deploy new Tier-0 (T0) and Tier-1 (T1) gateways. 
+VMware {{site.data.keyword.vcf-auto}} instances offer a standard VMware NSX-T™ topology with a single NSX-T edge cluster, which includes a single Tier-0 (T0) and Tier-1 (T1) gateways. You have several options to build and customize the overlay topology. Also, you can provision new NSX-T edge clusters and deploy new Tier-0 (T0) and Tier-1 (T1) gateways.
 
 The following examples show how these topologies can be customized for your needs.
 
-The automated deployment provides a single NSX-T workload edge cluster with two edge transport nodes. Advanced topologies might require extra NSX-T edge transport nodes and clusters. 
+The automated deployment provides a single NSX-T workload edge cluster with two edge transport nodes. Advanced topologies might require extra NSX-T edge transport nodes and clusters.
 {: note}
 
 ## Single-site single-tenant
@@ -42,7 +42,7 @@ The following diagram shows an example of a customer deployment that uses the st
 3. The Tier-0 gateway provides north-south routing capabilities and access to {{site.data.keyword.cloud_notm}} private network is provided though its uplinks.
 4. Access to the private network is provided though private uplinks, which are attached to a portable subnet on a private primary VLAN on the {{site.data.keyword.cloud_notm}} private network. The routing to {{site.data.keyword.cloud_notm}} services uses these uplinks. IP addresses for the uplinks are provisioned by automating the 10/8 address space that is managed by the {{site.data.keyword.cloud_notm}}.
 5. If you provision your instance with public interfaces, access to the public network is provided though public uplinks. They are attached to a portable subnet on a public VLAN on the {{site.data.keyword.cloud_notm}} public network. The routing to the internet uses these uplinks and public IP addresses to the uplinks are provisioned by the automation.
-6. A single Tier-1 gateway is provisioned by the automation for the workloads. You can use this topology or customize it by provisioning new Tier-1 gateways. 
+6. A single Tier-1 gateway is provisioned by the automation for the workloads. You can use this topology or customize it by provisioning new Tier-1 gateways.
 7. You can expand the default topology by adding new segments to the existing Tier-1 Gateway (or to the new Tier-1 gateways provisioned by you). The route advertisements between T1 and T0 gateways are customizable by you fully and done by NSX-T. No routing protocol is required or used between T1 and T0 advertisements.
 
 The following diagram shows an example of a customer deployment by using the standard topology. Consider that the segments are attached directly to the Tier-0 gateway. You can add more segments to the Tier-0 gateway or delete the Tier-1 gateway that is deployed by the automation, if needed.
@@ -51,7 +51,7 @@ The following diagram shows an example of a customer deployment by using the sta
 
 1. The {{site.data.keyword.vcf-auto}} automation deploys an example single-site topology, which follows the principles that are presented in this model. The deployment includes a single vCenter and three NSX-T Managers that are deployed on the cluster on the initial {{site.data.keyword.cloud_notm}} data center location.
 2. The {{site.data.keyword.vcf-auto}} automation deploys two edge cluster transport nodes and a single edge cluster for your Tier-0 and Tier-1 gateways.
-3. The Tier-0 gateway provides north-south routing capabilities and access to {{site.data.keyword.cloud_notm}} private network is provided though its uplinks.  
+3. The Tier-0 gateway provides north-south routing capabilities and access to {{site.data.keyword.cloud_notm}} private network is provided though its uplinks.
 4. Access to the private network is provided though private uplinks, which are attached to a portable subnet on a private primary VLAN on the {{site.data.keyword.cloud_notm}} private network. The routing to {{site.data.keyword.cloud_notm}} services uses these uplinks. IP addresses for the uplinks are provisioned by automating the 10/8 address space that is managed by the {{site.data.keyword.cloud_notm}}.
 5. If you provision your instance with public interfaces, access to the public network is provided though public uplinks. They are attached to a portable subnet on a public VLAN on the {{site.data.keyword.cloud_notm}} public network. The routing to the internet uses these uplinks and public IP addresses to the uplinks are provisioned by the automation.
 6. You can expand the default topology by adding new segments to the existing Tier-0 Gateway. You can delete the Tier-1 gateway that is deployed by the automation, if not needed in your topology.
@@ -60,7 +60,7 @@ The following diagram shows an example of a customer deployment by using the sta
 ## Single-site - multitenant
 {: #v2t-example-overlays-single-site-mt}
 
-The single-site - multitenant pattern provides a simple highly scalable pattern if you need multiple tenants. For example, different business units that require route table isolation or have conflicting IP address spaces. This deployment pattern uses the base topology that is provided by {{site.data.keyword.cloud_notm}} {{site.data.keyword.vcf-auto}} automation. This includes single Tier-0 and Tier-1 gateways and a few NSX-T overlay segments as a starting point. If you have multiple tenants, you can divide them by using multiple Tier-1 gateways and by controlling routing advertisements and use network address translation (NAT). 
+The single-site - multitenant pattern provides a simple highly scalable pattern if you need multiple tenants. For example, different business units that require route table isolation or have conflicting IP address spaces. This deployment pattern uses the base topology that is provided by {{site.data.keyword.cloud_notm}} {{site.data.keyword.vcf-auto}} automation. This includes single Tier-0 and Tier-1 gateways and a few NSX-T overlay segments as a starting point. If you have multiple tenants, you can divide them by using multiple Tier-1 gateways and by controlling routing advertisements and use network address translation (NAT).
 
 This option is suitable for customers with workloads that run on a multiple data center, single tenant, and have some overlapping IP addresses inside their own workloads.
 
@@ -73,13 +73,13 @@ The following diagram shows an example of a multitenant deployment by using the 
 
 1. The {{site.data.keyword.vcf-auto}} automation deploys an example single-site topology, which follows the principles that presented in this model. The deployment includes a single vCenter and three NSX-T Managers that are deployed on the cluster on the initial {{site.data.keyword.cloud_notm}} data center location.
 2. The {{site.data.keyword.vcf-auto}} automation deploys two edge cluster transport nodes and a single edge cluster for your Tier-0 and Tier-1 gateways.
-3. The Tier-0 gateway provides north-south routing capabilities and access to {{site.data.keyword.cloud_notm}} private network is provided though its uplinks.  
+3. The Tier-0 gateway provides north-south routing capabilities and access to {{site.data.keyword.cloud_notm}} private network is provided though its uplinks.
 4. Access to the private network is provided though private uplinks, which are attached to a portable subnet on a private primary VLAN on the {{site.data.keyword.cloud_notm}} private network. The routing to {{site.data.keyword.cloud_notm}} services uses these uplinks. IP addresses for the uplinks are provisioned by automating the 10/8 address space that is managed by the {{site.data.keyword.cloud_notm}}.
 5. If you provision your instance with public interfaces, access to the public network is provided though public uplinks. They are attached to a portable subnet on a public VLAN on the {{site.data.keyword.cloud_notm}} public network. The routing to the internet uses these uplinks and public IP addresses to the uplinks are provisioned by the automation.
-6. A single Tier-1 gateway is provisioned by the automation for the workloads. You can use this topology and expand it by adding new Tier-1 gateways. 
+6. A single Tier-1 gateway is provisioned by the automation for the workloads. You can use this topology and expand it by adding new Tier-1 gateways.
 7. You can add new tenant segments to the existing Tier-1 gateway (or to the other Tier-1 gateways provisioned by you). The route advertisements between T1 and T0 gateways are customizable by you fully and done by NSX-T. No routing protocol is required or used between T1 and T0 advertisements. You can control which routes are advertised to the Tier-0. You can also use NAT, for example each Tier-1 gateway can have one or more IP public addresses for inbound or outbound public traffic to be used for NAT.
 
-You can deploy edge nodes on the initial cluster for scalability manually, if needed. You can also deploy new edge clusters to host new Tier-1 gateways manually. 
+You can deploy edge nodes on the initial cluster for scalability manually, if needed. You can also deploy new edge clusters to host new Tier-1 gateways manually.
 {: note}
 
 Tier-0 gateways support VRF Lite, which can be used if needed to support more complex topologies for isolating routing tables at Tier-0 level as well. Refer to VMware® documentation for more details on capabilities and limitations.
@@ -95,7 +95,7 @@ This option is suitable for customers with workloads that run on a multiple data
 Overlapping IP addresses refers to overlay segments between customer environments that run on the {{site.data.keyword.vcf-auto}} instance.
 {: note}
 
-The following diagram shows an example of a multisite single-tenant network topology. It consists of a two-layer Tier-0 design with three edge clusters. For this, consider two edge clusters in the two data centers or zones in a multizone region. And also, one edge cluster deployed across the multizone region with edge nodes in each participating zone or data center. 
+The following diagram shows an example of a multisite single-tenant network topology. It consists of a two-layer Tier-0 design with three edge clusters. For this, consider two edge clusters in the two data centers or zones in a multizone region. And also, one edge cluster deployed across the multizone region with edge nodes in each participating zone or data center.
 
 ![Multisite single-tenant example topology](../../images/v2t-diagrams-2-zone.svg "Multisite single-tenant example topology for NSX-T deployment"){: caption="Figure 4. Multisite single-tenant example topology" caption-side="bottom"}
 
@@ -109,7 +109,7 @@ The following diagram shows an example of a multisite single-tenant network topo
 8. Create your Tier-1 gateways in the regional edge cluster. You can select which data center (or edge node) is your preferred Tier-1 path in the regional cluster.
 9. You can attach your segments into this level of Tier-1 gateways. You can create multiple segments and advertise them through Tier-1 gateway to north bound Tier-0 gateways.
 
-This network topology example doesn't consider the management and control plane (vCenter and NSX Managers). The control plane of high availability is discussed in another availability pattern. 
+This network topology example doesn't consider the management and control plane (vCenter and NSX Managers). The control plane of high availability is discussed in another availability pattern.
 {: note}
 
 The main reason that you need two layers is for physical north-south connectivity in the data centers. Each data center must have their own private and public VLANs and IP addresses for the uplinks. These IP addresses cannot move between the data centers. Therefore, it requires your attention for routing and network address translation if you use public connectivity in this topology.
@@ -139,7 +139,7 @@ The following diagram shows an example of a multisite – multitenant topology. 
 8. Then, create your Tier-1 gateways in the regional edge cluster. You can select which data center (or edge node) is your preferred Tier-1 path in the regional cluster. You can separate routing tables at this level and decide which routes as advertised to the north bound Tier-0. As in the other multitenant patterns, you can use NAT is this case as well.
 9. You can attach your segments into this level of Tier-1 gateways. You can create multiple segments and advertise them through Tier-1 gateway to north bound Tier-0 gateways.
 
-This network topology example doesn't consider the management and control plane (vCenter and NSX Managers). The control plane of high availability is discussed in another availability pattern. 
+This network topology example doesn't consider the management and control plane (vCenter and NSX Managers). The control plane of high availability is discussed in another availability pattern.
 {: note}
 
 Tier-0 gateways support VRF Lite, which can be used if needed to support more complex topologies for isolating routing tables also at Tier-0 level. For more information on capabilities and limitations, see the VMware by Broadcom documentation.
@@ -151,7 +151,7 @@ The main reason that you need two layers is for physical north-south connectivit
 ## Considerations for selecting an overlay network topology
 {: #v2t-example-overlays-considerations}
 
-VMware NSX-T provides many ways to build the network topologies, and the default network topology is useful for many use cases. You can typically start with this, and expand it as your needs grow. When the initial deployment is done, {{site.data.keyword.cloud_notm}} automation doesn't use the workload overlay topology and you can change the example topology based on your needs. When you change the configuration, the default uplinks provide basic-routed connectivity to {{site.data.keyword.cloud_notm}} private and public networks. If you change the IP addresses or routing, your overlay workloads might lose connectivity to them.  
+VMware NSX-T provides many ways to build the network topologies, and the default network topology is useful for many use cases. You can typically start with this, and expand it as your needs grow. When the initial deployment is done, {{site.data.keyword.cloud_notm}} automation doesn't use the workload overlay topology and you can change the example topology based on your needs. When you change the configuration, the default uplinks provide basic-routed connectivity to {{site.data.keyword.cloud_notm}} private and public networks. If you change the IP addresses or routing, your overlay workloads might lose connectivity to them.
 
 {{site.data.keyword.cloud_notm}} offers a flexible way to build the NSX-T topology that you need. When you design your own overlay network solution, it is important to know that you might deploy new NSX-T edge nodes and new NSX-T edge clusters manually. Or using Ansible and Terraform to attend your needs. You can do this by following VMware documentation and design guidelines post the initial deployment.
 
@@ -163,4 +163,4 @@ Most of the content in the VMware NSX-T Design Guides and documentation can be a
 
 * [VMware NSX documentation](https://docs.vmware.com/en/VMware-NSX/index.html){: external}
 * [NSX-T reference design guide 3-0](https://nsx.techzone.vmware.com/resource/nsx-reference-design-guide){: external}
-* [NSX-T multi-location design guide (federation + multisite)](https://communities.vmware.com/t5/VMware-NSX-Documents/NSX-T-Multi-Location-Design-Guide-Federation-Multisite/ta-p/2810327){: external}
+* [NSX-T Multi-Location Design Guide (Federation + Multisite)](https://community.broadcom.com/viewdocument/nsx-t-multi-location-design-guide?CommunityKey=b76535ef-c5a2-474d-8270-3e83685f020e&tab=librarydocuments){: external}

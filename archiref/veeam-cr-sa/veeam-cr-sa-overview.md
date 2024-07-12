@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2024
 
-lastupdated: "2024-06-13"
+lastupdated: "2024-07-11"
 
 subcollection: vmwaresolutions
 
@@ -52,8 +52,6 @@ The isolated recovery solution architecture uses a {{site.data.keyword.vcf-auto-
    * Requires that the cyber-recovery backup infrastructure has access with sufficient privileges to the production vCenter and ESXi hosts.
 * This solution is suitable for clients who want to copy critical data away from the production environment. Also, that cyber-recovery backup systems and personnel are separate from production and disaster recovery processes.
 
-[The definitive guide to ransomware: Readiness, response, and remediation](https://www.ibm.com/downloads/cas/EV6NAQR4){: external} provides an overview of ransomware history, its current prevalence, and resources to help fortify organizations and technical-level guidance on techniques to protect networks before an attack can happen. Also, a recovery guidance if an attacker makes it through defenses.
-
 ## Terms and definitions
 {: #veeam-cr-sa-overview-terms}
 
@@ -69,7 +67,7 @@ This documentation uses the following terms and definitions:
 | Bare metal server | A bare metal server is a server instance that runs directly on the {{site.data.keyword.cloud_notm}} x86 hardware.
 | Veeam Backup and Replication (BUR) | The Veeam application that enables backups of server instances and the replication of VMs. While the Veeam product name includes "Replication", only the backup feature is used in these cyber-recovery architectures.
 | Air-gap | An air gap is a term that is used to denote network isolation where the Linux backup repository is not accessible directly from the production networks. For backup transfer, the air gap is selectively unlocked and then locked when the transfer is complete.
-| Production environment | The vSphere environment that hosts the production data. For the isolated recovery environment, the production environment can be in {{site.data.keyword.cloud_notm}} or elsewhere. 
+| Production environment | The vSphere environment that hosts the production data. For the isolated recovery environment, the production environment can be in {{site.data.keyword.cloud_notm}} or elsewhere.
 | Cyber-recovery site | The location of the isolated recovery environment.
 | Production data | Production data refers specifically to the VM images (VMDKs) of the VMs running in the production environment.
 | Cyber-recovery data | Copies of the production VM images (VMDKs) in the isolated recovery environment.

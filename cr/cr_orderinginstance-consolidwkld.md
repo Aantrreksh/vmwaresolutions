@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-06-27"
+lastupdated: "2024-07-11"
 
 keywords: cyber recovery, cyber recovery consolidated cluster, cyber recovery consolidated settings, cyber recovery instances
 
@@ -17,7 +17,7 @@ subcollection: vmwaresolutions
 # Consolidated and workload cluster
 {: #cr_orderinginstance-consolidwkld}
 
-{{site.data.keyword.cr}} instances are deployed with a consolidated cluster for VMware vSphere® 7, in which all the VMware® management components and user workloads run.
+{{site.data.keyword.cr}} instances are deployed with a consolidated cluster for VMware vSphere®, in which all the VMware® management components and user workloads run.
 
 You can also order an extra workload cluster.
 
@@ -122,7 +122,7 @@ Choose performance level options according to your needs.
 ### vSAN storage
 {: #cr_orderinginstance-consolidwkld-vsan-storage}
 
-vSAN is available for the **Cascade Lake** bare metal configuration only.
+vSAN is available only for **Cascade Lake** bare metal servers.
 
 #### Size for vSAN capacity disks
 {: #cr_orderinginstance-consolidwkld-vsan-storage-typesize-capdisks}

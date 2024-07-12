@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2024
 
-lastupdated: "2024-04-26"
+lastupdated: "2024-07-11"
 
 keywords: veeam, veeam install, tech specs veeam
 
@@ -117,4 +117,4 @@ If you remove a VMware Cloud Director virtual data center from your account, all
 * [Ordering virtual data centers](/docs/vmwaresolutions?topic=vmwaresolutions-shared_ordering)
 * [Using Veeam Cloud Connect Portal](https://helpcenter.veeam.com/archive/backup/100/cloud/cloud_connect_portal_use.html){: external}
 * [Veeam website](https://www.veeam.com/){: external}
-* [Veeam Help Center](https://www.veeam.com/documentation-guides-datasheets.html){: external}
+* [Veeam Help Center](https://www.veeam.com/support/help-center-technical-documentation.html?productId=8&version=product%3A8%2F221){: external}

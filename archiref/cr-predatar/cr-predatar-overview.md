@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2024
 
-lastupdated: "2024-06-11"
+lastupdated: "2024-07-11"
 
 subcollection: vmwaresolutions
 
@@ -17,7 +17,7 @@ subcollection: vmwaresolutions
 
 A {{site.data.keyword.vcf-auto}} instance can host Predatar® Cyber Recovery Orchestration and a Predatar CleanRoom™.
 
-Predatar Cyber Recovery Orchestration automates and orchestrates the recovery and malware scanning of backups into a Predatar CleanRoom. This process allows organizations to understand which of their virtual machines (VMs) fail to meet their required objectives and might jeopardize a quick recovery from a cyberattack. For more information, see [Protect your data against ransomware attacks](https://www.predatar.com/cyber-resilience/?language=en-gb){: external}.
+Predatar Cyber Recovery Orchestration automates and orchestrates the recovery and malware scanning of backups into a Predatar CleanRoom. This process allows organizations to understand which of their virtual machines (VMs) fail to meet their required objectives and might jeopardize a quick recovery from a cyberattack. For more information, see [Protect your data against ransomware attacks](https://www.predatar.com){: external}.
 
 This architecture is suitable for clients who are using either or both of the following in the source environment:
 
@@ -42,7 +42,7 @@ If you are completing an instant mount from object storage, then the vSnap is us
 The following diagram shows the high-level architecture:
 
 ![Overview of Predatar on VMware Solutions](../../images/cr-predatar-overview.svg "Overview diagram"){: caption="Figure 1. Overview of Predatar on VMware Solutions" caption-side="bottom"}
- 
+
 1. VMs with VMware Tools including the Thin Agent (also known as Guest Introspection) installed, are backed up to the source backup servers.
 2. Backup data is replicated from the source backup servers to the {{site.data.keyword.cloud_notm}} hosted tertiary backup servers.
 3. Metadata is collected from the source backup servers and the tertiary backup servers by the Predatar Agents and sent to the Predatar Cloud.
@@ -76,13 +76,13 @@ Predatar Cloud:
 
 {{site.data.keyword.cloud_notm}} account:
 
-* vCenter Server instance - used for cyber-recovery tasks only, deployed in an {{site.data.keyword.cloud_notm}} account restricted to cyber-recovery activities. For more information about vCenter Server instances, see [Overview of VMware Solutions](/docs/vmwaresolutions?topic=vmwaresolutions-solution_overview). 
+* vCenter Server instance - used for cyber-recovery tasks only, deployed in an {{site.data.keyword.cloud_notm}} account restricted to cyber-recovery activities. For more information about vCenter Server instances, see [Overview of VMware Solutions](/docs/vmwaresolutions?topic=vmwaresolutions-solution_overview).
 
 The vCenter Server instance:
 
 * Can use VMware vSAN or NFS data stores. For more information, see [Physical storage design](/docs/vmwaresolutions?topic=vmwaresolutions-design_physicalinfrastructure#design_physicalinfrastructure-storage-design).
 * Does not host production or disaster recovery workloads, but would temporarily be used to recover an infected machine and then clean it in the CleanRoom.
-* Includes an edge cluster to host your choice of one of the following to protect vCenter Server instance networks: 
+* Includes an edge cluster to host your choice of one of the following to protect vCenter Server instance networks:
    * Juniper vSRX appliances.
    * FortiGate Security Appliance.
    * FortiGate Virtual Appliance.
@@ -105,9 +105,9 @@ The vCenter Server instance:
 
 You can use a separate {{site.data.keyword.cloud_notm}} account to deploy your Predatar CleanRoom instance into. This process promotes separation of duties between ownership of any other production or disaster recovery solution that you might host in {{site.data.keyword.cloud_notm}}.
 
-The minimum number of hosts in a consolidated cluster is three, and the minimum host configuration is 128 GB RAM and 20 cores at 2.2 GHz giving a total of 384 GB RAM and 132 GHz in the cluster for both management and customer workloads. The number of clusters, the number of hosts in the cluster and the cores and RAM in the hosts can be scaled. See [CPU Model and RAM](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-consold-cluster#vc_orderinginstance-cpumodel). 
+The minimum number of hosts in a consolidated cluster is three, and the minimum host configuration is 128 GB RAM and 20 cores at 2.2 GHz giving a total of 384 GB RAM and 132 GHz in the cluster for both management and customer workloads. The number of clusters, the number of hosts in the cluster and the cores and RAM in the hosts can be scaled. See [CPU Model and RAM](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-consold-cluster#vc_orderinginstance-cpumodel).
 
-* For vSAN Storage, see [vSAN Storage](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-consold-cluster#vc_orderinginstance-vsan-storage). 
+* For vSAN Storage, see [vSAN Storage](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-consold-cluster#vc_orderinginstance-vsan-storage).
 * For NFS storage, see [NFS Storage](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-consold-cluster#vc_orderinginstance-nfs-storage).
 
 The smallest {{site.data.keyword.cloud_notm}} Classic Bare metal server for the IBM Spectrum Protect Plus vSnap server is 4 x 1 TB disks, which gives 2 TB in RAID 6. The largest single server is 34 x 12 TB disks, which gives 384 TB in RAID 6.
@@ -152,5 +152,4 @@ To order {{site.data.keyword.cloud_notm}} Classic Bare Metal servers, see [Build
 * [Virtual Private Network (VPN)](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.2/administration/GUID-A8B113EC-3D53-41A5-919E-78F1A3705F58.html){: external}
 * [Adding a cross-account connection](/docs/transit-gateway?topic=transit-gateway-adding-cross-account-connections&interface=ui)
 * [Predatar](https://www.predatar.com/){: external}
-* [Predatar cyber orchestration](https://www.predatar.com/cyber-recovery-orchestration/){: external}
-
+* [Predatar cyber orchestration](https://www.predatar.com){: external}

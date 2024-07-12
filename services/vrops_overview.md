@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2024
 
-lastupdated: "2024-06-25"
+lastupdated: "2024-07-12"
 
 keywords: VMware Aria, VMware Aria info, tech specs VMware Aria, vRealize info
 

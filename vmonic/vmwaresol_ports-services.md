@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2024
 
-lastupdated: "2024-07-01"
+lastupdated: "2024-07-11"
 
 keywords: VLAN ports, vmware solutions ports, ports usage vmware solutions
 
@@ -99,9 +99,13 @@ The following table provides information about the {{site.data.keyword.redhat_op
 | IBM CloudDriver | Private primary subnet \n Infrastructure VMs | OCP | New subnet ordered in private VLAN | 22 | TCP | Set up and configure OCP | SSH |
 {: caption="Table 6. Red Hat OpenShift for VMware ports" caption-side="bottom"}
 
-[^osinst]: For more information, see [Configuring your firewall](https://docs.openshift.com/container-platform/4.15/installing/install_config/configuring-firewall.html){: external}.
+[^osinst]: For more information, see [Configuring your firewall](https://docs.openshift.com/container-platform/4.14/installing/install_config/configuring-firewall.html){: external}. 
 
-For more information about OCP networking, see [About the {{site.data.keyword.redhat_openshift_notm}} SDN network provider](https://docs.openshift.com/container-platform/4.15/networking/openshift_sdn/about-openshift-sdn.html){: external}.
+
+
+For more information about OCP networking, see [About the {{site.data.keyword.redhat_openshift_notm}} SDN network provider](https://docs.openshift.com/container-platform/4.14/networking/openshift_sdn/about-openshift-sdn.html){: external}.
+
+
 
 ## Ports for Veeam
 {: #vmwaresol_ports-vmware-optional-services-veeam}

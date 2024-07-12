@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-06-10"
+lastupdated: "2024-07-11"
 
 subcollection: vmwaresolutions
 
@@ -28,7 +28,7 @@ The automated deployment provides a single NSX workload edge cluster with two ed
 
 Multisite single-tenant is a common use case and network deployment pattern. This topology provides seamless site recovery by using dynamic routing protocols, such as BGP. The vCenter Server automation does not deploy multisite topology automatically. However, you can customize the default single-site topology after initial vCenter Server deployment. When you have the compute capacity in the required data center, you can manually deploy the required additional edge nodes. Then, create a new edge cluster for the Tier-0 and Tier-1 Gateways through NSX. This overlay topology is highly scalable and it is possible to automate, for example, by using Ansible and Terraform.
 
-The following diagram shows an example of a multisite single-tenant network topology. It consists of a two-layer Tier-0 design with three edge clusters. Two edge clusters in the two data centers or zones in a multizone region, and one edge cluster deployed across the multizone region with edge nodes in each participating zone or data center. 
+The following diagram shows an example of a multisite single-tenant network topology. It consists of a two-layer Tier-0 design with three edge clusters. Two edge clusters in the two data centers or zones in a multizone region, and one edge cluster deployed across the multizone region with edge nodes in each participating zone or data center.
 
 ![Multisite single-tenant example topology](../../images/arch-pattern-2-zone.svg "Multisite single-tenant example topology for NSX deployment"){: caption="Figure 1. Multisite single-tenant example topology" caption-side="bottom"}
 
@@ -42,7 +42,7 @@ The following diagram shows an example of a multisite single-tenant network topo
 8. Then, create your Tier-1 Gateways in the regional edge cluster. You can select which data center (or edge node) is your preferred Tier-1 path in the regional cluster.
 9. You can attach your segments into this level of Tier-1 Gateways. Also, you can create multiple segments and advertise them through Tier-1 Gateway to north bound Tier-0 Gateways.
 
-This network topology example does not consider the management and control plane (vCenter and NSX Managers). The control plane of high availability is discussed in another availability pattern. 
+This network topology example does not consider the management and control plane (vCenter and NSX Managers). The control plane of high availability is discussed in another availability pattern.
 {: note}
 
 The main reason that you need two layers is for physical north-south connectivity in the data centers and each data center having their own private and public VLANs and IP addresses for the uplinks. These IP addresses cannot move between the data centers. Therefore, you must consider the routing and network address translation if you use public connectivity in this topology.
@@ -67,7 +67,7 @@ The following diagram shows an example of a multisite – multitenant topology. 
 8. Then, create your Tier-1 Gateways in the regional edge cluster. You can select which data center (or edge node) is your preferred Tier-1 path in the regional cluster. You can separate routing tables at this level and decide which routes as advertised to the north bound Tier-0. As in the other multitenant patterns, you can use NAT as well.
 9. You can attach your segments into this level of Tier-1 Gateways. You can create multiple segments and advertise them through Tier-1 Gateway to north-bound Tier-0 Gateways.
 
-This network topology example does not consider the management and control plane (vCenter and NSX Managers). The control plane of high availability is discussed in another availability pattern. 
+This network topology example does not consider the management and control plane (vCenter and NSX Managers). The control plane of high availability is discussed in another availability pattern.
 {: note}
 
 Tier-0 Gateways support VRF lite, which can be used if needed to support more complex topologies for isolating routing tables also at Tier-0 level. For more information about capabilities and limitations, see the [VMware NSX documentation](https://docs.vmware.com/en/VMware-NSX/index.html){: external}.
@@ -91,4 +91,4 @@ Most of the content in the VMware NSX design guides and documentation can be app
 
 * [VMware NSX documentation](https://docs.vmware.com/en/VMware-NSX/index.html){: external}
 * [NSX Reference Design Guide](https://nsx.techzone.vmware.com/resource/nsx-reference-design-guide){: external}
-* [NSX Multilocation design guide (Federation + Multisite)](https://communities.vmware.com/t5/VMware-NSX-Documents/NSX-Multi-Location-Design-Guide-Federation-Multisite/ta-p/2810327){: external}
+* [NSX Multi-Location design guide (Federation + Multisite)](https://community.broadcom.com/viewdocument/nsx-t-multi-location-design-guide?CommunityKey=b76535ef-c5a2-474d-8270-3e83685f020e&tab=librarydocuments){: external}

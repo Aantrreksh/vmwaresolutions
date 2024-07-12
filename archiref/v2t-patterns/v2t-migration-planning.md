@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-06-13"
+lastupdated: "2024-07-11"
 
 subcollection: vmwaresolutions
 
@@ -60,7 +60,7 @@ In addition, to ensure successful Day 2 operations, improve the core VMware NSX-
 ## Engage a migration services provider
 {: #v2t-planning-serviceprovider}
 
-You can engage PrimaryIO’s experienced Professional Services team through the IBM catalog. For more information, see [VMware Cloud Migration Services (VMwaaS VPC NSX-T)](https://cloud.ibm.com/catalog/services/primaryio-hdm-cloud-connect-nsx-v-to-nsx-t).
+You can engage PrimaryIO’s experienced Professional Services team through the IBM catalog. For more information, see [VMware Cloud Migration Services](https://cloud.ibm.com/catalog/services/vmware-cloud-migration-services).
 
 PrimaryIO’s Fasttrack Migration Service is optimized to move customers away from NSX-V and onto NSX-T through short-form engagements that continually drive progress by focusing on critical path objectives.
 
@@ -152,4 +152,4 @@ A third possible Layer 2 approach is to use NSX-T L2VPN. In this approach, the N
 * [The NSX Terraform Provider](https://registry.terraform.io/providers/vmware/nsxt/latest/docs){: external}
 * [NSX-V to NSX-T 3.x Migration Coordinator](https://nsx.techzone.vmware.com/resource/nsx-v-nsx-t-3x-migration-coordinator#_Toc57645169){: external}
 * [NSX-V to NSX-T fast track migration service](https://hdm.primaryio.com/lp/nsxvtot){: external}
-* [VMware Cloud Migration Services (VMwaaS VPC NSX-T)](https://cloud.ibm.com/catalog/services/vmware-cloud-migration-services-vmwaas-vpc-nsx-t)
+* [VMware Cloud Migration Services](https://cloud.ibm.com/catalog/services/vmware-cloud-migration-services)

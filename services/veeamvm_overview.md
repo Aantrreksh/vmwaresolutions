@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2024
 
-lastupdated: "2024-05-02"
+lastupdated: "2024-07-11"
 
 keywords: Veeam, Veeam Backup and Replication 12.1, Veeam install, tech specs Veeam, Veeam overview
 
@@ -170,4 +170,4 @@ If you choose the option to install Veeam as a VM, you must provide a MicrosoftÂ
 * [Ordering and configuring {{site.data.keyword.cloud_notm}} Object Storage with Veeam](/docs/vmwaresolutions?topic=vmwaresolutions-icos_ordering)
 * [General FAQ about VCF for Classic](/docs/vmwaresolutions?topic=vmwaresolutions-faq-vmwaresolutions)
 * [Veeam on {{site.data.keyword.cloud_notm}}](https://www.ibm.com/products/veeam){: external}
-* [Veeam Help Center (Technical Documentation)](https://www.veeam.com/documentation-guides-datasheets.html){: external}
+* [Veeam Help Center (Technical Documentation)](https://www.veeam.com/support/help-center-technical-documentation.html?productId=8&version=product%3A8%2F221){: external}
