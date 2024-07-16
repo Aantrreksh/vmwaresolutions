@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2024
 
-lastupdated: "2024-07-11"
+lastupdated: "2024-07-16"
 
 subcollection: vmwaresolutions
 
@@ -17,7 +17,7 @@ subcollection: vmwaresolutions
 
 A {{site.data.keyword.vcf-auto}} instance can host Predatar® Cyber Recovery Orchestration and a Predatar CleanRoom™.
 
-Predatar Cyber Recovery Orchestration automates and orchestrates the recovery and malware scanning of backups into a Predatar CleanRoom. This process allows organizations to understand which of their virtual machines (VMs) fail to meet their required objectives and might jeopardize a quick recovery from a cyberattack. For more information, see [Protect your data against ransomware attacks](https://www.predatar.com){: external}.
+Predatar Cyber Recovery Orchestration automates and orchestrates the recovery and malware scanning of backups into a Predatar CleanRoom. This process allows organizations to understand which of their virtual machines (VMs) fail to meet their required objectives and might jeopardize a quick recovery from a cyberattack. For more information, see [Protect your data against ransomware attacks](https://predatar.com/){: external}.
 
 This architecture is suitable for clients who are using either or both of the following in the source environment:
 
@@ -151,5 +151,5 @@ To order {{site.data.keyword.cloud_notm}} Classic Bare Metal servers, see [Build
 * [Architecture pattern for using Direct Link with NSX-T and EVPN](/docs/vmwaresolutions?topic=vmwaresolutions-arch-pattern-direct-link-evpn)
 * [Virtual Private Network (VPN)](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.2/administration/GUID-A8B113EC-3D53-41A5-919E-78F1A3705F58.html){: external}
 * [Adding a cross-account connection](/docs/transit-gateway?topic=transit-gateway-adding-cross-account-connections&interface=ui)
-* [Predatar](https://www.predatar.com/){: external}
-* [Predatar cyber orchestration](https://www.predatar.com){: external}
+* [Predatar](https://predatar.com/){: external}
+* [Predatar cyber orchestration](https://predatar.com/){: external}

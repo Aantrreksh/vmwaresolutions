@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-06-13"
+lastupdated: "2024-07-16"
 
 subcollection: vmwaresolutions
 
@@ -48,7 +48,7 @@ You can provision an optional HCX service in the new {{site.data.keyword.vcf-aut
    * The management network profile is configured by using the subnet, IP range, and gateway from the manually provisioned HCX Management portable subnet on the primary VLAN.
    * The vMotion network profile uses the subnet, IP range, and gateway from the existing vMotion subnet on the secondary VLAN. Ensure that the IP range that you define is not used by the ESXi hosts.
    * The private uplink network profile is created by using the subnet, IP range, and gateway from the manually provisioned HCX uplink portable subnet on the secondary private VLAN. This subnet is also used by the HCX private uplink network profile in the {{site.data.keyword.vcf-auto-short}} with NSX-T environment. Therefore, ensure that the IP ranges in each environment do not overlap with each other.
-6. On the {{site.data.keyword.vcf-auto-short}} with NSX-V HCX Manager, create a Site Pairing and then a Service Mesh. Complete performance testing to understand bandwidth and throughput between the environments so you can calculate migration durations. For more information, see [Network Underlay Characterization and HCX Performance Outcomes](https://community.broadcom.com/HigherLogic/System/DownloadDocumentFile.ashx?DocumentFileKey=eb003993-2dd5-4c04-83d8-39d8aae6e379&forceDialog=0){: external}.
+6. On the {{site.data.keyword.vcf-auto-short}} with NSX-V HCX Manager, create a Site Pairing and then a Service Mesh. Complete performance testing to understand bandwidth and throughput between the environments so you can calculate migration durations. For more information, see [HCX Network Underlay Characterization and Performance Outcomes](https://community.broadcom.com/viewdocument/hcx-network-underlay-characterizati?CommunityKey=ab5e7256-62d1-4688-875f-f2fe64d0aa85&tab=librarydocuments){: external}.
 
 ## Deploying HCX fleet for migration
 {: #v2t-hcx-guide-deploy-hcx-fleet}

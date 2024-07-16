@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-07-08"
+lastupdated: "2024-07-16"
 
 subcollection: vmwaresolutions
 
@@ -228,7 +228,7 @@ If you have a vSAN cluster, the additional preconfigured alarms in the following
 | Expired vSAN license | Not considered essential for notification. Alarm that is reviewed as part of proactive daily checks. | [Considerations about the vSAN license](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.vsan-planning.doc/GUID-20731F2A-B001-4A05-AB4D-30C5B0044EC5.html){: external} |
 | Expired vSAN time-limited license | Not considered essential for notification. Alarm that is reviewed as part of proactive daily checks. | [Considerations about the vSAN License](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.vsan-planning.doc/GUID-20731F2A-B001-4A05-AB4D-30C5B0044EC5.html){: external} |
 | vSAN hardware compatibility issues | Not considered essential for notification. Alarm that is reviewed as part of proactive daily checks. | [vSAN Health Check Information (2114803)](https://knowledge.broadcom.com/external/article?legacyId=2114803){: external} |
-| vSAN health alarm `Active multicast connectivity check` | Configure to send an email one time for a critical event. | [vSAN Health Service - Network Health - Active Multicast connectivity check (2116296)](https://knowledge.broadcom.com/external/article?legacyId=2116296){: external} |
+| vSAN health alarm `Active multicast connectivity check` | Configure to send an email one time for a critical event. | No additional information |
 | vSAN health alarm `Advanced vSAN configuration in sync` | Not considered essential for notification. Alarm that is reviewed as part of proactive daily checks. | [vSAN Health Service - Cluster Health - Advanced vSAN configuration in sync (2107713)](https://knowledge.broadcom.com/external/article?legacyId=2107713){: external} |
 | vSAN health alarm `After one additional host failure` | Configure to send an email one time for a critical event. | No additional information |
 | vSAN health alarm `All hosts contributing stats` | Not considered essential for notification. Alarm that is reviewed as part of proactive daily checks. | [vSAN Health Service - performance service - All hosts contributing stats check (2144400)](https://knowledge.broadcom.com/external/article?legacyId=2144400){: external} |

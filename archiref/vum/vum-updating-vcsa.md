@@ -31,7 +31,7 @@ The PSC or VCSA is updated through the appliance management console, not the vSp
 You must initiate a snapshot of the appliance or a backup of the PSC or VCSA before you update. Ensure that everything works as expected, and then remove the snapshot within a few days, to avoid performance degradation. Additionally, review the VMware release notes before you attempt any upgrade to understand any specific instructions for the specified release.
 
 To update the PSC or VCSA, follow these steps:
-1. You can download updates by going to the [VMware Patch Download Center](https://customerconnect.vmware.com/site-maintenance#search), logging in and choosing VC from the **Search by Product** menu. Select the appropriate patch and click **Download**.
+1. You can download updates by going to the [VMware Patch Download Center](https://www.vmware.com/customerconnect_maintenance.html#search), logging in and choosing VC from the **Search by Product** menu. Select the appropriate patch and click **Download**.
 2. Using the vSphere Web Client, upload the ISO file to the vCenter data store repository.
 3. Mount the update ISO file to the VCSA.
 4. Take a snapshot of your VCSA.
