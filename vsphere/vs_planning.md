@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-07-11"
+lastupdated: "2024-07-17"
 
 keywords: planning flexible, data center, vSphere data centers
 
@@ -56,8 +56,8 @@ If you select a vSAN component, the location list is filtered by SSD (Solid-Stat
 | TOK02 | 01-02 | Skylake, Cascade Lake, SAP-certified Cascade Lake |
 | TOK04 | 01 | Skylake, Cascade Lake, SAP-certified Cascade Lake |
 | TOK05 | 01 | Skylake, Cascade Lake, SAP-certified Cascade Lake |
-{: caption="Table 1. Available {{site.data.keyword.cloud_notm}} data centers for Flexible instances - Asia-Pacific" caption-side="bottom"}
-{: tab-title="Asia-Pacific"}
+{: caption="Table 1. Available {{site.data.keyword.cloud_notm}} data centers for Flexible instances - Asia Pacific" caption-side="bottom"}
+{: tab-title="Asia Pacific"}
 {: tab-group="Data centers for Flexible instances"}
 {: class="simple-tab-table"}
 {: #simpletabtable-cr-ap}

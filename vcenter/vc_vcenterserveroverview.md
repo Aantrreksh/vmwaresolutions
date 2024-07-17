@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-04-25"
+lastupdated: "2024-07-17"
 
 keywords: vcf automated, vcf classic architecture, tech specs vmware cloud foundation
 
@@ -169,7 +169,7 @@ The {{site.data.keyword.vcf-auto-short}} multizone architecture is an end-to-end
 Multizone instances are available in the following regions:
 * America - Washington DC, Dallas, Sao Paulo, and Toronto
 * Europe - London and Frankfurt
-* Asia-Pacific - Sydney, Tokyo, and Osaka
+* Asia Pacific - Sydney, Tokyo, and Osaka
 
 ### Base infrastructure architecture specifications
 {: #vc_vcenterserveroverview-mcv-base-specs}

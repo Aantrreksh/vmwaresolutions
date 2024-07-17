@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-04-25"
+lastupdated: "2024-07-17"
 
 keywords: planning vcf classic, data center, vcf automated data centers
 
@@ -51,8 +51,8 @@ The {{site.data.keyword.vcf-auto-short}} deployment has strict requirements on t
 | TOK02 | 01-02 | Skylake, Cascade Lake, SAP-certified Cascade Lake | Skylake, Cascade Lake, SAP-certified Cascade Lake |
 | TOK04 | 01 | Skylake, Cascade Lake, SAP-certified Cascade Lake | Skylake, Cascade Lake, SAP-certified Cascade Lake |
 | TOK05 | 01 | Skylake, Cascade Lake, SAP-certified Cascade Lake | Skylake, Cascade Lake, SAP-certified Cascade Lake |
-{: caption="Table 1. Available {{site.data.keyword.cloud_notm}} data centers for Automated instances - Asia-Pacific" caption-side="bottom"}
-{: tab-title="Asia-Pacific"}
+{: caption="Table 1. Available {{site.data.keyword.cloud_notm}} data centers for Automated instances - Asia Pacific" caption-side="bottom"}
+{: tab-title="Asia Pacific"}
 {: tab-group="Data centers for Automated instances"}
 {: class="simple-tab-table"}
 {: #simpletabtable-cr-ap}

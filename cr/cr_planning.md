@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-04-18"
+lastupdated: "2024-07-17"
 
 keywords: planning cyber recovery, cyber recovery, cyber recovery instance
 
@@ -52,8 +52,8 @@ The following {{site.data.keyword.cloud_notm}} data centers are available for {{
 | TOK02 | 01-02 |
 | TOK04 | 01 |
 | TOK05 | 01 |
-{: caption="Table 1. Available {{site.data.keyword.cloud_notm}} data centers for {{site.data.keyword.cr}} - Asia-Pacific" caption-side="bottom"}
-{: tab-title="Asia-Pacific"}
+{: caption="Table 1. Available {{site.data.keyword.cloud_notm}} data centers for {{site.data.keyword.cr}} - Asia Pacific" caption-side="bottom"}
+{: tab-title="Asia Pacific"}
 {: tab-group="Data centers for {{site.data.keyword.cr}}"}
 {: class="simple-tab-table"}
 {: #simpletabtable-cr-ap}
