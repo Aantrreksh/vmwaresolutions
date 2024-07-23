@@ -4,7 +4,7 @@ copyright:
 
   years: 2016, 2024
 
-lastupdated: "2024-04-02"
+lastupdated: "2024-07-23"
 
 keywords: history message, audit history, error messages
 
@@ -227,4 +227,4 @@ The following information details the messages that can be issued to your instan
 {: #audit_messages-related}
 
 * [Considerations about changing vCenter Server artifacts](/docs/vmwaresolutions?topic=vmwaresolutions-vcenter_chg_impact#vcenter_chg_impact-automation-id)
-* [Auditing events for VMware Solutions](/docs/vmwaresolutions?topic=vmwaresolutions-at-events#at-events)
+* [Auditing events for VMware Solutions](/docs/vmwaresolutions?topic=vmwaresolutions-at-events)

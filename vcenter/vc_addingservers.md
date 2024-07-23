@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2024
 
-lastupdated: "2024-04-25"
+lastupdated: "2024-07-23"
 
 keywords: add host, add server
 
@@ -25,6 +25,7 @@ You can expand the capacity of your {{site.data.keyword.vcf-auto}} instance acco
 * For existing instances with VMware vSphere® 6.5 or 6.7, you cannot add ESXi servers. To add ESXi servers, upgrade your vSphere® software to 7.0. For more information, see [Upgrading VMware vSphere software from vSphere 6.5 or 6.7 to 7.0](/docs/vmwaresolutions?topic=vmwaresolutions-vs_vsphere_70_upgrade).
 * For existing instances with vSphere 7.0u2, you can add only ESXi servers with vSphere 7.0u3.
 * For the gateway cluster, you cannot add or delete ESXi servers.
+
 
 {{site.data.content.para-vcenteraddESXiservers}}
 

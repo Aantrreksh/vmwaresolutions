@@ -4,7 +4,7 @@ copyright:
 
   years: 2016, 2024
 
-lastupdated: "2024-04-30"
+lastupdated: "2024-07-23"
 
 keywords: user IDs vCenter, PSC user, user ID service
 
@@ -94,4 +94,4 @@ In the [previous table](#audit_user_ids-services-table), the following notations
 {: #audit_user_ids-related}
 
 * [Considerations about changing vCenter Server artifacts](/docs/vmwaresolutions?topic=vmwaresolutions-vcenter_chg_impact#vcenter_chg_impact-automation-id)
-* [Auditing events for VMware Solutions](/docs/vmwaresolutions?topic=vmwaresolutions-at-events#at-events)
+* [Auditing events for VMware Solutions](/docs/vmwaresolutions?topic=vmwaresolutions-at-events)

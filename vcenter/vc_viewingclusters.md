@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2024
 
-lastupdated: "2024-04-25"
+lastupdated: "2024-07-23"
 
 keywords: vcf automated view clusters, view clusters, view vcf classic cluster
 
@@ -28,6 +28,7 @@ View the summary and detailed information of the clusters that are provisioned i
    * **Cluster name**: The name and type of the cluster.
    * **Cluster type**: The type of cluster. Types include witness, consolidated, workload, and edge gateway.
    * **ESXi servers**: The number of VMware ESXi™ servers in the cluster.
+   
    * **Storage**: The type of storage that the cluster uses.
    * **Data center location**: The {{site.data.keyword.cloud_notm}} data center where the cluster is hosted.
    * **Pod**: The pod where the cluster is deployed.

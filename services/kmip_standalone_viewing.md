@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2016, 2022
+  years:  2016, 2024
 
-lastupdated: "2022-11-22"
+lastupdated: "2024-07-23"
 
 keywords: KMIP for VMware, view KMIP stand-alone, KMIP for VMware status
 
@@ -28,7 +28,7 @@ From the {{site.data.keyword.vmwaresolutions_full}} console, click **Resources >
 |:---- |:----------- |
 | Name | The name of the instance. |
 | Region | The {{site.data.keyword.cloud}} region where the instance is hosted. |
-| Creation time | The date and time when the instance was created. |  
+| Creation time | The date and time when the instance was created. |
 | Status | The status of the instance. |
 {: caption="Table 1. KMIP for VMware instances items" caption-side="bottom"}
 

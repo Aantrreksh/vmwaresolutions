@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2024
 
-lastupdated: "2024-04-26"
+lastupdated: "2024-07-23"
 
 keywords: data encryption in VMware Solutions, data storage for VMware Solutions, bring your own keys for VMware Solutions, BYOK for VMware Solutions, key management for VMware Solutions, key encryption for VMware Solutions, personal data in VMware Solutions, data deletion for VMware Solutions, data in VMware Solutions, data security in VMware Solutions
 
@@ -129,7 +129,7 @@ For {{site.data.keyword.vm-shared}}, {{site.data.keyword.cloud_notm}} manages th
 ### About customer-managed keys
 {: #data-security-about-encryption}
 
-* For {{site.data.keyword.vcf-auto-short}}, envelope encryption is used to offer customer–managed keys. 
+* For {{site.data.keyword.vcf-auto-short}}, envelope encryption is used to offer customer–managed keys.
 * For {{site.data.keyword.vm-shared}}, envelope encryption is used but with IBM–managed rather than customer–managed keys.
 
 Envelope encryption within VMware Solutions uses the [KMIP for VMware service](/docs/vmwaresolutions?topic=vmwaresolutions-kmip_standalone_considerations) to provide key management for vSphere or vSAN encryption.
