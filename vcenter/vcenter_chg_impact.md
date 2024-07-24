@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-05-02"
+lastupdated: "2024-07-24"
 
 keywords: change vCenter Server artifacts, automation ID, VMware resource
 
@@ -41,9 +41,9 @@ Each service creates an internal user account in VMware vCenter Server®. This a
 To prevent outages and connection problems, if you change the user ID, password, or password expiration settings for this user account, ensure that you also update the information in the associated service.
 {: important}
 
-The user ID for this account is in the format `<service_name>-<truncated service_uuid>@test.local` or `<service_name>-<truncated service_uuid>@example-domain.local`. For example, the user ID that the Veeam® service uses to connect to vCenter Server to perform scheduled backups is `Veeam-<Veeam_uuid>@test.local`.
+The user ID for this account is in the format `service_name-truncated_service_uuid@test.local` or `service_name-truncated_service_uuid@example-domain.local`. For example, the user ID that the Veeam® service uses to connect to vCenter Server to perform scheduled backups is `Veeam-Veeam_uuid@test.local`.
 
-The `<service_name>` together with the `<service_uuid>` truncates to 20 characters.
+The `service_name` value together with the `service_uuid` value are truncated to 20 characters.
 {: note}
 
 ## VMware resources for instances V1.9 and later

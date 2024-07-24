@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2024
 
-lastupdated: "2024-05-16"
+lastupdated: "2024-07-24"
 
 keywords: vmware cloud foundation, IBM Cloud, vpc
 
@@ -114,7 +114,7 @@ To deploy the Advanced Load Balancing for {{site.data.keyword.vcf-vpc-short}} va
 ### Notes
 {: #vpc-vcf-deploy-vvs-nsx-advanced-load-balancing-notes}
 
-* VMware recommends that customers use [Avi Load Balancer](https://www.vmware.com/products/avi-load-balancer.html){: external} for load balancing.
+* Broadcom recommends that you use [VMware Avi Load Balancer](https://www.vmware.com/products/cloud-infrastructure/avi-load-balancer){: external} for load balancing.
 * Avi Load Balancer is available as an add-on to the VMware Cloud Foundation license. For more information, see [VMware Avi Load Balancer add-on](/docs/vmwaresolutions?topic=vmwaresolutions-vmware-add-ons#vmware-add-ons-nsx-avi).
 * Avi Load Balancer Controllers implement the control plane for the Avi Load Balancer. For high availability, it is typically deployed as a 3-node cluster. In a {{site.data.keyword.vcf-vpc-short}}, Avi Load Balancer Controllers run as VMs in the management domain.
 * Deploying the Controller cluster nodes on the {{site.data.keyword.vcf-vpc-short}} management network requires 4 new {{site.data.keyword.cloud_notm}} bare metal server VLAN interfaces on the management network as shown in the following table. To create VLAN interfaces, see [Managing network interfaces for bare metal servers on {{site.data.keyword.vpc_short}}](/docs/vpc?topic=vpc-managing-nic-for-bare-metal-servers).

@@ -4,7 +4,7 @@ copyright:
 
   years: 2023, 2024
 
-lastupdated: "2024-06-13"
+lastupdated: "2024-07-24"
 
 keywords: veeam, IBM cloud for vmware, veeam in IBM Cloud for vmware
 
@@ -48,10 +48,10 @@ After the initial provisioning of the service, the only Day 2 automations availa
 
 All other tasks are customer-managed with help of the Veeam documentation.
 
-## Information on expanding your Veeam environment
+## Expanding your Veeam environment
 {: #veeam_cloud_vmware_info}
 
-The following steps show how to configure the post-service deployment to expand your Veeam environment in {{site.data.keyword.cloud}}:
+The following information helps you configure the post-service deployment to expand your Veeam environment in {{site.data.keyword.cloud_notm}}:
 
 * To order more private subnets, see [Ordering secondary subnets and global IP addresses](/docs/subnets?topic=subnets-order-subnets).
 * To order more virtual server instances, see [Provisioning public instances](/docs/virtual-servers?topic=virtual-servers-ordering-vs-public).
@@ -64,8 +64,12 @@ The following steps show how to configure the post-service deployment to expand 
    * [Locking objects](/docs/cloud-object-storage?topic=cloud-object-storage-ol-overview)
 
 * To use block storage for your Veeam Backup and Replication backup repository, see [Ordering block storage for classic](/docs/BlockStorage?topic=BlockStorage-orderingBlockStorage&interface=ui).
-* To connect to your block storage, see [Connecting to iSCSI LUNs on Linux](/docs/BlockStorage?topic=BlockStorage-mountingLinux&interface=ui) and [Connecting to iSCSI LUNS on Microsoft Windows](/docs/BlockStorage?topic=BlockStorage-mountingWindows&interface=ui).
+* To connect to your block storage, see [Connecting to iSCSI LUNS on Microsoft Windows](/docs/BlockStorage?topic=BlockStorage-mountingWindows&interface=ui).
 * To expand your block storage, see [Expanding Block Storage for Classic capacity](/docs/BlockStorage?topic=BlockStorage-expandingcapacity&interface=ui).
+* To mount iSCSI LUN, see:
+   * [Mount iSCSI LUN on Red Hat Enterprise Linux 8](/docs/BlockStorage?topic=BlockStorage-mountingRHEL8&interface=ui)
+   * [Mount iSCSI LUN on Ubuntu 20](/docs/BlockStorage?topic=BlockStorage-mountingUbu20&interface=ui)
+   * [Mount iSCSI LUN on CloudLinux 8](/docs/BlockStorage?topic=BlockStorage-mountingCloudLin8&interface=ui)
 
 ## Related links
 {: #veeam_cloud_vmware-links}

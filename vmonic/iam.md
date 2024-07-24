@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-04-02"
+lastupdated: "2024-07-24"
 
 keywords: IAM user, user role, user permission, IAM access for vmwaresolutions, permissions for vmwaresolutions, identity and access management for vmwaresolutions, roles for vmwaresolutions, actions for vmwaresolutions, assigning access for vmwaresolutions
 
@@ -129,7 +129,7 @@ For step-by-step instructions for assigning, removing, and reviewing access, see
 
 The following example is for assigning the `<Viewer>` role for `<vmware-solutions>`:
 
-Use `<programmatic_service_name>` for the service name, and refer to the Role ID values table to ensure that you're using the correct value for the CRN.
+Use `programmatic_service_name` for the service name, and refer to the Role ID values table to ensure that you're using the correct value for the CRN.
 {: tip}
 
 ```curl
