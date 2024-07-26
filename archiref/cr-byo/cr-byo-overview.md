@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2024
 
-lastupdated: "2024-07-11"
+lastupdated: "2024-07-26"
 
 subcollection: vmwaresolutions
 
@@ -95,4 +95,4 @@ Review the following information about network connectivity for your cyber-recov
 * [Dell PowerProtect DD Virtual edition data sheet](https://www.delltechnologies.com/asset/en-my/products/data-protection/technical-support/h17925-dellemc-powerprotect-ddve-ds.pdf){: external}
 * [IBM Spectrum Protect](https://www.ibm.com/products/storage-protect){: external}
 * [IBM Spectrum Protect Plus](https://www.ibm.com/products/ibm-storage-protect-plus){: external}
-* [Rubrik - Remote and Branch Office backup software](https://www.rubrik.com/solutions/remote-branch-office){: external}
+* [Rubrik Solutions overview](https://www.rubrik.com/solutions){: external}

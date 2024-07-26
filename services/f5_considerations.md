@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-04-29"
+lastupdated: "2024-07-26"
 
 keywords: F5 BIG-IP, F5 install, tech specs F5
 
@@ -18,7 +18,7 @@ subcollection: vmwaresolutions
 # F5 BIG-IP on {{site.data.keyword.cloud_notm}} overview
 {: #f5_considerations}
 
-F5 BIG-IP® on {{site.data.keyword.cloud}}(F5 BIG-IP Virtual Edition) provides:
+F5 BIG-IP® on {{site.data.keyword.cloud}} (F5 BIG-IP Virtual Edition) provides:
 
 * Intelligent L4-L7 load balancing and traffic management services at a local and global scale.
 * Robust network and web application firewall protection.
