@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-07-11"
+lastupdated: "2024-07-29"
 
 subcollection: vmwaresolutions
 
@@ -64,7 +64,7 @@ Depending on the source environment complexity and the skills, experience and ti
 
 You must be familiar with NSX-T concepts and administration tasks before any migration. Review the following information:
 
-* [VMware Learning for NSX-T education](https://www.vmware.com/learning.html){: external}
+* [VMware Learning for NSX-T education](https://www.broadcom.com/support/education/vmware){: external}
 * [{{site.data.keyword.cloud_notm}} VMware NSX-T Architecture](/docs/vmwaresolutions?topic=vmwaresolutions-nsx-t-design)
 * [{{site.data.keyword.vcf-auto-short}} Overview](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview)
 * [NSX-V to NSX-T 3.x Migration Coordinator](https://nsx.techzone.vmware.com/resource/nsx-v-nsx-t-3x-migration-coordinator#_Toc57645169){: external}

@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-04-26"
+lastupdated: "2024-07-29"
 
 keywords: manage shared resources, set IAM integration the VMware Cloud Director Management console, shared iam roles, iam roles
 
@@ -86,4 +86,4 @@ After the IAM integration is enabled, you can use single sign-on to log in to th
 * [Viewing site and virtual data center details](/docs/vmwaresolutions?topic=vmwaresolutions-shared_viewing-vdc-details)
 * [Locating an IAM account administrator](/docs/vmwaresolutions?topic=vmwaresolutions-iam_verify_permissions)
 * [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support)
-* [VMware Cloud Director](https://www.vmware.com/products/cloud-director.html){: external}
+* [VMware Cloud Director](https://www.vmware.com/products/cloud-infrastructure/cloud-director){: external}

@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2024
 
-lastupdated: "2024-04-26"
+lastupdated: "2024-07-29"
 
 keywords: manage shared resources, view shared virtual data centers summary
 
@@ -67,4 +67,4 @@ The virtual data center can have different statuses.
 * [Deleting {{site.data.keyword.vm-shared}} virtual data centers](/docs/vmwaresolutions?topic=vmwaresolutions-shared_deletinginstance)
 * [Viewing-virtual data center details](/docs/vmwaresolutions?topic=vmwaresolutions-shared_viewing-vdc-details)
 * [Accessing the VMware Cloud Director Management console](/docs/vmwaresolutions?topic=vmwaresolutions-shared_accessing-vcd-console)
-* [VMware Cloud Director](https://www.vmware.com/products/cloud-director.html){: external}
+* [VMware Cloud Director](https://www.vmware.com/products/cloud-infrastructure/cloud-director){: external}

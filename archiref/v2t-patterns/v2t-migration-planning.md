@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-07-11"
+lastupdated: "2024-07-29"
 
 subcollection: vmwaresolutions
 
@@ -16,7 +16,7 @@ subcollection: vmwaresolutions
 # Migration planning
 {: #v2t-planning}
 
-Migration planning and preparation are the key to a successful migration project. It is imperative that the migration complexity is fully understood so that timescales, required tools, skills, and knowledge are available. 
+Migration planning and preparation are the key to a successful migration project. It is imperative that the migration complexity is fully understood so that timescales, required tools, skills, and knowledge are available.
 
 The following diagram shows an overview of the migration flow:
 
@@ -55,7 +55,7 @@ When you assess the complexity, you must focus on skills and resource availabili
 
 If it is deemed that in-house skills need to be supplemented, then it is advised to engage a migration services provider as soon as possible.
 
-In addition, to ensure successful Day 2 operations, improve the core VMware NSX-T™ skills by using the available [VMware Learning for NSX-T education](https://www.vmware.com/learning.html){: external}.
+In addition, to ensure successful Day 2 operations, improve the core VMware NSX-T™ skills by using the available [VMware Learning for NSX-T education](https://www.broadcom.com/support/education/vmware){: external}.
 
 ## Engage a migration services provider
 {: #v2t-planning-serviceprovider}

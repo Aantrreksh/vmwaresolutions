@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2024
 
-lastupdated: "2024-04-26"
+lastupdated: "2024-07-29"
 
 keywords: shared order resource, order on demand shared, order on demand resources
 
@@ -193,4 +193,4 @@ View the virtual data center that you ordered and then set the **admin** passwor
 {: #shared_ordering-related}
 
 * [Operating {{site.data.keyword.vm-shared}}](/docs/vmwaresolutions?topic=vmwaresolutions-shared_vcd-ops-guide)
-* [VMware Cloud Director](https://www.vmware.com/products/cloud-director.html){: external}
+* [VMware Cloud Director](https://www.vmware.com/products/cloud-infrastructure/cloud-director){: external}

@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2024
 
-lastupdated: "2024-05-22"
+lastupdated: "2024-07-29"
 
 keywords: migrating to VMware Cloud Foundation as a Service
 
@@ -157,7 +157,7 @@ For more information, see [Managing Veeam for {{site.data.keyword.vcf-aas}}](/do
 * [Managing Organization Virtual Data Center Networks](https://docs.vmware.com/en/VMware-Cloud-Director/10.5/VMware-Cloud-Director-Tenant-Guide/GUID-B208CDD2-5D46-4841-8F3C-BED9E4F27F07.html){: external}
 * [Using {{site.data.keyword.tg_short}} to interconnect {{site.data.keyword.vcf-aas}} with {{site.data.keyword.cloud_notm}} services](/docs/vmware-service?topic=vmware-service-tgw-adding-connections)
 * [Using VMware Cloud Director Availability with {{site.data.keyword.vcf-aas}}](/docs/vmwaresolutions?topic=vmwaresolutions-tenant-vcda).
-* [VMware Cloud Director](https://www.vmware.com/products/cloud-director.html){: external}
+* [VMware Cloud Director](https://www.vmware.com/products/cloud-infrastructure/cloud-director){: external}
 * [vCloud Director API](https://developer.broadcom.com/xapis/vmware-cloud-director-openapi/latest/){: external}
 * [Terraform VMware Cloud Director Provider](https://registry.terraform.io/providers/vmware/vcd/latest/docs){: external}
 * [Network Edge Size](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.2/installation/GUID-22F87CA8-01A9-4F2E-B7DB-9350CA60EA4E.html){: external}

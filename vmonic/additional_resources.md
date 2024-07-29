@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-02-01"
+lastupdated: "2024-07-29"
 
 keywords: vmware solutions data sheet, vmware solutions developer, vmware solutions video
 
@@ -55,4 +55,4 @@ Review the architecture of all [virtualization platform extensions](https://www.
 ## VMware documentation
 {: #additional_resources-vmware-doc}
 
-* [VMware Cloud Solutions](https://www.vmware.com/cloud-solutions.html){: external}
+* [VMware Cloud Solutions](https://www.vmware.com/solutions/cloud-partners){: external}

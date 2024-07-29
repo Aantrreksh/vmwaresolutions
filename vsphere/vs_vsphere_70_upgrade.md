@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-07-16"
+lastupdated: "2024-07-29"
 
 keywords: vSphere upgrade, NSX upgrade, PSC upgrade, flexible upgrade
 
@@ -65,7 +65,7 @@ Complete the following requirements before you begin the upgrade:
    * Ensure that each node has space to handle rebuilding redundancy of vSAN objects in case an ESXi host fails to come back up during the upgrade. You might need to either reduce disk usage or add an ESXi host before the upgrade.
    * Verify whether the overall vSAN volume usage is higher than 70%. You might need to either reduce disk usage or add an ESXi host before the upgrade.
 *  Verify that the vCenter Server root user ID with its credentials are visible on the console. If your {{site.data.keyword.vcf-auto-short}} instance was initially ordered in a VMware Solutions version between V2.5 and V5.7, only the `customerroot` account is visible on the console. For new instances, clusters, hosts, and vCenter Server VMs ordered in VMware Solutions V5.7 and later, the `customerroot` user is no longer created by the VMware Solutions automation.
-* Confirm that you have a [My VMware](https://www.vmware.com/customerconnect_maintenance.html){: external} user ID for which to download the required binary files to upgrade. If you don't, contact IBM Support with the upgrade support ticket ID.
+* Confirm that you have a [My VMware](https://support.broadcom.com/){: external} user ID for which to download the required binary files to upgrade. If you don't, contact IBM Support with the upgrade support ticket ID.
 * Confirm that VUM is configured to reach `https://www.vmware.com` to download patches. If it can't be configured because of security policies, then you must manually download the most recent patch sets and upload them into VUM. For more information, see [VMware Update Manager introduction](/docs/vmwaresolutions?topic=vmwaresolutions-vum-intro#vum-intro).
 
 ## Supported upgrade paths

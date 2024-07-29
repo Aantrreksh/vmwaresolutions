@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-06-12"
+lastupdated: "2024-07-29"
 
 subcollection: vmwaresolutions
 
@@ -32,4 +32,4 @@ VMware Aria® Operations™ Manager provides monitoring of VMware objects for vi
 * [F5 BIG-IP](/docs/vmwaresolutions?topic=vmwaresolutions-f5_considerations)
 * [Caveonix RiskForesight](/docs/vmwaresolutions?topic=vmwaresolutions-caveonix_considerations)
 * [Operations Management on {{site.data.keyword.cloud_notm}}](/docs/vmwaresolutions?topic=vmwaresolutions-opsmgmt-intro)
-* [VMware security hardening guides](https://www.vmware.com/security/hardening-guides.html){: external}
+* [VMware security hardening guides](https://www.vmware.com/solutions/security/hardening-guides){: external}

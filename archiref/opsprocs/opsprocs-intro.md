@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-06-12"
+lastupdated: "2024-07-29"
 
 subcollection: vmwaresolutions
 
@@ -37,7 +37,7 @@ For more information about Day 2 responsibilities, see [Responsibilities for Day
 ## Operational procedures introduction
 {: #opsprocs-intro-proc}
 
-Many IT organizations document their operational procedures in a runbook. A runbook is a set of standardized documents, references and procedures that explain common recurring IT tasks. IT staff refers to the runbook for an optimal way to get their work done. Runbooks improve organizational efficiency through standardization and they assist with onboarding employees more effectively. 
+Many IT organizations document their operational procedures in a runbook. A runbook is a set of standardized documents, references and procedures that explain common recurring IT tasks. IT staff refers to the runbook for an optimal way to get their work done. Runbooks improve organizational efficiency through standardization and they assist with onboarding employees more effectively.
 
 The following examples are the two typical types of runbooks:
 
@@ -74,7 +74,7 @@ The following list contains the most common procedures, guides, and tasks:
 * Troubleshooting - Even when you carry out proactive daily checks, issues occur that impact your workloads. Therefore, you need to fix the underlying issue as quickly as possible. These troubleshooting guides and some common troubleshooting scenarios assist system administrators with identifying and fixing these issues quickly.
 * Compliance - The compliance guide provides some insights on maintaining compliance of the environment against a regulatory compliance regime or industry best practice. The focus of this guide is on the VMware hardening guide, which is a number of documented lists of best practice for a VMware environment.
 
-Many of the previous tasks are automated in Operations Management on {{site.data.keyword.cloud_notm}}, and for those tasks that are not, these tools make the manual processes easier for your systems administrators. It is imperative that the core components of the VMware environment are monitored. 
+Many of the previous tasks are automated in Operations Management on {{site.data.keyword.cloud_notm}}, and for those tasks that are not, these tools make the manual processes easier for your systems administrators. It is imperative that the core components of the VMware environment are monitored.
 
 In operations management on {{site.data.keyword.cloud_notm}}, this is achieved as described in the following sections:
 
@@ -97,6 +97,6 @@ In addition to monitoring, Operations Management on {{site.data.keyword.cloud_no
 {: #opsprocs-intro-links}
 
 * [About vSphere Monitoring and Performance](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.monitoring.doc/GUID-A8B06BE0-E5FC-435C-B12F-A31618B21E2C.html){: external}
-* [VMware security hardening guides](https://www.vmware.com/security/hardening-guides.html){: external}
+* [VMware security hardening guides](https://www.vmware.com/solutions/security/hardening-guides){: external}
 * [Operations management introduction](/docs/vmwaresolutions?topic=vmwaresolutions-opsmgmt-intro)
 * [Considerations about changing {{site.data.keyword.vcf-auto-short}} artifacts](/docs/vmwaresolutions?topic=vmwaresolutions-vcenter_chg_impact#vcenter_chg_impact)
