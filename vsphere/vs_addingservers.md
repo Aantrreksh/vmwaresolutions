@@ -4,9 +4,9 @@ copyright:
 
   years:  2023, 2024
 
-lastupdated: "2024-04-20"
+lastupdated: "2024-07-31"
 
-keywords: flexible add host, add server flexible
+keywords: flexible instance add host, add server flexible instance
 
 subcollection: vmwaresolutions
 
@@ -22,13 +22,22 @@ You can expand the capacity of your {{site.data.keyword.vcf-flex}} instance acco
 ## Before you add ESXi servers to Flexible instances
 {: #vs_addingservers-prereq}
 
-* For existing instances with VMware vSphere® 6.5 or 6.7, you cannot add ESXi servers. To add ESXi servers, upgrade your vSphere® software to 7.0. For more information, see [Upgrading VMware vSphere software from vSphere 6.5 or 6.7 to 7.0](/docs/vmwaresolutions?topic=vmwaresolutions-vs_vsphere_70_upgrade).
-* For existing instances with vSphere 7.0u2, you can add only ESXi servers with vSphere 7.0u3.
+### For all Flexible instances
+{: #vs_addingservers-prereq-all}
+
+Review the following information applicable to all Flexible instances:
+
 * You can add up to 59 ESXi servers to a Flexible instance.
+* For existing instances with vSphere 7.0u2, you can add only ESXi servers with vSphere 7.0u3.
+* For existing instances with VMware vSphere® 6.5 or 6.7, you cannot add ESXi servers. To add ESXi servers, upgrade your vSphere® software to 7.0. For more information, see [Upgrading VMware vSphere software from vSphere 6.5 or 6.7 to 7.0](/docs/vmwaresolutions?topic=vmwaresolutions-vs_vsphere_70_upgrade).
 
 {{site.data.content.attnnote-addhost-byol}}
 
-For Flexible instances with vSAN:
+### For Flexible instances with vSAN storage
+{: #vs_addingservers-prereq-vsan}
+
+Review the following additional information applicable to Flexible instances with vSAN™ storage:
+
 * If you are adding ESXi servers to instances provisioned after 24 August 2023, the servers are provisioned with mirrored M.2 boot drives.
 * If you are adding ESXi servers to instances provisioned before 24 August 2023, the servers are provisioned with mirrored M.2 boot drives only if you select a new bare metal server configuration.
 

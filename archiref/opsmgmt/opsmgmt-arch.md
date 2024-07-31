@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-06-12"
+lastupdated: "2024-07-31"
 
 subcollection: vmwaresolutions
 
@@ -108,7 +108,7 @@ VMware Aria Operations uses the management pack to poll VMware NSX for configura
 The NSX components need to be configured to send syslog to VMware Aria Operations for Logs.
 
 * NSX Manager - [Configure a Syslog Server for NSX Manager](https://docs.vmware.com/en/VMware-NSX-Data-Center-for-vSphere/6.4/com.vmware.nsx.install.doc/GUID-EA70974C-07F8-469D-8A9D-0ED54F0C8F34.html){: external}.
-* NSX Controllers - [Configuring syslog server for VMware NSX for vSphere 6.x controllers](https://knowledge.broadcom.com/external/article?legacyId=2092228){: external}.
+* NSX Controllers - [Configure DNS, NTP, and Syslog for the NSX Controller Cluster](https://docs.vmware.com/en/VMware-NSX-Data-Center-for-vSphere/6.4/com.vmware.nsx.admin.doc/GUID-F2A3F705-62E9-4EED-AAF2-518DE0775751.html){: external}.
 * NSX Edge - [Configure Syslog Servers for NSX Edge](https://docs.vmware.com/en/VMware-NSX-Data-Center-for-vSphere/6.4/com.vmware.nsx.logging.doc/GUID-9C25E097-E2CC-461A-9DA6-E8118D16EE62.html){: external}.
 * Firewall - You must configure the remote syslog server for each cluster that where the firewall is enabled. The remote syslog server is specified in the `Syslog.global.logHost` attribute.
 

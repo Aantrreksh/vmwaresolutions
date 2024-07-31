@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2024
 
-lastupdated: "2024-04-09"
+lastupdated: "2024-07-31"
 
 keywords: vmware regulated workloads, add hosts vmware regulated workloads, add servers vmware regulated workloads, remove hosts vmware regulated workloads
 
@@ -27,14 +27,14 @@ You must migrate the VMware vCenter Server® virtual machines (VMs) before you d
 ## Adding or deleting ESXi servers
 {: #vrw-addingremovingservers-add-delete-esxi}
 
-The processes to add and delete servers for {{site.data.keyword.rw}} instances are similar to the ones for {{site.data.keyword.vcf-auto}} instances. For more information, see the following topics:
+The processes to add and delete servers for {{site.data.keyword.rw}} instances are similar to the ones for {{site.data.keyword.vcf-auto}} instances. For more information, see:
 * [Adding ESXi servers to Automated instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservers)
 * [Deleting ESXi servers from Automated instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_removingservers)
 
 ## Adding or removing NFS storage
 {: #vrw-addingremovingservers-add-delete-nfs}
 
-The processes to add and remove NFS storage for {{site.data.keyword.rw}} instances are similar to the ones for {{site.data.keyword.vcf-auto-short}} instances. For more information, see the following topics:
+The processes to add and remove NFS storage for {{site.data.keyword.rw}} instances are similar to the ones for {{site.data.keyword.vcf-auto-short}} instances. For more information, see:
 * [Adding NFS storage to Automated instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingnfs)
 * [Removing NFS storage from Automated instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_removingnfs)
 

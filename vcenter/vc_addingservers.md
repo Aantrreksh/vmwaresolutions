@@ -4,9 +4,9 @@ copyright:
 
   years:  2021, 2024
 
-lastupdated: "2024-07-26"
+lastupdated: "2024-07-31"
 
-keywords: add host, add server
+keywords: automated instance add host, add server automated instance
 
 subcollection: vmwaresolutions
 
@@ -22,23 +22,35 @@ You can expand the capacity of your {{site.data.keyword.vcf-auto}} instance acco
 ## Before you add ESXi servers to Automated instances
 {: #vc_addingservers-prereq}
 
-* For existing instances with VMware vSphere® 6.5 or 6.7, you cannot add ESXi servers. To add ESXi servers, upgrade your vSphere® software to 7.0. For more information, see [Upgrading VMware vSphere software from vSphere 6.5 or 6.7 to 7.0](/docs/vmwaresolutions?topic=vmwaresolutions-vs_vsphere_70_upgrade).
-* For existing instances with vSphere 7.0u2, you can add only ESXi servers with vSphere 7.0u3.
-* For the gateway cluster, you cannot add or delete ESXi servers.
-
 {{site.data.content.para-vcenteraddESXiservers}}
 
-* An Automated instance with NFS storage must have at least 3 ESXi servers. An Automated instance with vSAN™ storage must have at least 4 ESXi servers.
-* If your initial cluster has vSAN storage, SED SSD disks are not available. Non-SED SSD disks are ordered.
-* You can add up to 51 ESXi servers to a consolidated cluster and up to 59 ESXi servers to a workload or gateway cluster.
+### For all Automated instances
+{: #vc_addingservers-prereq-all}
+
+Review the following information applicable to all Automated instances:
+
+* You can add up to 51 ESXi servers to the consolidated cluster and up to 59 ESXi servers to the workload cluster. You cannot add or delete ESXi servers for the gateway cluster.
+* For existing instances with vSphere 7.0u2, you can add only ESXi servers with vSphere 7.0u3.
+* For existing instances with VMware vSphere® 6.5 or 6.7, you cannot add ESXi servers. To add ESXi servers, upgrade your vSphere® software to 7.0. For more information, see [Upgrading VMware vSphere software from vSphere 6.5 or 6.7 to 7.0](/docs/vmwaresolutions?topic=vmwaresolutions-vs_vsphere_70_upgrade).
 
 {{site.data.content.attnnote-addhost-byol}}
 
-For Automated instances with vSAN:
+### For Automated instances with vSAN storage
+{: #vc_addingservers-prereq-vsan}
+
+Review the following additional information applicable to Automated instances with vSAN™ storage:
+
+* Automated instances with vSAN storage must have at least 4 ESXi servers.
+* If your initial cluster has vSAN storage, SED SSD disks are not available. Non-SED SSD disks are ordered.
 * If you are adding ESXi servers to clusters provisioned after 24 August 2023, the servers are provisioned with mirrored M.2 boot drives.
 * If you are adding ESXi servers to clusters provisioned before 24 August 2023, the servers are provisioned with mirrored M.2 boot drives only if you select a new bare metal server configuration.
 
-For Automated instances with NFS storage:
+### For Automated instances with NFS storage
+{: #vc_addingservers-prereq-nfs}
+
+Review the following additional information applicable to Automated instances with NFS storage:
+
+* Automated instances with NFS storage must have at least 3 ESXi servers.  
 * If you are adding ESXi servers to clusters provisioned after 18 October 2023, the servers are provisioned with mirrored M.2 boot drives.
 * If you are adding ESXi servers to clusters provisioned before 18 October 2023, the servers are provisioned with mirrored M.2 boot drives only if you select a new bare metal server configuration.
 

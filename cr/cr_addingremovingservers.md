@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2024
 
-lastupdated: "2024-04-03"
+lastupdated: "2024-07-31"
 
 keywords: cyber recovery, add hosts cyber recovery, add servers cyber recovery, remove hosts cyber recovery
 
@@ -27,14 +27,14 @@ You must migrate the VMware vCenter Server® virtual machines (VMs) before you d
 ## Adding or deleting ESXi servers
 {: #cr-addingremovingservers-add-delete-esxi}
 
-The processes to add and delete servers for {{site.data.keyword.cr}} instances are similar to the ones for Automated instances. For more information, see the following topics:
+The processes to add and delete servers for {{site.data.keyword.cr}} instances are similar to the ones for Automated instances. For more information, see:
 * [Adding ESXi servers to Automated instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservers)
 * [Deleting ESXi servers from Automated instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_removingservers)
 
 ## Adding or removing NFS storage
 {: #cr-addingremovingservers-add-delete-nfs}
 
-The processes to add and remove NFS storage for {{site.data.keyword.cr}} instances are similar to the ones for Automated instances. For more information, see the following topics:
+The processes to add and remove NFS storage for {{site.data.keyword.cr}} instances are similar to the ones for Automated instances. For more information, see:
 * [Adding NFS storage to Automated instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingnfs)
 * [Removing NFS storage from Automated instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_removingnfs)
 
