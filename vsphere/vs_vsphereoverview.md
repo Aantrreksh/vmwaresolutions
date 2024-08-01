@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-04-25"
+lastupdated: "2024-08-01"
 
 keywords: vcf flexible, vcf for classic flexible, tech specs flexible instances
 
