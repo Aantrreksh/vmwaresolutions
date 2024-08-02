@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2024
 
-lastupdated: "2024-07-31"
+lastupdated: "2024-08-02"
 
 keywords: automated instance add host, add server automated instance
 
@@ -30,7 +30,6 @@ You can expand the capacity of your {{site.data.keyword.vcf-auto}} instance acco
 Review the following information applicable to all Automated instances:
 
 * You can add up to 51 ESXi servers to the consolidated cluster and up to 59 ESXi servers to the workload cluster. You cannot add or delete ESXi servers for the gateway cluster.
-* For existing instances with vSphere 7.0u2, you can add only ESXi servers with vSphere 7.0u3.
 * For existing instances with VMware vSphere® 6.5 or 6.7, you cannot add ESXi servers. To add ESXi servers, upgrade your vSphere® software to 7.0. For more information, see [Upgrading VMware vSphere software from vSphere 6.5 or 6.7 to 7.0](/docs/vmwaresolutions?topic=vmwaresolutions-vs_vsphere_70_upgrade).
 
 {{site.data.content.attnnote-addhost-byol}}

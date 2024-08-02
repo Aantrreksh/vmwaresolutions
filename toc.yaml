@@ -33,8 +33,8 @@ toc:
       - topicgroup:
           label: Configuration tutorials
           topics:
-            - include: ../solution-tutorials/vmware-as-a-service-vdc.md
-            - include: ../solution-tutorials/vmware-as-a-service-tf.md
+            - include: ../solution-tutorials/vcf-as-a-service-vdc.md
+            - include: ../solution-tutorials/vcf-as-a-service-tf.md
       - topicgroup:
           label: Connectivity tutorials
           topics:
