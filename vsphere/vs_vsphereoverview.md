@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-08-01"
+lastupdated: "2024-08-08"
 
 keywords: vcf flexible, vcf for classic flexible, tech specs flexible instances
 
@@ -81,7 +81,7 @@ User-customized storage for vSAN configuration when the VMware vSAN component is
    3.8 TB SSD (Solid-State Disk) drives are supported when they are made available in a data center.
    {: note}
 
-## Technical specifications for Flexible expansion nodes
+## Technical specifications for expansion nodes for {{site.data.keyword.vcf-flex-short}} instances
 {: #vs_vsphereoverview-expansion-node-specs}
 
 Each {{site.data.keyword.vcf-flex-short}} instance expansion node deploys and incurs charges for the following components in your {{site.data.keyword.slportal}} account.

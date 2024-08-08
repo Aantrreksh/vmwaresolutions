@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2024
 
-lastupdated: "2024-05-14"
+lastupdated: "2024-08-08"
 
 keywords: VLAN ports, vmware solutions ports, ports usage vmware solutions
 
@@ -14,10 +14,10 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Ports used by VMware
+# Ports used by VMware components
 {: #vmwaresol_ports-vmwareuses}
 
-The following table shows the ports that are used by VMware®. The ports in VMware traffic are disclosed in {{site.data.keyword.vmwaresolutions_full}} deployment and Day 2 operations.
+The following table shows the ports that are used by VMware® by Broadcom components. The ports in VMware traffic are disclosed in {{site.data.keyword.vmwaresolutions_full}} deployment and Day 2 operations.
 
 | Source | Subnet | Target | Subnet | Port | Protocol |
 |:------ |:------ |:------ |:------ |:---- |:-------- |

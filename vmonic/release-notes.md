@@ -1,8 +1,10 @@
 ---
 
 copyright:
+
   years: 2019, 2024
-lastupdated: "2024-07-09"
+
+lastupdated: "2024-08-08"
 
 keywords: release notes, what's new in VMware Solutions, what is new, new features, VMware Solutions release notes, VMware Solutions
 

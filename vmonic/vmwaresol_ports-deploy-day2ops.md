@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2024
 
-lastupdated: "2024-07-11"
+lastupdated: "2024-08-08"
 
 keywords: VLAN ports, vmware solutions ports, ports usage vmware solutions
 
@@ -79,4 +79,4 @@ For more information about {{site.data.keyword.redhat_openshift_full}} (OCP) net
 ## Related links
 {: #vmwaresol_ports-deploy-day2ops-related}
 
-* [Ports used by VMware](/docs/vmwaresolutions?topic=vmwaresolutions-vmwaresol_ports-vmwareuses)
+* [Ports used by VMware components](/docs/vmwaresolutions?topic=vmwaresolutions-vmwaresol_ports-vmwareuses)

@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-07-09"
+lastupdated: "2024-08-08"
 
 keywords: vsphere BOM, bill of materials vsphere, BOM, flexible
 
@@ -24,6 +24,8 @@ The following table details the Bill of Materials (BOM) information for VMware v
 |:------------ |:-------------- |:------- |
 | VMware® by Broadcom | vSphere ESXi™ | ESXi 7.0 Update 3p (build 23307199)[^esxi70] or \n ESXi 6.7 (202403001)[^esxi67] | 
 {: caption="Table 1. BOM for Flexible instances" caption-side="bottom"}
+
+
 
 [^esxi70]: Applicable to vSphere 7
 
