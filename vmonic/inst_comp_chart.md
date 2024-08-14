@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-07-09"
+lastupdated: "2024-08-12"
 
 keywords: vmware offering, vmware solutions functions, function support
 
@@ -33,19 +33,15 @@ Review the following table to understand the differences in feature support for 
 | Cloud automated multisite deployment | Supported for new instances | Supported. Automated configuration - not included. |
 | Add or remove ESXi servers | Supported | Supported. Automated configuration - not included. |
 | Multicluster support | The maximum number depends on VMware® by Broadcom sizing guidelines | Supported. Automated configuration - not included. |
-| Client-managed updating and patching of VMware stack | Client-managed updates - Native VMware tools (VMware Update Manager™)[^nsxv1] | Client-managed updates - Native VMware tools (VMware Update Manager) |
+| Client-managed updating and patching of VMware stack | Client-managed updates - Native VMware tools (VMware Update Manager™ or vSphere Lifecycle Manager) | Client-managed updates - Native VMware tools (VMware Update Manager or vSphere Lifecycle Manager) |
 | Backup and restore | Manually, by using Veeam® | Backup and restore solution - not included |
 | Add-on services | Supported[^services] | Not supported by the automation of this solution. You can bring and install your own software. |
-| VMware components licensing[^licensing1] | Not automated  | Not automated |
+| VMware components licensing | Automated for some VMware products | Not automated |
 {: caption="Table 1. Supported functions for Automated and Flexible instances" caption-side="bottom"}
 
 [^automation]: According to a validated design and with verification during deployment
 
-[^nsxv1]: Existing VMware NSX-V instances only
-
 [^services]: Add-on services that are supported might vary.
-
-[^licensing1]: To request NSX license upgrades and other licensing changes, open an IBM Support ticket.
 
 ## {{site.data.keyword.vcf-auto-short}} vs {{site.data.keyword.rw}}
 {: #inst_comp_chart-vcs-vrw}
@@ -69,10 +65,8 @@ Review the following table to understand the differences in feature support for 
 | Disaster recovery | Veeam or Zerto | Veeam |
 | Migration | HCX, Zerto, or PrimaryIO Migrations | HCX (optional) |
 | Financial Services Cloud with policy framework | No | Yes |
-| VMware components licensing[^licensing2] | Not automated  | Not automated |
+| VMware components licensing | Automated for some VMware products | Not automated |
 {: caption="Table 2. Supported features for Automated instances and {{site.data.keyword.rw}}" caption-side="bottom"}
-
-[^licensing2]: To request NSX license upgrades and other licensing changes, open an IBM Support ticket.
 
 ## Related links
 {: #inst_comp_chart-related}

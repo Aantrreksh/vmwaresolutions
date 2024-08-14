@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-06-27"
+lastupdated: "2024-08-12"
 
 keywords: flexible order instance, order vSphere, order flexible instance
 
@@ -73,7 +73,8 @@ The **SAP-certified Cascade Lake** servers are not available if you selected VMw
 
 {{site.data.content.simpletabtable-sap-hana}}
 
-
+VMware vSphere 8 is not supported for SAP-certified Cascade Lake servers.
+{: important}
 
 ## Number of bare metal servers
 {: #vs_orderinginstances-bare-metal-number}

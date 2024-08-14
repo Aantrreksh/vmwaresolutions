@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-08-01"
+lastupdated: "2024-08-12"
 
 keywords: Cyber Recovery, Cyber Recovery offering, Cyber Recovery instance, data protection, cyber threat, ransomware, Cyber resilience
 
@@ -25,7 +25,7 @@ Cyber resilience is the ability to avert, handle, and recover from various incid
 
 A {{site.data.keyword.cr}} instance includes the following components:
 
-* VMware vSphere® 7.0u3
+* VMware vSphere® 7.0u3 or 8.0u2
 * VMware NSX® 4.1
 * Veeam Backup and Replication 12.1
 * A Linux® hardened repository (LHR)

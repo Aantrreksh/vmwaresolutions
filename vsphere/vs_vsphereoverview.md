@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-08-08"
+lastupdated: "2024-08-12"
 
 keywords: vcf flexible, vcf for classic flexible, tech specs flexible instances
 
@@ -42,7 +42,7 @@ If you are a BYOL user, you must provide your own license keys for all VMware co
    {{site.data.content.attnnote-byol}}
 
 Select licenses for the following VMware components:
-* VMware vSphere Enterprise Plus 7.0u3
+* VMware vSphere Enterprise Plus 7.0u3 or 8.0u2
 * The following VMware components are optional:
    * VMware vCenter Server®
    * VMware NSX®

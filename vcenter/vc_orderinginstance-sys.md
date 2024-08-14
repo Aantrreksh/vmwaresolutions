@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-06-25"
+lastupdated: "2024-08-13"
 
 keywords: vcf classic order instance, order vcf automated, order vmware cloud foundation instance
 
@@ -24,6 +24,8 @@ Specify or accept the following settings when you order a {{site.data.keyword.vc
 
 VMware vSphere® Enterprise Plus 7 is ordered by default.
 
+For new instances, vSphere 8 is available to order. However, vSphere 8 instances do not support configuration as secondary instances.
+{: note}
 
 ### Notes on upgrading to vSphere 7
 {: #vc_orderinginstance-vsphere-v6-7-upgrade}

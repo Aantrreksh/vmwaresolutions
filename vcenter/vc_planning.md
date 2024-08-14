@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-07-17"
+lastupdated: "2024-08-14"
 
 keywords: planning vcf classic, data center, vcf automated data centers
 
@@ -45,7 +45,7 @@ The {{site.data.keyword.vcf-auto-short}} deployment has strict requirements on t
 | OSA22 | 01 | Cascade Lake, SAP-certified Cascade Lake | Cascade Lake, SAP-certified Cascade Lake |
 | OSA23 | 01 | Cascade Lake, SAP-certified Cascade Lake | Cascade Lake, SAP-certified Cascade Lake |
 | SNG01 | 02 | Skylake, Cascade Lake, SAP-certified Cascade Lake | Skylake, Cascade Lake, SAP-certified Cascade Lake |
-| SYD01 | 01-02 | Skylake, Cascade Lake, SAP-certified | Skylake, Cascade Lake, SAP-certified Cascade Lake |
+| SYD01 | 01-02 | Skylake, Cascade Lake, SAP-certified Cascade Lake | Skylake, Cascade Lake, SAP-certified Cascade Lake |
 | SYD04 | 01 | Skylake, Cascade Lake, SAP-certified Cascade Lake | Skylake, Cascade Lake, SAP-certified Cascade Lake |
 | SYD05 | 01 | Skylake, Cascade Lake, SAP-certified Cascade Lake | Skylake, Cascade Lake, SAP-certified Cascade Lake |
 | TOK02 | 01-02 | Skylake, Cascade Lake, SAP-certified Cascade Lake | Skylake, Cascade Lake, SAP-certified Cascade Lake |
@@ -81,7 +81,7 @@ The {{site.data.keyword.vcf-auto-short}} deployment has strict requirements on t
 | Data center | Pod | Server options for NSX-T[^nsx-t-7-03] | Server options for NSX-V[^nsx-v-03] |
 |:----------- |:--- |:------------------------------------- |:----------------------------------- |
 | MON01 | 01-02 | Skylake, Cascade Lake, SAP-certified Cascade Lake | Skylake, Cascade Lake, SAP-certified Cascade Lake[^sap-mon01] |
-| TOR01 | 01-02 | Skylake, Cascade Lake, SAP-certified Cascade Lake | Skylake, Cascade Lake, SAP-certified |
+| TOR01 | 01-02 | Skylake, Cascade Lake, SAP-certified Cascade Lake | Skylake, Cascade Lake, SAP-certified Cascade Lake |
 | TOR04 | 01 | Cascade Lake | Cascade Lake |
 | TOR05 | 01 | Cascade Lake | Cascade Lake |
 | WDC04 | 01-05 | Skylake, Cascade Lake, SAP-certified Cascade Lake | Skylake, Cascade Lake, SAP-certified Cascade Lake |

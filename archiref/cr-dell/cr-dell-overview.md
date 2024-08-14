@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2024
 
-lastupdated: "2024-08-08"
+lastupdated: "2024-08-12"
 
 subcollection: vmwaresolutions
 
@@ -19,7 +19,7 @@ A {{site.data.keyword.vcf-auto}} instance can host a Dell® Cyber Recovery vault
 
 The Dell Cyber Recovery vault maintains your mission-critical business data and technology configurations in a secure, air-gapped vault environment that can be used for recovery and analysis.
 
-The {{site.data.keyword.cloud}} solution is based on the Dell PowerProtect DataDomain Virtual Edition (DDVE) storage appliance that is hosted on a vCenter Server instance. The DDVE stores the replicated data from a production DataDomain (DD) system. The data on the DDVE can be recovered back to the production DD system when needed. The production DD system can be on-premises or deployed in {{site.data.keyword.cloud_notm}} or another cloud provider. 
+The {{site.data.keyword.cloud}} solution is based on the Dell PowerProtect DataDomain Virtual Edition (DDVE) storage appliance that is hosted on a vCenter Server instance. The DDVE stores the replicated data from a production DataDomain (DD) system. The data on the DDVE can be recovered back to the production DD system when needed. The production DD system can be on-premises or deployed in {{site.data.keyword.cloud_notm}} or another cloud provider.
 
 The DDVE in the Cyber Recovery vault is air-gapped from the network most of the time and is only connected when the Cyber Recovery software triggers replication from the production DD system to the DDVE in the Cyber Recovery vault.
 
@@ -35,8 +35,8 @@ The Dell Cyber Recovery vault in {{site.data.keyword.cloud_notm}} architecture i
 The following diagram shows the high-level architecture:
 
 ![Overview of Dell Cyber Recovery vault on VMware Solutions](../../images/cr-dell-overview.svg "Overview diagram"){: caption="Figure 1. Overview of Dell Cyber Recovery vault on VMware Solutions" caption-side="bottom"}
- 
-The production environment, in the primary and secondary data centers can be on premises or deployed in {{site.data.keyword.cloud_notm}} or another cloud provider. 
+
+The production environment, in the primary and secondary data centers can be on premises or deployed in {{site.data.keyword.cloud_notm}} or another cloud provider.
 
 The Admins are people in your organization who maintain your production environment and have no access to the Cyber Recovery vault, while the Cyber Admins are you staff that manage the Cyber Recovery vault.
 
@@ -67,7 +67,7 @@ The diagram also shows:
 The following diagram shows more details of the vCenter Server instance architecture:
 
 ![Architecture of Dell Cyber Recovery vault on VMware Solutions](../../images/cr-dell-architecture.svg "Architecture diagram"){: caption="Figure 2. Architecture of Dell Cyber Recovery vault on VMware Solutions" caption-side="bottom"}
-  
+
 The primary and secondary data centers:
 
 * Backup clients – Your servers or virtual machines that are being backed up.
@@ -81,13 +81,13 @@ Public network - You can connect to your Cyber Recovery vault by using one or mo
 
 {{site.data.keyword.cloud_notm}} account:
 
-* vCenter Server instance - used for the Cyber Recovery vault only, deployed in an {{site.data.keyword.cloud_notm}} account restricted to Cyber Recovery vault activities. For more information about vCenter Server instances, see [Overview of VMware Solutions](/docs/vmwaresolutions?topic=vmwaresolutions-solution_overview). 
+* vCenter Server instance - used for the Cyber Recovery vault only, deployed in an {{site.data.keyword.cloud_notm}} account restricted to Cyber Recovery vault activities. For more information about vCenter Server instances, see [Overview of VMware Solutions](/docs/vmwaresolutions?topic=vmwaresolutions-solution_overview).
 
 The vCenter Server instance:
 
 * Can use VMware vSAN or NFS data stores. For more information, see [Physical storage design](/docs/vmwaresolutions?topic=vmwaresolutions-design_physicalinfrastructure#design_physicalinfrastructure-storage-design).
 * Does not host production or disaster recovery workloads.
-* Includes an edge cluster to host your choice of one of the following to protect vCenter Server instance networks: 
+* Includes an edge cluster to host your choice of one of the following to protect vCenter Server instance networks:
    * Juniper vSRX appliances
    * FortiGate Security Appliance
    * FortiGate Virtual Appliance
@@ -138,9 +138,9 @@ Consider using a separate {{site.data.keyword.cloud_notm}} account to deploy you
 
 The minimum number of hosts in a consolidated cluster is three, and the minimum host configuration is 128 GB RAM and 20 cores at 2.2 GHz giving a total of 384 GB RAM and 132 GHz in the cluster for both management and customer workloads. The number of clusters, the number of hosts in the cluster and the cores and RAM in the hosts can be scaled. For more information, see [CPU Model and RAM](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-consold-cluster#vc_orderinginstance-cpumodel).
 
-If you plan to use CyberSense, you must size the hosts considering that the appliance requires 20 vCPU and 196 GB RAM. 
+If you plan to use CyberSense, you must size the hosts considering that the appliance requires 20 vCPU and 196 GB RAM.
 
-* For vSAN storage, see [vSAN Storage](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-consold-cluster#vc_orderinginstance-vsan-storage). 
+* For vSAN storage, see [vSAN Storage](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-consold-cluster#vc_orderinginstance-vsan-storage).
 * For NFS storage, see [NFS Storage](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-consold-cluster#vc_orderinginstance-nfs-storage).
 
 To create your Dell Cyber Recovery vault based on a {{site.data.keyword.vcf-auto-short}} instance, follow the procedure to [order vCenter Server instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-procedure):
@@ -176,4 +176,4 @@ After your vCenter Server instance is provisioned:
 * [Architecture pattern for using Direct Link with NSX-T and EVPN](/docs/vmwaresolutions?topic=vmwaresolutions-arch-pattern-direct-link-evpn)
 * [Virtual Private Network (VPN)](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.2/administration/GUID-A8B113EC-3D53-41A5-919E-78F1A3705F58.html){: external}
 * [Adding a cross-account connection](/docs/transit-gateway?topic=transit-gateway-adding-cross-account-connections&interface=ui)
-* [Dell PowerProtect DD Virtual edition data sheet](https://www.delltechnologies.com/asset/en-my/products/data-protection/technical-support/h17925-dellemc-powerprotect-ddve-ds.pdf){: external}
+* [Dell PowerProtect DD Virtual edition data sheet](https://www.delltechnologies.com/asset/en-my/solutions/apex/technical-support/dell-apex-protection-storage-data-sheet.pdf){: external}

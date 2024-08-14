@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-06-27"
+lastupdated: "2024-08-13"
 
 keywords: automated consolidated cluster, order consolidated cluster, order automated instance
 
@@ -71,7 +71,8 @@ You can choose between **Cascade Lake** and **SAP-certified Cascade Lake** serve
 
 {{site.data.content.simpletabtable-sap-hana}}
 
-
+vSphere 8 is not supported for SAP-certified Cascade Lake servers.
+{: important}
 
 ## RAM
 {: #vc_orderinginstance-consold-cluster-ram}
@@ -98,6 +99,8 @@ For deployed instances, you can add NFS storage shares to an existing NFS or vSA
 
 When you select **NFS storage**, you can add file-level shared storage for your instance where all shares use the same settings or you can specify different configuration settings for each file share. The number of file shares must be in the range 1 - 100.
 
+For new instances, NFS storage is available with both vSphere 7 and vSphere 8.
+{: important}
 
 Specify the following NFS options:
 * **Configure shares individually** - Toggle this switch on to specify different configuration settings for each file share.
@@ -121,6 +124,8 @@ Choose performance level options according to your needs.
 
 Specify the following settings for vSAN storage.
 
+For new instances, vSAN storage is not available with vSphere 8. To use vSAN storage, select vSphere 7.
+{: important}
 
 #### Size for vSAN capacity disks
 {: #vc_orderinginstance-vsan-storage-typesize-capdisks}

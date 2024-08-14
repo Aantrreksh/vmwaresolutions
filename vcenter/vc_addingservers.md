@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2024
 
-lastupdated: "2024-08-02"
+lastupdated: "2024-08-13"
 
 keywords: automated instance add host, add server automated instance
 
@@ -30,6 +30,11 @@ You can expand the capacity of your {{site.data.keyword.vcf-auto}} instance acco
 Review the following information applicable to all Automated instances:
 
 * You can add up to 51 ESXi servers to the consolidated cluster and up to 59 ESXi servers to the workload cluster. You cannot add or delete ESXi servers for the gateway cluster.
+* For clusters that belong to vCenter Server 7 instances, you can add only ESXi servers with vSphere 7.0u3.
+* For NFS clusters that belong to vCenter Server 8 instances and were provisioned initially with vSphere 7, you can add ESXi servers either with vSphere 7.0u3 or vSphere 8.0u2.
+* For clusters that belong to vCenter Server 8 instances and were provisioned initially with vSphere 8, you can add only ESXi servers with vSphere 8.0u2.
+* For clusters that were provisioned initially with vSphere 8 ESXi servers, those servers use vSphere Distributed Switch (vDS) 8. You cannot add ESXi servers with vSphere 7 to a vSphere 8 cluster and its vDS.
+* For ESXi servers with vSAN storage, you can add only vSphere 7 either with vCenter Server 7 or 8.
 * For existing instances with VMware vSphere® 6.5 or 6.7, you cannot add ESXi servers. To add ESXi servers, upgrade your vSphere® software to 7.0. For more information, see [Upgrading VMware vSphere software from vSphere 6.5 or 6.7 to 7.0](/docs/vmwaresolutions?topic=vmwaresolutions-vs_vsphere_70_upgrade).
 
 {{site.data.content.attnnote-addhost-byol}}
@@ -49,7 +54,7 @@ Review the following additional information applicable to Automated instances wi
 
 Review the following additional information applicable to Automated instances with NFS storage:
 
-* Automated instances with NFS storage must have at least 3 ESXi servers.  
+* Automated instances with NFS storage must have at least 3 ESXi servers.
 * If you are adding ESXi servers to clusters provisioned after 18 October 2023, the servers are provisioned with mirrored M.2 boot drives.
 * If you are adding ESXi servers to clusters provisioned before 18 October 2023, the servers are provisioned with mirrored M.2 boot drives only if you select a new bare metal server configuration.
 
@@ -73,7 +78,7 @@ Review the following additional information applicable to Automated instances wi
       * For the consolidated cluster, you can order 1-51 servers in total, taking into account the existing number of hosts in the cluster.
       * For the workload cluster, you can order 1-59 servers in total, taking into account the existing number of hosts in the cluster.
    2. From the list, you can select a bare metal server configuration that is being used by the existing ESXi servers in the cluster. Then, click **Next**. This option is not available for existing ESXi servers with **Broadwell CPU** or if the storage type of the cluster is **Local disks**.
-   3. You can also choose a new bare metal server configuration by selecting the option from the list and clicking **Next**. Select the **CPU model**, the amount of **RAM**, and **vSAN** if you have vSAN storage type.
+   3. You can also choose a new bare metal server configuration by selecting the option from the list and clicking **Next**. Select the **CPU model**, the **vSphere version** (vSphere 8 clusters only), the amount of **RAM**, and **vSAN** if you have vSAN storage type.
 8. Click **Next** and complete the network settings.
     * You can continue to use the previously selected primary subnets.
     * You can specify different primary subnets. Then, use the lists to select the **Public primary subnet** and **Private primary subnet**.

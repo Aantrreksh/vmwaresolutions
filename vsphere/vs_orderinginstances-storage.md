@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-06-24"
+lastupdated: "2024-08-12"
 
 keywords: flexible order instance, order vSphere, order flexible instance
 
@@ -23,7 +23,8 @@ The **Storage** section of your {{site.data.keyword.vcf-flex}} instance order is
 * VMware ESXi™ servers are ordered with a 12-disk chassis and two disks are ordered for caching. The ESXi OS is placed on a single M.2 solid-state drive that does not use a disk bay. These settings are configured by default and cannot be changed.
 * You can order more capacity disks by specifying values for **Size for vSAN capacity disks** and **Number of vSAN capacity disks**.
 
-
+vSAN storage is not supported for instances with VMware vSphere® 8.
+{: important}
 
 If you do not select the vSAN component for your order, the ESXi servers are ordered with a 12-disk chassis, with two disks for the ESXi operating system (OS).
 {: note}

@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2024
 
-lastupdated: "2024-05-30"
+lastupdated: "2024-08-12"
   
 keywords: vmware cloud foundation, IBM Cloud, vpc
 
@@ -34,7 +34,6 @@ To manage users access and resource groups, your account must have permissions t
 Ensure that the following requirements are met:
 * You have an Editor or Administrator role on a resource group in the account. For more information, see [{{site.data.keyword.cloud_notm}} IAM roles](/docs/account?topic=account-userroles).
 * You have permission to [create an {{site.data.keyword.bplong_notm}} workspace](/docs/schematics?topic=schematics-access#access-roles).
-* Your account meets the [required IAM permissions](/docs/vpc?topic=vpc-resource-authorizations-required-for-api-and-cli-calls) to interact with {{site.data.keyword.vpc_full}} ({{site.data.keyword.vpc_short}}) infrastructure objects.
 * Your account meets the [required IAM permissions](/docs/vpc?topic=vpc-planning-for-bare-metal-servers&interface=ui) for Bare Metal Servers on {{site.data.keyword.vpc_short}}.
 * Your account meets the [required IAM permissions](/docs/dns-svcs?topic=dns-svcs-iam) for {{site.data.keyword.cloud_notm}} DNS Services.
 * (Optional) Your account meets the [required IAM permissions](/docs/log-analysis?topic=log-analysis-work_iam) for {{site.data.keyword.la_full}} service.

@@ -4,7 +4,7 @@ copyright:
 
   years: 2019, 2024
 
-lastupdated: "2024-08-08"
+lastupdated: "2024-08-14"
 
 keywords: release notes, what's new in VMware Solutions, what is new, new features, VMware Solutions release notes, VMware Solutions
 
@@ -25,7 +25,33 @@ Use these release notes to learn about updates to {{site.data.keyword.vmwaresolu
 ## 2024
 {: #year-2024}
 
+### 14 August 2024
+{: #vmwaresolutions-aug1424}
+{: release-note}
 
+vSphere 8 support
+:   VMware vSphere® 8.0 is available for new NFS clusters (consolidated and workload), for new gateway clusters, and for new hosts that belong to NFS clusters. For instances with VMware vCenter Server® 8, you can use either vSphere 8 or vSphere 7 for new clusters and hosts. For instances with vCenter Server® 7, you can use only vSphere 7. For more information about upgrading your vCenter Server software and upgrading your existing vSphere 7 clusters, see [Upgrading to vCenter Server 8.0](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcs_80_upgrade).
+
+BOM updates for {{site.data.keyword.vcf-classic}}
+:   The following updates are applied to newly deployed instances, clusters, and hosts:
+
+   * VMware vCenter Server® Appliance 8.0 Update 2d (build 23929136)
+   * VMware vSphere® ESXi™ 8.0 Update 2b (build 23305546)
+   * VMware NSX® 4.1.2.4 (build 23786733)
+
+Add-on services upgrades
+:   The following service versions are now available for deployment:
+
+   * F5® BIG-IP® v17.1.1.3
+   * Juniper® vSRX v3.0 (23.4R1)
+   * {{site.data.keyword.redhat_openshift_full}} v4.15
+   * VMware Aria® Operations™ v8.17.1 and VMware Aria Operations™ for Logs v8.17
+
+Veeam 12.1.2 for VMware Shared
+:   Veeam Backup and Replication 12.1.2 (Veeam 12.1.2) is now available for deployment with the VMware Shared offering.
+
+Known issue about text overflow
+:   When you select the instance type in the **Create a resource** section, the text on the card might overflow out of the card margins. This issue happens on some browsers when the font size setting for the browser is set to **Large** or **Very large**. To resolve the issue, view the console with the font size set to **Medium**.
 
 ### 24 June 2024
 {: #vmwaresolutions-jun2424}

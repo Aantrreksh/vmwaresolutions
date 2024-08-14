@@ -1,6 +1,6 @@
 {
     "title": "VMware Solutions docs",
-    "lastupdated": "2024-08-08",
+    "lastupdated": "2024-08-13",
     "introduction": "VMware Solutions is a group of IBM Cloud offerings that provide deployment and management of VMware® by Broadcom virtualized environments. Learn how to make the most of your VMware Solutions experience by using the user documentation, REST API documentation reference, solution architectures, and solution guides.",
     "section_devtools": {
       "api": "/docs?tab=api-docs&category=compute&subCategory=vmwaresolutions"
@@ -53,7 +53,11 @@
     "section_updates": {
       "view_more": "/docs/vmwaresolutions?topic=vmwaresolutions-vmwaresolutions-relnotes",
       "tiles": [
-        
+        {
+          "date": "14 August 2024",
+          "title": "vSphere 8 support",
+          "description": "VMware vSphere® 8.0 is available for new NFS clusters (consolidated and workload), for new gateway clusters, and for new hosts that belong to NFS clusters. For instances with VMware vCenter Server® 8, you can use either vSphere 8 or vSphere 7 for new clusters and hosts. For instances with vCenter Server® 7, you can use only vSphere 7."
+        },
         {
           "date": "24 June 2024",
           "title": "VMware Cloud Director upgrade for VMware Shared",
@@ -63,11 +67,6 @@
           "date": "1 May 2024",
           "title": "Updated offerings for VMware Solutions",
           "description": "Existing IBM Cloud® for VMware Solutions offerings are no longer available as separate components and are replaced by VMware Cloud Foundation™. The offering name changes are available across the portfolio, including the documentation and REST API."
-        },
-        {
-          "date": "4 April 2024",
-          "title": "Veeam 12.1.1 for VMware Shared",
-          "description": "Veeam® Backup and Replication 12.1.1 (Veeam 12.1.1) is now available for deployment with the VMware Shared offering."
         }
       ]
     }

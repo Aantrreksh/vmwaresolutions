@@ -2,9 +2,9 @@
 
 copyright:
 
-  years:  2023, 2024
+  years: 2023, 2024
 
-lastupdated: "2024-08-05"
+lastupdated: "2024-08-12"
 
 keywords: flexible instance add host, add server flexible instance
 
@@ -28,6 +28,7 @@ You can expand the capacity of your {{site.data.keyword.vcf-flex}} instance acco
 Review the following information applicable to all Flexible instances:
 
 * You can add up to 59 ESXi servers to a Flexible instance.
+* You can add ESXi servers either with vSphere 7.0u3 or vSphere 8.0u2.
 * For existing instances with VMware vSphere® 6.5 or 6.7, you cannot add ESXi servers. To add ESXi servers, upgrade your vSphere® software to 7.0. For more information, see [Upgrading VMware vSphere software from vSphere 6.5 or 6.7 to 7.0](/docs/vmwaresolutions?topic=vmwaresolutions-vs_vsphere_70_upgrade).
 
 {{site.data.content.attnnote-addhost-byol}}
@@ -54,7 +55,7 @@ Review the following additional information applicable to Flexible instances wit
    * From the list, you can select a bare metal server configuration that is being used by the existing ESXi servers in the cluster. Then, click **Next**. This option is not available under the following conditions:
      * The bare metal configuration that is used by the existing ESXi servers in the cluster is **Broadwell**.
      * The storage type of the cluster is **Local disks**.
-   * You can also choose a new bare metal server configuration by selecting the option from the list and clicking **Next**. Select the **CPU model**, the amount of **RAM**, and **vSAN** if you have vSAN storage type.
+   * You can also choose a new bare metal server configuration by selecting the option from the list and clicking **Next**. Select the **CPU model**, the **vSphere version**, the amount of **RAM**, and **vSAN** if you have vSAN storage type.
 7. Click **Next** and complete the network settings.
    * You can use the previously selected primary subnets.
    * You can specify different primary subnets. Then, use the list to select the **Private primary subnet**.

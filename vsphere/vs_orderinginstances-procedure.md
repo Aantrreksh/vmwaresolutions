@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-07-09"
+lastupdated: "2024-08-12"
 
 keywords: flexible order instances, order flexible, order vmaware vSphere instance
 
@@ -25,6 +25,7 @@ subcollection: vmwaresolutions
    * If you do not see any configurations in the list and you want to create one, you must first save the instance settings as a new configuration without placing an order.
    * If you want to update a saved configuration or create a new configuration based on a saved one, select the configuration from the side panel, make your changes, and then save.
 1. Enter the instance name and select a resource group.
+1. Select the VMware vSphere® version for your instance.
 1. Select the VMware® components for licensing:
 
    {{site.data.content.attnnote-byol}}
@@ -38,7 +39,7 @@ subcollection: vmwaresolutions
    1. For data center location, click the **Edit** icon ![Edit icon](../../icons/edit-tagging.svg "Edit") and select the geography, data center, and pod where the instance is to be hosted.
    1. Select the CPU model:
       * For **Cascade Lake** servers, select the CPU model and the RAM size.
-      * For **SAP-certified Cascade Lake** servers, choose one of the preset configurations.
+      * For **SAP-certified Cascade Lake** servers (vSphere 7 only), choose one of the preset configurations.
    1. Specify the number of bare metal servers.
 1. If you selected the **VMware vSAN** component, complete the vSAN™ storage configuration.
    * If you want more storage, select the **High performance with Intel Optane** checkbox.

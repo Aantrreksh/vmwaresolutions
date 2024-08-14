@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-07-09"
+lastupdated: "2024-08-13"
 
 keywords: cyber recovery order procedure, order procedure cyber recovery, cyber recovery order instance, order cyber recovery, order cyber recovery instance
 
@@ -21,7 +21,7 @@ subcollection: vmwaresolutions
 
 1. In the VMware Solutions console, click the **VMware Cloud Foundation (VCF) for Classic** card in the **Create a resource** section. {: #step-1}
 1. On the **Create** tab, click the **{{site.data.keyword.cr}}** card in the **Resource type** section.
-1. Select the VMware vCenter Server® version. Then, enter the instance name and select a resource group.
+1. Select the VMware vCenter Server® and the VMware vSphere® versions. Then, enter the instance name and select a resource group.
 1. To specify the instance configuration name, click **Browse configurations** and choose a configuration in the **VMware instance configuration manager**.
    * If you do not see any configurations in the list and you want to create one, you must first save the instance settings as a new configuration without placing an order.
    * If you want to update a saved configuration or create a new configuration based on a saved one, select the configuration from the side panel, make your changes, and then save.
@@ -34,7 +34,7 @@ subcollection: vmwaresolutions
 
 1. In the **Consolidated cluster** section, accept or change the default name of the consolidated cluster. For more information, see [Cluster name](/docs/vmwaresolutions?topic=vmwaresolutions-cr_orderinginstance-consolidwkld#cr_orderinginstance-consolidwkld-cluster-name).
    1. For the **Data center location**, select the **Geography**, **Data Center**, and **Pod** to host the clusters. For more information, see [Data center location](/docs/vmwaresolutions?topic=vmwaresolutions-cr_orderinginstance-consolidwkld#cr_orderinginstance-consolidwkld-dc-location).
-   1. For the **CPU model**, select either **Cascade Lake** or **SAP-certified Cascade Lake** and choose one of the available configurations. For **Cascade Lake**, also select the RAM size.
+   1. For the **CPU model**, select either **Cascade Lake** or **SAP-certified Cascade Lake** (vSphere 7 only) and choose one of the available configurations. For **Cascade Lake**, also select the RAM size.
    1. Select the number of bare metal servers. You can order 4-51 bare metal servers.
    1. If you want to use **NFS storage**, select the corresponding option.
       * To add and configure file shares individually, toggle the **Configure shares individually** switch on. Select at least one file share. Then, click **Add shared storage** and select the **Size (GB)** and **Performance** for each file share.

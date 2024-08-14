@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2024
 
-lastupdated: "2024-07-09"
+lastupdated: "2024-08-13"
 
 keywords: automated add clusters, add cluster, automated cluster
 
@@ -30,6 +30,7 @@ Adding clusters to instances with VMware vSphere® 6.5 or 6.7 is not supported.
 * New clusters are provisioned with mirrored M.2 boot drives.
 * The number of clusters, hosts, and virtual machines (VMs) determines the maximum number of clusters that you can add. Remain within the VMware® sizing guidelines and limits for your deployment. For more information, see [VMware configuration maximums](https://configmax.esp.vmware.com/home){: external}.
 * You can add a cluster while another cluster is being created or deleted.
+* For clusters that belong to vCenter Server 8 instances, you can select a vSphere version.
 
 ## Cluster type
 {: #vc_addingclusters-cluster-type}
@@ -41,7 +42,10 @@ Select the cluster type: **Workload cluster** or **Gateway cluster**.
 
 When you add a workload cluster to an Automated instance, you must specify the following settings.
 
+### VMware vSphere version (vCenter Server 8 instances only)
+{: #vc_addingclusters-vpshere-version}
 
+Select the vSphere version for the cluster.
 
 ### Cluster name
 {: #vc_addingclusters-cluster-name}
@@ -89,7 +93,8 @@ If you deploy the cluster to a different {{site.data.keyword.cloud_notm}} data c
 
 {{site.data.content.simpletabtable-sap-hana}}
 
-
+vSphere 8 is not supported for SAP-certified Cascade Lake servers.
+{: important}
 
 #### Number of bare metal servers
 {: #vc_addingclusters-bare-metal-number}
@@ -109,7 +114,8 @@ You can add NFS storage shares to an existing vSAN or NFS cluster. For more info
 
 When you select **NFS storage**, you can add file-level shared storage for your instance where all shares use the same settings or you can specify different configuration settings for each file share. The number of file shares must be in the range of 1 to 100.
 
-
+NFS storage is available for instances with vSphere 7 and vSphere 8.
+{: important}
 
 Specify the following NFS options.
 * **Configure shares individually** - Toggle this switch on to specify different configuration settings for each file share.
@@ -268,7 +274,10 @@ Use the **Public VLAN**, **Private VLAN**, or **Secondary private VLAN** tabs to
 
 When you add a gateway cluster to an Automated instance, you must specify the following settings.
 
+### VMware vSphere version (vCenter Server 8 instances only)
+{: #vc_addingclusters-vpshere-version-gateway}
 
+Select the vSphere version for the cluster.
 
 ### Data center location
 {: #vc_orderinginstance-dc-edge}
@@ -357,7 +366,7 @@ You can also add the provisioned resources to the {{site.data.keyword.cloud_notm
    {: important}
 
 3. Click the **Infrastructure** tab and click **Create** on the upper right of the **Clusters** table.
-4. On the **Create cluster** page, select the cluster type.
+4. On the **Create cluster** page, select the cluster type. For vSphere 8 instances, also select the VMware vSphere version.
 5. For workload clusters, enter the cluster name and complete the following configuration.
    1. Complete the licensing settings if you are a BYOL user. You must provide your own license key for the VMware vSphere component.
       * Bring Your Own License (BYOL) is no longer supported except for migrations or upgrades of existing BYOL clusters. Select **I will provide** or **Use existing license** and enter your own license key only if you are performing an upgrade or migration of an existing BYOL cluster.
@@ -366,7 +375,7 @@ You can also add the provisioned resources to the {{site.data.keyword.cloud_notm
    2. Complete the bare metal server configuration.
       * If you want to host the cluster in a different {{site.data.keyword.cloud_notm}} data center than the one that the instance is hosted in, toggle the **Select a different location** switch on and choose the {{site.data.keyword.cloud_notm}} data center to host the cluster.
       * For **Cascade Lake**, select the **CPU model**, **RAM size**, and the **Number of bare metal servers**.
-      * For **SAP-certified Cascade Lake**, select one of the preset configurations.
+      * For **SAP-certified Cascade Lake** (vSphere 7 only), select one of the preset configurations.
 
    3. Complete the storage configuration.
       * If you select **NFS storage** and want to add and configure the same settings to all file shares, specify the **Number of shares**, **Size (GB)**, and **Performance**.

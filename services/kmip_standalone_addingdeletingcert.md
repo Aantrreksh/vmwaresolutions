@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-02-06"
+lastupdated: "2024-08-13"
 
 keywords: KMIP certificate, add certificate KMIP, delete certificate KMIP
 

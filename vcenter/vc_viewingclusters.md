@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2024
 
-lastupdated: "2024-07-26"
+lastupdated: "2024-08-12"
 
 keywords: vcf automated view clusters, view clusters, view vcf classic cluster
 
@@ -28,6 +28,7 @@ View the summary and detailed information of the clusters that are provisioned i
    * **Cluster name**: The name and type of the cluster.
    * **Cluster type**: The type of cluster. Types include witness, consolidated, workload, and edge gateway.
    * **ESXi servers**: The number of VMware ESXi™ servers in the cluster.
+   * **vSphere version**: The vSphere version of the ESXi servers in the cluster.
    * **Storage**: The type of storage that the cluster uses.
    * **Data center location**: The {{site.data.keyword.cloud_notm}} data center where the cluster is hosted.
    * **Pod**: The pod where the cluster is deployed.
@@ -46,6 +47,7 @@ View the summary and detailed information of the clusters that are provisioned i
 |:---- |:----------- |
 | Name | The name of the ESXi server is in the following format: `<host_prefix><n>.<root_domain>`, where `n` is the sequence of the ESXi server. |
 | Hardware | The hardware specification. |
+| vSphere version | The vSphere version of the ESXi server. |
 | Credentials | The user name and password to access the ESXi server. |
 | Private IP | The private IP address of the ESXi server. |
 | Status | The status of the ESXi server, which can be one of the following values: \n **Available** The ESXi server is ready to use. \n **Adding** The ESXi server is being added. \n **Deleting** The ESXi server is being deleted. |

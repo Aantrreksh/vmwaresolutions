@@ -4,7 +4,7 @@ copyright:
 
   years:  2024
 
-lastupdated: "2024-06-05"
+lastupdated: "2024-08-13"
 
 subcollection: vmwaresolutions
 
@@ -36,8 +36,8 @@ If you are using the Security and Compliance Center private endpoints, then no c
 
 Before any integration is possible, you must have a Security and Compliance Center instance. Complete the following steps:
 
-1. [Create an instance](/docs/security-compliance?topic=security-compliance-getting-started&interface=ui#gs-instance).
-2. [Assign access](/docs/security-compliance?topic=security-compliance-getting-started&interface=ui#gs-access).
+1. [Create an instance](/docs/security-compliance?topic=security-compliance-getting-started&interface=ui).
+2. [Assign access](/docs/security-compliance?topic=security-compliance-getting-started&interface=ui).
 3. [Configure storage](/docs/security-compliance?topic=security-compliance-getting-started&interface=ui#gs-storage).
 
 When you have a Security and Compliance Center instance available, complete the following steps:
@@ -81,7 +81,7 @@ If you are using a proxy, then it is deployed and configured and you updated the
 The following tasks are performed on your Caveonix Cloud instance:
 
 1. Configure the Security and Compliance Center integration in the Event Log Collector module. The event log collector provides authentication information to submit infrastructure findings to the Security and Compliance Center. You need the following details when you configure an Event Log Collector module:
-   
+
 * Security and Compliance Center URL
 * Security and Compliance Center Instance ID
 * Attachment ID
@@ -90,7 +90,7 @@ The following tasks are performed on your Caveonix Cloud instance:
 
    Currently, Caveonix Cloud supports one event log collector per instance.
    {: note}
-  
+
 2. Create a Security and Compliance Center Batch Job. This batch job collects infrastructure vulnerabilities to identify security risks. This job posts the VMware infrastructure findings (NSX-T, ESXi, and VMware vCenter® Server Appliance (VCSA)) to your Security and Compliance Center instance. Findings are posted to your Security and Compliance Center instance in batches of 100. This batch job submits the infrastructure findings periodically, at the wanted frequency, for example, once a day.
 
 ## Viewing VMware findings in the Security and Compliance Center dashboard

@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2024
 
-lastupdated: "2024-06-14"
+lastupdated: "2024-08-12"
 
 keywords: view flexible, view instance, view instance details, instance view flexible
 
@@ -78,6 +78,7 @@ To view the property details of an instance, complete the following steps.
    |:---- |:----------- |
    | Name | The name of the ESXi server is in the following format: `<host_prefix><n>.<root_domain>`, where `n` is the sequence of the ESXi server. |
    | Hardware | The hardware specification. |
+   | vSphere version | The vSphere version of the ESXi server. |
    | Credentials | The user name and password to access the ESXi server. |
    | Private IP | The private IP address of the ESXi server. |
    | Status | The status of the ESXi server, which can be one of the following values: \n **Available** The ESXi server is ready to use. \n **Adding** The ESXi server is being added. \n **Deleting** The ESXi server is being deleted. |

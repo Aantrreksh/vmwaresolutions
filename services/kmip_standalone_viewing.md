@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-07-23"
+lastupdated: "2024-08-13"
 
 keywords: KMIP for VMware, view KMIP stand-alone, KMIP for VMware status
 

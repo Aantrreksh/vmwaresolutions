@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-07-09"
+lastupdated: "2024-08-13"
 
 keywords: automated instance, order automated, order automated instance
 
@@ -21,7 +21,7 @@ subcollection: vmwaresolutions
 
 1. In the VMware Solutions console, click the **VMware Cloud Foundation (VCF) for Classic** card in the **Create a resource** section. {: #step-1}
 1. On the **Create** tab, click the **Automated** card in the **Resource type** section.
-1. Select the VMware vCenter Server® version. Then, enter the instance name and select a resource group.
+1. Select the VMware vCenter Server® and the VMware vSphere® versions. Then, enter the instance name and select a resource group.
 1. To specify the instance configuration name, click **Browse configurations** and choose a configuration in the **VMware instance configuration manager**.
    * If you do not see any configurations in the list and you want to create one, you must first save the instance settings as a new configuration without placing an order.
    * If you want to update a saved configuration or create a new configuration based on a saved one, select the configuration from the side panel, make your changes, and then save.
@@ -35,7 +35,7 @@ subcollection: vmwaresolutions
 1. Specify the settings for the consolidated cluster:
    1. Specify the cluster name.
    1. Specify the data center location. Click the **Edit** icon ![Edit icon](../../icons/edit-tagging.svg "Edit") and select the geography, data center, and pod to host the instance.
-   1. Specify the CPU model: either **Cascade Lake** or **SAP-certified Cascade Lake** and choose one of the available configurations. For **Cascade Lake**, also select the RAM size.
+   1. Specify the CPU model: either **Cascade Lake** or **SAP-certified Cascade Lake** (vSphere 7 only) and choose one of the available configurations. For **Cascade Lake**, also select the RAM size.
    1. Specify [the number of bare metal servers](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-consold-cluster#vc_orderinginstance-bare-metal-number).
    1. If you want to use NFS storage, select the corresponding option.
       * To add and configure file shares individually, toggle the **Configure shares individually** switch on. Then, click **Add shared storage** and select the **Size (GB)** and **Performance** for each file share. You must select at least one file share.

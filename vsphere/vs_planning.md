@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-07-17"
+lastupdated: "2024-08-12"
 
 keywords: planning flexible, data center, vSphere data centers
 
@@ -38,7 +38,7 @@ The account that you are using must meet certain requirements. For more informat
 The VMware vSphere deployment has strict requirements on the physical infrastructure. Therefore, you can deploy instances only in {{site.data.keyword.cloud_notm}} data centers that meet the requirements. The following {{site.data.keyword.cloud_notm}} data centers are available for vSphere deployment.
 
 Cascade Lake bare metal servers are available in [multizone region](#x9774820){: term}
-{{site.data.keyword.cloud_notm}} data centers. For more information, see [Multizone region (MZR) overview](/docs/loadbalancer-service?topic=loadbalancer-service-multi-zone-region-mzr-overview).
+{{site.data.keyword.cloud_notm}} data centers. For more information, see [Creating a VPC in a different region](/docs/vpc?topic=vpc-creating-a-vpc-in-a-different-region&interface=cli).
 
 If you select a vSAN component, the location list is filtered by SSD (Solid-State Disk) availability.
 {: note}

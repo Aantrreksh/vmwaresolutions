@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-08-08"
+lastupdated: "2024-08-12"
 
 keywords: automated instances bom, bill materials vcf classic, vcf bom
 
@@ -38,22 +38,24 @@ The following table details the BOM information for {{site.data.keyword.vcf-auto
 
 | Manufacturer | Component | Version |
 |:------------ |:--------- |:------- |
-| VMware® by Broadcom | vSphere ESXi | ESXi 7.0 Update 3p (build 23307199)[^esxi70] or \n ESXi 6.7 (202403001)[^esxi67] | 
-| VMware by Broadcom | Distributed vSwitch | 7.0.0[^vcs-vsphere700] or 6.6.0[^vcs-vsphere660] |
-| VMware by Broadcom | vCenter Server Appliance | 8.0 Update 2b (23319993) or \n 7.0 Update 3p (22837322) | 
+| VMware® by Broadcom | vSphere ESXi | ESXi 8.0 Update 2b (build 23305546)[^esxi80] or \n ESXi 7.0 Update 3q (build 23794027)[^esxi70] or \n ESXi 6.7 (202403001)[^esxi67] |
+| VMware by Broadcom | Distributed vSwitch | 8.0.0[^vcs-vsphere800] or 7.0.0[^vcs-vsphere700] or 6.6.0[^vcs-vsphere660] |
+| VMware by Broadcom | vCenter Server Appliance | 8.0 Update 2d (23929136) or \n 7.0 Update 3r (24026615) |
 | VMware by Broadcom | vSAN[^vsan] | 7.0 Update 3l (21424296) |
-| VMware by Broadcom | NSX for vSphere[^nsxt] | 4.1.2.3 (23382408) | 
+| VMware by Broadcom | NSX for vSphere[^nsxt] | 4.1.2.4 (23786733) |
 | VMware by Broadcom | NSX-V for vSphere[^nsxv] | 6.4.13 (19307994) |
 | Microsoft® | Windows® Server Standard edition | 2019 |
 | Microsoft | Active Directory™ domain functional level | 2016 (WinThreshold)[^domain] |
 {: caption="Table 2. BOM for the software components in Automated instances" caption-side="bottom"}
 
 
+[^esxi80]: Applicable to vSphere 8
 
 [^esxi70]: Applicable to vSphere 7
 
 [^esxi67]: Applicable to existing vSphere 6.7 hosts
 
+[^vcs-vsphere800]: Applicable to vSphere 8
 
 [^vcs-vsphere700]: Applicable to vSphere 7
 
