@@ -1,6 +1,6 @@
 {
     "title": "VMware Solutions docs",
-    "lastupdated": "2024-08-13",
+    "lastupdated": "2024-08-15",
     "introduction": "VMware Solutions is a group of IBM Cloud offerings that provide deployment and management of VMware® by Broadcom virtualized environments. Learn how to make the most of your VMware Solutions experience by using the user documentation, REST API documentation reference, solution architectures, and solution guides.",
     "section_devtools": {
       "api": "/docs?tab=api-docs&category=compute&subCategory=vmwaresolutions"
@@ -54,7 +54,7 @@
       "view_more": "/docs/vmwaresolutions?topic=vmwaresolutions-vmwaresolutions-relnotes",
       "tiles": [
         {
-          "date": "14 August 2024",
+          "date": "16 August 2024",
           "title": "vSphere 8 support",
           "description": "VMware vSphere® 8.0 is available for new NFS clusters (consolidated and workload), for new gateway clusters, and for new hosts that belong to NFS clusters. For instances with VMware vCenter Server® 8, you can use either vSphere 8 or vSphere 7 for new clusters and hosts. For instances with vCenter Server® 7, you can use only vSphere 7."
         },
