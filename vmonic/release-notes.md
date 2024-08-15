@@ -4,7 +4,7 @@ copyright:
 
   years: 2019, 2024
 
-lastupdated: "2024-08-15"
+lastupdated: "2024-08-16"
 
 keywords: release notes, what's new in VMware Solutions, what is new, new features, VMware Solutions release notes, VMware Solutions
 
@@ -26,7 +26,7 @@ Use these release notes to learn about updates to {{site.data.keyword.vmwaresolu
 {: #year-2024}
 
 ### 16 August 2024
-{: #vmwaresolutions-aug1424}
+{: #vmwaresolutions-aug1624}
 {: release-note}
 
 vSphere 8 support
