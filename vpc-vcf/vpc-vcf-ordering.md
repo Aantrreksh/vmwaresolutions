@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2024
 
-lastupdated: "2024-06-05"
+lastupdated: "2024-08-15"
 
 keywords: vmware cloud editions, order vmware cloud editions, order vmware cloud editions on IBM Cloud, vmware cloud foundation
 
@@ -115,7 +115,7 @@ The root domain name must meet the following requirements:
 ### Management host profile
 {: #vpc-vcf-ordering-mgmt-profile}
 
-The bare metal server profile that is used by the hosts in the management domain. For the supported profiles, see [{{site.data.keyword.cloud_notm}} region and zone availability for {{site.data.keyword.vcf-vpc-short}} deployment](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-plan#vpc-vcf-plan-region).
+The bare metal profile that is used by the hosts in the management domain. For the supported profiles, see [{{site.data.keyword.cloud_notm}} region and zone availability for {{site.data.keyword.vcf-vpc-short}} deployment](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-plan#vpc-vcf-plan-region).
 
 ### Management host list
 {: #vpc-vcf-ordering-mgmt-host-list}
@@ -216,7 +216,7 @@ The workload domain is created when you select the {{site.data.keyword.vcf-vpc-s
 ### Workload host profile
 {: #vpc-vcf-ordering-wl-profile}
 
-The bare metal server profile that is used by the hosts in the workload domain. For the supported profiles, see [{{site.data.keyword.cloud_notm}} region and zone availability for {{site.data.keyword.vcf-vpc-short}} deployment](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-plan#vpc-vcf-plan-region).
+The bare metal profile that is used by the hosts in the workload domain. For the supported profiles, see [{{site.data.keyword.cloud_notm}} region and zone availability for {{site.data.keyword.vcf-vpc-short}} deployment](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-plan#vpc-vcf-plan-region).
 
 ### Workload host list
 {: #vpc-vcf-ordering-wl-host-list}
