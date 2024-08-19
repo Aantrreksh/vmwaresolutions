@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2024
 
-lastupdated: "2024-08-15"
+lastupdated: "2024-08-16"
   
 keywords: vmware cloud foundation, IBM Cloud, vpc
 
@@ -21,7 +21,7 @@ subcollection: vmwaresolutions
 ## {{site.data.keyword.cloud_notm}} account requirements
 {: #vpc-vcf-plan-acc}
 
-To order a {{site.data.keyword.vcf-vpc}} instance, you must have a **Pay As You Go** {{site.data.keyword.cloud}} account. The cost of the resources that are ordered are billed to that {{site.data.keyword.cloud}} account. For more information, see [Upgrading to a Pay-As-You-Go account](/docs/account?topic=account-upgrading-account#upgrade-paygo).
+To order a {{site.data.keyword.vcf-vpc}} instance, you must have a Pay-As-You-Go {{site.data.keyword.cloud}} account. The cost of the resources that are ordered are billed to that {{site.data.keyword.cloud}} account. For more information, see [Upgrading to a Pay-As-You-Go account](/docs/account?topic=account-upgrading-account#upgrade-paygo).
 
 ## Required permissions for managing {{site.data.keyword.cloud_notm}} resources
 {: #vpc-vcf-plan-permission}

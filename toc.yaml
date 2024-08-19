@@ -69,7 +69,11 @@ toc:
       - topicgroup:
           label: VCF as a Service
           topics:
-          - include: ../vmware-service/common/vmware-aas-overview.md
+          - topicgroup:
+              label: Overview
+              topics:
+              - include: ../vmware-service/common/vmware-aas-overview.md
+              - include: ../vmware-service/common/vmaas-bom.md
           - include: ../vmware-service/vmaas/tenant-plan-deploy.md
           - topicgroup:
               label: Ordering VCF as a Service instances
