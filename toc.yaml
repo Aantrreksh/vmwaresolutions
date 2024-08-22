@@ -17,8 +17,13 @@ toc:
   - navgroup:
       id: learn
       topics:
-      - topic: index.md
-        navtitle: Getting started
+      - topicgroup:
+          label: Getting started
+          topics:
+          - topic: index.md
+          - link:
+              label: Getting started with VCF as a Service
+              href: https://{DomainName}/docs/vmware-service?topic=vmware-service-getting-started
       - vmonic/inst_comp_chart.md
       - topicgroup:
           label: Release notes
