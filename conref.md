@@ -3,7 +3,7 @@
 copyright:
   years: 2022, 2024
 
-lastupdated: "2024-08-22"
+lastupdated: "2024-08-27"
 
 keywords: IBM Cloud for VMware Solutions, getting started, vmware solutions offerings, services for vmwaresolutions, vmwaresolutions use cases
 
@@ -21,6 +21,8 @@ content-type: conref
 
 
 CONTENT:
+
+
 
 For **Cascade Lake** servers, choose from the following CPU models and supported RAM sizes:
 {: #cascade-para-intro}

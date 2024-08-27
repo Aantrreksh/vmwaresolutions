@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-08-13"
+lastupdated: "2024-08-27"
 
 keywords: cyber recovery, cyber recovery consolidated cluster, cyber recovery consolidated settings, cyber recovery instances
 
@@ -52,7 +52,9 @@ Select the {{site.data.keyword.cloud_notm}} data center pod where you want to de
 ## CPU model
 {: #cr_orderinginstance-consolidwkld-cpumodel}
 
-Select either **Cascade Lake** or **SAP-certified Cascade Lake**.
+Select **Cascade Lake** or **SAP-certified Cascade Lake**.
+
+
 
 ### Cascade Lake
 {: #cr_orderinginstance-consolidwkld-cascade}

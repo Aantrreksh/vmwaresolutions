@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-08-12"
+lastupdated: "2024-08-27"
 
 keywords: flexible order instance, order vSphere, order flexible instance
 
@@ -42,9 +42,11 @@ Select the {{site.data.keyword.cloud_notm}} data center pod where you want to de
 ## CPU model and RAM
 {: #vs_orderinginstances-bare-metal-cpumodel-ram}
 
-You can choose between **Cascade Lake** and **SAP-certified Cascade Lake** servers[^1u].
+You can choose **Cascade Lake** or **SAP-certified Cascade Lake** servers[^1u].
 
 [^1u]: For clusters with NFS storage, where locations with appropriate 1U servers are available, 1U servers (up to 4 drives of storage) are ordered silently rather than 2U servers. For gateway clusters and clusters with vSAN storage, 2U servers are ordered.
+
+
 
 ### Cascade Lake
 {: #vs_orderinginstances-bare-metal-cascade}

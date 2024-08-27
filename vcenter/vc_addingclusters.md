@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2024
 
-lastupdated: "2024-08-13"
+lastupdated: "2024-08-27"
 
 keywords: automated add clusters, add cluster, automated cluster
 
@@ -66,7 +66,7 @@ If you are a BYOL user, provide your own license key for vSphere:
 ### Bare metal server settings
 {: #vc_addingclusters-bare-metal-settings}
 
-The CPU models differ depending on the version that your instance was initially deployed in. You can choose between **Cascade Lake** and **SAP-certified Cascade Lake** servers[^1u].
+The CPU models differ depending on the version that your instance was initially deployed in. You can choose **Cascade Lake** or **SAP-certified Cascade Lake** servers[^1u].
 
 [^1u]: For clusters with NFS storage, where locations with appropriate 1U servers are available, 1U servers (up to 4 drives of storage) are ordered silently rather than 2U servers. For gateway clusters and clusters with vSAN storage, 2U servers are ordered.
 
@@ -76,6 +76,8 @@ The CPU models differ depending on the version that your instance was initially 
 The {{site.data.keyword.cloud}} data center location of the cluster is set to the {{site.data.keyword.cloud_notm}} data center of the Automated instance by default. You can deploy the cluster to a different {{site.data.keyword.cloud_notm}} data center than the deployed instance if you ensure that the network latency between the two {{site.data.keyword.cloud_notm}} data centers is less than 150 ms.
 
 If you deploy the cluster to a different {{site.data.keyword.cloud_notm}} data center or {{site.data.keyword.cloud_notm}} infrastructure pod, three extra VLANs are ordered for use with the ordered {{site.data.keyword.cloud_notm}} bare metal servers.
+
+
 
 #### Cascade Lake
 {: #vc_addingclusters-cascade}
