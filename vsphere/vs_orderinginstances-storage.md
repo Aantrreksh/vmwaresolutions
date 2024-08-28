@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-08-12"
+lastupdated: "2024-08-28"
 
 keywords: flexible order instance, order vSphere, order flexible instance
 
@@ -28,6 +28,8 @@ vSAN storage is not supported for instances with VMware vSphere® 8.
 
 If you do not select the vSAN component for your order, the ESXi servers are ordered with a 12-disk chassis, with two disks for the ESXi operating system (OS).
 {: note}
+
+
 
 Specify the following settings for the vSAN component:
 * **Size for vSAN capacity disks** - Select an option for the capacity disks that you need.

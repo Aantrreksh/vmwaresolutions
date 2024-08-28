@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2024
 
-lastupdated: "2024-06-14"
+lastupdated: "2024-08-28"
 
 subcollection: vmwaresolutions
 
@@ -22,8 +22,8 @@ DR is defined as a plan to recover critical business systems and normal operatio
 
 {{site.data.keyword.cloud_notm}} provides three tiers of regions: multizone regions (MZRs), single campus MZRs, and data centers.
 
-* Single campus multizone region - Single campus MZRs contain three availability zones in different sections of the same building or within multiple buildings on a campus where the power, cooling, networking, and physical security dependencies overlap but are not identical between any two availability zones. For more information, see [Single campus MZRs](/docs/overview?topic=overview-locations#single-campus-mzr).
-* Data centers - More than 50 data centers exist around the world, including MON01 in Montreal, AMS02 in Amsterdam, and MEL01 in Melbourne. For more information about all data centers, see [Data centers](/docs/overview?topic=overview-locations#data-centers). For more information about the data centers in which VMware Solutions can be deployed, see [{{site.data.keyword.cloud_notm}} data center availability](/docs/vmwaresolutions?topic=vmwaresolutions-vc_planning#vc_planning-dc-availability).
+* Single campus multizone region - Single campus MZRs contain three availability zones in different sections of the same building or within multiple buildings on a campus where the power, cooling, networking, and physical security dependencies overlap but are not identical between any two availability zones. For more information, see [Single-campus MZRs](/docs/overview?topic=overview-locations#single-campus-mzr).
+* Data centers - More than 50 data centers exist around the world, including MON01 in Montreal, AMS02 in Amsterdam, and MEL01 in Melbourne. For more information about all data centers, see [Classic infrastructure locations](/docs/overview?topic=overview-locations#data-centers). For more information about the data centers in which VMware Solutions can be deployed, see [{{site.data.keyword.cloud_notm}} data center availability](/docs/vmwaresolutions?topic=vmwaresolutions-vc_planning#vc_planning-dc-availability).
 
 The focus of the {{site.data.keyword.rw}} DR design has the following specifications.
 * A design to deliver against the two key requirements:

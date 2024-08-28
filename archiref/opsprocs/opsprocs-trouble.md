@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-07-08"
+lastupdated: "2024-08-28"
 
 subcollection: vmwaresolutions
 
@@ -98,7 +98,7 @@ In an aid to isolating the affected components, this documentation on troublesho
 | VM Performance issues | Performance issues can be caused by CPU constraints, memory over commitment, storage latency, or network latency. |
 | Bare metal server is down | When the bare metal server that is running vSphere ESXi is unresponsive or down, log in to the {{site.data.keyword.cloud_notm}} management UI or console and check the status. If required, open a case to get assistance with your bare metal server. For more information, see [Managing your support cases](/docs/get-support?topic=get-support-managing-support-cases). |
 | vSphere ESXi host is in disconnected or a not responding state  | For more information, see [Troubleshooting an ESXi/ESX host in non responding state (1003409)](https://knowledge.broadcom.com/external/article?legacyId=1003409){: external}. |
-| Purple diagnostic screen | Purple screen errors can signal a kernel panic. The vSphere ESXi kernel `vmkernel` triggers this safety measure in response to an event or error that is unrecoverable. An unrecoverable error means that continuing to run poses a high risk for the services and VMs. When the panic occurs and the vSphere ESXi host crashes, it ends all the services that run on it together with all the VMs hosted. The VMs are not gracefully shut down, but rather abruptly powered off. If the host is part of a cluster and you configured HA, these VMs are restarted on the other hosts in the cluster. For more information, see [Interpreting an ESX/ESXi host purple diagnostic screen (1004250)](https://knowledge.broadcom.com/external/article?legacyId=1004250){: external}. |
+| Purple diagnostic screen | Purple screen errors can signal a kernel panic. The vSphere ESXi kernel `vmkernel` triggers this safety measure in response to an event or error that is unrecoverable. An unrecoverable error means that continuing to run poses a high risk for the services and VMs. When the panic occurs and the vSphere ESXi host crashes, it ends all the services that run on it together with all the VMs hosted. The VMs are not gracefully shut down, but rather abruptly powered off. If the host is part of a cluster and you configured HA, these VMs are restarted on the other hosts in the cluster. For more information, search through the [Broadcom Support Portal](https://support.broadcom.com/){: external}. |
 {: caption="Table 1. Typical vSphere ESXi hosts troubleshooting" caption-side="bottom"}
 {: #table2}
 {: tab-title="Hosts"}

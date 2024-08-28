@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-08-27"
+lastupdated: "2024-08-28"
 
 keywords: flexible order instance, order vSphere, order flexible instance
 
@@ -22,7 +22,7 @@ When you size the capacity of your servers, consider your current requirements, 
 ## Data center location
 {: #vs_orderinginstances-bare-metal-dc-location}
 
-Select the {{site.data.keyword.cloud}} data center settings. For more information, see [Region and data center locations for resource deployment](/docs/overview?topic=overview-locations).
+Select the {{site.data.keyword.cloud}} data center settings. For more information, see [{{site.data.keyword.cloud_notm}} locations for resource deployment](/docs/overview?topic=overview-locations).
 
 ### Geography
 {: #vs_orderinginstances-bare-metal-geo}

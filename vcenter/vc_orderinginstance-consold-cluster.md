@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-08-27"
+lastupdated: "2024-08-28"
 
 keywords: automated consolidated cluster, order consolidated cluster, order automated instance
 
@@ -31,7 +31,7 @@ By default, the name of the consolidated cluster is set to **_instance name_-con
 ## Data center location
 {: #vc_orderinginstance-consold-cluster-dc-location}
 
-Specify the {{site.data.keyword.cloud}} data center settings. For more information, see [Region and data center locations for resource deployment](/docs/overview?topic=overview-locations).
+Specify the {{site.data.keyword.cloud}} data center settings. For more information, see [{{site.data.keyword.cloud_notm}} locations for resource deployment](/docs/overview?topic=overview-locations).
 
 ### Geography
 {: #vc_orderinginstance-consold-cluster-dc-region}
@@ -128,6 +128,8 @@ Specify the following settings for vSAN storage.
 
 For new instances, vSAN storage is not available with vSphere 8. To use vSAN storage, select vSphere 7.
 {: important}
+
+
 
 #### Size for vSAN capacity disks
 {: #vc_orderinginstance-vsan-storage-typesize-capdisks}

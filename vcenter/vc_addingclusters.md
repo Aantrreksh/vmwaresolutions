@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2024
 
-lastupdated: "2024-08-27"
+lastupdated: "2024-08-28"
 
 keywords: automated add clusters, add cluster, automated cluster
 
@@ -73,7 +73,7 @@ The CPU models differ depending on the version that your instance was initially 
 #### Data center location
 {: #vc_addingclusters-dc-location}
 
-The {{site.data.keyword.cloud}} data center location of the cluster is set to the {{site.data.keyword.cloud_notm}} data center of the Automated instance by default. You can deploy the cluster to a different {{site.data.keyword.cloud_notm}} data center than the deployed instance if you ensure that the network latency between the two {{site.data.keyword.cloud_notm}} data centers is less than 150 ms.
+The {{site.data.keyword.cloud_notm}} data center location of the cluster is set to the {{site.data.keyword.cloud_notm}} data center of the Automated instance by default. You can deploy the cluster to a different {{site.data.keyword.cloud_notm}} data center than the deployed instance if you ensure that the network latency between the two {{site.data.keyword.cloud_notm}} data centers is less than 150 ms.
 
 If you deploy the cluster to a different {{site.data.keyword.cloud_notm}} data center or {{site.data.keyword.cloud_notm}} infrastructure pod, three extra VLANs are ordered for use with the ordered {{site.data.keyword.cloud_notm}} bare metal servers.
 
@@ -140,6 +140,8 @@ The following table indicates the performance level details.
 {: #vc_addingclusters-vsan-storage}
 
 Specify the following vSAN options.
+
+
 
 ##### Size for vSAN capacity disks
 {: #vc_addingclusters-vsan-capacity-size}
@@ -284,7 +286,7 @@ Select the vSphere version for the cluster.
 ### Data center location
 {: #vc_orderinginstance-dc-edge}
 
-Select the {{site.data.keyword.cloud}} data center settings. For more information, see [Region and data center locations for resource deployment](/docs/overview?topic=overview-locations).
+Select the {{site.data.keyword.cloud}} data center settings. For more information, see [{{site.data.keyword.cloud_notm}} locations for resource deployment](/docs/overview?topic=overview-locations).
 
 #### Geography
 {: #vc_orderinginstance-dc-region-edge}

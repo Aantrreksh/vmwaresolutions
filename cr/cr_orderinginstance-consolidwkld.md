@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-08-27"
+lastupdated: "2024-08-28"
 
 keywords: cyber recovery, cyber recovery consolidated cluster, cyber recovery consolidated settings, cyber recovery instances
 
@@ -32,7 +32,7 @@ You can also order an extra workload cluster.
 ## Data center location
 {: #cr_orderinginstance-consolidwkld-dc-location}
 
-Select the {{site.data.keyword.cloud}} data center settings. For more information, see [Region and data center locations for resource deployment](/docs/overview?topic=overview-locations).
+Select the {{site.data.keyword.cloud}} data center settings. For more information, see [{{site.data.keyword.cloud_notm}} locations for resource deployment](/docs/overview?topic=overview-locations).
 
 ### Geography
 {: #cr_orderinginstance-consolidwkld-dc-region}
@@ -132,6 +132,8 @@ vSAN is available only for **Cascade Lake** bare metal servers.
 
 For new instances, vSAN storage is not available with vSphere 8. To use vSAN storage, select vSphere 7.
 {: important}
+
+
 
 #### Size for vSAN capacity disks
 {: #cr_orderinginstance-consolidwkld-vsan-storage-typesize-capdisks}

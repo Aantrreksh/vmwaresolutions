@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-07-29"
+lastupdated: "2024-08-28"
 
 keywords: FAQ vmware solutions dedicated, vmware solutions dedicated questions, user account, patch management
 
@@ -76,24 +76,30 @@ You can configure vCenter HA, but configuration support is not provided by {{sit
 
 For a new {{site.data.keyword.vcf-auto-short}} instance, you can set the name of the initial cluster that is created during deployment. When you add a cluster to a {{site.data.keyword.vcf-auto-short}} instance, you can specify the name that you want on the {{site.data.keyword.vmwaresolutions_short}} console.
 
-## How are patches managed?
+## How are IBM and VMware patches managed?
 {: #faq-patches}
 {: faq}
 
 IBM provides ongoing updates to the IBM code by deploying the IBM CloudDriver virtual server instance (VSI) on demand. Updates and patches for the IBM management components are applied automatically, as needed.
 
 When you review the summary details for each instance, the **Properties** section displays the **Current version**. The current version is the IBM code version that is set when the instance is initially ordered. Day 2 operations such as adding or removing hosts, storage, services, or clusters are automatically updated with the current IBM code. Customer upgrade to the current IBM code version is never required.
-The IBM code version is separate from the VMware and service software versions. When the IBM code version is updated, the VMware software and service versions that are already installed for the instance remain unchanged.
-{: note}
 
-IBM does not provide ongoing updates to add-on services such as Zerto or Veeam®. Obtaining and installing these updates is your responsibility.
+The IBM code version is separate from the VMware and service software versions. When the IBM code version is updated, the VMware software and service versions that are already installed for the instance remain unchanged.
 
 Newly deployed VMware ESXi™ servers and clusters are patched with recent, but not necessarily the most recent, VMware ESXi updates.
 
 For all other VMware component updates, you must ensure that newly deployed ESXi servers and clusters have the most recent updates that you require. {{site.data.keyword.vmwaresolutions_short}} does not offer support for applying updates and patches for VMware components. You must monitor and apply these updates yourself.
-{: important}
 
 To download ESXi updates from VMware, you can configure VMware Update Manager (VUM) or vSphere Lifecycle Manager (vLCM), which are integrated into your vCenter Server. For more information, see [VMware Support](https://www.broadcom.com/support/vmware-services){: external}.
+
+IBM does not provide ongoing updates to add-on services such as Zerto or Veeam®. Obtaining and installing these updates is your responsibility.
+{: important}
+
+## How are RHEL patches managed?
+{: #faq-patches-rhel}
+{: faq}
+
+IBM delivers patches (including security fixes) for Red Hat Enterprise Linux (RHEL) based on the Red Hat Enterprise Linux Life Cycle policy. As stated in the Red Hat policy, fixes are not provided for all vulnerabilities on all RHEL versions, which means that IBM cannot deliver security fixes for some RHEL issues.
 
 ## Does the management services NSX Edge pose a security risk?
 {: #faq-mgmt-nsx}
