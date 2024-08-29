@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-08-28"
+lastupdated: "2024-08-29"
 
 subcollection: vmwaresolutions
 
@@ -94,7 +94,7 @@ In an aid to isolating the affected components, this documentation on troublesho
 | ESXi commands | For an overview of the command‐line interfaces in vSphere, the ESXi Shell commands, and the vCLI (VMware® vSphere Command‐Line Interface) commands, see [Getting started with vSphere command-line interfaces](https://vdc-download.vmware.com/vmwb-repository/dcr-public/bc4fa31a-40ac-4aa9-a6a1-7171d1fff7f4/740990ee-4d65-4627-a9d4-0f046cb78aec/vsphere-esxi-vcenter-server-67-command-line-interface-getting-started-guide.pdf){: external}. |
 | vSphere HA Host States | If vCenter reports a vSphere HA host state that indicates an error condition on the host, these issues must be remediated. These issues can prevent vSphere HA from restarting VMs after a failure. For more information, see [Troubleshooting vSphere HA host states](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.vcenterhost.doc/GUID-DF7CEF44-98EC-458A-8614-50CCAEC0A7C5.html){: external}. |
 | vSphere ESXi host is in a nonresponding state | A nonresponding state includes `Not Responding`, `Disconnected`, or the VMs on the host show as `Unavailable` in vCenter. For more information about troubleshooting a vSphere ESXi host that is in a nonresponding state, see [ESX/ESXi hosts do not respond and is grayed out (1019082)](https://knowledge.broadcom.com/external/article?legacyId=1019082){: external}. |
-| When you power on a VM, you see a `File not found` error | For more information about re-creating a lost virtual disk descriptor file (VMDK), see [Re-creating a missing virtual machine disk descriptor file (1002511)](https://knowledge.broadcom.com/external/article?legacyId=1002511){: external}. |
+| When you power on a VM, you see a `File not found` error | For more information, search through the [Broadcom Support Portal](https://support.broadcom.com/){: external}. |
 | VM Performance issues | Performance issues can be caused by CPU constraints, memory over commitment, storage latency, or network latency. |
 | Bare metal server is down | When the bare metal server that is running vSphere ESXi is unresponsive or down, log in to the {{site.data.keyword.cloud_notm}} management UI or console and check the status. If required, open a case to get assistance with your bare metal server. For more information, see [Managing your support cases](/docs/get-support?topic=get-support-managing-support-cases). |
 | vSphere ESXi host is in disconnected or a not responding state  | For more information, see [Troubleshooting an ESXi/ESX host in non responding state (1003409)](https://knowledge.broadcom.com/external/article?legacyId=1003409){: external}. |
