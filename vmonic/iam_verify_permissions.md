@@ -2,11 +2,11 @@
 
 copyright:
 
-  years:  2019, 2023
+  years:  2019, 2024
 
-lastupdated: "2023-10-03"
+lastupdated: "2024-09-03"
 
-keywords: IAM user, user role, user permission, IAM account administrator
+keywords: iam user role for vmware, iam user, iam user permissions, iam account administrator
 
 subcollection: vmwaresolutions
 
