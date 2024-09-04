@@ -4,7 +4,7 @@ copyright:
 
   years: 2023, 2024
 
-lastupdated: "2024-08-12"
+lastupdated: "2024-09-04"
 
 keywords: flexible instance add host, add server flexible instance
 
@@ -56,6 +56,9 @@ Review the following additional information applicable to Flexible instances wit
      * The bare metal configuration that is used by the existing ESXi servers in the cluster is **Broadwell**.
      * The storage type of the cluster is **Local disks**.
    * You can also choose a new bare metal server configuration by selecting the option from the list and clicking **Next**. Select the **CPU model**, the **vSphere version**, the amount of **RAM**, and **vSAN** if you have vSAN storage type.
+
+   
+
 7. Click **Next** and complete the network settings.
    * You can use the previously selected primary subnets.
    * You can specify different primary subnets. Then, use the list to select the **Private primary subnet**.

@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2024
 
-lastupdated: "2024-08-13"
+lastupdated: "2024-09-04"
 
 keywords: automated instance add host, add server automated instance
 
@@ -79,6 +79,9 @@ Review the following additional information applicable to Automated instances wi
       * For the workload cluster, you can order 1-59 servers in total, taking into account the existing number of hosts in the cluster.
    2. From the list, you can select a bare metal server configuration that is being used by the existing ESXi servers in the cluster. Then, click **Next**. This option is not available for existing ESXi servers with **Broadwell CPU** or if the storage type of the cluster is **Local disks**.
    3. You can also choose a new bare metal server configuration by selecting the option from the list and clicking **Next**. Select the **CPU model**, the **vSphere version** (vSphere 8 clusters only), the amount of **RAM**, and **vSAN** if you have vSAN storage type.
+
+   
+
 8. Click **Next** and complete the network settings.
     * You can continue to use the previously selected primary subnets.
     * You can specify different primary subnets. Then, use the lists to select the **Public primary subnet** and **Private primary subnet**.

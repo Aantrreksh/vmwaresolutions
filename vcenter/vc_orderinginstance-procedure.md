@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-08-13"
+lastupdated: "2024-09-04"
 
 keywords: automated instance, order automated, order automated instance
 
@@ -35,7 +35,7 @@ subcollection: vmwaresolutions
 1. Specify the settings for the consolidated cluster:
    1. Specify the cluster name.
    1. Specify the data center location. Click the **Edit** icon ![Edit icon](../../icons/edit-tagging.svg "Edit") and select the geography, data center, and pod to host the instance.
-   1. Specify the CPU model: either **Cascade Lake** or **SAP-certified Cascade Lake** (vSphere 7 only) and choose one of the available configurations. For **Cascade Lake**, also select the RAM size.
+   1. Specify the CPU model: **Cascade Lake** or **SAP-certified Cascade Lake** (vSphere 7 only) and choose one of the available configurations. For **Cascade Lake**, also select the RAM size.
    1. Specify [the number of bare metal servers](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-consold-cluster#vc_orderinginstance-bare-metal-number).
    1. If you want to use NFS storage, select the corresponding option.
       * To add and configure file shares individually, toggle the **Configure shares individually** switch on. Then, click **Add shared storage** and select the **Size (GB)** and **Performance** for each file share. You must select at least one file share.
