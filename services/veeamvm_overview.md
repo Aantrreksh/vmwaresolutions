@@ -4,9 +4,9 @@ copyright:
 
   years:  2020, 2024
 
-lastupdated: "2024-08-13"
+lastupdated: "2024-09-12"
 
-keywords: Veeam, Veeam Backup and Replication 12.1, Veeam install, tech specs Veeam, Veeam overview
+keywords: Veeam, Veeam Backup and Replication 12, Veeam install, tech specs Veeam, Veeam overview
 
 subcollection: vmwaresolutions
 
@@ -25,7 +25,7 @@ By using this service, you control both the backup and restore of all virtual ma
 
 {{site.data.content.para-promotion-services}}
 
-The Veeam service that is installed is Veeam Availability Suite™ 12.1.2 (known as Veeam 12.1.2).
+The Veeam service that is installed is Veeam Availability Suite™ 12 (Veeam 12).
 {: note}
 
 If you have Veeam 9.5u4b, you can continue to use it. However, you cannot install Veeam 9.5u4b on a new or existing instance.
@@ -34,7 +34,7 @@ If you have Veeam 9.5u4b, you can continue to use it. However, you cannot instal
 ## Veeam on a bare metal server
 {: #veeamvm_overview-baremetal-server}
 
-You can install Veeam Backup and Replication 12.1 on a bare metal server. This installation is supported only for VMware vSphere® 7.0 with VMware NSX-T™.
+You can install Veeam Backup and Replication 12 on a bare metal server. This installation is supported only for VMware vSphere® 7.0 with VMware NSX-T™.
 
 * For {{site.data.keyword.rw}}, the Veeam bare metal server is the only option. For Security and Compliance Readiness Bundle, the Veeam bare metal server is the default option with a choice of switching to Veeam VM.
 * Veeam is always deployed on the management cluster.
@@ -62,7 +62,7 @@ The following components are ordered and included in the Veeam service.
 
 The following components are included if you deploy Veeam as a Windows Server VM on the management cluster:
 
-* VM with Veeam Backup and Replication 12.1 OS Add-on and Veeam Availability Suite™ 12
+* VM with Veeam Backup and Replication 12 OS Add-on and Veeam Availability Suite™ 12
 * Windows Server 2019 Standard Edition (64-bit)
 * 8 CPUs, 32 GB RAM
 * 100 GB disk (SAN)
@@ -72,7 +72,7 @@ The following components are included if you deploy Veeam as a Windows Server VM
 
 The following components are included if you deploy Veeam as a single public Windows VSI:
 
-* Single VSI with Veeam Backup and Replication 12.1 OS Add-on and Veeam Availability Suite 12
+* Single VSI with Veeam Backup and Replication 12 OS Add-on and Veeam Availability Suite 12
 * Windows Server 2019 Standard Edition (64-bit)
 * 4 x 2.0 GHz Cores
 * 8 CPUs, 32 GB RAM
@@ -84,7 +84,7 @@ The following components are included if you deploy Veeam as a single public Win
 
 The following components are included if you deploy Veeam on a bare metal server:
 
-* Bare metal server with Veeam Backup and Replication 12.1 OS Add-on and Veeam Availability Suite 12
+* Bare metal server with Veeam Backup and Replication 12 OS Add-on and Veeam Availability Suite 12
 * Windows Server 2019 Standard Edition (64-bit)
 * 2 x 2.2 GHz CPU
 * 64 GB RAM
@@ -139,7 +139,7 @@ When you order Veeam, you can optionally order a Linux hardened repository (LHR)
 See the following information:
 * [{{site.data.keyword.cr}} with Veeam architecture](/docs/vmwaresolutions?topic=vmwaresolutions-veeam-cr-sa-overview), which describes two solution architectures to help you with cyber-recovery.
 * [{{site.data.keyword.cr}} with Veeam guide](/docs/vmwaresolutions?topic=vmwaresolutions-veeam-cr-sag-overview), which describes how to create two cyber-recovery solution architectures.
-* [Hardened repository](https://helpcenter.veeam.com/docs/backup/vsphere/hardened_repository.html?ver=120){: external} in the Veeam Backup and Replication 12.1 - User Guide for VMware vSphere.
+* [Hardened repository](https://helpcenter.veeam.com/docs/backup/vsphere/hardened_repository.html?ver=120){: external} in the Veeam Backup and Replication 12 - User Guide for VMware vSphere.
 
 ### Networking for Veeam
 {: #veeamvm_overview-specs-networking}

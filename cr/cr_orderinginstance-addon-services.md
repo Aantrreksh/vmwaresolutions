@@ -19,7 +19,7 @@ subcollection: vmwaresolutions
 
 You can select various add-on services for {{site.data.keyword.cr}}.
 
-[Veeam Backup and Replication 12.1](/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview) is a required service, which is automatically included in the {{site.data.keyword.cr}} instance. A Linux® hardened repository is already chosen for you.
+[Veeam Backup and Replication](/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview) is a required service, which is automatically included in the {{site.data.keyword.cr}} instance. A Linux® hardened repository is already chosen for you.
 
 An edge gateway is required. This action provides the virtual air-gap and manages access to the isolated recovery environment. You can bring your own gateway appliance or choose from the following options:
    * Gateway cluster with Juniper® vSRX

@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2024
 
-lastupdated: "2024-07-02"
+lastupdated: "2024-09-11"
 
 subcollection: vmwaresolutions
 
@@ -19,7 +19,7 @@ This document describes the Veeam® components that are used in these solution a
 
 Pertinent details are taken from the following information sources and also introduce the Veeam components:
 
-* [Veeam Backup and Replication 12 user guide for VMware vSphere®](https://helpcenter.veeam.com/docs/backup/vsphere/overview.html?ver=120)
+* [Veeam Backup and Replication 12 user guide for VMware vSphere®](https://helpcenter.veeam.com/docs/backup/vsphere/overview.html?ver=120){: external}
 * [Veeam Backup and Replication best practices](https://bp.veeam.com/vbr/#veeam-backup--replication-best-practices){: external}
 
 ![Veeam components](../../images/veeam-cr-sa-veeam-components.svg){: caption="Figure 1. Veeam components" caption-side="bottom"}

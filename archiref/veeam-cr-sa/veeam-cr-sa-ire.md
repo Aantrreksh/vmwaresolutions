@@ -108,4 +108,4 @@ The internet repositories and services are resources that are used by the soluti
 * [Best practices for organizing resources and assigning access](/docs/account?topic=account-account_setup)
 * [Overview of VMware Solutions](/docs/vmwaresolutions?topic=vmwaresolutions-solution_overview)
 * [Veeam on bare metal server introduction](/docs/vmwaresolutions?topic=vmwaresolutions-veeam-bms-archi-intro)
-* [Veeam Backup and Replication 12 overview](/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview)
+* [Veeam Backup and Replication overview](/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview)

@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-07-17"
+lastupdated: "2024-09-11"
 
 keywords: planning cyber recovery, cyber recovery, cyber recovery instance
 
@@ -132,7 +132,7 @@ The following {{site.data.keyword.cloud_notm}} data centers are available for {{
 
 The following services and components are available for {{site.data.keyword.cr}} instances.
 
-* [Veeam Backup and Replication 12.1](/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview) (required) is included and a Linux hardened repository is selected for you.
+* [Veeam Backup and Replication](/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview) (required) is included and a Linux hardened repository is selected for you.
 * An edge gateway (required) provides the virtual air-gap and manages access to the isolated recovery environment. You can bring your own gateway appliance or choose from the following options:
    * Gateway cluster with Juniper® vSRX
    * Gateway cluster with FortiGate® Virtual Appliance

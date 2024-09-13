@@ -4,7 +4,7 @@ copyright:
 
   years: 2019, 2024
 
-lastupdated: "2024-09-06"
+lastupdated: "2024-09-13"
 
 keywords: release notes, what's new in VMware Solutions, what is new, new features, VMware Solutions release notes, VMware Solutions
 
@@ -27,7 +27,12 @@ Use these release notes to learn about updates to {{site.data.keyword.vmwaresolu
 
 
 
+### 13 September 2024
+{: #vmwaresolutions-sep1324}
+{: release-note}
 
+VMware Cloud Director Availability service for migrating workloads
+:   The VMware Cloud Director Availability (VCDA) service is a cost-effective solution to migrate your {{site.data.keyword.vm-shared}} workloads to the {{site.data.keyword.vcf-aas}} multitenant or single-tenant consumption model. For more information, see [Migrating workloads to {{site.data.keyword.vcf-aas}} with VCDA](/docs/vmware-service?topic=vmware-service-tenant-vcda).
 
 ### 16 August 2024
 {: #vmwaresolutions-aug1624}
