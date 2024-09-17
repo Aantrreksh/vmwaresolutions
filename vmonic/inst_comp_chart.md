@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-09-13"
+lastupdated: "2024-09-17"
 
 keywords: vmware offering, vmware solutions functions, function support
 
@@ -60,7 +60,7 @@ Review the following table to understand the differences in feature support for 
 | Caveonix pricing | Per VM | Per host |
 | Key encryption | Key Protect or Hyper Protect Crypto Services | Hyper Protect Crypto Services required |
 | Direct Link | Optional | Required for private only instances |
-| Backup | Veeam (opt out) | Veeam Backup and Replication 12 is required with option to remove on Day 2 |
+| Backup | Veeam (opt out) | Veeam Backup and Replication 12 or later is required with option to remove on Day 2 |
 | Veeam backup server | Optional (opt out) | Required with option to remove on Day 2 |
 | Disaster recovery | Veeam or Zerto | Veeam |
 | Migration | HCX, Zerto, or PrimaryIO Migrations | HCX (optional) |

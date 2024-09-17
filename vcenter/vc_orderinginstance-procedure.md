@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-09-04"
+lastupdated: "2024-09-17"
 
 keywords: automated instance, order automated, order automated instance
 
@@ -42,7 +42,7 @@ subcollection: vmwaresolutions
       * To add and configure the same settings to all file shares, specify the **Number of shares**, **Size (GB)**, and **Performance**.
    1. If you want to use vSAN™ storage, select the corresponding option.
       * Select the disk type and size for the vSAN capacity disks, the number of vSAN capacity disks, the disk size for vSAN cache disks, and the number of vSAN cache disks.
-      * By default, the **Enable vSAN deduplication and compression** checkbox is selected. If you do not want to enable vSAN deduplication and compression, clear the checkbox.
+      * If you want to **Enable vSAN deduplication and compression**, toggle its switch on.
    1. Specify the networking type.
    1. Select the uplink speed. The 25 Gb option is available only for specific pods and data center locations.
    1. Select the VLAN settings:

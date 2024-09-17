@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-09-13"
+lastupdated: "2024-09-17"
 
 keywords: Veeam 9.5, Veeam 9 overview, Veeam 9.5 deprecated
 
@@ -27,7 +27,7 @@ The Veeam service seamlessly integrates directly with your VMware hypervisors to
 ## Technical specifications for Veeam 9.5u4b
 {: #veeam_considerations-specs}
 
-The current Veeam version that is installed is Veeam Backup and Replication 12. The documentation about Veeam 9.5u4b is included for your information if you are using Veeam 9.5u4b.
+The current Veeam version that is installed is Veeam Backup and Replication 12.2. The documentation about Veeam 9.5u4b is included for your information if you are using Veeam 9.5u4b.
 {: note}
 
 The following components are in the Veeam 9.5u4b service:

@@ -4,7 +4,7 @@ copyright:
 
   years: 2019, 2024
 
-lastupdated: "2024-09-13"
+lastupdated: "2024-09-17"
 
 keywords: release notes, what's new in VMware Solutions, what is new, new features, VMware Solutions release notes, VMware Solutions
 
@@ -26,6 +26,13 @@ Use these release notes to learn about updates to {{site.data.keyword.vmwaresolu
 {: #year-2024}
 
 
+
+### 17 September 2024
+{: #vmwaresolutions-sep1724}
+{: release-note}
+
+Veeam 12.2 add-on service upgrade
+:   Veeam Backup and Replication 12.2 (Veeam 12.2) add-on service is now available for deployment.
 
 ### 13 September 2024
 {: #vmwaresolutions-sep1324}

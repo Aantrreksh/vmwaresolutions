@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2024
 
-lastupdated: "2024-08-12"
+lastupdated: "2024-09-17"
 
 keywords: Veeam, Veeam standalone license, order Veeam standalone license
 
@@ -22,7 +22,7 @@ You can order a Veeam® stand-alone license without associating it to any {{site
 ## Considerations for installing and deleting Veeam licenses
 {: #managingveeam-install-delete-consid}
 
-The following information about licenses applies to both Veeam 12.1.2 and Veeam 9.5u4b.
+The following information about licenses applies to both Veeam 12.2 and Veeam 9.5u4b.
 
 For Veeam 10 and later versions, Veeam licenses are installed and deleted in a different way than previous Veeam versions.
 

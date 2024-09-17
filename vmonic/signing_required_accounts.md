@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2024
 
-lastupdated: "2024-07-15"
+lastupdated: "2024-09-16"
 
 keywords: user account, ibm cloud account, ibm cloud infrastructure
 
@@ -70,7 +70,7 @@ Your {{site.data.keyword.cloud_notm}} infrastructure account must be a VRF (Virt
 
 For more information, see the following procedures:
 * [Virtual routing and forwarding on {{site.data.keyword.cloud_notm}}](/docs/direct-link?topic=direct-link-overview-of-virtual-routing-and-forwarding-vrf-on-ibm-cloud)
-* [Converting your account to VRF](/docs/vpc?topic=vpc-setting-up-access-to-classic-infrastructure&interface=ui#vrf-conversion)
+* [Converting your account to VRF](/docs/account?topic=account-vrf-service-endpoint&interface=ui#vrf)
 * [Enabling service endpoints](/docs/account?topic=account-vrf-service-endpoint#service-endpoint)
 
 ## Related links

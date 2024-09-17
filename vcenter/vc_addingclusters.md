@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2024
 
-lastupdated: "2024-08-28"
+lastupdated: "2024-09-17"
 
 keywords: automated add clusters, add cluster, automated cluster
 
@@ -393,7 +393,7 @@ You can also add the provisioned resources to the {{site.data.keyword.cloud_notm
 
       If you want more storage, check the **High performance with Intel Optane** box.
 
-      By default, the **Enable vSAN deduplication and compression** box is selected. If you do not want to enable vSAN deduplication and compression, clear the checkbox.
+      If you want to **Enable vSAN deduplication and compression**, toggle its switch on.
 
 6. For gateway clusters, complete the following configuration.
    1. For data center location, click the **Edit** icon ![Edit icon](../../icons/edit-tagging.svg "Edit") and select the geography, data center, and pod to host the cluster.

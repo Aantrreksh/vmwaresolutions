@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2024
 
-lastupdated: "2024-09-12"
+lastupdated: "2024-09-17"
 
 subcollection: vmwaresolutions
 
@@ -49,7 +49,7 @@ It is possible to manually add and allow the existing {{site.data.keyword.filest
 
 {{site.data.keyword.vcf-auto-short}} offers an optional service for Veeam. The Veeam service seamlessly integrates directly with your VMware® hypervisors and you control both the backup and restore of all virtual machines (VMs) for your infrastructure directly from the Veeam console.
 
-The current Veeam version that is installed by automation is Veeam Backup and Replication 12, but you might have an older version in your NSX-V based deployment. You can use Veeam's replication capabilities during the migration.
+The current Veeam version that is installed by automation is Veeam Backup and Replication 12.2, but you might have an older version in your NSX-V based deployment. You can use Veeam's replication capabilities during the migration.
 
 For more information, see [Ordering services for {{site.data.keyword.vcf-auto-short}} instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices) and [Veeam technical documentation](https://www.veeam.com/support/help-center-technical-documentation.html?ad=in-text-link){: external}.
 

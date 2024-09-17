@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-08-12"
+lastupdated: "2024-09-17"
 
 keywords: flexible order instances, order flexible, order vmaware vSphere instance
 
@@ -44,7 +44,7 @@ subcollection: vmwaresolutions
 1. If you selected the **VMware vSAN** component, complete the vSAN™ storage configuration.
    * If you want more storage, select the **High performance with Intel Optane** checkbox.
    * Specify the disk types for the capacity and cache disks, and the number of disks.
-   * By default, the **Enable vSAN deduplication and compression** checkbox is selected. If you do not want to enable vSAN deduplication and compression, clear the checkbox.
+   * If you want to **Enable vSAN deduplication and compression**, toggle its switch on.
 1. Complete the network interface settings:
    1. Enter the hostname prefix and domain name.
    1. Select the network setting of either **Public and private network** or **Private network only**.
