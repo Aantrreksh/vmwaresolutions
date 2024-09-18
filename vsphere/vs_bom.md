@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-08-12"
+lastupdated: "2024-09-18"
 
 keywords: vsphere BOM, bill of materials vsphere, BOM, flexible
 
@@ -15,7 +15,7 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# {{site.data.keyword.vcf-flex-short}} BOM
+# BOM for {{site.data.keyword.vcf-flex-short}}
 {: #vs_bom}
 
 The following table details the Bill of Materials (BOM) information for VMware vSphere® software components.

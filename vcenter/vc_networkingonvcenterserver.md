@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-04-25"
+lastupdated: "2024-09-18"
 
 keywords: vcf automated networking, networking components, networking vcf classic
 
@@ -15,12 +15,12 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Networking considerations for Automated instances
+# Networking considerations for {{site.data.keyword.vcf-auto-short}}
 {: #vc_networkingonvcenterserver}
 
 Review the following information for details about networking considerations and requirements for your {{site.data.keyword.vcf-auto}} instances. Ensure that you meet the requirements so that your instance functions properly.
 
-## Networking components for Automated instances
+## Networking components for {{site.data.keyword.vcf-auto-short}}
 {: #vc_networkingonvcenterserver-networking-components}
 {: faq}
 

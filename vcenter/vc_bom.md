@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-08-12"
+lastupdated: "2024-09-18"
 
 keywords: automated instances bom, bill materials vcf classic, vcf bom
 
@@ -14,7 +14,7 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# {{site.data.keyword.vcf-auto-short}} BOM
+# BOM for {{site.data.keyword.vcf-auto-short}}
 {: #vc_bom}
 
 Review the Bill of Materials (BOM) information for {{site.data.keyword.vcf-auto}} instances.

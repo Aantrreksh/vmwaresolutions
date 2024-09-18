@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-05-02"
+lastupdated: "2024-09-18"
 
 keywords: vcf automated compliance, compliance info, vcf automated policy
 
@@ -15,12 +15,12 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Compliance information for {{site.data.keyword.vcf-auto-short}} instances
+# Compliance information for {{site.data.keyword.vcf-auto-short}}
 {: #vc_compl_info}
 
 Review the following information for details about compliance for {{site.data.keyword.vcf-auto}} instances.
 
-## Customer versus IBM responsibility for Automated instances
+## Customer versus IBM responsibility for {{site.data.keyword.vcf-auto-short}}
 {: #vc_compl_info-responsibility}
 
 The following diagram provides details about the customer (you) and {{site.data.keyword.IBM}} responsibilities for compliance activities.

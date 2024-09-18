@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-08-12"
+lastupdated: "2024-09-18"
 
 keywords: vcf flexible, vcf for classic flexible, tech specs flexible instances
 
@@ -14,7 +14,7 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# {{site.data.keyword.vcf-flex-short}} overview
+# Overview of {{site.data.keyword.vcf-flex-short}}
 {: #vs_vsphereoverview}
 
 {{site.data.keyword.vcf-flex}} is a streamlined and optimized ordering platform for VMware®. With this platform, you can build your own {{site.data.keyword.IBM}}-hosted VMware environment by customizing and ordering the VMware-compatible hardware based on your selected VMware components.
@@ -26,7 +26,7 @@ The {{site.data.keyword.vmwaresolutions_full}} console filters the hardware auto
 
 Use this offering to create a new instance of VMware ESXi™ servers or scale out an existing instance of ESXi servers in an {{site.data.keyword.cloud_notm}} data center. Depending on the VMware components that you select, you can start with just one ESXi server and then scale the instance later as needed.
 
-## Technical specifications for Flexible instances
+## Technical specifications for {{site.data.keyword.vcf-flex-short}}
 {: #vs_vsphereoverview-specs}
 
 Review the components for {{site.data.keyword.vcf-flex-short}} instances.
@@ -81,7 +81,7 @@ User-customized storage for vSAN configuration when the VMware vSAN component is
    3.8 TB SSD (Solid-State Disk) drives are supported when they are made available in a data center.
    {: note}
 
-## Technical specifications for expansion nodes for {{site.data.keyword.vcf-flex-short}} instances
+## Technical specifications for expansion nodes for {{site.data.keyword.vcf-flex-short}}
 {: #vs_vsphereoverview-expansion-node-specs}
 
 Each {{site.data.keyword.vcf-flex-short}} instance expansion node deploys and incurs charges for the following components in your {{site.data.keyword.slportal}} account.

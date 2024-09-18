@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-07-17"
+lastupdated: "2024-09-18"
 
 keywords: vcf automated, vcf classic architecture, tech specs vmware cloud foundation
 
@@ -14,7 +14,7 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# {{site.data.keyword.vcf-auto-short}} overview
+# Overview of {{site.data.keyword.vcf-auto-short}}
 {: #vc_vcenterserveroverview}
 
 {{site.data.keyword.vcf-auto}} is a hosted private cloud that delivers the {{site.data.keyword.vcf-flex}} stack as a service. The VMware® environment is built in addition to a minimum of three {{site.data.keyword.cloud}} bare metal servers and it offers shared network-attached storage and dedicated software-defined storage options. It also includes the automatic deployment and configuration of an easy-to-manage logical edge firewall, which VMware NSX® powers.
@@ -24,7 +24,7 @@ In many cases, the entire environment can be provisioned in less than a day and 
 
 After initial instance deployment, you can increase shared storage by ordering more Network File System (NFS) file shares from the {{site.data.keyword.slportal}}. You can attach them manually to all VMware ESXi™ servers in a cluster. You can also take advantage of VMware vSAN™ as a storage option. To increase the vSAN-based storage capacity of a vSAN cluster, you can add more ESXi servers post-deployment.
 
-## {{site.data.keyword.vcf-auto-short}} architecture
+## Architecture of {{site.data.keyword.vcf-auto-short}}
 {: #vc_vcenterserveroverview-nsx-t-archi}
 
 The following graphic depicts the high-level architecture and components of a three node {{site.data.keyword.vcf-auto-short}} deployment.
@@ -65,7 +65,7 @@ The remaining host capacity for your virtual machines (VMs) depends on several f
 
 For more information about the architecture, see [Overview of VMware Solutions](/docs/vmwaresolutions?topic=vmwaresolutions-solution_overview).
 
-## Technical specifications for {{site.data.keyword.vcf-auto-short}} instances
+## Technical specifications for {{site.data.keyword.vcf-auto-short}}
 {: #vc_vcenterserveroverview-specs}
 
 The availability and pricing of standardized hardware configurations might vary based on the {{site.data.keyword.cloud_notm}} data center that is selected for deployment.
@@ -139,7 +139,7 @@ The vSAN option offers customized configurations, with various options for disk 
    3.8 TB SSD (solid-state disk) drives are supported when they are made available in a data center.
    {: note}
 
-## Technical specifications expansion nodes for {{site.data.keyword.vcf-auto-short}} instances
+## Technical specifications for expansion nodes for {{site.data.keyword.vcf-auto-short}}
 {: #vc_vcenterserveroverview-expansion-node-specs}
 
 Each expansion node deploys and incurs charges for the following components in your {{site.data.keyword.cloud_notm}} account.

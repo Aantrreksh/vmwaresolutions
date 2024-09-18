@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-08-14"
+lastupdated: "2024-09-18"
 
 keywords: planning vcf classic, data center, vcf automated data centers
 
@@ -14,7 +14,7 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Planning for Automated instances
+# Planning for {{site.data.keyword.vcf-auto-short}}
 {: #vc_planning}
 
 Plan your instance based on the {{site.data.keyword.cloud}} data center location, your workload capacity requirements, and add-on services requirements. Review the following requirements before you order your {{site.data.keyword.vcf-auto}} instance.
