@@ -27,6 +27,8 @@ Use these release notes to learn about updates to {{site.data.keyword.vmwaresolu
 
 
 
+
+
 ### 17 September 2024
 {: #vmwaresolutions-sep1724}
 {: release-note}
