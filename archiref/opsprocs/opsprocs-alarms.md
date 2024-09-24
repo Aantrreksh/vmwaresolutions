@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-07-16"
+lastupdated: "2024-09-23"
 
 subcollection: vmwaresolutions
 
@@ -105,7 +105,7 @@ The following table describes the standard preconfigured alarms.
 
 | Alarm name | Guidance | Details |
 |:---------- |:-------- |:------- |
-| Host connection and power state | Configure to send an email one time when set to Not Responding or Standby. | [Alarms about the host connection state changing from green to red frequently occur (1020210)](https://knowledge.broadcom.com/external/article?legacyId=1020210){: external} |
+| Host connection and power state | Configure to send an email one time when set to Not Responding or Standby. | ["Host connection and power state" alarm when an ESXi host wakes from standby](https://knowledge.broadcom.com/external/article?articleNumber=322793){: external} |
 | Host CPU usage | Configure to send an email one time when host CPU usage > 90% for 5 mins. | [Knowledge - KB0012707 v0.01](https://watson.service-now.com/nav_to.do?uri=kb_knowledge.do?sys_id=342e3d6adbc5730030c93a1b7c961976){: external} |
 | Host memory usage | Configure to send an email one time when host memory usage > 95% for 5 mins. | [Knowledge - KB0012712 v0.01](https://watson.service-now.com/nav_to.do?uri=kb_knowledge.do?sys_id=30110ee2db49730030c93a1b7c96194f){: external} |
 | Virtual machine CPU usage | Configure to send an email one time when VM CPU usage > 90% for 5 mins for critical appliances. | [Virtual machine CPU usage alarm (2057830)](https://knowledge.broadcom.com/external/article?legacyId=2057830){: external} |
@@ -137,7 +137,7 @@ The following table describes the standard preconfigured alarms.
 | Host Baseboard Management Controller status | Configure to send an email one time when monitor changes from green to red. | [Contact IBM Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support) |
 | Host error * | Configure to send an email one time when monitor changes to error. | [Contact IBM Support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support) |
 | Virtual machine error * | Configure to send email one time when critical for critical appliances. | [Troubleshooting virtual machines](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.vm_admin.doc/GUID-EE645240-83CA-4F9E-B2F7-BECE864982C3.html){: external} |
-| Host connection failure * | Configure to send an email one time when the event is `Cannot connect host - network error` or `Cannot connect host - timeout` or `Host connection lost`zs. | [Alarms about the host connection state changing from green to red frequently occur (1020210)](https://knowledge.broadcom.com/external/article?legacyId=1020210){: external} |
+| Host connection failure * | Configure to send an email one time when the event is `Cannot connect host - network error` or `Cannot connect host - timeout` or `Host connection lost`zs. | ["Host connection and power state" alarm when an ESXi host wakes from standby](https://knowledge.broadcom.com/external/article?articleNumber=322793){: external} |
 | Unmanaged workload detected on SIOC-enabled datastore | Not configured as it is not service impacting. | [Unmanaged workload is detected on datastore running SIOC (1020651)](https://knowledge.broadcom.com/external/article?legacyId=1020651){: external} |
 | Thin-provisioned volume capacity threshold exceeded | Not configured in {{site.data.keyword.vcf-auto-short}} instances as they do not support VASA storage. | No additional information |
 | Datastore capability alarm | Not configured in {{site.data.keyword.vcf-auto-short}} instances as they do not support VASA storage. | No additional information |
