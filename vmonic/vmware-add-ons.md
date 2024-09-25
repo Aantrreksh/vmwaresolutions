@@ -4,7 +4,7 @@ copyright:
 
   years:  2024
 
-lastupdated: "2024-07-24"
+lastupdated: "2024-09-25"
 
 keywords: vmware add-ons, firewall add-ons, vsan add-on, vmware avi add-on
 
@@ -64,7 +64,7 @@ The vSAN add-on is priced at $21 per TiB of vSAN per month. Discounts are availa
 
 You can order the VMware add-ons from the {{site.data.keyword.cloud_notm}} console. Later, this process will provide license keys that you can install on VMware NSX. Currently, these keys are not available or required.
 
-1. Click **Classic Infrastructure** from the left navigation menu.
+1. Click **Infrastructure > Classic Infrastructure** from the left navigation menu.
 2. Click **Manage > VMware licenses**.
 3. Order the VMware add-on.
 

@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2024
 
-lastupdated: "2024-06-12"
+lastupdated: "2024-09-25"
 
 subcollection: vmwaresolutions
 
@@ -33,7 +33,7 @@ Before you can start the build process to install the {{site.data.keyword.redhat
 {: #openshift-runbook-runbook-prereq-cloud-subnets}
 
 1. Log in to the [{{site.data.keyword.vmwaresolutions_short}} console](https://cloud.ibm.com/vmware).
-2. Select **Classic Infrastructure>Network>IP management>Subnets**.
+2. Click **Infrastructure > Classic Infrastructure > Network > IP management > Subnets** from the left navigation menu.
 3. Click **Order IP Subnets**.
 
 Review the following requirements.
