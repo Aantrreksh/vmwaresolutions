@@ -4,7 +4,7 @@ copyright:
 
   years:  2024
 
-lastupdated: "2024-07-05"
+lastupdated: "2024-09-27"
 
 subcollection: vmwaresolutions
 
@@ -18,7 +18,7 @@ subcollection: vmwaresolutions
 
 This architecture pattern describes how to use {{site.data.keyword.cloud}} Security and Compliance Center Workload Protection with an {{site.data.keyword.vcf-vpc}} deployment in VPC (Virtual Private Cloud).
 
-Security and Compliance Center Workload Protection offers functions to protect your Microsoft Windows® and Linux® virtual machines (VMs) that are hosted on your VMware® environment. These functions include compliance, vulnerability scanning, and threat detection. For more information, see [Key features of {{site.data.keyword.cloud_notm}} Security and Compliance Center Workload Protection](/docs/workload-protection?topic=workload-protection-key-features).
+Security and Compliance Center Workload Protection offers functions to protect your Microsoft Windows® and Linux® virtual machines (VMs) that are hosted on your VMware® environment. These functions include compliance, vulnerability scanning, and threat detection.
 
 Currently, only the threat detection feature is available for Windows VMs.
 {: restriction}
@@ -35,7 +35,7 @@ After you provision an instance of the Security and Compliance Center Workload P
 
 {{site.data.keyword.cloud_notm}} Security and Compliance Center Workload Protection enables the following three practices for your VMware workloads:
 
-* Threat detection - Threat detection is managed by defining policies, which consist of rules to detect and respond to security violations, suspicious behavior, or anomalous activities within your Windows and Linux VMs. Security and Compliance Center Workload Protection provides customizable, prebuilt policies, which are created and maintained by Sysdig’s Threat Research team. These policies can detect and prevent various security threats, such as: malware, intrusions, and DDoS attacks. The results of these policies can be viewed in Insights and Events. For more information, see [About Insights](/docs/workload-protection?topic=workload-protection-insights) and [Secure Events](https://docs.sysdig.com/en/docs/sysdig-secure/secure-events/){: external}.
+* Threat detection - Threat detection is managed by defining policies, which consist of rules to detect and respond to security violations, suspicious behavior, or anomalous activities within your Windows and Linux VMs. Security and Compliance Center Workload Protection provides customizable, prebuilt policies, which are created and maintained by Sysdig’s Threat Research team. These policies can detect and prevent various security threats, such as: malware, intrusions, and DDoS attacks. The results of these policies can be viewed in Events. For more information, see [Secure Events](https://docs.sysdig.com/en/docs/sysdig-secure/secure-events/){: external}.
 * Vulnerabilities - Security and Compliance Center Workload Protection provides a highly accurate view of the vulnerability risks of your Linux VMs. The views include rich details on your vulnerability risks, such as: CVSS vector, score, fix age, and insights from multiple expert feeds including the NIST National Vulnerability Database (NVD) and VulnDB.
 * Compliance - Posture management provides the framework that includes controls, guidelines, benchmarks, and standards for managing compliance. With Security and Compliance Center Workload Protection, you can evaluate your Linux VMs against several CIS benchmarks such as CIS Distribution Independent Linux Benchmark and compliance policies. For more information, see [Analyzing compliance postures from detection to remediation](/docs/workload-protection?topic=workload-protection-compliance). Typical use cases include:
    * Check the current compliance status against predefined policies to understand the magnitude of the compliance gap.

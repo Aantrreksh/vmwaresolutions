@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2024
 
-lastupdated: "2024-05-22"
+lastupdated: "2024-09-26"
 
 keywords: vmware solutions shared, get started shared, tech specs shared
 
@@ -478,7 +478,7 @@ Add a NAT rule for translating internal network addresses into the service netwo
 5. Complete the following configuration in the **Add NAT Rule** window:
    1. Enter a name for the NAT rule.
    2. Select `SNAT` in the **Interface Type** field.
-   3. In the **External IP** field, click the information icon to view the available IP addresses and enter the service IP address that you want to use.
+   3. In the **External IP** field, click the information icon to view the available IP addresses and enter the external IP address that you want to use.
    4. In the **Internal IP** field, enter the internal IP address, including the CIDR to be translated. Typically, a subnet from the `RFC1918` private range is best, but not required. For example, `192.168.10.0/24`.
 6. Verify the **Advanced Settings** fields and click **Save**.
 
