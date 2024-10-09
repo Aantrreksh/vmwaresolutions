@@ -34,7 +34,7 @@ Use these release notes to learn about updates to {{site.data.keyword.vmwaresolu
 BOM updates for {{site.data.keyword.vcf-classic-short}}
 :   The following updates are applied to newly deployed {{site.data.keyword.vcf-classic}} instances, clusters, and hosts:
 
-   VMware vCenter Server® Appliance
+   * VMware vCenter Server® Appliance
       * 8.0 Update 3b (build 24262322)
       * 7.0 Update 3s (build 24201990)
 
