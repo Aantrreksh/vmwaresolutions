@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2024
 
-lastupdated: "2024-06-11"
+lastupdated: "2024-10-03"
 
 subcollection: vmwaresolutions
 
@@ -50,7 +50,7 @@ In this deployment model, you extend your existing AD forest from on-premises to
 * Domain controllers in {{site.data.keyword.cloud_notm}} are handling both accounts and resources.
 * More resilient to network connectivity issues.
 
-In this model, the customer provisions a minimum of two domain controllers as VMs hosted in each vCenter Server instance. These VMs would be connected to an overlay network and the new domain controllers would have the primary domain controller role for the child domain. All user credentials, service accounts, and resource objects are on in this {{site.data.keyword.vmwaresolutions_short}} workload child domain that is hosted on these domain controllers. However, because of the two-way trust inherent in the parent-child relationship, the child domain resource objects can be accessed by using the users in the parent domain and vice versa. Network connectivity is required between your data center and IBM for initial and on-going replication of data between the domain controllers. The following diagram shows the Active Directory Domain Services topology for this extended forest with new child domain model.
+In this model, the customer provisions a minimum of two domain controllers as VMs hosted in each vCenter Server instance. These VMs would be connected to an overlay network and the new domain controllers would have the primary domain controller role for the child domain. All user credentials, service accounts, and resource objects are on in this {{site.data.keyword.vmwaresolutions_short}} workload child domain that is hosted on these domain controllers. However, because of the two-way trust inherent in the parent-child relationship, the child domain resource objects can be accessed by using the users in the parent domain and the parent domain resource objects can be accessed by using the users in the child domain. Network connectivity is required between your data center and IBM for initial and ongoing replication of data between the domain controllers. The following diagram shows the Active Directory Domain Services topology for this extended forest with new child domain model.
 
 ![Extend forest and create new domain diagram](../../images/adds-extendforest.svg "Extend forest and create new domain diagram"){: caption="Figure 3. Extend forest and create new domain diagram" caption-side="bottom"}
 

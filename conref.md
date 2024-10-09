@@ -3,7 +3,7 @@
 copyright:
   years: 2022, 2024
 
-lastupdated: "2024-08-27"
+lastupdated: "2024-10-04"
 
 keywords: IBM Cloud for VMware Solutions, getting started, vmware solutions offerings, services for vmwaresolutions, vmwaresolutions use cases
 
@@ -290,13 +290,17 @@ Select whether to order a new primary instance or a secondary instance for an ex
 
 CONTENT:
 
-* If you are planning to use NFS storage, you can order 3-51 servers.
 * If you are planning to use vSAN™ storage, you can order 4-51 servers.
+
+
+* If you are planning to use NFS storage, you can order 3-51 servers.
 * All servers that you order have the same configuration.
 {: #number-of-baremetal-servers-consol}
 
-* If you are planning to use NFS storage, you can order 2-59 servers.
 * If you are planning to use vSAN™ storage, you can order 4-59 servers.
+
+
+* If you are planning to use NFS storage, you can order 2-59 servers.
 * All servers that you order have the same configuration.
 {: #number-of-baremetal-servers-wkld}
 
@@ -375,5 +379,3 @@ As of 28 March 2024, the {{site.data.keyword.at_full_notm}} service is deprecate
 As of 28 March 2024, the {{site.data.keyword.la_full_notm}} service is deprecated and will no longer be supported as of 30 March 2025. Customers will need to migrate to {{site.data.keyword.logs_full_notm}} before 30 March 2025. During the migration period, customers can use {{site.data.keyword.la_full_notm}} along with {{site.data.keyword.logs_full_notm}}. Logging is the same for both services. For information about migrating from {{site.data.keyword.la_full_notm}} to {{site.data.keyword.logs_full_notm}} and running the services in parallel, see [migration planning](/docs/cloud-logs?topic=cloud-logs-migration-intro).
 {: important}
 {: #impnote-la-deprecation}
-
-

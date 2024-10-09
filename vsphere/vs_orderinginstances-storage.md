@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-08-28"
+lastupdated: "2024-10-01"
 
 keywords: flexible order instance, order vSphere, order flexible instance
 
@@ -43,6 +43,8 @@ vSAN storage depends on the number of servers and your total disk capacity, and 
 
 The amount of storage reduction from deduplication and compression depends on many factors, including the type of data stored and the number of duplicate blocks. Larger disk groups tend to provide a higher deduplication ratio. For more information, see [Using deduplication and compression](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.vsan.doc/GUID-3D2D80CC-444E-454E-9B8B-25C3F620EFED.html){: external}.
 {: note}
+
+
 
 ## Related links
 {: #vs_orderinginstances-storage-related}

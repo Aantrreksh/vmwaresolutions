@@ -4,9 +4,9 @@ copyright:
 
   years:  2023, 2024
 
-lastupdated: "2024-04-09"
+lastupdated: "2024-10-09"
 
-keywords: FAQ, license, BYOL
+keywords: FAQ, license, licensing
 
 subcollection: vmwaresolutions
 
@@ -38,9 +38,27 @@ This discrepancy is a result of VMware Aria Operations keys that are created for
 
 The discrepancy does not indicate any service or licensing problem for VMware Aria Operations and VMware Aria Operations™ for Logs. The service is fully licensed for all VMs on each vCenter Server host and continues to work properly.
 
+## Where can I find more details about the Bridge Licensing Program?
+{: #faq_licensing-bridge}
+{: faq}
+
+This program is limited to pre-approved customers. For more information, contact your {{site.data.keyword.IBM}} Sales representative.
+{: restriction}
+
+If you are currently using this program, you can open a support case by following these steps:
+
+1. Go to the {{site.data.keyword.cloud_notm}} [Support Center](/unifiedsupport/supportcenter).
+2. Log in with your **IBMid** account.
+3. In the **Contact Support** section, click **Create a case**.
+4. Under **Topic**, select **IBM Cloud On-Prem Bridge Licensing for VMware Cloud Foundation**.
+5. Under **Subtopic**, select a subtopic that best fits your needs.
+6. Complete all the required fields, upload any attachments, and click **Next**.
+
+Your case is opened and will be reviewed by the {{site.data.keyword.IBM_notm}} Support team.
+
 ## Related links
 {: #faq_licensing-related}
 
-* [FAQ about BYOL for VMware](/docs/vmwaresolutions?topic=vmwaresolutions-faq_byol)
 * [Accessing the console](/docs/vmwaresolutions?topic=vmwaresolutions-loginmethod)
 * [Getting help and support](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_support)
+* [Creating a support case](/docs/get-support?topic=get-support-open-case&interface=ui#creating-support-case)

@@ -4,7 +4,7 @@ copyright:
 
   years: 2024
 
-lastupdated: "2024-08-22"
+lastupdated: "2024-10-07"
 
 keywords: vCenter upgrade, NSX upgrade, PSC upgrade, vcenter 8
 
@@ -95,6 +95,8 @@ Complete the following requirements before you begin the upgrade:
 
 ## Procedure to migrate from vSphere 7.0 to vSphere 8.0
 {: #vc_vcs_80_upgrade-procedure-vsphere}
+
+
 
 You cannot migrate a vSAN cluster to vSphere 8.0.
 {: important}

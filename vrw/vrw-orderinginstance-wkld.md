@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2024
 
-lastupdated: "2024-05-20"
+lastupdated: "2024-10-04"
 
 keywords: regulated workloads, regulated workloads order instance, order regulated workloads, regulated workloads instances
 
@@ -33,10 +33,19 @@ By default, the workload cluster name is set to **vrw-_xx_-workload**.
 * For the **Medium** capacity, you get a Cascade Lake server with 32 cores, 2.3 GHz, and 384 GB RAM.
 * For the **Large** capacity, you get a Cascade Lake server with 48 cores, 2.4 GHz, and 768 GB RAM.
 
+
+
+
+
+
+
+
+
 ## Number of bare metal servers
 {: #vrw-orderinginstance-wkld-bare-metal}
 
 You can order 4-59 servers. All servers have the same configuration.
+
 
 ## vSAN configuration
 {: #vrw-orderinginstance-wkld-vsan}
@@ -45,6 +54,20 @@ You can order 4-59 servers. All servers have the same configuration.
 * If you are a BYOL user, provide your own vSAN license key. Toggle the **BYOL** switch to **Enabled** and enter your license key.
 
    {{site.data.content.attnnote-byol}}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## Estimated resources available per cluster
 {: #vrw-orderinginstance-wkld-est}

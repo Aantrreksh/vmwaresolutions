@@ -1,73 +1,56 @@
 {
-    "title": "VMware Solutions docs",
-    "lastupdated": "2024-09-17",
-    "introduction": "VMware Solutions is a group of IBM Cloud offerings that provide deployment and management of VMware® by Broadcom virtualized environments. Learn how to make the most of your VMware Solutions experience by using the user documentation, REST API documentation reference, solution architectures, and solution guides.",
-    "section_devtools": {
-      "api": "/docs?tab=api-docs&category=compute&subCategory=vmwaresolutions"
+  "title": "VMware Solutions docs",
+  "lastupdated": "2024-10-09",
+  "introduction": "VMware Solutions is a group of IBM Cloud offerings that provide deployment and management of VMware® by Broadcom virtualized environments. Learn how to make the most of your VMware Solutions experience by using the user documentation, REST API documentation reference, solution architectures, and solution guides.",
+  "section_devtools": {
+    "api": "/docs?tab=api-docs&category=compute&subCategory=vmwaresolutions"
+  },
+  "section_recommended": [
+    {
+      "title": "Getting started with VMware Solutions",
+      "description": "Get familiar with the process of ordering an instance and some services for it.",
+      "href": "/docs/vmwaresolutions?topic=vmwaresolutions-getting-started"
     },
-    "section_recommended": [
-      {
-        "title": "Getting started with VMware Solutions",
-        "description": "Get familiar with the process of ordering an instance and some services for it.",
-        "href": "/docs/vmwaresolutions?topic=vmwaresolutions-getting-started"
-      },
-      {
-        "title": "Signing up for required accounts",
-        "description": "Sign up for an IBM Cloud account and an IBM Cloud infrastructure account.",
-        "href": "/docs/vmwaresolutions?topic=vmwaresolutions-signing_required_accounts"
-      },
-      {
-        "title": "Accessing the VMware Solutions console",
-        "description": "Review the entry points into the IBM Cloud for VMware Solutions console.",
-        "href": "/docs/vmwaresolutions?topic=vmwaresolutions-loginmethod"
-      },
-      {
-        "title": "Setting up your environment for your first order",
-        "description": "Ensure that your environment is ready for your order.",
-        "href": "/docs/vmwaresolutions?topic=vmwaresolutions-completing_checklist"
-      }
-    ],
-    "section_videos": [
-      {
-        "title": "IBM Cloud for VMware Solutions",
-        "href": "https://mediacenter.ibm.com/id/1_7o8hw0kz",
-        "thumbnail": "/images/thumbnails/ibm-cloud-vmware-solutions-thumbnail.jpg"
-      },
-      {
-        "title": "Veeam on IBM Cloud",
-        "href": "https://www.youtube.com/watch?v=xtVnAhgtSI0",
-        "thumbnail": "/images/thumbnails/veeam-on-ibm-cloud-thumbnail.jpg"
-      },
-      {
-        "title": "Zerto on IBM Cloud",
-        "href": "https://mediacenter.ibm.com/id/1_eb2k7077",
-        "thumbnail": "/images/thumbnails/zerto-on-ibm-cloud-thumbnail.jpg"
-      }
-    ],
-    "section_learn": {
-      "developer": "https://developer.ibm.com/depmodels/cloud/",
-      "architecture": "https://www.ibm.com/architectures",
-      "training": "https://www.ibm.com/training/cloud",
-      "community": "https://community.ibm.com/community/user/cloud/home"
+    {
+      "title": "Signing up for required accounts",
+      "description": "Sign up for an IBM Cloud account and an IBM Cloud infrastructure account.",
+      "href": "/docs/vmwaresolutions?topic=vmwaresolutions-signing_required_accounts"
     },
-    "section_updates": {
-      "view_more": "/docs/vmwaresolutions?topic=vmwaresolutions-vmwaresolutions-relnotes",
-      "tiles": [
-        {
-          "date": "17 September 2024",
-          "title": "Veeam 12.2 add-on service upgrade",
-          "description": "Veeam Backup and Replication 12.2 (Veeam 12.2) add-on service is now available for deployment."
-        },
-        {
-          "date": "13 September 2024",
-          "title": "VMware Cloud Director Availability service for migrating workloads",
-          "description": "The VMware Cloud Director Availability (VCDA) service is a cost-effective solution to migrate your VMware Shared workloads to the VCF as a Service multitenant or single-tenant consumption model."
-        },
-        {
-          "date": "16 August 2024",
-          "title": "vSphere 8 support",
-          "description": "VMware vSphere® 8.0 is available for new NFS clusters (consolidated and workload), for new gateway clusters, and for new hosts that belong to NFS clusters. For instances with VMware vCenter Server® 8, you can use either vSphere 8 or vSphere 7 for new clusters and hosts. For instances with vCenter Server® 7, you can use only vSphere 7."
-        }
-      ]
+    {
+      "title": "Accessing the VMware Solutions console",
+      "description": "Review the entry points into the IBM Cloud for VMware Solutions console.",
+      "href": "/docs/vmwaresolutions?topic=vmwaresolutions-loginmethod"
+    },
+    {
+      "title": "Setting up your environment for your first order",
+      "description": "Ensure that your environment is ready for your order.",
+      "href": "/docs/vmwaresolutions?topic=vmwaresolutions-completing_checklist"
     }
-  }
+  ],
+  "section_videos": [
+    {
+      "title": "IBM Cloud for VMware Solutions",
+      "href": "https://mediacenter.ibm.com/id/1_7o8hw0kz",
+      "thumbnail": "/images/thumbnails/ibm-cloud-vmware-solutions-thumbnail.jpg"
+    },
+    {
+      "title": "Veeam on IBM Cloud",
+      "href": "https://www.youtube.com/watch?v=xtVnAhgtSI0",
+      "thumbnail": "/images/thumbnails/veeam-on-ibm-cloud-thumbnail.jpg"
+    },
+    {
+      "title": "Zerto on IBM Cloud",
+      "href": "https://mediacenter.ibm.com/id/1_eb2k7077",
+      "thumbnail": "/images/thumbnails/zerto-on-ibm-cloud-thumbnail.jpg"
+    }
+  ],
+  "section_learn": {
+    "developer": "https://developer.ibm.com/depmodels/cloud/",
+    "architecture": "https://www.ibm.com/architectures",
+    "training": "https://www.ibm.com/training/cloud",
+    "community": "https://community.ibm.com/community/user/cloud/home"
+  },
+  "section_updates": {
+    "view_more": "/docs/vmwaresolutions?topic=vmwaresolutions-vmwaresolutions-relnotes"
+      }
+}

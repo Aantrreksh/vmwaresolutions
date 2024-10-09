@@ -4,7 +4,7 @@ copyright:
 
   years: 2019, 2024
 
-lastupdated: "2024-09-17"
+lastupdated: "2024-10-09"
 
 keywords: release notes, what's new in VMware Solutions, what is new, new features, VMware Solutions release notes, VMware Solutions
 
@@ -27,20 +27,29 @@ Use these release notes to learn about updates to {{site.data.keyword.vmwaresolu
 
 
 
+### 9 October 2024
+{: #vmwaresolutions-oct0924}
+{: release-note}
 
+BOM updates for {{site.data.keyword.vcf-classic-short}}
+:   The following updates are applied to newly deployed {{site.data.keyword.vcf-classic}} instances, clusters, and hosts:
+
+   * VMware vCenter Server® Appliance
+      * 8.0 Update 3b (build 24262322)
+      * 7.0 Update 3s (build 24201990)
 
 ### 17 September 2024
 {: #vmwaresolutions-sep1724}
 {: release-note}
 
 Veeam 12.2 add-on service upgrade
-:   Veeam Backup and Replication 12.2 (Veeam 12.2) add-on service is now available for deployment.
+:   Veeam® Backup and Replication 12.2 (Veeam 12.2) add-on service is now available for deployment.
 
 ### 13 September 2024
 {: #vmwaresolutions-sep1324}
 {: release-note}
 
-VMware Cloud Director Availability service for migrating workloads
+VCDA service for migrating workloads
 :   The VMware Cloud Director Availability (VCDA) service is a cost-effective solution to migrate your {{site.data.keyword.vm-shared}} workloads to the {{site.data.keyword.vcf-aas}} multitenant or single-tenant consumption model. For more information, see [Migrating workloads to {{site.data.keyword.vcf-aas}} with VCDA](/docs/vmware-service?topic=vmware-service-tenant-vcda).
 
 ### 16 August 2024
@@ -48,13 +57,13 @@ VMware Cloud Director Availability service for migrating workloads
 {: release-note}
 
 vSphere 8 support
-:   VMware vSphere® 8.0 is available for new NFS clusters (consolidated and workload), for new gateway clusters, and for new hosts that belong to NFS clusters. For instances with VMware vCenter Server® 8, you can use either vSphere 8 or vSphere 7 for new clusters and hosts. For instances with vCenter Server® 7, you can use only vSphere 7. For more information about upgrading your vCenter Server software and upgrading your existing vSphere 7 clusters, see [Upgrading to vCenter Server 8.0](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcs_80_upgrade).
+:   VMware vSphere® 8.0 is available for new NFS clusters (consolidated and workload), for new gateway clusters, and for new hosts that belong to NFS clusters. For instances with VMware vCenter Server 8, you can use either vSphere 8 or vSphere 7 for new clusters and hosts. For instances with vCenter Server® 7, you can use only vSphere 7. For more information about upgrading your vCenter Server software and upgrading your existing vSphere 7 clusters, see [Upgrading to vCenter Server 8.0](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcs_80_upgrade).
 
-BOM updates for {{site.data.keyword.vcf-classic}}
+BOM updates for {{site.data.keyword.vcf-classic-short}}
 :   The following updates are applied to newly deployed instances, clusters, and hosts:
 
-   * VMware vCenter Server® Appliance 8.0 Update 2d (build 23929136)
-   * VMware vSphere® ESXi™ 8.0 Update 2b (build 23305546)
+   * VMware vCenter Server Appliance 8.0 Update 2d (build 23929136)
+   * VMware vSphere ESXi™ 8.0 Update 2b (build 23305546)
    * VMware NSX® 4.1.2.4 (build 23786733)
 
 Add-on services upgrades

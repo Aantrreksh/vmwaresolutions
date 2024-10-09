@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2024
 
-lastupdated: "2024-05-20"
+lastupdated: "2024-10-04"
 
 keywords: regulated workloads, regulated workloads order instance, order regulated workloads, regulated workloads instances
 
@@ -37,10 +37,19 @@ You can start with a smaller footprint by deploying a consolidated management an
 
    You can choose a Cascade Lake CPU model and a RAM size according to your needs. This option brings down the entry price point by enabling workloads to run alongside VMware® management components in the same cluster. You can start with only 6 hosts instead of 10. This option is helpful for proof of concepts (POCs) or if you want to start small and grow over time.
 
+
+
+
+
+
+
+
+
 ## Number of bare metal servers
 {: #vrw-orderinginstance-consldt-bare-metal}
 
 You can order 4-51 servers. All servers have the same configuration.
+
 
 ## vSAN configuration
 {: #vrw-orderinginstance-consldt-vsan}
@@ -50,6 +59,20 @@ You can order 4-51 servers. All servers have the same configuration.
 * If you are a BYOL user, provide your own vSAN license key. Toggle the **BYOL** switch to **Enabled** and enter your license key.
 
    {{site.data.content.attnnote-byol}}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## Estimated resources available per cluster
 {: #vrw-orderinginstance-consldt-est}

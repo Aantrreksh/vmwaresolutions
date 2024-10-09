@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-06-13"
+lastupdated: "2024-10-08"
 
 subcollection: vmwaresolutions
 
@@ -24,7 +24,7 @@ In {{site.data.keyword.cloud_notm}}, you need to deploy a new {{site.data.keywor
 ![NSX-V to NSX-T lift–and-shift migration approach](../../images/v2t-diagrams-lift-and-shift.svg "NSX-V to NSX-T migration in {{site.data.keyword.cloud_notm}} is done by following the VMware lift-and-shift migration model"){: caption="Figure 1. NSX-V to NSX-T lift–and-shift migration approach" caption-side="bottom"}
 
 1. Your existing NSX-V based instance was deployed previously and it hosts the current workloads and NSX-V network configurations. Before you start the migration, you need to have a thorough understanding of the environment, the workloads that are deployed on it, and the NSX-V and underlay network configurations.
-2. Before you deploy a new NSX-T based {{site.data.keyword.vcf-auto-short}} target, analyze your capacity needs. Optimize and size your new hosts and clusters by using the most recent hardware options available in {{site.data.keyword.cloud_notm}}. Check the options in the VMware Solutions console, or contact your local Sales representative for more details.
+2. Before you deploy a new NSX-T based {{site.data.keyword.vcf-auto-short}} target, analyze your capacity needs. Optimize and size your new hosts and clusters by using the most recent hardware options available in {{site.data.keyword.cloud_notm}}. Check the options in the VMware Solutions console, or contact your IBM Sales representative for more details.
 3. You can deploy the new {{site.data.keyword.vcf-auto-short}} with NSX-T instance in new VLANs and a new pod, or you can use existing VLANs. 25GE NICs might not be available on the same pod. Also, you cannot move the subnets between VLANs, if, for example, you need to reuse the public IP addresses. Analyze your networking needs and then decide.
 4. Migrate your network configurations from NSX-V to NSX-T. As the NSX-T architecture is different, you have the opportunity to design and implement the overlay network and configurations based on NSX-T best practices. NSX-T offers scripting capabilities or you can use Terraform to define your topology. You can alternatively use NSX-T Migration Coordination tool or third-party tools to migrate your existing network configurations, firewall, and load-balancing rules.
 5. To minimize network downtime, the L2 extension is typically used between NSX-V logical switches and NSX-T overlay segments. You can use either NSX-T Bridging or HCX™ Network Extension here. HCX provides tools for bulk and vMotion migrations, too.
