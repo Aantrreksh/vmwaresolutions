@@ -24,7 +24,7 @@ It can be divided into the following categories:
 
 The following diagram shows an overview of the interconnectivity solutions.
 
-![Interconnectivity solutions with VMware on VPC](../../images/vpc-vcf-diagrams-xcon-vmw-arch.svg "Interconnectivity solutions with VMware on VPC"){: caption="Figure 1. Interconnectivity solutions with VMware® on VPC" caption-side="bottom"}
+![Interconnectivity solutions with VMware on VPC](../../images/vpc-vcf-diagrams-xcon-vmw-arch.svg "Interconnectivity solutions with VMware on VPC"){: caption="Interconnectivity solutions with VMware® on VPC" caption-side="bottom"}
 
 ## Interconnecting VMware workloads with on-premises networks
 {: #interconnectivity-onprem}

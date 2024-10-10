@@ -45,7 +45,7 @@ The sizing of the deployment is calculated by using the following volumes.
 | Total storage per asset per day (MB) | 766 |
 | Data replication multiplier | 2 |
 | Total index storage per asset per day (MB) | 1,532 |
-{: caption="Table 1. Volumes" caption-side="bottom"}
+{: caption="Volumes" caption-side="bottom"}
 
 The Data Replication Multiplier is set to 2 as the Index store (Elastic Search) uses by default n+1 replication of the indexes.
 {: note}
@@ -59,7 +59,7 @@ The number of scaling VMs is calculated from the number of assets and the number
 | Total index storage per asset per 30 days (TB) | 4 | 22 | 219 |
 | Data supported per scaling node (TB) | 0 | 8 | 8 |
 | Scaling VMs required | 0 | 3 |27 |
-{: caption="Table 2. Scaling VM parameters" caption-side="bottom"}
+{: caption="Scaling VM parameters" caption-side="bottom"}
 
 The following table shows how the amount of storage that is required is calculated.
 
@@ -70,7 +70,7 @@ The following table shows how the amount of storage that is required is calculat
 | Days of data | 30 | 30 | 30 |
 | Near-term data retention (TB) | 7 | 33 | 329 |
 | Long-term data retention (TB) | 18 | 88 | 877 |
-{: caption="Table 3. Storage parameters" caption-side="bottom"}
+{: caption="Storage parameters" caption-side="bottom"}
 
 From a data perspective, data is used as follows:
 - Scan data is used in compliance management.
@@ -94,7 +94,7 @@ The following table provides a summary of the deployments.
 | Base VMs | 1 | 1 | 20 |
 | Scaling VMs | 0 | 3 | 28 |
 | Total VMs | 1 | 4 | 48 |
-{: caption="Table 4. Summary" caption-side="bottom"}
+{: caption="Summary" caption-side="bottom"}
 
 ### Notes
 {: ##caveonix-deploy-sizing-notes}

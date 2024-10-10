@@ -36,7 +36,7 @@ Review the following Caveonix RiskForesight license details.
 | Name | The name of the license. |
 | Creation time | The date and time when the license was created. |
 | Status | The status of the license: \n Modifying - The license is being created. \n Installed - The license is ready to use. \n Removing - The license is being deleted. |
-{: caption="Table 1. Description of Caveonix RiskForesight license items" caption-side="bottom"}
+{: caption="Description of Caveonix RiskForesight license items" caption-side="bottom"}
 
 ### Known issues about license date display
 {: #caveonix_license_considerations-date}

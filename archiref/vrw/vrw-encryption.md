@@ -40,18 +40,18 @@ To access KMIP for VMware over the private network, cloud service endpoints are 
 
 The following figure shows a typical vSphere encryption setup with HPCS/KMIP integration:
 
-![vSphere encryption with Hyper Protect Crypto Services](../../images/vmware-vsphere-encryption.svg){: caption="Figure 1. vSphere encryption with Hyper Protect Crypto Services - no third parties" caption-side="bottom"}
+![vSphere encryption with Hyper Protect Crypto Services](../../images/vmware-vsphere-encryption.svg){: caption="vSphere encryption with Hyper Protect Crypto Services - no third parties" caption-side="bottom"}
 
 ## Hyper Protect Crypto Services for vSphere encryption - SaaS provider use case
 {: #vrw-encryption-saas}
 
 With HPCS, SaaS providers and SaaS consumers can move their critical workloads to {{site.data.keyword.cloud_notm}} with the highest level of security to prevent unauthorized access to their regulated data. SaaS providers and SaaS consumers both maintain complete control over their respective keys and regulated data in the cloud and no one, including IBM, has access to the regulated data. Additionally, no single person has access to the full key and if required multiple crypto unit administrators can be deployed.
 
-![vSphere encryption with Hyper Protect Crypto Services](../../images/vrw-hpcs-mgmt.svg){: caption="Figure 2. vSphere encryption with Hyper Protect Crypto Services for SaaS providers" caption-side="bottom"}
+![vSphere encryption with Hyper Protect Crypto Services](../../images/vrw-hpcs-mgmt.svg){: caption="vSphere encryption with Hyper Protect Crypto Services for SaaS providers" caption-side="bottom"}
 
 The SaaS provider is responsible for deploying and managing both Hyper Protect Crypto Services and the KMIP for VMware instance for their {{site.data.keyword.rw}} instance. The virtualization administrator creates the KMS cluster configuration in the vCenter. To protect the regulated data of the SaaS consumer and the SaaS provider, it is recommended that they use independent HPCS instances and root keys. The two-key approach balances both the stake holders rights and responsibilities.
 
-![Dual HPCS overview](../../images/vrw-v2-dual-hpcs.svg){: caption="Figure 3. Dual HPCS overview" caption-side="bottom"}
+![Dual HPCS overview](../../images/vrw-v2-dual-hpcs.svg){: caption="Dual HPCS overview" caption-side="bottom"}
 
 ### HPCS - independent software vendor (ISV) view
 {: #vrw-encryption-keys-isv}

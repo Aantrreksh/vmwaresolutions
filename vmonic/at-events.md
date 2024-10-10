@@ -38,7 +38,7 @@ The following table lists the actions that generate and send an event to {{site.
 | `vmware-solutions.vdc.create` | An event is generated when a virtual data center instance is created. |`pending` \n `success` \n `failure` |
 | `vmware-solutions.vdc.delete` | An event is generated when a virtual data center instance is deleted. | `pending` \n `success` \n `failure` |
 | `vmware-solutions.vdc.update` | An event is generated when capacity is added to a virtual data center instance. \n An event is generated when capacity is removed from a virtual data center instance. | `pending` \n `success` \n `failure` |
-{: caption="Table 1. Description of actions that generate {{site.data.keyword.vm-shared}} events" caption-side="bottom"}
+{: caption="Description of actions that generate {{site.data.keyword.vm-shared}} events" caption-side="bottom"}
 
 ## Events for {{site.data.keyword.vcf-classic-short}} instance management
 {: #at-events-instance-mgmt}
@@ -69,7 +69,7 @@ The following table provides the actions that generate and send management event
 | `vmware-solutions.vss-template.remove` | A {{site.data.keyword.vcf-flex-short}} template is removed. |
 | `vmware-solutions.service.create` | A service is created. |
 | `vmware-solutions.service.delete` | A service is deleted. |
-{: caption="Table 2. Description of actions that generate management events" caption-side="bottom"}
+{: caption="Description of actions that generate management events" caption-side="bottom"}
 
 ## Events for KMIP for VMware
 {: #at-events-kmip}
@@ -88,7 +88,7 @@ The initiator ID is derived from the TLS (Transport Layer Security) certificate
 | `vmware-solutions.kmip-key.activate` | A KMIP key is activated. |
 | `vmware-solutions.kmip-key.revoke` | A KMIP key is revoked. |
 | `vmware-solutions.kmip-key.destroy` | A KMIP key is destroyed. |
-{: caption="Table 3. Description of actions that generate events for the KMIP for VMware service" caption-side="bottom"}
+{: caption="Description of actions that generate events for the KMIP for VMware service" caption-side="bottom"}
 
 ## Viewing events
 {: #at-events-viewing}

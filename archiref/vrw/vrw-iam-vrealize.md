@@ -57,14 +57,14 @@ By default, the following local users are configured during service instantiatio
 | `admin` | LocalID |
 | `maintenanceAdmin` | LocalID |
 | `migrationAdmin` | LocalID |
-{: caption="Table 1. VMware Aria Operations user IDs" caption-side="bottom"}
+{: caption="VMware Aria Operations user IDs" caption-side="bottom"}
 
 The following groups are configured during service instantiation:
 
 * Cloud Admin - The `cloudadmin` user ID is a member of this group.
 * Everyone - All users are a member of this group.
 
-![VMware Aria Operations logical](../../images/vrw-v2-operations.svg){: caption="Figure 1. VMware Aria Operations logical" caption-side="bottom"}
+![VMware Aria Operations logical](../../images/vrw-v2-operations.svg){: caption="VMware Aria Operations logical" caption-side="bottom"}
 
 ### Roles
 {: #vrw-iam-vrealize-vrops-roles}
@@ -88,7 +88,7 @@ VMware Aria Operations authentication sources are configured to use active direc
 | `icv4-vCenter` | Administrator |
 | `ic4v-infra`  | To be determined |
 | `ic4v-auditor` | Read only |
-{: caption="Table 2. VMware Aria Operations groups" caption-side="bottom"}
+{: caption="VMware Aria Operations groups" caption-side="bottom"}
 
 ## VMware Aria Operations for Logs
 {: #vrw-iam-vrealize-vrli}
@@ -98,11 +98,11 @@ By default, the following local users are configured during service instantiatio
 | ID | Type | Role |
 |---|---|---|
 | `admin` | Local ID | Super Admin |
-{: caption="Table 3. VMware Aria Operations default user IDs" caption-side="bottom"}
+{: caption="VMware Aria Operations default user IDs" caption-side="bottom"}
 
 This account is not used on a day-to-day basis or for configuration tasks.
 
-![VMware Aria Operations for Logs logical](../../images/vrw-v2-operations-logs.svg){: caption="Figure 2. VMware Aria Operations for Logs logical" caption-side="bottom"}
+![VMware Aria Operations for Logs logical](../../images/vrw-v2-operations-logs.svg){: caption="VMware Aria Operations for Logs logical" caption-side="bottom"}
 
 ### VMware Aria Operations for Logs roles
 {: #vrw-iam-vrealize-vrli-roles}
@@ -120,7 +120,7 @@ VMware Aria Operations for Logs authentication configuration is configured to us
 | `icv4-vCenter` | Super admin |
 | `ic4v-infra`  | View only admin |
 | `ic4v-auditor` | User |
-{: caption="Table 4. VMware Aria Operations for Logs user IDs" caption-side="bottom"}
+{: caption="VMware Aria Operations for Logs user IDs" caption-side="bottom"}
 
 ## Related links
 {: #vrw-iam-vrealize-related}

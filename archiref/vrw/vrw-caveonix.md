@@ -18,7 +18,7 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.cloud}} for VMware® Regulated Workloads requires Caveonix RiskForesight™ for continuous compliance monitoring. The {{site.data.keyword.rw}} architecture is designed to allow compliance with NIST and other compliance certifications as required of the SaaS provider or the SaaS consumer that uses the {{site.data.keyword.rw}} offering.
 
-![Caveonix data flows](../../images/vrw-v2-caveonix.svg "Caveonix data flows"){: caption="Figure 1. Caveonix data flows" caption-side="bottom"}
+![Caveonix data flows](../../images/vrw-v2-caveonix.svg "Caveonix data flows"){: caption="Caveonix data flows" caption-side="bottom"}
 
 ## Management cluster
 {: #vrw-caveonix-management}
@@ -29,7 +29,7 @@ The RMCP enables the SaaS provider to maintain continuous and real-time visibili
 
 RiskForesight’s unique Risk Management Control Plane (RMCP) interface slashes or eliminates needless security blind spots and compliance gaps, restoring risk visibility and confidence in compliant deployments.
 
-![{{site.data.keyword.rw}} - Caveonix components](../../images/caveonix-app-components.svg "Caveonix components"){: caption="Figure 2. Caveonix components" caption-side="bottom"}
+![{{site.data.keyword.rw}} - Caveonix components](../../images/caveonix-app-components.svg "Caveonix components"){: caption="Caveonix components" caption-side="bottom"}
 
 ## Gateway cluster
 {: #vrw-caveonix-edge}

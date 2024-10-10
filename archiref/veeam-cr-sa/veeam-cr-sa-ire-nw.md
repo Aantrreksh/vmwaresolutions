@@ -27,7 +27,7 @@ While Veeam® DataLabs enables the sandbox concept, it is not yet enabled for VM
 
 The isolated recovery environment also uses vSRX appliances that are hosted on a gateway cluster along with a management VM to provide an air-gaped environment. In normal operation, the only inbound traffic is limited to accessing the VMs in the DMZ zone.
 
-![Isolated recovery environment network overview](../../images/veeam-cr-sa-sb-ire.svg){: caption="Figure 1. Isolated recovery environment network overview" caption-side="bottom"}
+![Isolated recovery environment network overview](../../images/veeam-cr-sa-sb-ire.svg){: caption="Isolated recovery environment network overview" caption-side="bottom"}
 
 The previous diagram shows the networks that are associated with a consolidated cluster of the {{site.data.keyword.vcf-auto}} instance that is used for an isolated recovery environment. The customer order is:
 
@@ -61,7 +61,7 @@ The vSRX security policies enable the objectives that are listed in the followin
 | Allow ADDNS access to {{site.data.keyword.cloud_notm}} services | ADDNS IPs | DNS and NTP IPs | TCP/UDP-53, UDP-123 | Allow |
 | Allow access between {{site.data.keyword.vcf-auto-short}} subnets | {{site.data.keyword.vcf-auto-short}} subnets | {{site.data.keyword.vcf-auto-short}} subnets | Any | Allow |
 | Allow vCenter to KMIP | vCenter IP | {{site.data.keyword.cloud_notm}} endpoint service network | TCP 5696 | Allow |
-{: caption="Table 1. vSRX security policies objectives" caption-side="bottom"}
+{: caption="vSRX security policies objectives" caption-side="bottom"}
 
 * TCP-9392 - TCP port number used by Veeam remote console to access the Veeam server.
 * In this solution architecture, the Veeam backup proxies are Linux. Therefore, the following steps are required:
@@ -106,7 +106,7 @@ To enable cyber-related tasks on the cyberbackups, such as scanning backup files
 | Allow access between Isolated | Cyber-Isolated-Segments | Cyber-Isolated-Segments | All | Allow |
 | Deny access to Isolated | Any | Cyber-Isolated-Segments | All | Deny |
 | Deny access from Isolated | Any | Cyber-Isolated-Segments | All | Deny |
-{: caption="Table 2. NSX-T distributed firewall rules" caption-side="bottom"}
+{: caption="NSX-T distributed firewall rules" caption-side="bottom"}
 
 When a sandbox is required, the customer uses their preferred scripting tool to automatically:
 
@@ -118,7 +118,7 @@ The required traffic flow is shown in the following diagram where:
 * Green designates allowed traffic flow.
 * Red designates denied traffic flow.
 
-![Immutable backup environment sandbox example](../../images/veeam-cr-sa-sb-ire-detail.svg){: caption="Figure 2. Immutable backup environment sandbox example" caption-side="bottom"}
+![Immutable backup environment sandbox example](../../images/veeam-cr-sa-sb-ire-detail.svg){: caption="Immutable backup environment sandbox example" caption-side="bottom"}
 
 ## Related links
 {: #veeam-cr-sa-ire-nw-related}

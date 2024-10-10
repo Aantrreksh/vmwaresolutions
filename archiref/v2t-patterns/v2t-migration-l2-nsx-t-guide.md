@@ -25,7 +25,7 @@ After all the workloads are migrated from NSX-V to NSX-T, the L2 bridge can be r
 ## Setting up NSX-T L2 bridge in NSX-V environment
 {: #v2t-l2-nsx-t-guide-setup}
 
-![Setting up NSX-T L2 bridge in NSX-V environment](../../images/v2t-nsx-t-l2-bridge-1.svg "Set up NSX-T L2 bridge in the NSX-V environment by installing an NSX-T edge node in the NSX-V environment"){: caption="Figure 1. Setting up NSX-T L2 bridge in NSX-V environment" caption-side="bottom"}
+![Setting up NSX-T L2 bridge in NSX-V environment](../../images/v2t-nsx-t-l2-bridge-1.svg "Set up NSX-T L2 bridge in the NSX-V environment by installing an NSX-T edge node in the NSX-V environment"){: caption="Setting up NSX-T L2 bridge in NSX-V environment" caption-side="bottom"}
 
 1. Register the vCenter appliance of the vCenter server with NSX-V environment as a compute manager in the NSX-T Manager. For more information, see [Add a Compute Manager](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.1/installation/GUID-D225CAFC-04D4-44A7-9A09-7C365AAFCA0E.html){: external}.
 2. On the {{site.data.keyword.vcf-auto-short}} with NSX-V instance, complete the following steps:
@@ -45,7 +45,7 @@ After all the workloads are migrated from NSX-V to NSX-T, the L2 bridge can be r
 
 The network switchover enables all north-south network traffic to and from the migrated VMs to traverse the NSX-T T1 and T0 routers. If issues occur with the north-south connectivity, the gateway can be moved back to the NSX-V environment.
 
-![Network switchover](../../images/v2t-nsx-t-l2-bridge-2.svg "Network switchover requires connectivity change from NSX-V to NSX-T and enabling routing though NSX-T environment."){: caption="Figure 2. Network switchover" caption-side="bottom"}
+![Network switchover](../../images/v2t-nsx-t-l2-bridge-2.svg "Network switchover requires connectivity change from NSX-V to NSX-T and enabling routing though NSX-T environment."){: caption="Network switchover" caption-side="bottom"}
 
 1. Ensure that the NSX-T configuration for external connectivity such as load-balancing, NAT, BGP, and VPN tunnels are in place.
 2. The NSX-V logical switch is disconnected from the DLR.
@@ -61,7 +61,7 @@ The vMotion involves a network backing change that might be disruptive. For more
 
 If you experience issues during migration, see [Migrating a virtual machine between two different vDS versions](https://knowledge.broadcom.com/external/article?legacyId=79446){: external}.
 
-![Migrating network connectivity with NSX-T L2 bridge solution](../../images/v2t-nsx-t-l2-bridge-3.svg "Migrating network connectivity with NSX-T L2 bridge solution."){: caption="Figure 3. Migrating network connectivity with NSX-T L2 bridge solution" caption-side="bottom"}
+![Migrating network connectivity with NSX-T L2 bridge solution](../../images/v2t-nsx-t-l2-bridge-3.svg "Migrating network connectivity with NSX-T L2 bridge solution."){: caption="Migrating network connectivity with NSX-T L2 bridge solution" caption-side="bottom"}
 
 1. Before migrating VMs, ensure that you migrated the distributed firewall configuration to allow the required traffic flow to and from the VMs. If you are considering the Migration Coordinator, see [Migrating distributed firewall configuration](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.1/migration/GUID-CFFE8C28-2D32-4AC5-98C2-9F1AEE525190.html){: external}.
 2. To migrate the VMs hosted on the NSX-V logical switch that is stretched to the NSX-T environment, log in to the vCenter appliance on the {{site.data.keyword.vcf-auto-short}} with NSX-T environment and initiate the import VMs workflow. This process asks for credentials on the vCenter appliance on the {{site.data.keyword.vcf-auto-short}} with NSX-T environment and vMotion one or more VMs. For more information, see [Introducing the Advanced Cross vCenter Server vMotion capability](https://core.vmware.com/resource/introducing-advanced-cross-vcenter-server-vmotion-capability#section1){: external}.

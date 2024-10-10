@@ -23,7 +23,7 @@ This architecture pattern presents Client VPN-based connectivity to a {{site.dat
 
 The following diagram presents an overview for an architecture pattern for deploying bastion VPC to manage vCenter Server deployment in Classic.
 
-![Architecture overview for a bastion VPC with VMware Solutions](../../images/arch-pattern-bastion-vpc.svg "The solution uses Virtual Private Cloud compute, network, storage resources, and VMware NSX for a Bastion host."){: caption="Figure 1. Architecture overview for a bastion VPC with VMware® Solutions" caption-side="bottom"}
+![Architecture overview for a bastion VPC with VMware Solutions](../../images/arch-pattern-bastion-vpc.svg "The solution uses Virtual Private Cloud compute, network, storage resources, and VMware NSX for a Bastion host."){: caption="Architecture overview for a bastion VPC with VMware® Solutions" caption-side="bottom"}
 
 This architecture pattern deployment is summarized as follows: 
 

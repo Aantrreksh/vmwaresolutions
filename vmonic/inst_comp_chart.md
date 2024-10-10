@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-09-17"
+lastupdated: "2024-10-10"
 
 keywords: vmware offering, vmware solutions functions, function support
 
@@ -37,7 +37,7 @@ Review the following table to understand the differences in feature support for 
 | Backup and restore | Manually, by using Veeam® | Backup and restore solution - not included |
 | Add-on services | Supported[^services] | Not supported by the automation of this solution. You can bring and install your own software. |
 | VMware components licensing | Automated for some VMware products | Not automated |
-{: caption="Table 1. Supported functions for Automated and Flexible instances" caption-side="bottom"}
+{: caption="Supported functions for Automated and Flexible instances" caption-side="bottom"}
 
 [^automation]: According to a validated design and with verification during deployment
 
@@ -66,7 +66,7 @@ Review the following table to understand the differences in feature support for 
 | Migration | HCX, Zerto, or PrimaryIO Migrations | HCX (optional) |
 | Financial Services Cloud with policy framework | No | Yes |
 | VMware components licensing | Automated for some VMware products | Not automated |
-{: caption="Table 2. Supported features for Automated instances and {{site.data.keyword.rw}}" caption-side="bottom"}
+{: caption="Supported features for Automated instances and {{site.data.keyword.rw}}" caption-side="bottom"}
 
 ## Related links
 {: #inst_comp_chart-related}

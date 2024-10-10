@@ -32,7 +32,7 @@ The NSX DLR Control VMs are configured as an active and passive pair of applianc
 | CPU       | 1 vCPU        |
 | RAM       | 1 GB          |
 | Disk      | 4.5 GB VMDK resident on shared storage with 4 GB swap |
-{: caption="Table 1. NSX DLR deployment" caption-side="bottom"}
+{: caption="NSX DLR deployment" caption-side="bottom"}
 
 Since the NSX DLR Control VMs are configured as active-passive, you must create vSphere Distributed Resource Scheduler (DRS) anti-affinity rules. The rules ensure that NSX Edges do not run on the same host as their respective peer appliance.
 
@@ -41,7 +41,7 @@ Since the NSX DLR Control VMs are configured as active-passive, you must create 
 | Name      | `OpenShift-DLR` |
 | Type      | Separate virtual machines |
 | Members   | `OpenShift-DLR-0` \n `OpenShift-DLR-1` |
-{: caption="Table 2. NSX DLR anti-affinity rules" caption-side="bottom"}
+{: caption="NSX DLR anti-affinity rules" caption-side="bottom"}
 
 ## NSX DLR interfaces
 {: #openshift-runbook-runbook-nsxdlr-interfaces}
@@ -52,7 +52,7 @@ The NSX DLR is deployed with a transit network between the {{site.data.keyword.r
 | --- | ---| --- | --- |
 | OpenShift-LS | Internal | `192.168.133.1` | OpenShift-LS |
 | OpenShift-Transit | Uplink | `192.168.100.2/24` | OpenShift-Transit  |
-{: caption="Table 3. Configuration for NSX DLR - interfaces" caption-side="bottom"}
+{: caption="Configuration for NSX DLR - interfaces" caption-side="bottom"}
 
 ## NSX DLR firewall
 {: #openshift-runbook-runbook-nsxdlr-firewall}
@@ -62,7 +62,7 @@ The DLR firewall is configured open.
 | Firewall rule | Source | Destination | Service | Action |
 | --- | --- | --- | --- | --- |
 | Default | Any | Any | Any | Accept |
-{: caption="Table 4. Configuration for NSX DLR - NSX firewalls" caption-side="bottom"}
+{: caption="Configuration for NSX DLR - NSX firewalls" caption-side="bottom"}
 
 ## NSX DLR routes
 {: #openshift-runbook-runbook-nsxdlr-routes}
@@ -75,7 +75,7 @@ On the Edge, the default route is configured to be to the transit network connec
 | Global configuration | vNIC | Gateway IP address |
 | --- | --- | --- |
 | Default Gateway | Transit-Uplink | 192.168.100.1 |
-{: caption="Table 5. Configuration for NSX Edge - global configuration" caption-side="bottom"}
+{: caption="Configuration for NSX Edge - global configuration" caption-side="bottom"}
 
 ## NSX DHCP relay
 {: #openshift-runbook-runbook-nsxdlr-dhcprelay}
@@ -85,13 +85,13 @@ For the {{site.data.keyword.redhat_openshift_notm}} 4.7 environment, the connect
 | DCHP relay | Value |
 | :--- | --- |
 | IP address  | 192.168.101.1 |
-{: caption="Table 6. Configuration for NSX Edge - DHCP relay" caption-side="bottom"}
+{: caption="Configuration for NSX Edge - DHCP relay" caption-side="bottom"}
 
 | DCHP relay | Value |
 | :--- | --- |
 | Name  | OpenShift-LS |
 | Gateway IP | 192.168.133.1 |
-{: caption="Table 7. Configuration for NSX Edge - DHCP relay agent" caption-side="bottom"}
+{: caption="Configuration for NSX Edge - DHCP relay agent" caption-side="bottom"}
 
 ## PowerNSX commands
 {: #openshift-runbook-runbook-nsxdlr-powernsx}
@@ -112,7 +112,7 @@ Use the following table to document the parameters that you need for your deploy
 | DLR name | OpenShift-DLR | |
 | vCenter Server instance cluster | `cluster1` | |
 | vCenter Server instance datastore | `vsanDatastore` | |
-{: caption="Table 8. PowerNSX DLR parameters" caption-side="bottom"}
+{: caption="PowerNSX DLR parameters" caption-side="bottom"}
 
 ```text
 # Connect to NSX Manager

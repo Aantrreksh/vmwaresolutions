@@ -24,7 +24,7 @@ The VMware HCX service takes this hybridity to the next step, blending instances
 
 The VMware HCX components are deployed as virtual machines (VMs) in the {{site.data.keyword.cloud_notm}} VMware target site. They allow a connection with the VMware HCX components that are installed in the peer on-premises source site.
 
-![{{site.data.keyword.vcf-auto-short}} – Hybrid Cloud services](../../images/ibmcloud-hcx-overview.svg "{{site.data.keyword.vcf-auto-short}} – HCX overview"){: caption="Figure 1. {{site.data.keyword.vcf-auto-short}} - HCX overview" caption-side="bottom"}
+![{{site.data.keyword.vcf-auto-short}} – Hybrid Cloud services](../../images/ibmcloud-hcx-overview.svg "{{site.data.keyword.vcf-auto-short}} – HCX overview"){: caption="{{site.data.keyword.vcf-auto-short}} - HCX overview" caption-side="bottom"}
 
 This connection creates a loosely coupled interconnectivity between on-premises and {{site.data.keyword.cloud_notm}} and enables capabilities, such as:
 * Simple interconnectivity – logical network connections are established easily over any physical connection such as public internet, private VPN, or direct link.

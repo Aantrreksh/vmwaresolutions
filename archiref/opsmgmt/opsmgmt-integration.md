@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-08-12"
+lastupdated: "2024-10-10"
 
 subcollection: vmwaresolutions
 
@@ -62,7 +62,7 @@ VMware Aria Operations™ for Logs is configured to forward all events to the en
 
 The client wants to use their existing OS, middleware, and application monitoring tools so they used proxies in {{site.data.keyword.cloud}} to collect and forward metrics and alerts.
 
-![Integration diagram](../../images/opsmgmt-integration.svg "Integration diagram"){: caption="Figure 1. VMware Aria Operations integration service management" caption-side="bottom"}
+![Integration diagram](../../images/opsmgmt-integration.svg "Integration diagram"){: caption="VMware Aria Operations integration service management" caption-side="bottom"}
 
 ## Related links
 {: #opsmgmt-integration-related}

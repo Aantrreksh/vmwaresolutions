@@ -27,7 +27,7 @@ When you replicate over a private network, the {{site.data.keyword.vcf-vpc}} ins
 
 The following diagram introduces the high-level steps to configure and deploy this connectivity type.
 
-![Replication connectivity over private network](../../images/vcf-arch-veeam-net-priv.svg "Replication connectivity over private network."){: caption="Figure 1. Replication connectivity over private network" caption-side="bottom"}
+![Replication connectivity over private network](../../images/vcf-arch-veeam-net-priv.svg "Replication connectivity over private network."){: caption="Replication connectivity over private network" caption-side="bottom"}
 
 This architecture pattern deployment is summarized as follows:
 
@@ -45,7 +45,7 @@ Two alternative patterns are introduced for this connectivity.
 
 In this first alternative pattern, the connectivity is established by using VPC (Virtual Private Cloud) VPNaaS site-to-site IPsec VPN. The following diagram introduces the high-level steps to configure and deploy this connectivity type.
 
-![Connectivity over Public Internet by using VPC VPNaaS](../../images/vcf-arch-veeam-net-pub-1.svg "Connectivity over Public Internet by using VPC VPNaaS site-to-site IPsec VPN."){: caption="Figure 2. Connectivity over Public Internet using VPC VPNaaS" caption-side="bottom"}
+![Connectivity over Public Internet by using VPC VPNaaS](../../images/vcf-arch-veeam-net-pub-1.svg "Connectivity over Public Internet by using VPC VPNaaS site-to-site IPsec VPN."){: caption="Connectivity over Public Internet using VPC VPNaaS" caption-side="bottom"}
 
 This architecture pattern deployment is summarized as follows:
 
@@ -56,7 +56,7 @@ This architecture pattern deployment is summarized as follows:
 
 In this second alternative pattern, the connectivity is established by using NSX Tier 0 IPsec VPN and integrated routing with VPC networking (VPC routes). The following diagram introduces the high-level steps to configure and deploy this connectivity type.
 
-![Replication connectivity over Public Internet by using NSX Tier 0 IPsec VPN](../../images/vcf-arch-veeam-net-pub-2.svg "Replication connectivity over Public Internet by using NSX Tier 0 IPsec VPN."){: caption="Figure 3. Replication connectivity over Public Internet using NSX Tier 0 IPsec VPN" caption-side="bottom"}
+![Replication connectivity over Public Internet by using NSX Tier 0 IPsec VPN](../../images/vcf-arch-veeam-net-pub-2.svg "Replication connectivity over Public Internet by using NSX Tier 0 IPsec VPN."){: caption="Replication connectivity over Public Internet using NSX Tier 0 IPsec VPN" caption-side="bottom"}
 
 This architecture pattern deployment is summarized as follows:
 

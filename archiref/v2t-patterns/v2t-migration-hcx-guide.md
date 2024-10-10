@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-07-16"
+lastupdated: "2024-10-10"
 
 subcollection: vmwaresolutions
 
@@ -21,7 +21,7 @@ You can provision an optional HCX service in the new {{site.data.keyword.vcf-aut
 ## HCX site peering over private network
 {: #v2t-hcx-guide-site-peering}
 
-![HCX site peering over private network](../../images/v2t-hcx-site-peering.svg "HCX site peering happens over a private network"){: caption="Figure 1. HCX site peering over private network" caption-side="bottom"}
+![HCX site peering over private network](../../images/v2t-hcx-site-peering.svg "HCX site peering happens over a private network"){: caption="HCX site peering over private network" caption-side="bottom"}
 
 1. Order the HCX service on the new {{site.data.keyword.vcf-auto-short}} with NSX-T environment. For more information, see [Ordering VMware HCX](/docs/vmwaresolutions?topic=vmwaresolutions-hcx_ordering). This use case assumes that you specify the HCX network connection type of Public, which allows license registration and metering to be completed over the public network.
 
@@ -38,7 +38,7 @@ You can provision an optional HCX service in the new {{site.data.keyword.vcf-aut
 ## Configuring HCX service mesh for NSX-V to NSX-T migration
 {: #v2t-hcx-guide-config-hcx}
 
-![Configuring HCX service mesh for NSX-V to NSX-T migration](../../images/v2t-hcx-service-mesh-net.svg "Configuring HCX service mesh for NSX-V to NSX-T migration uses optimal connectivity for network bandwidth point of view though the secondary VLAN."){: caption="Figure 2. Configuring HCX service mesh for NSX-V to NSX-T migration" caption-side="bottom"}
+![Configuring HCX service mesh for NSX-V to NSX-T migration](../../images/v2t-hcx-service-mesh-net.svg "Configuring HCX service mesh for NSX-V to NSX-T migration uses optimal connectivity for network bandwidth point of view though the secondary VLAN."){: caption="Configuring HCX service mesh for NSX-V to NSX-T migration" caption-side="bottom"}
 
 1. In the {{site.data.keyword.vcf-auto-short}} with NSX-T environment, HCX uses the HCX Private subnet for management for interfaces of the HCX fleet appliances, and the vMotion subnet on the secondary VLAN.
 2. In the {{site.data.keyword.vcf-auto-short}} with NSX-V environment, order a new portable subnet on the primary VLAN for use as the HCX private subnet.
@@ -53,7 +53,7 @@ You can provision an optional HCX service in the new {{site.data.keyword.vcf-aut
 ## Deploying HCX fleet for migration
 {: #v2t-hcx-guide-deploy-hcx-fleet}
 
-![Deploying HCX fleet for migration](../../images/v2t-hcx-hcx-fleet.svg "Deploying HCX fleet for migration. You can deploy multiple appliances to scale the migration solution."){: caption="Figure 3. Deploying HCX fleet for migration" caption-side="bottom"}
+![Deploying HCX fleet for migration](../../images/v2t-hcx-hcx-fleet.svg "Deploying HCX fleet for migration. You can deploy multiple appliances to scale the migration solution."){: caption="Deploying HCX fleet for migration" caption-side="bottom"}
 
 1. When you create a Service Mesh through the {{site.data.keyword.vcf-auto-short}} with NSX-V HCX Manager, HCX creates the HCX responder fleet appliances in the {{site.data.keyword.vcf-auto-short}} with NSX-T environment. These appliances consist of an interconnect appliance, WAN optimizer, and network extension appliance. One or more of these appliances are deployed depending on the settings that are used during the service mesh creation workflow. For more information, see [HCX deployment considerations and best practices](https://hcx.design/wp-content/uploads/2019/07/hcx_dbp_wp.pdf){: external} and [HCX compute profiles](https://hcx.design/wp-content/uploads/2020/02/hcx-compute-profiles.pdf){: external}.
 2. When you create a Service Mesh through the {{site.data.keyword.vcf-auto-short}} with NSX-V HCX Manager, HCX creates the HCX initiator fleet appliances in the {{site.data.keyword.vcf-auto-short}} with NSX-V environment. These appliances consist of an interconnect appliance, WAN optimizer, and network extension appliance. One or more of these appliances are deployed depending on the settings that are used during the service mesh creation workflow.
@@ -64,7 +64,7 @@ You can provision an optional HCX service in the new {{site.data.keyword.vcf-aut
 ## Network switchover with HCX
 {: #v2t-hcx-guide-switchover}
 
-![Network switchover with HCX](../../images/v2t-hcx-network.svg "Network switchover with HCX."){: caption="Figure 4. Network switchover with HCX." caption-side="bottom"}
+![Network switchover with HCX](../../images/v2t-hcx-network.svg "Network switchover with HCX."){: caption="Network switchover with HCX." caption-side="bottom"}
 
 1. The final stage of the cut-over is to initiate the unextend networks workflow with connect cloud network to cloud edge gateway after unextending option. This workflow removes the HCX L2 bridge between the NSX-V and NSX-T environments.
 2. The workflow connects the NSX-T segment to the T1 router.

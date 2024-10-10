@@ -42,7 +42,7 @@ The subdomain label is used only for existing VMware vSphere® 6.x instances.
 | Single Sign-On (SSO) site name | `<root_domain>` |
 | Fully qualified VMware ESXi™ server name | `<host_prefix><n>.<root_domain>`, where `n` is the sequence of the ESXi server. The maximum length is 50 characters. |
 | NetBIOS name | First string of `<root_domain>`. The maximum length is 15 characters. |
-{: caption="Table 1. Value format for instance and domain names" caption-side="bottom"}
+{: caption="Value format for instance and domain names" caption-side="bottom"}
 
 After the instance is provisioned, do not modify any values that are set during instance order. Otherwise, the instance might become unusable. For example, if public networking shuts down or if servers and Virtual Server Instances (VSIs) move behind a Vyatta mid-provision.
 {: attention}

@@ -25,7 +25,7 @@ While Veeam® DataLabs enables the sandbox concept, it is not yet enabled for VM
 * NSX-T T1 - Provides routing and gateway firewall capabilities.
 * NSX-T distributed firewall - Distributed firewall enables firewall capability on east-west traffic on VMs.
 
-![Immutable backup environment network overview](../../images/veeam-cr-sa-sb-ib.svg){: caption="Figure 1. Immutable backup environment network overview" caption-side="bottom"}
+![Immutable backup environment network overview](../../images/veeam-cr-sa-sb-ib.svg){: caption="Immutable backup environment network overview" caption-side="bottom"}
 
 The previous diagram shows an example sandbox that is hosted on the consolidated cluster of the {{site.data.keyword.vcf-auto}} instance. The customer orders the following resources.
 
@@ -68,7 +68,7 @@ The customer creates the following items:
 | Allow access between Isolated | Cyber-Isolated-Segments | Cyber-Isolated-Segments | All | Allow |
 | Deny access to Isolated | Any | Cyber-Isolated-Segments | All | Deny |
 | Deny access from Isolated | Any | Cyber-Isolated-Segments | All | Deny |
-{: caption="Table 1. NSX-T distributed firewall rules" caption-side="bottom"}
+{: caption="NSX-T distributed firewall rules" caption-side="bottom"}
 
 When a sandbox is required, the customer uses their preferred scripting tool to automatically:
 
@@ -80,7 +80,7 @@ The required traffic flow is shown in the following diagram where:
 * Green designates allowed traffic flow.
 * Red designates denied traffic flow.
 
-![Immutable backup environment sandbox example](../../images/veeam-cr-sa-sb-ib-detail.svg){: caption="Figure 2. Immutable backup environment sandbox example" caption-side="bottom"}
+![Immutable backup environment sandbox example](../../images/veeam-cr-sa-sb-ib-detail.svg){: caption="Immutable backup environment sandbox example" caption-side="bottom"}
 
 The Destination Network Address Translation (DNAT) rules have been configured as:
 
@@ -88,7 +88,7 @@ The Destination Network Address Translation (DNAT) rules have been configured as
 |:------ |:----------- |:---------- |
 | `172.16.67.0/24` | `172.16.68.0/24` | `172.16.253.0/24` |
 | `172.16.67.0/24` | `172.16.69.0/24` | `172.16.254.0/24` |
-{: caption="Table 2. NSX-T DNAT rules" caption-side="bottom"}
+{: caption="NSX-T DNAT rules" caption-side="bottom"}
 
 The distributed firewall group configuration is defined as:
 
@@ -96,7 +96,7 @@ The distributed firewall group configuration is defined as:
 |:---- |:-------- |:------- |:-------- |
 | `Cyber-Tools-Segments` | `Segments` | `cyber-tools` | None |
 | `Cyber-Isolated-Segments` | None | None | `Segment Tag Equals Isolated-Segments Scope: Cyber` |
-{: caption="Table 3. NSX-T distributed firewall groups" caption-side="bottom"}
+{: caption="NSX-T distributed firewall groups" caption-side="bottom"}
 
 The distributed firewall policy configuration in a policy named `Cyber-Isolated` is defined as:
 
@@ -106,7 +106,7 @@ The distributed firewall policy configuration in a policy named `Cyber-Isolated`
 | Allow access between isolated | Cyber-Isolated-Segments | Cyber-Isolated-Segments | All | Allow |
 | Deny access to isolated | Any | Cyber-Isolated-Segments | All | Deny |
 | Deny access from isolated | Any | Cyber-Isolated-Segments | All | Deny |
-{: caption="Table 4. NSX-T distributed firewall policy" caption-side="bottom"}
+{: caption="NSX-T distributed firewall policy" caption-side="bottom"}
 
 ## Related links
 {: #veeam-cr-sa-ib-nw-related}

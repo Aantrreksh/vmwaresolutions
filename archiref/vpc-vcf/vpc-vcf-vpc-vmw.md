@@ -23,7 +23,7 @@ The following information provides an overview to the {{site.data.keyword.vpc_fu
 
 In {{site.data.keyword.vpc_short}}, you can do logical segmentation or isolation in multiple ways. This architecture uses a traditional VLAN segmentation analogy by following VMware Cloud Foundation™ requirements, but {{site.data.keyword.vpc_short}} uses subnets instead of VLANs. Each System Traffic Type has its own VPC subnet, and the traffic between VMkernel adapter network interfaces can be controlled with both {{site.data.keyword.vpc_short}} security groups (SGs) and subnet access control lists (ACLs). The following diagram shows an overview of the consolidated VPC design.
 
-![VPC design for consolidated VMware Cloud Foundation deployment](../../images/vcf-vpc-v2-arch-net-cons.svg "VPC design for VMware Cloud Foundation deployment"){: caption="Figure 1. VPC network design for consolidated VMware Cloud Foundation deployment" caption-side="bottom"}
+![VPC design for consolidated VMware Cloud Foundation deployment](../../images/vcf-vpc-v2-arch-net-cons.svg "VPC design for VMware Cloud Foundation deployment"){: caption="VPC network design for consolidated VMware Cloud Foundation deployment" caption-side="bottom"}
 
 For this architecture, a new VPC is created for each VMware Cloud Foundation instance. This action is for simplicity and to avoid issues with scalability and architectural requirements and principles of VMware Cloud Foundation. To connect to other workloads and other VPCs, you can use {{site.data.keyword.cloud_notm}} interconnectivity solutions, such as Transit Gateway.
 
@@ -36,7 +36,7 @@ The following table lists the subnets that are created in VPC. Subnet design is 
 | `vpc-vmot-subnet` | vMotion traffic | Number of Hosts |
 | `vpc-vsan-subnet` | vSAN traffic | Number of Hosts |
 | `vpc-tep-subnet` | TEP traffic for hosts | Number of Hosts x 2 (each host requires 2 x TEPs) |
-{: caption="Table 1. VPC subnets for System traffic types" caption-side="bottom"}
+{: caption="VPC subnets for System traffic types" caption-side="bottom"}
 
 NSX edge TEP traffic and NSX Tier-0 logical gateway interfaces are deployed on their own subnets in VMware Cloud Foundation deployments. The following VPC subnets are required for the edge cluster.
 
@@ -45,13 +45,13 @@ NSX edge TEP traffic and NSX Tier-0 logical gateway interfaces are deployed on t
 | `vpc-edge-tep-subnet` | TEP traffic for edge nodes   | Number of Edge Nodes x 2 (each edge node requires 2 x TEPs) |
 | `vpc-t0-public-uplink-subnet` | T0 public uplink subnet | `/29` or larger |
 | `vpc-t0-private-uplink-subnet` | T0 private uplink subnet | `/29` or larger |
-{: caption="Table 2. VPC subnets for NSX T0 uplinks" caption-side="bottom"}
+{: caption="VPC subnets for NSX T0 uplinks" caption-side="bottom"}
 
 To be able to create subnets in VPC, you must create a VPC prefix. VPC prefixes are defined per zone. To simplify routing, you must allocate the recommended subnets from a single prefix. Which means that to accommodate five subnets, you need one `/21` prefix to cater addresses for about 120 hosts per zone. If you want to use a prefix with `/22`, you can add about 60 hosts per zone. By selecting a large enough prefix, you will have growth for scalability and future needs, such as dedicated VMKs for NFS, replication, and NSX Tier-0 uplinks.
 
 The standard deployment differs slightly from the consolidated deployment. Different subnets are used for VI workload domain as shown in the following diagram.
 
-![VPC design for standard VMware Cloud Foundation deployment](../../images/vcf-vpc-v2-arch-net-std.svg "VPC design for VMware Cloud Foundation deployment"){: caption="Figure 2. VPC network design for standard VMware Cloud Foundation deployment" caption-side="bottom"}
+![VPC design for standard VMware Cloud Foundation deployment](../../images/vcf-vpc-v2-arch-net-std.svg "VPC design for VMware Cloud Foundation deployment"){: caption="VPC network design for standard VMware Cloud Foundation deployment" caption-side="bottom"}
 
 The following subnets are deployed for hosts in the standard architecture model.
 
@@ -66,7 +66,7 @@ The following subnets are deployed for hosts in the standard architecture model.
 | `vpc-wl-vmot-subnet` | vMotion traffic for workload domain | Number of Hosts |
 | `vpc-wl-vsan-subnet` | vSAN traffic for workload domain | Number of Hosts |
 | `vpc-wl-tep-subnet` | TEP traffic for workload domain hosts | Number of Hosts x 2 (each host requires 2 x TEPs) |
-{: caption="Table 1. VPC subnets for System traffic types" caption-side="bottom"}
+{: caption="VPC subnets for System traffic types" caption-side="bottom"}
 
 For edges, the following subnets are deployed in the standard architecture model.
 
@@ -78,7 +78,7 @@ For edges, the following subnets are deployed in the standard architecture model
 | `vpc-wl-edge-tep-subnet` | TEP traffic for workload domain edge nodes   | Number of Edge Nodes x 2 (each edge node requires 2 x TEPs) |
 | `vpc-wl-t0-public-uplink-subnet` | T0 public uplink subnet for workload domain | `/29` or larger |
 | `vpc-wl-t0-private-uplink-subnet` | T0 private uplink subnet for workload domain | `/29` or larger |
-{: caption="Table 2. VPC subnets for NSX T0 uplinks" caption-side="bottom"}
+{: caption="VPC subnets for NSX T0 uplinks" caption-side="bottom"}
 
 ## VPC access control lists and security groups
 {: #vpc-vcf-vpc-deployment-net-security}
@@ -112,7 +112,7 @@ In this design, your security groups are used to create a logical grouping of ma
 | `sg-uplink-pub`     | VMkernel adapters for Tier-0 public uplinks |
 | `sg-uplink-priv`    | VMkernel adapters for Tier-0 private uplinks |
 | `sg-bastion`        | VMkernel adapters for bastion hosts (automation VSI) |
-{: caption="Table 3. VPC security groups" caption-side="bottom"}
+{: caption="VPC security groups" caption-side="bottom"}
 
 The basic principle for the default rules is to allow practical minimum. For example, `sg-vmot` allows traffic between the security group members and inbound `icmp` from the security group `sg-mgmt`. The same principle is applied to all security groups used for VMkernel adapters. `sg-mgmt` allows connectivity from private RFC 1918 networks. These rules can be customized post initial provisioning and the following information provides simplified guidance and principles.
 

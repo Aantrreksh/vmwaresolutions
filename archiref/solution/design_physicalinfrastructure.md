@@ -24,7 +24,7 @@ For more information about the physical components, see [{{site.data.keyword.vcf
 
 For more information about storage, see [Shared storage architecture](/docs/vmwaresolutions?topic=vmwaresolutions-storage-benefits#storage-benefits).
 
-![Physical infrastructure](../../images/vcsv4radiagrams-ra-physinfra.svg "Physical infrastructure"){: caption="Figure 1. Physical infrastructure" caption-side="bottom"}
+![Physical infrastructure](../../images/vcsv4radiagrams-ra-physinfra.svg "Physical infrastructure"){: caption="Physical infrastructure" caption-side="bottom"}
 
 ## Physical compute design
 {: #design_physicalinfrastructure-host-design}
@@ -66,7 +66,7 @@ The following figure uses these acronyms:
 * PPR - Pod to Pod Router
 * SLR - Service Layer Router
 
-![{{site.data.keyword.cloud_notm}} high–level network](../../images/vcsv4radiagrams-ra-ibmcloudnetwork.svg "{{site.data.keyword.cloud_notm}} high–level network"){: caption="Figure 2. {{site.data.keyword.cloud_notm}} high–level network" caption-side="bottom"}
+![{{site.data.keyword.cloud_notm}} high–level network](../../images/vcsv4radiagrams-ra-ibmcloudnetwork.svg "{{site.data.keyword.cloud_notm}} high–level network"){: caption="{{site.data.keyword.cloud_notm}} high–level network" caption-side="bottom"}
 
 #### Public network
 {: #design_physicalinfrastructure-public-net}
@@ -112,7 +112,7 @@ Each physical host in this design has two redundant pairs of 10 Gbps or 25 Gbps 
 
 Removing physical network connectivity to the public or private network for the {{site.data.keyword.cloud_notm}} bare metal servers that are used within the Automated offering is not possible. Physical ports on the internal NIC of the bare metal can be disabled, but no support exists for unplugging the cables.
 
-![Physical host connections](../../images/vcsv4radiagrams-ra-physical-host-connections.svg "Physical host connections"){: caption="Figure 3. Physical host connections" caption-side="bottom"}
+![Physical host connections](../../images/vcsv4radiagrams-ra-physical-host-connections.svg "Physical host connections"){: caption="Physical host connections" caption-side="bottom"}
 
 #### VLANs and underlay to overlay routing
 {: #design_physicalinfrastructure-vlans}
@@ -147,7 +147,7 @@ Review the following table for a summary.
 | Private B | Portable | Single subnet that is assigned for vSAN, if in use |
 | Private B | Portable | Single subnet assigned for NAS, if in use |
 | Private B | Portable | Single subnet assigned for vMotion |
-{: caption="Table 1. VLAN and subnet summary" caption-side="bottom"}
+{: caption="VLAN and subnet summary" caption-side="bottom"}
 
 In this design, all VLAN-backed hosts and VMs are configured to point to the {{site.data.keyword.cloud_notm}} back-end “private network” customer router (BCR) as the default route. While the Automated instances enable the use of Software-Defined Networking (SDN), network overlays created within a VMware instance that include routing to internal subnets are not known by the {{site.data.keyword.cloud_notm}} managed routers.
 
@@ -179,7 +179,7 @@ If you use shared file-level storage, a 2 TB NFS share is attached to the hosts 
 
 The storage is attached by using the NFS v3 protocol at a 4 IOPS/GB level from {{site.data.keyword.cloud_notm}}.
 
-![NFS shares that are attached to VMware deployment](../../images/vcsv4radiagrams-ra-nfs-shares.svg "NFS shares that are attached to VMware deployment: management share and customer specified share"){: caption="Figure 4. NFS shares that are attached to VMware deployment" caption-side="bottom"}
+![NFS shares that are attached to VMware deployment](../../images/vcsv4radiagrams-ra-nfs-shares.svg "NFS shares that are attached to VMware deployment: management share and customer specified share"){: caption="NFS shares that are attached to VMware deployment" caption-side="bottom"}
 
 You can allocate and mount more file shares across all hosts for your workloads at the time of purchase or later within the console. You can select from the available {{site.data.keyword.cloud_notm}} Endurance file storage capacity options and performance tiers in the corresponding {{site.data.keyword.cloud_notm}} data center. All shares are attached by using the NFS v3 protocol. {{site.data.keyword.cloud_notm}} Endurance file storage includes provider-managed encryption of data at rest (AES-256 encryption), and is backed up by all-flash storage.
 

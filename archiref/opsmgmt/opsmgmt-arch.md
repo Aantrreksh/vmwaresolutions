@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-07-31"
+lastupdated: "2024-10-10"
 
 subcollection: vmwaresolutions
 
@@ -29,7 +29,7 @@ At a high level, the following information is collected:
 
 The following diagram shows the key interaction and integration of the operations management tools.
 
-![Management flows diagram](../../images/opsmgmt-mgmtflows.svg "Management flows diagram"){: caption="Figure 1. Operational tools management flow" caption-side="bottom"}
+![Management flows diagram](../../images/opsmgmt-mgmtflows.svg "Management flows diagram"){: caption="Operational tools management flow" caption-side="bottom"}
 
 The {{site.data.keyword.vmwaresolutions_short}} operations management consists of the following steps:
 * Monitoring - VMware Aria® Operations™ Manager tracks and analyzes the operation of multiple objects in the {{site.data.keyword.vmwaresolutions_short}} architecture by using analytic algorithms. These algorithms help VMware Aria Operations learn and predict the behavior of these objects. System administrators access this information by using views, reports, and dashboards.
@@ -59,7 +59,7 @@ The {{site.data.keyword.vmwaresolutions_short}} operations management consists o
 
 The following diagram shows the network overview.
 
-![Network diagram](../../images/opsmgmt-network.svg "Network diagram"){: caption="Figure 2. Operational tools networking" caption-side="bottom"}
+![Network diagram](../../images/opsmgmt-network.svg "Network diagram"){: caption="Operational tools networking" caption-side="bottom"}
 
 * A tooling private portable subnet is provisioned to provide {{site.data.keyword.cloud_notm}} IP address space that is used for the initial provisioning of the tooling VMs. After provisioning, it becomes the responsibility of the client to manage the IP address space for scale-out of the tooling. VMs on this subnet require access to the components hosted on the Management and Internal Management subnets.
 * Tooling VXLAN subnet is used to provide BYOIP IP address space that is used for the initial provisioning of the tooling VMs but then becomes the responsibility of the client to manage the IP address space for scale-out of the tooling. VMs on this subnet require access to the components hosted on the Overlay subnets. The ESG provides NAT between the {{site.data.keyword.cloud_notm}} and BYOIP address spaces.
@@ -157,7 +157,7 @@ The design uses the following quantity and size of appliances:
 | vCPU | 8 | 8 | 4 + 8 | 4 |
 | RAM (GB) | 32 | 16 | 12 + 32 | 0.5 |
 | Disk (GB) | 254 | 1,042 | 158 + 1000 | 80 |
-{: caption="Table 1. Operation tooling summary system requirements" caption-side="bottom"}
+{: caption="Operation tooling summary system requirements" caption-side="bottom"}
 
 ## Software versions
 {: #opsmgmt-arch-versions}
@@ -170,4 +170,4 @@ The design uses the following quantity and size of appliances:
 | VMware Aria Operations Management Pack for Site Recovery Manager | 8.1.1 |
 | VMware Aria Operations for Logs | 4.7 |
 | VMware Aria Operations for Logs Content Pack for NSX for vSphere | 3.8 |
-{: caption="Table 2. Operational tooling software versions" caption-side="bottom"}
+{: caption="Operational tooling software versions" caption-side="bottom"}

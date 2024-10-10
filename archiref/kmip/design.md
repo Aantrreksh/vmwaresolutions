@@ -105,7 +105,7 @@ In all cases, your VMware vCenter server access KMIP for VMware over the {{site.
 
 The architecture and topology differs depending on whether KMIP for VMware is using Key Protect or Hyper Protect Crypto Services for key management.
 
-![Topology of KMIP for VMware](../../images/kmip-topology.svg "The solution enables VMware vSphere encryption and vSAN encryption by using root keys that are stored in {{site.data.keyword.cloud_notm}} Key Protect or Hyper Protect Crypto Services"){: caption="Figure 1. Topology of KMIP for VMware" caption-side="bottom"}
+![Topology of KMIP for VMware](../../images/kmip-topology.svg "The solution enables VMware vSphere encryption and vSAN encryption by using root keys that are stored in {{site.data.keyword.cloud_notm}} Key Protect or Hyper Protect Crypto Services"){: caption="Topology of KMIP for VMware" caption-side="bottom"}
 
 #### KMIP for VMware and Key Protect
 {: #kmip-design-topology-kp}

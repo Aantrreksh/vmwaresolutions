@@ -29,11 +29,11 @@ subcollection: vmwaresolutions
 
 When you use the VMware virtual machines (VMs) on the VPC subnet architecture, your VMs are attached to VPC subnets and the routing behaves in the same way as with VPC Virtual Servers. The VPC subnets are provisioned from the zone prefix, and the routing works between the VPC without any required changes. You can use both {{site.data.keyword.cloud_notm}} VPN Gateway for VPC and {{site.data.keyword.cloud_notm}} Client {{site.data.keyword.vpn_vpc_short}} with this solution as described in the documentation previously listed.
 
-![VPNaaS with VMware on VPC](../../images/vpc-vcf-diagrams-dl-sub-arch.svg "VPNaaS with VMware on VPC"){: caption="Figure 1. VPNaaS with VMware on VPC" caption-side="bottom"}
+![VPNaaS with VMware on VPC](../../images/vpc-vcf-diagrams-dl-sub-arch.svg "VPNaaS with VMware on VPC"){: caption="VPNaaS with VMware on VPC" caption-side="bottom"}
 
 When you use NSX™ on your VMware solution on VPC, the VMs are attached on the NSX overlay segments. They use an IP address range or prefix, which is reachable through VPC route that points to NSX Tier-0 private uplink VIP as described in the [VMware NSX logical routing on VPC](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-nsx-t-vpc-routing) topic. You can use both {{site.data.keyword.cloud_notm}} VPN Gateway for VPC and {{site.data.keyword.cloud_notm}} Client {{site.data.keyword.vpn_vpc_short}} with this solution as described in the documentation previously listed.
 
-![VPNaaS with VMware on VPC with NSX](../../images/vpc-vcf-diagrams-dl-nsx-t-arch.svg "VPNaaS with VMware on VPC with NSX"){: caption="Figure 2. VPNaaS with VMware on VPC with NSX" caption-side="bottom"}
+![VPNaaS with VMware on VPC with NSX](../../images/vpc-vcf-diagrams-dl-nsx-t-arch.svg "VPNaaS with VMware on VPC with NSX"){: caption="VPNaaS with VMware on VPC with NSX" caption-side="bottom"}
 
 When you use {{site.data.keyword.cloud_notm}} Client {{site.data.keyword.vpn_vpc_short}}, you must add VPN routes that are advertised to the VPN clients for the NSX overlay destinations. Set the VPC routes to the same destination and pointing to the NSX Tier-0 Private Uplink VIP. In NSX Tier-0, ensure that you have a static route for the prefix route of your VPN Client IPv4 address pool, which points to the default gateway of the uplink subnet.
 

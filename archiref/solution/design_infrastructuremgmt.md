@@ -18,7 +18,7 @@ subcollection: vmwaresolutions
 
 Infrastructure management refers to the components that are managing the VMware® infrastructure. The VMware vCenter Server® appliance is the centralized platform for managing VMware vSphere® environments and is one of the fundamental components in this solution.
 
-![Infrastructure management](../../images/vcsv4radiagrams-ra-inframgmt.svg "Infrastructure management"){: caption="Figure 1. Infrastructure management" caption-side="bottom"}
+![Infrastructure management](../../images/vcsv4radiagrams-ra-inframgmt.svg "Infrastructure management"){: caption="Infrastructure management" caption-side="bottom"}
 
 The vCenter Server appliance is assigned the default SSO domain of `vsphere.local`.
 
@@ -36,7 +36,7 @@ The vCenter Server appliance is installed on a portable subnet on the private VL
 | Memory                       | 28 GB                               |
 | Disk                         | 700 GB on local datastore (Large disk deployment) |
 | Disk type                    | Thin provisioned                    |
-{: caption="Table 1. vCenter Server Appliance specifications" caption-side="bottom"}
+{: caption="vCenter Server Appliance specifications" caption-side="bottom"}
 
 ### vCenter Server database
 {: #design_infrastructuremgmt-vcenter-db}

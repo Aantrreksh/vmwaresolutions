@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2024
 
-lastupdated: "2024-08-12"
+lastupdated: "2024-10-10"
 
 subcollection: vmwaresolutions
 
@@ -34,7 +34,7 @@ The Dell Cyber Recovery vault in {{site.data.keyword.cloud_notm}} architecture i
 
 The following diagram shows the high-level architecture:
 
-![Overview of Dell Cyber Recovery vault on VMware Solutions](../../images/cr-dell-overview.svg "Overview diagram"){: caption="Figure 1. Overview of Dell Cyber Recovery vault on VMware Solutions" caption-side="bottom"}
+![Overview of Dell Cyber Recovery vault on VMware Solutions](../../images/cr-dell-overview.svg "Overview diagram"){: caption="Overview of Dell Cyber Recovery vault on VMware Solutions" caption-side="bottom"}
 
 The production environment, in the primary and secondary data centers can be on premises or deployed in {{site.data.keyword.cloud_notm}} or another cloud provider.
 
@@ -66,7 +66,7 @@ The diagram also shows:
 
 The following diagram shows more details of the vCenter Server instance architecture:
 
-![Architecture of Dell Cyber Recovery vault on VMware Solutions](../../images/cr-dell-architecture.svg "Architecture diagram"){: caption="Figure 2. Architecture of Dell Cyber Recovery vault on VMware Solutions" caption-side="bottom"}
+![Architecture of Dell Cyber Recovery vault on VMware Solutions](../../images/cr-dell-architecture.svg "Architecture diagram"){: caption="Architecture of Dell Cyber Recovery vault on VMware Solutions" caption-side="bottom"}
 
 The primary and secondary data centers:
 

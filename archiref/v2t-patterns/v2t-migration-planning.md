@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-07-29"
+lastupdated: "2024-10-10"
 
 subcollection: vmwaresolutions
 
@@ -20,7 +20,7 @@ Migration planning and preparation are the key to a successful migration project
 
 The following diagram shows an overview of the migration flow:
 
-![Migration flow](../../images/v2t-diagrams-tree.svg "Make sure that the migration complexity is fully understood so that timescales, required tools, skills, and knowledge are available."){: caption="Figure 1. Migration flow" caption-side="bottom"}
+![Migration flow](../../images/v2t-diagrams-tree.svg "Make sure that the migration complexity is fully understood so that timescales, required tools, skills, and knowledge are available."){: caption="Migration flow" caption-side="bottom"}
 
 ## Classify migration complexity
 {: #v2t-planning-complexity}

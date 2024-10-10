@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2024
 
-lastupdated: "2024-08-12"
+lastupdated: "2024-10-10"
 
 subcollection: vmwaresolutions
 
@@ -21,7 +21,7 @@ This documentation describes a high-level architecture that can be used to assis
 
 This solution is suitable if you want to extend your own backup solution with an isolated recovery environment while you minimize costs.
 
-![Architecture diagram](../../images/cr-byo-ire.svg "Architecture diagram"){: caption="Figure 1. Architecture for cyber-recovery isolated environment with bring your own data mover and immutable repository" caption-side="bottom"}
+![Architecture diagram](../../images/cr-byo-ire.svg "Architecture diagram"){: caption="Architecture for cyber-recovery isolated environment with bring your own data mover and immutable repository" caption-side="bottom"}
 
 Key elements of the solution architecture include:
 

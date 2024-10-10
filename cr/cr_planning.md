@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-09-11"
+lastupdated: "2024-10-10"
 
 keywords: planning cyber recovery, cyber recovery, cyber recovery instance
 
@@ -52,7 +52,7 @@ The following {{site.data.keyword.cloud_notm}} data centers are available for {{
 | TOK02 | 01-02 |
 | TOK04 | 01 |
 | TOK05 | 01 |
-{: caption="Table 1. Available {{site.data.keyword.cloud_notm}} data centers for {{site.data.keyword.cr}} - Asia Pacific" caption-side="bottom"}
+{: caption="Available {{site.data.keyword.cloud_notm}} data centers for {{site.data.keyword.cr}} - Asia Pacific" caption-side="bottom"}
 {: tab-title="Asia Pacific"}
 {: tab-group="Data centers for {{site.data.keyword.cr}}"}
 {: class="simple-tab-table"}
@@ -73,7 +73,7 @@ The following {{site.data.keyword.cloud_notm}} data centers are available for {{
 | MAD05 | 01 |
 | MIL01 | 01 |
 | PAR01 | 01 |
-{: caption="Table 1. Available {{site.data.keyword.cloud_notm}} data centers for {{site.data.keyword.cr}} - Europe" caption-side="bottom"}
+{: caption="Available {{site.data.keyword.cloud_notm}} data centers for {{site.data.keyword.cr}} - Europe" caption-side="bottom"}
 {: tab-title="Europe"}
 {: tab-group="Data centers for {{site.data.keyword.cr}}"}
 {: class="simple-tab-table"}
@@ -88,7 +88,7 @@ The following {{site.data.keyword.cloud_notm}} data centers are available for {{
 | WDC04 | 01-05 |
 | WDC06 | 01 |
 | WDC07 | 01 |
-{: caption="Table 1. Available {{site.data.keyword.cloud_notm}} data centers for {{site.data.keyword.cr}} - NA East" caption-side="bottom"}
+{: caption="Available {{site.data.keyword.cloud_notm}} data centers for {{site.data.keyword.cr}} - NA East" caption-side="bottom"}
 {: tab-title="NA East"}
 {: tab-group="Data centers for {{site.data.keyword.cr}}"}
 {: class="simple-tab-table"}
@@ -100,7 +100,7 @@ The following {{site.data.keyword.cloud_notm}} data centers are available for {{
 | DAL10 | 01-04 |
 | DAL12 | 01-02 |
 | DAL13 | 01-03 |
-{: caption="Table 1. Available {{site.data.keyword.cloud_notm}} data centers for {{site.data.keyword.cr}} - NA South" caption-side="bottom"}
+{: caption="Available {{site.data.keyword.cloud_notm}} data centers for {{site.data.keyword.cr}} - NA South" caption-side="bottom"}
 {: tab-title="NA South"}
 {: tab-group="Data centers for {{site.data.keyword.cr}}"}
 {: class="simple-tab-table"}
@@ -110,7 +110,7 @@ The following {{site.data.keyword.cloud_notm}} data centers are available for {{
 |:----------- |:--- |
 | SJC03 | 01-02 |
 | SJC04 | 01 |
-{: caption="Table 1. Available {{site.data.keyword.cloud_notm}} data centers for {{site.data.keyword.cr}} - NA West" caption-side="bottom"}
+{: caption="Available {{site.data.keyword.cloud_notm}} data centers for {{site.data.keyword.cr}} - NA West" caption-side="bottom"}
 {: tab-title="NA West"}
 {: tab-group="Data centers for {{site.data.keyword.cr}}"}
 {: class="simple-tab-table"}
@@ -121,7 +121,7 @@ The following {{site.data.keyword.cloud_notm}} data centers are available for {{
 | SAO01 | 01 |
 | SAO04 | 01 |
 | SAO05 | 01 |
-{: caption="Table 1. Available {{site.data.keyword.cloud_notm}} data centers for {{site.data.keyword.cr}} - South America" caption-side="bottom"}
+{: caption="Available {{site.data.keyword.cloud_notm}} data centers for {{site.data.keyword.cr}} - South America" caption-side="bottom"}
 {: tab-title="South America"}
 {: tab-group="Data centers for {{site.data.keyword.cr}}"}
 {: class="simple-tab-table"}

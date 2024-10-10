@@ -35,7 +35,7 @@ To view a summary of all the Automated instances that are provisioned for a user
 | Location | The {{site.data.keyword.cloud_notm}} data center where the instance is hosted. |
 | Creation time | The date and time when the instance was created. |
 | Status | The status of the instance. |
-{: caption="Table 1. Automated instance summary" caption-side="bottom"}
+{: caption="Automated instance summary" caption-side="bottom"}
 
 The instance can have different statuses.
 
@@ -49,7 +49,7 @@ The instance can have different statuses.
 | Deleting | The instance is being deleted. |
 | Deletion error | An error occurred when the instance was being deleted. |
 | Deleted | The instance is deleted. |
-{: caption="Table 2. Automated instance statuses" caption-side="bottom"}
+{: caption="Automated instance statuses" caption-side="bottom"}
 
 ## Procedure to view details for Automated instances
 {: #vc_viewinginstances-procedure-view-inst-property}
@@ -75,7 +75,7 @@ To view the property details of an instance, complete the following steps.
 | Root domain | The root domain name is the DNS domain name and the Microsoft® Active Directory™ (AD) forest root name. |
 | SSO domain | The SSO domain is the vSphere single sign-on domain. The SSO domain name is fixed for all deployed Automated instances with a value of **`vsphere.local`**. |
 | Subdomain[^subdomain] | The subdomain is the DNS subdomain name of the root domain name where the local Automated instance hostnames are located. The subdomain name is in the format `vcenter_server_instance_name.root.domain_name`. |
-{: caption="Table 3. Automated instance properties" caption-side="bottom"}
+{: caption="Automated instance properties" caption-side="bottom"}
 
 [^multizone]: Multizone instances only
 
@@ -95,7 +95,7 @@ On the **Access information** tab, view the access information for the instance-
 | IP[^ips] | The IP address or addresses of the AD server or servers. |
 | FQDN[^fqdn] | The AD/DNS server fully qualified domain names (FQDN). \n \n The same administrator password can be used to connect to all AD/DNS servers by using a remote desktop connection. |
 | ADMIN (Remote Desktop) | For primary instances, it displays the username and password to access the AD server through a remote desktop connection. \n \n For secondary instances, click the **View on primary instance** link to be directed to the username and password information on the primary instance. \n \n After the secondary instance is added to the primary DNS domain and replication occurs, the local administrator password on the primary instance might overwrite the local administrator password on the secondary instance. By clicking the **View on primary instance** link, you receive access to the correct administrator password. |
-{: caption="Table 4. Access information tab - AD/DNS" caption-side="bottom"}
+{: caption="Access information tab - AD/DNS" caption-side="bottom"}
 {: tab-title="AD/DNS"}
 {: tab-group="access info"}
 {: class="simple-tab-table"}
@@ -107,7 +107,7 @@ On the **Access information** tab, view the access information for the instance-
 | FQDN | The vCenter Server fully qualified domain name (FQDN). |
 | ADMIN | The VMware vCenter SSO username and password that you can use to log in to vCenter Server by using the vSphere Web Client. |
 | SSH | The username and password that you can use to access the vCenter Server VM through SSH connection. |
-{: caption="Table 4. Access information tab - vCenter/PSC" caption-side="bottom"}
+{: caption="Access information tab - vCenter/PSC" caption-side="bottom"}
 {: tab-title="vCenter/PSC"}
 {: tab-group="access info"}
 {: class="simple-tab-table"}
@@ -118,7 +118,7 @@ On the **Access information** tab, view the access information for the instance-
 | IP | The IP address of the NSX Manager. |
 | FQDN | The NSX Manager fully qualified domain name (FQDN). |
 | HTTP | The username and password that is used to access the NSX Manager web console. |
-{: caption="Table 4. Access information tab - NSX Manager" caption-side="bottom"}
+{: caption="Access information tab - NSX Manager" caption-side="bottom"}
 {: tab-title="NSX Manager"}
 {: tab-group="access info"}
 {: class="simple-tab-table"}
@@ -128,7 +128,7 @@ On the **Access information** tab, view the access information for the instance-
 |:------------------ |:----------- |
 | IPs | The IP address or addresses for the NSX node VM. |
 | SSH | The username and password that you can use to access the NSX node VM through KVM or SSH connection. |
-{: caption="Table 4. Access information tab - NSX Controllers" caption-side="bottom"}
+{: caption="Access information tab - NSX Controllers" caption-side="bottom"}
 {: tab-title="NSX Controllers"}
 {: tab-group="access info"}
 {: class="simple-tab-table"}
@@ -138,7 +138,7 @@ On the **Access information** tab, view the access information for the instance-
 |:------------------- |:----------- |
 | IPs | The IP address or addresses for the Customer Edge VM. |
 | SSH | The username and password that you can use to access the Customer Edge VM through KVM or SSH connection. |
-{: caption="Table 4. Access information tab - Customer Edge VM" caption-side="bottom"}
+{: caption="Access information tab - Customer Edge VM" caption-side="bottom"}
 {: tab-title="Customer Edge VM"}
 {: tab-group="access info"}
 {: class="simple-tab-table"}
@@ -148,7 +148,7 @@ On the **Access information** tab, view the access information for the instance-
 |:------------------ |:----------- |
 | IPs | The IP address or addresses for the NSX Service Edge VM. |
 | SSH | The username and password that you can use to access the NSX Service Edge VM through KVM or SSH connection. |
-{: caption="Table 4. Access information tab - NSX Service Edge VMs" caption-side="bottom"}
+{: caption="Access information tab - NSX Service Edge VMs" caption-side="bottom"}
 {: tab-title="NSX Service Edge VMs"}
 {: tab-group="access info"}
 {: class="simple-tab-table"}
@@ -180,7 +180,7 @@ Click the **Infrastructure** tab to view the details of the clusters in the inst
 | Networking | The networking type, either **Public and private network** or **Private network only**. |
 | Uplink speed | The uplink speed, either 10 or 25 Gb. |
 | Status | The status of the cluster. The cluster statuses are similar to the instance statuses. |
-{: caption="Table 5. Infrastructure tab" caption-side="bottom"}
+{: caption="Infrastructure tab" caption-side="bottom"}
 
 ## Procedure to view service details for Automated instances
 {: #vc_viewinginstances-procedure-view-services}
@@ -195,7 +195,7 @@ Click the **Services** tab to view the details of the add-on services on the ins
 | Cluster name | The name of the cluster that the add-on service is installed on. |
 | Status | The status of the add-on service. |
 | Delete icon | To delete the service, click this icon and confirm. |
-{: caption="Table 6. Services tab for Automated instances" caption-side="bottom"}
+{: caption="Services tab for Automated instances" caption-side="bottom"}
 
 ## Procedure to view licensing details for Automated instances
 {: #vc_viewinginstances-procedure-view-license}

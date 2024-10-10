@@ -25,7 +25,7 @@ This pattern supports:
 
 VMware Aria Operations for Logs enables real-time logging for components in the {{site.data.keyword.vmwaresolutions_full}} environment. The design deploys a VMware Aria Operations for Logs cluster that consists of four nodes in each instance. This configuration provides continued availability and increased log ingestion rates.
 
-![VMware Aria Operations for Logs networking diagram](../../images/opsmgmt-vrlinw.svg "VMware Aria Operations for Logs networking diagram"){: caption="Figure 1. VMware Aria Operations for Logs networking" caption-side="bottom"}
+![VMware Aria Operations for Logs networking diagram](../../images/opsmgmt-vrlinw.svg "VMware Aria Operations for Logs networking diagram"){: caption="VMware Aria Operations for Logs networking" caption-side="bottom"}
 
 In this design, each location has an independent VMware Aria Operations for Logs cluster that is deployed on the management cluster. The VMware Aria Operations for Logs cluster is deployed on the tooling subnet by using {{site.data.keyword.cloud_notm}} Portable IP addresses. The deployment facilitates communication to all components that are addressed out of the {{site.data.keyword.cloud_notm}} RFC1918 address space. The components include vSphere® hosts, vCenter, Platform Services Controller, NSX Manager, and NSX Controllers. A VMware Aria Operations for Logs cluster contains a primary node and at least two worker nodes with an Integrated Load Balancer.
 
@@ -39,7 +39,7 @@ The following sizes are available and the appropriate one is selected:
 * Medium – 5,000 events per second
 * Large – 15,000 events per second
 
-![VMware Aria Operations for Logs components diagram](../../images/opsmgmt-vrlicomponents.svg "VMware Aria Operations for Logs components diagram"){: caption="Figure 2. VMware Aria Operations for Logs components" caption-side="bottom"}
+![VMware Aria Operations for Logs components diagram](../../images/opsmgmt-vrlicomponents.svg "VMware Aria Operations for Logs components diagram"){: caption="VMware Aria Operations for Logs components" caption-side="bottom"}
 
 VMware Aria Operations for Logs collects logs to provide monitoring information about the environment from a central location.
 
@@ -75,7 +75,7 @@ To accommodate all log data from the log sources in the environment, the VMware 
 | vCPU                     | 8                                 |
 | Memory                   | 18 GB                             |
 | Disk (thick provisioned) | 530 GB (490 GB for event storage) |
-{: caption="Table 1. VMware Aria Operations for Logs Primary and Replica Node system settings" caption-side="bottom"}
+{: caption="VMware Aria Operations for Logs Primary and Replica Node system settings" caption-side="bottom"}
 
 Each VMware Aria Operations for Logs virtual appliance has three default virtual disks and can use more virtual disks for storage.
 * Hard disk 1 - 20 GB for the root file system
@@ -114,7 +114,7 @@ Deployment of the VMware Aria Operations for Logs appliance requires three IP ad
 | LDAP GC                                                       | 3268/3269  | TCP      |
 | vCenter                                                       | 443        | TCP      |
 | VMware Aria Operations Manager appliance                         | 443        | TCP      |
-{: caption="Table 2. VMware Aria Operations for Logs ports" caption-side="bottom"}
+{: caption="VMware Aria Operations for Logs ports" caption-side="bottom"}
 
 ## Authentication
 {: #opsmgmt-vrli-auth}

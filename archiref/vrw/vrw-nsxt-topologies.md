@@ -25,7 +25,7 @@ Active-passive on Tier-0 provides IPsec capability for access through the HA VIP
 
 The following diagram shows an example of a customer deployment that uses the standard topology, when the segments are attached to the Tier-1 Gateway. You can add more segments to the existing Tier-1 Gateway or more Tier-1 Gateways on the same NSX edge clusters, if needed.
 
-![Single-site single-tenant example topology with Tier-1 Gateway](../../images/arch-pattern-1-zone-t1.svg "Single-site single-tenant example topology that uses both Tier-0 and Tier-1 Gateways"){: caption="Figure 1. Single-site single-tenant example topology with Tier-1 Gateway" caption-side="bottom"}
+![Single-site single-tenant example topology with Tier-1 Gateway](../../images/arch-pattern-1-zone-t1.svg "Single-site single-tenant example topology that uses both Tier-0 and Tier-1 Gateways"){: caption="Single-site single-tenant example topology with Tier-1 Gateway" caption-side="bottom"}
 
 1. The vCenter Server automation deploys an example single-site topology, which follows the principles that are presented in this model. The deployment includes a single vCenter and three NSX managers that are deployed in the cluster on the initial {{site.data.keyword.cloud_notm}} data center location.
 2. The vCenter Server automation deploys two edge cluster transport nodes and a single edge cluster for your Tier-0 and Tier-1 Gateways.

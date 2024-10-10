@@ -54,7 +54,7 @@ To find your customer private portable subnet details, complete the following st
 | DNS Server | AD/DNS IP | This IP address can be found in the {{site.data.keyword.vmwaresolutions_short}} console by browsing to the **Resources** > **VCF for classic** > Summary page. |
 | BCR IP | BCR IP| On the same page where you selected the proxy IP, note the address that is labeled **Gateway**. This address is the IP address of the {{site.data.keyword.cloud_notm}} Backend Customer Router and is the gateway for `10.0.0.0/8`, `161.26.0.0/16`, and `166.8.0.0/14`. You use this address later in a static route in the proxy server so that it can reach the VCSA and the AD/DNS server. |
 | NAT IP | T1 SNAT address | The public T1 SNAT address of the customer workload edge serves as the public NAT address for the proxy. This IP address can be found by reviewing details in the {{site.data.keyword.vmwaresolutions_short}} console by browsing to the Portable public subnet for customer workload edge. |
-{: caption="Table 1. Deployment values" caption-side="bottom"}
+{: caption="Deployment values" caption-side="bottom"}
 {: #vum-init-config-subnet-table-deployvalues}
 
 ## Configuring NSX
@@ -74,7 +74,7 @@ Add a gateway firewall policy and rule by using the parameters in the following 
 | Destination | Any |
 | Service | HTTP/HTTPS/ICMP Echo |
 | Action | Allow |
-{: caption="Table 2. Firewall rule" caption-side="bottom"}
+{: caption="Firewall rule" caption-side="bottom"}
 
 ### Defining the NAT rule
 {: #vum-init-config-nat}
@@ -89,7 +89,7 @@ Add a NAT rule by using the parameters in the following table. For more informat
 | Destination IP | Any |
 | Translated IP address | NAT IP |
 | Enabled | Yes |
-{: caption="Table 3. NAT rule" caption-side="bottom"}
+{: caption="NAT rule" caption-side="bottom"}
 
 ## Installing and configuring a proxy server
 {: #vum-init-config-inst-cfg-proxy}

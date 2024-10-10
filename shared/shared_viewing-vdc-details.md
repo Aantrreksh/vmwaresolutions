@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2024
 
-lastupdated: "2024-07-29"
+lastupdated: "2024-10-10"
 
 keywords: manage shared resources, view shared virtual data centers details
 
@@ -35,7 +35,7 @@ You can view property details for {{site.data.keyword.vm-shared}} sites and virt
 | Instances | The current number of virtual data center instances provisioned for the site. |
 | Red Hat activation key | The activation key that you use to register the Red Hat virtual machine (VM). |
 | Access controls | Options for IAM integration and setting the administrator password for the organization. |
-{: caption="Table 1. Virtual data center site details" caption-side="bottom"}
+{: caption="Virtual data center site details" caption-side="bottom"}
 
 ## Procedure to view virtual data center details
 {: #shared_viewing-vdc-details-procedure}
@@ -53,7 +53,7 @@ You can view property details for {{site.data.keyword.vm-shared}} sites and virt
 | ID | The ID of the virtual data center. |
 | Creation time | The date and time when the virtual data center was created, which is also when billing starts. |
 | Red Hat activation key | The activation key that you use to register the Red Hat virtual machine (VM). |
-{: caption="Table 2. Virtual data center property details" caption-side="bottom"}
+{: caption="Virtual data center property details" caption-side="bottom"}
 
 ### Opening a support ticket for additional IP addresses or subnet
 {: #shared_viewing-vdc-details-support}
@@ -76,7 +76,7 @@ Under **Resource reservation**, view the total reserved virtual CPU (vCPU) and R
 |:-------- |:----------- |
 | vCPU limit | The limit or reserved amount of vCPU that can be used at any time by the virtual data center.  |
 | RAM limit | The limit or reserved amount of memory that can be used at any time by the virtual data center.  |
-{: caption="Table 3. Virtual data center resource reservation details" caption-side="bottom"}
+{: caption="Virtual data center resource reservation details" caption-side="bottom"}
 
 ## Viewing virtual data center recommended services details
 {: #shared_viewing-vdc-details-services}

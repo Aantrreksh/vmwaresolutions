@@ -46,7 +46,7 @@ The following table shows the configuration of network and storage for your Fort
 |---------- |------------------- |---------------- |
 | Management IP | Existing management subnet | {{site.data.keyword.cloud}} primary subnet |
 | Storage | Management data store (vSAN or NFS) | Local data store |
-{: caption="Table 2. Network and storage configuration" caption-side="bottom"}
+{: caption="Network and storage configuration" caption-side="bottom"}
 
 ## Ordering FortiGate Virtual Appliance for new instances
 {: #fortinetvm_ordering-new}

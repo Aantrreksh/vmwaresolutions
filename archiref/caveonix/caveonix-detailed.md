@@ -18,7 +18,7 @@ subcollection: vmwaresolutions
 
 The following diagram and descriptions provide information about the RiskForesight™ application components.
 
-![Application components](../../images/caveonix-app-components.svg "Application components"){: caption="Figure 1. Application components" caption-side="bottom"}
+![Application components](../../images/caveonix-app-components.svg "Application components"){: caption="Application components" caption-side="bottom"}
 
 - Graphical user interface - The web interface that you can use to access the RiskForesight application.
 - Central Collector - Collects different types of data payload that come from the plug-ins and make it available in the messaging store. RiskForesight supports the following types of payloads:
@@ -57,11 +57,11 @@ The following table shows the ports and protocols that are required for each com
 | Relational datastore primary or secondary | 5432 |
 | Messaging datastore cluster | 9092 |
 | Index datastore primary nodes | 9200, 9300, 5601, 443 |
-{: caption="Table 1. Ports and protocols" caption-side="bottom"}
+{: caption="Ports and protocols" caption-side="bottom"}
 
 The following diagram shows the network topology with the Caveonix portable private subnet that is associated with Private VLAN A. You are responsible for managing the IP address space for this subnet. If needed, you can scale out from the all-in-one deployment model, through the partially distributed model, and to the fully distributed model.
 
-![Network diagram](../../images/caveonix-network.svg "Network diagram"){: caption="Figure 2. Network diagram" caption-side="bottom"}
+![Network diagram](../../images/caveonix-network.svg "Network diagram"){: caption="Network diagram" caption-side="bottom"}
 
 The IP Subnet, VLAN assignments are described in the following table.
 
@@ -83,4 +83,4 @@ The IP Subnet, VLAN assignments are described in the following table.
 |  Private B | Portable |Assigned for vSAN, if in use. |
 | Private B | Portable | Assigned for NAS, if in use. |
 | Private B | Portable | Assigned for vMotion. |
-{: caption="Table 2. VLAN and subnets" caption-side="bottom"}
+{: caption="VLAN and subnets" caption-side="bottom"}

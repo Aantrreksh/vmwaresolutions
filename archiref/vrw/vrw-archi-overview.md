@@ -21,7 +21,7 @@ The design extends and enhances the basic {{site.data.keyword.vcf-auto}} archite
 
 {{site.data.keyword.vmwaresolutions_full}} automation is used to deploy all layers of the platform thus consistently delivering a secure and compliant-ready build for every {{site.data.keyword.cloud_notm}} for {{site.data.keyword.rw}} instance ordered.
 
-![{{site.data.keyword.rw}} infrastructure overview](../../images/vrw-v2-overview.svg "{{site.data.keyword.rw}} infrastructure overview"){: caption="Figure 1. {{site.data.keyword.rw}} infrastructure overview" caption-side="bottom"}
+![{{site.data.keyword.rw}} infrastructure overview](../../images/vrw-v2-overview.svg "{{site.data.keyword.rw}} infrastructure overview"){: caption="{{site.data.keyword.rw}} infrastructure overview" caption-side="bottom"}
 
 The perimeter gateway cluster that is shown in the workload region is the same gateway that runs on the dedicated gateway cluster.
 

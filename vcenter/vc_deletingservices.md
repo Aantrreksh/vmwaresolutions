@@ -62,7 +62,7 @@ The following table shows the services that are affected. The table also shows t
 | Entrust DataControl® | `htdcnn-id` | `htcc02-GY67239` |
 | Entrust KeyControl™ | `htkcnn-id` | `htcc02-GY67239` |
 | VMware Aria Operations | `vrli`   \n `vrops`   \n `vrlog` | `vrli-master`   \n `vrops-data1`   \n `vrlog-master` |
-{: caption="Table 1. Hostname patterns and examples for affected services" caption-side="bottom"}
+{: caption="Hostname patterns and examples for affected services" caption-side="bottom"}
 
 To remove the DNS entires, complete the following steps:
 

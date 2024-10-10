@@ -22,7 +22,7 @@ The architecture that is presented here complements the vCenter Server solution 
 
 The following graphic provides the overall architecture of the attached storage on vCenter Server deployment.
 
-![Attached storage architecture](../../images/vcsv4radiagrams-ra-nfs-shares.svg "Attached storage architecture"){: caption="Figure 1. High-level architecture of attached storage on {{site.data.keyword.cloud_notm}}" caption-side="bottom"}
+![Attached storage architecture](../../images/vcsv4radiagrams-ra-nfs-shares.svg "Attached storage architecture"){: caption="High-level architecture of attached storage on {{site.data.keyword.cloud_notm}}" caption-side="bottom"}
 
 ## Physical infrastructure design
 {: #storage-infra-design-phys-infra-design}

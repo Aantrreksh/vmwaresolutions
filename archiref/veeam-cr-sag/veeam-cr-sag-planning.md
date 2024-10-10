@@ -43,7 +43,7 @@ Capture the following details of the {{site.data.keyword.vcf-auto}} instance and
 | `<addns_1>` | The IP address of the first AD/DNS server can be obtained from the UI by browsing to the {{site.data.keyword.vcf-auto-short}} instance's Summary page. |
 | `<addns_2>` | The IP address of the second AD/DNS server can be obtained from the UI by browsing to the {{site.data.keyword.vcf-auto-short}} instance's Summary page. |
 | `<vbr_ip>` | The IP address of the Veeam Backup and Replication server. |
-{: caption="Table 1. Capture parameters for Immutable backup planning" caption-side="bottom"}
+{: caption="Capture parameters for Immutable backup planning" caption-side="bottom"}
 
 Define the following parameters:
 
@@ -62,7 +62,7 @@ Define the following parameters:
 | `sa_ansible_password` | A complex password that is stored in the Ansible vault file that is used for the `sa-ansible` service account on the Veeam backup server. |
 | `immutability_period` | The required immutability period for the Linux Hardened repository. For example, `30` for 30 days. |
 | `max_concurrent_jobs` | Specifies the maximum allowed number of concurrent tasks for the backup repository. For example, Veeam recommends one task = one CPU core and 2 GB RAM per core. For more information, see [Task limitation for backup repositories](https://helpcenter.veeam.com/docs/backup/vsphere/limiting_tasks.html?ver=120){: external}. |
-{: caption="Table 2. Define parameters for Immutable backup planning" caption-side="bottom"}
+{: caption="Define parameters for Immutable backup planning" caption-side="bottom"}
 
 ## Isolated recovery environment planning
 {: #veeam-cr-sag-planning-ire}
@@ -79,7 +79,7 @@ The following information is needed for the isolated recovery environment planni
 | `<vcsa_user>` | The username of the account in vCenter appliance in the production environment. |
 | `<vcsa_user_password>` | The password for the `vcsa_user`. |
 | `<sub_domain>` | The subdomain of the root domain of the vCenter appliance in the production environment. |
-{: caption="Table 3. Parameters for Isolated recovery environment planning" caption-side="bottom"}
+{: caption="Parameters for Isolated recovery environment planning" caption-side="bottom"}
 
 ## Related links
 {: #veeam-cr-sag-planning-related}

@@ -25,7 +25,7 @@ This architecture pattern gives an overview for standard private and public conn
 
 When you deploy a {{site.data.keyword.vcf-auto-short}} instance in your {{site.data.keyword.cloud_notm}} classic infrastructure, the deployment consists of the components that are presented in the following diagram.
 
-![vCenter Server deployment overview](../../images/arch-pattern-vcs-nsx-t-whatu-get.svg "vCenter Server deployment overview"){: caption="Figure 1. vCenter Server deployment overview" caption-side="bottom"}
+![vCenter Server deployment overview](../../images/arch-pattern-vcs-nsx-t-whatu-get.svg "vCenter Server deployment overview"){: caption="vCenter Server deployment overview" caption-side="bottom"}
 
 The following steps summarize a standard deployment.
 
@@ -44,7 +44,7 @@ The following steps summarize a standard deployment.
 
 The vCenter Server deployment might consist of several clusters. The following diagram provides an overview of the key cluster types.
 
-![vCenter Server clusters](../../images/arch-pattern-vcs-nsx-t-edge-services-cluster.svg "vCenter Server clusters"){: caption="Figure 2. vCenter Server clusters" caption-side="bottom"}
+![vCenter Server clusters](../../images/arch-pattern-vcs-nsx-t-edge-services-cluster.svg "vCenter Server clusters"){: caption="vCenter Server clusters" caption-side="bottom"}
 
 This clustering can be summarized as follows: 
 
@@ -64,7 +64,7 @@ The gateway cluster must not be mixed with the NSX edge cluster, which consists 
 
 When you deploy a {{site.data.keyword.vcf-auto-short}} instance in your {{site.data.keyword.cloud_notm}} Classic Infrastructure, you obtain the default network topology as presented in the following diagram.
 
-![NSX default network topology](../../images/arch-pattern-nsx-t-topology.svg "NSX default network topology."){: caption="Figure 3. NSX default network topology" caption-side="bottom"}
+![NSX default network topology](../../images/arch-pattern-nsx-t-topology.svg "NSX default network topology."){: caption="NSX default network topology" caption-side="bottom"}
 
 The default topology can be summarized as follows: 
 
@@ -81,7 +81,7 @@ The default topology can be summarized as follows:
 
 When you deploy a {{site.data.keyword.vcf-auto-short}} instance in your {{site.data.keyword.cloud_notm}} classic infrastructure, you obtain the default private network topology as presented in the following diagram.
 
-![Access to {{site.data.keyword.cloud_notm}} Private network](../../images/arch-pattern-nsx-t-private-access.svg "Access to {{site.data.keyword.cloud_notm}} Private network"){: caption="Figure 4. Access to {{site.data.keyword.cloud_notm}} Private network" caption-side="bottom"}
+![Access to {{site.data.keyword.cloud_notm}} Private network](../../images/arch-pattern-nsx-t-private-access.svg "Access to {{site.data.keyword.cloud_notm}} Private network"){: caption="Access to {{site.data.keyword.cloud_notm}} Private network" caption-side="bottom"}
 
 Private connectivity pattern is summarized as follows: 
 
@@ -98,7 +98,7 @@ Private connectivity pattern is summarized as follows:
 
 When you deploy a {{site.data.keyword.vcf-auto-short}} instance in your {{site.data.keyword.cloud_notm}} classic infrastructure, you obtain the default public network topology as presented in the following diagram. 
 
-![Access to {{site.data.keyword.cloud_notm}} Public network](../../images/arch-pattern-nsx-t-public.svg "Access to {{site.data.keyword.cloud_notm}} Public network"){: caption="Figure 5. Access to {{site.data.keyword.cloud_notm}} Public network" caption-side="bottom"}
+![Access to {{site.data.keyword.cloud_notm}} Public network](../../images/arch-pattern-nsx-t-public.svg "Access to {{site.data.keyword.cloud_notm}} Public network"){: caption="Access to {{site.data.keyword.cloud_notm}} Public network" caption-side="bottom"}
 
 Public connectivity pattern is summarized as follows: 
 

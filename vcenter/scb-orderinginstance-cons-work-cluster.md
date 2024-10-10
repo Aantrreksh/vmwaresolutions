@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2024
 
-lastupdated: "2024-05-20"
+lastupdated: "2024-10-10"
 
 keywords: order Security and Compliance Readiness Bundle, order scb instances, order vcs scb
 subcollection: vmwaresolutions
@@ -87,7 +87,7 @@ Choose performance level options according to your needs.
 | 2 IOPS/GB | This option is designed for most general-purpose workloads. Example applications include hosting small databases, backing up web applications, or virtual machine disk images for a hypervisor. |
 | 4 IOPS/GB | This option is designed for higher-intensity workloads that have a high percentage of active data at a time. Example applications include transactional databases. |
 | 10 IOPS/GB | This option is designed for the most demanding workload types, such as analytics. Example applications include high-transaction databases and other performance-sensitive databases. This performance level is limited to a maximum capacity of 4 TB per file share. |
-{: caption="Table 1. NFS performance level options" caption-side="bottom"}
+{: caption="NFS performance level options" caption-side="bottom"}
 
 ### vSAN storage
 {: #scb-orderinginstance-consoli-vsan}

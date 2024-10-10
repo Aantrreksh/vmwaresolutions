@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-08-29"
+lastupdated: "2024-10-10"
 
 subcollection: vmwaresolutions
 
@@ -84,7 +84,7 @@ In an aid to isolating the affected components, this documentation on troublesho
 | A VM was powered off or restarted  | For more information, see [Determining why a virtual machine was powered off or restarted (1019064)](https://knowledge.broadcom.com/external/article?legacyId=1019064){: external}. |
 | One or more of your VMs has a poor response time | Performance issues can be caused by CPU constraints, memory over commitment, storage latency, or network latency. |
 {: class="simple-tab-table"}
-{: caption="Table 1. Virtual machine troubleshooting" caption-side="bottom"}
+{: caption="Virtual machine troubleshooting" caption-side="bottom"}
 {: #table1}
 {: tab-title="Virtual machines"}
 {: tab-group="trbl-scenarios"}
@@ -99,7 +99,7 @@ In an aid to isolating the affected components, this documentation on troublesho
 | Bare metal server is down | When the bare metal server that is running vSphere ESXi is unresponsive or down, log in to the {{site.data.keyword.cloud_notm}} management UI or console and check the status. If required, open a case to get assistance with your bare metal server. For more information, see [Managing your support cases](/docs/get-support?topic=get-support-managing-support-cases). |
 | vSphere ESXi host is in disconnected or a not responding state  | For more information, see [Troubleshooting an ESXi/ESX host in non responding state (1003409)](https://knowledge.broadcom.com/external/article?legacyId=1003409){: external}. |
 | Purple diagnostic screen | Purple screen errors can signal a kernel panic. The vSphere ESXi kernel `vmkernel` triggers this safety measure in response to an event or error that is unrecoverable. An unrecoverable error means that continuing to run poses a high risk for the services and VMs. When the panic occurs and the vSphere ESXi host crashes, it ends all the services that run on it together with all the VMs hosted. The VMs are not gracefully shut down, but rather abruptly powered off. If the host is part of a cluster and you configured HA, these VMs are restarted on the other hosts in the cluster. For more information, search through the [Broadcom Support Portal](https://support.broadcom.com/){: external}. |
-{: caption="Table 1. Typical vSphere ESXi hosts troubleshooting" caption-side="bottom"}
+{: caption="Typical vSphere ESXi hosts troubleshooting" caption-side="bottom"}
 {: #table2}
 {: tab-title="Hosts"}
 {: tab-group="trbl-scenarios"}
@@ -115,7 +115,7 @@ In an aid to isolating the affected components, this documentation on troublesho
 | Initiate vSAN health test | If you suspect an issue with vSAN, you can initiate a health test to verify that the cluster components are working as expected. Running the VM creation test creates a VM on each host in the cluster and then deletes it. If these tasks are successful, then the cluster components are working as expected and the cluster is functional. Then, network performance test is used to detect and diagnose connectivity issues and to ensure that the network bandwidth between the hosts is adequate. For more information, see [Proactive tests](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.vsan-monitoring.doc/GUID-B88B5900-33A4-4821-9659-59861EF70FB8.html){: external}. |
 | Monitoring vSAN performance | For more information, see [Monitoring vSAN performance](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.vsan-monitoring.doc/GUID-3D2D1382-9DDC-44D4-AF3B-ACA4F1DDBDCC.html){: external}. Performance charts are available for clusters, hosts, physical disks, VMs, and virtual disks. |
 | vSAN troubleshooting | For more information, see [Handling failures and troubleshooting vSAN](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.vsan-monitoring.doc/GUID-0F3C4D3F-9B86-4879-9C60-D6A977523112.html){: external}. |
-{: caption="Table 1. Typical storage troubleshooting" caption-side="bottom"}
+{: caption="Typical storage troubleshooting" caption-side="bottom"}
 {: #table3}
 {: tab-title="Storage"}
 {: tab-group="trbl-scenarios"}
@@ -128,7 +128,7 @@ In an aid to isolating the affected components, this documentation on troublesho
 | HCX troubleshooting | For more information, see [HCX troubleshooting](/docs/vmwaresolutions?topic=vmwaresolutions-hcxclient-troubleshooting). |
 | HCX syncing state with 0% progress and 0 bytes with status error | For more information, see [HCX replication in syncing state with 0% progress and 0 bytes with status error (56710)](https://knowledge.broadcom.com/external/article?legacyId=56710){: external}. |
 | Poor VM network performance | Review the VM virtual NIC settings. VMware recommends VMXNET 3 virtual NICs for VMs as it is the most recent generation of paravirtualized NICs designed for performance. Check for compatibility of VMXNET 3 using the VMware compatibility list, and if supported change the virtual NIC for additional network performance. For more information, see [Troubleshooting networking](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.networking.doc/GUID-217384C2-B361-471D-90C8-BC2676A0ECA6.html){: external}. |
-{: caption="Table 1. Typical network troubleshooting" caption-side="bottom"}
+{: caption="Typical network troubleshooting" caption-side="bottom"}
 {: #table4}
 {: tab-title="Network"}
 {: tab-group="trbl-scenarios"}
@@ -140,7 +140,7 @@ In an aid to isolating the affected components, this documentation on troublesho
 | New vCenter Server Certificate Does Not Appear to Load | After the replacement of the default vCenter certificates, the new certificates might not appear to load. For more information, see [New vCenter Server certificate does not appear to load](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.vcenterhost.doc/GUID-415CF843-42E8-4AD7-98EC-7265227337B6.html){: external}. |
 | vCenter Server Cannot Connect to Managed Hosts | After the replacement of the default vCenter certificates and restarting the system, VMware vCenter® Server Appliance (VCSA) cannot connect to managed hosts. For more information, see [vCenter Server cannot connect to managed hosts](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.vcenterhost.doc/GUID-8D3DCEC4-50B6-4523-BF24-0DE6C65600E9.html){: external}. |
 | Cannot Configure vSphere HA When Using Custom SSL Certificates | After the installation of custom SSL certificates, attempts to enable vSphere High Availability (HA) fail. For more information, see [Cannot configure vSphere HA when you use custom SSL certificates](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.vcenterhost.doc/GUID-3FC16DC8-7157-4340-AB8A-B8DC87D7DC0F.html){: external}. |
-{: caption="Table 1. Typical vCenter troubleshooting" caption-side="bottom"}
+{: caption="Typical vCenter troubleshooting" caption-side="bottom"}
 {: #table5}
 {: tab-title="vCenter"}
 {: tab-group="trbl-scenarios"}
@@ -151,7 +151,7 @@ In an aid to isolating the affected components, this documentation on troublesho
 |  Incompatible or incorrect license configuration | For more information, see [Troubleshooting host licensing](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.vcenterhost.doc/GUID-B9DAAF47-94EC-47F5-8523-9C8C019412E1.html){: external}. |
 |  VM does not power on | It ia possible that a license issue exists if you can't power on a VM on a vSphere ESXi host and you receive the ``The 60-day evaluation period of the host is expired or the license of the host is expired`` message. For more information, see [Unable to power on a virtual machine](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.vcenterhost.doc/GUID-D4770546-9F9A-4F1E-AC1C-CF313E6130F4.html){: external}. |
 | A feature is unavailable or inability to change a configuration  | For more information, see [Unable to configure or use a feature](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.vcenterhost.doc/GUID-26C0E2F0-A581-4A5A-B1F7-2BA4F151E27A.html){: external}.  |
-{: caption="Table 1. Typical license troubleshooting" caption-side="bottom"}
+{: caption="Typical license troubleshooting" caption-side="bottom"}
 {: #table6}
 {: tab-title="Licenses"}
 {: tab-group="trbl-scenarios"}

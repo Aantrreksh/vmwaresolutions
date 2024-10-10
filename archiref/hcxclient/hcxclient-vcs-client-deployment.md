@@ -29,7 +29,7 @@ The HCX client side can install on any version of vSphere supported by HCX on th
 | HCX Interconnect (HCX-IX) | 4 | 3 | 2 |
 | HCX Network Extension (HCX-NE) | 4 | 3 | 2 |
 | HCX WAN Optimizer (HCX-WAN) | 8 | 14 | 100 |
-{: caption="Table 1. Requirements" caption-side="bottom"}
+{: caption="Requirements" caption-side="bottom"}
 
 ## Client licensing
 {: #hcxclient-vcs-client-deployment-licensing}
@@ -114,7 +114,7 @@ Install the HCX Manager appliance in the on-premises vCenter.
    | Default IPv4 gateway     | 192.168.200.1   |
    | Network 1 IPv6 address   |                 |
    | Network 1 IPv6 prefix    |                 |
-   {: caption="Table 2. Sample values for network properties" caption-side="bottom"}
+   {: caption="Sample values for network properties" caption-side="bottom"}
 
 8. Review the vService bindings page. Click **Next** to continue.
 9. On the **Ready to complete** page, follow these steps:

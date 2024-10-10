@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-07-11"
+lastupdated: "2024-10-10"
 
 subcollection: vmwaresolutions
 
@@ -28,7 +28,7 @@ The gateway cluster must not be mixed with the NSX edge cluster, which consists 
 
 The following diagram presents an overview for an architecture pattern for deploying a gateway cluster with NSX.
 
-![Gateway cluster with NSX](../../images/arch-pattern-nsx-t-edge-services-cluster.svg "Gateway cluster with NSX"){: caption="Figure 1. Gateway cluster with NSX" caption-side="bottom"}
+![Gateway cluster with NSX](../../images/arch-pattern-nsx-t-edge-services-cluster.svg "Gateway cluster with NSX"){: caption="Gateway cluster with NSX" caption-side="bottom"}
 
 The following list is a summary of the architecture pattern deployment:
 
@@ -46,7 +46,7 @@ In some designs, extra VLANs might be preferred or needed, especially with a gat
 
 This architecture pattern shows an example for using a new VLAN for NSX T0 gateway's private uplinks. VLAN tagging design and configuration are important to get the VLAN IDs correctly through the vSphere distributed virtual switches, NSX edge transport nodes, and edge cluster up to the T0 gateways that are running on these components.
 
-![Adding VLANs with gateway cluster](../../images/arch-pattern-nsx-t-edge-services-cluster-vlans.svg "Adding VLANs with gateway cluster."){: caption="Figure 2. Adding VLANs with gateway cluster" caption-side="bottom"}
+![Adding VLANs with gateway cluster](../../images/arch-pattern-nsx-t-edge-services-cluster-vlans.svg "Adding VLANs with gateway cluster."){: caption="Adding VLANs with gateway cluster" caption-side="bottom"}
 
 1. In this example, you deployed an optional gateway cluster to host Juniper vSRX (or your own routing or firewall device). This cluster is attached to both {{site.data.keyword.cloud_notm}} private and public networks through untagged transit networks. These transit networks are used for static routes to route public and private traffic through the firewall that is hosted on the gateway cluster.
 2. You can associate and route traffic through vSRX (or the third-party device) by assigning VLANs to the gateway cluster. You can choose the VLANs to be assigned and routed through it by using {{site.data.keyword.cloud_notm}} classic portal. You must manually configure the required VLAN interfaces and IP addresses to the vSRX or third-party devices, the related firewall zones, the rules, and the policies. Every interface that is associated and routed though VLAN is tagged with the specific VLAN ID in the gateway cluster's trunked-distributed port group. Therefore, VLAN tagged interfaces must also be used on the firewall appliance configuration.

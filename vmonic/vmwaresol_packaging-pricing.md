@@ -37,7 +37,7 @@ The following table shows the changes of the offering names across the VMware So
 | {{site.data.keyword.vm-shared}} | {{site.data.keyword.vm-shared}} (no change) \n This offering is reaching [End of Support](/docs/vmwaresolutions?topic=vmwaresolutions-eos-vmware-shared). |
 | VMware ESXi™ on Bare Metal for Classic | VMware ESXi on Bare Metal for Classic (no name change) |
 | VMware ESXi on Bare Metal for VPC | VMware ESXi on Bare Metal for VPC (no name change) \n This offering is reaching [End of Support](/docs/vpc?topic=vpc-release-notes&interface=ui#vpc-mar2824). |
-{: caption="Table 1. Current and updated offering names" caption-side="bottom"}
+{: caption="Current and updated offering names" caption-side="bottom"}
 
 ## Pricing considerations
 {: #vmwaresol_packaging-pricing-considerations}

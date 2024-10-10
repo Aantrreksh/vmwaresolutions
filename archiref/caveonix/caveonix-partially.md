@@ -32,7 +32,7 @@ Find the details of the base VM, scale-out VM, and Remote collector VM in the fo
 | OS | CentOS 7 |
 | Installed application components | UI, App, Plug-ins, Central collector, Index datastore, Messaging datastore, Relational datastore, Remote collector |
 {: class="simple-tab-table"}
-{: caption="Table 1. Base VM parameters" caption-side="bottom"}
+{: caption="Base VM parameters" caption-side="bottom"}
 {: #table1}
 {: tab-title="Base VM"}
 {: tab-group="partially-caveonix"}
@@ -46,7 +46,7 @@ Find the details of the base VM, scale-out VM, and Remote collector VM in the fo
 | Disk | 4 TB |
 | OS | CentOS 7 |
 | Installed application components | Data nodes (scale-out) |
-{: caption="Table 1. Scale-out VM parameters" caption-side="bottom"}
+{: caption="Scale-out VM parameters" caption-side="bottom"}
 {: #table2}
 {: tab-title="Scale-out VM"}
 {: tab-group="partially-caveonix"}
@@ -60,7 +60,7 @@ Find the details of the base VM, scale-out VM, and Remote collector VM in the fo
 | Disk | 1 TB |
 | OS | CentOS 7 |
 | Installed application components | Remote collector |
-{: caption="Table 1. Remote collector VM parameters" caption-side="bottom"}
+{: caption="Remote collector VM parameters" caption-side="bottom"}
 {: #table3}
 {: tab-title="Remote collector VM"}
 {: tab-group="partially-caveonix"}

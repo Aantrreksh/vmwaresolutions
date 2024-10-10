@@ -39,7 +39,7 @@ FortiGate VM appliances are deployed according to the following specifications.
 | High availability | Two appliances are deployed to ensure high availability |
 | Disk usage | One 2 GB and one 30 GB disk |
 | Disk backing | When deployed to a gateway cluster, local SSD storage; when deployed to any other cluster, by using vSAN or {{site.data.keyword.cloud}} Endurance, as applicable |
-{: caption="Table 1. Appliance specifications" caption-side="bottom"}
+{: caption="Appliance specifications" caption-side="bottom"}
 
 {{site.data.keyword.cloud_notm}} automation limits you to choosing 16– and 32–CPU options when you deploy FortiGate into a gateway cluster.
 

@@ -41,11 +41,11 @@ Don't change these default settings.
 | VLAN type | Private VLAN B |
 | Load balancing | Route base on originating virtual port |
 | Active Uplinks | `uplink1` `uplink2` |
-{: caption="Table 1. NFS port group summary" caption-side="bottom"}
+{: caption="NFS port group summary" caption-side="bottom"}
 
 In addition to the vDS port group that is created for NFS storage traffic, a VMkernel port is created on each vSphere ESXi host during the deployment. The VMkernel port is assigned to the `SDDC-DPG-NFS` port group. The VMkernel port is also assigned to an IP address from the private portable subnet that is associated with the attached storage VLAN (private VLAN B). The port MTU is set to 9000 to support jumbo frames.
 
-![Private vDS Port groups and uplinks](../../images/private_vds_portgroups_and_uplinks.svg "Private vDS Port groups and uplinks"){: caption="Figure 1. Private vDS Port groups and uplinks" caption-side="bottom"}
+![Private vDS Port groups and uplinks](../../images/private_vds_portgroups_and_uplinks.svg "Private vDS Port groups and uplinks"){: caption="Private vDS Port groups and uplinks" caption-side="bottom"}
 
 ### vSphere host static routing
 {: #storage-infra-mgmt-vsphere-routing}

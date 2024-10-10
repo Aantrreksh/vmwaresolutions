@@ -18,7 +18,7 @@ subcollection: vmwaresolutions
 The {{site.data.keyword.vmwaresolutions_full}} offerings provide automation to deploy VMware® technology components in
 {{site.data.keyword.cloud_notm}} data centers across the globe. The architecture consists of a single cloud region. It supports the ability to extend into more cloud regions that are located in another geography or into another {{site.data.keyword.cloud_notm}} pod within the same data center.
 
-![{{site.data.keyword.redhat_openshift_notm}} architecture](../../images/openshift-components.svg){: caption="Figure 1. Red Hat OpenShift architecture" caption-side="bottom"}
+![{{site.data.keyword.redhat_openshift_notm}} architecture](../../images/openshift-components.svg){: caption="Red Hat OpenShift architecture" caption-side="bottom"}
 
 ## Bastion hosts
 {: #vcs-openshift-redhat-arch-bastion-host}

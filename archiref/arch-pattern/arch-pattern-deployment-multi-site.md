@@ -30,7 +30,7 @@ The multisite deployment is a common use case and network deployment pattern. Th
 
 The following diagram shows an example of a customer deployment by using this topology. You can add more hosts or new clusters to scale the solution.
 
-![Multisite deployment topology](../../images/arch-pattern-m-s.svg "Multisite deployment topology."){: caption="Figure 1. Multisite deployment topology" caption-side="bottom"}
+![Multisite deployment topology](../../images/arch-pattern-m-s.svg "Multisite deployment topology."){: caption="Multisite deployment topology" caption-side="bottom"}
 
 1. The vCenter Server automation deploys an initial vSphere cluster on the primary instance, which includes a vCenter, three NSX managers, and an Active Directory deployment. They run either on a single {{site.data.keyword.cloud_notm}} Classic Virtual Server Instance or two VMware VMs in a high availability deployment. This instance includes a vCenter, three NSX managers, an Active Directory deployment with either running on a single {{site.data.keyword.cloud_notm}} Classic Virtual Server Instance or two VMware VMs in a high availability deployment and two NSX edge clusters, one for services and one for workloads.
 2. The initial {{site.data.keyword.vcf-auto-short}} instance can include several vSphere clusters (refer to single site deployment). They are typically deployed in the initial {{site.data.keyword.cloud_notm}} data center location.
@@ -49,7 +49,7 @@ The dual-site deployment is typically suitable for the production and disaster r
 
 The following diagram shows an example of a customer deployment by using this topology. 
 
-![Dual-site deployment topology](../../images/arch-pattern-d-s.svg "Dual-site deployment topology."){: caption="Figure 2. Dual-site deployment topology" caption-side="bottom"}
+![Dual-site deployment topology](../../images/arch-pattern-d-s.svg "Dual-site deployment topology."){: caption="Dual-site deployment topology" caption-side="bottom"}
 
 1. The vCenter Server automation deploys instance A and its management or converged cluster, which includes a vCenter, three NSX managers, and an Active Directory deployment. They run either on a single {{site.data.keyword.cloud_notm}} Classic Virtual Server Instance or two VMware VMs in a high availability deployment. This instance includes a vCenter, three NSX managers, an Active Directory deployment with either running on a single {{site.data.keyword.cloud_notm}} Classic Virtual Server Instance or two VMware VMs in a high availability deployment and two NSX edge clusters, one for services and one for workloads.
 2. You can provision another {{site.data.keyword.vcf-auto-short}} instance, instance B, at the same time or later than the instance A. By using this option, the automation deploys a new {{site.data.keyword.vcf-auto-short}} instance in the new {{site.data.keyword.cloud_notm}} data center location. As the instance A, this instance includes a vCenter, three NSX managers, an Active Directory deployment with either running on a single {{site.data.keyword.cloud_notm}} Classic Virtual Server Instance or two VMware VMs in a high availability deployment and two NSX edge clusters, one for services and one for workloads.
@@ -77,4 +77,3 @@ To customize the NSX overlay topologies, see [the architecture pattern for multi
 * [vCenter Server overview](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview)
 * [Architecture pattern for multisite NSX topologies](/docs/vmwaresolutions?topic=vmwaresolutions-arch-pattern-overlays-multi-site)
 * [Multisite configuration for {{site.data.keyword.vcf-auto-short}} instances](/docs/vmwaresolutions?topic=vmwaresolutions-vc_multisite)
-

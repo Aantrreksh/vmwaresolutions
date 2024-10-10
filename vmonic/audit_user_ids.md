@@ -4,7 +4,7 @@ copyright:
 
   years: 2016, 2024
 
-lastupdated: "2024-07-23"
+lastupdated: "2024-10-10"
 
 keywords: user IDs vCenter, PSC user, user ID service
 
@@ -33,7 +33,7 @@ VMware instance operations fail if IBM user IDs are deleted, disabled, or if the
 | IBM      | `root`       | SSH    | Used for VMware configuration such as setting up VMware High Availability and creating distributed switches. Used post deployment to pair primary and secondary {{site.data.keyword.vcf-auto}} instances. |
 | IBM      | `automation@root_domain`  \n (Active Directory™ user) | HTTP | Used post deployment to add and remove hosts and clusters and to deploy and configure virtual machines (VMs) for services. |
 | Customer | `administrator@vsphere.local` | HTTP | Created for customer use only. |
-{: caption="Table 1. vCenter Server and Platform Services Controller user IDs" caption-side="bottom"}
+{: caption="vCenter Server and Platform Services Controller user IDs" caption-side="bottom"}
 
 HTTP is used for vCenter Server setup, configuration, and VMware operations such as adding hosts, clusters, or storage for vCenter management of resources.
 {: note}
@@ -45,7 +45,7 @@ HTTP is used for vCenter Server setup, configuration, and VMware operations such
 |:---------|:-------------|:------------|
 | IBM      | `automation@root_domain`  \n (Active Directory user) | Used post deployment to manage NSX VTEP IP addresses, manage host, and cluster configuration when you add and remove hosts and clusters. Also used to manage ESG configuration for services that require public network access for licensing, activation, or usage reporting. |
 | Customer | `admin` | Created for customer use only. |
-{: caption="Table 2. NSX Manager user IDs" caption-side="bottom"}
+{: caption="NSX Manager user IDs" caption-side="bottom"}
 
 ## ESXi host user IDs
 {: #audit_user_ids-esxi}
@@ -53,7 +53,7 @@ HTTP is used for vCenter Server setup, configuration, and VMware operations such
 | User     | User ID      | Description |
 |:---------|:-------------|:------------|
 | IBM      | `ic4vroot` - deprecated  | Used for existing deployments. |
-{: caption="Table 3. ESXi host user IDs" caption-side="bottom"}
+{: caption="ESXi host user IDs" caption-side="bottom"}
 
 ## Microsoft Active Directory user IDs
 {: #audit_user_ids-ad}
@@ -62,7 +62,7 @@ HTTP is used for vCenter Server setup, configuration, and VMware operations such
 |:---------|:------------- |:------------|
 | IBM      | `automation`  | Used to add a host, add a VM for service, and set up Active Directory™ and DNS entries. |
 | Customer | `administrator` | Created for customer use only. |
-{: caption="Table 4. Microsoft® Active Directory user IDs" caption-side="bottom"}
+{: caption="Microsoft® Active Directory user IDs" caption-side="bottom"}
 
 ## Service user IDs
 {: #audit_user_ids-services}
@@ -82,7 +82,7 @@ HTTP is used for vCenter Server setup, configuration, and VMware operations such
 | `prod-Veeam-dynamicID-@domainName` | Used for installation and configuration of the Veeam® service. |
 | `prod-HCX-dynamicID-@domainName` | Used for installation and configuration of the VMware HCX™ service. |
 | `prod-Zerto-dynamicID-@domainName` | Used for installation and configuration of the Zerto service. |
-{: caption="Table 5. Service user IDs" caption-side="bottom"}
+{: caption="Service user IDs" caption-side="bottom"}
 {: #audit_user_ids-services-table}
 
 In the [previous table](#audit_user_ids-services-table), the following notations are used:

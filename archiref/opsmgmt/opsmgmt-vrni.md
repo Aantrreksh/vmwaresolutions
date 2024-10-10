@@ -18,11 +18,11 @@ subcollection: vmwaresolutions
 
 The VMware Aria Operations™ for Networks (formerly known as VMware vRealize® Network Insight) environment consists of two virtual machines (VMs), a Platform (UI) and a controller node.
 
-![VMware Aria Operations for Networks diagram](../../images/opsmgmt-vrninw.svg "VMware Aria Operations for Networks diagram"){: caption="Figure 1. VMware Aria Operations for Networks networking" caption-side="bottom"}
+![VMware Aria Operations for Networks diagram](../../images/opsmgmt-vrninw.svg "VMware Aria Operations for Networks diagram"){: caption="VMware Aria Operations for Networks networking" caption-side="bottom"}
 
 The VMware Aria Operations for Networks Platform appliance provides the analytics, user interface, and data management and connects to the controller appliance, which collects from the various data sources such as NSX Edges, vCenter. All VMware Aria Operations for Networks components use {{site.data.keyword.cloud}} Private portable IP addresses. VMware Aria Operations™ for Logs is configured as the syslog server for VMware Aria Operations for Networks.
 
-![VMware Aria Operations for Networks components](../../images/opsmgmt-vrnicomponents.svg "VMware Aria Operations for Networks components"){: caption="Figure 2. VMware Aria Operations for Networks components" caption-side="bottom"}
+![VMware Aria Operations for Networks components](../../images/opsmgmt-vrnicomponents.svg "VMware Aria Operations for Networks components"){: caption="VMware Aria Operations for Networks components" caption-side="bottom"}
 
 ## System requirements
 {: #opsmgmt-vrni-requirements}
@@ -35,7 +35,7 @@ This architecture supports 3,000 VMs by using a Medium brick size.
 | Memory | 32 GB |
 | Disk (thin provisioned) | 1 TB |
 {: class="simple-tab-table"}
-{: caption="Table 1. VMware Aria Operations for Networks Platform system requirements" caption-side="bottom"}
+{: caption="VMware Aria Operations for Networks Platform system requirements" caption-side="bottom"}
 {: #table1}
 {: tab-title="Platform system requirements"}
 {: tab-group="sys-req"}
@@ -45,7 +45,7 @@ This architecture supports 3,000 VMs by using a Medium brick size.
 | vCPU | 4 |
 | Memory | 12 GB |
 | Disk (thin provisioned) | 200 GB |
-{: caption="Table 1. VMware Aria Operations for Networks Collector system requirements" caption-side="bottom"}
+{: caption="VMware Aria Operations for Networks Collector system requirements" caption-side="bottom"}
 {: #table2}
 {: tab-title="Collector system requirements"}
 {: tab-group="sys-req"}
@@ -79,7 +79,7 @@ Deployment of the VMware Aria Operations for Networks appliance requires two IP 
 | LDAP/LDAPS | 389, 636 | TCP |
 | ESXi | 2055 | TCP |
 | VMware vSphere® and NSX | 443 | TCP |
-{: caption="Table 2. VMware Aria Operations for Networks ports" caption-side="bottom"}
+{: caption="VMware Aria Operations for Networks ports" caption-side="bottom"}
 
 ## Authentication
 {: #opsmgmt-vrni-auth}

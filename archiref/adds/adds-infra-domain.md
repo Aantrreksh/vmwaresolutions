@@ -52,7 +52,7 @@ For more information, see [Forest and domain functional levels](https://learn.mi
 
 The following diagram shows the deployment pattern of the single VSI domain controller.
 
-![Single VSI domain controller diagram](../../images/adds-advsi.svg "Single VSI domain controller diagram"){: caption="Figure 1. Single VSI domain controller diagram" caption-side="bottom"}
+![Single VSI domain controller diagram](../../images/adds-advsi.svg "Single VSI domain controller diagram"){: caption="Single VSI domain controller diagram" caption-side="bottom"}
 
 If you order the single VSI, it is recommended that you manually order a second VSI of the same type. Configure this VSI as a second domain controller to enable AD DS as a highly available service.
 
@@ -65,7 +65,7 @@ The following table describes the VSI configuration.
 | RAM                | 8 GB                                          |
 | Disk               | 100 GB (SAN)                                  |
 | Uplink Port Speeds | 1 Gbps Private Network Uplink                 |
-{: caption="Table 1. VSI specifications" caption-side="bottom"}
+{: caption="VSI specifications" caption-side="bottom"}
 
 The domain controller is provisioned with a name of `ADNS<instance_name>.<root_domain>`, for example, `ADNSoncloud.cloud-east.myroot.local`. This server is the global catalog (GC) instance for the domain.
 
@@ -73,7 +73,7 @@ The domain controller is provisioned with a name of `ADNS<instance_name>.<root_d
 {: #adds-infra-domain-controllers-ha}
 
 The following diagram shows the deployment pattern of the two highly available VM domain controllers.
-![Two highly available VM domain controllers diagram](../../images/adds-adha.svg "Two highly available VM domain controllers"){: caption="Figure 2. Two highly available VM domain controllers" caption-side="bottom"}
+![Two highly available VM domain controllers diagram](../../images/adds-adha.svg "Two highly available VM domain controllers"){: caption="Two highly available VM domain controllers" caption-side="bottom"}
 
 If you order the two high availability Microsoft Windows VMs, you must provide two Microsoft Windows Server 2019 licenses. For more information, see [Domain Name System configuration](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-network-interface-settings#vc_orderinginstance-dns-config).
 
@@ -85,7 +85,7 @@ After the provisioning of the vCenter Server instance, you have 30 days to activ
 | CPU              | 2                                             |
 | RAM              | 8 GB                                          |
 | Disk             | 100 GB                                        |
-{: caption="Table 2. HA VM specifications" caption-side="bottom"}
+{: caption="HA VM specifications" caption-side="bottom"}
 
 ## Domain configuration
 {: #adds-infra-domain-config}
@@ -228,4 +228,3 @@ All deployed appliances (vCenter Server Appliance, NSX Manager and Controllers, 
 
 * [Overview of VMware Solutions](/docs/vmwaresolutions?topic=vmwaresolutions-solution_overview)
 * [Getting started with VMware Solutions](/docs/vmwaresolutions?topic=vmwaresolutions-getting-started)
-

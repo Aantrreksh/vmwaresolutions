@@ -18,7 +18,7 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.vcf-vpc}} provides a ubiquitous hybrid cloud platform for both traditional enterprise apps and modern apps. {{site.data.keyword.vpc_full}} provides the underlying infrastructure for running VMware Cloud Foundation in {{site.data.keyword.cloud_notm}} and {{site.data.keyword.vcf-vpc}} automation deploys the required infrastructure assets inside your own {{site.data.keyword.cloud}} account.
 
-![{{site.data.keyword.vcf-vpc}} overview](../../images/vcf-vpc-v2-overview.svg "{{site.data.keyword.vcf-vpc}} overview"){: caption="Figure 1. {{site.data.keyword.vcf-vpc}} overview" caption-side="bottom"}
+![{{site.data.keyword.vcf-vpc}} overview](../../images/vcf-vpc-v2-overview.svg "{{site.data.keyword.vcf-vpc}} overview"){: caption="{{site.data.keyword.vcf-vpc}} overview" caption-side="bottom"}
 
 The VMware Cloud Foundation deployment provides a complete set of software-defined services for compute, storage, network security, Kubernetes management, and cloud management. It includes VMware vSphere® with VMware Tanzu™, VMware vSAN™, VMware NSX™ Data Center and it is managed through vCenter Server, SDDC manager, VMware HCX™, and VMware Aria® Suite (formerly known as VMware vRealize® Suite). The VMware Cloud Foundation management capabilities offer consistent VMware operations across private and public cloud deployments. The VMware Cloud Foundation solution provides access to a unique set of VMware Cloud Foundation capabilities in a bundled form.
 

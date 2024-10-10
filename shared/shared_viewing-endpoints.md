@@ -35,7 +35,7 @@ You can view the details of a private network endpoint for a virtual data center
 | Private network IP | The IP address for the private network. |
 | Service address | The IP address that your virtual data center is allocated for {{site.data.keyword.cloud_notm}} access. |
 | Allow listed IPs and subnets | The list of all allow listed IP addresses and subnets for the virtual data center. |
-{: caption="Table 1. Private network endpoint items" caption-side="bottom"}
+{: caption="Private network endpoint items" caption-side="bottom"}
 
 The **Service address** is available only when you select the *Dedicated 1 Gbps uplinks* or *Dedicated 10 Gbps uplinks* **Device type** when you order the private network endpoint.
 {: important}
@@ -49,7 +49,7 @@ The private network endpoint can have different statuses.
 | Modifying | The allow listed IPs and subnets are being modified. |
 | Deleting | The private network endpoint is being deleted. |
 | Deleted | The private network endpoint is deleted. |
-{: caption="Table 2. Status descriptions for a private network endpoint" caption-side="bottom"}
+{: caption="Status descriptions for a private network endpoint" caption-side="bottom"}
 
 ## Related links
 {: #shared_viewing-endpoints-related}

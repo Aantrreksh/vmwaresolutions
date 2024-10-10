@@ -37,7 +37,7 @@ This document also describes the processes to maintain the following components 
 
 This document describes the use of a proxy server implementation, based on CentOS and Squid, to enable VUM to access the VMware repositories. When VUM requests a resource from the update server at VMware, the request is sent to the proxy server first and the proxy server then sends the request to the update server through the External Services Gateway (ESG). After the resource is obtained by the proxy server, it sends the resource to VUM.
 
-![Overview diagram](../../images/vum-vcsproxy.svg "Overview diagram"){: caption="Figure 1. Overview diagram" caption-side="bottom"}
+![Overview diagram](../../images/vum-vcsproxy.svg "Overview diagram"){: caption="Overview diagram" caption-side="bottom"}
 
 In vSphere 6.7, VUM is integrated within the VCSA, and as the VUM client component is a plug-in that runs on the vSphere Web Client it is automatically enabled after deployment of the VCSA. However, VUM has no access to the internet to access the VMware repositories.
 

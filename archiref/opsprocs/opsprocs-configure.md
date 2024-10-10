@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-09-11"
+lastupdated: "2024-10-10"
 
 subcollection: vmwaresolutions
 
@@ -37,7 +37,7 @@ After you provision your {{site.data.keyword.vcf-auto}} instance, system adminis
 | Using VMware Update Manager | After deployment, the VMware products are updated by your system administrators. For more information about how your system administrators can use VUM in a {{site.data.keyword.vcf-auto-short}} Instance, see [VMware Update Manager introduction](/docs/vmwaresolutions?topic=vmwaresolutions-vum-intro#vum-intro). |
 | Key {{site.data.keyword.vcf-auto-short}} Instance components backup | Your system administrators are responsible for the configuration, management, and monitoring of all software components of your {{site.data.keyword.vcf-auto-short}} instance, including the backup and availability of the management infrastructure and workloads. As part of the solution, you can optionally deploy the Veeam add-on service that can help with backing up your management components. For more information, see [Backing up components](/docs/vmwaresolutions?topic=vmwaresolutions-solution_backingup). |
 | Collecting diagnostic information for VMware products | VMware Technical Support routinely requests diagnostic information when a support request is handled. This diagnostic information contains product-specific logs, configuration files, and data appropriate to the situation. For more information about URLs to VMware Knowledgebase articles and detailed step-by-step tasks for collecting this information, see [Collecting diagnostic information for VMware products](https://knowledge.broadcom.com/external/article?legacyId=1008524){: external}. For more information about the process of collecting the required diagnostic information for VMware NSX® Edge™ devices, see [Collecting diagnostic information for VMware NSX Edge (2079380)](https://knowledge.broadcom.com/external/article?legacyId=2079380){: external}. |
-{: caption="Table 1. {{site.data.keyword.vcf-auto-short}} instances and clusters" caption-side="bottom"}
+{: caption="{{site.data.keyword.vcf-auto-short}} instances and clusters" caption-side="bottom"}
 
 ## VM procedures
 {: #opsprocs-configure-vm}
@@ -61,7 +61,7 @@ After you provision your {{site.data.keyword.vcf-auto}} instance, system adminis
 | VM Tools | For more information about the process for updating VM Tools, see [Creating baselines and attaching to inventory objects](/docs/vmwaresolutions?topic=vmwaresolutions-vum-baselines#vum-baselines). |
 | Determine the virtual disk format and convert a virtual disk from the thin provision format to a thick provision format | For more information about converting a VM disk from the thin provision format to the thick provision format, see [Determine the virtual disk format and convert a virtual disk from the thin provision format to a thick provision format](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.vm_admin.doc/GUID-E8F50BEC-F575-4AB1-BC77-D9A13CDBDCF7.html){: external}. |
 | AD/DNS server OS Updates | The Microsoft® Active Directory™ (AD) / Domain Name Server (DNS) is automatically set up to download updates only. For more information, see [Windows automatic installation of updates](/docs/vmwaresolutions?topic=vmwaresolutions-trbl_limitations#trbl_limitations-windows-update). |
-{: caption="Table 2. VM procedures" caption-side="bottom"}
+{: caption="VM procedures" caption-side="bottom"}
 
 ## vCenter procedures
 {: #opsprocs-configure-vcenter}
@@ -73,7 +73,7 @@ After you provision your {{site.data.keyword.vcf-auto}} instance, system adminis
 | Stopping, starting, or restarting vCenter services | For troubleshooting and maintenance purposes, it is sometimes necessary to change the status of vCenter services. For more information, see [Stopping, starting, or restarting services in vCenter Server Appliance 6.5](https://knowledge.broadcom.com/external/article?articleNumber=328099){: external}. |
 | Overview of backup and restore options for the VCSA | For more information, see [Back up and restore vCenter Server Appliance/vCenter Server 6.x](https://knowledge.broadcom.com/external/article?articleNumber=316471){: external}. |
 | Configure vCenter email notifications | For more information about configuring email, sending notifications to an email address when a certain condition is triggered on an already defined alarm, and custom-created alarms, see _Configuring an email alert for the vCenter Server alarm_ in [VMware vCloud usage meter documentation](https://docs.vmware.com/en/vCloud-Usage-Meter/index.html){: external}. |
-{: caption="Table 3. vCenter procedures" caption-side="bottom"}
+{: caption="vCenter procedures" caption-side="bottom"}
 
 ## vSphere ESXi host procedures
 {: #opsprocs-configure-host}
@@ -88,7 +88,7 @@ After you provision your {{site.data.keyword.vcf-auto}} instance, system adminis
 | Test host network connections | For more information about ways to verify that the network links between the physical network adapters of the vSphere ESXi host and the physical switch are up and available for use, see [Verifying network links](https://knowledge.broadcom.com/external/article?legacyId=1003724){: external}. |
 | Determining the network and storage firmware and driver version in the ESXi | For more information, see [Determining network and storage firmware and driver version in ESXi 4.x and later](https://knowledge.broadcom.com/external/article?legacyId=1027206){: external}. |
 | Troubleshooting network and TCP and UDP port connectivity issues on ESXi | For more information, see [Troubleshooting network and TCP/UDP port connectivity issues on ESX/ESXi](https://knowledge.broadcom.com/external/article?legacyId=2020669){: external}. |
-{: caption="Table 4. vSphere ESXi host procedures" caption-side="bottom"}
+{: caption="vSphere ESXi host procedures" caption-side="bottom"}
 
 ## Storage procedures
 {: #opsprocs-configure-storage}
@@ -107,7 +107,7 @@ After you provision your {{site.data.keyword.vcf-auto}} instance, system adminis
 | Using default vSAN alarms | The default vSAN alarms can be used to monitor the cluster, hosts, and existing vSAN licenses. These alarms are automatically triggered when the events corresponding to the alarms are activated or if one or all the conditions that are specified in the alarms are met. You cannot edit the conditions or delete the default alarms. To configure alarms that are specific to your requirements, create custom alarms for vSAN. For more information about monitoring alarms, events, editing existing alarm settings, and using the default vSAN alarms to monitor your cluster, hosts, analyze any new events, and assess the overall cluster health, see [Using the vSAN default alarms](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.vsan-monitoring.doc/GUID-E7885CDE-654D-4732-A5FE-31D0AB2B2F57.html){: external}. |
 | Enable SIOC | By default, Storage IO Control (SIOC) is disabled. If you are experiencing poor performance for VMs in a datastore, you can enable SIOC to help with prioritization to storage resources. SIOC is only activated when there is storage contention to ensure that every VM gets its share of storage resources. Using a VM storage policy and assigning that policy to a VM or VMDK enables this. For more information, see [Managing storage I/O resources](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.resmgmt.doc/GUID-7686FEC3-1FAC-4DA7-B698-B808C44E5E96.html){: external}. |
 | Configure a datastore cluster | A datastore cluster is a collection of datastores with shared resources and a shared management interface. Datastore clusters are to datastores what clusters are to hosts. When you create a datastore cluster, you can use vSphere Storage DRS to manage storage resources. When you add a datastore to a datastore cluster, the datastore's resources become part of the datastore cluster's resources. Use datastore clusters to aggregate storage resources, providing support for resource allocation policies at the datastore cluster level. For more information, see [Creating a datastore cluster](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.resmgmt.doc/GUID-598DF695-107E-406B-9C95-0AF961FC227A.html){: external}. |
-{: caption="Table 5. Storage procedures" caption-side="bottom"}
+{: caption="Storage procedures" caption-side="bottom"}
 
 ## Network procedures
 {: #opsprocs-configure-networks}
@@ -135,7 +135,7 @@ After you provision your {{site.data.keyword.vcf-auto}} instance, system adminis
 | Deploying HCX on-premises | For more information, see [Considerations for on-premises VMware HCX instances](/docs/vmwaresolutions?topic=vmwaresolutions-standalone_considerations#standalone_considerations){: external}. |
 | HCX Check | The HCX service seamlessly extends the networks of on-premises data centers into {{site.data.keyword.cloud_notm}} so you can migrate VMs to and from the {{site.data.keyword.cloud_notm}} without any conversion or change. For more information about accessing the HCX Cloud Management console and applying updates to HCX, see [Managing VMware HCX](/docs/vmwaresolutions?topic=vmwaresolutions-managinghcx). |
 | vSphere Distributed Switch MTU supported status and vSphere Distributed Switch VLAN trunked status | Depending on the options that you selected when you placed your order, your clusters might be deployed on different VLANs. In this case, warnings might be generated by the VMware Distributed Switch (vDS) Health Check because some port groups in the vDS are not applicable to all clusters that belong to that vDS. These warnings can be ignored because the VMs attached to those port groups are located in the appropriate cluster. However, if you want to disable the vDS Health Check, complete the following two procedures. \n \n To disable the vDS health check, complete the following tasks: \n 1. On the vSphere Client home page, click Networking and go to the distributed switch. \n 2. Click the Configure tab and expand Settings. \n 3. Select Health Check and click Edit. \n 4. Use the menus to disable health check options. \n \n To disable the alarms, complete the following tasks: \n 1. On the vSphere Client home page, in the inventory window, click the top-level object and go to Configure, Alarm Definitions. \n 2. Using the filter in the **Alarm Name** column, filter on **Switch**. \n 3. Select Sphere Distributed Switch MTU supported status and select Disable. \n 4. Select vSphere Distributed Switch VLAN trunked status and select Disable. |
-{: caption="Table 6. Network procedures" caption-side="bottom"}
+{: caption="Network procedures" caption-side="bottom"}
 
 ## Related links
 {: #opsprocs-configure-links}

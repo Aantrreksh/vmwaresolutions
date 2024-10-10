@@ -20,7 +20,7 @@ This architecture pattern explains how to deploy Veeam® on {{site.data.keyword.
 
 An overview of this architecture pattern is shown in the following diagram.
 
-![Veeam on VMware Cloud Foundation standard architecture](../../images/vcf-arch-veeam-std.svg "Veeam on VMware Cloud Foundation standard architecture."){: caption="Figure 1. Veeam on VMware Cloud Foundation standard architecture" caption-side="bottom"}
+![Veeam on VMware Cloud Foundation standard architecture](../../images/vcf-arch-veeam-std.svg "Veeam on VMware Cloud Foundation standard architecture."){: caption="Veeam on VMware Cloud Foundation standard architecture" caption-side="bottom"}
 
 To obtain image to install the required software in this architecture pattern, raise an {{site.data.keyword.cloud_notm}} Support ticket to {{site.data.keyword.vmwaresolutions_full}}.
 {: important}
@@ -30,7 +30,7 @@ To obtain image to install the required software in this architecture pattern, r
 
 The following diagram introduces the high-level steps to deploy Veeam on a VMware Cloud Foundation standard architecture. In this architecture pattern, Veeam VBR is deployed on an {{site.data.keyword.vpc_short}} Virtual Server and Veeam Proxies are deployed into the VI workload domain as virtual machines (VMs).
 
-![Deploying Veeam on VMware Cloud Foundation standard architecture](../../images/vcf-arch-veeam-std-steps.svg "Deploying Veeam on VMware Cloud Foundation standard architecture."){: caption="Figure 2. Deploying Veeam on VMware Cloud Foundation standard architecture" caption-side="bottom"}
+![Deploying Veeam on VMware Cloud Foundation standard architecture](../../images/vcf-arch-veeam-std-steps.svg "Deploying Veeam on VMware Cloud Foundation standard architecture."){: caption="Deploying Veeam on VMware Cloud Foundation standard architecture" caption-side="bottom"}
 
 This architecture pattern deployment is summarized as follows:
 

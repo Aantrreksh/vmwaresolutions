@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-07-24"
+lastupdated: "2024-10-10"
 
 subcollection: vmwaresolutions
 
@@ -25,12 +25,12 @@ The 4-node analytics cluster consists of the following components:
 
 Additionally, the design uses Remote Collector nodes, which act as a proxy or relay server to collect data only and forward collected data to the primary and data nodes. Data nodes and Remote Collectors can be added to scale up depending on environment size. The placement of VMware Aria Operations components onto VLANs or VXLANs is shown in the following diagram.
 
-![Operations Manager network diagram](../../images/opsmgmt-vropsnw.svg "Operations Manager network diagram"){: caption="Figure 1. Operations Manager networking" caption-side="bottom"}
+![Operations Manager network diagram](../../images/opsmgmt-vropsnw.svg "Operations Manager network diagram"){: caption="Operations Manager networking" caption-side="bottom"}
 
 * Primary node, primary node replica, and data nodes are deployed on the tools subnet by using {{site.data.keyword.cloud}} Portable IP addresses. This deployment facilitate communication to all components that are addressed out of the {{site.data.keyword.cloud_notm}} RFC1918 address space. These components include vSphere hosts, vCenter, Platform Services Controller (PSC), NSX Manager, and NSX Controllers™. An NSX Load Balancer is used along with a VIP for HA.
 * Customer workloads use IP addressing from the BYOIP address space so this design uses Remote Collectors that are hosted in a VXLAN. These remote collectors are not configured as part of the {{site.data.keyword.vmwaresolutions_full}} automation and must be manually implemented by the client.
 
-![Operations Manager components diagram](../../images/opsmgmt-vropscomponent.svg "Operations Manager components diagram"){: caption="Figure 2. Operations Manager components" caption-side="bottom"}
+![Operations Manager components diagram](../../images/opsmgmt-vropscomponent.svg "Operations Manager components diagram"){: caption="Operations Manager components" caption-side="bottom"}
 
 The VMware Aria Operations Analytics Cluster is accessed by using a management user interface or by using an API and it integrates with the following components:
 * vCenter
@@ -58,7 +58,7 @@ The analytics cluster consists of one primary node, one primary replica node, an
 | Memory | 32 GB |
 | Disk (thick provisioned) | 254 GB |
 {: class="simple-tab-table"}
-{: caption="Table 1. Operations Manager primary/replica node system settings" caption-side="bottom"}
+{: caption="Operations Manager primary/replica node system settings" caption-side="bottom"}
 {: #table1}
 {: tab-title="Primary/replica node system settings"}
 {: tab-group="sys-settings"}
@@ -68,7 +68,7 @@ The analytics cluster consists of one primary node, one primary replica node, an
 | vCPU | 8 |
 | Memory | 32 GB |
 | Disk (thick provisioned) | 254 GB |
-{: caption="Table 1. Operations Manager data node system settings" caption-side="bottom"}
+{: caption="Operations Manager data node system settings" caption-side="bottom"}
 {: #table2}
 {: tab-title="Data node system settings"}
 {: tab-group="sys-settings"}
@@ -88,7 +88,7 @@ When the compute VM monitoring is required, the client installs two remote colle
 | Receive | online |   |
 | Algorithm | ROUND-ROBIN | LEASTCONN |
 | Pool | Four nodes of VMware Aria Operations | Four nodes of VMware Aria Operations |
-{: caption="Table 2. Operations Manager Load Balancer settings" caption-side="bottom"}
+{: caption="Operations Manager Load Balancer settings" caption-side="bottom"}
 
 ## Networking
 {: #opsmgmt-vrops-network}
@@ -115,7 +115,7 @@ Deployment of the VMware Aria Operations appliance requires six IP addresses fro
 | NTP | UDP | 123 |
 | SMTP | TCP | 25 |
 | SNMP | UDP | 161 |
-{: caption="Table 3. Operation Manager ports" caption-side="bottom"}
+{: caption="Operation Manager ports" caption-side="bottom"}
 
 ### Authentication
 {: #opsmgmt-vrops-auth}

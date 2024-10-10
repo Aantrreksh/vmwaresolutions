@@ -81,7 +81,7 @@ The following table displays the total usage of the virtual data center vCPU.
 | `Metric Type` | `gauge` |
 | `Unit` | `none` |
 | `Segment By` | `Service instance ID` |
-{: caption="Table 1. Virtual data center vCPU usage" caption-side="bottom"}
+{: caption="Virtual data center vCPU usage" caption-side="bottom"}
 
 ### VMware virtual data center vCPU allocation
 {: #shared-monitor-metrics-vcpu-allocation}
@@ -94,7 +94,7 @@ The following table displays the total allocation of the virtual data center vCP
 | `Metric Type` | `gauge` |
 | `Unit` | `none` |
 | `Segment By` | `Service instance ID` |
-{: caption="Table 2. Virtual data center vCPU allocation" caption-side="bottom"}
+{: caption="Virtual data center vCPU allocation" caption-side="bottom"}
 
 ### VMware virtual data center memory usage
 {: #shared-monitor-metrics-memory-usage}
@@ -107,7 +107,7 @@ The following table displays the total usage of the virtual data center memory.
 | `Metric Type` | `gauge` |
 | `Unit` | `byte` |
 | `Segment By` | `Service instance ID` |
-{: caption="Table 3. Virtual data center memory usage" caption-side="bottom"}
+{: caption="Virtual data center memory usage" caption-side="bottom"}
 
 ### VMware virtual data center memory allocation
 {: #shared-monitor-metrics-memory-allocation}
@@ -120,7 +120,7 @@ The following table displays the total allocation of the virtual data center mem
 | `Metric Type` | `gauge` |
 | `Unit` | `byte` |
 | `Segment By` | `Service instance ID` |
-{: caption="Table 4. Virtual data center memory allocation" caption-side="bottom"}
+{: caption="Virtual data center memory allocation" caption-side="bottom"}
 
 ### VMware virtual data center storage usage
 {: #shared-monitor-metrics-storage-usage}
@@ -133,7 +133,7 @@ The following table displays the total usage of the virtual data center storage.
 | `Metric Type` | `gauge` |
 | `Unit` | `byte` |
 | `Segment By` | `Service instance ID` |
-{: caption="Table 5. Virtual data center storage usage" caption-side="bottom"}
+{: caption="Virtual data center storage usage" caption-side="bottom"}
 
 ## Customizing your {{site.data.keyword.vm-shared}} dashboard
 {: #shared-monitor-view-customize}

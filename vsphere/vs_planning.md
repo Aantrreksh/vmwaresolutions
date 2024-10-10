@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-09-18"
+lastupdated: "2024-10-10"
 
 keywords: planning flexible, data center, vSphere data centers
 
@@ -56,7 +56,7 @@ If you select a vSAN component, the location list is filtered by SSD (Solid-Stat
 | TOK02 | 01-02 | Skylake, Cascade Lake, SAP-certified Cascade Lake |
 | TOK04 | 01 | Skylake, Cascade Lake, SAP-certified Cascade Lake |
 | TOK05 | 01 | Skylake, Cascade Lake, SAP-certified Cascade Lake |
-{: caption="Table 1. Available {{site.data.keyword.cloud_notm}} data centers for Flexible instances - Asia Pacific" caption-side="bottom"}
+{: caption="Available {{site.data.keyword.cloud_notm}} data centers for Flexible instances - Asia Pacific" caption-side="bottom"}
 {: tab-title="Asia Pacific"}
 {: tab-group="Data centers for Flexible instances"}
 {: class="simple-tab-table"}
@@ -77,7 +77,7 @@ If you select a vSAN component, the location list is filtered by SSD (Solid-Stat
 | MAD05 | 01 | Cascade Lake, SAP-certified Cascade Lake |
 | MIL01 | 01 | Skylake, Cascade Lake, SAP-certified Cascade Lake |
 | PAR01 | 01 | Skylake, Cascade Lake, SAP-certified Cascade Lake |
-{: caption="Table 1. Available {{site.data.keyword.cloud_notm}} data centers for Flexible instances - Europe" caption-side="bottom"}
+{: caption="Available {{site.data.keyword.cloud_notm}} data centers for Flexible instances - Europe" caption-side="bottom"}
 {: tab-title="Europe"}
 {: tab-group="Data centers for Flexible instances"}
 {: class="simple-tab-table"}
@@ -92,7 +92,7 @@ If you select a vSAN component, the location list is filtered by SSD (Solid-Stat
 | WDC04 | 01-05 | Skylake, Cascade Lake, SAP-certified Cascade Lake |
 | WDC06 | 01 | Skylake, Cascade Lake, SAP-certified Cascade Lake |
 | WDC07 | 01 | Skylake, Cascade Lake, SAP-certified Cascade Lake |
-{: caption="Table 1. Available {{site.data.keyword.cloud_notm}} data centers for Flexible instances - NA East" caption-side="bottom"}
+{: caption="Available {{site.data.keyword.cloud_notm}} data centers for Flexible instances - NA East" caption-side="bottom"}
 {: tab-title="NA East"}
 {: tab-group="Data centers for Flexible instances"}
 {: class="simple-tab-table"}
@@ -104,7 +104,7 @@ If you select a vSAN component, the location list is filtered by SSD (Solid-Stat
 | DAL10 | 01-04 | Skylake, Cascade Lake, SAP-certified Cascade Lake |
 | DAL12 | 01-02 | Skylake, Cascade Lake, SAP-certified Cascade Lake |
 | DAL13 | 01-03 | Skylake, Cascade Lake, SAP-certified Cascade Lake |
-{: caption="Table 1. Available {{site.data.keyword.cloud_notm}} data centers for Flexible instances - NA South" caption-side="bottom"}
+{: caption="Available {{site.data.keyword.cloud_notm}} data centers for Flexible instances - NA South" caption-side="bottom"}
 {: tab-title="NA South"}
 {: tab-group="Data centers for Flexible instances"}
 {: class="simple-tab-table"}
@@ -114,7 +114,7 @@ If you select a vSAN component, the location list is filtered by SSD (Solid-Stat
 |:----------- |:--- |:----------------------------- |
 | SJC03 | 01-02 | Skylake, Cascade Lake |
 | SJC04 | 01 | Skylake, Cascade Lake |
-{: caption="Table 1. Available {{site.data.keyword.cloud_notm}} data centers for Flexible instances - NA West" caption-side="bottom"}
+{: caption="Available {{site.data.keyword.cloud_notm}} data centers for Flexible instances - NA West" caption-side="bottom"}
 {: tab-title="NA West"}
 {: tab-group="Data centers for Flexible instances"}
 {: class="simple-tab-table"}
@@ -125,7 +125,7 @@ If you select a vSAN component, the location list is filtered by SSD (Solid-Stat
 | SAO01 | 01 | Skylake, Cascade Lake, SAP-certified Cascade Lake |
 | SAO04 | 01 | Cascade Lake, SAP-certified Cascade Lake |
 | SAO05 | 01 | Cascade Lake, SAP-certified Cascade Lake |
-{: caption="Table 1. Available {{site.data.keyword.cloud_notm}} data centers for Flexible instances - South America" caption-side="bottom"}
+{: caption="Available {{site.data.keyword.cloud_notm}} data centers for Flexible instances - South America" caption-side="bottom"}
 {: tab-title="South America"}
 {: tab-group="Data centers for Flexible instances"}
 {: class="simple-tab-table"}

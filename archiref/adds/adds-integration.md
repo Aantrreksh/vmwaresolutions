@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2024
 
-lastupdated: "2024-07-11"
+lastupdated: "2024-10-10"
 
 subcollection: vmwaresolutions
 
@@ -32,7 +32,7 @@ However, if you need information about this integration, review the following mo
 
 This model creates a single forest by using the existing {{site.data.keyword.vmwaresolutions_short}} infrastructure domain as the parent and configuring a new {{site.data.keyword.vmwaresolutions_short}} workload child domain. As all parent-child domains use transitive two-way trusts by default, vSphere SSO can access all users from either domain. The following diagram shows the Active Directory Domain Services topology for this {{site.data.keyword.vmwaresolutions_short}} forest with parent-child trust model.
 
-![{{site.data.keyword.vmwaresolutions_short}} forest with parent-child trust diagram](../../images/adds-forestwithparentchildtrust.svg "{{site.data.keyword.vmwaresolutions_short}} forest with parent-child trust diagram"){: caption="Figure 1. {{site.data.keyword.vmwaresolutions_short}} forest with parent-child trust diagram" caption-side="bottom"}
+![{{site.data.keyword.vmwaresolutions_short}} forest with parent-child trust diagram](../../images/adds-forestwithparentchildtrust.svg "{{site.data.keyword.vmwaresolutions_short}} forest with parent-child trust diagram"){: caption="{{site.data.keyword.vmwaresolutions_short}} forest with parent-child trust diagram" caption-side="bottom"}
 
 ## {{site.data.keyword.vmwaresolutions_short}} forest with tree-root trust
 {: #adds-integration-treeroot}
@@ -41,7 +41,7 @@ This model creates a single forest by using the existing {{site.data.keyword.vmw
 
 If the other parent domain has a child domain, due to the two-way trust, those users are also accessible. The following diagram shows the Active Directory Domain Services topology for this {{site.data.keyword.vmwaresolutions_short}} forest with tree-root trust model.
 
-![{{site.data.keyword.vmwaresolutions_short}} forest with tree-root trust diagram](../../images/adds-forestwithtreeroottrust.svg "{{site.data.keyword.vmwaresolutions_short}} forest with tree-root trust diagram"){: caption="Figure 2. {{site.data.keyword.vmwaresolutions_short}} forest with tree-root trust diagram" caption-side="bottom"}
+![{{site.data.keyword.vmwaresolutions_short}} forest with tree-root trust diagram](../../images/adds-forestwithtreeroottrust.svg "{{site.data.keyword.vmwaresolutions_short}} forest with tree-root trust diagram"){: caption="{{site.data.keyword.vmwaresolutions_short}} forest with tree-root trust diagram" caption-side="bottom"}
 
 ## Two-way forest trust
 {: #adds-integration-twoway}
@@ -50,7 +50,7 @@ VMware always recommends two-way trusts for forest trusts. For more information,
 
 Because two-way trusts are used between the {{site.data.keyword.vmwaresolutions_short}} infrastructure forest and the {{site.data.keyword.vmwaresolutions_short}} workload forest, vSphere SSO can use this trust so users can be authenticated from all parent and child domains in the {{site.data.keyword.vmwaresolutions_short}} workload forest. The following diagram shows the Active Directory Domain Services topology for this two-way forest trust model.
 
-![Two-way forest trust diagram](../../images/adds-twowayforesttrust.svg "Two-way forest trust diagram"){: caption="Figure 3. Two-way forest trust diagram" caption-side="bottom"}
+![Two-way forest trust diagram](../../images/adds-twowayforesttrust.svg "Two-way forest trust diagram"){: caption="Two-way forest trust diagram" caption-side="bottom"}
 
 ## External trust
 {: #adds-integration-external}
@@ -59,7 +59,7 @@ VMware always recommends two-way trusts for external trusts. For more informatio
 
 The two-way trust between the {{site.data.keyword.vmwaresolutions_short}} infrastructure forest and the {{site.data.keyword.vmwaresolutions_short}} workload domain allows vSphere SSO to use the trust so users can be authenticated from the {{site.data.keyword.vmwaresolutions_short}} workload domain. The following diagram shows the Active Directory Domain Services topology for this external trust model.
 
-![External trust diagram](../../images/adds-externaltrust.svg "External trust diagram"){: caption="Figure 4. External trust diagram" caption-side="bottom"}
+![External trust diagram](../../images/adds-externaltrust.svg "External trust diagram"){: caption="External trust diagram" caption-side="bottom"}
 
 ## Related links
 {: #adds-integration-related}

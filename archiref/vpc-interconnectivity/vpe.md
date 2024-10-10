@@ -31,11 +31,11 @@ VPEs are located in your network address space within the VPC where your VMwareÂ
 
 The following diagram presents an overview when you are using VPEs with VMware workloads on VPC subnets.
 
-![VPEs with VMware Workloads on VPC subnets](../../images/vpc-vcf-diagrams-vpe-sub-arch.svg "VPEs with VMware Workloads on VPC subnets"){: caption="Figure 1. VPEs with VMware Workloads on VPC subnets" caption-side="bottom"}
+![VPEs with VMware Workloads on VPC subnets](../../images/vpc-vcf-diagrams-vpe-sub-arch.svg "VPEs with VMware Workloads on VPC subnets"){: caption="VPEs with VMware Workloads on VPC subnets" caption-side="bottom"}
 
 The following diagram presents an overview when you are using VPEs with VMware NSX.
 
-![VPEs with VMware Workloads with NSX](../../images/vpc-vcf-diagrams-vpe-nsx-t-arch.svg "VPEs with VMware Workloads with NSX"){: caption="Figure 2. VPEs with VMware Workloads with NSX" caption-side="bottom"}
+![VPEs with VMware Workloads with NSX](../../images/vpc-vcf-diagrams-vpe-nsx-t-arch.svg "VPEs with VMware Workloads with NSX"){: caption="VPEs with VMware Workloads with NSX" caption-side="bottom"}
 
 VPE is integrated with {{site.data.keyword.dns_short}}. If your VMware workloads use {{site.data.keyword.dns_full_notm}}, they can resolve your VPE FQDNs to your private IP address instances that are provisioned under {{site.data.keyword.dns_full_notm}}. {{site.data.keyword.cloud_notm}} network can use resource records that are configured through {{site.data.keyword.dns_full_notm}} by querying {{site.data.keyword.dns_short}} resolvers.
 

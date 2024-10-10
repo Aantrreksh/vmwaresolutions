@@ -27,7 +27,7 @@ This pattern assumes that HCX is deployed following the guidance for [consolidat
 
 The following diagram introduces the high-level steps to configure and deploy this connectivity type.
 
-![Connectivity over private network](../../images/vcf-arch-hcx-net-priv.svg "Connectivity over private network."){: caption="Figure 1. Connectivity over private network" caption-side="bottom"}
+![Connectivity over private network](../../images/vcf-arch-hcx-net-priv.svg "Connectivity over private network."){: caption="Connectivity over private network" caption-side="bottom"}
 
 This architecture pattern deployment is summarized as follows:
 
@@ -45,7 +45,7 @@ Currently, {{site.data.keyword.vcf-vpc}} supports to be a source only when you c
 
 The following diagram introduces the high-level steps to configure and deploy this connectivity type.
 
-![Connectivity over the internet](../../images/vcf-arch-hcx-net-pub-1.svg "Connectivity over the internet."){: caption="Figure 2. Connectivity over Public Internet" caption-side="bottom"}
+![Connectivity over the internet](../../images/vcf-arch-hcx-net-pub-1.svg "Connectivity over the internet."){: caption="Connectivity over Public Internet" caption-side="bottom"}
 
 This architecture pattern deployment is summarized as follows:
 

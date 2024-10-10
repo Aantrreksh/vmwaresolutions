@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-07-24"
+lastupdated: "2024-10-10"
 
 keywords: IAM user, user role, user permission, IAM access for vmwaresolutions, permissions for vmwaresolutions, identity and access management for vmwaresolutions, roles for vmwaresolutions, actions for vmwaresolutions, assigning access for vmwaresolutions
 
@@ -58,7 +58,7 @@ The following table provides information about the actions that are mapped to pl
 | Operator | Read-only actions. For example, list instances and view instance details. |
 | Editor | Update a specific instance. For example, add or remove VMware ESXi™ servers, clusters, and services; upgrade an instance to a higher version. |
 | Administrator | Full management access. For example, create new instances, delete instances, and grant platform access to other users.|
-{: caption="Table 1. Platform management roles and allowed actions for VMware Solutions" caption-side="bottom"}
+{: caption="Platform management roles and allowed actions for VMware Solutions" caption-side="bottom"}
 {: #iam-roles-table}
 
 For VMware Solutions, the following actions exist:
@@ -70,7 +70,7 @@ For VMware Solutions, the following actions exist:
 | `vmware-solutions.instances.view` | List instances \n View the detail of an instance | Viewer, Operator, Editor, and Administrator |
 | `vmware-solutions.instances.update` | Add or remove ESXi servers \n Add or remove clusters \n Add or remove services \n Upgrade an instance to a higher version | Editor and Administrator |
 | `vmware-solutions.account.update` | Update account settings | Administrator |
-{: caption="Table 2. Action descriptions and required roles" caption-side="bottom"}
+{: caption="Action descriptions and required roles" caption-side="bottom"}
 
 ## Assigning resource access
 {: #iam-roles-user-access}
@@ -124,7 +124,7 @@ For step-by-step instructions for assigning, removing, and reviewing access, see
 | Administrator | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users. | `crn:v1:bluemix:public:iam::::role:Administrator` |
 | Operator | As an operator, you can perform platform actions that are required to configure and operate service instances, such as viewing a service's dashboard. | `crn:v1:bluemix:public:iam::::role:Operator` |
 | Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. | `crn:v1:bluemix:public:iam::::role:Editor` |
-{: caption="Table 3. Role ID values and description for API use" caption-side="bottom"}
+{: caption="Role ID values and description for API use" caption-side="bottom"}
 {: #iam-rolescrn-table}
 
 The following example is for assigning the `<Viewer>` role for `<vmware-solutions>`:

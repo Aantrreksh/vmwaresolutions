@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2024
 
-lastupdated: "2024-09-11"
+lastupdated: "2024-10-10"
 
 subcollection: vmwaresolutions
 
@@ -19,7 +19,7 @@ Cyber recovery is one of five functions that are described in the [NIST Cybersec
 
 This documentation describes two solution architectures that can be used to assist with your cyber-recovery requirements. The solution architectures use {{site.data.keyword.vcf-auto}} and Veeam® Backup and Recovery for VMware vSphere®. The two solution architectures are named as Immutable backup and Isolated recovery environment.
 
-![Immutable backup overview](../../images/veeam-cr-sa-overview-ib.svg){: caption="Figure 1. Immutable backup overview" caption-side="bottom"}
+![Immutable backup overview](../../images/veeam-cr-sa-overview-ib.svg){: caption="Immutable backup overview" caption-side="bottom"}
 
 The immutable backup solution architecture uses the Veeam Linux® hardened repository design as an immutable storage repository within the production environment. Key elements of the solution architecture include:
 
@@ -30,7 +30,7 @@ The immutable backup solution architecture uses the Veeam Linux® hardened repos
 * The solution architecture does not preclude any of the {{site.data.keyword.vcf-auto-short}} options, such as Caveonix, Entrust, and VMware Aria® Operations™.
 * This solution is suitable for clients who want to extend their Veeam backup with immutability by minimizing costs and by using existing processes and resources.
 
-![Isolated recovery environment overview](../../images/veeam-cr-sa-overview-ire.svg){: caption="Figure 2. Isolated recovery environment overview" caption-side="bottom"}
+![Isolated recovery environment overview](../../images/veeam-cr-sa-overview-ire.svg){: caption="Isolated recovery environment overview" caption-side="bottom"}
 
 The isolated recovery solution architecture uses a {{site.data.keyword.vcf-auto-short}} instance in an air-gapped recovery environment separate from the production environment. It is managed and accessed by using a separate team of cyber-recovery specialists. Key elements of the solution architecture include:
 
@@ -74,7 +74,7 @@ This documentation uses the following terms and definitions:
 | Cyber-recovery backup | The backup of production data to the isolated recovery environment. A cyber-recovery backup is different from a production backup.
 | Cyber-recovery toolsets | Cyber-recovery toolsets are applications that are provided by the client for use within the cyber-recovery site to scan, analyze, or clean cyber-recovery data.
 | Sandbox | A sandbox is an isolated zone on a network that enables the OS and applications to be started without impacting production systems. Specifically, in these solution architectures, it is one or more NSX-T segments that are protected with firewall rules where copies of backups can be accessed or used to start VMs.
-{: caption="Table 1. Terms and definitions" caption-side="bottom"}
+{: caption="Terms and definitions" caption-side="bottom"}
 
 ## Related links
 {: #veeam-cr-sa-overview-related}

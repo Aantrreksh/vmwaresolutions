@@ -51,7 +51,7 @@ Use the following table to document the parameters you need for your deployment.
 | vCenter Server instance datastore | `vsanDatastore` | |
 | Pull Secret | | |
 | Public SSH Key| | |
-{: caption="Table 1. File parameters for install-config.yaml" caption-side="bottom"}
+{: caption="File parameters for install-config.yaml" caption-side="bottom"}
 {: #openshift-runbook-runbook-install-yaml-table}
 
 Using the following install-config.yaml file shown in the figure, update it using your deployment details from the [previous table](#openshift-runbook-runbook-install-yaml-table):
@@ -91,7 +91,7 @@ pullSecret: 'COPY PULL SECRET HERE'
 sshKey: 'COPY PUBLIC SSH KEY HERE'
 ```
 {: pre}
-{: caption="Figure 1. install-config.yaml file contents" caption-side="bottom"}
+{: caption="install-config.yaml file contents" caption-side="bottom"}
 
 In the SSH session to the bastion node with root privileges, use the following commands to create the install-config.yaml file:
 
@@ -165,7 +165,7 @@ The DNS IP details are hardcoded within the Terraform template. You must change 
 | Parameter | Example | Your deployment |
 |:--------- |:------- |:--------------- |
 | DNS1 | 10.187.214.66 | |
-{: caption="Table 2. File parameters for ignition.tf" caption-side="bottom"}
+{: caption="File parameters for ignition.tf" caption-side="bottom"}
 
 1. In the SSH session to the bastion node, with root privileges, use the following command to open the file:
    `vi /opt/ocpinstall/installer/upi/vsphere/machine/ignition.tf`
@@ -285,7 +285,7 @@ You can copy the ignition files after you use the following commands to display 
 | bootstrap_ignition_url | `http://192.168.133.08/bootstrap.ign` | |
 | control_plane_ignition | |
 | compute_ignition | |
-{: caption="Table 3. ignition.tf file parameters" caption-side="bottom"}
+{: caption="ignition.tf file parameters" caption-side="bottom"}
 {: #openshift-runbook-runbook-install-terraform-tfars-table}
 
 After you use the following terraform-tvars example file, use your deployment details from the [previous table](#openshift-runbook-runbook-install-terraform-tfars-table) to update the file. Copy the file to the clipboard.
@@ -318,7 +318,7 @@ COPY IN CONTENTS OF WORKER.IGN HERE
 END_OF_WORKER_IGNITION
 ```
 {: pre}
-{: caption="Figure 2. terraform.tfvars example file" caption-side="bottom"}
+{: caption="terraform.tfvars example file" caption-side="bottom"}
 
 The `terraform.tfvars` file is created.
 1. In the SSH session to the bastion node, with root privileges, use the following command to open the file; `vi /opt/ocpinstall/installer/upi/vsphere/terraform.tfvars`.
@@ -350,7 +350,7 @@ module "dns" {
   compute_ips         = ["${module.compute.ip_addresses}"]
 }
 ```
-{: caption="Figure 3. DNS module section to be removed" caption-side="bottom"}
+{: caption="DNS module section to be removed" caption-side="bottom"}
 
 ## Run Terraform
 {: #openshift-runbook-runbook-install-terraform-run}

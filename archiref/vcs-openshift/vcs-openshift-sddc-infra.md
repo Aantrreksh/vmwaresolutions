@@ -26,14 +26,14 @@ The physical infrastructure required to deploy a {{site.data.keyword.redhat_open
 | CPU | 28 Cores 2.2 GHz | 28 Cores 2.2 GHz |
 | Memory (GB) | 384 | 384 |
 | Storage |2,000 GB 2 IOPS/GB Management </br>2,000 GB 4 IOPS/GB Workload </br>4,000 GB 4 IOPS/GB | Min 960-GB SSD x2 |
-{: caption="Table 1. {{site.data.keyword.vcf-classic-short}} specification for Red Hat OpenShift" caption-side="bottom"}
+{: caption="{{site.data.keyword.vcf-classic-short}} specification for Red Hat OpenShift" caption-side="bottom"}
 
 In addition to the {{site.data.keyword.redhat_openshift_notm}} hardware requirements, you must create persistent volumes in the {{site.data.keyword.redhat_openshift_notm}} environment to store images from the container register or customer workloads.
 
 ## Virtual structure
 {: #vcs-openshift-sddc-infra-virtual-struct}
 
-![Physical structure](../../images/openshift-networking41.svg){: caption="Figure 1. Physical structure" caption-side="bottom"}
+![Physical structure](../../images/openshift-networking41.svg){: caption="Physical structure" caption-side="bottom"}
 
 Within the {{site.data.keyword.vcf-auto-short}} instance, the {{site.data.keyword.redhat_openshift_notm}} instance is deployed with a dedicated NSX® Edge Services Gateway (ESG) and Distributed Logical Router (DLR). The {{site.data.keyword.redhat_openshift_notm}} installation is loaded into the VXLAN subnet that is defined in the previous components.
 
@@ -55,7 +55,7 @@ The Quad-Large NSX Edge was chosen and as part of the configuration process, the
 | CPU       | 6 vCPU        |
 | RAM       | 8 GB          |
 | Disk      | 4.5 GB VMDK resident on shared storage with 4 GB swap |
-{: caption="Table 2. NSX Edge specifications" caption-side="bottom"}
+{: caption="NSX Edge specifications" caption-side="bottom"}
 
 Because the NSX Edges are configured as active/passive in either the internal or dedicated deployment, vSphere® Distributed Resource Scheduler (DRS) anti-affinity rules must be created by the user to ensure that NSX Edges do not run on the same host as their respective peer appliance.
 
@@ -64,7 +64,7 @@ Because the NSX Edges are configured as active/passive in either the internal or
 | Name    | NSX Edge {{site.data.keyword.redhat_openshift_notm}} |
 | Type    | Separate VMs |
 | Members | `openshift-edge-0` </br>`openshift-edge-1` |
-{: caption="Table 3. vSphere Distributed Resource Scheduler rules" caption-side="bottom"}
+{: caption="vSphere Distributed Resource Scheduler rules" caption-side="bottom"}
 
 ## NSX Load Balancer specifications
 {: #vcs-openshift-sddc-infra-nsx-load-spec}
@@ -77,7 +77,7 @@ Within the {{site.data.keyword.redhat_openshift_notm}} environment, two load bal
 | Application load balancer | 443 | ROUND-ROBIN | default_tcp_monitor | Worker nodes | TCP | {{site.data.keyword.cloud_notm}} 10.x |
 | API and API-INT load balancer | 6443 | ROUND-ROBIN | default_tcp_monitor | Bootstrap and primary nodes | TCP | {{site.data.keyword.cloud_notm}} 10.x |
 | API and API-INT load balancer | 22623 | ROUND-ROBIN | default_tcp_monitor | Bootstrap and primary nodes | TCP | {{site.data.keyword.cloud_notm}} 10.x |
-{: caption="Table 4. NSX load balancer specifications" caption-side="bottom"}
+{: caption="NSX load balancer specifications" caption-side="bottom"}
 
 ## Red Hat OpenShift specifications
 {: #vcs-openshift-sddc-infra-redhat-spec}
@@ -88,7 +88,7 @@ The following tables show the specifications of the management node, control pla
 |:---------------- |:----- |:----------- |:--------- |:-- |
 | `Management0` | 2 | 8 | 50 | {{site.data.keyword.redhat_notm}} Enterprise Linux® 8.0 |
 {: class="simple-tab-table"}
-{: caption="Table 5. Management node specifications" caption-side="bottom"}
+{: caption="Management node specifications" caption-side="bottom"}
 {: #table1}
 {: tab-title="Management node"}
 {: tab-group="rhos-specs"}
@@ -99,7 +99,7 @@ The following tables show the specifications of the management node, control pla
 | Control-plane1 | 4 | 8 | 60 | {{site.data.keyword.redhat_notm}} Enterprise Linux CoreOS |
 | Control-plane2 | 4 | 8 | 60 | {{site.data.keyword.redhat_notm}} Enterprise Linux CoreOS |
 {: class="simple-tab-table"}
-{: caption="Table 5. Control plane node specifications" caption-side="bottom"}
+{: caption="Control plane node specifications" caption-side="bottom"}
 {: #table2}
 {: tab-title="Control plane node"}
 {: tab-group="rhos-specs"}
@@ -109,7 +109,7 @@ The following tables show the specifications of the management node, control pla
 | Worker0 | 16 | 32 | 200 | {{site.data.keyword.redhat_notm}} Enterprise Linux CoreOS |
 | Worker1 | 16 | 32 | 200 | {{site.data.keyword.redhat_notm}} Enterprise Linux CoreOS |
 | Worker2 | 16 | 32 | 200 | {{site.data.keyword.redhat_notm}} Enterprise Linux CoreOS |
-{: caption="Table 5. Worker node specifications" caption-side="bottom"}
+{: caption="Worker node specifications" caption-side="bottom"}
 {: #table3}
 {: tab-title="Worker node"}
 {: tab-group="rhos-specs"}

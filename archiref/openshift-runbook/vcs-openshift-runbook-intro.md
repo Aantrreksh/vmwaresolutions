@@ -23,7 +23,7 @@ subcollection: vmwaresolutions
 * Reference architecture - [vCenter Server and {{site.data.keyword.redhat_openshift_notm}} architecture overview](/docs/vmwaresolutions?topic=vmwaresolutions-vcs-openshift-intro)
 * Build process - The current document. The process and steps that are needed to install {{site.data.keyword.redhat_openshift_notm}} 4.7 on to an existing vCenter Server instance.
 
-![VMware Solutions and {{site.data.keyword.redhat_openshift_notm}}](../../images/openshift-sddc.svg "VMware Solutions and {{site.data.keyword.redhat_openshift_notm}}"){: caption="Figure 1. VMware Solutions and OpenShift" caption-side="bottom"}
+![VMware Solutions and {{site.data.keyword.redhat_openshift_notm}}](../../images/openshift-sddc.svg "VMware Solutions and {{site.data.keyword.redhat_openshift_notm}}"){: caption="VMware Solutions and OpenShift" caption-side="bottom"}
 
 ## Red Hat OpenShift overview
 {: #openshift-runbook-runbook-intro-rhos-overview}

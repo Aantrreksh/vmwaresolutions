@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2024
 
-lastupdated: "2024-05-20"
+lastupdated: "2024-10-10"
 
 keywords: vmware regulated workloads, vmware regulated workloads order instance, order vmware regulated workloads, vmware regulated workloads instances
 
@@ -47,7 +47,7 @@ You can choose the following CPU models and a supported RAM size:
 | Dual Intel Xeon Platinum 8260 (Cascade Lake) | 48 | 2.4 | 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
 | Quad Intel Xeon Gold 6248 (Cascade Lake) | 80 | 2.5 | 384 GB, 768 GB, 1.5 TB, 3 TB |
 | Quad Intel Xeon Platinum 8260 (Cascade Lake) | 96 | 2.4 | 384 GB, 768 GB, 1.5 TB, 3 TB |
-{: caption="Table 1. Options for Cascade Lake bare metal servers" caption-side="bottom"}
+{: caption="Options for Cascade Lake bare metal servers" caption-side="bottom"}
 
 ## Number of bare metal servers
 {: #vrw-orderinginstance-witness-cluster-bare-metal}

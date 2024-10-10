@@ -18,7 +18,7 @@ subcollection: vmwaresolutions
 
 The {{site.data.keyword.cloud}} for VMware® Regulated Workloads is built upon multiple clusters of bare metal hosts with VMware ESXi™ as the hypervisor.
 
-![{{site.data.keyword.rw}} infrastructure overview](../../images/vrw-v2-overview.svg "{{site.data.keyword.rw}} infrastructure overview"){: caption="Figure 1. {{site.data.keyword.rw}} infrastructure overview" caption-side="bottom"}
+![{{site.data.keyword.rw}} infrastructure overview](../../images/vrw-v2-overview.svg "{{site.data.keyword.rw}} infrastructure overview"){: caption="{{site.data.keyword.rw}} infrastructure overview" caption-side="bottom"}
 
 ## Management cluster
 {: #vrw-baremetal-management}
@@ -44,7 +44,7 @@ Each physical host in this design has two redundant pairs of 10 Gbps Ethernet co
 
 Removing physical network connectivity to the public or private network for the bare metal servers that are used within the vCenter Server offering is not possible. When a {{site.data.keyword.rw}} instance is deployed with the private only network option, the physical ports on the internal NIC of the bare metal hosts are disabled and the ToR switch ports are administratively down. There is no support for unplugging the cables.
 
-![Physical host connections](../../images/vrw-v2-baremetal.svg "Physical host connections"){: caption="Figure 2. Physical host connections" caption-side="bottom"}
+![Physical host connections](../../images/vrw-v2-baremetal.svg "Physical host connections"){: caption="Physical host connections" caption-side="bottom"}
 
 To prevent undesired access, the SaaS provider must change the IPMI password and not update it in the VMware Solutions console. The insertion of filters to prevent network access to the IPMI from non-SaaS provider-controlled subnets is recommended.
 

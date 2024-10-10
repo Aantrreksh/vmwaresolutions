@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-07-11"
+lastupdated: "2024-10-10"
 
 subcollection: vmwaresolutions
 
@@ -19,7 +19,7 @@ The key solution component in both the immutable backup and isolated recovery en
 
 To prevent attacks on backups, Veeam® Backup and Replication offers the Linux hardened repository feature, which makes backups immutable for the required number of days. This action enables protection against threats, such as ransomware and hackers.
 
-![Linux hardened repository](../../images/veeam-cr-sa-lhbr.svg){: caption="Figure 1. Linux hardened repository" caption-side="bottom"}
+![Linux hardened repository](../../images/veeam-cr-sa-lhbr.svg){: caption="Linux hardened repository" caption-side="bottom"}
 
 The Veeam Linux hardened repository feature uses immutability features in the Linux OS. The immutability file attribute is set for each backup file, which assures the contents of the file. Its associated metadata is retained as nonrewriteable and nonerasable until expiration of an applied Immutable Until Date.
 
@@ -60,7 +60,7 @@ To                         Action      From
 2501/tcp                   ALLOW OUT   Anywhere                   # Veeam rule 876f0752-7209-4e8b-8b34-fa0af7dbced4
 ```
 
-![Veeam backup](../../images/veeam-cr-sa-lhbr-proxy.svg){: caption="Figure 2. Veeam backup" caption-side="bottom"}
+![Veeam backup](../../images/veeam-cr-sa-lhbr-proxy.svg){: caption="Veeam backup" caption-side="bottom"}
 
 ## Best practices for a Linux hardened repository
 {: #veeam-cr-sa-lhr-bp}

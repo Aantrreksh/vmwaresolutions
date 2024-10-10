@@ -43,7 +43,7 @@ In the {{site.data.keyword.vcf-auto-short}} deployments, each site, and each ins
 
 The following diagram can be used to compare and contrast the features that are offered by these offerings.
 
-![Automated offerings](../../images/v2t-diagrams-platforms-automated.svg "Automated offerings"){: caption="Figure 1. Automated offerings" caption-side="bottom"}
+![Automated offerings](../../images/v2t-diagrams-platforms-automated.svg "Automated offerings"){: caption="Automated offerings" caption-side="bottom"}
 
 In the previous diagram, the following terms require some additional comments:
 
@@ -71,7 +71,7 @@ The Regulated Workloads offering is suitable for clients that require a prescrip
 
 The following diagram can be used to compare and contrast the features that are offered by these offerings.
 
-![Regulated workload offerings](../../images/v2t-diagrams-platforms-rw.svg "Regulated workload offerings"){: caption="Figure 2. Regulated workload offerings" caption-side="bottom"}
+![Regulated workload offerings](../../images/v2t-diagrams-platforms-rw.svg "Regulated workload offerings"){: caption="Regulated workload offerings" caption-side="bottom"}
 
 In the previous diagram, the following terms require some additional comments:
 
@@ -102,7 +102,7 @@ The automated offerings with manual tasks patterns are not validated by {{site.d
 
 The following diagram can be used to compare and contrast the features that are offered by these offerings.
 
-![Automated offerings with manual customization tasks](../../images/v2t-diagrams-platforms-manual.svg "Automated offerings with manual customization tasks"){: caption="Figure 3. Automated offerings with manual customization tasks" caption-side="bottom"}
+![Automated offerings with manual customization tasks](../../images/v2t-diagrams-platforms-manual.svg "Automated offerings with manual customization tasks"){: caption="Automated offerings with manual customization tasks" caption-side="bottom"}
 
 In the previous diagram, the following terms require some additional comments:
 

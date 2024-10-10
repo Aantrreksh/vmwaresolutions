@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-09-18"
+lastupdated: "2024-10-10"
 
 keywords: vcf automated, vcf classic architecture, tech specs vmware cloud foundation
 
@@ -29,7 +29,7 @@ After initial instance deployment, you can increase shared storage by ordering m
 
 The following graphic depicts the high-level architecture and components of a three node {{site.data.keyword.vcf-auto-short}} deployment.
 
-![{{site.data.keyword.vcf-auto-short}} architecture](../images/vc_nsx-t_architecture.svg "{{site.data.keyword.vcf-auto-short}} architecture"){: caption="Figure 1. {{site.data.keyword.vcf-auto-short}} high-level architecture for a three-node cluster" caption-side="bottom"}
+![{{site.data.keyword.vcf-auto-short}} architecture](../images/vc_nsx-t_architecture.svg "{{site.data.keyword.vcf-auto-short}} architecture"){: caption="{{site.data.keyword.vcf-auto-short}} high-level architecture for a three-node cluster" caption-side="bottom"}
 
 For {{site.data.keyword.vcf-auto-short}} with NSX-V instances, if you purchased IBM-provided VMware licensing, you can upgrade the VMware NSX Base edition to Advanced or to Enterprise edition. Also, you can request more VMware components, such as VMware Aria® Operations™. You can also add IBM-Managed Services if you want to offload the day-to-day operations and maintenance of the virtualization, guest OS, or application layers. The {{site.data.keyword.cloud_notm}} Professional Services team is available to help you accelerate your journey to the cloud with migration, implementation, planning, and onboarding services.
 

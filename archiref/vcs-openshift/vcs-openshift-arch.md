@@ -20,7 +20,7 @@ subcollection: vmwaresolutions
 
 Common services provide the services that are used by other services in the cloud management platform. Common services include identity and access services, domain name services, and NTP services.
 
-![Common services](../../images/openshift-commonservices.svg){: caption="Figure 1. Common services" caption-side="bottom"}
+![Common services](../../images/openshift-commonservices.svg){: caption="Common services" caption-side="bottom"}
 
 ### Identity and access services
 {: #vcs-openshift-arch-identity}

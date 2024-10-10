@@ -18,7 +18,7 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.cloud}} for VMware® Regulated Workloads uses NSX™ as the software-defined network overlay provider.
 
-![Regulated overlay network](../../images/vrw-v2-net.svg "Cluster overlay network"){: caption="Figure 1. Cluster overlay network" caption-side="bottom"}
+![Regulated overlay network](../../images/vrw-v2-net.svg "Cluster overlay network"){: caption="Cluster overlay network" caption-side="bottom"}
 
 ## Management cluster
 {: #vrw-overlay-network-management}

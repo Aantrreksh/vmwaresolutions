@@ -42,7 +42,7 @@ The following table provides information about the platform management roles and
 | Director Network Admin | Create, view, edit, delete the subnet, the static route, and troubleshoot routing in VMware Cloud Director. | Custom |
 | Director Console User | View a virtual machine state, properties, and use the guest operating system in VMware Cloud Director. | VMware Cloud Director |
 | Director Backup User | Manage Veeam® backup jobs in VMware Cloud Director. | Custom |
-{: caption="Table 1. Roles and actions for {{site.data.keyword.vm-shared}}" caption-side="bottom"}
+{: caption="Roles and actions for {{site.data.keyword.vm-shared}}" caption-side="bottom"}
 
 ## Custom defined roles and permissions
 {: #iam_vcd-custom}
@@ -241,7 +241,7 @@ The following table provides information about roles that are custom-defined by 
 | Catalog: CLSP Publish Subscribe | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | | | | |
 | Catalog: VCSP Publish Subscribe Caching | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | | | | |
 | vApp Template: Checkout | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | | | | |
-{: caption="Table 2. Custom-defined roles and permissions for {{site.data.keyword.vm-shared}}" caption-side="bottom"}
+{: caption="Custom-defined roles and permissions for {{site.data.keyword.vm-shared}}" caption-side="bottom"}
 
 ## Related links
 {: #iam_vcd-related}

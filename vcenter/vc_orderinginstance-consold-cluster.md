@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-10-01"
+lastupdated: "2024-10-10"
 
 keywords: automated consolidated cluster, order consolidated cluster, order automated instance
 
@@ -119,7 +119,7 @@ Choose performance level options according to your needs.
 | 2 IOPS/GB | This option is designed for most general-purpose workloads. For example, hosting small databases, backing up web applications, or virtual machine disk images for a hypervisor. |
 | 4 IOPS/GB | This option is designed for higher-intensity workloads that have a high percentage of active data at a time. For example, transactional databases. |
 | 10 IOPS/GB | This option is designed for the most demanding workload types, such as analytics. For example, high-transaction databases and other performance-sensitive databases. This performance level is limited to a maximum capacity of 4 TB per file share. |
-{: caption="Table 3. NFS performance level options" caption-side="bottom"}
+{: caption="NFS performance level options" caption-side="bottom"}
 
 ### vSAN storage
 {: #vc_orderinginstance-vsan-storage}

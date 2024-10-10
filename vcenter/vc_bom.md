@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-10-09"
+lastupdated: "2024-10-10"
 
 keywords: automated instances bom, bill materials vcf classic, vcf bom
 
@@ -29,7 +29,7 @@ The following table details the BOM information for the {{site.data.keyword.vcf-
 | VLAN1 | Public, Primary | Assigned to physical VMware ESXi™ servers for public network access. The servers are assigned a public IP address but this IP address is not configured on the servers, so they are not directly accessible on the public network. Instead, the public VLAN is intended to provide public internet access for other components, such as VMware NSX Edge™ Services Gateways (ESGs). |
 | VLAN2 | Private A, Primary | Assigned by {{site.data.keyword.cloud}} to physical ESXi servers. Used by the management interface for VMware vSphere® management traffic. \n Assigned to VMs (virtual machines) that function as management components. \n For NSX-T™ instances with vSphere 6.7, used by some VMware NSX TEP (Geneve Tunnel Endpoint). |
 | VLAN3 | Private B, Portable | Assigned to VMware vSAN™, if used. \n Assigned to VMware NFS, if used. \n Assigned to VMware vSphere® vMotion. \n For NSX-T™ instances with vSphere 6.7, used by VMware NSX TEP. For vSphere 7, all NSX VTEPs are put in VLAN2. |
-{: caption="Table 1. BOM for the VLANs in Automated instances" caption-side="bottom"}
+{: caption="BOM for the VLANs in Automated instances" caption-side="bottom"}
 
 ## Software BOM for Automated instances
 {: #vc_bom-software}
@@ -46,7 +46,7 @@ The following table details the BOM information for {{site.data.keyword.vcf-auto
 | VMware by Broadcom | NSX-V for vSphere[^nsxv] | 6.4.13 (19307994) |
 | Microsoft® | Windows® Server Standard edition | 2019 |
 | Microsoft | Active Directory™ domain functional level | 2016 (WinThreshold)[^domain] |
-{: caption="Table 2. BOM for the software components in Automated instances" caption-side="bottom"}
+{: caption="BOM for the software components in Automated instances" caption-side="bottom"}
 
 
 [^esxi80]: Applicable to vSphere 8
@@ -85,7 +85,7 @@ Review the following table for an overview of the advanced configuration setting
 | Queue Full Threshold | **/Disk/QFullThreshold** = 8 |
 | TCP/IP Heap Size | **/Net/TcpipHeapSize** = 32 |
 | TCP/IP Heap Maximum | **/Net/TcpipHeapMax** = 1536 |
-{: caption="Table 3. ESXi servers advanced configuration settings for Automated instances and clusters" caption-side="bottom"}
+{: caption="ESXi servers advanced configuration settings for Automated instances and clusters" caption-side="bottom"}
 
 [^maxvol]: This setting is required for IBM Spectrum® Protect Plus because this service might use more than the default number of NFS mounts on the ESXi server.
 
@@ -96,7 +96,7 @@ Review the following table for an overview of the advanced configuration setting
 | Block guest sourced BPDU frames | **/Net/BlockGuestBPDU** = 1 |
 | Duration, in seconds, to lock out a user's account after it exceeds the maximum allowed failed login attempts. | **Security.AccountUnlockTime** = 1800 |
 | Maximum allowed failed login attempts before a user's account is locked out. Zero disables locking of account. | **Security.AccountLockFailures** = 6 |
-{: caption="Table 4. ESXi servers advanced configuration settings for Automated instances and clusters" caption-side="bottom"}
+{: caption="ESXi servers advanced configuration settings for Automated instances and clusters" caption-side="bottom"}
 
 ## NSX and port group configuration settings
 {: #vc_bom-nsx-port-group-config}
@@ -112,7 +112,7 @@ Review the following table for an overview of the VMware NSX and port group conf
 | Port group SDDC-DPortGroup-vSAN (if applicable) | **Active uplinks** set to **uplink2** and **Standby uplinks** set to **uplink1** |
 | Port group SDDC-DPortGroup-Mgmt | **Port binding** set to **Static binding** and **Load balancing** set to **Route based on physical NIC load** |
 | Port group SDDC-DPortGroup-External | **Port binding** set to **Static binding** |
-{: caption="Table 5. NSX and port group configuration settings for Automated instances" caption-side="bottom"}
+{: caption="NSX and port group configuration settings for Automated instances" caption-side="bottom"}
 
 Security policies for promiscuous mode, MAC address changes, and forged transmits are accepted on distributed port groups.
 
@@ -131,7 +131,7 @@ Review the following table for an overview of the Network MTU configuration sett
 |:--------------------- |:----- |
 | Public switch | 1500 (default) |
 | Private switch | 9000 (Jumbo Frames) |
-{: caption="Table 6. MTU configuration settings for Automated instances and clusters" caption-side="bottom"}
+{: caption="MTU configuration settings for Automated instances and clusters" caption-side="bottom"}
 
 ### Updating the public switch MTU setting
 {: #vc_bom-procedure-update-public-switch-mtu-setting}
@@ -163,7 +163,7 @@ Review the following table for an overview of the EVC (Enhanced VMware vMotion C
 |:--------------------------- |:--------------------------- |:----------- |
 | Skylake | EVC is set to Intel® **Broadwell** Generation. | Skylake is not supported. |
 | Cascade Lake | For the management cluster, EVC is not set. For all other clusters, EVC is set to Intel **Skylake** Generation. | EVC is set to Intel **Cascade Lake** Generation. |
-{: caption="Table 7. EVC mode settings for Automated instances and clusters" caption-side="bottom"}
+{: caption="EVC mode settings for Automated instances and clusters" caption-side="bottom"}
 
 [^evc-vsphere67]: Existing vSphere 6.7 clusters only
 

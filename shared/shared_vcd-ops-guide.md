@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2024
 
-lastupdated: "2024-09-26"
+lastupdated: "2024-10-10"
 
 keywords: vmware solutions shared, get started shared, tech specs shared
 
@@ -83,7 +83,7 @@ The public catalog contains vApp templates for the following components:
 | Microsoft Windows | 2016 Standard |
 | Red Hat Enterprise Linux® | 8.1 |
 | Red Hat Enterprise Linux | 7.7 |
-{: caption="Table 1. vApp templates" caption-side="bottom"}
+{: caption="vApp templates" caption-side="bottom"}
 
 #### CentOS templates
 {: #shared_vcd-ops-guide-public-cat-centos}
@@ -280,7 +280,7 @@ The isolated Organization virtual data center network provides an Organization v
 
 From the tenant portal, use the following procedures to create a sample network topology that includes: configuring DHCP services, defining Source NAT (SNAT) and Destination NAT (DNAT) rules, and creating firewall rules on the edge gateway to allow access to the internet. Complete these procedures from the tenant portal **Data Centers** tab.
 
-![{{site.data.keyword.vmwaresolutions_short}} network topology](../images/vcd-sample-topology.svg "{{site.data.keyword.vmwaresolutions_short}} network topology"){: caption="Figure 1. {{site.data.keyword.vmwaresolutions_short}} network topology" caption-side="bottom"}
+![{{site.data.keyword.vmwaresolutions_short}} network topology](../images/vcd-sample-topology.svg "{{site.data.keyword.vmwaresolutions_short}} network topology"){: caption="{{site.data.keyword.vmwaresolutions_short}} network topology" caption-side="bottom"}
 
 #### Creating a routed Organization virtual data center network
 {: #shared_vcd-ops-guide-routed-organization}
@@ -449,7 +449,7 @@ The following services are available:
 | RHEL and CentOS YUM repo | 161.26.0.6 (mirrors.adn.networklayer.com) |
 | NTP | 161.26.0.6 (time.adn.networklayer.com) |
 | [{{site.data.keyword.cloud_notm}} Object Storage](/docs/vpc?topic=vpc-connecting-vpc-cos) | `s3.direct.xxx.cloud-object-storage.appdomain.cloud` |
-{: caption="Table 2. Available services" caption-side="bottom"}
+{: caption="Available services" caption-side="bottom"}
 
 Enabling access to the service network is done in two edge configuration steps.
 
