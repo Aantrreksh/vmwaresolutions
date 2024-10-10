@@ -35,7 +35,7 @@ Provision a {{site.data.keyword.redhat_notm}} VM based on the following specific
 | VM | IP address | Gateway | Disk (GB) | Memory (GB) | vCPU | NAT address |
 | --- | --- | --- | --- | --- | --- | --- |
 | `bastion` | 192.168.133.8 | 192.168.133.1 | 50 | 2 | 1 | 10.208.59.197 |
-{: caption="Table 1. Red Hat VM - provision" caption-side="bottom"}
+{: caption="Red Hat VM - provision" caption-side="bottom"}
 
 Use the following table to record your deployment details:
 
@@ -51,7 +51,7 @@ Use the following table to record your deployment details:
 | IP address | 192.168.133.8 | |
 | Netmask |255.255.255.0  | |
 | Default gateway | 192.168.133.1 | |
-{: caption="Table 2. Red Hat VM deployment" caption-side="bottom"}
+{: caption="Red Hat VM deployment" caption-side="bottom"}
 
 Before you begin, create the VM by using the vCenter CLI or the following PowerCLI script.
 

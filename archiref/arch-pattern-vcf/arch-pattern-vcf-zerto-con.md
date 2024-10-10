@@ -20,7 +20,7 @@ This architecture pattern explains how to deploy Zerto on {{site.data.keyword.vc
 
 An overview of this architecture pattern is shown in the following diagram.
 
-![Zerto on VMware Cloud Foundation consolidated architecture](../../images/vcf-arch-zerto-cons.svg "Zerto on VMware Cloud Foundation consolidated architecture."){: caption="Figure 1. Zerto on VMware Cloud Foundation consolidated architecture" caption-side="bottom"}
+![Zerto on VMware Cloud Foundation consolidated architecture](../../images/vcf-arch-zerto-cons.svg "Zerto on VMware Cloud Foundation consolidated architecture."){: caption="Zerto on VMware Cloud Foundation consolidated architecture" caption-side="bottom"}
 
 To obtain the image to install the required software in this architecture pattern, raise an {{site.data.keyword.cloud_notm}} Support ticket to {{site.data.keyword.vmwaresolutions_full}}.
 {: important}
@@ -30,7 +30,7 @@ To obtain the image to install the required software in this architecture patter
 
 The following diagram introduces the high-level steps to deploy Zerto on a VMware Cloud Foundation consolidated architecture. In this architecture pattern, Zerto appliances are deployed into the management domain as virtual machines (VMs).
 
-![Deploying Zerto on VMware Cloud Foundation consolidated architecture](../../images/vcf-arch-zerto-cons-steps.svg "Deploying Zerto on VMware Cloud Foundation consolidated architecture."){: caption="Figure 2. Deploying Zerto on VMware Cloud Foundation consolidated architecture" caption-side="bottom"}
+![Deploying Zerto on VMware Cloud Foundation consolidated architecture](../../images/vcf-arch-zerto-cons-steps.svg "Deploying Zerto on VMware Cloud Foundation consolidated architecture."){: caption="Deploying Zerto on VMware Cloud Foundation consolidated architecture" caption-side="bottom"}
 
 This architecture pattern deployment is summarized as follows:
 

@@ -66,7 +66,7 @@ The following example uses the {{site.data.keyword.cloud_notm}} CLI to order the
 | NOTIFICATION_EMAIL_AND_TICKET | Email and Ticket| `ibmcloud sl order item-list 2U_DUAL_INTEL_XEON_PROCESSOR_SCALABLE_FAMILY_12_DRIVES --category notification` |
 | AUTOMATED_NOTIFICATION | Automated notification | `ibmcloud sl order item-list 2U_DUAL_INTEL_XEON_PROCESSOR_SCALABLE_FAMILY_12_DRIVES --category response` |
 | UNLIMITED_SSL_VPN_USERS_1_PPTP_VPN_USER_PER_ACCOUNT | Unlimited SSL VPN Users | `ibmcloud sl order item-list 2U_DUAL_INTEL_XEON_PROCESSOR_SCALABLE_FAMILY_12_DRIVES` |
-{: caption="Table 1. Bare metal options" caption-side="bottom"}
+{: caption="Bare metal options" caption-side="bottom"}
 
 The order command requires the following additional information:
 
@@ -93,7 +93,7 @@ The order command also requires the definition of the disks and RAID for use in 
 | 10 | HOT_SPARE |
 | 11 | GLOBAL_HOT_SPARE |
 | 21 | Straight through connection to the onboard drive controller |
-{: caption="Table 2. RAID IDs" caption-side="bottom"}
+{: caption="RAID IDs" caption-side="bottom"}
 
 The specification requires two disks in RAID 1 (disks 0 and 1) and 8 x disks in RAID 6 (disks 2, 3, 4, 5, 6, 7, 8 and 9). The following command is used:
 

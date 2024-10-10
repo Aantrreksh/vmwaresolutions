@@ -55,7 +55,7 @@ The following information is collected from the user at the ordering time and is
 |Cloud Provider | Type |
 |Cloud Provider | POC Name |
 |Cloud Provider | POC Phone |
-{: caption="Table 1. Information collected from the user" caption-side="bottom"}
+{: caption="Information collected from the user" caption-side="bottom"}
 
 The following default information is used in the application setup.
 
@@ -70,4 +70,4 @@ The following default information is used in the application setup.
 | Task | Four tasks are set up: Asset Scan, NSX Flows, VMware® Infrastructure Scan, and VMware Vulnerability. ScanName is set to DC1AssetScan, NSXFlows, VMWInfraScan, and VMWVulnScan. |
 | Task | Four tasks are set up: Asset Scan, NSX Flows, VMware Infrastructure Scan, and VMware Vulnerability. The type is set to vCenter, NSX, VMwareInfrastructureScan, and VMwareVulnerabilityScan. |
 | Task | The schedule is set to hourly for `DC1AssetScan` and daily for the other tasks. |
-{: caption="Table 2. Default information used in application setup" caption-side="bottom"}
+{: caption="Default information used in application setup" caption-side="bottom"}

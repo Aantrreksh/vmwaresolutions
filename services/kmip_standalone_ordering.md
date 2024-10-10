@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-08-13"
+lastupdated: "2024-10-10"
 
 keywords: KMIP for VMware, order KMIP, Key Protect, Hyper Protect Crypto Services, HPCS
 
@@ -79,7 +79,7 @@ When you enable the nonactive KMIP for VMware instance, provide the following se
 |:------- |:----------- |
 | **HPCS instances** | The list of available HPCS instances that you can select to use for key management |
 | **Customer root key** | The list of customer root keys that are stored in your selected HPCS instance |
-{: caption="Table 1. Configuration settings for HPCS" caption-side="bottom"}
+{: caption="Configuration settings for HPCS" caption-side="bottom"}
 {: class="simple-tab-table"}
 {: #simpletabtable1}
 {: tab-title="Hyper Protect Crypto Services"}
@@ -90,7 +90,7 @@ When you enable the nonactive KMIP for VMware instance, provide the following se
 | **API key for service ID**| The API key for the {{site.data.keyword.cloud_notm}} Service ID that is used to access the service instance of Key Protect |
 | **Key Manager instance**| The list of available Key Protect instances that you can select to use for key management |
 | **Customer root key**| The list of customer root keys that are stored in your selected key manager instance |
-{: caption="Table 1. Configuration settings for Key Protect" caption-side="bottom"}
+{: caption="Configuration settings for Key Protect" caption-side="bottom"}
 {: #simpletabtable2}
 {: tab-title="Key Protect"}
 {: tab-group="Settings when selecting different key management service"}
@@ -171,7 +171,7 @@ If your KMIP instance is connected to Key Protect, you must use the two regional
 | Toronto | `kmip-1.private.ca-tor.vmware-solutions.cloud.ibm.com:5696` \n `kmip-2.private.ca-tor.vmware-solutions.cloud.ibm.com:5696` |
 | Washington DC | `kmip-1.private.us-east.vmware-solutions.cloud.ibm.com:5696` \n `kmip-2.private.us-east.vmware-solutions.cloud.ibm.com:5696` |
 | Madrid | `kmip-1.private.eu-es.vmware-solutions.cloud.ibm.com:5696` \n `kmip-2.private.eu-es.vmware-solutions.cloud.ibm.com:5696` |
-{: caption="Table 2. KMIP for VMware network service endpoint locations" caption-side="bottom"}
+{: caption="KMIP for VMware network service endpoint locations" caption-side="bottom"}
 
 ## Related links
 {: #kmip_standalone_ordering-related}

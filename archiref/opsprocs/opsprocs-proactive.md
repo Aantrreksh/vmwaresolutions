@@ -80,7 +80,7 @@ The following guidelines assist you in being proactive and maintaining a stable 
 | Right-size over-sized VMs | Use a simple approach to right-size oversized VMs: identify, profile and tune, and monitor demand trends. Using vCenter identify large VMs that have the potential for right-sizing. Navigate to Monitor, Performance, and profile the average CPU and RAM demand profile of the workload over time and adjust the virtual resources. Finally, continue to monitor the workloads to see that the performance is acceptable. Ideally, consumed memory for the VM should be close to the memory used by the guest OS, plus overhead for running the VM.|
 | Right-size under-sized VMs | Use a simple approach to right-size under-sized VMs. First, identify then profile and tune, and then monitor demand trends. Identify small VMs that need right-sizing. Profile the average CPU and RAM demand profile of the workload over time and adjust the virtual resources. Finally, continue to monitor the workloads to see that the performance is acceptable. Ideally, consumed memory for the VM should be close to the memory used by the guest OS, plus overhead for running the VM.|
 | Check VM hardware device compatibility | Using the VMware hardware compatibility online resource, check that your VMs' hardware resources such as network and storage devices, are supported for that OS. If they are not supported, change to a supported device to improve reliability and performance.  |
-{: caption="Table 1. Proactive tasks" caption-side="bottom"}
+{: caption="Proactive tasks" caption-side="bottom"}
 
 ## Related links
 {: #opsprocs-proactive-links}

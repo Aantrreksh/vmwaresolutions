@@ -102,15 +102,15 @@ The HCX Network Extension service provides a low-touch operation for high perfor
 
 The deployment architecture consists of the HCX components within the {{site.data.keyword.cloud_notm}} and with client on-premises. In this design, the architecture specifies a hub-and-spoke model that exists between the source environment and the {{site.data.keyword.cloud_notm}}. The source estate serves as the hub with connections to different {{site.data.keyword.cloud_notm}} environments as shown in the following figure. In this model, site peering is established over the Internet.
 
-![HCX with single source over Public Network](../../images/hcx-public.svg "HCX with single source over Public Network"){: caption="Figure 1. HCX with single source over Public Network" caption-side="bottom"}
+![HCX with single source over Public Network](../../images/hcx-public.svg "HCX with single source over Public Network"){: caption="HCX with single source over Public Network" caption-side="bottom"}
 
 Alternatively, the architecture also allows site peering over the Private Internet.
 
-![HCX with single source over Private Network](../../images/hcx-private.svg "HCX with single source over Private Network"){: caption="Figure 2. HCX with single source over Private Network" caption-side="bottom"}
+![HCX with single source over Private Network](../../images/hcx-private.svg "HCX with single source over Private Network"){: caption="HCX with single source over Private Network" caption-side="bottom"}
 
 The source can be placed within the {{site.data.keyword.cloud_notm}} environment as well; spokes are always cloud deployments within this design as shown in the following figure.
 
-![HCX with multiple sources](../../images/hcx_multiple_sources.svg "HCX with multiple sources"){: caption="Figure 3. HCX with multiple sources" caption-side="bottom"}
+![HCX with multiple sources](../../images/hcx_multiple_sources.svg "HCX with multiple sources"){: caption="HCX with multiple sources" caption-side="bottom"}
 
 ## Base design dependencies
 {: #hcx-archi-overview-base-design}

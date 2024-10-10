@@ -18,7 +18,7 @@ subcollection: vmwaresolutions
 
 The architecture of {{site.data.keyword.vcf-vpc}} is built upon {{site.data.keyword.vpc_short}} network concepts and uses bare metal servers for {{site.data.keyword.vpc_short}}. Through its native integration with {{site.data.keyword.vpc_short}} networking, you can easily use other {{site.data.keyword.cloud}} services with your VMware workloads or integrate networking with other {{site.data.keyword.vpc_short}}, Classic, or Power infrastructure offerings.
 
-![Architecture overview of {{site.data.keyword.vcf-vpc}}](../../images/vcf-vpc-v2-net-arch.svg "The solution uses Virtual Private Cloud compute, network, storage resources, and VMware NSX for hosting VMware workloads."){: caption="Figure 1. Architecture overview of {{site.data.keyword.vcf-vpc}}" caption-side="bottom"}
+![Architecture overview of {{site.data.keyword.vcf-vpc}}](../../images/vcf-vpc-v2-net-arch.svg "The solution uses Virtual Private Cloud compute, network, storage resources, and VMware NSX for hosting VMware workloads."){: caption="Architecture overview of {{site.data.keyword.vcf-vpc}}" caption-side="bottom"}
 
 VMware Cloud Foundation™ supports the two base architecture models - consolidated and standard. When you deploy your VMware Cloud Foundation instance in {{site.data.keyword.cloud}}, you can select the wanted model according to the requirements of your deployment and organization.
 
@@ -64,11 +64,11 @@ The automation provisions a new {{site.data.keyword.vpc_short}}, prefixes, subne
 
 An overview of the consolidated architecture and deployed assets is shown in the following diagram. Consolidated architecture deploys a singe set of VMware assets, a vCenter, NSX managers, and two NSX edges in addition to the SDDC manager. A Tier-0 gateway is deployed and integrated with VPC with external uplinks.
 
-![Architecture overview - consolidated deployment](../../images/vcf-vpc-v2-arch-net-cons.svg "The solution uses Virtual Private Cloud compute, network, storage resources, and VMware NSX for hosting VMware workloads."){: caption="Figure 2. Architecture overview - consolidated deployment" caption-side="bottom"}
+![Architecture overview - consolidated deployment](../../images/vcf-vpc-v2-arch-net-cons.svg "The solution uses Virtual Private Cloud compute, network, storage resources, and VMware NSX for hosting VMware workloads."){: caption="Architecture overview - consolidated deployment" caption-side="bottom"}
 
 An overview of the standard architecture and deployed assets is shown in the following diagram. As a main difference to consolidated architecture, this architecture model deploys more hosts for the VI workload domain, a new vCenter, new NSX appliances, and a new Tier-0 gateway. Also, new VPC subnets are provisioned for the VI workload domain hosts and NSX edges.
 
-![Architecture overview - consolidated deployment](../../images/vcf-vpc-v2-arch-net-std.svg "The solution uses Virtual Private Cloud compute, network, storage resources, and VMware NSX for hosting VMware workloads."){: caption="Figure 3. Architecture overview - standard deployment" caption-side="bottom"}
+![Architecture overview - consolidated deployment](../../images/vcf-vpc-v2-arch-net-std.svg "The solution uses Virtual Private Cloud compute, network, storage resources, and VMware NSX for hosting VMware workloads."){: caption="Architecture overview - standard deployment" caption-side="bottom"}
 
 For the connectivity needs and as the NSX deployment is integrated with VPC, you can use {{site.data.keyword.vpc_short}} connectivity services and {{site.data.keyword.cloud_notm}} interconnectivity solutions with your deployment. Public internet network access capabilities to the workloads are provided through floating IP addresses or Public Gateway configurations within your VPC. On-premises connectivity over the public internet can be arranged by using {{site.data.keyword.vpc_short}} VPN services (site-to-site and client-to-site), or alternatively by using NSX built-in capabilities. For private networking, you can use {{site.data.keyword.cloud_notm}} interconnectivity services to connect your VMware workloads with {{site.data.keyword.cloud_notm}} classic infrastructure, other VPCs, and on-premises networks.
 

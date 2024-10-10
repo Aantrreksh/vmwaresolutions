@@ -34,7 +34,7 @@ The following table summarizes the required VLAN interfaces in {{site.data.keywo
 | `vlan-nic-cloud-builder` | `vlan` | 1611 | `vpc-mgmt-subnet` | `true` | Cloud Builder | `pg-mgmt` |
 | `vlan-nic-vcenter` | `vlan` | 1611 | `vpc-mgmt-subnet` | `true` | vCenter Server | `pg-mgmt` |
 | `vlan-nic-sddc-manager` | `vlan` | 1611 | `vpc-mgmt-subnet` | `true` | SDDC Manager | `pg-mgmt` |
-{: caption="Table 1. VLAN interfaces for VMware Cloud Foundation appliances" caption-side="bottom"}
+{: caption="VLAN interfaces for VMware Cloud Foundation appliances" caption-side="bottom"}
 
 ## Overlay subnets for Aria Lifecycle
 {: #vpc-vcf-mgmt-appliances-overlay}

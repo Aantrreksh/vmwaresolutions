@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2024
 
-lastupdated: "2024-10-01"
+lastupdated: "2024-10-10"
 
 keywords: automated add clusters, add cluster, automated cluster
 
@@ -134,7 +134,7 @@ The following table indicates the performance level details.
 | 2 IOPS/GB | This option is designed for most general-purpose workloads. Example applications include hosting small databases, backing up web applications, or VM disk images for a hypervisor. |
 | 4 IOPS/GB | This option is designed for higher-intensity workloads that have a high percentage of active data at a time. Example applications include transactional databases. |
 | 10 IOPS/GB | This option is designed for the most demanding workload types, such as analytics. Example applications include high-transaction databases and other performance-sensitive databases. This performance level is limited to a maximum capacity of 4 TB per file share. |
-{: caption="Table 3. NFS performance level options" caption-side="bottom"}
+{: caption="NFS performance level options" caption-side="bottom"}
 
 #### vSAN storage
 {: #vc_addingclusters-vsan-storage}

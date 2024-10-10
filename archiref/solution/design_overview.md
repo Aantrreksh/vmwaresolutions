@@ -22,7 +22,7 @@ The offerings in this solution portfolio include VMware Cloud Foundation™ prod
 
 The architecture consists of a single cloud region. You can extend into more cloud regions that are located in another geography and in another {{site.data.keyword.cloud_notm}} pod within the same data center. A region is defined as a unique {{site.data.keyword.vcf-auto}} instance. This design also allows for automated expansion and contraction of virtual capacity within a {{site.data.keyword.vcf-auto}} instance.
 
-![Solution components of {{site.data.keyword.vmwaresolutions_short}}](../../images/vcsv4radiagrams-ra-full.svg "The solution comprises physical infrastructure, virtual infrastructure, infrastructure management, and common services."){: caption="Figure 1. Solution components of {{site.data.keyword.vmwaresolutions_short}}" caption-side="bottom"}
+![Solution components of {{site.data.keyword.vmwaresolutions_short}}](../../images/vcsv4radiagrams-ra-full.svg "The solution comprises physical infrastructure, virtual infrastructure, infrastructure management, and common services."){: caption="Solution components of {{site.data.keyword.vmwaresolutions_short}}" caption-side="bottom"}
 
 ## Related links
 {: #design_overview-related}

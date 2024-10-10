@@ -34,7 +34,7 @@ The {{site.data.keyword.rw}} Active Directory is used for the privileged adminis
 | Privileged user | `Administrator` | Default Windows® user |
 | Privileged user | `cloudadmin`    | Default user for the customer to access vCenter Server |
 | Nonprivileged | `cloudreadonly` | Read-only account for the customer |
-{: caption="Table 1. Active Directory user IDs" caption-side="bottom"}
+{: caption="Active Directory user IDs" caption-side="bottom"}
 
 ### Microsoft Active Directory groups
 {: #vrw-iam-active-directory-account-groups}
@@ -42,7 +42,7 @@ The {{site.data.keyword.rw}} Active Directory is used for the privileged adminis
 | User     | User ID       | Description |
 |:---------|:------------- |:------------|
 | IBM automation or privileged users | `IC4v-vCenter` | vCenter Administration Group |
-{: caption="Table 2. Active Directory groups" caption-side="bottom"}
+{: caption="Active Directory groups" caption-side="bottom"}
 
 ## Related links
 {: #vrw-iam-active-directory-related}

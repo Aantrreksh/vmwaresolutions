@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2024
 
-lastupdated: "2024-07-11"
+lastupdated: "2024-10-10"
 
 subcollection: vmwaresolutions
 
@@ -36,7 +36,7 @@ The following main principles or requirements apply:
 | T1s - Tenant    | Read | Full |
 | T1s - Services | Read | Full |
 | T1s - Management | Read | Full |
-{: caption="Table 1. NSX role mapping" caption-side="bottom"}
+{: caption="NSX role mapping" caption-side="bottom"}
 
 The roles and privileges for load balancing, firewall rules, and VPN services follow the T0/T1 roles and privileges.
 
@@ -63,7 +63,7 @@ NSX Data Center has the following built-in roles. You cannot add any new roles.
 |:---------|:-------------|:------------|
 | Privileged user | `admin` | Used post-deployment to manage NSX VTEP IP addresses and to manage host and cluster configuration when hosts and clusters are added and removed. Also, used to manage ESG configuration for services that require public network access for licensing, activation, or usage reporting. |
 | IBM automation | `automation_admin` | Automation account used by IBM. It uses the principle identity functions to create configuration and protect it with a certificate. |
-{: caption="Table 2. NSX user IDs" caption-side="bottom"}
+{: caption="NSX user IDs" caption-side="bottom"}
 
 For more information, see the [VMware documentation - RBAC for NSX](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/2.5/VMware-NSX-T-Data-Center-25.zip){: external}.
 

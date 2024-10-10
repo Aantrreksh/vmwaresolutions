@@ -28,7 +28,7 @@ An automated deployment and configuration of a single virtual machine (VM) that 
 | OS | CentOS 7 |
 | Installed application components | UI, App, Plug-ins, Central collector, Index datastore, Messaging datastore, Relational datastore, Index datastore, Remote collector |
 {: class="simple-tab-table"}
-{: caption="Table 1. All-in-one VM parameters" caption-side="bottom"}
+{: caption="All-in-one VM parameters" caption-side="bottom"}
 {: #table1}
 {: tab-title="All-in-one VM"}
 {: tab-group="all-in-one-vm"}
@@ -41,7 +41,7 @@ An automated deployment and configuration of a single virtual machine (VM) that 
 | Disk | 1 TB |
 | OS | CentOS 7 |
 | Installed application components | Remote collector |
-{: caption="Table 1. Remote collector VM parameters" caption-side="bottom"}
+{: caption="Remote collector VM parameters" caption-side="bottom"}
 {: #table2}
 {: tab-title="Remote collector VM"}
 {: tab-group="all-in-one-vm"}

@@ -23,11 +23,11 @@ The following information provides an introduction to VMware® NSX™ deployment
 
 An overview of consolidated architecture is shown in the following diagram. The consolidated architecture deployment uses the management domain NSX components for the workloads as well.
 
-![Architecture overview of consolidated VMware Cloud Foundation NSX deployment on {{site.data.keyword.vpc_short}}](../../images/vcf-vpc-v2-arch-net-cons.svg "Architecture overview of consolidated VMware Cloud Foundation NSX deployment on {{site.data.keyword.vpc_short}}"){: caption="Figure 1. Architecture overview of consolidated VMware Cloud Foundation NSX deployment on {{site.data.keyword.vpc_short}}" caption-side="bottom"}
+![Architecture overview of consolidated VMware Cloud Foundation NSX deployment on {{site.data.keyword.vpc_short}}](../../images/vcf-vpc-v2-arch-net-cons.svg "Architecture overview of consolidated VMware Cloud Foundation NSX deployment on {{site.data.keyword.vpc_short}}"){: caption="Architecture overview of consolidated VMware Cloud Foundation NSX deployment on {{site.data.keyword.vpc_short}}" caption-side="bottom"}
 
 Standard architecture follows the same principles, but deploys dedicated NSX managers and NSX edge nodes for the VI workloads domain and uses dedicated TEP and Tier-0 gateway uplink subnets for the workload domain hosts and edge nodes. All NSX managers are deployed on the management domain.
 
-![Architecture overview of standard VMware Cloud Foundation NSX deployment on {{site.data.keyword.vpc_short}}](../../images/vcf-vpc-v2-arch-net-std.svg "Architecture overview of standard VMware Cloud Foundation NSX deployment on {{site.data.keyword.vpc_short}}"){: caption="Figure 2. Architecture overview of standard VMware Cloud Foundation NSX deployment on {{site.data.keyword.vpc_short}}" caption-side="bottom"}
+![Architecture overview of standard VMware Cloud Foundation NSX deployment on {{site.data.keyword.vpc_short}}](../../images/vcf-vpc-v2-arch-net-std.svg "Architecture overview of standard VMware Cloud Foundation NSX deployment on {{site.data.keyword.vpc_short}}"){: caption="Architecture overview of standard VMware Cloud Foundation NSX deployment on {{site.data.keyword.vpc_short}}" caption-side="bottom"}
 
 ## VMware vSphere distributed switch deployment
 {: #vpc-vcf-nsx-t-vds}
@@ -56,7 +56,7 @@ A VLAN interface is provisioned for each NSX manager in the management subnet (`
 | `vlan-nic-nsx-1` | `vlan` | 1611 | `vpc-mgmt-subnet` | `true` | NSX Manager 2 | `pg-mgmt` |
 | `vlan-nic-nsx-2` | `vlan` | 1611 | `vpc-mgmt-subnet` | `true` | NSX Manager 3 | `pg-mgmt` |
 | `vlan-nic-nsx-vip` | `vlan` | 1611 | `vpc-mgmt-subnet` | `true` | NSX Manager VIP | `pg-mgmt` |
-{: caption="Table 1. VLAN interfaces for NSX Managers" caption-side="bottom"}
+{: caption="VLAN interfaces for NSX Managers" caption-side="bottom"}
 
 When the initial NSX Manager is deployed into the host and cluster, you must register the vCenter as the compute manager to facilitate the deployment of other NSX Managers. You can use the Public Gateway that is attached to the management subnet to download updates for the NSX Managers through SDDC manager.
 
@@ -73,7 +73,7 @@ The following table lists the required VLAN interfaces for NSX VMKs for each hos
 | ---------------|----------------|---------|--------|-------------|------------------|---------------------------- |
 | `vlan-nic-tep-pool-<1>` | `vlan` | 1614 | `vpc-tep-subnet` | `false` | `vmk10` | `none` - set in NSX profile |
 | `vlan-nic-tep-pool-<2>` | `vlan` | 1614 | `vpc-tep-subnet` | `false` | `vmk11` | `none` - set in NSX profile |
-{: caption="Table 2. Host management networks and VMkernel adapters for consolidated architecture" caption-side="bottom"}
+{: caption="Host management networks and VMkernel adapters for consolidated architecture" caption-side="bottom"}
 
 Host TEP VLAN ID is defined in the host transport profile.
 {: note}
@@ -90,7 +90,7 @@ In the standard architecture, the VI workload domain deployment uses new VPC sub
 | `vlan-nic-tep-pool-<2>` | `vlan` | 1614 | `vpc-tep-subnet` | `false` | `vmk11` | `none` - set in NSX profile |
 | `vlan-nic-wl-tep-pool-<1>` | `vlan` | 1634 | `vpc-wl-tep-subnet` | `false` | `vmk10` | `none` - set in NSX profile |
 | `vlan-nic-wl-tep-pool-<2>` | `vlan` | 1634 | `vpc-wl-tep-subnet` | `false` | `vmk11` | `none` - set in NSX profile |
-{: caption="Table 3. Host management networks and VMkernel adapters for standard architecture" caption-side="bottom"}
+{: caption="Host management networks and VMkernel adapters for standard architecture" caption-side="bottom"}
 
 The previous table shows the naming and numbering principles. The actual deployment subnet or distributed port group names might vary.
 {: note}
@@ -111,7 +111,7 @@ The following table summarizes the requirements for a Medium Form Factor Edge en
 | Memory               | 8 GB             |
 | Disk                 | 200 GB           |
 | Network - Management | `vpc-mgmt-subnet` |
-{: caption="Table 4. NSX Edge Node specifications" caption-side="bottom"}
+{: caption="NSX Edge Node specifications" caption-side="bottom"}
 
 You can change the size of the edge node in the deployment variables.
 {: note}
@@ -126,7 +126,7 @@ As for the other NSX components, VLAN interfaces must be created in {{site.data.
 | `vlan-nic-edge-tep-pool-2` | `vlan` | 2713 | `vpc-tep-subnet` | `true` | NSX Edge 1 TEP 2 | `none` - set in NSX profile |
 | `vlan-nic-edge-tep-pool-3` | `vlan` | 2713 | `vpc-tep-subnet` | `true` | NSX Edge 2 TEP 1 | `none` - set in NSX profile |
 | `vlan-nic-edge-tep-pool-4` | `vlan` | 2713 | `vpc-tep-subnet` | `true` | NSX Edge 2 TEP 2 | `none` - set in NSX profile |
-{: caption="Table 5. Host management networks and VMkernel adapters for consolidated architecture" caption-side="bottom"}
+{: caption="Host management networks and VMkernel adapters for consolidated architecture" caption-side="bottom"}
 
 Edge TEP VLAN ID is defined in the edge transport profile.
 {: note}
@@ -153,7 +153,7 @@ In the standard architecture, the VI workload domain deployment uses new VPC sub
 | `vlan-nic-edge-wl-tep-pool-2` | `vlan` | 2733 | `vpc-wl-tep-subnet` | `true` | NSX Edge 1 TEP 2 | `none` - set in NSX profile |
 | `vlan-nic-edge-wl-tep-pool-3` | `vlan` | 2733 | `vpc-wl-tep-subnet` | `true` | NSX Edge 2 TEP 1 | `none` - set in NSX profile |
 | `vlan-nic-edge-wl-tep-pool-4` | `vlan` | 2733 | `vpc-wl-tep-subnet` | `true` | NSX Edge 2 TEP 2 | `none` - set in NSX profile |
-{: caption="Table 6. Host management networks and VMkernel adapters for standard architecture" caption-side="bottom"}
+{: caption="Host management networks and VMkernel adapters for standard architecture" caption-side="bottom"}
 
 The previous table shows the naming and numbering principles. The actual deployment subnet or distributed port group names might vary.
 {: note}

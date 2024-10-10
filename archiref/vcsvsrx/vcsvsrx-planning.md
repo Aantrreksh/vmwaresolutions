@@ -45,7 +45,7 @@ The basic vSRX offering architecture places a vSRX in front of all the VLANs dep
 
 The following figure represents the typical vSRX deployment.
 
-![vSRX overview](../../images/vcsvsrx-logical-overview.svg){: caption="Figure 1. vSRX overview" caption-side="bottom"}
+![vSRX overview](../../images/vcsvsrx-logical-overview.svg){: caption="vSRX overview" caption-side="bottom"}
 
 The deployment of the {{site.data.keyword.vcf-auto}} instance is required before the vSRX edge gateway appliance order is placed.
 {: important}
@@ -60,7 +60,7 @@ For more information, see [Understanding the vSRX Default Configuration](/docs/v
 ## vSRX and {{site.data.keyword.vcf-auto-short}} integrated design
 {: #vcsvsrx-planning-vsrx-design}
 
-![vSRX and {{site.data.keyword.vcf-auto-short}} integration](../../images/vcsvsrx-vsrx-with-vcs-architecture.svg){: caption="Figure 2. vSRX and {{site.data.keyword.vcf-auto-short}} integration" caption-side="bottom"}
+![vSRX and {{site.data.keyword.vcf-auto-short}} integration](../../images/vcsvsrx-vsrx-with-vcs-architecture.svg){: caption="vSRX and {{site.data.keyword.vcf-auto-short}} integration" caption-side="bottom"}
 
 The tight integration of the vSRX HA Chassis Cluster into a {{site.data.keyword.vcf-auto-short}} instance extends the basic {{site.data.keyword.vcf-auto-short}} architecture in a few key areas.
 
@@ -94,7 +94,7 @@ It is recommended that you review the architecture patterns in the [Architecture
 
 The vSRX in the {{site.data.keyword.vcf-auto-short}} instance has specific connection requirements to enable and maintain the HA chassis cluster.
 
-![vSRX HA chassis cluster on {{site.data.keyword.vcf-auto-short}} interconnections](../../images/vcsvsrx-vsrx-vcs-connections.svg){: caption="Figure 3. vSRX HA chassis cluster on {{site.data.keyword.vcf-auto-short}} interconnections" caption-side="bottom"}
+![vSRX HA chassis cluster on {{site.data.keyword.vcf-auto-short}} interconnections](../../images/vcsvsrx-vsrx-vcs-connections.svg){: caption="vSRX HA chassis cluster on {{site.data.keyword.vcf-auto-short}} interconnections" caption-side="bottom"}
 
 Each network adapter that is defined on the vSRX is mapped to a specific interface, depending on whether the vSRX instance is a stand-alone VM or one of a cluster pair for high availability.
 
@@ -121,7 +121,7 @@ The following table shows information for a stand-alone vSRX VM.
 | 6 | `ge-0/0/4` |
 | 7 | `ge-0/0/5` |
 | 8 | `ge-0/0/6` |
-{: caption="Table 1. Interface names and mappings for a stand-alone vSRX VM" caption-side="bottom"}
+{: caption="Interface names and mappings for a stand-alone vSRX VM" caption-side="bottom"}
 
 The following table shows information for a pair of vSRX VMs in a cluster (node 0 and node 1).
 
@@ -135,7 +135,7 @@ The following table shows information for a pair of vSRX VMs in a cluster (node 
 | 6 | `ge-0/0/3` (node 0) and `ge-7/0/3` (node 1) |
 | 7 | `ge-0/0/4` (node 0) and `ge-7/0/4` (node 1) |
 | 8 | `ge-0/0/5` (node 0) and `ge-7/0/5` (node 1) |
-{: caption="Table 2. Interface names and mappings for a pair of vSRX VMs in a cluster (node 0 and node 1)" caption-side="bottom"}
+{: caption="Interface names and mappings for a pair of vSRX VMs in a cluster (node 0 and node 1)" caption-side="bottom"}
 
 #### Default security zone configuration
 {: #vcsvsrx-planning-default-sec-zone}
@@ -147,7 +147,7 @@ The following table shows the factory default settings for security policies.
 | trust | untrust | permit |
 | trust | trust | permit |
 | untrust | trust | deny |
-{: caption="Table 3. Factory default settings for security policies" caption-side="bottom"}
+{: caption="Factory default settings for security policies" caption-side="bottom"}
 
 As noted previously, the default configuration merely represents a point from which to build the required configuration to meet your requirements. The creation of extra security zones is often necessary to support the various traffic flow patterns present in the account.
 
@@ -160,7 +160,7 @@ If the client intends to connect over the Internet by using eBGP, they must obta
 
 If the client is using Direct Link, BGP by using private ASNs is possible.
 
-![vSRX BGP over IBM Direct Link](../../images/vcsvsrx-bgp-direct-link.svg){: caption="Figure 4. vSRX BGP over IBM Direct Link" caption-side="bottom"}
+![vSRX BGP over IBM Direct Link](../../images/vcsvsrx-bgp-direct-link.svg){: caption="vSRX BGP over IBM Direct Link" caption-side="bottom"}
 
 The diagram illustrates one of many potential implementations of BGP from the on-premises data center to the {{site.data.keyword.cloud_notm}}.
 

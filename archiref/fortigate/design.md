@@ -24,7 +24,7 @@ FortiGate VM does not replace NSX–T™ but rather complements and enhances the
 
 You can deploy a FortiGate VM according to several different strategies as Figure 1 illustrates.
 
-![FortiGate VM deployment topologies](../../images/fortigate-vm.svg "FortiGate VM deployment topologies"){: caption="Figure 1. FortiGate VM deployment topologies" caption-side="bottom"}
+![FortiGate VM deployment topologies](../../images/fortigate-vm.svg "FortiGate VM deployment topologies"){: caption="FortiGate VM deployment topologies" caption-side="bottom"}
 
 In this figure, FCR is the {{site.data.keyword.cloud_notm}} front–end (public) customer router, and BCR is the {{site.data.keyword.cloud_notm}} back–end (private) customer router. For more information about the {{site.data.keyword.cloud_notm}} network design, see [Physical network design](/docs/vmwaresolutions?topic=vmwaresolutions-design_physicalinfrastructure).
 

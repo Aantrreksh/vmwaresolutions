@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-07-29"
+lastupdated: "2024-10-10"
 
 keywords: vSphere upgrade, NSX upgrade, PSC upgrade, flexible upgrade
 
@@ -79,7 +79,7 @@ The following table is a summary of the supported upgrade paths:
 | {{site.data.keyword.vcf-auto-short}} with NSX-T instances with vSphere V6 | **Preferred path** \n Provision a new {{site.data.keyword.vcf-auto-short}} with NSX-T instance with vSphere V7 and migrate workloads. See [NSX-V to NSX-T migration](/docs/vmwaresolutions?topic=vmwaresolutions-v2t-overview). \n **Alternative path** \n Upgrade the instance by using the [upgrade procedure](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vsphere_70_upgrade). \n - For Cascade Lake servers, upgrade from vSphere V6 to V7. \n  - Open a support ticket to obtain new V7 licenses. \n - Cluster expansion uses Cascade Lake servers. \n **Before December 2023**, provision a new {{site.data.keyword.vcf-auto-short}} instance with NSX-T and vSphere V7 and migrate workloads. See [NSX-V to NSX-T migration](/docs/vmwaresolutions?topic=vmwaresolutions-v2t-overview). | - Broadwell and Skylake servers are not supported. \n - Add-on services to upgraded instance are not supported. \n - Conversion of vSphere switching from N-VDS to VDS is not supported. |
 | {{site.data.keyword.vcf-flex-short}} | **Preferred path** \n Consider provision vSphere bare metal server and deploy a new [VSS bare metal server](/docs/vmwaresolutions?topic=vmwaresolutions-vs_vsphereoverview) or a bare metal server within VPC Architecture. \n Upgrade your vSphere servers by using [the upgrade procedure](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vsphere_70_upgrade). \n - For Broadwell servers, provision new servers as this server type is not supported by vSphere V7. \n - For Cascade Lake servers, upgrade from vSphere V6 to V7. \n - Open a support ticket to obtain new V7 licenses. \n - Cluster expansion uses Cascade Lake servers. | - Broadwell and Skylake servers are not supported. |
 | Roll-your-own (classic bare metals servers) | **Preferred path** \n Consider provision vSphere bare metal server and deploy a new bare metal server or a bare metal server within VPC Architecture. \n - Provision a new bare metal server with VMware ESXi V7. \n - Swap out the ESXi V6 servers. \n - Reload OS image with ESXi V7. \n **Alternative path** \n Consider provision a new bare metal server within VPC Architecture. | - In-place upgrade from V6 to V7 is not supported. |
-{: caption="Table 1. Upgrade paths for VMware Solutions offerings" caption-side="bottom"}
+{: caption="Upgrade paths for VMware Solutions offerings" caption-side="bottom"}
 
 ### Preparing your jump server
 {: #vs_vsphere_70_upgrade-prereq-jumpbox}

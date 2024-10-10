@@ -42,7 +42,7 @@ Use the following table to document the parameters you need for your deployment,
 | vCenter Server user | | |
 | vCenter Server password | | |
 | NSX Transport Zone| transport-1 | |
-{: caption="Table 1. PowerNSX LS Parameters" caption-side="bottom"}
+{: caption="PowerNSX LS Parameters" caption-side="bottom"}
 
 ```text
 # Allow self-signed certificates on PowerCLI

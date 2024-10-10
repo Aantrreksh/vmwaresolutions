@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-07-02"
+lastupdated: "2024-10-10"
 
 subcollection: vmwaresolutions
 
@@ -27,7 +27,7 @@ The tunnel is established between NSX T0 and a customer router routable through 
 
 The following diagram presents an overview for an architecture pattern for deploying IPsec over {{site.data.keyword.dl_short}} with vCenter Server and NSX.
 
-![Using IPsec over {{site.data.keyword.dl_short}} with {{site.data.keyword.vcf-auto}}](../../images/arch-pattern-vcs-nsx-t-direct-link.svg "Using IPsec over {{site.data.keyword.dl_short}} with {{site.data.keyword.vcf-auto}}."){: caption="Figure 1. Using IPsec over {{site.data.keyword.dl_short}} with {{site.data.keyword.vcf-auto}}" caption-side="bottom"}
+![Using IPsec over {{site.data.keyword.dl_short}} with {{site.data.keyword.vcf-auto}}](../../images/arch-pattern-vcs-nsx-t-direct-link.svg "Using IPsec over {{site.data.keyword.dl_short}} with {{site.data.keyword.vcf-auto}}."){: caption="Using IPsec over {{site.data.keyword.dl_short}} with {{site.data.keyword.vcf-auto}}" caption-side="bottom"}
 
 This architecture pattern deployment is summarized as follows:
 

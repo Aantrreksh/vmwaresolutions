@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-10-09"
+lastupdated: "2024-10-10"
 
 keywords: vmware cloud foundation BOM, bill of materials vmware cloud foundation, BOM
 
@@ -31,7 +31,7 @@ Review the BOM information for Bare Metal Servers on {{site.data.keyword.vpc_ful
 | Subnets | Created for vSphere management traffic, vSAN, vSphere vMotion, NSX TEP, and NSX-T Tier-0 Gateway. |
 | Security Groups | To create logical groups and apply rules to traffic of vSphere management, vSAN, vSphere vMotion, and NSX TEP. |
 | Virtual Server Instances | Optional. Windows Server 2019 Standard Edition (AMD64), 2 vCPU, 8 GB RAM, and a bandwidth cap of 4 Gbps. |
-{: caption="Table 1. BOM for {{site.data.keyword.vpc_short}} infrastructure in {{site.data.keyword.vcf-vpc-short}} instances" caption-side="bottom"}
+{: caption="BOM for {{site.data.keyword.vpc_short}} infrastructure in {{site.data.keyword.vcf-vpc-short}} instances" caption-side="bottom"}
 
 ## Software BOM for {{site.data.keyword.vcf-vpc-short}}
 {: #vpc-vcf-ovw-bom-software}
@@ -47,7 +47,7 @@ Review the BOM information for {{site.data.keyword.vcf-vpc-short}} software comp
 | VMware Virtual SAN Witness Appliance | 8.0 Update 2 | 22443122 |
 | VMware NSX-T | 4.1.2.3 | 23382408 |
 | VMware Aria® Suite Lifecycle Manager | 8.16 | 23377566 |
-{: caption="Table 2. BOM for software components in {{site.data.keyword.vcf-vpc-short}} instances" caption-side="bottom"}
+{: caption="BOM for software components in {{site.data.keyword.vcf-vpc-short}} instances" caption-side="bottom"}
 
 ## Network MTU configuration settings
 {: #vpc-vcf-ovw-bom-mtu-config}
@@ -69,7 +69,7 @@ Review the following table for an overview of the Network MTU configuration sett
 | VMkernel adapters for TEP traffic | 9000 (Jumbo Frames) |
 | Tier 0 private uplinks | 9000 (Jumbo Frames) |
 | Tier 0 public uplinks | 1500 (Default) |
-{: caption="Table 3. MTU configuration settings for {{site.data.keyword.vcf-vpc-short}}" caption-side="bottom"}
+{: caption="MTU configuration settings for {{site.data.keyword.vcf-vpc-short}}" caption-side="bottom"}
 
 NSX Global Gateway Configuration is set to MTU of 1500 for the router links and interfaces at the overlay.
 

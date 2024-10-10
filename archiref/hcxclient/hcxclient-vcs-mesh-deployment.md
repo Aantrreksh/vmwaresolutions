@@ -61,7 +61,7 @@ The Site Pairing is registered and displayed on the user interface.
 | External | 1500 |
 | Management | 9000 |
 | vMotion | 9000 |
-{: caption="Table 1. Results" caption-side="bottom"}
+{: caption="Results" caption-side="bottom"}
 
 ### Creating on-premises Service Mesh compute profiles
 {: #hcxclient-vcs-mesh-deployment-profiles-compute}

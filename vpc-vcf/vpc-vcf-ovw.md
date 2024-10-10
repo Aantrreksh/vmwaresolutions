@@ -22,7 +22,7 @@ subcollection: vmwaresolutions
 
 The {{site.data.keyword.vpc_full}} provides the underlying infrastructure for running {{site.data.keyword.vcf-vpc-short}} in {{site.data.keyword.cloud_notm}}. {{site.data.keyword.cloud_notm}} Bare Metal Servers on {{site.data.keyword.vpc_short}} provide you with compute capacity provisioned in minutes for your {{site.data.keyword.vcf-vpc-short}} deployment. The {{site.data.keyword.vcf-vpc-short}} provisioning is done in a similar way that you deploy on-premises. However, it happens in a much more agile way in a secure and isolated virtual network inside your {{site.data.keyword.vpc_short}}.
 
-![{{site.data.keyword.vcf-vpc-short}} overview](../images/vcf-vpc-v2-overview.svg "{{site.data.keyword.vcf-vpc-short}} overview"){: caption="Figure 1. {{site.data.keyword.vcf-vpc-short}} overview" caption-side="bottom"}
+![{{site.data.keyword.vcf-vpc-short}} overview](../images/vcf-vpc-v2-overview.svg "{{site.data.keyword.vcf-vpc-short}} overview"){: caption="{{site.data.keyword.vcf-vpc-short}} overview" caption-side="bottom"}
 
 ## Key benefits
 {: #vpc-vcf-ovw-benefits}

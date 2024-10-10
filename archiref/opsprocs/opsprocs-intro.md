@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-07-29"
+lastupdated: "2024-10-10"
 
 subcollection: vmwaresolutions
 
@@ -89,7 +89,7 @@ You can have enterprise tools in place that you can use to monitor and manage yo
 | vSphere Hosts | vSphere hosts provide the virtualized CPU, RAM, and network to the compute VMs. | VMware Aria Operations through vCenter. VMware Aria Operations for Logs collects the log data. |
 | vSAN | vSAN provides a datastore by consolidating storage in the hosts for use by the VMs. Capacity and performance issues affect the applications that run on these VMs. | VMware Aria Operations and the Management Pack for vSAN provides more dashboards to aid with the monitoring of vSAN. vCenter vSAN Health Checks are collected through VMware Aria Operations. VMware Aria Operations for Logs collects the log data from vCenter. |
 | NSX® | NSX provides the virtualized network components that are used by the compute VMs, any failures of the network can impact the applications that run on these VMs. | VMware Aria Operations and the VMware Aria Operations Management Pack for VMware NSX provides visibility into the network topology. VMware Aria Operations for Logs collects the log data from the NSX components such as Controllers, ESG, and logical switches. VMware Aria Operations™ for Networks provides in-depth troubleshooting of network issues. |
-{: caption="Table 1. {{site.data.keyword.vcf-auto-short}} instance core components" caption-side="bottom"}
+{: caption="{{site.data.keyword.vcf-auto-short}} instance core components" caption-side="bottom"}
 
 In addition to monitoring, Operations Management on {{site.data.keyword.cloud_notm}}, helps with configuration, compliance, and many of the proactive tasks detailed in this documentation.
 

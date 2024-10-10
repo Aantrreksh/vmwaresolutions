@@ -25,7 +25,7 @@ The {{site.data.keyword.cloud_notm}} bare metal server in {{site.data.keyword.vp
 
 A network interface in an {{site.data.keyword.cloud_notm}} bare metal server is an abstract representation of a network interface card, and a network interface connects an {{site.data.keyword.cloud_notm}} bare metal server to a VPC subnet.
 
-![{{site.data.keyword.cloud_notm}} bare metal server network interfaces](../../images/vcf-vpc-v2-bms-network-interfaces.svg "{{site.data.keyword.cloud_notm}} bare metal server network interfaces"){: caption="Figure 1. {{site.data.keyword.cloud_notm}} bare metal server network interfaces " caption-side="bottom"}
+![{{site.data.keyword.cloud_notm}} bare metal server network interfaces](../../images/vcf-vpc-v2-bms-network-interfaces.svg "{{site.data.keyword.cloud_notm}} bare metal server network interfaces"){: caption="{{site.data.keyword.cloud_notm}} bare metal server network interfaces " caption-side="bottom"}
 
 In {{site.data.keyword.vpc_short}}, you can create two types of network interfaces on a bare metal server.
 
@@ -57,7 +57,7 @@ For more information about the networking concepts, see [Networking overview for
 
 A dedicated VMkernel adapter (VMK) is created for every VMware System Traffic Type in VMware Cloud Foundation and System Traffic Types are isolated in different VPC subnets. The following diagram presents how PCI and VLAN interfaces, Distributed Virtual Switch, and Distributed Port Groups are used with NSX-based VMware Cloud Foundation deployment architecture.
 
-![{{site.data.keyword.cloud_notm}} bare metal server network interfaces and Distributed PortGroups with NSX](../../images/vcf-vpc-v2-bms-dvs-interfaces.svg "{{site.data.keyword.cloud_notm}} bare metal server network interfaces and Distributed PortGroups with NSX"){: caption="Figure 2. {{site.data.keyword.cloud_notm}} bare metal server network interfaces and Distributed PortGroups with NSX" caption-side="bottom"}
+![{{site.data.keyword.cloud_notm}} bare metal server network interfaces and Distributed PortGroups with NSX](../../images/vcf-vpc-v2-bms-dvs-interfaces.svg "{{site.data.keyword.cloud_notm}} bare metal server network interfaces and Distributed PortGroups with NSX"){: caption="{{site.data.keyword.cloud_notm}} bare metal server network interfaces and Distributed PortGroups with NSX" caption-side="bottom"}
 
 In VMware Cloud Foundation deployments in {{site.data.keyword.vpc_short}}, each {{site.data.keyword.cloud_notm}} bare metal server is connected to a VPC subnet by using two PCI interfaces. These interfaces are provisioned with an IP address, but this IP address is not used at all in VMware Cloud Foundation. A new management VMkernel adapter `vmk1` is created when the host starts, by using a script passed with user data. For the other System Traffic Types in VMware, a VLAN interface is used by Cloud Builder, SDDC manager, and NSX. These VLAN interfaces are created by the automation for the bare metal servers and attached to the specific subnet and security group.
 
@@ -68,7 +68,7 @@ The following table lists the VMKs that are required for each ESXi host in a VMw
 | `pci-nic-vmnic0-uplink1` | `pci` | 0 | `vpc-host-subnet` | `false` | `none` | `dpg-hosts` |
 | `pci-nic-vmnic0-uplink2` | `pci` | 0 | `vpc-host-subnet` | `false` | `none` | `dpg-hosts` |
 | `vlan-nic-vcf-vmk1` | `vlan` | 1611 | `vpc-vmot-subnet` | `true` | `vmk1` | `pg-vmotion` |
-{: caption="Table 1. Host management networks and VMkernel adapters" caption-side="bottom"}
+{: caption="Host management networks and VMkernel adapters" caption-side="bottom"}
 
 As VMware Cloud Builder and SDDC manager use pool concepts for assigning IP addresses for VMkernel adapters, you must do this action in two steps in {{site.data.keyword.vpc_short}}. First, make sure that you have consecutive IP addresses that are available on the VPC subnet. You can use reserved IP address concept, and reserve the IP addresses from each System Traffic Type subnet. In the second step, you must create a VLAN interface for each pool as shown in the following table. How many IP addresses you need to reserve and how many VLAN interfaces to create depend on the size of your deployment.
 
@@ -78,7 +78,7 @@ As VMware Cloud Builder and SDDC manager use pool concepts for assigning IP addr
 | `vlan-nic-vsan-pool-<1>` | `vlan` | 1613 | `vpc-vsan-subnet` | `false` | `vmk2` | `pg-vsan` |
 | `vlan-nic-tep-pool-<1>` | `vlan` | 1614 | `vpc-tep-subnet` | `false` | `vmk10` | `none` - set in NSX profile |
 | `vlan-nic-tep-pool-<2>` | `vlan` | 1614 | `vpc-tep-subnet` | `false` | `vmk11` | `none` - set in NSX profile |
-{: caption="Table 2. VMware Cloud Foundation pools for VMkernel adapters" caption-side="bottom"}
+{: caption="VMware Cloud Foundation pools for VMkernel adapters" caption-side="bottom"}
 
 Before your VMkernel adapter can communicate in VPC, you must create a VLAN interface. Cloud Builder validates the connectivity for each one and you get an error or warning on validation if your VPC is not set up correctly.
 {: important}

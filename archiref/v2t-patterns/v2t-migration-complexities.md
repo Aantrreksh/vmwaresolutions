@@ -20,7 +20,7 @@ In this step of the process, you can check the source NSX-V environment and use 
 
 The following diagram depicts the parameters and shows how the values of these parameters map to the complexity assessment.
 
-![Complexity categories](../../images/v2t-diagrams-criteria.svg "Complexity categories"){: caption="Figure 1. Complexity categories" caption-side="bottom"}
+![Complexity categories](../../images/v2t-diagrams-criteria.svg "Complexity categories"){: caption="Complexity categories" caption-side="bottom"}
 
 You can use the following assessment approach:
 

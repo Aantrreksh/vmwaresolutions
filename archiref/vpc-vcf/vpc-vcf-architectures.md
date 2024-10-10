@@ -23,7 +23,7 @@ VMware Cloud Foundation™ supports two base architecture models - consolidated 
 
 In this model, the management and customer workloads run on a shared management domain. The environment is managed from a single VMware vCenter Server®. VMware vSphere® resource pools provide isolation between management and customer workloads. Resource pools must be properly configured as the compute capacity is shared between the management and compute workloads.
 
-![VMware Cloud Foundation consolidated architecture model on {{site.data.keyword.vpc_short}}](../../images/vcf-vpc-v2-arch-cons.svg "VMware Cloud Foundation consolidated architecture model on {{site.data.keyword.vpc_short}}."){: caption="Figure 1. VMware Cloud Foundation consolidated architecture model on {{site.data.keyword.vpc_short}}" caption-side="bottom"}
+![VMware Cloud Foundation consolidated architecture model on {{site.data.keyword.vpc_short}}](../../images/vcf-vpc-v2-arch-cons.svg "VMware Cloud Foundation consolidated architecture model on {{site.data.keyword.vpc_short}}."){: caption="VMware Cloud Foundation consolidated architecture model on {{site.data.keyword.vpc_short}}" caption-side="bottom"}
 
 Initial cluster in the management domain hosts includes VMware vCenter Server, NSX manager cluster, SDDC manager, and NSX edge nodes. VMware NSX edge™ deployment is a separate workflow, but in {{site.data.keyword.vpc_short}}, it is done through the Terraform and Ansible automation as part of the initial provisioning.
 
@@ -32,7 +32,7 @@ Initial cluster in the management domain hosts includes VMware vCenter Server, N
 
 With the standard architecture model, the management workloads run on a dedicated management domain and the customer workloads are deployed in separate virtual infrastructure (VI) workload domains. Each VI workload domain is managed by a separate vCenter Server instance, which provides for scalability and allows for autonomous licensing and lifecycle management. In {{site.data.keyword.cloud_notm}}, the VI workload domains can run only on the same {{site.data.keyword.vpc_short}} availability zone in the same {{site.data.keyword.cloud_notm}} multizone region.
 
-![VMware Cloud Foundation standard architecture model on {{site.data.keyword.vpc_short}}](../../images/vcf-vpc-v2-arch-std.svg "VMware Cloud Foundation standard architecture model on {{site.data.keyword.vpc_short}}."){: caption="Figure 2. VMware Cloud Foundation standard architecture model on {{site.data.keyword.vpc_short}}" caption-side="bottom"}
+![VMware Cloud Foundation standard architecture model on {{site.data.keyword.vpc_short}}](../../images/vcf-vpc-v2-arch-std.svg "VMware Cloud Foundation standard architecture model on {{site.data.keyword.vpc_short}}."){: caption="VMware Cloud Foundation standard architecture model on {{site.data.keyword.vpc_short}}" caption-side="bottom"}
 
 For the first VI workload domain, SDDC manager deploys a vCenter Server and an NSX manager cluster in the management domain (in the management cluster). For each subsequent VI workload domain, the SDDC manager deploys an extra vCenter Server. These VI workload domains can share the NSX manager cluster or you can deploy a new NSX manager cluster for each.
 

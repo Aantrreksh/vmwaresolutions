@@ -52,7 +52,7 @@ Within the workload clusters, NSX™ provides a highly secure and flexible softw
 
 The physical network of {{site.data.keyword.cloud_notm}} is separated into two distinct networks: public and private. The private network also contains the management Intelligent Platform Management Interface (IPMI) traffic to the physical servers.
 
-![{{site.data.keyword.cloud_notm}} high–level network](../../images/vrw-ibmcloudnetwork.svg "{{site.data.keyword.cloud_notm}} high–level network"){: caption="Figure 1. {{site.data.keyword.cloud_notm}} high–level network" caption-side="bottom"}
+![{{site.data.keyword.cloud_notm}} high–level network](../../images/vrw-ibmcloudnetwork.svg "{{site.data.keyword.cloud_notm}} high–level network"){: caption="{{site.data.keyword.cloud_notm}} high–level network" caption-side="bottom"}
 
 ### Public network
 {: #vrw-underlay-network-cloud-public}
@@ -100,7 +100,7 @@ Removing physical network connectivity to the public or private network for the 
 
 While {{site.data.keyword.cloud_notm}} does offer an SSL VPN option, this option is discouraged and strictly limited to situations where out of band access to the Regulated Workloads is essential.
 
-![Physical host connections](../../images/vrw-v2-net-physical.svg "Physical host connections"){: caption="Figure 2. Physical host connections" caption-side="bottom"}
+![Physical host connections](../../images/vrw-v2-net-physical.svg "Physical host connections"){: caption="Physical host connections" caption-side="bottom"}
 
 ### VLANs and underlay to overlay routing
 {: #vrw-underlay-network-cloud-vlans}
@@ -109,7 +109,7 @@ The VMware Solutions offerings are designed with three VLANs, one public and two
 
 The public and the first private VLAN created and assigned in this design are untagged by default within the {{site.data.keyword.cloud_notm}}. Then, the additional private VLAN is trunked on the physical switch ports and tagged within the VMware port groups that are using these subnets.
 
-![VLAN connections](../../images/vrw-v2-net-physical-vlans.svg "VLAN connections"){: caption="Figure 3. VLAN connections" caption-side="bottom"}
+![VLAN connections](../../images/vrw-v2-net-physical-vlans.svg "VLAN connections"){: caption="VLAN connections" caption-side="bottom"}
 
 The private network consists of two VLANs within this design. Three subnets are allocated to the first of these VLANs (here designated Private VLAN A):
 
@@ -142,7 +142,7 @@ Review the following table for a summary.
 | Private B | Portable | Single subnet that is assigned for vSAN, if in use |
 | Private B | Portable | Single subnet assigned for NAS, if in use |
 | Private B | Portable | Single subnet assigned for vMotion |
-{: caption="Table 1. VLAN and subnet summary" caption-side="bottom"}
+{: caption="VLAN and subnet summary" caption-side="bottom"}
 
 In this design, all VLAN-backed hosts and VMs are configured to point to the perimeter gateway as the default route. While the {{site.data.keyword.rw}} instances enable the use of SDN, network overlays created within a VMware instance that include routing to internal subnets are not known by the perimeter gateway unless dynamic routing protocols or static routes are configured.
 

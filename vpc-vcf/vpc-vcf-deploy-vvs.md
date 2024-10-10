@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2024
 
-lastupdated: "2024-07-24"
+lastupdated: "2024-10-10"
 
 keywords: vmware cloud foundation, IBM Cloud, vpc
 
@@ -129,7 +129,7 @@ The following table shows the VLAN interfaces for Avi Load Balancer Controllers.
 | `vlan-nic-avi-1` | `vlan` | 1611 | `vpc-mgmt-subnet` | `true` | Avi Load Balancer Controller 2 | `pg-mgmt` |
 | `vlan-nic-avi-2` | `vlan` | 1611 | `vpc-mgmt-subnet` | `true` | Avi Load Balancer Controller 3 | `pg-mgmt` |
 | `vlan-nic-avi-vip` | `vlan` | 1611 | `vpc-mgmt-subnet` | `true` | Avi Load Balancer Controller VIP | `pg-mgmt` |
-{: caption="Table 1. VLAN interfaces for Avi Load Balancer Controllers" caption-side="bottom"}
+{: caption="VLAN interfaces for Avi Load Balancer Controllers" caption-side="bottom"}
 
 ## Related links
 {: #vpc-vcf-deploy-vvs-links}

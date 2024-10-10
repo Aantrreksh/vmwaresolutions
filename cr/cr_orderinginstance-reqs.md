@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-09-17"
+lastupdated: "2024-10-10"
 
 keywords: cyber recovery, cyber recovery requirements, requirements cyber recovery, cyber recovery order instance, order cyber recovery, cyber recovery instances
 
@@ -42,7 +42,7 @@ Complete the following tasks:
 | Single Sign-On (SSO) site name | `<root_domain>` |
 | Fully qualified ESXi server name | `<host_prefix><n>.<root_domain>`, where `n` is the sequence of the VMware vSphere® ESXi™ server. The maximum length is 50 characters. |
 | NetBIOS name | First string of `<root_domain>`. The maximum length is 15 characters. |
-{: caption="Table 1. Value format for instance and domain names" caption-side="bottom"}
+{: caption="Value format for instance and domain names" caption-side="bottom"}
 
 After the instance is provisioned, do not modify any values that are set during the instance order. Otherwise, the instance might become unusable.
 {: attention}

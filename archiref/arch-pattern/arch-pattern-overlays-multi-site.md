@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-07-11"
+lastupdated: "2024-10-10"
 
 subcollection: vmwaresolutions
 
@@ -30,7 +30,7 @@ Multisite single-tenant is a common use case and network deployment pattern. Thi
 
 The following diagram shows an example of a multisite single-tenant network topology. It consists of a two-layer Tier-0 design with three edge clusters. Two edge clusters in the two data centers or zones in a multizone region, and one edge cluster deployed across the multizone region with edge nodes in each participating zone or data center.
 
-![Multisite single-tenant example topology](../../images/arch-pattern-2-zone.svg "Multisite single-tenant example topology for NSX deployment"){: caption="Figure 1. Multisite single-tenant example topology" caption-side="bottom"}
+![Multisite single-tenant example topology](../../images/arch-pattern-2-zone.svg "Multisite single-tenant example topology for NSX deployment"){: caption="Multisite single-tenant example topology" caption-side="bottom"}
 
 1. The vCenter Server automation deploys a single site solution, which can be manually expanded to support the target multisite topology. The deployment includes a single vCenter and three NSX Managers that are deployed in the cluster on the initial {{site.data.keyword.cloud_notm}} data center location. You must expand the compute capacity to have resources available in the other {{site.data.keyword.cloud_notm}} data center or zone in the specific {{site.data.keyword.cloud_notm}} multizone region.
 2. The vCenter Server automation deploys two edge cluster transport nodes and a single edge cluster for your Tier-0 and Tier-1 Gateways. You do not need the default Tier-1 Gateway, and it can be removed.
@@ -55,7 +55,7 @@ Multisite multitenant is a use case and network deployment pattern where tenants
 
 The following diagram shows an example of a multisite – multitenant topology. It consists of a two-layer Tier-0 design with three edge clusters. The routing table separation is done at Tier-1 and optionally, also at the regional Tier-0 level. Two edge clusters in the two data centers or zones in a multizone region, and one edge cluster deployed across the multizone region with edge nodes in each participating zone or data center.
 
-![Multisite multitenant example topology](../../images/arch-pattern-2-zone-mt.svg "Multisite multitenant example topology for NSX deployment"){: caption="Figure 2. Multisite multitenant example topology" caption-side="bottom"}
+![Multisite multitenant example topology](../../images/arch-pattern-2-zone-mt.svg "Multisite multitenant example topology for NSX deployment"){: caption="Multisite multitenant example topology" caption-side="bottom"}
 
 1. The vCenter Server automation deploys a single site solution, which can be manually expanded to support the target multisite topology. The deployment includes a single vCenter and three NSX Managers that are deployed in the cluster on the initial {{site.data.keyword.cloud_notm}} data center location. You must expand the compute capacity to have resources available in the other {{site.data.keyword.cloud_notm}} data center or zone in the specific {{site.data.keyword.cloud_notm}} multizone region.
 2. The vCenter Server automation deploys two edge cluster transport nodes and a single edge cluster for your Tier-0 and Tier-1 Gateways. You do not need the default Tier-1 Gateway, and it can be removed.

@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2024
 
-lastupdated: "2024-09-11"
+lastupdated: "2024-10-10"
 
 subcollection: vmwaresolutions
 
@@ -33,7 +33,7 @@ The solution architecture is enabled by the following key technologies:
 
 The following diagram shows the high-level view of the solution architecture.
 
-![Immutable backup solution architecture](../../images/veeam-cr-sa-ib.svg){: caption="Figure 1. Immutable backup solution architecture" caption-side="bottom"}
+![Immutable backup solution architecture](../../images/veeam-cr-sa-ib.svg){: caption="Immutable backup solution architecture" caption-side="bottom"}
 
 The following components are prerequisites for the immutable backup solution architecture:
 

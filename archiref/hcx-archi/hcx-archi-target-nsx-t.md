@@ -38,7 +38,7 @@ HCX Manager provides an abstracted networking user interface that can be used to
 | CPU       | 4 vCPU        |
 | RAM       | 12 GB         |
 | Disk      | 60 GB VMDK resident on shared storage |
-{: caption="Table 1. HCX Manager" caption-side="bottom"}
+{: caption="HCX Manager" caption-side="bottom"}
 
 Additionally, it is configured to access vCenter and NSX with a specific user.
 
@@ -52,7 +52,7 @@ A virtual appliance is deployed after a connection is established from the sourc
 | CPU       | 8 vCPU        |
 | RAM       | 3 GB          |
 | Disk      | 2 GB VMDK resident on shared storage |
-{: caption="Table 2. HCX-IX Interconnect Appliance deployment" caption-side="bottom"}
+{: caption="HCX-IX Interconnect Appliance deployment" caption-side="bottom"}
 
 This HCX-IX Interconnect Appliance is deployed and configured to be on the management VLAN (Private Portable Subnet) and the vMotion VLAN (Private Portable Subnet) of the {{site.data.keyword.vmwaresolutions_short}} deployment.
 
@@ -74,7 +74,7 @@ The following table shows the sizing specification for the HCX WAN Optimization 
 | CPU       | 8 vCPU        |
 | RAM       | 14 GB         |
 | Disk      | 100 GB VMDK resident on shared storage / 5000 IOPS |
-{: caption="Table 3. HCX WAN Optimizer appliance sizing" caption-side="bottom"}
+{: caption="HCX WAN Optimizer appliance sizing" caption-side="bottom"}
 
 Unlike the HCX-IX Interconnect Appliance, the WAN Optimization appliance is only attached to a logical switch to enable communication between itself and the HCX-IX Interconnect Appliance. This appliance is required if WAN optimization is in use within the source environment.
 
@@ -92,7 +92,7 @@ The sizing specification of the HCX-NE appliance on the {{site.data.keyword.clou
 | CPU       | 8 vCPU        |
 | RAM       | 3 GB          |
 | Disk      | 2 GB VMDK on shared storage |
-{: caption="Table 4. HCX-NE appliance sizing" caption-side="bottom"}
+{: caption="HCX-NE appliance sizing" caption-side="bottom"}
 
 The HCX-NE appliance is deployed on the management VLAN and on the public VLAN. The public interface is used for application traffic that bound for the source of the extended network. More connections such as the extended networks, are created and attached to the HCX-NE appliance after the source administrator initiates the network extension into the {{site.data.keyword.cloud_notm}}.
 

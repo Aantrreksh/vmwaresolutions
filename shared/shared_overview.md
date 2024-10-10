@@ -49,7 +49,7 @@ Virtual data centers incur charges for the following components:
 
 The following graphic depicts the high-level architecture and components of {{site.data.keyword.vm-shared}} deployment.
 
-![{{site.data.keyword.vm-shared}} architecture](../images/vclouddirector-architecture-public.svg "{{site.data.keyword.vm-shared}} architecture"){: caption="Figure 1. {{site.data.keyword.vm-shared}} architecture" caption-side="bottom"}
+![{{site.data.keyword.vm-shared}} architecture](../images/vclouddirector-architecture-public.svg "{{site.data.keyword.vm-shared}} architecture"){: caption="{{site.data.keyword.vm-shared}} architecture" caption-side="bottom"}
 
 ### VMware Cloud Director
 {: #shared_overview-vcloud-dir}
@@ -78,7 +78,7 @@ Organizations use catalogs to store vApp templates and media files. The members 
 
 An Organization virtual data center provides resources to an organization. Virtual data centers provide an environment where virtual systems can be stored, deployed, and operated. They also provide storage for virtual CD and DVD media. An organization can have multiple virtual data centers.
 
-![{{site.data.keyword.vm-shared}} virtual data center architecture](../images/virtual-datacenter-architecture-public.svg "{{site.data.keyword.cloud_notm}} for virtual data center architecture"){: caption="Figure 2. {{site.data.keyword.vm-shared}} virtual data center architecture" caption-side="bottom"}
+![{{site.data.keyword.vm-shared}} virtual data center architecture](../images/virtual-datacenter-architecture-public.svg "{{site.data.keyword.cloud_notm}} for virtual data center architecture"){: caption="{{site.data.keyword.vm-shared}} virtual data center architecture" caption-side="bottom"}
 
 ### Sites
 {: #shared_overview-sites}
@@ -87,7 +87,7 @@ A site is a Cloud Director instance that is set up over a set of zones in a mult
 
 For example, the following graphic depicts two Cloud Director instances, *VCD1* and *VCD2*. The clusters span across the dal10 and dal12 locations. Two organizations, *Org A* and *Org B* belong to the same customer and one organization, *Org C* belongs to a different customer.
 
-![{{site.data.keyword.vm-shared}} site architecture](../images/shared-site-policy.svg "{{site.data.keyword.vm-shared}} site architecture"){: caption="Figure 3. {{site.data.keyword.vm-shared}} site architecture" caption-side="bottom"}
+![{{site.data.keyword.vm-shared}} site architecture](../images/shared-site-policy.svg "{{site.data.keyword.vm-shared}} site architecture"){: caption="{{site.data.keyword.vm-shared}} site architecture" caption-side="bottom"}
 
 ## Role-based access policies ({{site.data.keyword.vm-shared}} V4.8 and later)
 {: #shared_overview-access-policies}
@@ -100,7 +100,7 @@ Role-based access control is achieved by using a site and organization IAM polic
 | VDC IAM Policy | View and delete only |
 | Global Resource List | Organizations only |
 | VMware Console Resource List | Organizations and associated virtual data centers only|
-{: caption="Table 1. Site and Organization IAM policy control for {{site.data.keyword.vm-shared}}" caption-side="bottom"}
+{: caption="Site and Organization IAM policy control for {{site.data.keyword.vm-shared}}" caption-side="bottom"}
 
 For {{site.data.keyword.vm-shared}} versions earlier than V4.8, role-based access control is achieved by using a virtual data center IAM policy for {{site.data.keyword.vm-shared}} resources.
 
@@ -110,7 +110,7 @@ For {{site.data.keyword.vm-shared}} versions earlier than V4.8, role-based acces
 | VDC IAM Policy | Exposed and active |
 | Global Resource List | Virtual data center only |
 | VMware Console Resource List | Virtual data center only|
-{: caption="Table 2. Virtual data center IAM policy control for {{site.data.keyword.vm-shared}}" caption-side="bottom"}
+{: caption="Virtual data center IAM policy control for {{site.data.keyword.vm-shared}}" caption-side="bottom"}
 
 ### Access policy updates
 {: #shared_overview-access-policies-reqs}

@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-09-18"
+lastupdated: "2024-10-10"
 
 keywords: vcf automated multisite, multisite configuration, multisite deployment vcf for classic
 
@@ -47,7 +47,7 @@ If your configuration requires a multisite deployment with more than 128 ESXi se
 
 The following graphic depicts the overall view of the {{site.data.keyword.vcf-auto-short}} multisite deployment.
 
-![{{site.data.keyword.vcf-auto-short}} multisite deployment](../images/multisite-hub-spoke.svg "{{site.data.keyword.vcf-auto-short}} multisite deployment"){: caption="Figure 1. {{site.data.keyword.vcf-auto-short}} multisite deployment" caption-side="bottom"}
+![{{site.data.keyword.vcf-auto-short}} multisite deployment](../images/multisite-hub-spoke.svg "{{site.data.keyword.vcf-auto-short}} multisite deployment"){: caption="{{site.data.keyword.vcf-auto-short}} multisite deployment" caption-side="bottom"}
 
 The model contains the following layers:
 

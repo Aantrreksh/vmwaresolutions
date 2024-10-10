@@ -36,7 +36,7 @@ The design allows the client to complete the following tasks:
 
 {{site.data.keyword.vmwaresolutions_short}} is based on the following architectural layers:
 
-![Architecture diagram](../../images/opsmgmt-architecture.svg "Architecture diagram"){: caption="Figure 1. Architectural layers" caption-side="bottom"}
+![Architecture diagram](../../images/opsmgmt-architecture.svg "Architecture diagram"){: caption="Architectural layers" caption-side="bottom"}
 
 * **Physical Layer** - The lowest layer of the architecture is the physical layer, which consists of the compute, network, and storage components used from {{site.data.keyword.cloud_notm}}:
    * {{site.data.keyword.cloud_notm}} bare metal servers that run the management, edge, and compute workloads.

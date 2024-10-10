@@ -20,14 +20,14 @@ This architecture pattern explains how to deploy Client VPN for VPC (Virtual Pri
 
 An overview of this architecture pattern is shown in the following diagram.
 
-![Using a client VPN with an {{site.data.keyword.vcf-vpc}} deployment](../../images/vcf-arch-clientvpn.svg "Using a client VPN with an {{site.data.keyword.vcf-vpc}} deployment."){: caption="Figure 1. Using a client VPN with an {{site.data.keyword.vcf-vpc}} deployment" caption-side="bottom"}
+![Using a client VPN with an {{site.data.keyword.vcf-vpc}} deployment](../../images/vcf-arch-clientvpn.svg "Using a client VPN with an {{site.data.keyword.vcf-vpc}} deployment."){: caption="Using a client VPN with an {{site.data.keyword.vcf-vpc}} deployment" caption-side="bottom"}
 
 ## Deploying Client VPN into {{site.data.keyword.vcf-vpc-short}}
 {: #arch-pattern-vcf-clientvpn-deploy}
 
 The following diagram introduces the high-level steps to deploy Client VPN into {{site.data.keyword.vcf-vpc-short}}.
 
-![Deploying Client VPN into {{site.data.keyword.vcf-vpc-short}}](../../images/vcf-arch-clientvpn-steps.svg "Deploying Client VPN into {{site.data.keyword.vcf-vpc-short}}."){: caption="Figure 2. Deploying Client VPN into {{site.data.keyword.vcf-vpc-short}}" caption-side="bottom"}
+![Deploying Client VPN into {{site.data.keyword.vcf-vpc-short}}](../../images/vcf-arch-clientvpn-steps.svg "Deploying Client VPN into {{site.data.keyword.vcf-vpc-short}}."){: caption="Deploying Client VPN into {{site.data.keyword.vcf-vpc-short}}" caption-side="bottom"}
 
 This architecture pattern deployment is summarized as follows:
 

@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-08-28"
+lastupdated: "2024-10-10"
 
 keywords: flexible order instance, order vSphere, order flexible instance
 
@@ -61,7 +61,7 @@ You can choose **Cascade Lake** or **SAP-certified Cascade Lake** servers[^1u].
 | Dual Intel Xeon Platinum 8260 | 48 | 2.4 | Up to 12 drives | 64 GB, 96 GB, 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
 | Quad Intel Xeon Gold 6248 | 80 | 2.5 | Up to 24 drives | 384 GB, 768 GB, 1.5 TB, 3 TB |
 | Quad Intel Xeon Platinum 8260 | 96 | 2.4 | Up to 24 drives | 384 GB, 768 GB, 1.5 TB, 3 TB |
-{: caption="Table 1. Options for Cascade Lake bare metal servers" caption-side="bottom"}
+{: caption="Options for Cascade Lake bare metal servers" caption-side="bottom"}
 
 ### SAP-certified Cascade Lake
 {: #vs_orderinginstances-bare-metal-sap}

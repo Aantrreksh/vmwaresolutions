@@ -32,7 +32,7 @@ subcollection: vmwaresolutions
 |:----- |:----------- |
 | {{site.data.keyword.vm-shared}} On-demand | - The vCPU and RAM virtual data center are allocated based on the demand. Resources are not preallocated. If you have a large regional demand, delays in availability can occur. \n - The limits that are established for the amount of vCPU and RAM are maximums. \n - vCPU and RAM resource limits can be increased and decreased later as required. \n - The price is calculated hourly and it is based on the resource usage in the virtual data center. \n - The amount of storage that can be allocated and used in the virtual data center is unlimited. Charges are hourly based on GB of allocated storage. \n - The amount of inbound and outbound public networking is unlimited. Public outbound bandwidth is charged per GB. |
 | {{site.data.keyword.vm-shared}} Reserved | - The vCPU and RAM virtual data center reservations are pre-allocated and their availability is guaranteed. \n - vCPU and RAM resources can be increased and decreased later as required. \n - The amount of storage that can be allocated and used in the virtual data center is unlimited. Charges are hourly based on GB of allocated storage. \n - The amount of inbound and outbound public networking is unlimited. Public outbound bandwidth is charged per GB. |
-{: caption="Table 1. Pricing plans" caption-side="bottom"}
+{: caption="Pricing plans" caption-side="bottom"}
 
 ## Price breakdown
 {: #shared_pricing-cost}
@@ -80,7 +80,7 @@ Storage policy availability can vary by region and deployment topology. On the {
 | TOTAL_RAM_GB_HOURS | Hourly | The peak memory **usage** over the period of an hour. |
 | TOTAL_EGRESS_GB | Usage | The **total** outbound public traffic is charged per GB transferred over the period of an hour. This value includes public outbound traffic. |
 {: class="simple-tab-table"}
-{: caption="Table 2. {{site.data.keyword.vm-shared}} on-demand billing plan - General metrics" caption-side="bottom"}
+{: caption="{{site.data.keyword.vm-shared}} on-demand billing plan - General metrics" caption-side="bottom"}
 {: #table1}
 {: tab-title="General metrics"}
 {: tab-group="on-demand-metrics"}
@@ -92,7 +92,7 @@ Storage policy availability can vary by region and deployment topology. On the {
 | TOTAL_STORAGE_FOUR_IOPS_GB_HOURS | Hourly | The peak storage **allocation** at the 4-IOPS/GB tier over the period of an hour. |
 | TOTAL_STORAGE_TEN_IOPS_GB_HOURS | Hourly | The peak storage **allocation** at the 10 IOPS/GB tier over the period of an hour. |
 | TOTAL_STORAGE_VSAN_GB_HOURS | Hourly | The peak storage **allocation** over the period of an hour. |
-{: caption="Table 2. {{site.data.keyword.vm-shared}} on-demand billing plan - Storage metrics" caption-side="bottom"}
+{: caption="{{site.data.keyword.vm-shared}} on-demand billing plan - Storage metrics" caption-side="bottom"}
 {: #table2}
 {: tab-title="Storage metrics"}
 {: tab-group="on-demand-metrics"}
@@ -104,7 +104,7 @@ Storage policy availability can vary by region and deployment topology. On the {
 | TOTAL_RHEL_SMALL_LICENSES | Hourly | The peak number of RHEL license usage based on VM vCPU size. One license is charged per vCPU. Small RHEL VMs are 8 vCPUs or smaller. |
 | TOTAL_RHEL_MID_LICENSES | Hourly | The peak number of RHEL license usage based on VM vCPU size. One license is charged per vCPU. Mid RHEL VMs are between 9 and 127 vCPUs. |
 | TOTAL_RHEL_LARGE_LICENSES | Hourly | The peak number of RHEL license usage based on VM vCPU size. One license is charged per vCPU. Large RHEL VMs are larger than 127 vCPUs. |
-{: caption="Table 2. {{site.data.keyword.vm-shared}} on-demand billing plan - Operating system metrics" caption-side="bottom"}
+{: caption="{{site.data.keyword.vm-shared}} on-demand billing plan - Operating system metrics" caption-side="bottom"}
 {: #table3}
 {: tab-title="Operating system metrics"}
 {: tab-group="on-demand-metrics"}
@@ -126,7 +126,7 @@ Storage policy availability can vary by region and deployment topology. On the {
 | MAX_RAM_GB | Monthly | The peak memory **allocation** for the virtual data center over the period of one month. The peak vCPU metric is determined by the largest memory reservation value that is selected by the customer over a one month period. |
 | TOTAL_EGRESS_GB  | Usage | The **total** outbound public traffic is charged per GB transferred over the period of one month. This value includes the outbound traffic through the virtual data center NSX edge to the public internet. |
 {: class="simple-tab-table"}
-{: caption="Table 3. {{site.data.keyword.vm-shared}} reserved billing plan - General metrics" caption-side="bottom"}
+{: caption="{{site.data.keyword.vm-shared}} reserved billing plan - General metrics" caption-side="bottom"}
 {: #reservedbilling-table1}
 {: tab-title="General metrics"}
 {: tab-group="res-billing-metrics"}
@@ -138,7 +138,7 @@ Storage policy availability can vary by region and deployment topology. On the {
 | TOTAL_STORAGE_FOUR_IOPS_GB_HOURS | Hourly | The peak storage **allocation** at the 4-IOPS/GB tier over the period of an hour. |
 | TOTAL_STORAGE_TEN_IOPS_GB_HOURS | Hourly | The peak storage **allocation** at the 10 IOPS/GB tier over the period of an hour. |
 | TOTAL_STORAGE_VSAN_GB_HOURS | Hourly | The peak storage **allocation** over the period of an hour. |
-{: caption="Table 3. {{site.data.keyword.vm-shared}} reserved billing plan - Storage metrics" caption-side="bottom"}
+{: caption="{{site.data.keyword.vm-shared}} reserved billing plan - Storage metrics" caption-side="bottom"}
 {: #reservedbilling-table2}
 {: tab-title="Storage metrics"}
 {: tab-group="res-billing-metrics"}
@@ -150,7 +150,7 @@ Storage policy availability can vary by region and deployment topology. On the {
 | TOTAL_RHEL_SMALL_LICENSES | Hourly | The peak number of RHEL license usage based on VM vCPU size. One license is charged per vCPU. Small RHEL VMs are 8 vCPUs or smaller. |
 | TOTAL_RHEL_MID_LICENSES | Hourly | The peak number of RHEL license usage based on VM vCPU size. One license is charged per vCPU. Mid RHEL VMs are between 9 and 127 vCPUs. |
 | TOTAL_RHEL_LARGE_LICENSES | Hourly | The peak number of RHEL license usage based on VM vCPU size. One license is charged per vCPU. Large RHEL VMs are larger than 127 vCPUs. |
-{: caption="Table 3. {{site.data.keyword.vm-shared}} reserved billing plan - Operating system metrics" caption-side="bottom"}
+{: caption="{{site.data.keyword.vm-shared}} reserved billing plan - Operating system metrics" caption-side="bottom"}
 {: #reservedbilling-table3}
 {: tab-title="Operating system metrics"}
 {: tab-group="res-billing-metrics"}
@@ -165,7 +165,7 @@ Private network endpoint usage incurs charges as part of the on-demand or reserv
 |:-----------------------------------------|:------------|:------------|
 | MAX_PRIVATE_NETWORK_ONE_G_COST | Monthly | Charge for private network endpoint at 1 GB uplink over a period of one month. |
 | MAX_PRIVATE_NETWORK_TEN_G_COST | Monthly | Charge for private network endpoint at 10 GB uplink over a period of one month. |
-{: caption="Table 4. Billing plan for private network endpoints" caption-side="bottom"}
+{: caption="Billing plan for private network endpoints" caption-side="bottom"}
 
 ## Licenses and fees for Veeam Availability Suite and Zerto
 {: #shared_pricing-services}
@@ -179,7 +179,7 @@ In the **{{site.data.keyword.cloud_notm}} Usage** view, locate the **VMware Solu
 | MAX_VEEAM_LICENSES | Monthly | Veeam license charge for every VM under backup. The monthly charge is for the highest number of VMs under backup at any time period in the month. |
 | TOTAL_VEEAM_BLOCK_STORAGE_GB_HOURS | Hourly | Charge per GB of block storage used for all backups. |
 | TOTAL_VEEAM_OBJECT_STORAGE_GB_HOURS | Hourly | Charge per GB of object storage used for all backups. |
-{: caption="Table 5. Licenses and fees for Veeam" caption-side="bottom"}
+{: caption="Licenses and fees for Veeam" caption-side="bottom"}
 {: class="simple-tab-table"}
 {: #service-table1}
 {: tab-title="Veeam"}
@@ -189,7 +189,7 @@ In the **{{site.data.keyword.cloud_notm}} Usage** view, locate the **VMware Solu
 |:-----------------------------------------|:------------|:------------|
 | TOTAL_ZERTO_LICENSE_HOURS | Hourly | Zerto license charge for every VM replicated. The hourly charge is for the highest number of VMs replicated to a virtual data center at any time period in the hour. |
 | TOTAL_ZERTO_CLOUD_CONNECTOR_HOURS | Hourly | Charge for every virtual data center. One Zerto Cloud Connector per virtual data center. |
-{: caption="Table 5. Licenses and fees for Zerto" caption-side="bottom"}
+{: caption="Licenses and fees for Zerto" caption-side="bottom"}
 {: #service-table2}
 {: tab-title="Zerto"}
 {: tab-group="service-billing-metrics"}

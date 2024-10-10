@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-07-26"
+lastupdated: "2024-10-10"
 
 keywords: F5 BIG-IP, F5 install, tech specs F5
 
@@ -80,7 +80,7 @@ Based on the license model and bandwidth that you select, two BIG-IP VE VMs are 
 | 3 Gbps            | 8 CPUs, 16 GB RAM   | 8 CPUs, 16 GB RAM     | 8 CPUs, 16 GB RAM   |
 | 5 Gbps            | 8 CPUs, 16 GB RAM   | 8 CPUs, 16 GB RAM     | 8 CPUs, 16 GB RAM   |
 | 10 Gbps           | 8 CPUs, 16 GB RAM   | 8 CPUs, 16 GB RAM     | 8 CPUs, 16 GB RAM   |
-{: caption="Table 1. CPU and RAM deployments for different bandwidth and license model selections" caption-side="bottom"}
+{: caption="CPU and RAM deployments for different bandwidth and license model selections" caption-side="bottom"}
 {: #f5_considerations-install-table}
 
 ### Additional considerations

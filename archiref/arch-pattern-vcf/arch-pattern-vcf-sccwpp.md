@@ -4,7 +4,7 @@ copyright:
 
   years:  2024
 
-lastupdated: "2024-09-27"
+lastupdated: "2024-10-10"
 
 subcollection: vmwaresolutions
 
@@ -46,7 +46,7 @@ After you provision an instance of the Security and Compliance Center Workload P
 
 The following diagram shows an example of integrating a VMware Cloud Foundation deployment in VPC with {{site.data.keyword.cloud_notm}} Security and Compliance Center Workload Protection.
 
-![Pattern for integrating Security and Compliance Center Workload Protection ](../../images/arch-pattern-scwpp-vcf.svg "Security and Compliance Center Workload Protection."){: caption="Figure 1. Security and Compliance Center Workload Protection" caption-side="bottom"}
+![Pattern for integrating Security and Compliance Center Workload Protection ](../../images/arch-pattern-scwpp-vcf.svg "Security and Compliance Center Workload Protection."){: caption="Security and Compliance Center Workload Protection" caption-side="bottom"}
 
 This architecture pattern is summarized as follows:
 

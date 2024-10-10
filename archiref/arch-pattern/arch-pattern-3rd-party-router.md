@@ -30,7 +30,7 @@ When you deploy a {{site.data.keyword.vcf-auto}} instance in your {{site.data.ke
 The gateway cluster must not be mixed with NSX edge cluster, which consists of NSX edge transport nodes. The gateway cluster provides compute capacity for third-party router or firewalls, and VLAN routing can be controlled by the [gateway appliance configuration](/docs/gateway-appliance?topic=gateway-appliance-managing-vlans-and-gateway-appliances) in {{site.data.keyword.cloud_notm}} classic network.
 {: important} 
 
-![Deploying third-party router in third-party router or firewall in gateway cluster](../../images/arch-pattern-nsx-t-edge-services-cluster.svg "Deploying third-party router in third-party router or firewall in gateway cluster."){: caption="Figure 1. Deploying third-party router in third-party router or firewall in gateway cluster" caption-side="bottom"}
+![Deploying third-party router in third-party router or firewall in gateway cluster](../../images/arch-pattern-nsx-t-edge-services-cluster.svg "Deploying third-party router in third-party router or firewall in gateway cluster."){: caption="Deploying third-party router in third-party router or firewall in gateway cluster" caption-side="bottom"}
 
 This architecture pattern deployment is summarized as follows: 
 
@@ -49,7 +49,7 @@ When you deploy a {{site.data.keyword.vcf-auto}} instance in your {{site.data.ke
 In this pattern, you cannot control which VLANs are routed through the router or firewall that is running on the firewall.
 {: important}
 
-![Deploying a third-party router or firewall in converged or management clusters](../../images/arch-pattern-nsx-t-3rd-party.svg "Deploying a third-party router or firewall in converged or management clusters."){: caption="Figure 2. Deploying third-party router or firewall in converged or management clusters" caption-side="bottom"}
+![Deploying a third-party router or firewall in converged or management clusters](../../images/arch-pattern-nsx-t-3rd-party.svg "Deploying a third-party router or firewall in converged or management clusters."){: caption="Deploying third-party router or firewall in converged or management clusters" caption-side="bottom"}
 
 This architecture pattern deployment is summarized as follows: 
 
@@ -62,7 +62,7 @@ This architecture pattern deployment is summarized as follows:
 
 The following diagram presents the routing topology and routing for this pattern. 
 
-![Network topology with third-party router or firewall in converged or management clusters](../../images/arch-pattern-nsx-t-3rd-party-topo.svg "Network topology with third-party router or firewall in converged or management clusters."){: caption="Figure 3. Network topology with third-party router or firewall in converged or management clusters" caption-side="bottom"}
+![Network topology with third-party router or firewall in converged or management clusters](../../images/arch-pattern-nsx-t-3rd-party-topo.svg "Network topology with third-party router or firewall in converged or management clusters."){: caption="Network topology with third-party router or firewall in converged or management clusters" caption-side="bottom"}
 
 This architecture pattern deployment is summarized as follows: 
 

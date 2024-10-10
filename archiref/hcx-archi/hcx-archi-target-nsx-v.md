@@ -30,7 +30,7 @@ The NSX Edge VMs are configured as an active - passive pair of X-Large NSX Edge 
 | CPU       | 6 vCPU        |
 | RAM       | 8 GB          |
 | Disk      | 4.5 GB VMDK resident on shared storage with 4 GB swap |
-{: caption="Table 1. NSX Edge deployment" caption-side="bottom"}
+{: caption="NSX Edge deployment" caption-side="bottom"}
 
 Since the NSX Edges are configured as active-passive in either the internal or dedicated deployment, you must create vSphere Distributed Resource Scheduler (DRS) anti-affinity rules. The DRS anti-affinity rules ensure that NSX Edges do not run on the same host as their respective peer appliance.
 
@@ -40,7 +40,7 @@ Since the NSX Edges are configured as active-passive in either the internal or d
 | Type      | Separate VMs |
 | Members   | NSX Edge 1 |
 |           | NSX Edge 2 |
-{: caption="Table 2. NSX Edge anti-affinity rules" caption-side="bottom"}
+{: caption="NSX Edge anti-affinity rules" caption-side="bottom"}
 
 In addition to the NSX Edge appliances deployed within the {{site.data.keyword.cloud_notm}}, the HCX Manager virtual appliance is deployed if the VMware® HCX™ service is ordered. After the deployment of this appliance, the NSX Edge is enabled to use load balancing and is configured with application profiles that use a certificate for inbound connection from the source. The NSX Edge is also configured with load-balancing pools to point to the HCX Manager, vCenter, and PSC appliances. Additionally, a virtual server is created with a virtual IP address (VIP) on the public interface with rules that connect the pools with VIP. A sample of the virtual server configuration and pool configuration on the NSX Edge is shown in the following tables.
 
@@ -53,7 +53,7 @@ In addition to the NSX Edge appliances deployed within the {{site.data.keyword.c
 | IP address | 254 |
 | Protocol | `https` |
 | Port | 443 |
-{: caption="Table 3. VIP configuration for NSX Edge - virtual servers" caption-side="bottom"}
+{: caption="VIP configuration for NSX Edge - virtual servers" caption-side="bottom"}
 {: class="simple-tab-table"}
 {: #simpletabtable1}
 {: tab-title="Virtual servers summary"}
@@ -68,7 +68,7 @@ In addition to the NSX Edge appliances deployed within the {{site.data.keyword.c
 | Connection Rate Limit | 0 |
 | Acceleration Status | Disabled |
 | Service Profile Status |  |
-{: caption="Table 3. VIP configuration for NSX Edge - virtual server details" caption-side="bottom"}
+{: caption="VIP configuration for NSX Edge - virtual server details" caption-side="bottom"}
 {: #simpletabtable2}
 {: tab-title="Virtual servers details"}
 {: tab-group="A sample of virtual server config and pool config on NSX Edge"}
@@ -79,7 +79,7 @@ In addition to the NSX Edge appliances deployed within the {{site.data.keyword.c
 | Rule ID | applicationRule-1 |
 | Name | appRule1 |
 | Script | acl isHibridity url_beg /hibridity</br>    acl isWebSso url_beg /websso</br>    acl isVCenter url_beg /vsphere-client</br>    use_backend nspPool001 if isHybridity</br>    use_backend vcPool001 if isVCenter</br>    use_backend ssoPool001 if isWebSso |
-{: caption="Table 3. VIP configuration for NSX Edge - rule" caption-side="bottom"}
+{: caption="VIP configuration for NSX Edge - rule" caption-side="bottom"}
 {: #simpletabtable3}
 {: tab-title="Rule information"}
 {: tab-group="A sample of virtual server config and pool config on NSX Edge"}
@@ -90,7 +90,7 @@ In addition to the NSX Edge appliances deployed within the {{site.data.keyword.c
 | pool-1  | nspPool001 | ROUND-ROBIN |            |
 | pool-3  | ssoPool001 | ROUND-ROBIN |            |
 | pool-2  | vcPool001  | ROUND-ROBIN |            |
-{: caption="Table 3. Pool configuration for NSX Edge - pool summary" caption-side="bottom"}
+{: caption="Pool configuration for NSX Edge - pool summary" caption-side="bottom"}
 {: #simpletabtable4}
 {: tab-title="Pool summary"}
 {: tab-group="A sample of virtual server config and pool config on NSX Edge"}
@@ -105,7 +105,7 @@ In addition to the NSX Edge appliances deployed within the {{site.data.keyword.c
 | Monitor Port    | 8443      |
 | Max Connections | 0         |
 | Min Connections | 0         |
-{: caption="Table 3. Pool configuration for NSX Edge - pool details" caption-side="bottom"}
+{: caption="Pool configuration for NSX Edge - pool details" caption-side="bottom"}
 {: #simpletabtable5}
 {: tab-title="Pool details"}
 {: tab-group="A sample of virtual server config and pool config on NSX Edge"}
@@ -121,7 +121,7 @@ The HCX Manager component is the first appliance that is deployed after the NSX 
 | CPU       | 4 vCPU        |
 | RAM       | 12 GB          |
 | Disk      | 60 GB VMDK resident on shared storage |
-{: caption="Table 4. HCX Manager" caption-side="bottom"}
+{: caption="HCX Manager" caption-side="bottom"}
 
 Additionally, it is configured to access vCenter and NSX with a specific user. It is important to note that the HCX Manager’s IP address is the same IP address that is used in the NSX edge for load balancing.
 
@@ -139,7 +139,7 @@ The following table shows the sizing specification of the CGW appliance that is 
 | CPU       | 8 vCPU        |
 | RAM       | 3 GB          |
 | Disk      | 2 GB VMDK resident on shared storage |
-{: caption="Table 5. HCX-IX Interconnect Appliance deployment" caption-side="bottom"}
+{: caption="HCX-IX Interconnect Appliance deployment" caption-side="bottom"}
 
 This HCX-IX Interconnect Appliance is deployed and configured to be on the management VLAN (Private Portable Subnet) and on the vMotion VLAN (Private Portable Subnet) of the {{site.data.keyword.vmwaresolutions_short}} deployment. Additionally, another interface is configured on the Public VLAN (Public Portable) for connections that are made over the public internet. Public access is not required if a direct connection exists (private connection in place). The last connection that is associated with the HCX-IX Interconnect Appliance is a logical switch that is created and configured upon site pairing.
 
@@ -157,7 +157,7 @@ The following table shows the sizing specification for the WAN Optimization appl
 | CPU       | 8 vCPU        |
 | RAM       | 14 GB         |
 | Disk      | 100 GB VMDK resident on shared storage / 5000 IOPS |
-{: caption="Table 6. HCX WAN Optimizer appliance sizing" caption-side="bottom"}
+{: caption="HCX WAN Optimizer appliance sizing" caption-side="bottom"}
 
 Unlike the HCX-IX Interconnect Appliance, the WAN Optimization appliance is only attached to a logical switch to enable communication between itself and the HCX-IX Interconnect Appliance. This appliance is required if WAN optimization is in use within the source environment.
 
@@ -173,7 +173,7 @@ Direct-Link is used to deploy the HCX-NE appliance so that you can stretch multi
 | CPU       | 8 vCPU        |
 | RAM       | 3 GB          |
 | Disk      | 2 GB VMDK on shared storage |
-{: caption="Table 7. HCX Network Extension Virtual Appliance sizing" caption-side="bottom"}
+{: caption="HCX Network Extension Virtual Appliance sizing" caption-side="bottom"}
 
 The HCX-NE appliance is deployed on the management VLAN and on the public VLAN. The public interface is used for application traffic that bound for the source of the extended network. More connections, such as the extended networks, are created and attached to the HCX-NE appliance after the source administrator initiates the network extension into the {{site.data.keyword.cloud_notm}}.
 

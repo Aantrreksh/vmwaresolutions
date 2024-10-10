@@ -4,7 +4,7 @@ copyright:
 
   years: 2016, 2024
 
-lastupdated: "2024-05-01"
+lastupdated: "2024-10-10"
 
 keywords: IBM Cloud for VMware Solutions, getting started, vmware solutions offerings, services for vmwaresolutions, vmwaresolutions use cases
 
@@ -46,7 +46,7 @@ You need an {{site.data.keyword.cloud_notm}} account and an {{site.data.keyword.
 | IBMid | By using the **IBMid**, you can have a single login username for all IBM products and services that you use, including {{site.data.keyword.cloud_notm}}. {{site.data.keyword.vmwaresolutions_short}} is provided as an infrastructure solution in the {{site.data.keyword.cloud_notm}} catalog. To access the {{site.data.keyword.vmwaresolutions_short}} console, you must have an **IBMid**. \n \n To use your **IBMid** to log in to the {{site.data.keyword.vmwaresolutions_short}} console, you must associate the **IBMid** with an {{site.data.keyword.cloud_notm}} account. When you log in to the console for the first time, you are asked to associate your existing **IBMid** with an {{site.data.keyword.cloud_notm}} account, or to sign up for a new {{site.data.keyword.cloud_notm}} account. The new {{site.data.keyword.cloud_notm}} account is automatically associated with your **IBMid**. You go through this process only one time. \n \n If you have problems when you associate your **IBMid** with an {{site.data.keyword.cloud_notm}} account, see [Why is my password incorrect?](/docs/account?topic=account-ts_logintoibm) |
 | {{site.data.keyword.cloud_notm}} account | To order and use {{site.data.keyword.cloud_notm}} services, an {{site.data.keyword.cloud_notm}} account is required. Billing information is associated with the {{site.data.keyword.cloud_notm}} account. The price of the physical and virtual infrastructure and the resulting licenses are charged to your {{site.data.keyword.cloud_notm}} account. |
 | {{site.data.keyword.cloud_notm}} infrastructure account | If you have an {{site.data.keyword.cloud_notm}} infrastructure account, link it with your {{site.data.keyword.cloud_notm}} account by following the procedure in [Upgrading your account](/docs/account?topic=account-upgrading-account). If you do not have an {{site.data.keyword.cloud_notm}} infrastructure account, request one by following the procedure in [The {{site.data.keyword.cloud_notm}} infrastructure account](/docs/vmwaresolutions?topic=vmwaresolutions-signing_required_accounts#signing_required_accounts-infra). Then, link it to your {{site.data.keyword.cloud_notm}} account by following the previous procedure. \n \n When you link your {{site.data.keyword.cloud_notm}} infrastructure account with your {{site.data.keyword.cloud_notm}} account, you can use the combined IaaS (infrastructure as a service) and PaaS (platform as a service) resources, and access these resources from a single login. It also provides you with a single invoice for all the PaaS and IaaS resources that you use. |
-{: caption="Table 1. Required user accounts" caption-side="bottom"}
+{: caption="Required user accounts" caption-side="bottom"}
 
 ### Deployment offerings
 {: #getting-started-depl-offerings}
@@ -58,7 +58,7 @@ Review and choose your deployment offering.
 | [{{site.data.keyword.vmware-service_short}}](/docs/vmwaresolutions?topic=vmwaresolutions-vmware-aas-overview) | This offering provides the VMware Cloud Director platform as a managed service. {{site.data.keyword.IBM}} performs the configuration, hosting, operations, and lifecycle management of the VMware® by Broadcom software so you can quickly deploy your VMware-based cloud computing environments. |
 | {{site.data.keyword.vcf-classic}} | - [Automated](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview): This offering deploys a VMware virtual environment by using custom compute, storage, and network resources to best fit your business needs. \n - [Flexible](/docs/vmwaresolutions?topic=vmwaresolutions-vs_vsphereoverview): This offering provides a customizable virtualization service that combines VMware-compatible bare metal servers, hardware components, and licenses, to build your own IBM-hosted VMware environment. \n - [{{site.data.keyword.cr}}](/docs/vmwaresolutions?topic=vmwaresolutions-cr_overview): This offering provides air-gapped protection, immutable storage, and rapid recovery of applications and data for ransomware protection. \n - [{{site.data.keyword.rw}}](/docs/vmwaresolutions?topic=vmwaresolutions-vrw-overview): This offering includes a secure-by-default architecture that follows IBM's unique policy controls framework, it provides continuous compliance monitoring, and the highest level of data encryption (FIPS 140-2 Level 4). |
 | [{{site.data.keyword.vcf-vpc}}](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-ovw) | This offering is a full-stack Software Defined Data Center (SDDC) solution that is built on VMware Cloud Foundation™. It delivers compute, storage, networking, management automation, and security in a single platform on {{site.data.keyword.bm_is_full}}. |
-{: caption="Table 2. Deployment offerings" caption-side="bottom"}
+{: caption="Deployment offerings" caption-side="bottom"}
 
 ### Add-on services
 {: #getting-started-add-on-services}
@@ -77,7 +77,7 @@ The following table describes the security and compliance services that are avai
 | [F5 BIG-IP®](/docs/vmwaresolutions?topic=vmwaresolutions-f5_considerations) | This service provides intelligent L4-L7 load balancing and traffic management services at a local and global scale, robust network and web application firewall protection, and secure and federated application access. |
 | [KMIP™ for VMware](/docs/vmwaresolutions?topic=vmwaresolutions-kmip_standalone_considerations) | This service provides a highly available service to manage encryption keys that are used by VMware in {{site.data.keyword.cloud_notm}}. By using the runtime capability, you can manage encryption keys and to maintain the associations between the client credentials and the encryption keys. |
 | [Juniper® vSRX](/docs/vmwaresolutions?topic=vmwaresolutions-juniper-overview) | This service provides security and networking services at the perimeter or edge in virtualized private or public cloud environments. Within a VMware infrastructure, vSRX runs as a VM within the VMware vSphere® environment. The vSRX provides a complete Next-Generation Firewall (NGFW) solution. |
-{: caption="Table 3. Security and compliance services" caption-side="bottom"}
+{: caption="Security and compliance services" caption-side="bottom"}
 
 #### Data resiliency and migration services
 {: #getting-started-serv-buss-cont}
@@ -91,7 +91,7 @@ The following table describes the data resiliency and migration services that ar
 | [ProtectIO](/infrastructure/vmware-solutions/console/newserviceentry/ProtectIO/vcs) | This service provides a robust disaster recovery solution while leveraging the latest cloud economics for an attractive Total Cost of Ownership. |
 | [Veeam®](/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview) | This service integrates directly with your VMware hypervisors to help your enterprise achieve high availability. You can control both the backup and restore of all VMs for your infrastructure from the Veeam console. |
 | [Zerto](/docs/vmwaresolutions?topic=vmwaresolutions-addingzertodr) | This service provides replication and disaster recovery capabilities, which can be integrated into the deployment offerings to protect and recover data in your VMware virtual environment on {{site.data.keyword.cloud_notm}}. |
-{: caption="Table 4. Data resiliency and migration services" caption-side="bottom"}
+{: caption="Data resiliency and migration services" caption-side="bottom"}
 
 #### Featured workload solutions
 {: #getting-started-serv-feat-sol}
@@ -102,7 +102,7 @@ The following table describes the featured workload solutions services that are 
 |:------------ |:----------- |
 | [Dizzion](/docs/vmwaresolutions?topic=vmwaresolutions-dizzion-overview) | This service provides more service-level choices, multicloud integration, compliance, protection, and simplified management for the teams that are in charge with environment optimization. |
 | [{{site.data.keyword.IBM_notm}} Security Services for SAP®](/docs/vmwaresolutions?topic=vmwaresolutions-managing-ss-sap) | This service offers a cybersecurity solution to automate the monitoring and protection of SAP applications on {{site.data.keyword.cloud_notm}}, and to keep workloads compliant and secure from inside and outside threats. |
-{: caption="Table 5. Featured workload solutions" caption-side="bottom"}
+{: caption="Featured workload solutions" caption-side="bottom"}
 
 #### Other services
 {: #getting-started-serv-other}
@@ -113,7 +113,7 @@ The following table describes other services that are available.
 |:---------------- |:------------ |:----------- |
 | Transformation and modernization | [Red Hat® OpenShift® for VMware](/docs/vmwaresolutions?topic=vmwaresolutions-ocp_overview) | This service brings together the power of the Red Hat OpenShift Container Platform and the VMware software-defined data center stack. |
 | Management tools | [VMware Aria Operations and VMware Aria Operations for Logs](/docs/vmwaresolutions?topic=vmwaresolutions-vrops_overview) | This service deploys the tools of VMware Aria® Operations™ and VMware Aria Operations™ for Logs, which help you operate and monitor the performance, health, and capacity of your IBM-hosted, dedicated VMware environment. |
-{: caption="Table 6. Other services" caption-side="bottom"}
+{: caption="Other services" caption-side="bottom"}
 
 ## Accessing the VMware Solutions console
 {: #getting-started-step1}

@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2024
 
-lastupdated: "2024-08-12"
+lastupdated: "2024-10-10"
 
 keywords: VLAN ports, vmware solutions ports, ports usage vmware solutions
 
@@ -68,7 +68,7 @@ For more information about {{site.data.keyword.redhat_openshift_full}} (OCP) net
 | {{site.data.keyword.cloud_notm}} infrastructure engine | {{site.data.keyword.cloud_notm}} infrastructure services network | ESXi host management0 | Private primary subnet | 623 | TCP and UDP | {{site.data.keyword.cloud_notm}} infrastructure IPMI |   |
 | IBM CloudDriver |   | {{site.data.keyword.cloud_notm}} Service \n `10.221.68.39` |   | 514 | TCP |   |   |
 | IBM CloudDriver |   | Internet |   |   |   |   | HTTPS |
-{: caption="Table 1. Ports for deployment and Day 2 operations" caption-side="bottom"}
+{: caption="Ports for deployment and Day 2 operations" caption-side="bottom"}
 {: #vmwaresol_ports-deploy-day2ops-table}
 
 [^vssreqa]: Flexible instances require access to Cloud Object Storage, RabbitMQ, and {{site.data.keyword.la_short}}.

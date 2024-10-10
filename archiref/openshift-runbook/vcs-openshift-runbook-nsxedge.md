@@ -18,7 +18,7 @@ subcollection: vmwaresolutions
 
 Review the NSX components that are used to support the {{site.data.keyword.redhat_openshift_full}} 4.7 environment. To use this information, you must understand how to create these components and add the configuration. Review [Add an Edge Services Gateway](https://docs.vmware.com/en/VMware-NSX-Data-Center-for-vSphere/6.4/com.vmware.nsx.install.doc/GUID-B9A97F20-4996-4E16-822C-0B98DDE70571.html){: external}. PowerNSX commands are provided if you would want to use this method.
 
-![{{site.data.keyword.redhat_openshift_notm}} 4.7 networking](../../images/openshift-networking41.svg "{{site.data.keyword.redhat_openshift_notm}} 4.7 networking"){: caption="Figure 1. OpenShift 4.7 networking" caption-side="bottom"}
+![{{site.data.keyword.redhat_openshift_notm}} 4.7 networking](../../images/openshift-networking41.svg "{{site.data.keyword.redhat_openshift_notm}} 4.7 networking"){: caption="OpenShift 4.7 networking" caption-side="bottom"}
 
 ## NSX ESG
 {: #openshift-runbook-runbook-nsxedge-config}
@@ -32,7 +32,7 @@ As part of the configuration process, the NSX Edge is connected to the {{site.da
 | CPU       | 6 vCPU        |
 | RAM       | 8 GB          |
 | Disk      | 4.5 GB VMDK resident on shared storage with 4 GB swap |
-{: caption="Table 1. NSX Edge deployment" caption-side="bottom"}
+{: caption="NSX Edge deployment" caption-side="bottom"}
 
 The NSX Edges are configured as active or passive in either the internal or dedicated deployment. Therefore, the user must create the vSphere Distributed Resource Scheduler (DRS) anti-affinity rules to ensure that NSX Edges do not run on the same host as their respective peer appliance.
 
@@ -41,7 +41,7 @@ The NSX Edges are configured as active or passive in either the internal or dedi
 | Name      | OpenShift-ESG |
 | Type      | Separate virtual machines |
 | Members   | OpenShift-ESG-0 \n OpenShift-ESG-1 |
-{: caption="Table 2. NSX Edge anti-affinity rules" caption-side="bottom"}
+{: caption="NSX Edge anti-affinity rules" caption-side="bottom"}
 
 ## NSX ESG interfaces
 {: #openshift-runbook-runbook-nsxedge-interfaces}
@@ -53,7 +53,7 @@ The edge is deployed with an interface uplink to the {{site.data.keyword.cloud_n
 | Private Uplink | Uplink | `10.208.242.130/26` \n `10.208.242.131/26` | `SDDC-DPortGroup-Mgmt` |
 | Public Uplink | Uplink | `169.48.73.42/29` \n `169.48.73.43/29` | SDDC-DPortGroup-External |
 | Transit | Internal | `192.168.100.1/24` | OpenShift-Transit  |
-{: caption="Table 3. Configuration for NSX Edge - interfaces" caption-side="bottom"}
+{: caption="Configuration for NSX Edge - interfaces" caption-side="bottom"}
 
 ## NSX ESG firewall
 {: #openshift-runbook-runbook-nsxedge-firewall}
@@ -66,7 +66,7 @@ Configure rules to allow communication to the internet, to the {{site.data.keywo
 | Public Outbound | `169.48.73.40/29` | Any | Any | Accept |
 | OpenShift Network | `192.168.133.0/24` | Any | Any | Accept |
 | Transit Network | `192.168.100.0/24` | Any | Any | Accept |
-{: caption="Table 4. Configuration for NSX Edge - NSX firewalls" caption-side="bottom"}
+{: caption="Configuration for NSX Edge - NSX firewalls" caption-side="bottom"}
 
 ## NSX ESG DHCP
 {: #openshift-runbook-runbook-nsxedge-dhcp}
@@ -85,7 +85,7 @@ For the {{site.data.keyword.redhat_openshift_notm}} 4.7 environment, the bootstr
 | Subnet Mask  | 255.255.255.0 |
 | Lease  | Off |
 | Lease Time  | 86400 |
-{: caption="Table 5. Configuration for NSX Edge - DHCP pools" caption-side="bottom"}
+{: caption="Configuration for NSX Edge - DHCP pools" caption-side="bottom"}
 
 ## NSX ESG NAT
 {: #openshift-runbook-runbook-nsxedge-nat}
@@ -103,7 +103,7 @@ Define NAT to provide a mechanism to allow the {{site.data.keyword.redhat_opensh
 | Translated Source IP/Range | `169.48.73.43` | `10.208.242.140` | `10.208.242.133` |
 | Status | Enabled | Enabled | Enabled |
 | Logging | Disable | Disabled | Disabled |
-{: caption="Table 6. Configuration for NSX Edge - NAT definitions" caption-side="bottom"}
+{: caption="Configuration for NSX Edge - NAT definitions" caption-side="bottom"}
 
 ## NSX ESG routes
 {: #openshift-runbook-runbook-nsxedge-routes}
@@ -116,7 +116,7 @@ On the edge, configure the default route to be to the public internet, then add 
 | Global configuration | vNIC | Gateway IP |
 | :--- | --- | --- |
 | Default Gateway | Public | 169.48.73.41 |
-{: caption="Table 7. Configuration for NSX Edge - default gateway" caption-side="bottom"}
+{: caption="Configuration for NSX Edge - default gateway" caption-side="bottom"}
 
 ### Static routes
 {: #openshift-runbook-runbook-nsxedge-static}
@@ -128,7 +128,7 @@ On the edge, configure the default route to be to the public internet, then add 
 | Static route 2 | `100.0.0.0/8` | 10.208.242.129 | Private |
 | Static route 3 | `161.26.0.0/16` | 10.208.242.129 | Private |
 | Static route 4 | `192.168.133.0/24` | 192.168.100.2 | Private |
-{: caption="Table 8. Configuration for NSX Edge - static routes" caption-side="bottom"}
+{: caption="Configuration for NSX Edge - static routes" caption-side="bottom"}
 
 ## NSX load balancers
 {: #openshift-runbook-runbook-nsxedge-loadbalancers}
@@ -141,7 +141,7 @@ Within the {{site.data.keyword.redhat_openshift_notm}} environment, two load bal
 | Name | Type | Persistence |
 | --- | --- | --- |
 | TCP-Source-Profile | TCP | Source IP |
-{: caption="Table 9. Configuration for NSX Edge - application profile" caption-side="bottom"}
+{: caption="Configuration for NSX Edge - application profile" caption-side="bottom"}
 
 ### Pools
 {: #openshift-runbook-runbook-nsxedge-loadbalancers-pools}
@@ -152,7 +152,7 @@ Within the {{site.data.keyword.redhat_openshift_notm}} environment, two load bal
 | Algorithm | ROUND-ROBIN | ROUND-ROBIN | ROUND-ROBIN | ROUND-ROBIN |
 | Monitor | default_tcp_monitor | default_tcp_monitor | default_tcp_monitor | default_tcp_monitor |
 |Members | control-plane-0 \n control-plane-1 \n control-plane-2 \n bootstrap-0 | control-plane-0 \n control-plane-1 \n control-plane-2 \n bootstrap-0 |compute-0 \n compute-1 \n compute-2 | compute-0 \n compute-1 \n compute-2 |
-{: caption="Table 10. Configuration for NSX Edge - pools" caption-side="bottom"}
+{: caption="Configuration for NSX Edge - pools" caption-side="bottom"}
 
 ### Virtual servers
 {: #openshift-runbook-runbook-nsxedge-loadbalancers-vip}
@@ -165,7 +165,7 @@ Within the {{site.data.keyword.redhat_openshift_notm}} environment, two load bal
 | IP address | 10.208.242.132 | 10.208.242.132| 10.208.242.131 | 10.208.242.131 |
 | Protocol | TCP | TCP | TCP | TCP |
 | Port | 6443 | 22623 | 80 | 443 |
-{: caption="Table 11. VIP configuration for NSX Edge - virtual servers" caption-side="bottom"}
+{: caption="VIP configuration for NSX Edge - virtual servers" caption-side="bottom"}
 
 ## PowerNSX commands
 {: #openshift-runbook-runbook-nsxedge-powernsx}
@@ -201,7 +201,7 @@ Use the following table to document the parameters you need for your deployment.
 | ESG public secondary 2 | 169.48.73.44 | |
 | ESG username | `admin` | |
 | ESG password | `VMware12345!` | |
-{: caption="Table 12. PowerNSX DLR parameters" caption-side="bottom"}
+{: caption="PowerNSX DLR parameters" caption-side="bottom"}
 
 ```powernsx
 # Connect to NSX Manager

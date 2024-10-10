@@ -20,7 +20,7 @@ This architecture pattern explains how to deploy VMware HCX™ on {{site.data.ke
 
 An overview of this architecture pattern is shown in the following diagram.
 
-![HCX on VMware Cloud Foundation standard architecture](../../images/vcf-arch-hcx-std.svg "HCX on VMware Cloud Foundation standard architecture."){: caption="Figure 1. HCX on VMware Cloud Foundation standard architecture" caption-side="bottom"}
+![HCX on VMware Cloud Foundation standard architecture](../../images/vcf-arch-hcx-std.svg "HCX on VMware Cloud Foundation standard architecture."){: caption="HCX on VMware Cloud Foundation standard architecture" caption-side="bottom"}
 
 To obtain image to install the required software in this architecture pattern, raise an {{site.data.keyword.cloud_notm}} Support ticket to {{site.data.keyword.vmwaresolutions_full}}.
 {: important}
@@ -30,7 +30,7 @@ To obtain image to install the required software in this architecture pattern, r
 
 The following diagram introduces the high-level steps to deploy HCX on a VMware Cloud Foundation standard architecture.
 
-![Deploying HCX on VMware Cloud Foundation standard architecture](../../images/vcf-arch-hcx-std-steps.svg "Deploying HCX on VMware Cloud Foundation standard architecture."){: caption="Figure 2. Deploying HCX on VMware Cloud Foundation standard architecture" caption-side="bottom"}
+![Deploying HCX on VMware Cloud Foundation standard architecture](../../images/vcf-arch-hcx-std-steps.svg "Deploying HCX on VMware Cloud Foundation standard architecture."){: caption="Deploying HCX on VMware Cloud Foundation standard architecture" caption-side="bottom"}
 
 This architecture pattern deployment is summarized as follows:
 

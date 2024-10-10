@@ -25,7 +25,7 @@ These architecture patterns give an overview for a few private connectivity opti
 
 When you deploy a {{site.data.keyword.vcf-auto-short}} instance in your {{site.data.keyword.cloud_notm}} classic infrastructure, you obtain the default private network topology as presented in the following diagram.
 
-![Access to {{site.data.keyword.cloud_notm}} Private network](../../images/arch-pattern-nsx-t-private-access.svg "Access to {{site.data.keyword.cloud_notm}} Private network"){: caption="Figure 1. Access to {{site.data.keyword.cloud_notm}} private network" caption-side="bottom"}
+![Access to {{site.data.keyword.cloud_notm}} Private network](../../images/arch-pattern-nsx-t-private-access.svg "Access to {{site.data.keyword.cloud_notm}} Private network"){: caption="Access to {{site.data.keyword.cloud_notm}} private network" caption-side="bottom"}
 
 The following list summarizes the private connectivity pattern.
 
@@ -42,7 +42,7 @@ The following list summarizes the private connectivity pattern.
 
 Private ingress connectivity to NSX overlay is enabled through NAT or though using overlay tunnels. You can use IP addresses from the private portable subnet that is provisioned for T0 private uplinks for these use cases.
 
-![Private ingress access to {{site.data.keyword.cloud_notm}} NSX overlay](../../images/arch-pattern-nsx-t-private-access-ingress.svg "Private ingress access to {{site.data.keyword.cloud_notm}} NSX overlay"){: caption="Figure 2. Private ingress access to {{site.data.keyword.cloud_notm}} NSX overlay" caption-side="bottom"}
+![Private ingress access to {{site.data.keyword.cloud_notm}} NSX overlay](../../images/arch-pattern-nsx-t-private-access-ingress.svg "Private ingress access to {{site.data.keyword.cloud_notm}} NSX overlay"){: caption="Private ingress access to {{site.data.keyword.cloud_notm}} NSX overlay" caption-side="bottom"}
 
 The following steps summarize this architecture pattern deployment.
 
@@ -61,7 +61,7 @@ The following steps summarize this architecture pattern deployment.
 
 Private ingress connectivity to NSX overlay is enabled through NAT or though using overlay tunnels. You can use IP addresses from the private portable subnet that is provisioned for T0 private uplinks for these use cases. With Juniper vSRX running on the [gateway cluster](/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-addl-clusters#vc_orderinginstance-addl-clusters-gate), you can alternatively route portable IP addresses to the T0 HA VIP and use the portable IP subnets in the overlay.
 
-![Private ingress access to {{site.data.keyword.cloud_notm}} NSX overlay with gateway cluster](../../images/arch-pattern-nsx-t-private-access-ingress-vsrx.svg "Private ingress access to {{site.data.keyword.cloud_notm}} NSX overlay with gateway cluster"){: caption="Figure 3. Private ingress access to {{site.data.keyword.cloud_notm}} NSX overlay with gateway cluster" caption-side="bottom"}
+![Private ingress access to {{site.data.keyword.cloud_notm}} NSX overlay with gateway cluster](../../images/arch-pattern-nsx-t-private-access-ingress-vsrx.svg "Private ingress access to {{site.data.keyword.cloud_notm}} NSX overlay with gateway cluster"){: caption="Private ingress access to {{site.data.keyword.cloud_notm}} NSX overlay with gateway cluster" caption-side="bottom"}
 
 The following list summarizes this architecture pattern deployment.
 

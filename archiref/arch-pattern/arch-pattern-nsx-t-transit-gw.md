@@ -23,7 +23,7 @@ This architecture pattern presents hybrid cloud connectivity by using [{{site.da
 
 The following diagram presents an overview for an architecture pattern for deploying Transit Gateway with {{site.data.keyword.vcf-auto}}.
 
-![Transit Gateway with {{site.data.keyword.vcf-auto}}](../../images/arch-pattern-vcs-nsx-t-transit-gw.svg "Transit Gateway with {{site.data.keyword.vcf-auto}}."){: caption="Figure 1. Transit Gateway with {{site.data.keyword.vcf-auto}}" caption-side="bottom"}
+![Transit Gateway with {{site.data.keyword.vcf-auto}}](../../images/arch-pattern-vcs-nsx-t-transit-gw.svg "Transit Gateway with {{site.data.keyword.vcf-auto}}."){: caption="Transit Gateway with {{site.data.keyword.vcf-auto}}" caption-side="bottom"}
 
 The following list summarizes the architecture pattern deployment:
 

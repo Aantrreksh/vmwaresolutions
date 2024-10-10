@@ -28,7 +28,7 @@ The following user IDs are used to add an identity source, which is embedded by 
 | Privileged user | `root` | SSH | Used for VMware configuration such as setting up VMware High Availability and creating distributed switches. Used post deployment to pair primary and secondary vCenter Server instances. |
 | IBM automation | `automation`@``root_domain`` \n (Active Directory user) | HTTPS | Used post deployment to add and remove hosts and clusters and to deploy and configure virtual machines (VMs) for add-on services. |
 | Privileged user | `cloudadmin`@`root_domain` \n (Active Directory user) | HTTPS | Created for customer use only. |
-{: caption="Table 1. vCenter and Platform Services Controller user IDs" caption-side="bottom"}
+{: caption="vCenter and Platform Services Controller user IDs" caption-side="bottom"}
 
 HTTPS is used for vCenter setup and configuration, and for VMware operations such as adding hosts, clusters, or storage for vCenter management of resources.
 
@@ -44,7 +44,7 @@ Privileged users are granted `cloudadmin` access to vCenter Server through the v
 |:---------|:-------------|:------------|
 | IBM automation | `ibm_automation` \n (NSX™ principal identity user) | Used post deployment to manage NSX VTEP IP addresses and to manage host and cluster configuration when hosts and clusters are added or removed. Also, used to manage ESG configuration for add-on services that require public network access for licensing, activation, or usage reporting. |
 | Privileged user | `admin` | Created for customer use only. |
-{: caption="Table 2. NSX Manager user IDs" caption-side="bottom"}
+{: caption="NSX Manager user IDs" caption-side="bottom"}
 
 ## ESXi host user IDs
 {: #vrw-iam-vsphere-esx}
@@ -53,7 +53,7 @@ Privileged users are granted `cloudadmin` access to vCenter Server through the v
 |:---------|:-------------|:------------|
 | Privileged user | `ic4vroot` | Used post deployment to add more NFS storage, configure routes for that storage, and to run all server validation code. |
 | Privileged user | `root` | Created for customer use only. |
-{: caption="Table 3. ESXi host user IDs" caption-side="bottom"}
+{: caption="ESXi host user IDs" caption-side="bottom"}
 
 ## Active Directory user IDs
 {: #vrw-iam-vsphere-aduser}
@@ -64,7 +64,7 @@ Privileged users are granted `cloudadmin` access to vCenter Server through the v
 | Privileged user | `Administrator` | Default Windows® user |
 | Privileged user | `cloudadmin` | Default user for customer to access vCenter Server |
 | Privileged user | `cloudreadonly` | Read-only account for customer |
-{: caption="Table 4. Active Directory user IDs" caption-side="bottom"}
+{: caption="Active Directory user IDs" caption-side="bottom"}
 
 ## Microsoft Active Directory groups
 {: #vrw-iam-vsphere-adgroup}
@@ -72,7 +72,7 @@ Privileged users are granted `cloudadmin` access to vCenter Server through the v
 | User     | User ID       | Description |
 |:---------|:------------- |:------------|
 | Privileged user | `IC4v-vCenter` | vCenter Administration Group |
-{: caption="Table 5. Microsoft Active Directory groups" caption-side="bottom"}
+{: caption="Microsoft Active Directory groups" caption-side="bottom"}
 
 ## Service user IDs
 {: #vrw-iam-vsphere-serviceid}
@@ -87,7 +87,7 @@ Privileged users are granted `cloudadmin` access to vCenter Server through the v
 | `prod-SPPlus-dynamicID-@domainName` | Deprecated - Used for installation and configuration of the IBM Spectrum Protect Plus service. |
 | `prod-Veeam-dynamicID-@domainName` | Used for installation and configuration of the Veeam service. |
 | `prod-HCX-dynamicID-@domainName` | Used for installation and configuration of the VMware HCX™ service. |
-{: caption="Table 6. Service user IDs" caption-side="bottom"}
+{: caption="Service user IDs" caption-side="bottom"}
 
 where:
 * `dynamicID` is the 8 - 10 characters that are generated dynamically during the service installation.

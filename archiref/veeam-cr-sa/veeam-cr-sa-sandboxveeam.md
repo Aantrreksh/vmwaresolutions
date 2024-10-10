@@ -34,10 +34,10 @@ The ports that are used for this service are described in the following table:
 | ESXi host | Microsoft Windows server that runs vPower NFS Service | TCP/UDP | 111 | Standard port used by the port mapper service.
 | ESXi host | Microsoft Windows server that runs vPower NFS Service | TCP/UDP | 1058 | Mount acceptor port of Power NFS service.
 | ESXi host | Microsoft Windows server that runs vPower NFS Service | TCP/UDP | 2049 | NFS acceptor port of Power NFS service.
-{: caption="Table 1. Used ports" caption-side="bottom"}
+{: caption="Used ports" caption-side="bottom"}
 
 The following diagram shows the communication flow for the vPower NFS service.
-![Veeam vPower NFS](../../images/veeam-cr-sa-lhbr-vpwr.svg){: caption="Figure 1. Veeam vPower NFS" caption-side="bottom"}
+![Veeam vPower NFS](../../images/veeam-cr-sa-lhbr-vpwr.svg){: caption="Veeam vPower NFS" caption-side="bottom"}
 
 ## Veeam Data Integration API
 {: #veeam-cr-sandboxveeam-api}
@@ -48,7 +48,7 @@ The Veeam Data Integration API is a set of Veeam PowerShell cmdlets that allows 
 
 The following diagram shows the communication flow for when backup files are published to a Linux target server. 
 
-![Publishing backup files ](../../images/veeam-cr-sa-lhbr-pub.svg){: caption="Figure 2. Publishing backup files" caption-side="bottom"}
+![Publishing backup files ](../../images/veeam-cr-sa-lhbr-pub.svg){: caption="Publishing backup files" caption-side="bottom"}
 
 By publishing the backup files, the backup files are displayed in the target server file system. The following example shows the backup of the VM named `centos01` that is mounted on `/temp`:
 

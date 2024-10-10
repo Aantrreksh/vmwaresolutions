@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-07-02"
+lastupdated: "2024-10-10"
 
 subcollection: vmwaresolutions
 
@@ -25,7 +25,7 @@ You can use layer 2 bridging in {{site.data.keyword.cloud_notm}} by following th
 
 The following diagram presents an overview for an architecture pattern for using layer 2 bridging with NSX edges in {{site.data.keyword.cloud_notm}} classic infrastructure.
 
-![Layer 2 bridging with NSX](../../images/arch-pattern-l2-bridge.svg "Layer 2 bridging with NSX."){: caption="Figure 1. Layer 2 bridging with NSX" caption-side="bottom"}
+![Layer 2 bridging with NSX](../../images/arch-pattern-l2-bridge.svg "Layer 2 bridging with NSX."){: caption="Layer 2 bridging with NSX" caption-side="bottom"}
 
 The following list is a summary of the architecture pattern deployment:
 
@@ -38,11 +38,11 @@ The following list is a summary of the architecture pattern deployment:
 
 To use the capability, you can either use the existing workload edge cluster, or deploy a new edge cluster for bridging. If you use the existing workload edge cluster, you must create the edge bridge profile by using that cluster and change the existing-distributed port group to allow Promiscuous mode and Forged transmits. This setup shares the capacity of the private uplinks from the edge nodes for both private routed and bridged traffic. Transport zones are defined in the edge host switch (N-VDS), for example add the new `tz-bridge` to `nvds-edge-private`.
 
-![Layer 2 bridge setup with workload edge cluster](../../images/arch-pattern-l2-workload-edge.svg "Layer 2 bridge setup with workload edge cluster."){: caption="Figure 2. Layer 2 bridge setup with workload edge cluster" caption-side="bottom"}
+![Layer 2 bridge setup with workload edge cluster](../../images/arch-pattern-l2-workload-edge.svg "Layer 2 bridge setup with workload edge cluster."){: caption="Layer 2 bridge setup with workload edge cluster" caption-side="bottom"}
 
 Alternatively, you can deploy a new edge cluster for bridging. In this case, you must create new edge nodes and create a new edge cluster by using these nodes. When you configure the edge bridge profile, you can then use this edge cluster for bridging only. This alternative scales better, and provides a better dedicated bridging performance. Transport zones are defined in the edge host switch (N-VDS), for example add the new `tz-bridge` to `nvds-bridge`.
 
-![Layer 2 bridge setup with a new bridge edge cluster](../../images/arch-pattern-l2-bridge-edge.svg "Layer 2 bridge setup with a new bridge edge cluster."){: caption="Figure 3. Layer 2 bridge setup with a new bridge edge cluster" caption-side="bottom"}
+![Layer 2 bridge setup with a new bridge edge cluster](../../images/arch-pattern-l2-bridge-edge.svg "Layer 2 bridge setup with a new bridge edge cluster."){: caption="Layer 2 bridge setup with a new bridge edge cluster" caption-side="bottom"}
 
 Make sure you have the bridged VLANs transport zone (for example `tz-bridge`) configured on all wanted transport nodes.
 {: note}

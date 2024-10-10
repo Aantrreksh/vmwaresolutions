@@ -73,7 +73,7 @@ The following sections provide the settings that are configured in vSphere SSO.
 | Maximum token delegation count       | 10                  |
 | Maximum bearer token lifetime        | 300 seconds         |
 | Maximum holder-of-key token lifetime | 2592000 seconds     |
-{: caption="Table 1. Token trustworthiness" caption-side="bottom"}
+{: caption="Token trustworthiness" caption-side="bottom"}
 
 ### Lockout policy
 {: #adds-sso-config-lockout}
@@ -90,7 +90,7 @@ For more information about the lockout policy, see [Policy configurations](/docs
 | Maximum length | 20 characters |
 | Minimum length | 15 characters |
 | Character requirements | * At least two alphabetic characters \n * At least one special character \n * At least one uppercase character \n * At least one lowercase character \n * At least one numeric character \n * Identical adjacent characters - 3 |
-{: caption="Table 2. Password policy" caption-side="bottom"}
+{: caption="Password policy" caption-side="bottom"}
 
 As the customer, you have full access to tailor these settings as needed to apply your enterprise security policies. For changing these policies, see [Managing vCenter single sign-on policies](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.psc.doc/GUID-43527B09-63BB-44A6-91D3-E3A470904698.html){: external}.
 

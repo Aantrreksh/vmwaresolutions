@@ -27,7 +27,7 @@ View the Zerto Cloud Connector (ZCC) details in the **Zerto Cloud Connector (ZCC
 | IP address | The IP address of the VM deployed into the organization network. |
 | Network (CIDR) | The organization network. |
 | Status | The status of the ZCC. |
-{: caption="Table 1. Zerto Cloud Connector details" caption-side="bottom"}
+{: caption="Zerto Cloud Connector details" caption-side="bottom"}
 
 The ZCC can have different statuses.
 
@@ -37,7 +37,7 @@ The ZCC can have different statuses.
 | Ready to use | The ZCC is ready to use. |
 | Deleting | The ZCC is being deleted. |
 | Deleted | The ZCC is deleted. |
-{: caption="Table 2. Status descriptions for Zerto Cloud Connector" caption-side="bottom"}
+{: caption="Status descriptions for Zerto Cloud Connector" caption-side="bottom"}
 
 ## Related links
 {: #shared_zerto-cc-view-related}

@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2024
 
-lastupdated: "2024-07-29"
+lastupdated: "2024-10-10"
 
 keywords: manage shared resources, view shared virtual data centers summary
 
@@ -36,7 +36,7 @@ Optionally, validate that you are in the correct account for your instance. From
 | Region | The region where the instance is hosted. |
 | Creation time | The date and time when the instance was created. |
 | Instances | The number of virtual data center instances provisioned for the site. |
-{: caption="Table 1. Data center site details" caption-side="bottom"}
+{: caption="Data center site details" caption-side="bottom"}
 
 Expand the instance site to view the summary of each virtual data center that is provisioned for the user account.
 
@@ -47,7 +47,7 @@ Expand the instance site to view the summary of each virtual data center that is
 | Location | The {{site.data.keyword.cloud_notm}} data center where the virtual data center is hosted. |
 | Creation time | The date and time when the virtual data center was created. |
 | Status | The status of the virtual data center. |
-{: caption="Table 2. Virtual data center details by site" caption-side="bottom"}
+{: caption="Virtual data center details by site" caption-side="bottom"}
 
 The virtual data center can have different statuses.
 
@@ -57,7 +57,7 @@ The virtual data center can have different statuses.
 | Available | The virtual data center is ready to use. |
 | Modifying | The virtual data center is being modified. |
 | Deleting | The virtual data center is being deleted. |
-{: caption="Table 3. Status descriptions for virtual data centers" caption-side="bottom"}
+{: caption="Status descriptions for virtual data centers" caption-side="bottom"}
 
 ## Related links
 {: #shared_viewing-vdc-summary-related}

@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-09-18"
+lastupdated: "2024-10-10"
 
 keywords: vcf automated compliance, compliance info, vcf automated policy
 
@@ -25,7 +25,7 @@ Review the following information for details about compliance for {{site.data.ke
 
 The following diagram provides details about the customer (you) and {{site.data.keyword.IBM}} responsibilities for compliance activities.
 
-![Customer versus IBM responsibility matrix](../images/customer_ibm_responsibility_matrix.svg "Customer versus IBM responsibility matrix"){: caption="Figure 1. Customer versus IBM responsibility matrix for {{site.data.keyword.vcf-auto-short}}" caption-side="bottom"}
+![Customer versus IBM responsibility matrix](../images/customer_ibm_responsibility_matrix.svg "Customer versus IBM responsibility matrix"){: caption="Customer versus IBM responsibility matrix for {{site.data.keyword.vcf-auto-short}}" caption-side="bottom"}
 
 ## Health data restrictions
 {: #vc_compl_info-health-data-restrictions}
@@ -60,7 +60,7 @@ The following table details vCenter Server policy configurations for a new prima
 | vCenter password policy | Minimum length of 15 characters | Minimum length of 8 characters (vCenter default) |
 | vCenter lockout policy | Maximum of three failed login attempts | Maximum of five failed login attempts (vCenter default) |
 | vCenter lockout policy | 900 seconds between login failures | 180 seconds between login failures (vCenter default) |
-{: caption="Table 1. vCenter policy configurations" caption-side="bottom"}
+{: caption="vCenter policy configurations" caption-side="bottom"}
 
 The generated NSX Manager password for {{site.data.keyword.vcf-auto-short}} primary instances is 15 characters in length. Previously, the generated password was 8 characters in length.
 

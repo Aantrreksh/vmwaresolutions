@@ -17,7 +17,7 @@ subcollection: vmwaresolutions
 
 The following diagram shows the system context for this reference architecture. A system context diagram is a high-level diagram that provides an initial view of the system. It defines the key elements of a system, the boundary of the system, and the entities that interact with it, along with the interaction.
 
-![VMware Solutions and {{site.data.keyword.redhat_openshift_full}} System Context](../../images/openshift-systemcontext.svg){: caption="Figure 1. {{site.data.keyword.vmwaresolutions_full}} and {{site.data.keyword.redhat_openshift_notm}} system context" caption-side="bottom"}
+![VMware Solutions and {{site.data.keyword.redhat_openshift_full}} System Context](../../images/openshift-systemcontext.svg){: caption="{{site.data.keyword.vmwaresolutions_full}} and {{site.data.keyword.redhat_openshift_notm}} system context" caption-side="bottom"}
 
 ## Actors
 {: #vcs-openshift-syscontext-actors}

@@ -18,7 +18,7 @@ subcollection: vmwaresolutions
 
 Common services provide the services that are used by other services in the cloud management platform. The common services of the solution include identity and access services, domain name services, NTP services, SMTP services, and certificate authority services.
 
-![Common services](../../images/vcsv4radiagrams-ra-commonservices.svg "Common services"){: caption="Figure 1. Common services" caption-side="bottom"}
+![Common services](../../images/vcsv4radiagrams-ra-commonservices.svg "Common services"){: caption="Common services" caption-side="bottom"}
 
 ## Identity and access services
 {: #design_commonservice-identity-access}
@@ -87,7 +87,7 @@ For example, ESXi, vCenter, and NSX Manager, and also add-on components, such as
 
 This design uses the {{site.data.keyword.cloud_notm}} infrastructure NTP servers. All deployed components are configured to use these NTP servers. It is critical that all components within the design use the same NTP server is critical for certificates and Active Directory authentication to function correctly.
 
-![NTP and DNS services](../../images/vcsv4radiagrams-ra-servicesinterconnections.svg "NTP and DNS services"){: caption="Figure 2. NTP and DNS services" caption-side="bottom"}
+![NTP and DNS services](../../images/vcsv4radiagrams-ra-servicesinterconnections.svg "NTP and DNS services"){: caption="NTP and DNS services" caption-side="bottom"}
 
 ## Certificate authority services
 {: #design_commonservice-cas}

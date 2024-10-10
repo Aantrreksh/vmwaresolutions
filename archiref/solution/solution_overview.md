@@ -24,7 +24,7 @@ Review this information for the design of {{site.data.keyword.vcf-auto}}, whose 
 
 This design serves as a baseline architecture that provides the foundation for other internal or vendor-specific components to be added for specific use cases.
 
-![Overview of VMware on {{site.data.keyword.cloud_notm}}](../../images/vcsv4radiagrams-ra-variationsonatheme.svg "The solution virtualizes compute, network, and optionally storage resources to be used by VMs where you can run your applications."){: caption="Figure 1. Overview of VMware on {{site.data.keyword.cloud_notm}}" caption-side="bottom"}
+![Overview of VMware on {{site.data.keyword.cloud_notm}}](../../images/vcsv4radiagrams-ra-variationsonatheme.svg "The solution virtualizes compute, network, and optionally storage resources to be used by VMs where you can run your applications."){: caption="Overview of VMware on {{site.data.keyword.cloud_notm}}" caption-side="bottom"}
 
 ## Key benefits of VMware Solutions
 {: #solution_overview-benefits}

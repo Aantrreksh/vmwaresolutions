@@ -25,7 +25,7 @@ For more information about edge cluster deployment, see [CF NSX design on {{site
 
 An NSX Tier-0 gateway provides connectivity between the logical NSX overlay segments and VPC subnets, for example, for north-south traffic. In this architecture, a highly available T0 gateway is deployed in the NSX edge cluster. Because of a VMware NSX limitation, this edge cluster can host only a single T0 gateway, which runs in Active-Standby mode. Active-Standby mode is required, for example, to have High Availability VIPs in the T0.
 
-![T0 gateway in VPC edge cluster](../../images/vcf-vpc-v2-overlay-routing.svg "T0 gateway in VPC edge cluster"){: caption="Figure 1. T0 gateway in VPC edge cluster" caption-side="bottom"}
+![T0 gateway in VPC edge cluster](../../images/vcf-vpc-v2-overlay-routing.svg "T0 gateway in VPC edge cluster"){: caption="T0 gateway in VPC edge cluster" caption-side="bottom"}
 
 Currently, Active-Active mode with T0 is not supported in {{site.data.keyword.vpc_full}}.
 {: note}
@@ -39,7 +39,7 @@ The T0 is configured with **two uplink types**: two uplinks for **private** use 
 | ------------|---------------------|----------------------- |
 | `vpc-t0-public-uplink-subnet` | T0 public uplink subnet | `/29` or larger |
 | `vpc-t0-private-uplink-subnet` | T0 private uplink subnet | `/29` or larger |
-{: caption="Table 1. VPC subnets for NSX T0 uplinks" caption-side="bottom"}
+{: caption="VPC subnets for NSX T0 uplinks" caption-side="bottom"}
 
 If you do not need inbound traffic from the internet, you do not need a public uplink subnet.
 {: note}
@@ -54,7 +54,7 @@ The following VLAN interfaces are required in VPC for each T0 uplink. You must s
 | `vlan-nic-t0-priv-uplink-1` | `vlan` | 2712 | `vpc-t0-private-uplink-subnet` | `true` | `true` | `true` | T0 Private Uplink * Edge 1 | `vpc-zone-t0-private-*vlanid*` |
 | `vlan-nic-t0-priv-uplink-2` | `vlan` | 2712 | `vpc-t0-private-uplink-subnet` | `true` | `true` | `true` | T0 Private Uplink * Edge 2 | `vpc-zone-t0-private-*vlanid*` |
 | `vlan-nic-t0-priv-uplink-vip` | `vlan` | 2712 | `vpc-t0-private-uplink-subnet` | `true` | `true` | `true` | T0 Private Uplink VIP | `vpc-zone-t0-private-*vlanid*` |
-{: caption="Table 2. VLAN interfaces for T0 uplinks for consolidated architecture" caption-side="bottom"}
+{: caption="VLAN interfaces for T0 uplinks for consolidated architecture" caption-side="bottom"}
 
 If you do not need inbound traffic from internet, you might not need either public uplinks on T0 or the public VLAN interfaces for the bare metal server.
 {: note}
@@ -81,7 +81,7 @@ In the standard architecture, the VI workload domain has its own Tier-0 gateway,
 | `vlan-nic-t0-priv-uplink-1` | `vlan` | 2732 | `vpc-t0-private-uplink-subnet` | `true` | `true` | `true` | T0 Private Uplink * Edge 1 | vpc-zone-t0-private-*vlanid* |
 | `vlan-nic-t0-priv-uplink-2` | `vlan` | 2732 | `vpc-t0-private-uplink-subnet` | `true` | `true` | `true` | T0 Private Uplink * Edge 2 | `vpc-zone-t0-private-*vlanid*` |
 | `vlan-nic-t0-priv-uplink-vip` | `vlan` | 2732 | `vpc-t0-private-uplink-subnet` | `true` | `true` | `true` | T0 Private Uplink VIP | `vpc-zone-t0-private-*vlanid*` |
-{: caption="Table 3. VLAN interfaces for T0 uplinks for standard architecture" caption-side="bottom"}
+{: caption="VLAN interfaces for T0 uplinks for standard architecture" caption-side="bottom"}
 
 VI workload domain edge nodes are hosted on the VI workload domain hosts, and the VLAN interfaces are only allowed to float between these hosts. This is specified by using the specific VLAN ID in the allowed VLAN list for the VPC Bare Metal Server PCI interface.
 {: note}
@@ -101,7 +101,7 @@ You can deploy multiple T1s in the same edge cluster.
 
 NSX Data Center supports network services, such as IPsec Virtual Private Network (IPSec VPN), Network Address Translation (NAT), and Firewalls as shown in the following diagram.
 
-![Network Services that are provided by Tier-0 and Tier-1 gateways](../../images/vcf-vpc-v2-overlay-services.svg "Network Services that are provided by Tier-0 and Tier-1 gateways"){: caption="Figure 2. Network Services provided by Tier-0 and Tier-1 gateways" caption-side="bottom"}
+![Network Services that are provided by Tier-0 and Tier-1 gateways](../../images/vcf-vpc-v2-overlay-services.svg "Network Services that are provided by Tier-0 and Tier-1 gateways"){: caption="Network Services provided by Tier-0 and Tier-1 gateways" caption-side="bottom"}
 
 The topic gives a brief introduction to these capabilities and how they can be used in {{site.data.keyword.vpc_short}}.
 

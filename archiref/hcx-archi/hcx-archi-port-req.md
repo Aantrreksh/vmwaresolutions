@@ -43,7 +43,7 @@ The following table lists ports that must be opened so that Hybrid Cloud Service
 | HCX-IX | ESXi hosts | 8000  | TCP | vMotion (zero downtime migration) |  |
 | HCX-IX (local) | HCX-IX</br>(remote) | 4500  | UDP | Internet Key Exchange (IKEv2) to encapsulate workloads for the bidirectional tunnel | IPsec |
 | HCX-IX (local) | HCX-IX</br>(remote) | 500  | UDP | Internet Key Exchange (ISAKMP) for the bidirectional tunnel | IPsec |
-{: caption="Table 1. Port access requirements" caption-side="bottom"}
+{: caption="Port access requirements" caption-side="bottom"}
 
 ## Related links
 {: #hcx-archi-port-req-related}

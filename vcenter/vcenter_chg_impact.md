@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-07-24"
+lastupdated: "2024-10-10"
 
 keywords: change vCenter Server artifacts, automation ID, VMware resource
 
@@ -76,14 +76,14 @@ The following table is applicable to instances deployed in V1.8 and earlier, inc
 | Change the public or private Distributed Virtual Switch (DVS) name. | Adding an ESXi server might fail. | Important | Change the public or private Distributed Virtual Switch (DVS) name to the original name.
 | Change the vSAN datastore name in the instance that uses vSAN. | Adding an ESXi server might fail. \n \n Upgrading the instance might fail. | Important | Change the vSAN datastore name back to the original name, **vsanDatastore**.
 | Change the management NFS datastore name in the instance that uses NFS. | Adding an ESXi server might fail. \n \n Upgrading the instance might fail. | Important | Change the NFS management datastore name back to the original name, **management-share**, and remount the NFS datastore as read-only on the ESXi server. |
-{: caption="Table 1. Operations that are impacted by changing VMware resources" caption-side="bottom"}
+{: caption="Operations that are impacted by changing VMware resources" caption-side="bottom"}
 
 The following table lists the operations that might be impacted if SSH or shell access is disabled for various resources.
 
 | Attempted change | Impacted operations  | Severity  | Recovery method |
 |:---------------- |:-------------------- |:--------- |:--------------- |
 | Disable SSH or shell access for vCenter Server or PSC | Pairing a primary and secondary instance might fail. | Important | |
-{: caption="Table 2. Operations that are impacted by SSH and shell access (local)" caption-side="bottom"}
+{: caption="Operations that are impacted by SSH and shell access (local)" caption-side="bottom"}
 
 If you choose to disable SSH or shell access, re-enable it temporarily before you complete the indicated operations.
 

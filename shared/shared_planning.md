@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2024
 
-lastupdated: "2024-07-29"
+lastupdated: "2024-10-10"
 
 keywords: planning VMware Solutions Shared, data center, VMware Solutions Shared data centers
 
@@ -43,7 +43,7 @@ The following {{site.data.keyword.cloud_notm}} data centers are available for {{
 | Frankfurt Director 01 | Frankfurt 02 | None | No |
 | Frankfurt Director 01 | Frankfurt 04 | None | No |
 | Frankfurt Director 01 | Frankfurt 05 | None | No |
-{: caption="Table 1. Available {{site.data.keyword.cloud_notm}} data centers for deployment - Europe" caption-side="bottom"}
+{: caption="Available {{site.data.keyword.cloud_notm}} data centers for deployment - Europe" caption-side="bottom"}
 {: tab-title="Europe"}
 {: tab-group="Data centers for deployment"}
 {: class="simple-tab-table"}
@@ -54,7 +54,7 @@ The following {{site.data.keyword.cloud_notm}} data centers are available for {{
 | Dallas Director 01 | Dallas 10 | vSAN | No |
 | Dallas Director 01 | Dallas 12 | vSAN | No |
 | Dallas Director 01 | Dallas 13 | vSAN | No |
-{: caption="Table 1. Available {{site.data.keyword.cloud_notm}} data centers for deployment - North America" caption-side="bottom"}
+{: caption="Available {{site.data.keyword.cloud_notm}} data centers for deployment - North America" caption-side="bottom"}
 {: tab-title="North America"}
 {: tab-group="Data centers for deployment"}
 {: class="simple-tab-table"}

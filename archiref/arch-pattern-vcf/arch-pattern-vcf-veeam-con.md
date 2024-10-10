@@ -20,7 +20,7 @@ This architecture pattern explains how to deploy Veeam® on {{site.data.keyword.
 
 An overview of this architecture pattern is shown in the following diagram.
 
-![Veeam on VMware Cloud Foundation consolidated architecture](../../images/vcf-arch-veeam-cons.svg "Veeam on VMware Cloud Foundation consolidated architecture."){: caption="Figure 1. Veeam on VMware Cloud Foundation consolidated architecture" caption-side="bottom"}
+![Veeam on VMware Cloud Foundation consolidated architecture](../../images/vcf-arch-veeam-cons.svg "Veeam on VMware Cloud Foundation consolidated architecture."){: caption="Veeam on VMware Cloud Foundation consolidated architecture" caption-side="bottom"}
 
 To obtain image to install the required software in this architecture pattern, raise a support {{site.data.keyword.cloud_notm}} ticket to {{site.data.keyword.vmwaresolutions_full}}.
 {: important}
@@ -30,7 +30,7 @@ To obtain image to install the required software in this architecture pattern, r
 
 The following diagram introduces the high-level steps to deploy Veeam on a VMware Cloud Foundation consolidated architecture. In this architecture pattern, Veeam VBR is deployed on an {{site.data.keyword.vpc_short}} Virtual Server and Veeam Proxies is deployed into the management domain as virtual machines (VMs).
 
-![Deploying Veeam on VMware Cloud Foundation consolidated architecture](../../images/vcf-arch-veeam-cons-steps.svg "Deploying Veeam on VMware Cloud Foundation consolidated architecture."){: caption="Figure 2. Deploying Veeam on VMware Cloud Foundation consolidated architecture" caption-side="bottom"}
+![Deploying Veeam on VMware Cloud Foundation consolidated architecture](../../images/vcf-arch-veeam-cons-steps.svg "Deploying Veeam on VMware Cloud Foundation consolidated architecture."){: caption="Deploying Veeam on VMware Cloud Foundation consolidated architecture" caption-side="bottom"}
 
 This architecture pattern deployment is summarized as follows:
 

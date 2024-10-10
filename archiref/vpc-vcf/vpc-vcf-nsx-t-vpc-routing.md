@@ -18,7 +18,7 @@ subcollection: vmwaresolutions
 
 When logical network topologies are deployed on {{site.data.keyword.vpc_full}} hosted VMware NSX™ environments, you must decide how to route the traffic between NSX overlays, {{site.data.keyword.vpc_short}}, and public internet. The following diagram presents an overview of the routing setup between NSX Tier-0 gateway and {{site.data.keyword.vpc_short}}.
 
-![VPC routing with NSX gateways](../../images/vcf-vpc-v2-overlay-routing.svg "VPC routing with NSX gateways"){: caption="Figure 1. VPC routing with NSX gateways" caption-side="bottom"}
+![VPC routing with NSX gateways](../../images/vcf-vpc-v2-overlay-routing.svg "VPC routing with NSX gateways"){: caption="VPC routing with NSX gateways" caption-side="bottom"}
 
 The {{site.data.keyword.vcf-vpc}} automation deploys these routes based on customer-given variables. The following information explains the core principles for these routing configurations done both in VPC and in NSX Tier-0 and Tier-1 gateways.
 
@@ -36,7 +36,7 @@ If your workloads need direct public traffic and have inbound public traffic wit
 | Interface name | Interface type | VLAN ID | Subnet | Allow float | Allow IP spoofing | Enable infra NAT | NSX interface | Segment name |
 | ---------------|----------------|---------|--------|-------------|-------------------|-------------------|--------------|------------ |
 | `vlan-nic-t0-pub-uplink-vip` | `vlan` | 2711 | `vpc-t0-public-uplink-subnet` | `true` | `false` | `false` | T0 Public Uplink VIP | `vpc-zone-t0-public-vlanid` |
-{: caption="Table 1. Public uplink HA VIP to be used for public floating IPs" caption-side="bottom"}
+{: caption="Public uplink HA VIP to be used for public floating IPs" caption-side="bottom"}
 
 VLAN interfaces with `Allow IP spoofing` and `Enable Infrastructure NAT` set to `false` allow public floating IP address to traverse non-NATted to the public uplinks of the T0 gateway. For high availability with NSX T0 gateway, HA VIPs can be used. When you order floating IP address for public uplinks, always use the VIP VLAN interface instead of the uplinks that are reserved for the actual Edge Nodes.
 {: note}
@@ -55,14 +55,14 @@ In this case, your default route `0.0.0.0/0` in NSX T0 gateway must be pointed t
 | Route description | Device | CIDR | Next-hop |
 | ------------------|--------|------|--------- |
 | Default route | T0 gateway | `0.0.0.0/0` | Default GW of `vpc-t0-public-uplink-subnet` |
-{: caption="Table 2. Default route in T0 gateway with public uplinks" caption-side="bottom"}
+{: caption="Default route in T0 gateway with public uplinks" caption-side="bottom"}
 
 If you do not need inbound traffic from internet, you do not need public uplinks on T0 nor the public VLAN interfaces. Alternatively, you can use Public gateway in {{site.data.keyword.vpc_short}}, which provides you with the outbound internet access from NSX overlay segments, and use the T0s private uplinks for this traffic. In this case, your default route `0.0.0.0/0` in NSX T0 gateway must be pointed to the default gateway of the `vpc-t0-private-uplink-subnet`.
 
 | Route description | Device | CIDR | Next-hop |
 | ------------------|--------|------|--------- |
 | Default route | T0 gateway | `0.0.0.0/0` | Default GW of `vpc-t0-private-uplink-subnet` |
-{: caption="Table 3. Default route in T0 gateway with private uplinks only" caption-side="bottom"}
+{: caption="Default route in T0 gateway with private uplinks only" caption-side="bottom"}
 
 ## Private traffic between Tier-0 and VPC
 {: #vpc-vcf-nsx-t-vpc-routing-edge-tier-0-routing-private}
@@ -72,7 +72,7 @@ If you have both Public and Private Uplinks, first you must create a route in NS
 | Route description | Device | CIDR | Next-hop |
 | ------------------|--------|------|--------- |
 | Private networks | T0 gateway | `172.16.0.0/16` | Default GW of `vpc-t0-private-uplink-subnet` |
-{: caption="Table 4. Private routes in T0 gateway with public uplinks" caption-side="bottom"}
+{: caption="Private routes in T0 gateway with public uplinks" caption-side="bottom"}
 
 If you use only a private route, then your default route `0.0.0.0/0` in NSX T0 gateway routes all traffic to the VPC.
 {: note}
@@ -82,7 +82,7 @@ You must define inbound traffic from VPC. Then, you must create a VPC route in t
 | Interface name | Interface type | VLAN ID | Subnet | Allow float | Allow IP spoofing | Enable Infra NAT | NSX interface | Segment name |
 | ---------------|----------------|---------|--------|-------------|-------------------|-------------------|--------------|------------ |
 | `vlan-nic-t0-priv-uplink-vip` | `vlan` | 2712 | `vpc-t0-private-uplink-subnet` | `true` | `true` | `true` | T0 Private Uplink VIP | `vpc-zone-t0-private-vlanid` |
-{: caption="Table 5. VLAN interfaces for T0 uplinks" caption-side="bottom"}
+{: caption="VLAN interfaces for T0 uplinks" caption-side="bottom"}
 
 VLAN interfaces with `Allow IP spoofing` and `Enable Infrastructure NAT` set to `true` allow VMware workloads on NSX overlay with private IP addresses to be routed to {{site.data.keyword.vpc_short}}. To enable this action, a VPC route is created with IP address of private uplink HA VIP `vlan-nic-t0-priv-uplink-vip` as the next-hop configured in the {{site.data.keyword.vpc_short}} Zone.
 {: note}
@@ -94,7 +94,7 @@ When you plan the routing, summarize the NSX overlay subnets or prefixes to keep
 | NSX overlay networks | `us-south-1` | Egress | `192.168.4.0/22` | Deliver | IP | `192.168.0.10` |
 | NSX overlay networks | `us-south-2` | Egress | `192.168.4.0/22` | Deliver | IP | `192.168.0.10` |
 | NSX overlay networks | `us-south-3` | Egress | `192.168.4.0/22` | Deliver | IP | `192.168.0.10` |
-{: caption="Table 6. VPC egress routes" caption-side="bottom"}
+{: caption="VPC egress routes" caption-side="bottom"}
 
 VPC routes are Zone specific.
 {: note}
@@ -106,14 +106,14 @@ In the interconnectivity use case, an ingress routing table is created.
 | Table description | Type    | Traffic sources |
 | ------------------|---------|-----------------|
 | Ingress route     | Ingress | Direct Link, Transit Gateway |
-{: caption="Table 7. VPC ingress routing table" caption-side="bottom"}
+{: caption="VPC ingress routing table" caption-side="bottom"}
 
 Ingress routes are also created in the zone where VMware Cloud Foundation is deployed. For example, if the deployment would be on `us-south-1` and the overlay prefix would be `192.168.4.0/22`:
 
 | Route description | Zone | Traffic type | CIDR | Action | Type | Next-hop |
 | ------------------|------|--------------|------|--------|------|--------- |
 | NSX overlay networks | `us-south-1` | Ingress | `192.168.4.0/22` | Deliver | IP | `192.168.0.10` |
-{: caption="Table 8. VPC ingress routes" caption-side="bottom"}
+{: caption="VPC ingress routes" caption-side="bottom"}
 
 If you use any of the interconnectivity options, such as {{site.data.keyword.dl_short}} or {{site.data.keyword.tg_short}}, and you need connectivity from another VPC attached to a TGW, in addition to the VPC route, you can create a VPC (ingress) route with advertise flags. This action allows both DL and TGW to advertise your NSX overlay subnet or prefix to the attached TGW connections or DL.
 
@@ -141,7 +141,7 @@ It can be divided into the following categories:
 
 The following diagram shows an overview of the interconnectivity solutions.
 
-![Interconnectivity options](../../images/vcf-vpc-v2-net-arch.svg "Interconnectivity options"){: caption="Figure 2. Interconnectivity options" caption-side="bottom"}
+![Interconnectivity options](../../images/vcf-vpc-v2-net-arch.svg "Interconnectivity options"){: caption="Interconnectivity options" caption-side="bottom"}
 
 With {{site.data.keyword.tg_full}} (TGW), you can create a single or multiple transit gateways to connect VPCs together. You can also connect your {{site.data.keyword.cloud_notm}} classic infrastructure to a {{site.data.keyword.tg_short}} to provide seamless communication with Classic Infrastructure resources. Any new network that you connect to a {{site.data.keyword.tg_short}} is then automatically made available to every other network connected to it.
 

@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2024
 
-lastupdated: "2024-07-29"
+lastupdated: "2024-10-10"
 
 keywords: migrating to VMware Cloud Foundation as a Service
 
@@ -39,7 +39,7 @@ Performance edges are dedicated to a single virtual data center (VDC) and provid
 | Performance - M | This option is suitable when only L2 through L4 features such as NAT, routing, L4 firewall, L4 load balancer are required and the total throughput requirement is less than 2 Gbps. |
 | Performance - L | This option is suitable when only L2 through L4 features such as NAT, routing, L4 firewall, L4 load balancer are required and the total throughput is in the range 2 - 10 Gbps. |
 | Performance - XL | This option is suitable when the total throughput required is multiple Gbps for L7 and VPN. |
-{: caption="Table 1. Network edge descriptions" caption-side="bottom"}
+{: caption="Network edge descriptions" caption-side="bottom"}
 
 ## Public network connectivity
 {: #shared-vmwaas-migration-network-public}

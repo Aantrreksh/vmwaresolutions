@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-07-11"
+lastupdated: "2024-10-10"
 
 subcollection: vmwaresolutions
 
@@ -35,7 +35,7 @@ Overlapping IP addresses refers to overlay segments between customer environment
 
 The following diagram shows an example of a customer deployment that uses the standard topology, when the segments are attached to the Tier-1 gateway. You can add more segments to the existing Tier-1 gateway or add more Tier-1 gateways on the same NSX-T edge clusters, if needed.
 
-![Single-site single-tenant example topology with Tier-1 gateway](../../images/v2t-diagrams-1-zone-t1.svg "Single-site single-tenant example topology by using both Tier-0 and Tier-1 gateways"){: caption="Figure 1. Single-site single-tenant example topology with Tier-1 gateway" caption-side="bottom"}
+![Single-site single-tenant example topology with Tier-1 gateway](../../images/v2t-diagrams-1-zone-t1.svg "Single-site single-tenant example topology by using both Tier-0 and Tier-1 gateways"){: caption="Single-site single-tenant example topology with Tier-1 gateway" caption-side="bottom"}
 
 1. The {{site.data.keyword.vcf-auto}} automation deploys an example single-site topology, which follows the principles that are presented in this model. The deployment includes a single vCenter and three NSX-T Managers that are deployed on the cluster on the initial {{site.data.keyword.cloud_notm}} data center location.
 2. The {{site.data.keyword.vcf-auto}} automation deploys two edge cluster transport nodes and a single edge cluster for your Tier-0 and Tier-1 gateways.
@@ -47,7 +47,7 @@ The following diagram shows an example of a customer deployment that uses the st
 
 The following diagram shows an example of a customer deployment by using the standard topology. Consider that the segments are attached directly to the Tier-0 gateway. You can add more segments to the Tier-0 gateway or delete the Tier-1 gateway that is deployed by the automation, if needed.
 
-![Single-site single-tenant example topology](../../images/v2t-diagrams-1-zone-t0.svg "Single-site single-tenant example topology for NSX-T deployment"){: caption="Figure 2. Single-site single-tenant example topology" caption-side="bottom"}
+![Single-site single-tenant example topology](../../images/v2t-diagrams-1-zone-t0.svg "Single-site single-tenant example topology for NSX-T deployment"){: caption="Single-site single-tenant example topology" caption-side="bottom"}
 
 1. The {{site.data.keyword.vcf-auto}} automation deploys an example single-site topology, which follows the principles that are presented in this model. The deployment includes a single vCenter and three NSX-T Managers that are deployed on the cluster on the initial {{site.data.keyword.cloud_notm}} data center location.
 2. The {{site.data.keyword.vcf-auto}} automation deploys two edge cluster transport nodes and a single edge cluster for your Tier-0 and Tier-1 gateways.
@@ -69,7 +69,7 @@ Overlapping IP addresses refers to overlay segments between customer environment
 
 The following diagram shows an example of a multitenant deployment by using the standard topology. Also, you can see how to expand that for a simple multitenant pattern. You can deploy multiple Tier-1 gateways manually through NSX-T and add each tenant segment to their own Tier-1 gateway.
 
-![Single-site – multitenant example topology](../../images/v2t-diagrams-1-zone-t1-mt.svg "Single-site – multitenant example topology for NSX-T deployment."){: caption="Figure 3. Single-site – multitenant example topology" caption-side="bottom"}
+![Single-site – multitenant example topology](../../images/v2t-diagrams-1-zone-t1-mt.svg "Single-site – multitenant example topology for NSX-T deployment."){: caption="Single-site – multitenant example topology" caption-side="bottom"}
 
 1. The {{site.data.keyword.vcf-auto}} automation deploys an example single-site topology, which follows the principles that presented in this model. The deployment includes a single vCenter and three NSX-T Managers that are deployed on the cluster on the initial {{site.data.keyword.cloud_notm}} data center location.
 2. The {{site.data.keyword.vcf-auto}} automation deploys two edge cluster transport nodes and a single edge cluster for your Tier-0 and Tier-1 gateways.
@@ -97,7 +97,7 @@ Overlapping IP addresses refers to overlay segments between customer environment
 
 The following diagram shows an example of a multisite single-tenant network topology. It consists of a two-layer Tier-0 design with three edge clusters. For this, consider two edge clusters in the two data centers or zones in a multizone region. And also, one edge cluster deployed across the multizone region with edge nodes in each participating zone or data center.
 
-![Multisite single-tenant example topology](../../images/v2t-diagrams-2-zone.svg "Multisite single-tenant example topology for NSX-T deployment"){: caption="Figure 4. Multisite single-tenant example topology" caption-side="bottom"}
+![Multisite single-tenant example topology](../../images/v2t-diagrams-2-zone.svg "Multisite single-tenant example topology for NSX-T deployment"){: caption="Multisite single-tenant example topology" caption-side="bottom"}
 
 1. The {{site.data.keyword.vcf-auto}} automation deploys a single site solution, which can be manually expanded to support the target multisite topology. The deployment includes a single vCenter and three NSX-T Managers that are deployed on the cluster on the initial {{site.data.keyword.cloud_notm}} data center location. You must expand the compute capacity to have resources available in the other {{site.data.keyword.cloud_notm}} data center or zone in the specific {{site.data.keyword.cloud_notm}} multizone region.
 2. The {{site.data.keyword.vcf-auto}} automation deploys two edge cluster transport nodes and a single edge cluster for your Tier-0 and Tier-1 gateways. You do not need the default Tier-1 Gateway, and it can be removed.
@@ -127,7 +127,7 @@ Overlapping IP addresses refers to overlay segments between customer environment
 
 The following diagram shows an example of a multisite – multitenant topology. It consists of a two-layer Tier-0 design with three edge clusters. The routing table separation is done at Tier-1 and optionally also at the regional Tier-0 level. For this, consider two edge clusters in the two data centers or zones in a multizone region. And also, one edge cluster deployed across the multizone region with edge nodes in each participating zone or data center.
 
-![Multisite – multitenant example topology](../../images/v2t-diagrams-2-zone-mt.svg "Multisite – multitenant example topology for NSX-T deployment."){: caption="Figure 5. Multisite – multitenant example topology" caption-side="bottom"}
+![Multisite – multitenant example topology](../../images/v2t-diagrams-2-zone-mt.svg "Multisite – multitenant example topology for NSX-T deployment."){: caption="Multisite – multitenant example topology" caption-side="bottom"}
 
 1. The {{site.data.keyword.vcf-auto}} automation deploys a single site solution, which can be manually expanded to support the target multisite topology. The deployment includes a single vCenter and three NSX-T Managers that are deployed on the cluster on the initial {{site.data.keyword.cloud_notm}} data center location. You must expand the compute capacity to have resources available in the other {{site.data.keyword.cloud_notm}} data center or zone in the specific {{site.data.keyword.cloud_notm}} multizone region.
 2. The {{site.data.keyword.vcf-auto}} automation deploys two edge cluster transport nodes and a single edge cluster for your Tier-0 and Tier-1 gateways. The default Tier-1 Gateway is not necessary, and it can be removed.

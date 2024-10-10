@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2024
 
-lastupdated: "2024-08-12"
+lastupdated: "2024-10-10"
 
 keywords: view flexible, view instance, view instance details, instance view flexible
 
@@ -35,7 +35,7 @@ To view a summary of all the {{site.data.keyword.vcf-flex-short}} instances that
 | Location | The {{site.data.keyword.cloud_notm}} data center where the instance is hosted. |
 | Creation time | The date and time when the instance was created. |
 | Status | The status of the instance. |
-{: caption="Table 1. Flexible instances summary" caption-side="bottom"}
+{: caption="Flexible instances summary" caption-side="bottom"}
 
 The instance can have different statuses.
 
@@ -49,7 +49,7 @@ The instance can have different statuses.
 | Deleting | The instance is being deleted. |
 | Deletion error | An error occurred when the instance was being deleted. |
 | Deleted | The instance is deleted. |
-{: caption="Table 2. Flexible instances statuses" caption-side="bottom"}
+{: caption="Flexible instances statuses" caption-side="bottom"}
 
 ## Procedure to view details for Flexible instances
 {: #vs_viewinginstances-procedure-view-inst-property}
@@ -68,7 +68,7 @@ To view the property details of an instance, complete the following steps.
    | Location | The {{site.data.keyword.cloud_notm}} data center where the instance is hosted. |
    | Root domain | The root domain name is the DNS domain name and the Microsoft® Active Directory™ (AD) forest root name. |
    | Subdomain[^subdomain] | The subdomain is the DNS subdomain name of the root domain name where the local {{site.data.keyword.vcf-flex-short}} instance hostnames are located. The subdomain name is in the format `vsphere_instance_name.root.domain_name`. |
-   {: caption="Table 3. Flexible instance properties" caption-side="bottom"}
+   {: caption="Flexible instance properties" caption-side="bottom"}
 
    [^subdomain]: Existing vSphere 6 instances only
 
@@ -82,7 +82,7 @@ To view the property details of an instance, complete the following steps.
    | Credentials | The user name and password to access the ESXi server. |
    | Private IP | The private IP address of the ESXi server. |
    | Status | The status of the ESXi server, which can be one of the following values: \n **Available** The ESXi server is ready to use. \n **Adding** The ESXi server is being added. \n **Deleting** The ESXi server is being deleted. |
-   {: caption="Table 4. ESXi server details" caption-side="bottom"}
+   {: caption="ESXi server details" caption-side="bottom"}
    {: class="simple-tab-table"}
    {: #table1}
    {: tab-title="ESXi server details"}
@@ -94,7 +94,7 @@ To view the property details of an instance, complete the following steps.
    | Description | The description of the VLAN.  |
    | Location | The data center location. |
    | Primary route | The primary route of the VLAN. |
-   {: caption="Table 4. Network interface - VLAN details" caption-side="bottom"}
+   {: caption="Network interface - VLAN details" caption-side="bottom"}
    {: class="simple-tab-table"}
    {: #table2}
    {: tab-title="Network interface details"}
@@ -107,7 +107,7 @@ To view the property details of an instance, complete the following steps.
    | Name | The subnet name. Click the name to access the subnet details. |
    | Type | The type of subnet: primary or portable. |
    | Description | The description of the subnet. |
-   {: caption="Table 5. Network interface - Subnet details" caption-side="bottom"}
+   {: caption="Network interface - Subnet details" caption-side="bottom"}
    {: class="simple-tab-table"}
    {: #vlan-table1}
    {: tab-title="Subnet details"}
@@ -118,7 +118,7 @@ To view the property details of an instance, complete the following steps.
    | IP | The IP address. |
    | Status | The status of the IP address. |
    | Description |The description of the IP address.  |
-   {: caption="Table 5. Network interface - IP details" caption-side="bottom"}
+   {: caption="Network interface - IP details" caption-side="bottom"}
    {: class="simple-tab-table"}
    {: #vlan-table2}
    {: tab-title="IP details"}

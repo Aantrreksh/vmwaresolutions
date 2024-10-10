@@ -18,7 +18,7 @@ subcollection: vmwaresolutions
 
 This architecture pattern explains how to deploy Zerto on {{site.data.keyword.vcf-vpc}} standard architecture deployment in {{site.data.keyword.vpc_short}}. With Zerto, you can increase the resiliency of your VMware Cloud Foundation instance and the workloads through a continuous data protection-based disaster recovery and data protection solution.
 
-![Zerto on VMware Cloud Foundation standard architecture](../../images/vcf-arch-zerto-std.svg "Zerto on VMware Cloud Foundation standard architecture."){: caption="Figure 1. Zerto on VMware Cloud Foundation standard architecture" caption-side="bottom"}
+![Zerto on VMware Cloud Foundation standard architecture](../../images/vcf-arch-zerto-std.svg "Zerto on VMware Cloud Foundation standard architecture."){: caption="Zerto on VMware Cloud Foundation standard architecture" caption-side="bottom"}
 
 To obtain the image to install the required software in this architecture pattern, raise an {{site.data.keyword.cloud_notm}} Support ticket to {{site.data.keyword.vmwaresolutions_full}}.
 {: important}
@@ -28,7 +28,7 @@ To obtain the image to install the required software in this architecture patter
 
 The following diagram introduces the high-level steps to deploy Zerto on a VMware Cloud Foundation standard architecture. In this architecture pattern, the Zerto ZVM appliance is deployed into the management domain as virtual machines (VMs) and Zerto VRAs are deployed in the VI workload domain.
 
-![Deploying Zerto on VMware Cloud Foundation standard architecture](../../images/vcf-arch-zerto-std-steps.svg "Deploying Zerto on VMware Cloud Foundation standard architecture."){: caption="Figure 2. Deploying Zerto on VMware Cloud Foundation standard architecture" caption-side="bottom"}
+![Deploying Zerto on VMware Cloud Foundation standard architecture](../../images/vcf-arch-zerto-std-steps.svg "Deploying Zerto on VMware Cloud Foundation standard architecture."){: caption="Deploying Zerto on VMware Cloud Foundation standard architecture" caption-side="bottom"}
 
 This architecture pattern deployment is summarized as follows:
 

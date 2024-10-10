@@ -18,7 +18,7 @@ subcollection: vmwaresolutions
 
 Although {{site.data.keyword.cloud}} for VMware® Regulated Workloads is a self-contained design, some external dependencies exist. {{site.data.keyword.cloud_notm}} for Regulated Workloads is designed without the use of {{site.data.keyword.cloud_notm}} shared offerings such as VSIs and shared storage offerings.
 
-![{{site.data.keyword.rw}} context](../../images/vrw-v2-context.svg "{{site.data.keyword.rw}} context"){: caption="Figure 1. {{site.data.keyword.rw}} context" caption-side="bottom"}
+![{{site.data.keyword.rw}} context](../../images/vrw-v2-context.svg "{{site.data.keyword.rw}} context"){: caption="{{site.data.keyword.rw}} context" caption-side="bottom"}
 
 Connections between the on-premises environment, CSP (Cloud Service Provider), CHP (Cloud Hosting Provider), and {{site.data.keyword.cloud_notm}} traverse the internet and are required to use {{site.data.keyword.cloud_notm}} Direct Link, IPsec, or other secure protocol.
 

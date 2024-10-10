@@ -33,7 +33,7 @@ From the VMware Solutions console, click **Notifications** from the left navigat
 | Resource | The name of the instance or service that sends the notification. |
 | Title | The subject of the notification. |
 | Creation time | The date and time when the notification is sent. |
-{: caption="Table 1. Notification history" caption-side="bottom"}
+{: caption="Notification history" caption-side="bottom"}
 
 ## Filtering VMware Solutions notifications
 {: #notifications-filter}

@@ -18,7 +18,7 @@ subcollection: vmwaresolutions
 
 The architecture for {{site.data.keyword.vcf-vpc}} is built upon {{site.data.keyword.vpc_short}} network architecture and uses bare metal servers for {{site.data.keyword.vpc_short}}. VMware Cloud Foundation uses the locally attached NVMe drives on bare metal servers to create a software-defined storage for the VMware Cloud Foundation deployment. 
 
-![vSAN deployment with NVMe SSD drives](../../images/vcf-vpc-v2-bms-vsan.svg "vSAN deployment with NVMe SSD drives"){: caption="Figure 1. vSAN deployment with NVMe SSD drives" caption-side="bottom"}
+![vSAN deployment with NVMe SSD drives](../../images/vcf-vpc-v2-bms-vsan.svg "vSAN deployment with NVMe SSD drives"){: caption="vSAN deployment with NVMe SSD drives" caption-side="bottom"}
 
 Currently, VMware vSAN is the only storage option. {{site.data.keyword.vpc_short}} File Shares are not supported in VMware Cloud Foundation deployments.
 {: note}

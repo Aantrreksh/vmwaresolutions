@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2024
 
-lastupdated: "2024-09-16"
+lastupdated: "2024-10-10"
 
 keywords: user account, ibm cloud account, ibm cloud infrastructure
 
@@ -59,7 +59,7 @@ The {{site.data.keyword.cloud_notm}} infrastructure account that you are using m
 | View Licenses | This permission is required to retrieve and validate the licenses that are used by your instance. |
 | View Passwords | This permission is required to be able to administer the ordered VSIs. |
 | Manage Server Monitoring | This permission is not required to place an order. However, it is required to retrieve and validate the monitoring status of the {{site.data.keyword.cloud_notm}} bare metal servers on which the VMware ESXi servers are running in your instance. |
-{: caption="Table 1. Required permissions for the {{site.data.keyword.cloud_notm}} infrastructure account" caption-side="bottom"}
+{: caption="Required permissions for the {{site.data.keyword.cloud_notm}} infrastructure account" caption-side="bottom"}
 
 To verify or update permissions for classic infrastructure users, see [Classic infrastructure permissions](/docs/account?topic=account-mngclassicinfra).
 

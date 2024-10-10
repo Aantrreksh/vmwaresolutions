@@ -20,7 +20,7 @@ subcollection: vmwaresolutions
 
 This design uses {{site.data.keyword.cloud}} bare metal servers in an all-in-one model with SATA disks as Direct Attached Storage (DAS) by using both RAID 1 and RAID 6 disk arrays. RAID 1 is used for the operating system and configuration database, and RAID 6 for the backup repository. An overview of the physical setup is shown in the following diagram.
 
-![Veeam on bare metal server all-in-one deployments](../../images/veeam-bms-physical-servers-all-in-one.svg "Veeam on bare metal server all-in-one deployments"){: caption="Figure 1. Veeam on bare metal server all-in-one deployments" caption-side="bottom"}
+![Veeam on bare metal server all-in-one deployments](../../images/veeam-bms-physical-servers-all-in-one.svg "Veeam on bare metal server all-in-one deployments"){: caption="Veeam on bare metal server all-in-one deployments" caption-side="bottom"}
 
 The server CPU and RAM are sized to handle up backups for 500 VMs. You can select the backup storage repository size with RAID 6 with 8 physical disks of 2 TB, 6 TB, or 12 TB, which result in an effective capacity of 12 TB, 36 TB, or 72 TB.
 
@@ -39,7 +39,7 @@ The Veeam bare metal servers are deployed to have connectivity to the following 
 |--------|-------------|-------------------------------------------|
 | VLAN 1 | Private A   | ESXi management, management, Geneve (TEP) |
 | VLAN 2 | Private B   | vSAN, NFS, vMotion, and Edge Geneve (TEP) |
-{: caption="Table 1. VLAN designations" caption-side="bottom"}
+{: caption="VLAN designations" caption-side="bottom"}
 
 The Veeam bare metal servers are natively provisioned to VLAN 1, and they need the following IP address from the private primary subnet of VLAN 1: One IP address for the all-in-one server, which is deployed and configured during server provisioning of the nontagged VLAN 1.
 

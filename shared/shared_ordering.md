@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2024
 
-lastupdated: "2024-07-29"
+lastupdated: "2024-10-10"
 
 keywords: shared order resource, order on demand shared, order on demand resources
 
@@ -123,7 +123,7 @@ If you selected **Preconfigured**, you have the following options for allocated 
 | Small | 64-cores | 512 GB |
 | Medium | 128-cores | 1024 GB |
 | Large | 256-cores | 2048 GB |
-{: caption="Table 1. Preconfigured vCPU and RAM options" caption-side="bottom"}
+{: caption="Preconfigured vCPU and RAM options" caption-side="bottom"}
 
 If you selected **Customizable**, you can customize your reserved vCPU and RAM limits.
 

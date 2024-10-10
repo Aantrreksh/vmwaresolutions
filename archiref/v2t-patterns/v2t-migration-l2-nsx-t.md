@@ -4,7 +4,7 @@ copyright:
 
   years:  2023, 2024
 
-lastupdated: "2024-09-17"
+lastupdated: "2024-10-10"
 
 subcollection: vmwaresolutions
 
@@ -23,7 +23,7 @@ VMware NSX-V to VMware NSX-T™ migration in {{site.data.keyword.cloud}} is done
 
 Regardless of the tool you choose to migrate the workloads, you typically need to extend L2 between the existing NSX-V instance and the new NSX-T instance. The following diagram presents an overview of how to extend the networks with NSX-T L2 bridging capability.
 
-![Migration by using vMotion or third-party tools and NSX-T L2 bridge](../../images/v2t-diagrams-l2-nsx-t.svg "No matter which migration method you choose, you typically need to extend L2 between the existing NSX-V and the new NSX-T instance. This shows how to extend the networks with NSX-T L2 bridging capability."){: caption="Figure 1. Migration by using vMotion or third-party tools and NSX-T L2 bridge" caption-side="bottom"}
+![Migration by using vMotion or third-party tools and NSX-T L2 bridge](../../images/v2t-diagrams-l2-nsx-t.svg "No matter which migration method you choose, you typically need to extend L2 between the existing NSX-V and the new NSX-T instance. This shows how to extend the networks with NSX-T L2 bridging capability."){: caption="Migration by using vMotion or third-party tools and NSX-T L2 bridge" caption-side="bottom"}
 
 1. Your existing NSX-V based instance was deployed previously and it hosts the current workloads and NSX-V network configurations. Before you start the migration, you must have a thorough understanding of the environment, the workloads that are deployed on it, and the NSX-V and underlay network configurations.
 2. You can deploy the new {{site.data.keyword.vcf-auto-short}}® with NSX-T instance with new VLANs and a new POD, or you can use existing VLANs.

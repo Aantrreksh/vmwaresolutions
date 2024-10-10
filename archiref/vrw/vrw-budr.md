@@ -32,7 +32,7 @@ The management cluster relies upon native vSphere® DRS capabilities to keep man
 |**VMware Aria Operations™ for Logs** | VMDK through Veeam | Daily |
 |**Virtual Machine Backup Server** | VMDK through Veeam| |
 |**Juniper vSRX** | Backup server file through SCP from vSRX | Commit change |
-{: caption="Table 1. Backup options" caption-side="bottom"}
+{: caption="Backup options" caption-side="bottom"}
 
 ### Veeam backup server
 {: #vrw-budr-management-veeam}

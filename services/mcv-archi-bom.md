@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2024
 
-lastupdated: "2024-09-18"
+lastupdated: "2024-10-10"
 
 subcollection: vmwaresolutions
 
@@ -44,7 +44,7 @@ The following components are part of your existing {{site.data.keyword.vcf-auto-
 | Hostname| `<host_prefix><host_number>` | host01.subdomain.domain |
 | Stretched cluster name | `<instance>-mgmt-<datacenter-region>` | mcv1-dal |
 | Cluster and management component | `<instance>-<cluster>-<datacenter>-<component>` | mcv1-mgmt-dal10-private \n DAL10-DVS |
-{: caption="Table 1. Component naming conventions" caption-side="bottom"}
+{: caption="Component naming conventions" caption-side="bottom"}
 
 ## Instance sizing considerations
 {: #mcv-archi-bom-sizing}
@@ -64,7 +64,7 @@ Your choice of effective RAID level determines the minimum number of hosts that 
 | RAID 1 | PFTT=1 SFTT=1 | No | 3+3+2+2+2 |
 | RAID 5 | PFTT=1 SFTT=1 | Yes | 4+4+2+2+2 |
 | RAID 6 | PFTT=1  SFTT=2 | Yes | 6+6+2+2+2 |
-{: caption="Table 2. RAID and FTM levels" caption-side="bottom"}
+{: caption="RAID and FTM levels" caption-side="bottom"}
 
 ## Day 2 operations
 {: #mcv-archi-bom-ordering-daytwo}

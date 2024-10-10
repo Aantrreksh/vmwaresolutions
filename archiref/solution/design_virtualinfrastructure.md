@@ -18,7 +18,7 @@ subcollection: vmwaresolutions
 
 The virtual infrastructure layer includes the VMware® software components that virtualize the compute, storage, and network resources provided in the physical infrastructure layer: VMware vSphere ESXi®, VMware NSX-T™, and optionally VMware vSAN™.
 
-![Virtual infrastructure](../../images/nsx-t-3-ra-diagrams-virtual-infrastructure.svg "Virtual infrastructure"){: caption="Figure 1. Virtual infrastructure" caption-side="bottom"}
+![Virtual infrastructure](../../images/nsx-t-3-ra-diagrams-virtual-infrastructure.svg "Virtual infrastructure"){: caption="Virtual infrastructure" caption-side="bottom"}
 
 ## VMware vSphere design
 {: #design_virtualinfrastructure-vsphere-design}
@@ -44,7 +44,7 @@ By default, the only users who can log in directly are the _root_ and _ibmvmadmi
 | User access            | Local authentication and MSAD |
 | Domain name resolution | Uses DNS as described in [Common services design](/docs/vmwaresolutions?topic=vmwaresolutions-design_commonservice). |
 | EVC Mode | Highest available level supported by vSphere version. However, for a management cluster with Intel® Cascade Lake processors, no EVC is set where Cascade Lake EVC is not supported by the vSphere version. |
-{: caption="Table 1. vSphere ESXi configuration" caption-side="bottom"}
+{: caption="vSphere ESXi configuration" caption-side="bottom"}
 
 The vSphere cluster houses the virtual machines (VMs) that manage the {{site.data.keyword.vcf-auto}} instance and the compute resources for user workloads.
 
@@ -71,7 +71,7 @@ Different host configurations might be deployed with:
 * A pair of M.2 boot drives in a mirrored configuration
 * A single M.2 boot drive
 
-![vSAN concept](../../images/vcsv4radiagrams-ra-vsan.svg "vSAN aggregates the local storage across multiple ESXi hosts within a vSphere cluster and manages the aggregated storage as a single VM datastore"){: caption="Figure 2. vSAN concept" caption-side="bottom"}
+![vSAN concept](../../images/vcsv4radiagrams-ra-vsan.svg "vSAN aggregates the local storage across multiple ESXi hosts within a vSphere cluster and manages the aggregated storage as a single VM datastore"){: caption="vSAN concept" caption-side="bottom"}
 
 vSAN employs the following components:
 * Two-disk group vSAN design; each disk group with two or more disks. One SSD or NVMe drive of the smallest size in the group serves as the cache tier and the remaining SSDs serve as the capacity tier.

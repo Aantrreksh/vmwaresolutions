@@ -29,7 +29,7 @@ VMware® uses the following terms to describe software updates.
 | Roll-up | A collection of patches that is grouped for ease of download and deployment. |
 | VA upgrade | Updates for a virtual appliance, which the vendor considers an upgrade. |
 | VIB | A single software package. |
-{: caption="Table 1. VMware software update terms and definitions" caption-side="bottom"}
+{: caption="VMware software update terms and definitions" caption-side="bottom"}
 
 ## Related links
 {: #vum-type-updates-related}

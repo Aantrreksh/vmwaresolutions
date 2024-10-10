@@ -75,7 +75,7 @@ The following table is for an example deployment. Use your own values.
 | `etcd Service Record Node 0` | _etcd-server-ssl._tcp.ocp.dallas.ibm.local | 192.168.133.10 |
 | `etcd Service Record Node 1` | _etcd-server-ssl._tcp.ocp.dallas.ibm.local | 192.168.133.11 |
 | `etcd Service Record Node 2` | _etcd-server-ssl._tcp.ocp.dallas.ibm.local | 192.168.133.12 |
-{: caption="Table 1. DNS records for OpenShift implementation" caption-side="bottom"}
+{: caption="DNS records for OpenShift implementation" caption-side="bottom"}
 
 ## DNS commands
 {: #openshift-runbook-runbook-dns-commands}

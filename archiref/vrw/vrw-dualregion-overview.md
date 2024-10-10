@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2024
 
-lastupdated: "2024-08-28"
+lastupdated: "2024-10-10"
 
 subcollection: vmwaresolutions
 
@@ -69,7 +69,7 @@ Recovery Point Objective (RPO) and Recovery Time Objective (RTO) depend on many 
 
 The {{site.data.keyword.rw}} dual region design incorporates a number of design decisions that are justified by design simplicity, maximizing the {{site.data.keyword.rw}} instance deployment automation, and minimizing the restrictions upon DR of the workloads. The recovery of management workloads and customer workloads is considered to be independent and this design focuses on the recovery of these management components. Customer workloads can be recovered by similar methods or by using different tools.
 
-![{{site.data.keyword.rw}} dual region overview diagram](../../images/vrw-v2-dualregion.svg "{{site.data.keyword.rw}} dual region overview diagram"){: caption="Figure 1. {{site.data.keyword.rw}} dual region overview diagram" caption-side="bottom"}
+![{{site.data.keyword.rw}} dual region overview diagram](../../images/vrw-v2-dualregion.svg "{{site.data.keyword.rw}} dual region overview diagram"){: caption="{{site.data.keyword.rw}} dual region overview diagram" caption-side="bottom"}
 
 The {{site.data.keyword.rw}} dual region design uses the following specifications:
 * A {{site.data.keyword.rw}} instance in each region, two regions are required. Available regions are; Dallas, Washington DC, Sydney, London, Frankfurt, and Tokyo.

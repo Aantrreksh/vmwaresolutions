@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-09-18"
+lastupdated: "2024-10-10"
 
 keywords: planning vcf classic, data center, vcf automated data centers
 
@@ -51,7 +51,7 @@ The {{site.data.keyword.vcf-auto-short}} deployment has strict requirements on t
 | TOK02 | 01-02 | Skylake, Cascade Lake, SAP-certified Cascade Lake | Skylake, Cascade Lake, SAP-certified Cascade Lake |
 | TOK04 | 01 | Skylake, Cascade Lake, SAP-certified Cascade Lake | Skylake, Cascade Lake, SAP-certified Cascade Lake |
 | TOK05 | 01 | Skylake, Cascade Lake, SAP-certified Cascade Lake | Skylake, Cascade Lake, SAP-certified Cascade Lake |
-{: caption="Table 1. Available {{site.data.keyword.cloud_notm}} data centers for Automated instances - Asia Pacific" caption-side="bottom"}
+{: caption="Available {{site.data.keyword.cloud_notm}} data centers for Automated instances - Asia Pacific" caption-side="bottom"}
 {: tab-title="Asia Pacific"}
 {: tab-group="Data centers for Automated instances"}
 {: class="simple-tab-table"}
@@ -72,7 +72,7 @@ The {{site.data.keyword.vcf-auto-short}} deployment has strict requirements on t
 | MAD05 | 01 | Cascade Lake, SAP-certified Cascade Lake | Cascade Lake, SAP-certified Cascade Lake |
 | MIL01 | 01 | Skylake, Cascade Lake, SAP-certified Cascade Lake | Skylake, Cascade Lake, SAP-certified Cascade Lake[^sap-mil01] |
 | PAR01 | 01 | Skylake, Cascade Lake, SAP-certified Cascade Lake | Skylake, Cascade Lake, SAP-certified Cascade Lake[^sap-par01] |
-{: caption="Table 1. Available {{site.data.keyword.cloud_notm}} data centers for Automated instances - Europe" caption-side="bottom"}
+{: caption="Available {{site.data.keyword.cloud_notm}} data centers for Automated instances - Europe" caption-side="bottom"}
 {: tab-title="Europe"}
 {: tab-group="Data centers for Automated instances"}
 {: class="simple-tab-table"}
@@ -87,7 +87,7 @@ The {{site.data.keyword.vcf-auto-short}} deployment has strict requirements on t
 | WDC04 | 01-05 | Skylake, Cascade Lake, SAP-certified Cascade Lake | Skylake, Cascade Lake, SAP-certified Cascade Lake |
 | WDC06 | 01 | Skylake, Cascade Lake, SAP-certified Cascade Lake | Skylake, Cascade Lake, SAP-certified Cascade Lake |
 | WDC07 | 01 | Skylake, Cascade Lake, SAP-certified Cascade Lake | Skylake, Cascade Lake, SAP-certified Cascade Lake |
-{: caption="Table 1. Available {{site.data.keyword.cloud_notm}} data centers for Automated instances - NA East" caption-side="bottom"}
+{: caption="Available {{site.data.keyword.cloud_notm}} data centers for Automated instances - NA East" caption-side="bottom"}
 {: tab-title="NA East"}
 {: tab-group="Data centers for Automated instances"}
 {: class="simple-tab-table"}
@@ -99,7 +99,7 @@ The {{site.data.keyword.vcf-auto-short}} deployment has strict requirements on t
 | DAL10 | 01-04 | Skylake, Cascade Lake, SAP-certified Cascade Lake | Skylake, Cascade Lake, SAP-certified Cascade Lake |
 | DAL12 | 01-02 | Skylake, Cascade Lake, SAP-certified Cascade Lake | Skylake, Cascade Lake, SAP-certified Cascade Lake |
 | DAL13 | 01-03 | Skylake, Cascade Lake, SAP-certified Cascade Lake | Skylake, Cascade Lake, SAP-certified Cascade Lake |
-{: caption="Table 1. Available {{site.data.keyword.cloud_notm}} data centers for Automated instances - NA South" caption-side="bottom"}
+{: caption="Available {{site.data.keyword.cloud_notm}} data centers for Automated instances - NA South" caption-side="bottom"}
 {: tab-title="NA South"}
 {: tab-group="Data centers for Automated instances"}
 {: class="simple-tab-table"}
@@ -109,7 +109,7 @@ The {{site.data.keyword.vcf-auto-short}} deployment has strict requirements on t
 |:----------- |:--- |:------------------------------------- |:----------------------------------- |
 | SJC03 | 01-02 | Skylake, Cascade Lake, SAP-certified Cascade Lake | Skylake, Cascade Lake |
 | SJC04 | 01 | Skylake, Cascade Lake, SAP-certified Cascade Lake | Skylake, Cascade Lake |
-{: caption="Table 1. Available {{site.data.keyword.cloud_notm}} data centers for Automated instances - NA West" caption-side="bottom"}
+{: caption="Available {{site.data.keyword.cloud_notm}} data centers for Automated instances - NA West" caption-side="bottom"}
 {: tab-title="NA West"}
 {: tab-group="Data centers for Automated instances"}
 {: class="simple-tab-table"}
@@ -120,7 +120,7 @@ The {{site.data.keyword.vcf-auto-short}} deployment has strict requirements on t
 | SAO01 | 01 | Skylake, Cascade Lake, SAP-certified Cascade Lake | Skylake, Cascade Lake, SAP-certified Cascade Lake |
 | SAO04 | 01 | Cascade Lake, SAP-certified Cascade Lake | Cascade Lake, SAP-certified Cascade Lake |
 | SAO05 | 01 | Cascade Lake, SAP-certified Cascade Lake | Cascade Lake, SAP-certified Cascade Lake |
-{: caption="Table 1. Available {{site.data.keyword.cloud_notm}} data centers for Automated instances - South America" caption-side="bottom"}
+{: caption="Available {{site.data.keyword.cloud_notm}} data centers for Automated instances - South America" caption-side="bottom"}
 {: tab-title="South America"}
 {: tab-group="Data centers for Automated instances"}
 {: class="simple-tab-table"}

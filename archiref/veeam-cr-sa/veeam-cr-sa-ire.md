@@ -19,7 +19,7 @@ The isolated recovery environment solution architecture uses a {{site.data.keywo
 
 The solution architecture is suitable for clients who want to move a copy of critical data away from the production environment, backup systems, and personnel to an environment that requires separate security credentials. The solution architecture does not preclude any of the {{site.data.keyword.vcf-auto-short}} options, such as Caveonix, Entrust, and VMware Aria® Operations™.
 
-![Isolated recovery environment solution architecture](../../images/veeam-cr-sa-ire.svg){: caption="Figure 1. Isolated recovery environment solution architecture" caption-side="bottom"}
+![Isolated recovery environment solution architecture](../../images/veeam-cr-sa-ire.svg){: caption="Isolated recovery environment solution architecture" caption-side="bottom"}
 
 Key elements of the isolated recovery environment solution architecture include:
 

@@ -31,11 +31,11 @@ When you use {{site.data.keyword.tg_short}} with your VMware® solution on VPC, 
 
 When you use VMware virtual machines (VMs) on the VPC subnet architecture, your VMs are attached to VPC subnets and the routing behaves in the same way as with VPC Virtual Servers. The VPC subnets are provisioned from the zone prefix, and when the VPC is attached to a {{site.data.keyword.tg_short}}, the routing works between other VPCs without any required changes. If you are using IANA-registered IP addresses in your VPC, see [Routing considerations for IANA-registered IP assignments](/docs/vpc?topic=vpc-interconnectivity#routing-considerations-iana).
 
-![{{site.data.keyword.tg_short}} with VMware on VPC](../../images/vpc-vcf-diagrams-tgw-sub-arch.svg "{{site.data.keyword.tg_short}} with VMware on VPC"){: caption="Figure 1. {{site.data.keyword.tg_full_notm}} with VMware on VPC" caption-side="bottom"}
+![{{site.data.keyword.tg_short}} with VMware on VPC](../../images/vpc-vcf-diagrams-tgw-sub-arch.svg "{{site.data.keyword.tg_short}} with VMware on VPC"){: caption="{{site.data.keyword.tg_full_notm}} with VMware on VPC" caption-side="bottom"}
 
 When you use NSX™ on your VMware solution on VPC, the VMs are attached on the NSX overlay segments. They use an IP address range or prefix, which is reachable through VPC route that points to the NSX Tier-0 private uplink VIP as described in [VMware NSX logical routing on VPC](/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-nsx-t-vpc-routing). When you attach the VPC to a {{site.data.keyword.dl_short}}, you must create the VPC routes with advertise flag so that they are advertised.
 
-![{{site.data.keyword.tg_short}} with VMware on VPC with NSX](../../images/vpc-vcf-diagrams-tgw-nsx-t-arch.svg "{{site.data.keyword.tg_short}} with VMware on VPC with NSX"){: caption="Figure 2. {{site.data.keyword.tg_full_notm}} with VMware on VPC with NSX" caption-side="bottom"}
+![{{site.data.keyword.tg_short}} with VMware on VPC with NSX](../../images/vpc-vcf-diagrams-tgw-nsx-t-arch.svg "{{site.data.keyword.tg_short}} with VMware on VPC with NSX"){: caption="{{site.data.keyword.tg_full_notm}} with VMware on VPC with NSX" caption-side="bottom"}
 
 ## Related links
 {: #interconnectivity-tgw-vcf-links}

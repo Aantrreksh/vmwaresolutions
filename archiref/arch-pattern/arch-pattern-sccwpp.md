@@ -4,7 +4,7 @@ copyright:
 
   years:  2024
 
-lastupdated: "2024-09-27"
+lastupdated: "2024-10-10"
 
 subcollection: vmwaresolutions
 
@@ -46,7 +46,7 @@ Security and Compliance Center Workload Protection enables the following three p
 
 The following diagram shows an example of integrating a vCenter Server with NSX-T instance on {{site.data.keyword.cloud_notm}} classic infrastructure with {{site.data.keyword.cloud_notm}} Security and Compliance Center Workload Protection.
 
-![Pattern for integrating Security and Compliance Center Workload Protection ](../../images/arch-pattern-scwpp-vcs.svg "Security and Compliance Center Workload Protection."){: caption="Figure 1. Security and Compliance Center Workload Protection" caption-side="bottom"}
+![Pattern for integrating Security and Compliance Center Workload Protection ](../../images/arch-pattern-scwpp-vcs.svg "Security and Compliance Center Workload Protection."){: caption="Security and Compliance Center Workload Protection" caption-side="bottom"}
 
 This architecture pattern is summarized as follows:
 

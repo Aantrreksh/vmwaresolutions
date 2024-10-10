@@ -4,7 +4,7 @@ copyright:
 
   years:  2021, 2024
 
-lastupdated: "2024-09-17"
+lastupdated: "2024-10-10"
 
 keywords: add service, order service, add-on service
 
@@ -47,7 +47,7 @@ The following table shows the services that are available to Automated instances
 | [Veeam](/docs/vmwaresolutions?topic=vmwaresolutions-veeamvm_overview) | 12.2 | |
 | [VMware Aria Operations and VMware Aria Operations for Logs](/docs/vmwaresolutions?topic=vmwaresolutions-vrops_overview) | VMware Aria® Operations™ 8.17.1 and VMware Aria Operations™ for Logs 8.17 | |
 | [Zerto](/docs/vmwaresolutions?topic=vmwaresolutions-addingzertodr) | 9.7u4 | VMware vSphere 7 only |
-{: caption="Table 1. Available services for Automated instances" caption-side="bottom"}
+{: caption="Available services for Automated instances" caption-side="bottom"}
 
 ## Promotions for services
 {: #vc_addingservices-service-promotions}
@@ -93,7 +93,7 @@ The following table provides the resource requirements for the services for whic
 | VMware HCX | For each gateway in the active-passive pair of NSX-V Edge Services Gateways: \n CPU - 6 CPUs \n RAM - 8 GB \n Storage - 3 GB VMDK \n For the HCX Management Appliance VM: \n CPU - 4 CPUs \n RAM - 12 GB \n Storage - 60 GB VMDK |
 | VMware Aria Operations and VMware Aria Operations for Logs | CPU - 18 CPUs \n RAM - 208 GB \n If you install VMware Aria Operations with vSAN storage, you must have an estimated 750 GB of vSAN storage. \n If you install VMware Aria Operations with NFS storage, you do not have a storage requirement because NFS storage is ordered as part of the instance order. |
 | Zerto | CPU - 2 CPUs \n RAM - 4 GB |
-{: caption="Table 2. Resources required for the services that the system checks for capacity requirements" caption-side="bottom"}
+{: caption="Resources required for the services that the system checks for capacity requirements" caption-side="bottom"}
 
 [^f5bigip]: See the table in [Considerations when you install F5 BIG-IP](/docs/vmwaresolutions?topic=vmwaresolutions-f5_considerations#f5_considerations-install-table).
 
@@ -118,7 +118,7 @@ The following table lists the variables that are used in the previous formula.
 | MgmtOverheadCores[^mgmtcores] | The number of cores reserved by the vCenter Server management components (vCenter Server, PSC, AD/DNS, Edges) | Cores | 5 | 5 |
 | vSphereHAHostTolerance[^vspherehacores] | The number of hosts to tolerate in the vSphere HA configuration | Hosts | 1 | 1 |
 | HostVsanOverheadCorePercentage | The percentage of a host's cores used by vSAN | % | 10 | 0 |
-{: caption="Table 3. Description of variables in formula 1" caption-side="bottom"}
+{: caption="Description of variables in formula 1" caption-side="bottom"}
 
 [^mgmtcores]: Management cluster only. No core reservation for the workload cluster, the gateway cluster, and the single-node management cluster.
 
@@ -142,7 +142,7 @@ The following table lists the variables that are used in the previous formula.
 | vSphereHAHostTolerance[^vspherehamem] | The number of hosts to tolerate in the vSphere HA configuration | Hosts | 1 | 1 |
 | HostVsanOverheadMemoryDiskPercentage | The number of GB of memory reserved by vSAN management (represented as a percentage of one of the capacity vSAN disks) | % | 2.75% | 2.75% |
 | HostVsanOverheadMemory | The number of GB of memory reserved by vSAN management regardless of disk size | GB | 7 | 0 |
-{: caption="Table 4. Description of variables in formula 2" caption-side="bottom"}
+{: caption="Description of variables in formula 2" caption-side="bottom"}
 
 [^mgmtmem]: Management cluster only. No memory reservation for the workload cluster, the gateway cluster, and the single-node management cluster.
 

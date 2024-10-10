@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-07-02"
+lastupdated: "2024-10-10"
 
 subcollection: vmwaresolutions
 
@@ -27,7 +27,7 @@ You can use Gateway Appliance or vCenter Server gateway cluster with Juniper vSR
 
 The following diagram presents an overview for an architecture pattern for using {{site.data.keyword.dl_short}} with NSX and EVPN.
 
-![{{site.data.keyword.dl_short}} with NSX and EVPN](../../images/arch-pattern-vcs-nsx-t-direct-link-evpn.svg "{{site.data.keyword.dl_short}} with NSX and EVPN."){: caption="Figure 1. {{site.data.keyword.dl_short}} with NSX and EVPN" caption-side="bottom"}
+![{{site.data.keyword.dl_short}} with NSX and EVPN](../../images/arch-pattern-vcs-nsx-t-direct-link-evpn.svg "{{site.data.keyword.dl_short}} with NSX and EVPN."){: caption="{{site.data.keyword.dl_short}} with NSX and EVPN" caption-side="bottom"}
 
 This architecture pattern deployment is summarized as follows:
 

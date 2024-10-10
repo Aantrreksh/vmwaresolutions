@@ -3,7 +3,7 @@
 copyright:
   years: 2022, 2024
 
-lastupdated: "2024-10-04"
+lastupdated: "2024-10-10"
 
 keywords: IBM Cloud for VMware Solutions, getting started, vmware solutions offerings, services for vmwaresolutions, vmwaresolutions use cases
 
@@ -35,7 +35,7 @@ For **Cascade Lake** servers, choose from the following CPU models and supported
 | Dual Intel Xeon Platinum 8260 | 48 | 2.4 | Up to 12 drives | 128 GB, 192 GB, 384 GB, 768 GB, 1.5 TB |
 | Quad Intel Xeon Gold 6248 | 80 | 2.5 | Up to 24 drives | 384 GB, 768 GB, 1.5 TB, 3 TB |
 | Quad Intel Xeon Platinum 8260 | 96 | 2.4 | Up to 24 drives | 384 GB, 768 GB, 1.5 TB, 3 TB |
-{: caption="Table 1. Options for Cascade Lake bare metal servers" caption-side="bottom"}
+{: caption="Options for Cascade Lake bare metal servers" caption-side="bottom"}
 {: #simpletabtable-cascade}
 
 
@@ -50,7 +50,7 @@ For **SAP-certified Cascade Lake** servers, choose from the following configurat
 | Dual Intel Xeon Platinum 8260 (BI.S4.NW768_v2) | 48 | 2.4 | 768 GB | Up to 12 drives |
 | Dual Intel Xeon Platinum 8280M (BI.S4.NW1500) | 56 | 2.7 | 1.5 TB | Up to 12 drives |
 | Dual Intel Xeon Platinum 8280M (BI.S4.NW3000) | 56 | 2.7 | 3 TB | Up to 12 drives |
-{: caption="Table 2. Options for SAP-certified Cascade Lake bare metal servers - NetWeaver" caption-side="bottom"}
+{: caption="Options for SAP-certified Cascade Lake bare metal servers - NetWeaver" caption-side="bottom"}
 {: tab-title="NetWeaver"}
 {: tab-group="SAP-certified Intel servers"}
 {: class="simple-tab-table"}
@@ -66,7 +66,7 @@ For **SAP-certified Cascade Lake** servers, choose from the following configurat
 | Dual Intel Xeon Platinum 8280M (BI.S4.H2.3000) | 56 | 2.7 | 3 TB | Up to 12 drives |
 | Quad Intel Xeon Platinum 8280M (BI.S4.H4.3000) | 112 | 2.7 | 3 TB | Up to 24 drives |
 | Quad Intel Xeon Platinum 8280M (BI.S4.H4.6000) | 112 | 2.7 | 6 TB | Up to 24 drives |
-{: caption="Table 2. Options for SAP-certified Cascade Lake bare metal servers - HANA and NetWeaver" caption-side="bottom"}
+{: caption="Options for SAP-certified Cascade Lake bare metal servers - HANA and NetWeaver" caption-side="bottom"}
 {: tab-title="HANA and NetWeaver"}
 {: tab-group="SAP-certified Intel servers"}
 {: class="simple-tab-table"}

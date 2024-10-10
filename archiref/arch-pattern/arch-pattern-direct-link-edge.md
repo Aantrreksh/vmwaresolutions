@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-07-02"
+lastupdated: "2024-10-10"
 
 subcollection: vmwaresolutions
 
@@ -29,7 +29,7 @@ You can use Gateway Appliance or vCenter Server gateway cluster with Juniper vSR
 
 The following diagram presents an overview of an architecture pattern for deploying {{site.data.keyword.dl_short}} with NSX edge cluster in colocation.
 
-![{{site.data.keyword.dl_short}} with NSX edge cluster in colocation](../../images/arch-pattern-vcs-nsx-t-direct-link-edge.svg "{{site.data.keyword.dl_short}} with NSX edge cluster in colocation."){: caption="Figure 1. {{site.data.keyword.dl_short}} with NSX edge cluster in colocation" caption-side="bottom"}
+![{{site.data.keyword.dl_short}} with NSX edge cluster in colocation](../../images/arch-pattern-vcs-nsx-t-direct-link-edge.svg "{{site.data.keyword.dl_short}} with NSX edge cluster in colocation."){: caption="{{site.data.keyword.dl_short}} with NSX edge cluster in colocation" caption-side="bottom"}
 
 This architecture pattern deployment is summarized as follows:
 

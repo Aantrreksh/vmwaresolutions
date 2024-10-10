@@ -20,7 +20,7 @@ This architecture pattern explains how to deploy VMware Tanzu on {{site.data.key
 
 An overview of this architecture pattern is shown in the following diagram.
 
-![Tanzu on VMware Cloud Foundation standard architecture](../../images/vcf-arch-tanzu-std.svg "Tanzu on VMware Cloud Foundation standard architecture."){: caption="Figure 1. Tanzu on VMware Cloud Foundation standard architecture" caption-side="bottom"}
+![Tanzu on VMware Cloud Foundation standard architecture](../../images/vcf-arch-tanzu-std.svg "Tanzu on VMware Cloud Foundation standard architecture."){: caption="Tanzu on VMware Cloud Foundation standard architecture" caption-side="bottom"}
 
 Tanzu can be deployed only on the VMware Cloud Foundation standard architecture.
 {: important}
@@ -30,7 +30,7 @@ Tanzu can be deployed only on the VMware Cloud Foundation standard architecture.
 
 The following diagram represents high-level deployment steps for Tanzu implementation. In this architecture pattern, Tanzu is deployed into NSX overlay at the VI workload domain.
 
-![Deploying Tanzu on VMware Cloud Foundation standard architecture](../../images/vcf-arch-tanzu-std-steps.svg "Deploying Tanzu on VMware Cloud Foundation standard architecture."){: caption="Figure 2. Deploying Tanzu on VMware Cloud Foundation standard architecture" caption-side="bottom"}
+![Deploying Tanzu on VMware Cloud Foundation standard architecture](../../images/vcf-arch-tanzu-std-steps.svg "Deploying Tanzu on VMware Cloud Foundation standard architecture."){: caption="Deploying Tanzu on VMware Cloud Foundation standard architecture" caption-side="bottom"}
 
 This architecture pattern deployment is summarized as follows:
 
