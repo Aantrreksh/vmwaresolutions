@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-10-10"
+lastupdated: "2024-10-14"
 
 subcollection: vmwaresolutions
 
@@ -71,7 +71,7 @@ After you provision your {{site.data.keyword.vcf-auto}} instance, system adminis
 | Backing up vCenter | For more information, see [File-based backup and restore of vCenter Server](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vcenter.install.doc/GUID-3EAED005-B0A3-40CF-B40D-85AD247D7EA4.html){: external}. |
 | VSCA/PSC patching | For more information, see [Patching the vCenter Server appliance and Platform Services Controller Appliance](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vcenter.upgrade.doc/GUID-043EF6BD-78F7-412F-837F-CBDF844F850C.html){: external}. |
 | Stopping, starting, or restarting vCenter services | For troubleshooting and maintenance purposes, it is sometimes necessary to change the status of vCenter services. For more information, see [Stopping, starting, or restarting services in vCenter Server Appliance 6.5](https://knowledge.broadcom.com/external/article?articleNumber=328099){: external}. |
-| Overview of backup and restore options for the VCSA | For more information, see [Back up and restore vCenter Server Appliance/vCenter Server 6.x](https://knowledge.broadcom.com/external/article?articleNumber=316471){: external}. |
+| Overview of backup and restore options for the VCSA | For more information, see [Backup and Restore options in vCenter Server 6.x/7.0.x - Overview](https://knowledge.broadcom.com/external/article?articleNumber=318731){: external}. |
 | Configure vCenter email notifications | For more information about configuring email, sending notifications to an email address when a certain condition is triggered on an already defined alarm, and custom-created alarms, see _Configuring an email alert for the vCenter Server alarm_ in [VMware vCloud usage meter documentation](https://docs.vmware.com/en/vCloud-Usage-Meter/index.html){: external}. |
 {: caption="vCenter procedures" caption-side="bottom"}
 

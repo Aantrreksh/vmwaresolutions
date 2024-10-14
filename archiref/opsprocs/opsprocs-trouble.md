@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-10-10"
+lastupdated: "2024-10-14"
 
 subcollection: vmwaresolutions
 
@@ -126,7 +126,7 @@ In an aid to isolating the affected components, this documentation on troublesho
 |  NSX Edge `/var/log` is getting full on active Edge | For more information about an alert that the Edge disk is filling up and discover that the `/var/log` partition is getting full, see [NSX Edge /var/log is getting full on active edge (50108355)](https://knowledge.broadcom.com/external/article?legacyId=50108355){: external}.  |
 | Testing HCX bandwidth  | When you believe that you have a network bandwidth issue with HCX, use `perftest` to find the available bandwidth within the HCX tunnels. For more information, see [Steps to run perftest in HCX (56211)](https://knowledge.broadcom.com/external/article?legacyId=56211){: external}. Bidirectional tests are carried out for each `perftest`. For the pair of gateways, one is inside the source data center (on-premises), and the other one is in {{site.data.keyword.cloud_notm}}. The way `perftest` throughput works is to have the sender try to send as fast as the link can sustain. Therefore, for each test, you see a higher "sender" rate than the "receiver" rate. You can consider the "receiver" rate value as a one-way throughput result. |
 | HCX troubleshooting | For more information, see [HCX troubleshooting](/docs/vmwaresolutions?topic=vmwaresolutions-hcxclient-troubleshooting). |
-| HCX syncing state with 0% progress and 0 bytes with status error | For more information, see [HCX replication in syncing state with 0% progress and 0 bytes with status error (56710)](https://knowledge.broadcom.com/external/article?legacyId=56710){: external}. |
+| HCX syncing state with 0% progress and 0 bytes with status error | [HCX - Health Check and Best Practices](https://knowledge.broadcom.com/external/article?articleNumber=371941){: external}. |
 | Poor VM network performance | Review the VM virtual NIC settings. VMware recommends VMXNET 3 virtual NICs for VMs as it is the most recent generation of paravirtualized NICs designed for performance. Check for compatibility of VMXNET 3 using the VMware compatibility list, and if supported change the virtual NIC for additional network performance. For more information, see [Troubleshooting networking](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.networking.doc/GUID-217384C2-B361-471D-90C8-BC2676A0ECA6.html){: external}. |
 {: caption="Typical network troubleshooting" caption-side="bottom"}
 {: #table4}
