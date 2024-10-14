@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-10-10"
+lastupdated: "2024-10-14"
 
 keywords: IAM user, user role, user permission, IAM access for vmwaresolutions, permissions for vmwaresolutions, identity and access management for vmwaresolutions, roles for vmwaresolutions, actions for vmwaresolutions, assigning access for vmwaresolutions
 
@@ -174,7 +174,7 @@ curl -X POST 'https://iam.cloud.ibm.com/v1/policies' -H 'Authorization: Bearer $
 ## Related links
 {: #iam-related}
 
-* [Assigning access to resources by using access groups](/docs/account?topic=account-access-getstarted)
+* [Managing access to resources](/docs/account?topic=account-assign-access-resources&interface=ui)
 * [Inviting users to an account](/docs/account?topic=account-iamuserinv)
 * [How {{site.data.keyword.cloud_notm}} IAM works](/docs/account?topic=account-iamoverview)
 * [Locating an IAM account administrator](/docs/vmwaresolutions?topic=vmwaresolutions-iam_verify_permissions)

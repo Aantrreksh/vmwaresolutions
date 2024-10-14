@@ -1,54 +1,55 @@
 {
+  "version": 2,
   "title": "VMware Solutions docs",
-  "lastupdated": "2024-10-09",
   "introduction": "VMware Solutions is a group of IBM Cloud offerings that provide deployment and management of VMware® by Broadcom virtualized environments. Learn how to make the most of your VMware Solutions experience by using the user documentation, REST API documentation reference, solution architectures, and solution guides.",
-  "section_devtools": {
-    "api": "/docs?tab=api-docs&category=compute&subCategory=vmwaresolutions"
+  "product_page": "https://www.ibm.com/products/vmware",
+  "console_page": "/vmware",
+  "section_topics": {
+    "links": [
+      {
+        "title": "Getting started with VMware Solutions",
+        "href": "/docs/vmwaresolutions?topic=vmwaresolutions-getting-started"
+      },
+      {
+        "title": "Managing IAM access for VMware Solutions",
+        "href": "/docs/vmwaresolutions?topic=vmwaresolutions-iam&interface=ui"
+      },
+      {
+        "title": "Activity tracking events for VMware Solutions",
+        "href": "/docs/vmwaresolutions?topic=vmwaresolutions-at_events"
+      },
+      {
+        "title": "Understanding your responsibilities when you use VMware Solutions",
+        "href": "/docs/vmwaresolutions?topic=vmwaresolutions-understand-responsib"
+      },
+      {
+        "title": "General FAQ about VCF for Classic",
+        "href": "/docs/vmwaresolutions?topic=vmwaresolutions-faq-vmwaresolutions"
+      },
+      {
+        "title": "General FAQ about VCF for VPC",
+        "href": "/docs/vmwaresolutions?topic=vmwaresolutions-vpc-vcf-faq"
+      }
+    ]
   },
-  "section_recommended": [
+  "section_highlights": [
     {
-      "title": "Getting started with VMware Solutions",
-      "description": "Get familiar with the process of ordering an instance and some services for it.",
-      "href": "/docs/vmwaresolutions?topic=vmwaresolutions-getting-started"
-    },
-    {
-      "title": "Signing up for required accounts",
-      "description": "Sign up for an IBM Cloud account and an IBM Cloud infrastructure account.",
-      "href": "/docs/vmwaresolutions?topic=vmwaresolutions-signing_required_accounts"
-    },
-    {
-      "title": "Accessing the VMware Solutions console",
-      "description": "Review the entry points into the IBM Cloud for VMware Solutions console.",
-      "href": "/docs/vmwaresolutions?topic=vmwaresolutions-loginmethod"
-    },
-    {
-      "title": "Setting up your environment for your first order",
-      "description": "Ensure that your environment is ready for your order.",
-      "href": "/docs/vmwaresolutions?topic=vmwaresolutions-completing_checklist"
-    }
-  ],
-  "section_videos": [
-    {
-      "title": "IBM Cloud for VMware Solutions",
+      "title": "VMware Solutions",
+      "description": "Video: Streamline your operations, scale on demand, and drive innovation",
       "href": "https://mediacenter.ibm.com/id/1_7o8hw0kz",
-      "thumbnail": "/images/thumbnails/ibm-cloud-vmware-solutions-thumbnail.jpg"
+      "type": "video",
+      "recommended": true
     },
     {
       "title": "Veeam on IBM Cloud",
+      "description": "Video: The advantages of using Veeam on IBM Cloud for your disaster recovery and backup needs",
       "href": "https://www.youtube.com/watch?v=xtVnAhgtSI0",
-      "thumbnail": "/images/thumbnails/veeam-on-ibm-cloud-thumbnail.jpg"
-    },
-    {
-      "title": "Zerto on IBM Cloud",
-      "href": "https://mediacenter.ibm.com/id/1_eb2k7077",
-      "thumbnail": "/images/thumbnails/zerto-on-ibm-cloud-thumbnail.jpg"
+      "type": "video",
+      "recommended": true
     }
   ],
-  "section_learn": {
-    "developer": "https://developer.ibm.com/depmodels/cloud/",
-    "architecture": "https://www.ibm.com/architectures",
-    "training": "https://www.ibm.com/training/cloud",
-    "community": "https://community.ibm.com/community/user/cloud/home"
+  "section_devtools": {
+    "api": "/apidocs/vmware-solutions"
   },
   "section_updates": {
     "view_more": "/docs/vmwaresolutions?topic=vmwaresolutions-vmwaresolutions-relnotes"

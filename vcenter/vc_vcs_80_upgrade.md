@@ -4,7 +4,7 @@ copyright:
 
   years: 2024
 
-lastupdated: "2024-10-07"
+lastupdated: "2024-10-14"
 
 keywords: vCenter upgrade, NSX upgrade, PSC upgrade, vcenter 8
 
@@ -26,6 +26,7 @@ You can upgrade the VMware vCenter Server® software on your instances to versio
 {{site.data.content.para-vcs80upgrade-prereq}}
 
 Complete the following requirements before you begin the upgrade:
+
 * Open a support ticket with the {{site.data.keyword.vmwaresolutions_full}} team to notify them that an upgrade is being planned. The ticket remains open until the instance is registered at the upgraded level in the {{site.data.keyword.vmwaresolutions_short}} console.
 * Verify that the vCenter Server `root` user ID and its credentials are visible on the console. If your instance was initially ordered in a VMware Solutions environment V2.5 to V5.7, only the `customerroot` account is visible on the console. For instances, clusters, hosts, and vCenter Server VMs ordered in VMware Solutions V5.7 and later, the `customerroot` user is no longer created by the VMware Solutions automation.
 * If you encounter a problem during the upgrade process, use the {{site.data.keyword.vmwaresolutions_short}} upgrade ticket that you opened at the beginning of the process to contact IBM Support. IBM Support then opens tickets with VMware Support if required.
@@ -94,9 +95,7 @@ Complete the following requirements before you begin the upgrade:
    9. Click **OK**, and then **OK** again to exit the window.
 
 ## Procedure to migrate from vSphere 7.0 to vSphere 8.0
-{: #vc_vcs_80_upgrade-procedure-vsphere}
-
-
+{: #vc_vcs_80_migrate-procedure-vsphere}
 
 You cannot migrate a vSAN cluster to vSphere 8.0.
 {: important}
