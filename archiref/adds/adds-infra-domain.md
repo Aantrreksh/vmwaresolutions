@@ -4,7 +4,7 @@ copyright:
 
   years:  2019, 2024
 
-lastupdated: "2024-06-11"
+lastupdated: "2024-10-15"
 
 subcollection: vmwaresolutions
 
@@ -80,7 +80,7 @@ If you order the two high availability Microsoft Windows VMs, you must provide t
 After the provisioning of the vCenter Server instance, you have 30 days to activate the VMs. The cluster is configured with a VM-VM anti-affinity rule. Therefore, Distributed Resource Scheduler (DRS) tries to keep the VMs apart by placing them on different physical vSphere ESXi hosts. The following table describes the VM configuration.
 
 | Parameter        | Specification                                 |
-|:-----------------|:----------------------------------------------|
+|:---------------- |:--------------------------------------------- |
 | Operating System | Windows Server 2019 Standard Edition (64-bit) |
 | CPU              | 2                                             |
 | RAM              | 8 GB                                          |
