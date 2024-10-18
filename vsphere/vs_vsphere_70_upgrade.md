@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-10-14"
+lastupdated: "2024-10-18"
 
 keywords: vSphere upgrade, NSX upgrade, PSC upgrade, flexible upgrade
 
@@ -238,8 +238,6 @@ Complete the following steps from the vCenter Server user interface.
 7. In the same display, select the private switch and click **MANAGE PHYSICAL ADAPTERS**.
 8. Select **uplink1** and click **+**. `vmnic2` is displayed.
 9. Click **OK**, and then **OK** again to exit the window.
-
-
 
 ## Related links
 {: #vs_vsphere_70_upgrade-related}

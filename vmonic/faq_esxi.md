@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-04-09"
+lastupdated: "2024-10-18"
 
 keywords: FAQ, host, ESXi server
 
@@ -36,7 +36,7 @@ You can add a maximum of 51 ESXi servers to a consolidated cluster and a maximum
 {: #faq_esxi-change-name-ip}
 {: faq}
 
-The ESXi server names and IP addresses cannot be changed because they are registered for Windows® DNS resolution. Changes might result in failure during deployment or failure of vCenter Server functions.
+The ESXi server names and IP addresses cannot be changed because they are registered for Windows® DNS resolution. Changes might cause failures during deployment or failures of vCenter Server functions.
 
 Don't use the **Rename Device** feature on the {{site.data.keyword.cloud_notm}} user interface to change ESXi server names. This function changes the FQDN of the ESXi server, but the configured vCenter Server and the Windows VSI host registrations are incorrect and might cause failures.
 {: attention}
@@ -79,7 +79,7 @@ To place a host from a VMware vSAN cluster in maintenance mode, complete the fol
 
 You can add static routes for storage but you must do it with extreme care. Otherwise, the existing shares might become unmounted.
 
-Adding static routes for vMotion is not supported. Changes in vMotion subnet configuration might result in failures of the VMware Solutions functions.
+Adding static routes for vMotion is not supported. Changes in vMotion subnet configuration cause failures of the VMware Solutions functions.
 {: attention}
 
 ## Related links

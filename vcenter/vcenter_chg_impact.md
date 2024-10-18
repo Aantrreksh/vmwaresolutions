@@ -4,7 +4,7 @@ copyright:
 
   years:  2016, 2024
 
-lastupdated: "2024-10-10"
+lastupdated: "2024-10-18"
 
 keywords: change vCenter Server artifacts, automation ID, VMware resource
 
@@ -58,7 +58,7 @@ Review the following restrictions:
 * Do not change the names and do not delete any of the management subnets that are created for the Automated instances.
 * Do not change the name of the network uplinks that are created during provisioning.
 * Do not rename or remove NSX-T components. These operations might generate add and remove failures or delays. The NSX-T components with the names that are documented in [Naming conventions](/docs/vmwaresolutions?topic=vmwaresolutions-nsx-t-design#nsx-t-design-naming) are used when automation adds or removes hosts, clusters, and services.
-* Do not change the VMware ESXi™ server names and the IP addresses because they are registered for Windows® DNS resolution. Changes might result in failure during deployment or failure of Automated instance functions.
+* Do not change the VMware ESXi™ server names and the IP addresses because they are registered for Windows® DNS resolution. Changes might cause failures during deployment or failures of Automated instance functions.
 
 ## VMware resources for instances V1.8 and earlier
 {: #vcenter_chg_impact-vmware-resources-for-inst-v1.8-and-earlier}

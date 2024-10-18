@@ -4,7 +4,7 @@ copyright:
 
   years: 2024
 
-lastupdated: "2024-10-14"
+lastupdated: "2024-10-18"
 
 keywords: vCenter upgrade, NSX upgrade, PSC upgrade, vcenter 8
 
@@ -110,6 +110,14 @@ If you have an NFS cluster with vSphere 7.0 and you want to migrate it to vSpher
 2. Ensure that the vSphere 8.0 server is configured to your needs and remove it from maintenance mode.
 3. Put the vSphere 7.0 server into maintenance mode.
 4. Remove the vSphere 7.0 server from your cluster.
+
+
+
+
+
+
+
+
 
 ## Related links
 {: #vc_vcs_80_upgrade-related}
