@@ -43,7 +43,7 @@ By default, all unread notifications are displayed. You can filter the notificat
 ## {{site.data.keyword.cloud_notm}} platform-related notifications
 {: #notifications-ibm-cloud}
 
-You can also choose to receive email notifications about {{site.data.keyword.cloud_notm}} platform-related items, such as announcements, billing and usage, more notification preferences, and ordering. For more information, see [Setting email preferences for notifications](/docs/account?topic=account-email-prefs).
+You can also choose to receive email notifications about {{site.data.keyword.cloud_notm}} platform-related items, such as announcements, billing and usage, more notification preferences, and ordering. For more information, see [Setting email preferences for notifications](/docs/account?topic=account-account-getting-started#account-gs-notifications).
 
 ## Related links
 {: #notifications-related}

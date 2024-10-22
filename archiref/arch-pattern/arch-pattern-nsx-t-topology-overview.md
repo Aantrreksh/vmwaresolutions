@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-06-03"
+lastupdated: "2024-10-22"
 
 subcollection: vmwaresolutions
 
@@ -105,7 +105,7 @@ Public connectivity pattern is summarized as follows:
 1. The automation deploys an NSX Tier 0 (T0) Gateway in the NSX workload edge cluster. The T0 gateway provides connectivity to {{site.data.keyword.cloud_notm}} public network. 
 2. The deployed T0 gateway has a default route `0.0.0.0/0` to the internet with FCR as a next-hop.
 3. The automation deploys an example NSX overlay topology with a Tier 1 (T1) Gateway and a few example segments attached both to the T1 and T0 Gateways. You can customize the topology based on your needs.
-4. You can use IP addresses from {{site.data.keyword.cloud_notm}} private portable subnet that is deployed for NSX Edge Uplinks for NAT or for NSX network services (for example IPSec VPN).
+4. You can use IP addresses from {{site.data.keyword.cloud_notm}} private portable subnet that is deployed for NSX Edge Uplinks for NAT or for NSX network services (for example IPsec VPN).
 5. The automation deploys example SNAT rules for outbound internet access. You can customize and delete these rules based on your needs. 
 6. You can configure DNAT rules to access your workloads that are attached to NSX segments through internet.
 7. You can order [{{site.data.keyword.cloud_notm}} Public static subnets](/docs/subnets?topic=subnets-getting-started) for your HA VIP to allocate public subnets directly to NSX segments. They are routed through the T0 public uplink HA VIP.

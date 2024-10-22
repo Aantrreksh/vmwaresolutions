@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-10-14"
+lastupdated: "2024-10-22"
 
 keywords: IAM user, user role, user permission, IAM VMware Cloud Director
 
@@ -108,7 +108,7 @@ The following table provides information about roles that are custom-defined by 
 | Organization vDC Gateway: Configure DNS | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | | ![Available](../../../icons/checkmark-icon.svg) | | |
 | Organization vDC Gateway: Configure ECMP Routing | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | | ![Available](../../../icons/checkmark-icon.svg) | | |
 | Organization vDC Gateway: Configure Firewall | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | | | ![Available](../../../icons/checkmark-icon.svg) | |
-| Organization vDC Gateway: Configure IPSec VPN | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | | | ![Available](../../../icons/checkmark-icon.svg) | |
+| Organization vDC Gateway: Configure IPsec VPN | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | | | ![Available](../../../icons/checkmark-icon.svg) | |
 | Organization vDC Gateway: Configure L2 VPN | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | | | ![Available](../../../icons/checkmark-icon.svg) | |
 | Organization vDC Gateway: Configure Load Balancer | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | | | ![Available](../../../icons/checkmark-icon.svg) | |
 | Organization vDC Gateway: Configure NAT | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | | ![Available](../../../icons/checkmark-icon.svg) | | |
@@ -125,7 +125,7 @@ The following table provides information about roles that are custom-defined by 
 | Organization vDC Gateway: View DHCP | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | |
 | Organization vDC Gateway: View DNS | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | |
 | Organization vDC Gateway: View Firewall | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | |
-| Organization vDC Gateway: View IPSec VPN | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | | ![Available](../../../icons/checkmark-icon.svg) | |
+| Organization vDC Gateway: View IPsec VPN | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | | ![Available](../../../icons/checkmark-icon.svg) | |
 | Organization vDC Gateway: View L2 VPN | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | |
 | Organization vDC Gateway: View Load Balancer | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | |
 | Organization vDC Gateway: View NAT | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | ![Available](../../../icons/checkmark-icon.svg) | |

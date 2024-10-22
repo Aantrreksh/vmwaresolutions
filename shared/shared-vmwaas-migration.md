@@ -4,7 +4,7 @@ copyright:
 
   years:  2020, 2024
 
-lastupdated: "2024-10-10"
+lastupdated: "2024-10-22"
 
 keywords: migrating to VMware Cloud Foundation as a Service
 
@@ -92,9 +92,9 @@ For more information, see:
 ## Virtual private networks
 {: #shared-vmwaas-migration-network-vpn}
 
-IPSec VPN offers site-to-site connectivity between an edge gateway and remote sites that also use NSX or that have either third-party hardware routers or VPN gateways that support IPsec.
+IPsec VPN offers site-to-site connectivity between an edge gateway and remote sites that also use NSX or that have either third-party hardware routers or VPN gateways that support IPsec.
 
-Policy-based IPSec VPN requires a VPN policy to be applied to packets to determine which traffic is to be protected by IPsec before the traffic is passed through a VPN tunnel. This type of VPN is considered static because when a local network topology and configuration change, the VPN policy settings must also be updated to accommodate the changes.
+Policy-based IPsec VPN requires a VPN policy to be applied to packets to determine which traffic is to be protected by IPsec before the traffic is passed through a VPN tunnel. This type of VPN is considered static because when a local network topology and configuration change, the VPN policy settings must also be updated to accommodate the changes.
 
 {{site.data.keyword.vcf-aas}} virtual data centers support only policy-based IPsec VPNs. Route-based IPsec VPNs are not supported. For more information, see [IPsec Policy-Based VPN for NSX Edge Gateways](https://docs.vmware.com/en/VMware-Cloud-Director/10.5/VMware-Cloud-Director-Tenant-Guide/GUID-019E8BF7-8669-4A15-B1AE-CDFD04EA77CB.html){: external}.
 

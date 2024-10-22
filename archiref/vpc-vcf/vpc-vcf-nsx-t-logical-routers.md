@@ -4,7 +4,7 @@ copyright:
 
   years:  2022, 2024
 
-lastupdated: "2024-06-18"
+lastupdated: "2024-10-22"
 
 subcollection: vmwaresolutions
 
@@ -99,7 +99,7 @@ You can deploy multiple T1s in the same edge cluster.
 ## Network services that are provided by Tier-0 and Tier-1 gateways
 {: #vpc-vcf-nsx-t-logical-routers-edge-gateway}
 
-NSX Data Center supports network services, such as IPsec Virtual Private Network (IPSec VPN), Network Address Translation (NAT), and Firewalls as shown in the following diagram.
+NSX Data Center supports network services, such as IPsec Virtual Private Network (IPsec VPN), Network Address Translation (NAT), and Firewalls as shown in the following diagram.
 
 ![Network Services that are provided by Tier-0 and Tier-1 gateways](../../images/vcf-vpc-v2-overlay-services.svg "Network Services that are provided by Tier-0 and Tier-1 gateways"){: caption="Network Services provided by Tier-0 and Tier-1 gateways" caption-side="bottom"}
 
@@ -108,7 +108,7 @@ The topic gives a brief introduction to these capabilities and how they can be u
 ### VPN services
 {: #vpc-vcf-nsx-t-logical-routers-edge-services-vpn}
 
-IPsec Virtual Private Network (IPSec VPN) and Layer 2 VPN (L2 VPN) run on an NSX Edge node. IPSec VPN offers site-to-site connectivity between an NSX Edge node and remote sites. With L2 VPN, you can extend your data center by enabling virtual machines (VMs) to keep their network connectivity across geographical boundaries while you use the same IP address.
+IPsec Virtual Private Network (IPsec VPN) and Layer 2 VPN (L2 VPN) run on an NSX Edge node. IPsec VPN offers site-to-site connectivity between an NSX Edge node and remote sites. With L2 VPN, you can extend your data center by enabling virtual machines (VMs) to keep their network connectivity across geographical boundaries while you use the same IP address.
 
 When you configure NSX VPN service in {{site.data.keyword.vpc_short}}, you can use the public `/32` floating IP addresses as the VPN Endpoints both Tier-0 and Tier-1 gateways. You can have multiple VPN endpoints, if needed. When a VPN service is configured on a Tier-1 gateway, ensure that the floating IP is correctly advertised between Tier-0 and Tier-1 gateways.
 
