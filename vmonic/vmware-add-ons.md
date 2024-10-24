@@ -4,7 +4,7 @@ copyright:
 
   years:  2024
 
-lastupdated: "2024-09-25"
+lastupdated: "2024-10-24"
 
 keywords: vmware add-ons, firewall add-ons, vsan add-on, vmware avi add-on
 
@@ -44,11 +44,9 @@ For on-demand, the cost for the firewall add-on is $12.50 per core, per month. D
 * **Distributed firewall**: For this option, all host cores that are running VMware NSX must be licensed for the DFW Firewall Add-On. This is done because virtual network segments span the entire environment and a virtual machine (VM) can run on any host.
 * **Gateway firewall**: For this option, the vCPUs that are running on the edge VMs provide the gateway firewall service, therefore they are counted. To get the edge VMs properly configured, the VMs are sized and 4 cores per vCPU in the edge VMs are calculated.
 
-For example, by using the sizing guidance at [NSX Edge VM System Requirements](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.2/installation/GUID-22F87CA8-01A9-4F2E-B7DB-9350CA60EA4E.html){: external} if you choose a large edge, then each edge requires 8 vCPU, therefore 32 cores to be licensed (8 vCPUs in the VM * 4 cores per vCPU = 32 cores).
+For example, by using the sizing guidance at [NSX Edge VM System Requirements](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.2/installation/GUID-22F87CA8-01A9-4F2E-B7DB-9350CA60EA4E.html){: external} if you choose a large edge, then each edge requires 8 vCPU, therefore 32 cores to be licensed: `8 vCPUs in the VM * 4 cores per vCPU = 32 cores`
 
-As many environments use multiple edges for redundancy, 2 large edges (8 vCPUs each) require 64 cores worth of licensing:
-
-2 edge VMs * 8 vCPUs per edge * 4 cores per vCPU = 64 cores
+As many environments use multiple edges for redundancy, 2 large edges (8 vCPUs each) require 64 cores worth of licensing: `2 edge VMs * 8 vCPUs per edge * 4 cores per vCPU = 64 cores`
 
 ## vSAN add-on
 {: #vmware-add-ons-vsan}
